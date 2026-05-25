@@ -1,0 +1,131 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "custom-cursor",
+        "version": "1.0.1",
+        "title": "[zh-tw] Custom Cursor",
+        "description": "Custom Cursor Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.0.1",
+        "author": "Chico",
+        "updatedAt": 1778615217552
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "光标图标的颜色。默认为黑色或白色（取决于深色模式）。",
+                    "target": "游標圖示的顏色。預設為黑色或白色（取決於深色模式）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "完成一次完整光标闪烁周期的秒数。",
+                    "target": "完成一次完整游標閃爍週期的秒數。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "光标移动后开始闪烁前的秒数。",
+                    "target": "游標移動後開始閃爍前的秒數。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "光标图标在输入或移动后到达真实光标位置所需的毫秒数。0 表示瞬间完成。",
+                    "target": "游標圖示在輸入或移動後到達真實游標位置所需的毫秒數。0 表示瞬間完成。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "光标图标宽度，以像素为单位。",
+                    "target": "游標圖示寬度，以畫素為單位。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "光标颜色",
+                    "target": "游標顏色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "闪烁速度（以秒为单位）",
+                    "target": "閃爍速度（以秒為單位）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "闪烁延迟（以秒为单位）",
+                    "target": "閃爍延遲（以秒為單位）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "平滑输入速度（以毫秒为单位）",
+                    "target": "平滑輸入速度（以毫秒為單位）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "光标宽度（以像素为单位）",
+                    "target": "游標寬度（以畫素為單位）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "恢复默认设置",
+                    "target": "恢復預設設定"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"光标颜色\")",
+                    "target": "setName(\"游標顏色\")"
+                },
+                {
+                    "source": "setDesc(\"光标图标的颜色。默认为黑色或白色（取决于深色模式）。\")",
+                    "target": "setDesc(\"游標圖示的顏色。預設為黑色或白色（取決於深色模式）。\")"
+                },
+                {
+                    "source": "setName(\"闪烁速度（以秒为单位）\")",
+                    "target": "setName(\"閃爍速度（以秒為單位）\")"
+                },
+                {
+                    "source": "setDesc(\"完成一次完整光标闪烁周期的秒数。\")",
+                    "target": "setDesc(\"完成一次完整游標閃爍週期的秒數。\")"
+                },
+                {
+                    "source": "setName(\"闪烁延迟（以秒为单位）\")",
+                    "target": "setName(\"閃爍延遲（以秒為單位）\")"
+                },
+                {
+                    "source": "setDesc(\"光标移动后开始闪烁前的秒数。\")",
+                    "target": "setDesc(\"游標移動後開始閃爍前的秒數。\")"
+                },
+                {
+                    "source": "setName(\"平滑输入速度（以毫秒为单位）\")",
+                    "target": "setName(\"平滑輸入速度（以毫秒為單位）\")"
+                },
+                {
+                    "source": "setDesc(\"光标图标在输入或移动后到达真实光标位置所需的毫秒数。0 表示瞬间完成。\")",
+                    "target": "setDesc(\"游標圖示在輸入或移動後到達真實游標位置所需的毫秒數。0 表示瞬間完成。\")"
+                },
+                {
+                    "source": "setName(\"光标宽度（以像素为单位）\")",
+                    "target": "setName(\"游標寬度（以畫素為單位）\")"
+                },
+                {
+                    "source": "setDesc(\"光标图标宽度，以像素为单位。\")",
+                    "target": "setDesc(\"游標圖示寬度，以畫素為單位。\")"
+                },
+                {
+                    "source": "setTooltip(\"恢复默认设置\")",
+                    "target": "setTooltip(\"恢復預設設定\")"
+                }
+            ]
+        }
+    }
+}
