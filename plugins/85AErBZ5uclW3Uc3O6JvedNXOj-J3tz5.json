@@ -1,0 +1,53 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "wheel-tab-switcher",
+        "version": "0.2.7",
+        "title": "[zh-tw] Wheel Tab Switcher",
+        "description": "Wheel Tab Switcher Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "0.2.7",
+        "author": "Chico",
+        "updatedAt": 1778615217788
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Scroll on Empty Tab Area to Switch (🚧 Experimental)",
+                    "target": "在空白分頁區域捲動以切換（🚧 實驗性）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "🐞 Dev",
+                    "target": "🐞 開發"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "wheeledLeaf is null, return.",
+                    "target": "wheeledLeaf is null, return."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "wheeledParent is null, return.",
+                    "target": "wheeledParent is null, return."
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"Scroll on Empty Tab Area to Switch (\\u{1F6A7} Experimental)\")",
+                    "target": "setName(\"在空白分頁區域捲動以切換（\\u{1F6A7} 實驗性）\")"
+                },
+                {
+                    "source": "setName(\"\\u{1F41E} Dev\")",
+                    "target": "setName(\"\\u{1F41E} 開發\")"
+                }
+            ]
+        }
+    }
+}
