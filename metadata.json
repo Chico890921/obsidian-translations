@@ -219,5 +219,18 @@
         "created_at": "2026-05-25T03:45:07.968Z",
         "updated_at": "2026-05-25T03:45:07.968Z",
         "type": "plugin"
+    },
+    {
+        "id": "BG5t5Q44DNx0d5eJIirjNqd-Os9dPDlQ",
+        "plugin": "ink",
+        "language": "zh-tw",
+        "version": "0.3.4",
+        "supported_versions": "0.3.4",
+        "title": "[zh-tw] Ink",
+        "description": "Ink 繁體中文化與微調",
+        "hash": "22d6259522d6259522d6259522d62595",
+        "created_at": "2026-05-25T03:45:15.828Z",
+        "updated_at": "2026-05-25T03:45:15.828Z",
+        "type": "plugin"
     }
 ]
