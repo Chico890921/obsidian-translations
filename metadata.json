@@ -479,5 +479,18 @@
         "created_at": "2026-05-25T03:50:23.749Z",
         "updated_at": "2026-05-25T03:50:23.749Z",
         "type": "plugin"
+    },
+    {
+        "id": "WFOyzIIwz_70QVDlv27N8alHg1l0uzMZ",
+        "plugin": "quickadd",
+        "language": "zh-tw",
+        "version": "2.12.2",
+        "supported_versions": "2.12.2",
+        "title": "[zh-tw] QuickAdd",
+        "description": "QuickAdd 繁體中文化與微調",
+        "hash": "48d9b0e248d9b0e248d9b0e248d9b0e2",
+        "created_at": "2026-05-25T03:50:33.992Z",
+        "updated_at": "2026-05-25T03:50:33.992Z",
+        "type": "plugin"
     }
 ]
