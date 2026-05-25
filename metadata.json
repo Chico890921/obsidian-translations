@@ -349,5 +349,18 @@
         "created_at": "2026-05-25T03:47:52.334Z",
         "updated_at": "2026-05-25T03:47:52.334Z",
         "type": "plugin"
+    },
+    {
+        "id": "n94tjal3G6mt73BBULJs41jkheZI1zl7",
+        "plugin": "obsidian-list-callouts",
+        "language": "zh-tw",
+        "version": "1.2.9",
+        "supported_versions": "1.2.9",
+        "title": "[zh-tw] List Callouts",
+        "description": "List Callouts Localization & Tweaks",
+        "hash": "03d1337203d1337203d1337203d13372",
+        "created_at": "2026-05-25T03:48:00.512Z",
+        "updated_at": "2026-05-25T03:48:00.512Z",
+        "type": "plugin"
     }
 ]
