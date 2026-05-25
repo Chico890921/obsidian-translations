@@ -1,0 +1,468 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "link-favicon",
+        "version": "1.8.5",
+        "title": "[zh-tw] Link Favicons",
+        "description": "Link Favicons 繁體中文化與微調",
+        "language": "zh-tw",
+        "supportedVersions": "1.8.5",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "After the link",
+                    "target": "連結後方"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Before the link",
+                    "target": "連結前方"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Link Favicons: misconfigured providers",
+                    "target": "Link Favicons：提供者設定錯誤"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "could not extract color information from icon",
+                    "target": "無法從圖示擷取顏色資訊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Choose",
+                    "target": "選擇"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Test",
+                    "target": "測試"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Test providers",
+                    "target": "測試提供者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Clear",
+                    "target": "清除"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "This provider is selfhosted, please specify your deployment URL. Refer to the readme of the provider for deployment instructions.",
+                    "target": "此提供者需自行託管，請指定你的部署 URL。部署說明請參考該提供者的 README。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "This provider is be selfhosted, please specify your deployment URL. Refer to the readme of the provider for deployment instructions.",
+                    "target": "此提供者需自行託管，請指定你的部署 URL。部署說明請參考該提供者的 README。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Don't show an favicon for these domains(one per line)",
+                    "target": "不要為這些網域顯示 favicon（每行一個）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When link is formatted like: [Obsidian](HTTPS://Obsidian.md/)",
+                    "target": "當連結格式如下時：[Obsidian](HTTPS://Obsidian.md/)"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When link is formatted like: https://Obsidian.md/",
+                    "target": "當連結格式如下時：https://Obsidian.md/"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Favicon colors will be automatically inverted if the icon is detected to be less readable",
+                    "target": "若偵測到圖示可讀性較差，會自動反轉 favicon 顏色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add custom icon",
+                    "target": "新增自訂圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "How fast after editing a link should a icon be displayed(in milliseconds)?",
+                    "target": "編輯連結後，要等待多久才顯示圖示（毫秒）？"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Icon",
+                    "target": "圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Link",
+                    "target": "連結"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Icon provider",
+                    "target": "圖示提供者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Provider domain",
+                    "target": "提供者網域"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Fallback icon provider",
+                    "target": "備用圖示提供者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Fallback provider domain",
+                    "target": "備用提供者網域"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Not sure which provider to choose?",
+                    "target": "不確定要選哪個提供者？"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Ignored domains",
+                    "target": "忽略的網域"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show icon when link has alias",
+                    "target": "連結有別名時顯示圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show icon when link has no alias",
+                    "target": "連結沒有別名時顯示圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show in reading mode",
+                    "target": "在閱讀模式中顯示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show in source mode",
+                    "target": "在原始碼模式中顯示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show in live preview",
+                    "target": "在即時預覽中顯示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Icon position",
+                    "target": "圖示位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Color inversion",
+                    "target": "顏色反轉"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Add new",
+                    "target": "新增"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Debounce",
+                    "target": "防抖延遲"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Cached icons",
+                    "target": "已快取圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Clear icon cache",
+                    "target": "清除圖示快取"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Save",
+                    "target": "儲存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Add custom icon",
+                    "target": "新增自訂圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Edit",
+                    "target": "編輯"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Delete",
+                    "target": "刪除"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Cleared cache",
+                    "target": "已清除快取"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Link favicons:misconfigured providers, please check the settings",
+                    "target": "Link Favicons：提供者設定錯誤，請檢查設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Google",
+                    "target": "Google"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "DuckDuckGo",
+                    "target": "DuckDuckGo"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Icon Horse",
+                    "target": "Icon Horse"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Splitbee",
+                    "target": "Splitbee"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "The Favicon Finder",
+                    "target": "The Favicon Finder"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Favicon Grabber",
+                    "target": "Favicon Grabber"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Could not generate favicon, check your settings",
+                    "target": "無法產生 favicon，請檢查設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Only use these tools if you know what you are doing",
+                    "target": "只有在你清楚知道自己在做什麼時才使用這些工具"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "Notice(\"Please supply both a \"+this.name+\" & a icon\")",
+                    "target": "Notice(\"請同時提供 \"+this.name+\" 與圖示\")"
+                },
+                {
+                    "source": "setName(\"Icon provider\")",
+                    "target": "setName(\"圖示提供者\")"
+                },
+                {
+                    "source": "setName(\"Provider domain\")",
+                    "target": "setName(\"提供者網域\")"
+                },
+                {
+                    "source": "setDesc(\"This provider is selfhosted, please specify your deployment URL. Refer to the readme of the provider for deployment instructions.\")",
+                    "target": "setDesc(\"此提供者需自行託管，請指定你的部署 URL。部署說明請參考該提供者的 README。\")"
+                },
+                {
+                    "source": "setName(\"Fallback icon provider\")",
+                    "target": "setName(\"備用圖示提供者\")"
+                },
+                {
+                    "source": "setName(\"Fallback provider domain\")",
+                    "target": "setName(\"備用提供者網域\")"
+                },
+                {
+                    "source": "setDesc(\"This provider is be selfhosted, please specify your deployment URL. Refer to the readme of the provider for deployment instructions.\")",
+                    "target": "setDesc(\"此提供者需自行託管，請指定你的部署 URL。部署說明請參考該提供者的 README。\")"
+                },
+                {
+                    "source": "setName(\"Not sure which provider to choose?\")",
+                    "target": "setName(\"不確定要選哪個提供者？\")"
+                },
+                {
+                    "source": "setButtonText(\"Test providers\")",
+                    "target": "setButtonText(\"測試提供者\")"
+                },
+                {
+                    "source": "setName(\"Ignored domains\")",
+                    "target": "setName(\"忽略的網域\")"
+                },
+                {
+                    "source": "setDesc(\"Don't show an favicon for these domains(one per line)\")",
+                    "target": "setDesc(\"不要為這些網域顯示 favicon（每行一個）\")"
+                },
+                {
+                    "source": "setName(\"Show icon when link has alias\")",
+                    "target": "setName(\"連結有別名時顯示圖示\")"
+                },
+                {
+                    "source": "setDesc(\"When link is formatted like: [Obsidian](HTTPS://Obsidian.md/)\")",
+                    "target": "setDesc(\"當連結格式如下時：[Obsidian](HTTPS://Obsidian.md/)\")"
+                },
+                {
+                    "source": "setName(\"Show icon when link has no alias\")",
+                    "target": "setName(\"連結沒有別名時顯示圖示\")"
+                },
+                {
+                    "source": "setDesc(\"When link is formatted like: https://Obsidian.md/\")",
+                    "target": "setDesc(\"當連結格式如下時：https://Obsidian.md/\")"
+                },
+                {
+                    "source": "setName(\"Show in reading mode\")",
+                    "target": "setName(\"在閱讀模式中顯示\")"
+                },
+                {
+                    "source": "setName(\"Show in source mode\")",
+                    "target": "setName(\"在原始碼模式中顯示\")"
+                },
+                {
+                    "source": "setName(\"Show in live preview\")",
+                    "target": "setName(\"在即時預覽中顯示\")"
+                },
+                {
+                    "source": "setName(\"Icon position\")",
+                    "target": "setName(\"圖示位置\")"
+                },
+                {
+                    "source": "setName(\"Color inversion\")",
+                    "target": "setName(\"顏色反轉\")"
+                },
+                {
+                    "source": "setDesc(\"Favicon colors will be automatically inverted if the icon is detected to be less readable\")",
+                    "target": "setDesc(\"若偵測到圖示可讀性較差，會自動反轉 favicon 顏色\")"
+                },
+                {
+                    "source": "setName(\"Add new\")",
+                    "target": "setName(\"新增\")"
+                },
+                {
+                    "source": "setDesc(\"Add custom icon\")",
+                    "target": "setDesc(\"新增自訂圖示\")"
+                },
+                {
+                    "source": "setTooltip(\"Add custom icon\")",
+                    "target": "setTooltip(\"新增自訂圖示\")"
+                },
+                {
+                    "source": "setDesc(\"How fast after editing a link should a icon be displayed(in milliseconds)?\")",
+                    "target": "setDesc(\"編輯連結後，要等待多久才顯示圖示（毫秒）？\")"
+                },
+                {
+                    "source": "setName(\"Cached icons\")",
+                    "target": "setName(\"已快取圖示\")"
+                },
+                {
+                    "source": "setName(\"Clear icon cache\")",
+                    "target": "setName(\"清除圖示快取\")"
+                },
+                {
+                    "source": "Notice(\"Cleared cache\")",
+                    "target": "Notice(\"已清除快取\")"
+                },
+                {
+                    "source": "error(\"Link Favicons: misconfigured providers\")",
+                    "target": "error(\"Link Favicons：提供者設定錯誤\")"
+                },
+                {
+                    "source": "Notice(\"Link favicons:misconfigured providers, please check the settings\")",
+                    "target": "Notice(\"Link Favicons：提供者設定錯誤，請檢查設定\")"
+                },
+                {
+                    "source": "error(\"could not extract color information from icon\")",
+                    "target": "error(\"無法從圖示擷取顏色資訊\")"
+                },
+                {
+                    "source": "name:\"Icon Horse\"",
+                    "target": "name:\"Icon Horse\""
+                },
+                {
+                    "source": "name:\"The Favicon Finder\"",
+                    "target": "name:\"The Favicon Finder\""
+                },
+                {
+                    "source": "name:\"Favicon Grabber\"",
+                    "target": "name:\"Favicon Grabber\""
+                },
+                {
+                    "source": "text:\"Could not generate favicon, check your settings\"",
+                    "target": "text:\"無法產生 favicon，請檢查設定\""
+                },
+                {
+                    "source": "text:\"\t\t\"",
+                    "target": "text:\"\t\t\""
+                },
+                {
+                    "source": "text:\"Only use these tools if you know what you are doing\"",
+                    "target": "text:\"只有在你清楚知道自己在做什麼時才使用這些工具\""
+                }
+            ]
+        }
+    }
+}
