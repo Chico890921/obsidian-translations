@@ -1,0 +1,1717 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "templater-obsidian",
+        "version": "2.20.5",
+        "title": "[zh-tw] Templater",
+        "description": "Templater 繁體中文化與微調",
+        "language": "zh-tw",
+        "supportedVersions": "2.20.5",
+        "author": "Chico",
+        "updatedAt": 1779625577134
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Render method description",
+                    "target": "呈現方法說明"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Render method description and return",
+                    "target": "呈現方法說明與回傳值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Render method description and parameters list",
+                    "target": "呈現方法說明與參數清單"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Render method description, parameters list, and return",
+                    "target": "呈現方法說明、參數清單與回傳值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Turn off intellisense",
+                    "target": "關閉智慧提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to parse summary section",
+                    "target": "無法解析摘要區段"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add new file regex",
+                    "target": "新增新的檔案正規表示式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add new user function",
+                    "target": "新增使用者函式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add folder to ignore list",
+                    "target": "新增資料夾到忽略清單"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Submit",
+                    "target": "送出"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Save",
+                    "target": "儲存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Determine how you'd like to have user script intellisense render. Note values will not render if not in the script.",
+                    "target": "決定使用者指令碼智慧提示的呈現方式。請注意，不在指令碼中的值不會呈現。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Internal variables and functions",
+                    "target": "內部變數和函式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Syntax highlighting on desktop",
+                    "target": "桌面版語法醒目提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Syntax highlighting on mobile",
+                    "target": "行動版語法醒目提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Automatic jump to cursor",
+                    "target": "自動跳到游標"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "User script functions",
+                    "target": "使用者指令碼函式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Script files folder location",
+                    "target": "指令碼檔案資料夾位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "User script intellisense",
+                    "target": "使用者指令碼智慧提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Timeout",
+                    "target": "逾時"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Shell binary location",
+                    "target": "Shell 執行檔位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Ignore folders on file creation",
+                    "target": "建立檔案時忽略資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Example: folder1/folder2",
+                    "target": "範例：folder1/folder2"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Folder",
+                    "target": "資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "File regex",
+                    "target": "檔案正規表示式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Timeout",
+                    "target": "逾時"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Example: /bin/bash, ...",
+                    "target": "範例：/bin/bash, ..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Function name",
+                    "target": "函式名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Type text here",
+                    "target": "在此輸入文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Configure hotkey",
+                    "target": "設定快捷鍵"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Move up",
+                    "target": "上移"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Move down",
+                    "target": "下移"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Delete",
+                    "target": "刪除"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Add additional file regex",
+                    "target": "新增額外的檔案正規表示式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Refresh",
+                    "target": "重新整理"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Add folder to ignore on file creation",
+                    "target": "新增建立檔案時要忽略的資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Output file path (relative to vault root)",
+                    "target": "輸出檔案路徑（相對於 vault 根目錄）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Open the created file in the UI",
+                    "target": "在介面中開啟建立的檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This module exposes the app instance. Prefer to use this over the global app instance.",
+                    "target": "此模組公開 app 實例。建議優先使用它，而不是全域 app 實例。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This module exposes custom made scripts, written by yourself within the script file folder location",
+                    "target": "此模組會公開你在腳本檔案資料夾位置中自行撰寫的自訂腳本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This module contains every internal function related to dates.",
+                    "target": "此模組包含所有與日期相關的內部函式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves the date.",
+                    "target": "取得日期。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The format for the date. Defaults to `\"YYYY-MM-DD\"`. Refer to the [Momentjs format reference](https://momentjs.com/docs/#/displaying/format/).",
+                    "target": "日期格式。預設為 `\"YYYY-MM-DD\"`。請參考 [Momentjs 格式說明](https://momentjs.com/docs/#/displaying/format/)。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Duration to offset the date from. If a number is provided, duration will be added to the date in days. You can also specify the offset as a string using the ISO 8601 format.",
+                    "target": "要套用到日期的偏移量。若提供數字，會以天數加到日期上；也可以使用 ISO 8601 格式的字串指定偏移量。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The date to use instead of today's date, e.g. set this to the note's title.",
+                    "target": "要用來取代今天日期的日期，例如可以設為筆記標題。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The format for the reference date. Refer to the [Momentjs format reference](https://momentjs.com/docs/#/displaying/format/).",
+                    "target": "參考日期的格式。請參考 [Momentjs 格式參考](https://momentjs.com/docs/#/displaying/format/)。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves tomorrow's date.",
+                    "target": "取得明天的日期。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves yesterday's date.",
+                    "target": "取得昨天的日期。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Week day number. If the locale assigns Monday as the first day of the week, `0` will be Monday, `-7` will be last week's day.",
+                    "target": "星期幾編號。如果地區設定以星期一為一週的第一天，`0` 代表星期一，`-7` 代表上週同一天。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The reference date to use instead of today, e.g. set this to the note's title.",
+                    "target": "要用來取代今天的參考日期，例如可以設為筆記標題。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This module contains every internal function related to files.",
+                    "target": "此模組包含所有與檔案相關的內部函式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The filename of the new file, defaults to \"Untitled\".",
+                    "target": "新檔案的檔名，預設為 \"Untitled\"。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Whether to open or not the newly created file. Warning: if you use this option, since commands are executed asynchronously, the file can be opened first and then other commands are appended to that new file and not the previous file.",
+                    "target": "是否開啟新建立的檔案。警告：如果使用此選項，由於命令是非同步執行，檔案可能會先被開啟，接著其他命令會附加到新檔案，而不是原本的檔案。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The folder to put the new file in, defaults to Obsidian's default location. If you want the file to appear in a different folder, specify it with `\"PATH/TO/FOLDERNAME\"` or `tp.app.vault.getAbstractFileByPath(\"PATH/TO/FOLDERNAME\")`.",
+                    "target": "新檔案要放入的資料夾。預設使用 Obsidian 的預設位置。如果想讓檔案出現在不同資料夾，請用 `\"PATH/TO/FOLDERNAME\"` 或 `tp.app.vault.getAbstractFileByPath(\"PATH/TO/FOLDERNAME\")` 指定。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves the current file's creation date.",
+                    "target": "取得目前檔案的建立日期。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The format for the date. Defaults to `\"YYYY-MM-DD HH:mm\"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).",
+                    "target": "日期格式。預設為 `\"YYYY-MM-DD HH:mm\"`。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The order of the different cursors jump, e.g. it will jump from 1 to 2 to 3, and so on.\nIf you specify multiple tp.file.cursor with the same order, the editor will switch to multi-cursor.\n",
+                    "target": "不同游標的跳轉順序，例如會從 1 跳到 2，再跳到 3，以此類推。\n如果指定多個相同順序的 tp.file.cursor，編輯器會切換為多游標模式。\n"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Appends some content after the active cursor in the file.",
+                    "target": "在檔案中目前游標後方附加內容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The content to append after the active cursor.",
+                    "target": "要附加到目前游標後方的內容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Check to see if a file exists by it's file path. The full path to the file, relative to the Vault and containing the extension, must be provided.",
+                    "target": "透過檔案路徑檢查檔案是否存在。必須提供相對於 Vault、且包含副檔名的完整檔案路徑。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The full file path of the file we want to check existence for.",
+                    "target": "要檢查是否存在的檔案完整路徑。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Search for a file and returns its `TFile` instance.",
+                    "target": "搜尋檔案並回傳其 `TFile` 實例。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The filename we want to search and resolve as a `TFile`.",
+                    "target": "我們要搜尋並解析為 `TFile` 的檔名。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves the file's folder name.",
+                    "target": "取得檔案的資料夾名稱。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "If set to `true`, returns the vault-absolute path of the folder. If `false`, only returns the basename of the folder (the last part). Defaults to `false`.",
+                    "target": "如果設為 `true`，會回傳資料夾的 vault 絕對路徑。如果設為 `false`，只會回傳資料夾的基底名稱（最後一部分）。預設為 `false`。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The link to the file to include, e.g. `\"[[MyFile]]\"`, or a TFile object. Also supports sections or blocks inclusions.",
+                    "target": "要包含的檔案連結，例如 `\"[[MyFile]]\"`，或 TFile 物件。也支援包含區段或區塊。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves the file's last modification date.",
+                    "target": "取得檔案的最後修改日期。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Moves the file to the desired vault location.",
+                    "target": "將檔案移動到指定的 vault 位置。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The new vault relative path of the file, without the file extension. Note: the new path needs to include the folder and the filename, e.g. `\"/Notes/MyNote\"`.",
+                    "target": "檔案新的 vault 相對路徑，不含副檔名。注意：新路徑必須包含資料夾和檔名，例如 `\"/Notes/MyNote\"`。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The file to move, defaults to the current file.",
+                    "target": "要移動的檔案，預設為目前檔案。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "If set to `true`, only retrieves the vault's relative path.",
+                    "target": "如果設為 `true`，只取得 vault 的相對路徑。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Renames the file (keeps the same file extension).",
+                    "target": "重新命名檔案（保留相同副檔名）。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The new file title.",
+                    "target": "新檔案標題。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves the active file's text selection.",
+                    "target": "取得目前檔案的文字選取範圍。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves the file's tags (array of string).",
+                    "target": "取得檔案的標籤（字串陣列）。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves the file's title.",
+                    "target": "取得檔案標題。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This modules exposes all the frontmatter variables of a file as variables.",
+                    "target": "此模組會將檔案中的所有 frontmatter 變數公開為變數。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This module exposes all the functions and classes from the Obsidian API.",
+                    "target": "此模組公開 Obsidian API 中的所有函式與類別。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves the clipboard's content.",
+                    "target": "取得剪貼簿內容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Spawns a prompt modal and returns the user's input.",
+                    "target": "開啟提示彈窗並回傳使用者輸入。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Text placed above the input field.",
+                    "target": "放在輸入欄位上方的文字。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "A default value for the input field.",
+                    "target": "輸入欄位的預設值。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Throws an error if the prompt is canceled, instead of returning a `null` value.",
+                    "target": "如果取消提示，會拋出錯誤，而不是回傳 `null` 值。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "If set to `true`, the input field will be a multiline textarea. Defaults to `false`.",
+                    "target": "如果設為 `true`，輸入欄位會變成多行文字區域。預設為 `false`。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Placeholder string of the prompt.",
+                    "target": "提示的佔位符字串。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default value to initialize the suggester with.",
+                    "target": "建議選單初始化時使用的預設值。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Text placed at the top of the modal.",
+                    "target": "放在彈窗頂端的文字。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default values to initialize the suggester with.",
+                    "target": "建議選單初始化時使用的預設值。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This modules contains every internal function related to the web (making web requests).",
+                    "target": "此模組包含所有與網路相關的內部函式（發送網路請求）。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves and parses the daily quote from `https://github.com/Zachatoo/quotes-database` as a callout.",
+                    "target": "從 `https://github.com/Zachatoo/quotes-database` 取得並解析每日引言，作為 callout。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Gets a random image from `https://unsplash.com/`.",
+                    "target": "從 `https://unsplash.com/` 取得一張隨機圖片。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Image size in the format `<width>x<height>`.",
+                    "target": "圖片大小，格式為 `<width>x<height>`。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Limits selection to photos matching a search term. Multiple search terms can be passed separated by a comma.",
+                    "target": "只選取符合搜尋字詞的照片。可用逗號分隔多個搜尋字詞。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Optional argument to include the specified size in the image link markdown. Defaults to false.",
+                    "target": "選用引數，用於在圖片連結 Markdown 中包含指定尺寸。預設為 false。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Makes a HTTP request to the specified URL. Optionally, you can specify a path to extract specific data from the response.",
+                    "target": "向指定 URL 發送 HTTP 請求。也可以指定路徑，從回應中提取特定資料。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The URL to which the HTTP request will be made.",
+                    "target": "HTTP 請求要發送到的 URL。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "A path within the response JSON to extract specific data.",
+                    "target": "回應 JSON 中用來提取特定資料的路徑。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Jump to next cursor location",
+                    "target": "跳轉到下一個游標位置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Date now",
+                    "target": "目前日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Date now with format",
+                    "target": "以指定格式取得目前日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Last week",
+                    "target": "上週"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Next week",
+                    "target": "下週"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Last month",
+                    "target": "上個月"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Next year",
+                    "target": "明年"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File's title date + 1 day (tomorrow)",
+                    "target": "檔案標題日期 + 1 天（明天）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File's title date - 1 day (yesterday)",
+                    "target": "檔案標題日期 - 1 天（昨天）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Date tomorrow",
+                    "target": "明天日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Date tomorrow with format",
+                    "target": "以指定格式取得明天日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Date yesterday",
+                    "target": "昨天日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Date yesterday with format",
+                    "target": "以指定格式取得昨天日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "This week's Monday",
+                    "target": "本週一"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Next Monday",
+                    "target": "下週一"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File's title Monday",
+                    "target": "檔案標題日期的星期一"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File's title previous Monday",
+                    "target": "檔案標題日期的前一個星期一"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Get start of month from note title",
+                    "target": "從筆記標題取得月份開始日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Get end of month from note title",
+                    "target": "從筆記標題取得月份結束日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Retrieve file content",
+                    "target": "取得檔案內容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File creation",
+                    "target": "建立檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File creation and open created note",
+                    "target": "建立檔案並開啟新筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File creation in current folder",
+                    "target": "在目前資料夾建立檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File creation in specified folder with string path",
+                    "target": "用字串路徑在指定資料夾建立檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File creation in specified folder with TFolder",
+                    "target": "用 TFolder 在指定資料夾建立檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File creation and append link to current note",
+                    "target": "建立檔案並將連結附加到目前筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File creation date",
+                    "target": "檔案建立日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File creation date with format",
+                    "target": "以指定格式取得檔案建立日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File cursor",
+                    "target": "檔案游標"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File multi-cursor",
+                    "target": "檔案多游標"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File cursor append",
+                    "target": "在檔案游標後附加"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File existence",
+                    "target": "檔案是否存在"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File existence of current file",
+                    "target": "目前檔案是否存在"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File find TFile",
+                    "target": "尋找 TFile 檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File folder (Folder)",
+                    "target": "檔案資料夾（Folder）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File folder with vault-absolute path (Path/To/Folder)",
+                    "target": "用 vault 絕對路徑取得檔案資料夾 (Path/To/Folder)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File include",
+                    "target": "包含檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File include TFile",
+                    "target": "包含 TFile"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File include section",
+                    "target": "包含檔案區段"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File include block",
+                    "target": "包含檔案區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File last modified date",
+                    "target": "檔案最後修改日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File last modified date with format",
+                    "target": "以指定格式取得檔案最後修改日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File move",
+                    "target": "移動檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File move and rename",
+                    "target": "移動並重新命名檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File path",
+                    "target": "檔案路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File relative path (relative to vault root)",
+                    "target": "檔案相對路徑（相對於 vault 根目錄）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File rename",
+                    "target": "重新命名檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File append a 2 to the file name",
+                    "target": "在檔名後附加 2"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File selection",
+                    "target": "檔案選取範圍"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File tags",
+                    "target": "檔案標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "File title",
+                    "target": "檔案標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Strip the Zettelkasten ID of title (if space separated)",
+                    "target": "移除標題中的 Zettelkasten ID（若以空格分隔）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Clipboard",
+                    "target": "剪貼簿"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Prompt",
+                    "target": "提示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Prompt with default value",
+                    "target": "帶預設值的提示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Multiline prompt",
+                    "target": "多行提示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Reuse output from prompt",
+                    "target": "重複使用提示輸出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Suggester",
+                    "target": "建議選單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Suggester with mapping function (same as above example)",
+                    "target": "帶對應函式的建議選單（同上例）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Suggester for files",
+                    "target": "檔案建議選單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Suggester for tags",
+                    "target": "標籤建議選單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Reuse value from suggester",
+                    "target": "重複使用建議選單的值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Default value for the suggester",
+                    "target": "建議選單的預設值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Multi-suggester with mapping function (same as above example)",
+                    "target": "帶對應函式的多選建議選單（同上例）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Multi-suggester for files",
+                    "target": "檔案多選建議選單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Multi-suggester for tags",
+                    "target": "標籤多選建議選單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Reuse value from multi-suggester",
+                    "target": "重複使用多選建議選單的值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Daily quote",
+                    "target": "每日引言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Random picture",
+                    "target": "隨機圖片"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Random picture with size",
+                    "target": "指定大小的隨機圖片"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Random picture with size and query",
+                    "target": "指定大小與查詢的隨機圖片"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Simple request",
+                    "target": "簡單請求"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Request with path",
+                    "target": "帶路徑的請求"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Check console for more information",
+                    "target": "請查看主控台取得更多資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Warning: ",
+                    "target": "警告："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Parameter list:",
+                    "target": "參數清單："
+                }
+            ],
+            "regex": [
+                {
+                    "source": "error(\"Failed to parse summary section\")",
+                    "target": "error(\"無法解析摘要區段\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Example: folder1/folder2\")",
+                    "target": "setPlaceholder(\"範例：folder1/folder2\")"
+                },
+                {
+                    "source": "setName(\"Internal variables and functions\")",
+                    "target": "setName(\"內部變數與函式\")"
+                },
+                {
+                    "source": "setName(\"Syntax highlighting on desktop\")",
+                    "target": "setName(\"桌面版語法醒目提示\")"
+                },
+                {
+                    "source": "setName(\"Syntax highlighting on mobile\")",
+                    "target": "setName(\"行動版語法醒目提示\")"
+                },
+                {
+                    "source": "setName(\"Automatic jump to cursor\")",
+                    "target": "setName(\"自動跳到游標\")"
+                },
+                {
+                    "source": "setTooltip(\"Configure hotkey\")",
+                    "target": "setTooltip(\"設定快捷鍵\")"
+                },
+                {
+                    "source": "setTooltip(\"Move up\")",
+                    "target": "setTooltip(\"上移\")"
+                },
+                {
+                    "source": "setTooltip(\"Move down\")",
+                    "target": "setTooltip(\"下移\")"
+                },
+                {
+                    "source": "setPlaceholder(\"File regex\")",
+                    "target": "setPlaceholder(\"檔案正規表示式\")"
+                },
+                {
+                    "source": "setButtonText(\"Add new file regex\")",
+                    "target": "setButtonText(\"新增新的檔案正規表示式\")"
+                },
+                {
+                    "source": "setTooltip(\"Add additional file regex\")",
+                    "target": "setTooltip(\"新增額外的檔案正規表示式\")"
+                },
+                {
+                    "source": "setName(\"User script functions\")",
+                    "target": "setName(\"使用者指令碼函式\")"
+                },
+                {
+                    "source": "setName(\"Script files folder location\")",
+                    "target": "setName(\"指令碼檔案資料夾位置\")"
+                },
+                {
+                    "source": "setName(\"User script intellisense\")",
+                    "target": "setName(\"使用者指令碼智慧提示\")"
+                },
+                {
+                    "source": "setDesc(\"Determine how you'd like to have user script intellisense render. Note values will not render if not in the script.\")",
+                    "target": "setDesc(\"決定使用者指令碼智慧提示的呈現方式。請注意，不在指令碼中的值不會呈現。\")"
+                },
+                {
+                    "source": "setName(\"Shell binary location\")",
+                    "target": "setName(\"Shell 執行檔位置\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Example: /bin/bash, ...\")",
+                    "target": "setPlaceholder(\"範例：/bin/bash, ...\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Function name\")",
+                    "target": "setPlaceholder(\"函式名稱\")"
+                },
+                {
+                    "source": "setButtonText(\"Add new user function\")",
+                    "target": "setButtonText(\"新增使用者函式\")"
+                },
+                {
+                    "source": "setName(\"Ignore folders on file creation\")",
+                    "target": "setName(\"建立檔案時忽略資料夾\")"
+                },
+                {
+                    "source": "setButtonText(\"Add folder to ignore list\")",
+                    "target": "setButtonText(\"新增資料夾到忽略清單\")"
+                },
+                {
+                    "source": "setTooltip(\"Add folder to ignore on file creation\")",
+                    "target": "setTooltip(\"新增建立檔案時要忽略的資料夾\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Type text here\")",
+                    "target": "setPlaceholder(\"在此輸入文字\")"
+                },
+                {
+                    "source": "text:\"Check console for more information\"",
+                    "target": "text:\"請查看主控台取得更多資訊\""
+                },
+                {
+                    "source": "name: \"+n);for(var i=0,o=t;i<o.length;i++){var s=o[i];if(!r._nodeKindRegExp.test(s.docNodeKind))throw new Error(\"",
+                    "target": "name: \"+n);for(var i=0,o=t;i<o.length;i++){var s=o[i];if(!r._nodeKindRegExp.test(s.docNodeKind))throw new Error(\""
+                },
+                {
+                    "source": "name: \"+h:\"",
+                    "target": "name: \"+h:\""
+                },
+                {
+                    "source": "name: \",s);var l=this._tryReadSpacingAndNewlines(e);if(e.peekTokenKind()!==u.GreaterThan){var p=this._createFailureForToken(e,w.HtmlTagMissingGreaterThan,'Expecting a closing \"",
+                    "target": "name: \",s);var l=this._tryReadSpacingAndNewlines(e);if(e.peekTokenKind()!==u.GreaterThan){var p=this._createFailureForToken(e,w.HtmlTagMissingGreaterThan,'Expecting a closing \""
+                },
+                {
+                    "source": "text:\"Warning: \"",
+                    "target": "text:\"警告：\""
+                },
+                {
+                    "source": "name:\"Jump to next cursor location\"",
+                    "target": "name:\"跳轉到下一個游標位置\""
+                },
+                {
+                    "source": "name:`Insert ${i}`",
+                    "target": "name:`插入 ${i}`"
+                },
+                {
+                    "source": "name:`Create ${i}`",
+                    "target": "name:`建立 ${i}`"
+                },
+                {
+                    "source": "description:\"Output file path (relative to vault root)\"",
+                    "target": "description:\"輸出檔案路徑（相對於 vault 根目錄）\""
+                },
+                {
+                    "source": "description:\"Open the created file in the UI\"",
+                    "target": "description:\"在介面中開啟建立的檔案\""
+                },
+                {
+                    "source": "description:\"This module exposes the app instance. Prefer to use this over the global app instance.\"",
+                    "target": "description:\"此模組公開 app 實例。建議優先使用它，而不是全域 app 實例。\""
+                },
+                {
+                    "source": "description:\"This module exposes custom made scripts, written by yourself within the script file folder location\"",
+                    "target": "description:\"此模組會公開你在腳本檔案資料夾位置中自行撰寫的自訂腳本\""
+                },
+                {
+                    "source": "description:\"This module contains every internal function related to dates.\"",
+                    "target": "description:\"此模組包含所有與日期相關的內部函式。\""
+                },
+                {
+                    "source": "description:\"Retrieves the date.\"",
+                    "target": "description:\"取得日期。\""
+                },
+                {
+                    "source": "description:'The format for the date. Defaults to `\"YYYY-MM-DD\"`. Refer to the [Momentjs format reference](https://momentjs.com/docs/#/displaying/format/).'",
+                    "target": "description:'日期格式。預設為 `\"YYYY-MM-DD\"`。請參考 [Momentjs 格式說明](https://momentjs.com/docs/#/displaying/format/)。'"
+                },
+                {
+                    "source": "description:\"Duration to offset the date from. If a number is provided, duration will be added to the date in days. You can also specify the offset as a string using the ISO 8601 format.\"",
+                    "target": "description:\"要套用到日期的偏移量。若提供數字，會以天數加到日期上；也可以使用 ISO 8601 格式的字串指定偏移量。\""
+                },
+                {
+                    "source": "description:\"The date to use instead of today's date, e.g. set this to the note's title.\"",
+                    "target": "description:\"要用來取代今天日期的日期，例如可以設為筆記標題。\""
+                },
+                {
+                    "source": "description:\"The format for the reference date. Refer to the [Momentjs format reference](https://momentjs.com/docs/#/displaying/format/).\"",
+                    "target": "description:\"參考日期的格式。請參考 [Momentjs 格式參考](https://momentjs.com/docs/#/displaying/format/)。\""
+                },
+                {
+                    "source": "name:\"Date now\"",
+                    "target": "name:\"目前日期\""
+                },
+                {
+                    "source": "name:\"Date now with format\"",
+                    "target": "name:\"目前日期 with format\""
+                },
+                {
+                    "source": "name:\"Last week\"",
+                    "target": "name:\"上週\""
+                },
+                {
+                    "source": "name:\"Next week\"",
+                    "target": "name:\"下週\""
+                },
+                {
+                    "source": "name:\"Last month\"",
+                    "target": "name:\"上個月\""
+                },
+                {
+                    "source": "name:\"Next year\"",
+                    "target": "name:\"明年\""
+                },
+                {
+                    "source": "name:\"File's title date + 1 day (tomorrow)\"",
+                    "target": "name:\"檔案標題日期 + 1 天（明天）\""
+                },
+                {
+                    "source": "name:\"File's title date - 1 day (yesterday)\"",
+                    "target": "name:\"檔案標題日期 - 1 天（昨天）\""
+                },
+                {
+                    "source": "description:\"Retrieves tomorrow's date.\"",
+                    "target": "description:\"取得明天的日期。\""
+                },
+                {
+                    "source": "name:\"Date tomorrow\"",
+                    "target": "name:\"明天日期\""
+                },
+                {
+                    "source": "name:\"Date tomorrow with format\"",
+                    "target": "name:\"以指定格式取得明天日期\""
+                },
+                {
+                    "source": "description:\"Retrieves yesterday's date.\"",
+                    "target": "description:\"取得昨天的日期。\""
+                },
+                {
+                    "source": "name:\"Date yesterday\"",
+                    "target": "name:\"昨天日期\""
+                },
+                {
+                    "source": "name:\"Date yesterday with format\"",
+                    "target": "name:\"以指定格式取得昨天日期\""
+                },
+                {
+                    "source": "description:\"Week day number. If the locale assigns Monday as the first day of the week, `0` will be Monday, `-7` will be last week's day.\"",
+                    "target": "description:\"星期幾編號。如果地區設定以星期一為一週的第一天，`0` 代表星期一，`-7` 代表上週同一天。\""
+                },
+                {
+                    "source": "description:\"The reference date to use instead of today, e.g. set this to the note's title.\"",
+                    "target": "description:\"要用來取代今天的參考日期，例如可以設為筆記標題。\""
+                },
+                {
+                    "source": "name:\"This week's Monday\"",
+                    "target": "name:\"本週一\""
+                },
+                {
+                    "source": "name:\"Next Monday\"",
+                    "target": "name:\"下週一\""
+                },
+                {
+                    "source": "name:\"File's title Monday\"",
+                    "target": "name:\"檔案標題日期的星期一\""
+                },
+                {
+                    "source": "name:\"File's title previous Monday\"",
+                    "target": "name:\"檔案標題日期的前一個星期一\""
+                },
+                {
+                    "source": "name:\"Get start of month from note title\"",
+                    "target": "name:\"從筆記標題取得月份開始日期\""
+                },
+                {
+                    "source": "name:\"Get end of month from note title\"",
+                    "target": "name:\"從筆記標題取得月份結束日期\""
+                },
+                {
+                    "source": "description:\"This module contains every internal function related to files.\"",
+                    "target": "description:\"此模組包含所有與檔案相關的內部函式。\""
+                },
+                {
+                    "source": "name:\"Retrieve file content\"",
+                    "target": "name:\"取得檔案內容\""
+                },
+                {
+                    "source": "description:'The filename of the new file, defaults to \"Untitled\".'",
+                    "target": "description:'新檔案的檔名，預設為 \"Untitled\"。'"
+                },
+                {
+                    "source": "description:\"Whether to open or not the newly created file. Warning: if you use this option, since commands are executed asynchronously, the file can be opened first and then other commands are appended to that new file and not the previous file.\"",
+                    "target": "description:\"是否開啟新建立的檔案。警告：如果使用此選項，由於命令是非同步執行，檔案可能會先被開啟，接著其他命令會附加到新檔案，而不是原本的檔案。\""
+                },
+                {
+                    "source": "description:'The folder to put the new file in, defaults to Obsidian\\'",
+                    "target": "description:'要放入新檔案的資料夾，預設為 Obsidian\\'"
+                },
+                {
+                    "source": "name:\"File creation\"",
+                    "target": "name:\"建立檔案\""
+                },
+                {
+                    "source": "name:\"File creation and open created note\"",
+                    "target": "name:\"建立檔案並開啟新筆記\""
+                },
+                {
+                    "source": "name:\"File creation in current folder\"",
+                    "target": "name:\"建立檔案 in current folder\""
+                },
+                {
+                    "source": "name:\"File creation in specified folder with string path\"",
+                    "target": "name:\"用字串路徑在指定資料夾建立檔案\""
+                },
+                {
+                    "source": "name:\"File creation in specified folder with TFolder\"",
+                    "target": "name:\"用 TFolder 在指定資料夾建立檔案\""
+                },
+                {
+                    "source": "name:\"File creation and append link to current note\"",
+                    "target": "name:\"建立檔案並將連結附加到目前筆記\""
+                },
+                {
+                    "source": "description:\"Retrieves the current file's creation date.\"",
+                    "target": "description:\"取得目前檔案的建立日期。\""
+                },
+                {
+                    "source": "description:'The format for the date. Defaults to `\"YYYY-MM-DD HH:mm\"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).'",
+                    "target": "description:'日期格式。預設為 `\"YYYY-MM-DD HH:mm\"`。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。'"
+                },
+                {
+                    "source": "name:\"File creation date\"",
+                    "target": "name:\"建立檔案 date\""
+                },
+                {
+                    "source": "name:\"File creation date with format\"",
+                    "target": "name:\"以指定格式取得檔案建立日期\""
+                },
+                {
+                    "source": "description:`The order of the different cursors jump, e.g. it will jump from 1 to 2 to 3, and so on.\nIf you specify multiple tp.file.cursor with the same order, the editor will switch to multi-cursor.\n`",
+                    "target": "description:`不同游標的跳轉順序，例如會從 1 跳到 2，再跳到 3，以此類推。\n如果指定多個相同順序的 tp.file.cursor，編輯器會切換為多游標模式。\n`"
+                },
+                {
+                    "source": "name:\"File cursor\"",
+                    "target": "name:\"檔案游標\""
+                },
+                {
+                    "source": "name:\"File multi-cursor\"",
+                    "target": "name:\"檔案多游標\""
+                },
+                {
+                    "source": "description:\"Appends some content after the active cursor in the file.\"",
+                    "target": "description:\"在檔案中目前游標後方附加內容。\""
+                },
+                {
+                    "source": "description:\"The content to append after the active cursor.\"",
+                    "target": "description:\"要附加到目前游標後方的內容。\""
+                },
+                {
+                    "source": "name:\"File cursor append\"",
+                    "target": "name:\"檔案游標 append\""
+                },
+                {
+                    "source": "description:\"Check to see if a file exists by it's file path. The full path to the file, relative to the Vault and containing the extension, must be provided.\"",
+                    "target": "description:\"透過檔案路徑檢查檔案是否存在。必須提供相對於 Vault、且包含副檔名的完整檔案路徑。\""
+                },
+                {
+                    "source": "description:\"The full file path of the file we want to check existence for.\"",
+                    "target": "description:\"要檢查是否存在的檔案完整路徑。\""
+                },
+                {
+                    "source": "name:\"File existence\"",
+                    "target": "name:\"檔案是否存在\""
+                },
+                {
+                    "source": "name:\"File existence of current file\"",
+                    "target": "name:\"檔案是否存在 of current file\""
+                },
+                {
+                    "source": "description:\"Search for a file and returns its `TFile` instance.\"",
+                    "target": "description:\"搜尋檔案並回傳其 `TFile` 實例。\""
+                },
+                {
+                    "source": "description:\"The filename we want to search and resolve as a `TFile`.\"",
+                    "target": "description:\"我們要搜尋並解析為 `T檔案` 的檔名。\""
+                },
+                {
+                    "source": "name:\"File find TFile\"",
+                    "target": "name:\"尋找 TFile 檔案\""
+                },
+                {
+                    "source": "description:\"Retrieves the file's folder name.\"",
+                    "target": "description:\"取得檔案的資料夾名稱。\""
+                },
+                {
+                    "source": "description:\"If set to `true`, returns the vault-absolute path of the folder. If `false`, only returns the basename of the folder (the last part). Defaults to `false`.\"",
+                    "target": "description:\"如果設為 `true`，會回傳資料夾的 vault 絕對路徑。如果設為 `false`，只會回傳資料夾的基底名稱（最後一部分）。預設為 `false`。\""
+                },
+                {
+                    "source": "name:\"File folder (Folder)\"",
+                    "target": "name:\"檔案資料夾（Folder）\""
+                },
+                {
+                    "source": "name:\"File folder with vault-absolute path (Path/To/Folder)\"",
+                    "target": "name:\"用 vault 絕對路徑取得檔案資料夾 (Path/To/Folder)\""
+                },
+                {
+                    "source": "description:'The link to the file to include, e.g. `\"[[MyFile]]\"`, or a TFile object. Also supports sections or blocks inclusions.'",
+                    "target": "description:'要包含的檔案連結，例如 `\"[[MyFile]]\"`，或 TFile 物件。也支援包含區段或區塊。'"
+                },
+                {
+                    "source": "name:\"File include\"",
+                    "target": "name:\"包含檔案\""
+                },
+                {
+                    "source": "name:\"File include TFile\"",
+                    "target": "name:\"包含檔案 TFile\""
+                },
+                {
+                    "source": "name:\"File include section\"",
+                    "target": "name:\"包含檔案 section\""
+                },
+                {
+                    "source": "name:\"File include block\"",
+                    "target": "name:\"包含檔案 block\""
+                },
+                {
+                    "source": "description:\"Retrieves the file's last modification date.\"",
+                    "target": "description:\"取得檔案的最後修改日期。\""
+                },
+                {
+                    "source": "name:\"File last modified date\"",
+                    "target": "name:\"檔案最後修改日期\""
+                },
+                {
+                    "source": "name:\"File last modified date with format\"",
+                    "target": "name:\"以指定格式取得檔案最後修改日期\""
+                },
+                {
+                    "source": "description:\"Moves the file to the desired vault location.\"",
+                    "target": "description:\"將檔案移動到指定的 vault 位置。\""
+                },
+                {
+                    "source": "description:'The new vault relative path of the file, without the file extension. Note: the new path needs to include the folder and the filename, e.g. `\"/Notes/MyNote\"`.'",
+                    "target": "description:'檔案新的 vault 相對路徑，不含副檔名。注意：新路徑必須包含資料夾和檔名，例如 `\"/Notes/MyNote\"`。'"
+                },
+                {
+                    "source": "description:\"The file to move, defaults to the current file.\"",
+                    "target": "description:\"要移動的檔案，預設為目前檔案。\""
+                },
+                {
+                    "source": "name:\"File move\"",
+                    "target": "name:\"移動檔案\""
+                },
+                {
+                    "source": "name:\"File move and rename\"",
+                    "target": "name:\"移動檔案 and rename\""
+                },
+                {
+                    "source": "description:\"If set to `true`, only retrieves the vault's relative path.\"",
+                    "target": "description:\"如果設為 `true`，只取得 vault 的相對路徑。\""
+                },
+                {
+                    "source": "name:\"File path\"",
+                    "target": "name:\"檔案路徑\""
+                },
+                {
+                    "source": "name:\"File relative path (relative to vault root)\"",
+                    "target": "name:\"檔案相對路徑（相對於 vault 根目錄）\""
+                },
+                {
+                    "source": "description:\"Renames the file (keeps the same file extension).\"",
+                    "target": "description:\"重新命名檔案（保留相同副檔名）。\""
+                },
+                {
+                    "source": "description:\"The new file title.\"",
+                    "target": "description:\"新檔案標題。\""
+                },
+                {
+                    "source": "name:\"File rename\"",
+                    "target": "name:\"重新命名檔案\""
+                },
+                {
+                    "source": "name:\"File append a 2 to the file name\"",
+                    "target": "name:\"在檔名後附加 2\""
+                },
+                {
+                    "source": "description:\"Retrieves the active file's text selection.\"",
+                    "target": "description:\"取得目前檔案的文字選取範圍。\""
+                },
+                {
+                    "source": "name:\"File selection\"",
+                    "target": "name:\"檔案選取範圍\""
+                },
+                {
+                    "source": "description:\"Retrieves the file's tags (array of string).\"",
+                    "target": "description:\"取得檔案的標籤（字串陣列）。\""
+                },
+                {
+                    "source": "name:\"File tags\"",
+                    "target": "name:\"檔案標籤\""
+                },
+                {
+                    "source": "description:\"Retrieves the file's title.\"",
+                    "target": "description:\"取得檔案標題。\""
+                },
+                {
+                    "source": "name:\"File title\"",
+                    "target": "name:\"檔案標題\""
+                },
+                {
+                    "source": "name:\"Strip the Zettelkasten ID of title (if space separated)\"",
+                    "target": "name:\"移除標題中的 Zettelkasten ID（若以空格分隔）\""
+                },
+                {
+                    "source": "description:\"This modules exposes all the frontmatter variables of a file as variables.\"",
+                    "target": "description:\"此模組會將檔案中的所有 frontmatter 變數公開為變數。\""
+                },
+                {
+                    "source": "description:\"This module exposes all the functions and classes from the Obsidian API.\"",
+                    "target": "description:\"此模組公開 Obsidian API 中的所有函式與類別。\""
+                },
+                {
+                    "source": "description:\"Retrieves the clipboard's content.\"",
+                    "target": "description:\"取得剪貼簿內容。\""
+                },
+                {
+                    "source": "description:\"Spawns a prompt modal and returns the user's input.\"",
+                    "target": "description:\"開啟提示彈窗並回傳使用者輸入。\""
+                },
+                {
+                    "source": "description:\"Text placed above the input field.\"",
+                    "target": "description:\"放在輸入欄位上方的文字。\""
+                },
+                {
+                    "source": "description:\"A default value for the input field.\"",
+                    "target": "description:\"輸入欄位的預設值。\""
+                },
+                {
+                    "source": "description:\"Throws an error if the prompt is canceled, instead of returning a `null` value.\"",
+                    "target": "description:\"如果取消提示，會拋出錯誤，而不是回傳 `null` 值。\""
+                },
+                {
+                    "source": "description:\"If set to `true`, the input field will be a multiline textarea. Defaults to `false`.\"",
+                    "target": "description:\"如果設為 `true`，輸入欄位會變成多行文字區域。預設為 `false`。\""
+                },
+                {
+                    "source": "name:\"Prompt with default value\"",
+                    "target": "name:\"帶預設值的提示\""
+                },
+                {
+                    "source": "name:\"Multiline prompt\"",
+                    "target": "name:\"多行提示\""
+                },
+                {
+                    "source": "name:\"Reuse output from prompt\"",
+                    "target": "name:\"重複使用提示輸出\""
+                },
+                {
+                    "source": "description:\"Placeholder string of the prompt.\"",
+                    "target": "description:\"提示的佔位符字串。\""
+                },
+                {
+                    "source": "description:\"Default value to initialize the suggester with.\"",
+                    "target": "description:\"建議選單初始化時使用的預設值。\""
+                },
+                {
+                    "source": "name:\"Suggester with mapping function (same as above example)\"",
+                    "target": "name:\"帶對應函式的建議選單（同上例）\""
+                },
+                {
+                    "source": "name:\"Suggester for files\"",
+                    "target": "name:\"檔案建議選單\""
+                },
+                {
+                    "source": "name:\"Suggester for tags\"",
+                    "target": "name:\"標籤建議選單\""
+                },
+                {
+                    "source": "name:\"Reuse value from suggester\"",
+                    "target": "name:\"重複使用建議選單的值\""
+                },
+                {
+                    "source": "name:\"Default value for the suggester\"",
+                    "target": "name:\"建議選單的預設值\""
+                },
+                {
+                    "source": "description:\"Text placed at the top of the modal.\"",
+                    "target": "description:\"放在彈窗頂端的文字。\""
+                },
+                {
+                    "source": "description:\"Default values to initialize the suggester with.\"",
+                    "target": "description:\"建議選單初始化時使用的預設值。\""
+                },
+                {
+                    "source": "name:\"Multi-suggester with mapping function (same as above example)\"",
+                    "target": "name:\"帶對應函式的多選建議選單（同上例）\""
+                },
+                {
+                    "source": "name:\"Multi-suggester for files\"",
+                    "target": "name:\"檔案多選建議選單\""
+                },
+                {
+                    "source": "name:\"Multi-suggester for tags\"",
+                    "target": "name:\"標籤多選建議選單\""
+                },
+                {
+                    "source": "name:\"Reuse value from multi-suggester\"",
+                    "target": "name:\"重複使用多選建議選單的值\""
+                },
+                {
+                    "source": "description:\"This modules contains every internal function related to the web (making web requests).\"",
+                    "target": "description:\"此模組包含所有與網路相關的內部函式（發送網路請求）。\""
+                },
+                {
+                    "source": "description:\"Retrieves and parses the daily quote from `https://github.com/Zachatoo/quotes-database` as a callout.\"",
+                    "target": "description:\"從 `https://github.com/Zachatoo/quotes-database` 取得並解析每日引言，作為 callout。\""
+                },
+                {
+                    "source": "name:\"Daily quote\"",
+                    "target": "name:\"每日引言\""
+                },
+                {
+                    "source": "description:\"Gets a random image from `https://unsplash.com/`.\"",
+                    "target": "description:\"從 `https://unsplash.com/` 取得一張隨機圖片。\""
+                },
+                {
+                    "source": "description:\"Image size in the format `<width>x<height>`.\"",
+                    "target": "description:\"圖片大小，格式為 `<width>x<height>`。\""
+                },
+                {
+                    "source": "description:\"Limits selection to photos matching a search term. Multiple search terms can be passed separated by a comma.\"",
+                    "target": "description:\"只選取符合搜尋字詞的照片。可用逗號分隔多個搜尋字詞。\""
+                },
+                {
+                    "source": "description:\"Optional argument to include the specified size in the image link markdown. Defaults to false.\"",
+                    "target": "description:\"選用引數，用於在圖片連結 Markdown 中包含指定尺寸。預設為 false。\""
+                },
+                {
+                    "source": "name:\"Random picture\"",
+                    "target": "name:\"隨機圖片\""
+                },
+                {
+                    "source": "name:\"Random picture with size\"",
+                    "target": "name:\"指定大小的隨機圖片\""
+                },
+                {
+                    "source": "name:\"Random picture with size and query\"",
+                    "target": "name:\"指定大小與查詢的隨機圖片\""
+                },
+                {
+                    "source": "description:\"Makes a HTTP request to the specified URL. Optionally, you can specify a path to extract specific data from the response.\"",
+                    "target": "description:\"向指定 URL 發送 HTTP 請求。也可以指定路徑，從回應中提取特定資料。\""
+                },
+                {
+                    "source": "description:\"The URL to which the HTTP request will be made.\"",
+                    "target": "description:\"HTTP 請求要發送到的 URL。\""
+                },
+                {
+                    "source": "description:\"A path within the response JSON to extract specific data.\"",
+                    "target": "description:\"回應 JSON 中用來提取特定資料的路徑。\""
+                },
+                {
+                    "source": "name:\"Simple request\"",
+                    "target": "name:\"簡單請求\""
+                },
+                {
+                    "source": "name:\"Request with path\"",
+                    "target": "name:\"帶路徑的請求\""
+                },
+                {
+                    "source": "text:\"Parameter list:\"",
+                    "target": "text:\"參數清單：\""
+                }
+            ]
+        }
+    }
+}
