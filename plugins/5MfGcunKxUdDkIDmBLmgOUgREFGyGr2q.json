@@ -1,0 +1,375 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "line-arrange",
+        "version": "1.7.0",
+        "title": "[zh-tw] Line Arrange",
+        "description": "Line Arrange Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.7.0",
+        "author": "Chico",
+        "updatedAt": 1778618419004
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "English (en)",
+                    "target": "英文 (en)"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "French (fr)",
+                    "target": "法文 (fr)"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "German (de)",
+                    "target": "德文 (de)"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Spanish (es)",
+                    "target": "西班牙文 (es)"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Custom…",
+                    "target": "自訂…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[LineArrange] CSS change → invalidated caches",
+                    "target": "[LineArrange] CSS 變更 → 快取已失效"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Controls how text is compared when sorting (affects lexisort).",
+                    "target": "控制排序時文字的比較方式（會影響字典序排序）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Preserve Blanks (during line sorting)",
+                    "target": "保留空白（排序行時）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Text Locale",
+                    "target": "文字地區設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Custom Locale",
+                    "target": "自訂地區設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. en-GB",
+                    "target": "e.g. en-GB"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Line Arrange",
+                    "target": "行排列"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Lexisort lines",
+                    "target": "依字典序排序行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Sort lines",
+                    "target": "排序行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Shuffle lines",
+                    "target": "隨機排列行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Reverse lines",
+                    "target": "反轉行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Lexisort blocks",
+                    "target": "依字典序排序區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Sort blocks",
+                    "target": "排序區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Shuffle blocks",
+                    "target": "隨機排列區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Reverse blocks",
+                    "target": "反轉區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Lexisort headings",
+                    "target": "依字典序排序標題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Sort headings",
+                    "target": "排序標題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Shuffle headings",
+                    "target": "隨機排列標題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Reverse headings",
+                    "target": "反轉標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Lexisort lines",
+                    "target": "依字典序排序行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Reverse lines",
+                    "target": "反轉行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Sort lines",
+                    "target": "排序行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Shuffle lines",
+                    "target": "隨機排列行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Lexisort blocks",
+                    "target": "依字典序排序區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Reverse blocks",
+                    "target": "反轉區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Sort blocks",
+                    "target": "排序區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Shuffle blocks",
+                    "target": "隨機排列區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Lexisort headings",
+                    "target": "依字典序排序標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Sort headings",
+                    "target": "排序標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Shuffle headings",
+                    "target": "隨機排列標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Reverse headings",
+                    "target": "反轉標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Sorting Options",
+                    "target": "排序選項"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "log(\"[LineArrange] CSS change \\u2192 invalidated caches\")",
+                    "target": "log(\"[LineArrange] CSS change \\u2192 invalidated caches\")"
+                },
+                {
+                    "source": "setTitle(\"Line Arrange\")",
+                    "target": "setTitle(\"行排列\")"
+                },
+                {
+                    "source": "setTitle(\"Lexisort lines\")",
+                    "target": "setTitle(\"依字典序排序行\")"
+                },
+                {
+                    "source": "setTitle(\"Sort lines\")",
+                    "target": "setTitle(\"排序行\")"
+                },
+                {
+                    "source": "setTitle(\"Shuffle lines\")",
+                    "target": "setTitle(\"隨機排列行\")"
+                },
+                {
+                    "source": "setTitle(\"Reverse lines\")",
+                    "target": "setTitle(\"反轉行\")"
+                },
+                {
+                    "source": "setTitle(\"Lexisort blocks\")",
+                    "target": "setTitle(\"依字典序排序區塊\")"
+                },
+                {
+                    "source": "setTitle(\"Sort blocks\")",
+                    "target": "setTitle(\"排序區塊\")"
+                },
+                {
+                    "source": "setTitle(\"Shuffle blocks\")",
+                    "target": "setTitle(\"隨機排列區塊\")"
+                },
+                {
+                    "source": "setTitle(\"Reverse blocks\")",
+                    "target": "setTitle(\"反轉區塊\")"
+                },
+                {
+                    "source": "setTitle(\"Lexisort headings\")",
+                    "target": "setTitle(\"依字典序排序標題\")"
+                },
+                {
+                    "source": "setTitle(\"Sort headings\")",
+                    "target": "setTitle(\"排序標題\")"
+                },
+                {
+                    "source": "setTitle(\"Shuffle headings\")",
+                    "target": "setTitle(\"隨機排列標題\")"
+                },
+                {
+                    "source": "setTitle(\"Reverse headings\")",
+                    "target": "setTitle(\"反轉標題\")"
+                },
+                {
+                    "source": "setName(\"Preserve Blanks (during line sorting)\")",
+                    "target": "setName(\"保留空白（排序行時）\")"
+                },
+                {
+                    "source": "setName(\"Text Locale\")",
+                    "target": "setName(\"文字地區設定\")"
+                },
+                {
+                    "source": "setDesc(\"Controls how text is compared when sorting (affects lexisort).\")",
+                    "target": "setDesc(\"控制排序時文字的比較方式（會影響字典序排序）。\")"
+                },
+                {
+                    "source": "setName(\"Custom Locale\")",
+                    "target": "setName(\"自訂地區設定\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. en-GB\")",
+                    "target": "setPlaceholder(\"e.g. en-GB\")"
+                },
+                {
+                    "source": "name: \"Lexisort lines\"",
+                    "target": "name: \"依字典序排序行\""
+                },
+                {
+                    "source": "name: \"Reverse lines\"",
+                    "target": "name: \"反轉行\""
+                },
+                {
+                    "source": "name: \"Sort lines\"",
+                    "target": "name: \"排序行\""
+                },
+                {
+                    "source": "name: \"Shuffle lines\"",
+                    "target": "name: \"隨機排列行\""
+                },
+                {
+                    "source": "name: \"Lexisort blocks\"",
+                    "target": "name: \"依字典序排序區塊\""
+                },
+                {
+                    "source": "name: \"Reverse blocks\"",
+                    "target": "name: \"反轉區塊\""
+                },
+                {
+                    "source": "name: \"Sort blocks\"",
+                    "target": "name: \"排序區塊\""
+                },
+                {
+                    "source": "name: \"Shuffle blocks\"",
+                    "target": "name: \"隨機排列區塊\""
+                },
+                {
+                    "source": "name: \"Lexisort headings\"",
+                    "target": "name: \"依字典序排序標題\""
+                },
+                {
+                    "source": "name: \"Sort headings\"",
+                    "target": "name: \"排序標題\""
+                },
+                {
+                    "source": "name: \"Shuffle headings\"",
+                    "target": "name: \"隨機排列標題\""
+                },
+                {
+                    "source": "name: \"Reverse headings\"",
+                    "target": "name: \"反轉標題\""
+                },
+                {
+                    "source": "textContent = \"X\"",
+                    "target": "textContent = \"X\""
+                },
+                {
+                    "source": "text: \"Sorting Options\"",
+                    "target": "text: \"排序選項\""
+                }
+            ]
+        }
+    }
+}
