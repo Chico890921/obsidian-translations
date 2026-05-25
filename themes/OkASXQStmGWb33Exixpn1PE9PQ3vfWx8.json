@@ -1,0 +1,434 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "theme": "Phycat",
+        "language": "zh-tw",
+        "version": "0.2.9",
+        "supportedVersions": "0.2.9",
+        "title": "Phycat",
+        "description": "Phycat 繁體中文翻譯與微調",
+        "author": "Chico"
+    },
+    "dict": [
+        {
+            "type": "name",
+            "source": "🐱 Phycat theme Info & Help",
+            "target": "🐱 Phycat 主題資訊與說明"
+        },
+        {
+            "type": "markdown",
+            "source": "true",
+            "target": "true"
+        },
+        {
+            "type": "description",
+            "source": "### Phycat Theme \\n A vibrant, glassmorphism aesthetic theme for Obsidian. \\n\\n [Github Repository](https://github.com/sumruler/obsidian-theme-phycat) | [Report Issue](https://github.com/sumruler/obsidian-theme-phycat/issues)| [Support](https://www.phycat.cn/donate.html)",
+            "target": "### Phycat 主題 \\n 一款充滿活力、帶有玻璃擬態美感的 Obsidian 主題。 \\n\\n [Github 儲存庫](https://github.com/sumruler/obsidian-theme-phycat) | [回報問題](https://github.com/sumruler/obsidian-theme-phycat/issues)| [支持作者](https://www.phycat.cn/donate.html)"
+        },
+        {
+            "type": "description",
+            "source": "**💡 Font Recommendation:** \\n This theme is optimized for [**LXGW WenKai**](https://github.com/lxgw/LxgwWenKai). Please install it for the best experience.",
+            "target": "**💡 字體建議：** \\n 這個主題已針對 [**LXGW WenKai**](https://github.com/lxgw/LxgwWenKai) 最佳化。建議安裝以獲得最佳體驗。"
+        },
+        {
+            "type": "description",
+            "source": "**🪟 Pro Tip: Independent Settings View** \\n Press `Ctrl+P` and search for `Style Settings: Show style settings view`. This opens the settings in a separate pane instead of a modal, preventing it from blocking your view.",
+            "target": "**🪟 小技巧：獨立設定檢視** \\n 按下 `Ctrl+P` 並搜尋 `Style Settings: Show style settings view`。這會將設定開在獨立窗格中，而不是彈出視窗，避免遮住目前畫面。"
+        },
+        {
+            "type": "description",
+            "source": "**🧩 Plugin Recommendation: Hover Editor** \\n It is highly recommended to install the [**Hover Editor**](https://github.com/nothingislost/obsidian-hover-editor) plugin. You can turn the settings pane mentioned above into a floating window to tweak the theme in real-time.",
+            "target": "**🧩 外掛推薦：Hover Editor** \\n 強烈建議安裝 [**Hover Editor**](https://github.com/nothingislost/obsidian-hover-editor) 外掛。你可以把上面提到的設定窗格變成浮動視窗，方便即時微調主題。"
+        },
+        {
+            "type": "name",
+            "source": "🎨 Phycat color setting",
+            "target": "🎨 Phycat 配色設定"
+        },
+        {
+            "type": "title",
+            "source": "Color Scheme (Light Mode)",
+            "target": "配色方案（淺色模式）"
+        },
+        {
+            "type": "description",
+            "source": "Choose your preferred light mode flavor.",
+            "target": "選擇你偏好的淺色模式風格。"
+        },
+        {
+            "type": "label",
+            "source": "🌸 Sakura (Pink / Default)",
+            "target": "🌸 Sakura（粉紅／預設）"
+        },
+        {
+            "type": "label",
+            "source": "🌊 Mint (Mint Blue)",
+            "target": "🌊 Mint（薄荷藍）"
+        },
+        {
+            "type": "label",
+            "source": "☁️ Sky (Clear Blue)",
+            "target": "☁️ Sky（晴空藍）"
+        },
+        {
+            "type": "label",
+            "source": "🌲 Forest (Natural Green)",
+            "target": "🌲 Forest（自然綠）"
+        },
+        {
+            "type": "label",
+            "source": "🟣 Mauve (Orchid Purple)",
+            "target": "🟣 Mauve（蘭花紫）"
+        },
+        {
+            "type": "label",
+            "source": "🌅 Golden Hour (Warm Amber)",
+            "target": "🌅 Golden Hour（暖琥珀）"
+        },
+        {
+            "type": "label",
+            "source": "🍒 Cheery (Vibrant Red)",
+            "target": "🍒 Cheery（鮮明紅）"
+        },
+        {
+            "type": "label",
+            "source": "⚓ Prussian (Deep Blue)",
+            "target": "⚓ Prussian（深藍）"
+        },
+        {
+            "type": "title",
+            "source": "Color Scheme (Dark Mode)",
+            "target": "配色方案（深色模式）"
+        },
+        {
+            "type": "description",
+            "source": "Choose your preferred dark mode flavor.",
+            "target": "選擇你偏好的深色模式風格。"
+        },
+        {
+            "type": "label",
+            "source": "🧛 Vampire (Dracula / Default)",
+            "target": "🧛 Vampire（Dracula／預設）"
+        },
+        {
+            "type": "label",
+            "source": "🌌 Abyss (Midnight Blue)",
+            "target": "🌌 Abyss（午夜藍）"
+        },
+        {
+            "type": "label",
+            "source": "☢️ Radiation (Toxic Green)",
+            "target": "☢️ Radiation（毒性綠）"
+        },
+        {
+            "type": "name",
+            "source": "🗂️ Phycat card Layout",
+            "target": "🗂️ Phycat 卡片版面配置"
+        },
+        {
+            "type": "title",
+            "source": "Interface Layout",
+            "target": "介面版面配置"
+        },
+        {
+            "type": "description",
+            "source": "Switch between the default flat layout and the modern card layout.",
+            "target": "在預設的扁平版面與現代卡片版面之間切換。"
+        },
+        {
+            "type": "label",
+            "source": "🔲 Default (Flat)",
+            "target": "🔲 Default（扁平）"
+        },
+        {
+            "type": "label",
+            "source": "🃏 Cards (Floating)",
+            "target": "🃏 Cards（浮動）"
+        },
+        {
+            "type": "title",
+            "source": "启用彩虹文件夹 (Rainbow Folders)",
+            "target": "啟用彩虹資料夾（Rainbow Folders）"
+        },
+        {
+            "type": "description",
+            "source": "启用后，侧边栏文件列表将变为多彩嵌套的玻璃容器风格，并带有动态类型图标。关闭则恢复 Obsidian 默认样式。",
+            "target": "啟用後，側邊欄檔案列表會變成多彩巢狀的玻璃容器風格，並帶有動態類型圖示。關閉則恢復 Obsidian 預設樣式。"
+        },
+        {
+            "type": "title",
+            "source": "背景色混合比例（Card模式生效）",
+            "target": "背景色混合比例（Card 模式生效）"
+        },
+        {
+            "type": "description",
+            "source": "调整背景色中白色的混合程度（数值越大越白，默认为 90）。",
+            "target": "調整背景色中白色的混合程度（數值越大越白，預設為 90）。"
+        },
+        {
+            "type": "name",
+            "source": "📏 Phycat spacing setting",
+            "target": "📏 Phycat 間距設定"
+        },
+        {
+            "type": "title",
+            "source": "File line width",
+            "target": "檔案行寬"
+        },
+        {
+            "type": "title",
+            "source": "Letter spacing",
+            "target": "字距"
+        },
+        {
+            "type": "title",
+            "source": "Line height",
+            "target": "行高"
+        },
+        {
+            "type": "title",
+            "source": "code Line height",
+            "target": "程式碼行高"
+        },
+        {
+            "type": "title",
+            "source": "blockquote Line height",
+            "target": "引用區塊行高"
+        },
+        {
+            "type": "title",
+            "source": "Table Line height",
+            "target": "表格行高"
+        },
+        {
+            "type": "title",
+            "source": "Paragraph spacing (Reading mode)",
+            "target": "段落間距（閱讀模式）"
+        },
+        {
+            "type": "name",
+            "source": "📑 Phycat heading setting",
+            "target": "📑 Phycat 標題設定"
+        },
+        {
+            "type": "title",
+            "source": "Headings Colors",
+            "target": "標題顏色"
+        },
+        {
+            "type": "title",
+            "source": "H1 light color",
+            "target": "H1 淺色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H1 dark color",
+            "target": "H1 深色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H2 light color",
+            "target": "H2 淺色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H2 dark color",
+            "target": "H2 深色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H3 light color",
+            "target": "H3 淺色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H3 dark color",
+            "target": "H3 深色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H4 light color",
+            "target": "H4 淺色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H4 dark color",
+            "target": "H4 深色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H5 light color",
+            "target": "H5 淺色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H5 dark color",
+            "target": "H5 深色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H6 light color",
+            "target": "H6 淺色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H6 dark color",
+            "target": "H6 深色模式顏色"
+        },
+        {
+            "type": "title",
+            "source": "H1 title",
+            "target": "H1 標題"
+        },
+        {
+            "type": "title",
+            "source": "H1 Alignment",
+            "target": "H1 對齊方式"
+        },
+        {
+            "type": "description",
+            "source": "Choose whether H1 titles are centered or left-aligned.",
+            "target": "選擇 H1 標題置中或靠左對齊。"
+        },
+        {
+            "type": "title",
+            "source": "H1 font size",
+            "target": "H1 字體大小"
+        },
+        {
+            "type": "title",
+            "source": "H2 title",
+            "target": "H2 標題"
+        },
+        {
+            "type": "title",
+            "source": "Select Style",
+            "target": "選擇樣式"
+        },
+        {
+            "type": "description",
+            "source": "Choose between the original capsule style or the new twin pillars style.",
+            "target": "選擇原本的膠囊樣式，或新的雙柱樣式。"
+        },
+        {
+            "type": "label",
+            "source": "🏛️ Twin Pillars (New)",
+            "target": "🏛️ Twin Pillars（新版）"
+        },
+        {
+            "type": "label",
+            "source": "💊 Capsule (Original)",
+            "target": "💊 Capsule（原版）"
+        },
+        {
+            "type": "description",
+            "source": "Choose between the original glass capsule style or the new neon twin pillars style.",
+            "target": "選擇原本的玻璃膠囊樣式，或新的霓虹雙柱樣式。"
+        },
+        {
+            "type": "label",
+            "source": "🏙️ Neon Twin (New)",
+            "target": "🏙️ Neon Twin（新版）"
+        },
+        {
+            "type": "label",
+            "source": "🔮 Glass Capsule (Original)",
+            "target": "🔮 Glass Capsule（原版）"
+        },
+        {
+            "type": "title",
+            "source": "H2 font size",
+            "target": "H2 字體大小"
+        },
+        {
+            "type": "title",
+            "source": "H2 spacing start",
+            "target": "H2 起始間距"
+        },
+        {
+            "type": "title",
+            "source": "H2 spacing end",
+            "target": "H2 結束間距"
+        },
+        {
+            "type": "title",
+            "source": "H3 title",
+            "target": "H3 標題"
+        },
+        {
+            "type": "title",
+            "source": "H3 font size",
+            "target": "H3 字體大小"
+        },
+        {
+            "type": "title",
+            "source": "H3 spacing start",
+            "target": "H3 起始間距"
+        },
+        {
+            "type": "title",
+            "source": "H3 spacing end",
+            "target": "H3 結束間距"
+        },
+        {
+            "type": "title",
+            "source": "H4 title",
+            "target": "H4 標題"
+        },
+        {
+            "type": "title",
+            "source": "H4 font size",
+            "target": "H4 字體大小"
+        },
+        {
+            "type": "title",
+            "source": "H4 spacing start",
+            "target": "H4 起始間距"
+        },
+        {
+            "type": "title",
+            "source": "H4 spacing end",
+            "target": "H4 結束間距"
+        },
+        {
+            "type": "title",
+            "source": "H5 title",
+            "target": "H5 標題"
+        },
+        {
+            "type": "title",
+            "source": "H5 font size",
+            "target": "H5 字體大小"
+        },
+        {
+            "type": "title",
+            "source": "H5 spacing start",
+            "target": "H5 起始間距"
+        },
+        {
+            "type": "title",
+            "source": "H5 spacing end",
+            "target": "H5 結束間距"
+        },
+        {
+            "type": "title",
+            "source": "H6 title",
+            "target": "H6 標題"
+        },
+        {
+            "type": "title",
+            "source": "H6 font size",
+            "target": "H6 字體大小"
+        },
+        {
+            "type": "title",
+            "source": "H6 spacing start",
+            "target": "H6 起始間距"
+        },
+        {
+            "type": "title",
+            "source": "H6 spacing end",
+            "target": "H6 結束間距"
+        }
+    ]
+}
