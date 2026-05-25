@@ -1,0 +1,262 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "cmdr",
+        "version": "0.5.5",
+        "title": "[zh-tw] Commander",
+        "description": "Commander Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "0.5.5",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Commander",
+                    "target": "Commander"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error: dictionary locale not found",
+                    "target": "錯誤：找不到字典語系"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "No Icon",
+                    "target": "無圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Use a column based layout instead of the default row. This makes it easier to arrange the Commands.",
+                    "target": "使用欄式版面取代預設的列式版面，讓命令更容易排列。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Change the Height of each Button inside the Mobile Toolbar (in px).",
+                    "target": "變更行動工具列中每個按鈕的高度（單位為 px）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Change the Width of each Button inside the Mobile Toolbar (in px).",
+                    "target": "變更行動工具列中每個按鈕的寬度（單位為 px）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Toolbar Row Count",
+                    "target": "工具列列數"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Column Layout",
+                    "target": "欄式版面"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Bottom Offset",
+                    "target": "底部偏移"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Button Height",
+                    "target": "按鈕高度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Button Width",
+                    "target": "按鈕寬度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Toolbar Extra Spacing",
+                    "target": "工具列額外間距"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Macro Builder",
+                    "target": "巨集建構器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Reset to default - Requires a restart",
+                    "target": "重設為預設值 - 需要重新啟動"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "🎊 Could not load worker",
+                    "target": "🎊 無法載入 worker"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "If the default Icon doesn't appear, you might have to restart Obsidian.",
+                    "target": "如果預設圖示沒有出現，你可能需要重新啟動 Obsidian。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Edit Macro",
+                    "target": "編輯巨集"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Delete",
+                    "target": "刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "cmdr clickable-icon",
+                    "target": "cmdr clickable-icon"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Core Plugin",
+                    "target": "核心插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Delay in milliseconds",
+                    "target": "延遲時間，單位為毫秒"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Show the \"Add Command\" Button in every Menu.",
+                    "target": "在每個選單中顯示「新增命令」按鈕。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Delay",
+                    "target": "延遲"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Macros",
+                    "target": "巨集"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Macro Name",
+                    "target": "巨集名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Custom Icons",
+                    "target": "自訂圖示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Advanced Settings",
+                    "target": "進階設定"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "error(\"Error: dictionary locale not found\",Ct.moment.locale()),bt&&bt[t]||gt[t]}var ne=class extends Ve.FuzzySuggestModal{constructor(e){super(e.app);this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"Choose a Command to add\")",
+                    "target": "error(\"錯誤：找不到字典語系\",Ct.moment.locale()),bt&&bt[t]||gt[t]}var ne=class extends Ve.FuzzySuggestModal{constructor(e){super(e.app);this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"選擇要新增的命令\")"
+                },
+                {
+                    "source": "setName(\"Toolbar Row Count\")",
+                    "target": "setName(\"工具列列數\")"
+                },
+                {
+                    "source": "setName(\"Column Layout\")",
+                    "target": "setName(\"欄式版面\")"
+                },
+                {
+                    "source": "setDesc(\"Use a column based layout instead of the default row. This makes it easier to arrange the Commands.\")",
+                    "target": "setDesc(\"使用欄式版面取代預設的列式版面，讓命令更容易排列。\")"
+                },
+                {
+                    "source": "setName(\"Bottom Offset\")",
+                    "target": "setName(\"底部偏移\")"
+                },
+                {
+                    "source": "setDesc(`ID: ${a.id}`)",
+                    "target": "setDesc(`ID: ${a.id}`)"
+                },
+                {
+                    "source": "setButtonText(\"No Icon\")",
+                    "target": "setButtonText(\"無圖示\")"
+                },
+                {
+                    "source": "setTooltip(\"Reset to default - Requires a restart\")",
+                    "target": "setTooltip(\"重設為預設值 - 需要重新啟動\")"
+                },
+                {
+                    "source": "Notice(\"If the default Icon doesn't appear, you might have to restart Obsidian.\")",
+                    "target": "Notice(\"如果預設圖示沒有出現，你可能需要重新啟動 Obsidian。\")"
+                },
+                {
+                    "source": "setName(\"Button Height\")",
+                    "target": "setName(\"按鈕高度\")"
+                },
+                {
+                    "source": "setDesc(\"Change the Height of each Button inside the Mobile Toolbar (in px).\")",
+                    "target": "setDesc(\"變更行動工具列中每個按鈕的高度（單位為 px）。\")"
+                },
+                {
+                    "source": "setName(\"Button Width\")",
+                    "target": "setName(\"按鈕寬度\")"
+                },
+                {
+                    "source": "setDesc(\"Change the Width of each Button inside the Mobile Toolbar (in px).\")",
+                    "target": "setDesc(\"變更行動工具列中每個按鈕的寬度（單位為 px）。\")"
+                },
+                {
+                    "source": "setName(\"Toolbar Extra Spacing\")",
+                    "target": "setName(\"工具列額外間距\")"
+                },
+                {
+                    "source": "setText(\"Macro Builder\")",
+                    "target": "setText(\"巨集建構器\")"
+                },
+                {
+                    "source": "text:\"Custom Icons\"",
+                    "target": "text:\"自訂圖示\""
+                },
+                {
+                    "source": "text:\"Advanced Settings\"",
+                    "target": "text:\"進階設定\""
+                },
+                {
+                    "source": "description:\"Core Plugin\"",
+                    "target": "description:\"核心插件\""
+                },
+                {
+                    "source": "description:\"Delay in milliseconds\"",
+                    "target": "description:\"延遲時間，單位為毫秒\""
+                },
+                {
+                    "source": "description:'Show the \"Add Command\" Button in every Menu.'",
+                    "target": "description:'在每個選單中顯示「新增命令」按鈕。'"
+                }
+            ]
+        }
+    }
+}
