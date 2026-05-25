@@ -89,5 +89,18 @@
         "created_at": "2026-05-25T03:42:56.889Z",
         "updated_at": "2026-05-25T03:42:56.889Z",
         "type": "plugin"
+    },
+    {
+        "id": "pZiXTXqMidGfmeYPqI8_ibwNT1400CH8",
+        "plugin": "cmdr",
+        "language": "zh-tw",
+        "version": "0.5.5",
+        "supported_versions": "0.5.5",
+        "title": "[zh-tw] Commander",
+        "description": "Commander Localization & Tweaks",
+        "hash": "755fdc5f755fdc5f755fdc5f755fdc5f",
+        "created_at": "2026-05-25T03:43:04.543Z",
+        "updated_at": "2026-05-25T03:43:04.543Z",
+        "type": "plugin"
     }
 ]
