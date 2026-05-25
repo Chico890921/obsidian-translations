@@ -1,0 +1,808 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "better-plugins-manager",
+        "version": "1.0.0",
+        "title": "[zh-tw] Better Plugins Manager",
+        "description": "Better Plugins Manager 繁體中文化與微調",
+        "language": "zh-tw",
+        "supportedVersions": "1.0.0",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-troubleshoot-page manager-troubleshoot",
+                    "target": "manager-troubleshoot-page manager-troubleshoot"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-troubleshoot__actions manager-troubleshoot__actions--secondary",
+                    "target": "manager-troubleshoot__actions manager-troubleshoot__actions--secondary"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-hidden-toolbar ribbon-manager-toolbar",
+                    "target": "manager-hidden-toolbar ribbon-manager-toolbar"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-food manager-header__stats",
+                    "target": "manager-food manager-header__stats"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-section manager-section--actions",
+                    "target": "manager-section manager-section--actions"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-section manager-section--filters",
+                    "target": "manager-section manager-section--filters"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-food bpm-mobile-header__stats",
+                    "target": "manager-food bpm-mobile-header__stats"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-hidden-card manager-hidden-separator-card",
+                    "target": "manager-hidden-card manager-hidden-separator-card"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-source-page__toolbar manager-source-page__toolbar--actions",
+                    "target": "manager-source-page__toolbar manager-source-page__toolbar--actions"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-source-card__control-group manager-source-card__control-group--strategy",
+                    "target": "manager-source-card__control-group manager-source-card__control-group--strategy"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-ribbon-page ribbon-manager-modal",
+                    "target": "manager-ribbon-page ribbon-manager-modal"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-transfer-card__header manager-transfer-card__header--split",
+                    "target": "manager-transfer-card__header manager-transfer-card__header--split"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-transfer-list manager-transfer-download-list",
+                    "target": "manager-transfer-list manager-transfer-download-list"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-transfer-selection-grid manager-transfer-download-grid",
+                    "target": "manager-transfer-selection-grid manager-transfer-download-grid"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-transfer-card manager-transfer-import-card",
+                    "target": "manager-transfer-card manager-transfer-import-card"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-transfer-dropzone manager-transfer-dropzone--compact",
+                    "target": "manager-transfer-dropzone manager-transfer-dropzone--compact"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-transfer-card manager-transfer-package-card",
+                    "target": "manager-transfer-card manager-transfer-package-card"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "troubleshoot-list enabled",
+                    "target": "troubleshoot-list enabled"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-setting-tag__container manager-taxonomy-setting",
+                    "target": "manager-setting-tag__container manager-taxonomy-setting"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-setting-tag__header manager-taxonomy-setting__header",
+                    "target": "manager-setting-tag__header manager-taxonomy-setting__header"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-setting-tag__header-main manager-taxonomy-setting__header-main",
+                    "target": "manager-setting-tag__header-main manager-taxonomy-setting__header-main"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-setting-tag__header-text manager-taxonomy-setting__header-text",
+                    "target": "manager-setting-tag__header-text manager-taxonomy-setting__header-text"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-setting-tag__stats manager-taxonomy-setting__stats",
+                    "target": "manager-setting-tag__stats manager-taxonomy-setting__stats"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-setting-tag__list manager-taxonomy-setting__list",
+                    "target": "manager-setting-tag__list manager-taxonomy-setting__list"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-setting-tag__meta manager-taxonomy-setting__meta",
+                    "target": "manager-setting-tag__meta manager-taxonomy-setting__meta"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-setting-group__container manager-taxonomy-setting",
+                    "target": "manager-setting-group__container manager-taxonomy-setting"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "打开目录失败",
+                    "target": "開啟目錄失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] Failed to load repository cache",
+                    "target": "[BPM] Failed to load repository cache"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] Failed to write repository cache",
+                    "target": "[BPM] Failed to write repository cache"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] Failed to fetch community plugin list",
+                    "target": "[BPM] Failed to fetch community plugin list"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] Failed to create report:",
+                    "target": "[BPM] Failed to create report:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] fallback to raw tag failed",
+                    "target": "[BPM] fallback to raw tag failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "fetch versions in modal failed",
+                    "target": "在彈窗中取得版本失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "检查更新时出错:",
+                    "target": "檢查更新時發生錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "检查单个插件更新时出错:",
+                    "target": "檢查單一插件更新時發生錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] reload manifests failed",
+                    "target": "[BPM] reload manifests failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] export transfer package failed",
+                    "target": "[BPM] export transfer package failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] import transfer package parse failed",
+                    "target": "[BPM] import transfer package parse failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] transfer batch download failed",
+                    "target": "[BPM] transfer batch download failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] import transfer package failed",
+                    "target": "[BPM] import transfer package failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] import transfer plugin configs failed",
+                    "target": "[BPM] import transfer plugin configs failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] Failed to read community-plugins.json:",
+                    "target": "[BPM] Failed to read community-plugins.json:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] Failed to write community-plugins.json:",
+                    "target": "[BPM] Failed to write community-plugins.json:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] Failed to load workspace config",
+                    "target": "[BPM] Failed to load workspace config"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] startup check updates failed",
+                    "target": "[BPM] startup check updates failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] beta source check failed",
+                    "target": "[BPM] beta source check failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] beta source auto update failed",
+                    "target": "[BPM] beta source auto update failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] checkUpdates error",
+                    "target": "[BPM] checkUpdates error"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] checkUpdateForPlugin error",
+                    "target": "[BPM] checkUpdateForPlugin error"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "获取官方插件 stats 失败",
+                    "target": "取得官方插件 stats 失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] fetchGithubVersions error",
+                    "target": "[BPM] fetchGithubVersions error"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] install from GitHub",
+                    "target": "[BPM] install from GitHub"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] release assets picked",
+                    "target": "[BPM] release assets picked"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] fallback to raw tag",
+                    "target": "[BPM] fallback to raw tag"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] manifest parsed",
+                    "target": "[BPM] manifest parsed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] writing files",
+                    "target": "[BPM] writing files"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] manifest after reload",
+                    "target": "[BPM] manifest after reload"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] install complete",
+                    "target": "[BPM] install complete"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] render showData manifests size:",
+                    "target": "[BPM] render showData manifests size:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] render showData uniquePlugins:",
+                    "target": "[BPM] render showData uniquePlugins:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] render showData before loop, children:",
+                    "target": "[BPM] render showData before loop, children:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "children before add:",
+                    "target": "children before add:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] render showData after loop, cards:",
+                    "target": "[BPM] render showData after loop, cards:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "ids:",
+                    "target": "ids:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] reloadShowData end, children after render:",
+                    "target": "[BPM] reloadShowData end, children after render:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] Running migration",
+                    "target": "[BPM] Running migration"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] Workspace config save skipped; ribbon layout is stored only in BPM data.",
+                    "target": "[BPM] Workspace config save skipped; ribbon layout is stored only in BPM data."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] Detected workspace config change, reloading...",
+                    "target": "[BPM] Detected workspace config change, reloading..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "padding: 2px; border-radius: 2px 0 0 2px; color: #fff; background: #5B5B5B;",
+                    "target": "padding: 2px; border-radius: 2px 0 0 2px; color: #fff; background: #5B5B5B;"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "padding: 2px; border-radius: 0 2px 2px 0; color: #fff; background: #409EFF;",
+                    "target": "padding: 2px; border-radius: 0 2px 2px 0; color: #fff; background: #409EFF;"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] checkUpdates start, total manifests:",
+                    "target": "[BPM] checkUpdates start, total manifests:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] update official match",
+                    "target": "[BPM] update official match"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] update github match",
+                    "target": "[BPM] update github match"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] update unknown source",
+                    "target": "[BPM] update unknown source"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] single update official",
+                    "target": "[BPM] single update official"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] single update github",
+                    "target": "[BPM] single update github"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "[BPM] single update unknown source",
+                    "target": "[BPM] single update unknown source"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[BPM] Community plugin list request failed",
+                    "target": "[BPM] Community plugin list request failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[BPM] Failed to migrate exported plugin note",
+                    "target": "[BPM] Failed to migrate exported plugin note"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-tag-editor__badge is-assigned",
+                    "target": "manager-tag-editor__badge is-assigned"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-transfer-download__button manager-transfer-download__button--secondary",
+                    "target": "manager-transfer-download__button manager-transfer-download__button--secondary"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-setting-tag__header-icon manager-taxonomy-setting__header-icon",
+                    "target": "manager-setting-tag__header-icon manager-taxonomy-setting__header-icon"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-setting-tag__title manager-taxonomy-setting__title",
+                    "target": "manager-setting-tag__title manager-taxonomy-setting__title"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-setting-tag__desc manager-taxonomy-setting__desc",
+                    "target": "manager-setting-tag__desc manager-taxonomy-setting__desc"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-setting-tag__stat manager-taxonomy-setting__stat",
+                    "target": "manager-setting-tag__stat manager-taxonomy-setting__stat"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-setting-tag__stat-icon manager-taxonomy-setting__stat-icon",
+                    "target": "manager-setting-tag__stat-icon manager-taxonomy-setting__stat-icon"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-setting-tag__stat-label manager-taxonomy-setting__stat-label",
+                    "target": "manager-setting-tag__stat-label manager-taxonomy-setting__stat-label"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-setting-tag__stat-value manager-taxonomy-setting__stat-value",
+                    "target": "manager-setting-tag__stat-value manager-taxonomy-setting__stat-value"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-setting-tag__id manager-taxonomy-setting__id",
+                    "target": "manager-setting-tag__id manager-taxonomy-setting__id"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "clickable-icon takeover-title__close",
+                    "target": "clickable-icon takeover-title__close"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Default delay",
+                    "target": "預設延遲"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "🔌",
+                    "target": "🔌"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "error(\"\\u6253\\u5F00\\u76EE\\u5F55\\u5931\\u8D25\", e);\n    new import_obsidian.Notice(manager.translator.t(\"\\u901A\\u7528_\\u5931\\u8D25_\\u6587\\u672C\")",
+                    "target": "error(\"\\u6253\\u5F00\\u76EE\\u5F55\\u5931\\u8D25\", e);\n    new import_obsidian.Notice(manager.translator.t(\"\\u901A\\u7528_\\u5931\\u8D25_\\u6587\\u672C\")"
+                },
+                {
+                    "source": "setName(`\\u2705 ${this.t(\"\\u6392\\u67E5_\\u5B8C\\u6210_\\u6807\\u9898\")}`)",
+                    "target": "setName(`\\u2705 ${this.t(\"\\u6392\\u67E5_\\u5B8C\\u6210_\\u6807\\u9898\")}`)"
+                },
+                {
+                    "source": "setButtonText(`\\u{1F4CA} ${this.t(\"\\u6392\\u67E5_\\u751F\\u6210\\u62A5\\u544A_\\u6309\\u94AE\")}`)",
+                    "target": "setButtonText(`\\u{1F4CA} ${this.t(\"\\u6392\\u67E5_\\u751F\\u6210\\u62A5\\u544A_\\u6309\\u94AE\")}`)"
+                },
+                {
+                    "source": "Notice(`${this.t(\"\\u6392\\u67E5_\\u62A5\\u544A\\u5DF2\\u751F\\u6210_\\u901A\\u77E5\")}: ${fileName}`)",
+                    "target": "Notice(`${this.t(\"\\u6392\\u67E5_\\u62A5\\u544A\\u5DF2\\u751F\\u6210_\\u901A\\u77E5\")}: ${fileName}`)"
+                },
+                {
+                    "source": "error(\"[BPM] Failed to create report:\", e);\n      new import_obsidian9.Notice(this.t(\"\\u6392\\u67E5_\\u62A5\\u544A\\u5931\\u8D25_\\u901A\\u77E5\")",
+                    "target": "error(\"[BPM] Failed to create report:\", e);\n      new import_obsidian9.Notice(this.t(\"\\u6392\\u67E5_\\u62A5\\u544A\\u5931\\u8D25_\\u901A\\u77E5\")"
+                },
+                {
+                    "source": "error(\"fetch versions in modal failed\", e);\n        new import_obsidian12.Notice(t(\"\\u7BA1\\u7406\\u5668_\\u9009\\u62E9\\u7248\\u672C_\\u83B7\\u53D6\\u5931\\u8D25\\u63D0\\u793A\")",
+                    "target": "error(\"fetch versions in modal failed\", e);\n        new import_obsidian12.Notice(t(\"\\u7BA1\\u7406\\u5668_\\u9009\\u62E9\\u7248\\u672C_\\u83B7\\u53D6\\u5931\\u8D25\\u63D0\\u793A\")"
+                },
+                {
+                    "source": "error(\"\\u68C0\\u67E5\\u66F4\\u65B0\\u65F6\\u51FA\\u9519:\", error);\n      new import_obsidian15.Notice(this.manager.translator.t(\"\\u901A\\u77E5_\\u68C0\\u67E5\\u66F4\\u65B0\\u5931\\u8D25\")",
+                    "target": "error(\"\\u68C0\\u67E5\\u66F4\\u65B0\\u65F6\\u51FA\\u9519:\", error);\n      new import_obsidian15.Notice(this.manager.translator.t(\"\\u901A\\u77E5_\\u68C0\\u67E5\\u66F4\\u65B0\\u5931\\u8D25\")"
+                },
+                {
+                    "source": "error(\"\\u68C0\\u67E5\\u5355\\u4E2A\\u63D2\\u4EF6\\u66F4\\u65B0\\u65F6\\u51FA\\u9519:\", error);\n      new import_obsidian15.Notice(this.manager.translator.t(\"\\u901A\\u77E5_\\u68C0\\u67E5\\u66F4\\u65B0\\u5931\\u8D25\")",
+                    "target": "error(\"\\u68C0\\u67E5\\u5355\\u4E2A\\u63D2\\u4EF6\\u66F4\\u65B0\\u65F6\\u51FA\\u9519:\", error);\n      new import_obsidian15.Notice(this.manager.translator.t(\"\\u901A\\u77E5_\\u68C0\\u67E5\\u66F4\\u65B0\\u5931\\u8D25\")"
+                },
+                {
+                    "source": "error(\"[BPM] reload manifests failed\", e);\n        new import_obsidian15.Notice(this.manager.translator.t(\"\\u7BA1\\u7406\\u5668_\\u91CD\\u8F7D\\u63D2\\u4EF6_\\u5931\\u8D25\\u63D0\\u793A\")",
+                    "target": "error(\"[BPM] reload manifests failed\", e);\n        new import_obsidian15.Notice(this.manager.translator.t(\"\\u7BA1\\u7406\\u5668_\\u91CD\\u8F7D\\u63D2\\u4EF6_\\u5931\\u8D25\\u63D0\\u793A\")"
+                },
+                {
+                    "source": "log(\"[BPM] render showData after loop, cards:\", cards.length, \"ids:\", cards.map((el) => el.getAttribute(\"data-plugin-id\")",
+                    "target": "log(\"[BPM] render showData after loop, cards:\", cards.length, \"ids:\", cards.map((el) => el.getAttribute(\"data-plugin-id\")"
+                },
+                {
+                    "source": "setDesc(`${repoIsValid ? repo : t(\"\\u7BA1\\u7406\\u5668_\\u5B89\\u88C5_\\u4ED3\\u5E93_\\u5360\\u4F4D\")} \\xB7 ${typeLabel} \\xB7 ${versionLabel}`)",
+                    "target": "setDesc(`${repoIsValid ? repo : t(\"\\u7BA1\\u7406\\u5668_\\u5B89\\u88C5_\\u4ED3\\u5E93_\\u5360\\u4F4D\")} \\xB7 ${typeLabel} \\xB7 ${versionLabel}`)"
+                },
+                {
+                    "source": "error(\"[BPM] export transfer package failed\", error);\n      new import_obsidian15.Notice(t(\"\\u5BFC\\u5165\\u5BFC\\u51FA_\\u5BFC\\u51FA\\u5931\\u8D25\")",
+                    "target": "error(\"[BPM] export transfer package failed\", error);\n      new import_obsidian15.Notice(t(\"\\u5BFC\\u5165\\u5BFC\\u51FA_\\u5BFC\\u51FA\\u5931\\u8D25\")"
+                },
+                {
+                    "source": "error(\"[BPM] import transfer package parse failed\", error);\n      new import_obsidian15.Notice(t(\"\\u5BFC\\u5165\\u5BFC\\u51FA_\\u6587\\u4EF6\\u65E0\\u6548\")",
+                    "target": "error(\"[BPM] import transfer package parse failed\", error);\n      new import_obsidian15.Notice(t(\"\\u5BFC\\u5165\\u5BFC\\u51FA_\\u6587\\u4EF6\\u65E0\\u6548\")"
+                },
+                {
+                    "source": "error(\"[BPM] transfer batch download failed\", error);\n      new import_obsidian15.Notice(t(\"\\u5BFC\\u5165\\u5BFC\\u51FA_\\u4E0B\\u8F7D\\u5931\\u8D25\")",
+                    "target": "error(\"[BPM] transfer batch download failed\", error);\n      new import_obsidian15.Notice(t(\"\\u5BFC\\u5165\\u5BFC\\u51FA_\\u4E0B\\u8F7D\\u5931\\u8D25\")"
+                },
+                {
+                    "source": "error(\"[BPM] import transfer package failed\", error);\n      new import_obsidian15.Notice(t(\"\\u5BFC\\u5165\\u5BFC\\u51FA_\\u5BFC\\u5165\\u5931\\u8D25\")",
+                    "target": "error(\"[BPM] import transfer package failed\", error);\n      new import_obsidian15.Notice(t(\"\\u5BFC\\u5165\\u5BFC\\u51FA_\\u5BFC\\u5165\\u5931\\u8D25\")"
+                },
+                {
+                    "source": "error(\"[BPM] import transfer plugin configs failed\", error);\n      new import_obsidian15.Notice(t(\"\\u5BFC\\u5165\\u5BFC\\u51FA_\\u5BFC\\u5165\\u5931\\u8D25\")",
+                    "target": "error(\"[BPM] import transfer plugin configs failed\", error);\n      new import_obsidian15.Notice(t(\"\\u5BFC\\u5165\\u5BFC\\u51FA_\\u5BFC\\u5165\\u5931\\u8D25\")"
+                },
+                {
+                    "source": "setButtonText(`\\u{1F44E} ${this.t(\"\\u6392\\u67E5_\\u95EE\\u9898\\u8FD8\\u5728_\\u6309\\u94AE\")}`)",
+                    "target": "setButtonText(`\\u{1F44E} ${this.t(\"\\u6392\\u67E5_\\u95EE\\u9898\\u8FD8\\u5728_\\u6309\\u94AE\")}`)"
+                },
+                {
+                    "source": "setButtonText(`\\u{1F44D} ${this.t(\"\\u6392\\u67E5_\\u95EE\\u9898\\u6D88\\u5931_\\u6309\\u94AE\")}`)",
+                    "target": "setButtonText(`\\u{1F44D} ${this.t(\"\\u6392\\u67E5_\\u95EE\\u9898\\u6D88\\u5931_\\u6309\\u94AE\")}`)"
+                },
+                {
+                    "source": "setButtonText(`\\u{1F504} ${this.t(\"\\u6392\\u67E5_\\u91CD\\u542F_\\u6309\\u94AE\")}`)",
+                    "target": "setButtonText(`\\u{1F504} ${this.t(\"\\u6392\\u67E5_\\u91CD\\u542F_\\u6309\\u94AE\")}`)"
+                },
+                {
+                    "source": "setButtonText(`\\u21A9\\uFE0F ${this.t(\"\\u6392\\u67E5_\\u64A4\\u9500_\\u6309\\u94AE\")}`)",
+                    "target": "setButtonText(`\\u21A9\\uFE0F ${this.t(\"\\u6392\\u67E5_\\u64A4\\u9500_\\u6309\\u94AE\")}`)"
+                },
+                {
+                    "source": "setButtonText(`\\u{1F6AA} ${this.t(\"\\u6392\\u67E5_\\u9000\\u51FA_\\u6309\\u94AE\")}`)",
+                    "target": "setButtonText(`\\u{1F6AA} ${this.t(\"\\u6392\\u67E5_\\u9000\\u51FA_\\u6309\\u94AE\")}`)"
+                },
+                {
+                    "source": "setDesc(`${this.manager.translator.t(\"\\u8BBE\\u7F6E_\\u57FA\\u7840\\u8BBE\\u7F6E_GITHUB_TOKEN_\\u63CF\\u8FF0\")} (${this.manager.translator.t(\"\\u8BBE\\u7F6E_\\u57FA\\u7840\\u8BBE\\u7F6E_GITHUB_TOKEN_\\u6743\\u9650\")})`)",
+                    "target": "setDesc(`${this.manager.translator.t(\"\\u8BBE\\u7F6E_\\u57FA\\u7840\\u8BBE\\u7F6E_GITHUB_TOKEN_\\u63CF\\u8FF0\")} (${this.manager.translator.t(\"\\u8BBE\\u7F6E_\\u57FA\\u7840\\u8BBE\\u7F6E_GITHUB_TOKEN_\\u6743\\u9650\")})`)"
+                },
+                {
+                    "source": "log(`%c ${this.manifest.name} %c v${this.manifest.version} `, `padding: 2px; border-radius: 2px 0 0 2px; color: #fff; background: #5B5B5B;`, `padding: 2px; border-radius: 0 2px 2px 0; color: #fff; background: #409EFF;`)",
+                    "target": "log(`%c ${this.manifest.name} %c v${this.manifest.version} `, `padding: 2px; border-radius: 2px 0 0 2px; color: #fff; background: #5B5B5B;`, `padding: 2px; border-radius: 0 2px 2px 0; color: #fff; background: #409EFF;`)"
+                },
+                {
+                    "source": "log(`[BPM] Drag-to-hide triggered for: ${label} (${targetId})`)",
+                    "target": "log(`[BPM] Drag-to-hide triggered for: ${label} (${targetId})`)"
+                },
+                {
+                    "source": "error(\"[BPM] startup check updates failed\", e);\n      if (!this.settings.GITHUB_TOKEN) {\n        new import_obsidian29.Notice(this.translator.t(\"\\u901A\\u77E5_\\u68C0\\u67E5\\u66F4\\u65B0\\u5931\\u8D25_\\u5EFA\\u8BAEToken\")",
+                    "target": "error(\"[BPM] startup check updates failed\", e);\n      if (!this.settings.GITHUB_TOKEN) {\n        new import_obsidian29.Notice(this.translator.t(\"\\u901A\\u77E5_\\u68C0\\u67E5\\u66F4\\u65B0\\u5931\\u8D25_\\u5EFA\\u8BAEToken\")"
+                },
+                {
+                    "source": "error(\"\\u83B7\\u53D6\\u5B98\\u65B9\\u63D2\\u4EF6 stats \\u5931\\u8D25\", e);\n      return {};\n    }\n  }\n  getLatestVersionFromStats(entry) {\n    const versions = Object.keys(entry || {}).filter((k) => k !== \"downloads\" && k !== \"updated\")",
+                    "target": "error(\"\\u83B7\\u53D6\\u5B98\\u65B9\\u63D2\\u4EF6 stats \\u5931\\u8D25\", e);\n      return {};\n    }\n  }\n  getLatestVersionFromStats(entry) {\n    const versions = Object.keys(entry || {}).filter((k) => k !== \"downloads\" && k !== \"updated\")"
+                },
+                {
+                    "source": "name = \"\"",
+                    "target": "name = \"\""
+                },
+                {
+                    "source": "text: `${value}`",
+                    "target": "text: `${value}`"
+                },
+                {
+                    "source": "text: `[${plugin.version}]`",
+                    "target": "text: `[${plugin.version}]`"
+                },
+                {
+                    "source": "text: `${d.time}s`",
+                    "target": "text: `${d.time}s`"
+                },
+                {
+                    "source": "text: `\\u{1F3AF} ${this.t(\"\\u62A5\\u544A_\\u53D1\\u73B0\\u95EE\\u9898\\u63D2\\u4EF6\")}`",
+                    "target": "text: `\\u{1F3AF} ${this.t(\"\\u62A5\\u544A_\\u53D1\\u73B0\\u95EE\\u9898\\u63D2\\u4EF6\")}`"
+                },
+                {
+                    "source": "text: \"\\u{1F50C}\"",
+                    "target": "text: \"\\u{1F50C}\""
+                },
+                {
+                    "source": "text: `v${plugin1Version}`",
+                    "target": "text: `v${plugin1Version}`"
+                },
+                {
+                    "source": "text: `\\u{1F4CB} ${this.t(\"\\u6392\\u67E5_\\u5EFA\\u8BAE_\\u6807\\u9898\")}`",
+                    "target": "text: `\\u{1F4CB} ${this.t(\"\\u6392\\u67E5_\\u5EFA\\u8BAE_\\u6807\\u9898\")}`"
+                },
+                {
+                    "source": "text: `\\u{1F3AF} ${this.t(\"\\u6392\\u67E5_\\u53D1\\u73B0\\u51B2\\u7A81_\\u6587\\u672C\")}`",
+                    "target": "text: `\\u{1F3AF} ${this.t(\"\\u6392\\u67E5_\\u53D1\\u73B0\\u51B2\\u7A81_\\u6587\\u672C\")}`"
+                },
+                {
+                    "source": "text: \"\\u26A1\"",
+                    "target": "text: \"\\u26A1\""
+                },
+                {
+                    "source": "text: `v${plugin2Version}`",
+                    "target": "text: `v${plugin2Version}`"
+                },
+                {
+                    "source": "text: `${this.t(\"\\u6392\\u67E5_\\u603B\\u6B65\\u9AA4_\\u6587\\u672C\")}: ${this.state.currentStep}`",
+                    "target": "text: `${this.t(\"\\u6392\\u67E5_\\u603B\\u6B65\\u9AA4_\\u6587\\u672C\")}: ${this.state.currentStep}`"
+                },
+                {
+                    "source": "text: `${index + 1}`",
+                    "target": "text: `${index + 1}`"
+                },
+                {
+                    "source": "text: `${this.t(\"\\u6392\\u67E5_\\u6B65\\u9AA4_\\u6587\\u672C\")} ${this.state.currentStep}`",
+                    "target": "text: `${this.t(\"\\u6392\\u67E5_\\u6B65\\u9AA4_\\u6587\\u672C\")} ${this.state.currentStep}`"
+                },
+                {
+                    "source": "text: `${this.t(\"\\u6392\\u67E5_\\u5F53\\u524D\\u6D4B\\u8BD5\")}: ${description}`",
+                    "target": "text: `${this.t(\"\\u6392\\u67E5_\\u5F53\\u524D\\u6D4B\\u8BD5\")}: ${description}`"
+                },
+                {
+                    "source": "text: `${title} (${pluginIds.length})`",
+                    "target": "text: `${title} (${pluginIds.length})`"
+                },
+                {
+                    "source": "text: \"\\u2192\"",
+                    "target": "text: \"\\u2192\""
+                },
+                {
+                    "source": "text: \"BPM\"",
+                    "target": "text: \"BPM\""
+                },
+                {
+                    "source": "page = \"plugins\"",
+                    "target": "page = \"plugins\""
+                },
+                {
+                    "source": "text: `${count}`",
+                    "target": "text: `${count}`"
+                },
+                {
+                    "source": "text: `${this.t(\"\\u6392\\u67E5_\\u5F53\\u524D\\u542F\\u7528_\\u6587\\u672C\")}: ${enabledPlugins.length}`",
+                    "target": "text: `${this.t(\"\\u6392\\u67E5_\\u5F53\\u524D\\u542F\\u7528_\\u6587\\u672C\")}: ${enabledPlugins.length}`"
+                },
+                {
+                    "source": "text: `${this.t(\"\\u6392\\u67E5_\\u9884\\u8BA1\\u6B65\\u9AA4_\\u6587\\u672C\")}: ~${estimatedSteps}`",
+                    "target": "text: `${this.t(\"\\u6392\\u67E5_\\u9884\\u8BA1\\u6B65\\u9AA4_\\u6587\\u672C\")}: ~${estimatedSteps}`"
+                },
+                {
+                    "source": "text: `${this.t(\"\\u6392\\u67E5_\\u5F53\\u524D\\u6D4B\\u8BD5\")}: ${this.lastDescription}`",
+                    "target": "text: `${this.t(\"\\u6392\\u67E5_\\u5F53\\u524D\\u6D4B\\u8BD5\")}: ${this.lastDescription}`"
+                },
+                {
+                    "source": "text: `${percent}%`",
+                    "target": "text: `${percent}%`"
+                },
+                {
+                    "source": "text: `\\u2705 ${this.t(\"\\u6392\\u67E5_\\u5DF2\\u542F\\u7528_\\u6587\\u672C\")} (${currentEnabled.length})`",
+                    "target": "text: `\\u2705 ${this.t(\"\\u6392\\u67E5_\\u5DF2\\u542F\\u7528_\\u6587\\u672C\")} (${currentEnabled.length})`"
+                },
+                {
+                    "source": "name: `${mp.enabled ? manager.translator.t(\"\\u901A\\u7528_\\u5173\\u95ED_\\u6587\\u672C\") : manager.translator.t(\"\\u901A\\u7528_\\u5F00\\u542F_\\u6587\\u672C\")} ${mp.name} `",
+                    "target": "name: `${mp.enabled ? manager.translator.t(\"\\u901A\\u7528_\\u5173\\u95ED_\\u6587\\u672C\") : manager.translator.t(\"\\u901A\\u7528_\\u5F00\\u542F_\\u6587\\u672C\")} ${mp.name} `"
+                },
+                {
+                    "source": "name: `${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u4E00\\u952E\\u542F\\u7528_\\u6587\\u672C\")} ${group.name}`",
+                    "target": "name: `${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u4E00\\u952E\\u542F\\u7528_\\u6587\\u672C\")} ${group.name}`"
+                },
+                {
+                    "source": "name: `${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u4E00\\u952E\\u7981\\u7528_\\u6587\\u672C\")} ${group.name}`",
+                    "target": "name: `${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u4E00\\u952E\\u7981\\u7528_\\u6587\\u672C\")} ${group.name}`"
+                },
+                {
+                    "source": "name: `${enabled ? manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u7981\\u7528_\\u6587\\u672C\") : manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u542F\\u7528_\\u6587\\u672C\")} ${plugin.name} `",
+                    "target": "name: `${enabled ? manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u7981\\u7528_\\u6587\\u672C\") : manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u542F\\u7528_\\u6587\\u672C\")} ${plugin.name} `"
+                },
+                {
+                    "source": "name: `${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u4E00\\u952E\\u542F\\u7528_\\u6587\\u672C\")} ${group.name} ${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u5206\\u7EC4_\\u6587\\u672C\")}`",
+                    "target": "name: `${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u4E00\\u952E\\u542F\\u7528_\\u6587\\u672C\")} ${group.name} ${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u5206\\u7EC4_\\u6587\\u672C\")}`"
+                },
+                {
+                    "source": "name: `${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u4E00\\u952E\\u7981\\u7528_\\u6587\\u672C\")} ${group.name} ${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u5206\\u7EC4_\\u6587\\u672C\")}`",
+                    "target": "name: `${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u4E00\\u952E\\u7981\\u7528_\\u6587\\u672C\")} ${group.name} ${manager.translator.t(\"\\u547D\\u4EE4\\u884C_\\u5206\\u7EC4_\\u6587\\u672C\")}`"
+                },
+                {
+                    "source": "text: `#${index + 1}`",
+                    "target": "text: `#${index + 1}`"
+                },
+                {
+                    "source": "text: `${this.takeoverCandidates.length}`",
+                    "target": "text: `${this.takeoverCandidates.length}`"
+                }
+            ]
+        }
+    }
+}
