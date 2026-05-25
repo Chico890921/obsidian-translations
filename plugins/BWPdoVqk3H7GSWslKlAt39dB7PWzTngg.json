@@ -1,0 +1,1995 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "editing-toolbar",
+        "version": "4.0.8",
+        "title": "[zh-tw] Editing Toolbar",
+        "description": "Editing Toolbar Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "4.0.8",
+        "author": "Chico",
+        "updatedAt": 1778618220947
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<svg  width=\"14\" height=\"14\"  version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" enable-background=\"new 0 0 1024 1024\" xml:space=\"preserve\"><path fill=\"#666\" d=\"M510.29 14.13 q17.09 -15.07 40.2 -14.07 q23.12 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.1 q-23.62 2.01 -41.71 -13.07 q-18.08 -15.08 -20.09 -38.19 q-2.01 -23.12 13.06 -41.21 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.67 -386.92 q-15.07 -17.09 -13.56 -40.7 q1.51 -23.62 19.59 -38.7 ZM81.17 14.13 q17.08 -15.07 40.19 -14.07 q23.11 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.6 q-23.61 2.51 -41.7 -12.57 q-18.09 -15.08 -20.1 -38.69 q-2.01 -23.62 13.06 -41.71 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.66 -386.92 q-15.08 -17.09 -13.57 -40.7 q1.51 -23.62 19.6 -38.7 Z\"/></svg>",
+                    "target": "<svg  width=\"14\" height=\"14\"  version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" enable-background=\"new 0 0 1024 1024\" xml:space=\"preserve\"><path fill=\"#666\" d=\"M510.29 14.13 q17.09 -15.07 40.2 -14.07 q23.12 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.1 q-23.62 2.01 -41.71 -13.07 q-18.08 -15.08 -20.09 -38.19 q-2.01 -23.12 13.06 -41.21 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.67 -386.92 q-15.07 -17.09 -13.56 -40.7 q1.51 -23.62 19.59 -38.7 ZM81.17 14.13 q17.08 -15.07 40.19 -14.07 q23.11 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.6 q-23.61 2.51 -41.7 -12.57 q-18.09 -15.08 -20.1 -38.69 q-2.01 -23.62 13.06 -41.71 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.66 -386.92 q-15.08 -17.09 -13.57 -40.7 q1.51 -23.62 19.6 -38.7 Z\"/></svg>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M18 6L6 18M6 6l12 12\"/></svg>",
+                    "target": "<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M18 6L6 18M6 6l12 12\"/></svg>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M12 1v6m0 6v6M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24M1 12h6m6 0h6M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24\"/></svg>",
+                    "target": "<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M12 1v6m0 6v6M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24M1 12h6m6 0h6M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24\"/></svg>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"/><path d=\"M3 3v5h5\"/><path d=\"M12 7v5l4 2\"/></svg>",
+                    "target": "<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"/><path d=\"M3 3v5h5\"/><path d=\"M12 7v5l4 2\"/></svg>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z\"/></svg>",
+                    "target": "<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z\"/></svg>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M18 6L6 18M6 6l12 12\"/></svg>",
+                    "target": "<svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M18 6L6 18M6 6l12 12\"/></svg>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "已复制!",
+                    "target": "已複製!"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "All commands",
+                    "target": "所有指令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Main menu",
+                    "target": "主選單"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Main Menu Commands",
+                    "target": "主選單指令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "┌ Light",
+                    "target": "┌ 亮色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "├ Dark",
+                    "target": "├ 深色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "├ Vibrant",
+                    "target": "├ 鮮明"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "├ Minimal",
+                    "target": "├ 極簡"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "└ Elegant",
+                    "target": "└ 優雅"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "---- Admonitions ----",
+                    "target": "---- Admonitions ----"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "---- Default ----",
+                    "target": "---- 預設 ----"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "editing-toolbar-ai-card-summary editing-toolbar-ai-card-summary-static",
+                    "target": "editing-toolbar-ai-card-summary editing-toolbar-ai-card-summary-static"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "加载 Changelog 时出错:",
+                    "target": "載入 Changelog 時出錯:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "修复命令ID时出错:",
+                    "target": "修復命令ID時出錯:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "恢复默认设置时出错:",
+                    "target": "恢復預設設定時出錯:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to copy code: ",
+                    "target": "複製程式碼失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "无法复制文本: ",
+                    "target": "無法複製文字: "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to copy: ",
+                    "target": "無法複製: "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Import error: ",
+                    "target": "匯入錯誤: "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to set icon:",
+                    "target": "無法設定圖示:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Cannot find parent dataset id",
+                    "target": "找不到父層 dataset id"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Cannot find parent command:",
+                    "target": "找不到父層指令："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Invalid drag operation",
+                    "target": "無效的拖曳操作"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Cannot find target dataset id",
+                    "target": "找不到目標 dataset id"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Cannot find target command:",
+                    "target": "找不到目標指令："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to read clipboard:",
+                    "target": "無法讀取剪貼簿："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "读取剪贴板失败:",
+                    "target": "讀取剪貼簿失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "正则表达式命令执行错误:",
+                    "target": "正規表示式命令執行錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Copy failed:",
+                    "target": "複製失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Paste failed:",
+                    "target": "貼上失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Cut failed:",
+                    "target": "剪下失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "PKMer OAuth login error:",
+                    "target": "PKMer OAuth 登入錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "PKMer OAuth callback error:",
+                    "target": "PKMer OAuth callback error:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Callback server error:",
+                    "target": "Callback 伺服器錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to start callback server:",
+                    "target": "啟動 callback 伺服器失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Token exchange failed:",
+                    "target": "Token 交換失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Token refresh failed:",
+                    "target": "Token 重新整理失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to fetch user info:",
+                    "target": "取得使用者資訊失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[AI Completion] Error:",
+                    "target": "[AI Completion] 錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[AI Rewrite] Failed to copy result:",
+                    "target": "[AI Rewrite] 複製結果失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[AI Artifact] Failed to create file:",
+                    "target": "[AI Artifact] 建立檔案失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[AI Rewrite] Error:",
+                    "target": "[AI Rewrite] 錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[AI Settings] Failed to determine provider route:",
+                    "target": "[AI 設定] 無法判斷 provider route："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[Canvas AI] Failed to expand current node:",
+                    "target": "[Canvas AI] 展開目前節點失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[Canvas AI] Failed to run global instruction:",
+                    "target": "[Canvas AI] 執行全域指令失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[Canvas AI] Failed to generate derived markdown:",
+                    "target": "[Canvas AI] 產生衍生 Markdown 失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "color: Violet",
+                    "target": "color: Violet"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "color: #989cab",
+                    "target": "color: #989cab"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "当前浏览器不支持Fullscreen API !",
+                    "target": "目前瀏覽器不支援 Fullscreen API！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "editing toolbar disable loading on mobile",
+                    "target": "Editing Toolbar 已在行動裝置上停用載入"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "editingToolbar unloaded",
+                    "target": "editingToolbar 已卸載"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "保存",
+                    "target": "儲存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Edit Link(Modal)",
+                    "target": "編輯連結（彈出視窗）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[Canvas AI] Falling back to deterministic reorganization plan:",
+                    "target": "[Canvas AI] 改用確定性重整計畫："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "未能从 admonitionPlugin.admonitions (作为对象) 获取类型。",
+                    "target": "未能從 admonitionPlugin.admonitions (作為物件) 取得型別。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "The selected style has no commands to import.",
+                    "target": "所選樣式沒有可匯入的指令。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please select text first",
+                    "target": "請先選取文字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "editing-toolbar-ai-card editing-toolbar-ai-disclosure",
+                    "target": "editing-toolbar-ai-card editing-toolbar-ai-disclosure"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "editing-toolbar-ai-card-toggle checkbox-container",
+                    "target": "editing-toolbar-ai-card-toggle checkbox-container"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "editing-toolbar-ai-card-header-select dropdown",
+                    "target": "editing-toolbar-ai-card-header-select dropdown"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "mod-muted editing-toolbar-text-input-suggestion-chip",
+                    "target": "mod-muted editing-toolbar-text-input-suggestion-chip"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "Reply with OK only.",
+                    "target": "Reply with OK only."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "icon",
+                    "source": "<svg width=\"24\" height=\"24\" focusable=\"false\" fill=\"currentColor\"><g fill-rule=\"evenodd\"><path id=\"change-font-color-icon\" d=\"M3 18h18v3H3z\" style=\"fill:#2DC26B\"></path><path d=\"M8.7 16h-.8a.5.5 0 01-.5-.6l2.7-9c.1-.3.3-.4.5-.4h2.8c.2 0 .4.1.5.4l2.7 9a.5.5 0 01-.5.6h-.8a.5.5 0 01-.4-.4l-.7-2.2c0-.3-.3-.4-.5-.4h-3.4c-.2 0-.4.1-.5.4l-.7 2.2c0 .3-.2.4-.4.4zm2.6-7.6l-.6 2a.5.5 0 00.5.6h1.6a.5.5 0 00.5-.6l-.6-2c0-.3-.3-.4-.5-.4h-.4c-.2 0-.4.1-.5.4z\"></path></g></svg>",
+                    "target": "<svg width=\"24\" height=\"24\" focusable=\"false\" fill=\"currentColor\"><g fill-rule=\"evenodd\"><path id=\"change-font-color-icon\" d=\"M3 18h18v3H3z\" style=\"fill:#2DC26B\"></path><path d=\"M8.7 16h-.8a.5.5 0 01-.5-.6l2.7-9c.1-.3.3-.4.5-.4h2.8c.2 0 .4.1.5.4l2.7 9a.5.5 0 01-.5.6h-.8a.5.5 0 01-.4-.4l-.7-2.2c0-.3-.3-.4-.5-.4h-3.4c-.2 0-.4.1-.5.4l-.7 2.2c0 .3-.2.4-.4.4zm2.6-7.6l-.6 2a.5.5 0 00.5.6h1.6a.5.5 0 00.5-.6l-.6-2c0-.3-.3-.4-.5-.4h-.4c-.2 0-.4.1-.5.4z\"></path></g></svg>"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "icon",
+                    "source": "<svg width=\"18\" height=\"24\" viewBox=\"0 0 256 256\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"><g   stroke=\"none\" stroke-width=\"1\" fill=\"currentColor\" fill-rule=\"evenodd\"><g  ><g fill=\"currentColor\"><g transform=\"translate(119.502295, 137.878331) rotate(-135.000000) translate(-119.502295, -137.878331) translate(48.002295, 31.757731)\" ><path d=\"M100.946943,60.8084699 L43.7469427,60.8084699 C37.2852111,60.8084699 32.0469427,66.0467383 32.0469427,72.5084699 L32.0469427,118.70847 C32.0469427,125.170201 37.2852111,130.40847 43.7469427,130.40847 L100.946943,130.40847 C107.408674,130.40847 112.646943,125.170201 112.646943,118.70847 L112.646943,72.5084699 C112.646943,66.0467383 107.408674,60.8084699 100.946943,60.8084699 Z M93.646,79.808 L93.646,111.408 L51.046,111.408 L51.046,79.808 L93.646,79.808 Z\" fill-rule=\"nonzero\"></path><path d=\"M87.9366521,16.90916 L87.9194966,68.2000001 C87.9183543,69.4147389 86.9334998,70.399264 85.7187607,70.4 L56.9423078,70.4 C55.7272813,70.4 54.7423078,69.4150264 54.7423078,68.2 L54.7423078,39.4621057 C54.7423078,37.2523513 55.5736632,35.1234748 57.0711706,33.4985176 L76.4832996,12.4342613 C78.9534987,9.75382857 83.1289108,9.5834005 85.8093436,12.0535996 C87.1658473,13.303709 87.9372691,15.0644715 87.9366521,16.90916 Z\" fill-rule=\"evenodd\"></path><path d=\"M131.3,111.241199 L11.7,111.241199 C5.23826843,111.241199 0,116.479467 0,122.941199 L0,200.541199 C0,207.002931 5.23826843,212.241199 11.7,212.241199 L131.3,212.241199 C137.761732,212.241199 143,207.002931 143,200.541199 L143,122.941199 C143,116.479467 137.761732,111.241199 131.3,111.241199 Z M124,130.241 L124,193.241 L19,193.241 L19,130.241 L124,130.241 Z\" fill-rule=\"nonzero\"></path></g></g><path d=\"M51,218 L205,218 C211.075132,218 216,222.924868 216,229 C216,235.075132 211.075132,240 205,240 L51,240 C44.9248678,240 40,235.075132 40,229 C40,222.924868 44.9248678,218 51,218 Z\" id=\"change-background-color-icon\" style=\"fill:#FA541C\"></path></g></g></svg>",
+                    "target": "<svg width=\"18\" height=\"24\" viewBox=\"0 0 256 256\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"><g   stroke=\"none\" stroke-width=\"1\" fill=\"currentColor\" fill-rule=\"evenodd\"><g  ><g fill=\"currentColor\"><g transform=\"translate(119.502295, 137.878331) rotate(-135.000000) translate(-119.502295, -137.878331) translate(48.002295, 31.757731)\" ><path d=\"M100.946943,60.8084699 L43.7469427,60.8084699 C37.2852111,60.8084699 32.0469427,66.0467383 32.0469427,72.5084699 L32.0469427,118.70847 C32.0469427,125.170201 37.2852111,130.40847 43.7469427,130.40847 L100.946943,130.40847 C107.408674,130.40847 112.646943,125.170201 112.646943,118.70847 L112.646943,72.5084699 C112.646943,66.0467383 107.408674,60.8084699 100.946943,60.8084699 Z M93.646,79.808 L93.646,111.408 L51.046,111.408 L51.046,79.808 L93.646,79.808 Z\" fill-rule=\"nonzero\"></path><path d=\"M87.9366521,16.90916 L87.9194966,68.2000001 C87.9183543,69.4147389 86.9334998,70.399264 85.7187607,70.4 L56.9423078,70.4 C55.7272813,70.4 54.7423078,69.4150264 54.7423078,68.2 L54.7423078,39.4621057 C54.7423078,37.2523513 55.5736632,35.1234748 57.0711706,33.4985176 L76.4832996,12.4342613 C78.9534987,9.75382857 83.1289108,9.5834005 85.8093436,12.0535996 C87.1658473,13.303709 87.9372691,15.0644715 87.9366521,16.90916 Z\" fill-rule=\"evenodd\"></path><path d=\"M131.3,111.241199 L11.7,111.241199 C5.23826843,111.241199 0,116.479467 0,122.941199 L0,200.541199 C0,207.002931 5.23826843,212.241199 11.7,212.241199 L131.3,212.241199 C137.761732,212.241199 143,207.002931 143,200.541199 L143,122.941199 C143,116.479467 137.761732,111.241199 131.3,111.241199 Z M124,130.241 L124,193.241 L19,193.241 L19,130.241 L124,130.241 Z\" fill-rule=\"nonzero\"></path></g></g><path d=\"M51,218 L205,218 C211.075132,218 216,222.924868 216,229 C216,235.075132 211.075132,240 205,240 L51,240 C44.9248678,240 40,235.075132 40,229 C40,222.924868 44.9248678,218 51,218 Z\" id=\"change-background-color-icon\" style=\"fill:#FA541C\"></path></g></g></svg>"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Improve writing",
+                    "target": "改善寫作"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Fix spelling & grammar",
+                    "target": "修正拼字與文法"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Make shorter",
+                    "target": "縮短"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Make longer",
+                    "target": "加長"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Simplify language",
+                    "target": "簡化語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Professional tone",
+                    "target": "專業語氣"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Casual tone",
+                    "target": "輕鬆語氣"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "English",
+                    "target": "英文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Chinese",
+                    "target": "中文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Japanese",
+                    "target": "日文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "German",
+                    "target": "德文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "French",
+                    "target": "法文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Spanish",
+                    "target": "西班牙文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Explain this",
+                    "target": "解釋這段內容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Summarize",
+                    "target": "摘要"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Continue writing",
+                    "target": "繼續寫作"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Convert to list",
+                    "target": "轉成清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Convert to table",
+                    "target": "轉成表格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Generate frontmatter",
+                    "target": "產生 frontmatter"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Convert to canvas",
+                    "target": "轉成 Canvas"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Note",
+                    "target": "筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Abstract",
+                    "target": "摘要"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Info",
+                    "target": "資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Todo",
+                    "target": "待辦"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Important",
+                    "target": "重要"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Tip",
+                    "target": "提示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Success",
+                    "target": "成功"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Question",
+                    "target": "問題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Warning",
+                    "target": "警告"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Failure",
+                    "target": "失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Danger",
+                    "target": "危險"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Bug",
+                    "target": "錯誤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Example",
+                    "target": "範例"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Quote",
+                    "target": "引用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "📝 总结要点",
+                    "target": "📝 總結要點"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "提炼任务",
+                    "target": "提煉任務"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "生成 Dataview",
+                    "target": "生成 Dataview"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "绘制 Mermaid 图表",
+                    "target": "繪製 Mermaid 圖表"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "设计 YAML",
+                    "target": "設計 YAML"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "使用Callout包装",
+                    "target": "使用Callout包裝"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "📝 Summarize Key Points",
+                    "target": "📝 摘要重點"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Extract Tasks",
+                    "target": "擷取任務"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Generate Dataview",
+                    "target": "產生 Dataview"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create Mermaid Diagram",
+                    "target": "建立 Mermaid 圖表"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Design YAML",
+                    "target": "設計 YAML"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Wrap with Callout",
+                    "target": "包裹為 Callout"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Undo Edit",
+                    "target": "復原編輯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Redo Edit",
+                    "target": "重做編輯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Format Brush",
+                    "target": "格式刷"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Clear Text Formatting",
+                    "target": "清除文字格式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Header 2",
+                    "target": "標題 2"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Header 3",
+                    "target": "標題 3"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Header 1",
+                    "target": "標題 1"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Header 4",
+                    "target": "標題 4"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Header 5",
+                    "target": "標題 5"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Header 6",
+                    "target": "標題 6"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Bold",
+                    "target": "粗體"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Italic",
+                    "target": "斜體"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Strikethrough",
+                    "target": "刪除線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Underline",
+                    "target": "底線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Highlight",
+                    "target": "醒目提示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Text Tools",
+                    "target": "文字工具"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Get Plain Text",
+                    "target": "取得純文字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Full Half Converter",
+                    "target": "全半形轉換"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Line Operations",
+                    "target": "行操作"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Blank Lines",
+                    "target": "插入空白行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Split Lines",
+                    "target": "分割行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Merge Lines",
+                    "target": "合併行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Dedupe Lines",
+                    "target": "移除重複行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Text Processing",
+                    "target": "文字處理"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Add Prefix/Suffix",
+                    "target": "新增前綴/後綴"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Number Lines (Custom)",
+                    "target": "加上行號（自訂）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Trim Line Ends",
+                    "target": "修剪行尾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Shrink Extra Spaces",
+                    "target": "壓縮多餘空格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Advanced Tools",
+                    "target": "進階工具"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "List to Table",
+                    "target": "清單轉表格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Table to List",
+                    "target": "表格轉清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Extract Between Strings",
+                    "target": "擷取字串之間的內容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Cut",
+                    "target": "剪下"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Copy",
+                    "target": "複製"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Paste",
+                    "target": "貼上"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Swap Line Down",
+                    "target": "下移此行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Swap Line Up",
+                    "target": "上移此行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Attach File",
+                    "target": "附加檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Table",
+                    "target": "插入表格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Cycle List and Checklist",
+                    "target": "切換清單與核取清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Blockquote",
+                    "target": "引用區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Callout",
+                    "target": "Callout"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Superscript",
+                    "target": "上標"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Subscript",
+                    "target": "下標"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Inline Code",
+                    "target": "行內程式碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Code Block",
+                    "target": "程式碼區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Wikilink",
+                    "target": "Wikilink"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Embed",
+                    "target": "嵌入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Link",
+                    "target": "連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Horizontal Divider",
+                    "target": "水平分隔線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Inline Math",
+                    "target": "行內數學"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "MathBlock",
+                    "target": "數學區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Checklist",
+                    "target": "任務列表"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Renumber Ordered List",
+                    "target": "重新編號有序清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Ordered List",
+                    "target": "有序清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Unordered List",
+                    "target": "項目符號清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Unindent List",
+                    "target": "取消清單縮排"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Indent list",
+                    "target": "縮排清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Justify Text",
+                    "target": "文字左右對齊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Align Text Left",
+                    "target": "文字靠左對齊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Center Text",
+                    "target": "文字置中"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Align Text Right",
+                    "target": "文字靠右對齊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Change Font Color",
+                    "target": "變更字型顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Change Background Color",
+                    "target": "變更背景顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Fullscreen Focus Mode",
+                    "target": "全螢幕專注模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Workplace Fullscreen",
+                    "target": "工作區全螢幕"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Italics",
+                    "target": "斜體"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Code",
+                    "target": "程式碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Left sidebar",
+                    "target": "左側邊欄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert markdown link",
+                    "target": "插入 Markdown 連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Add tag",
+                    "target": "新增標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Add internal link",
+                    "target": "新增內部連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Checklist status",
+                    "target": "任務列表狀態"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Comment",
+                    "target": "註解"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Callout",
+                    "target": "插入 Callout"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Embed",
+                    "target": "插入嵌入內容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Link",
+                    "target": "插入連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Tag",
+                    "target": "插入標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Internal link",
+                    "target": "插入內部連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Code",
+                    "target": "插入程式碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Blockquote",
+                    "target": "插入引用區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Comment",
+                    "target": "插入註解"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert MathBlock",
+                    "target": "插入數學區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Clear Formatting",
+                    "target": "清除格式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Hide/Show ",
+                    "target": "隱藏/顯示 "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle Top Toolbar",
+                    "target": "切換頂端工具列"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle Following Toolbar",
+                    "target": "切換跟隨工具列"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle Fixed Toolbar",
+                    "target": "切換固定工具列"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Format Eraser",
+                    "target": "格式清除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Indent List",
+                    "target": "縮排清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Numbered List",
+                    "target": "編號清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle Bold",
+                    "target": "切換 粗體"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle Italics",
+                    "target": "切換 斜體"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle Strikethrough",
+                    "target": "切換 刪除線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle Inline Math",
+                    "target": "切換行內數學"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Callout(Modal)",
+                    "target": "插入 Callout(模態框)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert Link(Modal)",
+                    "target": "插入連結（彈出視窗）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle Fullscreen Focus Mode",
+                    "target": "切換全螢幕專注模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle Workplace Fullscreen Focus",
+                    "target": "切換工作區全螢幕專注"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle Format Brush",
+                    "target": "切換格式刷"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "AI Tools",
+                    "target": "AI 工具"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Center",
+                    "target": "居中"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Left Align",
+                    "target": "左對齊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Right Align",
+                    "target": "右對齊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Justify",
+                    "target": "兩端對齊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Font Color",
+                    "target": "字型顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Background Color",
+                    "target": "背景顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "\n            .changelog-container {\n                margin-top: 20px;\n                margin-bottom: 20px;\n                padding: 10px;\n                border: 1px solid var(--background-modifier-border);\n                border-radius: 5px;\n                max-height: 200px;\n                overflow-y: auto;\n            }\n            .changelog-content {\n                padding: 0 10px;\n            }\n            .changelog-content a {\n                text-decoration: underline;\n            }\n            ",
+                    "target": "\n            .changelog-container {\n                margin-top: 20px;\n                margin-bottom: 20px;\n                padding: 10px;\n                border: 1px solid var(--background-modifier-border);\n                border-radius: 5px;\n                max-height: 200px;\n                overflow-y: auto;\n            }\n            .changelog-content {\n                padding: 0 10px;\n            }\n            .changelog-content a {\n                text-decoration: underline;\n            }\n            "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "📄",
+                    "target": "📄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Trigger AI Inline Completion",
+                    "target": "觸發 AI 行內補全"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "AI Custom Rewrite",
+                    "target": "AI 自訂改寫"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "error(\"修复命令ID时出错:\",t),new e.Notice(v(\"Error repairing command IDs, please check the console for details\")",
+                    "target": "error(\"修復指令 ID 時發生錯誤：\",t),new e.Notice(v(\"修復指令 ID 時發生錯誤，請查看主控台取得詳細資訊\")"
+                },
+                {
+                    "source": "error(\"恢复默认设置时出错:\",t),new e.Notice(v(\"Error restoring default settings, please check the console for details\")",
+                    "target": "error(\"恢復預設設定時發生錯誤：\",t),new e.Notice(v(\"恢復預設設定時發生錯誤，請查看主控台取得詳細資訊\")"
+                },
+                {
+                    "source": "setButtonText(\"保存\")",
+                    "target": "setButtonText(\"儲存\")"
+                },
+                {
+                    "source": "error(\"Failed to copy code: \",e)})})}escapeRegexForDisplay(e){return e.replace(/\\\\/g,\"\\\\\\\\\")",
+                    "target": "error(\"複製程式碼失敗：\",e)})})}escapeRegexForDisplay(e){return e.replace(/\\\\/g,\"\\\\\\\\\")"
+                },
+                {
+                    "source": "error(\"无法复制文本: \",e)})}),i.addEventListener(\"mouseenter\",()=>{i.style.backgroundColor=\"var(--interactive-accent)\",i.style.color=\"var(--text-on-accent)\"}),i.addEventListener(\"mouseleave\",()=>{i.style.backgroundColor=\"\",i.style.color=\"\"})})}const d=new e.Setting(t).setName(v(\"Prefix\")",
+                    "target": "error(\"無法複製文字: \",e)})}),i.addEventListener(\"mouseenter\",()=>{i.style.backgroundColor=\"var(--interactive-accent)\",i.style.color=\"var(--text-on-accent)\"}),i.addEventListener(\"mouseleave\",()=>{i.style.backgroundColor=\"\",i.style.color=\"\"})})}const d=new e.Setting(t).setName(v(\"Prefix\")"
+                },
+                {
+                    "source": "error(\"Failed to copy: \",t),new e.Notice(v(\"Failed to copy configuration\")",
+                    "target": "error(\"複製失敗：\",t),new e.Notice(v(\"複製設定失敗\")"
+                },
+                {
+                    "source": "setButtonText(\"overwrite\"===this.importMode?v(\"Overwrite Import\")",
+                    "target": "setButtonText(\"overwrite\"===this.importMode?v(\"Overwrite Import\")"
+                },
+                {
+                    "source": "setText(\"overwrite\"===this.importMode?v(\"Warning: Overwrite mode will replace existing settings with imported ones.\")",
+                    "target": "setText(\"overwrite\"===this.importMode?v(\"Warning: Overwrite mode will replace existing settings with imported ones.\")"
+                },
+                {
+                    "source": "error(\"Import error: \",t),new e.Notice(v(\"Error: \")",
+                    "target": "error(\"匯入錯誤：\",t),new e.Notice(v(\"錯誤：\")"
+                },
+                {
+                    "source": "Notice(`${v(\"Failed to load Ollama models:\")} ${this.cachedCustomOllamaModelsError}`)",
+                    "target": "Notice(`${v(\"載入 Ollama 模型失敗：\")} ${this.cachedCustomOllamaModelsError}`)"
+                },
+                {
+                    "source": "Notice(\"The selected style has no commands to import.\")",
+                    "target": "Notice(\"所選樣式沒有可匯入的指令。\")"
+                },
+                {
+                    "source": "Notice(`Commands imported successfully from \"${a}\" to \"${this.currentEditingConfig}\" `+v(\"configuration\")),this.display()}})})),i.addButton(t=>t.setButtonText(v(\"Clear\")+\" \"+`${this.currentEditingConfig}`)",
+                    "target": "Notice(`指令已成功從 \"${a}\" 匯入到 \"${this.currentEditingConfig}\" `+v(\"設定\")),this.display()}})})),i.addButton(t=>t.setButtonText(v(\"清除\")+\" \"+`${this.currentEditingConfig}`)"
+                },
+                {
+                    "source": "error(\"Failed to set icon:\",e)}})}triggerRefresh(){setTimeout(()=>{dispatchEvent(new Event(\"editingToolbar-NewCommand\")",
+                    "target": "error(\"設定圖示失敗：\",e)}})}triggerRefresh(){setTimeout(()=>{dispatchEvent(new Event(\"editingToolbar-NewCommand\")"
+                },
+                {
+                    "source": "setText(`${e.Platform.isMacOS?\"⌘\":\"Ctrl\"} + Enter ${v(\"to insert\")}`)",
+                    "target": "setText(`${e.Platform.isMacOS?\"⌘\":\"Ctrl\"} + Enter ${v(\"以插入\")}`)"
+                },
+                {
+                    "source": "Notice(`${v(\"Merged with\")} '${t}' ${v(\"Merge completed\")}`)",
+                    "target": "Notice(`${v(\"已與\")} '${t}' ${v(\"合併完成\")}`)"
+                },
+                {
+                    "source": "Notice(`${v(\"Numbering completed: starting from\")} ${o}`)",
+                    "target": "Notice(`${v(\"編號完成：從\")} ${o}`)"
+                },
+                {
+                    "source": "Notice(`${v(\"Extracted\")} ${c.length} ${v(\"matches\")}`)",
+                    "target": "Notice(`${v(\"已擷取\")} ${c.length} ${v(\"個符合項目\")}`)"
+                },
+                {
+                    "source": "error(\"读取剪贴板失败:\",t),void new e.Notice(v(\"Please select text first\")",
+                    "target": "error(\"讀取剪貼簿失敗:\",t),void new e.Notice(v(\"請先選取文字\")"
+                },
+                {
+                    "source": "error(\"正则表达式命令执行错误:\",t),new e.Notice(v(\"Regex command execution error: \")",
+                    "target": "error(\"正規表示式命令執行錯誤：\",t),new e.Notice(v(\"正規表示式指令執行錯誤：\")"
+                },
+                {
+                    "source": "error(\"Paste failed:\",e)}})},icon:\"lucide-clipboard-type\"}),this.plugin.addCommand({id:\"editor-cut\",name:\"Cut\",callback:()=>{const e=this.getActiveEditor();e&&this.executeCommandWithoutBlur(e,async()=>{try{await window.navigator.clipboard.writeText(e.getSelection()),e.replaceSelection(\"\")",
+                    "target": "error(\"Paste failed:\",e)}})},icon:\"lucide-clipboard-type\"}),this.plugin.addCommand({id:\"editor-cut\",name:\"Cut\",callback:()=>{const e=this.getActiveEditor();e&&this.executeCommandWithoutBlur(e,async()=>{try{await window.navigator.clipboard.writeText(e.getSelection()),e.replaceSelection(\"\")"
+                },
+                {
+                    "source": "log(\"当前浏览器不支持Fullscreen API !\")",
+                    "target": "log(\"當前瀏覽器不支援Fullscreen API !\")"
+                },
+                {
+                    "source": "error(\"PKMer OAuth login error:\",t),new e.Notice(v(\"Login failed. Please try again.\")",
+                    "target": "error(\"PKMer OAuth login error:\",t),new e.Notice(v(\"登入失敗。請再試一次。\")"
+                },
+                {
+                    "source": "error(\"PKMer OAuth callback error:\",t),new e.Notice(v(\"Login failed. Please try again.\")",
+                    "target": "error(\"PKMer OAuth callback error:\",t),new e.Notice(v(\"Login failed. Please try again.\")"
+                },
+                {
+                    "source": "error(\"Callback server error:\",o),new e.Notice(`Failed to start login server: ${o.message}`),t(null)}),o.listen(K,\"127.0.0.1\")",
+                    "target": "error(\"Callback 伺服器錯誤：\",o),new e.Notice(`啟動登入伺服器失敗：${o.message}`),t(null)}),o.listen(K,\"127.0.0.1\")"
+                },
+                {
+                    "source": "error(\"[AI Rewrite] Failed to copy result:\",t),new e.Notice(t instanceof Error&&t.message?t.message:v(\"Copy to Clipboard\")",
+                    "target": "error(\"[AI Rewrite] 複製結果失敗：\",t),new e.Notice(t instanceof Error&&t.message?t.message:v(\"複製到剪貼簿\")"
+                },
+                {
+                    "source": "error(\"[AI Rewrite] Error:\",e),this.view.dispatch({effects:zi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Vi.close.primaryKey,run:e=>Yi(e,s)},{key:\"Escape\",run:e=>Yi(e,s)},{key:Vi.replace.primaryKey,run:e=>!!Wi(e,s,!0)&&(Ji(e,s,a,\"replace\")",
+                    "target": "error(\"[AI Rewrite] 錯誤：\",e),this.view.dispatch({effects:zi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Vi.close.primaryKey,run:e=>Yi(e,s)},{key:\"Escape\",run:e=>Yi(e,s)},{key:Vi.replace.primaryKey,run:e=>!!Wi(e,s,!0)&&(Ji(e,s,a,\"replace\")"
+                },
+                {
+                    "source": "Notice(`${v(\"PKMer quota refreshed:\")} ${Number((t.quota/5e5).toFixed(2))}`)",
+                    "target": "Notice(`${v(\"PKMer 額度已重新整理：\")} ${Number((t.quota/5e5).toFixed(2))}`)"
+                },
+                {
+                    "source": "error(\"[AI Settings] Failed to determine provider route:\",e),v(\"Unable to determine current AI route.\")",
+                    "target": "error(\"[AI 設定] 無法判斷供應商路由：\",e),v(\"無法判斷目前 AI 路由。\")"
+                },
+                {
+                    "source": "Notice(`${v(\"Custom model connection succeeded.\")} ${t}`.trim()),!0}catch(t){const o=Wo(t);return new e.Notice(`${v(\"Custom model connection failed:\")} ${o}`)",
+                    "target": "Notice(`${v(\"自訂模型連線成功。\")} ${t}`.trim()),!0}catch(t){const o=Wo(t);return new e.Notice(`${v(\"自訂模型連線失敗：\")} ${o}`)"
+                },
+                {
+                    "source": "Notice(\"Please select text first\")",
+                    "target": "Notice(\"請先選取文字\")"
+                },
+                {
+                    "source": "Notice(`${v(\"Canvas AI added\")} ${s.addedNodeCount} ${v(\"nodes to the board.\")}`)",
+                    "target": "Notice(`${v(\"Canvas AI 已新增\")} ${s.addedNodeCount} ${v(\"個節點到畫布。\")}`)"
+                },
+                {
+                    "source": "error(\"[Canvas AI] Failed to expand current node:\",t),!1}}async runCanvasGlobalInstruction(t,o,n){if(!this.plugin.settings.ai.enabled)return new e.Notice(v(\"AI features are disabled in settings.\")",
+                    "target": "error(\"[Canvas AI] 展開目前節點失敗：\",t),!1}}async runCanvasGlobalInstruction(t,o,n){if(!this.plugin.settings.ai.enabled)return new e.Notice(v(\"AI 功能已在設定中停用。\")"
+                },
+                {
+                    "source": "Notice(`${v(\"Canvas AI updated the board:\")} ${r.addedNodeCount} ${v(\"nodes\")}, ${r.addedEdgeCount} ${v(\"links\")}.`)",
+                    "target": "Notice(`${v(\"Canvas AI 已更新畫布：\")} ${r.addedNodeCount} ${v(\"個節點\")}，${r.addedEdgeCount} ${v(\"條連結\")}。`)"
+                },
+                {
+                    "source": "Notice(`${v(\"Created AI file:\")} ${l.path}`)",
+                    "target": "Notice(`${v(\"已建立 AI 檔案：\")} ${l.path}`)"
+                },
+                {
+                    "source": "Notice(`${v(\"Created AI file:\")} ${r}`)",
+                    "target": "Notice(`${v(\"已建立 AI 檔案：\")} ${r}`)"
+                },
+                {
+                    "source": "log(\"editing toolbar disable loading on mobile\")",
+                    "target": "log(\"Editing Toolbar 已在行動裝置上停用載入\")"
+                },
+                {
+                    "source": "log(\"editingToolbar unloaded\")",
+                    "target": "log(\"editingToolbar 已卸載\")"
+                },
+                {
+                    "source": "name: \":\"",
+                    "target": "name: \":\""
+                },
+                {
+                    "source": "name: \",\"",
+                    "target": "name: \",\""
+                },
+                {
+                    "source": "link:\"内部链接\"",
+                    "target": "link:\"內部連結\""
+                },
+                {
+                    "source": "name: \")});const o=new e.TextComponent(t);o.inputEl.classList.add(\"",
+                    "target": "name: \")});const o=new e.TextComponent(t);o.inputEl.classList.add(\""
+                },
+                {
+                    "source": "name:\"📝 总结要点\"",
+                    "target": "name:\"📝 總結要點\""
+                },
+                {
+                    "source": "name:\"提炼任务\"",
+                    "target": "name:\"提煉任務\""
+                },
+                {
+                    "source": "name:\"生成 Dataview\"",
+                    "target": "name:\"生成 Dataview\""
+                },
+                {
+                    "source": "name:\"绘制 Mermaid 图表\"",
+                    "target": "name:\"繪製 Mermaid 圖表\""
+                },
+                {
+                    "source": "name:\"设计 YAML\"",
+                    "target": "name:\"設計 YAML\""
+                },
+                {
+                    "source": "name:\"使用Callout包装\"",
+                    "target": "name:\"使用Callout包裝\""
+                },
+                {
+                    "source": "name:\"📝 Summarize Key Points\"",
+                    "target": "name:\"📝 摘要重點\""
+                },
+                {
+                    "source": "name:\"Extract Tasks\"",
+                    "target": "name:\"擷取任務\""
+                },
+                {
+                    "source": "name:\"Generate Dataview\"",
+                    "target": "name:\"產生 Dataview\""
+                },
+                {
+                    "source": "name:\"Create Mermaid Diagram\"",
+                    "target": "name:\"建立 Mermaid 圖表\""
+                },
+                {
+                    "source": "name:\"Design YAML\"",
+                    "target": "name:\"設計 YAML\""
+                },
+                {
+                    "source": "name:\"Wrap with Callout\"",
+                    "target": "name:\"包裹為 Callout\""
+                },
+                {
+                    "source": "name:\"Undo Edit\"",
+                    "target": "name:\"復原編輯\""
+                },
+                {
+                    "source": "name:\"Redo Edit\"",
+                    "target": "name:\"重做編輯\""
+                },
+                {
+                    "source": "name:\"Format Brush\"",
+                    "target": "name:\"格式刷\""
+                },
+                {
+                    "source": "name:\"Clear Text Formatting\"",
+                    "target": "name:\"清除文字格式\""
+                },
+                {
+                    "source": "name:\"Header 2\"",
+                    "target": "name:\"標題 2\""
+                },
+                {
+                    "source": "name:\"Header 3\"",
+                    "target": "name:\"標題 3\""
+                },
+                {
+                    "source": "name:\"Header 1\"",
+                    "target": "name:\"標題 1\""
+                },
+                {
+                    "source": "name:\"Header 4\"",
+                    "target": "name:\"標題 4\""
+                },
+                {
+                    "source": "name:\"Header 5\"",
+                    "target": "name:\"標題 5\""
+                },
+                {
+                    "source": "name:\"Header 6\"",
+                    "target": "name:\"標題 6\""
+                },
+                {
+                    "source": "name:\"Text Tools\"",
+                    "target": "name:\"文字工具\""
+                },
+                {
+                    "source": "name:\"Get Plain Text\"",
+                    "target": "name:\"取得純文字\""
+                },
+                {
+                    "source": "name:\"Full Half Converter\"",
+                    "target": "name:\"全半形轉換\""
+                },
+                {
+                    "source": "name:\"Line Operations\"",
+                    "target": "name:\"行操作\""
+                },
+                {
+                    "source": "name:\"Insert Blank Lines\"",
+                    "target": "name:\"插入空白行\""
+                },
+                {
+                    "source": "name:\"Split Lines\"",
+                    "target": "name:\"分割行\""
+                },
+                {
+                    "source": "name:\"Merge Lines\"",
+                    "target": "name:\"合併行\""
+                },
+                {
+                    "source": "name:\"Dedupe Lines\"",
+                    "target": "name:\"移除重複行\""
+                },
+                {
+                    "source": "name:\"Text Processing\"",
+                    "target": "name:\"文字處理\""
+                },
+                {
+                    "source": "name:\"Add Prefix/Suffix\"",
+                    "target": "name:\"新增前綴/後綴\""
+                },
+                {
+                    "source": "name:\"Number Lines (Custom)\"",
+                    "target": "name:\"加上行號（自訂）\""
+                },
+                {
+                    "source": "name:\"Trim Line Ends\"",
+                    "target": "name:\"修剪行尾\""
+                },
+                {
+                    "source": "name:\"Shrink Extra Spaces\"",
+                    "target": "name:\"壓縮多餘空格\""
+                },
+                {
+                    "source": "name:\"Advanced Tools\"",
+                    "target": "name:\"進階工具\""
+                },
+                {
+                    "source": "name:\"List to Table\"",
+                    "target": "name:\"清單轉表格\""
+                },
+                {
+                    "source": "name:\"Table to List\"",
+                    "target": "name:\"表格轉清單\""
+                },
+                {
+                    "source": "name:\"Extract Between Strings\"",
+                    "target": "name:\"擷取字串之間的內容\""
+                },
+                {
+                    "source": "name:\"Swap Line Down\"",
+                    "target": "name:\"下移此行\""
+                },
+                {
+                    "source": "name:\"Swap Line Up\"",
+                    "target": "name:\"上移此行\""
+                },
+                {
+                    "source": "name:\"Attach File\"",
+                    "target": "name:\"附加檔案\""
+                },
+                {
+                    "source": "name:\"Insert Table\"",
+                    "target": "name:\"插入表格\""
+                },
+                {
+                    "source": "name:\"Cycle List and Checklist\"",
+                    "target": "name:\"切換清單與核取清單\""
+                },
+                {
+                    "source": "name:\"Inline Code\"",
+                    "target": "name:\"行內程式碼\""
+                },
+                {
+                    "source": "name:\"Code Block\"",
+                    "target": "name:\"程式碼區塊\""
+                },
+                {
+                    "source": "name:\"Horizontal Divider\"",
+                    "target": "name:\"水平分隔線\""
+                },
+                {
+                    "source": "name:\"Inline Math\"",
+                    "target": "name:\"行內數學\""
+                },
+                {
+                    "source": "name:\"Renumber Ordered List\"",
+                    "target": "name:\"重新編號有序清單\""
+                },
+                {
+                    "source": "name:\"Ordered List\"",
+                    "target": "name:\"有序清單\""
+                },
+                {
+                    "source": "name:\"Unordered List\"",
+                    "target": "name:\"項目符號清單\""
+                },
+                {
+                    "source": "name:\"Unindent List\"",
+                    "target": "name:\"取消清單縮排\""
+                },
+                {
+                    "source": "name:\"Indent list\"",
+                    "target": "name:\"縮排清單\""
+                },
+                {
+                    "source": "name:\"Justify Text\"",
+                    "target": "name:\"文字左右對齊\""
+                },
+                {
+                    "source": "name:\"Align Text Left\"",
+                    "target": "name:\"文字靠左對齊\""
+                },
+                {
+                    "source": "name:\"Center Text\"",
+                    "target": "name:\"文字置中\""
+                },
+                {
+                    "source": "name:\"Align Text Right\"",
+                    "target": "name:\"文字靠右對齊\""
+                },
+                {
+                    "source": "name:\"Change Font Color\"",
+                    "target": "name:\"變更字型顏色\""
+                },
+                {
+                    "source": "name:\"Change Background Color\"",
+                    "target": "name:\"變更背景顏色\""
+                },
+                {
+                    "source": "name:\"Fullscreen Focus Mode\"",
+                    "target": "name:\"全螢幕專注模式\""
+                },
+                {
+                    "source": "name:\"Workplace Fullscreen\"",
+                    "target": "name:\"工作區全螢幕\""
+                },
+                {
+                    "source": "name: 'expression'",
+                    "target": "name: 'expression'"
+                },
+                {
+                    "source": "name:\",'    displayName: \"",
+                    "target": "name:\",'    displayName: \""
+                },
+                {
+                    "source": "name: \"Overview\"",
+                    "target": "name: \"Overview\""
+                },
+                {
+                    "source": "text:`${this.plugin.manifest.name} v${this.plugin.manifest.version} · ${v(\"Tips\")}`",
+                    "target": "text:`${this.plugin.manifest.name} v${this.plugin.manifest.version} · ${v(\"Tips\")}`"
+                },
+                {
+                    "source": "textContent=\"已复制!\"",
+                    "target": "textContent=\"已複製!\""
+                },
+                {
+                    "source": "text:\"Obsidian Editing Toolbar: \"",
+                    "target": "text:\"Obsidian 編輯工具列：\""
+                },
+                {
+                    "source": "name:\"Left sidebar\"",
+                    "target": "name:\"左側邊欄\""
+                },
+                {
+                    "source": "name:\"Insert markdown link\"",
+                    "target": "name:\"插入 Markdown 連結\""
+                },
+                {
+                    "source": "name:\"Add tag\"",
+                    "target": "name:\"新增標籤\""
+                },
+                {
+                    "source": "name:\"Add internal link\"",
+                    "target": "name:\"新增內部連結\""
+                },
+                {
+                    "source": "name:\"Checklist status\"",
+                    "target": "name:\"任務列表狀態\""
+                },
+                {
+                    "source": "name:\"Insert Callout\"",
+                    "target": "name:\"插入 Callout\""
+                },
+                {
+                    "source": "text:`${v(\"Completion\")}: ${l(P(this.plugin.settings.ai,\"completion\"))}`",
+                    "target": "text:`${v(\"補全\")}: ${l(P(this.plugin.settings.ai,\"completion\"))}`"
+                },
+                {
+                    "source": "text:`${v(\"Rewrite\")}: ${l(P(this.plugin.settings.ai,\"rewrite\"))}`",
+                    "target": "text:`${v(\"改寫\")}: ${l(P(this.plugin.settings.ai,\"rewrite\"))}`"
+                },
+                {
+                    "source": "text:`${v(\"Reasoning\")}: ${l(P(this.plugin.settings.ai,\"reasoning\"))}`",
+                    "target": "text:`${v(\"推理\")}: ${l(P(this.plugin.settings.ai,\"reasoning\"))}`"
+                },
+                {
+                    "source": "text:`${v(\"Structured\")}: ${l(P(this.plugin.settings.ai,\"artifact\"))}`",
+                    "target": "text:`${v(\"結構化\")}: ${l(P(this.plugin.settings.ai,\"artifact\"))}`"
+                },
+                {
+                    "source": "text:\"📄\"",
+                    "target": "text:\"📄\""
+                },
+                {
+                    "source": "name:\"Insert Embed\"",
+                    "target": "name:\"插入嵌入內容\""
+                },
+                {
+                    "source": "name:\"Insert Link\"",
+                    "target": "name:\"插入連結\""
+                },
+                {
+                    "source": "name:\"Insert Tag\"",
+                    "target": "name:\"插入標籤\""
+                },
+                {
+                    "source": "name:\"Insert Internal link\"",
+                    "target": "name:\"插入內部連結\""
+                },
+                {
+                    "source": "name:\"Insert Code\"",
+                    "target": "name:\"插入程式碼\""
+                },
+                {
+                    "source": "name:\"Insert Blockquote\"",
+                    "target": "name:\"插入引用區塊\""
+                },
+                {
+                    "source": "name:\"Insert Comment\"",
+                    "target": "name:\"插入註解\""
+                },
+                {
+                    "source": "name:\"Insert MathBlock\"",
+                    "target": "name:\"插入數學區塊\""
+                },
+                {
+                    "source": "name:\"Clear Formatting\"",
+                    "target": "name:\"清除格式\""
+                },
+                {
+                    "source": "name:\"Hide/Show \"",
+                    "target": "name:\"隱藏/顯示 \""
+                },
+                {
+                    "source": "name:\"Toggle Top Toolbar\"",
+                    "target": "name:\"切換頂端工具列\""
+                },
+                {
+                    "source": "name:\"Toggle Following Toolbar\"",
+                    "target": "name:\"切換跟隨工具列\""
+                },
+                {
+                    "source": "name:\"Toggle Fixed Toolbar\"",
+                    "target": "name:\"切換固定工具列\""
+                },
+                {
+                    "source": "name:\"Format Eraser\"",
+                    "target": "name:\"格式清除\""
+                },
+                {
+                    "source": "name:\"Indent List\"",
+                    "target": "name:\"縮排清單\""
+                },
+                {
+                    "source": "name:\"Numbered List\"",
+                    "target": "name:\"編號清單\""
+                },
+                {
+                    "source": "name:\"Toggle Bold\"",
+                    "target": "name:\"切換粗體\""
+                },
+                {
+                    "source": "name:\"Toggle Italics\"",
+                    "target": "name:\"切換斜體\""
+                },
+                {
+                    "source": "name:\"Toggle Strikethrough\"",
+                    "target": "name:\"切換刪除線\""
+                },
+                {
+                    "source": "name:\"Toggle Inline Math\"",
+                    "target": "name:\"切換行內數學\""
+                },
+                {
+                    "source": "name:\"Insert Callout(Modal)\"",
+                    "target": "name:\"插入 Callout（彈出視窗）\""
+                },
+                {
+                    "source": "name:\"Insert Link(Modal)\"",
+                    "target": "name:\"插入連結（彈出視窗）\""
+                },
+                {
+                    "source": "name:\"Toggle Fullscreen Focus Mode\"",
+                    "target": "name:\"切換全螢幕專注模式\""
+                },
+                {
+                    "source": "name:\"Toggle Workplace Fullscreen Focus\"",
+                    "target": "name:\"切換工作區全螢幕專注\""
+                },
+                {
+                    "source": "name:`Toggle ${e}`",
+                    "target": "name:`切換 ${e}`"
+                },
+                {
+                    "source": "name:\"Toggle Format Brush\"",
+                    "target": "name:\"切換格式刷\""
+                },
+                {
+                    "source": "name: \"${xn(t)}\"",
+                    "target": "name: \"${xn(t)}\""
+                },
+                {
+                    "source": "textContent=\"×\"",
+                    "target": "textContent=\"×\""
+                },
+                {
+                    "source": "textContent=`${s}${r} ${l}`",
+                    "target": "textContent=`${s}${r} ${l}`"
+                },
+                {
+                    "source": "name:\"AI Tools\"",
+                    "target": "name:\"AI 工具\""
+                },
+                {
+                    "source": "name:\"Left Align\"",
+                    "target": "name:\"左對齊\""
+                },
+                {
+                    "source": "name:\"Right Align\"",
+                    "target": "name:\"右對齊\""
+                },
+                {
+                    "source": "name:\"Font Color\"",
+                    "target": "name:\"字型顏色\""
+                },
+                {
+                    "source": "name:\"Background Color\"",
+                    "target": "name:\"背景顏色\""
+                }
+            ]
+        }
+    }
+}
