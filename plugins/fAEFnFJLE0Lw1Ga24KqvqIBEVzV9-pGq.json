@@ -1,0 +1,570 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "table-editor-obsidian",
+        "version": "0.23.2",
+        "title": "[zh-tw] Advanced Tables",
+        "description": "Advanced Tables Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "0.23.2",
+        "author": ""
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "If this plugin adds value for you and you would like to help support continued development, please use the buttons below:",
+                    "target": "如果這個插件對你有幫助，且你想支持持續開發，請使用下方按鈕："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "loading markdown-table-editor plugin",
+                    "target": "loading markdown-table-editor plugin"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Requires restart of Obsidian. If enabled, when the cursor is in a table, enter advances to the next row. Disabling this can help avoid conflicting with tag or CJK autocompletion. If disabling, bind \"Go to ...\" in the Obsidian Hotkeys settings.",
+                    "target": "需要重新啟動 Obsidian。啟用後，游標位於表格中時，按 Enter 會前往下一列。停用此選項可避免與標籤或 CJK 自動完成衝突。若要停用，請在 Obsidian 快捷鍵設定中綁定「前往...」。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Requires restart of Obsidian. If enabled, when the cursor is in a table, tab/shift+tab navigate between cells. Disabling this can help avoid conflicting with tag or CJK autocompletion. If disabling, bind \"Go to ...\" in the Obsidian Hotkeys settings.",
+                    "target": "需要重新啟動 Obsidian。啟用後，游標位於表格中時，Tab/Shift+Tab 會在儲存格之間導覽。停用此選項可避免與標籤或 CJK 自動完成衝突。若要停用，請在 Obsidian 快捷鍵設定中綁定「前往...」。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, table cells will have spaces added to match the width of the longest cell in the column.",
+                    "target": "啟用後，會在表格儲存格中加入空格，使其符合該欄最長儲存格的寬度。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, a button which opens the table controls toolbar will be added to the Obsidian sidebar. The toolbar can also be opened with a Hotkey. Changes only take effect on reload.",
+                    "target": "啟用後，會在 Obsidian 側邊欄新增一個按鈕，用於開啟表格控制工具列。此工具列也可以透過快捷鍵開啟。變更只會在重新載入後生效。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Bind enter to table navigation",
+                    "target": "將 Enter 綁定為表格導覽"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Bind tab to table navigation",
+                    "target": "將 Tab 綁定為表格導覽"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Pad cell width using spaces",
+                    "target": "使用空格補齊儲存格寬度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show icon in sidebar",
+                    "target": "在側邊欄顯示圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Include table headers",
+                    "target": "包含表格標題列"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Advanced Tables",
+                    "target": "進階表格"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Align:",
+                    "target": "對齊："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Move:",
+                    "target": "移動："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Edit:",
+                    "target": "編輯："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Sort/F:",
+                    "target": "排序/公式："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Misc:",
+                    "target": "其他："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Advanced Tables: Unable to determine current editor.",
+                    "target": "進階表格：無法判斷目前的編輯器。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Advanced Tables: Cursor must be in a table.",
+                    "target": "進階表格：游標必須位於表格中。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Advanced Tables: Next row also bound to enter. Possibly producing double actions. See Advanced Tables settings.",
+                    "target": "進階表格：下一列也綁定到 Enter，可能會產生重複動作。請查看進階表格設定。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Advanced Tables: Next cell also bound to tab. Possibly producing double actions. See Advanced Tables settings.",
+                    "target": "進階表格：下一個儲存格也綁定到 Tab，可能會產生重複動作。請查看進階表格設定。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Advanced Tables: Previous cell also bound to shift+tab. Possibly producing double actions. See Advanced Tables settings.",
+                    "target": "進階表格：上一個儲存格也綁定到 Shift+Tab，可能會產生重複動作。請查看進階表格設定。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "advanced-tables-button nav-action-button",
+                    "target": "advanced-tables-button nav-action-button"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Grammar",
+                    "target": "Grammar"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Production",
+                    "target": "Production"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "NCName",
+                    "target": "NCName"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Choice",
+                    "target": "Choice"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "SequenceOrDifference",
+                    "target": "SequenceOrDifference"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Minus",
+                    "target": "Minus"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "PrimaryDecoration",
+                    "target": "PrimaryDecoration"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "DecorationName",
+                    "target": "DecorationName"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "StringLiteral",
+                    "target": "StringLiteral"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "CharCode",
+                    "target": "CharCode"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "CharClass",
+                    "target": "CharClass"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "CharRange",
+                    "target": "CharRange"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "CharCodeRange",
+                    "target": "CharCodeRange"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Comment",
+                    "target": "Comment"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Link",
+                    "target": "Link"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Url",
+                    "target": "Url"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Attributes",
+                    "target": "Attributes"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Attribute",
+                    "target": "Attribute"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "AttributeValue",
+                    "target": "AttributeValue"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "PrimaryPreDecoration",
+                    "target": "PrimaryPreDecoration"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Go to next row",
+                    "target": "前往下一列"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Go to next cell",
+                    "target": "前往下一個儲存格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Go to previous cell",
+                    "target": "前往上一個儲存格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Format table at the cursor",
+                    "target": "格式化游標所在的表格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Format all tables in this file",
+                    "target": "格式化此檔案中的所有表格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert column before current",
+                    "target": "在目前欄前方插入欄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert row before current",
+                    "target": "在目前列前方插入列"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Move cursor out of table",
+                    "target": "將游標移出表格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Left align column",
+                    "target": "欄靠左對齊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Center align column",
+                    "target": "欄置中對齊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Right align column",
+                    "target": "欄靠右對齊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Move column left",
+                    "target": "將欄向左移"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Move column right",
+                    "target": "將欄向右移"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Move row up",
+                    "target": "將列上移"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Move row down",
+                    "target": "將列下移"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Delete column",
+                    "target": "刪除欄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Delete row",
+                    "target": "刪除列"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Sort rows ascending",
+                    "target": "依遞增順序排序列"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Sort rows descending",
+                    "target": "依遞減順序排序列"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Transpose",
+                    "target": "轉置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Evaluate table formulas",
+                    "target": "計算表格公式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open table controls toolbar",
+                    "target": "開啟表格控制工具列"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "log(\"0.\"+Oe(T.d))/Math.LN10+T.e+1)):new L(a+\"\")",
+                    "target": "log(\"0.\"+Oe(T.d))/Math.LN10+T.e+1)):new L(a+\"\")"
+                },
+                {
+                    "source": "log(\"reberia restar \"+$+\" a \"+D),new Error(\"Difference not supported yet\")",
+                    "target": "log(\"reberia restar \"+$+\" a \"+D),new Error(\"Difference not supported yet\")"
+                },
+                {
+                    "source": "setText(\"Include table headers\")",
+                    "target": "setText(\"包含表格標題列\")"
+                },
+                {
+                    "source": "setText(\"Advanced Tables\")",
+                    "target": "setText(\"進階表格\")"
+                },
+                {
+                    "source": "Notice(\"Advanced Tables: Cursor must be in a table.\")",
+                    "target": "Notice(\"進階表格：游標必須位於表格中。\")"
+                },
+                {
+                    "source": "log(\"loading markdown-table-editor plugin\")",
+                    "target": "log(\"loading markdown-table-editor plugin\")"
+                },
+                {
+                    "source": "Notice(\"Advanced Tables: Next row also bound to enter. Possibly producing double actions. See Advanced Tables settings.\")",
+                    "target": "Notice(\"進階表格：下一列也綁定到 Enter，可能會產生重複動作。請查看進階表格設定。\")"
+                },
+                {
+                    "source": "Notice(\"Advanced Tables: Next cell also bound to tab. Possibly producing double actions. See Advanced Tables settings.\")",
+                    "target": "Notice(\"進階表格：下一個儲存格也綁定到 Tab，可能會產生重複動作。請查看進階表格設定。\")"
+                },
+                {
+                    "source": "Notice(\"Advanced Tables: Previous cell also bound to shift+tab. Possibly producing double actions. See Advanced Tables settings.\")",
+                    "target": "Notice(\"進階表格：上一個儲存格也綁定到 Shift+Tab，可能會產生重複動作。請查看進階表格設定。\")"
+                },
+                {
+                    "source": "setName(\"Bind enter to table navigation\")",
+                    "target": "setName(\"將 Enter 綁定為表格導覽\")"
+                },
+                {
+                    "source": "setDesc('Requires restart of Obsidian. If enabled, when the cursor is in a table, enter advances to the next row. Disabling this can help avoid conflicting with tag or CJK autocompletion. If disabling, bind \"Go to ...\" in the Obsidian Hotkeys settings.')",
+                    "target": "setDesc('需要重新啟動 Obsidian。啟用後，游標位於表格中時，按 Enter 會前往下一列。停用此選項可避免與標籤或 CJK 自動完成衝突。若要停用，請在 Obsidian 快捷鍵設定中綁定「前往...」。')"
+                },
+                {
+                    "source": "setName(\"Bind tab to table navigation\")",
+                    "target": "setName(\"將 Tab 綁定為表格導覽\")"
+                },
+                {
+                    "source": "setDesc('Requires restart of Obsidian. If enabled, when the cursor is in a table, tab/shift+tab navigate between cells. Disabling this can help avoid conflicting with tag or CJK autocompletion. If disabling, bind \"Go to ...\" in the Obsidian Hotkeys settings.')",
+                    "target": "setDesc('需要重新啟動 Obsidian。啟用後，游標位於表格中時，Tab/Shift+Tab 會在儲存格之間導覽。停用此選項可避免與標籤或 CJK 自動完成衝突。若要停用，請在 Obsidian 快捷鍵設定中綁定「前往...」。')"
+                },
+                {
+                    "source": "setName(\"Pad cell width using spaces\")",
+                    "target": "setName(\"使用空格補齊儲存格寬度\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, table cells will have spaces added to match the width of the longest cell in the column.\")",
+                    "target": "setDesc(\"啟用後，會在表格儲存格中加入空格，使其符合該欄最長儲存格的寬度。\")"
+                },
+                {
+                    "source": "setName(\"Show icon in sidebar\")",
+                    "target": "setName(\"在側邊欄顯示圖示\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, a button which opens the table controls toolbar will be added to the Obsidian sidebar. The toolbar can also be opened with a Hotkey. Changes only take effect on reload.\")",
+                    "target": "setDesc(\"啟用後，會在 Obsidian 側邊欄新增一個按鈕，用於開啟表格控制工具列。此工具列也可以透過快捷鍵開啟。變更只會在重新載入後生效。\")"
+                },
+                {
+                    "source": "appendText(\"If this plugin adds value for you and you would like to help support continued development, please use the buttons below:\")",
+                    "target": "appendText(\"如果這個插件對你有幫助，且你想支持持續開發，請使用下方按鈕：\")"
+                },
+                {
+                    "source": "text: \"+JSON.stringify(C.text)),C}return null}};It.Parser=uo;It.default=uo});var zl=we(ao=>{\"",
+                    "target": "text: \"+JSON.stringify(C.text)),C}return null}};It.Parser=uo;It.default=uo});var zl=we(ao=>{\""
+                },
+                {
+                    "source": "name:\"Go to next row\"",
+                    "target": "name:\"前往下一列\""
+                },
+                {
+                    "source": "name:\"Go to next cell\"",
+                    "target": "name:\"前往下一個儲存格\""
+                },
+                {
+                    "source": "name:\"Go to previous cell\"",
+                    "target": "name:\"前往上一個儲存格\""
+                },
+                {
+                    "source": "name:\"Format table at the cursor\"",
+                    "target": "name:\"格式化游標所在的表格\""
+                },
+                {
+                    "source": "name:\"Format all tables in this file\"",
+                    "target": "name:\"格式化此檔案中的所有表格\""
+                },
+                {
+                    "source": "name:\"Insert column before current\"",
+                    "target": "name:\"在目前欄前方插入欄\""
+                },
+                {
+                    "source": "name:\"Insert row before current\"",
+                    "target": "name:\"在目前列前方插入列\""
+                },
+                {
+                    "source": "name:\"Move cursor out of table\"",
+                    "target": "name:\"將游標移出表格\""
+                },
+                {
+                    "source": "name:\"Left align column\"",
+                    "target": "name:\"欄靠左對齊\""
+                },
+                {
+                    "source": "name:\"Center align column\"",
+                    "target": "name:\"欄置中對齊\""
+                },
+                {
+                    "source": "name:\"Right align column\"",
+                    "target": "name:\"欄靠右對齊\""
+                },
+                {
+                    "source": "name:\"Move column left\"",
+                    "target": "name:\"將欄向左移\""
+                },
+                {
+                    "source": "name:\"Move column right\"",
+                    "target": "name:\"將欄向右移\""
+                },
+                {
+                    "source": "name:\"Move row up\"",
+                    "target": "name:\"將列上移\""
+                },
+                {
+                    "source": "name:\"Move row down\"",
+                    "target": "name:\"將列下移\""
+                },
+                {
+                    "source": "name:\"Delete column\"",
+                    "target": "name:\"刪除欄\""
+                },
+                {
+                    "source": "name:\"Delete row\"",
+                    "target": "name:\"刪除列\""
+                },
+                {
+                    "source": "name:\"Sort rows ascending\"",
+                    "target": "name:\"依遞增順序排序列\""
+                },
+                {
+                    "source": "name:\"Sort rows descending\"",
+                    "target": "name:\"依遞減順序排序列\""
+                },
+                {
+                    "source": "name:\"Evaluate table formulas\"",
+                    "target": "name:\"計算表格公式\""
+                },
+                {
+                    "source": "name:\"Open table controls toolbar\"",
+                    "target": "name:\"開啟表格控制工具列\""
+                }
+            ]
+        }
+    }
+}
