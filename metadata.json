@@ -505,5 +505,18 @@
         "created_at": "2026-05-25T03:50:41.933Z",
         "updated_at": "2026-05-25T03:50:41.933Z",
         "type": "plugin"
+    },
+    {
+        "id": "flWKi0tSAdUoy92naUJCRNY0daultP_9",
+        "plugin": "sidenotes",
+        "language": "zh-tw",
+        "version": "0.3.7",
+        "supported_versions": "0.3.7",
+        "title": "[zh-tw] Sidenotes",
+        "description": "Sidenotes Localization & Tweaks",
+        "hash": "662398c0662398c0662398c0662398c0",
+        "created_at": "2026-05-25T03:50:51.128Z",
+        "updated_at": "2026-05-25T03:50:51.128Z",
+        "type": "plugin"
     }
 ]
