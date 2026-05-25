@@ -1,0 +1,2850 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "codeblock-customizer",
+        "version": "1.4.7",
+        "title": "[zh-tw] Codeblock Customizer",
+        "description": "Codeblock Customizer Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.4.7",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "For more information, please read the README!",
+                    "target": "更多資訊請閱讀 README！"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "If you like this plugin, and would like to help support continued development, use this button!",
+                    "target": "如果你喜歡這個插件，也想支持它持續開發，請使用這個按鈕！"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Click to open this settings page",
+                    "target": "點擊以開啟此設定頁"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Double Line",
+                    "target": "雙線"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Dashed",
+                    "target": "虛線"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Zigzag",
+                    "target": "鋸齒線"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Permanent",
+                    "target": "永久"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Session Only",
+                    "target": "僅此工作階段"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Both",
+                    "target": "兩者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Blur only",
+                    "target": "僅模糊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Opacity only",
+                    "target": "僅透明度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "All code blocks",
+                    "target": "所有程式碼區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Respect \"fold\"",
+                    "target": "遵循「fold」"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Shift",
+                    "target": "Shift"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "None",
+                    "target": "無"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Invalid JSON content in the SVG configuration file:",
+                    "target": "SVG 設定檔中的 JSON 內容無效："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Snapshot creation failed:",
+                    "target": "快照建立失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Invalid path provided to setNestedValue:",
+                    "target": "提供給 setNestedValue 的路徑無效："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Selected color not found.",
+                    "target": "找不到選取的顏色。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Cannot dispatch tab selection: invalid group name.",
+                    "target": "無法分派分頁選取：群組名稱無效。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error modifying file:",
+                    "target": "修改檔案時發生錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "loading CodeBlock Customizer plugin",
+                    "target": "正在載入 CodeBlock Customizer 插件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "unloading CodeBlock Customizer plugin",
+                    "target": "正在卸載 CodeBlock Customizer 插件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Codeblock Customizer: Migrating settings to new structure.",
+                    "target": "Codeblock Customizer：正在將設定遷移到新結構。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Codeblock Customizer: Settigns migrated successfully.",
+                    "target": "Codeblock Customizer：設定已成功遷移。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Restore",
+                    "target": "還原"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add",
+                    "target": "新增"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Clear cache",
+                    "target": "清除快取"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "By default the plugin is disabled in source mode. You can enable it in source mode as well using this toggle.",
+                    "target": "預設情況下，此插件在原始碼模式中停用。你也可以使用此開關在原始碼模式中啟用它。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Define languages, separated by a comma, to which the plugin should not apply. You can use a wildcard (*) either at the beginning, or at the end. For example: ad-* will exclude codeblocks where the language starts with ad- e.g.: ad-info, ad-error etc.",
+                    "target": "定義此插件不應套用的語言，請以逗號分隔。你可以在開頭或結尾使用萬用字元 (*)。例如：ad-* 會排除語言以 ad- 開頭的程式碼區塊，例如 ad-info、ad-error 等。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the plugin will try to prevent code blocks from being split across multiple pages when printing.",
+                    "target": "啟用後，列印時插件會嘗試避免程式碼區塊被分割到多個頁面。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, all collapsed code blocks specified by the \"fold\" parameter will be expanded when printing. This results in the printed document containing expanded code blocks where \"fold\" was used.",
+                    "target": "啟用後，列印時所有由「fold」參數指定為收合的程式碼區塊都會展開。這會讓列印文件中使用「fold」的程式碼區塊以展開狀態呈現。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, annotations will be printed as visible code comments instead of rendered icons.",
+                    "target": "啟用後，註記會以可見程式碼註解列印，而不是渲染為圖示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, you can set the color for the active line (including codeblocks).",
+                    "target": "啟用後，你可以設定作用中行的顏色（包含程式碼區塊）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, editor mode will use PrismJS for syntax highlighting instead of CodeMirror's built-in highlighting. This makes editor mode syntax highlighting match reading mode syntax highlighting.",
+                    "target": "啟用後，編輯器模式會使用 PrismJS 進行語法醒目提示，而不是 CodeMirror 內建的醒目提示。這會讓編輯器模式的語法醒目提示與閱讀模式一致。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, indentation lines will be shown in reading view.",
+                    "target": "啟用後，閱讀檢視會顯示縮排行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the code will be unwrapped in reading view.",
+                    "target": "啟用後，閱讀檢視中的程式碼不會自動換行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select the style of the separator line shown when line number jumps are used.",
+                    "target": "選擇使用行號跳躍時顯示的分隔線樣式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select the style of the separator line shown when code lines are hidden.",
+                    "target": "選擇隱藏程式碼行時顯示的分隔線樣式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, highlighted lines will also highlight the gutter (line number), not just the line.",
+                    "target": "啟用後，醒目提示行時也會醒目提示 gutter（行號），而不只是行本身。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the active line number will be highlighted with a separate color.",
+                    "target": "啟用後，作用中行號會以獨立顏色醒目提示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the header text will be set to bold.",
+                    "target": "啟用後，標題文字會設為粗體。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the header text will be set to italic.",
+                    "target": "啟用後，標題文字會設為斜體。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, code blocks without `fold` or `unfold` specified will not collapse when clicking the header.",
+                    "target": "啟用後，未指定 `fold` 或 `unfold` 的程式碼區塊，在點擊標題列時不會收合。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled a collapse icon will be displayed in the header. Select the position of the collapse icon.",
+                    "target": "啟用後，標題列會顯示收合圖示。請選擇收合圖示的位置。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select the style of the collapse icon.",
+                    "target": "選擇收合圖示的樣式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Overwrite the default \"Collapsed Code\" text in the header, when the file parameter is not defined.",
+                    "target": "未定義 file 參數時，覆寫標題列中的預設「Collapsed Code」文字。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the codeblock language will be displayed in the header.",
+                    "target": "啟用後，程式碼區塊語言會顯示在標題列中。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the codeblock language text will be set to bold.",
+                    "target": "啟用後，程式碼區塊語言文字會設為粗體。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the codeblock language text will be set to italic.",
+                    "target": "啟用後，程式碼區塊語言文字會設為斜體。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the codeblock language will always be displayed (if a language is defined), even if the `file` parameter is not specified.",
+                    "target": "啟用後，只要有定義語言，即使未指定 `file` 參數，也會永遠顯示程式碼區塊語言。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the codeblock language icon will be displayed in the header.",
+                    "target": "啟用後，程式碼區塊語言圖示會顯示在標題列中。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the codeblock language icon will always be displayed (if a language is defined and it has an icon), even if the `file` parameter is not specified.",
+                    "target": "啟用後，只要有定義語言且有對應圖示，即使未指定 `file` 參數，也會永遠顯示程式碼區塊語言圖示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, every comment in a code block will be styled as a `note` annotation, even without the `[!note]` syntax. ",
+                    "target": "啟用後，程式碼區塊中的每個註解都會被樣式化為 `note` 註記，即使沒有 `[!note]` 語法也一樣。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Enable to exclude annotation comments (e.g., // [!note] ...) when using the copy code button. Regular comments will always be copied.",
+                    "target": "啟用後，使用複製程式碼按鈕時會排除註記註解（例如 // [!note] ...）。一般註解仍會一律複製。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add a language, to set the colors for this specific language. If you want to set colors for code blocks without a language, add \"nolang\" as a language.",
+                    "target": "新增語言，以便為該特定語言設定顏色。如果想設定沒有語言的程式碼區塊顏色，請新增「nolang」作為語言。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select on which side the border should be displayed.",
+                    "target": "選擇邊框應顯示在哪一側。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Allows you to copy inline code by clicking on it while holding a modifier key.",
+                    "target": "允許你按住輔助鍵並點擊行內程式碼來複製。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select the key to hold while clicking to copy.",
+                    "target": "選擇點擊複製時要按住的按鍵。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, syntax highlighting will be added to inline code (if specified).",
+                    "target": "啟用後，會為行內程式碼加入語法醒目提示（若有指定）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, icons will be shown for syntax highlighted inline code.",
+                    "target": "啟用後，會為語法醒目提示的行內程式碼顯示圖示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the background color, and the text color of inline code can be styled.",
+                    "target": "啟用後，可以設定行內程式碼的背景色與文字色樣式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, you can set the color for the active line inside codeblocks only.",
+                    "target": "啟用後，你可以只設定程式碼區塊內作用中行的顏色。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Highlights a bracket and its matching pair when you click next to one.",
+                    "target": "點擊括號旁邊時，醒目提示該括號及其配對。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If you click next to a bracket, and it doesn't have a corresponding pair, or the pair does not match the opening/closing bracket (e.g: `print(\"hello\"]` ), they will be highlighted.",
+                    "target": "如果你點擊括號旁邊，而它沒有對應的配對，或配對不符合開啟/關閉括號（例如：`print(\"hello\"]`），它們會被醒目提示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, all occurrences of the selected text will be highlighted for easy identification.",
+                    "target": "啟用後，選取文字的所有出現位置都會醒目提示，方便辨識。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Override the default line separator `|` globally for text highlighting. You can also specify it for specific code blocks using the `lsep` parameter. The separator can only be one character long!",
+                    "target": "全域覆寫文字醒目提示使用的預設行分隔符 `|`。你也可以用 `lsep` 參數為特定程式碼區塊指定。分隔符只能是一個字元！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Override the default text separator `:` globally for text highlighting. You can also specify it for specific code blocks using the `tsep` parameter. The separator can only be one character long!",
+                    "target": "全域覆寫文字醒目提示使用的預設文字分隔符 `:`。你也可以用 `tsep` 參數為特定程式碼區塊指定。分隔符只能是一個字元！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Define a name, by which you will reference the color. You can set the color itself after adding it to the list.",
+                    "target": "定義用來引用此顏色的名稱。新增到清單後即可設定顏色本身。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Colors frontmatter properties using token-based syntax highlighting.",
+                    "target": "使用基於 token 的語法醒目提示為 frontmatter 屬性上色。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, you can use links in the header, and code blocks as well. For links to work inside code blocks, they must be part of a comment. Examples: [[Document1]], [[Document1|DisplayText]], [[Document1#Paragraph|DisplayText]], [[Document1#^<BlockId>|DisplayText]], [DisplayText](Link), http://example.com etc.",
+                    "target": "啟用後，你可以在標題列與程式碼區塊中使用連結。若要讓程式碼區塊內的連結生效，它們必須位於註解中。範例：[[Document1]]、[[Document1|DisplayText]]、[[Document1#Paragraph|DisplayText]]、[[Document1#^<BlockId>|DisplayText]]、[DisplayText](Link)、http://example.com 等。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "To enable this setting, enable links usage option first! If enabled, code block links will be automatically updated, when a file is renamed. Please read the README for more information!",
+                    "target": "若要啟用此設定，請先啟用連結使用選項！啟用後，檔案重新命名時，程式碼區塊連結會自動更新。請閱讀 README 以取得更多資訊！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the opening and closing ``` or ~~~ lines will be hidden, when the cursor is outside the code block. They will reappear, when you click inside, allowing for easy editing.",
+                    "target": "啟用後，當游標位於程式碼區塊外時，開頭與結尾的 ``` 或 ~~~ 行會被隱藏。點擊區塊內部時它們會重新出現，方便編輯。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Clear all stored active tab states from disk and the current session.",
+                    "target": "清除磁碟與目前工作階段中所有已儲存的作用中分頁狀態。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, all code blocks are folded by default when opening a document. To disable this behavior for a specific code block, use the \"unfold\" parameter.",
+                    "target": "啟用後，開啟文件時所有程式碼區塊預設都會收合。若要停用特定程式碼區塊的此行為，請使用「unfold」參數。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Toggles the entire feature on or off. When enabled, the folded or unfolded state of code blocks will be saved based on the options below.",
+                    "target": "開啟或關閉整個功能。啟用後，程式碼區塊的收合或展開狀態會依下方選項儲存。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose which code blocks are affected. 'Respect' only saves the state for blocks where `fold` wasn't explicitly set. 'All' saves the state for all blocks.",
+                    "target": "選擇要影響哪些程式碼區塊。「遵循」只會儲存未明確設定 `fold` 的區塊狀態。「全部」會儲存所有區塊的狀態。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Clear all stored folded code block state from disk and the current session.",
+                    "target": "清除磁碟與目前工作階段中所有已儲存的程式碼區塊收合狀態。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Hold this key while clicking copy, select, or delete to include the fence lines in the action.",
+                    "target": "點擊複製、選取或刪除時按住此鍵，即可在動作中包含 fence 行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, an additional button will be displayed on every code block. If clicked, the content of that code block is deleted. Be careful!",
+                    "target": "啟用後，每個程式碼區塊都會顯示額外按鈕。點擊後會刪除該程式碼區塊內容。請小心！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, an additional button will be displayed on every code block. If clicked, the content of that code block is selected (including the first and last lines of the code blocks which begin with three backticks).",
+                    "target": "啟用後，每個程式碼區塊都會顯示額外按鈕。點擊後會選取該程式碼區塊內容（包含以三個反引號開始的第一行與最後一行）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, an additional button will be displayed on every code block. If clicked, the content of that code block is wrapped/unwrapped.",
+                    "target": "啟用後，每個程式碼區塊都會顯示額外按鈕。點擊後會將該程式碼區塊內容換行/取消換行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, an additional button will be displayed on every code block. If clicked, a snapshot is created from the code block and inserted on the clipboard.",
+                    "target": "啟用後，每個程式碼區塊都會顯示額外按鈕。點擊後會從該程式碼區塊建立快照，並放入剪貼簿。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Set a maximum width for the generated image. Leave blank to capture the code block at its current displayed width.",
+                    "target": "設定產生圖片的最大寬度。留空則以程式碼區塊目前顯示寬度擷取。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, all enabled buttons will always be displayed, even when you click inside the code block. Otherwise, they will only be shown when the cursor is outside the code block.",
+                    "target": "啟用後，所有已啟用的按鈕會永遠顯示，即使你點擊程式碼區塊內部也一樣。否則只有在游標位於程式碼區塊外時才會顯示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, in editing mode the 'Copy Code' button will always be visible on collapsed code blocks in the header. In reading mode the 'Copy Code' button will always be visible on collapsed and uncollapsed code blocks as well. Otherwise, it will only appear when hovering over the header (in editing mode) or the code block (in reading mode).",
+                    "target": "啟用後，在編輯模式中，收合程式碼區塊標題列會永遠顯示「複製程式碼」按鈕。在閱讀模式中，收合與未收合的程式碼區塊也會永遠顯示「複製程式碼」按鈕。否則它只會在滑鼠懸停於標題列（編輯模式）或程式碼區塊（閱讀模式）時出現。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the prompt text (e.g., \"$\") will be included with the command when copying.",
+                    "target": "啟用後，複製命令時會包含提示字元文字（例如「$」）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose a prompt to edit or preview.",
+                    "target": "選擇要編輯或預覽的提示字元。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Give your prompt a name and click the button to save it. You can use your prompt using this name e.g. \"prompt:myPromptName\".",
+                    "target": "為提示字元命名並點擊按鈕儲存。你可以用此名稱使用提示字元，例如「prompt:myPromptName」。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Define the named capture groups from your regex that should be styled. For example,\nif your regex includes `(?<user>...)`, you would add a \"user\": \"user\" entry here to apply\nthe `user` style.",
+                    "target": "定義 regex 中應套用樣式的命名擷取群組。例如，\n如果 regex 包含 `(?<user>...)`，你可以在此新增 \"user\": \"user\" 項目，來套用\n`user` 樣式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Regex string for parsing the prompt.",
+                    "target": "用於解析提示字元的 regex 字串。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Only enable for prompts, when you want to set different colors for the root prompt (linux prompts only).",
+                    "target": "只有在想為 root 提示字元設定不同顏色時才啟用（僅 Linux 提示字元）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, this prompt will be used automatically for the specified languages.",
+                    "target": "啟用後，此提示字元會自動用於指定語言。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Comma-separated list of code block languages for which the prompt should be used\n(e.g., bash, python etc.).",
+                    "target": "此提示字元應套用的程式碼區塊語言清單，請以逗號分隔\n（例如 bash、python 等）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, this prompt's regex will be used to automatically find and style prompts in code blocks of the specified languages.",
+                    "target": "啟用後，會使用此提示字元的 regex 自動尋找指定語言程式碼區塊中的提示字元並套用樣式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Comma-separated list of code block languages for which this prompt's parser should be used\n(e.g., bash, shell).\nWARNING: This could affect performance if you have a lot of code blocks with the specified languages.",
+                    "target": "此提示字元解析器應套用的程式碼區塊語言清單，請以逗號分隔\n（例如 bash、shell）。\n警告：如果有大量指定語言的程式碼區塊，這可能會影響效能。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Enable to edit root-specific colors for this prompt.",
+                    "target": "啟用以編輯此提示字元的 root 專用顏色。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Enable styling for code blocks inside Admonition blocks.",
+                    "target": "啟用 Admonition 區塊內程式碼區塊的樣式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Adds a small, configurable delay before styling code blocks inside admonitions. This can resolve rendering issues in complex notes.",
+                    "target": "在為 admonition 內的程式碼區塊套用樣式前加入一小段可設定延遲。這可以解決複雜筆記中的渲染問題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The delay in milliseconds to wait before processing.",
+                    "target": "處理前等待的延遲時間，單位為毫秒。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When disabled, this plugin completely ignores the Execute Code plugin, and does not apply any styling at all to run-* code blocks. Switch documents after changing this option, to refresh the view.",
+                    "target": "停用後，此插件會完全忽略 Execute Code 插件，且不會對 run-* 程式碼區塊套用任何樣式。變更此選項後請切換文件以重新整理檢視。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When enabled, the plugin will add line numbers, highlighting, and other styles to the code output. Disable this to see the raw, default output.",
+                    "target": "啟用後，插件會為程式碼輸出加入行號、醒目提示和其他樣式。停用此選項可查看原始預設輸出。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select which settings group you want to modify.",
+                    "target": "選擇要修改的設定群組。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Select color to set",
+                    "target": "選擇要設定的顏色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable plugin in source mode",
+                    "target": "在原始碼模式中啟用插件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Exclude languages",
+                    "target": "排除語言"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable print to PDF",
+                    "target": "啟用列印為 PDF"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Force current color mode use",
+                    "target": "強制使用目前色彩模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Avoid page breaks in code blocks",
+                    "target": "避免程式碼區塊分頁"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Expand all code blocks during printing",
+                    "target": "列印時展開所有程式碼區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Print annotations as raw comments",
+                    "target": "將註記列印為原始註解"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Add language override",
+                    "target": "新增語言覆寫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable editor active line highlight",
+                    "target": "啟用編輯器作用中行醒目提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Use PrismJS syntax highlighting in editor mode",
+                    "target": "在編輯器模式使用 PrismJS 語法醒目提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable line numbers",
+                    "target": "啟用行號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show indentation lines in reading view",
+                    "target": "在閱讀檢視顯示縮排行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Unwrap code",
+                    "target": "取消程式碼換行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Line number jump separator style",
+                    "target": "行號跳躍分隔線樣式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Hidden lines style",
+                    "target": "隱藏行樣式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Highlight gutter",
+                    "target": "醒目提示 gutter"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Highlight active line number",
+                    "target": "醒目提示作用中行號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Header bold text",
+                    "target": "標題粗體文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Header italic text",
+                    "target": "標題斜體文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Disable folding for code blocks without `fold` or `unfold` specified",
+                    "target": "未指定 `fold` 或 `unfold` 的程式碼區塊停用收合"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Collapse icon position",
+                    "target": "收合圖示位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Collapse icon style",
+                    "target": "收合圖示樣式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Collapsed code text",
+                    "target": "收合程式碼文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Display codeblock language (if language is defined)",
+                    "target": "顯示程式碼區塊語言（若有定義）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Bold text",
+                    "target": "粗體文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Italic text",
+                    "target": "斜體文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Always display codeblock language",
+                    "target": "永遠顯示程式碼區塊語言"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Display codeblock language icon (if available)",
+                    "target": "顯示程式碼區塊語言圖示（若可用）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Always display codeblock language icon (if available)",
+                    "target": "永遠顯示程式碼區塊語言圖示（若可用）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Convert all comments to annotations",
+                    "target": "將所有註解轉換為註記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Exclude annotations from copying",
+                    "target": "複製時排除註記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Add languages to set colors",
+                    "target": "新增要設定顏色的語言"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Code block border styling position",
+                    "target": "程式碼區塊邊框樣式位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable click-to-copy for inline code",
+                    "target": "啟用行內程式碼點擊複製"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Modifier key for copy",
+                    "target": "複製用輔助鍵"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable inline code syntax highlighting",
+                    "target": "啟用行內程式碼語法醒目提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show icons for syntax highlighted inline code (if available)",
+                    "target": "顯示語法醒目提示行內程式碼的圖示（若可用）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable inline code styling",
+                    "target": "啟用行內程式碼樣式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable codeblock active line highlight",
+                    "target": "啟用程式碼區塊作用中行醒目提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable bracket highlight for matching brackets",
+                    "target": "啟用相符括號醒目提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable bracket highlight for non matching brackets",
+                    "target": "啟用不相符括號醒目提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable selection matching",
+                    "target": "啟用選取內容比對"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Line separator",
+                    "target": "行分隔符"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Text separator",
+                    "target": "文字分隔符"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Add alternative highlight color",
+                    "target": "新增替代醒目提示顏色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable frontmatter syntax coloring",
+                    "target": "啟用 frontmatter 語法上色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable links usage",
+                    "target": "啟用連結使用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable automatically updating links on file rename",
+                    "target": "檔案重新命名時自動更新連結"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Hide fence lines",
+                    "target": "隱藏 fence 行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Save active tab state",
+                    "target": "儲存作用中分頁狀態"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Tab state persistence",
+                    "target": "分頁狀態持久化"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Clear stored tab positions",
+                    "target": "清除已儲存的分頁位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Inverse fold behavior",
+                    "target": "反轉收合行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Save code blocks folded state",
+                    "target": "儲存程式碼區塊收合狀態"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Scope",
+                    "target": "範圍"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Persistence",
+                    "target": "持久化"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Clear stored folded positions",
+                    "target": "清除已儲存的收合位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Modifier key for fence actions",
+                    "target": "Fence 動作用輔助鍵"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show 'Delete Code' button (only editing view)",
+                    "target": "顯示「刪除程式碼」按鈕（僅編輯檢視）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show 'Select Code' button (only editing view)",
+                    "target": "顯示「選取程式碼」按鈕（僅編輯檢視）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show 'Wrap Code' button",
+                    "target": "顯示「程式碼換行」按鈕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show 'Copy as image' button",
+                    "target": "顯示「複製為圖片」按鈕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Image max width (pixels)",
+                    "target": "圖片最大寬度（像素）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Always show buttons (only editing view)",
+                    "target": "永遠顯示按鈕（僅編輯檢視）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Always show 'Copy Code' button for collapsed code blocks",
+                    "target": "收合程式碼區塊永遠顯示「複製程式碼」按鈕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Include prompts when copying",
+                    "target": "複製時包含提示字元"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Select Prompt",
+                    "target": "選擇提示字元"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Create your custom prompt",
+                    "target": "建立自訂提示字元"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Prompt Name (for codeblock language)",
+                    "target": "提示字元名稱（用於程式碼區塊語言）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Base Prompt",
+                    "target": "基本提示字元"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default User",
+                    "target": "預設使用者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default Host",
+                    "target": "預設主機"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default Directory",
+                    "target": "預設目錄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default Database",
+                    "target": "預設資料庫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default Branch",
+                    "target": "預設分支"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default Module",
+                    "target": "預設模組"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Highlight Groups",
+                    "target": "醒目提示群組"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Parse Prompt Regex",
+                    "target": "解析提示字元 Regex"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Is Windows Shell",
+                    "target": "是 Windows Shell"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Supports root styling",
+                    "target": "支援 root 樣式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-use Prompt",
+                    "target": "自動使用提示字元"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Languages for Auto-use",
+                    "target": "自動使用的語言"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-parse Prompt",
+                    "target": "自動解析提示字元"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Languages for Auto-parse",
+                    "target": "自動解析的語言"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Configure Root Colors",
+                    "target": "設定 Root 顏色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable Admonition support",
+                    "target": "啟用 Admonition 支援"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Use timer for admonition processing",
+                    "target": "使用計時器處理 Admonition"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Admonition processing delay (ms)",
+                    "target": "Admonition 處理延遲（毫秒）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable Execute Code plugin support",
+                    "target": "啟用 Execute Code 插件支援"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Style Execute Code output",
+                    "target": "套用 Execute Code 輸出樣式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Select settings page",
+                    "target": "選擇設定頁"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. dataview, python etc.",
+                    "target": "例如 dataview、python 等"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. python",
+                    "target": "例如 python"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. cpp, csharp",
+                    "target": "例如 cpp、csharp"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. error, warn",
+                    "target": "例如 error、warn"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Name for your prompt",
+                    "target": "提示字元名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. root, admin etc.",
+                    "target": "例如 root、admin 等"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. localhost",
+                    "target": "例如 localhost"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. /var/www/html",
+                    "target": "例如 /var/www/html"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. postgres",
+                    "target": "例如 postgres"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. main, dev etc.",
+                    "target": "例如 main、dev 等"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. exploit/multi/handler",
+                    "target": "例如 exploit/multi/handler"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Search settings...",
+                    "target": "搜尋設定..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Experimental: This feature is still being tested. Please report any issues you encounter.",
+                    "target": "實驗性：此功能仍在測試中。若遇到任何問題，請回報。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "restore default color",
+                    "target": "還原預設顏色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Delete color",
+                    "target": "刪除顏色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Add language override",
+                    "target": "新增語言覆寫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Show additional uncollapse button",
+                    "target": "顯示額外的展開按鈕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Restore default prompt to its original state",
+                    "target": "將預設提示字元還原為原始狀態"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Delete prompt",
+                    "target": "刪除提示字元"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Save prompt",
+                    "target": "儲存提示字元"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Line data is insufficient or invalid. Falling back to getFileCacheAndContentLines.",
+                    "target": "行資料不足或無效。改用 getFileCacheAndContentLines。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Copied to your clipboard",
+                    "target": "已複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Could not copy to your clipboard",
+                    "target": "無法複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Snapshot copied to clipboard!",
+                    "target": "快照已複製到剪貼簿！"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Enter a language name.",
+                    "target": "請輸入語言名稱。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please enter a language name.",
+                    "target": "請輸入語言名稱。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please enter a color name.",
+                    "target": "請輸入顏色名稱。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "You cannot override the default hl parameter.",
+                    "target": "你不能覆寫預設的 hl 參數。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "You cannot override the fold parameter.",
+                    "target": "你不能覆寫 fold 參數。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Cleared permanent fold data.",
+                    "target": "已清除永久收合資料。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Cleared session fold data.",
+                    "target": "已清除工作階段收合資料。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Fold cache successfully cleared!",
+                    "target": "收合快取已成功清除！"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Select a prompt first to delete.",
+                    "target": "請先選擇要刪除的提示字元。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "You cannot delete default prompts.",
+                    "target": "你不能刪除預設提示字元。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Prompt not found.",
+                    "target": "找不到提示字元。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Set a name for your prompt!",
+                    "target": "請為提示字元設定名稱！"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "You can't overwrite default prompts!",
+                    "target": "你不能覆寫預設提示字元！"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "⚠️ Invalid JSON, not saved",
+                    "target": "⚠️ JSON 無效，未儲存"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "⚠️ Invalid regex, not saved",
+                    "target": "⚠️ regex 無效，未儲存"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "⚠️ Auto-use is enabled, but no languages are specified. Disabling feature.",
+                    "target": "⚠️ 已啟用自動使用，但未指定語言。正在停用功能。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Auto-use settings saved.",
+                    "target": "自動使用設定已儲存。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "⚠️ Auto-parse is enabled, but no languages are specified. Disabling feature.",
+                    "target": "⚠️ 已啟用自動解析，但未指定語言。正在停用功能。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Auto-parse settings saved.",
+                    "target": "自動解析設定已儲存。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Error: Could not find code block container.",
+                    "target": "錯誤：找不到程式碼區塊容器。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Error: Could not find original run button.",
+                    "target": "錯誤：找不到原始執行按鈕。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Error: Could not find original clear button.",
+                    "target": "錯誤：找不到原始清除按鈕。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Error: Could not find original edit button.",
+                    "target": "錯誤：找不到原始編輯按鈕。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Code wrapped",
+                    "target": "程式碼已換行"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Code unwrapped",
+                    "target": "程式碼已取消換行"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Stored tab positions cleared!",
+                    "target": "已清除儲存的分頁位置！"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "prompt-part prompt-space",
+                    "target": "prompt-part prompt-space"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "codeblock-customizer-prompt-preview-wrapper cbc-hide-on-search",
+                    "target": "codeblock-customizer-prompt-preview-wrapper cbc-hide-on-search"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "codeblock-customizer-line-wrapper dummy-wrapper has-hidden-lines",
+                    "target": "codeblock-customizer-line-wrapper dummy-wrapper has-hidden-lines"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Property names (e.g. title, tags)",
+                    "target": "屬性名稱（例如 title、tags）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Colons, brackets, commas, and list markers (: [ ] , -)",
+                    "target": "冒號、括號、逗號與清單標記（: [ ] , -）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Quoted values (e.g. \"hello\")",
+                    "target": "引號值（例如 \"hello\"）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "true / false values",
+                    "target": "true / false 值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Numeric values (e.g. 42, 3.14)",
+                    "target": "數值（例如 42、3.14）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "YAML comments (# ...)",
+                    "target": "YAML 註解（# ...）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Unquoted text values (e.g. dates, plain text)",
+                    "target": "未加引號的文字值（例如日期、純文字）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Error",
+                    "target": "錯誤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Bash",
+                    "target": "Bash"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Bash (alt)",
+                    "target": "Bash (alt)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Zsh + Git",
+                    "target": "Zsh + Git"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Zsh",
+                    "target": "Zsh"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Kali Linux",
+                    "target": "Kali Linux"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Fish",
+                    "target": "Fish"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "PowerShell",
+                    "target": "PowerShell"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Docker shell",
+                    "target": "Docker shell"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Metasploit",
+                    "target": "Metasploit"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Cobalt Strike",
+                    "target": "Cobalt Strike"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "PostgreSQL",
+                    "target": "PostgreSQL"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Property key color",
+                    "target": "屬性鍵顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Separator color",
+                    "target": "分隔符顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "String color",
+                    "target": "字串顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Boolean color",
+                    "target": "布林值顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Number color",
+                    "target": "數字顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Comment color",
+                    "target": "註解顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Value color",
+                    "target": "值顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Fold all code blocks",
+                    "target": "收合所有程式碼區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Unfold all code blocks",
+                    "target": "展開所有程式碼區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Restore folding state of all code blocks to default",
+                    "target": "將所有程式碼區塊的收合狀態還原為預設"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Indent code block by one level",
+                    "target": "將程式碼區塊縮排一層"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Unindent code block by one level",
+                    "target": "將程式碼區塊取消縮排一層"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Plain text",
+                    "target": "純文字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Gutter Settings",
+                    "target": "Gutter 設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Header Language Tag & Header Icon Settings",
+                    "target": "標題語言標籤與標題圖示設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Prompt preview",
+                    "target": "提示字元預覽"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Codeblock Customizer Settings",
+                    "target": "Codeblock Customizer 設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "No matching settings found.",
+                    "target": "找不到相符設定。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Execute code output",
+                    "target": "執行程式碼輸出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Script executed with no output.",
+                    "target": "腳本已執行，沒有輸出。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "Notice(`Invalid regex \"${t}\" in ${D1}: ${e}`)",
+                    "target": "Notice(`regex 無效 \"${t}\" in ${D1}: ${e}`)"
+                },
+                {
+                    "source": "Notice(`Failed to read ${D1}: ${l}`)",
+                    "target": "Notice(`讀取失敗 ${D1}: ${l}`)"
+                },
+                {
+                    "source": "Notice(`Invalid JSON in ${D1}: ${l}`)",
+                    "target": "Notice(`JSON 無效： ${D1}: ${l}`)"
+                },
+                {
+                    "source": "Notice(`Failed to parse language \"${l}\": ${a}`)",
+                    "target": "Notice(`語言解析失敗 \"${l}\": ${a}`)"
+                },
+                {
+                    "source": "Notice(`Failed to register language \"${o}\": ${i}`)",
+                    "target": "Notice(`語言註冊失敗 \"${o}\": ${i}`)"
+                },
+                {
+                    "source": "Notice(\"Copied to your clipboard\")",
+                    "target": "Notice(\"已複製到剪貼簿\")"
+                },
+                {
+                    "source": "Notice(\"Could not copy to your clipboard\")",
+                    "target": "Notice(\"無法複製到剪貼簿\")"
+                },
+                {
+                    "source": "error(`File not found: ${o}`)",
+                    "target": "error(`找不到檔案： ${o}`)"
+                },
+                {
+                    "source": "error(`Error reading file: ${l.message}`)",
+                    "target": "error(`讀取檔案時發生錯誤： ${l.message}`)"
+                },
+                {
+                    "source": "Notice(\"Snapshot copied to clipboard!\")",
+                    "target": "Notice(\"快照已複製到剪貼簿！\")"
+                },
+                {
+                    "source": "setTooltip(\"restore default color\")",
+                    "target": "setTooltip(\"還原預設顏色\")"
+                },
+                {
+                    "source": "setTooltip(\"Delete color\")",
+                    "target": "setTooltip(\"刪除顏色\")"
+                },
+                {
+                    "source": "setName(\"Select color to set\")",
+                    "target": "setName(\"選擇要設定的顏色\")"
+                },
+                {
+                    "source": "setDesc(`Select which color you would like to set for ${i.settings.languageSpecificLanguageName} specifically.`)",
+                    "target": "setDesc(`選擇要為 ${i.settings.languageSpecificLanguageName} 特別設定哪個顏色。`)"
+                },
+                {
+                    "source": "setTooltip(`Add the selected property to customize it for code block language ${o} specifically`)",
+                    "target": "setTooltip(`新增選取的屬性，以便針對程式碼區塊語言 ${o} specifically`)"
+                },
+                {
+                    "source": "Notice(`${r} is already defined for code block language \"${o}\"`)",
+                    "target": "Notice(`${r} 已為程式碼區塊語言定義 \"${o}\"`)"
+                },
+                {
+                    "source": "error(\"Selected color not found.\")",
+                    "target": "error(\"找不到選取的顏色。\")"
+                },
+                {
+                    "source": "setTooltip(`Delete all language specific colors for code block language ${o}`)",
+                    "target": "setTooltip(`刪除程式碼區塊語言的所有語言專用顏色 ${o}`)"
+                },
+                {
+                    "source": "setName(\"Enable plugin in source mode\")",
+                    "target": "setName(\"在原始碼模式中啟用插件\")"
+                },
+                {
+                    "source": "setDesc(\"By default the plugin is disabled in source mode. You can enable it in source mode as well using this toggle.\")",
+                    "target": "setDesc(\"預設情況下，此插件在原始碼模式中停用。你也可以使用此開關在原始碼模式中啟用它。\")"
+                },
+                {
+                    "source": "setName(\"Exclude languages\")",
+                    "target": "setName(\"排除語言\")"
+                },
+                {
+                    "source": "setDesc(\"Define languages, separated by a comma, to which the plugin should not apply. You can use a wildcard (*) either at the beginning, or at the end. For example: ad-* will exclude codeblocks where the language starts with ad- e.g.: ad-info, ad-error etc.\")",
+                    "target": "setDesc(\"定義此插件不應套用的語言，請以逗號分隔。你可以在開頭或結尾使用萬用字元 (*)。例如：ad-* 會排除語言以 ad- 開頭的程式碼區塊，例如 ad-info、ad-error 等。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. dataview, python etc.\")",
+                    "target": "setPlaceholder(\"例如 dataview、python 等\")"
+                },
+                {
+                    "source": "setName(\"Enable print to PDF\")",
+                    "target": "setName(\"啟用列印為 PDF\")"
+                },
+                {
+                    "source": "setName(\"Force current color mode use\")",
+                    "target": "setName(\"強制使用目前色彩模式\")"
+                },
+                {
+                    "source": "setName(\"Avoid page breaks in code blocks\")",
+                    "target": "setName(\"避免程式碼區塊分頁\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the plugin will try to prevent code blocks from being split across multiple pages when printing.\")",
+                    "target": "setDesc(\"啟用後，列印時插件會嘗試避免程式碼區塊被分割到多個頁面。\")"
+                },
+                {
+                    "source": "setName(\"Expand all code blocks during printing\")",
+                    "target": "setName(\"列印時展開所有程式碼區塊\")"
+                },
+                {
+                    "source": "setDesc('If enabled, all collapsed code blocks specified by the \"fold\" parameter will be expanded when printing. This results in the printed document containing expanded code blocks where \"fold\" was used.')",
+                    "target": "setDesc('啟用後，列印時所有由「fold」參數指定為收合的程式碼區塊都會展開。這會讓列印文件中使用「fold」的程式碼區塊以展開狀態呈現。')"
+                },
+                {
+                    "source": "setName(\"Print annotations as raw comments\")",
+                    "target": "setName(\"將註記列印為原始註解\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, annotations will be printed as visible code comments instead of rendered icons.\")",
+                    "target": "setDesc(\"啟用後，註記會以可見程式碼註解列印，而不是渲染為圖示。\")"
+                },
+                {
+                    "source": "setName(\"Add language override\")",
+                    "target": "setName(\"新增語言覆寫\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. python\")",
+                    "target": "setPlaceholder(\"例如 python\")"
+                },
+                {
+                    "source": "setTooltip(\"Add language override\")",
+                    "target": "setTooltip(\"新增語言覆寫\")"
+                },
+                {
+                    "source": "Notice(\"Enter a language name.\")",
+                    "target": "Notice(\"請輸入語言名稱。\")"
+                },
+                {
+                    "source": "setText(`Editing: ${e}`)",
+                    "target": "setText(`正在編輯： ${e}`)"
+                },
+                {
+                    "source": "setTooltip(`Add color for ${f}`)",
+                    "target": "setTooltip(`新增 color for ${f}`)"
+                },
+                {
+                    "source": "setName(\"Enable editor active line highlight\")",
+                    "target": "setName(\"啟用編輯器作用中行醒目提示\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, you can set the color for the active line (including codeblocks).\")",
+                    "target": "setDesc(\"啟用後，你可以設定作用中行的顏色（包含程式碼區塊）。\")"
+                },
+                {
+                    "source": "setName(\"Use PrismJS syntax highlighting in editor mode\")",
+                    "target": "setName(\"在編輯器模式使用 PrismJS 語法醒目提示\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, editor mode will use PrismJS for syntax highlighting instead of CodeMirror's built-in highlighting. This makes editor mode syntax highlighting match reading mode syntax highlighting.\")",
+                    "target": "setDesc(\"啟用後，編輯器模式會使用 PrismJS 進行語法醒目提示，而不是 CodeMirror 內建的醒目提示。這會讓編輯器模式的語法醒目提示與閱讀模式一致。\")"
+                },
+                {
+                    "source": "setText(\"Experimental: This feature is still being tested. Please report any issues you encounter.\")",
+                    "target": "setText(\"實驗性：此功能仍在測試中。若遇到任何問題，請回報。\")"
+                },
+                {
+                    "source": "setName(\"Enable line numbers\")",
+                    "target": "setName(\"啟用行號\")"
+                },
+                {
+                    "source": "setName(\"Show indentation lines in reading view\")",
+                    "target": "setName(\"在閱讀檢視顯示縮排行\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, indentation lines will be shown in reading view.\")",
+                    "target": "setDesc(\"啟用後，閱讀檢視會顯示縮排行。\")"
+                },
+                {
+                    "source": "setName(\"Unwrap code\")",
+                    "target": "setName(\"取消程式碼換行\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the code will be unwrapped in reading view.\")",
+                    "target": "setDesc(\"啟用後，閱讀檢視中的程式碼不會自動換行。\")"
+                },
+                {
+                    "source": "setName(\"Line number jump separator style\")",
+                    "target": "setName(\"行號跳躍分隔線樣式\")"
+                },
+                {
+                    "source": "setDesc(\"Select the style of the separator line shown when line number jumps are used.\")",
+                    "target": "setDesc(\"選擇使用行號跳躍時顯示的分隔線樣式。\")"
+                },
+                {
+                    "source": "setName(\"Hidden lines style\")",
+                    "target": "setName(\"隱藏行樣式\")"
+                },
+                {
+                    "source": "setDesc(\"Select the style of the separator line shown when code lines are hidden.\")",
+                    "target": "setDesc(\"選擇隱藏程式碼行時顯示的分隔線樣式。\")"
+                },
+                {
+                    "source": "setName(\"Highlight gutter\")",
+                    "target": "setName(\"醒目提示 gutter\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, highlighted lines will also highlight the gutter (line number), not just the line.\")",
+                    "target": "setDesc(\"啟用後，醒目提示行時也會醒目提示 gutter（行號），而不只是行本身。\")"
+                },
+                {
+                    "source": "setName(\"Highlight active line number\")",
+                    "target": "setName(\"醒目提示作用中行號\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the active line number will be highlighted with a separate color.\")",
+                    "target": "setDesc(\"啟用後，作用中行號會以獨立顏色醒目提示。\")"
+                },
+                {
+                    "source": "setName(\"Header bold text\")",
+                    "target": "setName(\"標題粗體文字\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the header text will be set to bold.\")",
+                    "target": "setDesc(\"啟用後，標題文字會設為粗體。\")"
+                },
+                {
+                    "source": "setName(\"Header italic text\")",
+                    "target": "setName(\"標題斜體文字\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the header text will be set to italic.\")",
+                    "target": "setDesc(\"啟用後，標題文字會設為斜體。\")"
+                },
+                {
+                    "source": "setName(\"Disable folding for code blocks without `fold` or `unfold` specified\")",
+                    "target": "setName(\"未指定 `fold` 或 `unfold` 的程式碼區塊停用收合\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, code blocks without `fold` or `unfold` specified will not collapse when clicking the header.\")",
+                    "target": "setDesc(\"啟用後，未指定 `fold` 或 `unfold` 的程式碼區塊，在點擊標題列時不會收合。\")"
+                },
+                {
+                    "source": "setName(\"Collapse icon position\")",
+                    "target": "setName(\"收合圖示位置\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled a collapse icon will be displayed in the header. Select the position of the collapse icon.\")",
+                    "target": "setDesc(\"啟用後，標題列會顯示收合圖示。請選擇收合圖示的位置。\")"
+                },
+                {
+                    "source": "setName(\"Collapse icon style\")",
+                    "target": "setName(\"收合圖示樣式\")"
+                },
+                {
+                    "source": "setDesc(\"Select the style of the collapse icon.\")",
+                    "target": "setDesc(\"選擇收合圖示的樣式。\")"
+                },
+                {
+                    "source": "setName(\"Collapsed code text\")",
+                    "target": "setName(\"收合程式碼文字\")"
+                },
+                {
+                    "source": "setDesc('Overwrite the default \"Collapsed Code\" text in the header, when the file parameter is not defined.')",
+                    "target": "setDesc('未定義 file 參數時，覆寫標題列中的預設「Collapsed Code」文字。')"
+                },
+                {
+                    "source": "setName(\"Display codeblock language (if language is defined)\")",
+                    "target": "setName(\"顯示程式碼區塊語言（若有定義）\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the codeblock language will be displayed in the header.\")",
+                    "target": "setDesc(\"啟用後，程式碼區塊語言會顯示在標題列中。\")"
+                },
+                {
+                    "source": "setName(\"Bold text\")",
+                    "target": "setName(\"粗體文字\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the codeblock language text will be set to bold.\")",
+                    "target": "setDesc(\"啟用後，程式碼區塊語言文字會設為粗體。\")"
+                },
+                {
+                    "source": "setName(\"Italic text\")",
+                    "target": "setName(\"斜體文字\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the codeblock language text will be set to italic.\")",
+                    "target": "setDesc(\"啟用後，程式碼區塊語言文字會設為斜體。\")"
+                },
+                {
+                    "source": "setName(\"Always display codeblock language\")",
+                    "target": "setName(\"永遠顯示程式碼區塊語言\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the codeblock language will always be displayed (if a language is defined), even if the `file` parameter is not specified.\")",
+                    "target": "setDesc(\"啟用後，只要有定義語言，即使未指定 `file` 參數，也會永遠顯示程式碼區塊語言。\")"
+                },
+                {
+                    "source": "setName(\"Display codeblock language icon (if available)\")",
+                    "target": "setName(\"顯示程式碼區塊語言圖示（若可用）\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the codeblock language icon will be displayed in the header.\")",
+                    "target": "setDesc(\"啟用後，程式碼區塊語言圖示會顯示在標題列中。\")"
+                },
+                {
+                    "source": "setName(\"Always display codeblock language icon (if available)\")",
+                    "target": "setName(\"永遠顯示程式碼區塊語言圖示（若可用）\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the codeblock language icon will always be displayed (if a language is defined and it has an icon), even if the `file` parameter is not specified.\")",
+                    "target": "setDesc(\"啟用後，只要有定義語言且有對應圖示，即使未指定 `file` 參數，也會永遠顯示程式碼區塊語言圖示。\")"
+                },
+                {
+                    "source": "setName(\"Convert all comments to annotations\")",
+                    "target": "setName(\"將所有註解轉換為註記\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, every comment in a code block will be styled as a `note` annotation, even without the `[!note]` syntax. \")",
+                    "target": "setDesc(\"啟用後，程式碼區塊中的每個註解都會被樣式化為 `note` 註記，即使沒有 `[!note]` 語法也一樣。\")"
+                },
+                {
+                    "source": "setName(\"Exclude annotations from copying\")",
+                    "target": "setName(\"複製時排除註記\")"
+                },
+                {
+                    "source": "setDesc(\"Enable to exclude annotation comments (e.g., // [!note] ...) when using the copy code button. Regular comments will always be copied.\")",
+                    "target": "setDesc(\"啟用後，使用複製程式碼按鈕時會排除註記註解（例如 // [!note] ...）。一般註解仍會一律複製。\")"
+                },
+                {
+                    "source": "setName(\"Add languages to set colors\")",
+                    "target": "setName(\"新增要設定顏色的語言\")"
+                },
+                {
+                    "source": "setDesc('Add a language, to set the colors for this specific language. If you want to set colors for code blocks without a language, add \"nolang\" as a language.')",
+                    "target": "setDesc('新增語言，以便為該特定語言設定顏色。如果想設定沒有語言的程式碼區塊顏色，請新增「nolang」作為語言。')"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. cpp, csharp\")",
+                    "target": "setPlaceholder(\"例如 cpp、csharp\")"
+                },
+                {
+                    "source": "Notice(\"Please enter a language name.\")",
+                    "target": "Notice(\"請輸入語言名稱。\")"
+                },
+                {
+                    "source": "Notice(`A language with the name \"${this.plugin.settings.languageSpecificLanguageName}\" already exists.`)",
+                    "target": "Notice(`名稱為 \"${this.plugin.settings.languageSpecificLanguageName}\" 的語言已存在。`)"
+                },
+                {
+                    "source": "Notice(`Added language \"${this.plugin.settings.languageSpecificLanguageName}\".`)",
+                    "target": "Notice(`已新增語言 \"${this.plugin.settings.languageSpecificLanguageName}\".`)"
+                },
+                {
+                    "source": "Notice(`\"${this.plugin.settings.languageSpecificLanguageName}\" is not a valid language name.`)",
+                    "target": "Notice(`\"${this.plugin.settings.languageSpecificLanguageName}\" 不是有效的語言名稱。`)"
+                },
+                {
+                    "source": "setName(\"Code block border styling position\")",
+                    "target": "setName(\"程式碼區塊邊框樣式位置\")"
+                },
+                {
+                    "source": "setDesc(\"Select on which side the border should be displayed.\")",
+                    "target": "setDesc(\"選擇邊框應顯示在哪一側。\")"
+                },
+                {
+                    "source": "setName(\"Enable click-to-copy for inline code\")",
+                    "target": "setName(\"啟用行內程式碼點擊複製\")"
+                },
+                {
+                    "source": "setDesc(\"Allows you to copy inline code by clicking on it while holding a modifier key.\")",
+                    "target": "setDesc(\"允許你按住輔助鍵並點擊行內程式碼來複製。\")"
+                },
+                {
+                    "source": "setName(\"Modifier key for copy\")",
+                    "target": "setName(\"複製用輔助鍵\")"
+                },
+                {
+                    "source": "setDesc(\"Select the key to hold while clicking to copy.\")",
+                    "target": "setDesc(\"選擇點擊複製時要按住的按鍵。\")"
+                },
+                {
+                    "source": "setName(\"Enable inline code syntax highlighting\")",
+                    "target": "setName(\"啟用行內程式碼語法醒目提示\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, syntax highlighting will be added to inline code (if specified).\")",
+                    "target": "setDesc(\"啟用後，會為行內程式碼加入語法醒目提示（若有指定）。\")"
+                },
+                {
+                    "source": "setName(\"Show icons for syntax highlighted inline code (if available)\")",
+                    "target": "setName(\"顯示語法醒目提示行內程式碼的圖示（若可用）\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, icons will be shown for syntax highlighted inline code.\")",
+                    "target": "setDesc(\"啟用後，會為語法醒目提示的行內程式碼顯示圖示。\")"
+                },
+                {
+                    "source": "setName(\"Enable inline code styling\")",
+                    "target": "setName(\"啟用行內程式碼樣式\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the background color, and the text color of inline code can be styled.\")",
+                    "target": "setDesc(\"啟用後，可以設定行內程式碼的背景色與文字色樣式。\")"
+                },
+                {
+                    "source": "setName(\"Enable codeblock active line highlight\")",
+                    "target": "setName(\"啟用程式碼區塊作用中行醒目提示\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, you can set the color for the active line inside codeblocks only.\")",
+                    "target": "setDesc(\"啟用後，你可以只設定程式碼區塊內作用中行的顏色。\")"
+                },
+                {
+                    "source": "setName(\"Enable bracket highlight for matching brackets\")",
+                    "target": "setName(\"啟用相符括號醒目提示\")"
+                },
+                {
+                    "source": "setDesc(\"Highlights a bracket and its matching pair when you click next to one.\")",
+                    "target": "setDesc(\"點擊括號旁邊時，醒目提示該括號及其配對。\")"
+                },
+                {
+                    "source": "setName(\"Enable bracket highlight for non matching brackets\")",
+                    "target": "setName(\"啟用不相符括號醒目提示\")"
+                },
+                {
+                    "source": "setDesc('If you click next to a bracket, and it doesn\\'t have a corresponding pair, or the pair does not match the opening/closing bracket (e.g: `print(\"hello\"]` ), they will be highlighted.')",
+                    "target": "setDesc('如果你點擊括號旁邊，而它沒有對應的配對，或配對不符合開啟/關閉括號（例如：`print(\"hello\"]`），它們會被醒目提示。')"
+                },
+                {
+                    "source": "setName(\"Enable selection matching\")",
+                    "target": "setName(\"啟用選取內容比對\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, all occurrences of the selected text will be highlighted for easy identification.\")",
+                    "target": "setDesc(\"啟用後，選取文字的所有出現位置都會醒目提示，方便辨識。\")"
+                },
+                {
+                    "source": "setName(\"Line separator\")",
+                    "target": "setName(\"行分隔符\")"
+                },
+                {
+                    "source": "setDesc(\"Override the default line separator `|` globally for text highlighting. You can also specify it for specific code blocks using the `lsep` parameter. The separator can only be one character long!\")",
+                    "target": "setDesc(\"全域覆寫文字醒目提示使用的預設行分隔符 `|`。你也可以用 `lsep` 參數為特定程式碼區塊指定。分隔符只能是一個字元！\")"
+                },
+                {
+                    "source": "setName(\"Text separator\")",
+                    "target": "setName(\"文字分隔符\")"
+                },
+                {
+                    "source": "setDesc(\"Override the default text separator `:` globally for text highlighting. You can also specify it for specific code blocks using the `tsep` parameter. The separator can only be one character long!\")",
+                    "target": "setDesc(\"全域覆寫文字醒目提示使用的預設文字分隔符 `:`。你也可以用 `tsep` 參數為特定程式碼區塊指定。分隔符只能是一個字元！\")"
+                },
+                {
+                    "source": "setName(\"Add alternative highlight color\")",
+                    "target": "setName(\"新增替代醒目提示顏色\")"
+                },
+                {
+                    "source": "setDesc(\"Define a name, by which you will reference the color. You can set the color itself after adding it to the list.\")",
+                    "target": "setDesc(\"定義用來引用此顏色的名稱。新增到清單後即可設定顏色本身。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. error, warn\")",
+                    "target": "setPlaceholder(\"例如 error、warn\")"
+                },
+                {
+                    "source": "Notice(\"Please enter a color name.\")",
+                    "target": "Notice(\"請輸入顏色名稱。\")"
+                },
+                {
+                    "source": "Notice(`\"${this.plugin.settings.alternateHighlightColorName}\" is not a valid color name.`)",
+                    "target": "Notice(`\"${this.plugin.settings.alternateHighlightColorName}\" 不是有效的顏色名稱。`)"
+                },
+                {
+                    "source": "Notice(\"You cannot override the default hl parameter.\")",
+                    "target": "Notice(\"你不能覆寫預設的 hl 參數。\")"
+                },
+                {
+                    "source": "Notice(\"You cannot override the fold parameter.\")",
+                    "target": "Notice(\"你不能覆寫 fold 參數。\")"
+                },
+                {
+                    "source": "Notice(`A color with the name \"${this.plugin.settings.alternateHighlightColorName}\" already exists.`)",
+                    "target": "Notice(`名稱為 \"${this.plugin.settings.alternateHighlightColorName}\" 的語言已存在。`)"
+                },
+                {
+                    "source": "Notice(`Added color \"${this.plugin.settings.alternateHighlightColorName}\".`)",
+                    "target": "Notice(`已新增顏色 \"${this.plugin.settings.alternateHighlightColorName}\".`)"
+                },
+                {
+                    "source": "setName(\"Enable frontmatter syntax coloring\")",
+                    "target": "setName(\"啟用 frontmatter 語法上色\")"
+                },
+                {
+                    "source": "setDesc(\"Colors frontmatter properties using token-based syntax highlighting.\")",
+                    "target": "setDesc(\"使用基於 token 的語法醒目提示為 frontmatter 屬性上色。\")"
+                },
+                {
+                    "source": "setName(\"Enable links usage\")",
+                    "target": "setName(\"啟用連結使用\")"
+                },
+                {
+                    "source": "setName(\"Enable automatically updating links on file rename\")",
+                    "target": "setName(\"檔案重新命名時自動更新連結\")"
+                },
+                {
+                    "source": "setDesc(\"To enable this setting, enable links usage option first! If enabled, code block links will be automatically updated, when a file is renamed. Please read the README for more information!\")",
+                    "target": "setDesc(\"若要啟用此設定，請先啟用連結使用選項！啟用後，檔案重新命名時，程式碼區塊連結會自動更新。請閱讀 README 以取得更多資訊！\")"
+                },
+                {
+                    "source": "setName(\"Hide fence lines\")",
+                    "target": "setName(\"隱藏 fence 行\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the opening and closing ``` or ~~~ lines will be hidden, when the cursor is outside the code block. They will reappear, when you click inside, allowing for easy editing.\")",
+                    "target": "setDesc(\"啟用後，當游標位於程式碼區塊外時，開頭與結尾的 ``` 或 ~~~ 行會被隱藏。點擊區塊內部時它們會重新出現，方便編輯。\")"
+                },
+                {
+                    "source": "setName(\"Save active tab state\")",
+                    "target": "setName(\"儲存作用中分頁狀態\")"
+                },
+                {
+                    "source": "setName(\"Tab state persistence\")",
+                    "target": "setName(\"分頁狀態持久化\")"
+                },
+                {
+                    "source": "setName(\"Clear stored tab positions\")",
+                    "target": "setName(\"清除已儲存的分頁位置\")"
+                },
+                {
+                    "source": "setDesc(\"Clear all stored active tab states from disk and the current session.\")",
+                    "target": "setDesc(\"清除磁碟與目前工作階段中所有已儲存的作用中分頁狀態。\")"
+                },
+                {
+                    "source": "setButtonText(\"Clear cache\")",
+                    "target": "setButtonText(\"清除快取\")"
+                },
+                {
+                    "source": "setName(\"Inverse fold behavior\")",
+                    "target": "setName(\"反轉收合行為\")"
+                },
+                {
+                    "source": "setDesc('If enabled, all code blocks are folded by default when opening a document. To disable this behavior for a specific code block, use the \"unfold\" parameter.')",
+                    "target": "setDesc('啟用後，開啟文件時所有程式碼區塊預設都會收合。若要停用特定程式碼區塊的此行為，請使用「unfold」參數。')"
+                },
+                {
+                    "source": "setTooltip(\"Show additional uncollapse button\")",
+                    "target": "setTooltip(\"顯示額外的展開按鈕\")"
+                },
+                {
+                    "source": "setName(\"Save code blocks folded state\")",
+                    "target": "setName(\"儲存程式碼區塊收合狀態\")"
+                },
+                {
+                    "source": "setDesc(\"Toggles the entire feature on or off. When enabled, the folded or unfolded state of code blocks will be saved based on the options below.\")",
+                    "target": "setDesc(\"開啟或關閉整個功能。啟用後，程式碼區塊的收合或展開狀態會依下方選項儲存。\")"
+                },
+                {
+                    "source": "setDesc(\"Choose which code blocks are affected. 'Respect' only saves the state for blocks where `fold` wasn't explicitly set. 'All' saves the state for all blocks.\")",
+                    "target": "setDesc(\"選擇要影響哪些程式碼區塊。「遵循」只會儲存未明確設定 `fold` 的區塊狀態。「全部」會儲存所有區塊的狀態。\")"
+                },
+                {
+                    "source": "Notice(\"Cleared permanent fold data.\")",
+                    "target": "Notice(\"已清除永久收合資料。\")"
+                },
+                {
+                    "source": "Notice(\"Cleared session fold data.\")",
+                    "target": "Notice(\"已清除工作階段收合資料。\")"
+                },
+                {
+                    "source": "setName(\"Clear stored folded positions\")",
+                    "target": "setName(\"清除已儲存的收合位置\")"
+                },
+                {
+                    "source": "setDesc(\"Clear all stored folded code block state from disk and the current session.\")",
+                    "target": "setDesc(\"清除磁碟與目前工作階段中所有已儲存的程式碼區塊收合狀態。\")"
+                },
+                {
+                    "source": "Notice(\"Fold cache successfully cleared!\")",
+                    "target": "Notice(\"收合快取已成功清除！\")"
+                },
+                {
+                    "source": "setName(\"Modifier key for fence actions\")",
+                    "target": "setName(\"Fence 動作用輔助鍵\")"
+                },
+                {
+                    "source": "setDesc(\"Hold this key while clicking copy, select, or delete to include the fence lines in the action.\")",
+                    "target": "setDesc(\"點擊複製、選取或刪除時按住此鍵，即可在動作中包含 fence 行。\")"
+                },
+                {
+                    "source": "setName(\"Show 'Delete Code' button (only editing view)\")",
+                    "target": "setName(\"顯示「刪除程式碼」按鈕（僅編輯檢視）\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, an additional button will be displayed on every code block. If clicked, the content of that code block is deleted. Be careful!\")",
+                    "target": "setDesc(\"啟用後，每個程式碼區塊都會顯示額外按鈕。點擊後會刪除該程式碼區塊內容。請小心！\")"
+                },
+                {
+                    "source": "setName(\"Show 'Select Code' button (only editing view)\")",
+                    "target": "setName(\"顯示「選取程式碼」按鈕（僅編輯檢視）\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, an additional button will be displayed on every code block. If clicked, the content of that code block is selected (including the first and last lines of the code blocks which begin with three backticks).\")",
+                    "target": "setDesc(\"啟用後，每個程式碼區塊都會顯示額外按鈕。點擊後會選取該程式碼區塊內容（包含以三個反引號開始的第一行與最後一行）。\")"
+                },
+                {
+                    "source": "setName(\"Show 'Wrap Code' button\")",
+                    "target": "setName(\"顯示「程式碼換行」按鈕\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, an additional button will be displayed on every code block. If clicked, the content of that code block is wrapped/unwrapped.\")",
+                    "target": "setDesc(\"啟用後，每個程式碼區塊都會顯示額外按鈕。點擊後會將該程式碼區塊內容換行/取消換行。\")"
+                },
+                {
+                    "source": "setName(\"Show 'Copy as image' button\")",
+                    "target": "setName(\"顯示「複製為圖片」按鈕\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, an additional button will be displayed on every code block. If clicked, a snapshot is created from the code block and inserted on the clipboard.\")",
+                    "target": "setDesc(\"啟用後，每個程式碼區塊都會顯示額外按鈕。點擊後會從該程式碼區塊建立快照，並放入剪貼簿。\")"
+                },
+                {
+                    "source": "setName(\"Image max width (pixels)\")",
+                    "target": "setName(\"圖片最大寬度（像素）\")"
+                },
+                {
+                    "source": "setDesc(\"Set a maximum width for the generated image. Leave blank to capture the code block at its current displayed width.\")",
+                    "target": "setDesc(\"設定產生圖片的最大寬度。留空則以程式碼區塊目前顯示寬度擷取。\")"
+                },
+                {
+                    "source": "setName(\"Always show buttons (only editing view)\")",
+                    "target": "setName(\"永遠顯示按鈕（僅編輯檢視）\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, all enabled buttons will always be displayed, even when you click inside the code block. Otherwise, they will only be shown when the cursor is outside the code block.\")",
+                    "target": "setDesc(\"啟用後，所有已啟用的按鈕會永遠顯示，即使你點擊程式碼區塊內部也一樣。否則只有在游標位於程式碼區塊外時才會顯示。\")"
+                },
+                {
+                    "source": "setName(\"Always show 'Copy Code' button for collapsed code blocks\")",
+                    "target": "setName(\"收合程式碼區塊永遠顯示「複製程式碼」按鈕\")"
+                },
+                {
+                    "source": "setName(\"Include prompts when copying\")",
+                    "target": "setName(\"複製時包含提示字元\")"
+                },
+                {
+                    "source": "setDesc('If enabled, the prompt text (e.g., \"$\") will be included with the command when copying.')",
+                    "target": "setDesc('啟用後，複製命令時會包含提示字元文字（例如「$」）。')"
+                },
+                {
+                    "source": "setName(\"Select Prompt\")",
+                    "target": "setName(\"選擇提示字元\")"
+                },
+                {
+                    "source": "setDesc(\"Choose a prompt to edit or preview.\")",
+                    "target": "setDesc(\"選擇要編輯或預覽的提示字元。\")"
+                },
+                {
+                    "source": "setTooltip(\"Restore default prompt to its original state\")",
+                    "target": "setTooltip(\"將預設提示字元還原為原始狀態\")"
+                },
+                {
+                    "source": "Notice(`All settings and colors of prompt \"${i}\" restored to its original state!`)",
+                    "target": "Notice(`提示字元 \"${i}\" 的所有設定與顏色已還原為原始狀態！`)"
+                },
+                {
+                    "source": "setTooltip(\"Delete prompt\")",
+                    "target": "setTooltip(\"刪除提示字元\")"
+                },
+                {
+                    "source": "Notice(\"Select a prompt first to delete.\")",
+                    "target": "Notice(\"請先選擇要刪除的提示字元。\")"
+                },
+                {
+                    "source": "Notice(\"You cannot delete default prompts.\")",
+                    "target": "Notice(\"你不能刪除預設提示字元。\")"
+                },
+                {
+                    "source": "Notice(\"Prompt not found.\")",
+                    "target": "Notice(\"找不到提示字元。\")"
+                },
+                {
+                    "source": "Notice(`Prompt \"${i}\" deleted successfully!`)",
+                    "target": "Notice(`Prompt \"${i}\" 已成功刪除！`)"
+                },
+                {
+                    "source": "setName(\"Create your custom prompt\")",
+                    "target": "setName(\"建立自訂提示字元\")"
+                },
+                {
+                    "source": "setDesc('Give your prompt a name and click the button to save it. You can use your prompt using this name e.g. \"prompt:myPromptName\".')",
+                    "target": "setDesc('為提示字元命名並點擊按鈕儲存。你可以用此名稱使用提示字元，例如「prompt:myPromptName」。')"
+                },
+                {
+                    "source": "setPlaceholder(\"Name for your prompt\")",
+                    "target": "setPlaceholder(\"提示字元名稱\")"
+                },
+                {
+                    "source": "setTooltip(\"Save prompt\")",
+                    "target": "setTooltip(\"儲存提示字元\")"
+                },
+                {
+                    "source": "Notice(\"Set a name for your prompt!\")",
+                    "target": "Notice(\"請為提示字元設定名稱！\")"
+                },
+                {
+                    "source": "Notice(\"You can't overwrite default prompts!\")",
+                    "target": "Notice(\"你不能覆寫預設提示字元！\")"
+                },
+                {
+                    "source": "Notice(`Prompt \"${this.plugin.settings.newPromptName}\" updated successfully!`)",
+                    "target": "Notice(`Prompt \"${this.plugin.settings.newPromptName}\" 已成功更新！`)"
+                },
+                {
+                    "source": "Notice(`Prompt \"${this.plugin.settings.newPromptName}\" saved successfully!`)",
+                    "target": "Notice(`Prompt \"${this.plugin.settings.newPromptName}\" 已成功儲存！`)"
+                },
+                {
+                    "source": "setName(\"Prompt Name (for codeblock language)\")",
+                    "target": "setName(\"提示字元名稱（用於程式碼區塊語言）\")"
+                },
+                {
+                    "source": "setDesc(`This is the identifier to use in your code block fence, e.g., prompt:${e}`)",
+                    "target": "setDesc(`這是在程式碼區塊 fence 中使用的識別符，例如 prompt:${e}`)"
+                },
+                {
+                    "source": "setName(\"Base Prompt\")",
+                    "target": "setName(\"基本提示字元\")"
+                },
+                {
+                    "source": "setName(\"Default User\")",
+                    "target": "setName(\"預設使用者\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. root, admin etc.\")",
+                    "target": "setPlaceholder(\"例如 root、admin 等\")"
+                },
+                {
+                    "source": "setName(\"Default Host\")",
+                    "target": "setName(\"預設主機\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. localhost\")",
+                    "target": "setPlaceholder(\"例如 localhost\")"
+                },
+                {
+                    "source": "setName(\"Default Directory\")",
+                    "target": "setName(\"預設目錄\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. /var/www/html\")",
+                    "target": "setPlaceholder(\"例如 /var/www/html\")"
+                },
+                {
+                    "source": "setName(\"Default Database\")",
+                    "target": "setName(\"預設資料庫\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. postgres\")",
+                    "target": "setPlaceholder(\"例如 postgres\")"
+                },
+                {
+                    "source": "setName(\"Default Branch\")",
+                    "target": "setName(\"預設分支\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. main, dev etc.\")",
+                    "target": "setPlaceholder(\"例如 main、dev 等\")"
+                },
+                {
+                    "source": "setName(\"Default Module\")",
+                    "target": "setName(\"預設模組\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. exploit/multi/handler\")",
+                    "target": "setPlaceholder(\"例如 exploit/multi/handler\")"
+                },
+                {
+                    "source": "setName(\"Highlight Groups\")",
+                    "target": "setName(\"醒目提示群組\")"
+                },
+                {
+                    "source": "setDesc('Define the named capture groups from your regex that should be styled. For example,\\nif your regex includes `(?<user>...)`, you would add a \"user\": \"user\" entry here to apply\\nthe `user` style.')",
+                    "target": "setDesc('定義 regex 中應套用樣式的命名擷取群組。例如，\\n如果 regex 包含 `(?<user>...)`，你可以在此新增 \"user\": \"user\" 項目，來套用\\n`user` 樣式。')"
+                },
+                {
+                    "source": "Notice(\"\\u26A0\\uFE0F Invalid JSON, not saved\")",
+                    "target": "Notice(\"\\u26A0\\uFE0F JSON 無效，未儲存\")"
+                },
+                {
+                    "source": "setName(\"Parse Prompt Regex\")",
+                    "target": "setName(\"解析提示字元 Regex\")"
+                },
+                {
+                    "source": "setDesc(\"Regex string for parsing the prompt.\")",
+                    "target": "setDesc(\"用於解析提示字元的 regex 字串。\")"
+                },
+                {
+                    "source": "Notice(`Regex saved for prompt \"${e}\"`)",
+                    "target": "Notice(`已儲存提示字元的 regex \"${e}\"`)"
+                },
+                {
+                    "source": "Notice(\"\\u26A0\\uFE0F Invalid regex, not saved\")",
+                    "target": "Notice(\"\\u26A0\\uFE0F regex 無效，未儲存\")"
+                },
+                {
+                    "source": "setName(\"Is Windows Shell\")",
+                    "target": "setName(\"是 Windows Shell\")"
+                },
+                {
+                    "source": "setName(\"Supports root styling\")",
+                    "target": "setName(\"支援 root 樣式\")"
+                },
+                {
+                    "source": "setDesc(\"Only enable for prompts, when you want to set different colors for the root prompt (linux prompts only).\")",
+                    "target": "setDesc(\"只有在想為 root 提示字元設定不同顏色時才啟用（僅 Linux 提示字元）。\")"
+                },
+                {
+                    "source": "setName(\"Auto-use Prompt\")",
+                    "target": "setName(\"自動使用提示字元\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, this prompt will be used automatically for the specified languages.\")",
+                    "target": "setDesc(\"啟用後，此提示字元會自動用於指定語言。\")"
+                },
+                {
+                    "source": "setName(\"Languages for Auto-use\")",
+                    "target": "setName(\"自動使用的語言\")"
+                },
+                {
+                    "source": "setDesc(`Comma-separated list of code block languages for which the prompt should be used\n(e.g., bash, python etc.).`)",
+                    "target": "setDesc(`此提示字元應套用的程式碼區塊語言清單，請以逗號分隔\n（例如 bash、python 等）。`)"
+                },
+                {
+                    "source": "Notice(\"\\u26A0\\uFE0F Auto-use is enabled, but no languages are specified. Disabling feature.\")",
+                    "target": "Notice(\"\\u26A0\\uFE0F 已啟用自動使用，但未指定語言。正在停用功能。\")"
+                },
+                {
+                    "source": "Notice(`\\u26A0\\uFE0F Can't save. Language '${b}' is already set for auto-use by prompt '${P.name}'.`)",
+                    "target": "Notice(`\\u26A0\\uFE0F 無法儲存。語言 '${b}' 已由提示字元設為自動使用 '${P.name}'.`)"
+                },
+                {
+                    "source": "Notice(\"Auto-use settings saved.\")",
+                    "target": "Notice(\"自動使用設定已儲存。\")"
+                },
+                {
+                    "source": "setName(\"Auto-parse Prompt\")",
+                    "target": "setName(\"自動解析提示字元\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, this prompt's regex will be used to automatically find and style prompts in code blocks of the specified languages.\")",
+                    "target": "setDesc(\"啟用後，會使用此提示字元的 regex 自動尋找指定語言程式碼區塊中的提示字元並套用樣式。\")"
+                },
+                {
+                    "source": "setName(\"Languages for Auto-parse\")",
+                    "target": "setName(\"自動解析的語言\")"
+                },
+                {
+                    "source": "setDesc(`Comma-separated list of code block languages for which this prompt's parser should be used\n(e.g., bash, shell).\nWARNING: This could affect performance if you have a lot of code blocks with the specified languages.`)",
+                    "target": "setDesc(`此提示字元解析器應套用的程式碼區塊語言清單，請以逗號分隔\n（例如 bash、shell）。\n警告：如果有大量指定語言的程式碼區塊，這可能會影響效能。`)"
+                },
+                {
+                    "source": "Notice(\"\\u26A0\\uFE0F Auto-parse is enabled, but no languages are specified. Disabling feature.\")",
+                    "target": "Notice(\"\\u26A0\\uFE0F 已啟用自動解析，但未指定語言。正在停用功能。\")"
+                },
+                {
+                    "source": "Notice(`\\u26A0\\uFE0F Can't save. Language '${P}' is already set for 'Auto-use' by this same prompt.`)",
+                    "target": "Notice(`\\u26A0\\uFE0F 無法儲存。語言 '${P}' 已由同一提示字元設為「自動使用」。`)"
+                },
+                {
+                    "source": "Notice(`\\u26A0\\uFE0F Can't save. Language '${P}' is already in use by prompt '${A.name}'.`)",
+                    "target": "Notice(`\\u26A0\\uFE0F 無法儲存。語言 '${P}' 已被提示字元使用 '${A.name}'.`)"
+                },
+                {
+                    "source": "Notice(\"Auto-parse settings saved.\")",
+                    "target": "Notice(\"自動解析設定已儲存。\")"
+                },
+                {
+                    "source": "setName(\"Configure Root Colors\")",
+                    "target": "setName(\"設定 Root 顏色\")"
+                },
+                {
+                    "source": "setDesc(\"Enable to edit root-specific colors for this prompt.\")",
+                    "target": "setDesc(\"啟用以編輯此提示字元的 root 專用顏色。\")"
+                },
+                {
+                    "source": "setName(\"Enable Admonition support\")",
+                    "target": "setName(\"啟用 Admonition 支援\")"
+                },
+                {
+                    "source": "setDesc(\"Enable styling for code blocks inside Admonition blocks.\")",
+                    "target": "setDesc(\"啟用 Admonition 區塊內程式碼區塊的樣式。\")"
+                },
+                {
+                    "source": "setName(\"Use timer for admonition processing\")",
+                    "target": "setName(\"使用計時器處理 Admonition\")"
+                },
+                {
+                    "source": "setDesc(\"Adds a small, configurable delay before styling code blocks inside admonitions. This can resolve rendering issues in complex notes.\")",
+                    "target": "setDesc(\"在為 admonition 內的程式碼區塊套用樣式前加入一小段可設定延遲。這可以解決複雜筆記中的渲染問題。\")"
+                },
+                {
+                    "source": "setName(\"Admonition processing delay (ms)\")",
+                    "target": "setName(\"Admonition 處理延遲（毫秒）\")"
+                },
+                {
+                    "source": "setDesc(\"The delay in milliseconds to wait before processing.\")",
+                    "target": "setDesc(\"處理前等待的延遲時間，單位為毫秒。\")"
+                },
+                {
+                    "source": "setName(\"Enable Execute Code plugin support\")",
+                    "target": "setName(\"啟用 Execute Code 插件支援\")"
+                },
+                {
+                    "source": "setDesc(\"When disabled, this plugin completely ignores the Execute Code plugin, and does not apply any styling at all to run-* code blocks. Switch documents after changing this option, to refresh the view.\")",
+                    "target": "setDesc(\"停用後，此插件會完全忽略 Execute Code 插件，且不會對 run-* 程式碼區塊套用任何樣式。變更此選項後請切換文件以重新整理檢視。\")"
+                },
+                {
+                    "source": "setName(\"Style Execute Code output\")",
+                    "target": "setName(\"套用 Execute Code 輸出樣式\")"
+                },
+                {
+                    "source": "setDesc(\"When enabled, the plugin will add line numbers, highlighting, and other styles to the code output. Disable this to see the raw, default output.\")",
+                    "target": "setDesc(\"啟用後，插件會為程式碼輸出加入行號、醒目提示和其他樣式。停用此選項可查看原始預設輸出。\")"
+                },
+                {
+                    "source": "setName(\"Select settings page\")",
+                    "target": "setName(\"選擇設定頁\")"
+                },
+                {
+                    "source": "setDesc(\"Select which settings group you want to modify.\")",
+                    "target": "setDesc(\"選擇要修改的設定群組。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Search settings...\")",
+                    "target": "setPlaceholder(\"搜尋設定...\")"
+                },
+                {
+                    "source": "error(\"Cannot dispatch tab selection: invalid group name.\")",
+                    "target": "error(\"無法分派分頁選取：群組名稱無效。\")"
+                },
+                {
+                    "source": "Notice(\"Error: Could not find code block container.\")",
+                    "target": "Notice(\"錯誤：找不到程式碼區塊容器。\")"
+                },
+                {
+                    "source": "Notice(`Executing ${e.language} code...`)",
+                    "target": "Notice(`正在執行 ${e.language} 程式碼...`)"
+                },
+                {
+                    "source": "Notice(\"Code wrapped\")",
+                    "target": "Notice(\"程式碼已換行\")"
+                },
+                {
+                    "source": "Notice(\"Code unwrapped\")",
+                    "target": "Notice(\"程式碼已取消換行\")"
+                },
+                {
+                    "source": "error(`Failed to resolve source content for code block at line ${this.codeBlockSectionInfo.lineStart}.`)",
+                    "target": "error(`無法解析第 ${this.codeBlockSectionInfo.lineStart} 行程式碼區塊的來源內容。`)"
+                },
+                {
+                    "source": "error(`Inconsistent data for file ${this.context.sourcePath}. Could not calculate character position.`)",
+                    "target": "error(`檔案資料不一致： ${this.context.sourcePath}. 無法計算字元位置。`)"
+                },
+                {
+                    "source": "log(\"loading CodeBlock Customizer plugin\")",
+                    "target": "log(\"正在載入 CodeBlock Customizer 插件\")"
+                },
+                {
+                    "source": "Notice(\"Stored tab positions cleared!\")",
+                    "target": "Notice(\"已清除儲存的分頁位置！\")"
+                },
+                {
+                    "source": "Notice(`Updated ${n} code block links in ${l} files.`)",
+                    "target": "Notice(`已更新 ${n} 個程式碼區塊連結，位於 ${l} 個檔案。`)"
+                },
+                {
+                    "source": "error(\"Error modifying file:\",r),r}}getDisplayNameAndReference(e){let n=e.lastIndexOf(\"|\")",
+                    "target": "error(\"修改檔案時發生錯誤：\",r),r}}getDisplayNameAndReference(e){let n=e.lastIndexOf(\"|\")"
+                },
+                {
+                    "source": "log(\"Codeblock Customizer: Migrating settings to new structure.\")",
+                    "target": "log(\"Codeblock Customizer：正在將設定遷移到新結構。\")"
+                },
+                {
+                    "source": "log(\"Codeblock Customizer: Settigns migrated successfully.\")",
+                    "target": "log(\"Codeblock Customizer：設定已成功遷移。\")"
+                },
+                {
+                    "source": "text:\" \"",
+                    "target": "text:\" \""
+                },
+                {
+                    "source": "name:\"Bash (alt)\"",
+                    "target": "name:\"Bash (alt)\""
+                },
+                {
+                    "source": "name:\"Zsh + Git\"",
+                    "target": "name:\"Zsh + Git\""
+                },
+                {
+                    "source": "name:\"Kali Linux\"",
+                    "target": "name:\"Kali Linux\""
+                },
+                {
+                    "source": "name:\"Docker shell\"",
+                    "target": "name:\"Docker shell\""
+                },
+                {
+                    "source": "name:\"Cobalt Strike\"",
+                    "target": "name:\"Cobalt Strike\""
+                },
+                {
+                    "source": "text:\"Plain text\"",
+                    "target": "text:\"純文字\""
+                },
+                {
+                    "source": "text:`${l} specific color settings`",
+                    "target": "text:`${l} 專用顏色設定`"
+                },
+                {
+                    "source": "text:\"Gutter Settings\"",
+                    "target": "text:\"Gutter 設定\""
+                },
+                {
+                    "source": "text:\"Header Language Tag & Header Icon Settings\"",
+                    "target": "text:\"標題語言標籤與標題圖示設定\""
+                },
+                {
+                    "source": "name:\"Property key color\"",
+                    "target": "name:\"屬性鍵顏色\""
+                },
+                {
+                    "source": "name:\"Separator color\"",
+                    "target": "name:\"分隔符顏色\""
+                },
+                {
+                    "source": "name:\"String color\"",
+                    "target": "name:\"字串顏色\""
+                },
+                {
+                    "source": "name:\"Boolean color\"",
+                    "target": "name:\"布林值顏色\""
+                },
+                {
+                    "source": "name:\"Number color\"",
+                    "target": "name:\"數字顏色\""
+                },
+                {
+                    "source": "name:\"Comment color\"",
+                    "target": "name:\"註解顏色\""
+                },
+                {
+                    "source": "name:\"Value color\"",
+                    "target": "name:\"值顏色\""
+                },
+                {
+                    "source": "text:\"Prompt preview\"",
+                    "target": "text:\"提示字元預覽\""
+                },
+                {
+                    "source": "text:\"Codeblock Customizer Settings\"",
+                    "target": "text:\"Codeblock Customizer 設定\""
+                },
+                {
+                    "source": "text:\"No matching settings found.\"",
+                    "target": "text:\"找不到相符設定。\""
+                },
+                {
+                    "source": "text:`${this.lineCount} ${this.lineCount===1?\"line\":\"lines\"} hidden - Click to reveal`",
+                    "target": "text:`${this.lineCount} ${this.lineCount===1?\"行\":\"行\"} 已隱藏 - 點擊以顯示`"
+                },
+                {
+                    "source": "text:\"Execute code output\"",
+                    "target": "text:\"執行程式碼輸出\""
+                },
+                {
+                    "source": "text:\"Script executed with no output.\"",
+                    "target": "text:\"腳本已執行，沒有輸出。\""
+                },
+                {
+                    "source": "text:`${t} ${t===1?\"line\":\"lines\"} hidden - Click to reveal`",
+                    "target": "text:`${t} ${t===1?\"行\":\"行\"} 已隱藏 - 點擊以顯示`"
+                },
+                {
+                    "source": "name:\"Fold all code blocks\"",
+                    "target": "name:\"收合所有程式碼區塊\""
+                },
+                {
+                    "source": "name:\"Unfold all code blocks\"",
+                    "target": "name:\"展開所有程式碼區塊\""
+                },
+                {
+                    "source": "name:\"Restore folding state of all code blocks to default\"",
+                    "target": "name:\"將所有程式碼區塊的收合狀態還原為預設\""
+                },
+                {
+                    "source": "name:\"Indent code block by one level\"",
+                    "target": "name:\"將程式碼區塊縮排一層\""
+                },
+                {
+                    "source": "name:\"Unindent code block by one level\"",
+                    "target": "name:\"將程式碼區塊取消縮排一層\""
+                }
+            ]
+        }
+    }
+}
