@@ -271,5 +271,18 @@
         "created_at": "2026-05-25T03:45:49.561Z",
         "updated_at": "2026-05-25T03:45:49.561Z",
         "type": "plugin"
+    },
+    {
+        "id": "RnAopm-hXSVsW4Y-C32KIYEerw7_ZMAy",
+        "plugin": "obsidian-auto-hide",
+        "language": "zh-tw",
+        "version": "0.4.8",
+        "supported_versions": "0.4.8",
+        "title": "[zh-tw] Auto Hide",
+        "description": "Auto Hide Localization & Tweaks",
+        "hash": "7b6e94497b6e94497b6e94497b6e9449",
+        "created_at": "2026-05-25T03:45:57.478Z",
+        "updated_at": "2026-05-25T03:45:57.478Z",
+        "type": "plugin"
     }
 ]
