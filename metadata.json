@@ -180,5 +180,18 @@
         "created_at": "2026-05-25T03:44:42.774Z",
         "updated_at": "2026-05-25T03:44:42.774Z",
         "type": "plugin"
+    },
+    {
+        "id": "gU-PJtBQOorD4PumqbMkWFzZi3nKP3ua",
+        "plugin": "enhanced-symbols-prettifier",
+        "language": "zh-tw",
+        "version": "1.5.0",
+        "supported_versions": "1.5.0",
+        "title": "[zh-tw] Enhanced Symbols Prettifier",
+        "description": "Enhanced Symbols Prettifier Localization & Tweaks",
+        "hash": "61687ec761687ec761687ec761687ec7",
+        "created_at": "2026-05-25T03:44:51.770Z",
+        "updated_at": "2026-05-25T03:44:51.770Z",
+        "type": "plugin"
     }
 ]
