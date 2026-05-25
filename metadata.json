@@ -128,5 +128,18 @@
         "created_at": "2026-05-25T03:43:33.465Z",
         "updated_at": "2026-05-25T03:43:33.465Z",
         "type": "plugin"
+    },
+    {
+        "id": "5zUQHwgIO8zt7365bgU4zqsSOueZS-dU",
+        "plugin": "custom-cursor",
+        "language": "zh-tw",
+        "version": "1.0.1",
+        "supported_versions": "1.0.1",
+        "title": "[zh-tw] Custom Cursor",
+        "description": "Custom Cursor Localization & Tweaks",
+        "hash": "138169f4138169f4138169f4138169f4",
+        "created_at": "2026-05-25T03:44:12.382Z",
+        "updated_at": "2026-05-25T03:44:12.382Z",
+        "type": "plugin"
     }
 ]
