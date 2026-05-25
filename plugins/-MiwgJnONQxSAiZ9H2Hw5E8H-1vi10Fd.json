@@ -1,0 +1,320 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "code-space",
+        "version": "2.3.0",
+        "title": "[zh-tw] Code Space",
+        "description": "Code Space 繁體中文化與微調",
+        "language": "zh-tw",
+        "supportedVersions": "2.3.0",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "abc def ghi jkl mno pqr stu",
+                    "target": "abc def ghi jkl mno pqr stu"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Search error:",
+                    "target": "搜尋錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Replace all error:",
+                    "target": "全部取代錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to save file:",
+                    "target": "Code Space：儲存檔案失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to reload file content:",
+                    "target": "Code Space：重新載入檔案內容失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to rename file:",
+                    "target": "重新命名檔案失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to move file:",
+                    "target": "移動檔案失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to delete file:",
+                    "target": "刪除檔案失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to parse symbols:",
+                    "target": "解析符號失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Outline: Failed to jump to line:",
+                    "target": "程式碼大綱：跳至指定行失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to reload plugin:",
+                    "target": "Code Space：重新載入插件失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to create file:",
+                    "target": "建立檔案失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Example: script.py",
+                    "target": "範例：script.py"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Code Space: Container not ready, retrying...",
+                    "target": "Code Space：容器尚未就緒，正在重試..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Code Embed: Failed to install observer for popout window",
+                    "target": "Code Embed：無法為彈出視窗安裝觀察器"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please enter a file name",
+                    "target": "請輸入檔案名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "custom-search-row custom-search-replace-row",
+                    "target": "custom-search-row custom-search-replace-row"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "\"···\"",
+                    "target": "\"···\""
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'ƒ'",
+                    "target": "'ƒ'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'○'",
+                    "target": "'○'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'◌'",
+                    "target": "'◌'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'𝑥'",
+                    "target": "'𝑥'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'𝐶'",
+                    "target": "'𝐶'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'𝑡'",
+                    "target": "'𝑡'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'∪'",
+                    "target": "'∪'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'□'",
+                    "target": "'□'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'🔑︎'",
+                    "target": "'🔑︎'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'▢'",
+                    "target": "'▢'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "detail",
+                    "source": "/ except block",
+                    "target": "/ except 區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "detail",
+                    "source": "/ else block",
+                    "target": "/ else 區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "detail",
+                    "source": "of loop",
+                    "target": "迴圈"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "detail",
+                    "source": "/ catch block",
+                    "target": "/ catch 區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "detail",
+                    "source": "method declaration",
+                    "target": "方法宣告"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "detail",
+                    "source": "alias declaration",
+                    "target": "別名宣告"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "detail",
+                    "source": "Invalid mount path",
+                    "target": "無效的掛載路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Document",
+                    "target": "文件"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "log(\"Finish with \"+this.stackID(s)),this.stackToTree(s);if(this.parser.strict)throw rt&&n&&console.log(\"Stuck with token \"+(this.tokens.mainToken?this.parser.getName(this.tokens.mainToken.value):\"none\")",
+                    "target": "log(\"Finish with \"+this.stackID(s)),this.stackToTree(s);if(this.parser.strict)throw rt&&n&&console.log(\"Stuck with token \"+(this.tokens.mainToken?this.parser.getName(this.tokens.mainToken.value):\"none\")"
+                },
+                {
+                    "source": "error(\"Code Space: Failed to save file:\",t),new Ke.Notice(g(\"NOTICE_SAVE_FAIL\")",
+                    "target": "error(\"Code Space：儲存檔案失敗：\",t),new Ke.Notice(g(\"NOTICE_SAVE_FAIL\")"
+                },
+                {
+                    "source": "error(\"Code Space: Failed to reload file content:\",t)}}async onClose(){var t;this.isDirty&&this.file&&(console.debug(\"Code Space: Auto-saving on close...\")",
+                    "target": "error(\"Code Space：重新載入檔案內容失敗：\",t)}}async onClose(){var t;this.isDirty&&this.file&&(console.debug(\"Code Space：關閉時自動儲存中...\")"
+                },
+                {
+                    "source": "Notice(`${g(\"NOTICE_RENAME_SUCCESS\")} ${a}.${i.extension}`)",
+                    "target": "Notice(`${g(\"NOTICE_RENAME_SUCCESS\")} ${a}.${i.extension}`)"
+                },
+                {
+                    "source": "error(\"Failed to rename file:\",c),new H.Notice(g(\"NOTICE_RENAME_FAIL\")",
+                    "target": "error(\"重新命名檔案失敗：\",c),new H.Notice(g(\"NOTICE_RENAME_FAIL\")"
+                },
+                {
+                    "source": "Notice(`${g(\"NOTICE_MOVE_SUCCESS\")} ${o}`)",
+                    "target": "Notice(`${g(\"NOTICE_MOVE_SUCCESS\")} ${o}`)"
+                },
+                {
+                    "source": "error(\"Failed to move file:\",o),new H.Notice(g(\"NOTICE_MOVE_FAIL\")",
+                    "target": "error(\"移動檔案失敗：\",o),new H.Notice(g(\"NOTICE_MOVE_FAIL\")"
+                },
+                {
+                    "source": "error(\"Code Outline: Failed to jump to line:\",o)}},100)):console.debug(\"Code Outline: No editorView found\")",
+                    "target": "error(\"程式碼大綱：跳至指定行失敗：\",o)}},100)):console.debug(\"Code Outline：找不到 editorView\")"
+                },
+                {
+                    "source": "setDesc(`${o.sourcePath} \\u2022 ${c}`)",
+                    "target": "setDesc(`${o.sourcePath} \\u2022 ${c}`)"
+                },
+                {
+                    "source": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(c)}`)",
+                    "target": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(c)}`)"
+                },
+                {
+                    "source": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(u)}`)",
+                    "target": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(u)}`)"
+                },
+                {
+                    "source": "setPlaceholder(\"Example: script.py\")",
+                    "target": "setPlaceholder(\"範例：script.py\")"
+                },
+                {
+                    "source": "Notice(\"Please enter a file name\")",
+                    "target": "Notice(\"請輸入檔案名稱\")"
+                },
+                {
+                    "source": "error(\"Code Space: Failed to reload plugin:\",t),new te.Notice(`${g(\"NOTICE_RELOAD_FAIL\")",
+                    "target": "error(\"Code Space：重新載入插件失敗：\",t),new te.Notice(`${g(\"NOTICE_RELOAD_FAIL\")"
+                },
+                {
+                    "source": "Notice(`${g(\"NOTICE_CREATE_SUCCESS\")} ${t}`)",
+                    "target": "Notice(`${g(\"NOTICE_CREATE_SUCCESS\")} ${t}`)"
+                },
+                {
+                    "source": "error(\"Failed to create file:\",i),new te.Notice(g(\"NOTICE_CREATE_FAIL\")",
+                    "target": "error(\"建立檔案失敗：\",i),new te.Notice(g(\"NOTICE_CREATE_FAIL\")"
+                },
+                {
+                    "source": "textContent=\"abc def ghi jkl mno pqr stu\"",
+                    "target": "textContent=\"abc def ghi jkl mno pqr stu\""
+                },
+                {
+                    "source": "name: \"+l)}return n&&(i=\"",
+                    "target": "name: \"+l)}return n&&(i=\""
+                },
+                {
+                    "source": "textContent=\"\t\"",
+                    "target": "textContent=\"\t\""
+                },
+                {
+                    "source": "text:`${o.length} ${g(\"SUBTITLE_MANAGED_FILES\")}`",
+                    "target": "text:`${o.length} ${g(\"SUBTITLE_MANAGED_FILES\")}`"
+                },
+                {
+                    "source": "name:`impl ${c[1]}`",
+                    "target": "name:`impl ${c[1]}`"
+                }
+            ]
+        }
+    }
+}
