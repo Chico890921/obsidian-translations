@@ -1,0 +1,78 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-hide-sidebars-when-narrow",
+        "version": "1.1.2",
+        "title": "[zh-tw] Hide Sidebars on Window Resize",
+        "description": "Hide Sidebars on Window Resize 繁體中文化與微調",
+        "language": "zh-tw",
+        "supportedVersions": "1.1.2",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Increase this to hide the left sidebar sooner; decrease it to delay hiding",
+                    "target": "提高此數值會更早隱藏左側邊欄；降低此數值會延後隱藏"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Increase this to hide the right sidebar sooner; decrease it to delay hiding",
+                    "target": "提高此數值會更早隱藏右側邊欄；降低此數值會延後隱藏"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Hide the left sidebar when the window is this narrow",
+                    "target": "視窗窄到此寬度時隱藏左側邊欄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Hide the right sidebar when the window is this narrow",
+                    "target": "視窗窄到此寬度時隱藏右側邊欄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show sidebars back when window becomes wide again",
+                    "target": "視窗再次變寬時重新顯示側邊欄"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"Hide the left sidebar when the window is this narrow\")",
+                    "target": "setName(\"視窗窄到此寬度時隱藏左側邊欄\")"
+                },
+                {
+                    "source": "setDesc(\"Increase this to hide the left sidebar sooner; decrease it to delay hiding\")",
+                    "target": "setDesc(\"提高此數值會更早隱藏左側邊欄；降低此數值會延後隱藏\")"
+                },
+                {
+                    "source": "setPlaceholder(`Default: ${a.leftMinWidth}`)",
+                    "target": "setPlaceholder(`預設：${a.leftMinWidth}`)"
+                },
+                {
+                    "source": "setName(\"Hide the right sidebar when the window is this narrow\")",
+                    "target": "setName(\"視窗窄到此寬度時隱藏右側邊欄\")"
+                },
+                {
+                    "source": "setDesc(\"Increase this to hide the right sidebar sooner; decrease it to delay hiding\")",
+                    "target": "setDesc(\"提高此數值會更早隱藏右側邊欄；降低此數值會延後隱藏\")"
+                },
+                {
+                    "source": "setPlaceholder(`Default: ${a.rightMinWidth}`)",
+                    "target": "setPlaceholder(`預設：${a.rightMinWidth}`)"
+                },
+                {
+                    "source": "setName(\"Show sidebars back when window becomes wide again\")",
+                    "target": "setName(\"視窗再次變寬時重新顯示側邊欄\")"
+                }
+            ]
+        }
+    }
+}
