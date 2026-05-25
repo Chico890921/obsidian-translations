@@ -24,5 +24,18 @@
         "created_at": "2026-05-25T03:30:23.533Z",
         "updated_at": "2026-05-25T03:30:23.533Z",
         "type": "theme"
+    },
+    {
+        "id": "n4ekanggDunD2vo_vhNh2ZoVfE3G1wK5",
+        "plugin": "Underwater",
+        "language": "zh-tw",
+        "version": "1.6.61",
+        "supported_versions": "1.6.61",
+        "title": "Underwater",
+        "description": "Underwater Localization & Tweaks",
+        "hash": "054e78be054e78be054e78be054e78be",
+        "created_at": "2026-05-25T03:34:20.917Z",
+        "updated_at": "2026-05-25T03:34:20.917Z",
+        "type": "theme"
     }
 ]
