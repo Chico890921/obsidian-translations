@@ -1,0 +1,425 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "enhanced-symbols-prettifier",
+        "version": "1.5.0",
+        "title": "[zh-tw] Enhanced Symbols Prettifier",
+        "description": "Enhanced Symbols Prettifier Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.5.0",
+        "author": "Chico",
+        "updatedAt": 1778609062067
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "All shortcuts",
+                    "target": "所有快捷字串"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Show more",
+                    "target": "顯示更多"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Ignore",
+                    "target": "忽略"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add",
+                    "target": "新增"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Import",
+                    "target": "匯入"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Export",
+                    "target": "匯出"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Loosen the word boundary detection by allowing symbols or punctuation (like quotes, commas, or parentheses) before a word.",
+                    "target": "放寬詞邊界偵測，允許字詞前方出現符號或標點（例如引號、逗號或括號）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Allow punctuation or symbols immediately after a word to be part of the word boundary, enabling substitutions even when the word isn't followed by a space.",
+                    "target": "允許緊接在字詞後方的標點或符號成為詞邊界的一部分，讓字詞後面沒有空格時也能替換。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Import additional shortcuts from a JSON export file. Any conflicting existing shortcuts will be overridden.",
+                    "target": "匯入 additional shortcuts from a JSON export file. Any conflicting existing shortcuts will be overridden."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Export your shortcuts to a JSON file",
+                    "target": "匯出 your shortcuts to a JSON file"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Clear all usage count statistics from your shortcuts.",
+                    "target": "清除所有快捷字串的使用次數統計。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Reset all settings and shortcuts to their original values.",
+                    "target": "將所有設定與快捷字串重設為原始值。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Forget all ignored shortcuts from the find most used shortcuts feature.",
+                    "target": "從「尋找最常用快捷字串」功能中清除所有已忽略的快捷字串。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Flexible start word boundaries",
+                    "target": "彈性起始詞邊界"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Flexible end word boundaries",
+                    "target": "彈性結尾詞邊界"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Find most used words",
+                    "target": "尋找最常用字詞"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Suggested shortcuts",
+                    "target": "建議的快捷字串"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Import shortcuts from file",
+                    "target": "匯入 shortcuts from file"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Export shortcuts",
+                    "target": "匯出 shortcuts"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Add new",
+                    "target": "新增 new"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Disable group",
+                    "target": "停用群組"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Add new group",
+                    "target": "新增 new group"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Reset statistics",
+                    "target": "重設統計資料"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Restore settings to default",
+                    "target": "還原為預設設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Empty ignored shortcuts",
+                    "target": "清空已忽略的快捷字串"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "To replace",
+                    "target": "要替換的文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Replace with",
+                    "target": "替換為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Group name",
+                    "target": "群組名稱"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "End of search",
+                    "target": "搜尋結束"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Shortcut added",
+                    "target": "已新增快捷字串"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Invalid JSON file",
+                    "target": "JSON 檔案無效"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Shortcuts imported",
+                    "target": "已匯入快捷字串"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No file selected",
+                    "target": "未選擇檔案"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please enter text to replace",
+                    "target": "請輸入要替換的文字"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No symbols found to replace",
+                    "target": "找不到可替換的符號"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Replaced 1 symbol",
+                    "target": "已替換 1 個符號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Prettify existing symbols in document",
+                    "target": "美化文件中現有的符號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Unprettify existing symbols in document",
+                    "target": "還原文件中現有的符號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Discussions page",
+                    "target": "討論頁面"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Made by Noam Schmitt based on the Symbols Prettifier plugin by Florian Woelki.",
+                    "target": "由 Noam Schmitt 製作，基於 Florian Woelki 的 Symbols Prettifier 插件。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"Flexible start word boundaries\")",
+                    "target": "setName(\"彈性起始詞邊界\")"
+                },
+                {
+                    "source": "setDesc(\n      \"Loosen the word boundary detection by allowing symbols or punctuation (like quotes, commas, or parentheses) before a word.\"\n    )",
+                    "target": "setDesc(\n      \"放寬詞邊界偵測，允許字詞前方出現符號或標點（例如引號、逗號或括號）。\"\n    )"
+                },
+                {
+                    "source": "setName(\"Flexible end word boundaries\")",
+                    "target": "setName(\"彈性結尾詞邊界\")"
+                },
+                {
+                    "source": "setDesc(\n      \"Allow punctuation or symbols immediately after a word to be part of the word boundary, enabling substitutions even when the word isn't followed by a space.\"\n    )",
+                    "target": "setDesc(\n      \"允許緊接在字詞後方的標點或符號成為詞邊界的一部分，讓字詞後面沒有空格時也能替換。\"\n    )"
+                },
+                {
+                    "source": "setName(\"Find most used words\")",
+                    "target": "setName(\"尋找最常用字詞\")"
+                },
+                {
+                    "source": "Notice(\"End of search\")",
+                    "target": "Notice(\"搜尋結束\")"
+                },
+                {
+                    "source": "setName(\"Suggested shortcuts\")",
+                    "target": "setName(\"建議的快捷字串\")"
+                },
+                {
+                    "source": "setButtonText(\"Show more\")",
+                    "target": "setButtonText(\"顯示更多\")"
+                },
+                {
+                    "source": "setName(`Replace '${shortcut}' with '${value}'`)",
+                    "target": "setName(`將 '${shortcut}' 替換為 '${value}'`)"
+                },
+                {
+                    "source": "setDesc(`Found ${count} time${count > 1 ? \"s\" : \"\"}`)",
+                    "target": "setDesc(`找到 ${count} 次`)"
+                },
+                {
+                    "source": "setPlaceholder(\"To replace\")",
+                    "target": "setPlaceholder(\"要替換的文字\")"
+                },
+                {
+                    "source": "Notice(\"Shortcut added\")",
+                    "target": "Notice(\"已新增快捷字串\")"
+                },
+                {
+                    "source": "setName(\"Import shortcuts from file\")",
+                    "target": "setName(\"匯入 shortcuts from file\")"
+                },
+                {
+                    "source": "setDesc(\n      \"Import additional shortcuts from a JSON export file. Any conflicting existing shortcuts will be overridden.\"\n    )",
+                    "target": "setDesc(\n      \"匯入 additional shortcuts from a JSON export file. Any conflicting existing shortcuts will be overridden.\"\n    )"
+                },
+                {
+                    "source": "Notice(\"Invalid JSON file\")",
+                    "target": "Notice(\"JSON 檔案無效\")"
+                },
+                {
+                    "source": "Notice(\"Shortcuts imported\")",
+                    "target": "Notice(\"已匯入快捷字串\")"
+                },
+                {
+                    "source": "Notice(\"No file selected\")",
+                    "target": "Notice(\"未選擇檔案\")"
+                },
+                {
+                    "source": "setName(\"Export shortcuts\")",
+                    "target": "setName(\"匯出 shortcuts\")"
+                },
+                {
+                    "source": "setDesc(\"Export your shortcuts to a JSON file\")",
+                    "target": "setDesc(\"匯出 your shortcuts to a JSON file\")"
+                },
+                {
+                    "source": "Notice(\"Please enter text to replace\")",
+                    "target": "Notice(\"請輸入要替換的文字\")"
+                },
+                {
+                    "source": "Notice(\n          `Shortcut \"${this.toReplace}\" already exists. Please choose a different name.`\n        )",
+                    "target": "Notice(\n          `快捷字串「${this.toReplace}」已存在。請選擇不同名稱。`\n        )"
+                },
+                {
+                    "source": "Notice(\n        `Added \"${this.toReplace}\" \\u2192 \"${this.replaceWith}\" to ${this.selectedGroup}`\n      )",
+                    "target": "Notice(\n        `新增ed \"${this.toReplace}\" \\u2192 \"${this.replaceWith}\" to ${this.selectedGroup}`\n      )"
+                },
+                {
+                    "source": "setName(\"Add new\")",
+                    "target": "setName(\"新增 new\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Replace with\")",
+                    "target": "setPlaceholder(\"替換為\")"
+                },
+                {
+                    "source": "Notice(\n            `Shortcut \"${newKey}\" already exists. Please choose a different name.`\n          )",
+                    "target": "Notice(\n            `快捷字串「${newKey}」已存在。請選擇不同名稱。`\n          )"
+                },
+                {
+                    "source": "setName(`${this.group} (${groupCount} entries)`)",
+                    "target": "setName(`${this.group}（${groupCount} 個項目）`)"
+                },
+                {
+                    "source": "setName(\"Disable group\")",
+                    "target": "setName(\"停用群組\")"
+                },
+                {
+                    "source": "setName(\"Add new group\")",
+                    "target": "setName(\"新增 new group\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Group name\")",
+                    "target": "setPlaceholder(\"群組名稱\")"
+                },
+                {
+                    "source": "setName(\"Reset statistics\")",
+                    "target": "setName(\"重設統計資料\")"
+                },
+                {
+                    "source": "setDesc(\"Clear all usage count statistics from your shortcuts.\")",
+                    "target": "setDesc(\"清除所有快捷字串的使用次數統計。\")"
+                },
+                {
+                    "source": "setName(\"Restore settings to default\")",
+                    "target": "setName(\"還原為預設設定\")"
+                },
+                {
+                    "source": "setDesc(\n      \"Reset all settings and shortcuts to their original values.\"\n    )",
+                    "target": "setDesc(\n      \"將所有設定與快捷字串重設為原始值。\"\n    )"
+                },
+                {
+                    "source": "setName(\"Empty ignored shortcuts\")",
+                    "target": "setName(\"清空已忽略的快捷字串\")"
+                },
+                {
+                    "source": "setDesc(\n      \"Forget all ignored shortcuts from the find most used shortcuts feature.\"\n    )",
+                    "target": "setDesc(\n      \"從「尋找最常用快捷字串」功能中清除所有已忽略的快捷字串。\"\n    )"
+                },
+                {
+                    "source": "Notice(\"No symbols found to replace\")",
+                    "target": "Notice(\"找不到可替換的符號\")"
+                },
+                {
+                    "source": "Notice(\"Replaced 1 symbol\")",
+                    "target": "Notice(\"已替換 1 個符號\")"
+                },
+                {
+                    "source": "text: \"Discussions page\"",
+                    "target": "text: \"討論頁面\""
+                },
+                {
+                    "source": "text: \"Made by Noam Schmitt based on the Symbols Prettifier plugin by Florian Woelki.\"",
+                    "target": "text: \"由 Noam Schmitt 製作，基於 Florian Woelki 的 Symbols Prettifier 插件。\""
+                },
+                {
+                    "source": "name: \"Prettify existing symbols in document\"",
+                    "target": "name: \"美化文件中現有的符號\""
+                },
+                {
+                    "source": "name: \"Unprettify existing symbols in document\"",
+                    "target": "name: \"還原文件中現有的符號\""
+                }
+            ]
+        }
+    }
+}
