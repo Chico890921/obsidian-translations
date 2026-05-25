@@ -102,5 +102,18 @@
         "created_at": "2026-05-25T03:43:04.543Z",
         "updated_at": "2026-05-25T03:43:04.543Z",
         "type": "plugin"
+    },
+    {
+        "id": "-MiwgJnONQxSAiZ9H2Hw5E8H-1vi10Fd",
+        "plugin": "code-space",
+        "language": "zh-tw",
+        "version": "2.3.0",
+        "supported_versions": "2.3.0",
+        "title": "[zh-tw] Code Space",
+        "description": "Code Space 繁體中文化與微調",
+        "hash": "1e386aae1e386aae1e386aae1e386aae",
+        "created_at": "2026-05-25T03:43:20.503Z",
+        "updated_at": "2026-05-25T03:43:20.503Z",
+        "type": "plugin"
     }
 ]
