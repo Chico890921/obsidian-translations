@@ -1,0 +1,200 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "autofit-tabs",
+        "version": "1.0.8",
+        "title": "[zh-tw] Autofit Tabs",
+        "description": "Autofit Tabs Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.0.8",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Do not modify pinned tabs (keeps default behavior)",
+                    "target": "不要修改釘選分頁（保持預設行為）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Do not modify tabs that are web links (keeps default behavior)",
+                    "target": "不要修改網頁連結分頁（保持預設行為）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Hide all icons in tabs",
+                    "target": "隱藏分頁中的所有圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Ignore pinned tabs",
+                    "target": "忽略釘選分頁"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Ignore web links",
+                    "target": "忽略網頁連結"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Hide tab icons",
+                    "target": "隱藏分頁圖示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Space in pixels before close button",
+                    "target": "關閉按鈕前方的間距，單位為像素"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Space in pixels after close button",
+                    "target": "關閉按鈕後方的間距，單位為像素"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Duration in milliseconds for smooth transitions",
+                    "target": "平滑過渡的持續時間，單位為毫秒"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Minimum width in pixels for very short titles",
+                    "target": "極短標題的最小寬度，單位為像素"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Maximum width in pixels for tabs (0 to disable)",
+                    "target": "分頁最大寬度，單位為像素（0 表示停用）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Width in pixels for tab icons",
+                    "target": "分頁圖示寬度，單位為像素"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Padding in pixels before the icon",
+                    "target": "圖示前方的內距，單位為像素"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Close button left padding",
+                    "target": "關閉按鈕左側內距"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Close button right padding",
+                    "target": "關閉按鈕右側內距"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Transition duration",
+                    "target": "過渡持續時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Minimum width",
+                    "target": "最小寬度"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Max width",
+                    "target": "最大寬度"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Icon width",
+                    "target": "圖示寬度"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Left padding",
+                    "target": "左側內距"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setDesc(`${s} (default: ${m[n]})`)",
+                    "target": "setDesc(`${s}（預設：${m[n]}）`)"
+                },
+                {
+                    "source": "setName(\"Ignore pinned tabs\")",
+                    "target": "setName(\"忽略釘選分頁\")"
+                },
+                {
+                    "source": "setDesc(\"Do not modify pinned tabs (keeps default behavior)\")",
+                    "target": "setDesc(\"不要修改釘選分頁（保持預設行為）\")"
+                },
+                {
+                    "source": "setName(\"Ignore web links\")",
+                    "target": "setName(\"忽略網頁連結\")"
+                },
+                {
+                    "source": "setDesc(\"Do not modify tabs that are web links (keeps default behavior)\")",
+                    "target": "setDesc(\"不要修改網頁連結分頁（保持預設行為）\")"
+                },
+                {
+                    "source": "setName(\"Hide tab icons\")",
+                    "target": "setName(\"隱藏分頁圖示\")"
+                },
+                {
+                    "source": "setDesc(\"Hide all icons in tabs\")",
+                    "target": "setDesc(\"隱藏分頁中的所有圖示\")"
+                },
+                {
+                    "source": "setDesc(`${a} (default: ${m[o]})`)",
+                    "target": "setDesc(`${a}（預設：${m[o]}）`)"
+                },
+                {
+                    "source": "name:\"Close button left padding\"",
+                    "target": "name:\"關閉按鈕左側內距\""
+                },
+                {
+                    "source": "name:\"Close button right padding\"",
+                    "target": "name:\"關閉按鈕右側內距\""
+                },
+                {
+                    "source": "name:\"Transition duration\"",
+                    "target": "name:\"過渡持續時間\""
+                },
+                {
+                    "source": "name:\"Minimum width\"",
+                    "target": "name:\"最小寬度\""
+                },
+                {
+                    "source": "name:\"Max width\"",
+                    "target": "name:\"最大寬度\""
+                },
+                {
+                    "source": "name:\"Icon width\"",
+                    "target": "name:\"圖示寬度\""
+                },
+                {
+                    "source": "name:\"Left padding\"",
+                    "target": "name:\"左側內距\""
+                }
+            ]
+        }
+    }
+}
