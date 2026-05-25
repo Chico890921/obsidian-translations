@@ -427,5 +427,18 @@
         "created_at": "2026-05-25T03:49:39.383Z",
         "updated_at": "2026-05-25T03:49:39.383Z",
         "type": "plugin"
+    },
+    {
+        "id": "OVLXJmyICA-n3J39aM2isStmImP2Tgtx",
+        "plugin": "oz-clear-unused-images",
+        "language": "zh-tw",
+        "version": "1.1.1",
+        "supported_versions": "1.1.1",
+        "title": "[zh-tw] Clear Unused Images",
+        "description": "Clear Unused Images Localization & Tweaks",
+        "hash": "71e48e5a71e48e5a71e48e5a71e48e5a",
+        "created_at": "2026-05-25T03:49:49.320Z",
+        "updated_at": "2026-05-25T03:49:49.320Z",
+        "type": "plugin"
     }
 ]
