@@ -1,0 +1,184 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "recent-files-obsidian",
+        "version": "1.7.9",
+        "title": "[zh-tw] Recent Files",
+        "description": "Recent Files 繁體中文化與微調",
+        "language": "zh-tw",
+        "supportedVersions": "1.7.9",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Changed",
+                    "target": "變更時"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Opened",
+                    "target": "開啟時"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "If this plugin adds value for you and you would like to help support continued development, please use the buttons below:",
+                    "target": "如果這個外掛對你有幫助，並且你想支持後續開發，請使用下方按鈕："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Maximum number of filenames to keep in the list.",
+                    "target": "清單中要保留的檔案名稱數量上限。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Omitted pathname patterns",
+                    "target": "忽略的路徑名稱模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Omitted frontmatter-tag patterns",
+                    "target": "忽略的 frontmatter 標籤模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Omit bookmarked files",
+                    "target": "忽略已加入書籤的檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Update list when file is:",
+                    "target": "在檔案發生下列情況時更新清單："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "List length",
+                    "target": "清單長度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "^daily/\n\\\\.png$\nfoobar.*baz",
+                    "target": "^daily/\n\\\\.png$\nfoobar.*baz"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "ignore\narchive/a/b",
+                    "target": "ignore\narchive/a/b"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Open in new tab",
+                    "target": "在新分頁開啟"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Clear list",
+                    "target": "清除清單"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Close",
+                    "target": "關閉"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Cannot find a file with that name",
+                    "target": "找不到該名稱的檔案"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "List length must be a positive integer",
+                    "target": "清單長度必須是正整數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "nav-folder mod-root",
+                    "target": "nav-folder mod-root"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open",
+                    "target": "開啟"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setTitle(\"Open in new tab\")",
+                    "target": "setTitle(\"在新分頁開啟\")"
+                },
+                {
+                    "source": "Notice(\"Cannot find a file with that name\")",
+                    "target": "Notice(\"找不到該名稱的檔案\")"
+                },
+                {
+                    "source": "setTitle(\"Clear list\")",
+                    "target": "setTitle(\"清除清單\")"
+                },
+                {
+                    "source": "setName(\"Omitted pathname patterns\")",
+                    "target": "setName(\"忽略的路徑名稱模式\")"
+                },
+                {
+                    "source": "setPlaceholder(`^daily/\n\\\\.png$\nfoobar.*baz`)",
+                    "target": "setPlaceholder(`^daily/\n\\\\.png$\nfoobar.*baz`)"
+                },
+                {
+                    "source": "setName(\"Omitted frontmatter-tag patterns\")",
+                    "target": "setName(\"忽略的 frontmatter 標籤模式\")"
+                },
+                {
+                    "source": "setPlaceholder(`ignore\narchive/a/b`)",
+                    "target": "setPlaceholder(`ignore\narchive/a/b`)"
+                },
+                {
+                    "source": "setName(\"Omit bookmarked files\")",
+                    "target": "setName(\"忽略已加入書籤的檔案\")"
+                },
+                {
+                    "source": "setName(\"Update list when file is:\")",
+                    "target": "setName(\"在檔案發生下列情況時更新清單：\")"
+                },
+                {
+                    "source": "setName(\"List length\")",
+                    "target": "setName(\"清單長度\")"
+                },
+                {
+                    "source": "setDesc(\"Maximum number of filenames to keep in the list.\")",
+                    "target": "setDesc(\"清單中要保留的檔案名稱數量上限。\")"
+                },
+                {
+                    "source": "Notice(\"List length must be a positive integer\")",
+                    "target": "Notice(\"清單長度必須是正整數\")"
+                },
+                {
+                    "source": "appendText(\"If this plugin adds value for you and you would like to help support continued development, please use the buttons below:\")",
+                    "target": "appendText(\"如果這個外掛對你有幫助，並且你想支持後續開發，請使用下方按鈕：\")"
+                },
+                {
+                    "source": "text=\"MDN - Regular expressions\"",
+                    "target": "text=\"MDN - Regular expressions\""
+                }
+            ]
+        }
+    }
+}
