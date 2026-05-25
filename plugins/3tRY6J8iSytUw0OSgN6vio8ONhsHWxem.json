@@ -1,0 +1,114 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "auto-bullet",
+        "version": "1.1.0",
+        "title": "[zh-tw] Auto Bullet",
+        "description": "Auto Bullet Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.1.0",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Insert bullet points when you press a half-width space at the beginning of a line",
+                    "target": "在行首按下半形空格時插入項目符號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Insert bullet points when you press a full-width space at the beginning of a line",
+                    "target": "在行首按下全形空格時插入項目符號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Insert bullet points when you press a tab at the beginning of a line",
+                    "target": "在行首按下 Tab 時插入項目符號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Move cursor after bullet point (- ) when pressing Home or Ctrl+A in a bullet line",
+                    "target": "在項目符號列按下 Home 或 Ctrl+A 時，將游標移到項目符號（- ）之後"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Half-width space",
+                    "target": "半形空格"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Full-width space",
+                    "target": "全形空格"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Tab",
+                    "target": "Tab"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Customize home key",
+                    "target": "自訂 Home 鍵"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Move cursor after bullet point",
+                    "target": "將游標移到項目符號之後"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "error(`Error in moveCursorAfterBullet: ${t.message}`)",
+                    "target": "error(`moveCursorAfterBullet 發生錯誤：${t.message}`)"
+                },
+                {
+                    "source": "error(`Error in moveCursorAfterNumberedList: ${t.message}`)",
+                    "target": "error(`moveCursorAfterNumberedList 發生錯誤：${t.message}`)"
+                },
+                {
+                    "source": "setName(\"Half-width space\")",
+                    "target": "setName(\"半形空格\")"
+                },
+                {
+                    "source": "setDesc(\"Insert bullet points when you press a half-width space at the beginning of a line\")",
+                    "target": "setDesc(\"在行首按下半形空格時插入項目符號\")"
+                },
+                {
+                    "source": "setName(\"Full-width space\")",
+                    "target": "setName(\"全形空格\")"
+                },
+                {
+                    "source": "setDesc(\"Insert bullet points when you press a full-width space at the beginning of a line\")",
+                    "target": "setDesc(\"在行首按下全形空格時插入項目符號\")"
+                },
+                {
+                    "source": "setDesc(\"Insert bullet points when you press a tab at the beginning of a line\")",
+                    "target": "setDesc(\"在行首按下 Tab 時插入項目符號\")"
+                },
+                {
+                    "source": "setName(\"Customize home key\")",
+                    "target": "setName(\"自訂 Home 鍵\")"
+                },
+                {
+                    "source": "setDesc(\"Move cursor after bullet point (- ) when pressing Home or Ctrl+A in a bullet line\")",
+                    "target": "setDesc(\"在項目符號列按下 Home 或 Ctrl+A 時，將游標移到項目符號（- ）之後\")"
+                },
+                {
+                    "source": "name:\"Move cursor after bullet point\"",
+                    "target": "name:\"將游標移到項目符號之後\""
+                }
+            ]
+        }
+    }
+}
