@@ -284,5 +284,18 @@
         "created_at": "2026-05-25T03:45:57.478Z",
         "updated_at": "2026-05-25T03:45:57.478Z",
         "type": "plugin"
+    },
+    {
+        "id": "p3agotRvvI15276qSrNtiXrKsTKvWTOV",
+        "plugin": "obsidian-auto-link-title",
+        "language": "zh-tw",
+        "version": "1.5.5",
+        "supported_versions": "1.5.5",
+        "title": "[zh-tw] Auto Link Title",
+        "description": "Auto Link Title Localization & Tweaks",
+        "hash": "53ff2a5053ff2a5053ff2a5053ff2a50",
+        "created_at": "2026-05-25T03:46:18.039Z",
+        "updated_at": "2026-05-25T03:46:18.039Z",
+        "type": "plugin"
     }
 ]
