@@ -375,5 +375,18 @@
         "created_at": "2026-05-25T03:48:09.000Z",
         "updated_at": "2026-05-25T03:48:09.000Z",
         "type": "plugin"
+    },
+    {
+        "id": "yjeEvNanhN3OFH4dAT52tX-1U9vFLjqJ",
+        "plugin": "obsidian-paste-image-rename",
+        "language": "zh-tw",
+        "version": "1.6.1",
+        "supported_versions": "1.6.1",
+        "title": "[zh-tw] Paste image rename",
+        "description": "Paste image rename Localization & Tweaks",
+        "hash": "5276b6855276b6855276b6855276b685",
+        "created_at": "2026-05-25T03:48:17.269Z",
+        "updated_at": "2026-05-25T03:48:17.269Z",
+        "type": "plugin"
     }
 ]
