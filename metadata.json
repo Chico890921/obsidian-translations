@@ -388,5 +388,18 @@
         "created_at": "2026-05-25T03:48:17.269Z",
         "updated_at": "2026-05-25T03:48:17.269Z",
         "type": "plugin"
+    },
+    {
+        "id": "TbwC9tHLSOXpjAd3iWGgy3O00P1kyl0k",
+        "plugin": "obsidian-scroll-to-top-plugin",
+        "language": "zh-tw",
+        "version": "2.1.6",
+        "supported_versions": "2.1.6",
+        "title": "[zh-tw] Scroll to Top",
+        "description": "Scroll to Top Localization & Tweaks",
+        "hash": "12110054121100541211005412110054",
+        "created_at": "2026-05-25T03:48:33.588Z",
+        "updated_at": "2026-05-25T03:48:33.588Z",
+        "type": "plugin"
     }
 ]
