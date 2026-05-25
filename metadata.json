@@ -11,5 +11,18 @@
         "created_at": "2026-05-25T03:30:09.493Z",
         "updated_at": "2026-05-25T03:30:09.493Z",
         "type": "theme"
+    },
+    {
+        "id": "OkASXQStmGWb33Exixpn1PE9PQ3vfWx8",
+        "plugin": "Phycat",
+        "language": "zh-tw",
+        "version": "0.2.9",
+        "supported_versions": "0.2.9",
+        "title": "Phycat",
+        "description": "Phycat 繁體中文翻譯與微調",
+        "hash": "12337f9812337f9812337f9812337f98",
+        "created_at": "2026-05-25T03:30:23.533Z",
+        "updated_at": "2026-05-25T03:30:23.533Z",
+        "type": "theme"
     }
 ]
