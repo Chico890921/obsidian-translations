@@ -167,5 +167,18 @@
         "created_at": "2026-05-25T03:44:33.967Z",
         "updated_at": "2026-05-25T03:44:33.967Z",
         "type": "plugin"
+    },
+    {
+        "id": "9W07W20JeSZ3A7wSoD1exasJzEF1XqVy",
+        "plugin": "editor-width-slider",
+        "language": "zh-tw",
+        "version": "1.0.5",
+        "supported_versions": "1.0.5",
+        "title": "[zh-tw] Editor Width Slider",
+        "description": "Editor Width Slider Localization & Tweaks",
+        "hash": "5f13f1f85f13f1f85f13f1f85f13f1f8",
+        "created_at": "2026-05-25T03:44:42.774Z",
+        "updated_at": "2026-05-25T03:44:42.774Z",
+        "type": "plugin"
     }
 ]
