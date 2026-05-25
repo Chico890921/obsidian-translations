@@ -1,0 +1,471 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "xournalpp",
+        "version": "1.1.2",
+        "title": "[zh-tw] Xournal++",
+        "description": "Xournal++ 繁體中文化與微調",
+        "language": "zh-tw",
+        "supportedVersions": "1.1.2",
+        "author": "Chico",
+        "updatedAt": 1779675297681
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to open the file after creation.",
+                    "target": "建立後無法開啟檔案。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Create",
+                    "target": "建立"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Create & Open",
+                    "target": "建立並開啟"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Edit in Xournal++",
+                    "target": "在 Xournal++ 中編輯"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Automatically export Xournal++ files to PDF upon modification.",
+                    "target": "Xournal++ 檔案修改後自動匯出為 PDF。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto export Xournal++ files",
+                    "target": "自動匯出 Xournal++ 檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Xournal++ installation path",
+                    "target": "Xournal++ 安裝路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default path for new Xournal++ files",
+                    "target": "新 Xournal++ 檔案的預設路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. Notes",
+                    "target": "例如 Notes"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter a file name",
+                    "target": "輸入檔案名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Select a folder for the new Xournal++ note",
+                    "target": "選擇新 Xournal++ 筆記的資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter a new file name",
+                    "target": "輸入新的檔案名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Search for a Xournal++ note",
+                    "target": "搜尋 Xournal++ 筆記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Create a new Xournal++ note",
+                    "target": "建立新的 Xournal++ 筆記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Open in Xournal++",
+                    "target": "在 Xournal++ 中開啟"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Update from Xournal++",
+                    "target": "從 Xournal++ 更新"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Create new Xournal++",
+                    "target": "建立新的 Xournal++"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Delete PDF & Xournal++",
+                    "target": "刪除 PDF 與 Xournal++"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Rename PDF & Xournal++...",
+                    "target": "重新命名 PDF 與 Xournal++..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Enter",
+                    "target": "Enter"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Shift + Enter",
+                    "target": "Shift + Enter"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Edit in Xournal++",
+                    "target": "在 Xournal++ 中編輯"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Create new Xournal++",
+                    "target": "建立新的 Xournal++"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Error: Xournal++ path not setup correctly. Please check docs on how to set it up.",
+                    "target": "錯誤：Xournal++ 路徑設定不正確。請查看文件了解設定方式。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Error converting Xournal++ to PDF. Check the console for more information.",
+                    "target": "將 Xournal++ 轉換為 PDF 時發生錯誤。請查看主控台取得更多資訊。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Exported all Xournal++ notes successfully.",
+                    "target": "已成功匯出所有 Xournal++ 筆記。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Opening file in Xournal++",
+                    "target": "正在 Xournal++ 中開啟檔案"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Error opening file in Xournal++. Check console for error message.",
+                    "target": "在 Xournal++ 中開啟檔案時發生錯誤。請查看主控台的錯誤訊息。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Xournal++ note created",
+                    "target": "已建立 Xournal++ 筆記"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to open the file after creation.",
+                    "target": "建立後無法開啟檔案。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No corresponding PDF file found.",
+                    "target": "找不到對應的 PDF 檔案。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open current note",
+                    "target": "開啟目前筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create a new note",
+                    "target": "建立新筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create a new note and insert XOPP link",
+                    "target": "建立新筆記並插入 XOPP 連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create a new note and insert PDF link",
+                    "target": "建立新筆記並插入 PDF 連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create a new note and insert PDF and XOPP link",
+                    "target": "建立新筆記並插入 PDF 與 XOPP 連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Export all notes to PDF",
+                    "target": "將所有筆記匯出為 PDF"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Update current PDF",
+                    "target": "更新目前 PDF"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Rename current PDF and corresponding Xournal++ note",
+                    "target": "重新命名目前 PDF 與對應的 Xournal++ 筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Delete current PDF and corresponding Xournal++ note",
+                    "target": "刪除目前 PDF 與對應的 Xournal++ 筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Search and open Xournal++ note",
+                    "target": "搜尋並開啟 Xournal++ 筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Enable Auto Export?",
+                    "target": "啟用自動匯出？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Enabling auto export might automatically overwrite any same-named files. Do you want to proceed?",
+                    "target": "啟用自動匯出可能會自動覆寫任何同名檔案。要繼續嗎？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Yes",
+                    "target": "是"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "No",
+                    "target": "否"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "Notice(\"Exported all Xournal++ notes successfully.\")",
+                    "target": "Notice(\"已成功匯出所有 Xournal++ 筆記。\")"
+                },
+                {
+                    "source": "setName(\"Auto export Xournal++ files\")",
+                    "target": "setName(\"自動匯出 Xournal++ 檔案\")"
+                },
+                {
+                    "source": "setDesc(\"Automatically export Xournal++ files to PDF upon modification.\")",
+                    "target": "setDesc(\"Xournal++ 檔案修改後自動匯出為 PDF。\")"
+                },
+                {
+                    "source": "setName(\"Xournal++ installation path\")",
+                    "target": "setName(\"Xournal++ 安裝路徑\")"
+                },
+                {
+                    "source": "setName(\"Default path for new Xournal++ files\")",
+                    "target": "setName(\"新 Xournal++ 檔案的預設路徑\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. Notes\")",
+                    "target": "setPlaceholder(\"例如 Notes\")"
+                },
+                {
+                    "source": "Notice(\"Error: Xournal++ path not setup correctly. Please check docs on how to set it up.\", 1e4);\n      return;\n    }\n    let command = `${path} \"${vaultPath + \"/\" + xoppFile.path}\"`;\n    new import_obsidian5.Notice(\"Opening file in Xournal++\")",
+                    "target": "Notice(\"錯誤：Xournal++ 路徑設定不正確。請查看文件了解設定方式。\", 1e4);\n      return;\n    }\n    let command = `${path} \"${vaultPath + \"/\" + xoppFile.path}\"`;\n    new import_obsidian5.Notice(\"正在 Xournal++ 中開啟檔案\")"
+                },
+                {
+                    "source": "Notice(\"Error opening file in Xournal++. Check console for error message.\")",
+                    "target": "Notice(\"在 Xournal++ 中開啟檔案時發生錯誤。請查看主控台的錯誤訊息。\")"
+                },
+                {
+                    "source": "error(`Error opening file in Xournal++: ${error.message}`)",
+                    "target": "error(`在 Xournal++ 中開啟檔案時發生錯誤：${error.message}`)"
+                },
+                {
+                    "source": "Notice(\"Xournal++ note created\")",
+                    "target": "Notice(\"已建立 Xournal++ 筆記\")"
+                },
+                {
+                    "source": "Notice(\"Error: Could not create a Xournal++ note: \" + e.message);\n  }\n}\nfunction findCorrespondingXoppToPdf(pdfFilePath, plugin) {\n  var _a;\n  let xoppFilePath = pdfFilePath == null ? void 0 : pdfFilePath.replace(\".pdf\", \".xopp\")",
+                    "target": "Notice(\"錯誤：無法建立 Xournal++ 筆記：\" + e.message);\n  }\n}\nfunction findCorrespondingXoppToPdf(pdfFilePath, plugin) {\n  var _a;\n  let xoppFilePath = pdfFilePath == null ? void 0 : pdfFilePath.replace(\".pdf\", \".xopp\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Enter a file name\")",
+                    "target": "setPlaceholder(\"輸入檔案名稱\")"
+                },
+                {
+                    "source": "setButtonText(\"Create & Open\")",
+                    "target": "setButtonText(\"建立並開啟\")"
+                },
+                {
+                    "source": "setTooltip(\"Shift + Enter\")",
+                    "target": "setTooltip(\"Shift + Enter\")"
+                },
+                {
+                    "source": "setTitle(\"Create a new Xournal++ note\")",
+                    "target": "setTitle(\"建立新的 Xournal++ 筆記\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Select a folder for the new Xournal++ note\")",
+                    "target": "setPlaceholder(\"選擇新 Xournal++ 筆記的資料夾\")"
+                },
+                {
+                    "source": "error(\"Failed to open the file after creation.\")",
+                    "target": "error(\"建立後無法開啟檔案。\")"
+                },
+                {
+                    "source": "Notice(\"Failed to open the file after creation.\")",
+                    "target": "Notice(\"建立後無法開啟檔案。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Enter a new file name\")",
+                    "target": "setPlaceholder(\"輸入新的檔案名稱\")"
+                },
+                {
+                    "source": "Notice(\"No corresponding PDF file found.\")",
+                    "target": "Notice(\"找不到對應的 PDF 檔案。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Search for a Xournal++ note\")",
+                    "target": "setPlaceholder(\"搜尋 Xournal++ 筆記\")"
+                },
+                {
+                    "source": "setTitle(\"Open in Xournal++\")",
+                    "target": "setTitle(\"在 Xournal++ 中開啟\")"
+                },
+                {
+                    "source": "setTitle(\"Update from Xournal++\")",
+                    "target": "setTitle(\"從 Xournal++ 更新\")"
+                },
+                {
+                    "source": "setTitle(\"Create new Xournal++\")",
+                    "target": "setTitle(\"建立新的 Xournal++\")"
+                },
+                {
+                    "source": "setTitle(\"Delete PDF & Xournal++\")",
+                    "target": "setTitle(\"刪除 PDF 與 Xournal++\")"
+                },
+                {
+                    "source": "setTitle(\"Rename PDF & Xournal++...\")",
+                    "target": "setTitle(\"重新命名 PDF 與 Xournal++...\")"
+                },
+                {
+                    "source": "setButtonText(\"Edit in Xournal++\")",
+                    "target": "setButtonText(\"在 Xournal++ 中編輯\")"
+                },
+                {
+                    "source": "setTooltip(\"Edit in Xournal++\")",
+                    "target": "setTooltip(\"在 Xournal++ 中編輯\")"
+                },
+                {
+                    "source": "setTooltip(\"Create new Xournal++\")",
+                    "target": "setTooltip(\"建立新的 Xournal++\")"
+                },
+                {
+                    "source": "text: \"Enable Auto Export?\"",
+                    "target": "text: \"啟用自動匯出？\""
+                },
+                {
+                    "source": "text: \"Enabling auto export might automatically overwrite any same-named files. Do you want to proceed?\"",
+                    "target": "text: \"啟用自動匯出可能會自動覆寫任何同名檔案。要繼續嗎？\""
+                },
+                {
+                    "source": "text: \"Yes\"",
+                    "target": "text: \"是\""
+                },
+                {
+                    "source": "text: \"No\"",
+                    "target": "text: \"否\""
+                },
+                {
+                    "source": "textContent : \"\"",
+                    "target": "textContent : \"\""
+                },
+                {
+                    "source": "name: \"Open current note\"",
+                    "target": "name: \"開啟目前筆記\""
+                },
+                {
+                    "source": "name: \"Create a new note\"",
+                    "target": "name: \"建立新筆記\""
+                },
+                {
+                    "source": "name: \"Create a new note and insert XOPP link\"",
+                    "target": "name: \"建立新筆記並插入 XOPP 連結\""
+                },
+                {
+                    "source": "name: \"Create a new note and insert PDF link\"",
+                    "target": "name: \"建立新筆記並插入 PDF 連結\""
+                },
+                {
+                    "source": "name: \"Create a new note and insert PDF and XOPP link\"",
+                    "target": "name: \"建立新筆記並插入 PDF 與 XOPP 連結\""
+                },
+                {
+                    "source": "name: \"Export all notes to PDF\"",
+                    "target": "name: \"將所有筆記匯出為 PDF\""
+                },
+                {
+                    "source": "name: \"Update current PDF\"",
+                    "target": "name: \"更新目前 PDF\""
+                },
+                {
+                    "source": "name: \"Rename current PDF and corresponding Xournal++ note\"",
+                    "target": "name: \"重新命名目前 PDF 與對應的 Xournal++ 筆記\""
+                },
+                {
+                    "source": "name: \"Delete current PDF and corresponding Xournal++ note\"",
+                    "target": "name: \"刪除目前 PDF 與對應的 Xournal++ 筆記\""
+                },
+                {
+                    "source": "name: \"Search and open Xournal++ note\"",
+                    "target": "name: \"搜尋並開啟 Xournal++ 筆記\""
+                },
+                {
+                    "source": "innerText = \"X++\"",
+                    "target": "innerText = \"X++\""
+                }
+            ]
+        }
+    }
+}
