@@ -232,5 +232,18 @@
         "created_at": "2026-05-25T03:45:15.828Z",
         "updated_at": "2026-05-25T03:45:15.828Z",
         "type": "plugin"
+    },
+    {
+        "id": "5MfGcunKxUdDkIDmBLmgOUgREFGyGr2q",
+        "plugin": "line-arrange",
+        "language": "zh-tw",
+        "version": "1.7.0",
+        "supported_versions": "1.7.0",
+        "title": "[zh-tw] Line Arrange",
+        "description": "Line Arrange Localization & Tweaks",
+        "hash": "1cbc973a1cbc973a1cbc973a1cbc973a",
+        "created_at": "2026-05-25T03:45:22.794Z",
+        "updated_at": "2026-05-25T03:45:22.794Z",
+        "type": "plugin"
     }
 ]
