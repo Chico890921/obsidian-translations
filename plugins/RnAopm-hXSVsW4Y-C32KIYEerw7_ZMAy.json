@@ -1,0 +1,101 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-auto-hide",
+        "version": "0.4.8",
+        "title": "[zh-tw] Auto Hide",
+        "description": "Auto Hide Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "0.4.8",
+        "author": "Chico",
+        "updatedAt": 1778615217517
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "单击左侧功能区的空白区域以展开侧边栏。",
+                    "target": "點擊左側功能區的空白區域以展開側邊欄。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "单击笔记标题以展开左侧边栏。",
+                    "target": "點擊筆記標題以展開左側邊欄。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "添加一个可以临时锁定侧边栏折叠的固定按钮。",
+                    "target": "新增一個可以臨時鎖定側邊欄摺疊的固定按鈕。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "单击横幅以展开侧边栏",
+                    "target": "點擊橫幅以展開側邊欄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "单击上方笔记标题展开侧边栏",
+                    "target": "點擊上方筆記標題展開側邊欄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "锁定侧边栏折叠与展开",
+                    "target": "鎖定側邊欄摺疊與展開"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Auto Hide 插件设置。",
+                    "target": "Auto Hide 外掛設定。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "实验性功能！",
+                    "target": "實驗性功能！"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"单击横幅以展开侧边栏\")",
+                    "target": "setName(\"點擊橫幅以展開側邊欄\")"
+                },
+                {
+                    "source": "setDesc(\"单击左侧功能区的空白区域以展开侧边栏。\")",
+                    "target": "setDesc(\"點擊左側功能區的空白區域以展開側邊欄。\")"
+                },
+                {
+                    "source": "setName(\"单击上方笔记标题展开侧边栏\")",
+                    "target": "setName(\"點擊上方筆記標題展開側邊欄\")"
+                },
+                {
+                    "source": "setDesc(\"单击笔记标题以展开左侧边栏。\")",
+                    "target": "setDesc(\"點擊筆記標題以展開左側邊欄。\")"
+                },
+                {
+                    "source": "setName(\"锁定侧边栏折叠与展开\")",
+                    "target": "setName(\"鎖定側邊欄摺疊與展開\")"
+                },
+                {
+                    "source": "setDesc(\"添加一个可以临时锁定侧边栏折叠的固定按钮。\")",
+                    "target": "setDesc(\"新增一個可以臨時鎖定側邊欄摺疊的固定按鈕。\")"
+                },
+                {
+                    "source": "text: \"Auto Hide 插件设置。\"",
+                    "target": "text: \"Auto Hide 外掛設定。\""
+                },
+                {
+                    "source": "text: \"实验性功能！\"",
+                    "target": "text: \"實驗性功能！\""
+                }
+            ]
+        }
+    }
+}
