@@ -1,0 +1,3676 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "media-extended",
+        "version": "4.2.5",
+        "title": "[zh-tw] Media Extended",
+        "description": "Media Extended 繁體中文化與微調",
+        "language": "zh-tw",
+        "supportedVersions": "4.2.5",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Continue with Google",
+                    "target": "使用 Google 繼續"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Continue with GitHub",
+                    "target": "使用 GitHub 繼續"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "By continuing, you agree to our ",
+                    "target": "繼續即表示你同意我們的"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": " and ",
+                    "target": "與"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Edit hash properties",
+                    "target": "編輯 Hash 屬性"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Opening URL from browser: ",
+                    "target": "正在從瀏覽器開啟 URL："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Cannot capture screenshot from this media due to CORS security policy, ",
+                    "target": "由於 CORS 安全政策，無法從此媒體擷取截圖，"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "See the troubleshooting guide for possible solutions",
+                    "target": "請參考疑難排解指南取得可能的解法"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Controls when media files start loading in your notes.",
+                    "target": "控制筆記中的媒體檔案何時開始載入。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Media starts loading immediately when you open the note.",
+                    "target": "開啟筆記時立即開始載入媒體。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Recommended for notes with few videos/audio files as it keeps Obsidian fast.",
+                    "target": "建議用於只有少量影片或音訊檔的筆記，可讓 Obsidian 保持快速。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Choose browser to open with browser companion extension to access more features.",
+                    "target": "選擇要搭配瀏覽器輔助擴充功能開啟的瀏覽器，以使用更多功能。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Choose the format of the saved screenshot",
+                    "target": "選擇儲存截圖的格式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "WEBP has better compression ratio, but would fallback to JPEG in unsupported browsers like iOS or iPadOS",
+                    "target": "WEBP 壓縮率較佳，但在 iOS 或 iPadOS 等不支援的瀏覽器中會退回 JPEG"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "A list of languages to show subtitles/captions for by default.",
+                    "target": "預設要顯示字幕的語言清單。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Each language code should be on a new line.",
+                    "target": "每個語言代碼請各自放在新的一行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "confirm",
+                    "source": "Export password manager data? Keep in mind that the credentials will be saved in plain text and is not secure and can be easily read by anyone.",
+                    "target": "要匯出密碼管理器資料嗎？請注意，憑證會以純文字儲存，並不安全，任何人都可以輕易讀取。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "confirm",
+                    "source": "Are you sure you want to clear all credentials? This action cannot be undone.",
+                    "target": "確定要清除所有憑證嗎？此操作無法復原。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported",
+                    "target": "forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to get EmptyView",
+                    "target": "無法取得 EmptyView"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to create a new BroadcastChannel, multi-tab state changes will not be available",
+                    "target": "無法建立新的 BroadcastChannel，多分頁狀態變更將無法使用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Auto refresh tick failed with error. This is likely a transient error.",
+                    "target": "自動重新整理計時發生錯誤，這可能只是暫時性錯誤。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error in detectVolumeSetter:",
+                    "target": "detectVolumeSetter 發生錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "`persistent` option is only available in Deno",
+                    "target": "`persistent` option is only available in Deno"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Please add a BigInt polyfill.",
+                    "target": "Please add a BigInt polyfill."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to deserialize media view state",
+                    "target": "無法反序列化媒體檢視狀態"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "onOpenFile error in openFile, fallback to default",
+                    "target": "openFile 中的 onOpenFile 發生錯誤，退回預設行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "failed to insert timestamp",
+                    "target": "無法插入時間戳"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "unexpected folder",
+                    "target": "非預期的資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error signing in with GitHub:",
+                    "target": "使用 GitHub 登入時發生錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "No code provided from PKCE callback",
+                    "target": "PKCE 回呼未提供 code"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error exchanging code for session",
+                    "target": "使用 code 換取工作階段時發生錯誤"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error signing out",
+                    "target": "登出時發生錯誤"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to get media file path",
+                    "target": "無法取得媒體檔案路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to get image from cache:",
+                    "target": "無法從快取取得圖片："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to set image in cache:",
+                    "target": "無法將圖片寫入快取："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to delete image from cache:",
+                    "target": "無法從快取刪除圖片："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to clear cache:",
+                    "target": "無法清除快取："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to get total cache size:",
+                    "target": "無法取得快取總大小："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to reset cache database:",
+                    "target": "無法重設快取資料庫："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to evict cache entries:",
+                    "target": "無法清除快取項目："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "onInternalLinkClick error in editor, fallback to default",
+                    "target": "編輯器中的內部連結點擊發生錯誤，退回預設行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "onExternalLinkClick error in editor, fallback to default",
+                    "target": "編輯器中的外部連結點擊發生錯誤，退回預設行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "onInternalLinkClick error in openLinktext, fallback to default",
+                    "target": "openLinktext 中的內部連結點擊發生錯誤，退回預設行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to patch preview click",
+                    "target": "無法修補預覽點擊行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "onExternalLinkClick error in preview, fallback to default",
+                    "target": "預覽中的外部連結點擊發生錯誤，退回預設行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "onInternalLinkClick error in preview, fallback to default",
+                    "target": "預覽中的內部連結點擊發生錯誤，退回預設行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "open external link fallback error",
+                    "target": "開啟外部連結的退回處理發生錯誤"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "open external link error",
+                    "target": "開啟外部連結時發生錯誤"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Retrying failed fetch. Error:",
+                    "target": "正在重試失敗的擷取。錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Invalid SPS NAL unit type",
+                    "target": "Invalid SPS NAL unit type"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error building AVC Decoder Configuration Record:",
+                    "target": "Error building AVC Decoder Configuration Record:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error building HEVC Decoder Configuration Record:",
+                    "target": "Error building HEVC Decoder Configuration Record:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error during decodability check:",
+                    "target": "Error during decodability check:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to get input",
+                    "target": "無法取得輸入"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to load plugin data:",
+                    "target": "無法載入外掛資料："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to find related media from fs for",
+                    "target": "無法從檔案系統找到相關媒體："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to open electron file picker",
+                    "target": "無法開啟 Electron 檔案選擇器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "error loading media tracks",
+                    "target": "載入媒體軌道時發生錯誤"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "jump to timestamp error",
+                    "target": "跳至時間戳時發生錯誤"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "seek to beginning of the clip error",
+                    "target": "跳至片段開頭時發生錯誤"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "reset time range error",
+                    "target": "重設時間範圍時發生錯誤"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "media error",
+                    "target": "媒體錯誤"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to resolve file",
+                    "target": "無法解析檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to access file",
+                    "target": "無法存取檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to import password manager data",
+                    "target": "無法匯入密碼管理器資料"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error checking auth state:",
+                    "target": "檢查登入狀態時發生錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error signing out:",
+                    "target": "登出時發生錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to dispose container",
+                    "target": "無法釋放容器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to initialize main process service",
+                    "target": "無法初始化主程序服務"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error pasting track",
+                    "target": "貼上軌道時發生錯誤"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "recorder not found, skip patching for recorder note",
+                    "target": "recorder not found, skip patching for recorder note"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Media Extended: User logged in via OAuth",
+                    "target": "Media Extended：使用者已透過 OAuth 登入"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "starting default worker",
+                    "target": "starting default worker"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "worker error",
+                    "target": "worker error"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "@supabase/gotrue-js: navigatorLock: acquire lock",
+                    "target": "@supabase/gotrue-js: navigatorLock: acquire lock"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "@supabase/gotrue-js: navigatorLock acquire timed out",
+                    "target": "@supabase/gotrue-js: navigatorLock acquire timed out"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "@supabase/gotrue-js: navigatorLock: acquired",
+                    "target": "@supabase/gotrue-js: navigatorLock: acquired"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "@supabase/gotrue-js: navigatorLock: released",
+                    "target": "@supabase/gotrue-js: navigatorLock: released"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "@supabase/gotrue-js: navigatorLock: not immediately available",
+                    "target": "@supabase/gotrue-js: navigatorLock: not immediately available"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "@supabase/gotrue-js: Navigator LockManager state",
+                    "target": "@supabase/gotrue-js: Navigator LockManager state"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Google login clicked",
+                    "target": "Google login clicked"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "waiting for connector ready",
+                    "target": "waiting for connector ready"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "connector ready",
+                    "target": "connector ready"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "connected to main process",
+                    "target": "connected to main process"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Hello from Media Extended",
+                    "target": "Hello from Media Extended"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Continue with Google",
+                    "target": "使用 Google 繼續"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Continue",
+                    "target": "繼續"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "View Release Notes",
+                    "target": "查看版本說明"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Dismiss",
+                    "target": "關閉"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Open guide",
+                    "target": "開啟指南"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Sign out",
+                    "target": "登出"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Sign in",
+                    "target": "登入"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Where newly created screenshots will be saved. You can go to \"Files and links\" to change the default location of new attachments.",
+                    "target": "新建立的截圖會儲存在這裡。你可以到「檔案與連結」變更新附件的預設位置。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Place newly created screenshots in this folder.",
+                    "target": "將新建立的截圖放在此資料夾。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Sign in to access online features like YouTube transcript fetching, AI transcript & summary, and more.",
+                    "target": "登入後即可使用 YouTube 逐字稿擷取、AI 逐字稿與摘要等線上功能。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Let media extended handle link to YouTube, Vimeo, bilibili, etc",
+                    "target": "讓 Media Extended 處理 YouTube、Vimeo、bilibili 等連結"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Configure how links to media are opened",
+                    "target": "設定媒體連結的開啟方式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Behavior when clicking on a link",
+                    "target": "點擊連結時的行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Folder path for media library (relative to vault root)",
+                    "target": "媒體庫資料夾路徑（相對於儲存庫根目錄）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Configure where timestamps and screenshots are inserted",
+                    "target": "設定時間戳與截圖插入的位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Offset in seconds to add to the timestamp",
+                    "target": "要加到時間戳的偏移秒數"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The default volume for media files",
+                    "target": "媒體檔案的預設音量"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Preserve audio pitch to compensate for playback rate changes. Won't work on video hosted in YouTube and Vimeo",
+                    "target": "保留音高以補償播放速度變化。對 YouTube 和 Vimeo 上的影片無效"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show subtitles/captions whenever available.",
+                    "target": "可用時顯示字幕。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Where text tracks (subtitles/captions) will be searched for. You can go to \"Files and links\" to change the default location of new attachments.",
+                    "target": "會在這裡搜尋文字軌（字幕）。你可以到「檔案與連結」變更新附件的預設位置。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Search for text tracks in this folder.",
+                    "target": "在此資料夾中搜尋文字軌。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default location for new screenshots",
+                    "target": "新截圖的預設位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Screenshot folder path",
+                    "target": "截圖資料夾路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Account",
+                    "target": "帳號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Login passwords",
+                    "target": "登入密碼"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Your account",
+                    "target": "你的帳號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Embed",
+                    "target": "嵌入"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Load strategy",
+                    "target": "載入策略"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Link",
+                    "target": "連結"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Handle link to hosted media",
+                    "target": "處理託管媒體連結"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Open hosted media in...",
+                    "target": "在何處開啟託管媒體..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Link behavior",
+                    "target": "連結行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Click",
+                    "target": "點擊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Alternative click",
+                    "target": "替代點擊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Media Library",
+                    "target": "媒體庫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Media folder path",
+                    "target": "媒體資料夾路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Note taking",
+                    "target": "筆記記錄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Insert location",
+                    "target": "插入位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Timestamp offset",
+                    "target": "時間戳偏移"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Playback",
+                    "target": "播放"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default volume",
+                    "target": "預設音量"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Preserve pitch",
+                    "target": "保留音高"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Fine-tune speed adjustment",
+                    "target": "微調速度調整"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Save screenshot as",
+                    "target": "截圖儲存為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Text tracks",
+                    "target": "文字軌"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable text tracks by default",
+                    "target": "預設啟用文字軌"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default languages",
+                    "target": "預設語言"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default location for text tracks",
+                    "target": "文字軌的預設位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Text track folder path",
+                    "target": "文字軌資料夾路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Screenshot",
+                    "target": "截圖"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter file path, URL or media id, or drop a media file here",
+                    "target": "輸入檔案路徑、URL 或媒體 ID，或將媒體檔拖放到這裡"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Playback Speed",
+                    "target": "播放速度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Audio Gain",
+                    "target": "音訊增益"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Select Transcript",
+                    "target": "選擇逐字稿"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Open dialog to edit all hash parameters",
+                    "target": "開啟對話框以編輯所有 Hash 參數"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Edit Media Metadata",
+                    "target": "編輯媒體中繼資料"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Clip Image",
+                    "target": "擷取片段圖片"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Import Text Track File",
+                    "target": "匯入文字軌檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Import Text Track from URL",
+                    "target": "從 URL 匯入文字軌"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Import YouTube Subtitle",
+                    "target": "匯入 YouTube 字幕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Open local file",
+                    "target": "開啟本機檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Password Manager",
+                    "target": "密碼管理器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Eager",
+                    "target": "立即載入"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Media starts loading immediately when you open the note.",
+                    "target": "開啟筆記時立即開始載入媒體。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Copy file path",
+                    "target": "複製檔案路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Stop syncing with player",
+                    "target": "停止與播放器同步"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Sync with active player",
+                    "target": "與作用中的播放器同步"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Custom",
+                    "target": "自訂"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Flip video",
+                    "target": "翻轉影片"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Disable",
+                    "target": "停用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Horizontal (Mirror)",
+                    "target": "水平（鏡像）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Vertical (Upside down)",
+                    "target": "垂直（上下顛倒）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Extract text from screenshot",
+                    "target": "從截圖擷取文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Preserve pitch",
+                    "target": "保留音高"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Subtitles",
+                    "target": "字幕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Open transcript",
+                    "target": "開啟逐字稿"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Edit hash properties",
+                    "target": "編輯 Hash 屬性"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Open related media",
+                    "target": "開啟相關媒體"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Copy URL with timestamp",
+                    "target": "複製含時間戳的 URL"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Mute",
+                    "target": "靜音"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Update metadata",
+                    "target": "更新中繼資料"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Edit media metadata",
+                    "target": "編輯媒體中繼資料"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Open media properties",
+                    "target": "開啟媒體屬性"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Add to media library",
+                    "target": "加入媒體庫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Open in Media Extended",
+                    "target": "在 Media Extended 中開啟"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Open in default browser",
+                    "target": "在預設瀏覽器中開啟"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Copy URL",
+                    "target": "複製 URL"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Select video file from vault",
+                    "target": "從儲存庫選擇影片檔"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Open external media",
+                    "target": "開啟外部媒體"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Add text track",
+                    "target": "新增文字軌"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "from local file",
+                    "target": "從本機檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "from YouTube",
+                    "target": "從 YouTube"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Add new credential",
+                    "target": "新增憑證"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Import credentials",
+                    "target": "匯入憑證"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Export credentials",
+                    "target": "匯出憑證"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Clear all credentials",
+                    "target": "清除所有憑證"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Open password manager",
+                    "target": "開啟密碼管理器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Save",
+                    "target": "儲存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "WebCrypto API is not supported. Code challenge method will default to use plain instead of sha256.",
+                    "target": "WebCrypto API is not supported. Code challenge method will default to use plain instead of sha256."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "@supabase/gotrue-js: Error when querying Navigator LockManager state",
+                    "target": "@supabase/gotrue-js: Error when querying Navigator LockManager state"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "@supabase/gotrue-js: Navigator LockManager returned a null lock when using #request without ifAvailable set to true, it appears this browser is not following the LockManager spec https://developer.mozilla.org/en-US/docs/Web/API/LockManager/request",
+                    "target": "@supabase/gotrue-js: Navigator LockManager returned a null lock when using #request without ifAvailable set to true, it appears this browser is not following the LockManager spec https://developer.mozilla.org/en-US/docs/Web/API/LockManager/request"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.",
+                    "target": "Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Using the user object as returned from supabase.auth.getSession() or from some supabase.auth.onAuthStateChange() events could be insecure! This value comes directly from the storage medium (usually cookies on the server) and may not be authentic. Use supabase.auth.getUser() instead which authenticates the data by contacting the Supabase Auth server.",
+                    "target": "Using the user object as returned from supabase.auth.getSession() or from some supabase.auth.onAuthStateChange() events could be insecure! This value comes directly from the storage medium (usually cookies on the server) and may not be authentic. Use supabase.auth.getUser() instead which authenticates the data by contacting the Supabase Auth server."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "@supabase/gotrue-js: Session as retrieved from URL was issued over 120s ago, URL could be stale",
+                    "target": "@supabase/gotrue-js: Session as retrieved from URL was issued over 120s ago, URL could be stale"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "@supabase/gotrue-js: Session as retrieved from URL was issued in the future? Check the device clock for skew",
+                    "target": "@supabase/gotrue-js: Session as retrieved from URL was issued in the future? Check the device clock for skew"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "setSelf function cannot be used with read-only atom",
+                    "target": "setSelf function cannot be used with read-only atom"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "setSelf function cannot be called in sync",
+                    "target": "setSelf function cannot be called in sync"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Detected multiple Jotai instances. It may cause unexpected behavior with the default store. https://github.com/pmndrs/jotai/discussions/2044",
+                    "target": "Detected multiple Jotai instances. It may cause unexpected behavior with the default store. https://github.com/pmndrs/jotai/discussions/2044"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "fallback parsing failed for hash fields",
+                    "target": "fallback parsing failed for hash fields"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "fallback parsing failed for fm control",
+                    "target": "fallback parsing failed for fm control"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "fallback parsing failed for fm metadata",
+                    "target": "fallback parsing failed for fm metadata"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "polyfill for input cancel event only works on focused windows, fallback to timeout",
+                    "target": "polyfill for input cancel event only works on focused windows, fallback to timeout"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "input cancel event timeout, dispatch cancel event",
+                    "target": "input cancel event timeout, dispatch cancel event"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Received non-IPC message, ignoring",
+                    "target": "Received non-IPC message, ignoring"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Error deserializing SuperJSON payload",
+                    "target": "Error deserializing SuperJSON payload"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unsupported edit list: multiple edits are not currently supported. Only using first edit.",
+                    "target": "Unsupported edit list: multiple edits are not currently supported. Only using first edit."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unsupported edit list entry: media rate must be 1.",
+                    "target": "Unsupported edit list entry: media rate must be 1."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unsupported PCM format.",
+                    "target": "Unsupported PCM format."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Can't have two trun boxes for the same track in one fragment. Ignoring...",
+                    "target": "Can't have two trun boxes for the same track in one fragment. Ignoring..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to extract metadata",
+                    "target": "Failed to extract metadata"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to deserialize media view state",
+                    "target": "無法反序列化媒體檢視狀態"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "File path copied to clipboard",
+                    "target": "檔案路徑已複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No track opened",
+                    "target": "尚未開啟軌道"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No linked media found",
+                    "target": "找不到連結的媒體"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Video flip reset to default",
+                    "target": "影片翻轉已重設為預設值"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Video flipped to horizontal (mirror)",
+                    "target": "影片已水平翻轉（鏡像）"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Video flipped to vertical (Upside down)",
+                    "target": "影片已垂直翻轉（上下顛倒）"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Video flipped to both ways (upside down and mirror)",
+                    "target": "影片已同時垂直與水平翻轉（上下顛倒與鏡像）"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Invalid playback rate",
+                    "target": "播放速度無效"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Cannot increase speed further",
+                    "target": "無法再提高速度"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Cannot decrease speed further",
+                    "target": "無法再降低速度"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "YouTube cookies cleared",
+                    "target": "已清除 YouTube Cookie"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to clear YouTube cookies, see console for details",
+                    "target": "無法清除 YouTube Cookie，詳情請查看主控台"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Invalid audio gain value. Please enter a number between 0.1 and 10.",
+                    "target": "音訊增益值無效。請輸入 0.1 到 10 之間的數字。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "URL copied to clipboard",
+                    "target": "URL 已複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "One of the note with timestamp is closed, the timestamp will not be updated",
+                    "target": "其中一個含時間戳的筆記已關閉，時間戳將不會更新"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "You've taken a timestamp for the recording, probably in canvas node, keep editor in foreground and in live preview mode. Otherwise, the dummy timestamp cannot be updated when recording is saved.",
+                    "target": "You've taken a timestamp for the recording, probably in canvas node, keep editor in foreground and in live preview mode. Otherwise, the dummy timestamp cannot be updated when recording is saved."
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Error logging in, see console for details",
+                    "target": "登入時發生錯誤，詳情請查看主控台"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Error signing in with GitHub",
+                    "target": "使用 GitHub 登入時發生錯誤"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "You have been signed out",
+                    "target": "你已登出"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to save changes, fix errors before confirm",
+                    "target": "無法儲存變更，請先修正錯誤再確認"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Link has been modified externally, edit cancelled",
+                    "target": "連結已由外部修改，編輯已取消"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No browser session connected to obsidian, go to browser companion to connect",
+                    "target": "沒有瀏覽器工作階段連接到 Obsidian，請前往瀏覽器輔助工具連接"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Metadata update not supported for this media.",
+                    "target": "此媒體不支援更新中繼資料。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Error loading media, see console for details",
+                    "target": "載入媒體時發生錯誤，詳情請查看主控台"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No media is opened",
+                    "target": "尚未開啟媒體"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No media is playing",
+                    "target": "目前沒有媒體正在播放"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please open a note before taking timestamp",
+                    "target": "請先開啟筆記再建立時間戳"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Subtitle not found",
+                    "target": "找不到字幕"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to pick media file",
+                    "target": "無法選取媒體檔"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "None of the dropped files are supported media files",
+                    "target": "拖放的檔案中沒有支援的媒體檔"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to import password manager data, invalid data format",
+                    "target": "無法匯入密碼管理器資料，資料格式無效"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Cleared all credentials",
+                    "target": "已清除所有憑證"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Added credential",
+                    "target": "已新增憑證"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Invalid value",
+                    "target": "值無效"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Languages cleared",
+                    "target": "已清除語言"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Languages saved",
+                    "target": "已儲存語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Hours",
+                    "target": "小時"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Minutes",
+                    "target": "分鐘"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Seconds",
+                    "target": "秒"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Milliseconds",
+                    "target": "毫秒"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Caption",
+                    "target": "字幕"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Subtitle",
+                    "target": "字幕"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "You need to login to get latest YouTube metadata",
+                    "target": "你需要登入才能取得最新的 YouTube 中繼資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "You need to login to fetch YouTube metadata",
+                    "target": "你需要登入才能擷取 YouTube 中繼資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "You need to login to import YouTube subtitles",
+                    "target": "你需要登入才能匯入 YouTube 字幕"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "You need to login to extract text from screenshot",
+                    "target": "你需要登入才能從截圖擷取文字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Clip the media to a specific time range",
+                    "target": "將媒體裁切到指定時間範圍"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Set the timestamp for the media",
+                    "target": "設定媒體的時間戳"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Mute the media",
+                    "target": "將媒體靜音"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Volume level",
+                    "target": "音量大小"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Start playing automatically",
+                    "target": "自動開始播放"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Restart playback when it ends",
+                    "target": "播放結束後重新開始"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Display player controls",
+                    "target": "顯示播放器控制項"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Custom title for the media",
+                    "target": "媒體的自訂標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Audio amplification multiplier",
+                    "target": "音訊放大倍率"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Playback speed multiplier",
+                    "target": "播放速度倍率"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Maintain audio pitch when changing speed",
+                    "target": "變更速度時維持音高"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Video aspect ratio (e.g., 16:9)",
+                    "target": "影片長寬比（例如 16:9）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Mirror video horizontally or vertically",
+                    "target": "水平或垂直鏡像影片"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "CORS policy for media loading",
+                    "target": "媒體載入的 CORS 政策"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Force media type interpretation",
+                    "target": "強制指定媒體類型解讀"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "When to start loading the media",
+                    "target": "何時開始載入媒體"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Subtitles uploaded by the video creator",
+                    "target": "影片創作者上傳的字幕"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Auto-generated with precise word timing, may contain errors",
+                    "target": "自動產生且含精確逐字時間，可能包含錯誤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Control playback while taking notes",
+                    "target": "做筆記時控制播放"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Capture screenshots with timestamp links",
+                    "target": "擷取含時間戳連結的截圖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Quick navigation using transcript and subtitles",
+                    "target": "使用逐字稿與字幕快速導覽"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Customize timestamp and screenshot formats",
+                    "target": "自訂時間戳與截圖格式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Take notes while recording media",
+                    "target": "錄製媒體時做筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Dive deep into tutorials, guides, and tips to master Media Extended",
+                    "target": "深入閱讀教學、指南與技巧，掌握 Media Extended"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Override title specified in note or media",
+                    "target": "覆寫筆記或媒體中指定的標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Start playback when link is opened or seeked to. Disable this will make sure media keep play/paused.",
+                    "target": "開啟連結或跳轉時開始播放。停用後可讓媒體維持原本的播放或暫停狀態。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Mute the media by default.",
+                    "target": "預設將媒體靜音。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Amplify audio above maximum volume level by default.",
+                    "target": "預設將音訊放大到超過最大音量。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default volume level when link is opened.",
+                    "target": "開啟連結時的預設音量。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default playback rate when link is opened.",
+                    "target": "開啟連結時的預設播放速度。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Timestamp or clip time range",
+                    "target": "時間戳或片段時間範圍"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Volume level (0-100)",
+                    "target": "音量大小（0-100）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Do not autoplay when opened",
+                    "target": "開啟時不要自動播放"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Mute the media when opened",
+                    "target": "開啟時將媒體靜音"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Do not mute when opened",
+                    "target": "開啟時不要靜音"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Disable looping",
+                    "target": "停用循環播放"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Hide player controls",
+                    "target": "隱藏播放器控制項"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Do not preserve audio pitch",
+                    "target": "不要保留音高"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Start playback by default when media is opened. Disable this will make sure media keep play/paused.",
+                    "target": "開啟媒體時預設開始播放。停用後可讓媒體維持原本的播放或暫停狀態。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Amplify audio above maximum volume level.",
+                    "target": "將音訊放大到超過最大音量。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Password Export JSON",
+                    "target": "密碼匯出 JSON"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "New pane on the right",
+                    "target": "右側新窗格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "New pane on the bottom",
+                    "target": "下方新窗格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "In current pane",
+                    "target": "目前窗格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default obsidian behavior",
+                    "target": "Obsidian 預設行為"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "New window",
+                    "target": "新視窗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "New tab",
+                    "target": "新分頁"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Failed to open transcript, see console for details",
+                    "target": "無法開啟逐字稿，詳情請查看主控台"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Subtitle not found",
+                    "target": "找不到字幕"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Media Clip",
+                    "target": "媒體片段"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Timestamp",
+                    "target": "時間戳"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Muted",
+                    "target": "靜音"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Volume",
+                    "target": "音量"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Auto Play",
+                    "target": "自動播放"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Loop",
+                    "target": "循環播放"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Controls",
+                    "target": "控制項"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Title",
+                    "target": "標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Audio Gain",
+                    "target": "音訊增益"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Playback Rate",
+                    "target": "播放速度"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Preserve Pitch",
+                    "target": "保留音高"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Aspect Ratio",
+                    "target": "長寬比"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Flip",
+                    "target": "翻轉"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "None",
+                    "target": "無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Horizontal",
+                    "target": "水平"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Vertical",
+                    "target": "垂直"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Cross Origin",
+                    "target": "跨來源"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Disabled",
+                    "target": "停用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Anonymous",
+                    "target": "匿名"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Use Credentials",
+                    "target": "使用憑證"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Media Type",
+                    "target": "媒體類型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Video",
+                    "target": "影片"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Audio",
+                    "target": "音訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Auto detect",
+                    "target": "自動偵測"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Load Strategy",
+                    "target": "載入策略"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Eager",
+                    "target": "立即載入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "On Play",
+                    "target": "播放時"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Normal",
+                    "target": "一般"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "No Auto Play",
+                    "target": "不自動播放"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "No Mute",
+                    "target": "不靜音"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "No Loop",
+                    "target": "不循環"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "No Controls",
+                    "target": "無控制項"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "No Preserve Pitch",
+                    "target": "不保留音高"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "link",
+                    "source": "text-primary underline-offset-4 hover:underline",
+                    "target": "text-primary underline-offset-4 hover:underline"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "link",
+                    "source": "rounded-lg py-4 px-5 space-y-3 hover:bg-accent/30",
+                    "target": "rounded-lg py-4 px-5 space-y-3 hover:bg-accent/30"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "JSON object requested, multiple (or no) rows returned",
+                    "target": "JSON object requested, multiple (or no) rows returned"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Failed to load resource.",
+                    "target": "無法載入資源。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Aspect ratio must be in the format of <width>/<height>",
+                    "target": "長寬比格式必須為 <寬度>/<高度>"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Aspect ratio x or y must be a number",
+                    "target": "長寬比的 x 或 y 必須是數字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Aspect ratio cannot be reduced to lowest terms",
+                    "target": "長寬比不能約分為最簡形式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Select a subtitle file to import",
+                    "target": "選擇要匯入的字幕檔"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Pick a media file to open",
+                    "target": "選擇要開啟的媒體檔"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Reset video flip",
+                    "target": "重設影片翻轉"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Flip video horizontally (mirror)",
+                    "target": "水平翻轉影片（鏡像）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Flip video vertically (upside down)",
+                    "target": "垂直翻轉影片（上下顛倒）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Flip video both ways (upside down and mirror)",
+                    "target": "同時垂直與水平翻轉影片（上下顛倒與鏡像）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Take timestamp",
+                    "target": "建立時間戳"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Reset media clip",
+                    "target": "重設媒體片段"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Extract text from screenshot",
+                    "target": "從截圖擷取文字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Play",
+                    "target": "播放"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Pause",
+                    "target": "暫停"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Enter/exit fullscreen",
+                    "target": "進入／離開全螢幕"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Increase playback speed",
+                    "target": "提高播放速度"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Decrease playback speed",
+                    "target": "降低播放速度"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Set playback speed to custom value",
+                    "target": "將播放速度設為自訂值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Fine-tune increase playback speed",
+                    "target": "微幅提高播放速度"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Fine-tune decrease playback speed",
+                    "target": "微幅降低播放速度"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Update media metadata",
+                    "target": "更新媒體中繼資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Edit media metadata",
+                    "target": "編輯媒體中繼資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Migrate media notes from old format",
+                    "target": "從舊格式遷移媒體筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Show password manager",
+                    "target": "顯示密碼管理器"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Clear YouTube cookies",
+                    "target": "清除 YouTube Cookie"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Take timestamp on current recording",
+                    "target": "在目前錄製中建立時間戳"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Logout",
+                    "target": "登出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Login",
+                    "target": "登入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Show release note of the current version",
+                    "target": "顯示目前版本的版本說明"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Show welcome page",
+                    "target": "顯示歡迎頁"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Subtitle files",
+                    "target": "字幕檔"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert clipped screenshot to note",
+                    "target": "將裁切截圖插入筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert screenshot to note",
+                    "target": "將截圖插入筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Media files",
+                    "target": "媒體檔"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open external media",
+                    "target": "開啟外部媒體"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "notice",
+                    "source": "Failed to open file in file explorer",
+                    "target": "無法在檔案總管中開啟檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "notice",
+                    "source": "Failed to copy file path",
+                    "target": "無法複製檔案路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Enter title",
+                    "target": "輸入標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Enter password",
+                    "target": "輸入密碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "e.g., en, en-US, zh-CN",
+                    "target": "例如：en、en-US、zh-TW"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Label will show up in the track selector",
+                    "target": "標籤會顯示在軌道選擇器中"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Search languages...",
+                    "target": "搜尋語言..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Search",
+                    "target": "搜尋"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Enter a number between 0 and 10",
+                    "target": "輸入 0 到 10 之間的數字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "e.g., 1.5 for +50% volume",
+                    "target": "例如：1.5 表示音量 +50%"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "success",
+                    "source": "Text extracted from screenshot and copied to clipboard",
+                    "target": "已從截圖擷取文字並複製到剪貼簿"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "success",
+                    "source": "Screenshot saved and set as media cover",
+                    "target": "截圖已儲存並設為媒體封面"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "success",
+                    "source": "Screenshot copied to clipboard",
+                    "target": "截圖已複製到剪貼簿"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "success",
+                    "source": "Timestamped URL copied to clipboard",
+                    "target": "含時間戳的 URL 已複製到剪貼簿"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Submit",
+                    "target": "送出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Adjust the audio gain (volume amplification) for this media. The gain value is a multiplier applied to the audio output.",
+                    "target": "調整此媒體的音訊增益（音量放大）。增益值會作為套用到音訊輸出的倍率。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Examples:",
+                    "target": "範例："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "1.0 = Normal volume (100%)",
+                    "target": "1.0 = 一般音量（100%）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "1.5 = 50% louder (+50%)",
+                    "target": "1.5 = 音量增加 50%（+50%）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "2.0 = Double volume (+100%)",
+                    "target": "2.0 = 兩倍音量（+100%）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "0.5 = Half volume (50%)",
+                    "target": "0.5 = 一半音量（50%）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Note: Values above 1.0 may cause audio distortion at high levels.",
+                    "target": "注意：高音量下，超過 1.0 的值可能造成音訊失真。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Audio Gain Value:",
+                    "target": "音訊增益值："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Apply Audio Gain",
+                    "target": "套用音訊增益"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Default",
+                    "target": "預設"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Connect to Media Extended",
+                    "target": "連接到 Media Extended"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Sign in or create an account to access online features",
+                    "target": "登入或建立帳號以使用線上功能"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Terms of Service",
+                    "target": "服務條款"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Privacy Policy",
+                    "target": "隱私權政策"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Manage login credentials for accessing content from password-protected sources like cloud storage (WebDAV, Nextcloud) and private file servers. These credentials are securely stored locally and used to stream media and files.",
+                    "target": "Manage login credentials for accessing content from password-protected sources like cloud storage (WebDAV, Nextcloud) and private file servers. These credentials are securely stored locally and used to stream media and files."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Manage login credentials for streaming media from password-protected sources like WebDAV servers, Nextcloud, private file servers, and other authenticated media sources.",
+                    "target": "管理串流媒體的登入憑證，適用於 WebDAV 伺服器、Nextcloud、私人檔案伺服器，以及其他需要驗證的媒體來源。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "This feature is only available on desktop.",
+                    "target": "此功能僅能在桌面版使用。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Modified from default",
+                    "target": "已從預設值修改"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Reset to default",
+                    "target": "重設為預設值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Media Clip",
+                    "target": "媒體片段"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Timestamp",
+                    "target": "時間戳"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Reset clip",
+                    "target": "重設片段"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Open in Obsidian",
+                    "target": "在 Obsidian 中開啟"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Import to Obsidian",
+                    "target": "匯入 Obsidian"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Retry import",
+                    "target": "重試匯入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Creator uploaded",
+                    "target": "創作者上傳"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Word-level timing available",
+                    "target": "可用逐字時間軸"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Creator Provided",
+                    "target": "創作者提供"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Word-Level Timing",
+                    "target": "逐字時間軸"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Load media",
+                    "target": "載入媒體"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Playback",
+                    "target": "播放"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Capture screenshots",
+                    "target": "擷取截圖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Transcripts",
+                    "target": "逐字稿"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Recording",
+                    "target": "錄製"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Explore all features",
+                    "target": "探索所有功能"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "What's new in v4",
+                    "target": "v4 新功能"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "View all updates",
+                    "target": "查看所有更新"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Get help & report bugs",
+                    "target": "取得協助並回報錯誤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Open to the right",
+                    "target": "在右側開啟"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Open in new tab",
+                    "target": "在新分頁開啟"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Open in new window",
+                    "target": "在新視窗開啟"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Pick a media file",
+                    "target": "選擇媒體檔"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Open external media",
+                    "target": "開啟外部媒體"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "error(\"forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported\")",
+                    "target": "error(\"forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported\")"
+                },
+                {
+                    "source": "error(\"Failed to get EmptyView\")",
+                    "target": "error(\"無法取得 EmptyView\")"
+                },
+                {
+                    "source": "log(`JSON parse error: ${e}`)",
+                    "target": "log(`JSON parse error: ${e}`)"
+                },
+                {
+                    "source": "log(\"channel\",`leave ${this.topic}`),this._trigger(ys.close,\"leave\",this._joinRef())};return this.rejoinTimer.reset(),this.joinPush.destroy(),new Promise(n=>{let i=new Nf(this,ys.leave,{},e);i.receive(\"ok\",()=>{r(),n(\"ok\")",
+                    "target": "log(\"channel\",`leave ${this.topic}`),this._trigger(ys.close,\"leave\",this._joinRef())};return this.rejoinTimer.reset(),this.joinPush.destroy(),new Promise(n=>{let i=new Nf(this,ys.leave,{},e);i.receive(\"ok\",()=>{r(),n(\"ok\")"
+                },
+                {
+                    "source": "log(\"push\",`${r} ${n} (${s})`,i),this.isConnected()?a():this.sendBuffer.push(a)}async setAuth(e=null){let r=e||this.accessToken&&await this.accessToken()||this.accessTokenValue;if(r){let n=null;try{n=JSON.parse(atob(r.split(\".\")",
+                    "target": "log(\"push\",`${r} ${n} (${s})`,i),this.isConnected()?a():this.sendBuffer.push(a)}async setAuth(e=null){let r=e||this.accessToken&&await this.accessToken()||this.accessTokenValue;if(r){let n=null;try{n=JSON.parse(atob(r.split(\".\")"
+                },
+                {
+                    "source": "error(\"Auto refresh tick failed with error. This is likely a transient error.\",r)}}finally{this._debug(\"#_autoRefreshTokenTick()\",\"end\")",
+                    "target": "error(\"Auto refresh tick failed with error. This is likely a transient error.\",r)}}finally{this._debug(\"#_autoRefreshTokenTick()\",\"end\")"
+                },
+                {
+                    "source": "error(\"`persistent` option is only available in Deno\")",
+                    "target": "error(\"`persistent` option is only available in Deno\")"
+                },
+                {
+                    "source": "error(\"Please add a BigInt polyfill.\")",
+                    "target": "error(\"Please add a BigInt polyfill.\")"
+                },
+                {
+                    "source": "Notice(`${r}: ${s}`)",
+                    "target": "Notice(`${r}: ${s}`)"
+                },
+                {
+                    "source": "setTitle(\"Copy file path\")",
+                    "target": "setTitle(\"複製檔案路徑\")"
+                },
+                {
+                    "source": "Notice(\"File path copied to clipboard\")",
+                    "target": "Notice(\"檔案路徑已複製到剪貼簿\")"
+                },
+                {
+                    "source": "setTitle(\"Stop syncing with player\")",
+                    "target": "setTitle(\"停止與播放器同步\")"
+                },
+                {
+                    "source": "setTitle(\"Sync with active player\")",
+                    "target": "setTitle(\"與作用中的播放器同步\")"
+                },
+                {
+                    "source": "Notice(\"No track opened\")",
+                    "target": "Notice(\"尚未開啟軌道\")"
+                },
+                {
+                    "source": "Notice(\"No linked media found\")",
+                    "target": "Notice(\"找不到連結的媒體\")"
+                },
+                {
+                    "source": "Notice(\"Video flip reset to default\")",
+                    "target": "Notice(\"影片翻轉已重設為預設值\")"
+                },
+                {
+                    "source": "Notice(\"Video flipped to horizontal (mirror)\")",
+                    "target": "Notice(\"影片已水平翻轉（鏡像）\")"
+                },
+                {
+                    "source": "Notice(\"Video flipped to vertical (Upside down)\")",
+                    "target": "Notice(\"影片已垂直翻轉（上下顛倒）\")"
+                },
+                {
+                    "source": "Notice(\"Video flipped to both ways (upside down and mirror)\")",
+                    "target": "Notice(\"影片已同時垂直與水平翻轉（上下顛倒與鏡像）\")"
+                },
+                {
+                    "source": "setText(\"Playback Speed\")",
+                    "target": "setText(\"播放速度\")"
+                },
+                {
+                    "source": "Notice(\"Invalid playback rate\")",
+                    "target": "Notice(\"播放速度無效\")"
+                },
+                {
+                    "source": "Notice(\"Cannot increase speed further\")",
+                    "target": "Notice(\"無法再提高速度\")"
+                },
+                {
+                    "source": "Notice(\"Cannot decrease speed further\")",
+                    "target": "Notice(\"無法再降低速度\")"
+                },
+                {
+                    "source": "Notice(\"YouTube cookies cleared\")",
+                    "target": "Notice(\"已清除 YouTube Cookie\")"
+                },
+                {
+                    "source": "Notice(\"Failed to clear YouTube cookies, see console for details\")",
+                    "target": "Notice(\"無法清除 YouTube Cookie，詳情請查看主控台\")"
+                },
+                {
+                    "source": "setText(\"Audio Gain\")",
+                    "target": "setText(\"音訊增益\")"
+                },
+                {
+                    "source": "Notice(\"Invalid audio gain value. Please enter a number between 0.1 and 10.\")",
+                    "target": "Notice(\"音訊增益值無效。請輸入 0.1 到 10 之間的數字。\")"
+                },
+                {
+                    "source": "setTitle(\"Flip video\")",
+                    "target": "setTitle(\"翻轉影片\")"
+                },
+                {
+                    "source": "setTitle(\"Horizontal (Mirror)\")",
+                    "target": "setTitle(\"水平（鏡像）\")"
+                },
+                {
+                    "source": "setTitle(\"Vertical (Upside down)\")",
+                    "target": "setTitle(\"垂直（上下顛倒）\")"
+                },
+                {
+                    "source": "setTitle(\"Extract text from screenshot\")",
+                    "target": "setTitle(\"從截圖擷取文字\")"
+                },
+                {
+                    "source": "setTitle(\"Preserve pitch\")",
+                    "target": "setTitle(\"保留音高\")"
+                },
+                {
+                    "source": "setText(\"Select Transcript\")",
+                    "target": "setText(\"選擇逐字稿\")"
+                },
+                {
+                    "source": "setTitle(\"Open transcript\")",
+                    "target": "setTitle(\"開啟逐字稿\")"
+                },
+                {
+                    "source": "setTitle(\"Edit hash properties\")",
+                    "target": "setTitle(\"編輯 Hash 屬性\")"
+                },
+                {
+                    "source": "setTitle(\"Open related media\")",
+                    "target": "setTitle(\"開啟相關媒體\")"
+                },
+                {
+                    "source": "setTitle(\"Copy URL with timestamp\")",
+                    "target": "setTitle(\"複製含時間戳的 URL\")"
+                },
+                {
+                    "source": "setTitle(\"Update metadata\")",
+                    "target": "setTitle(\"更新中繼資料\")"
+                },
+                {
+                    "source": "setTitle(\"Edit media metadata\")",
+                    "target": "setTitle(\"編輯媒體中繼資料\")"
+                },
+                {
+                    "source": "setTitle(\"Open media properties\")",
+                    "target": "setTitle(\"開啟媒體屬性\")"
+                },
+                {
+                    "source": "setTitle(\"Add to media library\")",
+                    "target": "setTitle(\"加入媒體庫\")"
+                },
+                {
+                    "source": "Notice(`Added to media library: ${s.note.path}`)",
+                    "target": "Notice(`已加入媒體庫：${s.note.path}`)"
+                },
+                {
+                    "source": "setTitle(\"Open in Media Extended\")",
+                    "target": "setTitle(\"在 Media Extended 中開啟\")"
+                },
+                {
+                    "source": "setTitle(\"Open in default browser\")",
+                    "target": "setTitle(\"在預設瀏覽器中開啟\")"
+                },
+                {
+                    "source": "setTitle(\"Copy URL\")",
+                    "target": "setTitle(\"複製 URL\")"
+                },
+                {
+                    "source": "Notice(\"URL copied to clipboard\")",
+                    "target": "Notice(\"URL 已複製到剪貼簿\")"
+                },
+                {
+                    "source": "error(\"onOpenFile error in openFile, fallback to default\",p),d()}}}));return r.move()}catch(i){var s=i,a=!0}finally{ee(n,s,a)}}var VV=Symbol(\"MX_INTERNAL_OPENFILE\")",
+                    "target": "error(\"onOpenFile error in openFile, fallback to default\",p),d()}}}));return r.move()}catch(i){var s=i,a=!0}finally{ee(n,s,a)}}var VV=Symbol(\"MX_INTERNAL_OPENFILE\")"
+                },
+                {
+                    "source": "Notice(`Failed to get media info from the saved file: ${e.path}`)",
+                    "target": "Notice(`無法從已儲存檔案取得媒體資訊：${e.path}`)"
+                },
+                {
+                    "source": "Notice(\"One of the note with timestamp is closed, the timestamp will not be updated\")",
+                    "target": "Notice(\"其中一個含時間戳的筆記已關閉，時間戳將不會更新\")"
+                },
+                {
+                    "source": "Notice(`Failed to open note for timestamp update: ${l.path}`)",
+                    "target": "Notice(`無法開啟筆記以更新時間戳：${l.path}`)"
+                },
+                {
+                    "source": "error(\"failed to insert timestamp\",c)}finally{o()}}this.#t.clear()}patchRecordPlugin(){let e=this.app.internalPlugins.plugins[\"audio-recorder\"];if(!e)return console.info(\"recorder not found, skip patching for recorder note\")",
+                    "target": "error(\"failed to insert timestamp\",c)}finally{o()}}this.#t.clear()}patchRecordPlugin(){let e=this.app.internalPlugins.plugins[\"audio-recorder\"];if(!e)return console.info(\"recorder not found, skip patching for recorder note\")"
+                },
+                {
+                    "source": "error(\"unexpected folder\")",
+                    "target": "error(\"非預期的資料夾\")"
+                },
+                {
+                    "source": "Notice(\"You've taken a timestamp for the recording, probably in canvas node, keep editor in foreground and in live preview mode. Otherwise, the dummy timestamp cannot be updated when recording is saved.\")",
+                    "target": "Notice(\"You've taken a timestamp for the recording, probably in canvas node, keep editor in foreground and in live preview mode. Otherwise, the dummy timestamp cannot be updated when recording is saved.\")"
+                },
+                {
+                    "source": "Notice(\"Error logging in, see console for details\")",
+                    "target": "Notice(\"登入時發生錯誤，詳情請查看主控台\")"
+                },
+                {
+                    "source": "setButtonText(\"Continue with Google\")",
+                    "target": "setButtonText(\"使用 Google 繼續\")"
+                },
+                {
+                    "source": "appendText(\"Continue with Google\")",
+                    "target": "appendText(\"使用 Google 繼續\")"
+                },
+                {
+                    "source": "appendText(\"Continue with GitHub\")",
+                    "target": "appendText(\"使用 GitHub 繼續\")"
+                },
+                {
+                    "source": "appendText(\"By continuing, you agree to our \")",
+                    "target": "appendText(\"繼續即表示你同意我們的\")"
+                },
+                {
+                    "source": "appendText(\" and \")",
+                    "target": "appendText(\"與\")"
+                },
+                {
+                    "source": "log(\"Google login clicked\")",
+                    "target": "log(\"Google login clicked\")"
+                },
+                {
+                    "source": "error(\"Error signing in with GitHub:\",r),new Yc.Notice(\"Error signing in with GitHub\")",
+                    "target": "error(\"使用 GitHub 登入時發生錯誤：\",r),new Yc.Notice(\"使用 GitHub 登入時發生錯誤\")"
+                },
+                {
+                    "source": "error(\"No code provided from PKCE callback\")",
+                    "target": "error(\"PKCE 回呼未提供 code\")"
+                },
+                {
+                    "source": "error(\"Error signing out\",e),new mL.Notice(`Error signing out: ${e.message}`)):new mL.Notice(\"You have been signed out\")",
+                    "target": "error(\"登出時發生錯誤\",e),new mL.Notice(`登出時發生錯誤：${e.message}`)):new mL.Notice(\"你已登出\")"
+                },
+                {
+                    "source": "setText(`Edit ${n?\"Embed\":\"Link\"} Hash Properties`)",
+                    "target": "setText(`編輯 ${n?\"嵌入\":\"連結\"} 的 Hash 屬性`)"
+                },
+                {
+                    "source": "Notice(\"Failed to save changes, fix errors before confirm\")",
+                    "target": "Notice(\"無法儲存變更，請先修正錯誤再確認\")"
+                },
+                {
+                    "source": "appendText(\"Edit hash properties\")",
+                    "target": "appendText(\"編輯 Hash 屬性\")"
+                },
+                {
+                    "source": "setText(\"Open dialog to edit all hash parameters\")",
+                    "target": "setText(\"開啟對話框以編輯所有 Hash 參數\")"
+                },
+                {
+                    "source": "Notice(\"Link has been modified externally, edit cancelled\")",
+                    "target": "Notice(\"連結已由外部修改，編輯已取消\")"
+                },
+                {
+                    "source": "error(\"Failed to get image from cache:\",n),r}}async get(e){try{await this.#n();let n=(await this.#r()).transaction(this.storeName,\"readwrite\")",
+                    "target": "error(\"Failed to get image from cache:\",n),r}}async get(e){try{await this.#n();let n=(await this.#r()).transaction(this.storeName,\"readwrite\")"
+                },
+                {
+                    "source": "error(\"Failed to get total cache size:\",e),-1}}async resetDatabase(){try{this.#e&&(this.#e.close(),this.#e=null,this.#t=null),await Vge(\"mx-cover-image-cache\")",
+                    "target": "error(\"Failed to get total cache size:\",e),-1}}async resetDatabase(){try{this.#e&&(this.#e.close(),this.#e=null,this.#t=null),await Vge(\"mx-cover-image-cache\")"
+                },
+                {
+                    "source": "error(\"Failed to reset cache database:\",e)}}async#i(){try{let r=(await this.#r()).transaction(this.storeName,\"readwrite\")",
+                    "target": "error(\"Failed to reset cache database:\",e)}}async#i(){try{let r=(await this.#r()).transaction(this.storeName,\"readwrite\")"
+                },
+                {
+                    "source": "error(\"Failed to evict cache entries:\",e)}}};var $ge=(t,e)=>(e=Symbol[t])?e:Symbol.for(\"Symbol.\"+t),Uge=t=>{throw TypeError(t)},zge=(t,e,r)=>{if(e!=null){typeof e!=\"object\"&&typeof e!=\"function\"&&Uge(\"Object expected\")",
+                    "target": "error(\"Failed to evict cache entries:\",e)}}};var $ge=(t,e)=>(e=Symbol[t])?e:Symbol.for(\"Symbol.\"+t),Uge=t=>{throw TypeError(t)},zge=(t,e,r)=>{if(e!=null){typeof e!=\"object\"&&typeof e!=\"function\"&&Uge(\"Object expected\")"
+                },
+                {
+                    "source": "error(\"onInternalLinkClick error in editor, fallback to default\",c),l()}else if(e&&s.type===\"external-link\")",
+                    "target": "error(\"onInternalLinkClick error in editor, fallback to default\",c),l()}else if(e&&s.type===\"external-link\")"
+                },
+                {
+                    "source": "error(\"onExternalLinkClick error in editor, fallback to default\",c),l()}else l()}})}var Xge=require(\"obsidian\")",
+                    "target": "error(\"onExternalLinkClick error in editor, fallback to default\",c),l()}else l()}})}var Xge=require(\"obsidian\")"
+                },
+                {
+                    "source": "error(\"onInternalLinkClick error in openLinktext, fallback to default\",h),p()}}}));return r.move()}catch(i){var s=i,a=!0}finally{ee(n,s,a)}}function cj(t){t.registerMarkdownPostProcessor(e=>{for(let r of e.querySelectorAll(\"a\")",
+                    "target": "error(\"onInternalLinkClick error in openLinktext, fallback to default\",h),p()}}}));return r.move()}catch(i){var s=i,a=!0}finally{ee(n,s,a)}}function cj(t){t.registerMarkdownPostProcessor(e=>{for(let r of e.querySelectorAll(\"a\")"
+                },
+                {
+                    "source": "Notice(\"No browser session connected to obsidian, go to browser companion to connect\")",
+                    "target": "Notice(\"沒有瀏覽器工作階段連接到 Obsidian，請前往瀏覽器輔助工具連接\")"
+                },
+                {
+                    "source": "error(\"open external link fallback error\",s),new Ph.Notice(`Failed to open media link: ${s.message}`)),n();return}if(s.code===\"browser-na\")",
+                    "target": "error(\"開啟外部連結的退回處理發生錯誤\",s),new Ph.Notice(`無法開啟媒體連結：${s.message}`)),n();return}if(s.code===\"browser-na\")"
+                },
+                {
+                    "source": "error(\"open external link error\",s,ls),new Ph.Notice(`Failed to open media link: ${s.message}`)}throw s}}};var fye=require(\"obsidian\")",
+                    "target": "error(\"開啟外部連結時發生錯誤\",s,ls),new Ph.Notice(`無法開啟媒體連結：${s.message}`)}throw s}}};var fye=require(\"obsidian\")"
+                },
+                {
+                    "source": "log(\"dispose vault connection service\")",
+                    "target": "log(\"dispose vault connection service\")"
+                },
+                {
+                    "source": "log(\"!!!\",\"production\",e);let t=globalThis;t[gs]??=new Map;let r=t[gs];if(!(r instanceof Map))throw new Error(\"Unexpected global type, please restart Obsidian\")",
+                    "target": "log(\"!!!\",\"production\",e);let t=globalThis;t[gs]??=new Map;let r=t[gs];if(!(r instanceof Map))throw new Error(\"Unexpected global type, please restart Obsidian\")"
+                },
+                {
+                    "source": "log(\"waiting for connector ready\")",
+                    "target": "log(\"waiting for connector ready\")"
+                },
+                {
+                    "source": "log(\"connector ready\",u),u.version!==nye)throw new Error(`Unsupported API version: ${u.version}`);let d=i(\"sha256\")",
+                    "target": "log(\"connector ready\",u),u.version!==nye)throw new Error(`Unsupported API version: ${u.version}`);let d=i(\"sha256\")"
+                },
+                {
+                    "source": "log(\"connecting\",d),await n.invoke(tye,{name:this.app.vault.getName()})&&(this.#e=!0,console.log(\"connected to main process\")",
+                    "target": "log(\"connecting\",d),await n.invoke(tye,{name:this.app.vault.getName()})&&(this.#e=!0,console.log(\"connected to main process\")"
+                },
+                {
+                    "source": "error(\"Retrying failed fetch. Error:\",s),!Number.isFinite(a)||a<0)throw new TypeError(\"Retry delay must be a non-negative finite number.\")",
+                    "target": "error(\"Retrying failed fetch. Error:\",s),!Number.isFinite(a)||a<0)throw new TypeError(\"Retry delay must be a non-negative finite number.\")"
+                },
+                {
+                    "source": "error(\"Invalid SPS NAL unit type\")",
+                    "target": "error(\"Invalid SPS NAL unit type\")"
+                },
+                {
+                    "source": "error(\"Error during decodability check:\",e),!1}}async determinePacketType(e){if(!(e instanceof ir))throw new TypeError(\"packet must be an EncodedPacket.\")",
+                    "target": "error(\"Error during decodability check:\",e),!1}}async determinePacketType(e){if(!(e instanceof ir))throw new TypeError(\"packet must be an EncodedPacket.\")"
+                },
+                {
+                    "source": "setText(\"Edit Media Metadata\")",
+                    "target": "setText(\"編輯媒體中繼資料\")"
+                },
+                {
+                    "source": "Notice(\"Metadata update not supported for this media.\")",
+                    "target": "Notice(\"此媒體不支援更新中繼資料。\")"
+                },
+                {
+                    "source": "setText(`Media Extended has been updated to v${t}.`)",
+                    "target": "setText(`Media Extended 已更新至 v${t}。`)"
+                },
+                {
+                    "source": "setButtonText(\"View Release Notes\")",
+                    "target": "setButtonText(\"查看版本說明\")"
+                },
+                {
+                    "source": "setTitle(`\"${i.file.name}\" from vault`)",
+                    "target": "setTitle(`來自儲存庫的「${i.file.name}」`)"
+                },
+                {
+                    "source": "setTitle(\"Select video file from vault\")",
+                    "target": "setTitle(\"從儲存庫選擇影片檔\")"
+                },
+                {
+                    "source": "setTitle(\"Open external media\")",
+                    "target": "setTitle(\"開啟外部媒體\")"
+                },
+                {
+                    "source": "Notice(`Invalid URL to open in Media Extended: ${o.url}`)",
+                    "target": "Notice(`要在 Media Extended 中開啟的 URL 無效：${o.url}`)"
+                },
+                {
+                    "source": "Notice(`Invalid URL to open in Media Extended: ${e.action}`)",
+                    "target": "Notice(`要在 Media Extended 中開啟的 URL 無效：${e.action}`)"
+                },
+                {
+                    "source": "appendText(\"Opening URL from browser: \")",
+                    "target": "appendText(\"正在從瀏覽器開啟 URL：\")"
+                },
+                {
+                    "source": "setText(\"Clip Image\")",
+                    "target": "setText(\"擷取片段圖片\")"
+                },
+                {
+                    "source": "error(\"Failed to open electron file picker\",s),e?.()}},...r})};var Uv=Z(Ge(),1),wM=class extends si{app;trackInfoParser;constructor(e){super(e.app),this.app=e.app,this.trackInfoParser=e.trackInfoParser,this.modalEl.addClass(\"track-import\",\"track-file-import\")",
+                    "target": "error(\"Failed to open electron file picker\",s),e?.()}},...r})};var Uv=Z(Ge(),1),wM=class extends si{app;trackInfoParser;constructor(e){super(e.app),this.app=e.app,this.trackInfoParser=e.trackInfoParser,this.modalEl.addClass(\"track-import\",\"track-file-import\")"
+                },
+                {
+                    "source": "setText(\"Import Text Track File\")",
+                    "target": "setText(\"匯入文字軌檔案\")"
+                },
+                {
+                    "source": "setText(\"Import Text Track from URL\")",
+                    "target": "setText(\"從 URL 匯入文字軌\")"
+                },
+                {
+                    "source": "setText(\"Import YouTube Subtitle\")",
+                    "target": "setText(\"匯入 YouTube 字幕\")"
+                },
+                {
+                    "source": "Notice(\"Error loading media, see console for details\")",
+                    "target": "Notice(\"載入媒體時發生錯誤，詳情請查看主控台\")"
+                },
+                {
+                    "source": "Notice(\"No media is opened\")",
+                    "target": "Notice(\"尚未開啟媒體\")"
+                },
+                {
+                    "source": "Notice(\"No media is playing\")",
+                    "target": "Notice(\"目前沒有媒體正在播放\")"
+                },
+                {
+                    "source": "Notice(\"Please open a note before taking timestamp\")",
+                    "target": "Notice(\"請先開啟筆記再建立時間戳\")"
+                },
+                {
+                    "source": "setTitle(\"Add text track\")",
+                    "target": "setTitle(\"新增文字軌\")"
+                },
+                {
+                    "source": "setTitle(\"from local file\")",
+                    "target": "setTitle(\"從本機檔案\")"
+                },
+                {
+                    "source": "setTitle(\"from YouTube\")",
+                    "target": "setTitle(\"從 YouTube\")"
+                },
+                {
+                    "source": "Notice(\"Subtitle not found\")",
+                    "target": "Notice(\"找不到字幕\")"
+                },
+                {
+                    "source": "Notice(`Failed to import YouTube subtitles: ${a}`)",
+                    "target": "Notice(`無法匯入 YouTube 字幕：${a}`)"
+                },
+                {
+                    "source": "Notice(`Added to media library: ${a.note.path}`)",
+                    "target": "Notice(`已加入媒體庫：${a.note.path}`)"
+                },
+                {
+                    "source": "appendText(\"Cannot capture screenshot from this media due to CORS security policy, \")",
+                    "target": "appendText(\"由於 CORS 安全政策，無法從此媒體擷取截圖，\")"
+                },
+                {
+                    "source": "appendText(\"See the troubleshooting guide for possible solutions\")",
+                    "target": "appendText(\"請參考疑難排解指南取得可能的解法\")"
+                },
+                {
+                    "source": "setButtonText(\"Open guide\")",
+                    "target": "setButtonText(\"開啟指南\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Enter file path, URL or media id, or drop a media file here\")",
+                    "target": "setPlaceholder(\"輸入檔案路徑、URL 或媒體 ID，或將媒體檔拖放到這裡\")"
+                },
+                {
+                    "source": "setText(\"Open local file\")",
+                    "target": "setText(\"開啟本機檔案\")"
+                },
+                {
+                    "source": "Notice(\"Failed to pick media file\")",
+                    "target": "Notice(\"無法選取媒體檔\")"
+                },
+                {
+                    "source": "Notice(`Failed to resolve file: ${i}`)",
+                    "target": "Notice(`無法解析檔案：${i}`)"
+                },
+                {
+                    "source": "Notice(\"None of the dropped files are supported media files\")",
+                    "target": "Notice(\"拖放的檔案中沒有支援的媒體檔\")"
+                },
+                {
+                    "source": "setText(\"Password Manager\")",
+                    "target": "setText(\"密碼管理器\")"
+                },
+                {
+                    "source": "setTooltip(\"Add new credential\")",
+                    "target": "setTooltip(\"新增憑證\")"
+                },
+                {
+                    "source": "setTooltip(\"Import credentials\")",
+                    "target": "setTooltip(\"匯入憑證\")"
+                },
+                {
+                    "source": "setTooltip(\"Export credentials\")",
+                    "target": "setTooltip(\"匯出憑證\")"
+                },
+                {
+                    "source": "setTooltip(\"Clear all credentials\")",
+                    "target": "setTooltip(\"清除所有憑證\")"
+                },
+                {
+                    "source": "setButtonText(\"Sign out\")",
+                    "target": "setButtonText(\"登出\")"
+                },
+                {
+                    "source": "error(\"Error signing out:\",m)}})})}else n=new Fl.Setting(e).setName(\"Your account\")",
+                    "target": "error(\"登出時發生錯誤：\",m)}})})}else n=new Fl.Setting(e).setName(\"你的帳號\")"
+                },
+                {
+                    "source": "setDesc(\"Sign in to access online features like YouTube transcript fetching, AI transcript & summary, and more.\")",
+                    "target": "setDesc(\"登入後即可使用 YouTube 逐字稿擷取、AI 逐字稿與摘要等線上功能。\")"
+                },
+                {
+                    "source": "setButtonText(\"Sign in\")",
+                    "target": "setButtonText(\"登入\")"
+                },
+                {
+                    "source": "setName(\"Load strategy\")",
+                    "target": "setName(\"載入策略\")"
+                },
+                {
+                    "source": "appendText(\"Controls when media files start loading in your notes.\")",
+                    "target": "appendText(\"控制筆記中的媒體檔案何時開始載入。\")"
+                },
+                {
+                    "source": "setText(\"Media starts loading immediately when you open the note.\")",
+                    "target": "setText(\"開啟筆記時立即開始載入媒體。\")"
+                },
+                {
+                    "source": "appendText(\"Media starts loading immediately when you open the note.\")",
+                    "target": "appendText(\"開啟筆記時立即開始載入媒體。\")"
+                },
+                {
+                    "source": "appendText(\"Recommended for notes with few videos/audio files as it keeps Obsidian fast.\")",
+                    "target": "appendText(\"建議用於只有少量影片或音訊檔的筆記，可讓 Obsidian 保持快速。\")"
+                },
+                {
+                    "source": "setName(\"Handle link to hosted media\")",
+                    "target": "setName(\"處理託管媒體連結\")"
+                },
+                {
+                    "source": "setDesc(\"Let media extended handle link to YouTube, Vimeo, bilibili, etc\")",
+                    "target": "setDesc(\"讓 Media Extended 處理 YouTube、Vimeo、bilibili 等連結\")"
+                },
+                {
+                    "source": "setName(\"Open hosted media in...\")",
+                    "target": "setName(\"在何處開啟託管媒體...\")"
+                },
+                {
+                    "source": "appendText(\"Choose browser to open with browser companion extension to access more features.\")",
+                    "target": "appendText(\"選擇要搭配瀏覽器輔助擴充功能開啟的瀏覽器，以使用更多功能。\")"
+                },
+                {
+                    "source": "setName(\"Link behavior\")",
+                    "target": "setName(\"連結行為\")"
+                },
+                {
+                    "source": "setDesc(\"Configure how links to media are opened\")",
+                    "target": "setDesc(\"設定媒體連結的開啟方式\")"
+                },
+                {
+                    "source": "setDesc(\"Behavior when clicking on a link\")",
+                    "target": "setDesc(\"點擊連結時的行為\")"
+                },
+                {
+                    "source": "setName(\"Alternative click\")",
+                    "target": "setName(\"替代點擊\")"
+                },
+                {
+                    "source": "setDesc(`Behavior when ${get(u)}`)",
+                    "target": "setDesc(`在 ${get(u)} 時的行為`)"
+                },
+                {
+                    "source": "setName(\"Media Library\")",
+                    "target": "setName(\"媒體庫\")"
+                },
+                {
+                    "source": "setName(\"Media folder path\")",
+                    "target": "setName(\"媒體資料夾路徑\")"
+                },
+                {
+                    "source": "setDesc(\"Folder path for media library (relative to vault root)\")",
+                    "target": "setDesc(\"媒體庫資料夾路徑（相對於儲存庫根目錄）\")"
+                },
+                {
+                    "source": "setName(\"Note taking\")",
+                    "target": "setName(\"筆記記錄\")"
+                },
+                {
+                    "source": "setDesc(\"Configure where timestamps and screenshots are inserted\")",
+                    "target": "setDesc(\"設定時間戳與截圖插入的位置\")"
+                },
+                {
+                    "source": "setName(\"Insert location\")",
+                    "target": "setName(\"插入位置\")"
+                },
+                {
+                    "source": "setName(\"Timestamp offset\")",
+                    "target": "setName(\"時間戳偏移\")"
+                },
+                {
+                    "source": "setDesc(\"Offset in seconds to add to the timestamp\")",
+                    "target": "setDesc(\"要加到時間戳的偏移秒數\")"
+                },
+                {
+                    "source": "setName(\"Default volume\")",
+                    "target": "setName(\"預設音量\")"
+                },
+                {
+                    "source": "setDesc(\"The default volume for media files\")",
+                    "target": "setDesc(\"媒體檔案的預設音量\")"
+                },
+                {
+                    "source": "setName(\"Preserve pitch\")",
+                    "target": "setName(\"保留音高\")"
+                },
+                {
+                    "source": "setDesc(\"Preserve audio pitch to compensate for playback rate changes. Won't work on video hosted in YouTube and Vimeo\")",
+                    "target": "setDesc(\"保留音高以補償播放速度變化。對 YouTube 和 Vimeo 上的影片無效\")"
+                },
+                {
+                    "source": "setName(\"Fine-tune speed adjustment\")",
+                    "target": "setName(\"微調速度調整\")"
+                },
+                {
+                    "source": "setName(\"Save screenshot as\")",
+                    "target": "setName(\"截圖儲存為\")"
+                },
+                {
+                    "source": "appendText(\"Choose the format of the saved screenshot\")",
+                    "target": "appendText(\"選擇儲存截圖的格式\")"
+                },
+                {
+                    "source": "appendText(\"WEBP has better compression ratio, but would fallback to JPEG in unsupported browsers like iOS or iPadOS\")",
+                    "target": "appendText(\"WEBP 壓縮率較佳，但在 iOS 或 iPadOS 等不支援的瀏覽器中會退回 JPEG\")"
+                },
+                {
+                    "source": "setName(\"Text tracks\")",
+                    "target": "setName(\"文字軌\")"
+                },
+                {
+                    "source": "setName(\"Enable text tracks by default\")",
+                    "target": "setName(\"預設啟用文字軌\")"
+                },
+                {
+                    "source": "setDesc(\"Show subtitles/captions whenever available.\")",
+                    "target": "setDesc(\"可用時顯示字幕。\")"
+                },
+                {
+                    "source": "Notice(\"Invalid value\")",
+                    "target": "Notice(\"值無效\")"
+                },
+                {
+                    "source": "Notice(\"Languages cleared\")",
+                    "target": "Notice(\"已清除語言\")"
+                },
+                {
+                    "source": "Notice(\"Languages saved\")",
+                    "target": "Notice(\"已儲存語言\")"
+                },
+                {
+                    "source": "setName(\"Default languages\")",
+                    "target": "setName(\"預設語言\")"
+                },
+                {
+                    "source": "appendText(\"A list of languages to show subtitles/captions for by default.\")",
+                    "target": "appendText(\"預設要顯示字幕的語言清單。\")"
+                },
+                {
+                    "source": "appendText(\"Each language code should be on a new line.\")",
+                    "target": "appendText(\"每個語言代碼請各自放在新的一行。\")"
+                },
+                {
+                    "source": "setName(\"Default location for text tracks\")",
+                    "target": "setName(\"文字軌的預設位置\")"
+                },
+                {
+                    "source": "setDesc('Where text tracks (subtitles/captions) will be searched for. You can go to \"Files and links\" to change the default location of new attachments.')",
+                    "target": "setDesc('會在這裡搜尋文字軌（字幕）。你可以到「檔案與連結」變更新附件的預設位置。')"
+                },
+                {
+                    "source": "setName(\"Text track folder path\")",
+                    "target": "setName(\"文字軌資料夾路徑\")"
+                },
+                {
+                    "source": "setDesc(\"Search for text tracks in this folder.\")",
+                    "target": "setDesc(\"在此資料夾中搜尋文字軌。\")"
+                },
+                {
+                    "source": "error(\"Failed to dispose container\",r)})),e.resolve(\"settings\")",
+                    "target": "error(\"Failed to dispose container\",r)})),e.resolve(\"settings\")"
+                },
+                {
+                    "source": "name: \"+l)}return n&&(r=\"",
+                    "target": "name: \"+l)}return n&&(r=\""
+                },
+                {
+                    "source": "link:\"text-primary underline-offset-4 hover:underline\"",
+                    "target": "link:\"text-primary underline-offset-4 hover:underline\""
+                },
+                {
+                    "source": "description:\"Clip the media to a specific time range\"",
+                    "target": "description:\"將媒體裁切到指定時間範圍\""
+                },
+                {
+                    "source": "description:\"Set the timestamp for the media\"",
+                    "target": "description:\"設定媒體的時間戳\""
+                },
+                {
+                    "source": "description:\"Mute the media\"",
+                    "target": "description:\"將媒體靜音\""
+                },
+                {
+                    "source": "description:\"Volume level\"",
+                    "target": "description:\"音量大小\""
+                },
+                {
+                    "source": "description:\"Start playing automatically\"",
+                    "target": "description:\"自動開始播放\""
+                },
+                {
+                    "source": "description:\"Restart playback when it ends\"",
+                    "target": "description:\"播放結束後重新開始\""
+                },
+                {
+                    "source": "description:\"Display player controls\"",
+                    "target": "description:\"顯示播放器控制項\""
+                },
+                {
+                    "source": "description:\"Custom title for the media\"",
+                    "target": "description:\"媒體的自訂標題\""
+                },
+                {
+                    "source": "description:\"Audio amplification multiplier\"",
+                    "target": "description:\"音訊放大倍率\""
+                },
+                {
+                    "source": "description:\"Playback speed multiplier\"",
+                    "target": "description:\"播放速度倍率\""
+                },
+                {
+                    "source": "description:\"Maintain audio pitch when changing speed\"",
+                    "target": "description:\"變更速度時維持音高\""
+                },
+                {
+                    "source": "description:\"Video aspect ratio (e.g., 16:9)\"",
+                    "target": "description:\"影片長寬比（例如 16:9）\""
+                },
+                {
+                    "source": "description:\"Mirror video horizontally or vertically\"",
+                    "target": "description:\"水平或垂直鏡像影片\""
+                },
+                {
+                    "source": "description:\"CORS policy for media loading\"",
+                    "target": "description:\"媒體載入的 CORS 政策\""
+                },
+                {
+                    "source": "description:\"Force media type interpretation\"",
+                    "target": "description:\"強制指定媒體類型解讀\""
+                },
+                {
+                    "source": "description:\"When to start loading the media\"",
+                    "target": "description:\"何時開始載入媒體\""
+                },
+                {
+                    "source": "description:\"Subtitles uploaded by the video creator\"",
+                    "target": "description:\"影片創作者上傳的字幕\""
+                },
+                {
+                    "source": "description:\"Auto-generated with precise word timing, may contain errors\"",
+                    "target": "description:\"自動產生且含精確逐字時間，可能包含錯誤\""
+                },
+                {
+                    "source": "link:\"rounded-lg py-4 px-5 space-y-3 hover:bg-accent/30\"",
+                    "target": "link:\"rounded-lg py-4 px-5 space-y-3 hover:bg-accent/30\""
+                },
+                {
+                    "source": "description:\"Control playback while taking notes\"",
+                    "target": "description:\"做筆記時控制播放\""
+                },
+                {
+                    "source": "description:\"Capture screenshots with timestamp links\"",
+                    "target": "description:\"擷取含時間戳連結的截圖\""
+                },
+                {
+                    "source": "description:\"Quick navigation using transcript and subtitles\"",
+                    "target": "description:\"使用逐字稿與字幕快速導覽\""
+                },
+                {
+                    "source": "description:\"Customize timestamp and screenshot formats\"",
+                    "target": "description:\"自訂時間戳與截圖格式\""
+                },
+                {
+                    "source": "description:\"Take notes while recording media\"",
+                    "target": "description:\"錄製媒體時做筆記\""
+                },
+                {
+                    "source": "description:\"Dive deep into tutorials, guides, and tips to master Media Extended\"",
+                    "target": "description:\"深入閱讀教學、指南與技巧，掌握 Media Extended\""
+                },
+                {
+                    "source": "name:\"Reset video flip\"",
+                    "target": "name:\"重設影片翻轉\""
+                },
+                {
+                    "source": "name:\"Flip video horizontally (mirror)\"",
+                    "target": "name:\"水平翻轉影片（鏡像）\""
+                },
+                {
+                    "source": "name:\"Flip video vertically (upside down)\"",
+                    "target": "name:\"垂直翻轉影片（上下顛倒）\""
+                },
+                {
+                    "source": "name:\"Flip video both ways (upside down and mirror)\"",
+                    "target": "name:\"同時垂直與水平翻轉影片（上下顛倒與鏡像）\""
+                },
+                {
+                    "source": "name:\"Take timestamp\"",
+                    "target": "name:\"建立時間戳\""
+                },
+                {
+                    "source": "name:\"Reset media clip\"",
+                    "target": "name:\"重設媒體片段\""
+                },
+                {
+                    "source": "name:\"Extract text from screenshot\"",
+                    "target": "name:\"從截圖擷取文字\""
+                },
+                {
+                    "source": "name:`Forward ${t}s`",
+                    "target": "name:`快轉 ${t} 秒`"
+                },
+                {
+                    "source": "name:`Rewind ${t}s`",
+                    "target": "name:`倒轉 ${t} 秒`"
+                },
+                {
+                    "source": "name:\"Enter/exit fullscreen\"",
+                    "target": "name:\"進入／離開全螢幕\""
+                },
+                {
+                    "source": "name:\"Increase playback speed\"",
+                    "target": "name:\"提高播放速度\""
+                },
+                {
+                    "source": "name:\"Decrease playback speed\"",
+                    "target": "name:\"降低播放速度\""
+                },
+                {
+                    "source": "name:\"Set playback speed to custom value\"",
+                    "target": "name:\"將播放速度設為自訂值\""
+                },
+                {
+                    "source": "name:\"Fine-tune increase playback speed\"",
+                    "target": "name:\"微幅提高播放速度\""
+                },
+                {
+                    "source": "name:\"Fine-tune decrease playback speed\"",
+                    "target": "name:\"微幅降低播放速度\""
+                },
+                {
+                    "source": "name:`Fast forward at ${n}x by holding hotkey`",
+                    "target": "name:`按住快捷鍵以 ${n}x 快轉`"
+                },
+                {
+                    "source": "name:\"Update media metadata\"",
+                    "target": "name:\"更新媒體中繼資料\""
+                },
+                {
+                    "source": "name:\"Edit media metadata\"",
+                    "target": "name:\"編輯媒體中繼資料\""
+                },
+                {
+                    "source": "name:\"Migrate media notes from old format\"",
+                    "target": "name:\"從舊格式遷移媒體筆記\""
+                },
+                {
+                    "source": "name:\"Show password manager\"",
+                    "target": "name:\"顯示密碼管理器\""
+                },
+                {
+                    "source": "name:\"Clear YouTube cookies\"",
+                    "target": "name:\"清除 YouTube Cookie\""
+                },
+                {
+                    "source": "text:\"Adjust the audio gain (volume amplification) for this media. The gain value is a multiplier applied to the audio output.\"",
+                    "target": "text:\"調整此媒體的音訊增益（音量放大）。增益值會作為套用到音訊輸出的倍率。\""
+                },
+                {
+                    "source": "text:\"1.0 = Normal volume (100%)\"",
+                    "target": "text:\"1.0 = 一般音量（100%）\""
+                },
+                {
+                    "source": "text:\"1.5 = 50% louder (+50%)\"",
+                    "target": "text:\"1.5 = 音量增加 50%（+50%）\""
+                },
+                {
+                    "source": "text:\"2.0 = Double volume (+100%)\"",
+                    "target": "text:\"2.0 = 兩倍音量（+100%）\""
+                },
+                {
+                    "source": "text:\"0.5 = Half volume (50%)\"",
+                    "target": "text:\"0.5 = 一半音量（50%）\""
+                },
+                {
+                    "source": "text:\"Note: Values above 1.0 may cause audio distortion at high levels.\"",
+                    "target": "text:\"注意：高音量下，超過 1.0 的值可能造成音訊失真。\""
+                },
+                {
+                    "source": "text:\"Audio Gain Value:\"",
+                    "target": "text:\"音訊增益值：\""
+                },
+                {
+                    "source": "text:\"Apply Audio Gain\"",
+                    "target": "text:\"套用音訊增益\""
+                },
+                {
+                    "source": "name:\"Take timestamp on current recording\"",
+                    "target": "name:\"在目前錄製中建立時間戳\""
+                },
+                {
+                    "source": "text:\"Connect to Media Extended\"",
+                    "target": "text:\"連接到 Media Extended\""
+                },
+                {
+                    "source": "text:\"Sign in or create an account to access online features\"",
+                    "target": "text:\"登入或建立帳號以使用線上功能\""
+                },
+                {
+                    "source": "text:\"Terms of Service\"",
+                    "target": "text:\"服務條款\""
+                },
+                {
+                    "source": "text:\"Privacy Policy\"",
+                    "target": "text:\"隱私權政策\""
+                },
+                {
+                    "source": "description:\"Override title specified in note or media\"",
+                    "target": "description:\"覆寫筆記或媒體中指定的標題\""
+                },
+                {
+                    "source": "description:\"Start playback when link is opened or seeked to. Disable this will make sure media keep play/paused.\"",
+                    "target": "description:\"開啟連結或跳轉時開始播放。停用後可讓媒體維持原本的播放或暫停狀態。\""
+                },
+                {
+                    "source": "description:\"Mute the media by default.\"",
+                    "target": "description:\"預設將媒體靜音。\""
+                },
+                {
+                    "source": "description:\"Amplify audio above maximum volume level by default.\"",
+                    "target": "description:\"預設將音訊放大到超過最大音量。\""
+                },
+                {
+                    "source": "description:\"Default volume level when link is opened.\"",
+                    "target": "description:\"開啟連結時的預設音量。\""
+                },
+                {
+                    "source": "description:\"Default playback rate when link is opened.\"",
+                    "target": "description:\"開啟連結時的預設播放速度。\""
+                },
+                {
+                    "source": "description:\"Timestamp or clip time range\"",
+                    "target": "description:\"時間戳或片段時間範圍\""
+                },
+                {
+                    "source": "description:\"Volume level (0-100)\"",
+                    "target": "description:\"音量大小（0-100）\""
+                },
+                {
+                    "source": "description:\"Do not autoplay when opened\"",
+                    "target": "description:\"開啟時不要自動播放\""
+                },
+                {
+                    "source": "description:\"Mute the media when opened\"",
+                    "target": "description:\"開啟時將媒體靜音\""
+                },
+                {
+                    "source": "description:\"Do not mute when opened\"",
+                    "target": "description:\"開啟時不要靜音\""
+                },
+                {
+                    "source": "description:\"Disable looping\"",
+                    "target": "description:\"停用循環播放\""
+                },
+                {
+                    "source": "description:\"Hide player controls\"",
+                    "target": "description:\"隱藏播放器控制項\""
+                },
+                {
+                    "source": "description:\"Do not preserve audio pitch\"",
+                    "target": "description:\"不要保留音高\""
+                },
+                {
+                    "source": "description:\"Start playback by default when media is opened. Disable this will make sure media keep play/paused.\"",
+                    "target": "description:\"開啟媒體時預設開始播放。停用後可讓媒體維持原本的播放或暫停狀態。\""
+                },
+                {
+                    "source": "description:\"Amplify audio above maximum volume level.\"",
+                    "target": "description:\"將音訊放大到超過最大音量。\""
+                },
+                {
+                    "source": "name:\"Show release note of the current version\"",
+                    "target": "name:\"顯示目前版本的版本說明\""
+                },
+                {
+                    "source": "name:\"Show welcome page\"",
+                    "target": "name:\"顯示歡迎頁\""
+                },
+                {
+                    "source": "name:\"Subtitle files\"",
+                    "target": "name:\"字幕檔\""
+                },
+                {
+                    "source": "name:\"Insert clipped screenshot to note\"",
+                    "target": "name:\"將裁切截圖插入筆記\""
+                },
+                {
+                    "source": "name:\"Insert screenshot to note\"",
+                    "target": "name:\"將截圖插入筆記\""
+                },
+                {
+                    "source": "name:\"Media files\"",
+                    "target": "name:\"媒體檔\""
+                },
+                {
+                    "source": "text:\"Manage login credentials for accessing content from password-protected sources like cloud storage (WebDAV, Nextcloud) and private file servers. These credentials are securely stored locally and used to stream media and files.\"",
+                    "target": "text:\"Manage login credentials for accessing content from password-protected sources like cloud storage (WebDAV, Nextcloud) and private file servers. These credentials are securely stored locally and used to stream media and files.\""
+                },
+                {
+                    "source": "description:\"Password Export JSON\"",
+                    "target": "description:\"密碼匯出 JSON\""
+                },
+                {
+                    "source": "text:\"Manage login credentials for streaming media from password-protected sources like WebDAV servers, Nextcloud, private file servers, and other authenticated media sources.\"",
+                    "target": "text:\"管理串流媒體的登入憑證，適用於 WebDAV 伺服器、Nextcloud、私人檔案伺服器，以及其他需要驗證的媒體來源。\""
+                },
+                {
+                    "source": "text:\"This feature is only available on desktop.\"",
+                    "target": "text:\"此功能僅能在桌面版使用。\""
+                },
+                {
+                    "source": "description:\"New pane on the right\"",
+                    "target": "description:\"右側新窗格\""
+                },
+                {
+                    "source": "description:\"New pane on the bottom\"",
+                    "target": "description:\"下方新窗格\""
+                },
+                {
+                    "source": "description:\"In current pane\"",
+                    "target": "description:\"目前窗格\""
+                },
+                {
+                    "source": "description:\"Default obsidian behavior\"",
+                    "target": "description:\"Obsidian 預設行為\""
+                },
+                {
+                    "source": "description:\"New window\"",
+                    "target": "description:\"新視窗\""
+                },
+                {
+                    "source": "description:\"New tab\"",
+                    "target": "description:\"新分頁\""
+                },
+                {
+                    "source": "name:\"Open external media\"",
+                    "target": "name:\"開啟外部媒體\""
+                }
+            ]
+        }
+    }
+}
