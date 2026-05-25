@@ -570,5 +570,18 @@
         "created_at": "2026-05-25T03:51:23.494Z",
         "updated_at": "2026-05-25T03:51:23.494Z",
         "type": "plugin"
+    },
+    {
+        "id": "kEohSoUwpit8isfWEKULhpJPz0dVFvTH",
+        "plugin": "xournalpp",
+        "language": "zh-tw",
+        "version": "1.1.2",
+        "supported_versions": "1.1.2",
+        "title": "[zh-tw] Xournal++",
+        "description": "Xournal++ 繁體中文化與微調",
+        "hash": "3d9d52893d9d52893d9d52893d9d5289",
+        "created_at": "2026-05-25T03:51:31.637Z",
+        "updated_at": "2026-05-25T03:51:31.637Z",
+        "type": "plugin"
     }
 ]
