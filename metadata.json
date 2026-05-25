@@ -414,5 +414,18 @@
         "created_at": "2026-05-25T03:48:42.990Z",
         "updated_at": "2026-05-25T03:48:42.990Z",
         "type": "plugin"
+    },
+    {
+        "id": "EIaGBA7ZVGZnEPLMsxQaGZGQf-4EUrgT",
+        "plugin": "obsidian42-brat",
+        "language": "zh-tw",
+        "version": "2.0.4",
+        "supported_versions": "2.0.4",
+        "title": "[zh-tw] BRAT",
+        "description": "BRAT Localization & Tweaks",
+        "hash": "630390c6630390c6630390c6630390c6",
+        "created_at": "2026-05-25T03:49:39.383Z",
+        "updated_at": "2026-05-25T03:49:39.383Z",
+        "type": "plugin"
     }
 ]
