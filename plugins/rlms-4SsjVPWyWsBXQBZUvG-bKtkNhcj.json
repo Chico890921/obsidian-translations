@@ -1,0 +1,551 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-book-search-plugin",
+        "version": "0.7.5",
+        "title": "[zh-tw] Book Search",
+        "description": "Book Search 繁體中文化與微調",
+        "language": "zh-tw",
+        "supportedVersions": "0.7.5",
+        "author": "Chico",
+        "updatedAt": 1779666922496
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "google (Global)",
+                    "target": "google（全球）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "naver (Korean)",
+                    "target": "naver（韓國）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error downloading or saving image:",
+                    "target": "下載或儲存圖片時發生錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Save",
+                    "target": "儲存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "API Check",
+                    "target": "檢查 API"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Save Key",
+                    "target": "儲存金鑰"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "新书笔记将放在这里。",
+                    "target": "新書籍筆記會放在這裡。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "输入文件名格式。",
+                    "target": "輸入檔案名稱格式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "选择要用于搜索图书的服务提供商。",
+                    "target": "選擇要用來搜尋書籍的服務提供者。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "设置搜索书籍时使用的首选区域设置。",
+                    "target": "設定搜尋書籍時使用的偏好區域設定。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "启用或禁用创建时自动打开笔记。",
+                    "target": "啟用或停用建立時自動開啟筆記。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "切换以在搜索结果中显示或隐藏封面图像。",
+                    "target": "切換是否在搜尋結果中顯示封面圖片。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "切换以启用或禁用每次搜索时询问区域设置。",
+                    "target": "切換是否在每次搜尋時詢問區域設定。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "切换以在封面图像中显示或隐藏页面卷曲效果。",
+                    "target": "切換是否在封面圖片中顯示頁角捲曲效果。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "切换以启用或禁用在笔记中保存封面图像。",
+                    "target": "切換是否在筆記中儲存封面圖片。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "指定封面图像的保存路径。",
+                    "target": "指定封面圖片的儲存路徑。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "**警告**请在您必须了解Google Cloud API（如API密钥安全）后使用此字段。",
+                    "target": "**警告** 請在了解 Google Cloud API（例如 API 金鑰安全性）後再使用此欄位。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "检查API密钥是否保存。它不保证API密钥有效或无效。",
+                    "target": "檢查 API 金鑰是否已儲存。這不保證 API 金鑰有效或無效。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "客户端ID",
+                    "target": "用戶端 ID"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "客户端密钥",
+                    "target": "用戶端密鑰"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "新文件位置",
+                    "target": "新檔案位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "新文件名",
+                    "target": "新檔案名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "模板文件",
+                    "target": "範本檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "服务提供商",
+                    "target": "服務提供者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "首选区域设置",
+                    "target": "偏好區域設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "打开新书笔记",
+                    "target": "開啟新書籍筆記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "在搜索中显示封面图片",
+                    "target": "在搜尋中顯示封面圖片"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "请求区域设置",
+                    "target": "詢問區域設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "启用封面图像边缘卷曲效果",
+                    "target": "啟用封面圖片頁角捲曲效果"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "启用封面图像保存",
+                    "target": "啟用封面圖片儲存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "封面图像路径",
+                    "target": "封面圖片路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "关于Google API设置的说明",
+                    "target": "關於 Google API 設定的說明"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "状态检查",
+                    "target": "狀態檢查"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "设置API密钥",
+                    "target": "設定 API 金鑰"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "区域设置",
+                    "target": "區域設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Example: folder1/folder2",
+                    "target": "範例：folder1/folder2"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Example: {{title}} - {{author}}",
+                    "target": "範例：{{title}} - {{author}}"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter the path (e.g., Images/Covers)",
+                    "target": "輸入路徑（例如 Images/Covers）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Search by keyword or ISBN",
+                    "target": "依關鍵字或 ISBN 搜尋"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Cover image saving is not enabled.",
+                    "target": "尚未啟用封面圖片儲存。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Can not find an active markdown view",
+                    "target": "找不到作用中的 Markdown 檢視"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Can not find editor from the active markdown view",
+                    "target": "無法從作用中的 Markdown 檢視找到編輯器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "No active leaf",
+                    "target": "沒有作用中的 leaf"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "API key exist.",
+                    "target": "API 金鑰已存在。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "API key does not exist.",
+                    "target": "API 金鑰不存在。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "API key Saved",
+                    "target": "API 金鑰已儲存"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No query entered.",
+                    "target": "尚未輸入查詢。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create new book note",
+                    "target": "建立新的書籍筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert the metadata",
+                    "target": "插入中繼資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "服务提供商设置",
+                    "target": "服務提供者設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "文件将作为模板提供。",
+                    "target": "檔案將作為範本提供。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "示例模板",
+                    "target": "範例範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "设置图书API密钥。",
+                    "target": "設定圖書 API 金鑰。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "出于安全原因，保存的API密钥在保存后不会显示在此文本区域中。",
+                    "target": "基於安全原因，已儲存的 API 金鑰在儲存後不會顯示於此文字區域。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "搜索图书",
+                    "target": "搜尋書籍"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"客户端ID\")",
+                    "target": "setName(\"用戶端 ID\")"
+                },
+                {
+                    "source": "setName(\"客户端密钥\")",
+                    "target": "setName(\"用戶端密鑰\")"
+                },
+                {
+                    "source": "setName(\"新文件位置\")",
+                    "target": "setName(\"新檔案位置\")"
+                },
+                {
+                    "source": "setDesc(\"新书笔记将放在这里。\")",
+                    "target": "setDesc(\"新書籍筆記會放在這裡。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Example: folder1/folder2\")",
+                    "target": "setPlaceholder(\"範例：folder1/folder2\")"
+                },
+                {
+                    "source": "setName(\"新文件名\")",
+                    "target": "setName(\"新檔案名稱\")"
+                },
+                {
+                    "source": "setDesc(\"输入文件名格式。\")",
+                    "target": "setDesc(\"輸入檔案名稱格式。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Example: {{title}} - {{author}}\")",
+                    "target": "setPlaceholder(\"範例：{{title}} - {{author}}\")"
+                },
+                {
+                    "source": "setName(\"模板文件\")",
+                    "target": "setName(\"範本檔案\")"
+                },
+                {
+                    "source": "setName(\"服务提供商\")",
+                    "target": "setName(\"服務提供者\")"
+                },
+                {
+                    "source": "setDesc(\"选择要用于搜索图书的服务提供商。\")",
+                    "target": "setDesc(\"選擇要用來搜尋書籍的服務提供者。\")"
+                },
+                {
+                    "source": "setName(\"首选区域设置\")",
+                    "target": "setName(\"偏好區域設定\")"
+                },
+                {
+                    "source": "setDesc(\"设置搜索书籍时使用的首选区域设置。\")",
+                    "target": "setDesc(\"設定搜尋書籍時使用的偏好區域設定。\")"
+                },
+                {
+                    "source": "setName(\"打开新书笔记\")",
+                    "target": "setName(\"開啟新書籍筆記\")"
+                },
+                {
+                    "source": "setDesc(\"启用或禁用创建时自动打开笔记。\")",
+                    "target": "setDesc(\"啟用或停用建立時自動開啟筆記。\")"
+                },
+                {
+                    "source": "setName(\"在搜索中显示封面图片\")",
+                    "target": "setName(\"在搜尋中顯示封面圖片\")"
+                },
+                {
+                    "source": "setDesc(\"切换以在搜索结果中显示或隐藏封面图像。\")",
+                    "target": "setDesc(\"切換是否在搜尋結果中顯示封面圖片。\")"
+                },
+                {
+                    "source": "setName(\"请求区域设置\")",
+                    "target": "setName(\"詢問區域設定\")"
+                },
+                {
+                    "source": "setDesc(\"切换以启用或禁用每次搜索时询问区域设置。\")",
+                    "target": "setDesc(\"切換是否在每次搜尋時詢問區域設定。\")"
+                },
+                {
+                    "source": "setName(\"启用封面图像边缘卷曲效果\")",
+                    "target": "setName(\"啟用封面圖片頁角捲曲效果\")"
+                },
+                {
+                    "source": "setDesc(\"切换以在封面图像中显示或隐藏页面卷曲效果。\")",
+                    "target": "setDesc(\"切換是否在封面圖片中顯示頁角捲曲效果。\")"
+                },
+                {
+                    "source": "setName(\"启用封面图像保存\")",
+                    "target": "setName(\"啟用封面圖片儲存\")"
+                },
+                {
+                    "source": "setDesc(\"切换以启用或禁用在笔记中保存封面图像。\")",
+                    "target": "setDesc(\"切換是否在筆記中儲存封面圖片。\")"
+                },
+                {
+                    "source": "setName(\"封面图像路径\")",
+                    "target": "setName(\"封面圖片路徑\")"
+                },
+                {
+                    "source": "setDesc(\"指定封面图像的保存路径。\")",
+                    "target": "setDesc(\"指定封面圖片的儲存路徑。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Enter the path (e.g., Images/Covers)\")",
+                    "target": "setPlaceholder(\"輸入路徑（例如 Images/Covers）\")"
+                },
+                {
+                    "source": "setName(\"关于Google API设置的说明\")",
+                    "target": "setName(\"關於 Google API 設定的說明\")"
+                },
+                {
+                    "source": "setDesc(\"**警告**请在您必须了解Google Cloud API（如API密钥安全）后使用此字段。\")",
+                    "target": "setDesc(\"**警告** 請在了解 Google Cloud API（例如 API 金鑰安全性）後再使用此欄位。\")"
+                },
+                {
+                    "source": "setName(\"状态检查\")",
+                    "target": "setName(\"狀態檢查\")"
+                },
+                {
+                    "source": "setDesc(\"检查API密钥是否保存。它不保证API密钥有效或无效。\")",
+                    "target": "setDesc(\"檢查 API 金鑰是否已儲存。這不保證 API 金鑰有效或無效。\")"
+                },
+                {
+                    "source": "setButtonText(\"API Check\")",
+                    "target": "setButtonText(\"檢查 API\")"
+                },
+                {
+                    "source": "Notice(\"API key exist.\")",
+                    "target": "Notice(\"API 金鑰已存在。\")"
+                },
+                {
+                    "source": "Notice(\"API key does not exist.\")",
+                    "target": "Notice(\"API 金鑰不存在。\")"
+                },
+                {
+                    "source": "setName(\"设置API密钥\")",
+                    "target": "setName(\"設定 API 金鑰\")"
+                },
+                {
+                    "source": "setButtonText(\"Save Key\")",
+                    "target": "setButtonText(\"儲存金鑰\")"
+                },
+                {
+                    "source": "Notice(\"API key Saved\")",
+                    "target": "Notice(\"API 金鑰已儲存\")"
+                },
+                {
+                    "source": "Notice(\"No query entered.\")",
+                    "target": "Notice(\"尚未輸入查詢。\")"
+                },
+                {
+                    "source": "Notice(`No results found for \"${this.query}\"`)",
+                    "target": "Notice(`找不到「${this.query}」的搜尋結果`)"
+                },
+                {
+                    "source": "setPlaceholder(\"Search by keyword or ISBN\")",
+                    "target": "setPlaceholder(\"依關鍵字或 ISBN 搜尋\")"
+                },
+                {
+                    "source": "setName(\"区域设置\")",
+                    "target": "setName(\"區域設定\")"
+                },
+                {
+                    "source": "error(\"Error downloading or saving image:\",n),\"\"}}async insertMetadata(){try{let e=this.app.workspace.getActiveViewOfType(oe.MarkdownView);if(!e){console.warn(\"Can not find an active markdown view\")",
+                    "target": "error(\"下載或儲存圖片時發生錯誤：\",n),\"\"}}async insertMetadata(){try{let e=this.app.workspace.getActiveViewOfType(oe.MarkdownView);if(!e){console.warn(\"找不到作用中的 Markdown 檢視\")"
+                },
+                {
+                    "source": "text:\"服务提供商设置\"",
+                    "target": "text:\"服務提供者設定\""
+                },
+                {
+                    "source": "text:\"参考\"",
+                    "target": "text:\"參考\""
+                },
+                {
+                    "source": "text:\"文件将作为模板提供。\"",
+                    "target": "text:\"檔案將作為範本提供。\""
+                },
+                {
+                    "source": "text:\"示例模板\"",
+                    "target": "text:\"範例範本\""
+                },
+                {
+                    "source": "text:\"设置图书API密钥。\"",
+                    "target": "text:\"設定圖書 API 金鑰。\""
+                },
+                {
+                    "source": "text:\"出于安全原因，保存的API密钥在保存后不会显示在此文本区域中。\"",
+                    "target": "text:\"基於安全原因，已儲存的 API 金鑰在儲存後不會顯示於此文字區域。\""
+                },
+                {
+                    "source": "text:\"搜索图书\"",
+                    "target": "text:\"搜尋書籍\""
+                },
+                {
+                    "source": "name:\"Create new book note\"",
+                    "target": "name:\"建立新的書籍筆記\""
+                },
+                {
+                    "source": "name:\"Insert the metadata\"",
+                    "target": "name:\"插入中繼資料\""
+                }
+            ]
+        }
+    }
+}
