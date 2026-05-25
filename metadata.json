@@ -37,5 +37,18 @@
         "created_at": "2026-05-25T03:34:20.917Z",
         "updated_at": "2026-05-25T03:34:20.917Z",
         "type": "theme"
+    },
+    {
+        "id": "3tRY6J8iSytUw0OSgN6vio8ONhsHWxem",
+        "plugin": "auto-bullet",
+        "language": "zh-tw",
+        "version": "1.1.0",
+        "supported_versions": "1.1.0",
+        "title": "[zh-tw] Auto Bullet",
+        "description": "Auto Bullet Localization & Tweaks",
+        "hash": "1d9cca5f1d9cca5f1d9cca5f1d9cca5f",
+        "created_at": "2026-05-25T03:41:47.302Z",
+        "updated_at": "2026-05-25T03:41:47.302Z",
+        "type": "plugin"
     }
 ]
