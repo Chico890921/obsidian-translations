@@ -1,0 +1,669 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "theme": "Underwater",
+        "language": "zh-tw",
+        "version": "1.6.61",
+        "supportedVersions": "1.6.61",
+        "title": "Underwater",
+        "description": "Underwater Localization & Tweaks",
+        "author": "Chico"
+    },
+    "dict": [
+        {
+            "type": "name",
+            "source": "Underwater theme",
+            "target": "Underwater 主題"
+        },
+        {
+            "type": "title",
+            "source": "description: \"💫 **Star the theme on Github: [Underwater on Github](https://github.com/Seniblue/Underwater)!** </br></br> ✨ Theme updates and new features: [Releases](https://github.com/Seniblue/Underwater/releases) </br></br> **💡** The theme looks nice with [Lexend](https://www.lexend.com/) font!\"",
+            "target": "\n        description: \"💫 **在 Github 上為這個主題加星：[Underwater on Github](https://github.com/Seniblue/Underwater)！** </br></br> ✨ 主題更新與新功能：[Releases](https://github.com/Seniblue/Underwater/releases) </br></br> **💡** 搭配 [Lexend](https://www.lexend.com/) 字體時，這個主題看起來很不錯！\""
+        },
+        {
+            "type": "markdown",
+            "source": "true",
+            "target": "true"
+        },
+        {
+            "type": "title",
+            "source": "Dark theme",
+            "target": "暗色主題"
+        },
+        {
+            "type": "label",
+            "source": "Rosé pine",
+            "target": "Rosé pine"
+        },
+        {
+            "type": "label",
+            "source": "Rosé pine moon",
+            "target": "Rosé pine moon"
+        },
+        {
+            "type": "label",
+            "source": "Nord",
+            "target": "Nord"
+        },
+        {
+            "type": "label",
+            "source": "Catppuccin mocha",
+            "target": "Catppuccin mocha"
+        },
+        {
+            "type": "label",
+            "source": "Everforest",
+            "target": "Everforest"
+        },
+        {
+            "type": "label",
+            "source": "Biscuit",
+            "target": "Biscuit"
+        },
+        {
+            "type": "label",
+            "source": "Obsidian default",
+            "target": "Obsidian default"
+        },
+        {
+            "type": "label",
+            "source": "🌊 Underwater Deep",
+            "target": "🌊 Underwater Deep"
+        },
+        {
+            "type": "label",
+            "source": "🌊 Underwater Blue ocean",
+            "target": "🌊 Underwater Blue ocean"
+        },
+        {
+            "type": "label",
+            "source": "🌊 Underwater Seaweed",
+            "target": "🌊 Underwater Seaweed"
+        },
+        {
+            "type": "label",
+            "source": "🌊 Underwater Sand",
+            "target": "🌊 Underwater Sand"
+        },
+        {
+            "type": "title",
+            "source": "Light Theme",
+            "target": "亮色主題"
+        },
+        {
+            "type": "label",
+            "source": "Rosé pine dawn",
+            "target": "Rosé pine dawn"
+        },
+        {
+            "type": "label",
+            "source": "Catppuccin latte",
+            "target": "Catppuccin latte"
+        },
+        {
+            "type": "label",
+            "source": "Gruvbox",
+            "target": "Gruvbox"
+        },
+        {
+            "type": "label",
+            "source": "🌊 Underwater Octopus",
+            "target": "🌊 Underwater Octopus"
+        },
+        {
+            "type": "label",
+            "source": "🌊 Underwater Coral",
+            "target": "🌊 Underwater Coral"
+        },
+        {
+            "type": "label",
+            "source": "🌊 Underwater Aqua",
+            "target": "🌊 Underwater Aqua"
+        },
+        {
+            "type": "label",
+            "source": "🌊 Underwater Oyster",
+            "target": "🌊 Underwater Oyster"
+        },
+        {
+            "type": "title",
+            "source": "🎨 Theme colors",
+            "target": "🎨 主題顏色"
+        },
+        {
+            "type": "title",
+            "source": "Foam",
+            "target": "Foam"
+        },
+        {
+            "type": "title",
+            "source": "Pine",
+            "target": "Pine"
+        },
+        {
+            "type": "title",
+            "source": "Iris",
+            "target": "Iris"
+        },
+        {
+            "type": "title",
+            "source": "Gold",
+            "target": "Gold"
+        },
+        {
+            "type": "title",
+            "source": "Rose",
+            "target": "Rose"
+        },
+        {
+            "type": "title",
+            "source": "Love",
+            "target": "Love"
+        },
+        {
+            "type": "title",
+            "source": "Base",
+            "target": "Base"
+        },
+        {
+            "type": "title",
+            "source": "Surface",
+            "target": "Surface"
+        },
+        {
+            "type": "title",
+            "source": "Overlay",
+            "target": "Overlay"
+        },
+        {
+            "type": "title",
+            "source": "Muted",
+            "target": "Muted"
+        },
+        {
+            "type": "title",
+            "source": "Subtle",
+            "target": "Subtle"
+        },
+        {
+            "type": "title",
+            "source": "Text",
+            "target": "Text"
+        },
+        {
+            "type": "title",
+            "source": "Highlight low",
+            "target": "Highlight low"
+        },
+        {
+            "type": "title",
+            "source": "Highlight med",
+            "target": "Highlight med"
+        },
+        {
+            "type": "title",
+            "source": "Highlight high",
+            "target": "Highlight high"
+        },
+        {
+            "type": "title",
+            "source": "✏️ Editor colors",
+            "target": "✏️ 編輯器顏色"
+        },
+        {
+            "type": "title",
+            "source": "type: info-text",
+            "target": "type: info-text"
+        },
+        {
+            "type": "description",
+            "source": "💡 You can tweak these values using theme variables (set in the previous \"Theme Colors\" section) like **`var(--pine)`** or color values like **`#8ec7e8`** (hex) or **`rgb(142, 199, 232)`** (rgb).",
+            "target": "💡 你可以使用主題變數（在前面的「主題顏色」區段中設定），例如 **`var(--pine)`**，或使用色彩值，例如 **`#8ec7e8`**（hex）或 **`rgb(142, 199, 232)`**（rgb）來調整這些值。"
+        },
+        {
+            "type": "title",
+            "source": "Bold",
+            "target": "粗體"
+        },
+        {
+            "type": "title",
+            "source": "Italic",
+            "target": "斜體"
+        },
+        {
+            "type": "title",
+            "source": "List bullets",
+            "target": "清單項目符號"
+        },
+        {
+            "type": "title",
+            "source": "Highlight",
+            "target": "醒目提示"
+        },
+        {
+            "type": "title",
+            "source": "Underline",
+            "target": "底線"
+        },
+        {
+            "type": "title",
+            "source": "Strikethrough",
+            "target": "刪除線"
+        },
+        {
+            "type": "title",
+            "source": "Math",
+            "target": "數學"
+        },
+        {
+            "type": "title",
+            "source": "Hr (divider)",
+            "target": "水平線（分隔線）"
+        },
+        {
+            "type": "title",
+            "source": "Table header",
+            "target": "表格標題列"
+        },
+        {
+            "type": "description",
+            "source": "Doesn't apply to \"minimal\" table",
+            "target": "不套用於「minimal」表格"
+        },
+        {
+            "type": "title",
+            "source": "Workspace background color",
+            "target": "工作區背景顏色"
+        },
+        {
+            "type": "title",
+            "source": "✏️ HEADINGS color",
+            "target": "✏️ 標題顏色"
+        },
+        {
+            "type": "title",
+            "source": "Inline title",
+            "target": "行內標題"
+        },
+        {
+            "type": "title",
+            "source": "H1",
+            "target": "H1"
+        },
+        {
+            "type": "title",
+            "source": "H2",
+            "target": "H2"
+        },
+        {
+            "type": "title",
+            "source": "H3",
+            "target": "H3"
+        },
+        {
+            "type": "title",
+            "source": "H4",
+            "target": "H4"
+        },
+        {
+            "type": "title",
+            "source": "H5",
+            "target": "H5"
+        },
+        {
+            "type": "title",
+            "source": "H6",
+            "target": "H6"
+        },
+        {
+            "type": "title",
+            "source": "🔧 Settings",
+            "target": "🔧 設定"
+        },
+        {
+            "type": "title",
+            "source": "Callout style",
+            "target": "Callout 樣式"
+        },
+        {
+            "type": "label",
+            "source": "Solid",
+            "target": "實心"
+        },
+        {
+            "type": "label",
+            "source": "Classic",
+            "target": "經典"
+        },
+        {
+            "type": "label",
+            "source": "Outlined",
+            "target": "外框"
+        },
+        {
+            "type": "title",
+            "source": "Table style",
+            "target": "表格樣式"
+        },
+        {
+            "type": "label",
+            "source": "Normal",
+            "target": "一般"
+        },
+        {
+            "type": "label",
+            "source": "Minimal",
+            "target": "極簡"
+        },
+        {
+            "type": "title",
+            "source": "Checkboxes style",
+            "target": "核取方塊樣式"
+        },
+        {
+            "type": "label",
+            "source": "Rounded",
+            "target": "圓角"
+        },
+        {
+            "type": "label",
+            "source": "Circle",
+            "target": "圓形"
+        },
+        {
+            "type": "title",
+            "source": "New tab image",
+            "target": "新分頁圖片"
+        },
+        {
+            "type": "description",
+            "source": "Looks better with a small image",
+            "target": "使用小圖片效果較好"
+        },
+        {
+            "type": "title",
+            "source": "Vault icon",
+            "target": "Vault 圖示"
+        },
+        {
+            "type": "label",
+            "source": "Moon",
+            "target": "月亮"
+        },
+        {
+            "type": "label",
+            "source": "School",
+            "target": "學校"
+        },
+        {
+            "type": "label",
+            "source": "Science",
+            "target": "科學"
+        },
+        {
+            "type": "label",
+            "source": "Brain",
+            "target": "大腦"
+        },
+        {
+            "type": "label",
+            "source": "Book",
+            "target": "書本"
+        },
+        {
+            "type": "label",
+            "source": "Plant",
+            "target": "植物"
+        },
+        {
+            "type": "label",
+            "source": "Rocket",
+            "target": "火箭"
+        },
+        {
+            "type": "label",
+            "source": "Dev",
+            "target": "開發"
+        },
+        {
+            "type": "title",
+            "source": "Internal links styling",
+            "target": "內部連結樣式"
+        },
+        {
+            "type": "label",
+            "source": "Modern",
+            "target": "現代"
+        },
+        {
+            "type": "label",
+            "source": "Boxed links",
+            "target": "方框連結"
+        },
+        {
+            "type": "label",
+            "source": "Vanilla",
+            "target": "原始樣式"
+        },
+        {
+            "type": "title",
+            "source": "Specific font for headings",
+            "target": "標題專用字體"
+        },
+        {
+            "type": "description",
+            "source": "Just write the name of the font, or leave it blank for default font",
+            "target": "直接輸入字體名稱，或留空使用預設字體"
+        },
+        {
+            "type": "title",
+            "source": "🔍 Options",
+            "target": "🔍 選項"
+        },
+        {
+            "type": "title",
+            "source": "Disable styling for Bases",
+            "target": "停用 Bases 樣式"
+        },
+        {
+            "type": "title",
+            "source": "Disable h5 header centering",
+            "target": "停用 H5 標題置中"
+        },
+        {
+            "type": "title",
+            "source": "Disable image/videos/embeds/etc. + Tables centering",
+            "target": "停用圖片/影片/嵌入等內容與表格置中"
+        },
+        {
+            "type": "title",
+            "source": "Disable slight image animation on hover",
+            "target": "停用圖片懸停時的輕微動畫"
+        },
+        {
+            "type": "title",
+            "source": "Disable slight button zoom on hover",
+            "target": "停用按鈕懸停時的輕微縮放"
+        },
+        {
+            "type": "title",
+            "source": "Allow properties to be visible in reading mode as well",
+            "target": "允許屬性在閱讀模式中也可見"
+        },
+        {
+            "type": "title",
+            "source": "Disable checkboxes",
+            "target": "停用核取方塊"
+        },
+        {
+            "type": "description",
+            "source": "Disable this if you are using your own implementation via a CSS Snippet.",
+            "target": "如果你透過 CSS Snippet 使用自己的實作，請停用此選項。"
+        },
+        {
+            "type": "title",
+            "source": "Disable checkbox click (allows you to use checkboxes as bullets)",
+            "target": "停用核取方塊點擊（讓你能將核取方塊當作項目符號使用）"
+        },
+        {
+            "type": "title",
+            "source": "Disable active line higlight",
+            "target": "停用作用中行醒目提示"
+        },
+        {
+            "type": "title",
+            "source": "Remove tooltips",
+            "target": "移除工具提示"
+        },
+        {
+            "type": "title",
+            "source": "Remove scrollbar in sidebars",
+            "target": "移除側邊欄捲動條"
+        },
+        {
+            "type": "title",
+            "source": "Disable justified text",
+            "target": "停用左右對齊文字"
+        },
+        {
+            "type": "title",
+            "source": "Disable smaller pinned tabs",
+            "target": "停用較小的釘選分頁"
+        },
+        {
+            "type": "title",
+            "source": "Disable properties styling",
+            "target": "停用屬性樣式"
+        },
+        {
+            "type": "description",
+            "source": "💡 You can set a hotkey for *Full focus mode* by going to **`Hotkeys`** (in the app settings), looking for **`Style settings: Toggle 🎯 Full focus mode`** and assigning your custom hotkey!",
+            "target": "💡 你可以前往應用程式設定中的 **`快捷鍵`**，搜尋 **`Style settings: Toggle 🎯 Full focus mode`**，並指定自己的快捷鍵，來為 *Full focus mode* 設定快捷鍵！"
+        },
+        {
+            "type": "title",
+            "source": "🎯 Full focus mode",
+            "target": "🎯 完整專注模式"
+        },
+        {
+            "type": "description",
+            "source": "Removes tab bar, status bar, scrollbar, file header and properties heading. You can enable/disable it with a hotkey.",
+            "target": "移除分頁列、狀態列、捲動條、檔案標題與屬性標題。你可以用快捷鍵啟用/停用它。"
+        },
+        {
+            "type": "title",
+            "source": "🖼️ Background image",
+            "target": "🖼️ 背景圖片"
+        },
+        {
+            "type": "description",
+            "source": "🎨 If you're looking for a custom **background color**, you can go to *`✏️ Editor colors`* → *`Workspace background color`*. </br> You can also enable the background image setting below and adjust the opacity of your custom color.",
+            "target": "🎨 如果你想自訂 **背景顏色**，可以前往 *`✏️ 編輯器顏色`* → *`工作區背景顏色`*。 </br> 你也可以啟用下方的背景圖片設定，並調整自訂顏色的透明度。"
+        },
+        {
+            "type": "title",
+            "source": "Enable background image",
+            "target": "啟用背景圖片"
+        },
+        {
+            "type": "title",
+            "source": "Background image url",
+            "target": "背景圖片 URL"
+        },
+        {
+            "type": "title",
+            "source": "Background opacity",
+            "target": "背景透明度"
+        },
+        {
+            "type": "title",
+            "source": "Background blur",
+            "target": "背景模糊"
+        },
+        {
+            "type": "title",
+            "source": "Layout opacity",
+            "target": "版面透明度"
+        },
+        {
+            "type": "title",
+            "source": "🧩 Plugins styling",
+            "target": "🧩 插件樣式"
+        },
+        {
+            "type": "title",
+            "source": "KANBAN board style",
+            "target": "KANBAN 看板樣式"
+        },
+        {
+            "type": "label",
+            "source": "Colorful",
+            "target": "彩色"
+        },
+        {
+            "type": "title",
+            "source": "Enable a dotted background for EXCALIDRAW drawings",
+            "target": "為 EXCALIDRAW 繪圖啟用點狀背景"
+        },
+        {
+            "type": "title",
+            "source": "Disable CALENDAR styling",
+            "target": "停用 CALENDAR 樣式"
+        },
+        {
+            "type": "description",
+            "source": "Weekends are highlighted",
+            "target": "週末會被醒目提示"
+        },
+        {
+            "type": "title",
+            "source": "Enable seamless DATAVIEW tables",
+            "target": "啟用無縫 DATAVIEW 表格"
+        },
+        {
+            "type": "description",
+            "source": "Dataview tables have the same styling as markdown tables (note that you can also use the \"seamless-dataview\" cssclass)",
+            "target": "Dataview 表格會使用與 Markdown 表格相同的樣式（注意：你也可以使用 \"seamless-dataview\" cssclass）"
+        },
+        {
+            "type": "title",
+            "source": "Disable TODOIST SYNC styling",
+            "target": "停用 TODOIST SYNC 樣式"
+        },
+        {
+            "type": "title",
+            "source": "Disable WIDGETS styling",
+            "target": "停用 WIDGETS 樣式"
+        },
+        {
+            "type": "description",
+            "source": "Colorful and smaller widgets",
+            "target": "彩色且較小的小工具"
+        },
+        {
+            "type": "title",
+            "source": "Disable POMODORO TIMER styling",
+            "target": "停用 POMODORO TIMER 樣式"
+        },
+        {
+            "type": "description",
+            "source": "Round stroke",
+            "target": "圓形筆畫"
+        },
+        {
+            "type": "title",
+            "source": "Disable CARDBOARD styling",
+            "target": "停用 CARDBOARD 樣式"
+        },
+        {
+            "type": "title",
+            "source": "Disable FILE TREE ALTERNATIVE styling",
+            "target": "停用 FILE TREE ALTERNATIVE 樣式"
+        },
+        {
+            "type": "title",
+            "source": "Enable TOKEI styling",
+            "target": "啟用 TOKEI 樣式"
+        }
+    ]
+}
