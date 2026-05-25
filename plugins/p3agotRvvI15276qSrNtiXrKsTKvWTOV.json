@@ -1,0 +1,307 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-auto-link-title",
+        "version": "1.5.5",
+        "title": "[zh-tw] Auto Link Title",
+        "description": "Auto Link Title Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.5.5",
+        "author": "Chico",
+        "updatedAt": 1778617903133
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "链接预览API密钥长度不足32个字符，请检查设置",
+                    "target": "連結預覽 API 金鑰長度不足 32 個字元，請檢查設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "正在加载 Obsidian 自动链接标题",
+                    "target": "正在載入 Obsidian 自動連結標題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "标题通过链接预览失败，回退到抓取器",
+                    "target": "透過連結預覽取得標題失敗，改用抓取器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "使用新的爬虫",
+                    "target": "使用新版抓取器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "使用旧版爬虫",
+                    "target": "使用舊版抓取器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "卸载 Obsidian 自动链接标题插件",
+                    "target": "卸載 Obsidian 自動連結標題插件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "使用默认粘贴命令在编辑器中粘贴链接时，获取链接标题",
+                    "target": "在編輯器中使用預設貼上命令貼上連結時，取得連結標題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "从其他程序拖放链接时获取链接标题",
+                    "target": "從其他程式拖放連結時取得連結標題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "设置标题的最大长度。设置为 0 则禁用.",
+                    "target": "設定標題的最大長度。設為 0 則停用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "粘贴时是否优先使用选中的文本而非获取的标题作为标题",
+                    "target": "貼上時是否優先使用選取的文字，而不是取得的標題作為標題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "禁止自动完成网站标题的字符串列表（逗号分隔）。可以是 URL 或任意文本.",
+                    "target": "禁止自動完成網站標題的字串清單（以逗號分隔）。可以是 URL 或任意文字。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "使用实验性新版抓取器，在桌面端效果良好但移动端可能不佳。",
+                    "target": "使用實驗性新版抓取器，在桌面版效果良好，但行動版可能不佳。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "获取链接标题时使用更易读的占位符",
+                    "target": "取得連結標題時使用更易讀的佔位符"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "LinkPreview.net 服务的 API 密钥。请访问 https://my.linkpreview.net/access_keys 获取",
+                    "target": "LinkPreview.net 服務的 API 金鑰。請前往 https://my.linkpreview.net/access_keys 取得"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "增强默认粘贴",
+                    "target": "增強預設貼上"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "增强拖放事件",
+                    "target": "增強拖放事件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "最大标题长度",
+                    "target": "最大標題長度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "将所选文字保留为标题",
+                    "target": "將選取文字保留為標題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "网站黑名单",
+                    "target": "網站黑名單"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "使用新爬虫",
+                    "target": "使用新版抓取器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "使用更好的获取占位符",
+                    "target": "使用更易讀的取得中佔位符"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "链接预览 API 密钥",
+                    "target": "連結預覽 API 金鑰"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "localhost, tiktok.com",
+                    "target": "localhost, tiktok.com"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "链接预览API密钥必须为32个字符",
+                    "target": "連結預覽 API 金鑰必須為 32 個字元"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "粘贴链接并自动获取标题",
+                    "target": "貼上連結並自動取得標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "正常粘贴（无获取行为）",
+                    "target": "正常貼上（不取得標題）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "使用链接和标题增强现有 URL",
+                    "target": "使用連結與標題增強現有 URL"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"增强默认粘贴\")",
+                    "target": "setName(\"增強預設貼上\")"
+                },
+                {
+                    "source": "setDesc(\"使用默认粘贴命令在编辑器中粘贴链接时，获取链接标题\")",
+                    "target": "setDesc(\"在編輯器中使用預設貼上命令貼上連結時，取得連結標題\")"
+                },
+                {
+                    "source": "setName(\"增强拖放事件\")",
+                    "target": "setName(\"增強拖放事件\")"
+                },
+                {
+                    "source": "setDesc(\"从其他程序拖放链接时获取链接标题\")",
+                    "target": "setDesc(\"從其他程式拖放連結時取得連結標題\")"
+                },
+                {
+                    "source": "setName(\"最大标题长度\")",
+                    "target": "setName(\"最大標題長度\")"
+                },
+                {
+                    "source": "setDesc(\"设置标题的最大长度。设置为 0 则禁用.\")",
+                    "target": "setDesc(\"設定標題的最大長度。設為 0 則停用。\")"
+                },
+                {
+                    "source": "setName(\"将所选文字保留为标题\")",
+                    "target": "setName(\"將選取文字保留為標題\")"
+                },
+                {
+                    "source": "setDesc(\"粘贴时是否优先使用选中的文本而非获取的标题作为标题\")",
+                    "target": "setDesc(\"貼上時是否優先使用選取的文字，而不是取得的標題作為標題\")"
+                },
+                {
+                    "source": "setName(\"网站黑名单\")",
+                    "target": "setName(\"網站黑名單\")"
+                },
+                {
+                    "source": "setDesc(\"禁止自动完成网站标题的字符串列表（逗号分隔）。可以是 URL 或任意文本.\")",
+                    "target": "setDesc(\"禁止自動完成網站標題的字串清單（以逗號分隔）。可以是 URL 或任意文字。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"localhost, tiktok.com\")",
+                    "target": "setPlaceholder(\"localhost, tiktok.com\")"
+                },
+                {
+                    "source": "setName(\"使用新爬虫\")",
+                    "target": "setName(\"使用新版抓取器\")"
+                },
+                {
+                    "source": "setDesc(\"使用实验性新版抓取器，在桌面端效果良好但移动端可能不佳。\")",
+                    "target": "setDesc(\"使用實驗性新版抓取器，在桌面版效果良好，但行動版可能不佳。\")"
+                },
+                {
+                    "source": "setName(\"使用更好的获取占位符\")",
+                    "target": "setName(\"使用更易讀的取得中佔位符\")"
+                },
+                {
+                    "source": "setDesc(\"获取链接标题时使用更易读的占位符\")",
+                    "target": "setDesc(\"取得連結標題時使用更易讀的佔位符\")"
+                },
+                {
+                    "source": "setName(\"链接预览 API 密钥\")",
+                    "target": "setName(\"連結預覽 API 金鑰\")"
+                },
+                {
+                    "source": "setDesc(\"LinkPreview.net 服务的 API 密钥。请访问 https://my.linkpreview.net/access_keys 获取\")",
+                    "target": "setDesc(\"LinkPreview.net 服務的 API 金鑰。請前往 https://my.linkpreview.net/access_keys 取得\")"
+                },
+                {
+                    "source": "Notice(\"链接预览API密钥必须为32个字符\")",
+                    "target": "Notice(\"連結預覽 API 金鑰必須為 32 個字元\")"
+                },
+                {
+                    "source": "log(\"正在加载 Obsidian 自动链接标题\")",
+                    "target": "log(\"正在載入 Obsidian 自動連結標題\")"
+                },
+                {
+                    "source": "log(`在当前编辑器中未找到文本“${pasteId}”，操作中止；链接 ${url}`)",
+                    "target": "log(`在目前編輯器中找不到文字「${pasteId}」，操作已中止；連結 ${url}`)"
+                },
+                {
+                    "source": "error(\"链接预览API密钥长度不足32个字符，请检查设置\")",
+                    "target": "error(\"連結預覽 API 金鑰長度不足 32 個字元，請檢查設定\")"
+                },
+                {
+                    "source": "log(`通过链接预览标题：${title} `)",
+                    "target": "log(`透過連結預覽取得標題：${title} `)"
+                },
+                {
+                    "source": "log(\"标题通过链接预览失败，回退到抓取器\")",
+                    "target": "log(\"透過連結預覽取得標題失敗，改用抓取器\")"
+                },
+                {
+                    "source": "log(\"使用新的爬虫\")",
+                    "target": "log(\"使用新版抓取器\")"
+                },
+                {
+                    "source": "log(\"使用旧版爬虫\")",
+                    "target": "log(\"使用舊版抓取器\")"
+                },
+                {
+                    "source": "log(`标题: ${title}`)",
+                    "target": "log(`標題: ${title}`)"
+                },
+                {
+                    "source": "log(\"卸载 Obsidian 自动链接标题插件\")",
+                    "target": "log(\"卸載 Obsidian 自動連結標題插件\")"
+                },
+                {
+                    "source": "name = \"SuppressedError\"",
+                    "target": "name = \"SuppressedError\""
+                },
+                {
+                    "source": "name: \"粘贴链接并自动获取标题\"",
+                    "target": "name: \"貼上連結並自動取得標題\""
+                },
+                {
+                    "source": "name: \"正常粘贴（无获取行为）\"",
+                    "target": "name: \"正常貼上（不取得標題）\""
+                },
+                {
+                    "source": "name: \"使用链接和标题增强现有 URL\"",
+                    "target": "name: \"使用連結與標題增強現有 URL\""
+                }
+            ]
+        }
+    }
+}
