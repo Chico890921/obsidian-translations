@@ -1,0 +1,333 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "typewriter-mode",
+        "version": "1.3.1",
+        "title": "[zh-tw] Typewriter Mode",
+        "description": "Typewriter Mode Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.3.1",
+        "author": "Chico",
+        "updatedAt": 1778615217784
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Underline",
+                    "target": "底線"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Box",
+                    "target": "方框"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Dim everything",
+                    "target": "淡化所有文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Dim all but the previously focused paragraph / sentence",
+                    "target": "淡化除了先前聚焦段落／句子以外的所有內容"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Do not dim anything",
+                    "target": "不淡化"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Sentences",
+                    "target": "句子"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Paragraphs",
+                    "target": "段落"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Mobile only",
+                    "target": "僅行動版"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Desktop only",
+                    "target": "僅桌面版"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Desktop and mobile",
+                    "target": "桌面版與行動版"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Column",
+                    "target": "欄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The style of the current line highlight",
+                    "target": "目前行的醒目提示樣式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The thickness of the underline that highlights the current line",
+                    "target": "醒目提示目前行的底線粗細"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "How soon lines shall be faded out",
+                    "target": "行多久後淡出"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "How to dim paragraphs / sentences in notes / editors that your cursor is not on (e.g. if you have multiple notes open in split panes)",
+                    "target": "如何淡化游標不在其中的筆記／編輯器內的段落／句子（例如在分割窗格中開啟多個筆記時）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose to dim unfocused paragraphs or sentences",
+                    "target": "選擇要淡化未聚焦的段落或句子"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The amount of lines to always keep above and below the current line",
+                    "target": "目前行上下方要一律保留的行數"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The maximum number of characters per line",
+                    "target": "每行的最大字元數"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Positions the typewriter line at the specified percentage of the screen",
+                    "target": "將目前行定位在螢幕的指定百分比處"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Custom font size in points for writing focus mode (0 = use default font size)",
+                    "target": "寫作專注模式的自訂字體大小（以點為單位，0 = 使用預設字體大小）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The style of the vignette in writing focus mode",
+                    "target": "寫作專注模式中的暗角樣式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Not available if \"keep lines above and below\" is activated",
+                    "target": "啟用「保留上下行」時不可用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Not available if typewriter scrolling is activated",
+                    "target": "啟用「打字機捲動」時不可用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Current line highlight style",
+                    "target": "目前行醒目提示樣式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Current line underline thickness",
+                    "target": "目前行底線粗細"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Intensity of the fade lines gradient",
+                    "target": "淡化行漸層強度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Dimming behavior in unfocused notes",
+                    "target": "未聚焦筆記中的淡化行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Dim unfocused mode",
+                    "target": "淡化未聚焦文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Amount of lines above and below the current line",
+                    "target": "目前行的上下保留行數"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Maximum number of characters per line",
+                    "target": "每行最大字元數"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Typewriter offset",
+                    "target": "打字機偏移量"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Writing focus font size",
+                    "target": "寫作專注字體大小"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Writing focus vignette style",
+                    "target": "寫作專注暗角樣式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Fetching release notes...",
+                    "target": "正在取得版本資訊..."
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName('Not available if \"keep lines above and below\" is activated')",
+                    "target": "setName('啟用「保留上下行」時不可用')"
+                },
+                {
+                    "source": "setName(\"Not available if typewriter scrolling is activated\")",
+                    "target": "setName(\"啟用「打字機捲動」時不可用\")"
+                },
+                {
+                    "source": "setName(\"Current line highlight style\")",
+                    "target": "setName(\"目前行醒目提示樣式\")"
+                },
+                {
+                    "source": "setDesc(\"The style of the current line highlight\")",
+                    "target": "setDesc(\"目前行的醒目提示樣式\")"
+                },
+                {
+                    "source": "setName(\"Current line underline thickness\")",
+                    "target": "setName(\"目前行底線粗細\")"
+                },
+                {
+                    "source": "setDesc(\"The thickness of the underline that highlights the current line\")",
+                    "target": "setDesc(\"醒目提示目前行的底線粗細\")"
+                },
+                {
+                    "source": "setName(\"Intensity of the fade lines gradient\")",
+                    "target": "setName(\"淡化行漸層強度\")"
+                },
+                {
+                    "source": "setDesc(\"How soon lines shall be faded out\")",
+                    "target": "setDesc(\"行多久後淡出\")"
+                },
+                {
+                    "source": "setName(\"Dimming behavior in unfocused notes\")",
+                    "target": "setName(\"未聚焦筆記的淡化行為\")"
+                },
+                {
+                    "source": "setDesc(\"How to dim paragraphs / sentences in notes / editors that your cursor is not on (e.g. if you have multiple notes open in split panes)\")",
+                    "target": "setDesc(\"如何淡化游標不在其中的筆記／編輯器內的段落／句子（例如在分割窗格中開啟多個筆記時）\")"
+                },
+                {
+                    "source": "setName(\"Dim unfocused mode\")",
+                    "target": "setName(\"淡化未聚焦文字\")"
+                },
+                {
+                    "source": "setDesc(\"Choose to dim unfocused paragraphs or sentences\")",
+                    "target": "setDesc(\"選擇要淡化未聚焦的段落或句子\")"
+                },
+                {
+                    "source": "setName(\"Amount of lines above and below the current line\")",
+                    "target": "setName(\"目前行上下保留的行數\")"
+                },
+                {
+                    "source": "setDesc(\"The amount of lines to always keep above and below the current line\")",
+                    "target": "setDesc(\"目前行上下方要一律保留的行數\")"
+                },
+                {
+                    "source": "setName(\"Maximum number of characters per line\")",
+                    "target": "setName(\"每行最大字元數\")"
+                },
+                {
+                    "source": "setDesc(\"The maximum number of characters per line\")",
+                    "target": "setDesc(\"每行的最大字元數\")"
+                },
+                {
+                    "source": "setName(\"Typewriter offset\")",
+                    "target": "setName(\"打字機偏移\")"
+                },
+                {
+                    "source": "setDesc(\"Positions the typewriter line at the specified percentage of the screen\")",
+                    "target": "setDesc(\"將目前行定位在螢幕的指定百分比處\")"
+                },
+                {
+                    "source": "setName(\"Writing focus font size\")",
+                    "target": "setName(\"寫作專注字體大小\")"
+                },
+                {
+                    "source": "setDesc(\"Custom font size in points for writing focus mode (0 = use default font size)\")",
+                    "target": "setDesc(\"寫作專注模式的自訂字體大小（以點為單位，0 = 使用預設字體大小）\")"
+                },
+                {
+                    "source": "setName(\"Writing focus vignette style\")",
+                    "target": "setName(\"寫作專注暗角樣式\")"
+                },
+                {
+                    "source": "setDesc(\"The style of the vignette in writing focus mode\")",
+                    "target": "setDesc(\"寫作專注模式中的暗角樣式\")"
+                },
+                {
+                    "source": "text:\"Fetching release notes...\"",
+                    "target": "text:\"正在取得版本資訊...\""
+                },
+                {
+                    "source": "name:`Move typewriter ${o}`",
+                    "target": "name:`Move typewriter ${o}`"
+                },
+                {
+                    "source": "name:`Toggle ${this.commandTitle}`",
+                    "target": "name:`切換 ${this.commandTitle}`"
+                },
+                {
+                    "source": "name:`Enable ${this.commandTitle}`",
+                    "target": "name:`啟用 ${this.commandTitle}`"
+                },
+                {
+                    "source": "name:`Disable ${this.commandTitle}`",
+                    "target": "name:`停用 ${this.commandTitle}`"
+                }
+            ]
+        }
+    }
+}
