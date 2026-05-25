@@ -557,5 +557,18 @@
         "created_at": "2026-05-25T03:51:15.087Z",
         "updated_at": "2026-05-25T03:51:15.087Z",
         "type": "plugin"
+    },
+    {
+        "id": "85AErBZ5uclW3Uc3O6JvedNXOj-J3tz5",
+        "plugin": "wheel-tab-switcher",
+        "language": "zh-tw",
+        "version": "0.2.7",
+        "supported_versions": "0.2.7",
+        "title": "[zh-tw] Wheel Tab Switcher",
+        "description": "Wheel Tab Switcher Localization & Tweaks",
+        "hash": "38293dd438293dd438293dd438293dd4",
+        "created_at": "2026-05-25T03:51:23.494Z",
+        "updated_at": "2026-05-25T03:51:23.494Z",
+        "type": "plugin"
     }
 ]
