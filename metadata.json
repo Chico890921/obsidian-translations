@@ -245,5 +245,18 @@
         "created_at": "2026-05-25T03:45:22.794Z",
         "updated_at": "2026-05-25T03:45:22.794Z",
         "type": "plugin"
+    },
+    {
+        "id": "rIjo-YcTD6SaIBo67mAEzwjvCgEWHs9z",
+        "plugin": "link-favicon",
+        "language": "zh-tw",
+        "version": "1.8.5",
+        "supported_versions": "1.8.5",
+        "title": "[zh-tw] Link Favicons",
+        "description": "Link Favicons 繁體中文化與微調",
+        "hash": "400258c3400258c3400258c3400258c3",
+        "created_at": "2026-05-25T03:45:36.757Z",
+        "updated_at": "2026-05-25T03:45:36.757Z",
+        "type": "plugin"
     }
 ]
