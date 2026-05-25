@@ -1,0 +1,451 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-paste-image-rename",
+        "version": "1.6.1",
+        "title": "[zh-tw] Paste image rename",
+        "description": "Paste image rename Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.6.1",
+        "author": "Chico",
+        "updatedAt": 1778618602333
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerText",
+                    "source": "错误：\"名称模式\"不能为空",
+                    "target": "錯誤：\"名稱模式\"不能為空"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerText",
+                    "source": "错误：\"新名称\"不能为空",
+                    "target": "錯誤：\"新名稱\"不能為空"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "调试已启用",
+                    "target": "除錯已啟用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "重命名所有",
+                    "target": "重新命名所有"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "取消",
+                    "target": "取消"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "重命名",
+                    "target": "重新命名"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "请输入用于匹配文件的名称模式（正则表达式）",
+                    "target": "請輸入用於匹配檔案的名稱模式（正則表達式）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "请输入用于匹配文件的扩展名模式（正则表达式）",
+                    "target": "請輸入用於匹配檔案的副檔名模式（正則表達式）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "请输入用于替换匹配名称的字符串（使用 $1, $2 作为正则表达式组）",
+                    "target": "請輸入用於替換匹配名稱的字串（使用 $1, $2 作為正則表達式組）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "请输入图像的新名称（不带扩展名）",
+                    "target": "請輸入圖片的新名稱（不帶副檔名）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "如果启用，重复数字将作为前缀添加到图像名称的开头，否则将作为后缀添加到图像名称的结尾。",
+                    "target": "如果啟用，重複數字會作為前綴加入到圖片名稱的開頭，否則將作為後綴加入到圖片名稱的結尾。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "生成重复名称的数字前缀/后缀的分隔符。例如，如果值为\"-\"，后缀将类似于\"-1\"、\"-2\"、\"-3\"，前缀将类似于\"1-\"、\"2-\"、\"3-\"。仅允许文件名中有效的字符。",
+                    "target": "生成重複名稱的數字前綴/後綴的分隔符號。例如，如果值為\"-\"，後綴將類似於\"-1\"、\"-2\"、\"-3\"，前綴將類似於\"1-\"、\"2-\"、\"3-\"。僅允許文件名中有效字元。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "如果启用，重复数字将始终添加到图像名称。否则，只有在名称重复时才会添加。",
+                    "target": "如果啟用，重複數字將始終加入到圖片名稱。否則，只有在名稱重複時才會添加。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "默认情况下，重命名模态将始终显示以确认重命名，如果设置了此选项，图像将在粘贴后自动重命名。",
+                    "target": "預設情況下，重新命名視窗將始終顯示以確認重新命名，如果設定了此選項，圖片將在貼上後自動重新命名。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "默认情况下，插件仅处理名称以\"Pasted image \"开头的图像，\n\t\t\t这是Obsidian用于从粘贴内容创建图像的前缀。\n\t\t\t如果设置了此选项，插件将处理在库中创建的所有附件。",
+                    "target": "預設情況下，插件僅處理名稱以\"Pasted image \"開頭的圖片，\n\t\t\t這是Obsidian用於從貼上內容建立圖片的前綴。\n\t\t\t如果設定了此選項，插件將處理在庫中建立的所有附件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "此选项仅在启用\"处理所有附件\"时有用。\n\t\t\t写一个正则表达式模式以排除某些扩展名的处理。仅使用第一行。",
+                    "target": "此選項僅在啟用\"處理所有附件\"時有用。\n\t\t\t寫一個正則表達式模式以排除某些副檔名的處理。僅使用第一行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "如果您不想在重命名图像时看到通知，请关闭此选项。\n\t\t\t请注意，当链接发生更改时，Obsidian可能会显示通知，此选项无法禁用。",
+                    "target": "如果您不想在重新命名圖片時看到通知，請關閉此選項。\n\t\t\t請注意，當連結發生更改時，Obsidian可能會顯示通知，此選項無法停用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "名称模式",
+                    "target": "名稱模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "扩展名模式",
+                    "target": "副檔名模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "名称替换",
+                    "target": "名稱替換"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "新名称",
+                    "target": "新名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "图像名称模式",
+                    "target": "圖片名稱模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "重复数字在开头（或结尾）",
+                    "target": "重複數字在開頭（或結尾）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "重复数字分隔符",
+                    "target": "重複數字分隔符號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "始终添加重复数字",
+                    "target": "一律加入重複數字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "自动重命名",
+                    "target": "自動重新命名"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "处理所有附件",
+                    "target": "處理所有附件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "排除扩展名模式",
+                    "target": "排除副檔名模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "禁用重命名通知",
+                    "target": "停用重新命名通知"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "批量重命名嵌入文件",
+                    "target": "批次重新命名嵌入檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "重命名图像",
+                    "target": "重新命名圖片"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "file not found",
+                    "target": "找不到檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "could not get file cache from active file",
+                    "target": "無法從目前檔案取得檔案快取"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "错误：未找到活动文件。",
+                    "target": "錯誤：找不到目前檔案。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "批量重命名图像失败：生成的名称没有意义",
+                    "target": "批次重新命名圖片失敗：生成的名稱沒有意義"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "批量重命名嵌入文件（在当前文件中）",
+                    "target": "批次重新命名嵌入檔案（在目前檔案中）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "立即批量重命名所有图像（在当前文件中）",
+                    "target": "立即批次重新命名所有圖片（在目前檔案中）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "原始路径",
+                    "target": "原始路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "重命名后的名称",
+                    "target": "重新命名後的名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "源路径",
+                    "target": "來源路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "新路径",
+                    "target": "新路徑"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "log(\"调试已启用\")",
+                    "target": "log(\"除錯已啟用\")"
+                },
+                {
+                    "source": "setText(\"批量重命名嵌入文件\")",
+                    "target": "setText(\"批次重新命名嵌入檔案\")"
+                },
+                {
+                    "source": "setName(\"名称模式\")",
+                    "target": "setName(\"名稱模式\")"
+                },
+                {
+                    "source": "setDesc(\"请输入用于匹配文件的名称模式（正则表达式）\")",
+                    "target": "setDesc(\"請輸入用於匹配檔案的名稱模式（正則表達式）\")"
+                },
+                {
+                    "source": "setName(\"扩展名模式\")",
+                    "target": "setName(\"副檔名模式\")"
+                },
+                {
+                    "source": "setDesc(\"请输入用于匹配文件的扩展名模式（正则表达式）\")",
+                    "target": "setDesc(\"請輸入用於匹配檔案的副檔名模式（正則表達式）\")"
+                },
+                {
+                    "source": "setName(\"名称替换\")",
+                    "target": "setName(\"名稱替換\")"
+                },
+                {
+                    "source": "setDesc(\"请输入用于替换匹配名称的字符串（使用 $1, $2 作为正则表达式组）\")",
+                    "target": "setDesc(\"請輸入用於替換匹配名稱的字串（使用 $1, $2 作為正則表達式組）\")"
+                },
+                {
+                    "source": "setButtonText(\"重命名所有\")",
+                    "target": "setButtonText(\"重新命名所有\")"
+                },
+                {
+                    "source": "setButtonText(\"取消\")",
+                    "target": "setButtonText(\"取消\")"
+                },
+                {
+                    "source": "setButtonText(\"是\")",
+                    "target": "setButtonText(\"是\")"
+                },
+                {
+                    "source": "setButtonText(\"否\")",
+                    "target": "setButtonText(\"否\")"
+                },
+                {
+                    "source": "log(`插件加载中: ${pkg.name} ${pkg.version} BUILD_ENV=${\"production\"}`)",
+                    "target": "log(`插件載入中: ${pkg.name} ${pkg.version} BUILD_ENV=${\"production\"}`)"
+                },
+                {
+                    "source": "Notice(\"错误：未找到活动文件。\")",
+                    "target": "Notice(\"錯誤：找不到目前檔案。\")"
+                },
+                {
+                    "source": "Notice(`重命名 ${newName} 失败: ${err}`)",
+                    "target": "Notice(`重新命名 ${newName} 失敗: ${err}`)"
+                },
+                {
+                    "source": "Notice(`重命名 ${newName} 失败: 没有活动编辑器`)",
+                    "target": "Notice(`重新命名 ${newName} 失敗: 沒有目前編輯器`)"
+                },
+                {
+                    "source": "Notice(`已将 ${originName} 重命名为 ${newName}`)",
+                    "target": "Notice(`已將 ${originName} 重新命名為 ${newName}`)"
+                },
+                {
+                    "source": "Notice(\"批量重命名图像失败：生成的名称没有意义\")",
+                    "target": "Notice(\"批次重新命名圖片失敗：生成的名稱沒有意義\")"
+                },
+                {
+                    "source": "setText(\"重命名图像\")",
+                    "target": "setText(\"重新命名圖片\")"
+                },
+                {
+                    "source": "setName(\"新名称\")",
+                    "target": "setName(\"新名稱\")"
+                },
+                {
+                    "source": "setDesc(\"请输入图像的新名称（不带扩展名）\")",
+                    "target": "setDesc(\"請輸入圖片的新名稱（不帶副檔名）\")"
+                },
+                {
+                    "source": "setButtonText(\"重命名\")",
+                    "target": "setButtonText(\"重新命名\")"
+                },
+                {
+                    "source": "setName(\"图像名称模式\")",
+                    "target": "setName(\"圖片名稱模式\")"
+                },
+                {
+                    "source": "setName(\"重复数字在开头（或结尾）\")",
+                    "target": "setName(\"重複數字在開頭（或結尾）\")"
+                },
+                {
+                    "source": "setDesc(`如果启用，重复数字将作为前缀添加到图像名称的开头，否则将作为后缀添加到图像名称的结尾。`)",
+                    "target": "setDesc(`如果啟用，重複數字會作為前綴加入到圖片名稱的開頭，否則將作為後綴加入到圖片名稱的結尾。`)"
+                },
+                {
+                    "source": "setName(\"重复数字分隔符\")",
+                    "target": "setName(\"重複數字分隔符號\")"
+                },
+                {
+                    "source": "setDesc(`生成重复名称的数字前缀/后缀的分隔符。例如，如果值为\"-\"，后缀将类似于\"-1\"、\"-2\"、\"-3\"，前缀将类似于\"1-\"、\"2-\"、\"3-\"。仅允许文件名中有效的字符。`)",
+                    "target": "setDesc(`生成重複名稱的數字前綴/後綴的分隔符號。例如，如果值為\"-\"，後綴將類似於\"-1\"、\"-2\"、\"-3\"，前綴將類似於\"1-\"、\"2-\"、\"3-\"。僅允許文件名中有效字元。`)"
+                },
+                {
+                    "source": "setName(\"始终添加重复数字\")",
+                    "target": "setName(\"一律加入重複數字\")"
+                },
+                {
+                    "source": "setDesc(`如果启用，重复数字将始终添加到图像名称。否则，只有在名称重复时才会添加。`)",
+                    "target": "setDesc(`如果啟用，重複數字將始終加入到圖片名稱。否則，只有在名稱重複時才會添加。`)"
+                },
+                {
+                    "source": "setName(\"自动重命名\")",
+                    "target": "setName(\"自動重新命名\")"
+                },
+                {
+                    "source": "setDesc(`默认情况下，重命名模态将始终显示以确认重命名，如果设置了此选项，图像将在粘贴后自动重命名。`)",
+                    "target": "setDesc(`預設情況下，重新命名視窗將始終顯示以確認重新命名，如果設定了此選項，圖片將在貼上後自動重新命名。`)"
+                },
+                {
+                    "source": "setName(\"处理所有附件\")",
+                    "target": "setName(\"處理所有附件\")"
+                },
+                {
+                    "source": "setDesc(`默认情况下，插件仅处理名称以\"Pasted image \"开头的图像，\n\t\t\t这是Obsidian用于从粘贴内容创建图像的前缀。\n\t\t\t如果设置了此选项，插件将处理在库中创建的所有附件。`)",
+                    "target": "setDesc(`預設情況下，插件僅處理名稱以\"Pasted image \"開頭的圖片，\n\t\t\t這是Obsidian用於從貼上內容建立圖片的前綴。\n\t\t\t如果設定了此選項，插件將處理在庫中建立的所有附件。`)"
+                },
+                {
+                    "source": "setName(\"排除扩展名模式\")",
+                    "target": "setName(\"排除副檔名模式\")"
+                },
+                {
+                    "source": "setDesc(`此选项仅在启用\"处理所有附件\"时有用。\n\t\t\t写一个正则表达式模式以排除某些扩展名的处理。仅使用第一行。`)",
+                    "target": "setDesc(`此選項僅在啟用\"處理所有附件\"時有用。\n\t\t\t寫一個正則表達式模式以排除某些副檔名的處理。僅使用第一行。`)"
+                },
+                {
+                    "source": "setName(\"禁用重命名通知\")",
+                    "target": "setName(\"停用重新命名通知\")"
+                },
+                {
+                    "source": "setDesc(`如果您不想在重命名图像时看到通知，请关闭此选项。\n\t\t\t请注意，当链接发生更改时，Obsidian可能会显示通知，此选项无法禁用。`)",
+                    "target": "setDesc(`如果您不想在重新命名圖片時看到通知，請關閉此選項。\n\t\t\t請注意，當連結發生更改時，Obsidian可能會顯示通知，此選項無法停用。`)"
+                },
+                {
+                    "source": "name: \"obsidian-paste-image-rename\"",
+                    "target": "name: \"obsidian-paste-image-rename\""
+                },
+                {
+                    "source": "innerText = '错误：\"名称模式\"不能为空'",
+                    "target": "innerText = '錯誤：\"名稱模式\"不能為空'"
+                },
+                {
+                    "source": "text: \"原始路径\"",
+                    "target": "text: \"原始路徑\""
+                },
+                {
+                    "source": "text: \"重命名后的名称\"",
+                    "target": "text: \"重新命名後的名稱\""
+                },
+                {
+                    "source": "name: \"批量重命名嵌入文件（在当前文件中）\"",
+                    "target": "name: \"批次重新命名嵌入檔案（在目前檔案中）\""
+                },
+                {
+                    "source": "name: \"立即批量重命名所有图像（在当前文件中）\"",
+                    "target": "name: \"立即批次重新命名所有圖片（在目前檔案中）\""
+                },
+                {
+                    "source": "text: \"源路径\"",
+                    "target": "text: \"來源路徑\""
+                },
+                {
+                    "source": "text: \"新路径\"",
+                    "target": "text: \"新路徑\""
+                },
+                {
+                    "source": "innerText = '错误：\"新名称\"不能为空'",
+                    "target": "innerText = '錯誤：\"新名稱\"不能為空'"
+                }
+            ]
+        }
+    }
+}
