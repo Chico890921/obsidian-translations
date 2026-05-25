@@ -297,5 +297,18 @@
         "created_at": "2026-05-25T03:46:18.039Z",
         "updated_at": "2026-05-25T03:46:18.039Z",
         "type": "plugin"
+    },
+    {
+        "id": "rlms-4SsjVPWyWsBXQBZUvG-bKtkNhcj",
+        "plugin": "obsidian-book-search-plugin",
+        "language": "zh-tw",
+        "version": "0.7.5",
+        "supported_versions": "0.7.5",
+        "title": "[zh-tw] Book Search",
+        "description": "Book Search 繁體中文化與微調",
+        "hash": "3f68cb9f3f68cb9f3f68cb9f3f68cb9f",
+        "created_at": "2026-05-25T03:46:28.304Z",
+        "updated_at": "2026-05-25T03:46:28.304Z",
+        "type": "plugin"
     }
 ]
