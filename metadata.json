@@ -76,5 +76,18 @@
         "created_at": "2026-05-25T03:42:41.364Z",
         "updated_at": "2026-05-25T03:42:41.364Z",
         "type": "plugin"
+    },
+    {
+        "id": "gw14UNjPPf25bjyTcsP0jXa52Fp9ZyQb",
+        "plugin": "calendar",
+        "language": "zh-tw",
+        "version": "1.5.10",
+        "supported_versions": "1.5.10",
+        "title": "[zh-tw] Calendar",
+        "description": "Calendar Localization & Tweaks",
+        "hash": "1ae80a751ae80a751ae80a751ae80a75",
+        "created_at": "2026-05-25T03:42:56.889Z",
+        "updated_at": "2026-05-25T03:42:56.889Z",
+        "type": "plugin"
     }
 ]
