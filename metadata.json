@@ -1,1 +1,15 @@
-[]
+[
+    {
+        "id": "PuzWGXL8JytKmtdMii2OrJO2w9pTCwXM",
+        "plugin": "Composer",
+        "language": "zh-tw",
+        "version": "0.6.0",
+        "supported_versions": "0.6.0",
+        "title": "Composer",
+        "description": "Composer Localization & Tweaks",
+        "hash": "5263a34a5263a34a5263a34a5263a34a",
+        "created_at": "2026-05-25T03:30:09.493Z",
+        "updated_at": "2026-05-25T03:30:09.493Z",
+        "type": "theme"
+    }
+]
