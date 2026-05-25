@@ -1,0 +1,251 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-scroll-to-top-plugin",
+        "version": "2.1.6",
+        "title": "[zh-tw] Scroll to Top",
+        "description": "Scroll to Top Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "2.1.6",
+        "author": "Chico",
+        "updatedAt": 1778615217711
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "在右下角显示滚动到顶部按钮。",
+                    "target": "在右下角顯示滾動到頂部按鈕。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "在右下角显示滚动到底部按钮。",
+                    "target": "在右下角顯示滾動到底部按鈕。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "在右下角显示滚动到光标按钮。",
+                    "target": "在右下角顯示滾動到游標按鈕。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "将鼠标悬停在按钮上时显示工具提示。",
+                    "target": "將滑鼠懸停在按鈕上時顯示工具提示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "在 WebView 上滚动（应该与 Surfing 插件一起使用）",
+                    "target": "在 WebView 上滾動（應該與 Surfing 外掛一起使用）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "更改按钮的大小。",
+                    "target": "變更按鈕大小。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "更改滚动到顶部按钮的工具提示文本。",
+                    "target": "變更滾動到頂部按鈕的工具提示文字。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "更改滚动到底部按钮的工具提示文本。",
+                    "target": "變更滾動到底部按鈕的工具提示文字。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "更改滚动到光标按钮的工具提示文本。",
+                    "target": "變更滾動到游標按鈕的工具提示文字。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "显示滚动到顶部的按钮",
+                    "target": "顯示滾動到頂部的按鈕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "显示滚动到底部的按钮",
+                    "target": "顯示滾動到底部的按鈕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "显示滚动到当前光标的按钮",
+                    "target": "顯示滾動到目前游標的按鈕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "显示工具提示",
+                    "target": "顯示工具提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "在 WebView（测试版）上滚动",
+                    "target": "在 WebView（測試版）上滾動"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "调整按钮大小",
+                    "target": "調整按鈕大小"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "顶部按钮的工具提示配置",
+                    "target": "頂部按鈕的工具提示設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "底部按钮的工具提示配置",
+                    "target": "底部按鈕的工具提示設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "光标按钮的工具提示配置",
+                    "target": "游標按鈕的工具提示設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "修改顶部按钮的图标",
+                    "target": "修改頂部按鈕的圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "修改底部按钮的图标",
+                    "target": "修改底部按鈕的圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "修改光标按钮的图标",
+                    "target": "修改游標按鈕的圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "重置至默认配置",
+                    "target": "重設為預設設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "滚动到顶部设置",
+                    "target": "滾動到頂部設定"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"显示滚动到顶部的按钮\")",
+                    "target": "setName(\"顯示滾動到頂部的按鈕\")"
+                },
+                {
+                    "source": "setDesc(\"在右下角显示滚动到顶部按钮。\")",
+                    "target": "setDesc(\"在右下角顯示滾動到頂部按鈕。\")"
+                },
+                {
+                    "source": "setName(\"显示滚动到底部的按钮\")",
+                    "target": "setName(\"顯示滾動到底部的按鈕\")"
+                },
+                {
+                    "source": "setDesc(\"在右下角显示滚动到底部按钮。\")",
+                    "target": "setDesc(\"在右下角顯示滾動到底部按鈕。\")"
+                },
+                {
+                    "source": "setName(\"显示滚动到当前光标的按钮\")",
+                    "target": "setName(\"顯示滾動到目前游標的按鈕\")"
+                },
+                {
+                    "source": "setDesc(\"在右下角显示滚动到光标按钮。\")",
+                    "target": "setDesc(\"在右下角顯示滾動到游標按鈕。\")"
+                },
+                {
+                    "source": "setName(\"显示工具提示\")",
+                    "target": "setName(\"顯示工具提示\")"
+                },
+                {
+                    "source": "setDesc(\"将鼠标悬停在按钮上时显示工具提示。\")",
+                    "target": "setDesc(\"將滑鼠懸停在按鈕上時顯示工具提示。\")"
+                },
+                {
+                    "source": "setName(\"在 WebView（测试版）上滚动\")",
+                    "target": "setName(\"在 WebView（測試版）上滾動\")"
+                },
+                {
+                    "source": "setDesc(\"在 WebView 上滚动（应该与 Surfing 插件一起使用）\")",
+                    "target": "setDesc(\"在 WebView 上滾動（應該與 Surfing 外掛一起使用）\")"
+                },
+                {
+                    "source": "setName(\"调整按钮大小\")",
+                    "target": "setName(\"調整按鈕大小\")"
+                },
+                {
+                    "source": "setDesc(\"更改按钮的大小。\")",
+                    "target": "setDesc(\"變更按鈕大小。\")"
+                },
+                {
+                    "source": "setTooltip(\"重置至默认配置\")",
+                    "target": "setTooltip(\"重設為預設設定\")"
+                },
+                {
+                    "source": "setName(\"顶部按钮的工具提示配置\")",
+                    "target": "setName(\"頂部按鈕的工具提示設定\")"
+                },
+                {
+                    "source": "setDesc(\"更改滚动到顶部按钮的工具提示文本。\")",
+                    "target": "setDesc(\"變更滾動到頂部按鈕的工具提示文字。\")"
+                },
+                {
+                    "source": "setName(\"底部按钮的工具提示配置\")",
+                    "target": "setName(\"底部按鈕的工具提示設定\")"
+                },
+                {
+                    "source": "setDesc(\"更改滚动到底部按钮的工具提示文本。\")",
+                    "target": "setDesc(\"變更滾動到底部按鈕的工具提示文字。\")"
+                },
+                {
+                    "source": "setName(\"光标按钮的工具提示配置\")",
+                    "target": "setName(\"游標按鈕的工具提示設定\")"
+                },
+                {
+                    "source": "setDesc(\"更改滚动到光标按钮的工具提示文本。\")",
+                    "target": "setDesc(\"變更滾動到游標按鈕的工具提示文字。\")"
+                },
+                {
+                    "source": "setName(\"修改顶部按钮的图标\")",
+                    "target": "setName(\"修改頂部按鈕的圖示\")"
+                },
+                {
+                    "source": "setName(\"修改底部按钮的图标\")",
+                    "target": "setName(\"修改底部按鈕的圖示\")"
+                },
+                {
+                    "source": "setName(\"修改光标按钮的图标\")",
+                    "target": "setName(\"修改游標按鈕的圖示\")"
+                },
+                {
+                    "source": "text: \"滚动到顶部设置\"",
+                    "target": "text: \"滾動到頂部設定\""
+                }
+            ]
+        }
+    }
+}
