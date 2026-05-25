@@ -1,0 +1,594 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "theme": "Composer",
+        "language": "zh-tw",
+        "version": "0.6.0",
+        "supportedVersions": "0.6.0",
+        "title": "Composer",
+        "description": "Composer Localization & Tweaks",
+        "author": "Chico"
+    },
+    "dict": [
+        {
+            "type": "name",
+            "source": "Composer Theme",
+            "target": "Composer 主題"
+        },
+        {
+            "type": "title",
+            "source": "About Components",
+            "target": "關於元件"
+        },
+        {
+            "type": "description",
+            "source": "[https://cp.cc1234.cc/](https://cp.cc1234.cc/)",
+            "target": "[https://cp.cc1234.cc/](https://cp.cc1234.cc/)"
+        },
+        {
+            "type": "markdown",
+            "source": "true",
+            "target": "true"
+        },
+        {
+            "type": "title",
+            "source": "Color Scheme",
+            "target": "配色方案"
+        },
+        {
+            "type": "description",
+            "source": "Choose a color scheme for the theme",
+            "target": "選擇此主題的配色方案"
+        },
+        {
+            "type": "title",
+            "source": "Typograph Settings",
+            "target": "排版設定"
+        },
+        {
+            "type": "title",
+            "source": "Content Area width",
+            "target": "內容區域寬度"
+        },
+        {
+            "type": "description",
+            "source": "The maximum line width",
+            "target": "最大行寬"
+        },
+        {
+            "type": "title",
+            "source": "Callout",
+            "target": "Callout"
+        },
+        {
+            "type": "title",
+            "source": "Callout Style",
+            "target": "Callout 樣式"
+        },
+        {
+            "type": "description",
+            "source": "Choose prefered Callout style",
+            "target": "選擇偏好的 Callout 樣式"
+        },
+        {
+            "type": "title",
+            "source": "Table",
+            "target": "表格"
+        },
+        {
+            "type": "title",
+            "source": "Table Style",
+            "target": "表格樣式"
+        },
+        {
+            "type": "description",
+            "source": "Choose prefered table style",
+            "target": "選擇偏好的表格樣式"
+        },
+        {
+            "type": "title",
+            "source": "Hide Striped Background",
+            "target": "隱藏條紋背景"
+        },
+        {
+            "type": "title",
+            "source": "Paragraph",
+            "target": "段落"
+        },
+        {
+            "type": "title",
+            "source": "Paragraph Indent",
+            "target": "段落縮排"
+        },
+        {
+            "type": "description",
+            "source": "indent the first line of a paragraph",
+            "target": "縮排段落首行"
+        },
+        {
+            "type": "title",
+            "source": "Paragraph Line Height",
+            "target": "段落行高"
+        },
+        {
+            "type": "description",
+            "source": "Set the line height of the paragraph",
+            "target": "設定段落行高"
+        },
+        {
+            "type": "title",
+            "source": "Paragraph Letter Spacing",
+            "target": "段落字距"
+        },
+        {
+            "type": "description",
+            "source": "Set the letter spacing of the paragraph, you should specify the unit em or px",
+            "target": "設定段落字距，請指定 em 或 px 作為單位"
+        },
+        {
+            "type": "title",
+            "source": "Paragraph Word Spacing",
+            "target": "段落詞距"
+        },
+        {
+            "type": "description",
+            "source": "Set the word spacing of the paragraph, you should specify the unit em or px",
+            "target": "設定段落詞距，請指定 em 或 px 作為單位"
+        },
+        {
+            "type": "title",
+            "source": "Bold",
+            "target": "粗體"
+        },
+        {
+            "type": "title",
+            "source": "Bold Color",
+            "target": "粗體顏色"
+        },
+        {
+            "type": "title",
+            "source": "Bold Weight",
+            "target": "粗體字重"
+        },
+        {
+            "type": "title",
+            "source": "Italic",
+            "target": "斜體"
+        },
+        {
+            "type": "title",
+            "source": "Italic Color",
+            "target": "斜體顏色"
+        },
+        {
+            "type": "title",
+            "source": "Task Settings",
+            "target": "任務設定"
+        },
+        {
+            "type": "title",
+            "source": "Remove Task Completed Decoration",
+            "target": "移除已完成任務裝飾"
+        },
+        {
+            "type": "description",
+            "source": "Remove the strikethrough for completed tasks",
+            "target": "移除已完成任務的刪除線"
+        },
+        {
+            "type": "title",
+            "source": "Inline Code Style",
+            "target": "行內程式碼樣式"
+        },
+        {
+            "type": "title",
+            "source": "Inline Code Text Color",
+            "target": "行內程式碼文字顏色"
+        },
+        {
+            "type": "title",
+            "source": "Inline Code Background Color",
+            "target": "行內程式碼背景顏色"
+        },
+        {
+            "type": "title",
+            "source": "Heading Decoration",
+            "target": "標題裝飾"
+        },
+        {
+            "type": "title",
+            "source": "Disable Heading Line Editing Highlight",
+            "target": "停用標題行編輯醒目提示"
+        },
+        {
+            "type": "description",
+            "source": "Disable line highlight when editing heading",
+            "target": "編輯標題時停用行醒目提示"
+        },
+        {
+            "type": "title",
+            "source": "Disable Heading Decoration (Reading View)",
+            "target": "停用標題裝飾（閱讀檢視）"
+        },
+        {
+            "type": "description",
+            "source": "Disable decoration before heading (reading view)",
+            "target": "停用標題前方裝飾（閱讀檢視）"
+        },
+        {
+            "type": "title",
+            "source": "Disable Heading Decoration (Live Preview View)",
+            "target": "停用標題裝飾（即時預覽檢視）"
+        },
+        {
+            "type": "description",
+            "source": "Disable decoration before heading (live preview view)",
+            "target": "停用標題前方裝飾（即時預覽檢視）"
+        },
+        {
+            "type": "title",
+            "source": "Heading Font Size (H1-H6)",
+            "target": "標題字體大小（H1-H6）"
+        },
+        {
+            "type": "title",
+            "source": "H1 Size",
+            "target": "H1 大小"
+        },
+        {
+            "type": "description",
+            "source": "you should specify the unit em or px",
+            "target": "請指定 em 或 px 作為單位"
+        },
+        {
+            "type": "title",
+            "source": "H2 Size",
+            "target": "H2 大小"
+        },
+        {
+            "type": "title",
+            "source": "H3 Size",
+            "target": "H3 大小"
+        },
+        {
+            "type": "title",
+            "source": "H4 Size",
+            "target": "H4 大小"
+        },
+        {
+            "type": "title",
+            "source": "H5 Size",
+            "target": "H5 大小"
+        },
+        {
+            "type": "title",
+            "source": "H6 Size",
+            "target": "H6 大小"
+        },
+        {
+            "type": "title",
+            "source": "Heading Font Color (H1-H6)",
+            "target": "標題字體顏色（H1-H6）"
+        },
+        {
+            "type": "title",
+            "source": "H1",
+            "target": "H1"
+        },
+        {
+            "type": "title",
+            "source": "H2",
+            "target": "H2"
+        },
+        {
+            "type": "title",
+            "source": "H3",
+            "target": "H3"
+        },
+        {
+            "type": "title",
+            "source": "H4",
+            "target": "H4"
+        },
+        {
+            "type": "title",
+            "source": "H5",
+            "target": "H5"
+        },
+        {
+            "type": "title",
+            "source": "H6",
+            "target": "H6"
+        },
+        {
+            "type": "title",
+            "source": "Layout Settings",
+            "target": "版面設定"
+        },
+        {
+            "type": "title",
+            "source": "Disable Nav Header Auto Hide",
+            "target": "停用導覽標題自動隱藏"
+        },
+        {
+            "type": "description",
+            "source": "Enable this option to disable the auto-hide of the nav header",
+            "target": "啟用此選項以停用導覽標題自動隱藏"
+        },
+        {
+            "type": "title",
+            "source": "Disable File Folder Icon",
+            "target": "停用檔案資料夾圖示"
+        },
+        {
+            "type": "title",
+            "source": "Enable Indentation Guide Line",
+            "target": "啟用縮排輔助線"
+        },
+        {
+            "type": "description",
+            "source": "show indentation guide line for file tree, ordered list, unordered list, and task list",
+            "target": "為檔案樹、有序清單、無序清單與任務清單顯示縮排輔助線"
+        },
+        {
+            "type": "title",
+            "source": "Modal Backdrop Blur Intensity",
+            "target": "彈窗背景模糊強度"
+        },
+        {
+            "type": "title",
+            "source": "Toggle Desktop View Header Title Parent",
+            "target": "切換桌面檢視標題父層"
+        },
+        {
+            "type": "title",
+            "source": "Nav File Settings",
+            "target": "導覽檔案設定"
+        },
+        {
+            "type": "title",
+            "source": "Enable Filename Line Feed",
+            "target": "啟用檔名換行"
+        },
+        {
+            "type": "description",
+            "source": "enable line feed for filename",
+            "target": "啟用檔名換行"
+        },
+        {
+            "type": "title",
+            "source": "Enable Hidden File Tag",
+            "target": "啟用隱藏檔案標籤"
+        },
+        {
+            "type": "description",
+            "source": "enable hidden file tag",
+            "target": "啟用隱藏檔案標籤"
+        },
+        {
+            "type": "title",
+            "source": "Enable Hidden File Tag Hover",
+            "target": "啟用隱藏檔案標籤懸停效果"
+        },
+        {
+            "type": "description",
+            "source": "enable hidden file tag hover",
+            "target": "啟用隱藏檔案標籤懸停效果"
+        },
+        {
+            "type": "title",
+            "source": "Outline Settings",
+            "target": "大綱設定"
+        },
+        {
+            "type": "title",
+            "source": "Outline Style",
+            "target": "大綱樣式"
+        },
+        {
+            "type": "description",
+            "source": "Choose prefered outline style",
+            "target": "選擇偏好的大綱樣式"
+        },
+        {
+            "type": "title",
+            "source": "Outline Collapsed Icon Opacity",
+            "target": "大綱收合圖示透明度"
+        },
+        {
+            "type": "description",
+            "source": "Set the opacity of the collapsed icon",
+            "target": "設定收合圖示透明度"
+        },
+        {
+            "type": "title",
+            "source": "Color Settings",
+            "target": "顏色設定"
+        },
+        {
+            "type": "title",
+            "source": "Color Hue Settings(Only for Ní)",
+            "target": "色相設定（僅適用於 Ní）"
+        },
+        {
+            "type": "title",
+            "source": "Light Primary Hue (Only for Ní Scheme)",
+            "target": "亮色主要色相（僅適用於 Ní 方案）"
+        },
+        {
+            "type": "title",
+            "source": "Light Secondary Hue (Only for Ní Scheme)",
+            "target": "亮色次要色相（僅適用於 Ní 方案）"
+        },
+        {
+            "type": "title",
+            "source": "Dark Primary Hue (Only for Ní Scheme)",
+            "target": "暗色主要色相（僅適用於 Ní 方案）"
+        },
+        {
+            "type": "title",
+            "source": "Dark Secondary Hue (Only for Ní Scheme)",
+            "target": "暗色次要色相（僅適用於 Ní 方案）"
+        },
+        {
+            "type": "title",
+            "source": "Background Colors",
+            "target": "背景顏色"
+        },
+        {
+            "type": "title",
+            "source": "Background Primary",
+            "target": "主要背景"
+        },
+        {
+            "type": "title",
+            "source": "Background Primary Alt",
+            "target": "主要背景替代色"
+        },
+        {
+            "type": "title",
+            "source": "Background Secondary",
+            "target": "次要背景"
+        },
+        {
+            "type": "title",
+            "source": "Background Secondary Alt",
+            "target": "次要背景替代色"
+        },
+        {
+            "type": "title",
+            "source": "Rainbow Tree Settings",
+            "target": "彩虹樹設定"
+        },
+        {
+            "type": "title",
+            "source": "Disable Rainbow Tree",
+            "target": "停用彩虹樹"
+        },
+        {
+            "type": "description",
+            "source": "disable rainbow tree for file explorer",
+            "target": "停用檔案總管的彩虹樹效果"
+        },
+        {
+            "type": "title",
+            "source": "Folder Background Opacity",
+            "target": "資料夾背景透明度"
+        },
+        {
+            "type": "description",
+            "source": "Set the background opacity of the folder",
+            "target": "設定資料夾背景透明度"
+        },
+        {
+            "type": "title",
+            "source": "Folder Text Opacity",
+            "target": "資料夾文字透明度"
+        },
+        {
+            "type": "description",
+            "source": "Set the text opacity of the folder",
+            "target": "設定資料夾文字透明度"
+        },
+        {
+            "type": "title",
+            "source": "Folder Hover Opacity",
+            "target": "資料夾懸停透明度"
+        },
+        {
+            "type": "description",
+            "source": "Set the hover opacity of the folder",
+            "target": "設定資料夾懸停透明度"
+        },
+        {
+            "type": "title",
+            "source": "Folder Sub Background Opacity",
+            "target": "子資料夾背景透明度"
+        },
+        {
+            "type": "description",
+            "source": "Set the background opacity of the sub-folder",
+            "target": "設定子資料夾背景透明度"
+        },
+        {
+            "type": "title",
+            "source": "Folder Sub Text Opacity",
+            "target": "子資料夾文字透明度"
+        },
+        {
+            "type": "description",
+            "source": "Set the text opacity of the sub-folder",
+            "target": "設定子資料夾文字透明度"
+        },
+        {
+            "type": "title",
+            "source": "Components Plugin",
+            "target": "Components 插件"
+        },
+        {
+            "type": "title",
+            "source": "Dynamic Dataview",
+            "target": "動態 Dataview"
+        },
+        {
+            "type": "title",
+            "source": "Simple Tag Style",
+            "target": "簡潔標籤樣式"
+        },
+        {
+            "type": "description",
+            "source": "switch to simple tag style to select / multi-select / group-name...",
+            "target": "切換為簡潔標籤樣式，以選取 / 多選 / 群組名稱..."
+        },
+        {
+            "type": "title",
+            "source": "Notion Style Gallary Cover",
+            "target": "Notion 風格圖庫封面"
+        },
+        {
+            "type": "description",
+            "source": "remove Gallary dynamic data view's cover padding",
+            "target": "移除圖庫動態 Dataview 的封面內距"
+        },
+        {
+            "type": "title",
+            "source": "Count Component",
+            "target": "計數元件"
+        },
+        {
+            "type": "title",
+            "source": "Value Font Size",
+            "target": "數值字體大小"
+        },
+        {
+            "type": "title",
+            "source": "Quote Component",
+            "target": "引用元件"
+        },
+        {
+            "type": "title",
+            "source": "Title Font Size",
+            "target": "標題字體大小"
+        },
+        {
+            "type": "description",
+            "source": "rem",
+            "target": "rem"
+        },
+        {
+            "type": "title",
+            "source": "Content Font Size",
+            "target": "內容字體大小"
+        },
+        {
+            "type": "title",
+            "source": "Card Component",
+            "target": "卡片元件"
+        },
+        {
+            "type": "title",
+            "source": "Title Icon Size",
+            "target": "標題圖示大小"
+        }
+    ]
+}
