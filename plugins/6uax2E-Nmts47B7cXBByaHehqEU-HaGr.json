@@ -1,0 +1,119 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-columns",
+        "version": "1.6.1",
+        "title": "[zh-tw] Columns",
+        "description": "Columns Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.6.1",
+        "author": "Chico",
+        "updatedAt": 1778618050627
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Submit",
+                    "target": "送出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "列在换行前将保持此最小宽度。设置为 0 可禁用列换行功能。对小屏设备非常实用",
+                    "target": "欄在換行前會保持此最小寬度。設為 0 可停用欄換行功能。對小螢幕裝置很實用。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "列的默认宽度。如果指定了最小宽度，列的宽度将根据此设置进行乘算。",
+                    "target": "欄的預設寬度。如果指定了最小寬度，欄寬會依此設定倍增。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Number of Columns to be made",
+                    "target": "要建立的欄數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "列的最小宽度",
+                    "target": "欄的最小寬度"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "项目的默认跨列数",
+                    "target": "項目的預設跨欄數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert column wrapper",
+                    "target": "插入欄容器"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert quick column wrapper",
+                    "target": "插入快速欄容器"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert column",
+                    "target": "插入欄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Number of Columns",
+                    "target": "欄數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Create a Column Wrapper",
+                    "target": "建立欄容器"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "text:\"Settings for \"",
+                    "target": "text:\"設定：\""
+                },
+                {
+                    "source": "name:\"列的最小宽度\"",
+                    "target": "name:\"欄的最小寬度\""
+                },
+                {
+                    "source": "name:\"项目的默认跨列数\"",
+                    "target": "name:\"項目的預設跨欄數\""
+                },
+                {
+                    "source": "name:\"Insert column wrapper\"",
+                    "target": "name:\"插入欄容器\""
+                },
+                {
+                    "source": "name:\"Insert quick column wrapper\"",
+                    "target": "name:\"插入快速欄容器\""
+                },
+                {
+                    "source": "name:\"Insert column\"",
+                    "target": "name:\"插入欄\""
+                },
+                {
+                    "source": "name:\"Number of Columns\"",
+                    "target": "name:\"欄數\""
+                },
+                {
+                    "source": "text:\"Create a Column Wrapper\"",
+                    "target": "text:\"建立欄容器\""
+                }
+            ]
+        }
+    }
+}
