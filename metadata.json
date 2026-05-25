@@ -440,5 +440,18 @@
         "created_at": "2026-05-25T03:49:49.320Z",
         "updated_at": "2026-05-25T03:49:49.320Z",
         "type": "plugin"
+    },
+    {
+        "id": "bXEJLeiCFAKIckwNuuIcNl8Dx5-Ied9R",
+        "plugin": "paper-clipper",
+        "language": "zh-tw",
+        "version": "0.3.0",
+        "supported_versions": "0.3.0",
+        "title": "[zh-tw] Paper Clipper",
+        "description": "Paper Clipper 繁體中文化與微調",
+        "hash": "27030d4d27030d4d27030d4d27030d4d",
+        "created_at": "2026-05-25T03:49:58.245Z",
+        "updated_at": "2026-05-25T03:49:58.245Z",
+        "type": "plugin"
     }
 ]
