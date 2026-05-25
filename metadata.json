@@ -401,5 +401,18 @@
         "created_at": "2026-05-25T03:48:33.588Z",
         "updated_at": "2026-05-25T03:48:33.588Z",
         "type": "plugin"
+    },
+    {
+        "id": "NyF-7jaKASC6SW5236_LX1dM3Rfw7RNv",
+        "plugin": "obsidian-zotero-desktop-connector",
+        "language": "zh-tw",
+        "version": "3.2.1",
+        "supported_versions": "3.2.1",
+        "title": "[zh-tw] Zotero Integration",
+        "description": "Zotero Integration 繁體中文化與微調",
+        "hash": "5a3c300e5a3c300e5a3c300e5a3c300e",
+        "created_at": "2026-05-25T03:48:42.990Z",
+        "updated_at": "2026-05-25T03:48:42.990Z",
+        "type": "plugin"
     }
 ]
