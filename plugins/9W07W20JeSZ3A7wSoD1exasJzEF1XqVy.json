@@ -1,0 +1,113 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "editor-width-slider",
+        "version": "1.0.5",
+        "title": "[zh-tw] Editor Width Slider",
+        "description": "Editor Width Slider Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.0.5",
+        "author": "Chico",
+        "updatedAt": 1778618267330
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error:",
+                    "target": "錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Slider value:",
+                    "target": "滑桿值："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "How wide do you want your slider to be?",
+                    "target": "你希望滑桿有多寬？"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "What do you want the default percentage of the slider to be?",
+                    "target": "你希望滑桿的預設百分比是多少？"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The field should be named \"editor-width\" in the YAML frontmatter of the note in order to customize the editor width of that repective note. It won't work globally for all notes unless you specify it in each note's frontmatter.",
+                    "target": "若要自訂該筆記的編輯器寬度，請在筆記的 YAML frontmatter 中使用名為 \"editor-width\" 的欄位。除非在每篇筆記的 frontmatter 中指定，否則不會全域套用到所有筆記。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Slider Width",
+                    "target": "滑桿寬度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Slider Default Percentage",
+                    "target": "滑桿預設百分比"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Note:",
+                    "target": "注意："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Slider width in px",
+                    "target": "滑桿寬度（px）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Editor width must be a number from 0 to 100!",
+                    "target": "編輯器寬度必須是 0 到 100 的數字！"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"Slider Width\")",
+                    "target": "setName(\"滑桿寬度\")"
+                },
+                {
+                    "source": "setDesc(\"How wide do you want your slider to be?\")",
+                    "target": "setDesc(\"你希望滑桿有多寬？\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Slider width in px\")",
+                    "target": "setPlaceholder(\"滑桿寬度（px）\")"
+                },
+                {
+                    "source": "setName(\"Slider Default Percentage\")",
+                    "target": "setName(\"滑桿預設百分比\")"
+                },
+                {
+                    "source": "setDesc(\"What do you want the default percentage of the slider to be?\")",
+                    "target": "setDesc(\"你希望滑桿的預設百分比是多少？\")"
+                },
+                {
+                    "source": "setDesc(`The field should be named \"editor-width\" in the YAML frontmatter of the note in order to customize the editor width of that repective note. It won't work globally for all notes unless you specify it in each note's frontmatter.`)",
+                    "target": "setDesc(`若要自訂該筆記的編輯器寬度，請在筆記的 YAML frontmatter 中使用名為 \"editor-width\" 的欄位。除非在每篇筆記的 frontmatter 中指定，否則不會全域套用到所有筆記。`)"
+                },
+                {
+                    "source": "setText(\"Editor width must be a number from 0 to 100!\")",
+                    "target": "setText(\"編輯器寬度必須是 0 到 100 的數字！\")"
+                },
+                {
+                    "source": "innerText = `\n\t\t\tbody {\n\t\t\t  \t--file-line-width: calc(700px + 10 * ${this.settings.sliderPercentage}px) !important;\n\t\t\t}\n\t\t`",
+                    "target": "innerText = `\n\t\t\tbody {\n\t\t\t  \t--file-line-width: calc(700px + 10 * ${this.settings.sliderPercentage}px) !important;\n\t\t\t}\n\t\t`"
+                }
+            ]
+        }
+    }
+}
