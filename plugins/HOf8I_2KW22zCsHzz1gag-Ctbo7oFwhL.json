@@ -1,0 +1,1232 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "grid-note",
+        "version": "2.0.12",
+        "title": "[zh-tw] Grid Note",
+        "description": "Grid Note 繁體中文翻譯與微調",
+        "language": "zh-tw",
+        "supportedVersions": "2.0.12",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "ariaLabel",
+                    "source": "放大预览图片",
+                    "target": "放大預覽圖片"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<div class=\"cardflow-preview-wrapper svelte-1ig193d\"><table class=\"cardflow-preview-table svelte-1ig193d\"><tbody><tr><td colspan=\"3\" class=\"cardflow-preview-top-cell svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td> <td colspan=\"3\" class=\"cardflow-preview-top-cell svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td></tr> <tr><td rowspan=\"2\" colspan=\"2\" class=\"cardflow-preview-merge-col svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td> <td colspan=\"2\" class=\"svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td> <td colspan=\"2\" class=\"svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td></tr> <tr><td colspan=\"4\" class=\"svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td></tr></tbody></table></div>",
+                    "target": "<div class=\"cardflow-preview-wrapper svelte-1ig193d\"><table class=\"cardflow-preview-table svelte-1ig193d\"><tbody><tr><td colspan=\"3\" class=\"cardflow-preview-top-cell svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td> <td colspan=\"3\" class=\"cardflow-preview-top-cell svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td></tr> <tr><td rowspan=\"2\" colspan=\"2\" class=\"cardflow-preview-merge-col svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td> <td colspan=\"2\" class=\"svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td> <td colspan=\"2\" class=\"svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td></tr> <tr><td colspan=\"4\" class=\"svelte-1ig193d\"><div class=\"cardflow-preview-card svelte-1ig193d\"><div class=\"cardflow-preview-card-header svelte-1ig193d\"></div> <div class=\"cardflow-preview-card-content svelte-1ig193d\"></div></div></td></tr></tbody></table></div>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<div class=\"cascade-preview-node cascade-preview-node-root svelte-n77b18\"><div class=\"cascade-preview-heading-row\"><div class=\"cascade-preview-heading cascade-preview-heading-root svelte-n77b18\"></div></div> <div class=\"cascade-preview-body-row cascade-preview-body-row-split cascade-preview-body-row-split-root svelte-n77b18\"><div class=\"cascade-preview-card cascade-preview-card-root svelte-n77b18\"></div> <div class=\"cascade-preview-children-stack svelte-n77b18\"><div class=\"cascade-preview-node svelte-n77b18\"><div class=\"cascade-preview-heading-row\"><div class=\"cascade-preview-heading cascade-preview-heading-branch svelte-n77b18\"></div></div> <div class=\"cascade-preview-body-row cascade-preview-body-row-split cascade-preview-body-row-split-branch svelte-n77b18\"><div class=\"cascade-preview-card cascade-preview-card-branch svelte-n77b18\"></div> <div class=\"cascade-preview-children-stack cascade-preview-children-stack-leaf svelte-n77b18\"><div class=\"cascade-preview-node svelte-n77b18\"><div class=\"cascade-preview-heading-row\"><div class=\"cascade-preview-heading cascade-preview-heading-leaf svelte-n77b18\"></div></div> <div class=\"cascade-preview-body-row svelte-n77b18\"><div class=\"cascade-preview-card cascade-preview-card-leaf svelte-n77b18\"></div></div></div></div></div></div> <div class=\"cascade-preview-node cascade-preview-node-secondary svelte-n77b18\"><div class=\"cascade-preview-heading-row\"><div class=\"cascade-preview-heading cascade-preview-heading-secondary svelte-n77b18\"></div></div> <div class=\"cascade-preview-body-row svelte-n77b18\"><div class=\"cascade-preview-card cascade-preview-card-secondary svelte-n77b18\"></div></div></div></div></div></div>",
+                    "target": "<div class=\"cascade-preview-node cascade-preview-node-root svelte-n77b18\"><div class=\"cascade-preview-heading-row\"><div class=\"cascade-preview-heading cascade-preview-heading-root svelte-n77b18\"></div></div> <div class=\"cascade-preview-body-row cascade-preview-body-row-split cascade-preview-body-row-split-root svelte-n77b18\"><div class=\"cascade-preview-card cascade-preview-card-root svelte-n77b18\"></div> <div class=\"cascade-preview-children-stack svelte-n77b18\"><div class=\"cascade-preview-node svelte-n77b18\"><div class=\"cascade-preview-heading-row\"><div class=\"cascade-preview-heading cascade-preview-heading-branch svelte-n77b18\"></div></div> <div class=\"cascade-preview-body-row cascade-preview-body-row-split cascade-preview-body-row-split-branch svelte-n77b18\"><div class=\"cascade-preview-card cascade-preview-card-branch svelte-n77b18\"></div> <div class=\"cascade-preview-children-stack cascade-preview-children-stack-leaf svelte-n77b18\"><div class=\"cascade-preview-node svelte-n77b18\"><div class=\"cascade-preview-heading-row\"><div class=\"cascade-preview-heading cascade-preview-heading-leaf svelte-n77b18\"></div></div> <div class=\"cascade-preview-body-row svelte-n77b18\"><div class=\"cascade-preview-card cascade-preview-card-leaf svelte-n77b18\"></div></div></div></div></div></div> <div class=\"cascade-preview-node cascade-preview-node-secondary svelte-n77b18\"><div class=\"cascade-preview-heading-row\"><div class=\"cascade-preview-heading cascade-preview-heading-secondary svelte-n77b18\"></div></div> <div class=\"cascade-preview-body-row svelte-n77b18\"><div class=\"cascade-preview-card cascade-preview-card-secondary svelte-n77b18\"></div></div></div></div></div></div>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">F 选中首个可见卡片</span> <kbd class=\"svelte-1myy7ff\">F</kbd>",
+                    "target": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">F 選取第一張可見卡片</span> <kbd class=\"svelte-1myy7ff\">F</kbd>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">修改标题</span> <kbd class=\"svelte-1myy7ff\">T(选中状态)</kbd>",
+                    "target": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">修改標題</span> <kbd class=\"svelte-1myy7ff\">T(選取狀態)</kbd>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">卡片编辑</span> <kbd class=\"svelte-1myy7ff\">Enter / Space</kbd>",
+                    "target": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">卡片編輯</span> <kbd class=\"svelte-1myy7ff\">Enter / Space</kbd>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">卡片导航</span> <kbd class=\"svelte-1myy7ff\">↑ / ↓ / ← / →</kbd>",
+                    "target": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">卡片導覽</span> <kbd class=\"svelte-1myy7ff\">↑ / ↓ / ← / →</kbd>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">删除节点</span> <kbd class=\"svelte-1myy7ff\">Backspace / Delete</kbd>",
+                    "target": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">刪除節點</span> <kbd class=\"svelte-1myy7ff\">Backspace / Delete</kbd>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">清除选中</span> <kbd class=\"svelte-1myy7ff\">Esc</kbd>",
+                    "target": "<span class=\"gridnote-shortcuts-title svelte-1myy7ff\">清除選取</span> <kbd class=\"svelte-1myy7ff\">Esc</kbd>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "当前",
+                    "target": "目前"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "笔记属性",
+                    "target": "筆記屬性"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "暂无前置内容",
+                    "target": "暫無前置內容"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "仅包含笔记属性",
+                    "target": "僅包含筆記屬性"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "搜索",
+                    "target": "搜尋"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "创建节点",
+                    "target": "建立節點"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "文件切换",
+                    "target": "檔案切換"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "撤销 / 重做",
+                    "target": "復原 / 重做"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "No tree data",
+                    "target": "無樹狀資料"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "打开 Markdown 文件后，这里会展示主题化的树结构。",
+                    "target": "開啟 Markdown 檔案後，這裡會顯示主題化的樹狀結構。"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "创建根节点",
+                    "target": "建立根節點"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "AaBbGg1234ÁÉÍÓÚçñ—∞",
+                    "target": "AaBbGg1234ÁÉÍÓÚçñ—∞"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "放大预览图片",
+                    "target": "放大預覽圖片"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[Settings] 激活错误:",
+                    "target": "[Settings] 啟用錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Manual verify error:",
+                    "target": "手動驗證錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 标题保存失败",
+                    "target": "GridNote: 標題儲存失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 处理内部链接跳转失败",
+                    "target": "GridNote: 處理內部連結跳轉失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 底部工具栏操作失败",
+                    "target": "GridNote: 底部工具列操作失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 卡片编辑提交失败",
+                    "target": "GridNote: 卡片編輯送出失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 创建共享卡片编辑器失败",
+                    "target": "GridNote: 建立共享卡片編輯器失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 共享卡片编辑器恢复失败，编辑器 DOM 仍不可用",
+                    "target": "GridNote: 共享卡片編輯器恢復失敗，編輯器 DOM 仍不可用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 保存卡片编辑内容失败",
+                    "target": "GridNote: 儲存卡片編輯內容失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 读取折叠状态失败",
+                    "target": "GridNote: 讀取摺疊狀態失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 写入折叠状态失败",
+                    "target": "GridNote: 寫入摺疊狀態失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 节点范围弹框保存失败",
+                    "target": "GridNote: 節點範圍彈窗儲存失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 历史操作失败",
+                    "target": "GridNote: 歷史操作失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 插入节点失败",
+                    "target": "GridNote: 插入節點失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 打开卡片弹框编辑失败",
+                    "target": "GridNote: 開啟卡片彈窗編輯失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 搜索操作失败",
+                    "target": "GridNote: 搜尋操作失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 文件切换操作失败",
+                    "target": "GridNote: 檔案切換操作失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 删除节点失败",
+                    "target": "GridNote: 刪除節點失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 切换编辑卡片前保存失败",
+                    "target": "GridNote: 切換編輯卡片前儲存失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[Snapdom] Failed to clone node:",
+                    "target": "[Snapdom] Failed to clone node:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 生成分享图片失败",
+                    "target": "GridNote: 產生分享圖片失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 同步原生编辑器折叠状态失败",
+                    "target": "GridNote: 同步原生編輯器摺疊狀態失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 搜索结果跳转失败",
+                    "target": "GridNote: 搜尋結果跳轉失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 文件快速切换打开失败",
+                    "target": "GridNote: 檔案快速切換開啟失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "GridNote: 创建 Markdown 文件失败",
+                    "target": "GridNote: 建立 Markdown 檔案失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[GridNote VIP] Settings not initialized!",
+                    "target": "[GridNote VIP] 設定尚未初始化！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[GridNote VIP] Initialization failed:",
+                    "target": "[GridNote VIP] 初始化失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[VIPManager] ❌ 激活失败:",
+                    "target": "[VIPManager] ❌ 啟用失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[GridNote VIP] vault localStorage 验证异常:",
+                    "target": "[GridNote VIP] vault localStorage 驗證例外:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[GridNote VIP] Failed to reset settings:",
+                    "target": "[GridNote VIP] 重設設定失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Manual verification failed:",
+                    "target": "手動驗證失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[GridNote VIP] 桌面端 VIP 验证失败:",
+                    "target": "[GridNote VIP] 桌面版 VIP 驗證失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[VIPManager] Failed to get activation info:",
+                    "target": "[VIPManager] 取得啟用資訊失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Periodic verification check failed:",
+                    "target": "定期驗證檢查失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[GridNote] Failed to resolve VIP status:",
+                    "target": "[GridNote] 解析 VIP 狀態失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[GridNote] Failed to persist non-VIP state:",
+                    "target": "[GridNote] 儲存非 VIP 狀態失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[GridNote] Failed to set gridnote frontmatter:",
+                    "target": "[GridNote] 設定 gridnote frontmatter 失敗:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Iteración número:",
+                    "target": "Iteración número:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "replaceRange",
+                    "source": "# \\u6839\\u8282\\u70B9\n\n",
+                    "target": "# 根節點\n\n"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "去购买",
+                    "target": "前往購買"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "立即验证",
+                    "target": "立即驗證"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "验证中...",
+                    "target": "驗證中..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "重置",
+                    "target": "重設"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "取消",
+                    "target": "取消"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "保存",
+                    "target": "儲存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "A−",
+                    "target": "A−"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "显示重置",
+                    "target": "重設顯示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "复制图片",
+                    "target": "複製圖片"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "保存到 Vault",
+                    "target": "儲存到 Vault"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "关闭",
+                    "target": "關閉"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "GridNote 将 Markdown 文档转换为聚焦式树状结构视图，结合康奈尔笔记法和卡片盒笔记系统，提升知识组织和阅读理解效率。",
+                    "target": "GridNote 會將 Markdown 檔案轉換為聚焦式樹狀結構檢視，結合康乃爾筆記法與卡片盒筆記系統，提升知識組織與閱讀理解效率。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "ID 用于激活插件，一个订单号最多激活三台设备",
+                    "target": "ID 用於啟用外掛，一個訂單號最多可啟用三台裝置。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "购买后，可激活专业版",
+                    "target": "購買後可啟用專業版"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "立即联网验证当前激活状态",
+                    "target": "立即連線驗證目前啟用狀態"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "自定义深色/浅色模式下的卡片标题颜色",
+                    "target": "自訂深色／淺色模式下的卡片標題顏色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "功能介绍",
+                    "target": "功能介紹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "激活状态",
+                    "target": "啟用狀態"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "设备 ID",
+                    "target": "裝置 ID"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "购买专业版",
+                    "target": "購買專業版"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "激活专业版",
+                    "target": "啟用專業版"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "刷新验证状态",
+                    "target": "重新整理驗證狀態"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "截图保存文件夹",
+                    "target": "截圖儲存資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "默认主题",
+                    "target": "預設主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "标题字号缩放",
+                    "target": "標題字號縮放"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "标题颜色",
+                    "target": "標題顏色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "订单号",
+                    "target": "訂單號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "输入文件夹路径...",
+                    "target": "輸入資料夾路徑..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "搜索文件夹或包含目标文件的目录…",
+                    "target": "搜尋資料夾或包含目標檔案的目錄…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "预览分享图片",
+                    "target": "預覽分享圖片"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "减小字体",
+                    "target": "縮小字體"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "当前字体大小",
+                    "target": "目前字體大小"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "增大字体",
+                    "target": "放大字體"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "降低图片清晰度",
+                    "target": "降低圖片清晰度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "当前图片清晰度",
+                    "target": "目前圖片清晰度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "提高图片清晰度",
+                    "target": "提高圖片清晰度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "重置隐藏节点与显示设置",
+                    "target": "重設隱藏節點與顯示設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "EmbeddableMarkdownEditor: failed to read native value",
+                    "target": "EmbeddableMarkdownEditor: failed to read native value"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "EmbeddableMarkdownEditor: initialization failed",
+                    "target": "EmbeddableMarkdownEditor: initialization failed"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "EmbeddableMarkdownEditor: failed to write native value",
+                    "target": "EmbeddableMarkdownEditor: failed to write native value"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "EmbeddableMarkdownEditor: failed to focus native editor",
+                    "target": "EmbeddableMarkdownEditor: failed to focus native editor"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "EmbeddableMarkdownEditor: failed to read cursor",
+                    "target": "EmbeddableMarkdownEditor: failed to read cursor"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "EmbeddableMarkdownEditor: failed to set cursor",
+                    "target": "EmbeddableMarkdownEditor: failed to set cursor"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "EmbeddableMarkdownEditor: failed to unload widget editor",
+                    "target": "EmbeddableMarkdownEditor: failed to unload widget editor"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "EmbeddableMarkdownEditor: failed to apply value",
+                    "target": "EmbeddableMarkdownEditor: failed to apply value"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "EmbeddableMarkdownEditor: failed to apply cursor",
+                    "target": "EmbeddableMarkdownEditor: failed to apply cursor"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "GridNote: 共享卡片编辑器预热失败",
+                    "target": "GridNote: 共享卡片編輯器預熱失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "MarkdownParser: Document ends with unclosed code block",
+                    "target": "MarkdownParser: Document ends with unclosed code block"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Error in filter function:",
+                    "target": "Error in filter function:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[SnapDOM] iframe rasterization failed, fallback:",
+                    "target": "[SnapDOM] iframe rasterization failed, fallback:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[snapdom] Ignored invalid iconFont value:",
+                    "target": "[snapdom] Ignored invalid iconFont value:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[snapDOM] Failed to fetch font resource:",
+                    "target": "[snapDOM] Failed to fetch font resource:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[snapDOM] Failed to process stylesheet:",
+                    "target": "[snapDOM] Failed to process stylesheet:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[snapDOM] Failed to fetch dynamic font src:",
+                    "target": "[snapDOM] Failed to fetch dynamic font src:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[snapDOM] Failed to fetch localFonts src:",
+                    "target": "[snapDOM] Failed to fetch localFonts src:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "inlineExternal defs or symbol failed:",
+                    "target": "inlineExternal defs or symbol failed:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "deepClone failed:",
+                    "target": "deepClone failed:"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "请输入订单号",
+                    "target": "請輸入訂單號"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "已恢复默认截图文件夹",
+                    "target": "已恢復預設截圖資料夾"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "已恢复默认标题颜色",
+                    "target": "已恢復預設標題顏色"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "GridNote: 标题保存失败",
+                    "target": "GridNote: 標題儲存失敗"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "GridNote 卡片保存失败",
+                    "target": "GridNote 卡片儲存失敗"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "GridNote 卡片编辑器初始化失败",
+                    "target": "GridNote 卡片編輯器初始化失敗"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "正在生成图片...",
+                    "target": "正在產生圖片..."
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "图片已复制到剪贴板",
+                    "target": "圖片已複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "当前环境不支持图片剪贴板，已下载 PNG 文件",
+                    "target": "目前環境不支援圖片剪貼簿，已下載 PNG 檔案"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Grid note Markdown 模式仅支持源码视图",
+                    "target": "Grid note Markdown 模式僅支援原始碼檢視"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "仅支持 Markdown 文件",
+                    "target": "僅支援 Markdown 檔案"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "请先启用 GridNote Markdown 模式",
+                    "target": "請先啟用 GridNote Markdown 模式"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "当前文档还没有可搜索的内容",
+                    "target": "目前檔案還沒有可搜尋的內容"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "删除节点失败，请重试",
+                    "target": "刪除節點失敗，請重試"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "整个文档已复制到剪贴板",
+                    "target": "整份檔案已複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "当前节点已复制到剪贴板",
+                    "target": "目前節點已複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "节点位置已变化，请稍后重试",
+                    "target": "節點位置已變更，請稍後再試"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "节点及子节点已复制到剪贴板",
+                    "target": "節點及子節點已複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "当前节点富文本已复制到剪贴板",
+                    "target": "目前節點富文字已複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "节点及子节点富文本已复制到剪贴板",
+                    "target": "節點及子節點富文字已複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "当前节点还未渲染完成，暂时无法生成图片",
+                    "target": "目前節點尚未算繪完成，暫時無法產生圖片"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "跳转失败，请重试",
+                    "target": "跳轉失敗，請重試"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "打开文件失败，请重试",
+                    "target": "開啟檔案失敗，請重試"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "创建文件失败，请重试",
+                    "target": "建立檔案失敗，請重試"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "激活失败：服务器响应无效",
+                    "target": "啟用失敗：伺服器回應無效"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "✅ 专业版激活成功！",
+                    "target": "✅ 專業版啟用成功！"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "⚠️ VIP状态验证失败，可能订单已退款",
+                    "target": "⚠️ VIP 狀態驗證失敗，可能訂單已退款"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "请先输入激活码",
+                    "target": "請先輸入啟用碼"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "❌ 验证失败：服务器响应无效",
+                    "target": "❌ 驗證失敗：伺服器回應無效"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "✅ 验证成功，VIP状态正常",
+                    "target": "✅ 驗證成功，VIP 狀態正常"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "CardFlow 主题需要 VIP",
+                    "target": "CardFlow 主題需要 VIP"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "设置 gridnote 属性失败，请检查笔记 YAML 格式",
+                    "target": "設定 gridnote 屬性失敗，請檢查筆記 YAML 格式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "gridnote-text-search-card-badge is-line",
+                    "target": "gridnote-text-search-card-badge is-line"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "suggestion-title gridnote-folder-name",
+                    "target": "suggestion-title gridnote-folder-name"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "suggestion-title gridnote-file-name",
+                    "target": "suggestion-title gridnote-file-name"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "mod-cta gridnote-action-button",
+                    "target": "mod-cta gridnote-action-button"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "更轻量的级联树主题，保留主从关系并优化大文档滚动与编辑性能。",
+                    "target": "更輕量的級聯樹主題，保留主從關係並最佳化大型檔案捲動與編輯效能。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "以自然流式卡片布局呈现树结构，适合大纲到卡片流的沉浸式浏览。",
+                    "target": "以自然流式卡片版面呈現樹狀結構，適合從大綱到卡片流的沉浸式瀏覽。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "header",
+                    "source": "前置内容",
+                    "target": "前置內容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "header",
+                    "source": "新建标题",
+                    "target": "新增標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Cascade",
+                    "target": "Cascade"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "CardFlow",
+                    "target": "CardFlow"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "搜索标题、正文内容…",
+                    "target": "搜尋標題、正文內容…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "浅色",
+                    "target": "淺色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "深色",
+                    "target": "深色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "输入关键词开始搜索",
+                    "target": "輸入關鍵字開始搜尋"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "搜索会在标题和正文中查找匹配内容。",
+                    "target": "搜尋會在標題和正文中查找符合內容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "没有找到匹配内容",
+                    "target": "找不到符合內容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "试试更短的关键词，或者拆成多个词重新搜索。",
+                    "target": "試試更短的關鍵字，或拆成多個詞重新搜尋。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "当前",
+                    "target": "目前"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "新建 Markdown 文件",
+                    "target": "新增 Markdown 檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "复制整个文档",
+                    "target": "複製整份檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "复制此节点（纯文本）",
+                    "target": "複製此節點（純文字）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "复制节点及子节点（纯文本）",
+                    "target": "複製節點及子節點（純文字）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "复制此节点（富文本）",
+                    "target": "複製此節點（富文字）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "复制节点及子节点（富文本）",
+                    "target": "複製節點及子節點（富文字）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "分享为图片",
+                    "target": "分享為圖片"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "前置内容",
+                    "target": "前置內容"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "Notice(`${u.label} \\u4E3B\\u9898\\u9700\\u8981 VIP`)",
+                    "target": "Notice(`${u.label} 主題需要 VIP`)"
+                },
+                {
+                    "source": "setName(\"\\u8BBE\\u5907 ID\")",
+                    "target": "setName(\"裝置 ID\")"
+                },
+                {
+                    "source": "setDesc(\"ID \\u7528\\u4E8E\\u6FC0\\u6D3B\\u63D2\\u4EF6\\uFF0C\\u4E00\\u4E2A\\u8BA2\\u5355\\u53F7\\u6700\\u591A\\u6FC0\\u6D3B\\u4E09\\u53F0\\u8BBE\\u5907\")",
+                    "target": "setDesc(\"ID 用於啟用外掛，一個訂單號最多可啟用三台裝置。\")"
+                },
+                {
+                    "source": "error(\"[Settings] \\u6FC0\\u6D3B\\u9519\\u8BEF:\",y),h.setButtonText(\"\\u7ACB\\u5373\\u9A8C\\u8BC1\")",
+                    "target": "error(\"[Settings] 啟用錯誤:\",y),h.setButtonText(\"立即驗證\")"
+                },
+                {
+                    "source": "error(\"Manual verify error:\",g),h.setButtonText(\"\\u7ACB\\u5373\\u9A8C\\u8BC1\")",
+                    "target": "error(\"手動驗證錯誤：\",g),h.setButtonText(\"立即驗證\")"
+                },
+                {
+                    "source": "Notice(`\\u9ED8\\u8BA4\\u4E3B\\u9898\\u5DF2\\u5207\\u6362\\u4E3A ${(y=b==null?void 0:b.label)!=null?y:p}`)",
+                    "target": "Notice(`預設主題已切換為 ${(y=b==null?void 0:b.label)!=null?y:p}`)"
+                },
+                {
+                    "source": "error(\"GridNote: \\u6807\\u9898\\u4FDD\\u5B58\\u5931\\u8D25\",X),new Ja.Notice(\"GridNote: \\u6807\\u9898\\u4FDD\\u5B58\\u5931\\u8D25\")",
+                    "target": "error(\"GridNote: 標題儲存失敗\",X),new Ja.Notice(\"GridNote: 標題儲存失敗\")"
+                },
+                {
+                    "source": "error(\"GridNote: \\u5361\\u7247\\u7F16\\u8F91\\u63D0\\u4EA4\\u5931\\u8D25\",V),new Kn.Notice(\"GridNote \\u5361\\u7247\\u4FDD\\u5B58\\u5931\\u8D25\")",
+                    "target": "error(\"GridNote: 卡片編輯送出失敗\",V),new Kn.Notice(\"GridNote 卡片儲存失敗\")"
+                },
+                {
+                    "source": "error(\"GridNote: \\u521B\\u5EFA\\u5171\\u4EAB\\u5361\\u7247\\u7F16\\u8F91\\u5668\\u5931\\u8D25\",ot),new Kn.Notice(\"GridNote \\u5361\\u7247\\u7F16\\u8F91\\u5668\\u521D\\u59CB\\u5316\\u5931\\u8D25\")",
+                    "target": "error(\"GridNote: 建立共享卡片編輯器失敗\",ot),new Kn.Notice(\"GridNote 卡片編輯器初始化失敗\")"
+                },
+                {
+                    "source": "error(\"GridNote: \\u5171\\u4EAB\\u5361\\u7247\\u7F16\\u8F91\\u5668\\u6062\\u590D\\u5931\\u8D25\\uFF0C\\u7F16\\u8F91\\u5668 DOM \\u4ECD\\u4E0D\\u53EF\\u7528\")",
+                    "target": "error(\"GridNote: 共享卡片編輯器恢復失敗，編輯器 DOM 仍不可用\")"
+                },
+                {
+                    "source": "error(\"GridNote: \\u8282\\u70B9\\u8303\\u56F4\\u5F39\\u6846\\u4FDD\\u5B58\\u5931\\u8D25\",a);let s=a instanceof Error&&a.message?a.message:\"\\u4FDD\\u5B58\\u8282\\u70B9\\u5185\\u5BB9\\u5931\\u8D25\";new Jt.Notice(s),this.setSavingState(!1)}}}handleCancel(t=\"cancel\")",
+                    "target": "error(\"GridNote: 節點範圍彈窗儲存失敗\",a);let s=a instanceof Error&&a.message?a.message:\"儲存節點內容失敗\";new Jt.Notice(s),this.setSavingState(!1)}}}handleCancel(t=\"cancel\")"
+                },
+                {
+                    "source": "error(`${n} ${l}`)",
+                    "target": "error(`${n} ${l}`)"
+                },
+                {
+                    "source": "setButtonText(\"\\u4FDD\\u5B58\\u5230 Vault\")",
+                    "target": "setButtonText(\"儲存到 Vault\")"
+                },
+                {
+                    "source": "Notice(`${t}\\u9700\\u8981 VIP`)",
+                    "target": "Notice(`${t}需要 VIP`)"
+                },
+                {
+                    "source": "Notice(\"\\u5F53\\u524D\\u73AF\\u5883\\u4E0D\\u652F\\u6301\\u56FE\\u7247\\u526A\\u8D34\\u677F\\uFF0C\\u5DF2\\u4E0B\\u8F7D PNG \\u6587\\u4EF6\")",
+                    "target": "Notice(\"目前環境不支援圖片剪貼簿，已下載 PNG 檔案\")"
+                },
+                {
+                    "source": "Notice(`\\u56FE\\u7247\\u5DF2\\u4FDD\\u5B58: ${i}`)",
+                    "target": "Notice(`圖片已儲存: ${i}`)"
+                },
+                {
+                    "source": "Notice(\"Grid note Markdown \\u6A21\\u5F0F\\u4EC5\\u652F\\u6301\\u6E90\\u7801\\u89C6\\u56FE\")",
+                    "target": "Notice(\"Grid note Markdown 模式僅支援原始碼檢視\")"
+                },
+                {
+                    "source": "Notice(\"\\u4EC5\\u652F\\u6301 Markdown \\u6587\\u4EF6\")",
+                    "target": "Notice(\"僅支援 Markdown 檔案\")"
+                },
+                {
+                    "source": "Notice(\"\\u8BF7\\u5148\\u542F\\u7528 GridNote Markdown \\u6A21\\u5F0F\")",
+                    "target": "Notice(\"請先啟用 GridNote Markdown 模式\")"
+                },
+                {
+                    "source": "Notice(`\\u5DF2\\u5220\\u9664\\u8282\\u70B9: ${i.header}`)",
+                    "target": "Notice(`已刪除節點: ${i.header}`)"
+                },
+                {
+                    "source": "error(\"GridNote: \\u641C\\u7D22\\u7ED3\\u679C\\u8DF3\\u8F6C\\u5931\\u8D25\",r),new Dt.Notice(\"\\u8DF3\\u8F6C\\u5931\\u8D25\\uFF0C\\u8BF7\\u91CD\\u8BD5\")",
+                    "target": "error(\"GridNote: 搜尋結果跳轉失敗\",r),new Dt.Notice(\"跳轉失敗，請重試\")"
+                },
+                {
+                    "source": "error(\"GridNote: \\u6587\\u4EF6\\u5FEB\\u901F\\u5207\\u6362\\u6253\\u5F00\\u5931\\u8D25\",i),new wt.Notice(\"\\u6253\\u5F00\\u6587\\u4EF6\\u5931\\u8D25\\uFF0C\\u8BF7\\u91CD\\u8BD5\")",
+                    "target": "error(\"GridNote: 檔案快速切換開啟失敗\",i),new wt.Notice(\"開啟檔案失敗，請重試\")"
+                },
+                {
+                    "source": "error(\"GridNote: \\u521B\\u5EFA Markdown \\u6587\\u4EF6\\u5931\\u8D25\",t),new wt.Notice(\"\\u521B\\u5EFA\\u6587\\u4EF6\\u5931\\u8D25\\uFF0C\\u8BF7\\u91CD\\u8BD5\")",
+                    "target": "error(\"GridNote: 建立 Markdown 檔案失敗\",t),new wt.Notice(\"建立檔案失敗，請重試\")"
+                },
+                {
+                    "source": "error(\"[GridNote VIP] Settings not initialized!\")",
+                    "target": "error(\"[GridNote VIP] 設定尚未初始化!\")"
+                },
+                {
+                    "source": "Notice(\"\\u2705 \\u4E13\\u4E1A\\u7248\\u6FC0\\u6D3B\\u6210\\u529F\\uFF01\")",
+                    "target": "Notice(\"✅ 專業版啟用成功！\")"
+                },
+                {
+                    "source": "error(\"[GridNote VIP] Failed to reset settings:\",e)}this.clearCache()}async manualVerify(){let e=(this.plugin.settings.activationCode||\"\")",
+                    "target": "error(\"[GridNote VIP] 重設設定失敗:\",e)}this.clearCache()}async manualVerify(){let e=(this.plugin.settings.activationCode||\"\")"
+                },
+                {
+                    "source": "Notice(\"\\u274C \\u9A8C\\u8BC1\\u5931\\u8D25\\uFF1A\\u670D\\u52A1\\u5668\\u54CD\\u5E94\\u65E0\\u6548\")",
+                    "target": "Notice(\"❌ 驗證失敗：伺服器回應無效\")"
+                },
+                {
+                    "source": "Notice(\"\\u2705 \\u9A8C\\u8BC1\\u6210\\u529F\\uFF0CVIP\\u72B6\\u6001\\u6B63\\u5E38\")",
+                    "target": "Notice(\"✅ 驗證成功，VIP狀態正常\")"
+                },
+                {
+                    "source": "Notice(`\\u274C \\u9A8C\\u8BC1\\u5931\\u8D25\\uFF1A${a||\"\\u6FC0\\u6D3B\\u7801\\u65E0\\u6548\"}`)",
+                    "target": "Notice(`❌ 驗證失敗：${a||\"啟用碼無效\"}`)"
+                },
+                {
+                    "source": "error(\"[GridNote] Failed to set gridnote frontmatter:\",c),new St.Notice(\"\\u8BBE\\u7F6E gridnote \\u5C5E\\u6027\\u5931\\u8D25\\uFF0C\\u8BF7\\u68C0\\u67E5\\u7B14\\u8BB0 YAML \\u683C\\u5F0F\")",
+                    "target": "error(\"[GridNote] 設定 gridnote frontmatter 失敗:\",c),new St.Notice(\"設定 gridnote 屬性失敗，請檢查筆記 YAML 格式\")"
+                },
+                {
+                    "source": "textContent=`${(t=n.textContent)!==null&&t!==void 0?t:\"\"}${e}`",
+                    "target": "textContent=`${(t=n.textContent)!==null&&t!==void 0?t:\"\"}${e}`"
+                },
+                {
+                    "source": "textContent=\"\\u64A4\\u9500 / \\u91CD\\u505A\"",
+                    "target": "textContent=\"復原 / 重做\""
+                },
+                {
+                    "source": "textContent=\"No tree data\"",
+                    "target": "textContent=\"無樹狀資料\""
+                },
+                {
+                    "source": "textContent=\"\\u6253\\u5F00 Markdown \\u6587\\u4EF6\\u540E\\uFF0C\\u8FD9\\u91CC\\u4F1A\\u5C55\\u793A\\u4E3B\\u9898\\u5316\\u7684\\u6811\\u7ED3\\u6784\\u3002\"",
+                    "target": "textContent=\"開啟 Markdown 檔案後，這裡會顯示主題化的樹狀結構。\""
+                },
+                {
+                    "source": "textContent=`html, body {margin: 0 !important;padding: 0 !important;width: ${e}px !important;height: ${t}px !important;min-width: ${e}px !important;min-height: ${t}px !important;box-sizing: border-box !important;overflow: hidden !important;background-clip: border-box !important;}`",
+                    "target": "textContent=`html, body {margin: 0 !important;padding: 0 !important;width: ${e}px !important;height: ${t}px !important;min-width: ${e}px !important;min-height: ${t}px !important;box-sizing: border-box !important;overflow: hidden !important;background-clip: border-box !important;}`"
+                },
+                {
+                    "source": "textContent=`${t}/${i} \\u8282\\u70B9`",
+                    "target": "textContent=`${t}/${i} 節點`"
+                },
+                {
+                    "source": "text:`${(d=(u=t.matchedFiles)==null?void 0:u.length)!=null?d:0} \\u4E2A\\u5339\\u914D`",
+                    "target": "text:`${(d=(u=t.matchedFiles)==null?void 0:u.length)!=null?d:0} 個符合`"
+                },
+                {
+                    "source": "text:\"\\u65B0\\u5EFA Markdown \\u6587\\u4EF6\"",
+                    "target": "text:\"新增 Markdown 檔案\""
+                },
+                {
+                    "source": "settings:\",e)}this.clearCache()}async manualVerify(){let e=(this.plugin.settings.activationCode||\"",
+                    "target": "settings:\",e)}this.clearCache()}async manualVerify(){let e=(this.plugin.settings.activationCode||\""
+                }
+            ]
+        }
+    }
+}
