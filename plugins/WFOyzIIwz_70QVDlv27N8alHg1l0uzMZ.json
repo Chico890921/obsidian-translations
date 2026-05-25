@@ -1,0 +1,3657 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "quickadd",
+        "version": "2.12.2",
+        "title": "[zh-tw] QuickAdd",
+        "description": "QuickAdd 繁體中文化與微調",
+        "language": "zh-tw",
+        "supportedVersions": "2.12.2",
+        "author": "Chico",
+        "updatedAt": 1779626038095
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "Define reusable snippets referenced as <code>{{GLOBAL_VAR:&lt;name&gt;}}</code>. Snippets support other QuickAdd tokens and expand before VALUE/VDATE/etc.",
+                    "target": "定義可重複使用的片段，可用 <code>{{GLOBAL_VAR:&lt;name&gt;}}</code> 參照。片段支援其他 QuickAdd token，並會在 VALUE/VDATE 等之前展開。"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<div class=\"qa-gv__cell qa-gv__name\">Name</div> <div class=\"qa-gv__cell qa-gv__value\">Value</div> <div class=\"qa-gv__cell qa-gv__ops svelte-1k43yoc\">Actions</div>",
+                    "target": "<div class=\"qa-gv__cell qa-gv__name\">名稱</div> <div class=\"qa-gv__cell qa-gv__value\">值</div> <div class=\"qa-gv__cell qa-gv__ops svelte-1k43yoc\">操作</div>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<h2>Export QuickAdd Package</h2> <p class=\"svelte-iqd8ho\">Select choices to bundle. Dependencies are added automatically.</p>",
+                    "target": "<h2>匯出 QuickAdd 套件</h2> <p class=\"svelte-iqd8ho\">選擇要打包的 choice。相依項目會自動加入。</p>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<tr class=\"svelte-x9dt2q\"><th class=\"svelte-x9dt2q\">Name</th> <th class=\"svelte-x9dt2q\">Location</th> <th class=\"svelte-x9dt2q\">Existing</th> <th class=\"svelte-x9dt2q\">Action</th></tr>",
+                    "target": "<tr class=\"svelte-x9dt2q\"><th class=\"svelte-x9dt2q\">名稱</th> <th class=\"svelte-x9dt2q\">位置</th> <th class=\"svelte-x9dt2q\">既有項目</th> <th class=\"svelte-x9dt2q\">操作</th></tr>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerText",
+                    "source": "Loading preview…",
+                    "target": "正在載入預覽…"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerText",
+                    "source": "Preview unavailable",
+                    "target": "無法預覽"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Capture to active file",
+                    "target": "擷取到目前檔案"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Loading preview…",
+                    "target": "正在載入預覽…"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Preview unavailable",
+                    "target": "無法預覽"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Open File Command Settings",
+                    "target": "開啟檔案命令設定"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "View documentation",
+                    "target": "查看文件"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Capture",
+                    "target": "擷取"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Macro",
+                    "target": "巨集"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Multi",
+                    "target": "多重選項"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Add Choice",
+                    "target": "新增 Choice"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "AI Assistant",
+                    "target": "AI 助手"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Delete",
+                    "target": "刪除"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Global Variables",
+                    "target": "全域變數"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Add variable",
+                    "target": "新增變數"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "No choices match the current filter.",
+                    "target": "沒有符合目前篩選條件的 choice。"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Missing dependencies detected",
+                    "target": "偵測到缺少相依項目"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Warnings",
+                    "target": "警告"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Missing assets:",
+                    "target": "缺少資產："
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Select visible",
+                    "target": "選取可見項目"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Clear selection",
+                    "target": "清除選取"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Package summary",
+                    "target": "套件摘要"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Selected choices",
+                    "target": "已選取的 choice"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Total packaged",
+                    "target": "打包總數"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Save to file",
+                    "target": "儲存到檔案"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Analyzing package…",
+                    "target": "正在分析套件…"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "QuickAdd version:",
+                    "target": "QuickAdd 版本："
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Created:",
+                    "target": "建立時間："
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Choices:",
+                    "target": "Choices："
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Assets:",
+                    "target": "資產："
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Choice decisions",
+                    "target": "Choice 處理決策"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Asset decisions",
+                    "target": "資產處理決策"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "No choices found in this package.",
+                    "target": "此套件中找不到 choice。"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Overwrite",
+                    "target": "覆寫"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Import",
+                    "target": "匯入"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Duplicate",
+                    "target": "複製"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Skip",
+                    "target": "略過"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "No additional assets bundled with this package.",
+                    "target": "此套件未包含其他資產。"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Destination path",
+                    "target": "目的路徑"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Action",
+                    "target": "操作"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Write",
+                    "target": "寫入"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Last import",
+                    "target": "上次匯入"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Paste package JSON",
+                    "target": "貼上套件 JSON"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Enabled (requires active file)",
+                    "target": "啟用（需要目前檔案）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Enabled (skip if no active file)",
+                    "target": "啟用（沒有目前檔案時略過）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Disabled",
+                    "target": "停用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Replace selection",
+                    "target": "取代選取內容"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "After selection",
+                    "target": "選取內容之後"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "End of line",
+                    "target": "行尾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "New line",
+                    "target": "新行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Link",
+                    "target": "連結"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Embed",
+                    "target": "嵌入"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Top of file (after frontmatter)",
+                    "target": "檔案頂端（frontmatter 之後）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "New line above cursor",
+                    "target": "游標上方新行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "New line below cursor",
+                    "target": "游標下方新行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "After line…",
+                    "target": "指定行之後…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Bottom of file",
+                    "target": "檔案底部"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Never skip",
+                    "target": "永不略過"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Always skip",
+                    "target": "一律略過"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Auto (headings only)",
+                    "target": "自動（僅標題）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Cursor",
+                    "target": "游標"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Bottom",
+                    "target": "底部"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Top",
+                    "target": "頂部"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Ask me",
+                    "target": "詢問我"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Split down",
+                    "target": "向下分割"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Split right",
+                    "target": "向右分割"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Move cursor to line end",
+                    "target": "將游標移到行尾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Move cursor to line start",
+                    "target": "將游標移到行首"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Move cursor to file end",
+                    "target": "將游標移到檔案結尾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Move cursor to file start",
+                    "target": "將游標移到檔案開頭"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Select link on active line",
+                    "target": "選取目前行的連結"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Select active line",
+                    "target": "選取目前行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Paste with format",
+                    "target": "保留格式貼上"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Paste",
+                    "target": "貼上"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Cut",
+                    "target": "剪下"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Copy",
+                    "target": "複製"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Select command",
+                    "target": "選擇命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Run script",
+                    "target": "執行腳本"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Macro variable",
+                    "target": "巨集變數"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Boolean",
+                    "target": "布林值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Number",
+                    "target": "數字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Text",
+                    "target": "文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "False",
+                    "target": "False"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "True",
+                    "target": "True"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Add only",
+                    "target": "只新增"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Replace existing",
+                    "target": "取代既有項目"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Provider /v1/models (requires API key)",
+                    "target": "提供者 /v1/models（需要 API key）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "models.dev directory",
+                    "target": "models.dev 目錄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Automatic (try provider, fallback to models.dev)",
+                    "target": "自動（先嘗試提供者，失敗則使用 models.dev）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Don't show",
+                    "target": "不要顯示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Show updates only on major releases (new features, breaking changes)",
+                    "target": "只在重大版本顯示更新（新功能、破壞性變更）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Show updates on each new release",
+                    "target": "每次新版本都顯示更新"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Submit",
+                    "target": "送出"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "No",
+                    "target": "否"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Yes",
+                    "target": "是"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add",
+                    "target": "新增"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Save",
+                    "target": "儲存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Browse",
+                    "target": "瀏覽"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Import selected",
+                    "target": "匯入所選項目"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Connect",
+                    "target": "連線"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add custom...",
+                    "target": "新增自訂..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add Provider",
+                    "target": "新增提供者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Edit",
+                    "target": "編輯"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add Model",
+                    "target": "新增模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Browse models",
+                    "target": "瀏覽模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Sync now",
+                    "target": "立即同步"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Edit Providers",
+                    "target": "編輯提供者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Export package…",
+                    "target": "匯出套件…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Import package…",
+                    "target": "匯入套件…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Reset to defaults",
+                    "target": "重設為預設值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Override the global setting for this choice. 'Always' forces the one-page modal even if disabled globally; 'Never' disables it even if enabled globally.",
+                    "target": "覆寫此 choice 的全域設定。「一律」會強制使用單頁輸入視窗，即使全域已停用；「永不」會停用它，即使全域已啟用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "How to arrange the new pane relative to the current one",
+                    "target": "新窗格相對於目前窗格的排列方式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "How to display the opened file",
+                    "target": "開啟檔案的顯示方式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Focus the opened tab immediately after opening",
+                    "target": "開啟後立即聚焦到開啟的分頁"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Advanced / legacy: this executes any `<% %>` anywhere in the destination file (including inside code blocks).",
+                    "target": "進階／舊版：這會執行目的檔案中任何位置的 `<% %>`（包含程式碼區塊內）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Controls whether this Capture uses the current editor selection as {{VALUE}}. Does not affect {{SELECTED}}.",
+                    "target": "控制此 Capture 是否使用目前編輯器選取內容作為 {{VALUE}}。不影響 {{SELECTED}}。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Vault-relative path. Supports format syntax (use trailing '/' for folders).",
+                    "target": "相對於儲存庫的路徑。支援格式語法（資料夾請在結尾加上 /）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose a file, folder, or format syntax (e.g., {{DATE}})",
+                    "target": "選擇檔案、資料夾或格式語法（例如 {{DATE}}）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose a card from the canvas below, or paste an exact node id.",
+                    "target": "從下方 canvas 選擇卡片，或貼上精確的節點 ID。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Formats the value as a task.",
+                    "target": "將值格式化為任務。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose how QuickAdd should insert a link to the captured file in the current note.",
+                    "target": "選擇 QuickAdd 要如何在目前筆記中插入擷取檔案的連結。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Where to place the link when appending",
+                    "target": "附加時連結要放置的位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Insert capture after specified text. Accepts format syntax. Tip: use a heading (starts with #) to target a section. Blank line handling is configurable below.",
+                    "target": "在指定文字之後插入擷取內容。可使用格式語法。提示：使用標題（以 # 開頭）可指定區段。空白行處理可在下方設定。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Insert captured content on the same line, immediately after the matched text (no newline added).",
+                    "target": "在同一行、符合文字之後立即插入擷取內容（不新增換行）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Replace everything after the matched text up to end-of-line.",
+                    "target": "取代符合文字之後到行尾的所有內容。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Place the text at the end of the matched section instead of the top.",
+                    "target": "將文字放在符合區段的結尾，而不是開頭。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Also include the section’s subsections (requires target to be a heading starting with #). Subsections are headings inside the section.",
+                    "target": "也包含該區段的子區段（目標必須是以 # 開頭的標題）。子區段是該區段內的標題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Creates the 'insert after' line if it is not found.",
+                    "target": "找不到「插入於其後」的行時建立該行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Set the format of the capture.",
+                    "target": "設定擷取內容的格式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Set the file name format.",
+                    "target": "設定檔案名稱格式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Create the file in the specified folder. If multiple folders are specified, you will be prompted for which folder to create the file in.",
+                    "target": "在指定資料夾中建立檔案。若指定多個資料夾，系統會詢問要在哪個資料夾中建立檔案。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Get prompted to choose from both the selected folders and their subfolders when creating the note.",
+                    "target": "建立筆記時，從所選資料夾及其子資料夾中選擇。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Creates the file in the same folder as the currently active file. Will not create the file if there is no active file.",
+                    "target": "在目前作用中檔案的相同資料夾建立檔案。若沒有作用中檔案，則不會建立。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose how QuickAdd should insert a link to the created file in the current note.",
+                    "target": "選擇 QuickAdd 要如何在目前筆記中插入新建檔案的連結。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose whether QuickAdd should ask what to do, update the existing file, create another file, or keep the existing file.",
+                    "target": "選擇 QuickAdd 要詢問處理方式、更新既有檔案、建立另一個檔案，或保留既有檔案。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The model the AI Assistant will use",
+                    "target": "AI 助手要使用的模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The name of the variable used to store the AI Assistant output, i.e. {{value:output}}.",
+                    "target": "用來儲存 AI 助手輸出的變數名稱，例如 {{value:output}}。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim. The default is 0.",
+                    "target": "正值會依目前文字中既有頻率懲罰新 token，降低模型逐字重複同一行的機率。預設為 0。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics. The default is 0.",
+                    "target": "正值會依 token 是否已出現在目前文字中懲罰新 token，提高模型談論新主題的機率。預設為 0。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Path to the file. Supports formatting like {{DATE}}, {{VALUE}}, etc.",
+                    "target": "檔案路徑。支援 {{DATE}}、{{VALUE}} 等格式語法。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose tab, split, window, or sidebar",
+                    "target": "選擇分頁、分割視窗、視窗或側邊欄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Bring the opened file to the foreground",
+                    "target": "將開啟的檔案帶到前景"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add an Obsidian command",
+                    "target": "新增 Obsidian 命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add editor command",
+                    "target": "新增編輯器命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add user script - type the name or click Browse",
+                    "target": "新增使用者腳本：輸入名稱或點擊瀏覽"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add existing choice",
+                    "target": "新增既有 choice"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose how this condition should be evaluated.",
+                    "target": "選擇此條件的評估方式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Name of the macro variable to inspect (without the $ prefix).",
+                    "target": "要檢查的巨集變數名稱（不含 $ 前綴）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "How to compare the variable value.",
+                    "target": "如何比較變數值。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "How to interpret the comparison value.",
+                    "target": "如何解讀比較值。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose true or false.",
+                    "target": "選擇 true 或 false。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Value to compare against.",
+                    "target": "要比較的值。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Vault-relative path to the JavaScript file.",
+                    "target": "JavaScript 檔案相對於儲存庫的路徑。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Execute this macro when Obsidian starts",
+                    "target": "Obsidian 啟動時執行此巨集"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Shown in the choice picker search box when this multi choice opens. Leave blank to use the multi name.",
+                    "target": "此 multi choice 開啟時顯示在 choice 選擇器搜尋框中。留空則使用 multi 名稱。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add will append new models. Replace will overwrite existing models with the selected list.",
+                    "target": "「新增」會附加新模型。「取代」會用所選清單覆寫既有模型。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select a secret from SecretStorage",
+                    "target": "從 SecretStorage 選擇密鑰"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Create any custom endpoint (OpenAI-compatible or otherwise)",
+                    "target": "建立任意自訂端點（相容 OpenAI 或其他格式）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Providers for the AI Assistant",
+                    "target": "AI 助手的提供者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The name of the provider",
+                    "target": "提供者名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The endpoint for the AI Assistant",
+                    "target": "AI 助手的端點"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose where QuickAdd looks when browsing or syncing models for this provider.",
+                    "target": "選擇 QuickAdd 瀏覽或同步此提供者模型時要查找的位置。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The providers for the AI Assistant",
+                    "target": "AI 助手的提供者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The default model for the AI Assistant",
+                    "target": "AI 助手的預設模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show status messages from the AI Assistant",
+                    "target": "顯示 AI 助手的狀態訊息"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Git information for developers.",
+                    "target": "供開發者使用的 Git 資訊。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Bundle or import QuickAdd automations as reusable packages.",
+                    "target": "將 QuickAdd 自動化打包或匯入為可重複使用的套件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Display a notification when content is captured successfully to confirm the operation completed.",
+                    "target": "內容擷取成功時顯示通知，以確認操作已完成。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Display a notification when an input prompt is cancelled without submitting. Disable this to avoid extra notices when dismissing prompts.",
+                    "target": "輸入提示未送出即取消時顯示通知。停用後可避免關閉提示時出現額外通知。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Use multi-line input prompt instead of single-line input prompt",
+                    "target": "使用多行輸入提示，而非單行輸入提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Keep drafts when closing input prompts so they can be restored on reopen. Drafts are stored only for this session.",
+                    "target": "關閉輸入提示時保留草稿，以便重新開啟時還原。草稿只會儲存在本次工作階段。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When enabled, Capture uses the current editor selection as {{VALUE}} and may skip the prompt. When disabled, Capture always prompts for {{VALUE}}.",
+                    "target": "啟用時，Capture 會使用目前編輯器選取內容作為 {{VALUE}}，並可能略過提示。停用時，Capture 一律提示輸入 {{VALUE}}。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Shortcodes for natural language date parsing. One per line: alias = phrase. Example: tm = tomorrow.",
+                    "target": "自然語言日期解析的短代碼。每行一個：別名 = 詞句。例如：tm = tomorrow。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "This prevents the plugin from making requests to external providers like OpenAI. You can still use User Scripts to execute arbitrary code, including contacting external providers. However, this setting disables plugin features like the AI Assistant from doing so. You need to disable this setting to use the AI Assistant.",
+                    "target": "This prevents the plugin from making requests to external providers like OpenAI. You can still use User Scripts to execute arbitrary code, including contacting external providers. However, this setting disables plugin features like the AI Assistant from doing so. You need to disable this setting to use the AI Assistant."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add QuickAdd icon to the sidebar ribbon. Requires a reload.",
+                    "target": "將 QuickAdd 圖示加入側邊欄 ribbon。需要重新載入。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The string used to join multiple LLM responses together. The default is a newline.",
+                    "target": "用來串接多個 LLM 回應的字串。預設為換行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The string used to separate chunks of text. The default is a newline.",
+                    "target": "用來分隔文字區塊的字串。預設為換行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "One-page input override",
+                    "target": "單頁輸入覆寫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Open",
+                    "target": "開啟"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "File Opening Location",
+                    "target": "檔案開啟位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Split Direction",
+                    "target": "分割方向"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "View Mode",
+                    "target": "檢視模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Focus new pane",
+                    "target": "聚焦新窗格"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Location",
+                    "target": "位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Position",
+                    "target": "位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Linking",
+                    "target": "連結"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Content",
+                    "target": "內容"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Behavior",
+                    "target": "行為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Use editor selection as default value",
+                    "target": "使用編輯器選取內容作為預設值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Capture to",
+                    "target": "擷取到"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "File path / format",
+                    "target": "檔案路徑／格式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Target canvas node",
+                    "target": "目標 canvas 節點"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Task",
+                    "target": "任務"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Link to captured file",
+                    "target": "連結到擷取的檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Link type",
+                    "target": "連結類型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Write position",
+                    "target": "寫入位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Insert after",
+                    "target": "插入於其後"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Inline insertion",
+                    "target": "行內插入"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Replace existing value",
+                    "target": "取代既有值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Insert at end of section",
+                    "target": "插入到區段結尾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Blank lines after match",
+                    "target": "符合項目後的空白行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Consider subsections",
+                    "target": "包含子區段"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Create line if not found",
+                    "target": "找不到時建立該行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Capture format",
+                    "target": "擷取格式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Create file if it doesn't exist",
+                    "target": "不存在時建立檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "File name format",
+                    "target": "檔案名稱格式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Create in folder",
+                    "target": "建立於資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Include subfolders",
+                    "target": "包含子資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Create in same folder as active file",
+                    "target": "建立於目前檔案的相同資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Link to created file",
+                    "target": "連結到新建檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "If the target file already exists",
+                    "target": "若目標檔案已存在"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Model",
+                    "target": "模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Output variable name",
+                    "target": "輸出變數名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show advanced settings",
+                    "target": "顯示進階設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Top P",
+                    "target": "Top P"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Frequency Penalty",
+                    "target": "頻率懲罰"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Presence Penalty",
+                    "target": "存在懲罰"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "File path",
+                    "target": "檔案路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Where to open",
+                    "target": "開啟位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Split direction",
+                    "target": "分割方向"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Focus opened file",
+                    "target": "聚焦已開啟檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Obsidian command",
+                    "target": "Obsidian 命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Editor commands",
+                    "target": "編輯器命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "User Scripts",
+                    "target": "使用者腳本"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Choices",
+                    "target": "Choices"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Condition type",
+                    "target": "條件類型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Variable name",
+                    "target": "變數名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Operator",
+                    "target": "運算子"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Value type",
+                    "target": "值類型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Expected value",
+                    "target": "預期值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Script path",
+                    "target": "腳本路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Export name",
+                    "target": "匯出名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Run on startup",
+                    "target": "啟動時執行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Name",
+                    "target": "名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Placeholder",
+                    "target": "提示文字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Search",
+                    "target": "搜尋"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Import mode",
+                    "target": "匯入模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "API Key",
+                    "target": "API Key"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Custom provider",
+                    "target": "自訂提供者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Providers",
+                    "target": "提供者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Endpoint",
+                    "target": "端點"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Model source",
+                    "target": "模型來源"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Add Model",
+                    "target": "新增模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Import models",
+                    "target": "匯入模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-sync models",
+                    "target": "自動同步模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default Model",
+                    "target": "預設模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show Assistant",
+                    "target": "顯示助手"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Development Information",
+                    "target": "開發資訊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Packages",
+                    "target": "套件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Announce Updates",
+                    "target": "公告更新"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show Capture Notifications",
+                    "target": "顯示擷取通知"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show Input Cancellation Notifications",
+                    "target": "顯示輸入取消通知"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Use Multi-line Input Prompt",
+                    "target": "使用多行輸入提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Persist Input Prompt Drafts",
+                    "target": "保留輸入提示草稿"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Use editor selection as default Capture value",
+                    "target": "使用編輯器選取內容作為 Capture 預設值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "One-page input for choices (Beta)",
+                    "target": "Choice 單頁輸入（Beta）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Date aliases",
+                    "target": "日期別名"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Disable AI & Online features",
+                    "target": "停用 AI 與線上功能"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show icon in sidebar",
+                    "target": "在側邊欄顯示圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Result Joiner",
+                    "target": "結果串接符"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Chunk Separator",
+                    "target": "區塊分隔符"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Max Chunk Tokens",
+                    "target": "區塊 Token 上限"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Merge Chunks",
+                    "target": "合併區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "File path",
+                    "target": "檔案路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Canvas node id",
+                    "target": "Canvas 節點 ID"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Filter by card text, file path, or node id…",
+                    "target": "依卡片文字、檔案路徑或節點 ID 篩選…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "File name format",
+                    "target": "檔案名稱格式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Folder path",
+                    "target": "資料夾路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Obsidian command",
+                    "target": "Obsidian 命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Start typing script name...",
+                    "target": "開始輸入腳本名稱..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Choice",
+                    "target": "Choice"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. projectStatus",
+                    "target": "例如 projectStatus"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter comparison value",
+                    "target": "輸入比較值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Defaults to the multi name",
+                    "target": "預設為 multi 名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Filter by name or id",
+                    "target": "依名稱或 ID 篩選"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "t = today\ntm = tomorrow\nyd = yesterday",
+                    "target": "t = 今天\ntm = 明天\nyd = 昨天"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Edit Multi Choice",
+                    "target": "編輯 Multi Choice"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Rename",
+                    "target": "重新命名"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Configure",
+                    "target": "設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Duplicate",
+                    "target": "複製"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Delete",
+                    "target": "刪除"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Move to: (no folders)",
+                    "target": "移至：（沒有資料夾）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Create file if it doesn't exist",
+                    "target": "不存在時建立檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Browse and select a script file",
+                    "target": "瀏覽並選擇腳本檔"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Add Open File command",
+                    "target": "新增開啟檔案命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Add AI Assistant command",
+                    "target": "新增 AI 助手命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Add wait command",
+                    "target": "新增等待命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Add conditional command",
+                    "target": "新增條件命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Select a script file",
+                    "target": "選擇腳本檔"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Select all",
+                    "target": "全選"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Clear selection",
+                    "target": "清除選取"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Use multi-line input prompt",
+                    "target": "使用多行輸入提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Moment.js is not available",
+                    "target": "Moment.js 無法使用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to parse date:",
+                    "target": "無法解析日期："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "dndzone will ignore unknown options",
+                    "target": "dndzone will ignore unknown options"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Target canvas file was not found.",
+                    "target": "找不到目標 canvas 檔案。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Could not open target canvas.",
+                    "target": "無法開啟目標 canvas。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Open the target canvas and select exactly one card to use this action.",
+                    "target": "請開啟目標 canvas，並只選取一張卡片來使用此操作。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Canvas nodes are still loading. Wait a moment and try again.",
+                    "target": "Canvas 節點仍在載入，請稍候再試。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Could not copy node id automatically.",
+                    "target": "無法自動複製節點 ID。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Consider subsections requires the target to be a heading (starts with #)",
+                    "target": "包含子區段要求目標必須是標題（以 # 開頭）"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Select at least one model.",
+                    "target": "請至少選擇一個模型。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No models selected to import.",
+                    "target": "未選擇要匯入的模型。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Custom provider added. Click Edit to configure.",
+                    "target": "已新增自訂提供者。點擊「編輯」進行設定。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Choice name is invalid.",
+                    "target": "Choice 名稱無效。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Select at least one choice to export.",
+                    "target": "請至少選擇一個要匯出的 choice。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Package copied with warnings. Review details below.",
+                    "target": "套件已複製，但有警告。請查看下方詳細資訊。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Enter a file path before saving.",
+                    "target": "儲存前請先輸入檔案路徑。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Package saved with warnings. Review details below.",
+                    "target": "套件已儲存，但有警告。請查看下方詳細資訊。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "This package has already been imported.",
+                    "target": "此套件已匯入過。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Load a package before importing.",
+                    "target": "匯入前請先載入套件。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Canvas capture skipped link insertion because no Markdown editor is focused.",
+                    "target": "Canvas 擷取已略過連結插入，因為目前沒有聚焦的 Markdown 編輯器。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "qa-command-button-row qa-command-button-row-compact",
+                    "target": "qa-command-button-row qa-command-button-row-compact"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "providers-container qa-ai-list-container",
+                    "target": "providers-container qa-ai-list-container"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "models-container qa-ai-list-container",
+                    "target": "models-container qa-ai-list-container"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "button-row qa-ai-provider-button-row",
+                    "target": "button-row qa-ai-provider-button-row"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Changes trailing digits only. Example: Draft009.md -> Draft010.md.",
+                    "target": "只變更尾端數字。例如：Draft009.md -> Draft010.md。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Keeps the original name and adds a duplicate marker. Example: Project Plan.md -> Project Plan (1).md.",
+                    "target": "保留原名稱並新增重複標記。例如：Project Plan.md -> Project Plan (1).md。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Leaves the file unchanged and opens the existing file.",
+                    "target": "保持檔案不變，並開啟既有檔案。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Mutual exclusion of insertAfter and writeToBottomOfFile settings. If insertAfter is enabled, writeToBottomOfFile is disabled. To support changes in settings UI.",
+                    "target": "insertAfter 與 writeToBottomOfFile 設定互斥。若啟用 insertAfter，writeToBottomOfFile 會停用。用於支援設定介面變更。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Set version to the current plugin version.",
+                    "target": "將版本設為目前外掛版本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Add default AI providers to the settings.",
+                    "target": "將預設 AI 提供者加入設定。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Migrate legacy openFileInNewTab settings to new fileOpening format",
+                    "target": "將舊版 openFileInNewTab 設定遷移到新的 fileOpening 格式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Backfill missing file opening defaults for older choices",
+                    "target": "補齊舊 choice 缺少的檔案開啟預設值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Ensure every AI provider has a discovery mode so browsing works without models.dev",
+                    "target": "確保每個 AI 提供者都有探索模式，讓瀏覽功能不依賴 models.dev 也能運作"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Move AI provider API keys into Obsidian SecretStorage",
+                    "target": "將 AI 提供者 API key 移入 Obsidian SecretStorage"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Choice name",
+                    "target": "Choice 名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Choice id",
+                    "target": "Choice ID"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Variables object as JSON",
+                    "target": "變數物件（JSON）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Allow interactive prompts",
+                    "target": "允許互動式提示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Filter by choice type",
+                    "target": "依 choice 類型篩選"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Only include command-enabled choices",
+                    "target": "只包含已啟用命令的 choice"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Empty input",
+                    "target": "輸入為空"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Unable to parse date",
+                    "target": "無法解析日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Multi choices are interactive and cannot be run via CLI.",
+                    "target": "Multi choice 需要互動，無法透過 CLI 執行。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Missing required inputs for non-interactive CLI run.",
+                    "target": "非互動式 CLI 執行缺少必要輸入。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Multi choices are interactive and cannot be checked via CLI.",
+                    "target": "Multi choice 需要互動，無法透過 CLI 檢查。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Ask every time",
+                    "target": "每次詢問"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Update existing file",
+                    "target": "更新既有檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Create another file",
+                    "target": "建立另一個檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Keep existing file",
+                    "target": "保留既有檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Append to bottom",
+                    "target": "附加到底部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Append to top",
+                    "target": "附加到頂部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Overwrite file",
+                    "target": "覆寫檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Append duplicate suffix",
+                    "target": "附加重複後綴"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Do nothing",
+                    "target": "不執行任何動作"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Reuse active tab",
+                    "target": "重用目前分頁"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "New tab",
+                    "target": "新分頁"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Split",
+                    "target": "分割"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "New window",
+                    "target": "新視窗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Left sidebar",
+                    "target": "左側邊欄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Right sidebar",
+                    "target": "右側邊欄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Equals",
+                    "target": "等於"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Does not equal",
+                    "target": "不等於"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Less than",
+                    "target": "小於"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Less than or equal",
+                    "target": "小於或等於"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Greater than",
+                    "target": "大於"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Greater than or equal",
+                    "target": "大於或等於"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Contains",
+                    "target": "包含"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Does not contain",
+                    "target": "不包含"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Is truthy",
+                    "target": "為真值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Is falsy",
+                    "target": "為假值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Skipped",
+                    "target": "已略過"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "<current folder>",
+                    "target": "<目前資料夾>"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Math expression",
+                    "target": "數學運算式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Select capture target file",
+                    "target": "選擇擷取目標檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "OpenAI",
+                    "target": "OpenAI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Document Name",
+                    "target": "文件名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Anthropic",
+                    "target": "Anthropic"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Groq",
+                    "target": "Groq"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "TogetherAI",
+                    "target": "TogetherAI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "OpenRouter",
+                    "target": "OpenRouter"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Hugging Face",
+                    "target": "Hugging Face"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Mistral",
+                    "target": "Mistral"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "DeepSeek",
+                    "target": "DeepSeek"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Custom",
+                    "target": "Custom"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Test",
+                    "target": "測試"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "File name format",
+                    "target": "檔案名稱格式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Insert after",
+                    "target": "插入於其後"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Format",
+                    "target": "格式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Select a JavaScript file",
+                    "target": "選擇 JavaScript 檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "e.g., 2+2*3",
+                    "target": "例如：2+2*3"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tab",
+                    "source": "New tab",
+                    "target": "新分頁"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Today",
+                    "target": "今天"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Clear",
+                    "target": "清除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Preview:",
+                    "target": "預覽："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Provide inputs",
+                    "target": "提供輸入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Preview",
+                    "target": "預覽"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Preview: ",
+                    "target": "預覽："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Tip: open this canvas and select one card to grab its id instantly.",
+                    "target": "提示：開啟此 canvas 並選取一張卡片，即可立即取得其 ID。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Open target canvas",
+                    "target": "開啟目標 canvas"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Use selected in open canvas",
+                    "target": "使用已開啟 canvas 中的選取項目"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Loading canvas nodes…",
+                    "target": "正在載入 canvas 節點…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "No nodes match the current filter.",
+                    "target": "沒有符合目前篩選條件的節點。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Copy ID",
+                    "target": "複製 ID"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Choose folder when creating a new note",
+                    "target": "建立新筆記時選擇資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Exact for OpenAI models; estimates for others.",
+                    "target": "OpenAI 模型為精確值；其他模型為估算值。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Configure Conditional Command",
+                    "target": "設定條件命令"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Add a provider",
+                    "target": "新增提供者"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Docs",
+                    "target": "文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "AI Assistant Settings",
+                    "target": "AI 助手設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Fetching release notes...",
+                    "target": "正在取得版本說明..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "My Document Title",
+                    "target": "我的文件標題"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "log(`${this.constructor.name} merged ${a} and ${n} into ${Z}`)",
+                    "target": "log(`${this.constructor.name} merged ${a} and ${n} into ${Z}`)"
+                },
+                {
+                    "source": "log(`Extracting timezone: '${b}' into: ${Z} for: ${t.start}`)",
+                    "target": "log(`Extracting timezone: '${b}' into: ${Z} for: ${t.start}`)"
+                },
+                {
+                    "source": "log(`Extracting timezone: '${c[0]}' into : ${G}`)",
+                    "target": "log(`Extracting timezone: '${c[0]}' into : ${G}`)"
+                },
+                {
+                    "source": "log(`${this.constructor.name} adjusted ${G} time from the ref date (${c}) to the following day (${d})`)",
+                    "target": "log(`${this.constructor.name} adjusted ${G} time from the ref date (${c}) to the following day (${d})`)"
+                },
+                {
+                    "source": "log(`${this.constructor.name} adjusted ${G} weekday (${G.start})`)",
+                    "target": "log(`${this.constructor.name} adjusted ${G} weekday (${G.start})`)"
+                },
+                {
+                    "source": "log(`${this.constructor.name} adjusted ${G} weekday (${G.end})`)",
+                    "target": "log(`${this.constructor.name} adjusted ${G} weekday (${G.end})`)"
+                },
+                {
+                    "source": "log(`${this.constructor.name} adjusted ${G} year (${G.start})`)",
+                    "target": "log(`${this.constructor.name} adjusted ${G} year (${G.start})`)"
+                },
+                {
+                    "source": "log(`${this.constructor.name} adjusted ${G} month (${G.start})`)",
+                    "target": "log(`${this.constructor.name} adjusted ${G} month (${G.start})`)"
+                },
+                {
+                    "source": "log(`Extracting year: '${c[0]}' into : ${G}`)",
+                    "target": "log(`Extracting year: '${c[0]}' into : ${G}`)"
+                },
+                {
+                    "source": "log(`${l.constructor.name} extracted (at index=${m}) '${W}'`)",
+                    "target": "log(`${l.constructor.name} extracted (at index=${m}) '${W}'`)"
+                },
+                {
+                    "source": "setTooltip(`Toggle ${l}`)",
+                    "target": "setTooltip(`切換 ${l}`)"
+                },
+                {
+                    "source": "Notice(`${l}: ${t}`)",
+                    "target": "Notice(`${l}: ${t}`)"
+                },
+                {
+                    "source": "Notice(`Folder must be under: ${t}`)",
+                    "target": "Notice(`資料夾必須位於：${t}`)"
+                },
+                {
+                    "source": "setName(\"One-page input override\")",
+                    "target": "setName(\"單頁輸入覆寫\")"
+                },
+                {
+                    "source": "setDesc(\"Override the global setting for this choice. 'Always' forces the one-page modal even if disabled globally; 'Never' disables it even if enabled globally.\")",
+                    "target": "setDesc(\"覆寫此 choice 的全域設定。「一律」會強制使用單頁輸入視窗，即使全域已停用；「永不」會停用它，即使全域已啟用。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"File path\")",
+                    "target": "setPlaceholder(\"檔案路徑\")"
+                },
+                {
+                    "source": "setName(\"File Opening Location\")",
+                    "target": "setName(\"檔案開啟位置\")"
+                },
+                {
+                    "source": "setDesc(`Where to open the ${l} file`)",
+                    "target": "setDesc(`要在哪裡開啟 ${l} 檔案`)"
+                },
+                {
+                    "source": "setName(\"Split Direction\")",
+                    "target": "setName(\"分割方向\")"
+                },
+                {
+                    "source": "setDesc(\"How to arrange the new pane relative to the current one\")",
+                    "target": "setDesc(\"新窗格相對於目前窗格的排列方式\")"
+                },
+                {
+                    "source": "setName(\"View Mode\")",
+                    "target": "setName(\"檢視模式\")"
+                },
+                {
+                    "source": "setDesc(\"How to display the opened file\")",
+                    "target": "setDesc(\"開啟檔案的顯示方式\")"
+                },
+                {
+                    "source": "setName(\"Focus new pane\")",
+                    "target": "setName(\"聚焦新窗格\")"
+                },
+                {
+                    "source": "setDesc(\"Focus the opened tab immediately after opening\")",
+                    "target": "setDesc(\"開啟後立即聚焦到開啟的分頁\")"
+                },
+                {
+                    "source": "setDesc(\"Advanced / legacy: this executes any `<% %>` anywhere in the destination file (including inside code blocks).\")",
+                    "target": "setDesc(\"進階／舊版：這會執行目的檔案中任何位置的 `<% %>`（包含程式碼區塊內）。\")"
+                },
+                {
+                    "source": "setName(\"Use editor selection as default value\")",
+                    "target": "setName(\"使用編輯器選取內容作為預設值\")"
+                },
+                {
+                    "source": "setDesc(\"Controls whether this Capture uses the current editor selection as {{VALUE}}. Does not affect {{SELECTED}}.\")",
+                    "target": "setDesc(\"控制此 Capture 是否使用目前編輯器選取內容作為 {{VALUE}}。不影響 {{SELECTED}}。\")"
+                },
+                {
+                    "source": "setName(\"Capture to\")",
+                    "target": "setName(\"擷取到\")"
+                },
+                {
+                    "source": "setDesc(\"Vault-relative path. Supports format syntax (use trailing '/' for folders).\")",
+                    "target": "setDesc(\"相對於儲存庫的路徑。支援格式語法（資料夾請在結尾加上 /）。\")"
+                },
+                {
+                    "source": "setName(\"File path / format\")",
+                    "target": "setName(\"檔案路徑／格式\")"
+                },
+                {
+                    "source": "setDesc(\"Choose a file, folder, or format syntax (e.g., {{DATE}})\")",
+                    "target": "setDesc(\"選擇檔案、資料夾或格式語法（例如 {{DATE}}）\")"
+                },
+                {
+                    "source": "setName(\"Target canvas node\")",
+                    "target": "setName(\"目標 canvas 節點\")"
+                },
+                {
+                    "source": "setDesc(\"Choose a card from the canvas below, or paste an exact node id.\")",
+                    "target": "setDesc(\"從下方 canvas 選擇卡片，或貼上精確的節點 ID。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Canvas node id\")",
+                    "target": "setPlaceholder(\"Canvas 節點 ID\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Filter by card text, file path, or node id\\u2026\")",
+                    "target": "setPlaceholder(\"依卡片文字、檔案路徑或節點 ID 篩選…\")"
+                },
+                {
+                    "source": "Notice(\"Target canvas file was not found.\")",
+                    "target": "Notice(\"找不到目標 canvas 檔案。\")"
+                },
+                {
+                    "source": "Notice(\"Could not open target canvas.\")",
+                    "target": "Notice(\"無法開啟目標 canvas。\")"
+                },
+                {
+                    "source": "Notice(\"Open the target canvas and select exactly one card to use this action.\")",
+                    "target": "Notice(\"請開啟目標 canvas，並只選取一張卡片來使用此操作。\")"
+                },
+                {
+                    "source": "Notice(\"Canvas nodes are still loading. Wait a moment and try again.\")",
+                    "target": "Notice(\"Canvas 節點仍在載入，請稍候再試。\")"
+                },
+                {
+                    "source": "setText(`Showing ${C.length} of ${Y.length} nodes`)",
+                    "target": "setText(`顯示 ${Y.length} 個節點中的 ${C.length} 個`)"
+                },
+                {
+                    "source": "Notice(`Copied node id ${g.id}`)",
+                    "target": "Notice(`已複製節點 ID ${g.id}`)"
+                },
+                {
+                    "source": "Notice(\"Could not copy node id automatically.\")",
+                    "target": "Notice(\"無法自動複製節點 ID。\")"
+                },
+                {
+                    "source": "setDesc(\"Formats the value as a task.\")",
+                    "target": "setDesc(\"將值格式化為任務。\")"
+                },
+                {
+                    "source": "setName(\"Link to captured file\")",
+                    "target": "setName(\"連結到擷取的檔案\")"
+                },
+                {
+                    "source": "setDesc(\"Choose how QuickAdd should insert a link to the captured file in the current note.\")",
+                    "target": "setDesc(\"選擇 QuickAdd 要如何在目前筆記中插入擷取檔案的連結。\")"
+                },
+                {
+                    "source": "setDesc(\"Where to place the link when appending\")",
+                    "target": "setDesc(\"附加時連結要放置的位置\")"
+                },
+                {
+                    "source": "setName(\"Link type\")",
+                    "target": "setName(\"連結類型\")"
+                },
+                {
+                    "source": "setName(\"Write position\")",
+                    "target": "setName(\"寫入位置\")"
+                },
+                {
+                    "source": "setName(\"Insert after\")",
+                    "target": "setName(\"插入於其後\")"
+                },
+                {
+                    "source": "setDesc(\"Insert capture after specified text. Accepts format syntax. Tip: use a heading (starts with #) to target a section. Blank line handling is configurable below.\")",
+                    "target": "setDesc(\"在指定文字之後插入擷取內容。可使用格式語法。提示：使用標題（以 # 開頭）可指定區段。空白行處理可在下方設定。\")"
+                },
+                {
+                    "source": "setName(\"Inline insertion\")",
+                    "target": "setName(\"行內插入\")"
+                },
+                {
+                    "source": "setDesc(\"Insert captured content on the same line, immediately after the matched text (no newline added).\")",
+                    "target": "setDesc(\"在同一行、符合文字之後立即插入擷取內容（不新增換行）。\")"
+                },
+                {
+                    "source": "setName(\"Replace existing value\")",
+                    "target": "setName(\"取代既有值\")"
+                },
+                {
+                    "source": "setDesc(\"Replace everything after the matched text up to end-of-line.\")",
+                    "target": "setDesc(\"取代符合文字之後到行尾的所有內容。\")"
+                },
+                {
+                    "source": "setName(\"Insert at end of section\")",
+                    "target": "setName(\"插入到區段結尾\")"
+                },
+                {
+                    "source": "setDesc(\"Place the text at the end of the matched section instead of the top.\")",
+                    "target": "setDesc(\"將文字放在符合區段的結尾，而不是開頭。\")"
+                },
+                {
+                    "source": "setName(\"Blank lines after match\")",
+                    "target": "setName(\"符合項目後的空白行\")"
+                },
+                {
+                    "source": "setName(\"Consider subsections\")",
+                    "target": "setName(\"包含子區段\")"
+                },
+                {
+                    "source": "setDesc(\"Also include the section\\u2019s subsections (requires target to be a heading starting with #). Subsections are headings inside the section.\")",
+                    "target": "setDesc(\"也包含該區段的子區段（目標必須是以 # 開頭的標題）。子區段是該區段內的標題。\")"
+                },
+                {
+                    "source": "Notice(\"Consider subsections requires the target to be a heading (starts with #)\")",
+                    "target": "Notice(\"包含子區段要求目標必須是標題（以 # 開頭）\")"
+                },
+                {
+                    "source": "setName(\"Create line if not found\")",
+                    "target": "setName(\"找不到時建立該行\")"
+                },
+                {
+                    "source": "setDesc(\"Creates the 'insert after' line if it is not found.\")",
+                    "target": "setDesc(\"找不到「插入於其後」的行時建立該行。\")"
+                },
+                {
+                    "source": "setName(\"Capture format\")",
+                    "target": "setName(\"擷取格式\")"
+                },
+                {
+                    "source": "setDesc(\"Set the format of the capture.\")",
+                    "target": "setDesc(\"設定擷取內容的格式。\")"
+                },
+                {
+                    "source": "setName(\"Create file if it doesn't exist\")",
+                    "target": "setName(\"不存在時建立檔案\")"
+                },
+                {
+                    "source": "setTooltip(\"Create file if it doesn't exist\")",
+                    "target": "setTooltip(\"不存在時建立檔案\")"
+                },
+                {
+                    "source": "setName(\"File name format\")",
+                    "target": "setName(\"檔案名稱格式\")"
+                },
+                {
+                    "source": "setDesc(\"Set the file name format.\")",
+                    "target": "setDesc(\"設定檔案名稱格式。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"File name format\")",
+                    "target": "setPlaceholder(\"檔案名稱格式\")"
+                },
+                {
+                    "source": "setName(\"Create in folder\")",
+                    "target": "setName(\"建立於資料夾\")"
+                },
+                {
+                    "source": "setDesc(\"Create the file in the specified folder. If multiple folders are specified, you will be prompted for which folder to create the file in.\")",
+                    "target": "setDesc(\"在指定資料夾中建立檔案。若指定多個資料夾，系統會詢問要在哪個資料夾中建立檔案。\")"
+                },
+                {
+                    "source": "setName(\"Include subfolders\")",
+                    "target": "setName(\"包含子資料夾\")"
+                },
+                {
+                    "source": "setDesc(\"Get prompted to choose from both the selected folders and their subfolders when creating the note.\")",
+                    "target": "setDesc(\"建立筆記時，從所選資料夾及其子資料夾中選擇。\")"
+                },
+                {
+                    "source": "setName(\"Create in same folder as active file\")",
+                    "target": "setName(\"建立於目前檔案的相同資料夾\")"
+                },
+                {
+                    "source": "setDesc(\"Creates the file in the same folder as the currently active file. Will not create the file if there is no active file.\")",
+                    "target": "setDesc(\"在目前作用中檔案的相同資料夾建立檔案。若沒有作用中檔案，則不會建立。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Folder path\")",
+                    "target": "setPlaceholder(\"資料夾路徑\")"
+                },
+                {
+                    "source": "setName(\"Link to created file\")",
+                    "target": "setName(\"連結到新建檔案\")"
+                },
+                {
+                    "source": "setDesc(\"Choose how QuickAdd should insert a link to the created file in the current note.\")",
+                    "target": "setDesc(\"選擇 QuickAdd 要如何在目前筆記中插入新建檔案的連結。\")"
+                },
+                {
+                    "source": "setName(\"If the target file already exists\")",
+                    "target": "setName(\"若目標檔案已存在\")"
+                },
+                {
+                    "source": "setDesc(\"Choose whether QuickAdd should ask what to do, update the existing file, create another file, or keep the existing file.\")",
+                    "target": "setDesc(\"選擇 QuickAdd 要詢問處理方式、更新既有檔案、建立另一個檔案，或保留既有檔案。\")"
+                },
+                {
+                    "source": "setDesc(\"The model the AI Assistant will use\")",
+                    "target": "setDesc(\"AI 助手要使用的模型\")"
+                },
+                {
+                    "source": "setName(\"Output variable name\")",
+                    "target": "setName(\"輸出變數名稱\")"
+                },
+                {
+                    "source": "setDesc(\"The name of the variable used to store the AI Assistant output, i.e. {{value:output}}.\")",
+                    "target": "setDesc(\"用來儲存 AI 助手輸出的變數名稱，例如 {{value:output}}。\")"
+                },
+                {
+                    "source": "setName(\"Show advanced settings\")",
+                    "target": "setName(\"顯示進階設定\")"
+                },
+                {
+                    "source": "setName(\"Top P\")",
+                    "target": "setName(\"Top P\")"
+                },
+                {
+                    "source": "setName(\"Frequency Penalty\")",
+                    "target": "setName(\"頻率懲罰\")"
+                },
+                {
+                    "source": "setDesc(\"Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim. The default is 0.\")",
+                    "target": "setDesc(\"正值會依目前文字中既有頻率懲罰新 token，降低模型逐字重複同一行的機率。預設為 0。\")"
+                },
+                {
+                    "source": "setName(\"Presence Penalty\")",
+                    "target": "setName(\"存在懲罰\")"
+                },
+                {
+                    "source": "setDesc(\"Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics. The default is 0.\")",
+                    "target": "setDesc(\"正值會依 token 是否已出現在目前文字中懲罰新 token，提高模型談論新主題的機率。預設為 0。\")"
+                },
+                {
+                    "source": "setName(\"File path\")",
+                    "target": "setName(\"檔案路徑\")"
+                },
+                {
+                    "source": "setDesc(\"Path to the file. Supports formatting like {{DATE}}, {{VALUE}}, etc.\")",
+                    "target": "setDesc(\"檔案路徑。支援 {{DATE}}、{{VALUE}} 等格式語法。\")"
+                },
+                {
+                    "source": "setName(\"Where to open\")",
+                    "target": "setName(\"開啟位置\")"
+                },
+                {
+                    "source": "setDesc(\"Choose tab, split, window, or sidebar\")",
+                    "target": "setDesc(\"選擇分頁、分割視窗、視窗或側邊欄\")"
+                },
+                {
+                    "source": "setName(\"Split direction\")",
+                    "target": "setName(\"分割方向\")"
+                },
+                {
+                    "source": "setName(\"Focus opened file\")",
+                    "target": "setName(\"聚焦已開啟檔案\")"
+                },
+                {
+                    "source": "setDesc(\"Bring the opened file to the foreground\")",
+                    "target": "setDesc(\"將開啟的檔案帶到前景\")"
+                },
+                {
+                    "source": "Notice(\"\",1e4).messageEl;l.replaceChildren(),Ua(l,\"No JavaScript files found\",\"quickadd-notice-title\")",
+                    "target": "Notice(\"\",1e4).messageEl;l.replaceChildren(),Ua(l,\"找不到 JavaScript 檔案\",\"quickadd-notice-title\")"
+                },
+                {
+                    "source": "setName(\"Obsidian command\")",
+                    "target": "setName(\"Obsidian 命令\")"
+                },
+                {
+                    "source": "setDesc(\"Add an Obsidian command\")",
+                    "target": "setDesc(\"新增 Obsidian 命令\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Obsidian command\")",
+                    "target": "setPlaceholder(\"Obsidian 命令\")"
+                },
+                {
+                    "source": "setName(\"Editor commands\")",
+                    "target": "setName(\"編輯器命令\")"
+                },
+                {
+                    "source": "setDesc(\"Add editor command\")",
+                    "target": "setDesc(\"新增編輯器命令\")"
+                },
+                {
+                    "source": "setName(\"User Scripts\")",
+                    "target": "setName(\"使用者腳本\")"
+                },
+                {
+                    "source": "setDesc(\"Add user script - type the name or click Browse\")",
+                    "target": "setDesc(\"新增使用者腳本：輸入名稱或點擊瀏覽\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Start typing script name...\")",
+                    "target": "setPlaceholder(\"開始輸入腳本名稱...\")"
+                },
+                {
+                    "source": "setTooltip(\"Browse and select a script file\")",
+                    "target": "setTooltip(\"瀏覽並選擇腳本檔\")"
+                },
+                {
+                    "source": "setDesc(\"Add existing choice\")",
+                    "target": "setDesc(\"新增既有 choice\")"
+                },
+                {
+                    "source": "setTooltip(`Add ${l} Choice`)",
+                    "target": "setTooltip(`新增 ${l} Choice`)"
+                },
+                {
+                    "source": "setTooltip(\"Add Open File command\")",
+                    "target": "setTooltip(\"新增開啟檔案命令\")"
+                },
+                {
+                    "source": "setTooltip(\"Add AI Assistant command\")",
+                    "target": "setTooltip(\"新增 AI 助手命令\")"
+                },
+                {
+                    "source": "setTooltip(\"Add wait command\")",
+                    "target": "setTooltip(\"新增等待命令\")"
+                },
+                {
+                    "source": "setTooltip(\"Add conditional command\")",
+                    "target": "setTooltip(\"新增條件命令\")"
+                },
+                {
+                    "source": "setName(\"Condition type\")",
+                    "target": "setName(\"條件類型\")"
+                },
+                {
+                    "source": "setDesc(\"Choose how this condition should be evaluated.\")",
+                    "target": "setDesc(\"選擇此條件的評估方式。\")"
+                },
+                {
+                    "source": "setName(\"Variable name\")",
+                    "target": "setName(\"變數名稱\")"
+                },
+                {
+                    "source": "setDesc(\"Name of the macro variable to inspect (without the $ prefix).\")",
+                    "target": "setDesc(\"要檢查的巨集變數名稱（不含 $ 前綴）。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. projectStatus\")",
+                    "target": "setPlaceholder(\"例如 projectStatus\")"
+                },
+                {
+                    "source": "setDesc(\"How to compare the variable value.\")",
+                    "target": "setDesc(\"如何比較變數值。\")"
+                },
+                {
+                    "source": "setName(\"Value type\")",
+                    "target": "setName(\"值類型\")"
+                },
+                {
+                    "source": "setDesc(\"How to interpret the comparison value.\")",
+                    "target": "setDesc(\"如何解讀比較值。\")"
+                },
+                {
+                    "source": "setName(\"Expected value\")",
+                    "target": "setName(\"預期值\")"
+                },
+                {
+                    "source": "setDesc(\"Choose true or false.\")",
+                    "target": "setDesc(\"選擇 true 或 false。\")"
+                },
+                {
+                    "source": "setDesc(\"Value to compare against.\")",
+                    "target": "setDesc(\"要比較的值。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Enter comparison value\")",
+                    "target": "setPlaceholder(\"輸入比較值\")"
+                },
+                {
+                    "source": "setName(\"Script path\")",
+                    "target": "setName(\"腳本路徑\")"
+                },
+                {
+                    "source": "setDesc(\"Vault-relative path to the JavaScript file.\")",
+                    "target": "setDesc(\"JavaScript 檔案相對於儲存庫的路徑。\")"
+                },
+                {
+                    "source": "setTooltip(\"Select a script file\")",
+                    "target": "setTooltip(\"選擇腳本檔\")"
+                },
+                {
+                    "source": "setName(\"Export name\")",
+                    "target": "setName(\"匯出名稱\")"
+                },
+                {
+                    "source": "setName(\"Run on startup\")",
+                    "target": "setName(\"啟動時執行\")"
+                },
+                {
+                    "source": "setDesc(\"Execute this macro when Obsidian starts\")",
+                    "target": "setDesc(\"Obsidian 啟動時執行此巨集\")"
+                },
+                {
+                    "source": "setText(\"Edit Multi Choice\")",
+                    "target": "setText(\"編輯 Multi Choice\")"
+                },
+                {
+                    "source": "setDesc(\"Shown in the choice picker search box when this multi choice opens. Leave blank to use the multi name.\")",
+                    "target": "setDesc(\"此 multi choice 開啟時顯示在 choice 選擇器搜尋框中。留空則使用 multi 名稱。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Defaults to the multi name\")",
+                    "target": "setPlaceholder(\"預設為 multi 名稱\")"
+                },
+                {
+                    "source": "Notice(`Failed to load model directory: ${l.message??l}`)",
+                    "target": "Notice(`無法載入模型目錄：${l.message??l}`)"
+                },
+                {
+                    "source": "setPlaceholder(\"Filter by name or id\")",
+                    "target": "setPlaceholder(\"依名稱或 ID 篩選\")"
+                },
+                {
+                    "source": "setTooltip(\"Select all\")",
+                    "target": "setTooltip(\"全選\")"
+                },
+                {
+                    "source": "setTooltip(\"Clear selection\")",
+                    "target": "setTooltip(\"清除選取\")"
+                },
+                {
+                    "source": "setName(\"Import mode\")",
+                    "target": "setName(\"匯入模式\")"
+                },
+                {
+                    "source": "setDesc(\"Add will append new models. Replace will overwrite existing models with the selected list.\")",
+                    "target": "setDesc(\"「新增」會附加新模型。「取代」會用所選清單覆寫既有模型。\")"
+                },
+                {
+                    "source": "setButtonText(\"Import selected\")",
+                    "target": "setButtonText(\"匯入所選項目\")"
+                },
+                {
+                    "source": "Notice(\"Select at least one model.\")",
+                    "target": "Notice(\"請至少選擇一個模型。\")"
+                },
+                {
+                    "source": "Notice(\"No models selected to import.\")",
+                    "target": "Notice(\"未選擇要匯入的模型。\")"
+                },
+                {
+                    "source": "Notice(`Import failed: ${l.message??l}`)",
+                    "target": "Notice(`匯入失敗：${l.message??l}`)"
+                },
+                {
+                    "source": "setName(\"API Key\")",
+                    "target": "setName(\"API Key\")"
+                },
+                {
+                    "source": "setDesc(\"Select a secret from SecretStorage\")",
+                    "target": "setDesc(\"從 SecretStorage 選擇密鑰\")"
+                },
+                {
+                    "source": "Notice(`Invalid endpoint URL for ${l.name}.`)",
+                    "target": "Notice(`${l.name} 的端點 URL 無效。`)"
+                },
+                {
+                    "source": "Notice(`${l.name} requires an API key.`)",
+                    "target": "Notice(`${l.name} 需要 API key。`)"
+                },
+                {
+                    "source": "Notice(`${l.name} added. Click Edit to configure models.`)",
+                    "target": "Notice(`已新增 ${l.name}。點擊「編輯」設定模型。`)"
+                },
+                {
+                    "source": "Notice(`Failed to add provider: ${b.message??b}`)",
+                    "target": "Notice(`無法新增提供者：${b.message??b}`)"
+                },
+                {
+                    "source": "setName(\"Custom provider\")",
+                    "target": "setName(\"自訂提供者\")"
+                },
+                {
+                    "source": "setDesc(\"Create any custom endpoint (OpenAI-compatible or otherwise)\")",
+                    "target": "setDesc(\"建立任意自訂端點（相容 OpenAI 或其他格式）\")"
+                },
+                {
+                    "source": "setButtonText(\"Add custom...\")",
+                    "target": "setButtonText(\"新增自訂...\")"
+                },
+                {
+                    "source": "Notice(\"Custom provider added. Click Edit to configure.\")",
+                    "target": "Notice(\"已新增自訂提供者。點擊「編輯」進行設定。\")"
+                },
+                {
+                    "source": "setDesc(\"Providers for the AI Assistant\")",
+                    "target": "setDesc(\"AI 助手的提供者\")"
+                },
+                {
+                    "source": "setButtonText(\"Add Provider\")",
+                    "target": "setButtonText(\"新增提供者\")"
+                },
+                {
+                    "source": "setDesc(\"The name of the provider\")",
+                    "target": "setDesc(\"提供者名稱\")"
+                },
+                {
+                    "source": "setDesc(\"The endpoint for the AI Assistant\")",
+                    "target": "setDesc(\"AI 助手的端點\")"
+                },
+                {
+                    "source": "setName(\"Model source\")",
+                    "target": "setName(\"模型來源\")"
+                },
+                {
+                    "source": "setDesc(\"Choose where QuickAdd looks when browsing or syncing models for this provider.\")",
+                    "target": "setDesc(\"選擇 QuickAdd 瀏覽或同步此提供者模型時要查找的位置。\")"
+                },
+                {
+                    "source": "setDesc(`Max Tokens: ${G.maxTokens}`)",
+                    "target": "setDesc(`Token 上限：${G.maxTokens}`)"
+                },
+                {
+                    "source": "setName(\"Add Model\")",
+                    "target": "setName(\"新增模型\")"
+                },
+                {
+                    "source": "setButtonText(\"Add Model\")",
+                    "target": "setButtonText(\"新增模型\")"
+                },
+                {
+                    "source": "setName(\"Import models\")",
+                    "target": "setName(\"匯入模型\")"
+                },
+                {
+                    "source": "setDesc(`Browse and import models from ${l}.`)",
+                    "target": "setDesc(`從 ${l} 瀏覽並匯入模型。`)"
+                },
+                {
+                    "source": "setButtonText(\"Browse models\")",
+                    "target": "setButtonText(\"瀏覽模型\")"
+                },
+                {
+                    "source": "Notice(`Imported ${c.length} models${d===\"replace\"?\" (replaced)\":\" (added)\"}.`)",
+                    "target": "Notice(`已匯入 ${c.length} 個模型${d===\"replace\"?\"（已取代）\":\"（已新增）\"}。`)"
+                },
+                {
+                    "source": "setName(\"Auto-sync models\")",
+                    "target": "setName(\"自動同步模型\")"
+                },
+                {
+                    "source": "setDesc(`Automatically import new models from ${l} when opening settings.`)",
+                    "target": "setDesc(`開啟設定時自動從 ${l} 匯入新模型。`)"
+                },
+                {
+                    "source": "setButtonText(\"Sync now\")",
+                    "target": "setButtonText(\"立即同步\")"
+                },
+                {
+                    "source": "Notice(`Models synced from ${l}.`)",
+                    "target": "Notice(`已從 ${l} 同步模型。`)"
+                },
+                {
+                    "source": "Notice(`Sync failed: ${t.message??t}`)",
+                    "target": "Notice(`同步失敗：${t.message??t}`)"
+                },
+                {
+                    "source": "setDesc(\"The providers for the AI Assistant\")",
+                    "target": "setDesc(\"AI 助手的提供者\")"
+                },
+                {
+                    "source": "setButtonText(\"Edit Providers\")",
+                    "target": "setButtonText(\"編輯提供者\")"
+                },
+                {
+                    "source": "setName(\"Default Model\")",
+                    "target": "setName(\"預設模型\")"
+                },
+                {
+                    "source": "setDesc(\"The default model for the AI Assistant\")",
+                    "target": "setDesc(\"AI 助手的預設模型\")"
+                },
+                {
+                    "source": "setName(\"Show Assistant\")",
+                    "target": "setName(\"顯示助手\")"
+                },
+                {
+                    "source": "setDesc(\"Show status messages from the AI Assistant\")",
+                    "target": "setDesc(\"顯示 AI 助手的狀態訊息\")"
+                },
+                {
+                    "source": "Notice(\"Choice name is invalid.\")",
+                    "target": "Notice(\"Choice 名稱無效。\")"
+                },
+                {
+                    "source": "setTitle(\"Move to: (no folders)\")",
+                    "target": "setTitle(\"移至：（沒有資料夾）\")"
+                },
+                {
+                    "source": "setTitle(`Move to: ${b.path}`)",
+                    "target": "setTitle(`移至：${b.path}`)"
+                },
+                {
+                    "source": "Notice(\"Select at least one choice to export.\")",
+                    "target": "Notice(\"請至少選擇一個要匯出的 choice。\")"
+                },
+                {
+                    "source": "Notice(`Export failed: ${z?.message??String(z)}`)",
+                    "target": "Notice(`匯出失敗：${z?.message??String(z)}`)"
+                },
+                {
+                    "source": "Notice(`Copied package (${z.pkg.choices.length} choice${z.pkg.choices.length===1?\"\":\"s\"}) to clipboard.`)",
+                    "target": "Notice(`已將套件（${z.pkg.choices.length} 個 choice）複製到剪貼簿。`)"
+                },
+                {
+                    "source": "Notice(\"Package copied with warnings. Review details below.\")",
+                    "target": "Notice(\"套件已複製，但有警告。請查看下方詳細資訊。\")"
+                },
+                {
+                    "source": "Notice(`Copy failed: ${z?.message??String(z)}`)",
+                    "target": "Notice(`複製失敗：${z?.message??String(z)}`)"
+                },
+                {
+                    "source": "Notice(\"Enter a file path before saving.\")",
+                    "target": "Notice(\"儲存前請先輸入檔案路徑。\")"
+                },
+                {
+                    "source": "Notice(`Saved package (${y.pkg.choices.length} choice${y.pkg.choices.length===1?\"\":\"s\"}) to '${z}'.`)",
+                    "target": "Notice(`已將套件（${y.pkg.choices.length} 個 choice）儲存到「${z}」。`)"
+                },
+                {
+                    "source": "Notice(\"Package saved with warnings. Review details below.\")",
+                    "target": "Notice(\"套件已儲存，但有警告。請查看下方詳細資訊。\")"
+                },
+                {
+                    "source": "Notice(`Save failed: ${y?.message??String(y)}`)",
+                    "target": "Notice(`儲存失敗：${y?.message??String(y)}`)"
+                },
+                {
+                    "source": "Notice(\"This package has already been imported.\")",
+                    "target": "Notice(\"此套件已匯入過。\")"
+                },
+                {
+                    "source": "Notice(\"Load a package before importing.\")",
+                    "target": "Notice(\"匯入前請先載入套件。\")"
+                },
+                {
+                    "source": "Notice(`Imported ${J.addedChoiceIds.length+J.overwrittenChoiceIds.length} choice${J.addedChoiceIds.length+J.overwrittenChoiceIds.length===1?\"\":\"s\"} successfully.`)",
+                    "target": "Notice(`已成功匯入 ${J.addedChoiceIds.length+J.overwrittenChoiceIds.length} 個 choice。`)"
+                },
+                {
+                    "source": "Notice(`Import failed: ${y?.message??y}`)",
+                    "target": "Notice(`匯入失敗：${y?.message??y}`)"
+                },
+                {
+                    "source": "setName(\"Development Information\")",
+                    "target": "setName(\"開發資訊\")"
+                },
+                {
+                    "source": "setDesc(\"Git information for developers.\")",
+                    "target": "setDesc(\"供開發者使用的 Git 資訊。\")"
+                },
+                {
+                    "source": "setDesc(\"Bundle or import QuickAdd automations as reusable packages.\")",
+                    "target": "setDesc(\"將 QuickAdd 自動化打包或匯入為可重複使用的套件。\")"
+                },
+                {
+                    "source": "setButtonText(\"Export package\\u2026\")",
+                    "target": "setButtonText(\"匯出套件…\")"
+                },
+                {
+                    "source": "setButtonText(\"Import package\\u2026\")",
+                    "target": "setButtonText(\"匯入套件…\")"
+                },
+                {
+                    "source": "setName(\"Announce Updates\")",
+                    "target": "setName(\"公告更新\")"
+                },
+                {
+                    "source": "setName(\"Show Capture Notifications\")",
+                    "target": "setName(\"顯示擷取通知\")"
+                },
+                {
+                    "source": "setDesc(\"Display a notification when content is captured successfully to confirm the operation completed.\")",
+                    "target": "setDesc(\"內容擷取成功時顯示通知，以確認操作已完成。\")"
+                },
+                {
+                    "source": "setName(\"Show Input Cancellation Notifications\")",
+                    "target": "setName(\"顯示輸入取消通知\")"
+                },
+                {
+                    "source": "setDesc(\"Display a notification when an input prompt is cancelled without submitting. Disable this to avoid extra notices when dismissing prompts.\")",
+                    "target": "setDesc(\"輸入提示未送出即取消時顯示通知。停用後可避免關閉提示時出現額外通知。\")"
+                },
+                {
+                    "source": "setName(\"Use Multi-line Input Prompt\")",
+                    "target": "setName(\"使用多行輸入提示\")"
+                },
+                {
+                    "source": "setDesc(\"Use multi-line input prompt instead of single-line input prompt\")",
+                    "target": "setDesc(\"使用多行輸入提示，而非單行輸入提示\")"
+                },
+                {
+                    "source": "setTooltip(\"Use multi-line input prompt\")",
+                    "target": "setTooltip(\"使用多行輸入提示\")"
+                },
+                {
+                    "source": "setName(\"Persist Input Prompt Drafts\")",
+                    "target": "setName(\"保留輸入提示草稿\")"
+                },
+                {
+                    "source": "setDesc(\"Keep drafts when closing input prompts so they can be restored on reopen. Drafts are stored only for this session.\")",
+                    "target": "setDesc(\"關閉輸入提示時保留草稿，以便重新開啟時還原。草稿只會儲存在本次工作階段。\")"
+                },
+                {
+                    "source": "setName(\"Use editor selection as default Capture value\")",
+                    "target": "setName(\"使用編輯器選取內容作為 Capture 預設值\")"
+                },
+                {
+                    "source": "setDesc(\"When enabled, Capture uses the current editor selection as {{VALUE}} and may skip the prompt. When disabled, Capture always prompts for {{VALUE}}.\")",
+                    "target": "setDesc(\"啟用時，Capture 會使用目前編輯器選取內容作為 {{VALUE}}，並可能略過提示。停用時，Capture 一律提示輸入 {{VALUE}}。\")"
+                },
+                {
+                    "source": "setName(\"One-page input for choices (Beta)\")",
+                    "target": "setName(\"Choice 單頁輸入（Beta）\")"
+                },
+                {
+                    "source": "setName(\"Date aliases\")",
+                    "target": "setName(\"日期別名\")"
+                },
+                {
+                    "source": "setDesc(\"Shortcodes for natural language date parsing. One per line: alias = phrase. Example: tm = tomorrow.\")",
+                    "target": "setDesc(\"自然語言日期解析的短代碼。每行一個：別名 = 詞句。例如：tm = tomorrow。\")"
+                },
+                {
+                    "source": "setPlaceholder(`t = today\ntm = tomorrow\nyd = yesterday`)",
+                    "target": "setPlaceholder(`t = 今天\ntm = 明天\nyd = 昨天`)"
+                },
+                {
+                    "source": "setButtonText(\"Reset to defaults\")",
+                    "target": "setButtonText(\"重設為預設值\")"
+                },
+                {
+                    "source": "setName(\"Disable AI & Online features\")",
+                    "target": "setName(\"停用 AI 與線上功能\")"
+                },
+                {
+                    "source": "setName(\"Show icon in sidebar\")",
+                    "target": "setName(\"在側邊欄顯示圖示\")"
+                },
+                {
+                    "source": "setDesc(\"Add QuickAdd icon to the sidebar ribbon. Requires a reload.\")",
+                    "target": "setDesc(\"將 QuickAdd 圖示加入側邊欄 ribbon。需要重新載入。\")"
+                },
+                {
+                    "source": "setName(\"Result Joiner\")",
+                    "target": "setName(\"結果串接符\")"
+                },
+                {
+                    "source": "setDesc(\"The string used to join multiple LLM responses together. The default is a newline.\")",
+                    "target": "setDesc(\"用來串接多個 LLM 回應的字串。預設為換行。\")"
+                },
+                {
+                    "source": "setName(\"Chunk Separator\")",
+                    "target": "setName(\"區塊分隔符\")"
+                },
+                {
+                    "source": "setDesc(\"The string used to separate chunks of text. The default is a newline.\")",
+                    "target": "setDesc(\"用來分隔文字區塊的字串。預設為換行。\")"
+                },
+                {
+                    "source": "setName(\"Max Chunk Tokens\")",
+                    "target": "setName(\"區塊 Token 上限\")"
+                },
+                {
+                    "source": "setName(\"Merge Chunks\")",
+                    "target": "setName(\"合併區塊\")"
+                },
+                {
+                    "source": "text: '${this.text}'",
+                    "target": "text: '${this.text}'"
+                },
+                {
+                    "source": "name:\"Document Name\"",
+                    "target": "name:\"文件名稱\""
+                },
+                {
+                    "source": "textContent=`Path: ${G.path}`",
+                    "target": "textContent=`路徑：${G.path}`"
+                },
+                {
+                    "source": "textContent=`Modified: ${new Date(G.stat.mtime).toLocaleDateString()}`",
+                    "target": "textContent=`修改時間：${new Date(G.stat.mtime).toLocaleDateString()}`"
+                },
+                {
+                    "source": "text:`Aliases (${t.length})`",
+                    "target": "text:`別名（${t.length}）`"
+                },
+                {
+                    "source": "text:\"Provide inputs\"",
+                    "target": "text:\"提供輸入\""
+                },
+                {
+                    "source": "text:`Aliases (${s.length})`",
+                    "target": "text:`別名（${s.length}）`"
+                },
+                {
+                    "source": "name: \"gpt-4\"",
+                    "target": "name: \"gpt-4\""
+                },
+                {
+                    "source": "textContent=\"Capture to active file\"",
+                    "target": "textContent=\"擷取到目前檔案\""
+                },
+                {
+                    "source": "text:\"Preview: \"",
+                    "target": "text:\"預覽：\""
+                },
+                {
+                    "source": "textContent=\"Loading preview\\u2026\"",
+                    "target": "textContent=\"正在載入預覽…\""
+                },
+                {
+                    "source": "textContent=\"Preview unavailable\"",
+                    "target": "textContent=\"無法預覽\""
+                },
+                {
+                    "source": "text:\"Tip: open this canvas and select one card to grab its id instantly.\"",
+                    "target": "text:\"提示：開啟此 canvas 並選取一張卡片，即可立即取得其 ID。\""
+                },
+                {
+                    "source": "text:\"Open target canvas\"",
+                    "target": "text:\"開啟目標 canvas\""
+                },
+                {
+                    "source": "text:\"Use selected in open canvas\"",
+                    "target": "text:\"使用已開啟 canvas 中的選取項目\""
+                },
+                {
+                    "source": "text:\"Loading canvas nodes\\u2026\"",
+                    "target": "text:\"正在載入 canvas 節點…\""
+                },
+                {
+                    "source": "text:\"No nodes match the current filter.\"",
+                    "target": "text:\"沒有符合目前篩選條件的節點。\""
+                },
+                {
+                    "source": "text:\"Copy ID\"",
+                    "target": "text:\"複製 ID\""
+                },
+                {
+                    "source": "innerText=\"Loading preview\\u2026\"",
+                    "target": "innerText=\"正在載入預覽…\""
+                },
+                {
+                    "source": "innerText=\"Preview unavailable\"",
+                    "target": "innerText=\"無法預覽\""
+                },
+                {
+                    "source": "description:\"Changes trailing digits only. Example: Draft009.md -> Draft010.md.\"",
+                    "target": "description:\"只變更尾端數字。例如：Draft009.md -> Draft010.md。\""
+                },
+                {
+                    "source": "description:\"Keeps the original name and adds a duplicate marker. Example: Project Plan.md -> Project Plan (1).md.\"",
+                    "target": "description:\"保留原名稱並新增重複標記。例如：Project Plan.md -> Project Plan (1).md。\""
+                },
+                {
+                    "source": "description:\"Leaves the file unchanged and opens the existing file.\"",
+                    "target": "description:\"保持檔案不變，並開啟既有檔案。\""
+                },
+                {
+                    "source": "text:\"Choose folder when creating a new note\"",
+                    "target": "text:\"建立新筆記時選擇資料夾\""
+                },
+                {
+                    "source": "text:`${this.settings.name} Settings`",
+                    "target": "text:`${this.settings.name} 設定`"
+                },
+                {
+                    "source": "text:\"Exact for OpenAI models; estimates for others.\"",
+                    "target": "text:\"OpenAI 模型為精確值；其他模型為估算值。\""
+                },
+                {
+                    "source": "textContent=\"Open File Command Settings\"",
+                    "target": "textContent=\"開啟檔案命令設定\""
+                },
+                {
+                    "source": "name=`Open file: ${G}`",
+                    "target": "name=`開啟檔案：${G}`"
+                },
+                {
+                    "source": "textContent=\"View documentation\"",
+                    "target": "textContent=\"查看文件\""
+                },
+                {
+                    "source": "name=`Open file: ${this.filePath}`",
+                    "target": "name=`開啟檔案：${this.filePath}`"
+                },
+                {
+                    "source": "text:\"Configure Conditional Command\"",
+                    "target": "text:\"設定條件命令\""
+                },
+                {
+                    "source": "name=`If ${l}`",
+                    "target": "name=`如果 ${l}`"
+                },
+                {
+                    "source": "text:`Browse models for ${this.provider.name}`",
+                    "target": "text:`瀏覽 ${this.provider.name} 的模型`"
+                },
+                {
+                    "source": "text:`${G.maxTokens.toLocaleString()} tokens max`",
+                    "target": "text:`最多 ${G.maxTokens.toLocaleString()} tokens`"
+                },
+                {
+                    "source": "name:\"Hugging Face\"",
+                    "target": "name:\"Hugging Face\""
+                },
+                {
+                    "source": "text:\"Add a provider\"",
+                    "target": "text:\"新增提供者\""
+                },
+                {
+                    "source": "text:\"AI Assistant Settings\"",
+                    "target": "text:\"AI 助手設定\""
+                },
+                {
+                    "source": "textContent=\"Add Choice\"",
+                    "target": "textContent=\"新增 Choice\""
+                },
+                {
+                    "source": "textContent=\"AI Assistant\"",
+                    "target": "textContent=\"AI 助手\""
+                },
+                {
+                    "source": "textContent=\"Global Variables\"",
+                    "target": "textContent=\"全域變數\""
+                },
+                {
+                    "source": "textContent=\"Add variable\"",
+                    "target": "textContent=\"新增變數\""
+                },
+                {
+                    "source": "textContent=\"No choices match the current filter.\"",
+                    "target": "textContent=\"沒有符合目前篩選條件的 choice。\""
+                },
+                {
+                    "source": "textContent=\"Missing dependencies detected\"",
+                    "target": "textContent=\"偵測到缺少相依項目\""
+                },
+                {
+                    "source": "textContent=\"Missing assets:\"",
+                    "target": "textContent=\"缺少資產：\""
+                },
+                {
+                    "source": "textContent=\"Select visible\"",
+                    "target": "textContent=\"選取可見項目\""
+                },
+                {
+                    "source": "textContent=\"Clear selection\"",
+                    "target": "textContent=\"清除選取\""
+                },
+                {
+                    "source": "textContent=\"Package summary\"",
+                    "target": "textContent=\"套件摘要\""
+                },
+                {
+                    "source": "textContent=\"Selected choices\"",
+                    "target": "textContent=\"已選取的 choice\""
+                },
+                {
+                    "source": "textContent=\"Total packaged\"",
+                    "target": "textContent=\"打包總數\""
+                },
+                {
+                    "source": "textContent=\"Save to file\"",
+                    "target": "textContent=\"儲存到檔案\""
+                },
+                {
+                    "source": "textContent=\"Analyzing package\\u2026\"",
+                    "target": "textContent=\"正在分析套件…\""
+                },
+                {
+                    "source": "textContent=\"QuickAdd version:\"",
+                    "target": "textContent=\"QuickAdd 版本：\""
+                },
+                {
+                    "source": "textContent=\"Choice decisions\"",
+                    "target": "textContent=\"Choice 處理決策\""
+                },
+                {
+                    "source": "textContent=\"Asset decisions\"",
+                    "target": "textContent=\"資產處理決策\""
+                },
+                {
+                    "source": "textContent=\"No choices found in this package.\"",
+                    "target": "textContent=\"此套件中找不到 choice。\""
+                },
+                {
+                    "source": "textContent=\"No additional assets bundled with this package.\"",
+                    "target": "textContent=\"此套件未包含其他資產。\""
+                },
+                {
+                    "source": "textContent=\"Destination path\"",
+                    "target": "textContent=\"目的路徑\""
+                },
+                {
+                    "source": "textContent=\"Last import\"",
+                    "target": "textContent=\"上次匯入\""
+                },
+                {
+                    "source": "textContent=\"Paste package JSON\"",
+                    "target": "textContent=\"貼上套件 JSON\""
+                },
+                {
+                    "source": "description:\"Mutual exclusion of insertAfter and writeToBottomOfFile settings. If insertAfter is enabled, writeToBottomOfFile is disabled. To support changes in settings UI.\"",
+                    "target": "description:\"insertAfter 與 writeToBottomOfFile 設定互斥。若啟用 insertAfter，writeToBottomOfFile 會停用。用於支援設定介面變更。\""
+                },
+                {
+                    "source": "description:\"Set version to the current plugin version.\"",
+                    "target": "description:\"將版本設為目前外掛版本。\""
+                },
+                {
+                    "source": "description:\"Add default AI providers to the settings.\"",
+                    "target": "description:\"將預設 AI 提供者加入設定。\""
+                },
+                {
+                    "source": "description:\"Migrate legacy openFileInNewTab settings to new fileOpening format\"",
+                    "target": "description:\"將舊版 openFileInNewTab 設定遷移到新的 fileOpening 格式\""
+                },
+                {
+                    "source": "description:\"Backfill missing file opening defaults for older choices\"",
+                    "target": "description:\"補齊舊 choice 缺少的檔案開啟預設值\""
+                },
+                {
+                    "source": "description:\"Ensure every AI provider has a discovery mode so browsing works without models.dev\"",
+                    "target": "description:\"確保每個 AI 提供者都有探索模式，讓瀏覽功能不依賴 models.dev 也能運作\""
+                },
+                {
+                    "source": "description:\"Move AI provider API keys into Obsidian SecretStorage\"",
+                    "target": "description:\"將 AI 提供者 API key 移入 Obsidian SecretStorage\""
+                },
+                {
+                    "source": "text:\"Fetching release notes...\"",
+                    "target": "text:\"正在取得版本說明...\""
+                },
+                {
+                    "source": "description:\"Choice name\"",
+                    "target": "description:\"Choice 名稱\""
+                },
+                {
+                    "source": "description:\"Choice id\"",
+                    "target": "description:\"Choice ID\""
+                },
+                {
+                    "source": "description:\"Variables object as JSON\"",
+                    "target": "description:\"變數物件（JSON）\""
+                },
+                {
+                    "source": "description:\"Allow interactive prompts\"",
+                    "target": "description:\"允許互動式提示\""
+                },
+                {
+                    "source": "description:\"Filter by choice type\"",
+                    "target": "description:\"依 choice 類型篩選\""
+                },
+                {
+                    "source": "description:\"Only include command-enabled choices\"",
+                    "target": "description:\"只包含已啟用命令的 choice\""
+                }
+            ]
+        }
+    }
+}
