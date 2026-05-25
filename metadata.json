@@ -206,5 +206,18 @@
         "created_at": "2026-05-25T03:44:59.606Z",
         "updated_at": "2026-05-25T03:44:59.606Z",
         "type": "plugin"
+    },
+    {
+        "id": "HOf8I_2KW22zCsHzz1gag-Ctbo7oFwhL",
+        "plugin": "grid-note",
+        "language": "zh-tw",
+        "version": "2.0.12",
+        "supported_versions": "2.0.12",
+        "title": "[zh-tw] Grid Note",
+        "description": "Grid Note 繁體中文翻譯與微調",
+        "hash": "0d9b80120d9b80120d9b80120d9b8012",
+        "created_at": "2026-05-25T03:45:07.968Z",
+        "updated_at": "2026-05-25T03:45:07.968Z",
+        "type": "plugin"
     }
 ]
