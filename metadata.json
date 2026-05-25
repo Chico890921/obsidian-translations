@@ -466,5 +466,18 @@
         "created_at": "2026-05-25T03:50:10.793Z",
         "updated_at": "2026-05-25T03:50:10.793Z",
         "type": "plugin"
+    },
+    {
+        "id": "F3dWJ_oTdltolPDS3j1ROS-vFkzriJbe",
+        "plugin": "pdf-plus",
+        "language": "zh-tw",
+        "version": "0.40.31",
+        "supported_versions": "0.40.31",
+        "title": "[zh-tw] PDF++",
+        "description": "PDF++ 繁體中文化與微調",
+        "hash": "7af391257af391257af391257af39125",
+        "created_at": "2026-05-25T03:50:23.749Z",
+        "updated_at": "2026-05-25T03:50:23.749Z",
+        "type": "plugin"
     }
 ]
