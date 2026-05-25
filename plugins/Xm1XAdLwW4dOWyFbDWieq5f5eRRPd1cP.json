@@ -1,0 +1,219 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "file-explorer-note-count",
+        "version": "1.2.4",
+        "title": "[zh-tw] File Explorer Note Count",
+        "description": "File Explorer Note Count Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.2.4",
+        "author": "Chico",
+        "updatedAt": 1778618302954
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "计数时包含/排除文件的扩展名列表",
+                    "target": "計數時包含/排除檔案的副檔名列表"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "用逗号分隔",
+                    "target": "用逗號分隔"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "获取文件资源管理器失败",
+                    "target": "取得檔案總管失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "缺少文件资源管理器",
+                    "target": "缺少檔案總管"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "未找到文件资源管理器",
+                    "target": "找不到檔案總管"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "未找到文件资源管理器，正在重试...",
+                    "target": "找不到檔案總管，正在重試..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "正在加载 FileExplorerNoteCount",
+                    "target": "正在載入 FileExplorerNoteCount"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "正在卸载 FileExplorerNoteCount",
+                    "target": "正在卸載 FileExplorerNoteCount"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "开启此选项后，即使展开已折叠的文件夹也能看到笔记数量",
+                    "target": "開啟此選項後，即使展開已摺疊的資料夾也能看到筆記數量"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "关闭此选项以选择需要计数的文件",
+                    "target": "關閉此選項以選擇需要計數的檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "开启此选项以使用过滤列表排除文件",
+                    "target": "開啟此選項以使用篩選列表排除檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "显示所有数字",
+                    "target": "顯示所有數字"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "添加根文件夹",
+                    "target": "新增根資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "仅显示 Markdown 笔记",
+                    "target": "僅顯示 Markdown 筆記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "过滤列表",
+                    "target": "篩選列表"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "启用黑名单",
+                    "target": "啟用黑名單"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "留空以计数所有类型的文件",
+                    "target": "留空以計數所有類型的檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "more then one file-explorer",
+                    "target": "偵測到多個檔案總管"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "文件资源管理器笔记数量设置",
+                    "target": "檔案總管筆記數量設定"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "error('获取文件资源管理器失败')",
+                    "target": "error('取得檔案總管失敗')"
+                },
+                {
+                    "source": "log('未找到文件资源管理器，正在重试...')",
+                    "target": "log('找不到檔案總管，正在重試...')"
+                },
+                {
+                    "source": "error('缺少文件资源管理器')",
+                    "target": "error('缺少檔案總管')"
+                },
+                {
+                    "source": "setName('显示所有数字')",
+                    "target": "setName('顯示所有數字')"
+                },
+                {
+                    "source": "setDesc('开启此选项后，即使展开已折叠的文件夹也能看到笔记数量')",
+                    "target": "setDesc('開啟此選項後，即使展開已摺疊的資料夾也能看到筆記數量')"
+                },
+                {
+                    "source": "setName('添加根文件夹')",
+                    "target": "setName('新增根資料夾')"
+                },
+                {
+                    "source": "setDesc('默认情况下，Obsidian 不提供根文件夹，它被移动到下拉菜单用于切换保管库。' +\n            '启用此选项可在文件资源管理器中查看根文件夹及其数量')",
+                    "target": "setDesc('預設情況下，Obsidian 不提供根資料夾，它被移到用於切換 vault 的下拉選單。' +\n            '啟用此選項即可在檔案總管中查看根資料夾及其數量')"
+                },
+                {
+                    "source": "setName('仅显示 Markdown 笔记')",
+                    "target": "setName('僅顯示 Markdown 筆記')"
+                },
+                {
+                    "source": "setDesc('关闭此选项以选择需要计数的文件')",
+                    "target": "setDesc('關閉此選項以選擇需要計數的檔案')"
+                },
+                {
+                    "source": "setName('过滤列表')",
+                    "target": "setName('篩選列表')"
+                },
+                {
+                    "source": "appendText('计数时包含/排除文件的扩展名列表')",
+                    "target": "appendText('計數時包含/排除檔案的副檔名列表')"
+                },
+                {
+                    "source": "appendText('用逗号分隔')",
+                    "target": "appendText('用逗號分隔')"
+                },
+                {
+                    "source": "setPlaceholder('留空以计数所有类型的文件')",
+                    "target": "setPlaceholder('留空以計數所有類型的檔案')"
+                },
+                {
+                    "source": "setName('启用黑名单')",
+                    "target": "setName('啟用黑名單')"
+                },
+                {
+                    "source": "setDesc('开启此选项以使用过滤列表排除文件')",
+                    "target": "setDesc('開啟此選項以使用篩選列表排除檔案')"
+                },
+                {
+                    "source": "error('未找到文件资源管理器')",
+                    "target": "error('找不到檔案總管')"
+                },
+                {
+                    "source": "log('正在加载 FileExplorerNoteCount')",
+                    "target": "log('正在載入 FileExplorerNoteCount')"
+                },
+                {
+                    "source": "log('正在卸载 FileExplorerNoteCount')",
+                    "target": "log('正在卸載 FileExplorerNoteCount')"
+                },
+                {
+                    "source": "name = \"SuppressedError\"",
+                    "target": "name = \"SuppressedError\""
+                },
+                {
+                    "source": "name: ''",
+                    "target": "name: ''"
+                },
+                {
+                    "source": "text: '文件资源管理器笔记数量设置'",
+                    "target": "text: '檔案總管筆記數量設定'"
+                }
+            ]
+        }
+    }
+}
