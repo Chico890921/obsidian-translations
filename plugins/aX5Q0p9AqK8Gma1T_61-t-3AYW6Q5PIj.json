@@ -178,31 +178,31 @@
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] Failed to load repository cache",
-                    "target": "[BPM] Failed to load repository cache"
+                    "target": "[BPM] 載入儲存庫快取失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] Failed to write repository cache",
-                    "target": "[BPM] Failed to write repository cache"
+                    "target": "[BPM] 寫入儲存庫快取失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] Failed to fetch community plugin list",
-                    "target": "[BPM] Failed to fetch community plugin list"
+                    "target": "[BPM] 取得社群插件清單失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] Failed to create report:",
-                    "target": "[BPM] Failed to create report:"
+                    "target": "[BPM] 建立報告失敗："
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] fallback to raw tag failed",
-                    "target": "[BPM] fallback to raw tag failed"
+                    "target": "[BPM] fallback 到原始標籤失敗"
                 },
                 {
                     "type": "CallExpression",
@@ -226,85 +226,85 @@
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] reload manifests failed",
-                    "target": "[BPM] reload manifests failed"
+                    "target": "[BPM] 重新載入 manifests 失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] export transfer package failed",
-                    "target": "[BPM] export transfer package failed"
+                    "target": "[BPM] 匯出轉移套件失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] import transfer package parse failed",
-                    "target": "[BPM] import transfer package parse failed"
+                    "target": "[BPM] 解析匯入轉移套件失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] transfer batch download failed",
-                    "target": "[BPM] transfer batch download failed"
+                    "target": "[BPM] 批次下載轉移套件失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] import transfer package failed",
-                    "target": "[BPM] import transfer package failed"
+                    "target": "[BPM] 匯入轉移套件失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] import transfer plugin configs failed",
-                    "target": "[BPM] import transfer plugin configs failed"
+                    "target": "[BPM] 匯入轉移插件設定失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] Failed to read community-plugins.json:",
-                    "target": "[BPM] Failed to read community-plugins.json:"
+                    "target": "[BPM] 讀取 community-plugins.json 失敗："
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] Failed to write community-plugins.json:",
-                    "target": "[BPM] Failed to write community-plugins.json:"
+                    "target": "[BPM] 寫入 community-plugins.json 失敗："
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] Failed to load workspace config",
-                    "target": "[BPM] Failed to load workspace config"
+                    "target": "[BPM] 載入工作區設定失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] startup check updates failed",
-                    "target": "[BPM] startup check updates failed"
+                    "target": "[BPM] 啟動時檢查更新失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] beta source check failed",
-                    "target": "[BPM] beta source check failed"
+                    "target": "[BPM] beta 來源檢查失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] beta source auto update failed",
-                    "target": "[BPM] beta source auto update failed"
+                    "target": "[BPM] beta 來源自動更新失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] checkUpdates error",
-                    "target": "[BPM] checkUpdates error"
+                    "target": "[BPM] checkUpdates 發生錯誤"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] checkUpdateForPlugin error",
-                    "target": "[BPM] checkUpdateForPlugin error"
+                    "target": "[BPM] checkUpdateForPlugin 發生錯誤"
                 },
                 {
                     "type": "CallExpression",
@@ -316,109 +316,109 @@
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[BPM] fetchGithubVersions error",
-                    "target": "[BPM] fetchGithubVersions error"
+                    "target": "[BPM] fetchGithubVersions 發生錯誤"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] install from GitHub",
-                    "target": "[BPM] install from GitHub"
+                    "target": "[BPM] 從 GitHub 安裝"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] release assets picked",
-                    "target": "[BPM] release assets picked"
+                    "target": "[BPM] 已選取 release assets"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] fallback to raw tag",
-                    "target": "[BPM] fallback to raw tag"
+                    "target": "[BPM] fallback 到原始標籤"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] manifest parsed",
-                    "target": "[BPM] manifest parsed"
+                    "target": "[BPM] manifest 已解析"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] writing files",
-                    "target": "[BPM] writing files"
+                    "target": "[BPM] 正在寫入檔案"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] manifest after reload",
-                    "target": "[BPM] manifest after reload"
+                    "target": "[BPM] 重新載入後的 manifest"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] install complete",
-                    "target": "[BPM] install complete"
+                    "target": "[BPM] 安裝完成"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] render showData manifests size:",
-                    "target": "[BPM] render showData manifests size:"
+                    "target": "[BPM] render showData manifests 數量："
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] render showData uniquePlugins:",
-                    "target": "[BPM] render showData uniquePlugins:"
+                    "target": "[BPM] render showData uniquePlugins："
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] render showData before loop, children:",
-                    "target": "[BPM] render showData before loop, children:"
+                    "target": "[BPM] render showData 迴圈前，children："
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "children before add:",
-                    "target": "children before add:"
+                    "target": "新增前的 children："
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] render showData after loop, cards:",
-                    "target": "[BPM] render showData after loop, cards:"
+                    "target": "[BPM] render showData 迴圈後，cards："
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "ids:",
-                    "target": "ids:"
+                    "target": "ID："
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] reloadShowData end, children after render:",
-                    "target": "[BPM] reloadShowData end, children after render:"
+                    "target": "[BPM] reloadShowData 結束，render 後的 children："
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] Running migration",
-                    "target": "[BPM] Running migration"
+                    "target": "[BPM] 正在執行遷移"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] Workspace config save skipped; ribbon layout is stored only in BPM data.",
-                    "target": "[BPM] Workspace config save skipped; ribbon layout is stored only in BPM data."
+                    "target": "[BPM] 已略過工作區設定儲存；ribbon 版面僅儲存在 BPM 資料中。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] Detected workspace config change, reloading...",
-                    "target": "[BPM] Detected workspace config change, reloading..."
+                    "target": "[BPM] 偵測到工作區設定變更，正在重新載入..."
                 },
                 {
                     "type": "CallExpression",
@@ -436,55 +436,55 @@
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] checkUpdates start, total manifests:",
-                    "target": "[BPM] checkUpdates start, total manifests:"
+                    "target": "[BPM] checkUpdates 開始，manifests 總數："
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] update official match",
-                    "target": "[BPM] update official match"
+                    "target": "[BPM] 更新官方來源符合項目"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] update github match",
-                    "target": "[BPM] update github match"
+                    "target": "[BPM] 更新 GitHub 來源符合項目"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] update unknown source",
-                    "target": "[BPM] update unknown source"
+                    "target": "[BPM] 更新未知來源"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] single update official",
-                    "target": "[BPM] single update official"
+                    "target": "[BPM] 單一官方來源更新"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] single update github",
-                    "target": "[BPM] single update github"
+                    "target": "[BPM] 單一 GitHub 來源更新"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
                     "source": "[BPM] single update unknown source",
-                    "target": "[BPM] single update unknown source"
+                    "target": "[BPM] 單一未知來源更新"
                 },
                 {
                     "type": "CallExpression",
                     "name": "warn",
                     "source": "[BPM] Community plugin list request failed",
-                    "target": "[BPM] Community plugin list request failed"
+                    "target": "[BPM] 社群插件清單請求失敗"
                 },
                 {
                     "type": "CallExpression",
                     "name": "warn",
                     "source": "[BPM] Failed to migrate exported plugin note",
-                    "target": "[BPM] Failed to migrate exported plugin note"
+                    "target": "[BPM] 遷移已匯出的插件筆記失敗"
                 },
                 {
                     "type": "ObjectProperty",
