@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-outliner",
-        "version": "4.10.0",
+        "version": "4.10.1",
         "title": "[zh-tw] Outliner",
         "description": "Outliner Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "4.10.0",
+        "supportedVersions": "4.10.1",
         "author": "Chico",
         "updatedAt": 1778618561480
     },
@@ -69,6 +69,18 @@
                 },
                 {
                     "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Press the hotkey once to select the current list item. Press the hotkey twice to select the entire list.",
+                    "target": "按一次快捷鍵以選取目前清單項目。按兩次快捷鍵以選取整份清單。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Styles are only compatible with built-in Obsidian themes and may not be compatible with other themes.",
+                    "target": "樣式僅與 Obsidian 內建主題相容，可能無法相容其他主題。"
+                },
+                {
+                    "type": "CallExpression",
                     "name": "setName",
                     "source": "Stick the cursor to the content",
                     "target": "讓游標貼齊內容"
@@ -90,6 +102,12 @@
                     "name": "setName",
                     "source": "Vim-mode o/O inserts bullets",
                     "target": "Vim 模式下 o/O 插入項目符號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Drag-and-Drop",
+                    "target": "拖放"
                 },
                 {
                     "type": "CallExpression",
