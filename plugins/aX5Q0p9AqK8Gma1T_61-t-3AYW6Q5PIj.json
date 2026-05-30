@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "better-plugins-manager",
-        "version": "1.0.1",
+        "version": "1.0.4",
         "title": "[zh-tw] Better Plugins Manager",
         "description": "Better Plugins Manager 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "1.0.1",
+        "supportedVersions": "1.0.4",
         "author": "Chico"
     },
     "dict": {
