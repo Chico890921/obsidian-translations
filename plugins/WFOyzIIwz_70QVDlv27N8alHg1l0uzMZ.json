@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "quickadd",
-        "version": "2.12.2",
+        "version": "2.12.3",
         "title": "[zh-tw] QuickAdd",
         "description": "QuickAdd 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.12.2",
+        "supportedVersions": "2.12.3",
         "author": "Chico",
         "updatedAt": 1779626038095
     },
