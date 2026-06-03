@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian42-brat",
-        "version": "2.0.4",
+        "version": "2.0.8",
         "title": "[zh-tw] BRAT",
         "description": "BRAT Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "2.0.4",
+        "supportedVersions": "2.0.8",
         "author": "Chico"
     },
     "dict": {
@@ -273,6 +273,24 @@
                 {
                     "type": "CallExpression",
                     "name": "setButtonText",
+                    "source": "Add beta theme",
+                    "target": "新增測試版主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add theme",
+                    "target": "新增主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Click once more to confirm removal",
+                    "target": "再按一次以確認移除"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
                     "source": "Validate",
                     "target": "驗證"
                 },
@@ -299,6 +317,12 @@
                     "name": "setDesc",
                     "source": "If enabled all beta plugins will be checked for updates each time Obsidian starts. Note: this does not update frozen version plugins.",
                     "target": "啟用後，每次 Obsidian 啟動時都會檢查所有測試版插件更新。注意：這不會更新固定版本的插件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled all beta themes will be checked for updates each time Obsidian starts.",
+                    "target": "啟用後，每次 Obsidian 啟動時都會檢查所有測試版主題更新。"
                 },
                 {
                     "type": "CallExpression",
@@ -359,6 +383,12 @@
                     "name": "setName",
                     "source": "Auto-update plugins at startup",
                     "target": "啟動時自動更新插件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-update themes at startup",
+                    "target": "啟動時自動更新主題"
                 },
                 {
                     "type": "CallExpression",
@@ -429,6 +459,18 @@
                 {
                     "type": "CallExpression",
                     "name": "setPlaceholder",
+                    "source": "Filter themes",
+                    "target": "篩選主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Type to search for a version for ${t}",
+                    "target": "輸入以搜尋 ${t} 的版本"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
                     "source": "Example: BRAT-log",
                     "target": "範例：BRAT-log"
                 },
@@ -449,6 +491,12 @@
                     "name": "setText",
                     "source": "Github repository for beta plugin:",
                     "target": "測試版插件的 GitHub 儲存庫："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Github repository for beta theme:",
+                    "target": "測試版主題的 GitHub 儲存庫："
                 },
                 {
                     "type": "CallExpression",
@@ -503,6 +551,18 @@
                     "name": "setTooltip",
                     "source": "Change version and update settings",
                     "target": "變更版本並更新設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Remove this beta plugin",
+                    "target": "移除此測試版插件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Delete this beta theme",
+                    "target": "刪除此測試版主題"
                 },
                 {
                     "type": "CallExpression",
@@ -597,8 +657,26 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
+                    "source": "Themes: Open the GitHub repository for a theme (appearance)",
+                    "target": "主題：開啟主題的 GitHub 儲存庫（外觀）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
                     "source": "Plugins: Open Plugin Settings Tab",
                     "target": "插件：開啟插件設定分頁"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Themes: Grab a beta theme for testing from a Github repository",
+                    "target": "主題：從 GitHub 儲存庫取得測試版主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Themes: Update beta themes",
+                    "target": "主題：更新測試版主題"
                 },
                 {
                     "type": "ObjectProperty",
@@ -627,8 +705,50 @@
                 {
                     "type": "ObjectProperty",
                     "name": "text",
+                    "source": "Github repository for beta theme:",
+                    "target": "測試版主題的 GitHub 儲存庫："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
                     "source": "The following is a list of beta plugins added via the command \"Add a beta plugin for testing\". You can chose to add the latest version or a frozen version. A frozen version is a specific release of a plugin based on its release tag.",
                     "target": "以下是透過「新增測試版插件」命令加入的測試版插件清單。你可以選擇加入最新版本，或指定固定版本。固定版本是依據發行標籤指定的插件版本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Click the 'Edit' button next to a plugin to change the installed version and the x button next to a plugin to remove it from the list.",
+                    "target": "點擊插件旁的「編輯」按鈕可變更已安裝版本，點擊 x 按鈕可將插件從清單移除。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Removing from the list does not delete the plugin, this should be done from the Community Plugins tab in Settings.",
+                    "target": "從清單移除不會刪除插件；若要刪除，請到設定中的「社群插件」分頁操作。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "This theme is already in the list for beta testing",
+                    "target": "此主題已在測試版清單中"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "There is no theme.css or theme-beta.css file in the root path of this repository, so there is no theme to install.",
+                    "target": "此儲存庫根目錄中沒有 theme.css 或 theme-beta.css 檔案，因此沒有可安裝的主題。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "There is no manifest.json file in the root path of this repository, so theme cannot be installed.",
+                    "target": "此儲存庫根目錄中沒有 manifest.json 檔案，因此無法安裝主題。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Checking for beta theme updates COMPLETED",
+                    "target": "測試版主題更新檢查完成"
                 },
                 {
                     "type": "ObjectProperty",
@@ -647,6 +767,18 @@
                     "name": "title",
                     "source": "Token name configured but secret is missing. Add the secret or update the plugin configuration.",
                     "target": "已設定權杖名稱，但找不到 secret。請新增 secret 或更新插件設定。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "Beta plugin list",
+                    "target": "測試版插件清單"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "Beta themes list",
+                    "target": "測試版主題清單"
                 }
             ],
             "regex": [
@@ -677,6 +809,10 @@
                 {
                     "source": "setText(\"Github repository for beta plugin:\")",
                     "target": "setText(\"測試版插件的 GitHub 儲存庫：\")"
+                },
+                {
+                    "source": "text:\"Github repository for beta theme:\"",
+                    "target": "text:\"測試版主題的 GitHub 儲存庫：\""
                 },
                 {
                     "source": "setPlaceholder(\"Repository (example: https://github.com/GitHubUserName/repository-name)\")",
@@ -831,8 +967,16 @@
                     "target": "setName(\"啟動時自動更新插件\")"
                 },
                 {
+                    "source": "setName(\"Auto-update themes at startup\")",
+                    "target": "setName(\"啟動時自動更新主題\")"
+                },
+                {
                     "source": "setDesc(\"If enabled all beta plugins will be checked for updates each time Obsidian starts. Note: this does not update frozen version plugins.\")",
                     "target": "setDesc(\"啟用後，每次 Obsidian 啟動時都會檢查所有測試版插件更新。注意：這不會更新固定版本的插件。\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled all beta themes will be checked for updates each time Obsidian starts.\")",
+                    "target": "setDesc(\"啟用後，每次 Obsidian 啟動時都會檢查所有測試版主題更新。\")"
                 },
                 {
                     "source": "setName(\"Select latest plugin version by default\")",
@@ -855,8 +999,28 @@
                     "target": "setPlaceholder(\"篩選插件\")"
                 },
                 {
+                    "source": "setPlaceholder(\"Filter themes\")",
+                    "target": "setPlaceholder(\"篩選主題\")"
+                },
+                {
+                    "source": "setPlaceholder(`Type to search for a version for ${t}`)",
+                    "target": "setPlaceholder(`輸入以搜尋 ${t} 的版本`)"
+                },
+                {
                     "source": "setButtonText(\"Add beta plugin\")",
                     "target": "setButtonText(\"新增測試版插件\")"
+                },
+                {
+                    "source": "setButtonText(\"Add beta theme\")",
+                    "target": "setButtonText(\"新增測試版主題\")"
+                },
+                {
+                    "source": "setButtonText(\"Add theme\")",
+                    "target": "setButtonText(\"新增主題\")"
+                },
+                {
+                    "source": "setButtonText(\"Click once more to confirm removal\")",
+                    "target": "setButtonText(\"再按一次以確認移除\")"
                 },
                 {
                     "source": "setTooltip(`Secret missing: ${b}. Please add the secret or update the plugin configuration.`)",
@@ -869,6 +1033,14 @@
                 {
                     "source": "setTooltip(\"Change version and update settings\")",
                     "target": "setTooltip(\"變更版本並更新設定\")"
+                },
+                {
+                    "source": "setTooltip(\"Remove this beta plugin\")",
+                    "target": "setTooltip(\"移除此測試版插件\")"
+                },
+                {
+                    "source": "setTooltip(\"Delete this beta theme\")",
+                    "target": "setTooltip(\"刪除此測試版主題\")"
                 },
                 {
                     "source": "setName(\"Enable notifications\")",
@@ -999,8 +1171,20 @@
                     "target": "name:\"插件：開啟插件的 GitHub 儲存庫\""
                 },
                 {
+                    "source": "name:\"Themes: Open the GitHub repository for a theme (appearance)\"",
+                    "target": "name:\"主題：開啟主題的 GitHub 儲存庫（外觀）\""
+                },
+                {
                     "source": "name:\"Plugins: Open Plugin Settings Tab\"",
                     "target": "name:\"插件：開啟插件設定分頁\""
+                },
+                {
+                    "source": "name:\"Themes: Grab a beta theme for testing from a Github repository\"",
+                    "target": "name:\"主題：從 GitHub 儲存庫取得測試版主題\""
+                },
+                {
+                    "source": "name:\"Themes: Update beta themes\"",
+                    "target": "name:\"主題：更新測試版主題\""
                 },
                 {
                     "source": "name:\"All Commands list\"",
@@ -1009,6 +1193,42 @@
                 {
                     "source": "text:'The following is a list of beta plugins added via the command \"Add a beta plugin for testing\". You can chose to add the latest version or a frozen version. A frozen version is a specific release of a plugin based on its release tag.'",
                     "target": "text:'以下是透過「新增測試版插件」命令加入的測試版插件清單。你可以選擇加入最新版本，或指定固定版本。固定版本是依據發行標籤指定的插件版本。'"
+                },
+                {
+                    "source": "setHeading(\"Beta plugin list\")",
+                    "target": "setHeading(\"測試版插件清單\")"
+                },
+                {
+                    "source": "setHeading(\"Beta themes list\")",
+                    "target": "setHeading(\"測試版主題清單\")"
+                },
+                {
+                    "source": "text:\"Click the 'Edit' button next to a plugin to change the installed version and the x button next to a plugin to remove it from the list.\"",
+                    "target": "text:\"點擊插件旁的「編輯」按鈕可變更已安裝版本，點擊 x 按鈕可將插件從清單移除。\""
+                },
+                {
+                    "source": "text:\"Removing from the list does not delete the plugin, this should be done from the Community Plugins tab in Settings.\"",
+                    "target": "text:\"從清單移除不會刪除插件；若要刪除，請到設定中的「社群插件」分頁操作。\""
+                },
+                {
+                    "source": "E(this.plugin,\"This theme is already in the list for beta testing\",10)",
+                    "target": "E(this.plugin,\"此主題已在測試版清單中\",10)"
+                },
+                {
+                    "source": "E(s,\"There is no theme.css or theme-beta.css file in the root path of this repository, so there is no theme to install.\")",
+                    "target": "E(s,\"此儲存庫根目錄中沒有 theme.css 或 theme-beta.css 檔案，因此沒有可安裝的主題。\")"
+                },
+                {
+                    "source": "E(s,\"There is no manifest.json file in the root path of this repository, so theme cannot be installed.\")",
+                    "target": "E(s,\"此儲存庫根目錄中沒有 manifest.json 檔案，因此無法安裝主題。\")"
+                },
+                {
+                    "source": "let i=\"Checking for beta theme updates COMPLETED\"",
+                    "target": "let i=\"測試版主題更新檢查完成\""
+                },
+                {
+                    "source": "let t=`Removed ${e} from BRAT themes list and will no longer be updated. However, the theme files still exist in the vault. To remove them, go into Settings > Appearance and remove the theme.`",
+                    "target": "let t=`已將 ${e} 從 BRAT 主題清單移除，之後將不再更新。不過主題檔案仍保留在 vault 中。若要移除，請到「設定 > 外觀」刪除該主題。`"
                 },
                 {
                     "source": "text:\"Note: \"",
