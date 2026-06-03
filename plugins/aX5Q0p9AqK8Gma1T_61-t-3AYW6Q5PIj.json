@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "better-plugins-manager",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "title": "[zh-tw] Better Plugins Manager",
         "description": "Better Plugins Manager 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "1.0.4",
+        "supportedVersions": "1.0.5",
         "author": "Chico"
     },
     "dict": {
@@ -563,6 +563,60 @@
                     "name": "text",
                     "source": "🔌",
                     "target": "🔌"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-hidden-card__drag manager-plugin-card__layout-drag",
+                    "target": "manager-hidden-card__drag manager-plugin-card__layout-drag"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-hidden-card manager-hidden-separator-card manager-layout-editable-card manager-plugin-separator-editor",
+                    "target": "manager-hidden-card manager-hidden-separator-card manager-layout-editable-card manager-plugin-separator-editor"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "manager-vault-card manager-vault-setup",
+                    "target": "manager-vault-card manager-vault-setup"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] uninstall plugin failed",
+                    "target": "[BPM] 卸載插件失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] failed to save plugin note",
+                    "target": "[BPM] 儲存插件筆記失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[BPM] shared vault operation failed",
+                    "target": "[BPM] 共享 Vault 操作失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-tag-editor__chip-slot manager-tag-editor__chip-slot--preview",
+                    "target": "manager-tag-editor__chip-slot manager-tag-editor__chip-slot--preview"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "manager-tag-editor__create-action manager-tag-editor__create-action--primary",
+                    "target": "manager-tag-editor__create-action manager-tag-editor__create-action--primary"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Current vault path is not available.",
+                    "target": "目前 Vault 路徑無法使用。"
                 }
             ],
             "regex": [
