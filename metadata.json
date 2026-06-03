@@ -68,13 +68,13 @@
         "id": "aX5Q0p9AqK8Gma1T_61-t-3AYW6Q5PIj",
         "plugin": "better-plugins-manager",
         "language": "zh-tw",
-        "version": "1.0.4",
-        "supported_versions": "1.0.4",
+        "version": "1.0.5",
+        "supported_versions": "1.0.5",
         "title": "[zh-tw] Better Plugins Manager",
         "description": "Better Plugins Manager 繁體中文化與微調",
-        "hash": "5109b67a5109b67a5109b67a5109b67a",
+        "hash": "75d9a01375d9a01375d9a01375d9a013",
         "created_at": "2026-05-25T03:42:41.364Z",
-        "updated_at": "2026-05-30T08:16:16.415Z",
+        "updated_at": "2026-06-03T07:10:42.637Z",
         "type": "plugin"
     },
     {
