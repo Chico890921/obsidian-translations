@@ -583,5 +583,18 @@
         "created_at": "2026-05-25T03:51:31.637Z",
         "updated_at": "2026-05-25T03:51:31.637Z",
         "type": "plugin"
+    },
+    {
+        "id": "hIoCBpG2_ZJgmqd51tCGB4zmvSThapAk",
+        "plugin": "coder",
+        "language": "zh-tw",
+        "version": "1.3.5",
+        "supported_versions": "1.3.5",
+        "title": "Transcode",
+        "description": "Transcode Localization & Tweaks",
+        "hash": "40736f2a40736f2a40736f2a40736f2a",
+        "created_at": "2026-06-04T14:27:04.173Z",
+        "updated_at": "2026-06-04T14:27:04.173Z",
+        "type": "plugin"
     }
 ]
