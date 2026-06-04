@@ -1,0 +1,84 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "coder",
+        "version": "1.3.5",
+        "title": "Transcode",
+        "description": "Transcode Localization & Tweaks",
+        "language": "zh-tw",
+        "supportedVersions": "1.3.5",
+        "author": "Chico"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Preserve newline characters (\\n) in the encoded output",
+                    "target": "在編碼輸出中保留換行字元（\\n）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Preserve breaks",
+                    "target": "保留換行"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Invalid Base64 input",
+                    "target": "Base64 輸入無效"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Invalid Base85 input",
+                    "target": "Base85 輸入無效"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Invalid Base16 input",
+                    "target": "Base16 輸入無效"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "outputText",
+                    "source": "No coder found!",
+                    "target": "找不到轉碼器！"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"Preserve breaks\")",
+                    "target": "setName(\"保留換行\")"
+                },
+                {
+                    "source": "setDesc(\"Preserve newline characters (\\\\n) in the encoded output\")",
+                    "target": "setDesc(\"在編碼輸出中保留換行字元（\\\\n）\")"
+                },
+                {
+                    "source": "throw new Error(\"Invalid Base64 input\")",
+                    "target": "throw new Error(\"Base64 輸入無效\")"
+                },
+                {
+                    "source": "throw new Error(\"Invalid Base85 input\")",
+                    "target": "throw new Error(\"Base85 輸入無效\")"
+                },
+                {
+                    "source": "throw new Error(\"Invalid Base16 input\")",
+                    "target": "throw new Error(\"Base16 輸入無效\")"
+                },
+                {
+                    "source": "outputText = \"Invalid input for coder \" + coder.from + \" to \" + coder.to",
+                    "target": "outputText = \"此轉碼器輸入無效：\" + coder.from + \" → \" + coder.to"
+                },
+                {
+                    "source": "outputText = \"No coder found!\"",
+                    "target": "outputText = \"找不到轉碼器！\""
+                }
+            ]
+        }
+    }
+}
