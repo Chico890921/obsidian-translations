@@ -336,6 +336,36 @@
                     "name": "addOption",
                     "source": "Phone only",
                     "target": "僅手機"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Configure",
+                    "target": "設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "File paths",
+                    "target": "檔案路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "File paths",
+                    "target": "檔案路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Type to search vault paths…",
+                    "target": "輸入以搜尋儲存庫路徑…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "No paths configured.",
+                    "target": "尚未設定路徑。"
                 }
             ],
             "regex": [
@@ -433,7 +463,7 @@
                 },
                 {
                     "source": "name:`Move typewriter ${o}`",
-                    "target": "name:`Move typewriter ${o}`"
+                    "target": "name:`移動打字機 ${o}`"
                 },
                 {
                     "source": "name:`Toggle ${this.commandTitle}`",
