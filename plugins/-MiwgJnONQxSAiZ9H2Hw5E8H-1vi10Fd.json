@@ -313,6 +313,226 @@
                 {
                     "source": "name:`impl ${c[1]}`",
                     "target": "name:`impl ${c[1]}`"
+                },
+                {
+                    "source": "SETTINGS_HEADING:\"Code space settings\"",
+                    "target": "SETTINGS_HEADING:\"Code Space 設定\""
+                },
+                {
+                    "source": "SETTINGS_EXTENSIONS_NAME:\"Managed extensions\"",
+                    "target": "SETTINGS_EXTENSIONS_NAME:\"受管理的副檔名\""
+                },
+                {
+                    "source": "SETTINGS_EXTENSIONS_DESC:\"Comma separated list of file extensions to manage (e.g., py, js, cpp). Restart required to apply changes to file association.\"",
+                    "target": "SETTINGS_EXTENSIONS_DESC:\"以逗號分隔要管理的副檔名清單（例如 py、js、cpp）。需要重新啟動才能套用檔案關聯變更。\""
+                },
+                {
+                    "source": "SETTINGS_EXTENSIONS_PLACEHOLDER:\"For example: py, js, c, cpp\"",
+                    "target": "SETTINGS_EXTENSIONS_PLACEHOLDER:\"例如：py, js, c, cpp\""
+                },
+                {
+                    "source": "SETTINGS_LINE_NUMBERS_NAME:\"Show line numbers\"",
+                    "target": "SETTINGS_LINE_NUMBERS_NAME:\"顯示行號\""
+                },
+                {
+                    "source": "SETTINGS_LINE_NUMBERS_DESC:\"Toggle line numbers in the code editor.\"",
+                    "target": "SETTINGS_LINE_NUMBERS_DESC:\"切換程式碼編輯器中的行號。\""
+                },
+                {
+                    "source": "SETTINGS_EDITOR_FONT_SIZE_NAME:\"Editor font size\"",
+                    "target": "SETTINGS_EDITOR_FONT_SIZE_NAME:\"編輯器字體大小\""
+                },
+                {
+                    "source": "SETTINGS_EDITOR_FONT_SIZE_DESC:\"Font size for the code editor (9-36px).\"",
+                    "target": "SETTINGS_EDITOR_FONT_SIZE_DESC:\"程式碼編輯器的字體大小（9-36px）。\""
+                },
+                {
+                    "source": "SETTINGS_EMBED_FONT_SIZE_NAME:\"Embed font size\"",
+                    "target": "SETTINGS_EMBED_FONT_SIZE_NAME:\"嵌入區塊字體大小\""
+                },
+                {
+                    "source": "SETTINGS_EMBED_FONT_SIZE_DESC:\"Font size for embedded code blocks (9-36px).\"",
+                    "target": "SETTINGS_EMBED_FONT_SIZE_DESC:\"嵌入程式碼區塊的字體大小（9-36px）。\""
+                },
+                {
+                    "source": "SETTINGS_MAX_EMBED_LINES_NAME:\"Max embed lines\"",
+                    "target": "SETTINGS_MAX_EMBED_LINES_NAME:\"嵌入區塊最大行數\""
+                },
+                {
+                    "source": "SETTINGS_MAX_EMBED_LINES_DESC:\"Maximum number of lines to display in code embed blocks (0 for unlimited).\"",
+                    "target": "SETTINGS_MAX_EMBED_LINES_DESC:\"程式碼嵌入區塊最多顯示的行數（0 表示無限制）。\""
+                },
+                {
+                    "source": "SETTINGS_NEW_FILE_LOCATION_NAME:\"Location for new code files\"",
+                    "target": "SETTINGS_NEW_FILE_LOCATION_NAME:\"新程式碼檔案位置\""
+                },
+                {
+                    "source": "SETTINGS_NEW_FILE_LOCATION_MODE_CUSTOM:\"Custom folder\"",
+                    "target": "SETTINGS_NEW_FILE_LOCATION_MODE_CUSTOM:\"自訂資料夾\""
+                },
+                {
+                    "source": "SETTINGS_NEW_FILE_LOCATION_MODE_CURRENT:\"Current file folder\"",
+                    "target": "SETTINGS_NEW_FILE_LOCATION_MODE_CURRENT:\"目前檔案所在資料夾\""
+                },
+                {
+                    "source": "SETTINGS_NEW_FILE_CUSTOM_PATH_NAME:\"Custom folder path\"",
+                    "target": "SETTINGS_NEW_FILE_CUSTOM_PATH_NAME:\"自訂資料夾路徑\""
+                },
+                {
+                    "source": "SETTINGS_NEW_FILE_LOCATION_DESC:\"Choose where to create new code files: a custom folder, or the folder containing the currently active file.\"",
+                    "target": "SETTINGS_NEW_FILE_LOCATION_DESC:\"選擇新程式碼檔案的建立位置：自訂資料夾，或目前作用中檔案所在的資料夾。\""
+                },
+                {
+                    "source": "SETTINGS_NEW_FILE_CUSTOM_PATH_DESC:\"Leave empty to create at the vault root. Click the button to browse folders.\"",
+                    "target": "SETTINGS_NEW_FILE_CUSTOM_PATH_DESC:\"留空則建立在儲存庫根目錄。點擊按鈕瀏覽資料夾。\""
+                },
+                {
+                    "source": "SETTINGS_NEW_FILE_LOCATION_BUTTON:\"Browse\"",
+                    "target": "SETTINGS_NEW_FILE_LOCATION_BUTTON:\"瀏覽\""
+                },
+                {
+                    "source": "SETTINGS_NEW_FILE_FOLDER_PLACEHOLDER:\"Example: scripts/python\"",
+                    "target": "SETTINGS_NEW_FILE_FOLDER_PLACEHOLDER:\"例如：scripts/python\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_NAME:\"External folders\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_NAME:\"外部資料夾\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_DESC:\"Desktop only. Use a system symlink or junction to mount an external folder into this vault.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_DESC:\"僅桌面版。使用系統符號連結或 junction，將外部資料夾掛載到此儲存庫。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_ENABLE_NAME:\"Enable external folder mounts\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_ENABLE_NAME:\"啟用外部資料夾掛載\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_ENABLE_DESC:\"Allow mounting external folders using symlinks or junctions. Disable this if you do not use this feature.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_ENABLE_DESC:\"允許使用符號連結或 junction 掛載外部資料夾。若不使用此功能可停用。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_DESKTOP_ONLY:\"This feature is desktop only.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_DESKTOP_ONLY:\"此功能僅限桌面版。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_EMPTY:\"No external folders configured.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_EMPTY:\"尚未設定外部資料夾。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_ADD:\"Add external folder\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_ADD:\"新增外部資料夾\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_REMOVE:\"Remove\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_REMOVE:\"移除\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_RELINK:\"Relink\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_RELINK:\"重新掛載\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_DUPLICATE:\"Mount path already exists in the list.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_DUPLICATE:\"清單中已存在相同的掛載路徑。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_INVALID:\"Please provide a source path and mount path.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_INVALID:\"請提供來源路徑和掛載路徑。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_NOTICE_CREATED:\"External folder mounted.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_NOTICE_CREATED:\"外部資料夾已掛載。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_NOTICE_REMOVED:\"External folder unmounted.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_NOTICE_REMOVED:\"外部資料夾已取消掛載。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_NOTICE_ALL_REMOVED:\"All external folders have been unmounted (configuration preserved).\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_NOTICE_ALL_REMOVED:\"所有外部資料夾已取消掛載（設定已保留）。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_NOTICE_ALL_RESTORED:\"All external folders have been restored.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_NOTICE_ALL_RESTORED:\"所有外部資料夾已恢復掛載。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_NOTICE_RELINKED:\"External folder relinked.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_NOTICE_RELINKED:\"外部資料夾已重新掛載。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED:\"External mount failed\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED:\"外部資料夾掛載失敗\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_STATUS_LINKED:\"Linked\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_STATUS_LINKED:\"已掛載\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_STATUS_MISSING:\"Target missing\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_STATUS_MISSING:\"目標不存在\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_STATUS_SOURCE_MISSING:\"Source missing\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_STATUS_SOURCE_MISSING:\"來源不存在\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_STATUS_CONFLICT:\"Conflict\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_STATUS_CONFLICT:\"路徑衝突\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_STATUS_UNAVAILABLE:\"Unavailable\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_STATUS_UNAVAILABLE:\"不可用\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_SOURCE_NAME:\"Source folder path\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_SOURCE_NAME:\"來源資料夾路徑\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_SOURCE_DESC:\"Choose a folder outside the vault.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_SOURCE_DESC:\"選擇儲存庫外部的資料夾。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_SOURCE_PLACEHOLDER:\"Example: d:\\\\projects\\\\myapp\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_SOURCE_PLACEHOLDER:\"例如：D:\\\\Projects\\\\MyApp\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_MOUNT_NAME:\"Mount location in vault\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_MOUNT_NAME:\"儲存庫內的掛載位置\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_MOUNT_DESC:\"Relative path inside the vault (e.g., External/MyApp).\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_MOUNT_DESC:\"儲存庫內的相對路徑（例如 External/MyApp）。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_BROWSE:\"Browse\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_BROWSE:\"瀏覽\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_DIALOG_UNAVAILABLE:\"System dialog unavailable. Please enter the path manually.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_DIALOG_UNAVAILABLE:\"系統選擇器無法使用。請手動輸入路徑。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_MODAL_TITLE:\"Add external folder\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_MODAL_TITLE:\"新增外部資料夾\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_MODAL_CREATE:\"Mount\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_MODAL_CREATE:\"掛載\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_MODAL_CANCEL:\"Cancel\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_MODAL_CANCEL:\"取消\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_LINK_TYPE_NAME:\"Link type\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_LINK_TYPE_NAME:\"連結類型\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_LINK_TYPE_DESC:\"Auto tries symlink first, then junction. Symlink may require developer mode or admin privileges.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_LINK_TYPE_DESC:\"自動會先嘗試 symlink，再改用 junction。symlink 可能需要開發人員模式或系統管理員權限。\""
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_LINK_TYPE_AUTO:\"Auto\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_LINK_TYPE_AUTO:\"自動\""
                 }
             ]
         }
