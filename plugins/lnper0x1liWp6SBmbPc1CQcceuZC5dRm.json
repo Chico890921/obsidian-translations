@@ -462,6 +462,262 @@
                     "target": "text:\"正在取得版本資訊...\""
                 },
                 {
+                    "source": "settingTitle=\"Activate Typewriter Mode\"",
+                    "target": "settingTitle=\"啟用 Typewriter Mode\""
+                },
+                {
+                    "source": "settingDesc=\"This enables or disables all the features below.\"",
+                    "target": "settingDesc=\"啟用或停用下方所有功能。\""
+                },
+                {
+                    "source": "settingTitle=\"Enable on platforms\"",
+                    "target": "settingTitle=\"啟用平台\""
+                },
+                {
+                    "source": "settingDesc=\"Select on which platforms Typewriter Mode should be active\"",
+                    "target": "settingDesc=\"選擇 Typewriter Mode 要在哪些平台啟用\""
+                },
+                {
+                    "source": "settingTitle=\"Only activate after first interaction\"",
+                    "target": "settingTitle=\"第一次互動後才啟用\""
+                },
+                {
+                    "source": "settingDesc=\"Activate the focused line highlight and paragraph dimming only after the first interaction with the editor\"",
+                    "target": "settingDesc=\"與編輯器第一次互動後，才啟用目前行醒目提示與段落淡化\""
+                },
+                {
+                    "source": "settingTitle=\"Typewriter scrolling\"",
+                    "target": "settingTitle=\"打字機捲動\""
+                },
+                {
+                    "source": "settingDesc=\"Turns typewriter scrolling on or off\"",
+                    "target": "settingDesc=\"開啟或關閉打字機捲動\""
+                },
+                {
+                    "source": "settingTitle=\"Only maintain typewriter offset when reached\"",
+                    "target": "settingTitle=\"到達偏移量後才維持打字機位置\""
+                },
+                {
+                    "source": "settingDesc=\"The line that the cursor is on will not be scrolled to the center of the editor until it the specified typewriter offset is reached. This removes the additional space at the top of the editor.\"",
+                    "target": "settingDesc=\"游標所在行在到達指定的打字機偏移量之前，不會捲動到編輯器中央。這會移除編輯器頂部的額外空間。\""
+                },
+                {
+                    "source": "settingTitle=\"Do not snap typewriter with arrow keys\"",
+                    "target": "settingTitle=\"不要用方向鍵吸附打字機位置\""
+                },
+                {
+                    "source": "settingDesc=\"The typewriter will only snap when using this plugin's move commands. It will not snap when using the arrow keys. The move commands are by default Cmd/Ctrl+ArrowUp/ArrowDown, but you can assign your own hotkeys for the move commands in Obsidian's settings.\"",
+                    "target": "settingDesc=\"只有使用此外掛的移動命令時，打字機位置才會吸附。使用方向鍵時不會吸附。移動命令預設為 Cmd/Ctrl+方向鍵上/下，你也可以在 Obsidian 設定中自行指定快捷鍵。\""
+                },
+                {
+                    "source": "settingTitle=\"Keep lines above and below\"",
+                    "target": "settingTitle=\"保留目前行上下方行數\""
+                },
+                {
+                    "source": "settingDesc=\"When enabled, always keeps the specified amount of lines above and below the current line in view\"",
+                    "target": "settingDesc=\"啟用後，會一律在畫面中保留目前行上下方指定數量的行\""
+                },
+                {
+                    "source": "settingTitle=\"Highlight current line\"",
+                    "target": "settingTitle=\"醒目提示目前行\""
+                },
+                {
+                    "source": "settingDesc=\"Highlights the line that the cursor is currently on\"",
+                    "target": "settingDesc=\"醒目提示游標目前所在的行\""
+                },
+                {
+                    "source": "settingTitle=\"Highlight current line only in focused note\"",
+                    "target": "settingTitle=\"只在聚焦筆記中醒目提示目前行\""
+                },
+                {
+                    "source": "settingDesc=\"Only show highlighted line in the note your cursor is on (e.g. if you have multiple notes open in split panes)\"",
+                    "target": "settingDesc=\"只在游標所在的筆記中顯示醒目提示行（例如在分割窗格中開啟多個筆記時）\""
+                },
+                {
+                    "source": "settingTitle=\"Pause current line highlight while scrolling\"",
+                    "target": "settingTitle=\"捲動時暫停目前行醒目提示\""
+                },
+                {
+                    "source": "settingDesc=\"If enabled, the current line highlight is hidden while scrolling\"",
+                    "target": "settingDesc=\"啟用後，捲動時會隱藏目前行醒目提示\""
+                },
+                {
+                    "source": "settingTitle=\"Pause current line highlight while selecting text\"",
+                    "target": "settingTitle=\"選取文字時暫停目前行醒目提示\""
+                },
+                {
+                    "source": "settingDesc=\"If enabled, the current line highlight is hidden while selecting text\"",
+                    "target": "settingDesc=\"啟用後，選取文字時會隱藏目前行醒目提示\""
+                },
+                {
+                    "source": "settingTitle=\"Fade lines\"",
+                    "target": "settingTitle=\"淡出行\""
+                },
+                {
+                    "source": "settingDesc=\"This places a gradient on the lines above and below the current line, making the text fade out more and more towards the top and bottom of the editor.\"",
+                    "target": "settingDesc=\"在目前行上下方套用漸層，讓文字越靠近編輯器頂端與底端越淡。\""
+                },
+                {
+                    "source": "settingTitle=\"Fade lines only in writing focus mode\"",
+                    "target": "settingTitle=\"只在寫作專注模式中淡出行\""
+                },
+                {
+                    "source": "settingDesc=\"Only show the fade lines effect when writing focus mode is active\"",
+                    "target": "settingDesc=\"只在寫作專注模式啟用時顯示淡出行效果\""
+                },
+                {
+                    "source": "settingTitle=\"Highlight current line only in writing focus mode\"",
+                    "target": "settingTitle=\"只在寫作專注模式中醒目提示目前行\""
+                },
+                {
+                    "source": "settingDesc=\"Only show the highlighted line when writing focus mode is active\"",
+                    "target": "settingDesc=\"只在寫作專注模式啟用時顯示醒目提示行\""
+                },
+                {
+                    "source": "settingTitle=\"Dim unfocused\"",
+                    "target": "settingTitle=\"淡化未聚焦內容\""
+                },
+                {
+                    "source": "settingDesc=\"Dim unfocused paragraphs / sentences\"",
+                    "target": "settingDesc=\"淡化未聚焦的段落／句子\""
+                },
+                {
+                    "source": "settingTitle=\"Dim unfocused only in writing focus mode\"",
+                    "target": "settingTitle=\"只在寫作專注模式中淡化未聚焦內容\""
+                },
+                {
+                    "source": "settingDesc=\"Only dim unfocused paragraphs / sentences when writing focus mode is active\"",
+                    "target": "settingDesc=\"只在寫作專注模式啟用時淡化未聚焦的段落／句子\""
+                },
+                {
+                    "source": "settingTitle=\"Highlight list parents\"",
+                    "target": "settingTitle=\"醒目提示清單上層項目\""
+                },
+                {
+                    "source": "settingDesc=\"If this is enabled, the parent items of the active list item are not dimmed\"",
+                    "target": "settingDesc=\"啟用後，目前清單項目的上層項目不會被淡化\""
+                },
+                {
+                    "source": "settingTitle=\"Undim all table cells when editing\"",
+                    "target": "settingTitle=\"編輯時取消淡化所有表格儲存格\""
+                },
+                {
+                    "source": "settingDesc=\"If this is enabled, all table cells are shown/not dimmed when you edit a table. If this is disabled, only the current table cell that you are editing is shown, while the other cells remain dimmed.\"",
+                    "target": "settingDesc=\"啟用後，編輯表格時會顯示所有儲存格且不淡化。停用時，只會顯示正在編輯的目前儲存格，其他儲存格會維持淡化。\""
+                },
+                {
+                    "source": "settingTitle=\"Pause dimming while scrolling\"",
+                    "target": "settingTitle=\"捲動時暫停淡化\""
+                },
+                {
+                    "source": "settingDesc=\"If this is enabled, paragraphs / sentences are not dimmed while scrolling\"",
+                    "target": "settingDesc=\"啟用後，捲動時不會淡化段落／句子\""
+                },
+                {
+                    "source": "settingTitle=\"Pause dimming while selecting text\"",
+                    "target": "settingTitle=\"選取文字時暫停淡化\""
+                },
+                {
+                    "source": "settingDesc=\"If this is enabled, paragraphs / sentences are not dimmed while selecting text\"",
+                    "target": "settingDesc=\"啟用後，選取文字時不會淡化段落／句子\""
+                },
+                {
+                    "source": "settingTitle=\"Hemingway mode\"",
+                    "target": "settingTitle=\"海明威模式\""
+                },
+                {
+                    "source": "settingDesc=\"Prevents editing previously written text. Blocks navigation keys (arrows, Home, End, Page Up/Down), Delete key, and undo operations to enforce forward-only writing.\"",
+                    "target": "settingDesc=\"防止編輯先前寫好的文字。會阻擋導覽鍵（方向鍵、Home、End、Page Up/Down）、Delete 鍵與復原操作，以強制只能往前寫。\""
+                },
+                {
+                    "source": "settingTitle=\"Hemingway mode only in writing focus mode\"",
+                    "target": "settingTitle=\"只在寫作專注模式中使用海明威模式\""
+                },
+                {
+                    "source": "settingDesc=\"Only enforce Hemingway mode when writing focus mode is active\"",
+                    "target": "settingDesc=\"只在寫作專注模式啟用時強制使用海明威模式\""
+                },
+                {
+                    "source": "settingTitle=\"Allow using Backspace key in Hemingway mode\"",
+                    "target": "settingTitle=\"允許在海明威模式中使用 Backspace 鍵\""
+                },
+                {
+                    "source": "settingDesc=\"Allows deleting text with Backspace when Hemingway mode is active. Useful for fixing typos while maintaining forward-only writing flow.\"",
+                    "target": "settingDesc=\"海明威模式啟用時允許用 Backspace 刪除文字。適合在維持只能往前寫的流程下修正錯字。\""
+                },
+                {
+                    "source": "settingTitle=\"Show status bar indicator\"",
+                    "target": "settingTitle=\"顯示狀態列指示器\""
+                },
+                {
+                    "source": "settingDesc=\"Shows an indicator in the status bar when Hemingway mode is active.\"",
+                    "target": "settingDesc=\"海明威模式啟用時，在狀態列顯示指示器。\""
+                },
+                {
+                    "source": "settingTitle=\"Status bar text\"",
+                    "target": "settingTitle=\"狀態列文字\""
+                },
+                {
+                    "source": "settingDesc=\"Text to display in the status bar when Hemingway mode is active.\"",
+                    "target": "settingDesc=\"海明威模式啟用時要顯示在狀態列的文字。\""
+                },
+                {
+                    "source": "settingTitle=\"Limit maximum number of characters per line\"",
+                    "target": "settingTitle=\"限制每行最大字元數\""
+                },
+                {
+                    "source": "settingDesc=\"Limits the maximum number of characters per line\"",
+                    "target": "settingDesc=\"限制每行的最大字元數\""
+                },
+                {
+                    "source": "settingTitle=\"Restore cursor position\"",
+                    "target": "settingTitle=\"還原游標位置\""
+                },
+                {
+                    "source": "settingDesc=\"Restore the last cursor position when opening files\"",
+                    "target": "settingDesc=\"開啟檔案時還原上次的游標位置\""
+                },
+                {
+                    "source": "settingTitle=\"Announce updates\"",
+                    "target": "settingTitle=\"公告更新\""
+                },
+                {
+                    "source": "settingDesc=\"If enabled you will get a notice with release notes whenever you install a new version of Typewriter Mode\"",
+                    "target": "settingDesc=\"啟用後，每次安裝新版 Typewriter Mode 時都會收到包含版本資訊的通知\""
+                },
+                {
+                    "source": "settingTitle=\"Make Obsidian fullscreen in writing focus\"",
+                    "target": "settingTitle=\"寫作專注時讓 Obsidian 全螢幕\""
+                },
+                {
+                    "source": "settingDesc=\"If enabled, the Obsidian window will toggle to fullscreen when entering writing focus\"",
+                    "target": "settingDesc=\"啟用後，進入寫作專注時 Obsidian 視窗會切換為全螢幕\""
+                },
+                {
+                    "source": "settingTitle=\"Show header in writing focus\"",
+                    "target": "settingTitle=\"在寫作專注中顯示標題列\""
+                },
+                {
+                    "source": "settingDesc=\"If enabled, the header will be shown in writing focus\"",
+                    "target": "settingDesc=\"啟用後，寫作專注中會顯示標題列\""
+                },
+                {
+                    "source": "settingTitle=\"Show status bar in writing focus\"",
+                    "target": "settingTitle=\"在寫作專注中顯示狀態列\""
+                },
+                {
+                    "source": "settingDesc=\"If enabled, the status bar will be shown in writing focus\"",
+                    "target": "settingDesc=\"啟用後，寫作專注中會顯示狀態列\""
+                },
+                {
+                    "source": "settingTitle=\"Writing focus vignette\"",
+                    "target": "settingTitle=\"寫作專注暗角\""
+                },
+                {
+                    "source": "settingDesc=\"Add a vignette to the edges of the screen in writing focus\"",
+                    "target": "settingDesc=\"在寫作專注時為螢幕邊緣加入暗角\""
+                },
+                {
                     "source": "name:`Move typewriter ${o}`",
                     "target": "name:`移動打字機 ${o}`"
                 },
