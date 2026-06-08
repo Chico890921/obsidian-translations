@@ -596,5 +596,18 @@
         "created_at": "2026-06-04T14:27:04.173Z",
         "updated_at": "2026-06-04T14:27:04.173Z",
         "type": "plugin"
+    },
+    {
+        "id": "sUigr0UHCS_utW8TdTkNbR0Knc481ORQ",
+        "plugin": "obsidian-importer",
+        "language": "zh-tw",
+        "version": "1.8.12",
+        "supported_versions": "1.8.12",
+        "title": "[zh-tw] Importer",
+        "description": "Importer Localization & Tweaks",
+        "hash": "4b8b659d4b8b659d4b8b659d4b8b659d",
+        "created_at": "2026-06-08T18:47:11.931Z",
+        "updated_at": "2026-06-08T18:47:11.931Z",
+        "type": "plugin"
     }
 ]
