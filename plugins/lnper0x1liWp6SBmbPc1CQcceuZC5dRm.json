@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "typewriter-mode",
-        "version": "1.3.1",
+        "version": "1.4.0",
         "title": "[zh-tw] Typewriter Mode",
         "description": "Typewriter Mode Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "1.3.1",
+        "supportedVersions": "1.4.0",
         "author": "Chico",
         "updatedAt": 1778615217784
     },
@@ -216,6 +216,126 @@
                     "name": "text",
                     "source": "Fetching release notes...",
                     "target": "正在取得版本資訊..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "Typewriter",
+                    "target": "打字機"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "Keep lines above and below",
+                    "target": "保留目前行上下方行數"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "Highlight current line",
+                    "target": "醒目提示目前行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "Dimming",
+                    "target": "淡化"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "Writing focus",
+                    "target": "寫作專注"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "Hemingway mode",
+                    "target": "海明威模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "Limit line width",
+                    "target": "限制行寬"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "Restore cursor position",
+                    "target": "還原游標位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "Update notice and funding",
+                    "target": "更新通知與贊助"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setHeading",
+                    "source": "File paths",
+                    "target": "檔案路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Configure which files or folders the plugin is enabled or disabled in.",
+                    "target": "設定要啟用或停用此插件的檔案或資料夾。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "No paths configured.",
+                    "target": "尚未設定路徑。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Opacity of dimmed elements",
+                    "target": "淡化元素的不透明度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The opacity of dimmed elements",
+                    "target": "淡化元素的不透明度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Remove",
+                    "target": "移除"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "All platforms",
+                    "target": "所有平台"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Desktop and tablet",
+                    "target": "桌面版與平板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Mobile only (tablet and phone)",
+                    "target": "僅行動版（平板與手機）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Tablet only",
+                    "target": "僅平板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Phone only",
+                    "target": "僅手機"
                 }
             ],
             "regex": [
