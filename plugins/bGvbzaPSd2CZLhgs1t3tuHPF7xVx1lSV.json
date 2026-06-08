@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "media-extended",
-        "version": "4.2.5",
+        "version": "4.2.7",
         "title": "[zh-tw] Media Extended",
         "description": "Media Extended 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "4.2.5",
+        "supportedVersions": "4.2.7",
         "author": "Chico"
     },
     "dict": {
@@ -2603,9 +2603,59 @@
                     "name": "title",
                     "source": "Open external media",
                     "target": "開啟外部媒體"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Video is not ready, start playing before toggling picture in picture",
+                    "target": "影片尚未準備好，請先開始播放再切換子母畫面"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Conflict BrowserConnector, make sure media-extended across multiple vaults are all up to date and restart Obsidian",
+                    "target": "BrowserConnector 發生衝突，請確認多個 Vault 中的 Media Extended 都已更新，並重新啟動 Obsidian"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Capture screenshot not supported",
+                    "target": "不支援擷取截圖"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Failed to clip screenshot",
+                    "target": "無法裁切截圖"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Player not initialized",
+                    "target": "播放器尚未初始化"
                 }
             ],
             "regex": [
+                {
+                    "source": "Error(\"Video is not ready, start playing before toggling picture in picture\")",
+                    "target": "Error(\"影片尚未準備好，請先開始播放再切換子母畫面\")"
+                },
+                {
+                    "source": "Error(\"Conflict BrowserConnector, make sure media-extended across multiple vaults are all up to date and restart Obsidian\")",
+                    "target": "Error(\"BrowserConnector 發生衝突，請確認多個 Vault 中的 Media Extended 都已更新，並重新啟動 Obsidian\")"
+                },
+                {
+                    "source": "Error(\"Capture screenshot not supported\")",
+                    "target": "Error(\"不支援擷取截圖\")"
+                },
+                {
+                    "source": "Error(\"Failed to clip screenshot\")",
+                    "target": "Error(\"無法裁切截圖\")"
+                },
+                {
+                    "source": "Error(\"Player not initialized\")",
+                    "target": "Error(\"播放器尚未初始化\")"
+                },
                 {
                     "source": "error(\"forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported\")",
                     "target": "error(\"forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported\")"
