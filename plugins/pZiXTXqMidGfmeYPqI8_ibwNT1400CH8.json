@@ -255,6 +255,314 @@
                 {
                     "source": "description:'Show the \"Add Command\" Button in every Menu.'",
                     "target": "description:'在每個選單中顯示「新增命令」按鈕。'"
+                },
+                {
+                    "source": "\"Open Commander Settings\":\"Open Commander Settings\"",
+                    "target": "\"Open Commander Settings\":\"開啟 Commander 設定\""
+                },
+                {
+                    "source": "\"Open Macro Builder\":\"Open Macro Builder\"",
+                    "target": "\"Open Macro Builder\":\"開啟巨集建構器\""
+                },
+                {
+                    "source": "\"Change Icon\":\"Change Icon\"",
+                    "target": "\"Change Icon\":\"變更圖示\""
+                },
+                {
+                    "source": "Rename:\"Rename\"",
+                    "target": "Rename:\"重新命名\""
+                },
+                {
+                    "source": "Delete:\"Delete\"",
+                    "target": "Delete:\"刪除\""
+                },
+                {
+                    "source": "\"Add command\":\"Add command\"",
+                    "target": "\"Add command\":\"新增命令\""
+                },
+                {
+                    "source": "\"Add new\":\"Add new command\"",
+                    "target": "\"Add new\":\"新增命令\""
+                },
+                {
+                    "source": "\"This Command seems to have been removed. {{command_name}}\":\"This Command seems to have been removed. {{command_name}}\"",
+                    "target": "\"This Command seems to have been removed. {{command_name}}\":\"此命令似乎已被移除。{{command_name}}\""
+                },
+                {
+                    "source": "\"Choose a Command to add\":\"Choose a Command to add\"",
+                    "target": "\"Choose a Command to add\":\"選擇要新增的命令\""
+                },
+                {
+                    "source": "\"to navigate\":\"to navigate\"",
+                    "target": "\"to navigate\":\"導覽\""
+                },
+                {
+                    "source": "\"to choose an icon\":\"to choose an icon\"",
+                    "target": "\"to choose an icon\":\"選擇圖示\""
+                },
+                {
+                    "source": "\"to cancel\":\"to cancel\"",
+                    "target": "\"to cancel\":\"取消\""
+                },
+                {
+                    "source": "\"Use a custom name\":\"Use a custom name\"",
+                    "target": "\"Use a custom name\":\"使用自訂名稱\""
+                },
+                {
+                    "source": "\"Choose a custom Name for your new Command\":\"Choose a custom Name for your new Command\"",
+                    "target": "\"Choose a custom Name for your new Command\":\"為新命令選擇自訂名稱\""
+                },
+                {
+                    "source": "\"to save\":\"to save\"",
+                    "target": "\"to save\":\"儲存\""
+                },
+                {
+                    "source": "\"Choose a Icon for your new Command\":\"Choose a Icon for your new Command\"",
+                    "target": "\"Choose a Icon for your new Command\":\"為新命令選擇圖示\""
+                },
+                {
+                    "source": "\"to choose a custom icon\":\"to choose a custom icon\"",
+                    "target": "\"to choose a custom icon\":\"選擇自訂圖示\""
+                },
+                {
+                    "source": "\"Remove Command\":\"Remove Command\"",
+                    "target": "\"Remove Command\":\"移除命令\""
+                },
+                {
+                    "source": "\"Double click to rename\":\"Double click to rename\"",
+                    "target": "\"Double click to rename\":\"按兩下即可重新命名\""
+                },
+                {
+                    "source": "\"This device\":\"This device\"",
+                    "target": "\"This device\":\"此裝置\""
+                },
+                {
+                    "source": "\"Added by {{plugin_name}}.\":\"Added by {{plugin_name}}.\"",
+                    "target": "\"Added by {{plugin_name}}.\":\"由 {{plugin_name}} 新增。\""
+                },
+                {
+                    "source": "\"Warning: This is a checked Command, meaning it might not run under every circumstance.\":\"Warning: This is a checked Command, meaning it might not run under every circumstance.\"",
+                    "target": "\"Warning: This is a checked Command, meaning it might not run under every circumstance.\":\"警告：這是一個已勾選的命令，代表它可能無法在所有情況下執行。\""
+                },
+                {
+                    "source": "\"Move down\":\"Move down\"",
+                    "target": "\"Move down\":\"下移\""
+                },
+                {
+                    "source": "\"Move up\":\"Move up\"",
+                    "target": "\"Move up\":\"上移\""
+                },
+                {
+                    "source": "\"Change Mode (Currently: {{current_mode}})\":\"Change Mode (Currently: {{current_mode}})\"",
+                    "target": "\"Change Mode (Currently: {{current_mode}})\":\"變更模式（目前：{{current_mode}}）\""
+                },
+                {
+                    "source": "\"Are you sure you want to delete the Command?\":\"Are you sure you want to delete the Command?\"",
+                    "target": "\"Are you sure you want to delete the Command?\":\"確定要刪除此命令嗎？\""
+                },
+                {
+                    "source": "\"Remove and don't ask again\":\"Remove and don't ask again\"",
+                    "target": "\"Remove and don't ask again\":\"移除且不要再詢問\""
+                },
+                {
+                    "source": "Remove:\"Remove\"",
+                    "target": "Remove:\"移除\""
+                },
+                {
+                    "source": "Cancel:\"Cancel\"",
+                    "target": "Cancel:\"取消\""
+                },
+                {
+                    "source": "\"Always ask before removing?\":\"Always ask before removing?\"",
+                    "target": "\"Always ask before removing?\":\"移除前一律詢問？\""
+                },
+                {
+                    "source": "\"Always show a Popup to confirm deletion of a Command.\":\"Always show a Popup to confirm deletion of a Command.\"",
+                    "target": "\"Always show a Popup to confirm deletion of a Command.\":\"一律顯示彈出視窗，以確認是否刪除命令。\""
+                },
+                {
+                    "source": "'Show \"Add Command\" Button':'Show \"Add Command\" Button'",
+                    "target": "'Show \"Add Command\" Button':'顯示「新增命令」按鈕'"
+                },
+                {
+                    "source": "'Show the \"Add Command\" Button in every Menu. Requires restart.':'Show the \"Add Command\" Button in every Menu. Requires restart.'",
+                    "target": "'Show the \"Add Command\" Button in every Menu. Requires restart.':'在每個選單中顯示「新增命令」按鈕。需要重新啟動。'"
+                },
+                {
+                    "source": "\"Please restart Obsidian for these changes to take effect.\":\"Please restart Obsidian for these changes to take effect.\"",
+                    "target": "\"Please restart Obsidian for these changes to take effect.\":\"請重新啟動 Obsidian，讓這些變更生效。\""
+                },
+                {
+                    "source": "\"Enable debugging\":\"Enable debugging\"",
+                    "target": "\"Enable debugging\":\"啟用除錯\""
+                },
+                {
+                    "source": "\"Enable console output.\":\"Enable console output.\"",
+                    "target": "\"Enable console output.\":\"啟用主控台輸出。\""
+                },
+                {
+                    "source": "General:\"General\"",
+                    "target": "General:\"一般\""
+                },
+                {
+                    "source": "\"Editor Menu\":\"Editor Menu\"",
+                    "target": "\"Editor Menu\":\"編輯器選單\""
+                },
+                {
+                    "source": "\"File Menu\":\"File Menu\"",
+                    "target": "\"File Menu\":\"檔案選單\""
+                },
+                {
+                    "source": "\"Left Ribbon\":\"Ribbon\"",
+                    "target": "\"Left Ribbon\":\"功能區\""
+                },
+                {
+                    "source": "\"Right Ribbon\":\"Right Ribbon\"",
+                    "target": "\"Right Ribbon\":\"右側功能區\""
+                },
+                {
+                    "source": "Titlebar:\"Titlebar\"",
+                    "target": "Titlebar:\"標題列\""
+                },
+                {
+                    "source": "Statusbar:\"Status Bar\"",
+                    "target": "Statusbar:\"狀態列\""
+                },
+                {
+                    "source": "\"Page Header\":\"Tab Bar\"",
+                    "target": "\"Page Header\":\"分頁列\""
+                },
+                {
+                    "source": "\"Support development\":\"Support development\"",
+                    "target": "\"Support development\":\"支持開發\""
+                },
+                {
+                    "source": "\"No commands here!\":\"No commands here!\"",
+                    "target": "\"No commands here!\":\"這裡沒有命令！\""
+                },
+                {
+                    "source": "\"Would you like to add one now?\":\"Would you like to add one now?\"",
+                    "target": "\"Would you like to add one now?\":\"要現在新增一個嗎？\""
+                },
+                {
+                    "source": "\"Hide Commands\":\"Hide Commands\"",
+                    "target": "\"Hide Commands\":\"隱藏命令\""
+                },
+                {
+                    "source": "\"Choose new\":\"Choose new\"",
+                    "target": "\"Choose new\":\"選擇新的命令\""
+                },
+                {
+                    "source": "\"Hide Commands of other Plugins\":\"Hide Commands of other Plugins\"",
+                    "target": "\"Hide Commands of other Plugins\":\"隱藏其他插件的命令\""
+                },
+                {
+                    "source": "Icon:\"Icon\"",
+                    "target": "Icon:\"圖示\""
+                },
+                {
+                    "source": "Name:\"Name\"",
+                    "target": "Name:\"名稱\""
+                },
+                {
+                    "source": "\"Custom Name\":\"Custom Name\"",
+                    "target": "\"Custom Name\":\"自訂名稱\""
+                },
+                {
+                    "source": "\"Add command to all devices\":\"Add command to all devices\"",
+                    "target": "\"Add command to all devices\":\"在所有裝置新增命令\""
+                },
+                {
+                    "source": "\"Add command only to mobile devices\":\"Add command only to mobile devices\"",
+                    "target": "\"Add command only to mobile devices\":\"只在行動裝置新增命令\""
+                },
+                {
+                    "source": "\"Add command only to desktop devices\":\"Add command only to desktop devices\"",
+                    "target": "\"Add command only to desktop devices\":\"只在桌面裝置新增命令\""
+                },
+                {
+                    "source": "\"Add command only to this device\":\"Add command only to this device\"",
+                    "target": "\"Add command only to this device\":\"只在此裝置新增命令\""
+                },
+                {
+                    "source": "Done:\"Done\"",
+                    "target": "Done:\"完成\""
+                },
+                {
+                    "source": "\"Leave feedback\":\"Leave feedback\"",
+                    "target": "\"Leave feedback\":\"留下回饋\""
+                },
+                {
+                    "source": "Donate:\"Donate\"",
+                    "target": "Donate:\"贊助\""
+                },
+                {
+                    "source": "\"Share feedback, issues, and ideas with our feedback form.\":\"Share feedback, issues, and ideas with our feedback form.\"",
+                    "target": "\"Share feedback, issues, and ideas with our feedback form.\":\"透過回饋表單分享回饋、問題和想法。\""
+                },
+                {
+                    "source": "\"Consider donating to support development.\":\"Consider donating to support development.\"",
+                    "target": "\"Consider donating to support development.\":\"可以考慮贊助以支持開發。\""
+                },
+                {
+                    "source": "Save:\"Save\"",
+                    "target": "Save:\"儲存\""
+                },
+                {
+                    "source": "\"This Command is not available on this device.\":\"This Command is not available on this device.\"",
+                    "target": "\"This Command is not available on this device.\":\"此命令無法在這個裝置上使用。\""
+                },
+                {
+                    "source": "Show:\"Show\"",
+                    "target": "Show:\"顯示\""
+                },
+                {
+                    "source": "Hide:\"Hide\"",
+                    "target": "Hide:\"隱藏\""
+                },
+                {
+                    "source": "\"Hide other Commands\":\"Hide other Commands\"",
+                    "target": "\"Hide other Commands\":\"隱藏其他命令\""
+                },
+                {
+                    "source": "\"Double click to enter custom value\":\"Double click to enter custom value\"",
+                    "target": "\"Double click to enter custom value\":\"按兩下即可輸入自訂值\""
+                },
+                {
+                    "source": "\"Choose custom spacing for Command Buttons\":\"Choose custom spacing for Command Buttons\"",
+                    "target": "\"Choose custom spacing for Command Buttons\":\"選擇命令按鈕的自訂間距\""
+                },
+                {
+                    "source": "\"Change the spacing between commands. You can set different values on mobile and desktop.\":\"Change the spacing between commands.\"",
+                    "target": "\"Change the spacing between commands. You can set different values on mobile and desktop.\":\"變更命令之間的間距。\""
+                },
+                {
+                    "source": "Warning:\"Warning\"",
+                    "target": "Warning:\"警告\""
+                },
+                {
+                    "source": "\"As of Obsidian 0.16.0 you need to explicitly enable the View Header.\":\"As of Obsidian 0.16.0 you need to explicitly enable the Tab Title Bar. Once enabled, you might need to restart Obsidian.\"",
+                    "target": "\"As of Obsidian 0.16.0 you need to explicitly enable the View Header.\":\"從 Obsidian 0.16.0 起，你需要明確啟用分頁標題列。啟用後可能需要重新啟動 Obsidian。\""
+                },
+                {
+                    "source": "\"Open Appearance Settings\":\"Open Appearance Settings\"",
+                    "target": "\"Open Appearance Settings\":\"開啟外觀設定\""
+                },
+                {
+                    "source": "Explorer:\"Explorer\"",
+                    "target": "Explorer:\"檔案總管\""
+                },
+                {
+                    "source": "name:J.Platform.isMobile?\"Mobile Toolbar\":\"Toolbar\"",
+                    "target": "name:J.Platform.isMobile?\"行動工具列\":\"工具列\""
+                },
+                {
+                    "source": "name:\"Macros\"",
+                    "target": "name:\"巨集\""
+                },
+                {
+                    "source": "\"When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.\"",
+                    "target": "\"在檔案總管中點擊命令時，檔案總管檢視會取得焦點。這可能會影響那些需要在目前作用中檔案或檔案總管上執行的命令。\""
                 }
             ]
         }
