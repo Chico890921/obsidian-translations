@@ -1988,6 +1988,326 @@
                 {
                     "source": "name:\"Background Color\"",
                     "target": "name:\"背景顏色\""
+                },
+                {
+                    "source": "\"Editing Toolbar Append Method\":\"工具栏的附加方法。\"",
+                    "target": "\"Editing Toolbar Append Method\":\"工具列的附加方式。\""
+                },
+                {
+                    "source": "\"Choose where Editing Toolbar will append upon regeneration.\":\"选择工具栏在Obsidian中的追加的位置。\"",
+                    "target": "\"Choose where Editing Toolbar will append upon regeneration.\":\"選擇工具列要加入到 Obsidian 的位置。\""
+                },
+                {
+                    "source": "\"Enable Multiple Configurations\":\"启用多配置\"",
+                    "target": "\"Enable Multiple Configurations\":\"啟用多組設定\""
+                },
+                {
+                    "source": "\"Enable different command configurations for each position style (following, top, fixed).\":\"启用每个位置样式的不同命令配置（following，top，fixed）\"",
+                    "target": "\"Enable different command configurations for each position style (following, top, fixed).\":\"為每種位置樣式啟用不同的命令設定（following、top、fixed）\""
+                },
+                {
+                    "source": "\"Top Toolbar\":\"顶部工具栏\"",
+                    "target": "\"Top Toolbar\":\"頂部工具列\""
+                },
+                {
+                    "source": "\"Enable the toolbar positioned at the top.\":\"启用位于顶部的工具栏。\"",
+                    "target": "\"Enable the toolbar positioned at the top.\":\"啟用位於頂部的工具列。\""
+                },
+                {
+                    "source": "\"Following Toolbar\":\"跟随工具栏\"",
+                    "target": "\"Following Toolbar\":\"跟隨工具列\""
+                },
+                {
+                    "source": "\"Enable the toolbar that appears upon text selection.\":\"启用在选中文本时出现的工具栏。\"",
+                    "target": "\"Enable the toolbar that appears upon text selection.\":\"啟用在選取文字時出現的工具列。\""
+                },
+                {
+                    "source": "\"Fixed Toolbar\":\"固定工具栏\"",
+                    "target": "\"Fixed Toolbar\":\"固定工具列\""
+                },
+                {
+                    "source": "\"Enable the toolbar whose position may be fixed where you please.\":\"启用可以固定在任意位置的工具栏。\"",
+                    "target": "\"Enable the toolbar whose position may be fixed where you please.\":\"啟用可固定在任意位置的工具列。\""
+                },
+                {
+                    "source": "\"Mobile Enabled or Not\":\"是否在移动端启用\"",
+                    "target": "\"Mobile Enabled or Not\":\"是否在行動裝置啟用\""
+                },
+                {
+                    "source": "\"Whether to enable on mobile devices with device width less than 768px.\":\"是否在设备宽度小于768的移动设备启用。默认不启用\"",
+                    "target": "\"Whether to enable on mobile devices with device width less than 768px.\":\"是否在裝置寬度小於 768px 的行動裝置啟用。預設不啟用。\""
+                },
+                {
+                    "source": "\"🎨 Set Custom Background\":\"🎨 设置自定义背景\"",
+                    "target": "\"🎨 Set Custom Background\":\"🎨 設定自訂背景\""
+                },
+                {
+                    "source": "\"🖌️ Set Custom Font Color\":\"🖌️ 设置自定义字体颜色\"",
+                    "target": "\"🖌️ Set Custom Font Color\":\"🖌️ 設定自訂字型顏色\""
+                },
+                {
+                    "source": "\"Click on the picker to adjust the color\":\"点击选取器来调整颜色\"",
+                    "target": "\"Click on the picker to adjust the color\":\"點擊選取器來調整顏色\""
+                },
+                {
+                    "source": "General:\"常规\"",
+                    "target": "General:\"一般\""
+                },
+                {
+                    "source": "Appearance:\"外观\"",
+                    "target": "Appearance:\"外觀\""
+                },
+                {
+                    "source": "\"Custom Commands\":\"自定义命令\"",
+                    "target": "\"Custom Commands\":\"自訂命令\""
+                },
+                {
+                    "source": "\"Toolbar Commands\":\"工具栏命令\"",
+                    "target": "\"Toolbar Commands\":\"工具列命令\""
+                },
+                {
+                    "source": "\"Import/Export\":\"导入/导出\"",
+                    "target": "\"Import/Export\":\"匯入/匯出\""
+                },
+                {
+                    "source": "\"Toolbar Settings\":\"工具栏设置\"",
+                    "target": "\"Toolbar Settings\":\"工具列設定\""
+                },
+                {
+                    "source": "\"Choose which toolbar style's appearance you want to edit.\":\"选择要编辑外观的工具栏样式。\"",
+                    "target": "\"Choose which toolbar style's appearance you want to edit.\":\"選擇要編輯外觀的工具列樣式。\""
+                },
+                {
+                    "source": "\"Custom Backgroud Color\":\"设置自定义背景色\"",
+                    "target": "\"Custom Backgroud Color\":\"設定自訂背景色\""
+                },
+                {
+                    "source": "\"Custom Font Color\":\"设置自定义字体颜色\"",
+                    "target": "\"Custom Font Color\":\"設定自訂字型顏色\""
+                },
+                {
+                    "source": "\"Editing Toolbar aesthetic\":\"工具栏样式\"",
+                    "target": "\"Editing Toolbar aesthetic\":\"工具列樣式\""
+                },
+                {
+                    "source": "\"Editing Toolbar position\":\"工具栏位置\"",
+                    "target": "\"Editing Toolbar position\":\"工具列位置\""
+                },
+                {
+                    "source": "\"Editing Toolbar Columns\":\"工具栏栏目数\"",
+                    "target": "\"Editing Toolbar Columns\":\"工具列欄數\""
+                },
+                {
+                    "source": "\"Editing Toolbar refresh\":\"刷新工具栏\"",
+                    "target": "\"Editing Toolbar refresh\":\"重新整理工具列\""
+                },
+                {
+                    "source": "\"Editing Toolbar Commands\":\"在工具栏中添加命令\"",
+                    "target": "\"Editing Toolbar Commands\":\"在工具列中新增命令\""
+                },
+                {
+                    "source": "\"Refresh Toolbar\":\"刷新工具栏\"",
+                    "target": "\"Refresh Toolbar\":\"重新整理工具列\""
+                },
+                {
+                    "source": "\"Add Command\":\"添加命令\"",
+                    "target": "\"Add Command\":\"新增命令\""
+                },
+                {
+                    "source": "Settings:\"设置\"",
+                    "target": "Settings:\"設定\""
+                },
+                {
+                    "source": "\"Adjust Toolbar Position[Fixed mode]\":\"调整工具栏位置[固定模式]\"",
+                    "target": "\"Adjust Toolbar Position[Fixed mode]\":\"調整工具列位置[固定模式]\""
+                },
+                {
+                    "source": "\"Position Style\":\"位置样式\"",
+                    "target": "\"Position Style\":\"位置樣式\""
+                },
+                {
+                    "source": "\"Toolbar Position\":\"工具栏位置\"",
+                    "target": "\"Toolbar Position\":\"工具列位置\""
+                },
+                {
+                    "source": "\"Choose an icon\":\"选择一个图标\"",
+                    "target": "\"Choose an icon\":\"選擇圖示\""
+                },
+                {
+                    "source": "\"Search for an icon...\":\"搜索图标...\"",
+                    "target": "\"Search for an icon...\":\"搜尋圖示...\""
+                },
+                {
+                    "source": "All:\"全部\"",
+                    "target": "All:\"全部\""
+                },
+                {
+                    "source": "\"Choose a command\":\"选择一个命令\"",
+                    "target": "\"Choose a command\":\"選擇命令\""
+                },
+                {
+                    "source": "\"Add and manage commands\":\"添加和管理命令\"",
+                    "target": "\"Add and manage commands\":\"新增與管理命令\""
+                },
+                {
+                    "source": "\"Custom Format Commands\":\"自定义格式命令\"",
+                    "target": "\"Custom Format Commands\":\"自訂格式命令\""
+                },
+                {
+                    "source": "\"Add, edit or delete custom format commands.\":\"添加、编辑或删除自定义格式命令\"",
+                    "target": "\"Add, edit or delete custom format commands.\":\"新增、編輯或刪除自訂格式命令\""
+                },
+                {
+                    "source": "\"Command ID\":\"命令ID\"",
+                    "target": "\"Command ID\":\"命令 ID\""
+                },
+                {
+                    "source": "\"Command Name\":\"命令名称\"",
+                    "target": "\"Command Name\":\"命令名稱\""
+                },
+                {
+                    "source": "\"Command icon (click to select)\":\"命令图标（点击选择）\"",
+                    "target": "\"Command icon (click to select)\":\"命令圖示（點擊選擇）\""
+                },
+                {
+                    "source": "\"Edit Custom Command\":\"编辑自定义命令\"",
+                    "target": "\"Edit Custom Command\":\"編輯自訂命令\""
+                },
+                {
+                    "source": "\"Add Custom Command\":\"添加自定义命令\"",
+                    "target": "\"Add Custom Command\":\"新增自訂命令\""
+                },
+                {
+                    "source": "\"Export Configuration\":\"导出配置\"",
+                    "target": "\"Export Configuration\":\"匯出設定\""
+                },
+                {
+                    "source": "\"Export your toolbar configuration to share with others.\":\"导出您的工具栏配置以与他人共享\"",
+                    "target": "\"Export your toolbar configuration to share with others.\":\"匯出你的工具列設定以與他人分享\""
+                },
+                {
+                    "source": "Export:\"导出\"",
+                    "target": "Export:\"匯出\""
+                },
+                {
+                    "source": "\"Import Configuration\":\"导入配置\"",
+                    "target": "\"Import Configuration\":\"匯入設定\""
+                },
+                {
+                    "source": "\"Import toolbar configuration from JSON.\":\"从JSON导入工具栏配置\"",
+                    "target": "\"Import toolbar configuration from JSON.\":\"從 JSON 匯入工具列設定\""
+                },
+                {
+                    "source": "Import:\"导入\"",
+                    "target": "Import:\"匯入\""
+                },
+                {
+                    "source": "\"Usage Instructions\":\"使用说明\"",
+                    "target": "\"Usage Instructions\":\"使用說明\""
+                },
+                {
+                    "source": "\"Export: Generate a JSON configuration that you can save or share.\":\"导出：生成可保存或共享的JSON配置\"",
+                    "target": "\"Export: Generate a JSON configuration that you can save or share.\":\"匯出：產生可儲存或分享的 JSON 設定\""
+                },
+                {
+                    "source": "\"Import: Paste a previously exported JSON configuration.\":\"导入：粘贴先前导出的JSON配置\"",
+                    "target": "\"Import: Paste a previously exported JSON configuration.\":\"匯入：貼上先前匯出的 JSON 設定\""
+                },
+                {
+                    "source": "\"You can choose to export all settings, only toolbar commands, or only custom commands\":\"您可以选择导出所有设置、仅工具栏命令或仅自定义命令\"",
+                    "target": "\"You can choose to export all settings, only toolbar commands, or only custom commands\":\"你可以選擇匯出所有設定、僅工具列命令或僅自訂命令\""
+                },
+                {
+                    "source": "\"When importing, the plugin will only update the settings included in the import data\":\"导入时，插件将仅更新导入数据中包含的设置\"",
+                    "target": "\"When importing, the plugin will only update the settings included in the import data\":\"匯入時，插件只會更新匯入資料中包含的設定\""
+                },
+                {
+                    "source": "\"Warning: Importing configuration will overwrite your current settings. Consider exporting your current configuration first as a backup.\":\"警告：导入配置将覆盖您当前的设置。建议先导出当前配置作为备份。\"",
+                    "target": "\"Warning: Importing configuration will overwrite your current settings. Consider exporting your current configuration first as a backup.\":\"警告：匯入設定會覆蓋目前設定。建議先匯出目前設定作為備份。\""
+                },
+                {
+                    "source": "\"Export Type\":\"导出类型\"",
+                    "target": "\"Export Type\":\"匯出類型\""
+                },
+                {
+                    "source": "\"Choose what to export\":\"选择要导出的内容\"",
+                    "target": "\"Choose what to export\":\"選擇要匯出的內容\""
+                },
+                {
+                    "source": "\"All Settings\":\"所有设置\"",
+                    "target": "\"All Settings\":\"所有設定\""
+                },
+                {
+                    "source": "\"Toolbar Commands Only\":\"仅工具栏命令\"",
+                    "target": "\"Toolbar Commands Only\":\"僅工具列命令\""
+                },
+                {
+                    "source": "\"Custom Commands Only\":\"仅自定义命令\"",
+                    "target": "\"Custom Commands Only\":\"僅自訂命令\""
+                },
+                {
+                    "source": "\"Loading...\":\"加载中...\"",
+                    "target": "\"Loading...\":\"載入中...\""
+                },
+                {
+                    "source": "\"Configuration imported successfully\":\"配置导入成功\"",
+                    "target": "\"Configuration imported successfully\":\"設定匯入成功\""
+                },
+                {
+                    "source": "\"Import Mode\":\"导入模式\"",
+                    "target": "\"Import Mode\":\"匯入模式\""
+                },
+                {
+                    "source": "\"Choose how to import the configuration\":\"选择如何导入配置\"",
+                    "target": "\"Choose how to import the configuration\":\"選擇如何匯入設定\""
+                },
+                {
+                    "source": "\"Overwrite Mode (Replace all settings with imported ones)\":\"覆盖模式（用导入的配置替换所有设置）\"",
+                    "target": "\"Overwrite Mode (Replace all settings with imported ones)\":\"覆蓋模式（用匯入的設定取代所有設定）\""
+                },
+                {
+                    "source": "\"Update Mode (Add new items and update existing ones)\":\"更新模式（添加新项目并更新现有项目）\"",
+                    "target": "\"Update Mode (Add new items and update existing ones)\":\"更新模式（新增項目並更新既有項目）\""
+                },
+                {
+                    "source": "\"Add Format Command\":\"添加格式命令\"",
+                    "target": "\"Add Format Command\":\"新增格式命令\""
+                },
+                {
+                    "source": "\"Add Regex Command\":\"添加正则表达式命令\"",
+                    "target": "\"Add Regex Command\":\"新增正規表示式命令\""
+                },
+                {
+                    "source": "\"Switch Regex Command Window\":\"切换到正则命令窗口\"",
+                    "target": "\"Switch Regex Command Window\":\"切換到正規表示式命令視窗\""
+                },
+                {
+                    "source": "\"Enable Multiple Config\":\"启用多配置\"",
+                    "target": "\"Enable Multiple Config\":\"啟用多組設定\""
+                },
+                {
+                    "source": "\"Use current line for regex commands\":\"正则命令使用当前行\"",
+                    "target": "\"Use current line for regex commands\":\"正規表示式命令使用目前行\""
+                },
+                {
+                    "source": "\"All Toolbar Commands\":\"所有工具栏命令\"",
+                    "target": "\"All Toolbar Commands\":\"所有工具列命令\""
+                },
+                {
+                    "source": "\"Update Custom Commands\":\"更新自定义命令\"",
+                    "target": "\"Update Custom Commands\":\"更新自訂命令\""
+                },
+                {
+                    "source": "\"Clear all Custom Commands\":\"清除所有自定义命令\"",
+                    "target": "\"Clear all Custom Commands\":\"清除所有自訂命令\""
+                },
+                {
+                    "source": "\"General settings\":\"常规设置\"",
+                    "target": "\"General settings\":\"一般設定\""
+                },
+                {
+                    "source": "\"Update general settings\":\"更新常规设置\"",
+                    "target": "\"Update general settings\":\"更新一般設定\""
                 }
             ]
         }
