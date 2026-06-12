@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "typewriter-mode",
-        "version": "1.4.0",
+        "version": "1.5.0",
         "title": "[zh-tw] Typewriter Mode",
         "description": "Typewriter Mode Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "1.4.0",
+        "supportedVersions": "1.5.0",
         "author": "Chico",
         "updatedAt": 1778615217784
     },
@@ -732,6 +732,42 @@
                 {
                     "source": "name:`Disable ${this.commandTitle}`",
                     "target": "name:`停用 ${this.commandTitle}`"
+                },
+                {
+                    "source": "commandTitle=\"typewriter mode plugin\"",
+                    "target": "commandTitle=\"打字機模式插件\""
+                },
+                {
+                    "source": "commandTitle=\"typewriter scrolling\"",
+                    "target": "commandTitle=\"打字機捲動\""
+                },
+                {
+                    "source": "commandTitle=\"dimming\"",
+                    "target": "commandTitle=\"淡化\""
+                },
+                {
+                    "source": "commandTitle=\"typewriter scrolling and paragraph dimming\"",
+                    "target": "commandTitle=\"打字機捲動與段落淡化\""
+                },
+                {
+                    "source": "commandTitle=\"writing focus\"",
+                    "target": "commandTitle=\"寫作專注\""
+                },
+                {
+                    "source": "commandTitle=\"Move typewriter up\"",
+                    "target": "commandTitle=\"向上移動打字機\""
+                },
+                {
+                    "source": "commandTitle=\"Move typewriter down\"",
+                    "target": "commandTitle=\"向下移動打字機\""
+                },
+                {
+                    "source": "commandTitle=\"Hemingway mode\"",
+                    "target": "commandTitle=\"海明威模式\""
+                },
+                {
+                    "source": "commandTitle=\"limit maximum characters per line\"",
+                    "target": "commandTitle=\"限制每行最大字元數\""
                 }
             ]
         }
