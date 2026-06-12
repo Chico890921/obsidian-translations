@@ -549,13 +549,13 @@
         "id": "lnper0x1liWp6SBmbPc1CQcceuZC5dRm",
         "plugin": "typewriter-mode",
         "language": "zh-tw",
-        "version": "1.4.0",
-        "supported_versions": "1.4.0",
+        "version": "1.5.0",
+        "supported_versions": "1.5.0",
         "title": "[zh-tw] Typewriter Mode",
         "description": "Typewriter Mode Localization & Tweaks",
-        "hash": "51efd82551efd82551efd82551efd825",
+        "hash": "0e3c14c60e3c14c60e3c14c60e3c14c6",
         "created_at": "2026-05-25T03:51:15.087Z",
-        "updated_at": "2026-06-08T19:29:41.905Z",
+        "updated_at": "2026-06-12T09:18:20.370Z",
         "type": "plugin"
     },
     {
