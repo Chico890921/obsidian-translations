@@ -304,7 +304,7 @@
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "\"Commit-and-sync\" and \"pull\" takes care of submodules. Missing features: Conflicted files, count of pulled/pushed/committed files. Tracking branch needs to be set for each submodule.",
-                    "target": "「提交並同步」與「拉取」會處理子模組。尚缺功能：衝突檔案、拉取/推送/提交的檔案數量。每個子模組都需要設定追蹤分支。"
+                    "target": "「commit-and-sync」與「拉取」會處理子模組。尚缺功能：衝突檔案、拉取/推送/提交的檔案數量。每個子模組都需要設定追蹤分支。"
                 },
                 {
                     "type": "CallExpression",
@@ -460,13 +460,13 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Push on commit-and-sync",
-                    "target": "提交並同步時推送"
+                    "target": "commit-and-sync時推送"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Pull on commit-and-sync",
-                    "target": "提交並同步時拉取"
+                    "target": "commit-and-sync時拉取"
                 },
                 {
                     "type": "CallExpression",
@@ -1096,13 +1096,13 @@
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "Commit-and-sync and then close Obsidian",
-                    "target": "提交並同步，然後關閉 Obsidian"
+                    "target": "commit-and-sync，然後關閉 Obsidian"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "Commit-and-sync with specific message",
-                    "target": "使用指定訊息提交並同步"
+                    "target": "使用指定訊息commit-and-sync"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1576,7 +1576,7 @@
                 },
                 {
                     "source": "setName(\"Split timers for automatic commit and sync\")",
-                    "target": "setName(\"將自動提交與同步使用不同計時器\")"
+                    "target": "setName(\"分開自動提交與同步的計時器\")"
                 },
                 {
                     "source": "setDesc(\"Enable to use one interval for commit and another for sync.\")",
@@ -1588,7 +1588,7 @@
                 },
                 {
                     "source": "setDesc(`${i.settings.differentIntervalCommitAndPush?\"Commit\":\"Commit and sync\"} changes every X minutes. Set to 0 (default) to disable. (See below setting for further configuration!)`)",
-                    "target": "setDesc(`每 X 分鐘${i.settings.differentIntervalCommitAndPush?\"提交\":\"提交並同步\"}變更。設為 0（預設）可停用。（更多設定見下方！）`)"
+                    "target": "setDesc(`每 X 分鐘${n}一次變更。設為 0（預設）可停用。（更多設定見下方！）`)"
                 },
                 {
                     "source": "setName(`Auto ${n} after stopping file edits`)",
@@ -1676,7 +1676,7 @@
                 },
                 {
                     "source": "setName(\"List filenames affected by commit in the commit body\")",
-                    "target": "setName(\"在提交內容中列出受影響的檔名\")"
+                    "target": "setName(\"在提交內容中列出受提交影響的檔案名稱\")"
                 },
                 {
                     "source": "setName(\"Merge strategy\")",
@@ -1696,19 +1696,19 @@
                 },
                 {
                     "source": "setName(\"Push on commit-and-sync\")",
-                    "target": "setName(\"提交並同步時推送\")"
+                    "target": "setName(\"commit-and-sync時推送\")"
                 },
                 {
                     "source": "setDesc(`Most of the time you want to push after committing. Turning this off turns a commit-and-sync action into commit ${i.settings.pullBeforePush?\"and pull \":\"\"}only. It will still be called commit-and-sync.`)",
-                    "target": "setDesc(`多數時候你會希望提交後推送。關閉此選項後，提交並同步動作會變成只提交${i.settings.pullBeforePush?\"並拉取 \":\"\"}。它仍會被稱為提交並同步。`)"
+                    "target": "setDesc(`多數時候你會希望提交後推送。關閉此選項後，commit-and-sync動作會變成只提交${i.settings.pullBeforePush?\"並拉取\":\"\"}。名稱仍會顯示為commit-and-sync。`)"
                 },
                 {
                     "source": "setName(\"Pull on commit-and-sync\")",
-                    "target": "setName(\"提交並同步時拉取\")"
+                    "target": "setName(\"commit-and-sync時拉取\")"
                 },
                 {
                     "source": "setDesc(`On commit-and-sync, pull commits as well. Turning this off turns a commit-and-sync action into commit ${i.settings.disablePush?\"\":\"and push \"}only.`)",
-                    "target": "setDesc(`提交並同步時也拉取提交。關閉此選項後，提交並同步動作會變成只提交${i.settings.disablePush?\"\":\"並推送 \"}。`)"
+                    "target": "setDesc(`commit-and-sync時也拉取提交。關閉此選項後，commit-and-sync動作會變成只提交${i.settings.disablePush?\"\":\"並推送\"}。`)"
                 },
                 {
                     "source": "setDesc(\"Hunks are sections of grouped line changes right in your editor.\")",
@@ -1748,7 +1748,7 @@
                 },
                 {
                     "source": "setDesc(\"Show the date of the commit in the history view. The {{date}} placeholder format is used to display the date.\")",
-                    "target": "setDesc(\"在歷史檢視中顯示提交日期。日期會使用 {{date}} 佔位符格式顯示。\")"
+                    "target": "setDesc(\"在歷史檢視中顯示提交日期。會使用 {{date}} 佔位符格式來顯示日期。\")"
                 },
                 {
                     "source": "setName(\"Source control view\")",
@@ -1760,7 +1760,7 @@
                 },
                 {
                     "source": "setDesc(\"On slower machines this may cause lags. If so, just disable this option.\")",
-                    "target": "setDesc(\"在較慢的電腦上可能造成延遲。如有這種情況，停用此選項即可。\")"
+                    "target": "setDesc(\"在較慢的機器上，這可能造成延遲。如果會延遲，請停用此選項。\")"
                 },
                 {
                     "source": "setName(\"Source control view refresh interval\")",
@@ -1768,7 +1768,7 @@
                 },
                 {
                     "source": "setDesc(\"Milliseconds to wait after file change before refreshing the Source Control View.\")",
-                    "target": "setDesc(\"檔案變更後，重新整理原始碼控制檢視前等待的毫秒數。\")"
+                    "target": "setDesc(\"檔案變更後，重新整理原始碼控制檢視前要等待的毫秒數。\")"
                 },
                 {
                     "source": "setName(\"Diff view style\")",
@@ -1784,7 +1784,7 @@
                 },
                 {
                     "source": "setDesc(\"Disable informative notifications for git operations to minimize distraction (refer to status bar for updates).\")",
-                    "target": "setDesc(\"停用 Git 操作的資訊通知，以減少干擾（更新狀態請查看狀態列）。\")"
+                    "target": "setDesc(\"停用 Git 操作的資訊通知以減少干擾（可查看狀態列取得更新）。\")"
                 },
                 {
                     "source": "setName(\"Disable error notifications\")",
@@ -1792,11 +1792,11 @@
                 },
                 {
                     "source": "setDesc(\"Disable error notifications of any kind to minimize distraction (refer to status bar for updates).\")",
-                    "target": "setDesc(\"停用所有錯誤通知，以減少干擾（更新狀態請查看狀態列）。\")"
+                    "target": "setDesc(\"停用各類錯誤通知以減少干擾（可查看狀態列取得更新）。\")"
                 },
                 {
                     "source": "setName(\"Hide notifications for no changes\")",
-                    "target": "setName(\"隱藏無變更通知\")"
+                    "target": "setName(\"沒有變更時隱藏通知\")"
                 },
                 {
                     "source": "setDesc(\"Don't show notifications when there are no changes to commit or push.\")",
@@ -1848,11 +1848,11 @@
                 },
                 {
                     "source": "setName(\"Author name for commit\")",
-                    "target": "setName(\"提交作者名稱\")"
+                    "target": "setName(\"提交用作者名稱\")"
                 },
                 {
                     "source": "setDesc(\"These settings usually don't need to be changed, but may be required for special setups.\")",
-                    "target": "setDesc(\"這些設定通常不需要更改，但特殊配置可能會用到。\")"
+                    "target": "setDesc(\"這些設定通常不需要變更，但特殊環境可能會需要。\")"
                 },
                 {
                     "source": "setName(\"Update submodules\")",
@@ -1860,7 +1860,7 @@
                 },
                 {
                     "source": "setDesc('\"Commit-and-sync\" and \"pull\" takes care of submodules. Missing features: Conflicted files, count of pulled/pushed/committed files. Tracking branch needs to be set for each submodule.')",
-                    "target": "setDesc('「提交並同步」與「拉取」會處理子模組。尚缺功能：衝突檔案、已拉取/推送/提交的檔案數量。每個子模組都需要設定追蹤分支。')"
+                    "target": "setDesc('「commit-and-sync」與「拉取」會處理子模組。尚缺功能：衝突檔案、已拉取/推送/提交的檔案數量。每個子模組都需要設定追蹤分支。')"
                 },
                 {
                     "source": "setName(\"Submodule recurse checkout/switch\")",
@@ -1880,7 +1880,7 @@
                 },
                 {
                     "source": "setName(\"Additional environment variables\")",
-                    "target": "setName(\"額外環境變數\")"
+                    "target": "setName(\"額外的環境變數\")"
                 },
                 {
                     "source": "setDesc(\"Use each line for a new environment variable in the format KEY=VALUE .\")",
@@ -1892,7 +1892,7 @@
                 },
                 {
                     "source": "setDesc(\"Use each line for one path\")",
-                    "target": "setDesc(\"每一行設定一個路徑\")"
+                    "target": "setDesc(\"每行輸入一個路徑。\")"
                 },
                 {
                     "source": "setName(\"Reload with new environment variables\")",
@@ -1916,11 +1916,11 @@
                 },
                 {
                     "source": "setName(\"Disable on this device\")",
-                    "target": "setName(\"在此裝置上停用\")"
+                    "target": "setName(\"在此裝置停用\")"
                 },
                 {
                     "source": "setDesc(\"Disables the plugin on this device. This setting is not synced.\")",
-                    "target": "setDesc(\"在此裝置上停用插件。此設定不會同步。\")"
+                    "target": "setDesc(\"在此裝置停用此外掛。此設定不會同步。\")"
                 },
                 {
                     "source": "Notice(\"Obsidian must be restarted for the changes to take affect.\")",
@@ -1928,7 +1928,7 @@
                 },
                 {
                     "source": "setDesc(\"If you like this Plugin, consider donating to support continued development.\")",
-                    "target": "setDesc(\"如果你喜歡這個插件，可以考慮捐款支持持續開發。\")"
+                    "target": "setDesc(\"如果你喜歡這個外掛，可以考慮贊助以支持持續開發。\")"
                 },
                 {
                     "source": "setText(\"Copy Debug Information\")",
@@ -1948,7 +1948,7 @@
                 },
                 {
                     "source": "setDesc(\"Only available on desktop currently.\")",
-                    "target": "setDesc(\"目前僅桌面端可用。\")"
+                    "target": "setDesc(\"目前僅桌面版可用。\")"
                 },
                 {
                     "source": "setName(\"Show commit hash\")",
@@ -1956,7 +1956,7 @@
                 },
                 {
                     "source": "setName(\"Author name display\")",
-                    "target": "setName(\"作者名稱顯示\")"
+                    "target": "setName(\"作者名稱顯示方式\")"
                 },
                 {
                     "source": "setDesc(\"If and how the author is displayed\")",
@@ -1964,15 +1964,15 @@
                 },
                 {
                     "source": "setName(\"Authoring date display\")",
-                    "target": "setName(\"撰寫日期顯示\")"
+                    "target": "setName(\"作者日期顯示方式\")"
                 },
                 {
                     "source": "setDesc(\"If and how the date and time of authoring the line is displayed\")",
-                    "target": "setDesc(\"是否以及如何顯示該行的撰寫日期與時間\")"
+                    "target": "setDesc(\"是否以及如何顯示該行的作者日期與時間\")"
                 },
                 {
                     "source": "setName(\"Custom authoring date format\")",
-                    "target": "setName(\"自訂撰寫日期格式\")"
+                    "target": "setName(\"自訂作者日期格式\")"
                 },
                 {
                     "source": "setPlaceholder(\"YYYY-MM-DD HH:mm\")",
@@ -1980,11 +1980,11 @@
                 },
                 {
                     "source": "setName(\"Authoring date display timezone\")",
-                    "target": "setName(\"撰寫日期顯示時區\")"
+                    "target": "setName(\"作者日期顯示時區\")"
                 },
                 {
                     "source": "setName(\"Oldest age in coloring\")",
-                    "target": "setName(\"著色的最舊時間\")"
+                    "target": "setName(\"著色中的最舊時間\")"
                 },
                 {
                     "source": "setName(\"Text color\")",
@@ -1992,7 +1992,7 @@
                 },
                 {
                     "source": "setName(\"Ignore whitespace and newlines in changes\")",
-                    "target": "setName(\"在變更中忽略空白與換行\")"
+                    "target": "setName(\"忽略變更中的空白與換行\")"
                 },
                 {
                     "source": "setText(`Color for ${n} commits`)",
@@ -2296,11 +2296,11 @@
                 },
                 {
                     "source": "name:\"Commit-and-sync and then close Obsidian\"",
-                    "target": "name:\"提交並同步，然後關閉 Obsidian\""
+                    "target": "name:\"commit-and-sync，然後關閉 Obsidian\""
                 },
                 {
                     "source": "name:\"Commit-and-sync with specific message\"",
-                    "target": "name:\"使用指定訊息提交並同步\""
+                    "target": "name:\"使用指定訊息commit-and-sync\""
                 },
                 {
                     "source": "name:\"Commit all changes\"",
@@ -2421,6 +2421,122 @@
                 {
                     "source": "text:`~${s} `",
                     "target": "text:`~${s} `"
+                },
+                {
+                    "source": "i.settings.differentIntervalCommitAndPush?n=\"commit\":n=\"commit-and-sync\";",
+                    "target": "i.settings.differentIntervalCommitAndPush?n=\"提交\":n=\"commit-and-sync\";"
+                },
+                {
+                    "source": "setDesc(`Requires the ${n} interval not to be 0.\n                        If turned on, do auto ${n} every ${qP(i.settings.autoSaveInterval)} after stopping file edits.\n                        This also prevents auto ${n} while editing a file. If turned off, it's independent from the last file edit.`)",
+                    "target": "setDesc(`需要將 ${n} 間隔設為非 0。\n                        啟用後，停止編輯檔案後每 ${qP(i.settings.autoSaveInterval)} 自動 ${n}。\n                        這也會避免在編輯檔案時自動 ${n}。停用後，將不受最後一次檔案編輯時間影響。`)"
+                },
+                {
+                    "source": "setDesc(\"Available placeholders: {{date}} (see below), {{hostname}} (see below), {{numFiles}} (number of changed files in the commit) and {{files}} (changed files in commit message). Leave empty to require manual input on each commit.\")",
+                    "target": "setDesc(\"可用佔位符：{{date}}（見下方）、{{hostname}}（見下方）、{{numFiles}}（此次提交中變更的檔案數量）以及 {{files}}（提交訊息中的變更檔案）。留空則每次提交都需要手動輸入。\")"
+                },
+                {
+                    "source": "d.setIcon(\"reset\").setTooltip(`Set to default: \"${rt.commitMessage}\"`)",
+                    "target": "d.setIcon(\"reset\").setTooltip(`設為預設值：「${rt.commitMessage}」`)"
+                },
+                {
+                    "source": "u.descEl.innerHTML=`\n            Specify custom date format. E.g. \"${kv}. See <a href=\"https://momentjs.com\">Moment.js</a> for more formats.`",
+                    "target": "u.descEl.innerHTML=`\n            指定自訂日期格式。例如「${kv}」。請參閱 <a href=\"https://momentjs.com\">Moment.js</a> 以查看更多格式。`"
+                },
+                {
+                    "source": "setName(\"{{hostname}} placeholder replacement\")",
+                    "target": "setName(\"{{hostname}} 佔位符替換內容\")"
+                },
+                {
+                    "source": "setButtonText(\"Preview\")",
+                    "target": "setButtonText(\"預覽\")"
+                },
+                {
+                    "source": "setName(\"Pull\")",
+                    "target": "setName(\"拉取\")"
+                },
+                {
+                    "source": "setDesc(\"Decide how to integrate commits from your remote branch into your local branch.\")",
+                    "target": "setDesc(\"決定如何將遠端分支的提交整合到本機分支。\")"
+                },
+                {
+                    "source": "{merge:\"Merge\",rebase:\"Rebase\",reset:\"Other sync service (Only updates the HEAD without touching the working directory)\"}",
+                    "target": "{merge:\"合併\",rebase:\"重定基底\",reset:\"其他同步服務（只更新 HEAD，不碰工作目錄）\"}"
+                },
+                {
+                    "source": "setDesc(\"Decide how to solve conflicts when pulling remote changes. This can be used to favor your local changes or the remote changes automatically.\")",
+                    "target": "setDesc(\"決定拉取遠端變更時如何解決衝突。可用來自動偏好本機變更或遠端變更。\")"
+                },
+                {
+                    "source": "{none:\"None (git default)\",ours:\"Our changes\",theirs:\"Their changes\"}",
+                    "target": "{none:\"無（Git 預設）\",ours:\"我們的變更\",theirs:\"他們的變更\"}"
+                },
+                {
+                    "source": "setName(\"Commit-and-sync\")",
+                    "target": "setName(\"commit-and-sync\")"
+                },
+                {
+                    "source": "setDesc(\"Commit-and-sync with default settings means staging everything -> committing -> pulling -> pushing. Ideally this is a single action that you do regularly to keep your local and remote repository in sync.\")",
+                    "target": "setDesc(\"使用預設設定時，commit-and-sync代表：暫存所有內容 -> 提交 -> 拉取 -> 推送。理想情況下，這是你定期執行、用來讓本機與遠端儲存庫保持同步的單一動作。\")"
+                },
+                {
+                    "source": "setName(\"Hunk management\")",
+                    "target": "setName(\"區塊管理\")"
+                },
+                {
+                    "source": "setName(\"Signs\")",
+                    "target": "setName(\"標記\")"
+                },
+                {
+                    "source": "setDesc(\"Adds commands to stage/reset individual Git diff hunks and navigate between them via 'Go to next/prev hunk' commands.\")",
+                    "target": "setDesc(\"新增用來暫存/重設個別 Git 差異區塊的命令，並可透過「前往下一個/上一個區塊」命令在區塊間導覽。\")"
+                },
+                {
+                    "source": "{disabled:\"Disabled\",colored:\"Colored\",monochrome:\"Monochrome\"}",
+                    "target": "{disabled:\"停用\",colored:\"彩色\",monochrome:\"單色\"}"
+                },
+                {
+                    "source": "r.descEl.innerHTML=`\n            <a href=\"${rV}\">Feature guide and quick examples</a></br>\n            The commit hash, author name and authoring date can all be individually toggled.</br>Hide everything, to only show the age-colored sidebar.`",
+                    "target": "r.descEl.innerHTML=`\n            <a href=\"${rV}\">功能指南與快速範例</a></br>\n            提交雜湊、作者名稱與作者日期都可以個別切換。</br>也可以隱藏所有內容，只顯示依時間著色的側邊欄。`"
+                },
+                {
+                    "source": "setDesc(\"Removing previously added environment variables will not take effect until Obsidian is restarted.\")",
+                    "target": "setDesc(\"移除先前新增的環境變數後，要重新啟動 Obsidian 才會生效。\")"
+                },
+                {
+                    "source": "setButtonText(\"Reload\")",
+                    "target": "setButtonText(\"重新載入\")"
+                },
+                {
+                    "source": "setName(\"Automatic\")",
+                    "target": "setName(\"自動化\")"
+                },
+                {
+                    "source": "{hide:\"Hide\",full:\"Full\",initials:\"Initials\"}",
+                    "target": "{hide:\"隱藏\",full:\"完整\",initials:\"縮寫\"}"
+                },
+                {
+                    "source": "setName(\"Miscellaneous\")",
+                    "target": "setName(\"其他\")"
+                },
+                {
+                    "source": "setName(\"Author email for commit\")",
+                    "target": "setName(\"提交用作者電子郵件\")"
+                },
+                {
+                    "source": "setName(\"Advanced\")",
+                    "target": "setName(\"進階\")"
+                },
+                {
+                    "source": "setName(\"Support\")",
+                    "target": "setName(\"支援\")"
+                },
+                {
+                    "source": "setName(\"Donate\")",
+                    "target": "setName(\"贊助\")"
+                },
+                {
+                    "source": "setName(\"Follow movement and copies across files and commits\")",
+                    "target": "setName(\"跨檔案與提交追蹤移動和複製\")"
                 }
             ]
         }
