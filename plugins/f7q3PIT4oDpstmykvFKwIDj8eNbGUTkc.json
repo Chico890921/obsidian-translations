@@ -88,7 +88,7 @@
                     "type": "CallExpression",
                     "name": "info",
                     "source": "A fatal exception occurred in a previous task, the queue has been purged: %o",
-                    "target": "A fatal exception occurred in a previous task, the queue has been purged: %o"
+                    "target": "先前任務發生嚴重例外，佇列已清空：%o"
                 },
                 {
                     "type": "CallExpression",
@@ -844,7 +844,7 @@
                     "type": "CallExpression",
                     "name": "warn",
                     "source": "Failed to hydrate: ",
-                    "target": "Failed to hydrate: "
+                    "target": "Hydration 失敗："
                 },
                 {
                     "type": "CallExpression",
@@ -1499,6 +1499,30 @@
                     "name": "text",
                     "source": "Cancel",
                     "target": "取消"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "\n                    The time-zone in which the authoring date should be shown.\n                    Either your local time-zone (default),\n                    the author's time-zone during commit creation or\n                    <a href=\"https://en.wikipedia.org/wiki/UTC%C2%B100:00\">UTC\\xB100:00</a>.\n            ",
+                    "target": "\n                    顯示作者日期時使用的時區。\n                    可使用你的本機時區（預設）、\n                    提交建立時作者所在的時區，或\n                    <a href=\"https://en.wikipedia.org/wiki/UTC%C2%B100:00\">UTC\\xB100:00</a>。\n            "
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "\n                    Whitespace and newlines are interpreted as\n                    part of the document and in changes\n                    by default (hence not ignored).\n                    This makes the last line being shown as 'changed'\n                    when a new subsequent line is added,\n                    even if the previously last line's text is the same.\n                    <br>\n                    If you don't care about purely-whitespace changes\n                    (e.g. list nesting / quote indentation changes),\n                    then activating this will provide more meaningful change detection.\n                ",
+                    "target": "\n                    空白與換行預設會被視為文件與變更的一部分（因此不會忽略）。\n                    這會讓最後一行在新增後續行時顯示為「已變更」，\n                    即使原本最後一行的文字完全相同。\n                    <br>\n                    如果你不在意純空白變更\n                    （例如清單巢狀層級或引用縮排變更），\n                    啟用此選項可得到更有意義的變更偵測。\n                "
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "outerHTML",
+                    "source": "<a href='https://ko-fi.com/F1F195IQ5' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>",
+                    "target": "<a href='https://ko-fi.com/F1F195IQ5' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "simple-git deprecation notice: git.silent: logging should be configured using the `debug` library / `DEBUG` environment variable, this will be an error in version 3",
+                    "target": "simple-git deprecation notice: git.silent: logging should be configured using the `debug` library / `DEBUG` environment variable, this will be an error in version 3"
                 }
             ],
             "regex": [
@@ -1516,7 +1540,7 @@
                 },
                 {
                     "source": "Notice(\"Initializing clone\")",
-                    "target": "Notice(\"Initializing clone\")"
+                    "target": "Notice(\"正在初始化複製\")"
                 },
                 {
                     "source": "Notice(\"Initializing fetch\")",
@@ -1564,7 +1588,7 @@
                 },
                 {
                     "source": "setDesc(`${i.settings.differentIntervalCommitAndPush?\"Commit\":\"Commit and sync\"} changes every X minutes. Set to 0 (default) to disable. (See below setting for further configuration!)`)",
-                    "target": "setDesc(`${i.settings.differentIntervalCommitAndPush?\"Commit\":\"Commit and sync\"} changes every X minutes. Set to 0 (default) to disable. (See below setting for further configuration!)`)"
+                    "target": "setDesc(`每 X 分鐘${i.settings.differentIntervalCommitAndPush?\"提交\":\"提交並同步\"}變更。設為 0（預設）可停用。（更多設定見下方！）`)"
                 },
                 {
                     "source": "setName(`Auto ${n} after stopping file edits`)",
@@ -1628,7 +1652,7 @@
                 },
                 {
                     "source": "setTooltip(`Set to default: \"${ht.commitMessage}\"`)",
-                    "target": "setTooltip(`Set to default: \"${ht.commitMessage}\"`)"
+                    "target": "setTooltip(`設為預設值：「${ht.commitMessage}」`)"
                 },
                 {
                     "source": "setName(\"Commit message script\")",
@@ -1644,7 +1668,7 @@
                 },
                 {
                     "source": "setDesc(\"Specify custom hostname for every device. Defaults to the OS hostname if not set on desktop.\")",
-                    "target": "setDesc(\"Specify custom hostname for every device. Defaults to the OS hostname if not set on desktop.\")"
+                    "target": "setDesc(\"為每台裝置指定自訂主機名稱。在桌面版未設定時，預設使用作業系統的主機名稱。\")"
                 },
                 {
                     "source": "setName(\"Preview commit message\")",
@@ -1668,7 +1692,7 @@
                 },
                 {
                     "source": "setDesc(\"Automatically pull commits when Obsidian starts.\")",
-                    "target": "setDesc(\"Automatically pull commits when Obsidian starts.\")"
+                    "target": "setDesc(\"Obsidian 啟動時自動拉取提交。\")"
                 },
                 {
                     "source": "setName(\"Push on commit-and-sync\")",
@@ -1688,15 +1712,15 @@
                 },
                 {
                     "source": "setDesc(\"Hunks are sections of grouped line changes right in your editor.\")",
-                    "target": "setDesc(\"Hunks are sections of grouped line changes right in your editor.\")"
+                    "target": "setDesc(\"區塊是編輯器中成組的行變更區段。\")"
                 },
                 {
                     "source": "setDesc(\"This allows you to see your changes right in your editor via colored markers and stage/reset/preview individual hunks.\")",
-                    "target": "setDesc(\"This allows you to see your changes right in your editor via colored markers and stage/reset/preview individual hunks.\")"
+                    "target": "setDesc(\"這可讓你透過彩色標記在編輯器中查看變更，並暫存、重設或預覽個別區塊。\")"
                 },
                 {
                     "source": "setName(\"Hunk commands\")",
-                    "target": "setName(\"Hunk commands\")"
+                    "target": "setName(\"區塊命令\")"
                 },
                 {
                     "source": "setName(\"Status bar with summary of line changes\")",
@@ -1752,7 +1776,7 @@
                 },
                 {
                     "source": "setDesc('Set the style for the diff view. Note that the actual diff in \"Split\" mode is not generated by Git, but the editor itself instead so it may differ from the diff generated by Git. One advantage of this is that you can edit the text in that view.')",
-                    "target": "setDesc('Set the style for the diff view. Note that the actual diff in \"Split\" mode is not generated by Git, but the editor itself instead so it may differ from the diff generated by Git. One advantage of this is that you can edit the text in that view.')"
+                    "target": "setDesc('設定差異檢視的樣式。請注意，「分割」模式中的實際差異並非由 Git 產生，而是由編輯器本身產生，因此可能與 Git 產生的差異不同。這樣的優點之一是你可以在該檢視中編輯文字。')"
                 },
                 {
                     "source": "setName(\"Disable informative notifications\")",
@@ -1784,7 +1808,7 @@
                 },
                 {
                     "source": "setDesc(\"Obsidian must be restarted for the changes to take affect.\")",
-                    "target": "setDesc(\"Obsidian must be restarted for the changes to take affect.\")"
+                    "target": "setDesc(\"必須重新啟動 Obsidian，變更才會生效。\")"
                 },
                 {
                     "source": "setName(\"File menu integration\")",
@@ -1792,7 +1816,7 @@
                 },
                 {
                     "source": "setDesc('Add \"Stage\", \"Unstage\" and \"Add to .gitignore\" actions to the file menu.')",
-                    "target": "setDesc('Add \"Stage\", \"Unstage\" and \"Add to .gitignore\" actions to the file menu.')"
+                    "target": "setDesc('將「暫存」、「取消暫存」和「加入 .gitignore」動作新增到檔案選單。')"
                 },
                 {
                     "source": "setName(\"Show branch status bar\")",
@@ -1812,7 +1836,7 @@
                 },
                 {
                     "source": "setName(\"Username on your git server. E.g. your username on GitHub\")",
-                    "target": "setName(\"Username on your git server. E.g. your username on GitHub\")"
+                    "target": "setName(\"Git 伺服器上的使用者名稱，例如你的 GitHub 使用者名稱\")"
                 },
                 {
                     "source": "setName(\"Password/Personal access token\")",
@@ -1836,23 +1860,23 @@
                 },
                 {
                     "source": "setDesc('\"Commit-and-sync\" and \"pull\" takes care of submodules. Missing features: Conflicted files, count of pulled/pushed/committed files. Tracking branch needs to be set for each submodule.')",
-                    "target": "setDesc('\"Commit-and-sync\" and \"pull\" takes care of submodules. Missing features: Conflicted files, count of pulled/pushed/committed files. Tracking branch needs to be set for each submodule.')"
+                    "target": "setDesc('「提交並同步」與「拉取」會處理子模組。尚缺功能：衝突檔案、已拉取/推送/提交的檔案數量。每個子模組都需要設定追蹤分支。')"
                 },
                 {
                     "source": "setName(\"Submodule recurse checkout/switch\")",
-                    "target": "setName(\"Submodule recurse checkout/switch\")"
+                    "target": "setName(\"子模組遞迴取出/切換\")"
                 },
                 {
                     "source": "setDesc(\"Whenever a checkout happens on the root repository, recurse the checkout on the submodules (if the branches exist).\")",
-                    "target": "setDesc(\"Whenever a checkout happens on the root repository, recurse the checkout on the submodules (if the branches exist).\")"
+                    "target": "setDesc(\"每當根儲存庫執行 checkout 時，也對子模組遞迴執行 checkout（如果分支存在）。\")"
                 },
                 {
                     "source": "setName(\"Custom Git binary path\")",
-                    "target": "setName(\"Custom Git binary path\")"
+                    "target": "setName(\"自訂 Git 執行檔路徑\")"
                 },
                 {
                     "source": "setDesc(\"Specify the path to the Git binary/executable. Git should already be in your PATH. Should only be necessary for a custom Git installation.\")",
-                    "target": "setDesc(\"Specify the path to the Git binary/executable. Git should already be in your PATH. Should only be necessary for a custom Git installation.\")"
+                    "target": "setDesc(\"指定 Git 執行檔的路徑。Git 應該已經在 PATH 中。通常只有自訂 Git 安裝才需要。\")"
                 },
                 {
                     "source": "setName(\"Additional environment variables\")",
@@ -1860,11 +1884,11 @@
                 },
                 {
                     "source": "setDesc(\"Use each line for a new environment variable in the format KEY=VALUE .\")",
-                    "target": "setDesc(\"Use each line for a new environment variable in the format KEY=VALUE .\")"
+                    "target": "setDesc(\"每行一個新的環境變數，格式為 KEY=VALUE。\")"
                 },
                 {
                     "source": "setName(\"Additional PATH environment variable paths\")",
-                    "target": "setName(\"Additional PATH environment variable paths\")"
+                    "target": "setName(\"額外的 PATH 環境變數路徑\")"
                 },
                 {
                     "source": "setDesc(\"Use each line for one path\")",
@@ -1876,19 +1900,19 @@
                 },
                 {
                     "source": "setName(\"Custom base path (Git repository path)\")",
-                    "target": "setName(\"Custom base path (Git repository path)\")"
+                    "target": "setName(\"自訂基礎路徑（Git 儲存庫路徑）\")"
                 },
                 {
                     "source": "setDesc(`\n            Sets the relative path to the vault from which the Git binary should be executed.\n             Mostly used to set the path to the Git repository, which is only required if the Git repository is below the vault root directory. Use \"\\\\\" instead of \"/\" on Windows.\n            `)",
-                    "target": "setDesc(`\n            Sets the relative path to the vault from which the Git binary should be executed.\n             Mostly used to set the path to the Git repository, which is only required if the Git repository is below the vault root directory. Use \"\\\\\" instead of \"/\" on Windows.\n            `)"
+                    "target": "setDesc(`\n            設定 Git 執行檔應該從哪個相對於 vault 的路徑執行。\n             多半用於設定 Git 儲存庫路徑；只有當 Git 儲存庫位於 vault 根目錄底下時才需要。在 Windows 上請使用 \"\\\\\" 而不是 \"/\"。\n            `)"
                 },
                 {
                     "source": "setName(\"Custom Git directory path (Instead of '.git')\")",
-                    "target": "setName(\"Custom Git directory path (Instead of '.git')\")"
+                    "target": "setName(\"自訂 Git 目錄路徑（取代 '.git'）\")"
                 },
                 {
                     "source": "setDesc('Corresponds to the GIT_DIR environment variable. Requires restart of Obsidian to take effect. Use \"\\\\\" instead of \"/\" on Windows.')",
-                    "target": "setDesc('Corresponds to the GIT_DIR environment variable. Requires restart of Obsidian to take effect. Use \"\\\\\" instead of \"/\" on Windows.')"
+                    "target": "setDesc('對應到 GIT_DIR 環境變數。需要重新啟動 Obsidian 才會生效。在 Windows 上請使用 \"\\\\\" 而不是 \"/\"。')"
                 },
                 {
                     "source": "setName(\"Disable on this device\")",
@@ -1916,7 +1940,7 @@
                 },
                 {
                     "source": "setText(`Debugging and logging:\nYou can always see the logs of this and every other plugin by opening the console with`)",
-                    "target": "setText(`Debugging and logging:\nYou can always see the logs of this and every other plugin by opening the console with`)"
+                    "target": "setText(`偵錯與記錄：\n你可以開啟主控台查看這個插件和其他所有插件的紀錄，快捷鍵為`)"
                 },
                 {
                     "source": "setName(\"Show commit authoring information next to each line\")",
@@ -1976,15 +2000,15 @@
                 },
                 {
                     "source": "setPlaceholder(\"Type your message and select optional the version with the added date.\")",
-                    "target": "setPlaceholder(\"Type your message and select optional the version with the added date.\")"
+                    "target": "setPlaceholder(\"輸入訊息，並可選擇附加日期的版本。\")"
                 },
                 {
                     "source": "setPlaceholder(\"Not supported files will be opened by default app!\")",
-                    "target": "setPlaceholder(\"Not supported files will be opened by default app!\")"
+                    "target": "setPlaceholder(\"不支援的檔案會以預設應用程式開啟！\")"
                 },
                 {
                     "source": "setText(\"Edit .gitignore\")",
-                    "target": "setText(\"Edit .gitignore\")"
+                    "target": "setText(\"編輯 .gitignore\")"
                 },
                 {
                     "source": "error(`Invalid hunk with untracked=${a} hunk=\"${r.head}\"`)",
@@ -2096,7 +2120,7 @@
                 },
                 {
                     "source": "description:`${Pt} '${da(ke)}' of ${C}`",
-                    "target": "description:`${Pt} '${da(ke)}' of ${C}`"
+                    "target": "description:`${C} 的 ${Pt}「${da(ke)}」`"
                 },
                 {
                     "source": "name:\"Source Control\"",
@@ -2116,7 +2140,7 @@
                 },
                 {
                     "source": "text:` Specify custom date format. E.g. \"${Ug}. See `",
-                    "target": "text:` Specify custom date format. E.g. \"${Ug}. See `"
+                    "target": "text:` 指定自訂日期格式。例如「${Ug}」。請參閱 `"
                 },
                 {
                     "source": "text:\"Moment.js documentation\"",
@@ -2124,7 +2148,7 @@
                 },
                 {
                     "source": "text:\" for more formats.\"",
-                    "target": "text:\" for more formats.\""
+                    "target": "text:\"以查看更多格式。\""
                 },
                 {
                     "source": "text:\"CMD (\\u2318) + OPTION (\\u2325) + I\"",
@@ -2140,107 +2164,107 @@
                 },
                 {
                     "source": "text:\" The commit hash, author name and authoring date can all be individually toggled.\"",
-                    "target": "text:\" The commit hash, author name and authoring date can all be individually toggled.\""
+                    "target": "text:\" 提交雜湊、作者名稱與作者日期都可以個別切換。\""
                 },
                 {
                     "source": "text:\"Hide everything, to only show the age-colored sidebar.\"",
-                    "target": "text:\"Hide everything, to only show the age-colored sidebar.\""
+                    "target": "text:\"隱藏所有內容，只顯示依時間著色的側邊欄。\""
                 },
                 {
                     "source": "text:\"By default (deactivated), each line only shows the newest commit where it was changed.\"",
-                    "target": "text:\"By default (deactivated), each line only shows the newest commit where it was changed.\""
+                    "target": "text:\"預設（停用）時，每一行只會顯示變更該行的最新提交。\""
                 },
                 {
                     "source": "text:\"With \"",
-                    "target": "text:\"With \""
+                    "target": "text:\"使用 \""
                 },
                 {
                     "source": "text:\"same commit\"",
-                    "target": "text:\"same commit\""
+                    "target": "text:\"相同提交\""
                 },
                 {
                     "source": "text:\", cut-copy-paste-ing of text is followed within the same commit and the original commit of authoring will be shown.\"",
-                    "target": "text:\", cut-copy-paste-ing of text is followed within the same commit and the original commit of authoring will be shown.\""
+                    "target": "text:\" 時，會在同一次提交中追蹤文字的剪下、複製、貼上，並顯示原始作者提交資訊。\""
                 },
                 {
                     "source": "text:\"all commits\"",
-                    "target": "text:\"all commits\""
+                    "target": "text:\"所有提交\""
                 },
                 {
                     "source": "text:\", cut-copy-paste-ing text inbetween multiple commits will be detected.\"",
-                    "target": "text:\", cut-copy-paste-ing text inbetween multiple commits will be detected.\""
+                    "target": "text:\" 時，會偵測跨多次提交的文字剪下、複製、貼上。\""
                 },
                 {
                     "source": "text:\"It uses \"",
-                    "target": "text:\"It uses \""
+                    "target": "text:\"它使用 \""
                 },
                 {
                     "source": "text:` and for matches (at least ${_d} characters) within the same (or all) commit(s), `",
-                    "target": "text:` and for matches (at least ${_d} characters) within the same (or all) commit(s), `"
+                    "target": "text:`，並針對同一個（或所有）提交中符合條件（至少 ${_d} 個字元）的內容，`"
                 },
                 {
                     "source": "text:\"the originating\"",
-                    "target": "text:\"the originating\""
+                    "target": "text:\"原始\""
                 },
                 {
                     "source": "text:\" commit's information is shown.\"",
-                    "target": "text:\" commit's information is shown.\""
+                    "target": "text:\" 提交資訊會被顯示。\""
                 },
                 {
                     "source": "text:`The time-zone in which the authoring date should be shown.\nEither your local time-zone (default),\nthe author's time-zone during commit creation or\n`",
-                    "target": "text:`The time-zone in which the authoring date should be shown.\nEither your local time-zone (default),\nthe author's time-zone during commit creation or\n`"
+                    "target": "text:`顯示作者日期時使用的時區。\n可使用你的本機時區（預設）、\n提交建立時作者所在的時區，或\n`"
                 },
                 {
                     "source": "text:\"The CSS color of the gutter text.\"",
-                    "target": "text:\"The CSS color of the gutter text.\""
+                    "target": "text:\"側邊欄文字的 CSS 顏色。\""
                 },
                 {
                     "source": "text:\"It is highly recommended to use \"",
-                    "target": "text:\"It is highly recommended to use \""
+                    "target": "text:\"強烈建議使用 \""
                 },
                 {
                     "source": "text:\"CSS variables\"",
-                    "target": "text:\"CSS variables\""
+                    "target": "text:\"CSS 變數\""
                 },
                 {
                     "source": "text:\" or \"",
-                    "target": "text:\" or \""
+                    "target": "text:\" 或 \""
                 },
                 {
                     "source": "text:\"See: \"",
-                    "target": "text:\"See: \""
+                    "target": "text:\"請參閱：\""
                 },
                 {
                     "source": "text:\"List of available CSS variables in Obsidian\"",
-                    "target": "text:\"List of available CSS variables in Obsidian\""
+                    "target": "text:\"Obsidian 可用 CSS 變數清單\""
                 },
                 {
                     "source": "text:\"Whitespace and newlines are interpreted as part of the document and in changes by default (hence not ignored). This makes the last line being shown as 'changed' when a new subsequent line is added, even if the previously last line's text is the same.\"",
-                    "target": "text:\"Whitespace and newlines are interpreted as part of the document and in changes by default (hence not ignored). This makes the last line being shown as 'changed' when a new subsequent line is added, even if the previously last line's text is the same.\""
+                    "target": "text:\"空白與換行預設會被視為文件與變更的一部分（因此不會忽略）。這會讓最後一行在新增後續行時顯示為「已變更」，即使原本最後一行的文字完全相同。\""
                 },
                 {
                     "source": "text:\"If you don't care about purely-whitespace changes (e.g. list nesting / quote indentation changes), then activating this will provide more meaningful change detection.\"",
-                    "target": "text:\"If you don't care about purely-whitespace changes (e.g. list nesting / quote indentation changes), then activating this will provide more meaningful change detection.\""
+                    "target": "text:\"如果你不在意純空白變更（例如清單巢狀層級或引用縮排變更），啟用此選項可得到更有意義的變更偵測。\""
                 },
                 {
                     "source": "text:\"Supports 'rgb(r,g,b)', 'hsl(h,s,l)', hex (#) and named colors (e.g. 'black', 'purple'). Color preview: \"",
-                    "target": "text:\"Supports 'rgb(r,g,b)', 'hsl(h,s,l)', hex (#) and named colors (e.g. 'black', 'purple'). Color preview: \""
+                    "target": "text:\"支援 rgb(r,g,b)、hsl(h,s,l)、十六進位（#）和命名顏色（例如 black、purple）。顏色預覽：\""
                 },
                 {
                     "source": "text:\"Format string\"",
-                    "target": "text:\"Format string\""
+                    "target": "text:\"格式字串\""
                 },
                 {
                     "source": "text:\" to display the authoring date.\"",
-                    "target": "text:\" to display the authoring date.\""
+                    "target": "text:\"，用來顯示作者日期。\""
                 },
                 {
                     "source": "text:`Currently: ${n}`",
-                    "target": "text:`Currently: ${n}`"
+                    "target": "text:`目前：${n}`"
                 },
                 {
                     "source": "text:`The oldest age in the line author coloring. Everything older will have the same color.\nSmallest valid age is \"1d\". Currently: ${s}`",
-                    "target": "text:`The oldest age in the line author coloring. Everything older will have the same color.\nSmallest valid age is \"1d\". Currently: ${s}`"
+                    "target": "text:`行作者著色中的最舊時間。更舊的內容會使用相同顏色。\n最小有效時間為「1d」。目前：${s}`"
                 },
                 {
                     "source": "name:\"Edit .gitignore\"",
@@ -2380,7 +2404,7 @@
                 },
                 {
                     "source": "name=\"Svelte error\"",
-                    "target": "name=\"Svelte error\""
+                    "target": "name=\"Svelte 錯誤\""
                 },
                 {
                     "source": "text:`${this.discardCount>0?\"Discard\":\"Delete\"} all ${cu(r,\"file\")}`",
