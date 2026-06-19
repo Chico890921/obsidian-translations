@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-git",
-        "version": "2.38.3",
+        "version": "2.38.5",
         "title": "[zh-tw] Git",
         "description": "Git 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.38.3",
+        "supportedVersions": "2.38.5",
         "author": "Chico"
     },
     "dict": {
