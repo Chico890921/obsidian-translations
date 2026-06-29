@@ -1733,6 +1733,636 @@
                     "name": "text",
                     "source": "Script executed with no output.",
                     "target": "腳本已執行，沒有輸出。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Theme",
+                    "target": "主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select which theme to use",
+                    "target": "選擇要使用的主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Create your theme",
+                    "target": "建立你的主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Create your theme with the current colors and settings",
+                    "target": "使用目前的顏色與設定建立你的主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Name for your theme",
+                    "target": "主題名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Update theme",
+                    "target": "更新主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Restore default theme to its original state",
+                    "target": "將預設主題還原為原始狀態"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Delete theme",
+                    "target": "刪除主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Save theme",
+                    "target": "儲存主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Restore default themes",
+                    "target": "還原預設主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Restore all default themes to their original settings.",
+                    "target": "將所有預設主題還原為原始設定。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the styling is applied to documents when printed to PDF. By default PDF printing uses light theme colors.",
+                    "target": "啟用後，列印為 PDF 時會將樣式套用到文件。PDF 列印預設使用亮色主題顏色。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, PDF printing will use the dark theme colors when a dark theme is selected, and light theme colors when a light theme is selected.",
+                    "target": "啟用後，PDF 列印會在選用暗色主題時使用暗色主題顏色，選用亮色主題時使用亮色主題顏色。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Global syntax theme",
+                    "target": "全域語法主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select a syntax theme to apply to all code blocks.",
+                    "target": "選擇要套用到所有程式碼區塊的語法主題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Update syntax theme with current token colors",
+                    "target": "用目前的 token 顏色更新語法主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Restore default syntax theme",
+                    "target": "還原預設語法主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Delete syntax theme",
+                    "target": "刪除語法主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Create syntax theme",
+                    "target": "建立語法主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Create a new syntax theme. The currently viewed syntax theme's colors will be copied as a starting point.",
+                    "target": "建立新的語法主題。會複製目前檢視的語法主題顏色作為起點。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Name for your syntax theme",
+                    "target": "語法主題名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Save syntax theme",
+                    "target": "儲存語法主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Enter a language name to assign a specific syntax theme.",
+                    "target": "輸入語言名稱以指定特定語法主題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Remove override for ${i}",
+                    "target": "移除 ${i} 的覆寫設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, the active tab for each group will be remembered based on the options below.",
+                    "target": "啟用後，會根據下方選項記住每個群組的作用中分頁。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose how long the active tab state is remembered.",
+                    "target": "選擇作用中分頁狀態要保留多久。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show tab \"Add\" and \"Remove\" buttons (only editing view)",
+                    "target": "顯示分頁「新增」與「移除」按鈕（僅編輯檢視）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, a \"+\" button will appear after the last tab to add a new block, and an \"x\" button will appear on each tab to remove it from the group.",
+                    "target": "啟用後，最後一個分頁後會出現「+」按鈕以新增區塊，每個分頁上會出現「x」按鈕以從群組移除。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Only apply inverse fold to semi-foldable blocks",
+                    "target": "僅對可半收合區塊套用反向收合"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When `Inverse fold` and `Enable semi-fold` are both enabled, this prevents short code blocks (that cannot be semi-folded) from being fully folded by default.",
+                    "target": "當「反向收合」與「啟用半收合」都啟用時，避免較短、無法半收合的程式碼區塊預設完全收合。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable semi-fold",
+                    "target": "啟用半收合"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Semi-fold effect",
+                    "target": "半收合效果"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select the visual effect for semi-folded code blocks.",
+                    "target": "選擇半收合程式碼區塊的視覺效果。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto semi-fold long code blocks",
+                    "target": "自動半收合長程式碼區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, code blocks longer than a specified number of lines will be semi-folded when a note is opened.",
+                    "target": "啟用後，開啟筆記時會自動半收合超過指定行數的程式碼區塊。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose how long the folding state is remembered. 'Permanent' saves the state even after you restart Obsidian. 'Session' remembers the state only until you close the app.",
+                    "target": "選擇收合狀態要保留多久。「Permanent」會在重啟 Obsidian 後仍保留狀態；「Session」只會保留到關閉應用程式為止。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Template for the prompt.",
+                    "target": "提示字元模板。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Only enable for Windows prompts, otherwise this should remain false.",
+                    "target": "僅在 Windows 提示字元啟用，其他情況應保持關閉。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Error: Could not create snapshot. ${c.message||c}",
+                    "target": "錯誤：無法建立快照。${c.message||c}"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Removed color \"${e}\".",
+                    "target": "已移除顏色「${e}」。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Default themes restored to their original state!",
+                    "target": "預設主題已還原為原始狀態！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Select a syntax theme first.",
+                    "target": "請先選擇語法主題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Syntax theme not found.",
+                    "target": "找不到語法主題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Syntax theme \"${i}\" updated.",
+                    "target": "語法主題「${i}」已更新。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Syntax theme \"${i}\" restored to defaults.",
+                    "target": "語法主題「${i}」已還原為預設值。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "You cannot delete built-in syntax themes.",
+                    "target": "無法刪除內建語法主題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Syntax theme \"${i}\" deleted.",
+                    "target": "語法主題「${i}」已刪除。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Set a name for your syntax theme!",
+                    "target": "請設定語法主題名稱！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "You can't overwrite built-in syntax themes.",
+                    "target": "不能覆寫內建語法主題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Syntax theme \"${s}\" updated.",
+                    "target": "語法主題「${s}」已更新。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Syntax theme \"${s}\" saved.",
+                    "target": "語法主題「${s}」已儲存。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Language \"${r}\" already has a syntax theme assigned. Remove it first to change.",
+                    "target": "語言「${r}」已指定語法主題。請先移除後再變更。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Theme \"${this.plugin.settings.ThemeName}\" updated successfully!",
+                    "target": "主題「${this.plugin.settings.ThemeName}」已成功更新！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Theme \"${this.plugin.settings.ThemeName}\" restored to its original state!",
+                    "target": "主題「${this.plugin.settings.ThemeName}」已還原為原始狀態！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Select a theme first to delete",
+                    "target": "請先選擇要刪除的主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "You cannot delete the default themes",
+                    "target": "無法刪除預設主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Theme \"${this.plugin.settings.ThemeName}\" deleted successfully!",
+                    "target": "主題「${this.plugin.settings.ThemeName}」已成功刪除！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Set a name for your theme!",
+                    "target": "請設定主題名稱！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "You can't overwrite default themes",
+                    "target": "不能覆寫預設主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Theme \"${this.plugin.settings.newThemeName}\" updated successfully!",
+                    "target": "主題「${this.plugin.settings.newThemeName}」已成功更新！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Notice",
+                    "source": "Theme \"${this.plugin.settings.newThemeName}\" saved successfully!",
+                    "target": "主題「${this.plugin.settings.newThemeName}」已成功儲存！"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "displayName",
+                    "source": "⚙️ General",
+                    "target": "⚙️ 一般"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "displayName",
+                    "source": "🎨 Appearance & Styling",
+                    "target": "🎨 外觀與樣式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "displayName",
+                    "source": "🖌️ Highlighting",
+                    "target": "🖌️ 語法高亮"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "displayName",
+                    "source": "👆 Behavior & Interaction",
+                    "target": "👆 行為與互動"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "displayName",
+                    "source": "⌨️ Prompts",
+                    "target": "⌨️ 提示字元"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "displayName",
+                    "source": "🧩 Plugin Compatibility",
+                    "target": "🧩 插件相容性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Print to PDF Settings",
+                    "target": "列印為 PDF 設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "codeblock.activeLineColor",
+                    "source": "Code block active line color",
+                    "target": "程式碼區塊作用中行顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "codeblock.backgroundColor",
+                    "source": "Code block background color",
+                    "target": "程式碼區塊背景顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "codeblock.borderColor",
+                    "source": "Code block border color",
+                    "target": "程式碼區塊邊框顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "codeblock.textColor",
+                    "source": "Code block text color",
+                    "target": "程式碼區塊文字顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "codeblock.bracketHighlightColorMatch",
+                    "source": "Matching bracket color",
+                    "target": "配對括號顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "codeblock.bracketHighlightColorNoMatch",
+                    "source": "Non-matching bracket color",
+                    "target": "未配對括號顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "codeblock.bracketHighlightBackgroundColorMatch",
+                    "source": "Matching bracket background color",
+                    "target": "配對括號背景顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "codeblock.bracketHighlightBackgroundColorNoMatch",
+                    "source": "Non-matching bracket background color",
+                    "target": "未配對括號背景顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "codeblock.selectionMatchHighlightColor",
+                    "source": "Selection match highlight color",
+                    "target": "選取文字匹配高亮顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "header.backgroundColor",
+                    "source": "Header background color",
+                    "target": "標頭背景顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "header.textColor",
+                    "source": "Header text color",
+                    "target": "標頭文字顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "header.lineColor",
+                    "source": "Header line color",
+                    "target": "標頭分隔線顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "header.codeBlockLangTextColor",
+                    "source": "Header language text color",
+                    "target": "標頭語言文字顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "header.codeBlockLangBackgroundColor",
+                    "source": "Header language background color",
+                    "target": "標頭語言背景顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "gutter.textColor",
+                    "source": "Gutter text color",
+                    "target": "行號欄文字顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "gutter.backgroundColor",
+                    "source": "Gutter background color",
+                    "target": "行號欄背景顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "gutter.activeLineNrColor",
+                    "source": "Gutter active line number color",
+                    "target": "行號欄作用中行號顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-msf",
+                    "source": "Metasploit Prefix",
+                    "target": "Metasploit 前綴"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-keyword",
+                    "source": "Metasploit Keyword",
+                    "target": "Metasploit 關鍵字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-module",
+                    "source": "Metasploit Module",
+                    "target": "Metasploit 模組"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-beacon",
+                    "source": "Cobalt Strike Beacon",
+                    "target": "Cobalt Strike Beacon"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-symbol",
+                    "source": "Symbol (fallback)",
+                    "target": "符號（備用）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-dollar",
+                    "source": "Dollar ($)",
+                    "target": "美元符號 ($)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-at",
+                    "source": "At (@)",
+                    "target": "At 符號 (@)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-colon",
+                    "source": "Colon (:)",
+                    "target": "冒號 (:)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-dash",
+                    "source": "Dash (-)",
+                    "target": "破折號 (-)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-hash",
+                    "source": "Hash (#)",
+                    "target": "井號 (#)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-greater-than",
+                    "source": "Greater Than (>)",
+                    "target": "大於符號 (>)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-zsh-symbol",
+                    "source": "ZSH Arrow (➜)",
+                    "target": "ZSH 箭頭 (➜)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-zsh-status-error",
+                    "source": "ZSH Error (✗)",
+                    "target": "ZSH 錯誤 (✗)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-zsh-status-ok",
+                    "source": "ZSH Ok (✓)",
+                    "target": "ZSH 正常 (✓)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-kali-symbol",
+                    "source": "Kali Symbol (㉿)",
+                    "target": "Kali 符號 (㉿)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-square-open",
+                    "source": "Square Bracket [",
+                    "target": "方括號 ["
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-square-close",
+                    "source": "Square Bracket ]",
+                    "target": "方括號 ]"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-bracket-open",
+                    "source": "Round Bracket (",
+                    "target": "圓括號 ("
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-bracket-close",
+                    "source": "Round Bracket )",
+                    "target": "圓括號 )"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt-percent",
+                    "source": "Percentage (%)",
+                    "target": "百分比 (%)"
                 }
             ],
             "regex": [
@@ -2843,6 +3473,1030 @@
                 {
                     "source": "name:\"Unindent code block by one level\"",
                     "target": "name:\"將程式碼區塊取消縮排一層\""
+                },
+                {
+                    "source": "setName(\"Theme\")",
+                    "target": "setName(\"主題\")"
+                },
+                {
+                    "source": "setDesc(\"Select which theme to use\")",
+                    "target": "setDesc(\"選擇要使用的主題\")"
+                },
+                {
+                    "source": "setName(\"Create your theme\")",
+                    "target": "setName(\"建立你的主題\")"
+                },
+                {
+                    "source": "setDesc(\"Create your theme with the current colors and settings\")",
+                    "target": "setDesc(\"使用目前的顏色與設定建立你的主題\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Name for your theme\")",
+                    "target": "setPlaceholder(\"主題名稱\")"
+                },
+                {
+                    "source": "setTooltip(\"Update theme\")",
+                    "target": "setTooltip(\"更新主題\")"
+                },
+                {
+                    "source": "setTooltip(\"Restore default theme to its original state\")",
+                    "target": "setTooltip(\"將預設主題還原為原始狀態\")"
+                },
+                {
+                    "source": "setTooltip(\"Delete theme\")",
+                    "target": "setTooltip(\"刪除主題\")"
+                },
+                {
+                    "source": "setTooltip(\"Save theme\")",
+                    "target": "setTooltip(\"儲存主題\")"
+                },
+                {
+                    "source": "setName(\"Restore default themes\")",
+                    "target": "setName(\"還原預設主題\")"
+                },
+                {
+                    "source": "setDesc(\"Restore all default themes to their original settings.\")",
+                    "target": "setDesc(\"將所有預設主題還原為原始設定。\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the styling is applied to documents when printed to PDF. By default PDF printing uses light theme colors.\")",
+                    "target": "setDesc(\"啟用後，列印為 PDF 時會將樣式套用到文件。PDF 列印預設使用亮色主題顏色。\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, PDF printing will use the dark theme colors when a dark theme is selected, and light theme colors when a light theme is selected.\")",
+                    "target": "setDesc(\"啟用後，PDF 列印會在選用暗色主題時使用暗色主題顏色，選用亮色主題時使用亮色主題顏色。\")"
+                },
+                {
+                    "source": "setName(\"Global syntax theme\")",
+                    "target": "setName(\"全域語法主題\")"
+                },
+                {
+                    "source": "setDesc(\"Select a syntax theme to apply to all code blocks.\")",
+                    "target": "setDesc(\"選擇要套用到所有程式碼區塊的語法主題。\")"
+                },
+                {
+                    "source": "setTooltip(\"Update syntax theme with current token colors\")",
+                    "target": "setTooltip(\"用目前的 token 顏色更新語法主題\")"
+                },
+                {
+                    "source": "setTooltip(\"Restore default syntax theme\")",
+                    "target": "setTooltip(\"還原預設語法主題\")"
+                },
+                {
+                    "source": "setTooltip(\"Delete syntax theme\")",
+                    "target": "setTooltip(\"刪除語法主題\")"
+                },
+                {
+                    "source": "setName(\"Create syntax theme\")",
+                    "target": "setName(\"建立語法主題\")"
+                },
+                {
+                    "source": "setDesc(\"Create a new syntax theme. The currently viewed syntax theme's colors will be copied as a starting point.\")",
+                    "target": "setDesc(\"建立新的語法主題。會複製目前檢視的語法主題顏色作為起點。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Name for your syntax theme\")",
+                    "target": "setPlaceholder(\"語法主題名稱\")"
+                },
+                {
+                    "source": "setTooltip(\"Save syntax theme\")",
+                    "target": "setTooltip(\"儲存語法主題\")"
+                },
+                {
+                    "source": "setDesc(\"Enter a language name to assign a specific syntax theme.\")",
+                    "target": "setDesc(\"輸入語言名稱以指定特定語法主題。\")"
+                },
+                {
+                    "source": "setTooltip(\"Remove override for ${i}\")",
+                    "target": "setTooltip(\"移除 ${i} 的覆寫設定\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, the active tab for each group will be remembered based on the options below.\")",
+                    "target": "setDesc(\"啟用後，會根據下方選項記住每個群組的作用中分頁。\")"
+                },
+                {
+                    "source": "setDesc(\"Choose how long the active tab state is remembered.\")",
+                    "target": "setDesc(\"選擇作用中分頁狀態要保留多久。\")"
+                },
+                {
+                    "source": "setName(\"Show tab \\\"Add\\\" and \\\"Remove\\\" buttons (only editing view)\")",
+                    "target": "setName(\"顯示分頁「新增」與「移除」按鈕（僅編輯檢視）\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, a \\\"+\\\" button will appear after the last tab to add a new block, and an \\\"x\\\" button will appear on each tab to remove it from the group.\")",
+                    "target": "setDesc(\"啟用後，最後一個分頁後會出現「+」按鈕以新增區塊，每個分頁上會出現「x」按鈕以從群組移除。\")"
+                },
+                {
+                    "source": "setName(\"Only apply inverse fold to semi-foldable blocks\")",
+                    "target": "setName(\"僅對可半收合區塊套用反向收合\")"
+                },
+                {
+                    "source": "setDesc(\"When `Inverse fold` and `Enable semi-fold` are both enabled, this prevents short code blocks (that cannot be semi-folded) from being fully folded by default.\")",
+                    "target": "setDesc(\"當「反向收合」與「啟用半收合」都啟用時，避免較短、無法半收合的程式碼區塊預設完全收合。\")"
+                },
+                {
+                    "source": "setName(\"Enable semi-fold\")",
+                    "target": "setName(\"啟用半收合\")"
+                },
+                {
+                    "source": "setName(\"Semi-fold effect\")",
+                    "target": "setName(\"半收合效果\")"
+                },
+                {
+                    "source": "setDesc(\"Select the visual effect for semi-folded code blocks.\")",
+                    "target": "setDesc(\"選擇半收合程式碼區塊的視覺效果。\")"
+                },
+                {
+                    "source": "setName(\"Auto semi-fold long code blocks\")",
+                    "target": "setName(\"自動半收合長程式碼區塊\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, code blocks longer than a specified number of lines will be semi-folded when a note is opened.\")",
+                    "target": "setDesc(\"啟用後，開啟筆記時會自動半收合超過指定行數的程式碼區塊。\")"
+                },
+                {
+                    "source": "setDesc(\"Choose how long the folding state is remembered. 'Permanent' saves the state even after you restart Obsidian. 'Session' remembers the state only until you close the app.\")",
+                    "target": "setDesc(\"選擇收合狀態要保留多久。「Permanent」會在重啟 Obsidian 後仍保留狀態；「Session」只會保留到關閉應用程式為止。\")"
+                },
+                {
+                    "source": "setDesc(\"Template for the prompt.\")",
+                    "target": "setDesc(\"提示字元模板。\")"
+                },
+                {
+                    "source": "setDesc(\"Only enable for Windows prompts, otherwise this should remain false.\")",
+                    "target": "setDesc(\"僅在 Windows 提示字元啟用，其他情況應保持關閉。\")"
+                },
+                {
+                    "source": "Notice(`Error: Could not create snapshot. ${c.message||c}`)",
+                    "target": "Notice(`錯誤：無法建立快照。${c.message||c}`)"
+                },
+                {
+                    "source": "Notice(\"Error: Could not create snapshot. ${c.message||c}\")",
+                    "target": "Notice(\"錯誤：無法建立快照。${c.message||c}\")"
+                },
+                {
+                    "source": "Notice(`Removed color \"${e}\".`)",
+                    "target": "Notice(`已移除顏色「${e}」。`)"
+                },
+                {
+                    "source": "Notice(\"Removed color \\\"${e}\\\".\")",
+                    "target": "Notice(\"已移除顏色「${e}」。\")"
+                },
+                {
+                    "source": "Notice(`Default themes restored to their original state!`)",
+                    "target": "Notice(`預設主題已還原為原始狀態！`)"
+                },
+                {
+                    "source": "Notice(\"Default themes restored to their original state!\")",
+                    "target": "Notice(\"預設主題已還原為原始狀態！\")"
+                },
+                {
+                    "source": "Notice(`Select a syntax theme first.`)",
+                    "target": "Notice(`請先選擇語法主題。`)"
+                },
+                {
+                    "source": "Notice(\"Select a syntax theme first.\")",
+                    "target": "Notice(\"請先選擇語法主題。\")"
+                },
+                {
+                    "source": "Notice(`Syntax theme not found.`)",
+                    "target": "Notice(`找不到語法主題。`)"
+                },
+                {
+                    "source": "Notice(\"Syntax theme not found.\")",
+                    "target": "Notice(\"找不到語法主題。\")"
+                },
+                {
+                    "source": "Notice(`Syntax theme \"${i}\" updated.`)",
+                    "target": "Notice(`語法主題「${i}」已更新。`)"
+                },
+                {
+                    "source": "Notice(\"Syntax theme \\\"${i}\\\" updated.\")",
+                    "target": "Notice(\"語法主題「${i}」已更新。\")"
+                },
+                {
+                    "source": "Notice(`Syntax theme \"${i}\" restored to defaults.`)",
+                    "target": "Notice(`語法主題「${i}」已還原為預設值。`)"
+                },
+                {
+                    "source": "Notice(\"Syntax theme \\\"${i}\\\" restored to defaults.\")",
+                    "target": "Notice(\"語法主題「${i}」已還原為預設值。\")"
+                },
+                {
+                    "source": "Notice(`You cannot delete built-in syntax themes.`)",
+                    "target": "Notice(`無法刪除內建語法主題。`)"
+                },
+                {
+                    "source": "Notice(\"You cannot delete built-in syntax themes.\")",
+                    "target": "Notice(\"無法刪除內建語法主題。\")"
+                },
+                {
+                    "source": "Notice(`Syntax theme \"${i}\" deleted.`)",
+                    "target": "Notice(`語法主題「${i}」已刪除。`)"
+                },
+                {
+                    "source": "Notice(\"Syntax theme \\\"${i}\\\" deleted.\")",
+                    "target": "Notice(\"語法主題「${i}」已刪除。\")"
+                },
+                {
+                    "source": "Notice(`Set a name for your syntax theme!`)",
+                    "target": "Notice(`請設定語法主題名稱！`)"
+                },
+                {
+                    "source": "Notice(\"Set a name for your syntax theme!\")",
+                    "target": "Notice(\"請設定語法主題名稱！\")"
+                },
+                {
+                    "source": "Notice(`You can't overwrite built-in syntax themes.`)",
+                    "target": "Notice(`不能覆寫內建語法主題。`)"
+                },
+                {
+                    "source": "Notice(\"You can't overwrite built-in syntax themes.\")",
+                    "target": "Notice(\"不能覆寫內建語法主題。\")"
+                },
+                {
+                    "source": "Notice(`Syntax theme \"${s}\" updated.`)",
+                    "target": "Notice(`語法主題「${s}」已更新。`)"
+                },
+                {
+                    "source": "Notice(\"Syntax theme \\\"${s}\\\" updated.\")",
+                    "target": "Notice(\"語法主題「${s}」已更新。\")"
+                },
+                {
+                    "source": "Notice(`Syntax theme \"${s}\" saved.`)",
+                    "target": "Notice(`語法主題「${s}」已儲存。`)"
+                },
+                {
+                    "source": "Notice(\"Syntax theme \\\"${s}\\\" saved.\")",
+                    "target": "Notice(\"語法主題「${s}」已儲存。\")"
+                },
+                {
+                    "source": "Notice(`Language \"${r}\" already has a syntax theme assigned. Remove it first to change.`)",
+                    "target": "Notice(`語言「${r}」已指定語法主題。請先移除後再變更。`)"
+                },
+                {
+                    "source": "Notice(\"Language \\\"${r}\\\" already has a syntax theme assigned. Remove it first to change.\")",
+                    "target": "Notice(\"語言「${r}」已指定語法主題。請先移除後再變更。\")"
+                },
+                {
+                    "source": "Notice(`Theme \"${this.plugin.settings.ThemeName}\" updated successfully!`)",
+                    "target": "Notice(`主題「${this.plugin.settings.ThemeName}」已成功更新！`)"
+                },
+                {
+                    "source": "Notice(\"Theme \\\"${this.plugin.settings.ThemeName}\\\" updated successfully!\")",
+                    "target": "Notice(\"主題「${this.plugin.settings.ThemeName}」已成功更新！\")"
+                },
+                {
+                    "source": "Notice(`Theme \"${this.plugin.settings.ThemeName}\" restored to its original state!`)",
+                    "target": "Notice(`主題「${this.plugin.settings.ThemeName}」已還原為原始狀態！`)"
+                },
+                {
+                    "source": "Notice(\"Theme \\\"${this.plugin.settings.ThemeName}\\\" restored to its original state!\")",
+                    "target": "Notice(\"主題「${this.plugin.settings.ThemeName}」已還原為原始狀態！\")"
+                },
+                {
+                    "source": "Notice(`Select a theme first to delete`)",
+                    "target": "Notice(`請先選擇要刪除的主題`)"
+                },
+                {
+                    "source": "Notice(\"Select a theme first to delete\")",
+                    "target": "Notice(\"請先選擇要刪除的主題\")"
+                },
+                {
+                    "source": "Notice(`You cannot delete the default themes`)",
+                    "target": "Notice(`無法刪除預設主題`)"
+                },
+                {
+                    "source": "Notice(\"You cannot delete the default themes\")",
+                    "target": "Notice(\"無法刪除預設主題\")"
+                },
+                {
+                    "source": "Notice(`Theme \"${this.plugin.settings.ThemeName}\" deleted successfully!`)",
+                    "target": "Notice(`主題「${this.plugin.settings.ThemeName}」已成功刪除！`)"
+                },
+                {
+                    "source": "Notice(\"Theme \\\"${this.plugin.settings.ThemeName}\\\" deleted successfully!\")",
+                    "target": "Notice(\"主題「${this.plugin.settings.ThemeName}」已成功刪除！\")"
+                },
+                {
+                    "source": "Notice(`Set a name for your theme!`)",
+                    "target": "Notice(`請設定主題名稱！`)"
+                },
+                {
+                    "source": "Notice(\"Set a name for your theme!\")",
+                    "target": "Notice(\"請設定主題名稱！\")"
+                },
+                {
+                    "source": "Notice(`You can't overwrite default themes`)",
+                    "target": "Notice(`不能覆寫預設主題`)"
+                },
+                {
+                    "source": "Notice(\"You can't overwrite default themes\")",
+                    "target": "Notice(\"不能覆寫預設主題\")"
+                },
+                {
+                    "source": "Notice(`Theme \"${this.plugin.settings.newThemeName}\" updated successfully!`)",
+                    "target": "Notice(`主題「${this.plugin.settings.newThemeName}」已成功更新！`)"
+                },
+                {
+                    "source": "Notice(\"Theme \\\"${this.plugin.settings.newThemeName}\\\" updated successfully!\")",
+                    "target": "Notice(\"主題「${this.plugin.settings.newThemeName}」已成功更新！\")"
+                },
+                {
+                    "source": "Notice(`Theme \"${this.plugin.settings.newThemeName}\" saved successfully!`)",
+                    "target": "Notice(`主題「${this.plugin.settings.newThemeName}」已成功儲存！`)"
+                },
+                {
+                    "source": "Notice(\"Theme \\\"${this.plugin.settings.newThemeName}\\\" saved successfully!\")",
+                    "target": "Notice(\"主題「${this.plugin.settings.newThemeName}」已成功儲存！\")"
+                },
+                {
+                    "source": "displayName:\"⚙️ General\"",
+                    "target": "displayName:\"⚙️ 一般\""
+                },
+                {
+                    "source": "displayName:\"🎨 Appearance & Styling\"",
+                    "target": "displayName:\"🎨 外觀與樣式\""
+                },
+                {
+                    "source": "displayName:\"🖌️ Highlighting\"",
+                    "target": "displayName:\"🖌️ 語法高亮\""
+                },
+                {
+                    "source": "displayName:\"👆 Behavior & Interaction\"",
+                    "target": "displayName:\"👆 行為與互動\""
+                },
+                {
+                    "source": "displayName:\"⌨️ Prompts\"",
+                    "target": "displayName:\"⌨️ 提示字元\""
+                },
+                {
+                    "source": "displayName:\"🧩 Plugin Compatibility\"",
+                    "target": "displayName:\"🧩 插件相容性\""
+                },
+                {
+                    "source": "\"Print to PDF Settings\"",
+                    "target": "\"列印為 PDF 設定\""
+                },
+                {
+                    "source": "\"codeblock.activeLineColor\":\"Code block active line color\"",
+                    "target": "\"codeblock.activeLineColor\":\"程式碼區塊作用中行顏色\""
+                },
+                {
+                    "source": "\"codeblock.backgroundColor\":\"Code block background color\"",
+                    "target": "\"codeblock.backgroundColor\":\"程式碼區塊背景顏色\""
+                },
+                {
+                    "source": "\"codeblock.borderColor\":\"Code block border color\"",
+                    "target": "\"codeblock.borderColor\":\"程式碼區塊邊框顏色\""
+                },
+                {
+                    "source": "\"codeblock.textColor\":\"Code block text color\"",
+                    "target": "\"codeblock.textColor\":\"程式碼區塊文字顏色\""
+                },
+                {
+                    "source": "\"codeblock.bracketHighlightColorMatch\":\"Matching bracket color\"",
+                    "target": "\"codeblock.bracketHighlightColorMatch\":\"配對括號顏色\""
+                },
+                {
+                    "source": "\"codeblock.bracketHighlightColorNoMatch\":\"Non-matching bracket color\"",
+                    "target": "\"codeblock.bracketHighlightColorNoMatch\":\"未配對括號顏色\""
+                },
+                {
+                    "source": "\"codeblock.bracketHighlightBackgroundColorMatch\":\"Matching bracket background color\"",
+                    "target": "\"codeblock.bracketHighlightBackgroundColorMatch\":\"配對括號背景顏色\""
+                },
+                {
+                    "source": "\"codeblock.bracketHighlightBackgroundColorNoMatch\":\"Non-matching bracket background color\"",
+                    "target": "\"codeblock.bracketHighlightBackgroundColorNoMatch\":\"未配對括號背景顏色\""
+                },
+                {
+                    "source": "\"codeblock.selectionMatchHighlightColor\":\"Selection match highlight color\"",
+                    "target": "\"codeblock.selectionMatchHighlightColor\":\"選取文字匹配高亮顏色\""
+                },
+                {
+                    "source": "\"header.backgroundColor\":\"Header background color\"",
+                    "target": "\"header.backgroundColor\":\"標頭背景顏色\""
+                },
+                {
+                    "source": "\"header.textColor\":\"Header text color\"",
+                    "target": "\"header.textColor\":\"標頭文字顏色\""
+                },
+                {
+                    "source": "\"header.lineColor\":\"Header line color\"",
+                    "target": "\"header.lineColor\":\"標頭分隔線顏色\""
+                },
+                {
+                    "source": "\"header.codeBlockLangTextColor\":\"Header language text color\"",
+                    "target": "\"header.codeBlockLangTextColor\":\"標頭語言文字顏色\""
+                },
+                {
+                    "source": "\"header.codeBlockLangBackgroundColor\":\"Header language background color\"",
+                    "target": "\"header.codeBlockLangBackgroundColor\":\"標頭語言背景顏色\""
+                },
+                {
+                    "source": "\"gutter.textColor\":\"Gutter text color\"",
+                    "target": "\"gutter.textColor\":\"行號欄文字顏色\""
+                },
+                {
+                    "source": "\"gutter.backgroundColor\":\"Gutter background color\"",
+                    "target": "\"gutter.backgroundColor\":\"行號欄背景顏色\""
+                },
+                {
+                    "source": "\"gutter.activeLineNrColor\":\"Gutter active line number color\"",
+                    "target": "\"gutter.activeLineNrColor\":\"行號欄作用中行號顏色\""
+                },
+                {
+                    "source": "\"prompt-msf\":\"Metasploit Prefix\"",
+                    "target": "\"prompt-msf\":\"Metasploit 前綴\""
+                },
+                {
+                    "source": "\"prompt-keyword\":\"Metasploit Keyword\"",
+                    "target": "\"prompt-keyword\":\"Metasploit 關鍵字\""
+                },
+                {
+                    "source": "\"prompt-module\":\"Metasploit Module\"",
+                    "target": "\"prompt-module\":\"Metasploit 模組\""
+                },
+                {
+                    "source": "\"prompt-beacon\":\"Cobalt Strike Beacon\"",
+                    "target": "\"prompt-beacon\":\"Cobalt Strike Beacon\""
+                },
+                {
+                    "source": "\"prompt-symbol\":\"Symbol (fallback)\"",
+                    "target": "\"prompt-symbol\":\"符號（備用）\""
+                },
+                {
+                    "source": "\"prompt-dollar\":\"Dollar ($)\"",
+                    "target": "\"prompt-dollar\":\"美元符號 ($)\""
+                },
+                {
+                    "source": "\"prompt-at\":\"At (@)\"",
+                    "target": "\"prompt-at\":\"At 符號 (@)\""
+                },
+                {
+                    "source": "\"prompt-colon\":\"Colon (:)\"",
+                    "target": "\"prompt-colon\":\"冒號 (:)\""
+                },
+                {
+                    "source": "\"prompt-dash\":\"Dash (-)\"",
+                    "target": "\"prompt-dash\":\"破折號 (-)\""
+                },
+                {
+                    "source": "\"prompt-hash\":\"Hash (#)\"",
+                    "target": "\"prompt-hash\":\"井號 (#)\""
+                },
+                {
+                    "source": "\"prompt-greater-than\":\"Greater Than (>)\"",
+                    "target": "\"prompt-greater-than\":\"大於符號 (>)\""
+                },
+                {
+                    "source": "\"prompt-zsh-symbol\":\"ZSH Arrow (➜)\"",
+                    "target": "\"prompt-zsh-symbol\":\"ZSH 箭頭 (➜)\""
+                },
+                {
+                    "source": "\"prompt-zsh-status-error\":\"ZSH Error (✗)\"",
+                    "target": "\"prompt-zsh-status-error\":\"ZSH 錯誤 (✗)\""
+                },
+                {
+                    "source": "\"prompt-zsh-status-ok\":\"ZSH Ok (✓)\"",
+                    "target": "\"prompt-zsh-status-ok\":\"ZSH 正常 (✓)\""
+                },
+                {
+                    "source": "\"prompt-kali-symbol\":\"Kali Symbol (㉿)\"",
+                    "target": "\"prompt-kali-symbol\":\"Kali 符號 (㉿)\""
+                },
+                {
+                    "source": "\"prompt-square-open\":\"Square Bracket [\"",
+                    "target": "\"prompt-square-open\":\"方括號 [\""
+                },
+                {
+                    "source": "\"prompt-square-close\":\"Square Bracket ]\"",
+                    "target": "\"prompt-square-close\":\"方括號 ]\""
+                },
+                {
+                    "source": "\"prompt-bracket-open\":\"Round Bracket (\"",
+                    "target": "\"prompt-bracket-open\":\"圓括號 (\""
+                },
+                {
+                    "source": "\"prompt-bracket-close\":\"Round Bracket )\"",
+                    "target": "\"prompt-bracket-close\":\"圓括號 )\""
+                },
+                {
+                    "source": "\"prompt-percent\":\"Percentage (%)\"",
+                    "target": "\"prompt-percent\":\"百分比 (%)\""
+                },
+                {
+                    "source": "displayName:\"\\u2699\\uFE0F General\"",
+                    "target": "displayName:\"\\u2699\\uFE0F 一般\""
+                },
+                {
+                    "source": "displayName:\"\\u{1F3A8} Appearance & Styling\"",
+                    "target": "displayName:\"\\u{1F3A8} 外觀與樣式\""
+                },
+                {
+                    "source": "displayName:\"\\u{1F58C}\\uFE0F Highlighting\"",
+                    "target": "displayName:\"\\u{1F58C}\\uFE0F 語法高亮\""
+                },
+                {
+                    "source": "displayName:\"\\u{1F446} Behavior & Interaction\"",
+                    "target": "displayName:\"\\u{1F446} 行為與互動\""
+                },
+                {
+                    "source": "displayName:\"\\u2328\\uFE0F Prompts\"",
+                    "target": "displayName:\"\\u2328\\uFE0F 提示字元\""
+                },
+                {
+                    "source": "displayName:\"\\u{1F9E9} Plugin Compatibility\"",
+                    "target": "displayName:\"\\u{1F9E9} 插件相容性\""
+                },
+                {
+                    "source": "setButtonText(\"Restore\")",
+                    "target": "setButtonText(\"還原\")"
+                },
+                {
+                    "source": "setButtonText(\"Add\")",
+                    "target": "setButtonText(\"新增\")"
+                },
+                {
+                    "source": "setButtonText(\"Clearing...\")",
+                    "target": "setButtonText(\"清除中...\")"
+                },
+                {
+                    "source": "addOption(\"\",\"(None)\")",
+                    "target": "addOption(\"\",\"（無）\")"
+                },
+                {
+                    "source": "\"Syntax Themes\"",
+                    "target": "\"語法主題\""
+                },
+                {
+                    "source": "i.setText('Note: Syntax themes apply to reading mode only. To also apply it for editor mode, enable the \"Use PrismJS syntax highlighting in editor mode\" setting above.')",
+                    "target": "i.setText('注意：語法主題只會套用到閱讀模式。若也要套用到編輯器模式，請啟用上方「在編輯器模式使用 PrismJS 語法醒目提示」設定。')"
+                },
+                {
+                    "source": "\"Per-Language Overrides\"",
+                    "target": "\"個別語言覆寫\""
+                },
+                {
+                    "source": "i.setText(\"Assign a different syntax theme for specific languages. These override the global syntax theme.\")",
+                    "target": "i.setText(\"為特定語言指定不同的語法主題，這些設定會覆寫全域語法主題。\")"
+                },
+                {
+                    "source": "setTooltip(`Remove override for ${i}`)",
+                    "target": "setTooltip(`移除 ${i} 的覆寫設定`)"
+                },
+                {
+                    "source": "setTooltip(`新增 color for ${f}`)",
+                    "target": "setTooltip(`新增 ${f} 的顏色`)"
+                },
+                {
+                    "source": "`新增選取的屬性，以便針對程式碼區塊語言 ${o} specifically`",
+                    "target": "`新增選取的屬性，以便針對程式碼區塊語言 ${o} 使用`"
+                },
+                {
+                    "source": "\"select color for light theme\"",
+                    "target": "\"選擇亮色主題顏色\""
+                },
+                {
+                    "source": "`To highlight lines with this color use the \"${e}\" parameter. e.g: ${e}:2,4-6`",
+                    "target": "`若要用此顏色高亮行，請使用「${e}」參數。例如：${e}:2,4-6`"
+                },
+                {
+                    "source": "\"Editor active line color\"",
+                    "target": "\"編輯器作用中行顏色\""
+                },
+                {
+                    "source": "\"Code Block Styling\"",
+                    "target": "\"程式碼區塊樣式\""
+                },
+                {
+                    "source": "\"Code block background color\"",
+                    "target": "\"程式碼區塊背景顏色\""
+                },
+                {
+                    "source": "\"Gutter text color\"",
+                    "target": "\"行號欄文字顏色\""
+                },
+                {
+                    "source": "\"Gutter background color\"",
+                    "target": "\"行號欄背景顏色\""
+                },
+                {
+                    "source": "\"Active line number color\"",
+                    "target": "\"作用中行號顏色\""
+                },
+                {
+                    "source": "\"Header Settings\"",
+                    "target": "\"標頭設定\""
+                },
+                {
+                    "source": "\"Header color\"",
+                    "target": "\"標頭顏色\""
+                },
+                {
+                    "source": "\"Sets the background color of the code block header.\"",
+                    "target": "\"設定程式碼區塊標頭的背景顏色。\""
+                },
+                {
+                    "source": "\"Header text color\"",
+                    "target": "\"標頭文字顏色\""
+                },
+                {
+                    "source": "\"Header line color\"",
+                    "target": "\"標頭分隔線顏色\""
+                },
+                {
+                    "source": "\"Sets the color of the separator line at the bottom of the header.\"",
+                    "target": "\"設定標頭底部分隔線的顏色。\""
+                },
+                {
+                    "source": "addOptions({hide:\"Hide\",middle:\"Middle\",right:\"Right\"})",
+                    "target": "addOptions({hide:\"隱藏\",middle:\"中間\",right:\"右側\"})"
+                },
+                {
+                    "source": "[Te.Chevrons]:\"Chevrons\"",
+                    "target": "[Te.Chevrons]:\"雙箭頭\""
+                },
+                {
+                    "source": "[Te.Arrows]:\"Arrows\"",
+                    "target": "[Te.Arrows]:\"箭頭\""
+                },
+                {
+                    "source": "[Te.PlusMinus]:\"Plus/Minus\"",
+                    "target": "[Te.PlusMinus]:\"加號/減號\""
+                },
+                {
+                    "source": "[Te.CirclePlusMinus]:\"Circle (+/-)\"",
+                    "target": "[Te.CirclePlusMinus]:\"圓形 (+/-)\""
+                },
+                {
+                    "source": "[Te.SquarePlusMinus]:\"Square (+/-)\"",
+                    "target": "[Te.SquarePlusMinus]:\"方形 (+/-)\""
+                },
+                {
+                    "source": "\"Codeblock language text color\"",
+                    "target": "\"程式碼區塊語言文字顏色\""
+                },
+                {
+                    "source": "\"Codeblock language background color\"",
+                    "target": "\"程式碼區塊語言背景顏色\""
+                },
+                {
+                    "source": "\"Annotation Settings\"",
+                    "target": "\"註記設定\""
+                },
+                {
+                    "source": "`'${y}' icon color`",
+                    "target": "`「${y}」圖示顏色`"
+                },
+                {
+                    "source": "\"Language Specific Color Overrides\"",
+                    "target": "\"語言特定顏色覆寫\""
+                },
+                {
+                    "source": "addOptions({disable:\"Disable\",left:\"Left\",right:\"Right\"})",
+                    "target": "addOptions({disable:\"停用\",left:\"左側\",right:\"右側\"})"
+                },
+                {
+                    "source": "\"Inline Code Settings\"",
+                    "target": "\"行內程式碼設定\""
+                },
+                {
+                    "source": "\"Inline code background color\"",
+                    "target": "\"行內程式碼背景顏色\""
+                },
+                {
+                    "source": "\"Inline code text color\"",
+                    "target": "\"行內程式碼文字顏色\""
+                },
+                {
+                    "source": "\"Codeblock active line color\"",
+                    "target": "\"程式碼區塊作用中行顏色\""
+                },
+                {
+                    "source": "'Highlight color (used by the \"hl\" parameter)'",
+                    "target": "'高亮顏色（由「hl」參數使用）'"
+                },
+                {
+                    "source": "\"Sets the default color for highlighting lines using the `hl` parameter (e.g., `hl:5`).\"",
+                    "target": "\"設定使用 `hl` 參數高亮行時的預設顏色（例如 `hl:5`）。\""
+                },
+                {
+                    "source": "\"Bracket Highlight & Selection Matching\"",
+                    "target": "\"括號高亮與選取內容比對\""
+                },
+                {
+                    "source": "\"Bracket highlight color for matching brackets\"",
+                    "target": "\"配對括號的高亮顏色\""
+                },
+                {
+                    "source": "\"Background color for matching brackets\"",
+                    "target": "\"配對括號的背景顏色\""
+                },
+                {
+                    "source": "\"Bracket highlight color for non matching brackets\"",
+                    "target": "\"未配對括號的高亮顏色\""
+                },
+                {
+                    "source": "\"Background color for non matching brackets\"",
+                    "target": "\"未配對括號的背景顏色\""
+                },
+                {
+                    "source": "\"Selection match highlight color\"",
+                    "target": "\"選取內容比對高亮顏色\""
+                },
+                {
+                    "source": "\"Text Highlight\"",
+                    "target": "\"文字高亮\""
+                },
+                {
+                    "source": "\"Alternative Highlight Colors\"",
+                    "target": "\"替代高亮顏色\""
+                },
+                {
+                    "source": "\"Frontmatter Styling\"",
+                    "target": "\"Frontmatter 樣式\""
+                },
+                {
+                    "source": "\"Property names (e.g. title, tags)\"",
+                    "target": "\"屬性名稱（例如 title、tags）\""
+                },
+                {
+                    "source": "\"Colons, brackets, commas, and list markers (: [ ] , -)\"",
+                    "target": "\"冒號、括號、逗號與清單標記（: [ ] , -）\""
+                },
+                {
+                    "source": "'Quoted values (e.g. \"hello\")'",
+                    "target": "'加引號的值（例如 \"hello\"）'"
+                },
+                {
+                    "source": "\"true / false values\"",
+                    "target": "\"true / false 值\""
+                },
+                {
+                    "source": "\"Numeric values (e.g. 42, 3.14)\"",
+                    "target": "\"數值（例如 42、3.14）\""
+                },
+                {
+                    "source": "\"YAML comments (# ...)\"",
+                    "target": "\"YAML 註解（# ...）\""
+                },
+                {
+                    "source": "\"Unquoted text values (e.g. dates, plain text)\"",
+                    "target": "\"未加引號的文字值（例如日期、純文字）\""
+                },
+                {
+                    "source": "\"If enabled, you can use links in the header, and code blocks as well. For links to work inside code blocks, they must be part of a comment. Examples: [[Document1]], [[Document1|DisplayText]], [[Document1#Paragraph|DisplayText]], [[Document1#^<BlockId>|DisplayText]], [DisplayText](Link), http://example.com etc.\"",
+                    "target": "\"啟用後，你可以在標頭與程式碼區塊中使用連結。若要讓程式碼區塊內的連結生效，連結必須是註解的一部分。例如：[[Document1]]、[[Document1|顯示文字]]、[[Document1#段落|顯示文字]]、[[Document1#^<BlockId>|顯示文字]]、[顯示文字](連結)、http://example.com 等。\""
+                },
+                {
+                    "source": "\"Grouped Code Block Settings\"",
+                    "target": "\"群組程式碼區塊設定\""
+                },
+                {
+                    "source": "\"Session Only\"",
+                    "target": "\"僅本次工作階段\""
+                },
+                {
+                    "source": "\"Permanent\"",
+                    "target": "\"永久\""
+                },
+                {
+                    "source": "'Show tab \"Add\" and \"Remove\" buttons (only editing view)'",
+                    "target": "'顯示分頁「新增」與「移除」按鈕（僅編輯檢視）'"
+                },
+                {
+                    "source": "'If enabled, a \"+\" button will appear after the last tab to add a new block, and an \"x\" button will appear on each tab to remove it from the group.'",
+                    "target": "'啟用後，最後一個分頁後會出現「+」按鈕以新增區塊，每個分頁上會出現「x」按鈕以從群組移除。'"
+                },
+                {
+                    "source": "\"Active tab background color\"",
+                    "target": "\"作用中分頁背景顏色\""
+                },
+                {
+                    "source": "\"Background color of the currently active tab.\"",
+                    "target": "\"目前作用中分頁的背景顏色。\""
+                },
+                {
+                    "source": "\"Active tab text color\"",
+                    "target": "\"作用中分頁文字顏色\""
+                },
+                {
+                    "source": "\"Text color of the currently active tab.\"",
+                    "target": "\"目前作用中分頁的文字顏色。\""
+                },
+                {
+                    "source": "\"Sets the color of the separator line at the bottom of the header for grouped code blocks.\"",
+                    "target": "\"設定群組程式碼區塊標頭底部分隔線的顏色。\""
+                },
+                {
+                    "source": "\"Tab hover background color\"",
+                    "target": "\"分頁懸停背景顏色\""
+                },
+                {
+                    "source": "\"Background color when the mouse hovers over a tab.\"",
+                    "target": "\"滑鼠懸停在分頁上時的背景顏色。\""
+                },
+                {
+                    "source": "\"Tab hover text color\"",
+                    "target": "\"分頁懸停文字顏色\""
+                },
+                {
+                    "source": "\"Text color when the mouse hovers over a tab.\"",
+                    "target": "\"滑鼠懸停在分頁上時的文字顏色。\""
+                },
+                {
+                    "source": "\"Folding Settings\"",
+                    "target": "\"收合設定\""
+                },
+                {
+                    "source": "\"If enabled folding will use semi-fold method. This means, that the first X lines will be visible only. Select the number of visisble lines. You can also enable an additional uncollapse button. Please refer to the README for more information.\"",
+                    "target": "\"啟用後，收合會使用半收合方式，只顯示前 X 行。請選擇可見行數，也可以啟用額外的展開按鈕。更多資訊請參閱 README。\""
+                },
+                {
+                    "source": "\"Opacity only\"",
+                    "target": "\"僅透明度\""
+                },
+                {
+                    "source": "\"Blur only\"",
+                    "target": "\"僅模糊\""
+                },
+                {
+                    "source": "\"Both\"",
+                    "target": "\"兩者\""
+                },
+                {
+                    "source": "setName(\"Scope\")",
+                    "target": "setName(\"範圍\")"
+                },
+                {
+                    "source": "'Respect \"fold\"'",
+                    "target": "'遵循「fold」'"
+                },
+                {
+                    "source": "\"All code blocks\"",
+                    "target": "\"所有程式碼區塊\""
+                },
+                {
+                    "source": "setName(\"Persistence\")",
+                    "target": "setName(\"保留方式\")"
+                },
+                {
+                    "source": "\"Extra Button Settings\"",
+                    "target": "\"額外按鈕設定\""
+                },
+                {
+                    "source": ".addOption(We.NONE,\"None\")",
+                    "target": ".addOption(We.NONE,\"無\")"
+                },
+                {
+                    "source": "\"If enabled, in editing mode the 'Copy Code' button will always be visible on collapsed code blocks in the header. In reading mode the 'Copy Code' button will always be visible on collapsed and uncollapsed code blocks as well. Otherwise, it will only appear when hovering over the header (in editing mode) or the code block (in reading mode).\"",
+                    "target": "\"啟用後，在編輯模式中，收合的程式碼區塊標頭會永遠顯示「複製程式碼」按鈕；在閱讀模式中，收合與未收合的程式碼區塊也會永遠顯示「複製程式碼」按鈕。否則，它只會在滑過標頭（編輯模式）或程式碼區塊（閱讀模式）時顯示。\""
+                },
+                {
+                    "source": "\"Admonition Settings\"",
+                    "target": "\"Admonition 設定\""
+                },
+                {
+                    "source": "\"Execute Code Settings\"",
+                    "target": "\"Execute Code 設定\""
+                },
+                {
+                    "source": "\"Error: Could not get contentDOM.parentElement.\"",
+                    "target": "\"錯誤：無法取得 contentDOM.parentElement。\""
+                },
+                {
+                    "source": "\"Error: Could not find original run button.\"",
+                    "target": "\"錯誤：找不到原始執行按鈕。\""
+                },
+                {
+                    "source": "\"Error: Could not find original clear button.\"",
+                    "target": "\"錯誤：找不到原始清除按鈕。\""
+                },
+                {
+                    "source": "\"Error: Could not find original edit button.\"",
+                    "target": "\"錯誤：找不到原始編輯按鈕。\""
+                },
+                {
+                    "source": "\"Uncollapse code block\"",
+                    "target": "\"展開程式碼區塊\""
+                },
+                {
+                    "source": "\"Add new code block to group\"",
+                    "target": "\"新增程式碼區塊到群組\""
+                },
+                {
+                    "source": "\"Remove from group\"",
+                    "target": "\"從群組移除\""
+                },
+                {
+                    "source": "\"Execute code\"",
+                    "target": "\"執行程式碼\""
+                },
+                {
+                    "source": "\"Clear output\"",
+                    "target": "\"清除輸出\""
+                },
+                {
+                    "source": "\"Edit this block\"",
+                    "target": "\"編輯此區塊\""
+                },
+                {
+                    "source": "\"Copy code\"",
+                    "target": "\"複製程式碼\""
+                },
+                {
+                    "source": "\"Copy as image\"",
+                    "target": "\"複製為圖片\""
+                },
+                {
+                    "source": "\"Wrap/Unwrap code\"",
+                    "target": "\"程式碼換行/取消換行\""
+                },
+                {
+                    "source": "\"Re-hide unhidden lines\"",
+                    "target": "\"重新隱藏已顯示的行\""
+                },
+                {
+                    "source": ".addOption(pt.Zigzag,\"Zigzag\")",
+                    "target": ".addOption(pt.Zigzag,\"鋸齒線\")"
+                },
+                {
+                    "source": ".addOption(pt.Dashed,\"Dashed\")",
+                    "target": ".addOption(pt.Dashed,\"虛線\")"
+                },
+                {
+                    "source": ".addOption(pt.DoubleLine,\"Double Line\")",
+                    "target": ".addOption(pt.DoubleLine,\"雙線\")"
+                },
+                {
+                    "source": ".addOption(ut.Zigzag,\"Zigzag\")",
+                    "target": ".addOption(ut.Zigzag,\"鋸齒線\")"
+                },
+                {
+                    "source": ".addOption(ut.Dashed,\"Dashed\")",
+                    "target": ".addOption(ut.Dashed,\"虛線\")"
+                },
+                {
+                    "source": ".addOption(ut.DoubleLine,\"Double Line\")",
+                    "target": ".addOption(ut.DoubleLine,\"雙線\")"
+                },
+                {
+                    "source": "`regex 無效 \"${t}\" in ${D1}: ${e}`",
+                    "target": "`regex 無效「${t}」，位於 ${D1}: ${e}`"
+                },
+                {
+                    "source": "\"Gutter 設定\"",
+                    "target": "\"行號欄設定\""
+                },
+                {
+                    "source": "setName(\"醒目提示 gutter\")",
+                    "target": "setName(\"醒目提示行號欄\")"
+                },
+                {
+                    "source": "setDesc(\"啟用後，醒目提示行時也會醒目提示 gutter（行號），而不只是行本身。\")",
+                    "target": "setDesc(\"啟用後，醒目提示行時也會醒目提示行號欄，而不只是行本身。\")"
+                },
+                {
+                    "source": "`已新增語言 \"${this.plugin.settings.languageSpecificLanguageName}\".`",
+                    "target": "`已新增語言「${this.plugin.settings.languageSpecificLanguageName}」。`"
+                },
+                {
+                    "source": "`已新增顏色 \"${this.plugin.settings.alternateHighlightColorName}\".`",
+                    "target": "`已新增顏色「${this.plugin.settings.alternateHighlightColorName}」。`"
+                },
+                {
+                    "source": "setDesc(\"選擇收合狀態要保留多久。「Permanent」會在重啟 Obsidian 後仍保留狀態；「Session」只會保留到關閉應用程式為止。\")",
+                    "target": "setDesc(\"選擇收合狀態要保留多久。「永久」會在重啟 Obsidian 後仍保留狀態；「本次工作階段」只會保留到關閉應用程式為止。\")"
+                },
+                {
+                    "source": "setName(\"Fence 動作用輔助鍵\")",
+                    "target": "setName(\"Fence 行動作的輔助鍵\")"
+                },
+                {
+                    "source": "setDesc(\"點擊複製、選取或刪除時按住此鍵，即可在動作中包含 fence 行。\")",
+                    "target": "setDesc(\"點擊複製、選取或刪除時按住此鍵，即可在動作中包含 fence 行。\")"
+                },
+                {
+                    "source": "`Prompt \"${i}\" 已成功刪除！`",
+                    "target": "`提示字元「${i}」已成功刪除！`"
+                },
+                {
+                    "source": "`Prompt \"${this.plugin.settings.newPromptName}\" 已成功更新！`",
+                    "target": "`提示字元「${this.plugin.settings.newPromptName}」已成功更新！`"
+                },
+                {
+                    "source": "`Prompt \"${this.plugin.settings.newPromptName}\" 已成功儲存！`",
+                    "target": "`提示字元「${this.plugin.settings.newPromptName}」已成功儲存！`"
+                },
+                {
+                    "source": "setName(\"設定 Root 顏色\")",
+                    "target": "setName(\"設定 root 顏色\")"
+                },
+                {
+                    "source": "setDesc(\"啟用以編輯此提示字元的 root 專用顏色。\")",
+                    "target": "setDesc(\"啟用後可編輯此提示字元的 root 專用顏色。\")"
                 }
             ]
         }
