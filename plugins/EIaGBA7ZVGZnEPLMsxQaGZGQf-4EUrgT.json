@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian42-brat",
-        "version": "2.0.8",
+        "version": "2.1.0",
         "title": "[zh-tw] BRAT",
         "description": "BRAT Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "2.0.8",
+        "supportedVersions": "2.1.0",
         "author": "Chico"
     },
     "dict": {
@@ -178,7 +178,7 @@
                     "type": "CallExpression",
                     "name": "log",
                     "source": "error in grabReleaseFileFromRepository",
-                    "target": "grabReleaseFileFrom儲存庫 發生錯誤"
+                    "target": "grabReleaseFileFromRepository 發生錯誤"
                 },
                 {
                     "type": "CallExpression",
@@ -758,9 +758,21 @@
                 },
                 {
                     "type": "ObjectProperty",
+                    "name": "prependText",
+                    "source": "Set a personal access token to increase rate limits for public repositories on GitHub. You can create one in ",
+                    "target": "設定個人存取權杖可提高 GitHub 公開儲存庫的速率限制。你可以到 "
+                },
+                {
+                    "type": "ObjectProperty",
                     "name": "text",
                     "source": "your GitHub account settings",
                     "target": "你的 GitHub 帳戶設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "appendText",
+                    "source": " and then add it here. Please consult the documentation for more details.",
+                    "target": " 建立，然後加到這裡。更多細節請參閱文件。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1132,7 +1144,7 @@
                 },
                 {
                     "source": "text:\"isDesktopOnly: true\"",
-                    "target": "text:\"isDesktopOnly：true\""
+                    "target": "text:\"isDesktopOnly: true\""
                 },
                 {
                     "source": "name:\"Plugins: Add a beta plugin for testing (with or without version)\"",
@@ -1235,8 +1247,16 @@
                     "target": "text:\"注意：\""
                 },
                 {
+                    "source": "prependText:\"Set a personal access token to increase rate limits for public repositories on GitHub. You can create one in \"",
+                    "target": "prependText:\"設定個人存取權杖可提高 GitHub 公開儲存庫的速率限制。你可以到 \""
+                },
+                {
                     "source": "text:\"your GitHub account settings\"",
                     "target": "text:\"你的 GitHub 帳戶設定\""
+                },
+                {
+                    "source": "appendText:\" and then add it here. Please consult the documentation for more details.\"",
+                    "target": "appendText:\" 建立，然後加到這裡。更多細節請參閱文件。\""
                 }
             ]
         }
