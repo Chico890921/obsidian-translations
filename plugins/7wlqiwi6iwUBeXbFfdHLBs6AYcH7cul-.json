@@ -7,7 +7,8 @@
         "description": "Recent Files 繁體中文化與微調",
         "language": "zh-tw",
         "supportedVersions": "1.7.9",
-        "author": "Chico"
+        "author": "Chico",
+        "updatedAt": 1782929958996
     },
     "dict": {
         "main.js": {
@@ -119,6 +120,42 @@
                     "name": "name",
                     "source": "Open",
                     "target": "開啟"
+                },
+                {
+                    "type": "Literal",
+                    "name": "return",
+                    "source": "Recent files",
+                    "target": "最近檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "display",
+                    "source": "Recent Files",
+                    "target": "最近檔案"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "text",
+                    "source": "MDN - Regular expressions",
+                    "target": "MDN - 正規表示式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "append",
+                    "source": "RegExp patterns to ignore. One pattern per line. See ",
+                    "target": "要忽略的正規表示式模式。每行一個模式。可參考 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "append",
+                    "source": " for help.",
+                    "target": " 說明。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "append",
+                    "source": "Frontmatter-tag patterns to ignore. One pattern per line.",
+                    "target": "要忽略的 frontmatter 標籤模式。每行一個模式。"
                 }
             ],
             "regex": [
@@ -176,7 +213,43 @@
                 },
                 {
                     "source": "text=\"MDN - Regular expressions\"",
-                    "target": "text=\"MDN - Regular expressions\""
+                    "target": "text=\"MDN - 正規表示式\""
+                },
+                {
+                    "source": "return\"Recent files\"",
+                    "target": "return\"最近檔案\""
+                },
+                {
+                    "source": "display:\"Recent Files\"",
+                    "target": "display:\"最近檔案\""
+                },
+                {
+                    "source": "append(\"RegExp patterns to ignore. One pattern per line. See \")",
+                    "target": "append(\"要忽略的正規表示式模式。每行一個模式。可參考 \")"
+                },
+                {
+                    "source": "append(\" for help.\")",
+                    "target": "append(\" 說明。\")"
+                },
+                {
+                    "source": "append(\"Frontmatter-tag patterns to ignore. One pattern per line.\")",
+                    "target": "append(\"要忽略的 frontmatter 標籤模式。每行一個模式。\")"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "List files by most recently opened.",
+                    "target": "依最近開啟時間列出檔案。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"List files by most recently opened.\"",
+                    "target": "\"description\": \"依最近開啟時間列出檔案。\""
                 }
             ]
         }
