@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-outliner",
-        "version": "4.10.1",
+        "version": "4.10.2",
         "title": "[zh-tw] Outliner",
         "description": "Outliner Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "4.10.1",
+        "supportedVersions": "4.10.2",
         "author": "Chico",
-        "updatedAt": 1778618561480
+        "updatedAt": 1782922504406
     },
     "dict": {
         "main.js": {
@@ -186,6 +186,78 @@
                     "name": "name",
                     "source": "Outdent the list and sublists",
                     "target": "減少清單與子清單縮排"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "The item cannot be moved. The page content changed during the move.",
+                    "target": "無法移動此項目。移動期間頁面內容已變更。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Unable to ${type} because folding is disabled. Please enable \"Fold indent\" in Obsidian settings.",
+                    "target": "無法摺疊或展開，因為摺疊功能已停用。請在 Obsidian 設定中啟用「摺疊縮排」。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "never",
+                    "source": "Never",
+                    "target": "永不"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "bullet-only",
+                    "source": "Stick cursor out of bullets",
+                    "target": "讓游標停在項目符號外"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "bullet-and-checkbox",
+                    "source": "Stick cursor out of bullets and checkboxes",
+                    "target": "讓游標停在項目符號與核取方塊外"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "none",
+                    "source": "None",
+                    "target": "無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "zoom-in",
+                    "source": "Zoom In",
+                    "target": "放大"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "toggle-folding",
+                    "source": "Toggle Folding",
+                    "target": "切換摺疊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "System Information",
+                    "target": "系統資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Show System Info",
+                    "target": "顯示系統資訊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Unable to parse list: expected list item, got empty line",
+                    "target": "無法解析清單：預期清單項目，但得到空白行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Unable to parse list: expected list item or note, got \"${line}\"",
+                    "target": "無法解析清單：預期清單項目或註記，得到「${line}」"
                 }
             ],
             "regex": [
@@ -236,6 +308,134 @@
                 {
                     "source": "text: \"normal\"",
                     "target": "text: \"normal\""
+                },
+                {
+                    "source": "new obsidian.Notice(`The item cannot be moved. The page content changed during the move.`, 5000);",
+                    "target": "new obsidian.Notice(`無法移動此項目。移動期間頁面內容已變更。`, 5000);"
+                },
+                {
+                    "source": "new obsidian.Notice(`Unable to ${type} because folding is disabled. Please enable \"Fold indent\" in Obsidian settings.`, 5000);",
+                    "target": "new obsidian.Notice(`無法摺疊或展開，因為摺疊功能已停用。請在 Obsidian 設定中啟用「摺疊縮排」。`, 5000);"
+                },
+                {
+                    "source": "setName(\"Stick the cursor to the content\")",
+                    "target": "setName(\"讓游標貼齊內容\")"
+                },
+                {
+                    "source": "setDesc(\"Don't let the cursor move to the bullet position.\")",
+                    "target": "setDesc(\"不要讓游標移到項目符號位置。\")"
+                },
+                {
+                    "source": "never: \"Never\"",
+                    "target": "never: \"永不\""
+                },
+                {
+                    "source": "\"bullet-only\": \"Stick cursor out of bullets\"",
+                    "target": "\"bullet-only\": \"讓游標停在項目符號外\""
+                },
+                {
+                    "source": "\"bullet-and-checkbox\": \"Stick cursor out of bullets and checkboxes\"",
+                    "target": "\"bullet-and-checkbox\": \"讓游標停在項目符號與核取方塊外\""
+                },
+                {
+                    "source": "setName(\"Enhance the Tab key\")",
+                    "target": "setName(\"增強 Tab 鍵\")"
+                },
+                {
+                    "source": "setDesc(\"Make Tab and Shift-Tab behave the same as other outliners.\")",
+                    "target": "setDesc(\"讓 Tab 和 Shift-Tab 的行為與其他大綱工具相同。\")"
+                },
+                {
+                    "source": "setName(\"Enhance the Enter key\")",
+                    "target": "setName(\"增強 Enter 鍵\")"
+                },
+                {
+                    "source": "setDesc(\"Make the Enter key behave the same as other outliners.\")",
+                    "target": "setDesc(\"讓 Enter 鍵的行為與其他大綱工具相同。\")"
+                },
+                {
+                    "source": "setName(\"Vim-mode o/O inserts bullets\")",
+                    "target": "setName(\"Vim 模式下 o/O 插入項目符號\")"
+                },
+                {
+                    "source": "setDesc(\"Create a bullet when pressing o or O in Vim mode.\")",
+                    "target": "setDesc(\"在 Vim 模式下按 o 或 O 時建立項目符號。\")"
+                },
+                {
+                    "source": "setName(\"Enhance the Ctrl+A or Cmd+A behavior\")",
+                    "target": "setName(\"增強 Ctrl+A 或 Cmd+A 行為\")"
+                },
+                {
+                    "source": "setDesc(\"Press the hotkey once to select the current list item. Press the hotkey twice to select the entire list.\")",
+                    "target": "setDesc(\"按一次快捷鍵以選取目前清單項目。按兩次快捷鍵以選取整份清單。\")"
+                },
+                {
+                    "source": "setName(\"Improve the style of your lists\")",
+                    "target": "setName(\"改善清單樣式\")"
+                },
+                {
+                    "source": "setDesc(\"Styles are only compatible with built-in Obsidian themes and may not be compatible with other themes.\")",
+                    "target": "setDesc(\"樣式僅與 Obsidian 內建主題相容，可能無法相容其他主題。\")"
+                },
+                {
+                    "source": "setName(\"Draw vertical indentation lines\")",
+                    "target": "setName(\"繪製垂直縮排線\")"
+                },
+                {
+                    "source": "setName(\"Vertical indentation line click action\")",
+                    "target": "setName(\"垂直縮排線點擊動作\")"
+                },
+                {
+                    "source": "none: \"None\"",
+                    "target": "none: \"無\""
+                },
+                {
+                    "source": "\"zoom-in\": \"Zoom In\"",
+                    "target": "\"zoom-in\": \"放大\""
+                },
+                {
+                    "source": "\"toggle-folding\": \"Toggle Folding\"",
+                    "target": "\"toggle-folding\": \"切換摺疊\""
+                },
+                {
+                    "source": "setName(\"Drag-and-Drop\")",
+                    "target": "setName(\"拖放\")"
+                },
+                {
+                    "source": "setName(\"Debug mode\")",
+                    "target": "setName(\"除錯模式\")"
+                },
+                {
+                    "source": "setDesc(\"Open DevTools (Command+Option+I or Control+Shift+I) to copy the debug logs.\")",
+                    "target": "setDesc(\"開啟 DevTools（Command+Option+I 或 Control+Shift+I）以複製除錯記錄。\")"
+                },
+                {
+                    "source": "this.titleEl.setText(\"System Information\");",
+                    "target": "this.titleEl.setText(\"系統資訊\");"
+                },
+                {
+                    "source": "button.setText(\"Copy and Close\");",
+                    "target": "button.setText(\"複製並關閉\");"
+                },
+                {
+                    "source": "name: \"Show System Info\"",
+                    "target": "name: \"顯示系統資訊\""
+                },
+                {
+                    "source": "console.error(\"Vim adapter not found\")",
+                    "target": "console.error(\"找不到 Vim adapter\")"
+                },
+                {
+                    "source": "new obsidian.Notice(`To fully unload obsidian-outliner plugin, please restart the app`, 5000);",
+                    "target": "new obsidian.Notice(`若要完全卸載 obsidian-outliner 插件，請重新啟動應用程式`, 5000);"
+                },
+                {
+                    "source": "error(`Unable to parse list: expected list item, got empty line`)",
+                    "target": "error(`無法解析清單：預期清單項目，但得到空白行`)"
+                },
+                {
+                    "source": "error(`Unable to parse list: expected list item or note, got \"${line}\"`)",
+                    "target": "error(`無法解析清單：預期清單項目或註記，得到「${line}」`)"
                 }
             ]
         }
