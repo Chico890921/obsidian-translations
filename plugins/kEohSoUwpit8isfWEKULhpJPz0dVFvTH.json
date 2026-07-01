@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "1.1.2",
         "author": "Chico",
-        "updatedAt": 1779675297681
+        "updatedAt": 1782928357254
     },
     "dict": {
         "main.js": {
@@ -282,6 +282,126 @@
                     "name": "text",
                     "source": "No",
                     "target": "否"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The path where Xournal++ is installed (leave empty for system default).",
+                    "target": "Xournal++ 的安裝路徑（留空則使用系統預設值）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Xournal++ template path",
+                    "target": "Xournal++ 範本路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The relative path of the template for any new Xournal++ file (leave empty to use the default template).",
+                    "target": "新 Xournal++ 檔案要使用的範本相對路徑（留空則使用預設範本）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g. templates/template.xopp",
+                    "target": "例如 templates/template.xopp"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The relative path for new Xournal++ files. This folder will be used unless a full path is specified during file creation (leave empty to use root folder).",
+                    "target": "新 Xournal++ 檔案的相對路徑。建立檔案時未指定完整路徑時，將使用此資料夾（留空則使用根資料夾）。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Error: Could not create a Xournal++ note: ",
+                    "target": "錯誤：無法建立 Xournal++ 筆記："
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Could not find the given template file.",
+                    "target": "找不到指定的範本檔案。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Unable to get or create the default template.",
+                    "target": "無法取得或建立預設範本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "purpose",
+                    "source": "to navigate",
+                    "target": "瀏覽"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "purpose",
+                    "source": "to autocomplete folder",
+                    "target": "自動完成資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "purpose",
+                    "source": "to select folder",
+                    "target": "選擇資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create a new note and insert embedded PDF link",
+                    "target": "建立新筆記並插入嵌入 PDF 連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "purpose",
+                    "source": "to autocomplete",
+                    "target": "自動完成"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "purpose",
+                    "source": "to open the corresponding PDF",
+                    "target": "開啟對應的 PDF"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "purpose",
+                    "source": "to open in Xournal++",
+                    "target": "在 Xournal++ 中開啟"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addRibbonIcon",
+                    "source": "Create new Xournal++ note",
+                    "target": "建立新的 Xournal++ 筆記"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "error",
+                    "source": "User defined Xournal++ path not working: ",
+                    "target": "使用者設定的 Xournal++ 路徑無法使用："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Xournal++ Error:",
+                    "target": "Xournal++ 錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error converting Xournal++ to PDF: ${error.message}",
+                    "target": "將 Xournal++ 轉換為 PDF 時發生錯誤：${error.message}"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setContent",
+                    "source": "test",
+                    "target": ""
                 }
             ],
             "regex": [
@@ -464,6 +584,78 @@
                 {
                     "source": "innerText = \"X++\"",
                     "target": "innerText = \"X++\""
+                },
+                {
+                    "source": "setDesc(\"The path where Xournal++ is installed (leave empty for system default).\")",
+                    "target": "setDesc(\"Xournal++ 的安裝路徑（留空則使用系統預設值）。\")"
+                },
+                {
+                    "source": "setName(\"Xournal++ template path\")",
+                    "target": "setName(\"Xournal++ 範本路徑\")"
+                },
+                {
+                    "source": "setDesc(\"The relative path of the template for any new Xournal++ file (leave empty to use the default template).\")",
+                    "target": "setDesc(\"新 Xournal++ 檔案要使用的範本相對路徑（留空則使用預設範本）。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. templates/template.xopp\")",
+                    "target": "setPlaceholder(\"例如 templates/template.xopp\")"
+                },
+                {
+                    "source": "setDesc(\"The relative path for new Xournal++ files. This folder will be used unless a full path is specified during file creation (leave empty to use root folder).\")",
+                    "target": "setDesc(\"新 Xournal++ 檔案的相對路徑。建立檔案時未指定完整路徑時，將使用此資料夾（留空則使用根資料夾）。\")"
+                },
+                {
+                    "source": "Notice(\"Error: Could not create a Xournal++ note: \" + e.message)",
+                    "target": "Notice(\"錯誤：無法建立 Xournal++ 筆記：\" + e.message)"
+                },
+                {
+                    "source": "new Error(\"Could not find the given template file.\")",
+                    "target": "new Error(\"找不到指定的範本檔案。\")"
+                },
+                {
+                    "source": "new Error(\"Unable to get or create the default template.\")",
+                    "target": "new Error(\"無法取得或建立預設範本。\")"
+                },
+                {
+                    "source": "setInstructions([{ command: \"Arrows\", purpose: \"to navigate\" }, { command: \"Tab\", purpose: \"to autocomplete folder\" }, { command: \"Enter\", purpose: \"to select folder\" }])",
+                    "target": "setInstructions([{ command: \"方向鍵\", purpose: \"瀏覽\" }, { command: \"Tab\", purpose: \"自動完成資料夾\" }, { command: \"Enter\", purpose: \"選擇資料夾\" }])"
+                },
+                {
+                    "source": "name: \"Create a new note and insert embedded PDF link\"",
+                    "target": "name: \"建立新筆記並插入嵌入 PDF 連結\""
+                },
+                {
+                    "source": "setInstructions([{ command: \"Arrows\", purpose: \"to navigate\" }, { command: \"Tab\", purpose: \"to autocomplete\" }, { command: \"Enter\", purpose: \"to open the corresponding PDF\" }, { command: \"Shift + Enter\", purpose: \"to open in Xournal++\" }])",
+                    "target": "setInstructions([{ command: \"方向鍵\", purpose: \"瀏覽\" }, { command: \"Tab\", purpose: \"自動完成\" }, { command: \"Enter\", purpose: \"開啟對應的 PDF\" }, { command: \"Shift + Enter\", purpose: \"在 Xournal++ 中開啟\" }])"
+                },
+                {
+                    "source": "item.textContent == \"Delete PDF & Xournal++\"",
+                    "target": "item.textContent == \"刪除 PDF 與 Xournal++\""
+                },
+                {
+                    "source": "item.textContent == \"Delete\" || item.textContent == \"Rename...\"",
+                    "target": "item.textContent == \"刪除\" || item.textContent == \"重新命名...\""
+                },
+                {
+                    "source": "addRibbonIcon(\"pen-tool\", \"Create new Xournal++ note\"",
+                    "target": "addRibbonIcon(\"pen-tool\", \"建立新的 Xournal++ 筆記\""
+                },
+                {
+                    "source": "\"User defined Xournal++ path not working: \" + error.message",
+                    "target": "\"使用者設定的 Xournal++ 路徑無法使用：\" + error.message"
+                },
+                {
+                    "source": "console.error(\"Xournal++ Error:\" + error)",
+                    "target": "console.error(\"Xournal++ 錯誤：\" + error)"
+                },
+                {
+                    "source": "console.error(`Error converting Xournal++ to PDF: ${error.message}`)",
+                    "target": "console.error(`將 Xournal++ 轉換為 PDF 時發生錯誤：${error.message}`)"
+                },
+                {
+                    "source": "setContent(\"test\")",
+                    "target": "setContent(\"\")"
                 }
             ]
         }
