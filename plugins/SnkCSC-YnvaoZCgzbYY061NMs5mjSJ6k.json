@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "templater-obsidian",
-        "version": "2.20.5",
+        "version": "2.20.6",
         "title": "[zh-tw] Templater",
         "description": "Templater 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.20.5",
+        "supportedVersions": "2.20.6",
         "author": "Chico",
-        "updatedAt": 1779625577134
+        "updatedAt": 1782927592405
     },
     "dict": {
         "main.js": {
@@ -143,7 +143,7 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Shell binary location",
-                    "target": "Shell 執行檔位置"
+                    "target": "Shell 執行檔路徑"
                 },
                 {
                     "type": "CallExpression",
@@ -1056,6 +1056,708 @@
                     "name": "text",
                     "source": "Parameter list:",
                     "target": "參數清單："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Advanced templating and automation using handlebars-like syntax.",
+                    "target": "使用類 Handlebars 語法的進階範本與自動化工具。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Template folder location",
+                    "target": "範本資料夾位置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Template folder location",
+                    "target": "範本資料夾位置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Files in this folder will be available as templates.",
+                    "target": "此資料夾中的檔案可作為範本使用。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Templater provides multiples predefined variables / functions that you can use.",
+                    "target": "Templater 提供多個可使用的預先定義變數／函式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": " to get a list of all the available internal variables / functions.",
+                    "target": "以取得所有可用內部變數／函式的清單。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Adds syntax highlighting for Templater commands in edit mode.",
+                    "target": "在編輯模式中為 Templater 命令加入語法醒目提示。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Adds syntax highlighting for Templater commands in edit mode on mobile. Use with caution: this may break live preview on mobile platforms.",
+                    "target": "在行動裝置的編輯模式中為 Templater 命令加入語法醒目提示。請謹慎使用：這可能會破壞行動平台上的即時預覽。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Automatically triggers ",
+                    "target": "插入範本後自動觸發"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": " after inserting a template.",
+                    "target": "。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "You can also set a hotkey to manually trigger ",
+                    "target": "你也可以設定快速鍵來手動觸發"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Trigger Templater on new file creation",
+                    "target": "建立新檔案時觸發 Templater"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Trigger Templater on new file creation",
+                    "target": "建立新檔案時觸發 Templater"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Templater will listen for the new file creation event, and, if it matches a rule you've set, replace every command it finds in the new file's content. ",
+                    "target": "Templater 會監聽新檔案建立事件；如果符合你設定的規則，就會取代新檔案內容中找到的每個命令。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This makes Templater compatible with other plugins like the Daily note core plugin, Calendar plugin, Review plugin, Note refactor plugin, etc. ",
+                    "target": "這讓 Templater 可與每日筆記核心外掛、Calendar、Review、Note refactor 等外掛相容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Make sure to set up rules under either folder templates or file regex template below.",
+                    "target": "請確認已在下方的資料夾範本或檔案正規表示式範本中設定規則。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This can be dangerous if you create new files with unknown / unsafe content on creation. Make sure that every new file's content is safe on creation.",
+                    "target": "如果建立新檔案時內容未知或不安全，這可能會有風險。請確認每個新檔案在建立時內容都是安全的。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Template hotkeys",
+                    "target": "範本快速鍵"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Template hotkeys allows you to bind a template to a hotkey.",
+                    "target": "範本快速鍵可讓你將範本綁定到快速鍵。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Example: folder1/template_file",
+                    "target": "範例：folder1/template_file"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Example: folder1/template_file",
+                    "target": "範例：folder1/template_file"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This template is already bound to a hotkey",
+                    "target": "此範本已綁定快速鍵"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Configure Hotkey",
+                    "target": "設定快速鍵"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add new hotkey for template",
+                    "target": "新增範本快速鍵"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Add new hotkey for template",
+                    "target": "新增範本快速鍵"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Folder templates",
+                    "target": "資料夾範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Folder templates are triggered when a new ",
+                    "target": "當指定資料夾中建立新的"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "file is created in a given folder.",
+                    "target": "檔案時，會觸發資料夾範本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Templater will fill the empty file with the specified template.",
+                    "target": "Templater 會使用指定範本填入空白檔案。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The deepest match is used. A global default template would be defined on the root ",
+                    "target": "會使用最深層的符合項目。全域預設範本可定義在根目錄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable folder templates",
+                    "target": "啟用資料夾範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Enable folder templates",
+                    "target": "啟用資料夾範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "When enabled, Templater will make use of the folder templates defined below. This option is mutually exclusive with file regex templates below, so enabling one will disable the other.",
+                    "target": "啟用後，Templater 會使用下方定義的資料夾範本。此選項與下方的檔案正規表示式範本互斥，因此啟用其中一個會停用另一個。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This folder already has a template associated with it",
+                    "target": "此資料夾已有關聯範本"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add new folder template",
+                    "target": "新增資料夾範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Add new folder template",
+                    "target": "新增資料夾範本"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Add additional folder template",
+                    "target": "新增額外資料夾範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Add additional folder template",
+                    "target": "新增額外資料夾範本"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "File regex templates",
+                    "target": "檔案正規表示式範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "File regex templates are triggered when a new ",
+                    "target": "當建立符合其中一條規則的新"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": " file is created that matches one of them. Templater will fill the empty file with the specified template.",
+                    "target": "檔案時，會觸發檔案正規表示式範本。Templater 會使用指定範本填入空白檔案。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The first match from the top is used, so the order of the rules is important.",
+                    "target": "會使用從上到下第一個符合項目，因此規則順序很重要。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": " as a final catch-all, if you need it.",
+                    "target": "作為最後的全域符合規則（如有需要）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable file regex templates",
+                    "target": "啟用檔案正規表示式範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Enable file regex templates",
+                    "target": "啟用檔案正規表示式範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "When enabled, Templater will make use of the file regex templates defined below. This option is mutually exclusive with folder templates above, so enabling one will disable the other.",
+                    "target": "啟用後，Templater 會使用下方定義的檔案正規表示式範本。此選項與上方的資料夾範本互斥，因此啟用其中一個會停用另一個。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Startup templates",
+                    "target": "啟動範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Startup templates are templates that will get executed once when Templater starts.",
+                    "target": "啟動範本會在 Templater 啟動時執行一次。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "These templates won't output anything.",
+                    "target": "這些範本不會輸出任何內容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This can be useful to set up templates adding hooks to Obsidian events for example.",
+                    "target": "這可用於設定會加入 Obsidian 事件 hook 的範本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This startup template already exist",
+                    "target": "此啟動範本已存在"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add new startup template",
+                    "target": "新增啟動範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Add new startup template",
+                    "target": "新增啟動範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "All JavaScript files in this folder will be loaded as CommonJS modules, to import custom user functions.",
+                    "target": "此資料夾中的所有 JavaScript 檔案都會作為 CommonJS 模組載入，用於匯入自訂使用者函式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The folder needs to be accessible from the vault.",
+                    "target": "此資料夾必須可從儲存庫存取。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": " for more information.",
+                    "target": "以取得更多資訊。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "No user scripts folder set",
+                    "target": "未設定使用者指令碼資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "User scripts folder doesn't exist",
+                    "target": "使用者指令碼資料夾不存在"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "No user scripts detected",
+                    "target": "未偵測到使用者指令碼"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "User system command functions",
+                    "target": "使用者系統命令函式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "User system command functions",
+                    "target": "使用者系統命令函式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable user system command functions",
+                    "target": "啟用使用者系統命令函式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Enable user system command functions",
+                    "target": "啟用使用者系統命令函式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Allows you to create user functions linked to system commands.",
+                    "target": "允許你建立連結到系統命令的使用者函式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "It can be dangerous to execute arbitrary system commands from untrusted sources. Only run system commands that you understand, from trusted sources.",
+                    "target": "執行來自不受信任來源的任意系統命令可能很危險。只執行你了解且來自可信來源的系統命令。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Maximum timeout in seconds for a system command.",
+                    "target": "系統命令的最大逾時秒數。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Timeout must be a number",
+                    "target": "逾時必須是數字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Full path to the shell binary to execute the command with.",
+                    "target": "用來執行命令的 shell 執行檔完整路徑。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This setting is optional and will default to the system's default shell if not specified.",
+                    "target": "此設定為選用；若未指定，會使用系統預設 shell。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "You can use forward slashes ('/') as path separators on all platforms if in doubt.",
+                    "target": "不確定時，可以在所有平台上使用正斜線（'/'）作為路徑分隔符。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Shell 執行檔位置",
+                    "target": "Shell 執行檔路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "System command",
+                    "target": "系統命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Donate",
+                    "target": "贊助"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "If you like this Plugin, consider donating to support continued development.",
+                    "target": "如果你喜歡這個外掛，可以考慮捐款支持持續開發。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Creates a new file using a specified template or with a specified content.",
+                    "target": "使用指定範本或指定內容建立新檔案。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Either the template used for the new file content, or the file content as a string. If it is the template to use, you retrieve it with `tp.file.find_tfile(TEMPLATENAME)`.",
+                    "target": "新檔案內容要使用的範本，或作為字串的檔案內容。如果要使用範本，可用 `tp.file.find_tfile(TEMPLATENAME)` 取得。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves the file's creation date.",
+                    "target": "取得檔案建立日期。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Includes the file's link content. Templates in the included content will be resolved.",
+                    "target": "包含檔案連結的內容。被包含內容中的範本會一併解析。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Retrieves the file's absolute path on the system.",
+                    "target": "取得檔案在系統上的絕對路徑。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This module exposes hooks that allow you to execute code when a Templater event occurs.",
+                    "target": "此模組公開 hook，讓你可以在 Templater 事件發生時執行程式碼。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This module contains system related functions.",
+                    "target": "此模組包含系統相關函式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Hooks into when all actively running templates have finished executing. Most of the time this will be a single template, unless you are using `tp.file.include` or `tp.file.create_new`.\\n\\nMultiple invokations of this method will have their callback functions run in parallel.",
+                    "target": "掛入所有正在執行的範本完成後的時機。大多數情況下只會有一個範本，除非你正在使用 `tp.file.include` 或 `tp.file.create_new`。\\n\\n多次呼叫此方法時，回呼函式會平行執行。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Callback function that will be executed when all actively running templates have finished executing.",
+                    "target": "所有正在執行的範本完成後要執行的回呼函式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Spawns a suggester prompt and returns the user's chosen item.",
+                    "target": "開啟建議選單提示，並回傳使用者選擇的項目。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Spawns a suggester prompt that supports selecting multiple items and returns the user's chosen items.",
+                    "target": "開啟支援多選的建議選單提示，並回傳使用者選擇的項目。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Array containing the values of each item in the correct order.",
+                    "target": "依正確順序包含每個項目值的陣列。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Array of strings representing the text that will be displayed for each item in the suggester prompt. This can also be a function that maps an item to its text representation.",
+                    "target": "字串陣列，代表建議選單中每個項目要顯示的文字。也可以是一個將項目映射為顯示文字的函式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Limit the number of items rendered at once (useful to improve performance when displaying large lists).",
+                    "target": "限制一次呈現的項目數量（顯示大型清單時可改善效能）。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The `RunMode`, representing the way Templater was launched (Create new from template, Append to active file, ...).",
+                    "target": "`RunMode`，表示 Templater 啟動的方式（從範本建立新檔、附加到目前檔案等）。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The `TFile` object representing the target file where the template will be inserted.",
+                    "target": "代表範本將插入之目標檔案的 `TFile` 物件。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The `TFile` object representing the template file.",
+                    "target": "代表範本檔案的 `TFile` 物件。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The active file (if existing) when launching Templater.",
+                    "target": "啟動 Templater 時的目前檔案（如果存在）。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The string contents of the file at the time that Templater was executed. Manipulating this string will *not* update the current file.",
+                    "target": "Templater 執行當下的檔案字串內容。修改此字串*不會*更新目前檔案。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The date referential, e.g. set this to the note's title.",
+                    "target": "日期參照，例如可設為筆記標題。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The format for the date. Defaults to `\"YYYY-MM-DD\"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).",
+                    "target": "日期格式。預設為 `\"YYYY-MM-DD\"`。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The format for the reference date. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).",
+                    "target": "參照日期的格式。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Create new note from template",
+                    "target": "從範本建立新筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "File creation with template",
+                    "target": "使用範本建立檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Open insert template modal",
+                    "target": "開啟插入範本視窗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Replace templates in the active file",
+                    "target": "取代目前檔案中的範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Active editor is null, can't overwrite content",
+                    "target": "目前沒有作用中的編輯器，無法覆寫內容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Active editor is null, can't read selection.",
+                    "target": "目前沒有作用中的編輯器，無法讀取選取內容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "app.vault is not a FileSystemAdapter instance",
+                    "target": "app.vault 不是 FileSystemAdapter 實例"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Couldn't find customOverlayMode, can't enable syntax highlighting.",
+                    "target": "找不到 customOverlayMode，無法啟用語法醒目提示。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Error fetching and extracting value",
+                    "target": "擷取並取出值時發生錯誤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Error generating daily quote",
+                    "target": "產生每日引言時發生錯誤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Error generating random picture",
+                    "target": "產生隨機圖片時發生錯誤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Error performing GET request",
+                    "target": "執行 GET 請求時發生錯誤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "File name cannot contain any of these characters: \\ / :",
+                    "target": "檔名不能包含以下任何字元：\\ / :"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Invalid file format, provide an obsidian link between quotes.",
+                    "target": "檔案格式無效，請在引號中提供 Obsidian 連結。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Invalid reference date format, try specifying one with the argument 'reference_format'",
+                    "target": "參照日期格式無效，請嘗試使用 `reference_format` 引數指定格式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Javascript syntax mode couldn't be found, can't enable syntax highlighting.",
+                    "target": "找不到 JavaScript 語法模式，無法啟用語法醒目提示。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "No active editor, can't append templates.",
+                    "target": "沒有作用中的編輯器，無法附加範本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "No active editor, can't append to cursor.",
+                    "target": "沒有作用中的編輯器，無法附加到游標。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Reached create_new depth limit (max = 10)",
+                    "target": "已達 create_new 深度限制（最大值 = 10）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Reached inclusion depth limit (max = 10)",
+                    "target": "已達 include 深度限制（最大值 = 10）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Unable to enable syntax highlighting. Could not define language.",
+                    "target": "無法啟用語法醒目提示。無法定義語言。"
                 }
             ],
             "regex": [
@@ -1125,7 +1827,7 @@
                 },
                 {
                     "source": "setName(\"Shell binary location\")",
-                    "target": "setName(\"Shell 執行檔位置\")"
+                    "target": "setName(\"Shell 執行檔路徑\")"
                 },
                 {
                     "source": "setPlaceholder(\"Example: /bin/bash, ...\")",
@@ -1710,6 +2412,2766 @@
                 {
                     "source": "text:\"Parameter list:\"",
                     "target": "text:\"參數清單：\""
+                },
+                {
+                    "source": "description:\"Advanced templating and automation using handlebars-like syntax.\"",
+                    "target": "description:\"使用類 Handlebars 語法的進階範本與自動化工具。\""
+                },
+                {
+                    "source": "setName(\"Template folder location\")",
+                    "target": "setName(\"範本資料夾位置\")"
+                },
+                {
+                    "source": "description:\"Template folder location\"",
+                    "target": "description:\"範本資料夾位置\""
+                },
+                {
+                    "source": "description:\"Files in this folder will be available as templates.\"",
+                    "target": "description:\"此資料夾中的檔案可作為範本使用。\""
+                },
+                {
+                    "source": "description:\"Templater provides multiples predefined variables / functions that you can use.\"",
+                    "target": "description:\"Templater 提供多個可使用的預先定義變數／函式。\""
+                },
+                {
+                    "source": "description:\" to get a list of all the available internal variables / functions.\"",
+                    "target": "description:\"以取得所有可用內部變數／函式的清單。\""
+                },
+                {
+                    "source": "description:\"Adds syntax highlighting for Templater commands in edit mode.\"",
+                    "target": "description:\"在編輯模式中為 Templater 命令加入語法醒目提示。\""
+                },
+                {
+                    "source": "description:\"Adds syntax highlighting for Templater commands in edit mode on mobile. Use with caution: this may break live preview on mobile platforms.\"",
+                    "target": "description:\"在行動裝置的編輯模式中為 Templater 命令加入語法醒目提示。請謹慎使用：這可能會破壞行動平台上的即時預覽。\""
+                },
+                {
+                    "source": "description:\"Automatically triggers \"",
+                    "target": "description:\"插入範本後自動觸發\""
+                },
+                {
+                    "source": "description:\" after inserting a template.\"",
+                    "target": "description:\"。\""
+                },
+                {
+                    "source": "description:\"You can also set a hotkey to manually trigger \"",
+                    "target": "description:\"你也可以設定快速鍵來手動觸發\""
+                },
+                {
+                    "source": "setName(\"Trigger Templater on new file creation\")",
+                    "target": "setName(\"建立新檔案時觸發 Templater\")"
+                },
+                {
+                    "source": "description:\"Trigger Templater on new file creation\"",
+                    "target": "description:\"建立新檔案時觸發 Templater\""
+                },
+                {
+                    "source": "description:\"Templater will listen for the new file creation event, and, if it matches a rule you've set, replace every command it finds in the new file's content. \"",
+                    "target": "description:\"Templater 會監聽新檔案建立事件；如果符合你設定的規則，就會取代新檔案內容中找到的每個命令。\""
+                },
+                {
+                    "source": "description:\"This makes Templater compatible with other plugins like the Daily note core plugin, Calendar plugin, Review plugin, Note refactor plugin, etc. \"",
+                    "target": "description:\"這讓 Templater 可與每日筆記核心外掛、Calendar、Review、Note refactor 等外掛相容。\""
+                },
+                {
+                    "source": "description:\"Make sure to set up rules under either folder templates or file regex template below.\"",
+                    "target": "description:\"請確認已在下方的資料夾範本或檔案正規表示式範本中設定規則。\""
+                },
+                {
+                    "source": "description:\"This can be dangerous if you create new files with unknown / unsafe content on creation. Make sure that every new file's content is safe on creation.\"",
+                    "target": "description:\"如果建立新檔案時內容未知或不安全，這可能會有風險。請確認每個新檔案在建立時內容都是安全的。\""
+                },
+                {
+                    "source": "setName(\"Template hotkeys\")",
+                    "target": "setName(\"範本快速鍵\")"
+                },
+                {
+                    "source": "description:\"Template hotkeys allows you to bind a template to a hotkey.\"",
+                    "target": "description:\"範本快速鍵可讓你將範本綁定到快速鍵。\""
+                },
+                {
+                    "source": "setPlaceholder(\"Example: folder1/template_file\")",
+                    "target": "setPlaceholder(\"範例：folder1/template_file\")"
+                },
+                {
+                    "source": "description:\"Example: folder1/template_file\"",
+                    "target": "description:\"範例：folder1/template_file\""
+                },
+                {
+                    "source": "description:\"This template is already bound to a hotkey\"",
+                    "target": "description:\"此範本已綁定快速鍵\""
+                },
+                {
+                    "source": "setTooltip(\"Configure Hotkey\")",
+                    "target": "setTooltip(\"設定快速鍵\")"
+                },
+                {
+                    "source": "setButtonText(\"Add new hotkey for template\")",
+                    "target": "setButtonText(\"新增範本快速鍵\")"
+                },
+                {
+                    "source": "description:\"Add new hotkey for template\"",
+                    "target": "description:\"新增範本快速鍵\""
+                },
+                {
+                    "source": "setName(\"Folder templates\")",
+                    "target": "setName(\"資料夾範本\")"
+                },
+                {
+                    "source": "description:\"Folder templates are triggered when a new \"",
+                    "target": "description:\"當指定資料夾中建立新的\""
+                },
+                {
+                    "source": "description:\"file is created in a given folder.\"",
+                    "target": "description:\"檔案時，會觸發資料夾範本。\""
+                },
+                {
+                    "source": "description:\"Templater will fill the empty file with the specified template.\"",
+                    "target": "description:\"Templater 會使用指定範本填入空白檔案。\""
+                },
+                {
+                    "source": "description:\"The deepest match is used. A global default template would be defined on the root \"",
+                    "target": "description:\"會使用最深層的符合項目。全域預設範本可定義在根目錄\""
+                },
+                {
+                    "source": "setName(\"Enable folder templates\")",
+                    "target": "setName(\"啟用資料夾範本\")"
+                },
+                {
+                    "source": "description:\"Enable folder templates\"",
+                    "target": "description:\"啟用資料夾範本\""
+                },
+                {
+                    "source": "description:\"When enabled, Templater will make use of the folder templates defined below. This option is mutually exclusive with file regex templates below, so enabling one will disable the other.\"",
+                    "target": "description:\"啟用後，Templater 會使用下方定義的資料夾範本。此選項與下方的檔案正規表示式範本互斥，因此啟用其中一個會停用另一個。\""
+                },
+                {
+                    "source": "description:\"This folder already has a template associated with it\"",
+                    "target": "description:\"此資料夾已有關聯範本\""
+                },
+                {
+                    "source": "setButtonText(\"Add new folder template\")",
+                    "target": "setButtonText(\"新增資料夾範本\")"
+                },
+                {
+                    "source": "description:\"Add new folder template\"",
+                    "target": "description:\"新增資料夾範本\""
+                },
+                {
+                    "source": "setTooltip(\"Add additional folder template\")",
+                    "target": "setTooltip(\"新增額外資料夾範本\")"
+                },
+                {
+                    "source": "description:\"Add additional folder template\"",
+                    "target": "description:\"新增額外資料夾範本\""
+                },
+                {
+                    "source": "setName(\"File regex templates\")",
+                    "target": "setName(\"檔案正規表示式範本\")"
+                },
+                {
+                    "source": "description:\"File regex templates are triggered when a new \"",
+                    "target": "description:\"當建立符合其中一條規則的新\""
+                },
+                {
+                    "source": "description:\" file is created that matches one of them. Templater will fill the empty file with the specified template.\"",
+                    "target": "description:\"檔案時，會觸發檔案正規表示式範本。Templater 會使用指定範本填入空白檔案。\""
+                },
+                {
+                    "source": "description:\"The first match from the top is used, so the order of the rules is important.\"",
+                    "target": "description:\"會使用從上到下第一個符合項目，因此規則順序很重要。\""
+                },
+                {
+                    "source": "description:\" as a final catch-all, if you need it.\"",
+                    "target": "description:\"作為最後的全域符合規則（如有需要）。\""
+                },
+                {
+                    "source": "setName(\"Enable file regex templates\")",
+                    "target": "setName(\"啟用檔案正規表示式範本\")"
+                },
+                {
+                    "source": "description:\"Enable file regex templates\"",
+                    "target": "description:\"啟用檔案正規表示式範本\""
+                },
+                {
+                    "source": "description:\"When enabled, Templater will make use of the file regex templates defined below. This option is mutually exclusive with folder templates above, so enabling one will disable the other.\"",
+                    "target": "description:\"啟用後，Templater 會使用下方定義的檔案正規表示式範本。此選項與上方的資料夾範本互斥，因此啟用其中一個會停用另一個。\""
+                },
+                {
+                    "source": "setName(\"Startup templates\")",
+                    "target": "setName(\"啟動範本\")"
+                },
+                {
+                    "source": "description:\"Startup templates are templates that will get executed once when Templater starts.\"",
+                    "target": "description:\"啟動範本會在 Templater 啟動時執行一次。\""
+                },
+                {
+                    "source": "description:\"These templates won't output anything.\"",
+                    "target": "description:\"這些範本不會輸出任何內容。\""
+                },
+                {
+                    "source": "description:\"This can be useful to set up templates adding hooks to Obsidian events for example.\"",
+                    "target": "description:\"這可用於設定會加入 Obsidian 事件 hook 的範本。\""
+                },
+                {
+                    "source": "description:\"This startup template already exist\"",
+                    "target": "description:\"此啟動範本已存在\""
+                },
+                {
+                    "source": "setButtonText(\"Add new startup template\")",
+                    "target": "setButtonText(\"新增啟動範本\")"
+                },
+                {
+                    "source": "description:\"Add new startup template\"",
+                    "target": "description:\"新增啟動範本\""
+                },
+                {
+                    "source": "description:\"All JavaScript files in this folder will be loaded as CommonJS modules, to import custom user functions.\"",
+                    "target": "description:\"此資料夾中的所有 JavaScript 檔案都會作為 CommonJS 模組載入，用於匯入自訂使用者函式。\""
+                },
+                {
+                    "source": "description:\"The folder needs to be accessible from the vault.\"",
+                    "target": "description:\"此資料夾必須可從儲存庫存取。\""
+                },
+                {
+                    "source": "description:\" for more information.\"",
+                    "target": "description:\"以取得更多資訊。\""
+                },
+                {
+                    "source": "description:\"No user scripts folder set\"",
+                    "target": "description:\"未設定使用者指令碼資料夾\""
+                },
+                {
+                    "source": "description:\"User scripts folder doesn't exist\"",
+                    "target": "description:\"使用者指令碼資料夾不存在\""
+                },
+                {
+                    "source": "description:\"No user scripts detected\"",
+                    "target": "description:\"未偵測到使用者指令碼\""
+                },
+                {
+                    "source": "setName(\"User system command functions\")",
+                    "target": "setName(\"使用者系統命令函式\")"
+                },
+                {
+                    "source": "description:\"User system command functions\"",
+                    "target": "description:\"使用者系統命令函式\""
+                },
+                {
+                    "source": "setName(\"Enable user system command functions\")",
+                    "target": "setName(\"啟用使用者系統命令函式\")"
+                },
+                {
+                    "source": "description:\"Enable user system command functions\"",
+                    "target": "description:\"啟用使用者系統命令函式\""
+                },
+                {
+                    "source": "description:\"Allows you to create user functions linked to system commands.\"",
+                    "target": "description:\"允許你建立連結到系統命令的使用者函式。\""
+                },
+                {
+                    "source": "description:\"It can be dangerous to execute arbitrary system commands from untrusted sources. Only run system commands that you understand, from trusted sources.\"",
+                    "target": "description:\"執行來自不受信任來源的任意系統命令可能很危險。只執行你了解且來自可信來源的系統命令。\""
+                },
+                {
+                    "source": "description:\"Maximum timeout in seconds for a system command.\"",
+                    "target": "description:\"系統命令的最大逾時秒數。\""
+                },
+                {
+                    "source": "description:\"Timeout must be a number\"",
+                    "target": "description:\"逾時必須是數字\""
+                },
+                {
+                    "source": "description:\"Full path to the shell binary to execute the command with.\"",
+                    "target": "description:\"用來執行命令的 shell 執行檔完整路徑。\""
+                },
+                {
+                    "source": "description:\"This setting is optional and will default to the system's default shell if not specified.\"",
+                    "target": "description:\"此設定為選用；若未指定，會使用系統預設 shell。\""
+                },
+                {
+                    "source": "description:\"You can use forward slashes ('/') as path separators on all platforms if in doubt.\"",
+                    "target": "description:\"不確定時，可以在所有平台上使用正斜線（'/'）作為路徑分隔符。\""
+                },
+                {
+                    "source": "setName(\"Shell 執行檔位置\")",
+                    "target": "setName(\"Shell 執行檔路徑\")"
+                },
+                {
+                    "source": "setPlaceholder(\"System command\")",
+                    "target": "setPlaceholder(\"系統命令\")"
+                },
+                {
+                    "source": "setName(\"Donate\")",
+                    "target": "setName(\"贊助\")"
+                },
+                {
+                    "source": "description:\"If you like this Plugin, consider donating to support continued development.\"",
+                    "target": "description:\"如果你喜歡這個外掛，可以考慮捐款支持持續開發。\""
+                },
+                {
+                    "source": "description:\"Creates a new file using a specified template or with a specified content.\"",
+                    "target": "description:\"使用指定範本或指定內容建立新檔案。\""
+                },
+                {
+                    "source": "description:\"Either the template used for the new file content, or the file content as a string. If it is the template to use, you retrieve it with `tp.file.find_tfile(TEMPLATENAME)`.\"",
+                    "target": "description:\"新檔案內容要使用的範本，或作為字串的檔案內容。如果要使用範本，可用 `tp.file.find_tfile(TEMPLATENAME)` 取得。\""
+                },
+                {
+                    "source": "description:\"Retrieves the file's creation date.\"",
+                    "target": "description:\"取得檔案建立日期。\""
+                },
+                {
+                    "source": "description:\"Includes the file's link content. Templates in the included content will be resolved.\"",
+                    "target": "description:\"包含檔案連結的內容。被包含內容中的範本會一併解析。\""
+                },
+                {
+                    "source": "description:\"Retrieves the file's absolute path on the system.\"",
+                    "target": "description:\"取得檔案在系統上的絕對路徑。\""
+                },
+                {
+                    "source": "description:\"This module exposes hooks that allow you to execute code when a Templater event occurs.\"",
+                    "target": "description:\"此模組公開 hook，讓你可以在 Templater 事件發生時執行程式碼。\""
+                },
+                {
+                    "source": "description:\"This module contains system related functions.\"",
+                    "target": "description:\"此模組包含系統相關函式。\""
+                },
+                {
+                    "source": "description:\"Hooks into when all actively running templates have finished executing. Most of the time this will be a single template, unless you are using `tp.file.include` or `tp.file.create_new`.\\\\n\\\\nMultiple invokations of this method will have their callback functions run in parallel.\"",
+                    "target": "description:\"掛入所有正在執行的範本完成後的時機。大多數情況下只會有一個範本，除非你正在使用 `tp.file.include` 或 `tp.file.create_new`。\\\\n\\\\n多次呼叫此方法時，回呼函式會平行執行。\""
+                },
+                {
+                    "source": "description:\"Callback function that will be executed when all actively running templates have finished executing.\"",
+                    "target": "description:\"所有正在執行的範本完成後要執行的回呼函式。\""
+                },
+                {
+                    "source": "description:\"Spawns a suggester prompt and returns the user's chosen item.\"",
+                    "target": "description:\"開啟建議選單提示，並回傳使用者選擇的項目。\""
+                },
+                {
+                    "source": "description:\"Spawns a suggester prompt that supports selecting multiple items and returns the user's chosen items.\"",
+                    "target": "description:\"開啟支援多選的建議選單提示，並回傳使用者選擇的項目。\""
+                },
+                {
+                    "source": "description:\"Array containing the values of each item in the correct order.\"",
+                    "target": "description:\"依正確順序包含每個項目值的陣列。\""
+                },
+                {
+                    "source": "description:\"Array of strings representing the text that will be displayed for each item in the suggester prompt. This can also be a function that maps an item to its text representation.\"",
+                    "target": "description:\"字串陣列，代表建議選單中每個項目要顯示的文字。也可以是一個將項目映射為顯示文字的函式。\""
+                },
+                {
+                    "source": "description:\"Limit the number of items rendered at once (useful to improve performance when displaying large lists).\"",
+                    "target": "description:\"限制一次呈現的項目數量（顯示大型清單時可改善效能）。\""
+                },
+                {
+                    "source": "description:\"The `RunMode`, representing the way Templater was launched (Create new from template, Append to active file, ...).\"",
+                    "target": "description:\"`RunMode`，表示 Templater 啟動的方式（從範本建立新檔、附加到目前檔案等）。\""
+                },
+                {
+                    "source": "description:\"The `TFile` object representing the target file where the template will be inserted.\"",
+                    "target": "description:\"代表範本將插入之目標檔案的 `TFile` 物件。\""
+                },
+                {
+                    "source": "description:\"The `TFile` object representing the template file.\"",
+                    "target": "description:\"代表範本檔案的 `TFile` 物件。\""
+                },
+                {
+                    "source": "description:\"The active file (if existing) when launching Templater.\"",
+                    "target": "description:\"啟動 Templater 時的目前檔案（如果存在）。\""
+                },
+                {
+                    "source": "description:\"The string contents of the file at the time that Templater was executed. Manipulating this string will *not* update the current file.\"",
+                    "target": "description:\"Templater 執行當下的檔案字串內容。修改此字串*不會*更新目前檔案。\""
+                },
+                {
+                    "source": "description:\"The date referential, e.g. set this to the note's title.\"",
+                    "target": "description:\"日期參照，例如可設為筆記標題。\""
+                },
+                {
+                    "source": "description:\"The format for the date. Defaults to `\\\"YYYY-MM-DD\\\"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\"",
+                    "target": "description:\"日期格式。預設為 `\\\"YYYY-MM-DD\\\"`。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\""
+                },
+                {
+                    "source": "description:\"The format for the reference date. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\"",
+                    "target": "description:\"參照日期的格式。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\""
+                },
+                {
+                    "source": "description:\"Create new note from template\"",
+                    "target": "description:\"從範本建立新筆記\""
+                },
+                {
+                    "source": "description:\"File creation with template\"",
+                    "target": "description:\"使用範本建立檔案\""
+                },
+                {
+                    "source": "description:\"Open insert template modal\"",
+                    "target": "description:\"開啟插入範本視窗\""
+                },
+                {
+                    "source": "description:\"Replace templates in the active file\"",
+                    "target": "description:\"取代目前檔案中的範本\""
+                },
+                {
+                    "source": "description:\"Active editor is null, can't overwrite content\"",
+                    "target": "description:\"目前沒有作用中的編輯器，無法覆寫內容\""
+                },
+                {
+                    "source": "description:\"Active editor is null, can't read selection.\"",
+                    "target": "description:\"目前沒有作用中的編輯器，無法讀取選取內容。\""
+                },
+                {
+                    "source": "description:\"app.vault is not a FileSystemAdapter instance\"",
+                    "target": "description:\"app.vault 不是 FileSystemAdapter 實例\""
+                },
+                {
+                    "source": "description:\"Couldn't find customOverlayMode, can't enable syntax highlighting.\"",
+                    "target": "description:\"找不到 customOverlayMode，無法啟用語法醒目提示。\""
+                },
+                {
+                    "source": "description:\"Error fetching and extracting value\"",
+                    "target": "description:\"擷取並取出值時發生錯誤\""
+                },
+                {
+                    "source": "description:\"Error generating daily quote\"",
+                    "target": "description:\"產生每日引言時發生錯誤\""
+                },
+                {
+                    "source": "description:\"Error generating random picture\"",
+                    "target": "description:\"產生隨機圖片時發生錯誤\""
+                },
+                {
+                    "source": "description:\"Error performing GET request\"",
+                    "target": "description:\"執行 GET 請求時發生錯誤\""
+                },
+                {
+                    "source": "description:\"File name cannot contain any of these characters: \\\\ / :\"",
+                    "target": "description:\"檔名不能包含以下任何字元：\\\\ / :\""
+                },
+                {
+                    "source": "description:\"Invalid file format, provide an obsidian link between quotes.\"",
+                    "target": "description:\"檔案格式無效，請在引號中提供 Obsidian 連結。\""
+                },
+                {
+                    "source": "description:\"Invalid reference date format, try specifying one with the argument 'reference_format'\"",
+                    "target": "description:\"參照日期格式無效，請嘗試使用 `reference_format` 引數指定格式\""
+                },
+                {
+                    "source": "description:\"Javascript syntax mode couldn't be found, can't enable syntax highlighting.\"",
+                    "target": "description:\"找不到 JavaScript 語法模式，無法啟用語法醒目提示。\""
+                },
+                {
+                    "source": "description:\"No active editor, can't append templates.\"",
+                    "target": "description:\"沒有作用中的編輯器，無法附加範本。\""
+                },
+                {
+                    "source": "description:\"No active editor, can't append to cursor.\"",
+                    "target": "description:\"沒有作用中的編輯器，無法附加到游標。\""
+                },
+                {
+                    "source": "description:\"Reached create_new depth limit (max = 10)\"",
+                    "target": "description:\"已達 create_new 深度限制（最大值 = 10）\""
+                },
+                {
+                    "source": "description:\"Reached inclusion depth limit (max = 10)\"",
+                    "target": "description:\"已達 include 深度限制（最大值 = 10）\""
+                },
+                {
+                    "source": "description:\"Unable to enable syntax highlighting. Could not define language.\"",
+                    "target": "description:\"無法啟用語法醒目提示。無法定義語言。\""
+                },
+                {
+                    "source": "setName(\"Advanced templating and automation using handlebars-like syntax.\")",
+                    "target": "setName(\"使用類 Handlebars 語法的進階範本與自動化工具。\")"
+                },
+                {
+                    "source": "setDesc(\"Advanced templating and automation using handlebars-like syntax.\")",
+                    "target": "setDesc(\"使用類 Handlebars 語法的進階範本與自動化工具。\")"
+                },
+                {
+                    "source": "setButtonText(\"Advanced templating and automation using handlebars-like syntax.\")",
+                    "target": "setButtonText(\"使用類 Handlebars 語法的進階範本與自動化工具。\")"
+                },
+                {
+                    "source": "setTooltip(\"Advanced templating and automation using handlebars-like syntax.\")",
+                    "target": "setTooltip(\"使用類 Handlebars 語法的進階範本與自動化工具。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Advanced templating and automation using handlebars-like syntax.\")",
+                    "target": "setPlaceholder(\"使用類 Handlebars 語法的進階範本與自動化工具。\")"
+                },
+                {
+                    "source": "setDesc(\"Template folder location\")",
+                    "target": "setDesc(\"範本資料夾位置\")"
+                },
+                {
+                    "source": "setButtonText(\"Template folder location\")",
+                    "target": "setButtonText(\"範本資料夾位置\")"
+                },
+                {
+                    "source": "setTooltip(\"Template folder location\")",
+                    "target": "setTooltip(\"範本資料夾位置\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Template folder location\")",
+                    "target": "setPlaceholder(\"範本資料夾位置\")"
+                },
+                {
+                    "source": "setName(\"Files in this folder will be available as templates.\")",
+                    "target": "setName(\"此資料夾中的檔案可作為範本使用。\")"
+                },
+                {
+                    "source": "setDesc(\"Files in this folder will be available as templates.\")",
+                    "target": "setDesc(\"此資料夾中的檔案可作為範本使用。\")"
+                },
+                {
+                    "source": "setButtonText(\"Files in this folder will be available as templates.\")",
+                    "target": "setButtonText(\"此資料夾中的檔案可作為範本使用。\")"
+                },
+                {
+                    "source": "setTooltip(\"Files in this folder will be available as templates.\")",
+                    "target": "setTooltip(\"此資料夾中的檔案可作為範本使用。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Files in this folder will be available as templates.\")",
+                    "target": "setPlaceholder(\"此資料夾中的檔案可作為範本使用。\")"
+                },
+                {
+                    "source": "setName(\"Templater provides multiples predefined variables / functions that you can use.\")",
+                    "target": "setName(\"Templater 提供多個可使用的預先定義變數／函式。\")"
+                },
+                {
+                    "source": "setDesc(\"Templater provides multiples predefined variables / functions that you can use.\")",
+                    "target": "setDesc(\"Templater 提供多個可使用的預先定義變數／函式。\")"
+                },
+                {
+                    "source": "setButtonText(\"Templater provides multiples predefined variables / functions that you can use.\")",
+                    "target": "setButtonText(\"Templater 提供多個可使用的預先定義變數／函式。\")"
+                },
+                {
+                    "source": "setTooltip(\"Templater provides multiples predefined variables / functions that you can use.\")",
+                    "target": "setTooltip(\"Templater 提供多個可使用的預先定義變數／函式。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Templater provides multiples predefined variables / functions that you can use.\")",
+                    "target": "setPlaceholder(\"Templater 提供多個可使用的預先定義變數／函式。\")"
+                },
+                {
+                    "source": "setName(\"Check the \")",
+                    "target": "setName(\"請查看\")"
+                },
+                {
+                    "source": "setDesc(\"Check the \")",
+                    "target": "setDesc(\"請查看\")"
+                },
+                {
+                    "source": "setButtonText(\"Check the \")",
+                    "target": "setButtonText(\"請查看\")"
+                },
+                {
+                    "source": "setTooltip(\"Check the \")",
+                    "target": "setTooltip(\"請查看\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Check the \")",
+                    "target": "setPlaceholder(\"請查看\")"
+                },
+                {
+                    "source": "setName(\"documentation\")",
+                    "target": "setName(\"文件\")"
+                },
+                {
+                    "source": "setDesc(\"documentation\")",
+                    "target": "setDesc(\"文件\")"
+                },
+                {
+                    "source": "setButtonText(\"documentation\")",
+                    "target": "setButtonText(\"文件\")"
+                },
+                {
+                    "source": "setTooltip(\"documentation\")",
+                    "target": "setTooltip(\"文件\")"
+                },
+                {
+                    "source": "setPlaceholder(\"documentation\")",
+                    "target": "setPlaceholder(\"文件\")"
+                },
+                {
+                    "source": "setName(\" to get a list of all the available internal variables / functions.\")",
+                    "target": "setName(\"以取得所有可用內部變數／函式的清單。\")"
+                },
+                {
+                    "source": "setDesc(\" to get a list of all the available internal variables / functions.\")",
+                    "target": "setDesc(\"以取得所有可用內部變數／函式的清單。\")"
+                },
+                {
+                    "source": "setButtonText(\" to get a list of all the available internal variables / functions.\")",
+                    "target": "setButtonText(\"以取得所有可用內部變數／函式的清單。\")"
+                },
+                {
+                    "source": "setTooltip(\" to get a list of all the available internal variables / functions.\")",
+                    "target": "setTooltip(\"以取得所有可用內部變數／函式的清單。\")"
+                },
+                {
+                    "source": "setPlaceholder(\" to get a list of all the available internal variables / functions.\")",
+                    "target": "setPlaceholder(\"以取得所有可用內部變數／函式的清單。\")"
+                },
+                {
+                    "source": "setName(\"Adds syntax highlighting for Templater commands in edit mode.\")",
+                    "target": "setName(\"在編輯模式中為 Templater 命令加入語法醒目提示。\")"
+                },
+                {
+                    "source": "setDesc(\"Adds syntax highlighting for Templater commands in edit mode.\")",
+                    "target": "setDesc(\"在編輯模式中為 Templater 命令加入語法醒目提示。\")"
+                },
+                {
+                    "source": "setButtonText(\"Adds syntax highlighting for Templater commands in edit mode.\")",
+                    "target": "setButtonText(\"在編輯模式中為 Templater 命令加入語法醒目提示。\")"
+                },
+                {
+                    "source": "setTooltip(\"Adds syntax highlighting for Templater commands in edit mode.\")",
+                    "target": "setTooltip(\"在編輯模式中為 Templater 命令加入語法醒目提示。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Adds syntax highlighting for Templater commands in edit mode.\")",
+                    "target": "setPlaceholder(\"在編輯模式中為 Templater 命令加入語法醒目提示。\")"
+                },
+                {
+                    "source": "setName(\"Adds syntax highlighting for Templater commands in edit mode on mobile. Use with caution: this may break live preview on mobile platforms.\")",
+                    "target": "setName(\"在行動裝置的編輯模式中為 Templater 命令加入語法醒目提示。請謹慎使用：這可能會破壞行動平台上的即時預覽。\")"
+                },
+                {
+                    "source": "setDesc(\"Adds syntax highlighting for Templater commands in edit mode on mobile. Use with caution: this may break live preview on mobile platforms.\")",
+                    "target": "setDesc(\"在行動裝置的編輯模式中為 Templater 命令加入語法醒目提示。請謹慎使用：這可能會破壞行動平台上的即時預覽。\")"
+                },
+                {
+                    "source": "setButtonText(\"Adds syntax highlighting for Templater commands in edit mode on mobile. Use with caution: this may break live preview on mobile platforms.\")",
+                    "target": "setButtonText(\"在行動裝置的編輯模式中為 Templater 命令加入語法醒目提示。請謹慎使用：這可能會破壞行動平台上的即時預覽。\")"
+                },
+                {
+                    "source": "setTooltip(\"Adds syntax highlighting for Templater commands in edit mode on mobile. Use with caution: this may break live preview on mobile platforms.\")",
+                    "target": "setTooltip(\"在行動裝置的編輯模式中為 Templater 命令加入語法醒目提示。請謹慎使用：這可能會破壞行動平台上的即時預覽。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Adds syntax highlighting for Templater commands in edit mode on mobile. Use with caution: this may break live preview on mobile platforms.\")",
+                    "target": "setPlaceholder(\"在行動裝置的編輯模式中為 Templater 命令加入語法醒目提示。請謹慎使用：這可能會破壞行動平台上的即時預覽。\")"
+                },
+                {
+                    "source": "setName(\"Automatically triggers \")",
+                    "target": "setName(\"插入範本後自動觸發\")"
+                },
+                {
+                    "source": "setDesc(\"Automatically triggers \")",
+                    "target": "setDesc(\"插入範本後自動觸發\")"
+                },
+                {
+                    "source": "setButtonText(\"Automatically triggers \")",
+                    "target": "setButtonText(\"插入範本後自動觸發\")"
+                },
+                {
+                    "source": "setTooltip(\"Automatically triggers \")",
+                    "target": "setTooltip(\"插入範本後自動觸發\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Automatically triggers \")",
+                    "target": "setPlaceholder(\"插入範本後自動觸發\")"
+                },
+                {
+                    "source": "setName(\" after inserting a template.\")",
+                    "target": "setName(\"。\")"
+                },
+                {
+                    "source": "setDesc(\" after inserting a template.\")",
+                    "target": "setDesc(\"。\")"
+                },
+                {
+                    "source": "setButtonText(\" after inserting a template.\")",
+                    "target": "setButtonText(\"。\")"
+                },
+                {
+                    "source": "setTooltip(\" after inserting a template.\")",
+                    "target": "setTooltip(\"。\")"
+                },
+                {
+                    "source": "setPlaceholder(\" after inserting a template.\")",
+                    "target": "setPlaceholder(\"。\")"
+                },
+                {
+                    "source": "setName(\"You can also set a hotkey to manually trigger \")",
+                    "target": "setName(\"你也可以設定快速鍵來手動觸發\")"
+                },
+                {
+                    "source": "setDesc(\"You can also set a hotkey to manually trigger \")",
+                    "target": "setDesc(\"你也可以設定快速鍵來手動觸發\")"
+                },
+                {
+                    "source": "setButtonText(\"You can also set a hotkey to manually trigger \")",
+                    "target": "setButtonText(\"你也可以設定快速鍵來手動觸發\")"
+                },
+                {
+                    "source": "setTooltip(\"You can also set a hotkey to manually trigger \")",
+                    "target": "setTooltip(\"你也可以設定快速鍵來手動觸發\")"
+                },
+                {
+                    "source": "setPlaceholder(\"You can also set a hotkey to manually trigger \")",
+                    "target": "setPlaceholder(\"你也可以設定快速鍵來手動觸發\")"
+                },
+                {
+                    "source": "setDesc(\"Trigger Templater on new file creation\")",
+                    "target": "setDesc(\"建立新檔案時觸發 Templater\")"
+                },
+                {
+                    "source": "setButtonText(\"Trigger Templater on new file creation\")",
+                    "target": "setButtonText(\"建立新檔案時觸發 Templater\")"
+                },
+                {
+                    "source": "setTooltip(\"Trigger Templater on new file creation\")",
+                    "target": "setTooltip(\"建立新檔案時觸發 Templater\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Trigger Templater on new file creation\")",
+                    "target": "setPlaceholder(\"建立新檔案時觸發 Templater\")"
+                },
+                {
+                    "source": "setName(\"Templater will listen for the new file creation event, and, if it matches a rule you've set, replace every command it finds in the new file's content. \")",
+                    "target": "setName(\"Templater 會監聽新檔案建立事件；如果符合你設定的規則，就會取代新檔案內容中找到的每個命令。\")"
+                },
+                {
+                    "source": "setDesc(\"Templater will listen for the new file creation event, and, if it matches a rule you've set, replace every command it finds in the new file's content. \")",
+                    "target": "setDesc(\"Templater 會監聽新檔案建立事件；如果符合你設定的規則，就會取代新檔案內容中找到的每個命令。\")"
+                },
+                {
+                    "source": "setButtonText(\"Templater will listen for the new file creation event, and, if it matches a rule you've set, replace every command it finds in the new file's content. \")",
+                    "target": "setButtonText(\"Templater 會監聽新檔案建立事件；如果符合你設定的規則，就會取代新檔案內容中找到的每個命令。\")"
+                },
+                {
+                    "source": "setTooltip(\"Templater will listen for the new file creation event, and, if it matches a rule you've set, replace every command it finds in the new file's content. \")",
+                    "target": "setTooltip(\"Templater 會監聽新檔案建立事件；如果符合你設定的規則，就會取代新檔案內容中找到的每個命令。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Templater will listen for the new file creation event, and, if it matches a rule you've set, replace every command it finds in the new file's content. \")",
+                    "target": "setPlaceholder(\"Templater 會監聽新檔案建立事件；如果符合你設定的規則，就會取代新檔案內容中找到的每個命令。\")"
+                },
+                {
+                    "source": "setName(\"This makes Templater compatible with other plugins like the Daily note core plugin, Calendar plugin, Review plugin, Note refactor plugin, etc. \")",
+                    "target": "setName(\"這讓 Templater 可與每日筆記核心外掛、Calendar、Review、Note refactor 等外掛相容。\")"
+                },
+                {
+                    "source": "setDesc(\"This makes Templater compatible with other plugins like the Daily note core plugin, Calendar plugin, Review plugin, Note refactor plugin, etc. \")",
+                    "target": "setDesc(\"這讓 Templater 可與每日筆記核心外掛、Calendar、Review、Note refactor 等外掛相容。\")"
+                },
+                {
+                    "source": "setButtonText(\"This makes Templater compatible with other plugins like the Daily note core plugin, Calendar plugin, Review plugin, Note refactor plugin, etc. \")",
+                    "target": "setButtonText(\"這讓 Templater 可與每日筆記核心外掛、Calendar、Review、Note refactor 等外掛相容。\")"
+                },
+                {
+                    "source": "setTooltip(\"This makes Templater compatible with other plugins like the Daily note core plugin, Calendar plugin, Review plugin, Note refactor plugin, etc. \")",
+                    "target": "setTooltip(\"這讓 Templater 可與每日筆記核心外掛、Calendar、Review、Note refactor 等外掛相容。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"This makes Templater compatible with other plugins like the Daily note core plugin, Calendar plugin, Review plugin, Note refactor plugin, etc. \")",
+                    "target": "setPlaceholder(\"這讓 Templater 可與每日筆記核心外掛、Calendar、Review、Note refactor 等外掛相容。\")"
+                },
+                {
+                    "source": "setName(\"Make sure to set up rules under either folder templates or file regex template below.\")",
+                    "target": "setName(\"請確認已在下方的資料夾範本或檔案正規表示式範本中設定規則。\")"
+                },
+                {
+                    "source": "setDesc(\"Make sure to set up rules under either folder templates or file regex template below.\")",
+                    "target": "setDesc(\"請確認已在下方的資料夾範本或檔案正規表示式範本中設定規則。\")"
+                },
+                {
+                    "source": "setButtonText(\"Make sure to set up rules under either folder templates or file regex template below.\")",
+                    "target": "setButtonText(\"請確認已在下方的資料夾範本或檔案正規表示式範本中設定規則。\")"
+                },
+                {
+                    "source": "setTooltip(\"Make sure to set up rules under either folder templates or file regex template below.\")",
+                    "target": "setTooltip(\"請確認已在下方的資料夾範本或檔案正規表示式範本中設定規則。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Make sure to set up rules under either folder templates or file regex template below.\")",
+                    "target": "setPlaceholder(\"請確認已在下方的資料夾範本或檔案正規表示式範本中設定規則。\")"
+                },
+                {
+                    "source": "setName(\"This can be dangerous if you create new files with unknown / unsafe content on creation. Make sure that every new file's content is safe on creation.\")",
+                    "target": "setName(\"如果建立新檔案時內容未知或不安全，這可能會有風險。請確認每個新檔案在建立時內容都是安全的。\")"
+                },
+                {
+                    "source": "setDesc(\"This can be dangerous if you create new files with unknown / unsafe content on creation. Make sure that every new file's content is safe on creation.\")",
+                    "target": "setDesc(\"如果建立新檔案時內容未知或不安全，這可能會有風險。請確認每個新檔案在建立時內容都是安全的。\")"
+                },
+                {
+                    "source": "setButtonText(\"This can be dangerous if you create new files with unknown / unsafe content on creation. Make sure that every new file's content is safe on creation.\")",
+                    "target": "setButtonText(\"如果建立新檔案時內容未知或不安全，這可能會有風險。請確認每個新檔案在建立時內容都是安全的。\")"
+                },
+                {
+                    "source": "setTooltip(\"This can be dangerous if you create new files with unknown / unsafe content on creation. Make sure that every new file's content is safe on creation.\")",
+                    "target": "setTooltip(\"如果建立新檔案時內容未知或不安全，這可能會有風險。請確認每個新檔案在建立時內容都是安全的。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"This can be dangerous if you create new files with unknown / unsafe content on creation. Make sure that every new file's content is safe on creation.\")",
+                    "target": "setPlaceholder(\"如果建立新檔案時內容未知或不安全，這可能會有風險。請確認每個新檔案在建立時內容都是安全的。\")"
+                },
+                {
+                    "source": "setDesc(\"Template hotkeys\")",
+                    "target": "setDesc(\"範本快速鍵\")"
+                },
+                {
+                    "source": "setButtonText(\"Template hotkeys\")",
+                    "target": "setButtonText(\"範本快速鍵\")"
+                },
+                {
+                    "source": "setTooltip(\"Template hotkeys\")",
+                    "target": "setTooltip(\"範本快速鍵\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Template hotkeys\")",
+                    "target": "setPlaceholder(\"範本快速鍵\")"
+                },
+                {
+                    "source": "setName(\"Template hotkeys allows you to bind a template to a hotkey.\")",
+                    "target": "setName(\"範本快速鍵可讓你將範本綁定到快速鍵。\")"
+                },
+                {
+                    "source": "setDesc(\"Template hotkeys allows you to bind a template to a hotkey.\")",
+                    "target": "setDesc(\"範本快速鍵可讓你將範本綁定到快速鍵。\")"
+                },
+                {
+                    "source": "setButtonText(\"Template hotkeys allows you to bind a template to a hotkey.\")",
+                    "target": "setButtonText(\"範本快速鍵可讓你將範本綁定到快速鍵。\")"
+                },
+                {
+                    "source": "setTooltip(\"Template hotkeys allows you to bind a template to a hotkey.\")",
+                    "target": "setTooltip(\"範本快速鍵可讓你將範本綁定到快速鍵。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Template hotkeys allows you to bind a template to a hotkey.\")",
+                    "target": "setPlaceholder(\"範本快速鍵可讓你將範本綁定到快速鍵。\")"
+                },
+                {
+                    "source": "setName(\"Example: folder1/template_file\")",
+                    "target": "setName(\"範例：folder1/template_file\")"
+                },
+                {
+                    "source": "setDesc(\"Example: folder1/template_file\")",
+                    "target": "setDesc(\"範例：folder1/template_file\")"
+                },
+                {
+                    "source": "setButtonText(\"Example: folder1/template_file\")",
+                    "target": "setButtonText(\"範例：folder1/template_file\")"
+                },
+                {
+                    "source": "setTooltip(\"Example: folder1/template_file\")",
+                    "target": "setTooltip(\"範例：folder1/template_file\")"
+                },
+                {
+                    "source": "setName(\"This template is already bound to a hotkey\")",
+                    "target": "setName(\"此範本已綁定快速鍵\")"
+                },
+                {
+                    "source": "setDesc(\"This template is already bound to a hotkey\")",
+                    "target": "setDesc(\"此範本已綁定快速鍵\")"
+                },
+                {
+                    "source": "setButtonText(\"This template is already bound to a hotkey\")",
+                    "target": "setButtonText(\"此範本已綁定快速鍵\")"
+                },
+                {
+                    "source": "setTooltip(\"This template is already bound to a hotkey\")",
+                    "target": "setTooltip(\"此範本已綁定快速鍵\")"
+                },
+                {
+                    "source": "setPlaceholder(\"This template is already bound to a hotkey\")",
+                    "target": "setPlaceholder(\"此範本已綁定快速鍵\")"
+                },
+                {
+                    "source": "setName(\"Configure Hotkey\")",
+                    "target": "setName(\"設定快速鍵\")"
+                },
+                {
+                    "source": "setDesc(\"Configure Hotkey\")",
+                    "target": "setDesc(\"設定快速鍵\")"
+                },
+                {
+                    "source": "setButtonText(\"Configure Hotkey\")",
+                    "target": "setButtonText(\"設定快速鍵\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Configure Hotkey\")",
+                    "target": "setPlaceholder(\"設定快速鍵\")"
+                },
+                {
+                    "source": "setName(\"Add new hotkey for template\")",
+                    "target": "setName(\"新增範本快速鍵\")"
+                },
+                {
+                    "source": "setDesc(\"Add new hotkey for template\")",
+                    "target": "setDesc(\"新增範本快速鍵\")"
+                },
+                {
+                    "source": "setTooltip(\"Add new hotkey for template\")",
+                    "target": "setTooltip(\"新增範本快速鍵\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Add new hotkey for template\")",
+                    "target": "setPlaceholder(\"新增範本快速鍵\")"
+                },
+                {
+                    "source": "setDesc(\"Folder templates\")",
+                    "target": "setDesc(\"資料夾範本\")"
+                },
+                {
+                    "source": "setButtonText(\"Folder templates\")",
+                    "target": "setButtonText(\"資料夾範本\")"
+                },
+                {
+                    "source": "setTooltip(\"Folder templates\")",
+                    "target": "setTooltip(\"資料夾範本\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Folder templates\")",
+                    "target": "setPlaceholder(\"資料夾範本\")"
+                },
+                {
+                    "source": "setName(\"Folder templates are triggered when a new \")",
+                    "target": "setName(\"當指定資料夾中建立新的\")"
+                },
+                {
+                    "source": "setDesc(\"Folder templates are triggered when a new \")",
+                    "target": "setDesc(\"當指定資料夾中建立新的\")"
+                },
+                {
+                    "source": "setButtonText(\"Folder templates are triggered when a new \")",
+                    "target": "setButtonText(\"當指定資料夾中建立新的\")"
+                },
+                {
+                    "source": "setTooltip(\"Folder templates are triggered when a new \")",
+                    "target": "setTooltip(\"當指定資料夾中建立新的\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Folder templates are triggered when a new \")",
+                    "target": "setPlaceholder(\"當指定資料夾中建立新的\")"
+                },
+                {
+                    "source": "setName(\"empty \")",
+                    "target": "setName(\"空白\")"
+                },
+                {
+                    "source": "setDesc(\"empty \")",
+                    "target": "setDesc(\"空白\")"
+                },
+                {
+                    "source": "setButtonText(\"empty \")",
+                    "target": "setButtonText(\"空白\")"
+                },
+                {
+                    "source": "setTooltip(\"empty \")",
+                    "target": "setTooltip(\"空白\")"
+                },
+                {
+                    "source": "setPlaceholder(\"empty \")",
+                    "target": "setPlaceholder(\"空白\")"
+                },
+                {
+                    "source": "setName(\"file is created in a given folder.\")",
+                    "target": "setName(\"檔案時，會觸發資料夾範本。\")"
+                },
+                {
+                    "source": "setDesc(\"file is created in a given folder.\")",
+                    "target": "setDesc(\"檔案時，會觸發資料夾範本。\")"
+                },
+                {
+                    "source": "setButtonText(\"file is created in a given folder.\")",
+                    "target": "setButtonText(\"檔案時，會觸發資料夾範本。\")"
+                },
+                {
+                    "source": "setTooltip(\"file is created in a given folder.\")",
+                    "target": "setTooltip(\"檔案時，會觸發資料夾範本。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"file is created in a given folder.\")",
+                    "target": "setPlaceholder(\"檔案時，會觸發資料夾範本。\")"
+                },
+                {
+                    "source": "setName(\"Templater will fill the empty file with the specified template.\")",
+                    "target": "setName(\"Templater 會使用指定範本填入空白檔案。\")"
+                },
+                {
+                    "source": "setDesc(\"Templater will fill the empty file with the specified template.\")",
+                    "target": "setDesc(\"Templater 會使用指定範本填入空白檔案。\")"
+                },
+                {
+                    "source": "setButtonText(\"Templater will fill the empty file with the specified template.\")",
+                    "target": "setButtonText(\"Templater 會使用指定範本填入空白檔案。\")"
+                },
+                {
+                    "source": "setTooltip(\"Templater will fill the empty file with the specified template.\")",
+                    "target": "setTooltip(\"Templater 會使用指定範本填入空白檔案。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Templater will fill the empty file with the specified template.\")",
+                    "target": "setPlaceholder(\"Templater 會使用指定範本填入空白檔案。\")"
+                },
+                {
+                    "source": "setName(\"The deepest match is used. A global default template would be defined on the root \")",
+                    "target": "setName(\"會使用最深層的符合項目。全域預設範本可定義在根目錄\")"
+                },
+                {
+                    "source": "setDesc(\"The deepest match is used. A global default template would be defined on the root \")",
+                    "target": "setDesc(\"會使用最深層的符合項目。全域預設範本可定義在根目錄\")"
+                },
+                {
+                    "source": "setButtonText(\"The deepest match is used. A global default template would be defined on the root \")",
+                    "target": "setButtonText(\"會使用最深層的符合項目。全域預設範本可定義在根目錄\")"
+                },
+                {
+                    "source": "setTooltip(\"The deepest match is used. A global default template would be defined on the root \")",
+                    "target": "setTooltip(\"會使用最深層的符合項目。全域預設範本可定義在根目錄\")"
+                },
+                {
+                    "source": "setPlaceholder(\"The deepest match is used. A global default template would be defined on the root \")",
+                    "target": "setPlaceholder(\"會使用最深層的符合項目。全域預設範本可定義在根目錄\")"
+                },
+                {
+                    "source": "setDesc(\"Enable folder templates\")",
+                    "target": "setDesc(\"啟用資料夾範本\")"
+                },
+                {
+                    "source": "setButtonText(\"Enable folder templates\")",
+                    "target": "setButtonText(\"啟用資料夾範本\")"
+                },
+                {
+                    "source": "setTooltip(\"Enable folder templates\")",
+                    "target": "setTooltip(\"啟用資料夾範本\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Enable folder templates\")",
+                    "target": "setPlaceholder(\"啟用資料夾範本\")"
+                },
+                {
+                    "source": "setName(\"When enabled, Templater will make use of the folder templates defined below. This option is mutually exclusive with file regex templates below, so enabling one will disable the other.\")",
+                    "target": "setName(\"啟用後，Templater 會使用下方定義的資料夾範本。此選項與下方的檔案正規表示式範本互斥，因此啟用其中一個會停用另一個。\")"
+                },
+                {
+                    "source": "setDesc(\"When enabled, Templater will make use of the folder templates defined below. This option is mutually exclusive with file regex templates below, so enabling one will disable the other.\")",
+                    "target": "setDesc(\"啟用後，Templater 會使用下方定義的資料夾範本。此選項與下方的檔案正規表示式範本互斥，因此啟用其中一個會停用另一個。\")"
+                },
+                {
+                    "source": "setButtonText(\"When enabled, Templater will make use of the folder templates defined below. This option is mutually exclusive with file regex templates below, so enabling one will disable the other.\")",
+                    "target": "setButtonText(\"啟用後，Templater 會使用下方定義的資料夾範本。此選項與下方的檔案正規表示式範本互斥，因此啟用其中一個會停用另一個。\")"
+                },
+                {
+                    "source": "setTooltip(\"When enabled, Templater will make use of the folder templates defined below. This option is mutually exclusive with file regex templates below, so enabling one will disable the other.\")",
+                    "target": "setTooltip(\"啟用後，Templater 會使用下方定義的資料夾範本。此選項與下方的檔案正規表示式範本互斥，因此啟用其中一個會停用另一個。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"When enabled, Templater will make use of the folder templates defined below. This option is mutually exclusive with file regex templates below, so enabling one will disable the other.\")",
+                    "target": "setPlaceholder(\"啟用後，Templater 會使用下方定義的資料夾範本。此選項與下方的檔案正規表示式範本互斥，因此啟用其中一個會停用另一個。\")"
+                },
+                {
+                    "source": "setName(\"This folder already has a template associated with it\")",
+                    "target": "setName(\"此資料夾已有關聯範本\")"
+                },
+                {
+                    "source": "setDesc(\"This folder already has a template associated with it\")",
+                    "target": "setDesc(\"此資料夾已有關聯範本\")"
+                },
+                {
+                    "source": "setButtonText(\"This folder already has a template associated with it\")",
+                    "target": "setButtonText(\"此資料夾已有關聯範本\")"
+                },
+                {
+                    "source": "setTooltip(\"This folder already has a template associated with it\")",
+                    "target": "setTooltip(\"此資料夾已有關聯範本\")"
+                },
+                {
+                    "source": "setPlaceholder(\"This folder already has a template associated with it\")",
+                    "target": "setPlaceholder(\"此資料夾已有關聯範本\")"
+                },
+                {
+                    "source": "setName(\"Add new folder template\")",
+                    "target": "setName(\"新增資料夾範本\")"
+                },
+                {
+                    "source": "setDesc(\"Add new folder template\")",
+                    "target": "setDesc(\"新增資料夾範本\")"
+                },
+                {
+                    "source": "setTooltip(\"Add new folder template\")",
+                    "target": "setTooltip(\"新增資料夾範本\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Add new folder template\")",
+                    "target": "setPlaceholder(\"新增資料夾範本\")"
+                },
+                {
+                    "source": "setName(\"Add additional folder template\")",
+                    "target": "setName(\"新增額外資料夾範本\")"
+                },
+                {
+                    "source": "setDesc(\"Add additional folder template\")",
+                    "target": "setDesc(\"新增額外資料夾範本\")"
+                },
+                {
+                    "source": "setButtonText(\"Add additional folder template\")",
+                    "target": "setButtonText(\"新增額外資料夾範本\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Add additional folder template\")",
+                    "target": "setPlaceholder(\"新增額外資料夾範本\")"
+                },
+                {
+                    "source": "setDesc(\"File regex templates\")",
+                    "target": "setDesc(\"檔案正規表示式範本\")"
+                },
+                {
+                    "source": "setButtonText(\"File regex templates\")",
+                    "target": "setButtonText(\"檔案正規表示式範本\")"
+                },
+                {
+                    "source": "setTooltip(\"File regex templates\")",
+                    "target": "setTooltip(\"檔案正規表示式範本\")"
+                },
+                {
+                    "source": "setPlaceholder(\"File regex templates\")",
+                    "target": "setPlaceholder(\"檔案正規表示式範本\")"
+                },
+                {
+                    "source": "setName(\"File regex templates are triggered when a new \")",
+                    "target": "setName(\"當建立符合其中一條規則的新\")"
+                },
+                {
+                    "source": "setDesc(\"File regex templates are triggered when a new \")",
+                    "target": "setDesc(\"當建立符合其中一條規則的新\")"
+                },
+                {
+                    "source": "setButtonText(\"File regex templates are triggered when a new \")",
+                    "target": "setButtonText(\"當建立符合其中一條規則的新\")"
+                },
+                {
+                    "source": "setTooltip(\"File regex templates are triggered when a new \")",
+                    "target": "setTooltip(\"當建立符合其中一條規則的新\")"
+                },
+                {
+                    "source": "setPlaceholder(\"File regex templates are triggered when a new \")",
+                    "target": "setPlaceholder(\"當建立符合其中一條規則的新\")"
+                },
+                {
+                    "source": "setName(\" file is created that matches one of them. Templater will fill the empty file with the specified template.\")",
+                    "target": "setName(\"檔案時，會觸發檔案正規表示式範本。Templater 會使用指定範本填入空白檔案。\")"
+                },
+                {
+                    "source": "setDesc(\" file is created that matches one of them. Templater will fill the empty file with the specified template.\")",
+                    "target": "setDesc(\"檔案時，會觸發檔案正規表示式範本。Templater 會使用指定範本填入空白檔案。\")"
+                },
+                {
+                    "source": "setButtonText(\" file is created that matches one of them. Templater will fill the empty file with the specified template.\")",
+                    "target": "setButtonText(\"檔案時，會觸發檔案正規表示式範本。Templater 會使用指定範本填入空白檔案。\")"
+                },
+                {
+                    "source": "setTooltip(\" file is created that matches one of them. Templater will fill the empty file with the specified template.\")",
+                    "target": "setTooltip(\"檔案時，會觸發檔案正規表示式範本。Templater 會使用指定範本填入空白檔案。\")"
+                },
+                {
+                    "source": "setPlaceholder(\" file is created that matches one of them. Templater will fill the empty file with the specified template.\")",
+                    "target": "setPlaceholder(\"檔案時，會觸發檔案正規表示式範本。Templater 會使用指定範本填入空白檔案。\")"
+                },
+                {
+                    "source": "setName(\"The first match from the top is used, so the order of the rules is important.\")",
+                    "target": "setName(\"會使用從上到下第一個符合項目，因此規則順序很重要。\")"
+                },
+                {
+                    "source": "setDesc(\"The first match from the top is used, so the order of the rules is important.\")",
+                    "target": "setDesc(\"會使用從上到下第一個符合項目，因此規則順序很重要。\")"
+                },
+                {
+                    "source": "setButtonText(\"The first match from the top is used, so the order of the rules is important.\")",
+                    "target": "setButtonText(\"會使用從上到下第一個符合項目，因此規則順序很重要。\")"
+                },
+                {
+                    "source": "setTooltip(\"The first match from the top is used, so the order of the rules is important.\")",
+                    "target": "setTooltip(\"會使用從上到下第一個符合項目，因此規則順序很重要。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"The first match from the top is used, so the order of the rules is important.\")",
+                    "target": "setPlaceholder(\"會使用從上到下第一個符合項目，因此規則順序很重要。\")"
+                },
+                {
+                    "source": "setName(\" as a final catch-all, if you need it.\")",
+                    "target": "setName(\"作為最後的全域符合規則（如有需要）。\")"
+                },
+                {
+                    "source": "setDesc(\" as a final catch-all, if you need it.\")",
+                    "target": "setDesc(\"作為最後的全域符合規則（如有需要）。\")"
+                },
+                {
+                    "source": "setButtonText(\" as a final catch-all, if you need it.\")",
+                    "target": "setButtonText(\"作為最後的全域符合規則（如有需要）。\")"
+                },
+                {
+                    "source": "setTooltip(\" as a final catch-all, if you need it.\")",
+                    "target": "setTooltip(\"作為最後的全域符合規則（如有需要）。\")"
+                },
+                {
+                    "source": "setPlaceholder(\" as a final catch-all, if you need it.\")",
+                    "target": "setPlaceholder(\"作為最後的全域符合規則（如有需要）。\")"
+                },
+                {
+                    "source": "setDesc(\"Enable file regex templates\")",
+                    "target": "setDesc(\"啟用檔案正規表示式範本\")"
+                },
+                {
+                    "source": "setButtonText(\"Enable file regex templates\")",
+                    "target": "setButtonText(\"啟用檔案正規表示式範本\")"
+                },
+                {
+                    "source": "setTooltip(\"Enable file regex templates\")",
+                    "target": "setTooltip(\"啟用檔案正規表示式範本\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Enable file regex templates\")",
+                    "target": "setPlaceholder(\"啟用檔案正規表示式範本\")"
+                },
+                {
+                    "source": "setName(\"When enabled, Templater will make use of the file regex templates defined below. This option is mutually exclusive with folder templates above, so enabling one will disable the other.\")",
+                    "target": "setName(\"啟用後，Templater 會使用下方定義的檔案正規表示式範本。此選項與上方的資料夾範本互斥，因此啟用其中一個會停用另一個。\")"
+                },
+                {
+                    "source": "setDesc(\"When enabled, Templater will make use of the file regex templates defined below. This option is mutually exclusive with folder templates above, so enabling one will disable the other.\")",
+                    "target": "setDesc(\"啟用後，Templater 會使用下方定義的檔案正規表示式範本。此選項與上方的資料夾範本互斥，因此啟用其中一個會停用另一個。\")"
+                },
+                {
+                    "source": "setButtonText(\"When enabled, Templater will make use of the file regex templates defined below. This option is mutually exclusive with folder templates above, so enabling one will disable the other.\")",
+                    "target": "setButtonText(\"啟用後，Templater 會使用下方定義的檔案正規表示式範本。此選項與上方的資料夾範本互斥，因此啟用其中一個會停用另一個。\")"
+                },
+                {
+                    "source": "setTooltip(\"When enabled, Templater will make use of the file regex templates defined below. This option is mutually exclusive with folder templates above, so enabling one will disable the other.\")",
+                    "target": "setTooltip(\"啟用後，Templater 會使用下方定義的檔案正規表示式範本。此選項與上方的資料夾範本互斥，因此啟用其中一個會停用另一個。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"When enabled, Templater will make use of the file regex templates defined below. This option is mutually exclusive with folder templates above, so enabling one will disable the other.\")",
+                    "target": "setPlaceholder(\"啟用後，Templater 會使用下方定義的檔案正規表示式範本。此選項與上方的資料夾範本互斥，因此啟用其中一個會停用另一個。\")"
+                },
+                {
+                    "source": "setDesc(\"Startup templates\")",
+                    "target": "setDesc(\"啟動範本\")"
+                },
+                {
+                    "source": "setButtonText(\"Startup templates\")",
+                    "target": "setButtonText(\"啟動範本\")"
+                },
+                {
+                    "source": "setTooltip(\"Startup templates\")",
+                    "target": "setTooltip(\"啟動範本\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Startup templates\")",
+                    "target": "setPlaceholder(\"啟動範本\")"
+                },
+                {
+                    "source": "setName(\"Startup templates are templates that will get executed once when Templater starts.\")",
+                    "target": "setName(\"啟動範本會在 Templater 啟動時執行一次。\")"
+                },
+                {
+                    "source": "setDesc(\"Startup templates are templates that will get executed once when Templater starts.\")",
+                    "target": "setDesc(\"啟動範本會在 Templater 啟動時執行一次。\")"
+                },
+                {
+                    "source": "setButtonText(\"Startup templates are templates that will get executed once when Templater starts.\")",
+                    "target": "setButtonText(\"啟動範本會在 Templater 啟動時執行一次。\")"
+                },
+                {
+                    "source": "setTooltip(\"Startup templates are templates that will get executed once when Templater starts.\")",
+                    "target": "setTooltip(\"啟動範本會在 Templater 啟動時執行一次。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Startup templates are templates that will get executed once when Templater starts.\")",
+                    "target": "setPlaceholder(\"啟動範本會在 Templater 啟動時執行一次。\")"
+                },
+                {
+                    "source": "setName(\"These templates won't output anything.\")",
+                    "target": "setName(\"這些範本不會輸出任何內容。\")"
+                },
+                {
+                    "source": "setDesc(\"These templates won't output anything.\")",
+                    "target": "setDesc(\"這些範本不會輸出任何內容。\")"
+                },
+                {
+                    "source": "setButtonText(\"These templates won't output anything.\")",
+                    "target": "setButtonText(\"這些範本不會輸出任何內容。\")"
+                },
+                {
+                    "source": "setTooltip(\"These templates won't output anything.\")",
+                    "target": "setTooltip(\"這些範本不會輸出任何內容。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"These templates won't output anything.\")",
+                    "target": "setPlaceholder(\"這些範本不會輸出任何內容。\")"
+                },
+                {
+                    "source": "setName(\"This can be useful to set up templates adding hooks to Obsidian events for example.\")",
+                    "target": "setName(\"這可用於設定會加入 Obsidian 事件 hook 的範本。\")"
+                },
+                {
+                    "source": "setDesc(\"This can be useful to set up templates adding hooks to Obsidian events for example.\")",
+                    "target": "setDesc(\"這可用於設定會加入 Obsidian 事件 hook 的範本。\")"
+                },
+                {
+                    "source": "setButtonText(\"This can be useful to set up templates adding hooks to Obsidian events for example.\")",
+                    "target": "setButtonText(\"這可用於設定會加入 Obsidian 事件 hook 的範本。\")"
+                },
+                {
+                    "source": "setTooltip(\"This can be useful to set up templates adding hooks to Obsidian events for example.\")",
+                    "target": "setTooltip(\"這可用於設定會加入 Obsidian 事件 hook 的範本。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"This can be useful to set up templates adding hooks to Obsidian events for example.\")",
+                    "target": "setPlaceholder(\"這可用於設定會加入 Obsidian 事件 hook 的範本。\")"
+                },
+                {
+                    "source": "setName(\"This startup template already exist\")",
+                    "target": "setName(\"此啟動範本已存在\")"
+                },
+                {
+                    "source": "setDesc(\"This startup template already exist\")",
+                    "target": "setDesc(\"此啟動範本已存在\")"
+                },
+                {
+                    "source": "setButtonText(\"This startup template already exist\")",
+                    "target": "setButtonText(\"此啟動範本已存在\")"
+                },
+                {
+                    "source": "setTooltip(\"This startup template already exist\")",
+                    "target": "setTooltip(\"此啟動範本已存在\")"
+                },
+                {
+                    "source": "setPlaceholder(\"This startup template already exist\")",
+                    "target": "setPlaceholder(\"此啟動範本已存在\")"
+                },
+                {
+                    "source": "setName(\"Add new startup template\")",
+                    "target": "setName(\"新增啟動範本\")"
+                },
+                {
+                    "source": "setDesc(\"Add new startup template\")",
+                    "target": "setDesc(\"新增啟動範本\")"
+                },
+                {
+                    "source": "setTooltip(\"Add new startup template\")",
+                    "target": "setTooltip(\"新增啟動範本\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Add new startup template\")",
+                    "target": "setPlaceholder(\"新增啟動範本\")"
+                },
+                {
+                    "source": "setName(\"All JavaScript files in this folder will be loaded as CommonJS modules, to import custom user functions.\")",
+                    "target": "setName(\"此資料夾中的所有 JavaScript 檔案都會作為 CommonJS 模組載入，用於匯入自訂使用者函式。\")"
+                },
+                {
+                    "source": "setDesc(\"All JavaScript files in this folder will be loaded as CommonJS modules, to import custom user functions.\")",
+                    "target": "setDesc(\"此資料夾中的所有 JavaScript 檔案都會作為 CommonJS 模組載入，用於匯入自訂使用者函式。\")"
+                },
+                {
+                    "source": "setButtonText(\"All JavaScript files in this folder will be loaded as CommonJS modules, to import custom user functions.\")",
+                    "target": "setButtonText(\"此資料夾中的所有 JavaScript 檔案都會作為 CommonJS 模組載入，用於匯入自訂使用者函式。\")"
+                },
+                {
+                    "source": "setTooltip(\"All JavaScript files in this folder will be loaded as CommonJS modules, to import custom user functions.\")",
+                    "target": "setTooltip(\"此資料夾中的所有 JavaScript 檔案都會作為 CommonJS 模組載入，用於匯入自訂使用者函式。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"All JavaScript files in this folder will be loaded as CommonJS modules, to import custom user functions.\")",
+                    "target": "setPlaceholder(\"此資料夾中的所有 JavaScript 檔案都會作為 CommonJS 模組載入，用於匯入自訂使用者函式。\")"
+                },
+                {
+                    "source": "setName(\"The folder needs to be accessible from the vault.\")",
+                    "target": "setName(\"此資料夾必須可從儲存庫存取。\")"
+                },
+                {
+                    "source": "setDesc(\"The folder needs to be accessible from the vault.\")",
+                    "target": "setDesc(\"此資料夾必須可從儲存庫存取。\")"
+                },
+                {
+                    "source": "setButtonText(\"The folder needs to be accessible from the vault.\")",
+                    "target": "setButtonText(\"此資料夾必須可從儲存庫存取。\")"
+                },
+                {
+                    "source": "setTooltip(\"The folder needs to be accessible from the vault.\")",
+                    "target": "setTooltip(\"此資料夾必須可從儲存庫存取。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"The folder needs to be accessible from the vault.\")",
+                    "target": "setPlaceholder(\"此資料夾必須可從儲存庫存取。\")"
+                },
+                {
+                    "source": "setName(\" for more information.\")",
+                    "target": "setName(\"以取得更多資訊。\")"
+                },
+                {
+                    "source": "setDesc(\" for more information.\")",
+                    "target": "setDesc(\"以取得更多資訊。\")"
+                },
+                {
+                    "source": "setButtonText(\" for more information.\")",
+                    "target": "setButtonText(\"以取得更多資訊。\")"
+                },
+                {
+                    "source": "setTooltip(\" for more information.\")",
+                    "target": "setTooltip(\"以取得更多資訊。\")"
+                },
+                {
+                    "source": "setPlaceholder(\" for more information.\")",
+                    "target": "setPlaceholder(\"以取得更多資訊。\")"
+                },
+                {
+                    "source": "setName(\"No user scripts folder set\")",
+                    "target": "setName(\"未設定使用者指令碼資料夾\")"
+                },
+                {
+                    "source": "setDesc(\"No user scripts folder set\")",
+                    "target": "setDesc(\"未設定使用者指令碼資料夾\")"
+                },
+                {
+                    "source": "setButtonText(\"No user scripts folder set\")",
+                    "target": "setButtonText(\"未設定使用者指令碼資料夾\")"
+                },
+                {
+                    "source": "setTooltip(\"No user scripts folder set\")",
+                    "target": "setTooltip(\"未設定使用者指令碼資料夾\")"
+                },
+                {
+                    "source": "setPlaceholder(\"No user scripts folder set\")",
+                    "target": "setPlaceholder(\"未設定使用者指令碼資料夾\")"
+                },
+                {
+                    "source": "setName(\"User scripts folder doesn't exist\")",
+                    "target": "setName(\"使用者指令碼資料夾不存在\")"
+                },
+                {
+                    "source": "setDesc(\"User scripts folder doesn't exist\")",
+                    "target": "setDesc(\"使用者指令碼資料夾不存在\")"
+                },
+                {
+                    "source": "setButtonText(\"User scripts folder doesn't exist\")",
+                    "target": "setButtonText(\"使用者指令碼資料夾不存在\")"
+                },
+                {
+                    "source": "setTooltip(\"User scripts folder doesn't exist\")",
+                    "target": "setTooltip(\"使用者指令碼資料夾不存在\")"
+                },
+                {
+                    "source": "setPlaceholder(\"User scripts folder doesn't exist\")",
+                    "target": "setPlaceholder(\"使用者指令碼資料夾不存在\")"
+                },
+                {
+                    "source": "setName(\"No user scripts detected\")",
+                    "target": "setName(\"未偵測到使用者指令碼\")"
+                },
+                {
+                    "source": "setDesc(\"No user scripts detected\")",
+                    "target": "setDesc(\"未偵測到使用者指令碼\")"
+                },
+                {
+                    "source": "setButtonText(\"No user scripts detected\")",
+                    "target": "setButtonText(\"未偵測到使用者指令碼\")"
+                },
+                {
+                    "source": "setTooltip(\"No user scripts detected\")",
+                    "target": "setTooltip(\"未偵測到使用者指令碼\")"
+                },
+                {
+                    "source": "setPlaceholder(\"No user scripts detected\")",
+                    "target": "setPlaceholder(\"未偵測到使用者指令碼\")"
+                },
+                {
+                    "source": "setDesc(\"User system command functions\")",
+                    "target": "setDesc(\"使用者系統命令函式\")"
+                },
+                {
+                    "source": "setButtonText(\"User system command functions\")",
+                    "target": "setButtonText(\"使用者系統命令函式\")"
+                },
+                {
+                    "source": "setTooltip(\"User system command functions\")",
+                    "target": "setTooltip(\"使用者系統命令函式\")"
+                },
+                {
+                    "source": "setPlaceholder(\"User system command functions\")",
+                    "target": "setPlaceholder(\"使用者系統命令函式\")"
+                },
+                {
+                    "source": "setDesc(\"Enable user system command functions\")",
+                    "target": "setDesc(\"啟用使用者系統命令函式\")"
+                },
+                {
+                    "source": "setButtonText(\"Enable user system command functions\")",
+                    "target": "setButtonText(\"啟用使用者系統命令函式\")"
+                },
+                {
+                    "source": "setTooltip(\"Enable user system command functions\")",
+                    "target": "setTooltip(\"啟用使用者系統命令函式\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Enable user system command functions\")",
+                    "target": "setPlaceholder(\"啟用使用者系統命令函式\")"
+                },
+                {
+                    "source": "setName(\"Allows you to create user functions linked to system commands.\")",
+                    "target": "setName(\"允許你建立連結到系統命令的使用者函式。\")"
+                },
+                {
+                    "source": "setDesc(\"Allows you to create user functions linked to system commands.\")",
+                    "target": "setDesc(\"允許你建立連結到系統命令的使用者函式。\")"
+                },
+                {
+                    "source": "setButtonText(\"Allows you to create user functions linked to system commands.\")",
+                    "target": "setButtonText(\"允許你建立連結到系統命令的使用者函式。\")"
+                },
+                {
+                    "source": "setTooltip(\"Allows you to create user functions linked to system commands.\")",
+                    "target": "setTooltip(\"允許你建立連結到系統命令的使用者函式。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Allows you to create user functions linked to system commands.\")",
+                    "target": "setPlaceholder(\"允許你建立連結到系統命令的使用者函式。\")"
+                },
+                {
+                    "source": "setName(\"It can be dangerous to execute arbitrary system commands from untrusted sources. Only run system commands that you understand, from trusted sources.\")",
+                    "target": "setName(\"執行來自不受信任來源的任意系統命令可能很危險。只執行你了解且來自可信來源的系統命令。\")"
+                },
+                {
+                    "source": "setDesc(\"It can be dangerous to execute arbitrary system commands from untrusted sources. Only run system commands that you understand, from trusted sources.\")",
+                    "target": "setDesc(\"執行來自不受信任來源的任意系統命令可能很危險。只執行你了解且來自可信來源的系統命令。\")"
+                },
+                {
+                    "source": "setButtonText(\"It can be dangerous to execute arbitrary system commands from untrusted sources. Only run system commands that you understand, from trusted sources.\")",
+                    "target": "setButtonText(\"執行來自不受信任來源的任意系統命令可能很危險。只執行你了解且來自可信來源的系統命令。\")"
+                },
+                {
+                    "source": "setTooltip(\"It can be dangerous to execute arbitrary system commands from untrusted sources. Only run system commands that you understand, from trusted sources.\")",
+                    "target": "setTooltip(\"執行來自不受信任來源的任意系統命令可能很危險。只執行你了解且來自可信來源的系統命令。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"It can be dangerous to execute arbitrary system commands from untrusted sources. Only run system commands that you understand, from trusted sources.\")",
+                    "target": "setPlaceholder(\"執行來自不受信任來源的任意系統命令可能很危險。只執行你了解且來自可信來源的系統命令。\")"
+                },
+                {
+                    "source": "setName(\"Maximum timeout in seconds for a system command.\")",
+                    "target": "setName(\"系統命令的最大逾時秒數。\")"
+                },
+                {
+                    "source": "setDesc(\"Maximum timeout in seconds for a system command.\")",
+                    "target": "setDesc(\"系統命令的最大逾時秒數。\")"
+                },
+                {
+                    "source": "setButtonText(\"Maximum timeout in seconds for a system command.\")",
+                    "target": "setButtonText(\"系統命令的最大逾時秒數。\")"
+                },
+                {
+                    "source": "setTooltip(\"Maximum timeout in seconds for a system command.\")",
+                    "target": "setTooltip(\"系統命令的最大逾時秒數。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Maximum timeout in seconds for a system command.\")",
+                    "target": "setPlaceholder(\"系統命令的最大逾時秒數。\")"
+                },
+                {
+                    "source": "setName(\"Timeout must be a number\")",
+                    "target": "setName(\"逾時必須是數字\")"
+                },
+                {
+                    "source": "setDesc(\"Timeout must be a number\")",
+                    "target": "setDesc(\"逾時必須是數字\")"
+                },
+                {
+                    "source": "setButtonText(\"Timeout must be a number\")",
+                    "target": "setButtonText(\"逾時必須是數字\")"
+                },
+                {
+                    "source": "setTooltip(\"Timeout must be a number\")",
+                    "target": "setTooltip(\"逾時必須是數字\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Timeout must be a number\")",
+                    "target": "setPlaceholder(\"逾時必須是數字\")"
+                },
+                {
+                    "source": "setName(\"Full path to the shell binary to execute the command with.\")",
+                    "target": "setName(\"用來執行命令的 shell 執行檔完整路徑。\")"
+                },
+                {
+                    "source": "setDesc(\"Full path to the shell binary to execute the command with.\")",
+                    "target": "setDesc(\"用來執行命令的 shell 執行檔完整路徑。\")"
+                },
+                {
+                    "source": "setButtonText(\"Full path to the shell binary to execute the command with.\")",
+                    "target": "setButtonText(\"用來執行命令的 shell 執行檔完整路徑。\")"
+                },
+                {
+                    "source": "setTooltip(\"Full path to the shell binary to execute the command with.\")",
+                    "target": "setTooltip(\"用來執行命令的 shell 執行檔完整路徑。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Full path to the shell binary to execute the command with.\")",
+                    "target": "setPlaceholder(\"用來執行命令的 shell 執行檔完整路徑。\")"
+                },
+                {
+                    "source": "setName(\"This setting is optional and will default to the system's default shell if not specified.\")",
+                    "target": "setName(\"此設定為選用；若未指定，會使用系統預設 shell。\")"
+                },
+                {
+                    "source": "setDesc(\"This setting is optional and will default to the system's default shell if not specified.\")",
+                    "target": "setDesc(\"此設定為選用；若未指定，會使用系統預設 shell。\")"
+                },
+                {
+                    "source": "setButtonText(\"This setting is optional and will default to the system's default shell if not specified.\")",
+                    "target": "setButtonText(\"此設定為選用；若未指定，會使用系統預設 shell。\")"
+                },
+                {
+                    "source": "setTooltip(\"This setting is optional and will default to the system's default shell if not specified.\")",
+                    "target": "setTooltip(\"此設定為選用；若未指定，會使用系統預設 shell。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"This setting is optional and will default to the system's default shell if not specified.\")",
+                    "target": "setPlaceholder(\"此設定為選用；若未指定，會使用系統預設 shell。\")"
+                },
+                {
+                    "source": "setName(\"You can use forward slashes ('/') as path separators on all platforms if in doubt.\")",
+                    "target": "setName(\"不確定時，可以在所有平台上使用正斜線（'/'）作為路徑分隔符。\")"
+                },
+                {
+                    "source": "setDesc(\"You can use forward slashes ('/') as path separators on all platforms if in doubt.\")",
+                    "target": "setDesc(\"不確定時，可以在所有平台上使用正斜線（'/'）作為路徑分隔符。\")"
+                },
+                {
+                    "source": "setButtonText(\"You can use forward slashes ('/') as path separators on all platforms if in doubt.\")",
+                    "target": "setButtonText(\"不確定時，可以在所有平台上使用正斜線（'/'）作為路徑分隔符。\")"
+                },
+                {
+                    "source": "setTooltip(\"You can use forward slashes ('/') as path separators on all platforms if in doubt.\")",
+                    "target": "setTooltip(\"不確定時，可以在所有平台上使用正斜線（'/'）作為路徑分隔符。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"You can use forward slashes ('/') as path separators on all platforms if in doubt.\")",
+                    "target": "setPlaceholder(\"不確定時，可以在所有平台上使用正斜線（'/'）作為路徑分隔符。\")"
+                },
+                {
+                    "source": "setDesc(\"Shell 執行檔位置\")",
+                    "target": "setDesc(\"Shell 執行檔路徑\")"
+                },
+                {
+                    "source": "setButtonText(\"Shell 執行檔位置\")",
+                    "target": "setButtonText(\"Shell 執行檔路徑\")"
+                },
+                {
+                    "source": "setTooltip(\"Shell 執行檔位置\")",
+                    "target": "setTooltip(\"Shell 執行檔路徑\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Shell 執行檔位置\")",
+                    "target": "setPlaceholder(\"Shell 執行檔路徑\")"
+                },
+                {
+                    "source": "setName(\"User function n°\")",
+                    "target": "setName(\"使用者函式 #\")"
+                },
+                {
+                    "source": "setDesc(\"User function n°\")",
+                    "target": "setDesc(\"使用者函式 #\")"
+                },
+                {
+                    "source": "setButtonText(\"User function n°\")",
+                    "target": "setButtonText(\"使用者函式 #\")"
+                },
+                {
+                    "source": "setTooltip(\"User function n°\")",
+                    "target": "setTooltip(\"使用者函式 #\")"
+                },
+                {
+                    "source": "setPlaceholder(\"User function n°\")",
+                    "target": "setPlaceholder(\"使用者函式 #\")"
+                },
+                {
+                    "source": "setName(\"System command\")",
+                    "target": "setName(\"系統命令\")"
+                },
+                {
+                    "source": "setDesc(\"System command\")",
+                    "target": "setDesc(\"系統命令\")"
+                },
+                {
+                    "source": "setButtonText(\"System command\")",
+                    "target": "setButtonText(\"系統命令\")"
+                },
+                {
+                    "source": "setTooltip(\"System command\")",
+                    "target": "setTooltip(\"系統命令\")"
+                },
+                {
+                    "source": "setDesc(\"Donate\")",
+                    "target": "setDesc(\"贊助\")"
+                },
+                {
+                    "source": "setButtonText(\"Donate\")",
+                    "target": "setButtonText(\"贊助\")"
+                },
+                {
+                    "source": "setTooltip(\"Donate\")",
+                    "target": "setTooltip(\"贊助\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Donate\")",
+                    "target": "setPlaceholder(\"贊助\")"
+                },
+                {
+                    "source": "setName(\"If you like this Plugin, consider donating to support continued development.\")",
+                    "target": "setName(\"如果你喜歡這個外掛，可以考慮捐款支持持續開發。\")"
+                },
+                {
+                    "source": "setDesc(\"If you like this Plugin, consider donating to support continued development.\")",
+                    "target": "setDesc(\"如果你喜歡這個外掛，可以考慮捐款支持持續開發。\")"
+                },
+                {
+                    "source": "setButtonText(\"If you like this Plugin, consider donating to support continued development.\")",
+                    "target": "setButtonText(\"如果你喜歡這個外掛，可以考慮捐款支持持續開發。\")"
+                },
+                {
+                    "source": "setTooltip(\"If you like this Plugin, consider donating to support continued development.\")",
+                    "target": "setTooltip(\"如果你喜歡這個外掛，可以考慮捐款支持持續開發。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"If you like this Plugin, consider donating to support continued development.\")",
+                    "target": "setPlaceholder(\"如果你喜歡這個外掛，可以考慮捐款支持持續開發。\")"
+                },
+                {
+                    "source": "setName(\"Creates a new file using a specified template or with a specified content.\")",
+                    "target": "setName(\"使用指定範本或指定內容建立新檔案。\")"
+                },
+                {
+                    "source": "setDesc(\"Creates a new file using a specified template or with a specified content.\")",
+                    "target": "setDesc(\"使用指定範本或指定內容建立新檔案。\")"
+                },
+                {
+                    "source": "setButtonText(\"Creates a new file using a specified template or with a specified content.\")",
+                    "target": "setButtonText(\"使用指定範本或指定內容建立新檔案。\")"
+                },
+                {
+                    "source": "setTooltip(\"Creates a new file using a specified template or with a specified content.\")",
+                    "target": "setTooltip(\"使用指定範本或指定內容建立新檔案。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Creates a new file using a specified template or with a specified content.\")",
+                    "target": "setPlaceholder(\"使用指定範本或指定內容建立新檔案。\")"
+                },
+                {
+                    "source": "setName(\"Either the template used for the new file content, or the file content as a string. If it is the template to use, you retrieve it with `tp.file.find_tfile(TEMPLATENAME)`.\")",
+                    "target": "setName(\"新檔案內容要使用的範本，或作為字串的檔案內容。如果要使用範本，可用 `tp.file.find_tfile(TEMPLATENAME)` 取得。\")"
+                },
+                {
+                    "source": "setDesc(\"Either the template used for the new file content, or the file content as a string. If it is the template to use, you retrieve it with `tp.file.find_tfile(TEMPLATENAME)`.\")",
+                    "target": "setDesc(\"新檔案內容要使用的範本，或作為字串的檔案內容。如果要使用範本，可用 `tp.file.find_tfile(TEMPLATENAME)` 取得。\")"
+                },
+                {
+                    "source": "setButtonText(\"Either the template used for the new file content, or the file content as a string. If it is the template to use, you retrieve it with `tp.file.find_tfile(TEMPLATENAME)`.\")",
+                    "target": "setButtonText(\"新檔案內容要使用的範本，或作為字串的檔案內容。如果要使用範本，可用 `tp.file.find_tfile(TEMPLATENAME)` 取得。\")"
+                },
+                {
+                    "source": "setTooltip(\"Either the template used for the new file content, or the file content as a string. If it is the template to use, you retrieve it with `tp.file.find_tfile(TEMPLATENAME)`.\")",
+                    "target": "setTooltip(\"新檔案內容要使用的範本，或作為字串的檔案內容。如果要使用範本，可用 `tp.file.find_tfile(TEMPLATENAME)` 取得。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Either the template used for the new file content, or the file content as a string. If it is the template to use, you retrieve it with `tp.file.find_tfile(TEMPLATENAME)`.\")",
+                    "target": "setPlaceholder(\"新檔案內容要使用的範本，或作為字串的檔案內容。如果要使用範本，可用 `tp.file.find_tfile(TEMPLATENAME)` 取得。\")"
+                },
+                {
+                    "source": "setName(\"Retrieves the file's creation date.\")",
+                    "target": "setName(\"取得檔案建立日期。\")"
+                },
+                {
+                    "source": "setDesc(\"Retrieves the file's creation date.\")",
+                    "target": "setDesc(\"取得檔案建立日期。\")"
+                },
+                {
+                    "source": "setButtonText(\"Retrieves the file's creation date.\")",
+                    "target": "setButtonText(\"取得檔案建立日期。\")"
+                },
+                {
+                    "source": "setTooltip(\"Retrieves the file's creation date.\")",
+                    "target": "setTooltip(\"取得檔案建立日期。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Retrieves the file's creation date.\")",
+                    "target": "setPlaceholder(\"取得檔案建立日期。\")"
+                },
+                {
+                    "source": "setName(\"Includes the file's link content. Templates in the included content will be resolved.\")",
+                    "target": "setName(\"包含檔案連結的內容。被包含內容中的範本會一併解析。\")"
+                },
+                {
+                    "source": "setDesc(\"Includes the file's link content. Templates in the included content will be resolved.\")",
+                    "target": "setDesc(\"包含檔案連結的內容。被包含內容中的範本會一併解析。\")"
+                },
+                {
+                    "source": "setButtonText(\"Includes the file's link content. Templates in the included content will be resolved.\")",
+                    "target": "setButtonText(\"包含檔案連結的內容。被包含內容中的範本會一併解析。\")"
+                },
+                {
+                    "source": "setTooltip(\"Includes the file's link content. Templates in the included content will be resolved.\")",
+                    "target": "setTooltip(\"包含檔案連結的內容。被包含內容中的範本會一併解析。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Includes the file's link content. Templates in the included content will be resolved.\")",
+                    "target": "setPlaceholder(\"包含檔案連結的內容。被包含內容中的範本會一併解析。\")"
+                },
+                {
+                    "source": "setName(\"Retrieves the file's absolute path on the system.\")",
+                    "target": "setName(\"取得檔案在系統上的絕對路徑。\")"
+                },
+                {
+                    "source": "setDesc(\"Retrieves the file's absolute path on the system.\")",
+                    "target": "setDesc(\"取得檔案在系統上的絕對路徑。\")"
+                },
+                {
+                    "source": "setButtonText(\"Retrieves the file's absolute path on the system.\")",
+                    "target": "setButtonText(\"取得檔案在系統上的絕對路徑。\")"
+                },
+                {
+                    "source": "setTooltip(\"Retrieves the file's absolute path on the system.\")",
+                    "target": "setTooltip(\"取得檔案在系統上的絕對路徑。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Retrieves the file's absolute path on the system.\")",
+                    "target": "setPlaceholder(\"取得檔案在系統上的絕對路徑。\")"
+                },
+                {
+                    "source": "setName(\"This module exposes hooks that allow you to execute code when a Templater event occurs.\")",
+                    "target": "setName(\"此模組公開 hook，讓你可以在 Templater 事件發生時執行程式碼。\")"
+                },
+                {
+                    "source": "setDesc(\"This module exposes hooks that allow you to execute code when a Templater event occurs.\")",
+                    "target": "setDesc(\"此模組公開 hook，讓你可以在 Templater 事件發生時執行程式碼。\")"
+                },
+                {
+                    "source": "setButtonText(\"This module exposes hooks that allow you to execute code when a Templater event occurs.\")",
+                    "target": "setButtonText(\"此模組公開 hook，讓你可以在 Templater 事件發生時執行程式碼。\")"
+                },
+                {
+                    "source": "setTooltip(\"This module exposes hooks that allow you to execute code when a Templater event occurs.\")",
+                    "target": "setTooltip(\"此模組公開 hook，讓你可以在 Templater 事件發生時執行程式碼。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"This module exposes hooks that allow you to execute code when a Templater event occurs.\")",
+                    "target": "setPlaceholder(\"此模組公開 hook，讓你可以在 Templater 事件發生時執行程式碼。\")"
+                },
+                {
+                    "source": "setName(\"This module contains system related functions.\")",
+                    "target": "setName(\"此模組包含系統相關函式。\")"
+                },
+                {
+                    "source": "setDesc(\"This module contains system related functions.\")",
+                    "target": "setDesc(\"此模組包含系統相關函式。\")"
+                },
+                {
+                    "source": "setButtonText(\"This module contains system related functions.\")",
+                    "target": "setButtonText(\"此模組包含系統相關函式。\")"
+                },
+                {
+                    "source": "setTooltip(\"This module contains system related functions.\")",
+                    "target": "setTooltip(\"此模組包含系統相關函式。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"This module contains system related functions.\")",
+                    "target": "setPlaceholder(\"此模組包含系統相關函式。\")"
+                },
+                {
+                    "source": "setName(\"Hooks into when all actively running templates have finished executing. Most of the time this will be a single template, unless you are using `tp.file.include` or `tp.file.create_new`.\\\\n\\\\nMultiple invokations of this method will have their callback functions run in parallel.\")",
+                    "target": "setName(\"掛入所有正在執行的範本完成後的時機。大多數情況下只會有一個範本，除非你正在使用 `tp.file.include` 或 `tp.file.create_new`。\\\\n\\\\n多次呼叫此方法時，回呼函式會平行執行。\")"
+                },
+                {
+                    "source": "setDesc(\"Hooks into when all actively running templates have finished executing. Most of the time this will be a single template, unless you are using `tp.file.include` or `tp.file.create_new`.\\\\n\\\\nMultiple invokations of this method will have their callback functions run in parallel.\")",
+                    "target": "setDesc(\"掛入所有正在執行的範本完成後的時機。大多數情況下只會有一個範本，除非你正在使用 `tp.file.include` 或 `tp.file.create_new`。\\\\n\\\\n多次呼叫此方法時，回呼函式會平行執行。\")"
+                },
+                {
+                    "source": "setButtonText(\"Hooks into when all actively running templates have finished executing. Most of the time this will be a single template, unless you are using `tp.file.include` or `tp.file.create_new`.\\\\n\\\\nMultiple invokations of this method will have their callback functions run in parallel.\")",
+                    "target": "setButtonText(\"掛入所有正在執行的範本完成後的時機。大多數情況下只會有一個範本，除非你正在使用 `tp.file.include` 或 `tp.file.create_new`。\\\\n\\\\n多次呼叫此方法時，回呼函式會平行執行。\")"
+                },
+                {
+                    "source": "setTooltip(\"Hooks into when all actively running templates have finished executing. Most of the time this will be a single template, unless you are using `tp.file.include` or `tp.file.create_new`.\\\\n\\\\nMultiple invokations of this method will have their callback functions run in parallel.\")",
+                    "target": "setTooltip(\"掛入所有正在執行的範本完成後的時機。大多數情況下只會有一個範本，除非你正在使用 `tp.file.include` 或 `tp.file.create_new`。\\\\n\\\\n多次呼叫此方法時，回呼函式會平行執行。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Hooks into when all actively running templates have finished executing. Most of the time this will be a single template, unless you are using `tp.file.include` or `tp.file.create_new`.\\\\n\\\\nMultiple invokations of this method will have their callback functions run in parallel.\")",
+                    "target": "setPlaceholder(\"掛入所有正在執行的範本完成後的時機。大多數情況下只會有一個範本，除非你正在使用 `tp.file.include` 或 `tp.file.create_new`。\\\\n\\\\n多次呼叫此方法時，回呼函式會平行執行。\")"
+                },
+                {
+                    "source": "setName(\"Callback function that will be executed when all actively running templates have finished executing.\")",
+                    "target": "setName(\"所有正在執行的範本完成後要執行的回呼函式。\")"
+                },
+                {
+                    "source": "setDesc(\"Callback function that will be executed when all actively running templates have finished executing.\")",
+                    "target": "setDesc(\"所有正在執行的範本完成後要執行的回呼函式。\")"
+                },
+                {
+                    "source": "setButtonText(\"Callback function that will be executed when all actively running templates have finished executing.\")",
+                    "target": "setButtonText(\"所有正在執行的範本完成後要執行的回呼函式。\")"
+                },
+                {
+                    "source": "setTooltip(\"Callback function that will be executed when all actively running templates have finished executing.\")",
+                    "target": "setTooltip(\"所有正在執行的範本完成後要執行的回呼函式。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Callback function that will be executed when all actively running templates have finished executing.\")",
+                    "target": "setPlaceholder(\"所有正在執行的範本完成後要執行的回呼函式。\")"
+                },
+                {
+                    "source": "setName(\"Spawns a suggester prompt and returns the user's chosen item.\")",
+                    "target": "setName(\"開啟建議選單提示，並回傳使用者選擇的項目。\")"
+                },
+                {
+                    "source": "setDesc(\"Spawns a suggester prompt and returns the user's chosen item.\")",
+                    "target": "setDesc(\"開啟建議選單提示，並回傳使用者選擇的項目。\")"
+                },
+                {
+                    "source": "setButtonText(\"Spawns a suggester prompt and returns the user's chosen item.\")",
+                    "target": "setButtonText(\"開啟建議選單提示，並回傳使用者選擇的項目。\")"
+                },
+                {
+                    "source": "setTooltip(\"Spawns a suggester prompt and returns the user's chosen item.\")",
+                    "target": "setTooltip(\"開啟建議選單提示，並回傳使用者選擇的項目。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Spawns a suggester prompt and returns the user's chosen item.\")",
+                    "target": "setPlaceholder(\"開啟建議選單提示，並回傳使用者選擇的項目。\")"
+                },
+                {
+                    "source": "setName(\"Spawns a suggester prompt that supports selecting multiple items and returns the user's chosen items.\")",
+                    "target": "setName(\"開啟支援多選的建議選單提示，並回傳使用者選擇的項目。\")"
+                },
+                {
+                    "source": "setDesc(\"Spawns a suggester prompt that supports selecting multiple items and returns the user's chosen items.\")",
+                    "target": "setDesc(\"開啟支援多選的建議選單提示，並回傳使用者選擇的項目。\")"
+                },
+                {
+                    "source": "setButtonText(\"Spawns a suggester prompt that supports selecting multiple items and returns the user's chosen items.\")",
+                    "target": "setButtonText(\"開啟支援多選的建議選單提示，並回傳使用者選擇的項目。\")"
+                },
+                {
+                    "source": "setTooltip(\"Spawns a suggester prompt that supports selecting multiple items and returns the user's chosen items.\")",
+                    "target": "setTooltip(\"開啟支援多選的建議選單提示，並回傳使用者選擇的項目。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Spawns a suggester prompt that supports selecting multiple items and returns the user's chosen items.\")",
+                    "target": "setPlaceholder(\"開啟支援多選的建議選單提示，並回傳使用者選擇的項目。\")"
+                },
+                {
+                    "source": "setName(\"Array containing the values of each item in the correct order.\")",
+                    "target": "setName(\"依正確順序包含每個項目值的陣列。\")"
+                },
+                {
+                    "source": "setDesc(\"Array containing the values of each item in the correct order.\")",
+                    "target": "setDesc(\"依正確順序包含每個項目值的陣列。\")"
+                },
+                {
+                    "source": "setButtonText(\"Array containing the values of each item in the correct order.\")",
+                    "target": "setButtonText(\"依正確順序包含每個項目值的陣列。\")"
+                },
+                {
+                    "source": "setTooltip(\"Array containing the values of each item in the correct order.\")",
+                    "target": "setTooltip(\"依正確順序包含每個項目值的陣列。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Array containing the values of each item in the correct order.\")",
+                    "target": "setPlaceholder(\"依正確順序包含每個項目值的陣列。\")"
+                },
+                {
+                    "source": "setName(\"Array of strings representing the text that will be displayed for each item in the suggester prompt. This can also be a function that maps an item to its text representation.\")",
+                    "target": "setName(\"字串陣列，代表建議選單中每個項目要顯示的文字。也可以是一個將項目映射為顯示文字的函式。\")"
+                },
+                {
+                    "source": "setDesc(\"Array of strings representing the text that will be displayed for each item in the suggester prompt. This can also be a function that maps an item to its text representation.\")",
+                    "target": "setDesc(\"字串陣列，代表建議選單中每個項目要顯示的文字。也可以是一個將項目映射為顯示文字的函式。\")"
+                },
+                {
+                    "source": "setButtonText(\"Array of strings representing the text that will be displayed for each item in the suggester prompt. This can also be a function that maps an item to its text representation.\")",
+                    "target": "setButtonText(\"字串陣列，代表建議選單中每個項目要顯示的文字。也可以是一個將項目映射為顯示文字的函式。\")"
+                },
+                {
+                    "source": "setTooltip(\"Array of strings representing the text that will be displayed for each item in the suggester prompt. This can also be a function that maps an item to its text representation.\")",
+                    "target": "setTooltip(\"字串陣列，代表建議選單中每個項目要顯示的文字。也可以是一個將項目映射為顯示文字的函式。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Array of strings representing the text that will be displayed for each item in the suggester prompt. This can also be a function that maps an item to its text representation.\")",
+                    "target": "setPlaceholder(\"字串陣列，代表建議選單中每個項目要顯示的文字。也可以是一個將項目映射為顯示文字的函式。\")"
+                },
+                {
+                    "source": "setName(\"Limit the number of items rendered at once (useful to improve performance when displaying large lists).\")",
+                    "target": "setName(\"限制一次呈現的項目數量（顯示大型清單時可改善效能）。\")"
+                },
+                {
+                    "source": "setDesc(\"Limit the number of items rendered at once (useful to improve performance when displaying large lists).\")",
+                    "target": "setDesc(\"限制一次呈現的項目數量（顯示大型清單時可改善效能）。\")"
+                },
+                {
+                    "source": "setButtonText(\"Limit the number of items rendered at once (useful to improve performance when displaying large lists).\")",
+                    "target": "setButtonText(\"限制一次呈現的項目數量（顯示大型清單時可改善效能）。\")"
+                },
+                {
+                    "source": "setTooltip(\"Limit the number of items rendered at once (useful to improve performance when displaying large lists).\")",
+                    "target": "setTooltip(\"限制一次呈現的項目數量（顯示大型清單時可改善效能）。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Limit the number of items rendered at once (useful to improve performance when displaying large lists).\")",
+                    "target": "setPlaceholder(\"限制一次呈現的項目數量（顯示大型清單時可改善效能）。\")"
+                },
+                {
+                    "source": "setName(\"The `RunMode`, representing the way Templater was launched (Create new from template, Append to active file, ...).\")",
+                    "target": "setName(\"`RunMode`，表示 Templater 啟動的方式（從範本建立新檔、附加到目前檔案等）。\")"
+                },
+                {
+                    "source": "setDesc(\"The `RunMode`, representing the way Templater was launched (Create new from template, Append to active file, ...).\")",
+                    "target": "setDesc(\"`RunMode`，表示 Templater 啟動的方式（從範本建立新檔、附加到目前檔案等）。\")"
+                },
+                {
+                    "source": "setButtonText(\"The `RunMode`, representing the way Templater was launched (Create new from template, Append to active file, ...).\")",
+                    "target": "setButtonText(\"`RunMode`，表示 Templater 啟動的方式（從範本建立新檔、附加到目前檔案等）。\")"
+                },
+                {
+                    "source": "setTooltip(\"The `RunMode`, representing the way Templater was launched (Create new from template, Append to active file, ...).\")",
+                    "target": "setTooltip(\"`RunMode`，表示 Templater 啟動的方式（從範本建立新檔、附加到目前檔案等）。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"The `RunMode`, representing the way Templater was launched (Create new from template, Append to active file, ...).\")",
+                    "target": "setPlaceholder(\"`RunMode`，表示 Templater 啟動的方式（從範本建立新檔、附加到目前檔案等）。\")"
+                },
+                {
+                    "source": "setName(\"The `TFile` object representing the target file where the template will be inserted.\")",
+                    "target": "setName(\"代表範本將插入之目標檔案的 `TFile` 物件。\")"
+                },
+                {
+                    "source": "setDesc(\"The `TFile` object representing the target file where the template will be inserted.\")",
+                    "target": "setDesc(\"代表範本將插入之目標檔案的 `TFile` 物件。\")"
+                },
+                {
+                    "source": "setButtonText(\"The `TFile` object representing the target file where the template will be inserted.\")",
+                    "target": "setButtonText(\"代表範本將插入之目標檔案的 `TFile` 物件。\")"
+                },
+                {
+                    "source": "setTooltip(\"The `TFile` object representing the target file where the template will be inserted.\")",
+                    "target": "setTooltip(\"代表範本將插入之目標檔案的 `TFile` 物件。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"The `TFile` object representing the target file where the template will be inserted.\")",
+                    "target": "setPlaceholder(\"代表範本將插入之目標檔案的 `TFile` 物件。\")"
+                },
+                {
+                    "source": "setName(\"The `TFile` object representing the template file.\")",
+                    "target": "setName(\"代表範本檔案的 `TFile` 物件。\")"
+                },
+                {
+                    "source": "setDesc(\"The `TFile` object representing the template file.\")",
+                    "target": "setDesc(\"代表範本檔案的 `TFile` 物件。\")"
+                },
+                {
+                    "source": "setButtonText(\"The `TFile` object representing the template file.\")",
+                    "target": "setButtonText(\"代表範本檔案的 `TFile` 物件。\")"
+                },
+                {
+                    "source": "setTooltip(\"The `TFile` object representing the template file.\")",
+                    "target": "setTooltip(\"代表範本檔案的 `TFile` 物件。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"The `TFile` object representing the template file.\")",
+                    "target": "setPlaceholder(\"代表範本檔案的 `TFile` 物件。\")"
+                },
+                {
+                    "source": "setName(\"The active file (if existing) when launching Templater.\")",
+                    "target": "setName(\"啟動 Templater 時的目前檔案（如果存在）。\")"
+                },
+                {
+                    "source": "setDesc(\"The active file (if existing) when launching Templater.\")",
+                    "target": "setDesc(\"啟動 Templater 時的目前檔案（如果存在）。\")"
+                },
+                {
+                    "source": "setButtonText(\"The active file (if existing) when launching Templater.\")",
+                    "target": "setButtonText(\"啟動 Templater 時的目前檔案（如果存在）。\")"
+                },
+                {
+                    "source": "setTooltip(\"The active file (if existing) when launching Templater.\")",
+                    "target": "setTooltip(\"啟動 Templater 時的目前檔案（如果存在）。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"The active file (if existing) when launching Templater.\")",
+                    "target": "setPlaceholder(\"啟動 Templater 時的目前檔案（如果存在）。\")"
+                },
+                {
+                    "source": "setName(\"The string contents of the file at the time that Templater was executed. Manipulating this string will *not* update the current file.\")",
+                    "target": "setName(\"Templater 執行當下的檔案字串內容。修改此字串*不會*更新目前檔案。\")"
+                },
+                {
+                    "source": "setDesc(\"The string contents of the file at the time that Templater was executed. Manipulating this string will *not* update the current file.\")",
+                    "target": "setDesc(\"Templater 執行當下的檔案字串內容。修改此字串*不會*更新目前檔案。\")"
+                },
+                {
+                    "source": "setButtonText(\"The string contents of the file at the time that Templater was executed. Manipulating this string will *not* update the current file.\")",
+                    "target": "setButtonText(\"Templater 執行當下的檔案字串內容。修改此字串*不會*更新目前檔案。\")"
+                },
+                {
+                    "source": "setTooltip(\"The string contents of the file at the time that Templater was executed. Manipulating this string will *not* update the current file.\")",
+                    "target": "setTooltip(\"Templater 執行當下的檔案字串內容。修改此字串*不會*更新目前檔案。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"The string contents of the file at the time that Templater was executed. Manipulating this string will *not* update the current file.\")",
+                    "target": "setPlaceholder(\"Templater 執行當下的檔案字串內容。修改此字串*不會*更新目前檔案。\")"
+                },
+                {
+                    "source": "setName(\"The date referential, e.g. set this to the note's title.\")",
+                    "target": "setName(\"日期參照，例如可設為筆記標題。\")"
+                },
+                {
+                    "source": "setDesc(\"The date referential, e.g. set this to the note's title.\")",
+                    "target": "setDesc(\"日期參照，例如可設為筆記標題。\")"
+                },
+                {
+                    "source": "setButtonText(\"The date referential, e.g. set this to the note's title.\")",
+                    "target": "setButtonText(\"日期參照，例如可設為筆記標題。\")"
+                },
+                {
+                    "source": "setTooltip(\"The date referential, e.g. set this to the note's title.\")",
+                    "target": "setTooltip(\"日期參照，例如可設為筆記標題。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"The date referential, e.g. set this to the note's title.\")",
+                    "target": "setPlaceholder(\"日期參照，例如可設為筆記標題。\")"
+                },
+                {
+                    "source": "setName(\"The format for the date. Defaults to `\\\"YYYY-MM-DD\\\"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\")",
+                    "target": "setName(\"日期格式。預設為 `\\\"YYYY-MM-DD\\\"`。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\")"
+                },
+                {
+                    "source": "setDesc(\"The format for the date. Defaults to `\\\"YYYY-MM-DD\\\"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\")",
+                    "target": "setDesc(\"日期格式。預設為 `\\\"YYYY-MM-DD\\\"`。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\")"
+                },
+                {
+                    "source": "setButtonText(\"The format for the date. Defaults to `\\\"YYYY-MM-DD\\\"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\")",
+                    "target": "setButtonText(\"日期格式。預設為 `\\\"YYYY-MM-DD\\\"`。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\")"
+                },
+                {
+                    "source": "setTooltip(\"The format for the date. Defaults to `\\\"YYYY-MM-DD\\\"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\")",
+                    "target": "setTooltip(\"日期格式。預設為 `\\\"YYYY-MM-DD\\\"`。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"The format for the date. Defaults to `\\\"YYYY-MM-DD\\\"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\")",
+                    "target": "setPlaceholder(\"日期格式。預設為 `\\\"YYYY-MM-DD\\\"`。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\")"
+                },
+                {
+                    "source": "setName(\"The format for the reference date. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\")",
+                    "target": "setName(\"參照日期的格式。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\")"
+                },
+                {
+                    "source": "setDesc(\"The format for the reference date. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\")",
+                    "target": "setDesc(\"參照日期的格式。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\")"
+                },
+                {
+                    "source": "setButtonText(\"The format for the reference date. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\")",
+                    "target": "setButtonText(\"參照日期的格式。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\")"
+                },
+                {
+                    "source": "setTooltip(\"The format for the reference date. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\")",
+                    "target": "setTooltip(\"參照日期的格式。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"The format for the reference date. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/).\")",
+                    "target": "setPlaceholder(\"參照日期的格式。請參考[格式說明](https://momentjs.com/docs/#/displaying/format/)。\")"
+                },
+                {
+                    "source": "setName(\"Create new note from template\")",
+                    "target": "setName(\"從範本建立新筆記\")"
+                },
+                {
+                    "source": "setDesc(\"Create new note from template\")",
+                    "target": "setDesc(\"從範本建立新筆記\")"
+                },
+                {
+                    "source": "setButtonText(\"Create new note from template\")",
+                    "target": "setButtonText(\"從範本建立新筆記\")"
+                },
+                {
+                    "source": "setTooltip(\"Create new note from template\")",
+                    "target": "setTooltip(\"從範本建立新筆記\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Create new note from template\")",
+                    "target": "setPlaceholder(\"從範本建立新筆記\")"
+                },
+                {
+                    "source": "setName(\"File creation with template\")",
+                    "target": "setName(\"使用範本建立檔案\")"
+                },
+                {
+                    "source": "setDesc(\"File creation with template\")",
+                    "target": "setDesc(\"使用範本建立檔案\")"
+                },
+                {
+                    "source": "setButtonText(\"File creation with template\")",
+                    "target": "setButtonText(\"使用範本建立檔案\")"
+                },
+                {
+                    "source": "setTooltip(\"File creation with template\")",
+                    "target": "setTooltip(\"使用範本建立檔案\")"
+                },
+                {
+                    "source": "setPlaceholder(\"File creation with template\")",
+                    "target": "setPlaceholder(\"使用範本建立檔案\")"
+                },
+                {
+                    "source": "setName(\"Open insert template modal\")",
+                    "target": "setName(\"開啟插入範本視窗\")"
+                },
+                {
+                    "source": "setDesc(\"Open insert template modal\")",
+                    "target": "setDesc(\"開啟插入範本視窗\")"
+                },
+                {
+                    "source": "setButtonText(\"Open insert template modal\")",
+                    "target": "setButtonText(\"開啟插入範本視窗\")"
+                },
+                {
+                    "source": "setTooltip(\"Open insert template modal\")",
+                    "target": "setTooltip(\"開啟插入範本視窗\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Open insert template modal\")",
+                    "target": "setPlaceholder(\"開啟插入範本視窗\")"
+                },
+                {
+                    "source": "setName(\"Replace templates in the active file\")",
+                    "target": "setName(\"取代目前檔案中的範本\")"
+                },
+                {
+                    "source": "setDesc(\"Replace templates in the active file\")",
+                    "target": "setDesc(\"取代目前檔案中的範本\")"
+                },
+                {
+                    "source": "setButtonText(\"Replace templates in the active file\")",
+                    "target": "setButtonText(\"取代目前檔案中的範本\")"
+                },
+                {
+                    "source": "setTooltip(\"Replace templates in the active file\")",
+                    "target": "setTooltip(\"取代目前檔案中的範本\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Replace templates in the active file\")",
+                    "target": "setPlaceholder(\"取代目前檔案中的範本\")"
+                },
+                {
+                    "source": "setName(\"Multi-suggester\")",
+                    "target": "setName(\"多選建議選單\")"
+                },
+                {
+                    "source": "setDesc(\"Multi-suggester\")",
+                    "target": "setDesc(\"多選建議選單\")"
+                },
+                {
+                    "source": "setButtonText(\"Multi-suggester\")",
+                    "target": "setButtonText(\"多選建議選單\")"
+                },
+                {
+                    "source": "setTooltip(\"Multi-suggester\")",
+                    "target": "setTooltip(\"多選建議選單\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Multi-suggester\")",
+                    "target": "setPlaceholder(\"多選建議選單\")"
+                },
+                {
+                    "source": "setName(\"Active editor is null, can't overwrite content\")",
+                    "target": "setName(\"目前沒有作用中的編輯器，無法覆寫內容\")"
+                },
+                {
+                    "source": "setDesc(\"Active editor is null, can't overwrite content\")",
+                    "target": "setDesc(\"目前沒有作用中的編輯器，無法覆寫內容\")"
+                },
+                {
+                    "source": "setButtonText(\"Active editor is null, can't overwrite content\")",
+                    "target": "setButtonText(\"目前沒有作用中的編輯器，無法覆寫內容\")"
+                },
+                {
+                    "source": "setTooltip(\"Active editor is null, can't overwrite content\")",
+                    "target": "setTooltip(\"目前沒有作用中的編輯器，無法覆寫內容\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Active editor is null, can't overwrite content\")",
+                    "target": "setPlaceholder(\"目前沒有作用中的編輯器，無法覆寫內容\")"
+                },
+                {
+                    "source": "setName(\"Active editor is null, can't read selection.\")",
+                    "target": "setName(\"目前沒有作用中的編輯器，無法讀取選取內容。\")"
+                },
+                {
+                    "source": "setDesc(\"Active editor is null, can't read selection.\")",
+                    "target": "setDesc(\"目前沒有作用中的編輯器，無法讀取選取內容。\")"
+                },
+                {
+                    "source": "setButtonText(\"Active editor is null, can't read selection.\")",
+                    "target": "setButtonText(\"目前沒有作用中的編輯器，無法讀取選取內容。\")"
+                },
+                {
+                    "source": "setTooltip(\"Active editor is null, can't read selection.\")",
+                    "target": "setTooltip(\"目前沒有作用中的編輯器，無法讀取選取內容。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Active editor is null, can't read selection.\")",
+                    "target": "setPlaceholder(\"目前沒有作用中的編輯器，無法讀取選取內容。\")"
+                },
+                {
+                    "source": "setName(\"app.vault is not a FileSystemAdapter instance\")",
+                    "target": "setName(\"app.vault 不是 FileSystemAdapter 實例\")"
+                },
+                {
+                    "source": "setDesc(\"app.vault is not a FileSystemAdapter instance\")",
+                    "target": "setDesc(\"app.vault 不是 FileSystemAdapter 實例\")"
+                },
+                {
+                    "source": "setButtonText(\"app.vault is not a FileSystemAdapter instance\")",
+                    "target": "setButtonText(\"app.vault 不是 FileSystemAdapter 實例\")"
+                },
+                {
+                    "source": "setTooltip(\"app.vault is not a FileSystemAdapter instance\")",
+                    "target": "setTooltip(\"app.vault 不是 FileSystemAdapter 實例\")"
+                },
+                {
+                    "source": "setPlaceholder(\"app.vault is not a FileSystemAdapter instance\")",
+                    "target": "setPlaceholder(\"app.vault 不是 FileSystemAdapter 實例\")"
+                },
+                {
+                    "source": "setName(\"Cancelled prompt\")",
+                    "target": "setName(\"已取消提示\")"
+                },
+                {
+                    "source": "setDesc(\"Cancelled prompt\")",
+                    "target": "setDesc(\"已取消提示\")"
+                },
+                {
+                    "source": "setButtonText(\"Cancelled prompt\")",
+                    "target": "setButtonText(\"已取消提示\")"
+                },
+                {
+                    "source": "setTooltip(\"Cancelled prompt\")",
+                    "target": "setTooltip(\"已取消提示\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Cancelled prompt\")",
+                    "target": "setPlaceholder(\"已取消提示\")"
+                },
+                {
+                    "source": "setName(\"Couldn't find customOverlayMode, can't enable syntax highlighting.\")",
+                    "target": "setName(\"找不到 customOverlayMode，無法啟用語法醒目提示。\")"
+                },
+                {
+                    "source": "setDesc(\"Couldn't find customOverlayMode, can't enable syntax highlighting.\")",
+                    "target": "setDesc(\"找不到 customOverlayMode，無法啟用語法醒目提示。\")"
+                },
+                {
+                    "source": "setButtonText(\"Couldn't find customOverlayMode, can't enable syntax highlighting.\")",
+                    "target": "setButtonText(\"找不到 customOverlayMode，無法啟用語法醒目提示。\")"
+                },
+                {
+                    "source": "setTooltip(\"Couldn't find customOverlayMode, can't enable syntax highlighting.\")",
+                    "target": "setTooltip(\"找不到 customOverlayMode，無法啟用語法醒目提示。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Couldn't find customOverlayMode, can't enable syntax highlighting.\")",
+                    "target": "setPlaceholder(\"找不到 customOverlayMode，無法啟用語法醒目提示。\")"
+                },
+                {
+                    "source": "setName(\"Error fetching and extracting value\")",
+                    "target": "setName(\"擷取並取出值時發生錯誤\")"
+                },
+                {
+                    "source": "setDesc(\"Error fetching and extracting value\")",
+                    "target": "setDesc(\"擷取並取出值時發生錯誤\")"
+                },
+                {
+                    "source": "setButtonText(\"Error fetching and extracting value\")",
+                    "target": "setButtonText(\"擷取並取出值時發生錯誤\")"
+                },
+                {
+                    "source": "setTooltip(\"Error fetching and extracting value\")",
+                    "target": "setTooltip(\"擷取並取出值時發生錯誤\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Error fetching and extracting value\")",
+                    "target": "setPlaceholder(\"擷取並取出值時發生錯誤\")"
+                },
+                {
+                    "source": "setName(\"Error generating daily quote\")",
+                    "target": "setName(\"產生每日引言時發生錯誤\")"
+                },
+                {
+                    "source": "setDesc(\"Error generating daily quote\")",
+                    "target": "setDesc(\"產生每日引言時發生錯誤\")"
+                },
+                {
+                    "source": "setButtonText(\"Error generating daily quote\")",
+                    "target": "setButtonText(\"產生每日引言時發生錯誤\")"
+                },
+                {
+                    "source": "setTooltip(\"Error generating daily quote\")",
+                    "target": "setTooltip(\"產生每日引言時發生錯誤\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Error generating daily quote\")",
+                    "target": "setPlaceholder(\"產生每日引言時發生錯誤\")"
+                },
+                {
+                    "source": "setName(\"Error generating random picture\")",
+                    "target": "setName(\"產生隨機圖片時發生錯誤\")"
+                },
+                {
+                    "source": "setDesc(\"Error generating random picture\")",
+                    "target": "setDesc(\"產生隨機圖片時發生錯誤\")"
+                },
+                {
+                    "source": "setButtonText(\"Error generating random picture\")",
+                    "target": "setButtonText(\"產生隨機圖片時發生錯誤\")"
+                },
+                {
+                    "source": "setTooltip(\"Error generating random picture\")",
+                    "target": "setTooltip(\"產生隨機圖片時發生錯誤\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Error generating random picture\")",
+                    "target": "setPlaceholder(\"產生隨機圖片時發生錯誤\")"
+                },
+                {
+                    "source": "setName(\"Error performing GET request\")",
+                    "target": "setName(\"執行 GET 請求時發生錯誤\")"
+                },
+                {
+                    "source": "setDesc(\"Error performing GET request\")",
+                    "target": "setDesc(\"執行 GET 請求時發生錯誤\")"
+                },
+                {
+                    "source": "setButtonText(\"Error performing GET request\")",
+                    "target": "setButtonText(\"執行 GET 請求時發生錯誤\")"
+                },
+                {
+                    "source": "setTooltip(\"Error performing GET request\")",
+                    "target": "setTooltip(\"執行 GET 請求時發生錯誤\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Error performing GET request\")",
+                    "target": "setPlaceholder(\"執行 GET 請求時發生錯誤\")"
+                },
+                {
+                    "source": "setName(\"File name cannot contain any of these characters: \\\\ / :\")",
+                    "target": "setName(\"檔名不能包含以下任何字元：\\\\ / :\")"
+                },
+                {
+                    "source": "setDesc(\"File name cannot contain any of these characters: \\\\ / :\")",
+                    "target": "setDesc(\"檔名不能包含以下任何字元：\\\\ / :\")"
+                },
+                {
+                    "source": "setButtonText(\"File name cannot contain any of these characters: \\\\ / :\")",
+                    "target": "setButtonText(\"檔名不能包含以下任何字元：\\\\ / :\")"
+                },
+                {
+                    "source": "setTooltip(\"File name cannot contain any of these characters: \\\\ / :\")",
+                    "target": "setTooltip(\"檔名不能包含以下任何字元：\\\\ / :\")"
+                },
+                {
+                    "source": "setPlaceholder(\"File name cannot contain any of these characters: \\\\ / :\")",
+                    "target": "setPlaceholder(\"檔名不能包含以下任何字元：\\\\ / :\")"
+                },
+                {
+                    "source": "setName(\"Invalid file format, provide an obsidian link between quotes.\")",
+                    "target": "setName(\"檔案格式無效，請在引號中提供 Obsidian 連結。\")"
+                },
+                {
+                    "source": "setDesc(\"Invalid file format, provide an obsidian link between quotes.\")",
+                    "target": "setDesc(\"檔案格式無效，請在引號中提供 Obsidian 連結。\")"
+                },
+                {
+                    "source": "setButtonText(\"Invalid file format, provide an obsidian link between quotes.\")",
+                    "target": "setButtonText(\"檔案格式無效，請在引號中提供 Obsidian 連結。\")"
+                },
+                {
+                    "source": "setTooltip(\"Invalid file format, provide an obsidian link between quotes.\")",
+                    "target": "setTooltip(\"檔案格式無效，請在引號中提供 Obsidian 連結。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Invalid file format, provide an obsidian link between quotes.\")",
+                    "target": "setPlaceholder(\"檔案格式無效，請在引號中提供 Obsidian 連結。\")"
+                },
+                {
+                    "source": "setName(\"Invalid reference date format, try specifying one with the argument 'reference_format'\")",
+                    "target": "setName(\"參照日期格式無效，請嘗試使用 `reference_format` 引數指定格式\")"
+                },
+                {
+                    "source": "setDesc(\"Invalid reference date format, try specifying one with the argument 'reference_format'\")",
+                    "target": "setDesc(\"參照日期格式無效，請嘗試使用 `reference_format` 引數指定格式\")"
+                },
+                {
+                    "source": "setButtonText(\"Invalid reference date format, try specifying one with the argument 'reference_format'\")",
+                    "target": "setButtonText(\"參照日期格式無效，請嘗試使用 `reference_format` 引數指定格式\")"
+                },
+                {
+                    "source": "setTooltip(\"Invalid reference date format, try specifying one with the argument 'reference_format'\")",
+                    "target": "setTooltip(\"參照日期格式無效，請嘗試使用 `reference_format` 引數指定格式\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Invalid reference date format, try specifying one with the argument 'reference_format'\")",
+                    "target": "setPlaceholder(\"參照日期格式無效，請嘗試使用 `reference_format` 引數指定格式\")"
+                },
+                {
+                    "source": "setName(\"Javascript syntax mode couldn't be found, can't enable syntax highlighting.\")",
+                    "target": "setName(\"找不到 JavaScript 語法模式，無法啟用語法醒目提示。\")"
+                },
+                {
+                    "source": "setDesc(\"Javascript syntax mode couldn't be found, can't enable syntax highlighting.\")",
+                    "target": "setDesc(\"找不到 JavaScript 語法模式，無法啟用語法醒目提示。\")"
+                },
+                {
+                    "source": "setButtonText(\"Javascript syntax mode couldn't be found, can't enable syntax highlighting.\")",
+                    "target": "setButtonText(\"找不到 JavaScript 語法模式，無法啟用語法醒目提示。\")"
+                },
+                {
+                    "source": "setTooltip(\"Javascript syntax mode couldn't be found, can't enable syntax highlighting.\")",
+                    "target": "setTooltip(\"找不到 JavaScript 語法模式，無法啟用語法醒目提示。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Javascript syntax mode couldn't be found, can't enable syntax highlighting.\")",
+                    "target": "setPlaceholder(\"找不到 JavaScript 語法模式，無法啟用語法醒目提示。\")"
+                },
+                {
+                    "source": "setName(\"No active editor, can't append templates.\")",
+                    "target": "setName(\"沒有作用中的編輯器，無法附加範本。\")"
+                },
+                {
+                    "source": "setDesc(\"No active editor, can't append templates.\")",
+                    "target": "setDesc(\"沒有作用中的編輯器，無法附加範本。\")"
+                },
+                {
+                    "source": "setButtonText(\"No active editor, can't append templates.\")",
+                    "target": "setButtonText(\"沒有作用中的編輯器，無法附加範本。\")"
+                },
+                {
+                    "source": "setTooltip(\"No active editor, can't append templates.\")",
+                    "target": "setTooltip(\"沒有作用中的編輯器，無法附加範本。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"No active editor, can't append templates.\")",
+                    "target": "setPlaceholder(\"沒有作用中的編輯器，無法附加範本。\")"
+                },
+                {
+                    "source": "setName(\"No active editor, can't append to cursor.\")",
+                    "target": "setName(\"沒有作用中的編輯器，無法附加到游標。\")"
+                },
+                {
+                    "source": "setDesc(\"No active editor, can't append to cursor.\")",
+                    "target": "setDesc(\"沒有作用中的編輯器，無法附加到游標。\")"
+                },
+                {
+                    "source": "setButtonText(\"No active editor, can't append to cursor.\")",
+                    "target": "setButtonText(\"沒有作用中的編輯器，無法附加到游標。\")"
+                },
+                {
+                    "source": "setTooltip(\"No active editor, can't append to cursor.\")",
+                    "target": "setTooltip(\"沒有作用中的編輯器，無法附加到游標。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"No active editor, can't append to cursor.\")",
+                    "target": "setPlaceholder(\"沒有作用中的編輯器，無法附加到游標。\")"
+                },
+                {
+                    "source": "setName(\"No active leaf\")",
+                    "target": "setName(\"沒有作用中的葉窗格\")"
+                },
+                {
+                    "source": "setDesc(\"No active leaf\")",
+                    "target": "setDesc(\"沒有作用中的葉窗格\")"
+                },
+                {
+                    "source": "setButtonText(\"No active leaf\")",
+                    "target": "setButtonText(\"沒有作用中的葉窗格\")"
+                },
+                {
+                    "source": "setTooltip(\"No active leaf\")",
+                    "target": "setTooltip(\"沒有作用中的葉窗格\")"
+                },
+                {
+                    "source": "setPlaceholder(\"No active leaf\")",
+                    "target": "setPlaceholder(\"沒有作用中的葉窗格\")"
+                },
+                {
+                    "source": "setName(\"Reached create_new depth limit (max = 10)\")",
+                    "target": "setName(\"已達 create_new 深度限制（最大值 = 10）\")"
+                },
+                {
+                    "source": "setDesc(\"Reached create_new depth limit (max = 10)\")",
+                    "target": "setDesc(\"已達 create_new 深度限制（最大值 = 10）\")"
+                },
+                {
+                    "source": "setButtonText(\"Reached create_new depth limit (max = 10)\")",
+                    "target": "setButtonText(\"已達 create_new 深度限制（最大值 = 10）\")"
+                },
+                {
+                    "source": "setTooltip(\"Reached create_new depth limit (max = 10)\")",
+                    "target": "setTooltip(\"已達 create_new 深度限制（最大值 = 10）\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Reached create_new depth limit (max = 10)\")",
+                    "target": "setPlaceholder(\"已達 create_new 深度限制（最大值 = 10）\")"
+                },
+                {
+                    "source": "setName(\"Reached inclusion depth limit (max = 10)\")",
+                    "target": "setName(\"已達 include 深度限制（最大值 = 10）\")"
+                },
+                {
+                    "source": "setDesc(\"Reached inclusion depth limit (max = 10)\")",
+                    "target": "setDesc(\"已達 include 深度限制（最大值 = 10）\")"
+                },
+                {
+                    "source": "setButtonText(\"Reached inclusion depth limit (max = 10)\")",
+                    "target": "setButtonText(\"已達 include 深度限制（最大值 = 10）\")"
+                },
+                {
+                    "source": "setTooltip(\"Reached inclusion depth limit (max = 10)\")",
+                    "target": "setTooltip(\"已達 include 深度限制（最大值 = 10）\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Reached inclusion depth limit (max = 10)\")",
+                    "target": "setPlaceholder(\"已達 include 深度限制（最大值 = 10）\")"
+                },
+                {
+                    "source": "setName(\"Unable to enable syntax highlighting. Could not define language.\")",
+                    "target": "setName(\"無法啟用語法醒目提示。無法定義語言。\")"
+                },
+                {
+                    "source": "setDesc(\"Unable to enable syntax highlighting. Could not define language.\")",
+                    "target": "setDesc(\"無法啟用語法醒目提示。無法定義語言。\")"
+                },
+                {
+                    "source": "setButtonText(\"Unable to enable syntax highlighting. Could not define language.\")",
+                    "target": "setButtonText(\"無法啟用語法醒目提示。無法定義語言。\")"
+                },
+                {
+                    "source": "setTooltip(\"Unable to enable syntax highlighting. Could not define language.\")",
+                    "target": "setTooltip(\"無法啟用語法醒目提示。無法定義語言。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Unable to enable syntax highlighting. Could not define language.\")",
+                    "target": "setPlaceholder(\"無法啟用語法醒目提示。無法定義語言。\")"
+                },
+                {
+                    "source": "text:\"documentation\"",
+                    "target": "text:\"文件\""
+                },
+                {
+                    "source": "text:\"empty \"",
+                    "target": "text:\"空白\""
+                },
+                {
+                    "source": "text:\"empty\"",
+                    "target": "text:\"空白\""
+                },
+                {
+                    "source": "text:\"User function n°\"+t",
+                    "target": "text:\"使用者函式 #\"+t"
+                },
+                {
+                    "source": "t=\"No user scripts folder set\"",
+                    "target": "t=\"未設定使用者指令碼資料夾\""
+                },
+                {
+                    "source": "\"User scripts folder doesn't exist\"",
+                    "target": "\"使用者指令碼資料夾不存在\""
+                },
+                {
+                    "source": "t=\"No user scripts detected\"",
+                    "target": "t=\"未偵測到使用者指令碼\""
+                },
+                {
+                    "source": "t=`Detected ${i} User Script(s)`",
+                    "target": "t=`偵測到 ${i} 個使用者指令碼`"
+                },
+                {
+                    "source": "e.append(\"Templater provides multiples predefined variables / functions that you can use.\",e.createEl(\"br\"),\"Check the \",e.createEl(\"a\",{href:\"https://silentvoid13.github.io/Templater/\",text:\"documentation\"}),\" to get a list of all the available internal variables / functions.\")",
+                    "target": "e.append(\"Templater 提供多個可使用的預先定義變數／函式。\",e.createEl(\"br\"),\"請查看\",e.createEl(\"a\",{href:\"https://silentvoid13.github.io/Templater/\",text:\"文件\"}),\"以取得所有可用內部變數／函式的清單。\")"
+                },
+                {
+                    "source": "e.append(\"Adds syntax highlighting for Templater commands in edit mode.\")",
+                    "target": "e.append(\"在編輯模式中為 Templater 命令加入語法醒目提示。\")"
+                },
+                {
+                    "source": "t.append(\"Adds syntax highlighting for Templater commands in edit mode on mobile. Use with caution: this may break live preview on mobile platforms.\")",
+                    "target": "t.append(\"在行動裝置的編輯模式中為 Templater 命令加入語法醒目提示。請謹慎使用：這可能會破壞行動平台上的即時預覽。\")"
+                },
+                {
+                    "source": "e.append(\"Automatically triggers \",e.createEl(\"code\",{text:\"tp.file.cursor\"}),\" after inserting a template.\",e.createEl(\"br\"),\"You can also set a hotkey to manually trigger \",e.createEl(\"code\",{text:\"tp.file.cursor\"}),\".\")",
+                    "target": "e.append(\"插入範本後自動觸發\",e.createEl(\"code\",{text:\"tp.file.cursor\"}),\"。\",e.createEl(\"br\"),\"你也可以設定快速鍵來手動觸發\",e.createEl(\"code\",{text:\"tp.file.cursor\"}),\"。\")"
+                },
+                {
+                    "source": "e.append(\"Templater will listen for the new file creation event, and, if it matches a rule you've set, replace every command it finds in the new file's content. \",\"This makes Templater compatible with other plugins like the Daily note core plugin, Calendar plugin, Review plugin, Note refactor plugin, etc. \",e.createEl(\"br\"),e.createEl(\"br\"),\"Make sure to set up rules under either folder templates or file regex template below.\",e.createEl(\"br\"),e.createEl(\"br\"),e.createEl(\"b\",{text:\"警告：\"}),\"This can be dangerous if you create new files with unknown / unsafe content on creation. Make sure that every new file's content is safe on creation.\")",
+                    "target": "e.append(\"Templater 會監聽新檔案建立事件；如果符合你設定的規則，就會取代新檔案內容中找到的每個命令。\",\"這讓 Templater 可與每日筆記核心外掛、Calendar、Review、Note refactor 等外掛相容。\",e.createEl(\"br\"),e.createEl(\"br\"),\"請確認已在下方的資料夾範本或檔案正規表示式範本中設定規則。\",e.createEl(\"br\"),e.createEl(\"br\"),e.createEl(\"b\",{text:\"警告：\"}),\"如果建立新檔案時內容未知或不安全，這可能會有風險。請確認每個新檔案在建立時內容都是安全的。\")"
+                },
+                {
+                    "source": "e.append(\"Template hotkeys allows you to bind a template to a hotkey.\")",
+                    "target": "e.append(\"範本快速鍵可讓你將範本綁定到快速鍵。\")"
+                },
+                {
+                    "source": "e.append(\"Folder templates are triggered when a new \",e.createEl(\"strong\",{text:\"empty \"}),\"file is created in a given folder.\",e.createEl(\"br\"),\"Templater will fill the empty file with the specified template.\",e.createEl(\"br\"),\"The deepest match is used. A global default template would be defined on the root \",e.createEl(\"code\",{text:\"/\"}),\".\")",
+                    "target": "e.append(\"當指定資料夾中建立新的\",e.createEl(\"strong\",{text:\"空白\"}),\"檔案時，會觸發資料夾範本。\",e.createEl(\"br\"),\"Templater 會使用指定範本填入空白檔案。\",e.createEl(\"br\"),\"會使用最深層的符合項目。全域預設範本可定義在根目錄\",e.createEl(\"code\",{text:\"/\"}),\"。\")"
+                },
+                {
+                    "source": "e.append(\"File regex templates are triggered when a new \",e.createEl(\"strong\",{text:\"empty\"}),\" file is created that matches one of them. Templater will fill the empty file with the specified template.\",e.createEl(\"br\"),\"The first match from the top is used, so the order of the rules is important.\",e.createEl(\"br\"),\"Use \",e.createEl(\"code\",{text:\".*\"}),\" as a final catch-all, if you need it.\")",
+                    "target": "e.append(\"當建立符合其中一條規則的新\",e.createEl(\"strong\",{text:\"空白\"}),\"檔案時，會觸發檔案正規表示式範本。Templater 會使用指定範本填入空白檔案。\",e.createEl(\"br\"),\"會使用從上到下第一個符合項目，因此規則順序很重要。\",e.createEl(\"br\"),\"如有需要，可使用\",e.createEl(\"code\",{text:\".*\"}),\"作為最後的全域符合規則。\")"
+                },
+                {
+                    "source": "e.append(\"Startup templates are templates that will get executed once when Templater starts.\",e.createEl(\"br\"),\"These templates won't output anything.\",e.createEl(\"br\"),\"This can be useful to set up templates adding hooks to Obsidian events for example.\")",
+                    "target": "e.append(\"啟動範本會在 Templater 啟動時執行一次。\",e.createEl(\"br\"),\"這些範本不會輸出任何內容。\",e.createEl(\"br\"),\"這可用於設定會加入 Obsidian 事件 hook 的範本。\")"
+                },
+                {
+                    "source": "e.append(\"All JavaScript files in this folder will be loaded as CommonJS modules, to import custom user functions.\",e.createEl(\"br\"),\"The folder needs to be accessible from the vault.\",e.createEl(\"br\"),\"Check the \",e.createEl(\"a\",{href:\"https://silentvoid13.github.io/Templater/\",text:\"documentation\"}),\" for more information.\")",
+                    "target": "e.append(\"此資料夾中的所有 JavaScript 檔案都會作為 CommonJS 模組載入，用於匯入自訂使用者函式。\",e.createEl(\"br\"),\"此資料夾必須可從儲存庫存取。\",e.createEl(\"br\"),\"請查看\",e.createEl(\"a\",{href:\"https://silentvoid13.github.io/Templater/\",text:\"文件\"}),\"以取得更多資訊。\")"
+                },
+                {
+                    "source": "e.append(\"Allows you to create user functions linked to system commands.\",e.createEl(\"br\"),e.createEl(\"b\",{text:\"警告：\"}),\"It can be dangerous to execute arbitrary system commands from untrusted sources. Only run system commands that you understand, from trusted sources.\")",
+                    "target": "e.append(\"允許你建立連結到系統命令的使用者函式。\",e.createEl(\"br\"),e.createEl(\"b\",{text:\"警告：\"}),\"執行來自不受信任來源的任意系統命令可能很危險。只執行你了解且來自可信來源的系統命令。\")"
+                },
+                {
+                    "source": "e.append(\"Full path to the shell binary to execute the command with.\",e.createEl(\"br\"),\"This setting is optional and will default to the system's default shell if not specified.\",e.createEl(\"br\"),\"You can use forward slashes ('/') as path separators on all platforms if in doubt.\")",
+                    "target": "e.append(\"用來執行命令的 shell 執行檔完整路徑。\",e.createEl(\"br\"),\"此設定為選用；若未指定，會使用系統預設 shell。\",e.createEl(\"br\"),\"不確定時，可以在所有平台上使用正斜線（'/'）作為路徑分隔符。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Template\")",
+                    "target": "setPlaceholder(\"範本\")"
+                },
+                {
+                    "source": "new P(\"This template is already bound to a hotkey\")",
+                    "target": "new P(\"此範本已綁定快速鍵\")"
+                },
+                {
+                    "source": "new P(\"This folder already has a template associated with it\")",
+                    "target": "new P(\"此資料夾已有關聯範本\")"
+                },
+                {
+                    "source": "new P(\"This startup template already exist\")",
+                    "target": "new P(\"此啟動範本已存在\")"
+                },
+                {
+                    "source": "new P(\"Timeout must be a number\")",
+                    "target": "new P(\"逾時必須是數字\")"
+                },
+                {
+                    "source": "this.setPlaceholder(\"Type name of a template...\")",
+                    "target": "this.setPlaceholder(\"輸入範本名稱...\")"
+                },
+                {
+                    "source": "createEl(\"b\",{text:\"Templater Error\"})",
+                    "target": "createEl(\"b\",{text:\"Templater 錯誤\"})"
                 }
             ]
         }
