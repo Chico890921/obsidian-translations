@@ -420,13 +420,13 @@
         "plugin": "obsidian42-brat",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "2.1.0",
-        "supported_versions": "2.1.0",
+        "version": "2.2.0",
+        "supported_versions": "2.2.0",
         "title": "[zh-tw] BRAT",
-        "description": "BRAT Localization & Tweaks",
-        "hash": "6e6114626e6114626e6114626e611462",
+        "description": "BRAT 繁體中文化與微調",
+        "hash": "01d77f7701d77f7701d77f7701d77f77",
         "created_at": "2026-05-25T03:49:39.383Z",
-        "updated_at": "2026-06-29T10:07:34.259Z"
+        "updated_at": "2026-07-01T18:33:17.421Z"
     },
     {
         "id": "OVLXJmyICA-n3J39aM2isStmImP2Tgtx",
