@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "0.2.7",
         "author": "Chico",
-        "updatedAt": 1778615217788
+        "updatedAt": 1782928113456
     },
     "dict": {
         "main.js": {
@@ -36,6 +36,24 @@
                     "name": "warn",
                     "source": "wheeledParent is null, return.",
                     "target": "wheeledParent is null, return."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "💪 Enhancements",
+                    "target": "💪 增強功能"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Allows you to switch tabs by scrolling on the **empty space of the tab bar** (the area next to your tabs). ⚠️ **Warning:** This prevents dragging the window from that area when the \"Hidden\" frame style is enabled.",
+                    "target": "允許你在**分頁列的空白區域**（分頁旁邊的區域）上捲動來切換分頁。⚠️ **警告：**啟用 \"Hidden\" 視窗框架樣式時，將無法從該區域拖曳視窗。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "debug",
+                    "target": "偵錯"
                 }
             ],
             "regex": [
@@ -46,6 +64,22 @@
                 {
                     "source": "setName(\"\\u{1F41E} Dev\")",
                     "target": "setName(\"\\u{1F41E} 開發\")"
+                },
+                {
+                    "source": "setName(\"💪 Enhancements\")",
+                    "target": "setName(\"💪 增強功能\")"
+                },
+                {
+                    "source": "setDesc(\"Allows you to switch tabs by scrolling on the **empty space of the tab bar** (the area next to your tabs). ⚠️ **Warning:** This prevents dragging the window from that area when the \\\"Hidden\\\" frame style is enabled.\")",
+                    "target": "setDesc(\"允許你在**分頁列的空白區域**（分頁旁邊的區域）上捲動來切換分頁。⚠️ **警告：**啟用 \\\"Hidden\\\" 視窗框架樣式時，將無法從該區域拖曳視窗。\")"
+                },
+                {
+                    "source": "setName(\"🐞 Dev\")",
+                    "target": "setName(\"🐞 開發\")"
+                },
+                {
+                    "source": "setName(\"debug\")",
+                    "target": "setName(\"偵錯\")"
                 }
             ]
         }
