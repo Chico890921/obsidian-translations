@@ -596,5 +596,18 @@
         "hash": "32b7f27d32b7f27d32b7f27d32b7f27d",
         "created_at": "2026-06-04T14:27:04.173Z",
         "updated_at": "2026-06-12T19:46:31.727Z"
+    },
+    {
+        "id": "D97wfoB5Vzz0gec5mCW7-Mb4G1k14f1K",
+        "plugin": "obsidian-importer",
+        "language": "zh-tw",
+        "version": "1.8.12",
+        "supported_versions": "1.8.12",
+        "title": "[zh-tw] Importer",
+        "description": "Importer 繁體中文化與微調",
+        "hash": "31896822318968223189682231896822",
+        "created_at": "2026-07-01T18:47:12.674Z",
+        "updated_at": "2026-07-01T18:47:12.674Z",
+        "type": "plugin"
     }
 ]
