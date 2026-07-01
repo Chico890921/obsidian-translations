@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "2.12.3",
         "author": "Chico",
-        "updatedAt": 1779626038095
+        "updatedAt": 1782926937640
     },
     "dict": {
         "main.js": {
@@ -209,7 +209,7 @@
                     "type": "AssignmentExpression",
                     "name": "textContent",
                     "source": "Choices:",
-                    "target": "Choices："
+                    "target": "Choice："
                 },
                 {
                     "type": "AssignmentExpression",
@@ -1085,7 +1085,7 @@
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "This prevents the plugin from making requests to external providers like OpenAI. You can still use User Scripts to execute arbitrary code, including contacting external providers. However, this setting disables plugin features like the AI Assistant from doing so. You need to disable this setting to use the AI Assistant.",
-                    "target": "This prevents the plugin from making requests to external providers like OpenAI. You can still use User Scripts to execute arbitrary code, including contacting external providers. However, this setting disables plugin features like the AI Assistant from doing so. You need to disable this setting to use the AI Assistant."
+                    "target": "這會防止外掛向 OpenAI 等外部提供者發出請求。你仍可使用 User Scripts 執行任意程式碼，包括連線到外部提供者。不過，此設定會停用 AI 助手等外掛功能的外部請求。若要使用 AI 助手，必須停用此設定。"
                 },
                 {
                     "type": "CallExpression",
@@ -1391,7 +1391,7 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Choices",
-                    "target": "Choices"
+                    "target": "Choice"
                 },
                 {
                     "type": "CallExpression",
@@ -1469,7 +1469,7 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "API Key",
-                    "target": "API Key"
+                    "target": "API 金鑰"
                 },
                 {
                     "type": "CallExpression",
@@ -2460,6 +2460,264 @@
                     "name": "title",
                     "source": "My Document Title",
                     "target": "我的文件標題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Choices & Packages",
+                    "target": "Choice 與套件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Templates & Properties",
+                    "target": "範本與屬性"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Notifications",
+                    "target": "通知"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "AI & Online",
+                    "target": "AI 與線上功能"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Appearance",
+                    "target": "外觀"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Template Folder Path",
+                    "target": "範本資料夾路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Path to the folder where templates are stored. Used to suggest template files when configuring QuickAdd.",
+                    "target": "儲存範本的資料夾路徑。設定 QuickAdd 時會用來建議範本檔案。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Experimental. Resolve variables up front and show a single dynamic form before executing Template/Capture choices. See Advanced → One-page Inputs in docs.",
+                    "target": "實驗性功能。預先解析變數，並在執行範本／擷取 Choice 前顯示單一動態表單。請參閱文件中的「進階 → 單頁輸入」。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Display release notes when a new version is installed. This includes new features, demo videos, and bug fixes.",
+                    "target": "安裝新版本時顯示版本資訊，包括新功能、示範影片與錯誤修正。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Format template variables as proper property types (Beta)",
+                    "target": "將範本變數格式化為正確的屬性類型（Beta）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When enabled, template variables in front matter will be formatted as proper Obsidian property types. Arrays become List properties, numbers become Number properties, booleans become Checkbox properties, etc. This is a beta feature that may have edge cases.",
+                    "target": "啟用後，front matter 中的範本變數會格式化為正確的 Obsidian 屬性類型。陣列會成為清單屬性、數字會成為數字屬性、布林值會成為核取方塊屬性等。此功能仍為 Beta，可能有邊界情況。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Prompt Template Folder Path",
+                    "target": "提示範本資料夾路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Path to your folder with prompt templates",
+                    "target": "提示範本所在的資料夾路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default System Prompt",
+                    "target": "預設系統提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The default system prompt for the AI Assistant",
+                    "target": "AI 助手的預設系統提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Prompt Template",
+                    "target": "提示範本"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Enabling this will have the assistant use the prompt template you specify. If disable, the assistant will ask you for a prompt template to use.",
+                    "target": "啟用後，助手會使用你指定的提示範本。停用時，助手會詢問要使用哪個提示範本。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "System Prompt",
+                    "target": "系統提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The system prompt for the AI Assistant",
+                    "target": "AI 助手的系統提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show advanced settings such as temperature, top p, and frequency penalty.",
+                    "target": "顯示進階設定，例如 temperature、top p 與頻率懲罰。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Sampling temperature. Higher values like 0.8 makes the output more random, whereas lower values like 0.2 will make it more focused and deterministic. The default is 1.",
+                    "target": "取樣溫度。較高的值（如 0.8）會讓輸出更隨機；較低的值（如 0.2）會讓輸出更集中且穩定。預設值為 1。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Nucleus sampling - consider this an alternative to temperature. The model considers the results of the tokens with top_p probability mass. 0.1 means only tokens compromising the top 10% probability mass are considered. The default is 1.",
+                    "target": "核採樣，可視為 temperature 的替代設定。模型會考慮累積機率為 top_p 的 token 結果。0.1 表示只考慮機率最高的前 10% token。預設值為 1。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The maximum number of tokens in each chunk, calculated as the chunk token size + prompt template token size + system prompt token size. Make sure you leave room for the model to respond to the prompt.",
+                    "target": "每個區塊的 token 上限，計算方式為區塊 token 數 + 提示範本 token 數 + 系統提示 token 數。請預留模型回應提示所需的空間。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Merge chunks together by putting them in the same prompt, until the max tokens limit is reached. Useful for sending fewer queries overall, but may result in less coherent responses.",
+                    "target": "將多個區塊合併到同一個提示中，直到達到 token 上限。這有助於減少查詢次數，但回應可能較不連貫。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Link placement",
+                    "target": "連結位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose whether replacing the selection should insert a link or an embed.",
+                    "target": "選擇取代選取內容時要插入連結或嵌入。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose whether to insert a regular link or an embed when replacing the selection.",
+                    "target": "選擇取代選取內容時要插入一般連結或嵌入。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Run Templater on entire destination file after capture",
+                    "target": "擷取後在整個目標檔案執行 Templater"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Create file with given template.",
+                    "target": "使用指定範本建立檔案。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Template Path",
+                    "target": "範本路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Path to the Template.",
+                    "target": "範本的路徑。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Template path",
+                    "target": "範本路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Legacy API key detected. Select a SecretStorage entry to migrate.",
+                    "target": "偵測到舊版 API 金鑰。請選擇 SecretStorage 項目以進行遷移。"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<h2 class=\"svelte-x9dt2q\">Import QuickAdd Package</h2> <p class=\"svelte-x9dt2q\">Select a package file, review conflicts, and choose how to import each item.</p>",
+                    "target": "<h2 class=\"svelte-x9dt2q\">匯入 QuickAdd 套件</h2> <p class=\"svelte-x9dt2q\">選擇套件檔案、檢查衝突，並選擇每個項目的匯入方式。</p>"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Import package",
+                    "target": "匯入套件"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Close",
+                    "target": "關閉"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Importing…",
+                    "target": "匯入中…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Paste the contents of a .quickadd.json package here",
+                    "target": "在此貼上 .quickadd.json 套件內容"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Will overwrite",
+                    "target": "將覆寫"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "New file",
+                    "target": "新檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Filter choices",
+                    "target": "篩選 choice"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Filter choices (fuzzy)",
+                    "target": "篩選 choice（模糊搜尋）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Snippet value (supports QuickAdd tokens)",
+                    "target": "片段值（支援 QuickAdd token）"
                 }
             ],
             "regex": [
@@ -3037,7 +3295,7 @@
                 },
                 {
                     "source": "setName(\"API Key\")",
-                    "target": "setName(\"API Key\")"
+                    "target": "setName(\"API 金鑰\")"
                 },
                 {
                     "source": "setDesc(\"Select a secret from SecretStorage\")",
@@ -3650,6 +3908,334 @@
                 {
                     "source": "description:\"Only include command-enabled choices\"",
                     "target": "description:\"只包含已啟用命令的 choice\""
+                },
+                {
+                    "source": "setName(\"Choices & Packages\")",
+                    "target": "setName(\"Choice 與套件\")"
+                },
+                {
+                    "source": "setName(\"Templates & Properties\")",
+                    "target": "setName(\"範本與屬性\")"
+                },
+                {
+                    "source": "setName(\"Notifications\")",
+                    "target": "setName(\"通知\")"
+                },
+                {
+                    "source": "setName(\"AI & Online\")",
+                    "target": "setName(\"AI 與線上功能\")"
+                },
+                {
+                    "source": "setName(\"Appearance\")",
+                    "target": "setName(\"外觀\")"
+                },
+                {
+                    "source": "setName(\"Template Folder Path\")",
+                    "target": "setName(\"範本資料夾路徑\")"
+                },
+                {
+                    "source": "setDesc(\"Path to the folder where templates are stored. Used to suggest template files when configuring QuickAdd.\")",
+                    "target": "setDesc(\"儲存範本的資料夾路徑。設定 QuickAdd 時會用來建議範本檔案。\")"
+                },
+                {
+                    "source": "setDesc(\"Experimental. Resolve variables up front and show a single dynamic form before executing Template/Capture choices. See Advanced → One-page Inputs in docs.\")",
+                    "target": "setDesc(\"實驗性功能。預先解析變數，並在執行範本／擷取 Choice 前顯示單一動態表單。請參閱文件中的「進階 → 單頁輸入」。\")"
+                },
+                {
+                    "source": "setDesc(\"Display release notes when a new version is installed. This includes new features, demo videos, and bug fixes.\")",
+                    "target": "setDesc(\"安裝新版本時顯示版本資訊，包括新功能、示範影片與錯誤修正。\")"
+                },
+                {
+                    "source": "setName(\"Format template variables as proper property types (Beta)\")",
+                    "target": "setName(\"將範本變數格式化為正確的屬性類型（Beta）\")"
+                },
+                {
+                    "source": "setDesc(\"When enabled, template variables in front matter will be formatted as proper Obsidian property types. Arrays become List properties, numbers become Number properties, booleans become Checkbox properties, etc. This is a beta feature that may have edge cases.\")",
+                    "target": "setDesc(\"啟用後，front matter 中的範本變數會格式化為正確的 Obsidian 屬性類型。陣列會成為清單屬性、數字會成為數字屬性、布林值會成為核取方塊屬性等。此功能仍為 Beta，可能有邊界情況。\")"
+                },
+                {
+                    "source": "setName(\"Prompt Template Folder Path\")",
+                    "target": "setName(\"提示範本資料夾路徑\")"
+                },
+                {
+                    "source": "setDesc(\"Path to your folder with prompt templates\")",
+                    "target": "setDesc(\"提示範本所在的資料夾路徑\")"
+                },
+                {
+                    "source": "setName(\"Default System Prompt\")",
+                    "target": "setName(\"預設系統提示\")"
+                },
+                {
+                    "source": "setDesc(\"The default system prompt for the AI Assistant\")",
+                    "target": "setDesc(\"AI 助手的預設系統提示\")"
+                },
+                {
+                    "source": "setName(\"Prompt Template\")",
+                    "target": "setName(\"提示範本\")"
+                },
+                {
+                    "source": "setDesc(\"Enabling this will have the assistant use the prompt template you specify. If disable, the assistant will ask you for a prompt template to use.\")",
+                    "target": "setDesc(\"啟用後，助手會使用你指定的提示範本。停用時，助手會詢問要使用哪個提示範本。\")"
+                },
+                {
+                    "source": "setName(\"System Prompt\")",
+                    "target": "setName(\"系統提示\")"
+                },
+                {
+                    "source": "setDesc(\"The system prompt for the AI Assistant\")",
+                    "target": "setDesc(\"AI 助手的系統提示\")"
+                },
+                {
+                    "source": "setDesc(\"Show advanced settings such as temperature, top p, and frequency penalty.\")",
+                    "target": "setDesc(\"顯示進階設定，例如 temperature、top p 與頻率懲罰。\")"
+                },
+                {
+                    "source": "setDesc(\"Sampling temperature. Higher values like 0.8 makes the output more random, whereas lower values like 0.2 will make it more focused and deterministic. The default is 1.\")",
+                    "target": "setDesc(\"取樣溫度。較高的值（如 0.8）會讓輸出更隨機；較低的值（如 0.2）會讓輸出更集中且穩定。預設值為 1。\")"
+                },
+                {
+                    "source": "setDesc(\"Nucleus sampling - consider this an alternative to temperature. The model considers the results of the tokens with top_p probability mass. 0.1 means only tokens compromising the top 10% probability mass are considered. The default is 1.\")",
+                    "target": "setDesc(\"核採樣，可視為 temperature 的替代設定。模型會考慮累積機率為 top_p 的 token 結果。0.1 表示只考慮機率最高的前 10% token。預設值為 1。\")"
+                },
+                {
+                    "source": "setDesc(\"The maximum number of tokens in each chunk, calculated as the chunk token size + prompt template token size + system prompt token size. Make sure you leave room for the model to respond to the prompt.\")",
+                    "target": "setDesc(\"每個區塊的 token 上限，計算方式為區塊 token 數 + 提示範本 token 數 + 系統提示 token 數。請預留模型回應提示所需的空間。\")"
+                },
+                {
+                    "source": "setDesc(\"Merge chunks together by putting them in the same prompt, until the max tokens limit is reached. Useful for sending fewer queries overall, but may result in less coherent responses.\")",
+                    "target": "setDesc(\"將多個區塊合併到同一個提示中，直到達到 token 上限。這有助於減少查詢次數，但回應可能較不連貫。\")"
+                },
+                {
+                    "source": "setDesc(\"This prevents the plugin from making requests to external providers like OpenAI. You can still use User Scripts to execute arbitrary code, including contacting external providers. However, this setting disables plugin features like the AI Assistant from doing so. You need to disable this setting to use the AI Assistant.\")",
+                    "target": "setDesc(\"這會防止外掛向 OpenAI 等外部提供者發出請求。你仍可使用 User Scripts 執行任意程式碼，包括連線到外部提供者。不過，此設定會停用 AI 助手等外掛功能的外部請求。若要使用 AI 助手，必須停用此設定。\")"
+                },
+                {
+                    "source": "setName(\"Link placement\")",
+                    "target": "setName(\"連結位置\")"
+                },
+                {
+                    "source": "setDesc(\"Choose whether replacing the selection should insert a link or an embed.\")",
+                    "target": "setDesc(\"選擇取代選取內容時要插入連結或嵌入。\")"
+                },
+                {
+                    "source": "setDesc(\"Choose whether to insert a regular link or an embed when replacing the selection.\")",
+                    "target": "setDesc(\"選擇取代選取內容時要插入一般連結或嵌入。\")"
+                },
+                {
+                    "source": "setName(\"Run Templater on entire destination file after capture\")",
+                    "target": "setName(\"擷取後在整個目標檔案執行 Templater\")"
+                },
+                {
+                    "source": "setName(\"Create file with given template.\")",
+                    "target": "setName(\"使用指定範本建立檔案。\")"
+                },
+                {
+                    "source": "setName(\"Template Path\")",
+                    "target": "setName(\"範本路徑\")"
+                },
+                {
+                    "source": "setDesc(\"Path to the Template.\")",
+                    "target": "setDesc(\"範本的路徑。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Template path\")",
+                    "target": "setPlaceholder(\"範本路徑\")"
+                },
+                {
+                    "source": "setDesc(\"Legacy API key detected. Select a SecretStorage entry to migrate.\")",
+                    "target": "setDesc(\"偵測到舊版 API 金鑰。請選擇 SecretStorage 項目以進行遷移。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Paste the contents of a .quickadd.json package here\")",
+                    "target": "setPlaceholder(\"在此貼上 .quickadd.json 套件內容\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Filter choices\")",
+                    "target": "setPlaceholder(\"篩選 choice\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Filter choices (fuzzy)\")",
+                    "target": "setPlaceholder(\"篩選 choice（模糊搜尋）\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Snippet value (supports QuickAdd tokens)\")",
+                    "target": "setPlaceholder(\"片段值（支援 QuickAdd token）\")"
+                },
+                {
+                    "source": "innerHTML=\"<h2 class=\\\"svelte-x9dt2q\\\">Import QuickAdd Package</h2> <p class=\\\"svelte-x9dt2q\\\">Select a package file, review conflicts, and choose how to import each item.</p>\"",
+                    "target": "innerHTML=\"<h2 class=\\\"svelte-x9dt2q\\\">匯入 QuickAdd 套件</h2> <p class=\\\"svelte-x9dt2q\\\">選擇套件檔案、檢查衝突，並選擇每個項目的匯入方式。</p>\""
+                },
+                {
+                    "source": "createSettingGroup(\"Choices & Packages\")",
+                    "target": "createSettingGroup(\"Choice 與套件\")"
+                },
+                {
+                    "source": "createSettingGroup(\"Input\")",
+                    "target": "createSettingGroup(\"輸入\")"
+                },
+                {
+                    "source": "createSettingGroup(\"Templates & Properties\")",
+                    "target": "createSettingGroup(\"範本與屬性\")"
+                },
+                {
+                    "source": "createSettingGroup(\"Notifications\")",
+                    "target": "createSettingGroup(\"通知\")"
+                },
+                {
+                    "source": "createSettingGroup(\"Global Variables\")",
+                    "target": "createSettingGroup(\"全域變數\")"
+                },
+                {
+                    "source": "createSettingGroup(\"AI & Online\")",
+                    "target": "createSettingGroup(\"AI 與線上功能\")"
+                },
+                {
+                    "source": "createSettingGroup(\"Appearance\")",
+                    "target": "createSettingGroup(\"外觀\")"
+                },
+                {
+                    "source": "setDesc(\"Experimental. Resolve variables up front and show a single dynamic form before executing Template/Capture choices. See Advanced \\u2192 One-page Inputs in docs.\")",
+                    "target": "setDesc(\"實驗性功能。預先解析變數，並在執行範本／擷取 Choice 前顯示單一動態表單。請參閱文件中的「進階 → 單頁輸入」。\")"
+                },
+                {
+                    "source": "setDesc(\"Optional export or member to call (use :: to access nested members).\")",
+                    "target": "setDesc(\"要呼叫的可選 export 或成員（使用 :: 存取巢狀成員）。\")"
+                },
+                {
+                    "source": "setName(\"Template\").setHeading()",
+                    "target": "setName(\"範本\").setHeading()"
+                },
+                {
+                    "source": "setName(\"Temperature\")",
+                    "target": "setName(\"溫度\")"
+                },
+                {
+                    "source": "setButtonText(\"OK\")",
+                    "target": "setButtonText(\"確定\")"
+                },
+                {
+                    "source": "`Token count: ${this.systemPromptTokenLength!==Number.POSITIVE_INFINITY?this.systemPromptTokenLength:\"select a model to calculate\"}`",
+                    "target": "`Token 數：${this.systemPromptTokenLength!==Number.POSITIVE_INFINITY?this.systemPromptTokenLength:\"選擇模型以進行計算\"}`"
+                },
+                {
+                    "source": "placeholder:\"Template path\"",
+                    "target": "placeholder:\"範本路徑\""
+                },
+                {
+                    "source": "\"Template not found\"",
+                    "target": "\"找不到範本\""
+                },
+                {
+                    "source": "l.innerHTML='<h2 class=\"svelte-x9dt2q\">Import QuickAdd Package</h2> <p class=\"svelte-x9dt2q\">Select a package file, review conflicts, and choose how to import each item.</p>'",
+                    "target": "l.innerHTML='<h2 class=\"svelte-x9dt2q\">匯入 QuickAdd 套件</h2> <p class=\"svelte-x9dt2q\">選擇套件檔案、檢查衝突，並選擇每個項目的匯入方式。</p>'"
+                },
+                {
+                    "source": "V(a,\"placeholder\",\"Paste the contents of a .quickadd.json package here\")",
+                    "target": "V(a,\"placeholder\",\"在此貼上 .quickadd.json 套件內容\")"
+                },
+                {
+                    "source": "nI(\"Import package\")",
+                    "target": "nI(\"匯入套件\")"
+                },
+                {
+                    "source": "nI(\"Close\")",
+                    "target": "nI(\"關閉\")"
+                },
+                {
+                    "source": "nI(\"Cancel\")",
+                    "target": "nI(\"取消\")"
+                },
+                {
+                    "source": "nI(\"Importing\\u2026\")",
+                    "target": "nI(\"匯入中\\u2026\")"
+                },
+                {
+                    "source": "nI(\"Copy JSON\")",
+                    "target": "nI(\"複製 JSON\")"
+                },
+                {
+                    "source": "nI(\"Copying\\u2026\")",
+                    "target": "nI(\"複製中\\u2026\")"
+                },
+                {
+                    "source": "nI(\"Save to file\")",
+                    "target": "nI(\"儲存到檔案\")"
+                },
+                {
+                    "source": "nI(\"Saving\\u2026\")",
+                    "target": "nI(\"儲存中\\u2026\")"
+                },
+                {
+                    "source": "nI(\" added\")",
+                    "target": "nI(\" 已新增\")"
+                },
+                {
+                    "source": "nI(\" overwritten\")",
+                    "target": "nI(\" 已覆寫\")"
+                },
+                {
+                    "source": "nI(\" skipped\")",
+                    "target": "nI(\" 已略過\")"
+                },
+                {
+                    "source": "nI(\" assets written\")",
+                    "target": "nI(\" 已寫入資產\")"
+                },
+                {
+                    "source": "nI(\" assets skipped\")",
+                    "target": "nI(\" 已略過資產\")"
+                },
+                {
+                    "source": "nI(\"Then: \")",
+                    "target": "nI(\"則：\")"
+                },
+                {
+                    "source": "nI(\"Else: \")",
+                    "target": "nI(\"否則：\")"
+                },
+                {
+                    "source": "textContent=\"Auto-included\"",
+                    "target": "textContent=\"自動包含\""
+                },
+                {
+                    "source": "textContent=\"Scripts embedded\"",
+                    "target": "textContent=\"已嵌入腳本\""
+                },
+                {
+                    "source": "textContent=\"Templates embedded\"",
+                    "target": "textContent=\"已嵌入範本\""
+                },
+                {
+                    "source": "textContent=\"Template\"",
+                    "target": "textContent=\"範本\""
+                },
+                {
+                    "source": "V(c,\"placeholder\",\"Filter choices\")",
+                    "target": "V(c,\"placeholder\",\"篩選 choice\")"
+                },
+                {
+                    "source": "V(c,\"placeholder\",\"Filter choices (fuzzy)\")",
+                    "target": "V(c,\"placeholder\",\"篩選 choice（模糊搜尋）\")"
+                },
+                {
+                    "source": "V(G,\"placeholder\",\"Name\")",
+                    "target": "V(G,\"placeholder\",\"名稱\")"
+                },
+                {
+                    "source": "V(b,\"placeholder\",\"Snippet value (supports QuickAdd tokens)\")",
+                    "target": "V(b,\"placeholder\",\"片段值（支援 QuickAdd token）\")"
+                },
+                {
+                    "source": "nI(\" for \")",
+                    "target": "nI(\" 持續 \")"
+                },
+                {
+                    "source": "V(t,\"placeholder\",\"Filter choices (fuzzy)\")",
+                    "target": "V(t,\"placeholder\",\"篩選 choice（模糊搜尋）\")"
+                },
+                {
+                    "source": "V(l,\"placeholder\",\"Name\")",
+                    "target": "V(l,\"placeholder\",\"名稱\")"
                 }
             ]
         }
