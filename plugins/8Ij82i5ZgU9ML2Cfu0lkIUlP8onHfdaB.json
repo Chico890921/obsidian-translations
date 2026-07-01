@@ -7,7 +7,8 @@
         "description": "Hide Sidebars on Window Resize 繁體中文化與微調",
         "language": "zh-tw",
         "supportedVersions": "1.1.2",
-        "author": "Chico"
+        "author": "Chico",
+        "updatedAt": 1782922096536
     },
     "dict": {
         "main.js": {
@@ -41,6 +42,18 @@
                     "name": "setName",
                     "source": "Show sidebars back when window becomes wide again",
                     "target": "視窗再次變寬時重新顯示側邊欄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Hide Sidebars on Window Resize",
+                    "target": "視窗調整大小時隱藏側邊欄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Sidebars remain hidden if option is disabled",
+                    "target": "停用此選項時，側邊欄會保持隱藏"
                 }
             ],
             "regex": [
@@ -71,6 +84,14 @@
                 {
                     "source": "setName(\"Show sidebars back when window becomes wide again\")",
                     "target": "setName(\"視窗再次變寬時重新顯示側邊欄\")"
+                },
+                {
+                    "source": "text:\"Hide Sidebars on Window Resize\"",
+                    "target": "text:\"視窗調整大小時隱藏側邊欄\""
+                },
+                {
+                    "source": "setDesc(\"Sidebars remain hidden if option is disabled\")",
+                    "target": "setDesc(\"停用此選項時，側邊欄會保持隱藏\")"
                 }
             ]
         }
