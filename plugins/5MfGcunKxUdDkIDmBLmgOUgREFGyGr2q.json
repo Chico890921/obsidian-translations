@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "1.7.0",
         "author": "Chico",
-        "updatedAt": 1778618419004
+        "updatedAt": 1782923257766
     },
     "dict": {
         "main.js": {
@@ -234,12 +234,30 @@
                     "name": "text",
                     "source": "Sorting Options",
                     "target": "排序選項"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled, blank lines remain in place and sorting happens around them. If disabled, blank lines are ignored.",
+                    "target": "若啟用，空白行會保留在原位，並在空白行之間進行排序；若停用，空白行會被忽略。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "System default",
+                    "target": "系統預設"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Enter a BCP-47 locale (e.g. 'sv', 'ja'). Leave empty to use the system default.",
+                    "target": "輸入 BCP-47 地區代碼（例如 'sv'、'ja'）。留空則使用系統預設。"
                 }
             ],
             "regex": [
                 {
                     "source": "log(\"[LineArrange] CSS change \\u2192 invalidated caches\")",
-                    "target": "log(\"[LineArrange] CSS change \\u2192 invalidated caches\")"
+                    "target": "log(\"[LineArrange] CSS 變更 \\u2192 快取已失效\")"
                 },
                 {
                     "source": "setTitle(\"Line Arrange\")",
@@ -368,6 +386,66 @@
                 {
                     "source": "text: \"Sorting Options\"",
                     "target": "text: \"排序選項\""
+                },
+                {
+                    "source": "log(\"[LineArrange] CSS change → invalidated caches\")",
+                    "target": "log(\"[LineArrange] CSS 變更 → 快取已失效\")"
+                },
+                {
+                    "source": "setDesc(\"If enabled, blank lines remain in place and sorting happens around them. If disabled, blank lines are ignored.\")",
+                    "target": "setDesc(\"若啟用，空白行會保留在原位，並在空白行之間進行排序；若停用，空白行會被忽略。\")"
+                },
+                {
+                    "source": "addOption(\"default\",\"System default\")",
+                    "target": "addOption(\"default\",\"系統預設\")"
+                },
+                {
+                    "source": "addOption(\"default\", \"System default\")",
+                    "target": "addOption(\"default\", \"系統預設\")"
+                },
+                {
+                    "source": "addOption(\"en\",\"English (en)\")",
+                    "target": "addOption(\"en\",\"英文 (en)\")"
+                },
+                {
+                    "source": "addOption(\"en\", \"English (en)\")",
+                    "target": "addOption(\"en\", \"英文 (en)\")"
+                },
+                {
+                    "source": "addOption(\"fr\",\"French (fr)\")",
+                    "target": "addOption(\"fr\",\"法文 (fr)\")"
+                },
+                {
+                    "source": "addOption(\"fr\", \"French (fr)\")",
+                    "target": "addOption(\"fr\", \"法文 (fr)\")"
+                },
+                {
+                    "source": "addOption(\"de\",\"German (de)\")",
+                    "target": "addOption(\"de\",\"德文 (de)\")"
+                },
+                {
+                    "source": "addOption(\"de\", \"German (de)\")",
+                    "target": "addOption(\"de\", \"德文 (de)\")"
+                },
+                {
+                    "source": "addOption(\"es\",\"Spanish (es)\")",
+                    "target": "addOption(\"es\",\"西班牙文 (es)\")"
+                },
+                {
+                    "source": "addOption(\"es\", \"Spanish (es)\")",
+                    "target": "addOption(\"es\", \"西班牙文 (es)\")"
+                },
+                {
+                    "source": "addOption(\"custom\",\"Custom…\")",
+                    "target": "addOption(\"custom\",\"自訂…\")"
+                },
+                {
+                    "source": "addOption(\"custom\", \"Custom…\")",
+                    "target": "addOption(\"custom\", \"自訂…\")"
+                },
+                {
+                    "source": "setDesc(\"Enter a BCP-47 locale (e.g. 'sv', 'ja'). Leave empty to use the system default.\")",
+                    "target": "setDesc(\"輸入 BCP-47 地區代碼（例如 'sv'、'ja'）。留空則使用系統預設。\")"
                 }
             ]
         }
