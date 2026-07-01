@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "0.3.4",
         "author": "Chico",
-        "updatedAt": 1779678769434
+        "updatedAt": 1782923097399
     },
     "dict": {
         "main.js": {
@@ -1386,6 +1386,144 @@
                     "name": "title",
                     "source": "Maximum Shapes Reached",
                     "target": "Maximum Shapes Reached"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "message",
+                    "source": "Are you sure?",
+                    "target": "確定要繼續嗎？"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "confirmLabel",
+                    "source": "Yes",
+                    "target": "是"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Ink plugin",
+                    "target": "Ink 外掛"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "primaryLabel",
+                    "source": "Read now",
+                    "target": "立即閱讀"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tertiaryLabel",
+                    "source": "Remind me later",
+                    "target": "稍後提醒我"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "primaryLabel",
+                    "source": "Continue",
+                    "target": "繼續"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "primaryLabel",
+                    "source": "Learn why",
+                    "target": "了解原因"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tertiaryLabel",
+                    "source": "Dismiss for now",
+                    "target": "暫時略過"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tertiaryLabel",
+                    "source": "Dismiss",
+                    "target": "關閉"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "The 'Scribble' feature of the Apple Pencil can interfere with the ability to write in Ink embeds.",
+                    "target": "Apple Pencil 的「隨手寫」功能可能會干擾 Ink 嵌入區塊中的書寫。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "If you notice any bugs, please report them through the link in the settings.",
+                    "target": "如果發現任何錯誤，請透過設定中的連結回報。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If disabled, you will not be able to add new writing embeds and those already embedded will appear as raw code. Existing writing files will be hidden in Obsidian but still exist on disk. Changing this setting will require a restart of Obsidian to take effect.",
+                    "target": "若停用，你將無法新增手寫嵌入區塊，已嵌入的區塊會以原始碼顯示。既有手寫檔案會在 Obsidian 中隱藏，但仍保留在磁碟上。變更此設定後需要重新啟動 Obsidian 才會生效。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If disabled, you will not be able to add new drawing embeds and those already embedded will appear as raw code. Existing drawing files will be hidden in Obsidian but still exist on disk. Changing this setting will require a restart of Obsidian to take effect.",
+                    "target": "若停用，你將無法新增繪圖嵌入區塊，已嵌入的區塊會以原始碼顯示。既有繪圖檔案會在 Obsidian 中隱藏，但仍保留在磁碟上。變更此設定後需要重新啟動 Obsidian 才會生效。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "While editing a Markdown file, run the action 'Insert new hand drawn section' to embed a drawing canvas.",
+                    "target": "編輯 Markdown 檔案時，執行「插入新的手繪區塊」動作即可嵌入繪圖畫布。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "While editing a Markdown file, run the action 'Insert new handwriting section' to embed a section for writing with a stylus.",
+                    "target": "編輯 Markdown 檔案時，執行「插入新的手寫區塊」動作即可嵌入可用觸控筆書寫的區塊。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Too much writing in one embed can create a lag between your physical pen movement and the line appearing on screen. The stroke limit defines the maximum pen strokes before old strokes start becoming invisible until the embed is locked. Set this to a lower number if you're experiencing lag or jagged writing.",
+                    "target": "單一嵌入區塊中的筆跡過多時，實體筆移動與螢幕線條顯示之間可能會產生延遲。筆畫上限會決定舊筆畫開始暫時隱藏前的最大筆畫數，直到嵌入區塊鎖定後才會重新顯示。如果你遇到延遲或筆跡鋸齒，請將此數值調低。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Remove embed",
+                    "target": "移除嵌入區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Insert copied ${this.filetype} file",
+                    "target": "插入已複製的${this.filetype}檔案"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Copy a drawing embed first.",
+                    "target": "請先複製一個繪圖嵌入區塊。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Copy a writing embed first.",
+                    "target": "請先複製一個手寫嵌入區塊。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Fixed some visual theming bugs.",
+                    "target": "修正一些視覺主題錯誤。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "fallbackDisplayText",
+                    "source": "Handwritten note",
+                    "target": "手寫筆記"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "fallbackDisplayText",
+                    "source": "Drawing",
+                    "target": "繪圖"
                 }
             ],
             "regex": [
@@ -1751,7 +1889,7 @@
                 },
                 {
                     "source": "text: `For information on this plugin's development, visit the links below. Feel free to leave comments in the development diaries on YouTube.`",
-                    "target": "text: `For information on this plugin's development, visit the links below. Feel free to leave comments in the development diaries on YouTube.`"
+                    "target": "text: `若想了解此外掛的開發資訊，請前往下方連結。也歡迎在 YouTube 開發日誌中留言。`"
                 },
                 {
                     "source": "text: \"Latest Changes\"",
@@ -1763,19 +1901,19 @@
                 },
                 {
                     "source": "text: \"Development Diaries.\"",
-                    "target": "text: \"Development Diaries.\""
+                    "target": "text: \"開發日誌。\""
                 },
                 {
                     "source": "text: \"Request feature / Report bug.\"",
-                    "target": "text: \"Request feature / Report bug.\""
+                    "target": "text: \"請求功能／回報錯誤。\""
                 },
                 {
                     "source": "text: \"Drawing\"",
-                    "target": "text: \"Drawing\""
+                    "target": "text: \"繪圖\""
                 },
                 {
                     "source": "text: \"Writing\"",
-                    "target": "text: \"Writing\""
+                    "target": "text: \"手寫\""
                 },
                 {
                     "source": "text: `This plugin is in an Alpha state (Expand for details)`",
@@ -2039,7 +2177,7 @@
                 },
                 {
                     "source": "text: \"Copy writing\"",
-                    "target": "text: \"Copy writing\""
+                    "target": "text: \"複製手寫\""
                 },
                 {
                     "source": "textContent = \"Ink writing file not found: \"",
@@ -2055,7 +2193,7 @@
                 },
                 {
                     "source": "text: \"Grid on/off\"",
-                    "target": "text: \"Grid on/off\""
+                    "target": "text: \"格線開／關\""
                 },
                 {
                     "source": "textContent = \"Ink drawing file not found.\"",
@@ -2084,6 +2222,198 @@
                 {
                     "source": "name: \"Copied drawing\"",
                     "target": "name: \"已複製的繪圖\""
+                },
+                {
+                    "source": "this.message=\"Are you sure?\"",
+                    "target": "this.message=\"確定要繼續嗎？\""
+                },
+                {
+                    "source": "this.confirmLabel=\"Yes\"",
+                    "target": "this.confirmLabel=\"是\""
+                },
+                {
+                    "source": "labelText=`Ink plugin`",
+                    "target": "labelText=`Ink 外掛`"
+                },
+                {
+                    "source": "primaryLabel:`Read now`",
+                    "target": "primaryLabel:`立即閱讀`"
+                },
+                {
+                    "source": "tertiaryLabel:\"Remind me later\"",
+                    "target": "tertiaryLabel:\"稍後提醒我\""
+                },
+                {
+                    "source": "primaryLabel:\"Continue\"",
+                    "target": "primaryLabel:\"繼續\""
+                },
+                {
+                    "source": "primaryLabel:\"Learn why\"",
+                    "target": "primaryLabel:\"了解原因\""
+                },
+                {
+                    "source": "tertiaryLabel:\"Dismiss for now\"",
+                    "target": "tertiaryLabel:\"暫時略過\""
+                },
+                {
+                    "source": "tertiaryLabel:\"Dismiss\"",
+                    "target": "tertiaryLabel:\"關閉\""
+                },
+                {
+                    "source": "setText(`The 'Scribble' feature of the Apple Pencil can interfere with the ability to write in Ink embeds.`)",
+                    "target": "setText(`Apple Pencil 的「隨手寫」功能可能會干擾 Ink 嵌入區塊中的書寫。`)"
+                },
+                {
+                    "source": "setText(`If you notice any bugs, please report them through the link in the settings.`)",
+                    "target": "setText(`如果發現任何錯誤，請透過設定中的連結回報。`)"
+                },
+                {
+                    "source": "setDesc(\"If disabled, you will not be able to add new writing embeds and those already embedded will appear as raw code. Existing writing files will be hidden in Obsidian but still exist on disk. Changing this setting will require a restart of Obsidian to take effect.\")",
+                    "target": "setDesc(\"若停用，你將無法新增手寫嵌入區塊，已嵌入的區塊會以原始碼顯示。既有手寫檔案會在 Obsidian 中隱藏，但仍保留在磁碟上。變更此設定後需要重新啟動 Obsidian 才會生效。\")"
+                },
+                {
+                    "source": "setDesc(\"If disabled, you will not be able to add new drawing embeds and those already embedded will appear as raw code. Existing drawing files will be hidden in Obsidian but still exist on disk. Changing this setting will require a restart of Obsidian to take effect.\")",
+                    "target": "setDesc(\"若停用，你將無法新增繪圖嵌入區塊，已嵌入的區塊會以原始碼顯示。既有繪圖檔案會在 Obsidian 中隱藏，但仍保留在磁碟上。變更此設定後需要重新啟動 Obsidian 才會生效。\")"
+                },
+                {
+                    "source": "text:`While editing a Markdown file, run the action 'Insert new hand drawn section' to embed a drawing canvas.`",
+                    "target": "text:`編輯 Markdown 檔案時，執行「插入新的手繪區塊」動作即可嵌入繪圖畫布。`"
+                },
+                {
+                    "source": "text:`While editing a Markdown file, run the action 'Insert new handwriting section' to embed a section for writing with a stylus.`",
+                    "target": "text:`編輯 Markdown 檔案時，執行「插入新的手寫區塊」動作即可嵌入可用觸控筆書寫的區塊。`"
+                },
+                {
+                    "source": "setDesc(`Too much writing in one embed can create a lag between your physical pen movement and the line appearing on screen. The stroke limit defines the maximum pen strokes before old strokes start becoming invisible until the embed is locked. Set this to a lower number if you're experiencing lag or jagged writing.`)",
+                    "target": "setDesc(`單一嵌入區塊中的筆跡過多時，實體筆移動與螢幕線條顯示之間可能會產生延遲。筆畫上限會決定舊筆畫開始暫時隱藏前的最大筆畫數，直到嵌入區塊鎖定後才會重新顯示。如果你遇到延遲或筆跡鋸齒，請將此數值調低。`)"
+                },
+                {
+                    "source": "text:`For information on this plugin's development, visit the links below. Feel free to leave comments in the development diaries on YouTube.`",
+                    "target": "text:`若想了解此外掛的開發資訊，請前往下方連結。也歡迎在 YouTube 開發日誌中留言。`"
+                },
+                {
+                    "source": "text:\"Development Diaries.\"",
+                    "target": "text:\"開發日誌。\""
+                },
+                {
+                    "source": "text:\"Request feature / Report bug.\"",
+                    "target": "text:\"請求功能／回報錯誤。\""
+                },
+                {
+                    "source": "text:\"Drawing\"",
+                    "target": "text:\"繪圖\""
+                },
+                {
+                    "source": "text:\"Writing\"",
+                    "target": "text:\"手寫\""
+                },
+                {
+                    "source": "text:\"Copy writing\"",
+                    "target": "text:\"複製手寫\""
+                },
+                {
+                    "source": "text:\"Copy drawing\"",
+                    "target": "text:\"複製繪圖\""
+                },
+                {
+                    "source": "text:\"Open drawing\"",
+                    "target": "text:\"開啟繪圖\""
+                },
+                {
+                    "source": "text:\"Grid on/off\"",
+                    "target": "text:\"格線開／關\""
+                },
+                {
+                    "source": "text:\"Remove embed\"",
+                    "target": "text:\"移除嵌入區塊\""
+                },
+                {
+                    "source": "titleEl.setText(`Insert copied ${this.filetype} file`)",
+                    "target": "titleEl.setText(`插入已複製的${this.filetype}檔案`)"
+                },
+                {
+                    "source": "filetype:\"drawing\"",
+                    "target": "filetype:\"繪圖\""
+                },
+                {
+                    "source": "filetype:\"writing\"",
+                    "target": "filetype:\"手寫\""
+                },
+                {
+                    "source": "Notice(\"Copy a drawing embed first.\")",
+                    "target": "Notice(\"請先複製一個繪圖嵌入區塊。\")"
+                },
+                {
+                    "source": "Notice(\"Copy a writing embed first.\")",
+                    "target": "Notice(\"請先複製一個手寫嵌入區塊。\")"
+                },
+                {
+                    "source": "setText(`Fixed some visual theming bugs.`)",
+                    "target": "setText(`修正一些視覺主題錯誤。`)"
+                },
+                {
+                    "source": "this.file?.basename||\"Handwritten note\"",
+                    "target": "this.file?.basename||\"手寫筆記\""
+                },
+                {
+                    "source": "this.file?.basename||\"Drawing\"",
+                    "target": "this.file?.basename||\"繪圖\""
+                },
+                {
+                    "source": "textContent=\"Ink writing file not found: \"",
+                    "target": "textContent=\"找不到 Ink 手寫檔案：\""
+                },
+                {
+                    "source": "primaryLabel: `Read now`",
+                    "target": "primaryLabel: `立即閱讀`"
+                },
+                {
+                    "source": "tertiaryLabel: \"Remind me later\"",
+                    "target": "tertiaryLabel: \"稍後提醒我\""
+                },
+                {
+                    "source": "primaryLabel: \"Continue\"",
+                    "target": "primaryLabel: \"繼續\""
+                },
+                {
+                    "source": "primaryLabel: \"Learn why\"",
+                    "target": "primaryLabel: \"了解原因\""
+                },
+                {
+                    "source": "tertiaryLabel: \"Dismiss for now\"",
+                    "target": "tertiaryLabel: \"暫時略過\""
+                },
+                {
+                    "source": "tertiaryLabel: \"Dismiss\"",
+                    "target": "tertiaryLabel: \"關閉\""
+                },
+                {
+                    "source": "text: `While editing a Markdown file, run the action 'Insert new hand drawn section' to embed a drawing canvas.`",
+                    "target": "text: `編輯 Markdown 檔案時，執行「插入新的手繪區塊」動作即可嵌入繪圖畫布。`"
+                },
+                {
+                    "source": "text: `While editing a Markdown file, run the action 'Insert new handwriting section' to embed a section for writing with a stylus.`",
+                    "target": "text: `編輯 Markdown 檔案時，執行「插入新的手寫區塊」動作即可嵌入可用觸控筆書寫的區塊。`"
+                },
+                {
+                    "source": "text: \"Remove embed\"",
+                    "target": "text: \"移除嵌入區塊\""
+                },
+                {
+                    "source": "this.file?.basename || \"Handwritten note\"",
+                    "target": "this.file?.basename || \"手寫筆記\""
+                },
+                {
+                    "source": "this.file?.basename || \"Drawing\"",
+                    "target": "this.file?.basename || \"繪圖\""
+                },
+                {
+                    "source": "filetype: \"drawing\"",
+                    "target": "filetype: \"繪圖\""
+                },
+                {
+                    "source": "filetype: \"writing\"",
+                    "target": "filetype: \"手寫\""
                 }
             ]
         }
