@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "1.5.0",
         "author": "Chico",
-        "updatedAt": 1778615217784
+        "updatedAt": 1782928019453
     },
     "dict": {
         "main.js": {
@@ -366,6 +366,66 @@
                     "name": "text",
                     "source": "No paths configured.",
                     "target": "尚未設定路徑。"
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "name": "B",
+                    "source": "**Thank you for using Typewriter Mode!** I am a student at the University of Tübingen and develop this plugin in my spare time. If you like the plugin, please consider supporting me on [GitHub Sponsors](https://github.com/sponsors/davisriedel) or [Buy Me a Coffee](https://www.buymeacoffee.com/davis.riedel). Your support ensures the continuous development and maintenance of the plugin. <br> <a href=\"https://www.buymeacoffee.com/davis.riedel\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 60px !important;width: 217px !important;\"></a> <br>\r\n\r\nIf you find any bugs or have a feature request, please [open an issue on GitHub](https://github.com/davisriedel/obsidian-typewriter-mode/issues). Contributions are welcome too.\r\n",
+                    "target": "**感謝你使用 Typewriter Mode！** 我是蒂賓根大學的學生，利用空閒時間維護這個外掛。如果你喜歡這個外掛，歡迎透過 [GitHub Sponsors](https://github.com/sponsors/davisriedel) 或 [Buy Me a Coffee](https://www.buymeacoffee.com/davis.riedel) 支持我。你的支持能幫助此外掛持續開發與維護。 <br> <a href=\"https://www.buymeacoffee.com/davis.riedel\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 60px !important;width: 217px !important;\"></a> <br>\n\n如果你發現錯誤或想提出功能需求，請到 [GitHub 開 issue](https://github.com/davisriedel/obsidian-typewriter-mode/issues)。也歡迎一起貢獻。\n"
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "name": "he",
+                    "source": "# Typewriter Mode updated to v{{tag-name}}\r\n\r\n{{funding}}\r\n\r\n## What's new?\r\n\r\n{{release-notes}}\r\n",
+                    "target": "# Typewriter Mode 已更新至 v{{tag-name}}\n\n{{funding}}\n\n## 更新內容\n\n{{release-notes}}\n"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Failed to fetch releases: ${s.message??\"Unknown error\"}",
+                    "target": "取得版本資訊失敗：${s.message??\"未知錯誤\"}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Could not find release with tag ${o}",
+                    "target": "找不到標籤為 ${o} 的版本"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "No new releases found",
+                    "target": "找不到新的版本資訊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addRibbonIcon",
+                    "source": "Toggle Writing Focus",
+                    "target": "切換寫作專注"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "renderSection",
+                    "source": "Enabled paths",
+                    "target": "啟用路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "renderSection",
+                    "source": "Only enable the plugin for these files or folders. If empty, the plugin is active in all files.",
+                    "target": "只在這些檔案或資料夾中啟用此外掛。留空時會在所有檔案中啟用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "renderSection",
+                    "source": "Disabled paths",
+                    "target": "停用路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "renderSection",
+                    "source": "Always disable the plugin for these files or folders, overriding the enabled paths.",
+                    "target": "一律在這些檔案或資料夾中停用此外掛，並覆寫啟用路徑設定。"
                 }
             ],
             "regex": [
@@ -768,6 +828,50 @@
                 {
                     "source": "commandTitle=\"limit maximum characters per line\"",
                     "target": "commandTitle=\"限制每行最大字元數\""
+                },
+                {
+                    "source": "var B=`**Thank you for using Typewriter Mode!** I am a student at the University of Tübingen and develop this plugin in my spare time. If you like the plugin, please consider supporting me on [GitHub Sponsors](https://github.com/sponsors/davisriedel) or [Buy Me a Coffee](https://www.buymeacoffee.com/davis.riedel). Your support ensures the continuous development and maintenance of the plugin. <br> <a href=\"https://www.buymeacoffee.com/davis.riedel\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 60px !important;width: 217px !important;\"></a> <br>\r\n\r\nIf you find any bugs or have a feature request, please [open an issue on GitHub](https://github.com/davisriedel/obsidian-typewriter-mode/issues). Contributions are welcome too.\r\n`",
+                    "target": "var B=`**感謝你使用 Typewriter Mode！** 我是蒂賓根大學的學生，利用空閒時間維護這個外掛。如果你喜歡這個外掛，歡迎透過 [GitHub Sponsors](https://github.com/sponsors/davisriedel) 或 [Buy Me a Coffee](https://www.buymeacoffee.com/davis.riedel) 支持我。你的支持能幫助此外掛持續開發與維護。 <br> <a href=\"https://www.buymeacoffee.com/davis.riedel\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 60px !important;width: 217px !important;\"></a> <br>\n\n如果你發現錯誤或想提出功能需求，請到 [GitHub 開 issue](https://github.com/davisriedel/obsidian-typewriter-mode/issues)。也歡迎一起貢獻。\n`"
+                },
+                {
+                    "source": "var he=`# Typewriter Mode updated to v{{tag-name}}\r\n\r\n{{funding}}\r\n\r\n## What's new?\r\n\r\n{{release-notes}}\r\n`",
+                    "target": "var he=`# Typewriter Mode 已更新至 v{{tag-name}}\n\n{{funding}}\n\n## 更新內容\n\n{{release-notes}}\n`"
+                },
+                {
+                    "source": "Failed to fetch releases: ${s.message??\"Unknown error\"}",
+                    "target": "取得版本資訊失敗：${s.message??\"未知錯誤\"}"
+                },
+                {
+                    "source": "Could not find release with tag ${o}",
+                    "target": "找不到標籤為 ${o} 的版本"
+                },
+                {
+                    "source": "No new releases found",
+                    "target": "找不到新的版本資訊"
+                },
+                {
+                    "source": "name:`Move typewriter ${e}`",
+                    "target": "name:e===\"up\"?\"向上移動打字機\":\"向下移動打字機\""
+                },
+                {
+                    "source": "\"Toggle Writing Focus\"",
+                    "target": "\"切換寫作專注\""
+                },
+                {
+                    "source": "setName(`Current line highlight color in ${this.themeMode} themes`)",
+                    "target": "setName(this.themeMode===\"light\"?\"淺色主題中的目前行醒目提示顏色\":\"深色主題中的目前行醒目提示顏色\")"
+                },
+                {
+                    "source": "setDesc(`The color and opacity of the current line highlight in ${this.themeMode} themes`)",
+                    "target": "setDesc(this.themeMode===\"light\"?\"淺色主題中目前行醒目提示的顏色與不透明度\":\"深色主題中目前行醒目提示的顏色與不透明度\")"
+                },
+                {
+                    "source": "\"Enabled paths\",\"Only enable the plugin for these files or folders. If empty, the plugin is active in all files.\"",
+                    "target": "\"啟用路徑\",\"只在這些檔案或資料夾中啟用此外掛。留空時會在所有檔案中啟用。\""
+                },
+                {
+                    "source": "\"Disabled paths\",\"Always disable the plugin for these files or folders, overriding the enabled paths.\"",
+                    "target": "\"停用路徑\",\"一律在這些檔案或資料夾中停用此外掛，並覆寫啟用路徑設定。\""
                 }
             ]
         }
