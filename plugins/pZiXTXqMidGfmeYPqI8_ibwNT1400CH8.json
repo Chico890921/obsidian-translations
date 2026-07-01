@@ -563,6 +563,114 @@
                 {
                     "source": "\"When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.\"",
                     "target": "\"在檔案總管中點擊命令時，檔案總管檢視會取得焦點。這可能會影響那些需要在目前作用中檔案或檔案總管上執行的命令。\""
+                },
+                {
+                    "source": "setDesc(\"Set how many Rows the Mobile Toolbar should have. Set this to 0 to remove the Toolbar.\")",
+                    "target": "setDesc(\"設定行動工具列要有幾列。設為 0 可移除工具列。\")"
+                },
+                {
+                    "source": "setDesc(\"Offset the Toolbar from the Bottom of the Screen. This is useful if the toolbar is partially obscured by other UI Elements.\")",
+                    "target": "setDesc(\"設定工具列與螢幕底部的距離。如果工具列被其他 UI 元素部分遮住，這個選項會很有用。\")"
+                },
+                {
+                    "source": "setDesc(\"Some Themes need extra spacing in the toolbar. If your Toolbar doesn't wrap properly, try increasing this value.\")",
+                    "target": "setDesc(\"部分主題需要額外的工具列間距。如果工具列無法正確換行，請嘗試增加此值。\")"
+                },
+                {
+                    "source": "\"Show \\\"Add Command\\\" Button\":\"Show \\\"Add Command\\\" Button\"",
+                    "target": "\"Show \\\"Add Command\\\" Button\":\"顯示「新增命令」按鈕\""
+                },
+                {
+                    "source": "\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\":\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\"",
+                    "target": "\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\":\"在每個選單中顯示「新增命令」按鈕。需要重新啟動。\""
+                },
+                {
+                    "source": "\"By Johnny✨ and phibr0\":\"By Johnny✨ and phibr0\"",
+                    "target": "\"By Johnny✨ and phibr0\":\"由 Johnny✨ 和 phibr0 製作\""
+                },
+                {
+                    "source": "\"Change the spacing between commands. You can set different values on mobile and desktop.\":\"變更命令之間的間距。\"",
+                    "target": "\"Change the spacing between commands. You can set different values on mobile and desktop.\":\"變更命令之間的間距。你可以在行動裝置和桌面裝置設定不同數值。\""
+                },
+                {
+                    "source": "r(k,{icon:\"alert-circle\"}),\" \",\"Info\")",
+                    "target": "r(k,{icon:\"alert-circle\"}),\" \",\"資訊\")"
+                },
+                {
+                    "source": "\"The Toolbar is only available in Obsidian Mobile. \"",
+                    "target": "\"工具列僅適用於 Obsidian Mobile。\""
+                },
+                {
+                    "source": "\"To configure which Commands show up in the Toolbar, open the Mobile Settings.\"",
+                    "target": "\"若要設定哪些命令顯示在工具列，請開啟行動裝置設定。\""
+                },
+                {
+                    "source": "\"Open Mobile Settings\"",
+                    "target": "\"開啟行動裝置設定\""
+                },
+                {
+                    "source": "\"Reordering and Sorting\"",
+                    "target": "\"重新排序與排列\""
+                },
+                {
+                    "source": "\"As of Obsidian 1.1.0 you can reorder the Buttons in the left ribbon by dragging. This will replace the old sorting feature.\"",
+                    "target": "\"從 Obsidian 1.1.0 起，你可以拖曳左側功能區中的按鈕來重新排序。這會取代舊的排序功能。\""
+                },
+                {
+                    "source": "D(o.name||\"Macro Name\")",
+                    "target": "D(o.name||\"巨集名稱\")"
+                },
+                {
+                    "source": "r(\"span\",null,\"Name\")",
+                    "target": "r(\"span\",null,\"名稱\")"
+                },
+                {
+                    "source": "r(\"span\",null,\"Icon\")",
+                    "target": "r(\"span\",null,\"圖示\")"
+                },
+                {
+                    "source": "(A==null?void 0:A.name)||\"Cannot find Command\"",
+                    "target": "(A==null?void 0:A.name)||\"找不到命令\""
+                },
+                {
+                    "source": "r(\"div\",null,\"Editor: \",w.action)",
+                    "target": "r(\"div\",null,\"編輯器：\",w.action)"
+                },
+                {
+                    "source": "r(\"div\",null,\"Loop: \",w.times)",
+                    "target": "r(\"div\",null,\"迴圈：\",w.times)"
+                },
+                {
+                    "source": "r(\"label\",{htmlFor:\"checkbox\"},\"Auto-Run on Startup\")",
+                    "target": "r(\"label\",{htmlFor:\"checkbox\"},\"啟動時自動執行\")"
+                },
+                {
+                    "source": "r(\"button\",{onClick:f},\"Add Command\")",
+                    "target": "r(\"button\",{onClick:f},\"新增命令\")"
+                },
+                {
+                    "source": "r(\"button\",{onClick:C},\"Add Delay\")",
+                    "target": "r(\"button\",{onClick:C},\"新增延遲\")"
+                },
+                {
+                    "source": "r(\"button\",{class:s.length===0?\"disabled\":\"mod-cta\",disabled:s.length===0,onClick:()=>s.length&&e({macro:s,name:a,icon:c,startup:l})},\"Save\")",
+                    "target": "r(\"button\",{class:s.length===0?\"disabled\":\"mod-cta\",disabled:s.length===0,onClick:()=>s.length&&e({macro:s,name:a,icon:c,startup:l})},\"儲存\")"
+                },
+                {
+                    "source": "r(\"button\",{onClick:n},\"Cancel\")",
+                    "target": "r(\"button\",{onClick:n},\"取消\")"
+                },
+                {
+                    "source": "a.macro.length,\" Actions\"",
+                    "target": "a.macro.length,\" 個動作\""
+                },
+                {
+                    "source": "\"No Macros yet!\"",
+                    "target": "\"還沒有巨集！\""
+                },
+                {
+                    "source": "\"Add Macro\"",
+                    "target": "\"新增巨集\""
                 }
             ]
         }
