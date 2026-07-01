@@ -4,11 +4,11 @@
         "plugin": "obsidian-scroll-to-top-plugin",
         "version": "2.1.6",
         "title": "[zh-tw] Scroll to Top",
-        "description": "Scroll to Top Localization & Tweaks",
+        "description": "Scroll to Top 繁體中文化與微調",
         "language": "zh-tw",
         "supportedVersions": "2.1.6",
         "author": "Chico",
-        "updatedAt": 1778615217711
+        "updatedAt": 1782931083996
     },
     "dict": {
         "main.js": {
@@ -150,6 +150,60 @@
                     "name": "text",
                     "source": "滚动到顶部设置",
                     "target": "滾動到頂部設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "scrollTopTooltipText",
+                    "source": "Scroll to top",
+                    "target": "滾動到頂部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "scrollBottomTooltipText",
+                    "source": "Scroll to bottom",
+                    "target": "滾動到底部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "scrollCursorTooltipText",
+                    "source": "Scroll to cursor position",
+                    "target": "滾動到游標位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createSpanWithLinks",
+                    "source": "Change icon of scroll to top button. You can visit available icons here: ",
+                    "target": "變更「滾動到頂部」按鈕的圖示。可在此查看可用圖示："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createSpanWithLinks",
+                    "source": "Change icon of scroll to bottom button. You can visit available icons here: ",
+                    "target": "變更「滾動到底部」按鈕的圖示。可在此查看可用圖示："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createSpanWithLinks",
+                    "source": "Change icon of scroll to cursor button. You can visit available icons here: ",
+                    "target": "變更「滾動到游標」按鈕的圖示。可在此查看可用圖示："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Scroll to Top",
+                    "target": "滾動到頂部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Scroll to Bottom",
+                    "target": "滾動到底部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Scroll to Cursor",
+                    "target": "滾動到游標"
                 }
             ],
             "regex": [
@@ -244,6 +298,58 @@
                 {
                     "source": "text: \"滚动到顶部设置\"",
                     "target": "text: \"滾動到頂部設定\""
+                },
+                {
+                    "source": "scrollTopTooltipText:\"Scroll to top\"",
+                    "target": "scrollTopTooltipText:\"滾動到頂部\""
+                },
+                {
+                    "source": "scrollBottomTooltipText:\"Scroll to bottom\"",
+                    "target": "scrollBottomTooltipText:\"滾動到底部\""
+                },
+                {
+                    "source": "scrollCursorTooltipText:\"Scroll to cursor position\"",
+                    "target": "scrollCursorTooltipText:\"滾動到游標位置\""
+                },
+                {
+                    "source": "createSpanWithLinks(\"Change icon of scroll to top button. You can visit available icons here: \",\"https://lucide.dev/\",\"lucide.dev\")",
+                    "target": "createSpanWithLinks(\"變更「滾動到頂部」按鈕的圖示。可在此查看可用圖示：\",\"https://lucide.dev/\",\"lucide.dev\")"
+                },
+                {
+                    "source": "createSpanWithLinks(\"Change icon of scroll to bottom button. You can visit available icons here: \",\"https://lucide.dev/\",\"lucide.dev\")",
+                    "target": "createSpanWithLinks(\"變更「滾動到底部」按鈕的圖示。可在此查看可用圖示：\",\"https://lucide.dev/\",\"lucide.dev\")"
+                },
+                {
+                    "source": "createSpanWithLinks(\"Change icon of scroll to cursor button. You can visit available icons here: \",\"https://lucide.dev/\",\"lucide.dev\")",
+                    "target": "createSpanWithLinks(\"變更「滾動到游標」按鈕的圖示。可在此查看可用圖示：\",\"https://lucide.dev/\",\"lucide.dev\")"
+                },
+                {
+                    "source": "addPluginCommand(this,\"scroll-to-top\",\"Scroll to Top\"",
+                    "target": "addPluginCommand(this,\"scroll-to-top\",\"滾動到頂部\""
+                },
+                {
+                    "source": "addPluginCommand(this,\"scroll-to-bottom\",\"Scroll to Bottom\"",
+                    "target": "addPluginCommand(this,\"scroll-to-bottom\",\"滾動到底部\""
+                },
+                {
+                    "source": "addPluginCommand(this,\"scroll-to-cursor\",\"Scroll to Cursor\"",
+                    "target": "addPluginCommand(this,\"scroll-to-cursor\",\"滾動到游標\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "这是一个 Obsidian 插件，添加了一个滚动到当前笔记顶部的按钮。",
+                    "target": "這是一個 Obsidian 插件，會新增滾動到目前筆記頂部的按鈕。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"这是一个 Obsidian 插件，添加了一个滚动到当前笔记顶部的按钮。\"",
+                    "target": "\"description\": \"這是一個 Obsidian 插件，會新增滾動到目前筆記頂部的按鈕。\""
                 }
             ]
         }
