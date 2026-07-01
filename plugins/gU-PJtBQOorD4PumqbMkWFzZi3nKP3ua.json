@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "1.5.0",
         "author": "Chico",
-        "updatedAt": 1778609062067
+        "updatedAt": 1782921804048
     },
     "dict": {
         "main.js": {
@@ -65,13 +65,13 @@
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "Import additional shortcuts from a JSON export file. Any conflicting existing shortcuts will be overridden.",
-                    "target": "匯入 additional shortcuts from a JSON export file. Any conflicting existing shortcuts will be overridden."
+                    "target": "從 JSON 匯出檔匯入額外快捷字串。若與現有快捷字串衝突，將覆寫原有項目。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "Export your shortcuts to a JSON file",
-                    "target": "匯出 your shortcuts to a JSON file"
+                    "target": "將快捷字串匯出為 JSON 檔案"
                 },
                 {
                     "type": "CallExpression",
@@ -119,19 +119,19 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Import shortcuts from file",
-                    "target": "匯入 shortcuts from file"
+                    "target": "從檔案匯入快捷字串"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Export shortcuts",
-                    "target": "匯出 shortcuts"
+                    "target": "匯出快捷字串"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Add new",
-                    "target": "新增 new"
+                    "target": "新增"
                 },
                 {
                     "type": "CallExpression",
@@ -143,7 +143,7 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Add new group",
-                    "target": "新增 new group"
+                    "target": "新增群組"
                 },
                 {
                     "type": "CallExpression",
@@ -233,13 +233,13 @@
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "Prettify existing symbols in document",
-                    "target": "美化文件中現有的符號"
+                    "target": "美化目前文件中的符號"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "Unprettify existing symbols in document",
-                    "target": "還原文件中現有的符號"
+                    "target": "還原目前文件中的符號"
                 },
                 {
                     "type": "ObjectProperty",
@@ -252,6 +252,78 @@
                     "name": "text",
                     "source": "Made by Noam Schmitt based on the Symbols Prettifier plugin by Florian Woelki.",
                     "target": "由 Noam Schmitt 製作，基於 Florian Woelki 的 Symbols Prettifier 插件。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Behavior settings",
+                    "target": "行為設定"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Shortcuts Finder",
+                    "target": "快捷字串搜尋器"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Find the most used words in your notes to create shortcuts for them. This operation may take a while depending on the number of notes in your vault.",
+                    "target": "尋找筆記中最常用的字詞，並為它們建立快捷字串。此操作可能需要一些時間，取決於儲存庫中的筆記數量。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Searching...",
+                    "target": "搜尋中..."
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Here are the most used words in your notes. You can add them as shortcuts with the suggested one or customize them.",
+                    "target": "以下是筆記中最常用的字詞。你可以使用建議的快捷字串加入，也可以自行調整。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Quick Add Entry",
+                    "target": "快速新增項目"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Quickly add new entries to any group. Select a group and fill in the fields below.",
+                    "target": "快速新增項目到任一群組。選擇群組並填寫下方欄位。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Share your shortcuts",
+                    "target": "分享你的快捷字串"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Please enter replacement text",
+                    "target": "請輸入替換後的文字"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Shortcuts",
+                    "target": "快捷字串"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Define your shortcuts here: add or remove symbols to prettify in your notes. You can also temporarily disable a symbol by toggling the switch.",
+                    "target": "在這裡定義快捷字串：新增或移除要在筆記中美化的符號。也可以切換開關暫時停用某個符號。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Reset or restore settings",
+                    "target": "重設或還原設定"
                 }
             ],
             "regex": [
@@ -305,11 +377,11 @@
                 },
                 {
                     "source": "setName(\"Import shortcuts from file\")",
-                    "target": "setName(\"匯入 shortcuts from file\")"
+                    "target": "setName(\"從檔案匯入快捷字串\")"
                 },
                 {
                     "source": "setDesc(\n      \"Import additional shortcuts from a JSON export file. Any conflicting existing shortcuts will be overridden.\"\n    )",
-                    "target": "setDesc(\n      \"匯入 additional shortcuts from a JSON export file. Any conflicting existing shortcuts will be overridden.\"\n    )"
+                    "target": "setDesc(\n      \"從 JSON 匯出檔匯入額外快捷字串。若與現有快捷字串衝突，將覆寫原有項目。\"\n    )"
                 },
                 {
                     "source": "Notice(\"Invalid JSON file\")",
@@ -325,11 +397,11 @@
                 },
                 {
                     "source": "setName(\"Export shortcuts\")",
-                    "target": "setName(\"匯出 shortcuts\")"
+                    "target": "setName(\"匯出快捷字串\")"
                 },
                 {
                     "source": "setDesc(\"Export your shortcuts to a JSON file\")",
-                    "target": "setDesc(\"匯出 your shortcuts to a JSON file\")"
+                    "target": "setDesc(\"將快捷字串匯出為 JSON 檔案\")"
                 },
                 {
                     "source": "Notice(\"Please enter text to replace\")",
@@ -341,11 +413,11 @@
                 },
                 {
                     "source": "Notice(\n        `Added \"${this.toReplace}\" \\u2192 \"${this.replaceWith}\" to ${this.selectedGroup}`\n      )",
-                    "target": "Notice(\n        `新增ed \"${this.toReplace}\" \\u2192 \"${this.replaceWith}\" to ${this.selectedGroup}`\n      )"
+                    "target": "Notice(\n        `已新增「${this.toReplace}」→「${this.replaceWith}」至 ${this.selectedGroup}`\n      )"
                 },
                 {
                     "source": "setName(\"Add new\")",
-                    "target": "setName(\"新增 new\")"
+                    "target": "setName(\"新增\")"
                 },
                 {
                     "source": "setPlaceholder(\"Replace with\")",
@@ -365,7 +437,7 @@
                 },
                 {
                     "source": "setName(\"Add new group\")",
-                    "target": "setName(\"新增 new group\")"
+                    "target": "setName(\"新增群組\")"
                 },
                 {
                     "source": "setPlaceholder(\"Group name\")",
@@ -413,11 +485,163 @@
                 },
                 {
                     "source": "name: \"Prettify existing symbols in document\"",
-                    "target": "name: \"美化文件中現有的符號\""
+                    "target": "name: \"美化目前文件中的符號\""
                 },
                 {
                     "source": "name: \"Unprettify existing symbols in document\"",
-                    "target": "name: \"還原文件中現有的符號\""
+                    "target": "name: \"還原目前文件中的符號\""
+                },
+                {
+                    "source": "\"Behavior settings\"",
+                    "target": "\"行為設定\""
+                },
+                {
+                    "source": "\"Shortcuts Finder\"",
+                    "target": "\"快捷字串搜尋器\""
+                },
+                {
+                    "source": "\"Find most used words\"",
+                    "target": "\"尋找最常用字詞\""
+                },
+                {
+                    "source": "\"Find the most used words in your notes to create shortcuts for them. This operation may take a while depending on the number of notes in your vault.\"",
+                    "target": "\"尋找筆記中最常用的字詞，並為它們建立快捷字串。此操作可能需要一些時間，取決於儲存庫中的筆記數量。\""
+                },
+                {
+                    "source": "\"Searching...\"",
+                    "target": "\"搜尋中...\""
+                },
+                {
+                    "source": "\"Suggested shortcuts\"",
+                    "target": "\"建議的快捷字串\""
+                },
+                {
+                    "source": "\"Here are the most used words in your notes. You can add them as shortcuts with the suggested one or customize them.\"",
+                    "target": "\"以下是筆記中最常用的字詞。你可以使用建議的快捷字串加入，也可以自行調整。\""
+                },
+                {
+                    "source": "\"Show more\"",
+                    "target": "\"顯示更多\""
+                },
+                {
+                    "source": "\"Quick Add Entry\"",
+                    "target": "\"快速新增項目\""
+                },
+                {
+                    "source": "\"Quickly add new entries to any group. Select a group and fill in the fields below.\"",
+                    "target": "\"快速新增項目到任一群組。選擇群組並填寫下方欄位。\""
+                },
+                {
+                    "source": "\"Share your shortcuts\"",
+                    "target": "\"分享你的快捷字串\""
+                },
+                {
+                    "source": "\"Import shortcuts from file\"",
+                    "target": "\"從檔案匯入快捷字串\""
+                },
+                {
+                    "source": "\"Import additional shortcuts from a JSON export file. Any conflicting existing shortcuts will be overridden.\"",
+                    "target": "\"從 JSON 匯出檔匯入額外快捷字串。若與現有快捷字串衝突，將覆寫原有項目。\""
+                },
+                {
+                    "source": "\"Export shortcuts\"",
+                    "target": "\"匯出快捷字串\""
+                },
+                {
+                    "source": "\"Export your shortcuts to a JSON file\"",
+                    "target": "\"將快捷字串匯出為 JSON 檔案\""
+                },
+                {
+                    "source": "\"Please enter replacement text\"",
+                    "target": "\"請輸入替換後的文字\""
+                },
+                {
+                    "source": "\"Add new\"",
+                    "target": "\"新增\""
+                },
+                {
+                    "source": "\"Add new group\"",
+                    "target": "\"新增群組\""
+                },
+                {
+                    "source": "\"Shortcuts\"",
+                    "target": "\"快捷字串\""
+                },
+                {
+                    "source": "\"Define your shortcuts here: add or remove symbols to prettify in your notes. You can also temporarily disable a symbol by toggling the switch.\"",
+                    "target": "\"在這裡定義快捷字串：新增或移除要在筆記中美化的符號。也可以切換開關暫時停用某個符號。\""
+                },
+                {
+                    "source": "\"Reset or restore settings\"",
+                    "target": "\"重設或還原設定\""
+                },
+                {
+                    "source": "\"All shortcuts\"",
+                    "target": "\"所有快捷字串\""
+                },
+                {
+                    "source": "\"Prettify existing symbols in document\"",
+                    "target": "\"美化目前文件中的符號\""
+                },
+                {
+                    "source": "\"Unprettify existing symbols in document\"",
+                    "target": "\"還原目前文件中的符號\""
+                },
+                {
+                    "source": "\"Made by Noam Schmitt based on the Symbols Prettifier plugin by Florian Woelki.\"",
+                    "target": "\"由 Noam Schmitt 製作，基於 Florian Woelki 的 Symbols Prettifier 插件。\""
+                },
+                {
+                    "source": "`Show ${Math.min(\n            remainingCount,\n            DEFAULT_SHORTCUTS_INCREMENT\n          )} more shortcuts`",
+                    "target": "`再顯示 ${Math.min(\n            remainingCount,\n            DEFAULT_SHORTCUTS_INCREMENT\n          )} 個快捷字串`"
+                },
+                {
+                    "source": "`${remainingCount} more available`",
+                    "target": "`還有 ${remainingCount} 個可顯示`"
+                },
+                {
+                    "source": "`Replace '${shortcut}' with '${value}'`",
+                    "target": "`將「${shortcut}」替換為「${value}」`"
+                },
+                {
+                    "source": "`Found ${count} time${count > 1 ? \"s\" : \"\"}`",
+                    "target": "`找到 ${count} 次`"
+                },
+                {
+                    "source": "`Shortcut \"${this.toReplace}\" already exists. Please choose a different name.`",
+                    "target": "`快捷字串「${this.toReplace}」已存在。請選擇不同名稱。`"
+                },
+                {
+                    "source": "`Added \"${this.toReplace}\" \\u2192 \"${this.replaceWith}\" to ${this.selectedGroup}`",
+                    "target": "`已新增「${this.toReplace}」→「${this.replaceWith}」至 ${this.selectedGroup}`"
+                },
+                {
+                    "source": "`Shortcut \"${newKey}\" already exists. Please choose a different name.`",
+                    "target": "`快捷字串「${newKey}」已存在。請選擇不同名稱。`"
+                },
+                {
+                    "source": "`Triggered ${this.replacement.count} time${plural}`",
+                    "target": "`已觸發 ${this.replacement.count} 次`"
+                },
+                {
+                    "source": "`${this.group} (${groupCount} entries)`",
+                    "target": "`${this.group}（${groupCount} 個項目）`"
+                },
+                {
+                    "source": "this.isCollapsed ? \"Expand\" : \"Collapse\"",
+                    "target": "this.isCollapsed ? \"展開\" : \"收合\""
+                },
+                {
+                    "source": "`Replaced ${replacementsCount} symbols`",
+                    "target": "`已替換 ${replacementsCount} 個符號`"
+                },
+                {
+                    "source": "descr.append(\n      \"Share your shortcuts with the community. You can find and share shortcuts files on the \",\n      descr.createEl(\"a\", {\n        text: \"Discussions page\",\n        href: \"https://github.com/noam-sc/obsidian-enhanced-symbols-prettifier/discussions/categories/shortcuts\"\n      }),\n      \".\"\n    );",
+                    "target": "descr.append(\n      \"與社群分享你的快捷字串。你可以在\",\n      descr.createEl(\"a\", {\n        text: \"討論頁面\",\n        href: \"https://github.com/noam-sc/obsidian-enhanced-symbols-prettifier/discussions/categories/shortcuts\"\n      }),\n      \"尋找並分享快捷字串檔案。\"\n    );"
+                },
+                {
+                    "source": "setButtonText(\"Ignore\")",
+                    "target": "setButtonText(\"忽略\")"
                 }
             ]
         }
