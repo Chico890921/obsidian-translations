@@ -1,232 +1,351 @@
 {
-    "schemaVersion": 1,
-    "metadata": {
-        "plugin": "paper-clipper",
-        "version": "0.3.0",
-        "title": "[zh-tw] Paper Clipper",
-        "description": "Paper Clipper 繁體中文化與微調",
-        "language": "zh-tw",
-        "supportedVersions": "0.3.0",
-        "author": "Chico"
-    },
-    "dict": {
-        "main.js": {
-            "ast": [
-                {
-                    "type": "AssignmentExpression",
-                    "name": "textContent",
-                    "source": "Hi",
-                    "target": "嗨"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "Submit",
-                    "target": "送出"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Ask for confirmation before saving a PDF file",
-                    "target": "儲存 PDF 檔案前先詢問確認"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Ask for confirmation before saving a reference note",
-                    "target": "儲存參考文獻筆記前先詢問確認"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Third-party services information",
-                    "target": "第三方服務資訊"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Email",
-                    "target": "電子郵件"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Save PDFs",
-                    "target": "儲存 PDF"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Confirm to save PDF",
-                    "target": "確認儲存 PDF"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Save reference notes",
-                    "target": "儲存參考文獻筆記"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Confirm to save reference note",
-                    "target": "確認儲存參考文獻筆記"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Choose a reference",
-                    "target": "選擇參考文獻"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "ResetForm",
-                    "target": "ResetForm"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Keystroke",
-                    "target": "Keystroke"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Create a reference note from a DOI",
-                    "target": "從 DOI 建立參考文獻筆記"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Create a reference note from the DOI in the clipboard",
-                    "target": "從剪貼簿中的 DOI 建立參考文獻筆記"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Paper title",
-                    "target": "論文標題"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "placeholder",
-                    "source": "Title of the paper",
-                    "target": "論文標題"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "This plugin uses some third-party services and libraries. See the following links for more information:",
-                    "target": "此外掛使用部分第三方服務與函式庫。更多資訊請參考以下連結："
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Reference metadata: Unpaywall API",
-                    "target": "參考文獻中繼資料：Unpaywall API"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "API Documentation (Data format): ",
-                    "target": "API 文件（資料格式）："
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Documentation: ",
-                    "target": "文件："
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "GitHub Repository: ",
-                    "target": "GitHub 儲存庫："
-                }
-            ],
-            "regex": [
-                {
-                    "source": "log(`Info: ${d}`)",
-                    "target": "log(`Info: ${d}`)"
-                },
-                {
-                    "source": "log(`Warning: ${d}`)",
-                    "target": "log(`Warning: ${d}`)"
-                },
-                {
-                    "source": "setTitle(`Enter ${s.name}`)",
-                    "target": "setTitle(`輸入 ${s.name}`)"
-                },
-                {
-                    "source": "setTitle(\"Choose a reference\")",
-                    "target": "setTitle(\"選擇參考文獻\")"
-                },
-                {
-                    "source": "setName(\"Third-party services information\")",
-                    "target": "setName(\"第三方服務資訊\")"
-                },
-                {
-                    "source": "setName(\"Save PDFs\")",
-                    "target": "setName(\"儲存 PDF\")"
-                },
-                {
-                    "source": "setName(\"Confirm to save PDF\")",
-                    "target": "setName(\"確認儲存 PDF\")"
-                },
-                {
-                    "source": "setDesc(\"Ask for confirmation before saving a PDF file\")",
-                    "target": "setDesc(\"儲存 PDF 檔案前先詢問確認\")"
-                },
-                {
-                    "source": "setName(\"Save reference notes\")",
-                    "target": "setName(\"儲存參考文獻筆記\")"
-                },
-                {
-                    "source": "setName(\"Confirm to save reference note\")",
-                    "target": "setName(\"確認儲存參考文獻筆記\")"
-                },
-                {
-                    "source": "setDesc(\"Ask for confirmation before saving a reference note\")",
-                    "target": "setDesc(\"儲存參考文獻筆記前先詢問確認\")"
-                },
-                {
-                    "source": "Notice(`Searching the references for \"${l}\"...`)",
-                    "target": "Notice(`正在搜尋「${l}」的參考文獻...`)"
-                },
-                {
-                    "source": "text:\"This plugin uses some third-party services and libraries. See the following links for more information:\"",
-                    "target": "text:\"此外掛使用部分第三方服務與函式庫。更多資訊請參考以下連結：\""
-                },
-                {
-                    "source": "text:\"Reference metadata: Unpaywall API\"",
-                    "target": "text:\"參考文獻中繼資料：Unpaywall API\""
-                },
-                {
-                    "source": "text:\"API Documentation (Data format): \"",
-                    "target": "text:\"API 文件（資料格式）：\""
-                },
-                {
-                    "source": "text:\"Documentation: \"",
-                    "target": "text:\"文件：\""
-                },
-                {
-                    "source": "text:\"GitHub Repository: \"",
-                    "target": "text:\"GitHub 儲存庫：\""
-                },
-                {
-                    "source": "name:\"Create a reference note from a DOI\"",
-                    "target": "name:\"從 DOI 建立參考文獻筆記\""
-                },
-                {
-                    "source": "name:\"Create a reference note from the DOI in the clipboard\"",
-                    "target": "name:\"從剪貼簿中的 DOI 建立參考文獻筆記\""
-                },
-                {
-                    "source": "name:\"Paper title\"",
-                    "target": "name:\"論文標題\""
-                }
-            ]
+  "schemaVersion": 1,
+  "metadata": {
+    "plugin": "paper-clipper",
+    "version": "0.3.0",
+    "title": "[zh-tw] Paper Clipper",
+    "description": "Paper Clipper 繁體中文化與微調",
+    "language": "zh-tw",
+    "supportedVersions": "0.3.0",
+    "author": "Chico",
+    "updatedAt": 1782924788142
+  },
+  "dict": {
+    "main.js": {
+      "ast": [
+        {
+          "type": "AssignmentExpression",
+          "name": "textContent",
+          "source": "Hi",
+          "target": "嗨"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Submit",
+          "target": "送出"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Ask for confirmation before saving a PDF file",
+          "target": "儲存 PDF 檔案前先詢問確認"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Ask for confirmation before saving a reference note",
+          "target": "儲存參考文獻筆記前先詢問確認"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Third-party services information",
+          "target": "第三方服務資訊"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Email",
+          "target": "電子郵件"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Save PDFs",
+          "target": "儲存 PDF"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Confirm to save PDF",
+          "target": "確認儲存 PDF"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Save reference notes",
+          "target": "儲存參考文獻筆記"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Confirm to save reference note",
+          "target": "確認儲存參考文獻筆記"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTitle",
+          "source": "Choose a reference",
+          "target": "選擇參考文獻"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "ResetForm",
+          "target": "ResetForm"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Keystroke",
+          "target": "Keystroke"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Create a reference note from a DOI",
+          "target": "從 DOI 建立參考文獻筆記"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Create a reference note from the DOI in the clipboard",
+          "target": "從剪貼簿中的 DOI 建立參考文獻筆記"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Paper title",
+          "target": "論文標題"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "placeholder",
+          "source": "Title of the paper",
+          "target": "論文標題"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "This plugin uses some third-party services and libraries. See the following links for more information:",
+          "target": "此外掛使用部分第三方服務與函式庫。更多資訊請參考以下連結："
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "Reference metadata: Unpaywall API",
+          "target": "參考文獻中繼資料：Unpaywall API"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "API Documentation (Data format): ",
+          "target": "API 文件（資料格式）："
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "Documentation: ",
+          "target": "文件："
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "GitHub Repository: ",
+          "target": "GitHub 儲存庫："
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Your email address for the Unpaywall API.",
+          "target": "用於 Unpaywall API 的電子郵件地址。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "PDF path template",
+          "target": "PDF 路徑範本"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "The template for the path of the PDF files\r\nUnknown characters in filenames will be replaced by underscores",
+          "target": "PDF 檔案的路徑範本\r\n檔名中的未知字元會以底線取代"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Reference path template",
+          "target": "參考文獻筆記路徑範本"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "The template for the path of the reference notes\r\nUnknown characters in filenames will be replaced by underscores",
+          "target": "參考文獻筆記的路徑範本\r\n檔名中的未知字元會以底線取代"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Template path",
+          "target": "範本路徑"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "The path to the template for the reference notes.",
+          "target": "參考文獻筆記範本的路徑。"
+        },
+        {
+          "type": "Property",
+          "name": "text",
+          "source": "Template engine: squirrelly",
+          "target": "範本引擎：squirrelly"
+        },
+        {
+          "type": "Property",
+          "name": "initialValue",
+          "source": "Title of the paper could not be extracted",
+          "target": "無法擷取論文標題"
         }
+      ],
+      "regex": [
+        {
+          "source": "log(`Info: ${d}`)",
+          "target": "log(`Info: ${d}`)"
+        },
+        {
+          "source": "log(`Warning: ${d}`)",
+          "target": "log(`Warning: ${d}`)"
+        },
+        {
+          "source": "setTitle(`Enter ${s.name}`)",
+          "target": "setTitle(`輸入 ${s.name}`)"
+        },
+        {
+          "source": "setTitle(\"Choose a reference\")",
+          "target": "setTitle(\"選擇參考文獻\")"
+        },
+        {
+          "source": "setName(\"Third-party services information\")",
+          "target": "setName(\"第三方服務資訊\")"
+        },
+        {
+          "source": "setName(\"Save PDFs\")",
+          "target": "setName(\"儲存 PDF\")"
+        },
+        {
+          "source": "setName(\"Confirm to save PDF\")",
+          "target": "setName(\"確認儲存 PDF\")"
+        },
+        {
+          "source": "setDesc(\"Ask for confirmation before saving a PDF file\")",
+          "target": "setDesc(\"儲存 PDF 檔案前先詢問確認\")"
+        },
+        {
+          "source": "setName(\"Save reference notes\")",
+          "target": "setName(\"儲存參考文獻筆記\")"
+        },
+        {
+          "source": "setName(\"Confirm to save reference note\")",
+          "target": "setName(\"確認儲存參考文獻筆記\")"
+        },
+        {
+          "source": "setDesc(\"Ask for confirmation before saving a reference note\")",
+          "target": "setDesc(\"儲存參考文獻筆記前先詢問確認\")"
+        },
+        {
+          "source": "Notice(`Searching the references for \"${l}\"...`)",
+          "target": "Notice(`正在搜尋「${l}」的參考文獻...`)"
+        },
+        {
+          "source": "text:\"This plugin uses some third-party services and libraries. See the following links for more information:\"",
+          "target": "text:\"此外掛使用部分第三方服務與函式庫。更多資訊請參考以下連結：\""
+        },
+        {
+          "source": "text:\"Reference metadata: Unpaywall API\"",
+          "target": "text:\"參考文獻中繼資料：Unpaywall API\""
+        },
+        {
+          "source": "text:\"API Documentation (Data format): \"",
+          "target": "text:\"API 文件（資料格式）：\""
+        },
+        {
+          "source": "text:\"Documentation: \"",
+          "target": "text:\"文件：\""
+        },
+        {
+          "source": "text:\"GitHub Repository: \"",
+          "target": "text:\"GitHub 儲存庫：\""
+        },
+        {
+          "source": "name:\"Create a reference note from a DOI\"",
+          "target": "name:\"從 DOI 建立參考文獻筆記\""
+        },
+        {
+          "source": "name:\"Create a reference note from the DOI in the clipboard\"",
+          "target": "name:\"從剪貼簿中的 DOI 建立參考文獻筆記\""
+        },
+        {
+          "source": "name:\"Paper title\"",
+          "target": "name:\"論文標題\""
+        },
+        {
+          "source": "setDesc(\"Your email address for the Unpaywall API.\")",
+          "target": "setDesc(\"用於 Unpaywall API 的電子郵件地址。\")"
+        },
+        {
+          "source": "text:\"Template engine: squirrelly\"",
+          "target": "text:\"範本引擎：squirrelly\""
+        },
+        {
+          "source": "setName(\"PDF path template\")",
+          "target": "setName(\"PDF 路徑範本\")"
+        },
+        {
+          "source": "setDesc(`The template for the path of the PDF files\r\nUnknown characters in filenames will be replaced by underscores`)",
+          "target": "setDesc(`PDF 檔案的路徑範本\r\n檔名中的未知字元會以底線取代`)"
+        },
+        {
+          "source": "setName(\"Reference path template\")",
+          "target": "setName(\"參考文獻筆記路徑範本\")"
+        },
+        {
+          "source": "setDesc(`The template for the path of the reference notes\r\nUnknown characters in filenames will be replaced by underscores`)",
+          "target": "setDesc(`參考文獻筆記的路徑範本\r\n檔名中的未知字元會以底線取代`)"
+        },
+        {
+          "source": "setName(\"Template path\")",
+          "target": "setName(\"範本路徑\")"
+        },
+        {
+          "source": "setDesc(\"The path to the template for the reference notes.\")",
+          "target": "setDesc(\"參考文獻筆記範本的路徑。\")"
+        },
+        {
+          "source": "throw\"For now, only \\\"base64\\\" is supported\"",
+          "target": "throw\"目前僅支援 \\\"base64\\\"\""
+        },
+        {
+          "source": "initialValue:a.length>0?a:\"Title of the paper could not be extracted\"",
+          "target": "initialValue:a.length>0?a:\"無法擷取論文標題\""
+        },
+        {
+          "source": "confirm(`Do you want to save the PDF file to ${i}?`)",
+          "target": "confirm(`要將 PDF 檔案儲存到 ${i} 嗎？`)"
+        },
+        {
+          "source": "confirm(`The file ${i} already exists. Do you want to overwrite it?`)",
+          "target": "confirm(`檔案 ${i} 已存在。要覆寫嗎？`)"
+        },
+        {
+          "source": "confirm(`Do you want to save the reference note to ${s}?`)",
+          "target": "confirm(`要將參考文獻筆記儲存到 ${s} 嗎？`)"
+        },
+        {
+          "source": "throw'For now, only \"base64\" is supported'",
+          "target": "throw\"目前僅支援 \\\"base64\\\"\""
+        },
+        {
+          "source": "setDesc(`The template for the path of the PDF files\nUnknown characters in filenames will be replaced by underscores`)",
+          "target": "setDesc(`PDF 檔案的路徑範本\n檔名中的未知字元會以底線取代`)"
+        },
+        {
+          "source": "setDesc(`The template for the path of the reference notes\nUnknown characters in filenames will be replaced by underscores`)",
+          "target": "setDesc(`參考文獻筆記的路徑範本\n檔名中的未知字元會以底線取代`)"
+        }
+      ]
     }
+  }
 }
