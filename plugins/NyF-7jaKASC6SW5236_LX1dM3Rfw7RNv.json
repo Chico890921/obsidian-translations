@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "3.2.1",
         "author": "Chico",
-        "updatedAt": 1779674600145
+        "updatedAt": 1782928793524
     },
     "dict": {
         "main.js": {
@@ -14219,7 +14219,7 @@
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "PDF Utility",
-                    "target": "PDF Utility"
+                    "target": "PDF 工具"
                 },
                 {
                     "type": "ObjectProperty",
@@ -14370,6 +14370,558 @@
                     "name": "text",
                     "source": "前往批注",
                     "target": "前往註解"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "PDF Utility 路徑覆寫",
+                    "target": "PDF 工具路徑覆寫"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Extracting data from PDFs requires an external tool.",
+                    "target": "從 PDF 擷取資料需要外部工具。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "This plugin will still work without it, but annotations will not be included in exports.",
+                    "target": "沒有此工具外掛仍可運作，但匯出內容不會包含註解。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Override the path to the PDF utility. Specify an absolute path to the pdfannots2json executable.",
+                    "target": "覆寫 PDF 工具路徑。請指定 pdfannots2json 執行檔的絕對路徑。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Download the executable here.",
+                    "target": "在此下載執行檔。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "You may need to provide Obsidian the appropriate OS permissions to access the executable.",
+                    "target": "你可能需要授予 Obsidian 適當的作業系統權限，才能存取此執行檔。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "PDF utility is up to date.",
+                    "target": "PDF 工具已是最新版本。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "The PDF extraction tool requires updating. Please re-download.",
+                    "target": "PDF 擷取工具需要更新。請重新下載。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Click the button to download.",
+                    "target": "按下按鈕即可下載。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Downloading...",
+                    "target": "正在下載..."
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Download",
+                    "target": "下載"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Custom",
+                    "target": "自訂"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "First imported note",
+                    "target": "第一個匯入的筆記"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Last imported note",
+                    "target": "最後一個匯入的筆記"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "All imported notes",
+                    "target": "所有匯入的筆記"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Add Citation Format",
+                    "target": "新增引用格式"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Add Import Format",
+                    "target": "新增匯入格式"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Name",
+                    "target": "名稱"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Output Format",
+                    "target": "輸出格式"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Formatted Citation",
+                    "target": "格式化引用"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Formatted Bibliography",
+                    "target": "格式化參考文獻"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Template",
+                    "target": "範本"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Citation templates have access to a subset of the Zotero item's data. The item's first attachement is available under the",
+                    "target": "引用範本可以存取 Zotero 項目的部分資料。項目的第一個附件可透過"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": " key. Annotations are not provided. Open the data explorer from the command pallet to see available template data. Templates are written using",
+                    "target": " 鍵取得。不會提供註解。請從命令面板開啟資料管理器，以查看可用的範本資料。範本使用"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "See the templating documentation here",
+                    "target": "查看範本文件"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Bibliography Style",
+                    "target": "參考文獻樣式"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Citation Style",
+                    "target": "引用樣式"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Search...",
+                    "target": "搜尋..."
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Note, the chosen style must be installed in Zotero. See",
+                    "target": "注意：所選樣式必須已安裝在 Zotero 中。請參閱"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Citation Command",
+                    "target": "引用命令"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Include Brackets",
+                    "target": "包含括號"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Output Path",
+                    "target": "輸出路徑"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "The file path of the exported markdown. Supports templating, eg",
+                    "target": "匯出 Markdown 的檔案路徑。支援範本，例如"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": ". Templates have access to data from the Zotero item and its first attachment.",
+                    "target": "。範本可以存取 Zotero 項目及其第一個附件的資料。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Image Output Path",
+                    "target": "圖片輸出路徑"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "The folder in which images should be saved. Supports templating, eg",
+                    "target": "圖片要儲存的資料夾。支援範本，例如"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Image Base Name",
+                    "target": "圖片基礎檔名"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "The base file name of exported images. Eg. ",
+                    "target": "匯出圖片的基礎檔名。例如 "
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": " will result in ",
+                    "target": " 會產生 "
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": " where ",
+                    "target": "，其中 "
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": " is the page number and ",
+                    "target": " 是頁碼，"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": " and ",
+                    "target": " 與 "
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": " are the x and y coordinates of rectangle annotation on the page. Supports templating. Templates have access to data from the Zotero item and its first attachment.",
+                    "target": " 是頁面上矩形註解的 x 與 y 座標。支援範本。範本可以存取 Zotero 項目及其第一個附件的資料。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Template File",
+                    "target": "範本檔案"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Open the data explorer from the command pallet to see available template data. Templates are written using",
+                    "target": "請從命令面板開啟資料管理器，以查看可用的範本資料。範本使用"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Header Template File (deprecated)",
+                    "target": "標頭範本檔案（已淘汰）"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Annotation Template File (deprecated)",
+                    "target": "註解範本檔案（已淘汰）"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Footer Template File (deprecated)",
+                    "target": "頁尾範本檔案（已淘汰）"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Remove Template",
+                    "target": "移除範本"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Deprecated: Separate template files are no longer needed.",
+                    "target": "已淘汰：不再需要分開的範本檔案。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Attempt to extract text from images created by rectangle annotations. This requires that",
+                    "target": "嘗試從矩形註解建立的圖片中擷取文字。這需要系統已安裝"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "be installed on your system. Tesseract can be installed from",
+                    "target": "。Tesseract 可透過"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "homebrew on mac",
+                    "target": "Mac 上的 Homebrew"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": ", various linux package managers, and from",
+                    "target": "、各種 Linux 套件管理器，或從"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "here on windows",
+                    "target": "Windows 版本下載頁"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Required: An absolute path to the tesseract executable. This can be found on mac and linux with the terminal command",
+                    "target": "必填：tesseract 執行檔的絕對路徑。可在 Mac 和 Linux 終端機中使用以下命令找到："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Attempt to find tesseract automatically",
+                    "target": "嘗試自動尋找 tesseract"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Optional: defaults to english. Multiple languages can be specified like so: ",
+                    "target": "選填：預設為英文。可以像這樣指定多種語言："
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": ". Each language must be installed on your system.",
+                    "target": "。每種語言都必須已安裝在你的系統中。"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Languages can be downloaded here",
+                    "target": "可在此下載語言檔"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": ". (See",
+                    "target": "。（請參閱"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "here for a description of the language codes",
+                    "target": "語言代碼說明"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Modal",
+                    "source": "Fetching notes from Zotero...",
+                    "target": "正在從 Zotero 取得筆記..."
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Modal",
+                    "source": "Fetching collections from Zotero...",
+                    "target": "正在從 Zotero 取得資料夾..."
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Modal",
+                    "source": "Fetching data from Zotero...",
+                    "target": "正在從 Zotero 取得資料..."
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Modal",
+                    "source": "Awaiting item selection from Zotero...",
+                    "target": "等待在 Zotero 中選取項目..."
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Modal",
+                    "source": "Updating Obsidian Zotero Integration PDF Utility...",
+                    "target": "正在更新 Zotero Integration PDF 工具..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Obsidian Zotero Integration: Downloading ",
+                    "target": "Obsidian Zotero Integration：正在下載 "
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Cannot find file. Invalid markdown link: ",
+                    "target": "找不到檔案。Markdown 連結無效："
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Cannot find file. File not found: ",
+                    "target": "找不到檔案："
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Template Data",
+                    "target": "範本資料"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Type to search CSL styles",
+                    "target": "輸入以搜尋 CSL 樣式"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Type to search",
+                    "target": "輸入以搜尋"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "No options",
+                    "target": "沒有選項"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "ui",
+                    "source": "Loading...",
+                    "target": "載入中..."
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Notice",
+                    "source": "获取笔记时出错：${r.message}",
+                    "target": "取得筆記時發生錯誤：${r.message}"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Notice",
+                    "source": "获取格式化参考文献时出错：${u.message}",
+                    "target": "取得格式化參考文獻時發生錯誤：${u.message}"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Notice",
+                    "source": "获取项目数据时出错：${s.message}",
+                    "target": "取得項目資料時發生錯誤：${s.message}"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Notice",
+                    "source": "获取项目数据时出错：${f.message}",
+                    "target": "取得項目資料時發生錯誤：${f.message}"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Notice",
+                    "source": "获取项目数据时出错：${o.message}",
+                    "target": "取得項目資料時發生錯誤：${o.message}"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Notice",
+                    "source": "获取引用键时出错：${i.message}",
+                    "target": "取得引用鍵時發生錯誤：${i.message}"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Notice",
+                    "source": "处理引用时出错：${r.message}",
+                    "target": "處理引用時發生錯誤：${r.message}"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Notice",
+                    "source": "错误：未找到 ${e} 模板 ${t}",
+                    "target": "錯誤：找不到 ${e} 範本 ${t}"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Notice",
+                    "source": "Error converting formatted bibliography to markdown: ${u.message}",
+                    "target": "將格式化參考文獻轉換為 Markdown 時發生錯誤：${u.message}"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "Notice",
+                    "source": "Error: Received empty bibliography from Zotero. Ensure Zotero's quick copy settings are set and the selected citation style is installed.",
+                    "target": "錯誤：從 Zotero 收到空白參考文獻。請確認 Zotero 的快速複製設定已設定，且已安裝所選引用樣式。"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Error",
+                    "source": "Error parsing template \"${t}\": ${qx(e,a)}",
+                    "target": "解析範本「${t}」時發生錯誤：${qx(e,a)}"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Error",
+                    "source": "No templates found for export ${e.exportFormat.name}",
+                    "target": "找不到匯出「${e.exportFormat.name}」的範本"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Notice",
+                    "source": "导入 ${x} 失败，请查看开发者控制台以获取详细信息",
+                    "target": "匯入 ${x} 失敗，請查看開發者主控台取得詳細資訊"
+                },
+                {
+                    "type": "TemplateLiteral",
+                    "name": "Error",
+                    "source": "Error: Import format \"${a}\" not found",
+                    "target": "錯誤：找不到匯入格式「${a}」"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "templateName",
+                    "source": "Header",
+                    "target": "標頭"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "templateName",
+                    "source": "Annotation",
+                    "target": "註解"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "templateName",
+                    "source": "Footer",
+                    "target": "頁尾"
                 }
             ],
             "regex": [
@@ -14571,7 +15123,7 @@
                 },
                 {
                     "source": "name:\"PDF Utility\"",
-                    "target": "name:\"PDF Utility\""
+                    "target": "name:\"PDF 工具\""
                 },
                 {
                     "source": "name:\"回收站\"",
@@ -14700,6 +15252,110 @@
                 {
                     "source": "name:\"数据管理器\"",
                     "target": "name:\"資料管理器\""
+                },
+                {
+                    "source": "name:\"PDF Utility 路徑覆寫\"",
+                    "target": "name:\"PDF 工具路徑覆寫\""
+                },
+                {
+                    "source": "\"Extracting data from PDFs requires an external tool.\"",
+                    "target": "\"從 PDF 擷取資料需要外部工具。\""
+                },
+                {
+                    "source": "\"This plugin will still work without it, but annotations will not be included in exports.\"",
+                    "target": "\"沒有此工具外掛仍可運作，但匯出內容不會包含註解。\""
+                },
+                {
+                    "source": "\"Override the path to the PDF utility. Specify an absolute path to the pdfannots2json executable.\"",
+                    "target": "\"覆寫 PDF 工具路徑。請指定 pdfannots2json 執行檔的絕對路徑。\""
+                },
+                {
+                    "source": "\"Download the executable here.\"",
+                    "target": "\"在此下載執行檔。\""
+                },
+                {
+                    "source": "\"You may need to provide Obsidian the appropriate OS permissions to access the executable.\"",
+                    "target": "\"你可能需要授予 Obsidian 適當的作業系統權限，才能存取此執行檔。\""
+                },
+                {
+                    "source": "\"PDF utility is up to date.\"",
+                    "target": "\"PDF 工具已是最新版本。\""
+                },
+                {
+                    "source": "\"The PDF extraction tool requires updating. Please re-download.\"",
+                    "target": "\"PDF 擷取工具需要更新。請重新下載。\""
+                },
+                {
+                    "source": "\"Click the button to download.\"",
+                    "target": "\"按下按鈕即可下載。\""
+                },
+                {
+                    "source": "\"Downloading...\"",
+                    "target": "\"正在下載...\""
+                },
+                {
+                    "source": "\"Download\"",
+                    "target": "\"下載\""
+                },
+                {
+                    "source": "I.createElement(\"option\",{value:\"Custom\"},\"Custom\")",
+                    "target": "I.createElement(\"option\",{value:\"Custom\"},\"自訂\")"
+                },
+                {
+                    "source": "\"First imported note\"",
+                    "target": "\"第一個匯入的筆記\""
+                },
+                {
+                    "source": "\"Last imported note\"",
+                    "target": "\"最後一個匯入的筆記\""
+                },
+                {
+                    "source": "\"All imported notes\"",
+                    "target": "\"所有匯入的筆記\""
+                },
+                {
+                    "source": "\"Add Citation Format\"",
+                    "target": "\"新增引用格式\""
+                },
+                {
+                    "source": "\"Add Import Format\"",
+                    "target": "\"新增匯入格式\""
+                },
+                {
+                    "source": "\"Fetching notes from Zotero...\"",
+                    "target": "\"正在從 Zotero 取得筆記...\""
+                },
+                {
+                    "source": "\"Fetching collections from Zotero...\"",
+                    "target": "\"正在從 Zotero 取得資料夾...\""
+                },
+                {
+                    "source": "\"Fetching data from Zotero...\"",
+                    "target": "\"正在從 Zotero 取得資料...\""
+                },
+                {
+                    "source": "\"Awaiting item selection from Zotero...\"",
+                    "target": "\"等待在 Zotero 中選取項目...\""
+                },
+                {
+                    "source": "\"Updating Obsidian Zotero Integration PDF Utility...\"",
+                    "target": "\"正在更新 Zotero Integration PDF 工具...\""
+                },
+                {
+                    "source": "\"Type to search CSL styles\"",
+                    "target": "\"輸入以搜尋 CSL 樣式\""
+                },
+                {
+                    "source": "\"Type to search\"",
+                    "target": "\"輸入以搜尋\""
+                },
+                {
+                    "source": "\"No options\"",
+                    "target": "\"沒有選項\""
+                },
+                {
+                    "source": "\"Loading...\"",
+                    "target": "\"載入中...\""
                 }
             ]
         }
