@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "0.3.7",
         "author": "Chico",
-        "updatedAt": 1778618750080
+        "updatedAt": 1782927229055
     },
     "dict": {
         "main.js": {
@@ -23,7 +23,7 @@
                     "type": "CallExpression",
                     "name": "addOption",
                     "source": "HTML spans: <span class=\"sidenote\">text</span>",
-                    "target": "HTML span：<span class=\"sidenote\">text</span>"
+                    "target": "HTML span：<span class=\"sidenote\">文字</span>"
                 },
                 {
                     "type": "CallExpression",
@@ -59,13 +59,13 @@
                     "type": "CallExpression",
                     "name": "addOption",
                     "source": "Pill (colored capsule)",
-                    "target": "膠囊（彩色）"
+                    "target": "膠囊（彩色標籤）"
                 },
                 {
                     "type": "CallExpression",
                     "name": "addOption",
                     "source": "Neumorphic (subtle badge)",
-                    "target": "新擬物（細緻徽章）"
+                    "target": "新擬態（柔和徽章）"
                 },
                 {
                     "type": "CallExpression",
@@ -293,7 +293,7 @@
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "Animate width and position changes",
-                    "target": "為寬度與位置變更加上動畫"
+                    "target": "以動畫呈現寬度與位置變更"
                 },
                 {
                     "type": "CallExpression",
@@ -443,7 +443,7 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Gap Drift Factor",
-                    "target": "間距成長係數"
+                    "target": "間距漂移係數"
                 },
                 {
                     "type": "CallExpression",
@@ -473,7 +473,7 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Full width above",
-                    "target": "高於此寬度時全寬"
+                    "target": "高於此寬度時使用全寬"
                 },
                 {
                     "type": "CallExpression",
@@ -527,7 +527,7 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Collision spacing",
-                    "target": "防重疊間距"
+                    "target": "重疊避讓間距"
                 },
                 {
                     "type": "CallExpression",
@@ -593,13 +593,13 @@
                     "type": "CallExpression",
                     "name": "setPlaceholder",
                     "source": "#666666 or rgb(100,100,100)",
-                    "target": "#666666 or rgb(100,100,100)"
+                    "target": "#666666 或 rgb(100,100,100)"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setPlaceholder",
                     "source": "e.g. #333333 or rgb(50,50,50)",
-                    "target": "e.g. #333333 or rgb(50,50,50)"
+                    "target": "例如 #333333 或 rgb(50,50,50)"
                 },
                 {
                     "type": "CallExpression",
@@ -744,6 +744,126 @@
                     "name": "name",
                     "source": "Insert margin note",
                     "target": "插入邊註"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Number badge style",
+                    "target": "編號徽章樣式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Gap Drift Factor",
+                    "target": "間距漂移係數"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Page Offset Factor",
+                    "target": "頁面偏移係數"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Compact below width",
+                    "target": "低於此寬度時使用精簡模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Full width above",
+                    "target": "高於此寬度時使用全寬"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Font size (compact mode)",
+                    "target": "字體大小（精簡模式）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Text alignment",
+                    "target": "文字對齊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Collision spacing",
+                    "target": "重疊避讓間距"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Reset numbering per heading",
+                    "target": "每個標題重新編號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Formatting Help",
+                    "target": "格式說明"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Custom color for sidenote numbers (leave empty for theme default)",
+                    "target": "自訂旁註編號顏色（留空則使用主題預設）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Base width of sidenotes in rem (default: 10)",
+                    "target": "旁註基礎寬度，單位為 rem（預設：10）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Maximum width of sidenotes in rem (default: 18)",
+                    "target": "旁註最大寬度，單位為 rem（預設：18）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Space between the margin and body text in rem (default: 2)",
+                    "target": "頁面邊界與本文之間的間距，單位為 rem（預設：2）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When anchored to text: minimum distance from editor edge. When anchored to edge: minimum distance from text body. (rem, default: 1)",
+                    "target": "錨定到文字時：與編輯器邊緣的最小距離。錨定到邊緣時：與本文的最小距離。（rem，預設：1）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Color for sidenote text. Leave empty to use Obsidian's default text color.",
+                    "target": "旁註文字顏色。留空則使用 Obsidian 預設文字顏色。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Color for sidenote text *on hover*. Leave empty to use Obsidian's default *muted text* color.",
+                    "target": "旁註文字懸停時的顏色。留空則使用 Obsidian 預設淡化文字顏色。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Sidenotes support basic Markdown formatting:",
+                    "target": "旁註支援基本 Markdown 格式："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Use the command palette to insert sidenotes quickly.",
+                    "target": "使用命令面板可以快速插入旁註。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show margin note",
+                    "target": "顯示邊註"
                 }
             ],
             "regex": [
@@ -797,7 +917,7 @@
                 },
                 {
                     "source": "setName(\"Number style\")",
-                    "target": "setName(\"Number style\")"
+                    "target": "setName(\"編號樣式\")"
                 },
                 {
                     "source": "setDesc(\"How to format sidenote numbers\")",
@@ -805,7 +925,7 @@
                 },
                 {
                     "source": "setName(\"Number badge style\")",
-                    "target": "setName(\"Number badge style\")"
+                    "target": "setName(\"編號徽章樣式\")"
                 },
                 {
                     "source": "setDesc(\"Visual style for sidenote numbers\")",
@@ -813,11 +933,11 @@
                 },
                 {
                     "source": "setName(\"Number color\")",
-                    "target": "setName(\"Number color\")"
+                    "target": "setName(\"編號顏色\")"
                 },
                 {
                     "source": "setPlaceholder(\"#666666 or rgb(100,100,100)\")",
-                    "target": "setPlaceholder(\"#666666 or rgb(100,100,100)\")"
+                    "target": "setPlaceholder(\"#666666 或 rgb(100,100,100)\")"
                 },
                 {
                     "source": "setName(\"Width & Spacing\")",
@@ -849,7 +969,7 @@
                 },
                 {
                     "source": "setName(\"Gap Drift Factor\")",
-                    "target": "setName(\"Gap Drift Factor\")"
+                    "target": "setName(\"間距漂移係數\")"
                 },
                 {
                     "source": "setDesc(\"Adjusts how much the gaps grow as editor width increases (default: 0.5). At 0, gaps stay at their minimum. At 1, gaps grow by the maximum amount (20% of extra space).\")",
@@ -857,7 +977,7 @@
                 },
                 {
                     "source": "setName(\"Page Offset Factor\")",
-                    "target": "setName(\"Page Offset Factor\")"
+                    "target": "setName(\"頁面偏移係數\")"
                 },
                 {
                     "source": "setDesc(\"Adjusts how much body text gets nudged over when sidenotes are present (default: 0)\")",
@@ -873,15 +993,15 @@
                 },
                 {
                     "source": "setName(\"Compact below width\")",
-                    "target": "setName(\"Compact below width\")"
+                    "target": "setName(\"低於此寬度時使用精簡模式\")"
                 },
                 {
                     "source": "setDesc(\"Use compact mode when editor width is below this (px)\")",
-                    "target": "setDesc(\"Use compact mode when editor width is below this (px)\")"
+                    "target": "setDesc(\"當編輯器寬度低於此值時使用精簡模式（px）\")"
                 },
                 {
                     "source": "setName(\"Full width above\")",
-                    "target": "setName(\"Full width above\")"
+                    "target": "setName(\"高於此寬度時使用全寬\")"
                 },
                 {
                     "source": "setDesc(\"Use full-width sidenotes when editor width is above this (px)\")",
@@ -889,19 +1009,19 @@
                 },
                 {
                     "source": "setName(\"Font size\")",
-                    "target": "setName(\"Font size\")"
+                    "target": "setName(\"字體大小\")"
                 },
                 {
                     "source": "setDesc(\"Font size as percentage of body text (default: 80)\")",
-                    "target": "setDesc(\"Font size as percentage of body text (default: 80)\")"
+                    "target": "setDesc(\"字體大小 as percentage of body text (default: 80)\")"
                 },
                 {
                     "source": "setName(\"Font size (compact mode)\")",
-                    "target": "setName(\"Font size (compact mode)\")"
+                    "target": "setName(\"字體大小 (compact mode)\")"
                 },
                 {
                     "source": "setDesc(\"Font size in compact mode as percentage (default: 70)\")",
-                    "target": "setDesc(\"Font size in compact mode as percentage (default: 70)\")"
+                    "target": "setDesc(\"字體大小 in compact mode as percentage (default: 70)\")"
                 },
                 {
                     "source": "setName(\"Line height\")",
@@ -917,7 +1037,7 @@
                 },
                 {
                     "source": "setPlaceholder(\"e.g. #333333 or rgb(50,50,50)\")",
-                    "target": "setPlaceholder(\"e.g. #333333 or rgb(50,50,50)\")"
+                    "target": "setPlaceholder(\"例如 #333333 或 rgb(50,50,50)\")"
                 },
                 {
                     "source": "setName(\"Sidenote hover color\")",
@@ -925,7 +1045,7 @@
                 },
                 {
                     "source": "setName(\"Text alignment\")",
-                    "target": "setName(\"Text alignment\")"
+                    "target": "setName(\"文字對齊\")"
                 },
                 {
                     "source": "setDesc(\"How to align text in sidenotes\")",
@@ -933,7 +1053,7 @@
                 },
                 {
                     "source": "setName(\"Collision spacing\")",
-                    "target": "setName(\"Collision spacing\")"
+                    "target": "setName(\"重疊避讓間距\")"
                 },
                 {
                     "source": "setDesc(\"Minimum pixels between stacked sidenotes (default: 8)\")",
@@ -945,11 +1065,11 @@
                 },
                 {
                     "source": "setDesc(\"Animate width and position changes\")",
-                    "target": "setDesc(\"Animate width and position changes\")"
+                    "target": "setDesc(\"以動畫呈現寬度與位置變更\")"
                 },
                 {
                     "source": "setName(\"Reset numbering per heading\")",
-                    "target": "setName(\"Reset numbering per heading\")"
+                    "target": "setName(\"每個標題重新編號\")"
                 },
                 {
                     "source": "setDesc(\"Restart sidenote numbering after each heading\")",
@@ -973,7 +1093,7 @@
                 },
                 {
                     "source": "setName(\"Margin Notes\")",
-                    "target": "setName(\"Margin Notes\")"
+                    "target": "setName(\"邊註\")"
                 },
                 {
                     "source": "setName(\"Margin note display\")",
@@ -981,7 +1101,7 @@
                 },
                 {
                     "source": "setDesc(\"Show margin notes in the margin, or as an \\u24D8 icon with a popup on click.\")",
-                    "target": "setDesc(\"Show margin notes in the margin, or as an \\u24D8 icon with a popup on click.\")"
+                    "target": "setDesc(\"顯示邊註s in the margin, or as an \\u24D8 icon with a popup on click.\")"
                 },
                 {
                     "source": "setName(\"Margin note popup icon\")",
@@ -989,7 +1109,7 @@
                 },
                 {
                     "source": "setDesc(\"Specify an icon to use for margin notes when 'Show as popup on click' is selected. You can use any Unicode character, e.g. \\u24D8 or \\u{1F6C8}, or a filename (stored in plugins/sidenotes/assets)\")",
-                    "target": "setDesc(\"Specify an icon to use for margin notes when 'Show as popup on click' is selected. You can use any Unicode character, e.g. \\u24D8 or \\u{1F6C8}, or a filename (stored in plugins/sidenotes/assets)\")"
+                    "target": "setDesc(\"Specify an icon to use for margin notes when '點擊時以彈窗顯示' is selected. You can use any Unicode character, e.g. \\u24D8 or \\u{1F6C8}, or a filename (stored in plugins/sidenotes/assets)\")"
                 },
                 {
                     "source": "setPlaceholder(\"e.g. \\u24D8 or \\u{1F6C8} or information_source.png\")",
@@ -1013,7 +1133,7 @@
                 },
                 {
                     "source": "setName(\"Formatting Help\")",
-                    "target": "setName(\"Formatting Help\")"
+                    "target": "setName(\"格式說明\")"
                 },
                 {
                     "source": "log(\"[Sidenotes] layout() - no cmRoot\")",
@@ -1042,6 +1162,198 @@
                 {
                     "source": "name:\"Insert margin note\"",
                     "target": "name:\"插入邊註\""
+                },
+                {
+                    "source": "setName(\"Display\")",
+                    "target": "setName(\"顯示\")"
+                },
+                {
+                    "source": "setDesc(\"Number badge style\")",
+                    "target": "setDesc(\"編號徽章樣式\")"
+                },
+                {
+                    "source": "setDesc(\"Gap Drift Factor\")",
+                    "target": "setDesc(\"間距漂移係數\")"
+                },
+                {
+                    "source": "setDesc(\"Page Offset Factor\")",
+                    "target": "setDesc(\"頁面偏移係數\")"
+                },
+                {
+                    "source": "setName(\"Breakpoints\")",
+                    "target": "setName(\"斷點\")"
+                },
+                {
+                    "source": "setDesc(\"Compact below width\")",
+                    "target": "setDesc(\"低於此寬度時使用精簡模式\")"
+                },
+                {
+                    "source": "setDesc(\"Full width above\")",
+                    "target": "setDesc(\"高於此寬度時使用全寬\")"
+                },
+                {
+                    "source": "setName(\"Typography\")",
+                    "target": "setName(\"字體排版\")"
+                },
+                {
+                    "source": "setDesc(\"Font size (compact mode)\")",
+                    "target": "setDesc(\"字體大小（精簡模式）\")"
+                },
+                {
+                    "source": "setDesc(\"Text alignment\")",
+                    "target": "setDesc(\"文字對齊\")"
+                },
+                {
+                    "source": "setName(\"Behavior\")",
+                    "target": "setName(\"行為\")"
+                },
+                {
+                    "source": "setDesc(\"Collision spacing\")",
+                    "target": "setDesc(\"重疊避讓間距\")"
+                },
+                {
+                    "source": "setDesc(\"Reset numbering per heading\")",
+                    "target": "setDesc(\"每個標題重新編號\")"
+                },
+                {
+                    "source": "setDesc(\"Formatting Help\")",
+                    "target": "setDesc(\"格式說明\")"
+                },
+                {
+                    "source": "setDesc(\"Custom color for sidenote numbers (leave empty for theme default)\")",
+                    "target": "setDesc(\"自訂旁註編號顏色（留空則使用主題預設）\")"
+                },
+                {
+                    "source": "setDesc(\"Base width of sidenotes in rem (default: 10)\")",
+                    "target": "setDesc(\"旁註基礎寬度，單位為 rem（預設：10）\")"
+                },
+                {
+                    "source": "setDesc(\"Maximum width of sidenotes in rem (default: 18)\")",
+                    "target": "setDesc(\"旁註最大寬度，單位為 rem（預設：18）\")"
+                },
+                {
+                    "source": "setDesc(\"Space between the margin and body text in rem (default: 2)\")",
+                    "target": "setDesc(\"頁面邊界與本文之間的間距，單位為 rem（預設：2）\")"
+                },
+                {
+                    "source": "setDesc(\"When anchored to text: minimum distance from editor edge. When anchored to edge: minimum distance from text body. (rem, default: 1)\")",
+                    "target": "setDesc(\"錨定到文字時：與編輯器邊緣的最小距離。錨定到邊緣時：與本文的最小距離。（rem，預設：1）\")"
+                },
+                {
+                    "source": "setDesc(\"Color for sidenote text. Leave empty to use Obsidian's default text color.\")",
+                    "target": "setDesc(\"旁註文字顏色。留空則使用 Obsidian 預設文字顏色。\")"
+                },
+                {
+                    "source": "setDesc(\"Color for sidenote text *on hover*. Leave empty to use Obsidian's default *muted text* color.\")",
+                    "target": "setDesc(\"旁註文字懸停時的顏色。留空則使用 Obsidian 預設淡化文字顏色。\")"
+                },
+                {
+                    "source": "setDesc(\"Show margin notes in the margin, or as an ⓘ icon with a popup on click.\")",
+                    "target": "setDesc(\"在邊界顯示邊註，或顯示為可點擊彈出的 ⓘ 圖示。\")"
+                },
+                {
+                    "source": "setDesc(\"Sidenotes support basic Markdown formatting:\")",
+                    "target": "setDesc(\"旁註支援基本 Markdown 格式：\")"
+                },
+                {
+                    "source": "setDesc(\"Use the command palette to insert sidenotes quickly.\")",
+                    "target": "setDesc(\"使用命令面板可以快速插入旁註。\")"
+                },
+                {
+                    "source": "setDesc(\"Show margin note\")",
+                    "target": "setDesc(\"顯示邊註\")"
+                },
+                {
+                    "source": "setDesc(\"調整編輯器寬度增加時間距成長的程度（預設：0.5）。0 表示維持最小間距，1 表示以最大幅度增加間距（額外空間的 20%）。\")",
+                    "target": "setDesc(\"調整編輯器寬度增加時，間距成長的程度（預設：0.5）。0 表示維持最小間距，1 表示以最大幅度增加間距（額外空間的 20%）。\")"
+                },
+                {
+                    "source": "addOption(\"left\",\"Left margin\")",
+                    "target": "addOption(\"left\",\"左側邊界\")"
+                },
+                {
+                    "source": "addOption(\"right\",\"Right margin\")",
+                    "target": "addOption(\"right\",\"右側邊界\")"
+                },
+                {
+                    "source": "addOption(\"arabic\",\"Arabic (1, 2, 3)\")",
+                    "target": "addOption(\"arabic\",\"阿拉伯數字（1, 2, 3）\")"
+                },
+                {
+                    "source": "addOption(\"roman\",\"Roman (i, ii, iii)\")",
+                    "target": "addOption(\"roman\",\"羅馬數字（i, ii, iii）\")"
+                },
+                {
+                    "source": "addOption(\"letters\",\"Letters (a, b, c)\")",
+                    "target": "addOption(\"letters\",\"字母（a, b, c）\")"
+                },
+                {
+                    "source": "addOption(\"plain\",\"Plain (superscript)\")",
+                    "target": "addOption(\"plain\",\"純文字（上標）\")"
+                },
+                {
+                    "source": "addOption(\"neumorphic\",\"Neumorphic (subtle badge)\")",
+                    "target": "addOption(\"neumorphic\",\"新擬態（柔和徽章）\")"
+                },
+                {
+                    "source": "addOption(\"pill\",\"Pill (colored capsule)\")",
+                    "target": "addOption(\"pill\",\"膠囊（彩色標籤）\")"
+                },
+                {
+                    "source": "addOption(\"left\",\"Left\")",
+                    "target": "addOption(\"left\",\"靠左\")"
+                },
+                {
+                    "source": "addOption(\"right\",\"Right\")",
+                    "target": "addOption(\"right\",\"靠右\")"
+                },
+                {
+                    "source": "addOption(\"justify\",\"Justified\")",
+                    "target": "addOption(\"justify\",\"左右對齊\")"
+                },
+                {
+                    "source": "addOption(\"margin\",\"Show in margin\")",
+                    "target": "addOption(\"margin\",\"顯示在邊界\")"
+                },
+                {
+                    "source": "addOption(\"popup\",\"Show as popup on click\")",
+                    "target": "addOption(\"popup\",\"點擊時以彈窗顯示\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g. ⓘ or 🛈 or information_source.png\")",
+                    "target": "setPlaceholder(\"例如 ⓘ、🛈 或 information_source.png\")"
+                },
+                {
+                    "source": "<p>Sidenotes support basic Markdown formatting:</p>",
+                    "target": "<p>旁註支援基本 Markdown 格式：</p>"
+                },
+                {
+                    "source": "<li><code>**bold**</code> or <code>__bold__</code> \\u2192 <strong>bold</strong></li>",
+                    "target": "<li><code>**粗體**</code> 或 <code>__粗體__</code> \\u2192 <strong>粗體</strong></li>"
+                },
+                {
+                    "source": "<li><code>*italic*</code> or <code>_italic_</code> \\u2192 <em>italic</em></li>",
+                    "target": "<li><code>*斜體*</code> 或 <code>_斜體_</code> \\u2192 <em>斜體</em></li>"
+                },
+                {
+                    "source": "<li><code>[link](url)</code> \\u2192 clickable link</li>",
+                    "target": "<li><code>[連結](url)</code> \\u2192 可點擊連結</li>"
+                },
+                {
+                    "source": "<li><code>[[Note]]</code> or <code>[[Note|display]]</code> \\u2192 internal link</li>",
+                    "target": "<li><code>[[筆記]]</code> 或 <code>[[筆記|顯示文字]]</code> \\u2192 內部連結</li>"
+                },
+                {
+                    "source": "<p>Use the command palette to insert sidenotes quickly.</p>",
+                    "target": "<p>使用命令面板可以快速插入旁註。</p>"
+                },
+                {
+                    "source": "setAttribute(\"aria-label\",\"Show margin note\")",
+                    "target": "setAttribute(\"aria-label\",\"顯示邊註\")"
+                },
+                {
+                    "source": "addOption(\"html\",\"HTML span：<span class=\\\"sidenote\\\">text</span>\")",
+                    "target": "addOption(\"html\",\"HTML span：<span class=\\\"sidenote\\\">文字</span>\")"
                 }
             ]
         }
