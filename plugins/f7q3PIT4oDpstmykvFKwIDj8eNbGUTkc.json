@@ -2,12 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-git",
-        "version": "2.38.5",
+        "version": "2.38.6",
         "title": "[zh-tw] Git",
         "description": "Git 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.38.5",
-        "author": "Chico"
+        "supportedVersions": "2.38.6",
+        "author": "Chico",
+        "updatedAt": 1783364104758
     },
     "dict": {
         "main.js": {
@@ -220,13 +221,13 @@
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "Hunks are sections of grouped line changes right in your editor.",
-                    "target": "Hunk 是編輯器中成組顯示的行變更區塊。"
+                    "target": "差異區塊是在編輯器中成組顯示的行變更。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "This allows you to see your changes right in your editor via colored markers and stage/reset/preview individual hunks.",
-                    "target": "這可讓你在編輯器中透過彩色標記查看變更，並可暫存、重設或預覽單一 hunk。"
+                    "target": "這可讓你在編輯器中透過彩色標記查看變更，並可暫存、重設或預覽單一差異區塊。"
                 },
                 {
                     "type": "CallExpression",
@@ -316,7 +317,7 @@
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "Specify the path to the Git binary/executable. Git should already be in your PATH. Should only be necessary for a custom Git installation.",
-                    "target": "指定 Git binary/可執行檔路徑。Git 通常應已在 PATH 中；只有自訂 Git 安裝時才需要設定。"
+                    "target": "指定 Git 執行檔路徑。Git 通常應已在 PATH 中；只有自訂 Git 安裝時才需要設定。"
                 },
                 {
                     "type": "CallExpression",
@@ -334,7 +335,7 @@
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "\n            Sets the relative path to the vault from which the Git binary should be executed.\n             Mostly used to set the path to the Git repository, which is only required if the Git repository is below the vault root directory. Use \"\\\\\" instead of \"/\" on Windows.\n            ",
-                    "target": "\n            設定執行 Git binary 時相對於 vault 的路徑。\n             主要用於設定 Git 儲存庫路徑；只有當 Git 儲存庫位於 vault 根目錄下方時才需要。Windows 上請使用 \"\\\\\" 代替 \"/\"。\n            "
+                    "target": "\n            設定執行 Git 執行檔時相對於儲存庫的路徑。\n             主要用於設定 Git 儲存庫路徑；只有當 Git 儲存庫位於儲存庫根目錄下方時才需要。Windows 上請使用 \"\\\\\" 代替 \"/\"。\n            "
                 },
                 {
                     "type": "CallExpression",
@@ -460,13 +461,13 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Push on commit-and-sync",
-                    "target": "commit-and-sync時推送"
+                    "target": "commit-and-sync 時推送"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Pull on commit-and-sync",
-                    "target": "commit-and-sync時拉取"
+                    "target": "commit-and-sync 時拉取"
                 },
                 {
                     "type": "CallExpression",
@@ -478,7 +479,7 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Hunk commands",
-                    "target": "Hunk 命令"
+                    "target": "差異區塊命令"
                 },
                 {
                     "type": "CallExpression",
@@ -634,7 +635,7 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Custom Git binary path",
-                    "target": "自訂 Git binary 路徑"
+                    "target": "自訂 Git 執行檔路徑"
                 },
                 {
                     "type": "CallExpression",
@@ -1102,7 +1103,7 @@
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "Commit-and-sync with specific message",
-                    "target": "使用指定訊息commit-and-sync"
+                    "target": "使用指定訊息 commit-and-sync"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1234,31 +1235,31 @@
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "Reset hunk",
-                    "target": "重設 hunk"
+                    "target": "重設差異區塊"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "Stage hunk",
-                    "target": "暫存 hunk"
+                    "target": "暫存差異區塊"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "Preview hunk",
-                    "target": "預覽 hunk"
+                    "target": "預覽差異區塊"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "Go to next hunk",
-                    "target": "前往下一個 hunk"
+                    "target": "前往下一個差異區塊"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "Go to previous hunk",
-                    "target": "前往上一個 hunk"
+                    "target": "前往上一個差異區塊"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1696,19 +1697,19 @@
                 },
                 {
                     "source": "setName(\"Push on commit-and-sync\")",
-                    "target": "setName(\"commit-and-sync時推送\")"
+                    "target": "setName(\"commit-and-sync 時推送\")"
                 },
                 {
                     "source": "setDesc(`Most of the time you want to push after committing. Turning this off turns a commit-and-sync action into commit ${i.settings.pullBeforePush?\"and pull \":\"\"}only. It will still be called commit-and-sync.`)",
-                    "target": "setDesc(`多數時候你會希望提交後推送。關閉此選項後，commit-and-sync動作會變成只提交${i.settings.pullBeforePush?\"並拉取\":\"\"}。名稱仍會顯示為commit-and-sync。`)"
+                    "target": "setDesc(`多數時候你會希望提交後推送。關閉此選項後，commit-and-sync 動作會變成只提交${i.settings.pullBeforePush?\"並拉取\":\"\"}。名稱仍會顯示為 commit-and-sync。`)"
                 },
                 {
                     "source": "setName(\"Pull on commit-and-sync\")",
-                    "target": "setName(\"commit-and-sync時拉取\")"
+                    "target": "setName(\"commit-and-sync 時拉取\")"
                 },
                 {
                     "source": "setDesc(`On commit-and-sync, pull commits as well. Turning this off turns a commit-and-sync action into commit ${i.settings.disablePush?\"\":\"and push \"}only.`)",
-                    "target": "setDesc(`commit-and-sync時也拉取提交。關閉此選項後，commit-and-sync動作會變成只提交${i.settings.disablePush?\"\":\"並推送\"}。`)"
+                    "target": "setDesc(`commit-and-sync 時也拉取提交。關閉此選項後，commit-and-sync 動作會變成只提交${i.settings.disablePush?\"\":\"並推送\"}。`)"
                 },
                 {
                     "source": "setDesc(\"Hunks are sections of grouped line changes right in your editor.\")",
@@ -2148,7 +2149,7 @@
                 },
                 {
                     "source": "text:\" for more formats.\"",
-                    "target": "text:\"以查看更多格式。\""
+                    "target": "text:\" 查看更多格式。\""
                 },
                 {
                     "source": "text:\"CMD (\\u2318) + OPTION (\\u2325) + I\"",
@@ -2300,7 +2301,7 @@
                 },
                 {
                     "source": "name:\"Commit-and-sync with specific message\"",
-                    "target": "name:\"使用指定訊息commit-and-sync\""
+                    "target": "name:\"使用指定訊息 commit-and-sync\""
                 },
                 {
                     "source": "name:\"Commit all changes\"",
@@ -2380,23 +2381,23 @@
                 },
                 {
                     "source": "name:\"Reset hunk\"",
-                    "target": "name:\"重設 hunk\""
+                    "target": "name:\"重設差異區塊\""
                 },
                 {
                     "source": "name:\"Stage hunk\"",
-                    "target": "name:\"暫存 hunk\""
+                    "target": "name:\"暫存差異區塊\""
                 },
                 {
                     "source": "name:\"Preview hunk\"",
-                    "target": "name:\"預覽 hunk\""
+                    "target": "name:\"預覽差異區塊\""
                 },
                 {
                     "source": "name:\"Go to next hunk\"",
-                    "target": "name:\"前往下一個 hunk\""
+                    "target": "name:\"前往下一個差異區塊\""
                 },
                 {
                     "source": "name:\"Go to previous hunk\"",
-                    "target": "name:\"前往上一個 hunk\""
+                    "target": "name:\"前往上一個差異區塊\""
                 },
                 {
                     "source": "text:\"File not found: \"",
@@ -2537,6 +2538,30 @@
                 {
                     "source": "setName(\"Follow movement and copies across files and commits\")",
                     "target": "setName(\"跨檔案與提交追蹤移動和複製\")"
+                },
+                {
+                    "source": "setDesc(`Requires the ${n} interval not to be 0.\n                        If turned on, do auto ${n} every ${pA(i.settings.autoSaveInterval)} after stopping file edits.\n                        This also prevents auto ${n} while editing a file. If turned off, it's independent from the last file edit.`)",
+                    "target": "setDesc(`需要將 ${n} 間隔設為非 0。\n                        啟用後，停止編輯檔案後每 ${pA(i.settings.autoSaveInterval)} 自動 ${n}。\n                        這也會避免在編輯檔案時自動 ${n}。停用後，將不受最後一次檔案編輯時間影響。`)"
+                },
+                {
+                    "source": "text:` Specify custom date format. E.g. \"${Kg}. See `",
+                    "target": "text:` 指定自訂日期格式。例如「${Kg}」。請參閱 `"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Integrate Git version control with automatic backup and other advanced features.",
+                    "target": "整合 Git 版本控制，支援自動備份與其他進階功能。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Integrate Git version control with automatic backup and other advanced features.\"",
+                    "target": "\"description\": \"整合 Git 版本控制，支援自動備份與其他進階功能。\""
                 }
             ]
         }
