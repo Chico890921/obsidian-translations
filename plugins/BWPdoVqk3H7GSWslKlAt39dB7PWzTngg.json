@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "editing-toolbar",
-        "version": "4.0.8",
+        "version": "4.0.9",
         "title": "[zh-tw] Editing Toolbar",
-        "description": "Editing Toolbar Localization & Tweaks",
+        "description": "Editing Toolbar 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "4.0.8",
+        "supportedVersions": "4.0.9",
         "author": "Chico",
-        "updatedAt": 1782917008779
+        "updatedAt": 1783358225010
     },
     "dict": {
         "main.js": {
@@ -1488,6 +1488,84 @@
                     "name": "",
                     "source": "### 无法加载更新说明\n\n请[点击此处查看最新更新说明]",
                     "target": "### 無法載入更新說明\n\n請[點此查看最新更新說明]"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "已複製！",
+                    "target": "已複製！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "載入 Changelog 時發生錯誤：",
+                    "target": "載入 Changelog 時發生錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "修正命令 ID 時發生錯誤：",
+                    "target": "修正命令 ID 時發生錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "還原預設設定時發生錯誤：",
+                    "target": "還原預設設定時發生錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "無法複製文字：",
+                    "target": "無法複製文字："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "正規表示式命令執行錯誤：",
+                    "target": "正規表示式命令執行錯誤："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "無法從 admonitionPlugin.admonitions（作為物件）取得類型。",
+                    "target": "無法從 admonitionPlugin.admonitions（作為物件）取得類型。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "📝 總結要點",
+                    "target": "📝 總結要點"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "提煉任務",
+                    "target": "提煉任務"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "產生 Dataview",
+                    "target": "產生 Dataview"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "繪製 Mermaid 圖表",
+                    "target": "繪製 Mermaid 圖表"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "設計 YAML",
+                    "target": "設計 YAML"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "使用 Callout 包裝",
+                    "target": "使用 Callout 包裝"
                 }
             ],
             "regex": [
@@ -1517,11 +1595,11 @@
                 },
                 {
                     "source": "setButtonText(\"overwrite\"===this.importMode?v(\"Overwrite Import\")",
-                    "target": "setButtonText(\"overwrite\"===this.importMode?v(\"Overwrite Import\")"
+                    "target": "setButtonText(\"overwrite\"===this.importMode?v(\"覆蓋匯入\")"
                 },
                 {
                     "source": "setText(\"overwrite\"===this.importMode?v(\"Warning: Overwrite mode will replace existing settings with imported ones.\")",
-                    "target": "setText(\"overwrite\"===this.importMode?v(\"Warning: Overwrite mode will replace existing settings with imported ones.\")"
+                    "target": "setText(\"overwrite\"===this.importMode?v(\"警告：覆蓋模式會以匯入的設定取代現有設定。\")"
                 },
                 {
                     "source": "error(\"Import error: \",t),new e.Notice(v(\"Error: \")",
@@ -1569,7 +1647,7 @@
                 },
                 {
                     "source": "error(\"Paste failed:\",e)}})},icon:\"lucide-clipboard-type\"}),this.plugin.addCommand({id:\"editor-cut\",name:\"Cut\",callback:()=>{const e=this.getActiveEditor();e&&this.executeCommandWithoutBlur(e,async()=>{try{await window.navigator.clipboard.writeText(e.getSelection()),e.replaceSelection(\"\")",
-                    "target": "error(\"Paste failed:\",e)}})},icon:\"lucide-clipboard-type\"}),this.plugin.addCommand({id:\"editor-cut\",name:\"Cut\",callback:()=>{const e=this.getActiveEditor();e&&this.executeCommandWithoutBlur(e,async()=>{try{await window.navigator.clipboard.writeText(e.getSelection()),e.replaceSelection(\"\")"
+                    "target": "error(\"貼上失敗：\",e)}})},icon:\"lucide-clipboard-type\"}),this.plugin.addCommand({id:\"editor-cut\",name:\"Cut\",callback:()=>{const e=this.getActiveEditor();e&&this.executeCommandWithoutBlur(e,async()=>{try{await window.navigator.clipboard.writeText(e.getSelection()),e.replaceSelection(\"\")"
                 },
                 {
                     "source": "log(\"当前浏览器不支持Fullscreen API !\")",
@@ -1581,7 +1659,7 @@
                 },
                 {
                     "source": "error(\"PKMer OAuth callback error:\",t),new e.Notice(v(\"Login failed. Please try again.\")",
-                    "target": "error(\"PKMer OAuth callback error:\",t),new e.Notice(v(\"Login failed. Please try again.\")"
+                    "target": "error(\"PKMer OAuth callback error:\",t),new e.Notice(v(\"登入失敗。請再試一次。\")"
                 },
                 {
                     "source": "error(\"Callback server error:\",o),new e.Notice(`Failed to start login server: ${o.message}`),t(null)}),o.listen(K,\"127.0.0.1\")",
@@ -1913,7 +1991,7 @@
                 },
                 {
                     "source": "text:`${this.plugin.manifest.name} v${this.plugin.manifest.version} · ${v(\"Tips\")}`",
-                    "target": "text:`${this.plugin.manifest.name} v${this.plugin.manifest.version} · ${v(\"Tips\")}`"
+                    "target": "text:`${this.plugin.manifest.name} v${this.plugin.manifest.version} · ${v(\"提示\")}`"
                 },
                 {
                     "source": "textContent=\"已复制!\"",
@@ -3165,7 +3243,7 @@
                 },
                 {
                     "source": "\"Overwrite Import\":\"覆盖导入\"",
-                    "target": "\"Overwrite Import\":\"覆寫匯入\""
+                    "target": "\"覆蓋匯入\":\"覆寫匯入\""
                 },
                 {
                     "source": "\"Importing configuration...\":\"正在导入配置...\"",
@@ -3197,19 +3275,19 @@
                 },
                 {
                     "source": "\"Following style commands successfully initialized\":\"Following样式初始化成功\"",
-                    "target": "\"Following style commands successfully initialized\":\"Following樣式初始化成功\""
+                    "target": "\"Following 樣式命令已成功初始化\":\"Following樣式初始化成功\""
                 },
                 {
                     "source": "\"Top style commands successfully initialized\":\"Top样式初始化成功\"",
-                    "target": "\"Top style commands successfully initialized\":\"Top樣式初始化成功\""
+                    "target": "\"Top 樣式命令已成功初始化\":\"Top樣式初始化成功\""
                 },
                 {
                     "source": "\"Fixed style commands successfully initialized\":\"Fixed样式初始化成功\"",
-                    "target": "\"Fixed style commands successfully initialized\":\"Fixed樣式初始化成功\""
+                    "target": "\"Fixed 樣式命令已成功初始化\":\"Fixed樣式初始化成功\""
                 },
                 {
                     "source": "\"Mobile style commands successfully initialized\":\"Mobile样式初始化成功\"",
-                    "target": "\"Mobile style commands successfully initialized\":\"Mobile樣式初始化成功\""
+                    "target": "\"Mobile 樣式命令已成功初始化\":\"Mobile樣式初始化成功\""
                 },
                 {
                     "source": "\"Reset Commands\":\"重置命令\"",
@@ -3337,7 +3415,7 @@
                 },
                 {
                     "source": "\"Warning: Overwrite mode will replace existing settings with imported ones.\":\"警告：覆盖模式将用导入的配置替换所有设置。\"",
-                    "target": "\"Warning: Overwrite mode will replace existing settings with imported ones.\":\"警告：覆寫模式將用匯入的設定取代所有設定。\""
+                    "target": "\"警告：覆蓋模式會以匯入的設定取代現有設定。\":\"警告：覆寫模式將用匯入的設定取代所有設定。\""
                 },
                 {
                     "source": "\"Enable Multiple Config\":\"启用多配置\"",
@@ -4857,7 +4935,7 @@
                 },
                 {
                     "source": "\"Login failed. Please try again.\":\"登录失败，请重试。\"",
-                    "target": "\"Login failed. Please try again.\":\"登入失敗，請重試。\""
+                    "target": "\"登入失敗。請再試一次。\":\"登入失敗，請重試。\""
                 },
                 {
                     "source": "\"OAuth state mismatch. Please try logging in again.\":\"OAuth 状态校验失败：可能是另一个 Obsidian 窗口或库拦截了本次回调。请关闭多余库后重试。\"",
@@ -5338,6 +5416,22 @@
                 {
                     "source": "### 无法加载更新说明\n\n请[点击此处查看最新更新说明]",
                     "target": "### 無法載入更新說明\n\n請[點此查看最新更新說明]"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The Obsidian Editing Toolbar is modified from cmenu, which provides more powerful customization settings and has many built-in editing commands to be a MS Word-like toolbar editing experience.",
+                    "target": "Obsidian Editing Toolbar 修改自 cmenu，提供更強大的自訂設定與多種內建編輯命令，帶來類似 MS Word 的工具列編輯體驗。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"The Obsidian Editing Toolbar is modified from cmenu, which provides more powerful customization settings and has many built-in editing commands to be a MS Word-like toolbar editing experience.\"",
+                    "target": "\"description\": \"Obsidian Editing Toolbar 修改自 cmenu，提供更強大的自訂設定與多種內建編輯命令，帶來類似 MS Word 的工具列編輯體驗。\""
                 }
             ]
         }
