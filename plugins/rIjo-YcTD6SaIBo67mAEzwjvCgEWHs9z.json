@@ -7,7 +7,8 @@
         "description": "Link Favicons 繁體中文化與微調",
         "language": "zh-tw",
         "supportedVersions": "1.8.5",
-        "author": "Chico"
+        "author": "Chico",
+        "updatedAt": 1784797267915
     },
     "dict": {
         "main.js": {
@@ -265,52 +266,10 @@
                     "target": "Link Favicons：提供者設定錯誤，請檢查設定"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Google",
-                    "target": "Google"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "DuckDuckGo",
-                    "target": "DuckDuckGo"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Icon Horse",
-                    "target": "Icon Horse"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Splitbee",
-                    "target": "Splitbee"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "The Favicon Finder",
-                    "target": "The Favicon Finder"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Favicon Grabber",
-                    "target": "Favicon Grabber"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Could not generate favicon, check your settings",
-                    "target": "無法產生 favicon，請檢查設定"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Only use these tools if you know what you are doing",
-                    "target": "只有在你清楚知道自己在做什麼時才使用這些工具"
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Remove all icons from cache",
+                    "target": "移除所有快取圖示"
                 }
             ],
             "regex": [
@@ -423,6 +382,10 @@
                     "target": "setName(\"清除圖示快取\")"
                 },
                 {
+                    "source": "setDesc(\"Remove all icons from cache\")",
+                    "target": "setDesc(\"移除所有快取圖示\")"
+                },
+                {
                     "source": "Notice(\"Cleared cache\")",
                     "target": "Notice(\"已清除快取\")"
                 },
@@ -439,28 +402,28 @@
                     "target": "error(\"無法從圖示擷取顏色資訊\")"
                 },
                 {
-                    "source": "name:\"Icon Horse\"",
-                    "target": "name:\"Icon Horse\""
-                },
-                {
-                    "source": "name:\"The Favicon Finder\"",
-                    "target": "name:\"The Favicon Finder\""
-                },
-                {
-                    "source": "name:\"Favicon Grabber\"",
-                    "target": "name:\"Favicon Grabber\""
-                },
-                {
                     "source": "text:\"Could not generate favicon, check your settings\"",
                     "target": "text:\"無法產生 favicon，請檢查設定\""
                 },
                 {
-                    "source": "text:\"\t\t\"",
-                    "target": "text:\"\t\t\""
-                },
-                {
                     "source": "text:\"Only use these tools if you know what you are doing\"",
                     "target": "text:\"只有在你清楚知道自己在做什麼時才使用這些工具\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "See the favicon for a linked website. ",
+                    "target": "顯示連結網站的 favicon。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"See the favicon for a linked website. \"",
+                    "target": "\"description\": \"顯示連結網站的 favicon。\""
                 }
             ]
         }
