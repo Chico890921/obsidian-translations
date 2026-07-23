@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "wheel-tab-switcher",
-        "version": "0.2.7",
+        "version": "0.3.2",
         "title": "[zh-tw] Wheel Tab Switcher",
         "description": "Wheel Tab Switcher Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "0.2.7",
+        "supportedVersions": "0.3.2",
         "author": "Chico",
-        "updatedAt": 1782928113456
+        "updatedAt": 1784796772385
     },
     "dict": {
         "main.js": {
@@ -16,70 +16,154 @@
                 {
                     "type": "CallExpression",
                     "name": "setName",
-                    "source": "Scroll on Empty Tab Area to Switch (🚧 Experimental)",
-                    "target": "在空白分頁區域捲動以切換（🚧 實驗性）"
+                    "source": "Enhancements",
+                    "target": "增強功能"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setName",
-                    "source": "🐞 Dev",
-                    "target": "🐞 開發"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "wheeledLeaf is null, return.",
-                    "target": "wheeledLeaf is null, return."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "wheeledParent is null, return.",
-                    "target": "wheeledParent is null, return."
+                    "source": "Advanced",
+                    "target": "進階"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setName",
-                    "source": "💪 Enhancements",
-                    "target": "💪 增強功能"
+                    "source": "Skip tabs to switch",
+                    "target": "切換時略過的分頁"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Skip CSS-hidden tabs",
+                    "target": "略過由 CSS 隱藏的分頁"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
-                    "source": "Allows you to switch tabs by scrolling on the **empty space of the tab bar** (the area next to your tabs). ⚠️ **Warning:** This prevents dragging the window from that area when the \"Hidden\" frame style is enabled.",
-                    "target": "允許你在**分頁列的空白區域**（分頁旁邊的區域）上捲動來切換分頁。⚠️ **警告：**啟用 \"Hidden\" 視窗框架樣式時，將無法從該區域拖曳視窗。"
+                    "source": "Skip tab headers that are hidden via CSS (display: none).",
+                    "target": "略過透過 CSS 隱藏（display: none）的分頁標頭。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setName",
-                    "source": "debug",
+                    "source": "Skip unloaded plugin tabs",
+                    "target": "略過未載入外掛的分頁"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Skip tabs whose plugin has not been loaded.",
+                    "target": "略過所屬外掛尚未載入的分頁。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Dev",
+                    "target": "開發"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Debug",
                     "target": "偵錯"
                 }
             ],
             "regex": [
                 {
-                    "source": "setName(\"Scroll on Empty Tab Area to Switch (\\u{1F6A7} Experimental)\")",
-                    "target": "setName(\"在空白分頁區域捲動以切換（\\u{1F6A7} 實驗性）\")"
+                    "source": "H=\"Scroll on empty tab area to switch (experimental)\"",
+                    "target": "H=\"在分頁列空白區域捲動以切換（實驗性）\""
                 },
                 {
-                    "source": "setName(\"\\u{1F41E} Dev\")",
-                    "target": "setName(\"\\u{1F41E} 開發\")"
+                    "source": "x='Allows you to switch tabs by scrolling on the **empty space of the tab bar** (the area next to your tabs). **Warning:** this prevents dragging the window from that area when the \"hidden\" frame style is enabled.'",
+                    "target": "x='允許你在**分頁列的空白區域**（分頁旁的區域）捲動以切換分頁。**警告：**啟用「隱藏」視窗框架樣式時，將無法從該區域拖曳視窗。'"
                 },
                 {
-                    "source": "setName(\"💪 Enhancements\")",
-                    "target": "setName(\"💪 增強功能\")"
+                    "source": "x=\"Allows you to switch tabs by scrolling on the **empty space of the tab bar** (the area next to your tabs). **Warning:** this prevents dragging the window from that area when the \\\"hidden\\\" frame style is enabled.\"",
+                    "target": "x=\"允許你在**分頁列的空白區域**（分頁旁的區域）捲動以切換分頁。**警告：**啟用「隱藏」視窗框架樣式時，將無法從該區域拖曳視窗。\""
                 },
                 {
-                    "source": "setDesc(\"Allows you to switch tabs by scrolling on the **empty space of the tab bar** (the area next to your tabs). ⚠️ **Warning:** This prevents dragging the window from that area when the \\\"Hidden\\\" frame style is enabled.\")",
-                    "target": "setDesc(\"允許你在**分頁列的空白區域**（分頁旁邊的區域）上捲動來切換分頁。⚠️ **警告：**啟用 \\\"Hidden\\\" 視窗框架樣式時，將無法從該區域拖曳視窗。\")"
+                    "source": "setName(\"Enhancements\")",
+                    "target": "setName(\"增強功能\")"
                 },
                 {
-                    "source": "setName(\"🐞 Dev\")",
-                    "target": "setName(\"🐞 開發\")"
+                    "source": "setName(\"Advanced\")",
+                    "target": "setName(\"進階\")"
                 },
                 {
-                    "source": "setName(\"debug\")",
+                    "source": "setName(\"Skip tabs to switch\")",
+                    "target": "setName(\"切換時略過的分頁\")"
+                },
+                {
+                    "source": "setName(\"Skip CSS-hidden tabs\")",
+                    "target": "setName(\"略過由 CSS 隱藏的分頁\")"
+                },
+                {
+                    "source": "setDesc(\"Skip tab headers that are hidden via CSS (display: none).\")",
+                    "target": "setDesc(\"略過透過 CSS 隱藏（display: none）的分頁標頭。\")"
+                },
+                {
+                    "source": "setName(\"Skip unloaded plugin tabs\")",
+                    "target": "setName(\"略過未載入外掛的分頁\")"
+                },
+                {
+                    "source": "setDesc(\"Skip tabs whose plugin has not been loaded.\")",
+                    "target": "setDesc(\"略過所屬外掛尚未載入的分頁。\")"
+                },
+                {
+                    "source": "setName(\"Dev\")",
+                    "target": "setName(\"開發\")"
+                },
+                {
+                    "source": "setName(\"Debug\")",
                     "target": "setName(\"偵錯\")"
+                },
+                {
+                    "source": "heading:\"Enhancements\"",
+                    "target": "heading:\"增強功能\""
+                },
+                {
+                    "source": "heading:\"Advanced\"",
+                    "target": "heading:\"進階\""
+                },
+                {
+                    "source": "name:\"Skip CSS-hidden tabs\"",
+                    "target": "name:\"略過由 CSS 隱藏的分頁\""
+                },
+                {
+                    "source": "desc:\"Skip tab headers that are hidden via CSS (display: none).\"",
+                    "target": "desc:\"略過透過 CSS 隱藏（display: none）的分頁標頭。\""
+                },
+                {
+                    "source": "name:\"Skip unloaded plugin tabs\"",
+                    "target": "name:\"略過未載入外掛的分頁\""
+                },
+                {
+                    "source": "desc:\"Skip tabs whose plugin has not been loaded.\"",
+                    "target": "desc:\"略過所屬外掛尚未載入的分頁。\""
+                },
+                {
+                    "source": "heading:\"Dev\"",
+                    "target": "heading:\"開發\""
+                },
+                {
+                    "source": "name:\"Debug\"",
+                    "target": "name:\"偵錯\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Switch between Tabs using your mouse wheel when hovering over tab headers",
+                    "target": "將滑鼠游標停在分頁標頭上，使用滑鼠滾輪切換分頁。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Switch between Tabs using your mouse wheel when hovering over tab headers\"",
+                    "target": "\"description\": \"將滑鼠游標停在分頁標頭上，使用滑鼠滾輪切換分頁。\""
                 }
             ]
         }
