@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "recent-files-obsidian",
-        "version": "1.7.9",
+        "version": "1.7.10",
         "title": "[zh-tw] Recent Files",
         "description": "Recent Files 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "1.7.9",
+        "supportedVersions": "1.7.10",
         "author": "Chico",
-        "updatedAt": 1782929958996
+        "updatedAt": 1784787266271
     },
     "dict": {
         "main.js": {
