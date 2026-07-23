@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "editing-toolbar",
-        "version": "4.0.9",
+        "version": "4.0.11",
         "title": "[zh-tw] Editing Toolbar",
         "description": "Editing Toolbar 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "4.0.9",
+        "supportedVersions": "4.0.11",
         "author": "Chico",
-        "updatedAt": 1783358225010
+        "updatedAt": 1784781189636
     },
     "dict": {
         "main.js": {
@@ -72,36 +72,6 @@
                     "name": "addOption",
                     "source": "Main Menu Commands",
                     "target": "主選單指令"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "┌ Light",
-                    "target": "┌ 亮色"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "├ Dark",
-                    "target": "├ 深色"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "├ Vibrant",
-                    "target": "├ 鮮明"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "├ Minimal",
-                    "target": "├ 極簡"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "└ Elegant",
-                    "target": "└ 優雅"
                 },
                 {
                     "type": "CallExpression",
@@ -390,6 +360,18 @@
                     "name": "Notice",
                     "source": "Please select text first",
                     "target": "請先選取文字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "body",
+                    "source": "Область содержимого",
+                    "target": "Область содержимого"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "editing-toolbar-url-warning editing-toolbar-ai-note",
+                    "target": "editing-toolbar-url-warning editing-toolbar-ai-note"
                 },
                 {
                     "type": "ObjectProperty",
@@ -708,6 +690,78 @@
                     "name": "name",
                     "source": "Wrap with Callout",
                     "target": "包裹為 Callout"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "📝 要点を要約",
+                    "target": "📝 要点を要約"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "タスクを抽出",
+                    "target": "タスクを抽出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Dataview を生成",
+                    "target": "Dataview を生成"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Mermaid 図を作成",
+                    "target": "Mermaid 図を作成"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "YAML を設計",
+                    "target": "YAML を設計"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Callout で囲む",
+                    "target": "Callout で囲む"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "📝 Краткое содержание",
+                    "target": "📝 Краткое содержание"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Извлечь задачи",
+                    "target": "Извлечь задачи"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Создать Dataview",
+                    "target": "Создать Dataview"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Создать диаграмму Mermaid",
+                    "target": "Создать диаграмму Mermaid"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Создать YAML",
+                    "target": "Создать YAML"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Оформить в Callout",
+                    "target": "Оформить в Callout"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1376,52 +1430,40 @@
                     "target": "AI 自訂改寫"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "prompt",
-                    "source": "分析 {{file:content}} 的内容结构,重点关注:\n{{selection}}\n\n请提供:\n1. 内容概要\n2. 关键要点\n3. 改进建议",
-                    "target": "分析 {{file:content}} 的內容結構，重點關注:\n{{selection}}\n\n請提供：\n1. 內容摘要\n2. 關鍵要點\n3. 改進建議"
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "┌ Light",
+                    "target": "┌ 亮色"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "prompt",
-                    "source": "当前日期{{date}}，从 {{file:content}} 中提取所有待办事项，重点关注:\n{{selection}}\n\n请严格按 Obsidian Tasks 插件格式输出，每条任务单独一行：\n\n- [ ] 任务描述 ⏫/🔼/🔽/⏬ 优先级\n- [ ] 任务描述 📅 YYYY-MM-DD 截止日期\n- [ ] 任务描述 ⏰ YYYY-MM-DD HH:mm 提醒时间\n- [ ] 任务描述 🛫 YYYY-MM-DD 开始日期\n- [ ] 任务描述 🔁 every day/week/month 重复周期\n- [ ] 任务描述 #标签 #项目名\n\n提取规则：\n1. 如果原文提到\"紧急/马上/立即/今天\"，添加 ⏫（最高优先级）\n2. 如果提到\"明天/本周/尽快\"，添加 🔼（高优先级）\n3. 如果提到具体日期，转换为 📅 YYYY-MM-DD 格式\n4. 如果提到时间，转换为 ⏰ YYYY-MM-DD HH:mm 格式\n5. 如果提到周期性工作，添加 🔁 every week/month\n6. 为每个任务添加合适的标签（如 #工作 #会议 #跟进）\n\n示例输出：\n- [ ] 完成项目报告 ⏫ 📅 2026-04-25 #工作\n- [ ] 每周团队例会 🔁 every week on Monday ⏰ 09:00 #会议\n- [ ] 跟进客户需求 🔼 📅 2026-04-23 #跟进",
-                    "target": "目前日期{{date}}，從 {{file:content}} 中擷取所有待辦事項，重點關注:\n{{selection}}\n\n請嚴格依照 Obsidian Tasks 插件格式輸出，每條任務單獨一行：\n\n- [ ] 任務描述 ⏫/🔼/🔽/⏬ 優先順序\n- [ ] 任務描述 📅 YYYY-MM-DD 截止日期\n- [ ] 任務描述 ⏰ YYYY-MM-DD HH:mm 提醒時間\n- [ ] 任務描述 🛫 YYYY-MM-DD 開始日期\n- [ ] 任務描述 🔁 every day/week/month 重複週期\n- [ ] 任務描述 #標籤 #專案名稱\n\n擷取規則：\n1. 如果原文提到\"緊急/馬上/立即/今天\"，新增 ⏫（最高優先順序）\n2. 如果提到\"明天/本週/儘快\"，新增 🔼（高優先順序）\n3. 如果提到具體日期，轉換為 📅 YYYY-MM-DD 格式\n4. 如果提到時間，轉換為 ⏰ YYYY-MM-DD HH:mm 格式\n5. 如果提到週期性工作，新增 🔁 every week/month\n6. 為每個任務新增適合的標籤（如 #工作 #會議 #追蹤）\n\n示例輸出：\n- [ ] 完成專案報告 ⏫ 📅 2026-04-25 #工作\n- [ ] 每週團隊例會 🔁 every week on Monday ⏰ 09:00 #會議\n- [ ] 追蹤客戶需求 🔼 📅 2026-04-23 #跟進"
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "├ Dark",
+                    "target": "├ 深色"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "prompt",
-                    "source": "根据我的需求,帮我生成一个 Obsidian Dataview 查询代码块。要求:\n1. 使用 DataviewJS 或 DQL 语法\n2. 包含必要的字段筛选和排序\n3. 添加注释说明每个部分的作用\n4. 如果需要复杂逻辑,使用 DataviewJS\n\n我的需求:",
-                    "target": "根據我的需求，幫我產生一個 Obsidian Dataview 查詢程式碼區塊。要求：\n1. 使用 DataviewJS 或 DQL 語法\n2. 包含必要的欄位篩選和排序\n3. 新增註解說明每個部分的用途\n4. 如果需要複雜邏輯，使用 DataviewJS\n\n我的需求："
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "├ Vibrant",
+                    "target": "├ 鮮明"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "├ Minimal",
+                    "target": "├ 極簡"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "└ Elegant",
+                    "target": "└ 優雅"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "name",
                     "source": "设计 Templater 模板",
                     "target": "設計 Templater 模板"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "prompt",
-                    "source": "帮我设计一个 Obsidian Templater 模板。要求:\n1. 使用 Templater 语法 (<%  %>)\n2. 包含动态日期、时间等变量\n3. 支持用户输入提示\n4. 添加必要的条件判断和循环\n5. 注释说明每个部分的用途\n\n模板用途:",
-                    "target": "請幫我設計一個 Obsidian Templater 模板。要求：\n1. 使用 Templater 語法 (<%  %>)\n2. 包含動態日期、時間等變量\n3. 支援使用者輸入提示\n4. 新增必要的條件判斷與迴圈\n5. 註解說明每個部分的用途\n\n模板用途："
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "prompt",
-                    "source": "根据我选中的文本内容 {{selection}},生成 Mermaid 图表代码。要求:\n1. 选择合适的图表类型(流程图/时序图/类图/甘特图等)\n2. 使用清晰的节点命名\n3. 添加必要的样式和注释\n4. 确保语法正确可渲染\n",
-                    "target": "根據我選取的文字內容 {{selection}}，產生 Mermaid 圖表程式碼。要求：\n1. 選擇適合的圖表類型(流程圖/時序圖/類別圖/甘特圖等)\n2. 使用清楚的節點命名\n3. 新增必要的樣式和註解\n4. 確保語法正確且可渲染\n"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "prompt",
-                    "source": "根据当前笔记内容 {{file:content}},帮我设计一个适合当前笔记的 YAML Frontmatter 元数据结构。要求:\n1. 根据笔记内容推荐合适的字段\n2. 包含常用字段(tags, aliases, date等)\n3. 添加自定义字段建议\n4. 注释说明每个字段的用途\n\n笔记类型:",
-                    "target": "根據目前筆記內容 {{file:content}}，請幫我設計一個適合目前筆記的 YAML Frontmatter 中繼資料結構。要求：\n1. 根據筆記內容建議適合的欄位\n2. 包含常用欄位(tags, aliases, date 等)\n3. 新增自訂欄位建議\n4. 註解說明每個欄位的用途\n\n筆記類型："
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "prompt",
-                    "source": "根据我选中的文本内容 {{selection}},帮我使用 Obsidian Callout 块进行包装。要求:\n1. 选择合适的 callout 类型(note/tip/warning/danger等)\n2. 支持嵌套和折叠\n3. 包含标题和内容\n4. 可以包含代码块或列表\n\n内容需求:",
-                    "target": "根據我選取的文字內容 {{selection}}，幫我使用 Obsidian Callout 區塊進行包裝。要求：\n1. 選擇適合的 callout 類型(note/tip/warning/danger 等)\n2. 支援巢狀和摺疊\n3. 包含標題與內容\n4. 可以包含程式碼區塊或清單\n\n內容需求："
                 },
                 {
                     "type": "StringLiteral",
@@ -1484,88 +1526,10 @@
                     "target": "無法從 admonitionPlugin.admonitions（作為物件）取得類型。"
                 },
                 {
-                    "type": "StringLiteral",
-                    "name": "",
-                    "source": "### 无法加载更新说明\n\n请[点击此处查看最新更新说明]",
-                    "target": "### 無法載入更新說明\n\n請[點此查看最新更新說明]"
-                },
-                {
-                    "type": "AssignmentExpression",
-                    "name": "textContent",
-                    "source": "已複製！",
-                    "target": "已複製！"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "載入 Changelog 時發生錯誤：",
-                    "target": "載入 Changelog 時發生錯誤："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "修正命令 ID 時發生錯誤：",
-                    "target": "修正命令 ID 時發生錯誤："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "還原預設設定時發生錯誤：",
-                    "target": "還原預設設定時發生錯誤："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "無法複製文字：",
-                    "target": "無法複製文字："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "正規表示式命令執行錯誤：",
-                    "target": "正規表示式命令執行錯誤："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "無法從 admonitionPlugin.admonitions（作為物件）取得類型。",
-                    "target": "無法從 admonitionPlugin.admonitions（作為物件）取得類型。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "📝 總結要點",
-                    "target": "📝 總結要點"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "提煉任務",
-                    "target": "提煉任務"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "產生 Dataview",
-                    "target": "產生 Dataview"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "繪製 Mermaid 圖表",
-                    "target": "繪製 Mermaid 圖表"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "設計 YAML",
-                    "target": "設計 YAML"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "使用 Callout 包裝",
-                    "target": "使用 Callout 包裝"
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "All commands have been removed.",
+                    "target": "所有命令已清除。"
                 }
             ],
             "regex": [
@@ -1586,8 +1550,8 @@
                     "target": "error(\"複製程式碼失敗：\",e)})})}escapeRegexForDisplay(e){return e.replace(/\\\\/g,\"\\\\\\\\\")"
                 },
                 {
-                    "source": "error(\"无法复制文本: \",e)})}),i.addEventListener(\"mouseenter\",()=>{i.style.backgroundColor=\"var(--interactive-accent)\",i.style.color=\"var(--text-on-accent)\"}),i.addEventListener(\"mouseleave\",()=>{i.style.backgroundColor=\"\",i.style.color=\"\"})})}const d=new e.Setting(t).setName(v(\"Prefix\")",
-                    "target": "error(\"無法複製文字: \",e)})}),i.addEventListener(\"mouseenter\",()=>{i.style.backgroundColor=\"var(--interactive-accent)\",i.style.color=\"var(--text-on-accent)\"}),i.addEventListener(\"mouseleave\",()=>{i.style.backgroundColor=\"\",i.style.color=\"\"})})}const d=new e.Setting(t).setName(v(\"Prefix\")"
+                    "source": "error(\"无法复制文本: \",e)})}),i.addEventListener(\"mouseenter\",()=>{i.style.backgroundColor=\"var(--interactive-accent)\",i.style.color=\"var(--text-on-accent)\"}),i.addEventListener(\"mouseleave\",()=>{i.style.backgroundColor=\"\",i.style.color=\"\"})})}const c=new e.Setting(t).setName(v(\"Prefix\")",
+                    "target": "error(\"無法複製文字：\",e)})}),i.addEventListener(\"mouseenter\",()=>{i.style.backgroundColor=\"var(--interactive-accent)\",i.style.color=\"var(--text-on-accent)\"}),i.addEventListener(\"mouseleave\",()=>{i.style.backgroundColor=\"\",i.style.color=\"\"})})}const c=new e.Setting(t).setName(v(\"Prefix\")"
                 },
                 {
                     "source": "error(\"Failed to copy: \",t),new e.Notice(v(\"Failed to copy configuration\")",
@@ -1610,6 +1574,10 @@
                     "target": "Notice(`${v(\"載入 Ollama 模型失敗：\")} ${this.cachedCustomOllamaModelsError}`)"
                 },
                 {
+                    "source": "Notice(`${v(\"Failed to load models:\")} ${this.cachedCustomOpenAIModelsError}`)",
+                    "target": "Notice(`${v(\"載入模型失敗：\")} ${this.cachedCustomOpenAIModelsError}`)"
+                },
+                {
                     "source": "Notice(\"The selected style has no commands to import.\")",
                     "target": "Notice(\"所選樣式沒有可匯入的指令。\")"
                 },
@@ -1620,6 +1588,10 @@
                 {
                     "source": "error(\"Failed to set icon:\",e)}})}triggerRefresh(){setTimeout(()=>{dispatchEvent(new Event(\"editingToolbar-NewCommand\")",
                     "target": "error(\"設定圖示失敗：\",e)}})}triggerRefresh(){setTimeout(()=>{dispatchEvent(new Event(\"editingToolbar-NewCommand\")"
+                },
+                {
+                    "source": "setName(`${v(\"Detected Models\")} (${a?t.length:\"?\"})`)",
+                    "target": "setName(`${v(\"偵測到的模型\")} (${a?t.length:\"?\"})`)"
                 },
                 {
                     "source": "setText(`${e.Platform.isMacOS?\"⌘\":\"Ctrl\"} + Enter ${v(\"to insert\")}`)",
@@ -1634,8 +1606,8 @@
                     "target": "Notice(`${v(\"編號完成：從\")} ${o}`)"
                 },
                 {
-                    "source": "Notice(`${v(\"Extracted\")} ${c.length} ${v(\"matches\")}`)",
-                    "target": "Notice(`${v(\"已擷取\")} ${c.length} ${v(\"個符合專案\")}`)"
+                    "source": "Notice(`${v(\"Extracted\")} ${d.length} ${v(\"matches\")}`)",
+                    "target": "Notice(`${v(\"已擷取\")} ${d.length} ${v(\"個符合項\")}`)"
                 },
                 {
                     "source": "error(\"读取剪贴板失败:\",t),void new e.Notice(v(\"Please select text first\")",
@@ -1662,16 +1634,16 @@
                     "target": "error(\"PKMer OAuth callback error:\",t),new e.Notice(v(\"登入失敗。請再試一次。\")"
                 },
                 {
-                    "source": "error(\"Callback server error:\",o),new e.Notice(`Failed to start login server: ${o.message}`),t(null)}),o.listen(K,\"127.0.0.1\")",
-                    "target": "error(\"Callback 伺服器錯誤：\",o),new e.Notice(`啟動登入伺服器失敗：${o.message}`),t(null)}),o.listen(K,\"127.0.0.1\")"
+                    "source": "error(\"Callback server error:\",o),new e.Notice(`Failed to start login server: ${o.message}`),t(null)}),o.listen(X,\"127.0.0.1\")",
+                    "target": "error(\"Callback 伺服器錯誤：\",o),new e.Notice(`啟動登入伺服器失敗：${o.message}`),t(null)}),o.listen(X,\"127.0.0.1\")"
                 },
                 {
                     "source": "error(\"[AI Rewrite] Failed to copy result:\",t),new e.Notice(t instanceof Error&&t.message?t.message:v(\"Copy to Clipboard\")",
                     "target": "error(\"[AI Rewrite] 複製結果失敗：\",t),new e.Notice(t instanceof Error&&t.message?t.message:v(\"複製到剪貼簿\")"
                 },
                 {
-                    "source": "error(\"[AI Rewrite] Error:\",e),this.view.dispatch({effects:zi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Vi.close.primaryKey,run:e=>Yi(e,s)},{key:\"Escape\",run:e=>Yi(e,s)},{key:Vi.replace.primaryKey,run:e=>!!Wi(e,s,!0)&&(Ji(e,s,a,\"replace\")",
-                    "target": "error(\"[AI Rewrite] 錯誤：\",e),this.view.dispatch({effects:zi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Vi.close.primaryKey,run:e=>Yi(e,s)},{key:\"Escape\",run:e=>Yi(e,s)},{key:Vi.replace.primaryKey,run:e=>!!Wi(e,s,!0)&&(Ji(e,s,a,\"replace\")"
+                    "source": "error(\"[AI Rewrite] Error:\",e),this.view.dispatch({effects:Yi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Ji.close.primaryKey,run:e=>oa(e,s)},{key:\"Escape\",run:e=>oa(e,s)},{key:Ji.replace.primaryKey,run:e=>!!Xi(e,s,!0)&&(ia(e,s,a,\"replace\")",
+                    "target": "error(\"[AI Rewrite] 錯誤：\",e),this.view.dispatch({effects:Yi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Ji.close.primaryKey,run:e=>oa(e,s)},{key:\"Escape\",run:e=>oa(e,s)},{key:Ji.replace.primaryKey,run:e=>!!Xi(e,s,!0)&&(ia(e,s,a,\"replace\")"
                 },
                 {
                     "source": "Notice(`${v(\"PKMer quota refreshed:\")} ${Number((t.quota/5e5).toFixed(2))}`)",
@@ -1682,8 +1654,8 @@
                     "target": "error(\"[AI 設定] 無法判斷供應商路由：\",e),v(\"無法判斷目前 AI 路由。\")"
                 },
                 {
-                    "source": "Notice(`${v(\"Custom model connection succeeded.\")} ${t}`.trim()),!0}catch(t){const o=Wo(t);return new e.Notice(`${v(\"Custom model connection failed:\")} ${o}`)",
-                    "target": "Notice(`${v(\"自訂模型連線成功。\")} ${t}`.trim()),!0}catch(t){const o=Wo(t);return new e.Notice(`${v(\"自訂模型連線失敗：\")} ${o}`)"
+                    "source": "Notice(`${v(\"Custom model connection succeeded.\")} ${t}`.trim()),!0}catch(t){const o=Zo(t);return new e.Notice(`${v(\"Custom model connection failed:\")} ${o}`)",
+                    "target": "Notice(`${v(\"自訂模型連線成功。\")} ${t}`.trim()),!0}catch(t){const o=Zo(t);return new e.Notice(`${v(\"自訂模型連線失敗：\")} ${o}`)"
                 },
                 {
                     "source": "Notice(\"Please select text first\")",
@@ -1728,6 +1700,14 @@
                 {
                     "source": "link:\"内部链接\"",
                     "target": "link:\"內部連結\""
+                },
+                {
+                    "source": "link:\"Wikiリンク\"",
+                    "target": "link:\"Wikiリンク\""
+                },
+                {
+                    "source": "link:\"Внутренняя ссылка\"",
+                    "target": "link:\"Внутренняя ссылка\""
                 },
                 {
                     "source": "name: \")});const o=new e.TextComponent(t);o.inputEl.classList.add(\"",
@@ -1780,6 +1760,54 @@
                 {
                     "source": "name:\"Wrap with Callout\"",
                     "target": "name:\"包裹為 Callout\""
+                },
+                {
+                    "source": "name:\"📝 要点を要約\"",
+                    "target": "name:\"📝 要点を要約\""
+                },
+                {
+                    "source": "name:\"タスクを抽出\"",
+                    "target": "name:\"タスクを抽出\""
+                },
+                {
+                    "source": "name:\"Dataview を生成\"",
+                    "target": "name:\"Dataview を生成\""
+                },
+                {
+                    "source": "name:\"Mermaid 図を作成\"",
+                    "target": "name:\"Mermaid 図を作成\""
+                },
+                {
+                    "source": "name:\"YAML を設計\"",
+                    "target": "name:\"YAML を設計\""
+                },
+                {
+                    "source": "name:\"Callout で囲む\"",
+                    "target": "name:\"Callout で囲む\""
+                },
+                {
+                    "source": "name:\"📝 Краткое содержание\"",
+                    "target": "name:\"📝 Краткое содержание\""
+                },
+                {
+                    "source": "name:\"Извлечь задачи\"",
+                    "target": "name:\"Извлечь задачи\""
+                },
+                {
+                    "source": "name:\"Создать Dataview\"",
+                    "target": "name:\"Создать Dataview\""
+                },
+                {
+                    "source": "name:\"Создать диаграмму Mermaid\"",
+                    "target": "name:\"Создать диаграмму Mermaid\""
+                },
+                {
+                    "source": "name:\"Создать YAML\"",
+                    "target": "name:\"Создать YAML\""
+                },
+                {
+                    "source": "name:\"Оформить в Callout\"",
+                    "target": "name:\"Оформить в Callout\""
                 },
                 {
                     "source": "name:\"Undo Edit\"",
@@ -2026,6 +2054,10 @@
                     "target": "name:\"插入 Callout\""
                 },
                 {
+                    "source": "text:\"▾\"",
+                    "target": "text:\"▾\""
+                },
+                {
                     "source": "text:`${v(\"Completion\")}: ${l(P(this.plugin.settings.ai,\"completion\"))}`",
                     "target": "text:`${v(\"補全\")}: ${l(P(this.plugin.settings.ai,\"completion\"))}`"
                 },
@@ -2150,8 +2182,8 @@
                     "target": "name:\"切換格式刷\""
                 },
                 {
-                    "source": "name: \"${xn(t)}\"",
-                    "target": "name:\"${xn(t)}\""
+                    "source": "name: \"${Mn(t)}\"",
+                    "target": "name: \"${Mn(t)}\""
                 },
                 {
                     "source": "textContent=\"×\"",
@@ -2223,7 +2255,7 @@
                 },
                 {
                     "source": "\"Add a command onto Editing Toolbar from Obsidian's commands library. To reorder the commands, drag and drop the command items. To delete them, use the delete buttom to the right of the command item. Editing Toolbar will not automaticaly refresh after reordering commands. Use the refresh button above.\":\"从Obsidian的命令库中添加一个命令到工具栏。要重新排列命令，可以拖放命令项。要删除它们，请使用命令项右边的删除按钮。图标选择Custom可以自定义图标\"",
-                    "target": "\"Add a command onto Editing Toolbar from Obsidian's commands library. To reorder the commands, drag and drop the command items. To delete them, use the delete buttom to the right of the command item. Editing Toolbar will not automaticaly refresh after reordering commands. Use the refresh button above.\":\"從 Obsidian 命令庫新增命令到工具列。若要重新排序命令，可拖放命令項目目。若要刪除命令，請使用命令項目目右側的刪除按鈕。圖示選擇 Custom 可自訂圖示。\""
+                    "target": "\"Add a command onto Editing Toolbar from Obsidian's commands library. To reorder the commands, drag and drop the command items. To delete them, use the delete buttom to the right of the command item. Editing Toolbar will not automaticaly refresh after reordering commands. Use the refresh button above.\":\"從 Obsidian 命令庫新增命令到工具列。若要重新排序命令，可拖放命令項目。若要刪除命令，請使用命令項目右側的刪除按鈕。圖示選擇 Custom 可自訂圖示。\""
                 },
                 {
                     "source": "\"Format Brush Off!\":\"关闭格式刷！\"",
@@ -2395,7 +2427,7 @@
                 },
                 {
                     "source": "\"Choose where Editing Toolbar will append upon regeneration.\":\"选择工具栏在Obsidian中的追加的位置。\"",
-                    "target": "\"Choose where Editing Toolbar will append upon regeneration.\":\"選擇工具列在 Obsidian中的追加的位置。\""
+                    "target": "\"Choose where Editing Toolbar will append upon regeneration.\":\"選擇 Editing Toolbar 重新產生時要附加的位置。\""
                 },
                 {
                     "source": "\"Whether to enable on mobile devices with device width less than 768px\":\"是否在移动设备中启用。默认不启用\"",
@@ -3243,7 +3275,7 @@
                 },
                 {
                     "source": "\"Overwrite Import\":\"覆盖导入\"",
-                    "target": "\"覆蓋匯入\":\"覆寫匯入\""
+                    "target": "\"Overwrite Import\":\"覆寫匯入\""
                 },
                 {
                     "source": "\"Importing configuration...\":\"正在导入配置...\"",
@@ -3275,7 +3307,7 @@
                 },
                 {
                     "source": "\"Following style commands successfully initialized\":\"Following样式初始化成功\"",
-                    "target": "\"Following 樣式命令已成功初始化\":\"Following樣式初始化成功\""
+                    "target": "\"Following style commands successfully initialized\":\"Following 樣式命令已成功初始化\""
                 },
                 {
                     "source": "\"Top style commands successfully initialized\":\"Top样式初始化成功\"",
@@ -5414,8 +5446,360 @@
                     "target": "載入 Changelog 時發生錯誤："
                 },
                 {
-                    "source": "### 无法加载更新说明\n\n请[点击此处查看最新更新说明]",
-                    "target": "### 無法載入更新說明\n\n請[點此查看最新更新說明]"
+                    "source": "\"The URL seems to include a /chat segment. For OpenAI-compatible endpoints, use the base API path (e.g. http://127.0.0.1:1234/v1). The plugin adds /chat/completions automatically.\":\"URL 包含 /chat 路径。对于兼容 OpenAI 的端点，请使用基础 API 路径（例如 http://127.0.0.1:1234/v1），插件会自动添加 /chat/completions。\"",
+                    "target": "\"The URL seems to include a /chat segment. For OpenAI-compatible endpoints, use the base API path (e.g. http://127.0.0.1:1234/v1). The plugin adds /chat/completions automatically.\":\"URL 包含 /chat 路徑。對於相容 OpenAI 的端點，請使用基礎 API 路徑（例如 http://127.0.0.1:1234/v1），插件會自動新增 /chat/completions。\""
+                },
+                {
+                    "source": "\"Custom API Base URL is empty.\":\"自定义 API 基础地址为空。\"",
+                    "target": "\"Custom API Base URL is empty.\":\"自訂 API 基礎位址為空。\""
+                },
+                {
+                    "source": "\"Custom API Base URL is not a valid URL.\":\"自定义 API 基础地址不是有效的 URL。\"",
+                    "target": "\"Custom API Base URL is not a valid URL.\":\"自訂 API 基礎位址不是有效的 URL。\""
+                },
+                {
+                    "source": "\"The URL ends with /chat. For OpenAI-compatible servers, use e.g. http://127.0.0.1:1234/v1 — the plugin adds /chat/completions for you.\":\"URL 以 /chat 结尾。对于兼容 OpenAI 的服务器，请使用例如 http://127.0.0.1:1234/v1 的基础 API 路径，插件会自动添加 /chat/completions。\"",
+                    "target": "\"The URL ends with /chat. For OpenAI-compatible servers, use e.g. http://127.0.0.1:1234/v1 — the plugin adds /chat/completions for you.\":\"URL 以 /chat 結尾。對於相容 OpenAI 的伺服器，請使用例如 http://127.0.0.1:1234/v1 的基礎 API 路徑，插件會自動新增 /chat/completions。\""
+                },
+                {
+                    "source": "\"Example: http://127.0.0.1:1234/v1\":\"示例：http://127.0.0.1:1234/v1\"",
+                    "target": "\"Example: http://127.0.0.1:1234/v1\":\"範例：http://127.0.0.1:1234/v1\""
+                },
+                {
+                    "source": "\"Custom model connection test returned an empty response. Check that your API base URL and model name are correct.\":\"自定义模型连接测试返回空响应。请检查 API 基础地址和模型名称是否正确。\"",
+                    "target": "\"Custom model connection test returned an empty response. Check that your API base URL and model name are correct.\":\"自訂模型連線測試傳回空白回應。請檢查 API 基礎位址與模型名稱是否正確。\""
+                },
+                {
+                    "source": "\"Detected Models\":\"检测到的模型\"",
+                    "target": "\"Detected Models\":\"偵測到的模型\""
+                },
+                {
+                    "source": "\"Reset Default Templates\":\"重置默认模板\"",
+                    "target": "\"Reset Default Templates\":\"重設預設範本\""
+                },
+                {
+                    "source": "\"Replace all custom prompt templates with the defaults for the current language? This cannot be undone.\":\"是否用当前语言的默认模板替换所有自定义提示词模板？此操作无法撤销。\"",
+                    "target": "\"Replace all custom prompt templates with the defaults for the current language? This cannot be undone.\":\"是否以目前語言的預設範本取代所有自訂提示詞範本？此操作無法復原。\""
+                },
+                {
+                    "source": "\"Custom prompt templates reset to current language defaults.\":\"已将自定义提示词模板重置为当前语言的默认模板。\"",
+                    "target": "\"Custom prompt templates reset to current language defaults.\":\"已將自訂提示詞範本重設為目前語言的預設值。\""
+                },
+                {
+                    "source": "\"Optional. Leave empty unless your server requires authentication.\":\"可选。除非服务器要求身份验证，否则请留空。\"",
+                    "target": "\"Optional. Leave empty unless your server requires authentication.\":\"選填。除非伺服器需要驗證，否則請留空。\""
+                },
+                {
+                    "source": "\"Get Models\":\"获取模型\"",
+                    "target": "\"Get Models\":\"取得模型\""
+                },
+                {
+                    "source": "\"No models found at this endpoint.\":\"该端点未找到模型。\"",
+                    "target": "\"No models found at this endpoint.\":\"此端點找不到模型。\""
+                },
+                {
+                    "source": "\"Failed to load models:\":\"加载模型失败：\"",
+                    "target": "\"Failed to load models:\":\"載入模型失敗：\""
+                },
+                {
+                    "source": "\"Choose a detected model to fill the model field.\":\"选择一个检测到的模型以填入模型名称。\"",
+                    "target": "\"Choose a detected model to fill the model field.\":\"選擇偵測到的模型以填入模型欄位。\""
+                },
+                {
+                    "source": "\"Fetch available models from your server.\":\"从服务器获取可用模型。\"",
+                    "target": "\"Fetch available models from your server.\":\"從伺服器取得可用模型。\""
+                },
+                {
+                    "source": "\"Enter a valid API base URL first, then fetch available models.\":\"请先输入有效的 API 基础地址，再获取模型。\"",
+                    "target": "\"Enter a valid API base URL first, then fetch available models.\":\"請先輸入有效的 API 基礎位址，再取得模型。\""
+                },
+                {
+                    "source": "Notice(\"All commands have been removed.\")",
+                    "target": "Notice(\"所有命令已清除。\")"
+                },
+                {
+                    "source": "\"All commands have been removed.\":\"所有命令已被清除。\"",
+                    "target": "\"All commands have been removed.\":\"所有命令已清除。\""
+                },
+                {
+                    "source": "\"Format Brush\":\"格式刷\"",
+                    "target": "\"Format Brush\":\"格式刷\""
+                },
+                {
+                    "source": "\"Vertical Position\":\"垂直位置\"",
+                    "target": "\"Vertical Position\":\"垂直位置\""
+                },
+                {
+                    "source": "\"Horizontal Position\":\"水平位置\"",
+                    "target": "\"Horizontal Position\":\"水平位置\""
+                },
+                {
+                    "source": "\"The command\":\"命令\"",
+                    "target": "\"The command\":\"指令\""
+                },
+                {
+                    "source": "\"already exists\":\"已存在\"",
+                    "target": "\"already exists\":\"已存在\""
+                },
+                {
+                    "source": "\"Whether to insert at the beginning of the next line\":\"是否在下一行首插入\"",
+                    "target": "\"Whether to insert at the beginning of the next line\":\"是否插入至下一行開頭\""
+                },
+                {
+                    "source": "\"Line Offset\":\"行偏移量\"",
+                    "target": "\"Line Offset\":\"行偏移量\""
+                },
+                {
+                    "source": "\"Line Head Format\":\"行首格式\"",
+                    "target": "\"Line Head Format\":\"行首格式\""
+                },
+                {
+                    "source": "\"Notice:\":\"注意\"",
+                    "target": "\"Notice:\":\"注意：\""
+                },
+                {
+                    "source": "\"Insert New Line\":\"插入新行\"",
+                    "target": "\"Insert New Line\":\"插入新行\""
+                },
+                {
+                    "source": "\"to insert\":\"插入\"",
+                    "target": "\"to insert\":\"插入\""
+                },
+                {
+                    "source": "\"Latest Changes\":\"最新更新\"",
+                    "target": "\"Latest Changes\":\"最新變更\""
+                },
+                {
+                    "source": "\"Command deployed to: \":\"命令已部署到：\"",
+                    "target": "\"Command deployed to: \":\"指令已部署至：\""
+                },
+                {
+                    "source": "\"Command already exists\":\"命令已存在\"",
+                    "target": "\"Command already exists\":\"指令已存在\""
+                },
+                {
+                    "source": "\"Multiline mode\":\"多行模式\"",
+                    "target": "\"Multiline mode\":\"多行模式\""
+                },
+                {
+                    "source": "\"[Example]\":\"[示例]\"",
+                    "target": "\"[Example]\":\"[範例]\""
+                },
+                {
+                    "source": "\"[Requirements]\":\"[要求]\"",
+                    "target": "\"[Requirements]\":\"[需求]\""
+                },
+                {
+                    "source": "\"[Description]\":\"[描述]\"",
+                    "target": "\"[Description]\":\"[說明]\""
+                },
+                {
+                    "source": "\"Initialize Commands\":\"初始化命令\"",
+                    "target": "\"Initialize Commands\":\"初始化指令\""
+                },
+                {
+                    "source": "\"Commands initialized successfully\":\"命令初始化成功\"",
+                    "target": "\"Commands initialized successfully\":\"指令初始化成功\""
+                },
+                {
+                    "source": "\"Manage Commands\":\"管理命令\"",
+                    "target": "\"Manage Commands\":\"管理指令\""
+                },
+                {
+                    "source": "\"All commands\":\"所有命令\"",
+                    "target": "\"All commands\":\"所有指令\""
+                },
+                {
+                    "source": "\"Fixed Position Offset\":\"固定位置偏移\"",
+                    "target": "\"Fixed Position Offset\":\"固定位置偏移\""
+                },
+                {
+                    "source": "\"Vertical Split\":\"垂直分割\"",
+                    "target": "\"Vertical Split\":\"垂直分割\""
+                },
+                {
+                    "source": "\"Insert Blank Lines\":\"插入空行\"",
+                    "target": "\"Insert Blank Lines\":\"插入空白行\""
+                },
+                {
+                    "source": "\"Split Lines\":\"拆分行\"",
+                    "target": "\"Split Lines\":\"分割行\""
+                },
+                {
+                    "source": "\"Trim Line Ends\":\"去除行首尾空格\"",
+                    "target": "\"Trim Line Ends\":\"移除行首與行尾空白\""
+                },
+                {
+                    "source": "\"Remove All Whitespace\":\"移除所有空白\"",
+                    "target": "\"Remove All Whitespace\":\"移除所有空白\""
+                },
+                {
+                    "source": "\"Line Operations\":\"行操作\"",
+                    "target": "\"Line Operations\":\"行操作\""
+                },
+                {
+                    "source": "\"Ordered List\":\"有序列表\"",
+                    "target": "\"Ordered List\":\"編號清單\""
+                },
+                {
+                    "source": "\"Insert Embed\":\"插入嵌入\"",
+                    "target": "\"Insert Embed\":\"插入嵌入\""
+                },
+                {
+                    "source": "\"Insert Callout\":\"插入 Callout\"",
+                    "target": "\"Insert Callout\":\"插入 Callout\""
+                },
+                {
+                    "source": "\"Insert Table\":\"插入表格\"",
+                    "target": "\"Insert Table\":\"插入表格\""
+                },
+                {
+                    "source": "\"Attach File\":\"附加文件\"",
+                    "target": "\"Attach File\":\"附加檔案\""
+                },
+                {
+                    "source": "\"Clear Formatting\":\"清除格式\"",
+                    "target": "\"Clear Formatting\":\"清除格式\""
+                },
+                {
+                    "source": "\"Merged with\":\"已按\"",
+                    "target": "\"Merged with\":\"已合併至\""
+                },
+                {
+                    "source": "\"AI Tools\":\"AI 工具\"",
+                    "target": "\"AI Tools\":\"AI 工具\""
+                },
+                {
+                    "source": "\"AI Assistant\":\"AI 助手\"",
+                    "target": "\"AI Assistant\":\"AI 助理\""
+                },
+                {
+                    "source": "\"Open PKMer AI\":\"前往 PKMer AI\"",
+                    "target": "\"Open PKMer AI\":\"開啟 PKMer AI\""
+                },
+                {
+                    "source": "\"Logout from PKMer\":\"退出 PKMer\"",
+                    "target": "\"Logout from PKMer\":\"登出 PKMer\""
+                },
+                {
+                    "source": "\"PKMer Model\":\"PKMer 模型\"",
+                    "target": "\"PKMer Model\":\"PKMer 模型\""
+                },
+                {
+                    "source": "\"Reasoning model\":\"推理模型\"",
+                    "target": "\"Reasoning model\":\"推理模型\""
+                },
+                {
+                    "source": "\"AI thinking\":\"AI 思考中\"",
+                    "target": "\"AI thinking\":\"AI 思考中\""
+                },
+                {
+                    "source": "\"AI generating\":\"AI 正在生成\"",
+                    "target": "\"AI generating\":\"AI 正在產生\""
+                },
+                {
+                    "source": "\"AI is writing...\":\"AI 正在生成…\"",
+                    "target": "\"AI is writing...\":\"AI 正在撰寫…\""
+                },
+                {
+                    "source": "\"AI is generating\":\"AI 正在生成\"",
+                    "target": "\"AI is generating\":\"AI 正在產生\""
+                },
+                {
+                    "source": "\"Insert below\":\"插入到下方\"",
+                    "target": "\"Insert below\":\"插入至下方\""
+                },
+                {
+                    "source": "\"AI List\":\"AI 列表\"",
+                    "target": "\"AI List\":\"AI 清單\""
+                },
+                {
+                    "source": "\"AI Table\":\"AI 表格\"",
+                    "target": "\"AI Table\":\"AI 表格\""
+                },
+                {
+                    "source": "\"Generate frontmatter\":\"生成 Frontmatter\"",
+                    "target": "\"Generate frontmatter\":\"產生 Frontmatter\""
+                },
+                {
+                    "source": "\"Insert frontmatter\":\"插入 Frontmatter\"",
+                    "target": "\"Insert frontmatter\":\"插入 Frontmatter\""
+                },
+                {
+                    "source": "\"Canvas AI is drafting an article...\":\"Canvas AI 正在生成文章草稿…\"",
+                    "target": "\"Canvas AI is drafting an article...\":\"Canvas AI 正在產生文章草稿…\""
+                },
+                {
+                    "source": "\"Canvas AI added\":\"Canvas AI 已新增\"",
+                    "target": "\"Canvas AI added\":\"Canvas AI 已新增\""
+                },
+                {
+                    "source": "\"AI Article Draft\":\"AI 文章草稿\"",
+                    "target": "\"AI Article Draft\":\"AI 文章草稿\""
+                },
+                {
+                    "source": "\"Frontmatter Generation\":\"Frontmatter 生成\"",
+                    "target": "\"Frontmatter Generation\":\"Frontmatter 產生\""
+                },
+                {
+                    "source": "\"Customize the properties, language, and prompt used by Toolbox → Generate frontmatter.\":\"自定义百宝箱 → 生成 Frontmatter 使用的属性、语言和提示词。\"",
+                    "target": "\"Customize the properties, language, and prompt used by Toolbox → Generate frontmatter.\":\"自訂百寶箱 → 產生 Frontmatter 所使用的屬性、語言與提示詞。\""
+                },
+                {
+                    "source": "\"Property List\":\"属性列表\"",
+                    "target": "\"Property List\":\"屬性清單\""
+                },
+                {
+                    "source": "\"One YAML property per line. Add a short instruction after a colon.\":\"每行一个 YAML 属性。可在冒号后添加简短说明。\"",
+                    "target": "\"One YAML property per line. Add a short instruction after a colon.\":\"每行一個 YAML 屬性。可在冒號後加入簡短說明。\""
+                },
+                {
+                    "source": "\"Output Language\":\"输出语言\"",
+                    "target": "\"Output Language\":\"輸出語言\""
+                },
+                {
+                    "source": "\"Prompt Template\":\"提示词模板\"",
+                    "target": "\"Prompt Template\":\"提示詞範本\""
+                },
+                {
+                    "source": "\"Available placeholders: {note}, {properties}, {language}.\":\"可用占位符：{note}、{properties}、{language}。\"",
+                    "target": "\"Available placeholders: {note}, {properties}, {language}.\":\"可用預留位置：{note}、{properties}、{language}。\""
+                },
+                {
+                    "source": "\"Reset Frontmatter Prompt\":\"重置 Frontmatter 提示词\"",
+                    "target": "\"Reset Frontmatter Prompt\":\"重設 Frontmatter 提示詞\""
+                },
+                {
+                    "source": "\"Frontmatter prompt reset to default\":\"Frontmatter 提示词已重置为默认值\"",
+                    "target": "\"Frontmatter prompt reset to default\":\"Frontmatter 提示詞已重設為預設值\""
+                },
+                {
+                    "source": "\"Choose whether frontmatter is generated automatically from folder patterns or with a custom prompt.\":\"选择根据文件夹格式自动生成 Frontmatter，或使用自定义提示词生成。\"",
+                    "target": "\"Choose whether frontmatter is generated automatically from folder patterns or with a custom prompt.\":\"選擇要依資料夾格式自動產生 Frontmatter，或使用自訂提示詞產生。\""
+                },
+                {
+                    "source": "\"Frontmatter Mode\":\"Frontmatter 模式\"",
+                    "target": "\"Frontmatter Mode\":\"Frontmatter 模式\""
+                },
+                {
+                    "source": "\"Auto mode detects sibling-note frontmatter conventions. Custom mode applies your property list and prompt template.\":\"自动模式会识别同目录笔记的 Frontmatter 习惯；自定义模式会应用你的属性列表和提示词模板。\"",
+                    "target": "\"Auto mode detects sibling-note frontmatter conventions. Custom mode applies your property list and prompt template.\":\"自動模式會識別同一資料夾中其他筆記的 Frontmatter 慣例；自訂模式則會套用你的屬性清單與提示詞範本。\""
+                },
+                {
+                    "source": "\"Auto detect from folder\":\"自动识别文件夹格式\"",
+                    "target": "\"Auto detect from folder\":\"自動偵測資料夾格式\""
+                },
+                {
+                    "source": "\"Custom prompt\":\"自定义提示词\"",
+                    "target": "\"Custom prompt\":\"自訂提示詞\""
+                },
+                {
+                    "source": "\"Auto mode will follow frontmatter keys and examples from sibling notes in the same folder.\":\"自动模式会参考同文件夹其他笔记的 Frontmatter 字段和示例。\"",
+                    "target": "\"Auto mode will follow frontmatter keys and examples from sibling notes in the same folder.\":\"自動模式會參考同一資料夾中其他筆記的 Frontmatter 欄位與範例。\""
+                },
+                {
+                    "source": "\"Manage Templates\":\"管理模板\"",
+                    "target": "\"Manage Templates\":\"管理範本\""
                 }
             ]
         },
