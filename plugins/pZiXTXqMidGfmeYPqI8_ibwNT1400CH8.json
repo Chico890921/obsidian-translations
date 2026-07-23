@@ -2,12 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "cmdr",
-        "version": "0.5.5",
+        "version": "0.5.7",
         "title": "[zh-tw] Commander",
-        "description": "Commander Localization & Tweaks",
+        "description": "Commander 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.5.5",
-        "author": "Chico"
+        "supportedVersions": "0.5.7",
+        "author": "Chico",
+        "updatedAt": 1784778643216
     },
     "dict": {
         "main.js": {
@@ -294,15 +295,15 @@
                 },
                 {
                     "source": "\"to navigate\":\"to navigate\"",
-                    "target": "\"to navigate\":\"導覽\""
+                    "target": "\"to navigate\":\"以瀏覽\""
                 },
                 {
                     "source": "\"to choose an icon\":\"to choose an icon\"",
-                    "target": "\"to choose an icon\":\"選擇圖示\""
+                    "target": "\"to choose an icon\":\"以選擇圖示\""
                 },
                 {
                     "source": "\"to cancel\":\"to cancel\"",
-                    "target": "\"to cancel\":\"取消\""
+                    "target": "\"to cancel\":\"以取消\""
                 },
                 {
                     "source": "\"Use a custom name\":\"Use a custom name\"",
@@ -314,7 +315,7 @@
                 },
                 {
                     "source": "\"to save\":\"to save\"",
-                    "target": "\"to save\":\"儲存\""
+                    "target": "\"to save\":\"以儲存\""
                 },
                 {
                     "source": "\"Choose a Icon for your new Command\":\"Choose a Icon for your new Command\"",
@@ -322,7 +323,7 @@
                 },
                 {
                     "source": "\"to choose a custom icon\":\"to choose a custom icon\"",
-                    "target": "\"to choose a custom icon\":\"選擇自訂圖示\""
+                    "target": "\"to choose a custom icon\":\"以選擇自訂圖示\""
                 },
                 {
                     "source": "\"Remove Command\":\"Remove Command\"",
@@ -330,7 +331,7 @@
                 },
                 {
                     "source": "\"Double click to rename\":\"Double click to rename\"",
-                    "target": "\"Double click to rename\":\"按兩下即可重新命名\""
+                    "target": "\"Double click to rename\":\"按兩下重新命名\""
                 },
                 {
                     "source": "\"This device\":\"This device\"",
@@ -342,7 +343,7 @@
                 },
                 {
                     "source": "\"Warning: This is a checked Command, meaning it might not run under every circumstance.\":\"Warning: This is a checked Command, meaning it might not run under every circumstance.\"",
-                    "target": "\"Warning: This is a checked Command, meaning it might not run under every circumstance.\":\"警告：這是一個已勾選的命令，代表它可能無法在所有情況下執行。\""
+                    "target": "\"Warning: This is a checked Command, meaning it might not run under every circumstance.\":\"警告：這是已檢查命令，表示它可能不會在所有情況下執行。\""
                 },
                 {
                     "source": "\"Move down\":\"Move down\"",
@@ -362,7 +363,7 @@
                 },
                 {
                     "source": "\"Remove and don't ask again\":\"Remove and don't ask again\"",
-                    "target": "\"Remove and don't ask again\":\"移除且不要再詢問\""
+                    "target": "\"Remove and don't ask again\":\"移除且不再詢問\""
                 },
                 {
                     "source": "Remove:\"Remove\"",
@@ -378,23 +379,23 @@
                 },
                 {
                     "source": "\"Always show a Popup to confirm deletion of a Command.\":\"Always show a Popup to confirm deletion of a Command.\"",
-                    "target": "\"Always show a Popup to confirm deletion of a Command.\":\"一律顯示彈出視窗，以確認是否刪除命令。\""
+                    "target": "\"Always show a Popup to confirm deletion of a Command.\":\"一律顯示彈出視窗以確認刪除命令。\""
                 },
                 {
-                    "source": "'Show \"Add Command\" Button':'Show \"Add Command\" Button'",
-                    "target": "'Show \"Add Command\" Button':'顯示「新增命令」按鈕'"
+                    "source": "\"Show \\\"Add Command\\\" Button\":\"Show \\\"Add Command\\\" Button\"",
+                    "target": "\"Show \\\"Add Command\\\" Button\":\"顯示「新增命令」按鈕\""
                 },
                 {
-                    "source": "'Show the \"Add Command\" Button in every Menu. Requires restart.':'Show the \"Add Command\" Button in every Menu. Requires restart.'",
-                    "target": "'Show the \"Add Command\" Button in every Menu. Requires restart.':'在每個選單中顯示「新增命令」按鈕。需要重新啟動。'"
+                    "source": "\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\":\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\"",
+                    "target": "\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\":\"在每個選單中顯示「新增命令」按鈕。需要重新啟動。\""
                 },
                 {
                     "source": "\"Please restart Obsidian for these changes to take effect.\":\"Please restart Obsidian for these changes to take effect.\"",
-                    "target": "\"Please restart Obsidian for these changes to take effect.\":\"請重新啟動 Obsidian，讓這些變更生效。\""
+                    "target": "\"Please restart Obsidian for these changes to take effect.\":\"請重新啟動 Obsidian 以套用這些變更。\""
                 },
                 {
                     "source": "\"Enable debugging\":\"Enable debugging\"",
-                    "target": "\"Enable debugging\":\"啟用除錯\""
+                    "target": "\"Enable debugging\":\"啟用偵錯\""
                 },
                 {
                     "source": "\"Enable console output.\":\"Enable console output.\"",
@@ -450,7 +451,7 @@
                 },
                 {
                     "source": "\"Choose new\":\"Choose new\"",
-                    "target": "\"Choose new\":\"選擇新的命令\""
+                    "target": "\"Choose new\":\"選擇新的\""
                 },
                 {
                     "source": "\"Hide Commands of other Plugins\":\"Hide Commands of other Plugins\"",
@@ -470,23 +471,27 @@
                 },
                 {
                     "source": "\"Add command to all devices\":\"Add command to all devices\"",
-                    "target": "\"Add command to all devices\":\"在所有裝置新增命令\""
+                    "target": "\"Add command to all devices\":\"將命令新增到所有裝置\""
                 },
                 {
                     "source": "\"Add command only to mobile devices\":\"Add command only to mobile devices\"",
-                    "target": "\"Add command only to mobile devices\":\"只在行動裝置新增命令\""
+                    "target": "\"Add command only to mobile devices\":\"只新增到行動裝置\""
                 },
                 {
                     "source": "\"Add command only to desktop devices\":\"Add command only to desktop devices\"",
-                    "target": "\"Add command only to desktop devices\":\"只在桌面裝置新增命令\""
+                    "target": "\"Add command only to desktop devices\":\"只新增到桌面裝置\""
                 },
                 {
                     "source": "\"Add command only to this device\":\"Add command only to this device\"",
-                    "target": "\"Add command only to this device\":\"只在此裝置新增命令\""
+                    "target": "\"Add command only to this device\":\"只新增到此裝置\""
                 },
                 {
                     "source": "Done:\"Done\"",
                     "target": "Done:\"完成\""
+                },
+                {
+                    "source": "\"By Johnny✨ and phibr0\":\"By Johnny✨ and phibr0\"",
+                    "target": "\"By Johnny✨ and phibr0\":\"Johnny✨ 與 phibr0 製作\""
                 },
                 {
                     "source": "\"Leave feedback\":\"Leave feedback\"",
@@ -498,11 +503,11 @@
                 },
                 {
                     "source": "\"Share feedback, issues, and ideas with our feedback form.\":\"Share feedback, issues, and ideas with our feedback form.\"",
-                    "target": "\"Share feedback, issues, and ideas with our feedback form.\":\"透過回饋表單分享回饋、問題和想法。\""
+                    "target": "\"Share feedback, issues, and ideas with our feedback form.\":\"透過回饋表單分享回饋、問題與想法。\""
                 },
                 {
                     "source": "\"Consider donating to support development.\":\"Consider donating to support development.\"",
-                    "target": "\"Consider donating to support development.\":\"可以考慮贊助以支持開發。\""
+                    "target": "\"Consider donating to support development.\":\"考慮贊助以支持開發。\""
                 },
                 {
                     "source": "Save:\"Save\"",
@@ -510,7 +515,7 @@
                 },
                 {
                     "source": "\"This Command is not available on this device.\":\"This Command is not available on this device.\"",
-                    "target": "\"This Command is not available on this device.\":\"此命令無法在這個裝置上使用。\""
+                    "target": "\"This Command is not available on this device.\":\"此命令無法在此裝置使用。\""
                 },
                 {
                     "source": "Show:\"Show\"",
@@ -526,7 +531,7 @@
                 },
                 {
                     "source": "\"Double click to enter custom value\":\"Double click to enter custom value\"",
-                    "target": "\"Double click to enter custom value\":\"按兩下即可輸入自訂值\""
+                    "target": "\"Double click to enter custom value\":\"按兩下輸入自訂值\""
                 },
                 {
                     "source": "\"Choose custom spacing for Command Buttons\":\"Choose custom spacing for Command Buttons\"",
@@ -542,7 +547,7 @@
                 },
                 {
                     "source": "\"As of Obsidian 0.16.0 you need to explicitly enable the View Header.\":\"As of Obsidian 0.16.0 you need to explicitly enable the Tab Title Bar. Once enabled, you might need to restart Obsidian.\"",
-                    "target": "\"As of Obsidian 0.16.0 you need to explicitly enable the View Header.\":\"從 Obsidian 0.16.0 起，你需要明確啟用分頁標題列。啟用後可能需要重新啟動 Obsidian。\""
+                    "target": "\"As of Obsidian 0.16.0 you need to explicitly enable the View Header.\":\"從 Obsidian 0.16.0 起，你需要明確啟用分頁標題列。啟用後，可能需要重新啟動 Obsidian。\""
                 },
                 {
                     "source": "\"Open Appearance Settings\":\"Open Appearance Settings\"",
@@ -561,64 +566,68 @@
                     "target": "name:\"巨集\""
                 },
                 {
-                    "source": "\"When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.\"",
-                    "target": "\"在檔案總管中點擊命令時，檔案總管檢視會取得焦點。這可能會影響那些需要在目前作用中檔案或檔案總管上執行的命令。\""
+                    "source": "\"No Macros yet!\"",
+                    "target": "\"尚無巨集！\""
                 },
                 {
-                    "source": "setDesc(\"Set how many Rows the Mobile Toolbar should have. Set this to 0 to remove the Toolbar.\")",
-                    "target": "setDesc(\"設定行動工具列要有幾列。設為 0 可移除工具列。\")"
+                    "source": "\"Add Macro\"",
+                    "target": "\"新增巨集\""
                 },
                 {
-                    "source": "setDesc(\"Offset the Toolbar from the Bottom of the Screen. This is useful if the toolbar is partially obscured by other UI Elements.\")",
-                    "target": "setDesc(\"設定工具列與螢幕底部的距離。如果工具列被其他 UI 元素部分遮住，這個選項會很有用。\")"
+                    "source": "\"Auto-Run on Startup\"",
+                    "target": "\"啟動時自動執行\""
                 },
                 {
-                    "source": "setDesc(\"Some Themes need extra spacing in the toolbar. If your Toolbar doesn't wrap properly, try increasing this value.\")",
-                    "target": "setDesc(\"部分主題需要額外的工具列間距。如果工具列無法正確換行，請嘗試增加此值。\")"
+                    "source": "\"Add Command\"),i(\"button\",{onClick:x},\"Add Delay\"",
+                    "target": "\"新增命令\"),i(\"button\",{onClick:x},\"新增延遲\""
                 },
                 {
-                    "source": "\"Show \\\"Add Command\\\" Button\":\"Show \\\"Add Command\\\" Button\"",
-                    "target": "\"Show \\\"Add Command\\\" Button\":\"顯示「新增命令」按鈕\""
+                    "source": ".name||\"Macro Name\"",
+                    "target": ".name||\"巨集名稱\""
                 },
                 {
-                    "source": "\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\":\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\"",
-                    "target": "\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\":\"在每個選單中顯示「新增命令」按鈕。需要重新啟動。\""
+                    "source": "\"Cannot find Command\"",
+                    "target": "\"找不到命令\""
                 },
                 {
-                    "source": "\"By Johnny✨ and phibr0\":\"By Johnny✨ and phibr0\"",
-                    "target": "\"By Johnny✨ and phibr0\":\"由 Johnny✨ 和 phibr0 製作\""
+                    "source": "r(k,{icon:\"alert-circle\"}),\" \",\"Info\"",
+                    "target": "r(k,{icon:\"alert-circle\"}),\" \",\"資訊\""
                 },
                 {
-                    "source": "\"Change the spacing between commands. You can set different values on mobile and desktop.\":\"變更命令之間的間距。\"",
-                    "target": "\"Change the spacing between commands. You can set different values on mobile and desktop.\":\"變更命令之間的間距。你可以在行動裝置和桌面裝置設定不同數值。\""
+                    "source": "The Toolbar is only available in Obsidian Mobile.",
+                    "target": "工具列僅可在 Obsidian 行動版使用。"
                 },
                 {
-                    "source": "r(k,{icon:\"alert-circle\"}),\" \",\"Info\")",
-                    "target": "r(k,{icon:\"alert-circle\"}),\" \",\"資訊\")"
+                    "source": "Set how many Rows the Mobile Toolbar should have. Set this to 0 to remove the Toolbar.",
+                    "target": "設定行動工具列的列數。設為 0 可移除工具列。"
                 },
                 {
-                    "source": "\"The Toolbar is only available in Obsidian Mobile. \"",
-                    "target": "\"工具列僅適用於 Obsidian Mobile。\""
+                    "source": "Offset the Toolbar from the Bottom of the Screen. This is useful if the toolbar is partially obscured by other UI Elements.",
+                    "target": "設定工具列與畫面底部的偏移距離。當工具列部分被其他介面元素遮住時，此設定很有用。"
                 },
                 {
-                    "source": "\"To configure which Commands show up in the Toolbar, open the Mobile Settings.\"",
-                    "target": "\"若要設定哪些命令顯示在工具列，請開啟行動裝置設定。\""
+                    "source": "Some Themes need extra spacing in the toolbar. If your Toolbar doesn't wrap properly, try increasing this value.",
+                    "target": "某些佈景主題需要增加工具列間距。若工具列無法正確換行，請嘗試提高此數值。"
+                },
+                {
+                    "source": "Reordering and Sorting",
+                    "target": "重新排列與排序"
+                },
+                {
+                    "source": "As of Obsidian 1.1.0 you can reorder the Buttons in the left ribbon by dragging. This will replace the old sorting feature.",
+                    "target": "從 Obsidian 1.1.0 起，你可以拖曳左側功能區中的按鈕來重新排列。此功能將取代舊有的排序功能。"
+                },
+                {
+                    "source": "When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.",
+                    "target": "在檔案總管中點選命令時，焦點會移至檔案總管檢視。這可能會干擾原本應在作用中檔案或檔案總管上執行的命令。"
+                },
+                {
+                    "source": "To configure which Commands show up in the Toolbar, open the Mobile Settings.",
+                    "target": "若要設定工具列中顯示哪些命令，請開啟行動版設定。"
                 },
                 {
                     "source": "\"Open Mobile Settings\"",
-                    "target": "\"開啟行動裝置設定\""
-                },
-                {
-                    "source": "\"Reordering and Sorting\"",
-                    "target": "\"重新排序與排列\""
-                },
-                {
-                    "source": "\"As of Obsidian 1.1.0 you can reorder the Buttons in the left ribbon by dragging. This will replace the old sorting feature.\"",
-                    "target": "\"從 Obsidian 1.1.0 起，你可以拖曳左側功能區中的按鈕來重新排序。這會取代舊的排序功能。\""
-                },
-                {
-                    "source": "D(o.name||\"Macro Name\")",
-                    "target": "D(o.name||\"巨集名稱\")"
+                    "target": "\"開啟行動版設定\""
                 },
                 {
                     "source": "r(\"span\",null,\"Name\")",
@@ -629,48 +638,24 @@
                     "target": "r(\"span\",null,\"圖示\")"
                 },
                 {
-                    "source": "(A==null?void 0:A.name)||\"Cannot find Command\"",
-                    "target": "(A==null?void 0:A.name)||\"找不到命令\""
+                    "source": "case 2:return r(\"div\",null,\"Editor: \",w.action);case 3:return r(\"div\",null,\"Loop: \",w.times)",
+                    "target": "case 2:return r(\"div\",null,\"編輯器：\",w.action);case 3:return r(\"div\",null,\"迴圈：\",w.times)"
                 },
                 {
-                    "source": "r(\"div\",null,\"Editor: \",w.action)",
-                    "target": "r(\"div\",null,\"編輯器：\",w.action)"
+                    "source": "r(\"button\",{onClick:f},\"Add Command\"),r(\"button\",{onClick:C},\"Add Delay\")",
+                    "target": "r(\"button\",{onClick:f},\"新增命令\"),r(\"button\",{onClick:C},\"新增延遲\")"
                 },
                 {
-                    "source": "r(\"div\",null,\"Loop: \",w.times)",
-                    "target": "r(\"div\",null,\"迴圈：\",w.times)"
-                },
-                {
-                    "source": "r(\"label\",{htmlFor:\"checkbox\"},\"Auto-Run on Startup\")",
-                    "target": "r(\"label\",{htmlFor:\"checkbox\"},\"啟動時自動執行\")"
-                },
-                {
-                    "source": "r(\"button\",{onClick:f},\"Add Command\")",
-                    "target": "r(\"button\",{onClick:f},\"新增命令\")"
-                },
-                {
-                    "source": "r(\"button\",{onClick:C},\"Add Delay\")",
-                    "target": "r(\"button\",{onClick:C},\"新增延遲\")"
-                },
-                {
-                    "source": "r(\"button\",{class:s.length===0?\"disabled\":\"mod-cta\",disabled:s.length===0,onClick:()=>s.length&&e({macro:s,name:a,icon:c,startup:l})},\"Save\")",
-                    "target": "r(\"button\",{class:s.length===0?\"disabled\":\"mod-cta\",disabled:s.length===0,onClick:()=>s.length&&e({macro:s,name:a,icon:c,startup:l})},\"儲存\")"
-                },
-                {
-                    "source": "r(\"button\",{onClick:n},\"Cancel\")",
-                    "target": "r(\"button\",{onClick:n},\"取消\")"
+                    "source": "},\"Save\"),r(\"button\",{onClick:n},\"Cancel\")",
+                    "target": "},\"儲存\"),r(\"button\",{onClick:n},\"取消\")"
                 },
                 {
                     "source": "a.macro.length,\" Actions\"",
                     "target": "a.macro.length,\" 個動作\""
                 },
                 {
-                    "source": "\"No Macros yet!\"",
-                    "target": "\"還沒有巨集！\""
-                },
-                {
-                    "source": "\"Add Macro\"",
-                    "target": "\"新增巨集\""
+                    "source": "\"Macro not found\"",
+                    "target": "\"找不到巨集\""
                 }
             ]
         }
