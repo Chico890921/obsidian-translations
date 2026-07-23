@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "ink",
-        "version": "0.3.4",
+        "version": "0.5.6",
         "title": "[zh-tw] Ink",
         "description": "Ink 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.3.4",
+        "supportedVersions": "0.5.6",
         "author": "Chico",
-        "updatedAt": 1782923097399
+        "updatedAt": 1784781627144
     },
     "dict": {
         "main.js": {
@@ -35,13 +35,13 @@
                     "type": "CallExpression",
                     "name": "alert",
                     "source": "Oops! We could not save changes to your browser's storage. We now need to reload the page and try again.\n\nKeep seeing this message?\n\\u2022 If you're using tldraw in a private or \"incognito\" window, try loading tldraw in a regular window or in a different browser.\n\\u2022 If your hard disk is full, try clearing up some space and then reload the page.",
-                    "target": "Oops! We could not save changes to your browser's storage. We now need to reload the page and try again.\n\nKeep seeing this message?\n\\u2022 If you're using tldraw in a private or \"incognito\" window, try loading tldraw in a regular window or in a different browser.\n\\u2022 If your hard disk is full, try clearing up some space and then reload the page."
+                    "target": "糟糕！無法將變更儲存至瀏覽器的儲存空間。現在需要重新載入頁面後再試一次。\n\n持續看到此訊息？\n• 如果你在私密或「無痕」視窗中使用 tldraw，請改用一般視窗或其他瀏覽器。\n• 如果硬碟空間已滿，請清出一些空間後重新載入頁面。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "alert",
                     "source": "Oops! We could not access your browser's storage\\u2014and the app won't work correctly without that. We now need to reload the page and try again.\n\nKeep seeing this message?\n\\u2022 If you're using tldraw in a private or \"incognito\" window, try loading tldraw in a regular window or in a different browser.",
-                    "target": "Oops! We could not access your browser's storage\\u2014and the app won't work correctly without that. We now need to reload the page and try again.\n\nKeep seeing this message?\n\\u2022 If you're using tldraw in a private or \"incognito\" window, try loading tldraw in a regular window or in a different browser."
+                    "target": "糟糕！無法存取瀏覽器的儲存空間，應用程式將無法正常運作。現在需要重新載入頁面後再試一次。\n\n持續看到此訊息？\n• 如果你在私密或「無痕」視窗中使用 tldraw，請改用一般視窗或其他瀏覽器。"
                 },
                 {
                     "type": "CallExpression",
@@ -659,97 +659,97 @@
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "top_left handle",
-                    "target": "top_left handle"
+                    "target": "左上控制點"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "top handle",
-                    "target": "top handle"
+                    "target": "上方控制點"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "top_right handle",
-                    "target": "top_right handle"
+                    "target": "右上控制點"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "right handle",
-                    "target": "right handle"
+                    "target": "右側控制點"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "bottom_right handle",
-                    "target": "bottom_right handle"
+                    "target": "右下控制點"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "bottom handle",
-                    "target": "bottom handle"
+                    "target": "下方控制點"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "bottom_left handle",
-                    "target": "bottom_left handle"
+                    "target": "左下控制點"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "left handle",
-                    "target": "left handle"
+                    "target": "左側控制點"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "top target",
-                    "target": "top target"
+                    "target": "上方目標"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "right target",
-                    "target": "right target"
+                    "target": "右側目標"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "bottom target",
-                    "target": "bottom target"
+                    "target": "下方目標"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "left target",
-                    "target": "left target"
+                    "target": "左側目標"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "top-left target",
-                    "target": "top-left target"
+                    "target": "左上目標"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "top-right target",
-                    "target": "top-right target"
+                    "target": "右上目標"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "bottom-right target",
-                    "target": "bottom-right target"
+                    "target": "右下目標"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "bottom-left target",
-                    "target": "bottom-left target"
+                    "target": "左下目標"
                 },
                 {
                     "type": "ObjectProperty",
@@ -761,13 +761,13 @@
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "style panel styles",
-                    "target": "style panel styles"
+                    "target": "樣式面板：樣式"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "aria-label",
                     "source": "style panel text",
-                    "target": "style panel text"
+                    "target": "樣式面板：文字"
                 },
                 {
                     "type": "ObjectProperty",
@@ -995,7 +995,7 @@
                     "type": "ObjectProperty",
                     "name": "label",
                     "source": "简体中文",
-                    "target": "简体中文"
+                    "target": "簡體中文"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1361,31 +1361,31 @@
                     "type": "ObjectProperty",
                     "name": "title",
                     "source": "Something happened",
-                    "target": "Something happened"
+                    "target": "發生了一些狀況"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "title",
                     "source": "Something maybe bad happened",
-                    "target": "Something maybe bad happened"
+                    "target": "可能發生了問題"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "title",
                     "source": "Something bad happened",
-                    "target": "Something bad happened"
+                    "target": "發生錯誤"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "title",
                     "source": "Debug menu",
-                    "target": "Debug menu"
+                    "target": "偵錯選單"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "title",
                     "source": "Maximum Shapes Reached",
-                    "target": "Maximum Shapes Reached"
+                    "target": "已達圖形數量上限"
                 },
                 {
                     "type": "AssignmentExpression",
@@ -2224,42 +2224,6 @@
                     "target": "name: \"已複製的繪圖\""
                 },
                 {
-                    "source": "this.message=\"Are you sure?\"",
-                    "target": "this.message=\"確定要繼續嗎？\""
-                },
-                {
-                    "source": "this.confirmLabel=\"Yes\"",
-                    "target": "this.confirmLabel=\"是\""
-                },
-                {
-                    "source": "labelText=`Ink plugin`",
-                    "target": "labelText=`Ink 外掛`"
-                },
-                {
-                    "source": "primaryLabel:`Read now`",
-                    "target": "primaryLabel:`立即閱讀`"
-                },
-                {
-                    "source": "tertiaryLabel:\"Remind me later\"",
-                    "target": "tertiaryLabel:\"稍後提醒我\""
-                },
-                {
-                    "source": "primaryLabel:\"Continue\"",
-                    "target": "primaryLabel:\"繼續\""
-                },
-                {
-                    "source": "primaryLabel:\"Learn why\"",
-                    "target": "primaryLabel:\"了解原因\""
-                },
-                {
-                    "source": "tertiaryLabel:\"Dismiss for now\"",
-                    "target": "tertiaryLabel:\"暫時略過\""
-                },
-                {
-                    "source": "tertiaryLabel:\"Dismiss\"",
-                    "target": "tertiaryLabel:\"關閉\""
-                },
-                {
                     "source": "setText(`The 'Scribble' feature of the Apple Pencil can interfere with the ability to write in Ink embeds.`)",
                     "target": "setText(`Apple Pencil 的「隨手寫」功能可能會干擾 Ink 嵌入區塊中的書寫。`)"
                 },
@@ -2276,68 +2240,12 @@
                     "target": "setDesc(\"若停用，你將無法新增繪圖嵌入區塊，已嵌入的區塊會以原始碼顯示。既有繪圖檔案會在 Obsidian 中隱藏，但仍保留在磁碟上。變更此設定後需要重新啟動 Obsidian 才會生效。\")"
                 },
                 {
-                    "source": "text:`While editing a Markdown file, run the action 'Insert new hand drawn section' to embed a drawing canvas.`",
-                    "target": "text:`編輯 Markdown 檔案時，執行「插入新的手繪區塊」動作即可嵌入繪圖畫布。`"
-                },
-                {
-                    "source": "text:`While editing a Markdown file, run the action 'Insert new handwriting section' to embed a section for writing with a stylus.`",
-                    "target": "text:`編輯 Markdown 檔案時，執行「插入新的手寫區塊」動作即可嵌入可用觸控筆書寫的區塊。`"
-                },
-                {
                     "source": "setDesc(`Too much writing in one embed can create a lag between your physical pen movement and the line appearing on screen. The stroke limit defines the maximum pen strokes before old strokes start becoming invisible until the embed is locked. Set this to a lower number if you're experiencing lag or jagged writing.`)",
                     "target": "setDesc(`單一嵌入區塊中的筆跡過多時，實體筆移動與螢幕線條顯示之間可能會產生延遲。筆畫上限會決定舊筆畫開始暫時隱藏前的最大筆畫數，直到嵌入區塊鎖定後才會重新顯示。如果你遇到延遲或筆跡鋸齒，請將此數值調低。`)"
                 },
                 {
-                    "source": "text:`For information on this plugin's development, visit the links below. Feel free to leave comments in the development diaries on YouTube.`",
-                    "target": "text:`若想了解此外掛的開發資訊，請前往下方連結。也歡迎在 YouTube 開發日誌中留言。`"
-                },
-                {
-                    "source": "text:\"Development Diaries.\"",
-                    "target": "text:\"開發日誌。\""
-                },
-                {
-                    "source": "text:\"Request feature / Report bug.\"",
-                    "target": "text:\"請求功能／回報錯誤。\""
-                },
-                {
-                    "source": "text:\"Drawing\"",
-                    "target": "text:\"繪圖\""
-                },
-                {
-                    "source": "text:\"Writing\"",
-                    "target": "text:\"手寫\""
-                },
-                {
-                    "source": "text:\"Copy writing\"",
-                    "target": "text:\"複製手寫\""
-                },
-                {
-                    "source": "text:\"Copy drawing\"",
-                    "target": "text:\"複製繪圖\""
-                },
-                {
-                    "source": "text:\"Open drawing\"",
-                    "target": "text:\"開啟繪圖\""
-                },
-                {
-                    "source": "text:\"Grid on/off\"",
-                    "target": "text:\"格線開／關\""
-                },
-                {
-                    "source": "text:\"Remove embed\"",
-                    "target": "text:\"移除嵌入區塊\""
-                },
-                {
                     "source": "titleEl.setText(`Insert copied ${this.filetype} file`)",
                     "target": "titleEl.setText(`插入已複製的${this.filetype}檔案`)"
-                },
-                {
-                    "source": "filetype:\"drawing\"",
-                    "target": "filetype:\"繪圖\""
-                },
-                {
-                    "source": "filetype:\"writing\"",
-                    "target": "filetype:\"手寫\""
                 },
                 {
                     "source": "Notice(\"Copy a drawing embed first.\")",
@@ -2350,18 +2258,6 @@
                 {
                     "source": "setText(`Fixed some visual theming bugs.`)",
                     "target": "setText(`修正一些視覺主題錯誤。`)"
-                },
-                {
-                    "source": "this.file?.basename||\"Handwritten note\"",
-                    "target": "this.file?.basename||\"手寫筆記\""
-                },
-                {
-                    "source": "this.file?.basename||\"Drawing\"",
-                    "target": "this.file?.basename||\"繪圖\""
-                },
-                {
-                    "source": "textContent=\"Ink writing file not found: \"",
-                    "target": "textContent=\"找不到 Ink 手寫檔案：\""
                 },
                 {
                     "source": "primaryLabel: `Read now`",
@@ -2414,6 +2310,22 @@
                 {
                     "source": "filetype: \"writing\"",
                     "target": "filetype: \"手寫\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Hand write or draw directly between paragraphs in your notes using a digital pen, stylus, or Apple pencil. Useful for handwriting, sketches, scribbles, or even math equations and scientific notation. Runs on the tldraw framework and drawing provides an infinite canvas.",
+                    "target": "直接在筆記段落之間使用數位筆、觸控筆或 Apple Pencil 手寫或繪圖。適合手寫、素描、塗鴉，甚至數學方程式與科學記號。採用 tldraw 框架，並提供無限畫布。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Hand write or draw directly between paragraphs in your notes using a digital pen, stylus, or Apple pencil. Useful for handwriting, sketches, scribbles, or even math equations and scientific notation. Runs on the tldraw framework and drawing provides an infinite canvas.\"",
+                    "target": "\"description\": \"直接在筆記段落之間使用數位筆、觸控筆或 Apple Pencil 手寫或繪圖。適合手寫、素描、塗鴉，甚至數學方程式與科學記號。採用 tldraw 框架，並提供無限畫布。\""
                 }
             ]
         }
