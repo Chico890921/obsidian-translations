@@ -4,10 +4,11 @@
         "plugin": "auto-bullet",
         "version": "1.1.0",
         "title": "[zh-tw] Auto Bullet",
-        "description": "Auto Bullet Localization & Tweaks",
+        "description": "Auto Bullet 繁體中文化與微調",
         "language": "zh-tw",
         "supportedVersions": "1.1.0",
-        "author": "Chico"
+        "author": "Chico",
+        "updatedAt": 1784798473429
     },
     "dict": {
         "main.js": {
@@ -47,12 +48,6 @@
                     "name": "setName",
                     "source": "Full-width space",
                     "target": "全形空格"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Tab",
-                    "target": "Tab"
                 },
                 {
                     "type": "CallExpression",
@@ -107,6 +102,22 @@
                 {
                     "source": "name:\"Move cursor after bullet point\"",
                     "target": "name:\"將游標移到項目符號之後\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Automatically inserts bullet points when you type spaces or tabs at the beginning of a line.",
+                    "target": "在行首輸入空格或 Tab 時自動插入項目符號。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Automatically inserts bullet points when you type spaces or tabs at the beginning of a line.\"",
+                    "target": "\"description\": \"在行首輸入空格或 Tab 時自動插入項目符號。\""
                 }
             ]
         }
