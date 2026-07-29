@@ -8,17 +8,11 @@
         "language": "zh-tw",
         "supportedVersions": "0.5.7",
         "author": "Chico",
-        "updatedAt": 1784778643216
+        "updatedAt": 1784812048198
     },
     "dict": {
         "main.js": {
             "ast": [
-                {
-                    "type": "AssignmentExpression",
-                    "name": "textContent",
-                    "source": "Commander",
-                    "target": "Commander"
-                },
                 {
                     "type": "CallExpression",
                     "name": "error",
@@ -28,86 +22,14 @@
                 {
                     "type": "CallExpression",
                     "name": "setButtonText",
-                    "source": "No Icon",
+                    "source": "No icon",
                     "target": "無圖示"
                 },
                 {
                     "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Use a column based layout instead of the default row. This makes it easier to arrange the Commands.",
-                    "target": "使用欄式版面取代預設的列式版面，讓命令更容易排列。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Change the Height of each Button inside the Mobile Toolbar (in px).",
-                    "target": "變更行動工具列中每個按鈕的高度（單位為 px）。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Change the Width of each Button inside the Mobile Toolbar (in px).",
-                    "target": "變更行動工具列中每個按鈕的寬度（單位為 px）。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Toolbar Row Count",
-                    "target": "工具列列數"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Column Layout",
-                    "target": "欄式版面"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Bottom Offset",
-                    "target": "底部偏移"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Button Height",
-                    "target": "按鈕高度"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Button Width",
-                    "target": "按鈕寬度"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Toolbar Extra Spacing",
-                    "target": "工具列額外間距"
-                },
-                {
-                    "type": "CallExpression",
                     "name": "setText",
-                    "source": "Macro Builder",
+                    "source": "Macro builder",
                     "target": "巨集建構器"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTooltip",
-                    "source": "Reset to default - Requires a restart",
-                    "target": "重設為預設值 - 需要重新啟動"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "🎊 Could not load worker",
-                    "target": "🎊 無法載入 worker"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "If the default Icon doesn't appear, you might have to restart Obsidian.",
-                    "target": "如果預設圖示沒有出現，你可能需要重新啟動 Obsidian。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -120,12 +42,6 @@
                     "name": "aria-label",
                     "source": "Delete",
                     "target": "刪除"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "cmdr clickable-icon",
-                    "target": "cmdr clickable-icon"
                 },
                 {
                     "type": "ObjectProperty",
@@ -162,89 +78,9 @@
                     "name": "placeholder",
                     "source": "Macro Name",
                     "target": "巨集名稱"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Custom Icons",
-                    "target": "自訂圖示"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Advanced Settings",
-                    "target": "進階設定"
                 }
             ],
             "regex": [
-                {
-                    "source": "error(\"Error: dictionary locale not found\",Ct.moment.locale()),bt&&bt[t]||gt[t]}var ne=class extends Ve.FuzzySuggestModal{constructor(e){super(e.app);this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"Choose a Command to add\")",
-                    "target": "error(\"錯誤：找不到字典語系\",Ct.moment.locale()),bt&&bt[t]||gt[t]}var ne=class extends Ve.FuzzySuggestModal{constructor(e){super(e.app);this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"選擇要新增的命令\")"
-                },
-                {
-                    "source": "setName(\"Toolbar Row Count\")",
-                    "target": "setName(\"工具列列數\")"
-                },
-                {
-                    "source": "setName(\"Column Layout\")",
-                    "target": "setName(\"欄式版面\")"
-                },
-                {
-                    "source": "setDesc(\"Use a column based layout instead of the default row. This makes it easier to arrange the Commands.\")",
-                    "target": "setDesc(\"使用欄式版面取代預設的列式版面，讓命令更容易排列。\")"
-                },
-                {
-                    "source": "setName(\"Bottom Offset\")",
-                    "target": "setName(\"底部偏移\")"
-                },
-                {
-                    "source": "setDesc(`ID: ${a.id}`)",
-                    "target": "setDesc(`ID: ${a.id}`)"
-                },
-                {
-                    "source": "setButtonText(\"No Icon\")",
-                    "target": "setButtonText(\"無圖示\")"
-                },
-                {
-                    "source": "setTooltip(\"Reset to default - Requires a restart\")",
-                    "target": "setTooltip(\"重設為預設值 - 需要重新啟動\")"
-                },
-                {
-                    "source": "Notice(\"If the default Icon doesn't appear, you might have to restart Obsidian.\")",
-                    "target": "Notice(\"如果預設圖示沒有出現，你可能需要重新啟動 Obsidian。\")"
-                },
-                {
-                    "source": "setName(\"Button Height\")",
-                    "target": "setName(\"按鈕高度\")"
-                },
-                {
-                    "source": "setDesc(\"Change the Height of each Button inside the Mobile Toolbar (in px).\")",
-                    "target": "setDesc(\"變更行動工具列中每個按鈕的高度（單位為 px）。\")"
-                },
-                {
-                    "source": "setName(\"Button Width\")",
-                    "target": "setName(\"按鈕寬度\")"
-                },
-                {
-                    "source": "setDesc(\"Change the Width of each Button inside the Mobile Toolbar (in px).\")",
-                    "target": "setDesc(\"變更行動工具列中每個按鈕的寬度（單位為 px）。\")"
-                },
-                {
-                    "source": "setName(\"Toolbar Extra Spacing\")",
-                    "target": "setName(\"工具列額外間距\")"
-                },
-                {
-                    "source": "setText(\"Macro Builder\")",
-                    "target": "setText(\"巨集建構器\")"
-                },
-                {
-                    "source": "text:\"Custom Icons\"",
-                    "target": "text:\"自訂圖示\""
-                },
-                {
-                    "source": "text:\"Advanced Settings\"",
-                    "target": "text:\"進階設定\""
-                },
                 {
                     "source": "description:\"Core Plugin\"",
                     "target": "description:\"核心插件\""
@@ -382,14 +218,6 @@
                     "target": "\"Always show a Popup to confirm deletion of a Command.\":\"一律顯示彈出視窗以確認刪除命令。\""
                 },
                 {
-                    "source": "\"Show \\\"Add Command\\\" Button\":\"Show \\\"Add Command\\\" Button\"",
-                    "target": "\"Show \\\"Add Command\\\" Button\":\"顯示「新增命令」按鈕\""
-                },
-                {
-                    "source": "\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\":\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\"",
-                    "target": "\"Show the \\\"Add Command\\\" Button in every Menu. Requires restart.\":\"在每個選單中顯示「新增命令」按鈕。需要重新啟動。\""
-                },
-                {
                     "source": "\"Please restart Obsidian for these changes to take effect.\":\"Please restart Obsidian for these changes to take effect.\"",
                     "target": "\"Please restart Obsidian for these changes to take effect.\":\"請重新啟動 Obsidian 以套用這些變更。\""
                 },
@@ -490,10 +318,6 @@
                     "target": "Done:\"完成\""
                 },
                 {
-                    "source": "\"By Johnny✨ and phibr0\":\"By Johnny✨ and phibr0\"",
-                    "target": "\"By Johnny✨ and phibr0\":\"Johnny✨ 與 phibr0 製作\""
-                },
-                {
                     "source": "\"Leave feedback\":\"Leave feedback\"",
                     "target": "\"Leave feedback\":\"留下回饋\""
                 },
@@ -558,10 +382,6 @@
                     "target": "Explorer:\"檔案總管\""
                 },
                 {
-                    "source": "name:J.Platform.isMobile?\"Mobile Toolbar\":\"Toolbar\"",
-                    "target": "name:J.Platform.isMobile?\"行動工具列\":\"工具列\""
-                },
-                {
                     "source": "name:\"Macros\"",
                     "target": "name:\"巨集\""
                 },
@@ -578,10 +398,6 @@
                     "target": "\"啟動時自動執行\""
                 },
                 {
-                    "source": "\"Add Command\"),i(\"button\",{onClick:x},\"Add Delay\"",
-                    "target": "\"新增命令\"),i(\"button\",{onClick:x},\"新增延遲\""
-                },
-                {
                     "source": ".name||\"Macro Name\"",
                     "target": ".name||\"巨集名稱\""
                 },
@@ -590,24 +406,8 @@
                     "target": "\"找不到命令\""
                 },
                 {
-                    "source": "r(k,{icon:\"alert-circle\"}),\" \",\"Info\"",
-                    "target": "r(k,{icon:\"alert-circle\"}),\" \",\"資訊\""
-                },
-                {
                     "source": "The Toolbar is only available in Obsidian Mobile.",
                     "target": "工具列僅可在 Obsidian 行動版使用。"
-                },
-                {
-                    "source": "Set how many Rows the Mobile Toolbar should have. Set this to 0 to remove the Toolbar.",
-                    "target": "設定行動工具列的列數。設為 0 可移除工具列。"
-                },
-                {
-                    "source": "Offset the Toolbar from the Bottom of the Screen. This is useful if the toolbar is partially obscured by other UI Elements.",
-                    "target": "設定工具列與畫面底部的偏移距離。當工具列部分被其他介面元素遮住時，此設定很有用。"
-                },
-                {
-                    "source": "Some Themes need extra spacing in the toolbar. If your Toolbar doesn't wrap properly, try increasing this value.",
-                    "target": "某些佈景主題需要增加工具列間距。若工具列無法正確換行，請嘗試提高此數值。"
                 },
                 {
                     "source": "Reordering and Sorting",
@@ -626,36 +426,192 @@
                     "target": "若要設定工具列中顯示哪些命令，請開啟行動版設定。"
                 },
                 {
-                    "source": "\"Open Mobile Settings\"",
+                    "source": "\"Macro not found\"",
+                    "target": "\"找不到巨集\""
+                },
+                {
+                    "source": "\"Restore default\":\"Restore default\"",
+                    "target": "\"Restore default\":\"還原預設值\""
+                },
+                {
+                    "source": "name:\"Toolbar row count\"",
+                    "target": "name:\"工具列列數\""
+                },
+                {
+                    "source": "desc:\"Set how many rows the mobile toolbar should have. Set this to 0 to remove the toolbar.\"",
+                    "target": "desc:\"設定行動工具列的列數。設為 0 可移除工具列。\""
+                },
+                {
+                    "source": "\"Column layout\"",
+                    "target": "\"欄式版面\""
+                },
+                {
+                    "source": "\"Use a column based layout instead of the default row. This makes it easier to arrange the commands.\"",
+                    "target": "\"使用欄式版面取代預設的列式版面，讓命令更容易排列。\""
+                },
+                {
+                    "source": "name:\"Bottom offset\"",
+                    "target": "name:\"底部偏移\""
+                },
+                {
+                    "source": "desc:\"Offset the toolbar from the bottom of the screen. This is useful if the toolbar is partially obscured by other UI elements.\"",
+                    "target": "desc:\"設定工具列與畫面底部的偏移距離。當工具列部分被其他介面元素遮住時，此設定很有用。\""
+                },
+                {
+                    "source": "text:\"Custom icons\"",
+                    "target": "text:\"自訂圖示\""
+                },
+                {
+                    "source": "\"No icon\"",
+                    "target": "\"無圖示\""
+                },
+                {
+                    "source": "\"Reset to default - requires a restart\"",
+                    "target": "\"還原預設值 - 需要重新啟動\""
+                },
+                {
+                    "source": "\"If the default icon doesn't appear, you might have to restart Obsidian.\"",
+                    "target": "\"如果預設圖示沒有出現，你可能需要重新啟動 Obsidian。\""
+                },
+                {
+                    "source": "text:\"Advanced settings\"",
+                    "target": "text:\"進階設定\""
+                },
+                {
+                    "source": "\"Button height\"",
+                    "target": "\"按鈕高度\""
+                },
+                {
+                    "source": "\"Change the height of each button inside the mobile toolbar (in px).\"",
+                    "target": "\"變更行動工具列中每個按鈕的高度（單位為 px）。\""
+                },
+                {
+                    "source": "\"Button width\"",
+                    "target": "\"按鈕寬度\""
+                },
+                {
+                    "source": "\"Change the width of each button inside the mobile toolbar (in px).\"",
+                    "target": "\"變更行動工具列中每個按鈕的寬度（單位為 px）。\""
+                },
+                {
+                    "source": "name:\"Toolbar extra spacing\"",
+                    "target": "name:\"工具列額外間距\""
+                },
+                {
+                    "source": "desc:\"Some themes need extra spacing in the toolbar. If your toolbar doesn't wrap properly, try increasing this value.\"",
+                    "target": "desc:\"某些佈景主題需要增加工具列間距。若工具列無法正確換行，請嘗試提高此數值。\""
+                },
+                {
+                    "source": ",\" \",\"Info\")",
+                    "target": ",\" \",\"資訊\")"
+                },
+                {
+                    "source": "\"The Toolbar is only available in Obsidian Mobile. \"",
+                    "target": "\"工具列僅可在 Obsidian 行動版使用。\""
+                },
+                {
+                    "source": "\"To configure which Commands show up in the Toolbar, open the Mobile Settings.\"",
+                    "target": "\"若要設定工具列中顯示哪些命令，請開啟行動版設定。\""
+                },
+                {
+                    "source": "\"Open mobile settings\"",
                     "target": "\"開啟行動版設定\""
                 },
                 {
-                    "source": "r(\"span\",null,\"Name\")",
-                    "target": "r(\"span\",null,\"名稱\")"
+                    "source": "?\"Mobile Toolbar\":\"Toolbar\"",
+                    "target": "?\"行動工具列\":\"工具列\""
                 },
                 {
-                    "source": "r(\"span\",null,\"Icon\")",
-                    "target": "r(\"span\",null,\"圖示\")"
+                    "source": "i(\"span\",null,\"Name\")",
+                    "target": "i(\"span\",null,\"名稱\")"
                 },
                 {
-                    "source": "case 2:return r(\"div\",null,\"Editor: \",w.action);case 3:return r(\"div\",null,\"Loop: \",w.times)",
-                    "target": "case 2:return r(\"div\",null,\"編輯器：\",w.action);case 3:return r(\"div\",null,\"迴圈：\",w.times)"
+                    "source": "i(\"span\",null,\"Icon\")",
+                    "target": "i(\"span\",null,\"圖示\")"
                 },
                 {
-                    "source": "r(\"button\",{onClick:f},\"Add Command\"),r(\"button\",{onClick:C},\"Add Delay\")",
-                    "target": "r(\"button\",{onClick:f},\"新增命令\"),r(\"button\",{onClick:C},\"新增延遲\")"
+                    "source": "placeholder:\"Macro Name\"",
+                    "target": "placeholder:\"巨集名稱\""
                 },
                 {
-                    "source": "},\"Save\"),r(\"button\",{onClick:n},\"Cancel\")",
-                    "target": "},\"儲存\"),r(\"button\",{onClick:n},\"取消\")"
+                    "source": "name:\"Delay\"",
+                    "target": "name:\"延遲\""
                 },
                 {
-                    "source": "a.macro.length,\" Actions\"",
-                    "target": "a.macro.length,\" 個動作\""
+                    "source": "\"Editor: \"",
+                    "target": "\"編輯器：\""
                 },
                 {
-                    "source": "\"Macro not found\"",
-                    "target": "\"找不到巨集\""
+                    "source": "\"Loop: \"",
+                    "target": "\"迴圈：\""
+                },
+                {
+                    "source": "\"Add Command\"",
+                    "target": "\"新增命令\""
+                },
+                {
+                    "source": "\"Add Delay\"",
+                    "target": "\"新增延遲\""
+                },
+                {
+                    "source": "this.titleEl.setText(\"Macro builder\")",
+                    "target": "this.titleEl.setText(\"巨集建構器\")"
+                },
+                {
+                    "source": ",\" Actions\"",
+                    "target": ",\" 個動作\""
+                },
+                {
+                    "source": "{\"aria-label\":\"Edit Macro\"",
+                    "target": "{\"aria-label\":\"編輯巨集\""
+                },
+                {
+                    "source": "{\"aria-label\":\"Delete\"",
+                    "target": "{\"aria-label\":\"刪除\""
+                },
+                {
+                    "source": "\"No Command selected\"",
+                    "target": "\"未選擇命令\""
+                },
+                {
+                    "source": "\"No Icon selected\"",
+                    "target": "\"未選擇圖示\""
+                },
+                {
+                    "source": "\"No Name selected\"",
+                    "target": "\"未輸入名稱\""
+                },
+                {
+                    "source": "\"Text Toolbar\"",
+                    "target": "\"文字工具列\""
+                },
+                {
+                    "source": "\"Reordering and Sorting\"",
+                    "target": "\"重新排列與排序\""
+                },
+                {
+                    "source": "\"As of Obsidian 1.1.0 you can reorder the Buttons in the left ribbon by dragging. This will replace the old sorting feature.\"",
+                    "target": "\"從 Obsidian 1.1.0 起，你可以拖曳左側功能區中的按鈕來重新排列。此功能將取代舊有的排序功能。\""
+                },
+                {
+                    "source": "\"When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.\"",
+                    "target": "\"在檔案總管中點選命令時，焦點會移至檔案總管檢視。這可能會干擾原本應在作用中檔案或檔案總管執行的命令。\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Customize your workspace by adding commands everywhere, create Macros and supercharge your mobile toolbar.",
+                    "target": "在工作區各處加入命令、建立巨集，並強化行動版工具列的操作能力。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Customize your workspace by adding commands everywhere, create Macros and supercharge your mobile toolbar.\"",
+                    "target": "\"description\": \"在工作區各處加入命令、建立巨集，並強化行動版工具列的操作能力。\""
                 }
             ]
         }
