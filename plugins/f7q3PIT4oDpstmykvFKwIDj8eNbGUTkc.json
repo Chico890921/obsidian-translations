@@ -1568,10 +1568,6 @@
                     "target": "log(\"No tracking branch found. Ignoring push of main repo and updating submodules only.\")"
                 },
                 {
-                    "source": "log(`Git not found in PATH. Checking standard installation path(${bd}) of Git for Windows.`)",
-                    "target": "log(`Git not found in PATH. Checking standard installation path(${bd}) of Git for Windows.`)"
-                },
-                {
                     "source": "setTitle(\"Copy commit hash\")",
                     "target": "setTitle(\"複製提交雜湊\")"
                 },
@@ -1650,10 +1646,6 @@
                 {
                     "source": "setName(\"Commit message on manual commit\")",
                     "target": "setName(\"手動提交時的提交訊息\")"
-                },
-                {
-                    "source": "setTooltip(`Set to default: \"${ht.commitMessage}\"`)",
-                    "target": "setTooltip(`設為預設值：「${ht.commitMessage}」`)"
                 },
                 {
                     "source": "setName(\"Commit message script\")",
@@ -2052,12 +2044,12 @@
                     "target": "setText(`${this.discardCount==0?\"刪除\":\"捨棄\"} ${s}`)"
                 },
                 {
-                    "source": "setText(`Are you sure you want to DELETE the ${cu(this.deleteCount,\"untracked file\")}? They are deleted according to your Obsidian trash settting.`)",
-                    "target": "setText(`你確定要刪除 ${cu(this.deleteCount,\"未追蹤檔案\")} 嗎？它們會依照你的 Obsidian 垃圾桶設定刪除。`)"
+                    "source": "setText(`Are you sure you want to DELETE the ${gu(this.deleteCount,\"untracked file\")}? They are deleted according to your Obsidian trash settting.`)",
+                    "target": "setText(`你確定要刪除 ${gu(this.deleteCount,\"未追蹤檔案\")} 嗎？它們會依照你的 Obsidian 垃圾桶設定刪除。`)"
                 },
                 {
-                    "source": "setText(`Are you sure you want to discard ALL changes in ${cu(this.discardCount,\"tracked file\")}?`)",
-                    "target": "setText(`你確定要捨棄 ${cu(this.discardCount,\"已追蹤檔案\")} 中的所有變更嗎？`)"
+                    "source": "setText(`Are you sure you want to discard ALL changes in ${gu(this.discardCount,\"tracked file\")}?`)",
+                    "target": "setText(`你確定要捨棄 ${gu(this.discardCount,\"已追蹤檔案\")} 中的所有變更嗎？`)"
                 },
                 {
                     "source": "setTitle(\"Git: Stage\")",
@@ -2120,10 +2112,6 @@
                     "target": "name=`${this.name} [${t}]`"
                 },
                 {
-                    "source": "description:`${Pt} '${da(ke)}' of ${C}`",
-                    "target": "description:`${C} 的 ${Pt}「${da(ke)}」`"
-                },
-                {
                     "source": "name:\"Source Control\"",
                     "target": "name:\"原始碼控制\""
                 },
@@ -2140,8 +2128,8 @@
                     "target": "text:\"Git 尚未就緒。所有設定正確後，你可以設定提交同步等功能。\""
                 },
                 {
-                    "source": "text:` Specify custom date format. E.g. \"${Ug}. See `",
-                    "target": "text:` 指定自訂日期格式。例如「${Ug}」。請參閱 `"
+                    "source": "text:` Specify custom date format. E.g. \"${Kg}. See `",
+                    "target": "text:` 指定自訂日期格式。例如「${Kg}」。請參閱 `"
                 },
                 {
                     "source": "text:\"Moment.js documentation\"",
@@ -2200,8 +2188,8 @@
                     "target": "text:\"它使用 \""
                 },
                 {
-                    "source": "text:` and for matches (at least ${_d} characters) within the same (or all) commit(s), `",
-                    "target": "text:`，並針對同一個（或所有）提交中符合條件（至少 ${_d} 個字元）的內容，`"
+                    "source": "text:` and for matches (at least ${Pd} characters) within the same (or all) commit(s), `",
+                    "target": "text:`，並針對同一個（或所有）提交中符合條件（至少 ${Pd} 個字元）的內容，`"
                 },
                 {
                     "source": "text:\"the originating\"",
@@ -2408,12 +2396,12 @@
                     "target": "name=\"Svelte 錯誤\""
                 },
                 {
-                    "source": "text:`${this.discardCount>0?\"Discard\":\"Delete\"} all ${cu(r,\"file\")}`",
-                    "target": "text:`${this.discardCount>0?\"捨棄\":\"刪除\"}所有 ${cu(r,\"檔案\")}`"
+                    "source": "text:`${this.discardCount>0?\"Discard\":\"Delete\"} all ${gu(r,\"file\")}`",
+                    "target": "text:`${this.discardCount>0?\"捨棄\":\"刪除\"}所有 ${gu(r,\"檔案\")}`"
                 },
                 {
-                    "source": "text:`Discard all ${cu(this.discardCount,\"tracked file\")}`",
-                    "target": "text:`捨棄所有 ${cu(this.discardCount,\"已追蹤檔案\")}`"
+                    "source": "text:`Discard all ${gu(this.discardCount,\"tracked file\")}`",
+                    "target": "text:`捨棄所有 ${gu(this.discardCount,\"已追蹤檔案\")}`"
                 },
                 {
                     "source": "text:`+${n} `",
@@ -2428,20 +2416,12 @@
                     "target": "i.settings.differentIntervalCommitAndPush?n=\"提交\":n=\"commit-and-sync\";"
                 },
                 {
-                    "source": "setDesc(`Requires the ${n} interval not to be 0.\n                        If turned on, do auto ${n} every ${qP(i.settings.autoSaveInterval)} after stopping file edits.\n                        This also prevents auto ${n} while editing a file. If turned off, it's independent from the last file edit.`)",
-                    "target": "setDesc(`需要將 ${n} 間隔設為非 0。\n                        啟用後，停止編輯檔案後每 ${qP(i.settings.autoSaveInterval)} 自動 ${n}。\n                        這也會避免在編輯檔案時自動 ${n}。停用後，將不受最後一次檔案編輯時間影響。`)"
+                    "source": "setDesc(`Requires the ${n} interval not to be 0.\n                        If turned on, do auto ${n} every ${pA(i.settings.autoSaveInterval)} after stopping file edits.\n                        This also prevents auto ${n} while editing a file. If turned off, it's independent from the last file edit.`)",
+                    "target": "setDesc(`需要將 ${n} 間隔設為非 0。\n                        啟用後，停止編輯檔案後每 ${pA(i.settings.autoSaveInterval)} 自動 ${n}。\n                        這也會避免在編輯檔案時自動 ${n}。停用後，將不受最後一次檔案編輯時間影響。`)"
                 },
                 {
                     "source": "setDesc(\"Available placeholders: {{date}} (see below), {{hostname}} (see below), {{numFiles}} (number of changed files in the commit) and {{files}} (changed files in commit message). Leave empty to require manual input on each commit.\")",
                     "target": "setDesc(\"可用佔位符：{{date}}（見下方）、{{hostname}}（見下方）、{{numFiles}}（此次提交中變更的檔案數量）以及 {{files}}（提交訊息中的變更檔案）。留空則每次提交都需要手動輸入。\")"
-                },
-                {
-                    "source": "d.setIcon(\"reset\").setTooltip(`Set to default: \"${rt.commitMessage}\"`)",
-                    "target": "d.setIcon(\"reset\").setTooltip(`設為預設值：「${rt.commitMessage}」`)"
-                },
-                {
-                    "source": "u.descEl.innerHTML=`\n            Specify custom date format. E.g. \"${kv}. See <a href=\"https://momentjs.com\">Moment.js</a> for more formats.`",
-                    "target": "u.descEl.innerHTML=`\n            指定自訂日期格式。例如「${kv}」。請參閱 <a href=\"https://momentjs.com\">Moment.js</a> 以查看更多格式。`"
                 },
                 {
                     "source": "setName(\"{{hostname}} placeholder replacement\")",
@@ -2496,10 +2476,6 @@
                     "target": "{disabled:\"停用\",colored:\"彩色\",monochrome:\"單色\"}"
                 },
                 {
-                    "source": "r.descEl.innerHTML=`\n            <a href=\"${rV}\">Feature guide and quick examples</a></br>\n            The commit hash, author name and authoring date can all be individually toggled.</br>Hide everything, to only show the age-colored sidebar.`",
-                    "target": "r.descEl.innerHTML=`\n            <a href=\"${rV}\">功能指南與快速範例</a></br>\n            提交雜湊、作者名稱與作者日期都可以個別切換。</br>也可以隱藏所有內容，只顯示依時間著色的側邊欄。`"
-                },
-                {
                     "source": "setDesc(\"Removing previously added environment variables will not take effect until Obsidian is restarted.\")",
                     "target": "setDesc(\"移除先前新增的環境變數後，要重新啟動 Obsidian 才會生效。\")"
                 },
@@ -2546,6 +2522,10 @@
                 {
                     "source": "text:` Specify custom date format. E.g. \"${Kg}. See `",
                     "target": "text:` 指定自訂日期格式。例如「${Kg}」。請參閱 `"
+                },
+                {
+                    "source": "d.setIcon(\"reset\").setTooltip(`Set to default: \"${pt.commitMessage}\"`)",
+                    "target": "d.setIcon(\"reset\").setTooltip(`設為預設值：「${pt.commitMessage}」`)"
                 }
             ]
         },
