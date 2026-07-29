@@ -4,10 +4,11 @@
         "plugin": "table-editor-obsidian",
         "version": "0.23.2",
         "title": "[zh-tw] Advanced Tables",
-        "description": "Advanced Tables Localization & Tweaks",
+        "description": "Advanced Tables 繁體中文化與微調",
         "language": "zh-tw",
         "supportedVersions": "0.23.2",
-        "author": ""
+        "author": "Chico",
+        "updatedAt": 1784798218039
     },
     "dict": {
         "main.js": {
@@ -17,12 +18,6 @@
                     "name": "appendText",
                     "source": "If this plugin adds value for you and you would like to help support continued development, please use the buttons below:",
                     "target": "如果這個插件對你有幫助，且你想支持持續開發，請使用下方按鈕："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "loading markdown-table-editor plugin",
-                    "target": "loading markdown-table-editor plugin"
                 },
                 {
                     "type": "CallExpression",
@@ -143,132 +138,6 @@
                     "name": "Notice",
                     "source": "Advanced Tables: Previous cell also bound to shift+tab. Possibly producing double actions. See Advanced Tables settings.",
                     "target": "進階表格：上一個儲存格也綁定到 Shift+Tab，可能會產生重複動作。請查看進階表格設定。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "advanced-tables-button nav-action-button",
-                    "target": "advanced-tables-button nav-action-button"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Grammar",
-                    "target": "Grammar"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Production",
-                    "target": "Production"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "NCName",
-                    "target": "NCName"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Choice",
-                    "target": "Choice"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "SequenceOrDifference",
-                    "target": "SequenceOrDifference"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Minus",
-                    "target": "Minus"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "PrimaryDecoration",
-                    "target": "PrimaryDecoration"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "DecorationName",
-                    "target": "DecorationName"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "StringLiteral",
-                    "target": "StringLiteral"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "CharCode",
-                    "target": "CharCode"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "CharClass",
-                    "target": "CharClass"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "CharRange",
-                    "target": "CharRange"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "CharCodeRange",
-                    "target": "CharCodeRange"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Comment",
-                    "target": "Comment"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Link",
-                    "target": "Link"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Url",
-                    "target": "Url"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Attributes",
-                    "target": "Attributes"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Attribute",
-                    "target": "Attribute"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "AttributeValue",
-                    "target": "AttributeValue"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "PrimaryPreDecoration",
-                    "target": "PrimaryPreDecoration"
                 },
                 {
                     "type": "ObjectProperty",
@@ -405,14 +274,6 @@
             ],
             "regex": [
                 {
-                    "source": "log(\"0.\"+Oe(T.d))/Math.LN10+T.e+1)):new L(a+\"\")",
-                    "target": "log(\"0.\"+Oe(T.d))/Math.LN10+T.e+1)):new L(a+\"\")"
-                },
-                {
-                    "source": "log(\"reberia restar \"+$+\" a \"+D),new Error(\"Difference not supported yet\")",
-                    "target": "log(\"reberia restar \"+$+\" a \"+D),new Error(\"Difference not supported yet\")"
-                },
-                {
                     "source": "setText(\"Include table headers\")",
                     "target": "setText(\"包含表格標題列\")"
                 },
@@ -423,10 +284,6 @@
                 {
                     "source": "Notice(\"Advanced Tables: Cursor must be in a table.\")",
                     "target": "Notice(\"進階表格：游標必須位於表格中。\")"
-                },
-                {
-                    "source": "log(\"loading markdown-table-editor plugin\")",
-                    "target": "log(\"loading markdown-table-editor plugin\")"
                 },
                 {
                     "source": "Notice(\"Advanced Tables: Next row also bound to enter. Possibly producing double actions. See Advanced Tables settings.\")",
@@ -475,10 +332,6 @@
                 {
                     "source": "appendText(\"If this plugin adds value for you and you would like to help support continued development, please use the buttons below:\")",
                     "target": "appendText(\"如果這個插件對你有幫助，且你想支持持續開發，請使用下方按鈕：\")"
-                },
-                {
-                    "source": "text: \"+JSON.stringify(C.text)),C}return null}};It.Parser=uo;It.default=uo});var zl=we(ao=>{\"",
-                    "target": "text: \"+JSON.stringify(C.text)),C}return null}};It.Parser=uo;It.default=uo});var zl=we(ao=>{\""
                 },
                 {
                     "source": "name:\"Go to next row\"",
@@ -563,6 +416,22 @@
                 {
                     "source": "name:\"Open table controls toolbar\"",
                     "target": "name:\"開啟表格控制工具列\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Improved table navigation, formatting, manipulation, and formulas.",
+                    "target": "改進表格導覽、格式化、操作與公式功能。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Improved table navigation, formatting, manipulation, and formulas.\"",
+                    "target": "\"description\": \"改進表格導覽、格式化、操作與公式功能。\""
                 }
             ]
         }
