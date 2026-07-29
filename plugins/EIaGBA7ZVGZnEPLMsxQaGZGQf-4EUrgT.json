@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "2.2.0",
         "author": "Chico",
-        "updatedAt": 1782930742868
+        "updatedAt": 1784808782060
     },
     "dict": {
         "main.js": {
@@ -135,36 +135,6 @@
                 },
                 {
                     "type": "CallExpression",
-                    "name": "info",
-                    "source": "No custom daily note settings found!",
-                    "target": "找不到自訂每日筆記設定！"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "No custom weekly note settings found!",
-                    "target": "找不到自訂每週筆記設定！"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "No custom monthly note settings found!",
-                    "target": "找不到自訂每月筆記設定！"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "No custom quarterly note settings found!",
-                    "target": "找不到自訂每季筆記設定！"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "No custom yearly note settings found!",
-                    "target": "找不到自訂每年筆記設定！"
-                },
-                {
-                    "type": "CallExpression",
                     "name": "log",
                     "source": "error in isPrivateRepo",
                     "target": "isPrivateRepo 發生錯誤"
@@ -238,12 +208,6 @@
                 {
                     "type": "CallExpression",
                     "name": "setButtonText",
-                    "source": "Add Plugin",
-                    "target": "新增插件"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
                     "source": "Valid",
                     "target": "有效"
                 },
@@ -258,12 +222,6 @@
                     "name": "setButtonText",
                     "source": "Never mind",
                     "target": "取消"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "Installing …",
-                    "target": "正在安裝…"
                 },
                 {
                     "type": "CallExpression",
@@ -310,12 +268,6 @@
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
-                    "source": "If enabled beta plugins will be automatically enabled after installtion by default. Note: you can toggle this on and off for each plugin in the \"Add Plugin\" form.",
-                    "target": "啟用後，測試版插件安裝完成會預設自動啟用。注意：你可以在「新增插件」表單中為每個插件切換此選項。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
                     "source": "If enabled all beta plugins will be checked for updates each time Obsidian starts. Note: this does not update frozen version plugins.",
                     "target": "啟用後，每次 Obsidian 啟動時都會檢查所有測試版插件更新。注意：這不會更新固定版本的插件。"
                 },
@@ -340,12 +292,6 @@
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
-                    "source": "BRAT will provide popup notifications for its various activities. Turn this off means  no notifications from BRAT.",
-                    "target": "BRAT 會針對各種活動顯示彈出通知。關閉此選項代表不顯示 BRAT 通知。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
                     "source": "Plugin updates will be logged to a file in the log file.",
                     "target": "插件更新會記錄到記錄檔中。"
                 },
@@ -360,18 +306,6 @@
                     "name": "setDesc",
                     "source": "Get a lot  more information in  the log.",
                     "target": "在記錄中取得更多資訊。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Atomic Bomb level console logging. Can be used for troubleshooting and development.",
-                    "target": "原子彈等級的主控台記錄，可用於疑難排解與開發。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "GitHub Token",
-                    "target": "GitHub 權杖"
                 },
                 {
                     "type": "CallExpression",
@@ -442,18 +376,6 @@
                 {
                     "type": "CallExpression",
                     "name": "setPlaceholder",
-                    "source": "Repository (example: https://github.com/GitHubUserName/repository-name)",
-                    "target": "儲存庫（範例：https://github.com/GitHubUserName/repository-name）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setPlaceholder",
-                    "source": "Repository (example: https://github.com/GitHubUserName/repository-name",
-                    "target": "儲存庫（範例：https://github.com/GitHubUserName/repository-name"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setPlaceholder",
                     "source": "Filter plugins",
                     "target": "篩選插件"
                 },
@@ -462,12 +384,6 @@
                     "name": "setPlaceholder",
                     "source": "Filter themes",
                     "target": "篩選主題"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setPlaceholder",
-                    "source": "Type to search for a version for ${t}",
-                    "target": "輸入以搜尋 ${t} 的版本"
                 },
                 {
                     "type": "CallExpression",
@@ -486,18 +402,6 @@
                     "name": "setText",
                     "source": "Failed to validate token",
                     "target": "權杖驗證失敗"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "Github repository for beta plugin:",
-                    "target": "測試版插件的 GitHub 儲存庫："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "Github repository for beta theme:",
-                    "target": "測試版主題的 GitHub 儲存庫："
                 },
                 {
                     "type": "CallExpression",
@@ -570,12 +474,6 @@
                     "name": "setTooltip",
                     "source": "Clear personal access token",
                     "target": "清除個人存取權杖"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Unable to create new file.",
-                    "target": "無法建立新檔案。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -688,12 +586,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "text",
-                    "source": "✓ Valid token",
-                    "target": "✓ 權杖有效"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
                     "source": "TFTHacker",
                     "target": "TFTHacker"
                 },
@@ -702,24 +594,6 @@
                     "name": "text",
                     "source": "isDesktopOnly: true",
                     "target": "isDesktopOnly: true"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Github repository for beta theme:",
-                    "target": "測試版主題的 GitHub 儲存庫："
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "The following is a list of beta plugins added via the command \"Add a beta plugin for testing\". You can chose to add the latest version or a frozen version. A frozen version is a specific release of a plugin based on its release tag.",
-                    "target": "以下是透過「新增測試版插件」命令加入的測試版插件清單。你可以選擇加入最新版本，或指定固定版本。固定版本是依據發行標籤指定的插件版本。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Click the 'Edit' button next to a plugin to change the installed version and the x button next to a plugin to remove it from the list.",
-                    "target": "點擊插件旁的「編輯」按鈕可變更已安裝版本，點擊 x 按鈕可將插件從清單移除。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -761,7 +635,7 @@
                     "type": "ObjectProperty",
                     "name": "prependText",
                     "source": "Set a personal access token to increase rate limits for public repositories on GitHub. You can create one in ",
-                    "target": "設定個人存取權杖可提高 GitHub 公開儲存庫的速率限制。你可以到 "
+                    "target": "設定個人存取權杖可以提高存取 GitHub 公開儲存庫時的請求額度。你可以在 "
                 },
                 {
                     "type": "ObjectProperty",
@@ -773,7 +647,7 @@
                     "type": "ObjectProperty",
                     "name": "appendText",
                     "source": " and then add it here. Please consult the documentation for more details.",
-                    "target": " 建立，然後加到這裡。更多細節請參閱文件。"
+                    "target": " 中建立權杖，然後在這裡選擇儲存該權杖的密鑰。詳細資訊請參閱說明文件。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -792,112 +666,996 @@
                     "name": "setHeading",
                     "source": "Beta themes list",
                     "target": "測試版主題清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "and",
+                    "source": " 和 ",
+                    "target": " 和 "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "learnMore",
+                    "source": "了解作者的更多作品：",
+                    "target": "了解作者的更多作品："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "安装后自动启用 Beta 插件",
+                    "target": "安裝後自動啟用測試版插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "开启后，新安装的 Beta 插件会默认自动启用。你仍然可以在“添加插件”表单中为单个插件单独调整。",
+                    "target": "啟用後，新安裝的測試版插件會預設自動啟用。你仍然可以在「新增插件」表單中為個別插件調整。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "启动时自动更新 Beta 插件",
+                    "target": "啟動時自動更新測試版插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "开启后，每次 Obsidian 启动时都会检查并安装 Beta 插件更新。固定版本不会自动更新。",
+                    "target": "啟用後，每次 Obsidian 啟動時都會檢查並安裝測試版插件更新。固定版本不會自動更新。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "启动时自动更新 Beta 主题",
+                    "target": "啟動時自動更新測試版主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "开启后，每次 Obsidian 启动时都会检查并安装 Beta 主题更新。",
+                    "target": "啟用後，每次 Obsidian 啟動時都會檢查並安裝測試版主題更新。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "默认选择插件最新版本",
+                    "target": "預設選擇插件最新版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "开启后，添加新插件时会默认选择最新版本。",
+                    "target": "啟用後，新增插件時會預設選擇最新版本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "允许安装不兼容插件",
+                    "target": "允許安裝不兼容插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "开启后，可以安装要求更高 Obsidian 版本的插件，也可以在移动端安装仅支持桌面端的插件。",
+                    "target": "啟用後，可以安裝要求更高 Obsidian 版本的插件，也可以在行動裝置安裝僅支援桌面版的插件。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "通知与日志",
+                    "target": "通知與記錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "启用通知",
+                    "target": "啟用通知"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "开启后，BRAT 会用弹窗提示安装、更新等操作状态。关闭后不再显示这些通知。",
+                    "target": "啟用後，BRAT 會用彈出通知顯示安裝、更新等操作狀態。關閉後不再顯示這些通知。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "启用日志",
+                    "target": "啟用記錄功能"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "开启后，插件更新记录会写入日志文件。",
+                    "target": "啟用後，插件更新記錄會寫入記錄檔。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "BRAT 日志文件",
+                    "target": "BRAT 記錄檔"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "日志会保存到这个文件。填写文件名或库内路径时不要加 .md。",
+                    "target": "記錄會儲存到這個檔案。填寫檔名或儲存庫內路徑時不要加 .md。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "示例：BRAT-log",
+                    "target": "範例：BRAT-log"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "启用详细日志",
+                    "target": "啟用詳細記錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "开启后，日志会记录更多排查信息。",
+                    "target": "啟用後，記錄檔會包含更多疑難排解資訊。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "调试模式",
+                    "target": "偵錯模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "开启后，控制台会输出大量调试信息，主要用于排查问题和开发。",
+                    "target": "啟用後，主控台會輸出大量偵錯資訊，主要用於疑難排解問題和開發。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "GitHub 个人访问令牌",
+                    "target": "GitHub 個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "个人访问令牌",
+                    "target": "個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prependText",
+                    "source": "设置个人访问令牌可以提高访问 GitHub 公共仓库时的请求额度。你可以在 ",
+                    "target": "設定個人存取權杖可以提高存取 GitHub 公開儲存庫時的請求額度。你可以在 "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "linkText",
+                    "source": "GitHub 令牌设置",
+                    "target": "GitHub 權杖設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "appendText",
+                    "source": " 中创建令牌，然后在这里选择保存该令牌的密钥。更多信息请参考文档。",
+                    "target": " 中建立權杖，然後在這裡選擇儲存該權杖的密鑰。詳細資訊請參閱說明文件。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "clearPersonalAccessToken",
+                    "source": "清除个人访问令牌设置",
+                    "target": "清除個人存取權杖設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validate",
+                    "source": "验证",
+                    "target": "驗證"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Beta 插件列表",
+                    "target": "測試版插件清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "filterPlaceholder",
+                    "source": "筛选插件",
+                    "target": "篩選插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "intro",
+                    "source": "下方列出已通过 BRAT 添加的 Beta 插件。你可以让插件跟随最新版本，也可以固定到某个发布版本。固定版本指基于 release 标签指定的某个插件版本。",
+                    "target": "下方列出已通過 BRAT 新增的測試版插件。你可以讓插件跟隨最新版本，也可以固定到某個發行版本。固定版本指基於 release 標籤指定的某個插件版本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editAndRemove",
+                    "source": "点击插件旁的编辑按钮可以更改安装版本；点击 X 按钮会将它从列表中移除。",
+                    "target": "點擊插件旁的編輯按鈕可以變更安裝版本；點擊 X 按鈕會將它從清單中移除。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noteLabel",
+                    "source": "注意：",
+                    "target": "注意："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noteText",
+                    "source": "从列表中移除不会删除插件本体。如需删除插件，请到设置中的“第三方插件”页面操作。",
+                    "target": "從清單中移除不會刪除插件本體。如需刪除插件，請到設定中的「第三方插件」頁面操作。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addBetaPlugin",
+                    "source": "添加 Beta 插件",
+                    "target": "新增測試版插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "incompatible",
+                    "source": "（不兼容）",
+                    "target": "（不兼容）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "secretMissingTitle",
+                    "source": "已配置密钥名称，但密钥不存在或为空。请添加密钥，或更新该插件配置。",
+                    "target": "已配置密鑰名稱，但密鑰不存在或為空。請新增密鑰，或更新該插件配置。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "checkAndUpdatePlugin",
+                    "source": "检查并更新插件",
+                    "target": "檢查並更新插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "changeVersionAndUpdateSettings",
+                    "source": "更改版本和设置",
+                    "target": "變更版本和設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "removeThisBetaPlugin",
+                    "source": "移除此 Beta 插件",
+                    "target": "移除此測試版插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmRemoval",
+                    "source": "再次点击确认移除",
+                    "target": "再次點擊確認移除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "copyPluginIdentifier",
+                    "source": "复制插件标识符",
+                    "target": "複製插件識別碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Beta 主题列表",
+                    "target": "測試版主題清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addBetaTheme",
+                    "source": "添加 Beta 主题",
+                    "target": "新增測試版主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "filterPlaceholder",
+                    "source": "筛选主题",
+                    "target": "篩選主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "deleteThisBetaTheme",
+                    "source": "删除此 Beta 主题",
+                    "target": "刪除此測試版主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "copyThemeIdentifier",
+                    "source": "复制主题标识符",
+                    "target": "複製主題識別碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "failed",
+                    "source": "复制标识符失败，请检查剪贴板权限。",
+                    "target": "複製識別碼失敗，請檢查剪貼簿權限。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addPlugin",
+                    "source": "添加插件",
+                    "target": "新增插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "changeVersion",
+                    "source": "更改版本",
+                    "target": "變更版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "installing",
+                    "source": "正在安装…",
+                    "target": "正在安裝…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "neverMind",
+                    "source": "取消",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "valid",
+                    "source": "有效",
+                    "target": "有效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalid",
+                    "source": "无效",
+                    "target": "無效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "changePluginVersion",
+                    "source": "更改插件版本：",
+                    "target": "變更插件版本："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubRepositoryForBetaPlugin",
+                    "source": "Beta 插件的 GitHub 仓库：",
+                    "target": "測試版插件的 GitHub 儲存庫："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "仓库",
+                    "target": "儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "仓库（示例：https://GitHub.com/githubusername/repository-name）",
+                    "target": "儲存庫（範例：https://GitHub.com/githubusername/repository-name）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enterAddressToValidate",
+                    "source": "输入 GitHub 仓库地址后会自动验证。",
+                    "target": "輸入 GitHub 儲存庫地址後會自動驗證。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addressRequired",
+                    "source": "需要填写仓库地址。",
+                    "target": "需要填寫儲存庫地址。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validating",
+                    "source": "正在验证仓库地址...",
+                    "target": "正在驗證儲存庫地址..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noReleasesFound",
+                    "source": "错误：此仓库中没有找到发布版本。",
+                    "target": "錯誤：此儲存庫中沒有找到發行版本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "notFound",
+                    "source": "找不到仓库。请检查地址，或提供可访问私有仓库的有效令牌。",
+                    "target": "找不到儲存庫。請檢查地址，或提供可存取私有儲存庫的有效權杖。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accessDenied",
+                    "source": "访问被拒绝。请检查个人访问令牌。",
+                    "target": "存取被拒絕。請檢查個人存取權杖。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectVersion",
+                    "source": "选择版本",
+                    "target": "選擇版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectVersionEllipsis",
+                    "source": "选择版本...",
+                    "target": "選擇版本..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "latestVersion",
+                    "source": "最新版本",
+                    "target": "最新版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prereleaseSuffix",
+                    "source": "（预发布）",
+                    "target": "（預發行）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GitHub 令牌",
+                    "target": "GitHub 權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "选择一个密钥，作为访问此仓库的令牌（可选）",
+                    "target": "選擇一個密鑰，作為存取此儲存庫的權杖（可選）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableAfterInstall",
+                    "source": "安装后启用此插件",
+                    "target": "安裝後啟用此插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "alreadyInList",
+                    "source": "这个插件已经在 Beta 测试列表中",
+                    "target": "這個插件已經在測試版清單中"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubRepositoryForBetaTheme",
+                    "source": "Beta 主题的 GitHub 仓库：",
+                    "target": "測試版主題的 GitHub 儲存庫："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "alreadyInList",
+                    "source": "这个主题已经在 Beta 测试列表中",
+                    "target": "這個主題已經在測試版清單中"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noThemeCssFile",
+                    "source": "这个仓库的根目录里没有 theme.css 或 theme-beta.css 文件，因此没有可安装的主题。",
+                    "target": "這個儲存庫的根目錄裡沒有 theme.css 或 theme-beta.css 檔案，因此沒有可安裝的主題。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noManifestFile",
+                    "source": "这个仓库的根目录里没有 manifest.json 文件，因此无法安装该主题。",
+                    "target": "這個儲存庫的根目錄裡沒有 manifest.json 檔案，因此無法安裝該主題。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "选择版本",
+                    "target": "選擇版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "navigateVersions",
+                    "source": "浏览版本",
+                    "target": "瀏覽版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "dismissModal",
+                    "source": "关闭弹窗",
+                    "target": "關閉視窗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "and",
+                    "source": " and ",
+                    "target": " 和 "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "learnMore",
+                    "source": "Learn more about my work at:",
+                    "target": "了解作者的更多作品："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Auto-enable plugins after installation",
+                    "target": "安裝後自動啟用測試版插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "If enabled beta plugins will be automatically enabled after installtion by default. Note: you can toggle this on and off for each plugin in the \"add plugin\" form.",
+                    "target": "啟用後，新安裝的測試版插件會預設自動啟用。你仍然可以在「新增插件」表單中為個別插件調整。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Auto-update plugins at startup",
+                    "target": "啟動時自動更新測試版插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "If enabled all beta plugins will be checked for updates each time Obsidian starts. Note: this does not update frozen version plugins.",
+                    "target": "啟用後，每次 Obsidian 啟動時都會檢查並安裝測試版插件更新。固定版本不會自動更新。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Auto-update themes at startup",
+                    "target": "啟動時自動更新測試版主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "If enabled all beta themes will be checked for updates each time Obsidian starts.",
+                    "target": "啟用後，每次 Obsidian 啟動時都會檢查並安裝測試版主題更新。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Select latest plugin version by default",
+                    "target": "預設選擇插件最新版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "If enabled the latest version will be selected by default when adding a new plugin.",
+                    "target": "啟用後，新增插件時會預設選擇最新版本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Allow incompatible plugins",
+                    "target": "允許安裝不兼容插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "If enabled, plugins with higher app versions will be allowed to be installed. Also it allows desktop-only plugins to be installed on mobile devices.",
+                    "target": "啟用後，可以安裝要求更高 Obsidian 版本的插件，也可以在行動裝置安裝僅支援桌面版的插件。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Monitoring",
+                    "target": "通知與記錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Enable notifications",
+                    "target": "啟用通知"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "BRAT will provide popup notifications for its various activities. Turn this off means no notifications.",
+                    "target": "啟用後，BRAT 會用彈出通知顯示安裝、更新等操作狀態。關閉後不再顯示這些通知。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Enable logging",
+                    "target": "啟用記錄功能"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Plugin updates will be logged to a file in the log file.",
+                    "target": "啟用後，插件更新記錄會寫入記錄檔。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "BRAT log file location",
+                    "target": "BRAT 記錄檔"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Logs will be saved to this file. Don't add .md to the file name.",
+                    "target": "記錄會儲存到這個檔案。填寫檔名或儲存庫內路徑時不要加 .md。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Example: BRAT-log",
+                    "target": "範例：BRAT-log"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Enable verbose logging",
+                    "target": "啟用詳細記錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Get a lot  more information in  the log.",
+                    "target": "啟用後，記錄檔會包含更多疑難排解資訊。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Debugging mode",
+                    "target": "偵錯模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Atomic bomb level console logging. Can be used for troubleshooting and development.",
+                    "target": "啟用後，主控台會輸出大量偵錯資訊，主要用於疑難排解問題和開發。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "GitHub Personal Access Token",
+                    "target": "GitHub 個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Personal access token",
+                    "target": "個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "linkText",
+                    "source": "your GitHub account settings",
+                    "target": "GitHub 權杖設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "clearPersonalAccessToken",
+                    "source": "Clear personal access token",
+                    "target": "清除個人存取權杖設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validate",
+                    "source": "Validate",
+                    "target": "驗證"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Beta plugin list",
+                    "target": "測試版插件清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "filterPlaceholder",
+                    "source": "Filter plugins",
+                    "target": "篩選插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "intro",
+                    "source": "The following is a list of beta plugins added via the command \"add a beta plugin for testing\". You can chose to add the latest version or a frozen version. A frozen version is a specific release of a plugin based on its release tag.",
+                    "target": "下方列出已通過 BRAT 新增的測試版插件。你可以讓插件跟隨最新版本，也可以固定到某個發行版本。固定版本指基於 release 標籤指定的某個插件版本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editAndRemove",
+                    "source": "Click the \"edit\" button next to a plugin to change the installed version. Click the \"X\" button next to a plugin to remove it from the list.",
+                    "target": "點擊插件旁的編輯按鈕可以變更安裝版本；點擊 X 按鈕會將它從清單中移除。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noteLabel",
+                    "source": "Note: ",
+                    "target": "注意："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noteText",
+                    "source": "Removing from the list does not delete the plugin, this should be done from the Community Plugins tab in Settings.",
+                    "target": "從清單中移除不會刪除插件本體。如需刪除插件，請到設定中的「第三方插件」頁面操作。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addBetaPlugin",
+                    "source": "Add beta plugin",
+                    "target": "新增測試版插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "incompatible",
+                    "source": " (incompatible)",
+                    "target": "（不兼容）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "secretMissingTitle",
+                    "source": "Token name configured but secret is missing. Add the secret or update the plugin configuration.",
+                    "target": "已配置密鑰名稱，但密鑰不存在或為空。請新增密鑰，或更新該插件配置。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "checkAndUpdatePlugin",
+                    "source": "Check and update plugin",
+                    "target": "檢查並更新插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "changeVersionAndUpdateSettings",
+                    "source": "Change version and update settings",
+                    "target": "變更版本和設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "removeThisBetaPlugin",
+                    "source": "Remove this beta plugin",
+                    "target": "移除此測試版插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmRemoval",
+                    "source": "Click once more to confirm removal",
+                    "target": "再次點擊確認移除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "copyPluginIdentifier",
+                    "source": "Copy plugin identifier",
+                    "target": "複製插件識別碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Beta themes list",
+                    "target": "測試版主題清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addBetaTheme",
+                    "source": "Add beta theme",
+                    "target": "新增測試版主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "filterPlaceholder",
+                    "source": "Filter themes",
+                    "target": "篩選主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "deleteThisBetaTheme",
+                    "source": "Delete this beta theme",
+                    "target": "刪除此測試版主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "copyThemeIdentifier",
+                    "source": "Copy theme identifier",
+                    "target": "複製主題識別碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "failed",
+                    "source": "Failed to copy identifier. Check clipboard permissions.",
+                    "target": "複製識別碼失敗，請檢查剪貼簿權限。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addPlugin",
+                    "source": "Add plugin",
+                    "target": "新增插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "changeVersion",
+                    "source": "Change version",
+                    "target": "變更版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "installing",
+                    "source": "Installing …",
+                    "target": "正在安裝…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "neverMind",
+                    "source": "Never mind",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "valid",
+                    "source": "Valid",
+                    "target": "有效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalid",
+                    "source": "Invalid",
+                    "target": "無效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "changePluginVersion",
+                    "source": "Change plugin version: ",
+                    "target": "變更插件版本："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubRepositoryForBetaPlugin",
+                    "source": "GitHub repository for beta plugin:",
+                    "target": "測試版插件的 GitHub 儲存庫："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Repository",
+                    "target": "儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Repository (example: https://GitHub.com/githubusername/repository-name)",
+                    "target": "儲存庫（範例：https://GitHub.com/githubusername/repository-name）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enterAddressToValidate",
+                    "source": "Enter a GitHub repository address to validate it.",
+                    "target": "輸入 GitHub 儲存庫地址後會自動驗證。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addressRequired",
+                    "source": "Repository address is required.",
+                    "target": "需要填寫儲存庫地址。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validating",
+                    "source": "Validating repository address...",
+                    "target": "正在驗證儲存庫地址..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noReleasesFound",
+                    "source": "Error: No releases found in this repository.",
+                    "target": "錯誤：此儲存庫中沒有找到發行版本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "notFound",
+                    "source": "Repository not found. Check the address or provide a valid token for access to a private repository.",
+                    "target": "找不到儲存庫。請檢查地址，或提供可存取私有儲存庫的有效權杖。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accessDenied",
+                    "source": "Access denied. Check your personal access token.",
+                    "target": "存取被拒絕。請檢查個人存取權杖。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectVersion",
+                    "source": "Select a version",
+                    "target": "選擇版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectVersionEllipsis",
+                    "source": "Select a version...",
+                    "target": "選擇版本..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "latestVersion",
+                    "source": "Latest version",
+                    "target": "最新版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prereleaseSuffix",
+                    "source": "(Prerelease)",
+                    "target": "（預發行）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GitHub token",
+                    "target": "GitHub 權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Select a secret as token for this repository (optional)",
+                    "target": "選擇一個密鑰，作為存取此儲存庫的權杖（可選）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableAfterInstall",
+                    "source": "Enable after installing the plugin",
+                    "target": "安裝後啟用此插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "alreadyInList",
+                    "source": "This plugin is already in the list for beta testing",
+                    "target": "這個插件已經在測試版清單中"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubRepositoryForBetaTheme",
+                    "source": "GitHub repository for beta theme:",
+                    "target": "測試版主題的 GitHub 儲存庫："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "alreadyInList",
+                    "source": "This theme is already in the list for beta testing",
+                    "target": "這個主題已經在測試版清單中"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noThemeCssFile",
+                    "source": "There is no theme.css or theme-beta.css file in the root path of this repository, so there is no theme to install.",
+                    "target": "這個儲存庫的根目錄裡沒有 theme.css 或 theme-beta.css 檔案，因此沒有可安裝的主題。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noManifestFile",
+                    "source": "There is no manifest.json file in the root path of this repository, so theme cannot be installed.",
+                    "target": "這個儲存庫的根目錄裡沒有 manifest.json 檔案，因此無法安裝該主題。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Select a version",
+                    "target": "選擇版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "navigateVersions",
+                    "source": "Navigate versions",
+                    "target": "瀏覽版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectVersion",
+                    "source": "Select version",
+                    "target": "選擇版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "dismissModal",
+                    "source": "Dismiss modal",
+                    "target": "關閉視窗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Learn more",
+                    "target": "了解更多"
                 }
             ],
             "regex": [
                 {
-                    "source": "log(\"error in isPrivateRepo\",n,i),!1}},yt=async(s,e=!0,t=\"\")",
-                    "target": "log(\"isPrivateRepo 發生錯誤\",n,i),!1}},yt=async(s,e=!0,t=\"\")"
-                },
-                {
-                    "source": "log(\"Error in fetchReleaseVersions\",n,i),null}},Q=async(s,e,t=!0,n=!1,i=\"\")",
-                    "target": "log(\"fetchReleaseVersions 發生錯誤\",n,i),null}},Q=async(s,e,t=!0,n=!1,i=\"\")"
-                },
-                {
                     "source": "setText(\"No token provided\")",
                     "target": "setText(\"未提供權杖\")"
-                },
-                {
-                    "source": "error(\"Token validation error:\",r),(m=this.statusEl)==null||m.setText(\"Failed to validate token\")",
-                    "target": "error(\"權杖驗證錯誤：\",r),(m=this.statusEl)==null||m.setText(\"權杖驗證失敗\")"
-                },
-                {
-                    "source": "setButtonText(\"Add Plugin\")",
-                    "target": "setButtonText(\"新增插件\")"
-                },
-                {
-                    "source": "appendText(\"Change plugin version: \")",
-                    "target": "appendText(\"變更插件版本：\")"
-                },
-                {
-                    "source": "setText(\"Github repository for beta plugin:\")",
-                    "target": "setText(\"測試版插件的 GitHub 儲存庫：\")"
-                },
-                {
-                    "source": "text:\"Github repository for beta theme:\"",
-                    "target": "text:\"測試版主題的 GitHub 儲存庫：\""
-                },
-                {
-                    "source": "setPlaceholder(\"Repository (example: https://github.com/GitHubUserName/repository-name)\")",
-                    "target": "setPlaceholder(\"儲存庫（範例：https://github.com/GitHubUserName/repository-name）\")"
-                },
-                {
-                    "source": "setText(\"Enter a GitHub repository address to validate it.\")",
-                    "target": "setText(\"輸入 GitHub 儲存庫地址以進行驗證。\")"
-                },
-                {
-                    "source": "setName(\"GitHub Token\")",
-                    "target": "setName(\"GitHub 權杖\")"
-                },
-                {
-                    "source": "setDesc(\"Select a secret as token for this repository (optional)\")",
-                    "target": "setDesc(\"選擇一個 secret 作為此儲存庫的權杖（選用）\")"
-                },
-                {
-                    "source": "appendText(\"Enable after installing the plugin\")",
-                    "target": "appendText(\"安裝插件後啟用\")"
-                },
-                {
-                    "source": "setButtonText(\"Never mind\")",
-                    "target": "setButtonText(\"取消\")"
-                },
-                {
-                    "source": "setButtonText(\"Installing \\u2026\")",
-                    "target": "setButtonText(\"正在安裝\\u2026\")"
-                },
-                {
-                    "source": "appendText(\" and \")",
-                    "target": "appendText(\" 與 \")"
-                },
-                {
-                    "source": "log(`[BRAT] Updating version dropdown for ${this.address} with selected version ${t}`)",
-                    "target": "log(`[BRAT] 正在更新 ${this.address} 的版本下拉選單，已選版本為 ${t}`)"
-                },
-                {
-                    "source": "setText(\"Repository address is required.\")",
-                    "target": "setText(\"必須提供儲存庫地址。\")"
-                },
-                {
-                    "source": "setText(\"Validating repository address...\")",
-                    "target": "setText(\"正在驗證儲存庫地址...\")"
-                },
-                {
-                    "source": "setText(\"Error: No releases found in this repository.\")",
-                    "target": "setText(\"錯誤：此儲存庫中找不到發行版本。\")"
-                },
-                {
-                    "source": "setText(`GitHub API rate limit exceeded. Try again in ${r.getMinutesToReset()} minutes.`)",
-                    "target": "setText(`已超過 GitHub API 速率限制。請在 ${r.getMinutesToReset()} 分鐘後再試。`)"
-                },
-                {
-                    "source": "setText(\"Repository not found. Check the address or provide a valid token for access to a private repository.\")",
-                    "target": "setText(\"找不到儲存庫。請檢查地址，或提供有效權杖以存取私人儲存庫。\")"
-                },
-                {
-                    "source": "setText(\"Access denied. Check your personal access token.\")",
-                    "target": "setText(\"存取遭拒。請檢查你的個人存取權杖。\")"
-                },
-                {
-                    "source": "setText(`Error: ${d.message}`)",
-                    "target": "setText(`錯誤： ${d.message}`)"
-                },
-                {
-                    "source": "error(`BRAT: validateRepository ${u}`)",
-                    "target": "error(`BRAT：驗證儲存庫 ${u}`)"
-                },
-                {
-                    "source": "log(\"BRAT: addPlugin\",e,t,n,i,o,a,c,u?\"with secret\":\"public\")",
-                    "target": "log(\"BRAT：新增插件\",e,t,n,i,o,a,c,u?\"with secret\":\"public\")"
                 },
                 {
                     "source": "appendText(\"Plugin: \")",
@@ -936,212 +1694,8 @@
                     "target": "appendText(\"你仍然要強制在行動裝置上執行它嗎？\")"
                 },
                 {
-                    "source": "log(\"BRAT - Local Manifest Load\",l.id,JSON.stringify(R,null,2))}if(o!==\"\"&&o!==\"latest\")",
-                    "target": "log(\"BRAT - 載入本機 manifest\",l.id,JSON.stringify(R,null,2))}if(o!==\"\"&&o!==\"latest\")"
-                },
-                {
-                    "source": "log(`${J}[Release Info](https://github.com/${e}/releases/tag/${l.version})`,!0),E(this.plugin,J,30,()=>{l&&window.open(`https://github.com/${e}/releases/tag/${l.version}`)",
-                    "target": "log(`${J}[發行資訊](https://github.com/${e}/releases/tag/${l.version})`,!0),E(this.plugin,J,30,()=>{l&&window.open(`https://github.com/${e}/releases/tag/${l.version}`)"
-                },
-                {
-                    "source": "log(`${P}[Release Info](https://github.com/${e}/releases/tag/${l.version})`,!0),E(this.plugin,P,30,()=>{l&&window.open(`https://github.com/${e}/releases/tag/${l.version}`)",
-                    "target": "log(`${P}[發行資訊](https://github.com/${e}/releases/tag/${l.version})`,!0),E(this.plugin,P,30,()=>{l&&window.open(`https://github.com/${e}/releases/tag/${l.version}`)"
-                },
-                {
-                    "source": "log(\"BRAT: No internet detected.\")",
-                    "target": "log(\"BRAT：未偵測到網路。\")"
-                },
-                {
-                    "source": "log(`BRAT: Created new secret \"${g}\"`)",
-                    "target": "log(`BRAT：已建立新 secret「${g}」`)"
-                },
-                {
-                    "source": "log(`BRAT: Migrated ${i} token(s) to SecretStorage`)",
-                    "target": "log(`BRAT：已將 ${i} 個權杖遷移到 SecretStorage`)"
-                },
-                {
-                    "source": "error(\"BRAT: Failed to migrate tokens to SecretStorage:\",i)}}var H=require(\"obsidian\")",
-                    "target": "error(\"BRAT：無法將權杖遷移到 SecretStorage：\",i)}}var H=require(\"obsidian\")"
-                },
-                {
-                    "source": "setPlaceholder(\"Repository (example: https://github.com/GitHubUserName/repository-name\")",
-                    "target": "setPlaceholder(\"儲存庫（範例：https://github.com/GitHubUserName/repository-name\")"
-                },
-                {
-                    "source": "setName(\"Auto-enable plugins after installation\")",
-                    "target": "setName(\"安裝後自動啟用插件\")"
-                },
-                {
-                    "source": "setDesc('If enabled beta plugins will be automatically enabled after installtion by default. Note: you can toggle this on and off for each plugin in the \"Add Plugin\" form.')",
-                    "target": "setDesc('啟用後，測試版插件安裝完成會預設自動啟用。注意：你可以在「新增插件」表單中為每個插件切換此選項。')"
-                },
-                {
-                    "source": "setName(\"Auto-update plugins at startup\")",
-                    "target": "setName(\"啟動時自動更新插件\")"
-                },
-                {
-                    "source": "setName(\"Auto-update themes at startup\")",
-                    "target": "setName(\"啟動時自動更新主題\")"
-                },
-                {
-                    "source": "setDesc(\"If enabled all beta plugins will be checked for updates each time Obsidian starts. Note: this does not update frozen version plugins.\")",
-                    "target": "setDesc(\"啟用後，每次 Obsidian 啟動時都會檢查所有測試版插件更新。注意：這不會更新固定版本的插件。\")"
-                },
-                {
-                    "source": "setDesc(\"If enabled all beta themes will be checked for updates each time Obsidian starts.\")",
-                    "target": "setDesc(\"啟用後，每次 Obsidian 啟動時都會檢查所有測試版主題更新。\")"
-                },
-                {
-                    "source": "setName(\"Select latest plugin version by default\")",
-                    "target": "setName(\"預設選取最新插件版本\")"
-                },
-                {
-                    "source": "setDesc(\"If enabled the latest version will be selected by default when adding a new plugin.\")",
-                    "target": "setDesc(\"啟用後，新增插件時會預設選取最新版本。\")"
-                },
-                {
-                    "source": "setName(\"Allow incompatible plugins\")",
-                    "target": "setName(\"允許不相容的插件\")"
-                },
-                {
-                    "source": "setDesc(\"If enabled, plugins with higher app versions will be allowed to be installed. Also it allows desktop-only plugins to be installed on mobile devices.\")",
-                    "target": "setDesc(\"啟用後，將允許安裝需要較高 Obsidian 版本的插件，也允許在行動裝置上安裝僅支援桌面的插件。\")"
-                },
-                {
-                    "source": "setPlaceholder(\"Filter plugins\")",
-                    "target": "setPlaceholder(\"篩選插件\")"
-                },
-                {
-                    "source": "setPlaceholder(\"Filter themes\")",
-                    "target": "setPlaceholder(\"篩選主題\")"
-                },
-                {
-                    "source": "setPlaceholder(`Type to search for a version for ${t}`)",
-                    "target": "setPlaceholder(`輸入以搜尋 ${t} 的版本`)"
-                },
-                {
-                    "source": "setButtonText(\"Add beta plugin\")",
-                    "target": "setButtonText(\"新增測試版插件\")"
-                },
-                {
-                    "source": "setButtonText(\"Add beta theme\")",
-                    "target": "setButtonText(\"新增測試版主題\")"
-                },
-                {
-                    "source": "setButtonText(\"Add theme\")",
-                    "target": "setButtonText(\"新增主題\")"
-                },
-                {
-                    "source": "setButtonText(\"Click once more to confirm removal\")",
-                    "target": "setButtonText(\"再按一次以確認移除\")"
-                },
-                {
-                    "source": "setTooltip(`Secret missing: ${b}. Please add the secret or update the plugin configuration.`)",
-                    "target": "setTooltip(`找不到 secret：${b}。請新增 secret 或更新插件設定。`)"
-                },
-                {
-                    "source": "setTooltip(\"Check and update plugin\")",
-                    "target": "setTooltip(\"檢查並更新插件\")"
-                },
-                {
-                    "source": "setTooltip(\"Change version and update settings\")",
-                    "target": "setTooltip(\"變更版本並更新設定\")"
-                },
-                {
-                    "source": "setTooltip(\"Remove this beta plugin\")",
-                    "target": "setTooltip(\"移除此測試版插件\")"
-                },
-                {
-                    "source": "setTooltip(\"Delete this beta theme\")",
-                    "target": "setTooltip(\"刪除此測試版主題\")"
-                },
-                {
-                    "source": "setName(\"Enable notifications\")",
-                    "target": "setName(\"啟用通知\")"
-                },
-                {
-                    "source": "setDesc(\"BRAT will provide popup notifications for its various activities. Turn this off means  no notifications from BRAT.\")",
-                    "target": "setDesc(\"BRAT 會針對各種活動顯示彈出通知。關閉此選項代表不顯示 BRAT 通知。\")"
-                },
-                {
-                    "source": "setName(\"Enable logging\")",
-                    "target": "setName(\"啟用記錄\")"
-                },
-                {
-                    "source": "setDesc(\"Plugin updates will be logged to a file in the log file.\")",
-                    "target": "setDesc(\"插件更新會記錄到記錄檔中。\")"
-                },
-                {
-                    "source": "setName(\"BRAT log file location\")",
-                    "target": "setName(\"BRAT 記錄檔位置\")"
-                },
-                {
-                    "source": "setDesc(\"Logs will be saved to this file. Don't add .md to the file name.\")",
-                    "target": "setDesc(\"記錄會儲存到此檔案。檔名請不要加上 .md。\")"
-                },
-                {
-                    "source": "setPlaceholder(\"Example: BRAT-log\")",
-                    "target": "setPlaceholder(\"範例：BRAT-log\")"
-                },
-                {
-                    "source": "setName(\"Enable verbose logging\")",
-                    "target": "setName(\"啟用詳細記錄\")"
-                },
-                {
-                    "source": "setDesc(\"Get a lot  more information in  the log.\")",
-                    "target": "setDesc(\"在記錄中取得更多資訊。\")"
-                },
-                {
-                    "source": "setName(\"Debugging mode\")",
-                    "target": "setName(\"除錯模式\")"
-                },
-                {
-                    "source": "setDesc(\"Atomic Bomb level console logging. Can be used for troubleshooting and development.\")",
-                    "target": "setDesc(\"原子彈等級的主控台記錄，可用於疑難排解與開發。\")"
-                },
-                {
-                    "source": "setName(\"Personal access token\")",
-                    "target": "setName(\"個人存取權杖\")"
-                },
-                {
-                    "source": "setTooltip(\"Clear personal access token\")",
-                    "target": "setTooltip(\"清除個人存取權杖\")"
-                },
-                {
-                    "source": "log(`loading ${this.APP_NAME}`)",
-                    "target": "log(`正在載入 ${this.APP_NAME}`)"
-                },
-                {
-                    "source": "log(`unloading ${this.APP_NAME}`)",
-                    "target": "log(`正在卸載 ${this.APP_NAME}`)"
-                },
-                {
                     "source": "text:\"\\u2713 Valid token\"",
                     "target": "text:\"\\u2713 權杖有效\""
-                },
-                {
-                    "source": "text:`Scopes: ${e.currentScopes.join(\", \")}`",
-                    "target": "text:`權限範圍： ${e.currentScopes.join(\", \")}`"
-                },
-                {
-                    "source": "text:`\\u26A0\\uFE0F Token expires in ${a} days`",
-                    "target": "text:`\\u26A0\\uFE0F 權杖將在 ${a} 天後過期`"
-                },
-                {
-                    "source": "text:`Valid prefixes: ${(i=e.details.validPrefixes)==null?void 0:i.join(\", \")}`",
-                    "target": "text:`有效前綴： ${(i=e.details.validPrefixes)==null?void 0:i.join(\", \")}`"
-                },
-                {
-                    "source": "text:`Required scopes: ${(o=e.details.requiredScopes)==null?void 0:o.join(\", \")}`",
-                    "target": "text:`必要權限範圍： ${(o=e.details.requiredScopes)==null?void 0:o.join(\", \")}`"
-                },
-                {
-                    "source": "innerText=\"Learn more about my work at:\"",
-                    "target": "innerText=\"深入了解我的作品：\""
-                },
-                {
-                    "source": "text:`${e.version} ${e.prerelease?\"(Prerelease)\":\"\"}`",
-                    "target": "text:`${e.version} ${e.prerelease?\"（預發行版）\":\"\"}`"
                 },
                 {
                     "source": "text:\"isDesktopOnly: true\"",
@@ -1204,60 +1758,136 @@
                     "target": "name:\"所有命令清單\""
                 },
                 {
-                    "source": "text:'The following is a list of beta plugins added via the command \"Add a beta plugin for testing\". You can chose to add the latest version or a frozen version. A frozen version is a specific release of a plugin based on its release tag.'",
-                    "target": "text:'以下是透過「新增測試版插件」命令加入的測試版插件清單。你可以選擇加入最新版本，或指定固定版本。固定版本是依據發行標籤指定的插件版本。'"
-                },
-                {
-                    "source": "setHeading(\"Beta plugin list\")",
-                    "target": "setHeading(\"測試版插件清單\")"
-                },
-                {
-                    "source": "setHeading(\"Beta themes list\")",
-                    "target": "setHeading(\"測試版主題清單\")"
-                },
-                {
-                    "source": "text:\"Click the 'Edit' button next to a plugin to change the installed version and the x button next to a plugin to remove it from the list.\"",
-                    "target": "text:\"點擊插件旁的「編輯」按鈕可變更已安裝版本，點擊 x 按鈕可將插件從清單移除。\""
-                },
-                {
-                    "source": "text:\"Removing from the list does not delete the plugin, this should be done from the Community Plugins tab in Settings.\"",
-                    "target": "text:\"從清單移除不會刪除插件；若要刪除，請到設定中的「社群插件」分頁操作。\""
-                },
-                {
-                    "source": "E(this.plugin,\"This theme is already in the list for beta testing\",10)",
-                    "target": "E(this.plugin,\"此主題已在測試版清單中\",10)"
-                },
-                {
-                    "source": "E(s,\"There is no theme.css or theme-beta.css file in the root path of this repository, so there is no theme to install.\")",
-                    "target": "E(s,\"此儲存庫根目錄中沒有 theme.css 或 theme-beta.css 檔案，因此沒有可安裝的主題。\")"
-                },
-                {
-                    "source": "E(s,\"There is no manifest.json file in the root path of this repository, so theme cannot be installed.\")",
-                    "target": "E(s,\"此儲存庫根目錄中沒有 manifest.json 檔案，因此無法安裝主題。\")"
-                },
-                {
-                    "source": "let i=\"Checking for beta theme updates COMPLETED\"",
-                    "target": "let i=\"測試版主題更新檢查完成\""
-                },
-                {
-                    "source": "let t=`Removed ${e} from BRAT themes list and will no longer be updated. However, the theme files still exist in the vault. To remove them, go into Settings > Appearance and remove the theme.`",
-                    "target": "let t=`已將 ${e} 從 BRAT 主題清單移除，之後將不再更新。不過主題檔案仍保留在 vault 中。若要移除，請到「設定 > 外觀」刪除該主題。`"
-                },
-                {
-                    "source": "text:\"Note: \"",
-                    "target": "text:\"注意：\""
-                },
-                {
                     "source": "prependText:\"Set a personal access token to increase rate limits for public repositories on GitHub. You can create one in \"",
                     "target": "prependText:\"設定個人存取權杖可提高 GitHub 公開儲存庫的速率限制。你可以到 \""
                 },
                 {
-                    "source": "text:\"your GitHub account settings\"",
-                    "target": "text:\"你的 GitHub 帳戶設定\""
-                },
-                {
                     "source": "appendText:\" and then add it here. Please consult the documentation for more details.\"",
                     "target": "appendText:\" 建立，然後加到這裡。更多細節請參閱文件。\""
+                },
+                {
+                    "source": "Version mismatch detected:",
+                    "target": "偵測到版本不一致："
+                },
+                {
+                    "source": "Release tag version:",
+                    "target": "發行標籤版本："
+                },
+                {
+                    "source": "Manifest version:",
+                    "target": "Manifest 版本："
+                },
+                {
+                    "source": "The release tag version will be used to ensure consistency.",
+                    "target": "將使用發行標籤版本以確保一致性。"
+                },
+                {
+                    "source": "This does not seem to be an obsidian plugin with valid releases, as there are no releases available.",
+                    "target": "這似乎不是具有有效發行版本的 Obsidian 插件，因為找不到可用的發行版本。"
+                },
+                {
+                    "source": "This does not seem to be an obsidian plugin, as there is no manifest.json file.",
+                    "target": "這似乎不是 Obsidian 插件，因為其中沒有 manifest.json 檔案。"
+                },
+                {
+                    "source": "The plugin id attribute for the release is missing from the manifest file",
+                    "target": "發行版本的 manifest 檔案缺少插件 ID 屬性"
+                },
+                {
+                    "source": "The version attribute for the release is missing from the manifest file",
+                    "target": "發行版本的 manifest 檔案缺少版本屬性"
+                },
+                {
+                    "source": "GitHub API Authentication error. Please verify that your personal access token is valid and set correctly.",
+                    "target": "GitHub API 驗證錯誤。請確認個人存取權杖有效且設定正確。"
+                },
+                {
+                    "source": "Unspecified error encountered:",
+                    "target": "發生未指定的錯誤："
+                },
+                {
+                    "source": ", verify debug for more information.",
+                    "target": "，請查看偵錯資訊以了解詳情。"
+                },
+                {
+                    "source": "Secret not found for token name:",
+                    "target": "找不到此權杖名稱所對應的密鑰："
+                },
+                {
+                    "source": ". Please add it to SecretStorage or clear the token name for this plugin.",
+                    "target": "。請將它加入 SecretStorage，或清除此插件的權杖名稱。"
+                },
+                {
+                    "source": "The release is not complete and cannot be downloaded. main.js is missing from the Release",
+                    "target": "發行內容不完整，無法下載。發行版本缺少 main.js"
+                },
+                {
+                    "source": "Plugin has been reinstalled and reloaded with version ",
+                    "target": "插件已重新安裝並重新載入，版本為 "
+                },
+                {
+                    "source": "The plugin has been registered with BRAT.",
+                    "target": "插件已登錄至 BRAT。"
+                },
+                {
+                    "source": " You may still need to enable it the Community Plugin List.",
+                    "target": "你可能仍需在社群插件清單中啟用它。"
+                },
+                {
+                    "source": " is frozen, not updating.",
+                    "target": " 已固定版本，不會更新。"
+                },
+                {
+                    "source": "No update available for ",
+                    "target": "沒有可用更新："
+                },
+                {
+                    "source": "Update of plugin failed.",
+                    "target": "插件更新失敗。"
+                },
+                {
+                    "source": "The following incompatible plugins were forcefully installed by BRAT and may not work as expected:",
+                    "target": "BRAT 已強制安裝下列不相容插件，這些插件可能無法正常運作："
+                },
+                {
+                    "source": "Could not load the Obsidian community plugin list.",
+                    "target": "無法載入 Obsidian 社群插件清單。"
+                },
+                {
+                    "source": "No graduated plugins found. All BRAT plugins are still in beta.",
+                    "target": "找不到已發布穩定版的插件。所有 BRAT 插件仍為測試版。"
+                },
+                {
+                    "source": " removed from BRAT. Obsidian will now manage updates via the community plugin list.",
+                    "target": " 已從 BRAT 移除，之後由 Obsidian 透過社群插件清單管理更新。"
+                },
+                {
+                    "source": " and removed from BRAT.",
+                    "target": " 並已從 BRAT 移除。"
+                },
+                {
+                    "source": "Failed to install stable release for ",
+                    "target": "無法安裝穩定版本："
+                },
+                {
+                    "source": "Plugin reloading .....",
+                    "target": "正在重新載入插件……"
+                },
+                {
+                    "source": "Checking for plugin updates STARTED",
+                    "target": "開始檢查插件更新"
+                },
+                {
+                    "source": "Checking for plugin updates COMPLETED",
+                    "target": "插件更新檢查完成"
+                },
+                {
+                    "source": "(click=dismiss, right-click=Info)",
+                    "target": "（點擊關閉，按右鍵查看資訊）"
+                },
+                {
+                    "source": "(click=dismiss)",
+                    "target": "（點擊關閉）"
                 }
             ]
         },
