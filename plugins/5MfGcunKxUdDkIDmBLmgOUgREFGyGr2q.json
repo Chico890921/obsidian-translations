@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "1.7.0",
         "author": "Chico",
-        "updatedAt": 1782923257766
+        "updatedAt": 1784895504344
     },
     "dict": {
         "main.js": {
@@ -59,7 +59,7 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Preserve Blanks (during line sorting)",
-                    "target": "保留空白（排序行時）"
+                    "target": "排序行時保留空白行"
                 },
                 {
                     "type": "CallExpression",
@@ -313,7 +313,7 @@
                 },
                 {
                     "source": "setName(\"Preserve Blanks (during line sorting)\")",
-                    "target": "setName(\"保留空白（排序行時）\")"
+                    "target": "setName(\"排序行時保留空白行\")"
                 },
                 {
                     "source": "setName(\"Text Locale\")",
@@ -436,16 +436,28 @@
                     "target": "addOption(\"es\", \"西班牙文 (es)\")"
                 },
                 {
-                    "source": "addOption(\"custom\",\"Custom…\")",
-                    "target": "addOption(\"custom\",\"自訂…\")"
-                },
-                {
-                    "source": "addOption(\"custom\", \"Custom…\")",
+                    "source": "addOption(\"custom\", \"Custom\\u2026\")",
                     "target": "addOption(\"custom\", \"自訂…\")"
                 },
                 {
                     "source": "setDesc(\"Enter a BCP-47 locale (e.g. 'sv', 'ja'). Leave empty to use the system default.\")",
                     "target": "setDesc(\"輸入 BCP-47 地區代碼（例如 'sv'、'ja'）。留空則使用系統預設。\")"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Shuffle, reverse, or sort text, using either visual width or alphabetical order.",
+                    "target": "隨機排列、反轉或排序文字，可依視覺寬度或字母順序處理。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Shuffle, reverse, or sort text, using either visual width or alphabetical order.\"",
+                    "target": "\"description\": \"隨機排列、反轉或排序文字，可依視覺寬度或字母順序處理。\""
                 }
             ]
         }
