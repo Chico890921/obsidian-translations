@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "1.1.2",
         "author": "Chico",
-        "updatedAt": 1782928357254
+        "updatedAt": 1785335803215
     },
     "dict": {
         "main.js": {
@@ -656,6 +656,22 @@
                 {
                     "source": "setContent(\"test\")",
                     "target": "setContent(\"\")"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Integration with Xournal++ for handwritten notes and annotations.",
+                    "target": "與 Xournal++ 整合，用於手寫筆記與註解。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Integration with Xournal++ for handwritten notes and annotations.\"",
+                    "target": "\"description\": \"與 Xournal++ 整合，用於手寫筆記與註解。\""
                 }
             ]
         }
