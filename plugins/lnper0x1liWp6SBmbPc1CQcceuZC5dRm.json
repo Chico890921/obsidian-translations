@@ -1,879 +1,714 @@
 {
-    "schemaVersion": 1,
-    "metadata": {
-        "plugin": "typewriter-mode",
-        "version": "1.5.0",
-        "title": "[zh-tw] Typewriter Mode",
-        "description": "Typewriter Mode Localization & Tweaks",
-        "language": "zh-tw",
-        "supportedVersions": "1.5.0",
-        "author": "Chico",
-        "updatedAt": 1782928019453
-    },
-    "dict": {
-        "main.js": {
-            "ast": [
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Underline",
-                    "target": "底線"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Box",
-                    "target": "方框"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Dim everything",
-                    "target": "淡化所有文字"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Dim all but the previously focused paragraph / sentence",
-                    "target": "淡化除了先前聚焦段落／句子以外的所有內容"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Do not dim anything",
-                    "target": "不淡化"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Sentences",
-                    "target": "句子"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Paragraphs",
-                    "target": "段落"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Mobile only",
-                    "target": "僅行動版"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Desktop only",
-                    "target": "僅桌面版"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Desktop and mobile",
-                    "target": "桌面版與行動版"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Column",
-                    "target": "欄"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "The style of the current line highlight",
-                    "target": "目前行的醒目提示樣式"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "The thickness of the underline that highlights the current line",
-                    "target": "醒目提示目前行的底線粗細"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "How soon lines shall be faded out",
-                    "target": "行多久後淡出"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "How to dim paragraphs / sentences in notes / editors that your cursor is not on (e.g. if you have multiple notes open in split panes)",
-                    "target": "如何淡化游標不在其中的筆記／編輯器內的段落／句子（例如在分割窗格中開啟多個筆記時）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Choose to dim unfocused paragraphs or sentences",
-                    "target": "選擇要淡化未聚焦的段落或句子"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "The amount of lines to always keep above and below the current line",
-                    "target": "目前行上下方要一律保留的行數"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "The maximum number of characters per line",
-                    "target": "每行的最大字元數"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Positions the typewriter line at the specified percentage of the screen",
-                    "target": "將目前行定位在螢幕的指定百分比處"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Custom font size in points for writing focus mode (0 = use default font size)",
-                    "target": "寫作專注模式的自訂字體大小（以點為單位，0 = 使用預設字體大小）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "The style of the vignette in writing focus mode",
-                    "target": "寫作專注模式中的暗角樣式"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Not available if \"keep lines above and below\" is activated",
-                    "target": "啟用「保留上下行」時不可用"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Not available if typewriter scrolling is activated",
-                    "target": "啟用「打字機捲動」時不可用"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Current line highlight style",
-                    "target": "目前行醒目提示樣式"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Current line underline thickness",
-                    "target": "目前行底線粗細"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Intensity of the fade lines gradient",
-                    "target": "淡化行漸層強度"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Dimming behavior in unfocused notes",
-                    "target": "未聚焦筆記中的淡化行為"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Dim unfocused mode",
-                    "target": "淡化未聚焦文字"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Amount of lines above and below the current line",
-                    "target": "目前行的上下保留行數"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Maximum number of characters per line",
-                    "target": "每行最大字元數"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Typewriter offset",
-                    "target": "打字機偏移量"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Writing focus font size",
-                    "target": "寫作專注字體大小"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Writing focus vignette style",
-                    "target": "寫作專注暗角樣式"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Fetching release notes...",
-                    "target": "正在取得版本資訊..."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setHeading",
-                    "source": "Typewriter",
-                    "target": "打字機"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setHeading",
-                    "source": "Keep lines above and below",
-                    "target": "保留目前行上下方行數"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setHeading",
-                    "source": "Highlight current line",
-                    "target": "醒目提示目前行"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setHeading",
-                    "source": "Dimming",
-                    "target": "淡化"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setHeading",
-                    "source": "Writing focus",
-                    "target": "寫作專注"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setHeading",
-                    "source": "Hemingway mode",
-                    "target": "海明威模式"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setHeading",
-                    "source": "Limit line width",
-                    "target": "限制行寬"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setHeading",
-                    "source": "Restore cursor position",
-                    "target": "還原游標位置"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setHeading",
-                    "source": "Update notice and funding",
-                    "target": "更新通知與贊助"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setHeading",
-                    "source": "File paths",
-                    "target": "檔案路徑"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Configure which files or folders the plugin is enabled or disabled in.",
-                    "target": "設定要啟用或停用此插件的檔案或資料夾。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "No paths configured.",
-                    "target": "尚未設定路徑。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Opacity of dimmed elements",
-                    "target": "淡化元素的不透明度"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "The opacity of dimmed elements",
-                    "target": "淡化元素的不透明度"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "Remove",
-                    "target": "移除"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "All platforms",
-                    "target": "所有平台"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Desktop and tablet",
-                    "target": "桌面版與平板"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Mobile only (tablet and phone)",
-                    "target": "僅行動版（平板與手機）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Tablet only",
-                    "target": "僅平板"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Phone only",
-                    "target": "僅手機"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "Configure",
-                    "target": "設定"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "File paths",
-                    "target": "檔案路徑"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "File paths",
-                    "target": "檔案路徑"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "placeholder",
-                    "source": "Type to search vault paths…",
-                    "target": "輸入以搜尋儲存庫路徑…"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "No paths configured.",
-                    "target": "尚未設定路徑。"
-                },
-                {
-                    "type": "VariableDeclarator",
-                    "name": "B",
-                    "source": "**Thank you for using Typewriter Mode!** I am a student at the University of Tübingen and develop this plugin in my spare time. If you like the plugin, please consider supporting me on [GitHub Sponsors](https://github.com/sponsors/davisriedel) or [Buy Me a Coffee](https://www.buymeacoffee.com/davis.riedel). Your support ensures the continuous development and maintenance of the plugin. <br> <a href=\"https://www.buymeacoffee.com/davis.riedel\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 60px !important;width: 217px !important;\"></a> <br>\r\n\r\nIf you find any bugs or have a feature request, please [open an issue on GitHub](https://github.com/davisriedel/obsidian-typewriter-mode/issues). Contributions are welcome too.\r\n",
-                    "target": "**感謝你使用 Typewriter Mode！** 我是蒂賓根大學的學生，利用空閒時間維護這個外掛。如果你喜歡這個外掛，歡迎透過 [GitHub Sponsors](https://github.com/sponsors/davisriedel) 或 [Buy Me a Coffee](https://www.buymeacoffee.com/davis.riedel) 支持我。你的支持能幫助此外掛持續開發與維護。 <br> <a href=\"https://www.buymeacoffee.com/davis.riedel\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 60px !important;width: 217px !important;\"></a> <br>\n\n如果你發現錯誤或想提出功能需求，請到 [GitHub 開 issue](https://github.com/davisriedel/obsidian-typewriter-mode/issues)。也歡迎一起貢獻。\n"
-                },
-                {
-                    "type": "VariableDeclarator",
-                    "name": "he",
-                    "source": "# Typewriter Mode updated to v{{tag-name}}\r\n\r\n{{funding}}\r\n\r\n## What's new?\r\n\r\n{{release-notes}}\r\n",
-                    "target": "# Typewriter Mode 已更新至 v{{tag-name}}\n\n{{funding}}\n\n## 更新內容\n\n{{release-notes}}\n"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Error",
-                    "source": "Failed to fetch releases: ${s.message??\"Unknown error\"}",
-                    "target": "取得版本資訊失敗：${s.message??\"未知錯誤\"}"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Error",
-                    "source": "Could not find release with tag ${o}",
-                    "target": "找不到標籤為 ${o} 的版本"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Error",
-                    "source": "No new releases found",
-                    "target": "找不到新的版本資訊"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addRibbonIcon",
-                    "source": "Toggle Writing Focus",
-                    "target": "切換寫作專注"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "renderSection",
-                    "source": "Enabled paths",
-                    "target": "啟用路徑"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "renderSection",
-                    "source": "Only enable the plugin for these files or folders. If empty, the plugin is active in all files.",
-                    "target": "只在這些檔案或資料夾中啟用此外掛。留空時會在所有檔案中啟用。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "renderSection",
-                    "source": "Disabled paths",
-                    "target": "停用路徑"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "renderSection",
-                    "source": "Always disable the plugin for these files or folders, overriding the enabled paths.",
-                    "target": "一律在這些檔案或資料夾中停用此外掛，並覆寫啟用路徑設定。"
-                }
-            ],
-            "regex": [
-                {
-                    "source": "setName('Not available if \"keep lines above and below\" is activated')",
-                    "target": "setName('啟用「保留上下行」時不可用')"
-                },
-                {
-                    "source": "setName(\"Not available if typewriter scrolling is activated\")",
-                    "target": "setName(\"啟用「打字機捲動」時不可用\")"
-                },
-                {
-                    "source": "setName(\"Current line highlight style\")",
-                    "target": "setName(\"目前行醒目提示樣式\")"
-                },
-                {
-                    "source": "setDesc(\"The style of the current line highlight\")",
-                    "target": "setDesc(\"目前行的醒目提示樣式\")"
-                },
-                {
-                    "source": "setName(\"Current line underline thickness\")",
-                    "target": "setName(\"目前行底線粗細\")"
-                },
-                {
-                    "source": "setDesc(\"The thickness of the underline that highlights the current line\")",
-                    "target": "setDesc(\"醒目提示目前行的底線粗細\")"
-                },
-                {
-                    "source": "setName(\"Intensity of the fade lines gradient\")",
-                    "target": "setName(\"淡化行漸層強度\")"
-                },
-                {
-                    "source": "setDesc(\"How soon lines shall be faded out\")",
-                    "target": "setDesc(\"行多久後淡出\")"
-                },
-                {
-                    "source": "setName(\"Dimming behavior in unfocused notes\")",
-                    "target": "setName(\"未聚焦筆記的淡化行為\")"
-                },
-                {
-                    "source": "setDesc(\"How to dim paragraphs / sentences in notes / editors that your cursor is not on (e.g. if you have multiple notes open in split panes)\")",
-                    "target": "setDesc(\"如何淡化游標不在其中的筆記／編輯器內的段落／句子（例如在分割窗格中開啟多個筆記時）\")"
-                },
-                {
-                    "source": "setName(\"Dim unfocused mode\")",
-                    "target": "setName(\"淡化未聚焦文字\")"
-                },
-                {
-                    "source": "setDesc(\"Choose to dim unfocused paragraphs or sentences\")",
-                    "target": "setDesc(\"選擇要淡化未聚焦的段落或句子\")"
-                },
-                {
-                    "source": "setName(\"Amount of lines above and below the current line\")",
-                    "target": "setName(\"目前行上下保留的行數\")"
-                },
-                {
-                    "source": "setDesc(\"The amount of lines to always keep above and below the current line\")",
-                    "target": "setDesc(\"目前行上下方要一律保留的行數\")"
-                },
-                {
-                    "source": "setName(\"Maximum number of characters per line\")",
-                    "target": "setName(\"每行最大字元數\")"
-                },
-                {
-                    "source": "setDesc(\"The maximum number of characters per line\")",
-                    "target": "setDesc(\"每行的最大字元數\")"
-                },
-                {
-                    "source": "setName(\"Typewriter offset\")",
-                    "target": "setName(\"打字機偏移\")"
-                },
-                {
-                    "source": "setDesc(\"Positions the typewriter line at the specified percentage of the screen\")",
-                    "target": "setDesc(\"將目前行定位在螢幕的指定百分比處\")"
-                },
-                {
-                    "source": "setName(\"Writing focus font size\")",
-                    "target": "setName(\"寫作專注字體大小\")"
-                },
-                {
-                    "source": "setDesc(\"Custom font size in points for writing focus mode (0 = use default font size)\")",
-                    "target": "setDesc(\"寫作專注模式的自訂字體大小（以點為單位，0 = 使用預設字體大小）\")"
-                },
-                {
-                    "source": "setName(\"Writing focus vignette style\")",
-                    "target": "setName(\"寫作專注暗角樣式\")"
-                },
-                {
-                    "source": "setDesc(\"The style of the vignette in writing focus mode\")",
-                    "target": "setDesc(\"寫作專注模式中的暗角樣式\")"
-                },
-                {
-                    "source": "text:\"Fetching release notes...\"",
-                    "target": "text:\"正在取得版本資訊...\""
-                },
-                {
-                    "source": "settingTitle=\"Activate Typewriter Mode\"",
-                    "target": "settingTitle=\"啟用 Typewriter Mode\""
-                },
-                {
-                    "source": "settingDesc=\"This enables or disables all the features below.\"",
-                    "target": "settingDesc=\"啟用或停用下方所有功能。\""
-                },
-                {
-                    "source": "settingTitle=\"Enable on platforms\"",
-                    "target": "settingTitle=\"啟用平台\""
-                },
-                {
-                    "source": "settingDesc=\"Select on which platforms Typewriter Mode should be active\"",
-                    "target": "settingDesc=\"選擇 Typewriter Mode 要在哪些平台啟用\""
-                },
-                {
-                    "source": "settingTitle=\"Only activate after first interaction\"",
-                    "target": "settingTitle=\"第一次互動後才啟用\""
-                },
-                {
-                    "source": "settingDesc=\"Activate the focused line highlight and paragraph dimming only after the first interaction with the editor\"",
-                    "target": "settingDesc=\"與編輯器第一次互動後，才啟用目前行醒目提示與段落淡化\""
-                },
-                {
-                    "source": "settingTitle=\"Typewriter scrolling\"",
-                    "target": "settingTitle=\"打字機捲動\""
-                },
-                {
-                    "source": "settingDesc=\"Turns typewriter scrolling on or off\"",
-                    "target": "settingDesc=\"開啟或關閉打字機捲動\""
-                },
-                {
-                    "source": "settingTitle=\"Only maintain typewriter offset when reached\"",
-                    "target": "settingTitle=\"到達偏移量後才維持打字機位置\""
-                },
-                {
-                    "source": "settingDesc=\"The line that the cursor is on will not be scrolled to the center of the editor until it the specified typewriter offset is reached. This removes the additional space at the top of the editor.\"",
-                    "target": "settingDesc=\"游標所在行在到達指定的打字機偏移量之前，不會捲動到編輯器中央。這會移除編輯器頂部的額外空間。\""
-                },
-                {
-                    "source": "settingTitle=\"Do not snap typewriter with arrow keys\"",
-                    "target": "settingTitle=\"不要用方向鍵吸附打字機位置\""
-                },
-                {
-                    "source": "settingDesc=\"The typewriter will only snap when using this plugin's move commands. It will not snap when using the arrow keys. The move commands are by default Cmd/Ctrl+ArrowUp/ArrowDown, but you can assign your own hotkeys for the move commands in Obsidian's settings.\"",
-                    "target": "settingDesc=\"只有使用此外掛的移動命令時，打字機位置才會吸附。使用方向鍵時不會吸附。移動命令預設為 Cmd/Ctrl+方向鍵上/下，你也可以在 Obsidian 設定中自行指定快捷鍵。\""
-                },
-                {
-                    "source": "settingTitle=\"Keep lines above and below\"",
-                    "target": "settingTitle=\"保留目前行上下方行數\""
-                },
-                {
-                    "source": "settingDesc=\"When enabled, always keeps the specified amount of lines above and below the current line in view\"",
-                    "target": "settingDesc=\"啟用後，會一律在畫面中保留目前行上下方指定數量的行\""
-                },
-                {
-                    "source": "settingTitle=\"Highlight current line\"",
-                    "target": "settingTitle=\"醒目提示目前行\""
-                },
-                {
-                    "source": "settingDesc=\"Highlights the line that the cursor is currently on\"",
-                    "target": "settingDesc=\"醒目提示游標目前所在的行\""
-                },
-                {
-                    "source": "settingTitle=\"Highlight current line only in focused note\"",
-                    "target": "settingTitle=\"只在聚焦筆記中醒目提示目前行\""
-                },
-                {
-                    "source": "settingDesc=\"Only show highlighted line in the note your cursor is on (e.g. if you have multiple notes open in split panes)\"",
-                    "target": "settingDesc=\"只在游標所在的筆記中顯示醒目提示行（例如在分割窗格中開啟多個筆記時）\""
-                },
-                {
-                    "source": "settingTitle=\"Pause current line highlight while scrolling\"",
-                    "target": "settingTitle=\"捲動時暫停目前行醒目提示\""
-                },
-                {
-                    "source": "settingDesc=\"If enabled, the current line highlight is hidden while scrolling\"",
-                    "target": "settingDesc=\"啟用後，捲動時會隱藏目前行醒目提示\""
-                },
-                {
-                    "source": "settingTitle=\"Pause current line highlight while selecting text\"",
-                    "target": "settingTitle=\"選取文字時暫停目前行醒目提示\""
-                },
-                {
-                    "source": "settingDesc=\"If enabled, the current line highlight is hidden while selecting text\"",
-                    "target": "settingDesc=\"啟用後，選取文字時會隱藏目前行醒目提示\""
-                },
-                {
-                    "source": "settingTitle=\"Fade lines\"",
-                    "target": "settingTitle=\"淡出行\""
-                },
-                {
-                    "source": "settingDesc=\"This places a gradient on the lines above and below the current line, making the text fade out more and more towards the top and bottom of the editor.\"",
-                    "target": "settingDesc=\"在目前行上下方套用漸層，讓文字越靠近編輯器頂端與底端越淡。\""
-                },
-                {
-                    "source": "settingTitle=\"Fade lines only in writing focus mode\"",
-                    "target": "settingTitle=\"只在寫作專注模式中淡出行\""
-                },
-                {
-                    "source": "settingDesc=\"Only show the fade lines effect when writing focus mode is active\"",
-                    "target": "settingDesc=\"只在寫作專注模式啟用時顯示淡出行效果\""
-                },
-                {
-                    "source": "settingTitle=\"Highlight current line only in writing focus mode\"",
-                    "target": "settingTitle=\"只在寫作專注模式中醒目提示目前行\""
-                },
-                {
-                    "source": "settingDesc=\"Only show the highlighted line when writing focus mode is active\"",
-                    "target": "settingDesc=\"只在寫作專注模式啟用時顯示醒目提示行\""
-                },
-                {
-                    "source": "settingTitle=\"Dim unfocused\"",
-                    "target": "settingTitle=\"淡化未聚焦內容\""
-                },
-                {
-                    "source": "settingDesc=\"Dim unfocused paragraphs / sentences\"",
-                    "target": "settingDesc=\"淡化未聚焦的段落／句子\""
-                },
-                {
-                    "source": "settingTitle=\"Dim unfocused only in writing focus mode\"",
-                    "target": "settingTitle=\"只在寫作專注模式中淡化未聚焦內容\""
-                },
-                {
-                    "source": "settingDesc=\"Only dim unfocused paragraphs / sentences when writing focus mode is active\"",
-                    "target": "settingDesc=\"只在寫作專注模式啟用時淡化未聚焦的段落／句子\""
-                },
-                {
-                    "source": "settingTitle=\"Highlight list parents\"",
-                    "target": "settingTitle=\"醒目提示清單上層項目\""
-                },
-                {
-                    "source": "settingDesc=\"If this is enabled, the parent items of the active list item are not dimmed\"",
-                    "target": "settingDesc=\"啟用後，目前清單項目的上層項目不會被淡化\""
-                },
-                {
-                    "source": "settingTitle=\"Undim all table cells when editing\"",
-                    "target": "settingTitle=\"編輯時取消淡化所有表格儲存格\""
-                },
-                {
-                    "source": "settingDesc=\"If this is enabled, all table cells are shown/not dimmed when you edit a table. If this is disabled, only the current table cell that you are editing is shown, while the other cells remain dimmed.\"",
-                    "target": "settingDesc=\"啟用後，編輯表格時會顯示所有儲存格且不淡化。停用時，只會顯示正在編輯的目前儲存格，其他儲存格會維持淡化。\""
-                },
-                {
-                    "source": "settingTitle=\"Pause dimming while scrolling\"",
-                    "target": "settingTitle=\"捲動時暫停淡化\""
-                },
-                {
-                    "source": "settingDesc=\"If this is enabled, paragraphs / sentences are not dimmed while scrolling\"",
-                    "target": "settingDesc=\"啟用後，捲動時不會淡化段落／句子\""
-                },
-                {
-                    "source": "settingTitle=\"Pause dimming while selecting text\"",
-                    "target": "settingTitle=\"選取文字時暫停淡化\""
-                },
-                {
-                    "source": "settingDesc=\"If this is enabled, paragraphs / sentences are not dimmed while selecting text\"",
-                    "target": "settingDesc=\"啟用後，選取文字時不會淡化段落／句子\""
-                },
-                {
-                    "source": "settingTitle=\"Hemingway mode\"",
-                    "target": "settingTitle=\"海明威模式\""
-                },
-                {
-                    "source": "settingDesc=\"Prevents editing previously written text. Blocks navigation keys (arrows, Home, End, Page Up/Down), Delete key, and undo operations to enforce forward-only writing.\"",
-                    "target": "settingDesc=\"防止編輯先前寫好的文字。會阻擋導覽鍵（方向鍵、Home、End、Page Up/Down）、Delete 鍵與復原操作，以強制只能往前寫。\""
-                },
-                {
-                    "source": "settingTitle=\"Hemingway mode only in writing focus mode\"",
-                    "target": "settingTitle=\"只在寫作專注模式中使用海明威模式\""
-                },
-                {
-                    "source": "settingDesc=\"Only enforce Hemingway mode when writing focus mode is active\"",
-                    "target": "settingDesc=\"只在寫作專注模式啟用時強制使用海明威模式\""
-                },
-                {
-                    "source": "settingTitle=\"Allow using Backspace key in Hemingway mode\"",
-                    "target": "settingTitle=\"允許在海明威模式中使用 Backspace 鍵\""
-                },
-                {
-                    "source": "settingDesc=\"Allows deleting text with Backspace when Hemingway mode is active. Useful for fixing typos while maintaining forward-only writing flow.\"",
-                    "target": "settingDesc=\"海明威模式啟用時允許用 Backspace 刪除文字。適合在維持只能往前寫的流程下修正錯字。\""
-                },
-                {
-                    "source": "settingTitle=\"Show status bar indicator\"",
-                    "target": "settingTitle=\"顯示狀態列指示器\""
-                },
-                {
-                    "source": "settingDesc=\"Shows an indicator in the status bar when Hemingway mode is active.\"",
-                    "target": "settingDesc=\"海明威模式啟用時，在狀態列顯示指示器。\""
-                },
-                {
-                    "source": "settingTitle=\"Status bar text\"",
-                    "target": "settingTitle=\"狀態列文字\""
-                },
-                {
-                    "source": "settingDesc=\"Text to display in the status bar when Hemingway mode is active.\"",
-                    "target": "settingDesc=\"海明威模式啟用時要顯示在狀態列的文字。\""
-                },
-                {
-                    "source": "settingTitle=\"Limit maximum number of characters per line\"",
-                    "target": "settingTitle=\"限制每行最大字元數\""
-                },
-                {
-                    "source": "settingDesc=\"Limits the maximum number of characters per line\"",
-                    "target": "settingDesc=\"限制每行的最大字元數\""
-                },
-                {
-                    "source": "settingTitle=\"Restore cursor position\"",
-                    "target": "settingTitle=\"還原游標位置\""
-                },
-                {
-                    "source": "settingDesc=\"Restore the last cursor position when opening files\"",
-                    "target": "settingDesc=\"開啟檔案時還原上次的游標位置\""
-                },
-                {
-                    "source": "settingTitle=\"Announce updates\"",
-                    "target": "settingTitle=\"公告更新\""
-                },
-                {
-                    "source": "settingDesc=\"If enabled you will get a notice with release notes whenever you install a new version of Typewriter Mode\"",
-                    "target": "settingDesc=\"啟用後，每次安裝新版 Typewriter Mode 時都會收到包含版本資訊的通知\""
-                },
-                {
-                    "source": "settingTitle=\"Make Obsidian fullscreen in writing focus\"",
-                    "target": "settingTitle=\"寫作專注時讓 Obsidian 全螢幕\""
-                },
-                {
-                    "source": "settingDesc=\"If enabled, the Obsidian window will toggle to fullscreen when entering writing focus\"",
-                    "target": "settingDesc=\"啟用後，進入寫作專注時 Obsidian 視窗會切換為全螢幕\""
-                },
-                {
-                    "source": "settingTitle=\"Show header in writing focus\"",
-                    "target": "settingTitle=\"在寫作專注中顯示標題列\""
-                },
-                {
-                    "source": "settingDesc=\"If enabled, the header will be shown in writing focus\"",
-                    "target": "settingDesc=\"啟用後，寫作專注中會顯示標題列\""
-                },
-                {
-                    "source": "settingTitle=\"Show status bar in writing focus\"",
-                    "target": "settingTitle=\"在寫作專注中顯示狀態列\""
-                },
-                {
-                    "source": "settingDesc=\"If enabled, the status bar will be shown in writing focus\"",
-                    "target": "settingDesc=\"啟用後，寫作專注中會顯示狀態列\""
-                },
-                {
-                    "source": "settingTitle=\"Writing focus vignette\"",
-                    "target": "settingTitle=\"寫作專注暗角\""
-                },
-                {
-                    "source": "settingDesc=\"Add a vignette to the edges of the screen in writing focus\"",
-                    "target": "settingDesc=\"在寫作專注時為螢幕邊緣加入暗角\""
-                },
-                {
-                    "source": "name:`Move typewriter ${o}`",
-                    "target": "name:`移動打字機 ${o}`"
-                },
-                {
-                    "source": "name:`Toggle ${this.commandTitle}`",
-                    "target": "name:`切換 ${this.commandTitle}`"
-                },
-                {
-                    "source": "name:`Enable ${this.commandTitle}`",
-                    "target": "name:`啟用 ${this.commandTitle}`"
-                },
-                {
-                    "source": "name:`Disable ${this.commandTitle}`",
-                    "target": "name:`停用 ${this.commandTitle}`"
-                },
-                {
-                    "source": "commandTitle=\"typewriter mode plugin\"",
-                    "target": "commandTitle=\"打字機模式插件\""
-                },
-                {
-                    "source": "commandTitle=\"typewriter scrolling\"",
-                    "target": "commandTitle=\"打字機捲動\""
-                },
-                {
-                    "source": "commandTitle=\"dimming\"",
-                    "target": "commandTitle=\"淡化\""
-                },
-                {
-                    "source": "commandTitle=\"typewriter scrolling and paragraph dimming\"",
-                    "target": "commandTitle=\"打字機捲動與段落淡化\""
-                },
-                {
-                    "source": "commandTitle=\"writing focus\"",
-                    "target": "commandTitle=\"寫作專注\""
-                },
-                {
-                    "source": "commandTitle=\"Move typewriter up\"",
-                    "target": "commandTitle=\"向上移動打字機\""
-                },
-                {
-                    "source": "commandTitle=\"Move typewriter down\"",
-                    "target": "commandTitle=\"向下移動打字機\""
-                },
-                {
-                    "source": "commandTitle=\"Hemingway mode\"",
-                    "target": "commandTitle=\"海明威模式\""
-                },
-                {
-                    "source": "commandTitle=\"limit maximum characters per line\"",
-                    "target": "commandTitle=\"限制每行最大字元數\""
-                },
-                {
-                    "source": "var B=`**Thank you for using Typewriter Mode!** I am a student at the University of Tübingen and develop this plugin in my spare time. If you like the plugin, please consider supporting me on [GitHub Sponsors](https://github.com/sponsors/davisriedel) or [Buy Me a Coffee](https://www.buymeacoffee.com/davis.riedel). Your support ensures the continuous development and maintenance of the plugin. <br> <a href=\"https://www.buymeacoffee.com/davis.riedel\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 60px !important;width: 217px !important;\"></a> <br>\r\n\r\nIf you find any bugs or have a feature request, please [open an issue on GitHub](https://github.com/davisriedel/obsidian-typewriter-mode/issues). Contributions are welcome too.\r\n`",
-                    "target": "var B=`**感謝你使用 Typewriter Mode！** 我是蒂賓根大學的學生，利用空閒時間維護這個外掛。如果你喜歡這個外掛，歡迎透過 [GitHub Sponsors](https://github.com/sponsors/davisriedel) 或 [Buy Me a Coffee](https://www.buymeacoffee.com/davis.riedel) 支持我。你的支持能幫助此外掛持續開發與維護。 <br> <a href=\"https://www.buymeacoffee.com/davis.riedel\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 60px !important;width: 217px !important;\"></a> <br>\n\n如果你發現錯誤或想提出功能需求，請到 [GitHub 開 issue](https://github.com/davisriedel/obsidian-typewriter-mode/issues)。也歡迎一起貢獻。\n`"
-                },
-                {
-                    "source": "var he=`# Typewriter Mode updated to v{{tag-name}}\r\n\r\n{{funding}}\r\n\r\n## What's new?\r\n\r\n{{release-notes}}\r\n`",
-                    "target": "var he=`# Typewriter Mode 已更新至 v{{tag-name}}\n\n{{funding}}\n\n## 更新內容\n\n{{release-notes}}\n`"
-                },
-                {
-                    "source": "Failed to fetch releases: ${s.message??\"Unknown error\"}",
-                    "target": "取得版本資訊失敗：${s.message??\"未知錯誤\"}"
-                },
-                {
-                    "source": "Could not find release with tag ${o}",
-                    "target": "找不到標籤為 ${o} 的版本"
-                },
-                {
-                    "source": "No new releases found",
-                    "target": "找不到新的版本資訊"
-                },
-                {
-                    "source": "name:`Move typewriter ${e}`",
-                    "target": "name:e===\"up\"?\"向上移動打字機\":\"向下移動打字機\""
-                },
-                {
-                    "source": "\"Toggle Writing Focus\"",
-                    "target": "\"切換寫作專注\""
-                },
-                {
-                    "source": "setName(`Current line highlight color in ${this.themeMode} themes`)",
-                    "target": "setName(this.themeMode===\"light\"?\"淺色主題中的目前行醒目提示顏色\":\"深色主題中的目前行醒目提示顏色\")"
-                },
-                {
-                    "source": "setDesc(`The color and opacity of the current line highlight in ${this.themeMode} themes`)",
-                    "target": "setDesc(this.themeMode===\"light\"?\"淺色主題中目前行醒目提示的顏色與不透明度\":\"深色主題中目前行醒目提示的顏色與不透明度\")"
-                },
-                {
-                    "source": "\"Enabled paths\",\"Only enable the plugin for these files or folders. If empty, the plugin is active in all files.\"",
-                    "target": "\"啟用路徑\",\"只在這些檔案或資料夾中啟用此外掛。留空時會在所有檔案中啟用。\""
-                },
-                {
-                    "source": "\"Disabled paths\",\"Always disable the plugin for these files or folders, overriding the enabled paths.\"",
-                    "target": "\"停用路徑\",\"一律在這些檔案或資料夾中停用此外掛，並覆寫啟用路徑設定。\""
-                }
-            ]
+  "schemaVersion": 1,
+  "metadata": {
+    "plugin": "typewriter-mode",
+    "version": "1.5.0",
+    "title": "[zh-tw] Typewriter Mode",
+    "description": "Typewriter Mode 繁體中文化與微調",
+    "language": "zh-tw",
+    "supportedVersions": "1.5.0",
+    "author": "Chico",
+    "updatedAt": 1785333471949
+  },
+  "dict": {
+    "main.js": {
+      "ast": [
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Underline",
+          "target": "底線"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Box",
+          "target": "方框"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Dim everything",
+          "target": "淡化所有文字"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Dim all but the previously focused paragraph / sentence",
+          "target": "淡化除了先前聚焦段落／句子以外的所有內容"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Do not dim anything",
+          "target": "不淡化"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Sentences",
+          "target": "句子"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Paragraphs",
+          "target": "段落"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Desktop only",
+          "target": "僅桌面版"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Column",
+          "target": "欄"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "The style of the current line highlight",
+          "target": "目前行的醒目提示樣式"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "The thickness of the underline that highlights the current line",
+          "target": "醒目提示目前行的底線粗細"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "How soon lines shall be faded out",
+          "target": "行多久後淡出"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "How to dim paragraphs / sentences in notes / editors that your cursor is not on (e.g. if you have multiple notes open in split panes)",
+          "target": "如何淡化游標不在其中的筆記／編輯器內的段落／句子（例如在分割窗格中開啟多個筆記時）"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Choose to dim unfocused paragraphs or sentences",
+          "target": "選擇要淡化未聚焦的段落或句子"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "The amount of lines to always keep above and below the current line",
+          "target": "目前行上下方要一律保留的行數"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "The maximum number of characters per line",
+          "target": "每行的最大字元數"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Positions the typewriter line at the specified percentage of the screen",
+          "target": "將目前行定位在螢幕的指定百分比處"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Custom font size in points for writing focus mode (0 = use default font size)",
+          "target": "寫作專注模式的自訂字體大小（以點為單位，0 = 使用預設字體大小）"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "The style of the vignette in writing focus mode",
+          "target": "寫作專注模式中的暗角樣式"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Not available if \"keep lines above and below\" is activated",
+          "target": "啟用「保留上下行」時不可用"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Not available if typewriter scrolling is activated",
+          "target": "啟用「打字機捲動」時不可用"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Current line highlight style",
+          "target": "目前行醒目提示樣式"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Current line underline thickness",
+          "target": "目前行底線粗細"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Intensity of the fade lines gradient",
+          "target": "淡化行漸層強度"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Dimming behavior in unfocused notes",
+          "target": "未聚焦筆記中的淡化行為"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Dim unfocused mode",
+          "target": "淡化未聚焦文字"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Amount of lines above and below the current line",
+          "target": "目前行的上下保留行數"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Maximum number of characters per line",
+          "target": "每行最大字元數"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Typewriter offset",
+          "target": "打字機偏移量"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Writing focus font size",
+          "target": "寫作專注字體大小"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Writing focus vignette style",
+          "target": "寫作專注暗角樣式"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "Fetching release notes...",
+          "target": "正在取得版本資訊..."
+        },
+        {
+          "type": "CallExpression",
+          "name": "setHeading",
+          "source": "Typewriter",
+          "target": "打字機"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setHeading",
+          "source": "Keep lines above and below",
+          "target": "保留目前行上下方行數"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setHeading",
+          "source": "Highlight current line",
+          "target": "醒目提示目前行"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setHeading",
+          "source": "Dimming",
+          "target": "淡化"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setHeading",
+          "source": "Writing focus",
+          "target": "寫作專注"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setHeading",
+          "source": "Hemingway mode",
+          "target": "海明威模式"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setHeading",
+          "source": "Limit line width",
+          "target": "限制行寬"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setHeading",
+          "source": "Restore cursor position",
+          "target": "還原游標位置"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setHeading",
+          "source": "Update notice and funding",
+          "target": "更新通知與贊助"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Configure which files or folders the plugin is enabled or disabled in.",
+          "target": "設定要啟用或停用此插件的檔案或資料夾。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Opacity of dimmed elements",
+          "target": "淡化元素的不透明度"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "The opacity of dimmed elements",
+          "target": "淡化元素的不透明度"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "All platforms",
+          "target": "所有平台"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Desktop and tablet",
+          "target": "桌面版與平板"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Mobile only (tablet and phone)",
+          "target": "僅行動版（平板與手機）"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Tablet only",
+          "target": "僅平板"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Phone only",
+          "target": "僅手機"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Configure",
+          "target": "設定"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "File paths",
+          "target": "檔案路徑"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTitle",
+          "source": "File paths",
+          "target": "檔案路徑"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "placeholder",
+          "source": "Type to search vault paths…",
+          "target": "輸入以搜尋儲存庫路徑…"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "No paths configured.",
+          "target": "尚未設定路徑。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addRibbonIcon",
+          "source": "Toggle Writing Focus",
+          "target": "切換寫作專注"
+        },
+        {
+          "type": "CallExpression",
+          "name": "renderSection",
+          "source": "Enabled paths",
+          "target": "啟用路徑"
+        },
+        {
+          "type": "CallExpression",
+          "name": "renderSection",
+          "source": "Only enable the plugin for these files or folders. If empty, the plugin is active in all files.",
+          "target": "只在這些檔案或資料夾中啟用此外掛。留空時會在所有檔案中啟用。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "renderSection",
+          "source": "Disabled paths",
+          "target": "停用路徑"
+        },
+        {
+          "type": "CallExpression",
+          "name": "renderSection",
+          "source": "Always disable the plugin for these files or folders, overriding the enabled paths.",
+          "target": "一律在這些檔案或資料夾中停用此外掛，並覆寫啟用路徑設定。"
+        },
+        {
+          "type": "TemplateLiteral",
+          "name": "E",
+          "source": "**Thank you for using Typewriter Mode!** I am a student at the University of Tübingen and develop this plugin in my spare time. If you like the plugin, please consider supporting me on [GitHub Sponsors](https://github.com/sponsors/davisriedel) or [Buy Me a Coffee](https://www.buymeacoffee.com/davis.riedel). Your support ensures the continuous development and maintenance of the plugin. <br/><br/> <a href=\"https://www.buymeacoffee.com/davis.riedel\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 60px !important;width: 217px !important;\"></a><br/>\n\nIf you find any bugs or have a feature request, please [open an issue on GitHub](https://github.com/davisriedel/obsidian-typewriter-mode/issues). Contributions are welcome too.\n",
+          "target": "**感謝你使用 Typewriter Mode！** 我是圖賓根大學的學生，利用課餘時間開發此外掛。如果你喜歡此外掛，歡迎透過 [GitHub Sponsors](https://github.com/sponsors/davisriedel) 或 [Buy Me a Coffee](https://www.buymeacoffee.com/davis.riedel) 贊助我。你的支持能讓此外掛持續開發與維護。 <br/><br/> <a href=\"https://www.buymeacoffee.com/davis.riedel\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 60px !important;width: 217px !important;\"></a><br/>\n\n若發現錯誤或有功能建議，請[在 GitHub 建立議題](https://github.com/davisriedel/obsidian-typewriter-mode/issues)，也歡迎參與貢獻。\n"
+        },
+        {
+          "type": "TemplateLiteral",
+          "name": "he",
+          "source": "# Typewriter Mode updated to v{{tag-name}}\n\n{{funding}}\n\n## What's new?\n\n{{release-notes}}\n",
+          "target": "# Typewriter Mode 已更新至 v{{tag-name}}\n\n{{funding}}\n\n## 更新內容\n\n{{release-notes}}\n"
         }
+      ],
+      "regex": [
+        {
+          "source": "settingTitle=\"Activate Typewriter Mode\"",
+          "target": "settingTitle=\"啟用 Typewriter Mode\""
+        },
+        {
+          "source": "settingDesc=\"This enables or disables all the features below.\"",
+          "target": "settingDesc=\"啟用或停用下方所有功能。\""
+        },
+        {
+          "source": "settingTitle=\"Enable on platforms\"",
+          "target": "settingTitle=\"啟用平台\""
+        },
+        {
+          "source": "settingDesc=\"Select on which platforms Typewriter Mode should be active\"",
+          "target": "settingDesc=\"選擇 Typewriter Mode 要在哪些平台啟用\""
+        },
+        {
+          "source": "settingTitle=\"Only activate after first interaction\"",
+          "target": "settingTitle=\"第一次互動後才啟用\""
+        },
+        {
+          "source": "settingDesc=\"Activate the focused line highlight and paragraph dimming only after the first interaction with the editor\"",
+          "target": "settingDesc=\"與編輯器第一次互動後，才啟用目前行醒目提示與段落淡化\""
+        },
+        {
+          "source": "settingDesc=\"Turns typewriter scrolling on or off\"",
+          "target": "settingDesc=\"開啟或關閉打字機捲動\""
+        },
+        {
+          "source": "settingTitle=\"Only maintain typewriter offset when reached\"",
+          "target": "settingTitle=\"到達偏移量後才維持打字機位置\""
+        },
+        {
+          "source": "settingDesc=\"The line that the cursor is on will not be scrolled to the center of the editor until it the specified typewriter offset is reached. This removes the additional space at the top of the editor.\"",
+          "target": "settingDesc=\"游標所在行在到達指定的打字機偏移量之前，不會捲動到編輯器中央。這會移除編輯器頂部的額外空間。\""
+        },
+        {
+          "source": "settingTitle=\"Do not snap typewriter with arrow keys\"",
+          "target": "settingTitle=\"不要用方向鍵吸附打字機位置\""
+        },
+        {
+          "source": "settingDesc=\"The typewriter will only snap when using this plugin's move commands. It will not snap when using the arrow keys. The move commands are by default Cmd/Ctrl+ArrowUp/ArrowDown, but you can assign your own hotkeys for the move commands in Obsidian's settings.\"",
+          "target": "settingDesc=\"只有使用此外掛的移動命令時，打字機位置才會吸附。使用方向鍵時不會吸附。移動命令預設為 Cmd/Ctrl+方向鍵上/下，你也可以在 Obsidian 設定中自行指定快捷鍵。\""
+        },
+        {
+          "source": "settingDesc=\"When enabled, always keeps the specified amount of lines above and below the current line in view\"",
+          "target": "settingDesc=\"啟用後，會一律在畫面中保留目前行上下方指定數量的行\""
+        },
+        {
+          "source": "settingDesc=\"Highlights the line that the cursor is currently on\"",
+          "target": "settingDesc=\"醒目提示游標目前所在的行\""
+        },
+        {
+          "source": "settingDesc=\"Only show highlighted line in the note your cursor is on (e.g. if you have multiple notes open in split panes)\"",
+          "target": "settingDesc=\"只在游標所在的筆記中顯示醒目提示行（例如在分割窗格中開啟多個筆記時）\""
+        },
+        {
+          "source": "settingTitle=\"Pause current line highlight while scrolling\"",
+          "target": "settingTitle=\"捲動時暫停目前行醒目提示\""
+        },
+        {
+          "source": "settingDesc=\"If enabled, the current line highlight is hidden while scrolling\"",
+          "target": "settingDesc=\"啟用後，捲動時會隱藏目前行醒目提示\""
+        },
+        {
+          "source": "settingTitle=\"Pause current line highlight while selecting text\"",
+          "target": "settingTitle=\"選取文字時暫停目前行醒目提示\""
+        },
+        {
+          "source": "settingDesc=\"If enabled, the current line highlight is hidden while selecting text\"",
+          "target": "settingDesc=\"啟用後，選取文字時會隱藏目前行醒目提示\""
+        },
+        {
+          "source": "settingTitle=\"Fade lines\"",
+          "target": "settingTitle=\"淡出行\""
+        },
+        {
+          "source": "settingDesc=\"This places a gradient on the lines above and below the current line, making the text fade out more and more towards the top and bottom of the editor.\"",
+          "target": "settingDesc=\"在目前行上下方套用漸層，讓文字越靠近編輯器頂端與底端越淡。\""
+        },
+        {
+          "source": "settingTitle=\"Fade lines only in writing focus mode\"",
+          "target": "settingTitle=\"只在寫作專注模式中淡出行\""
+        },
+        {
+          "source": "settingDesc=\"Only show the fade lines effect when writing focus mode is active\"",
+          "target": "settingDesc=\"只在寫作專注模式啟用時顯示淡出行效果\""
+        },
+        {
+          "source": "settingDesc=\"Only show the highlighted line when writing focus mode is active\"",
+          "target": "settingDesc=\"只在寫作專注模式啟用時顯示醒目提示行\""
+        },
+        {
+          "source": "settingTitle=\"Dim unfocused\"",
+          "target": "settingTitle=\"淡化未聚焦內容\""
+        },
+        {
+          "source": "settingDesc=\"Dim unfocused paragraphs / sentences\"",
+          "target": "settingDesc=\"淡化未聚焦的段落／句子\""
+        },
+        {
+          "source": "settingTitle=\"Dim unfocused only in writing focus mode\"",
+          "target": "settingTitle=\"只在寫作專注模式中淡化未聚焦內容\""
+        },
+        {
+          "source": "settingDesc=\"Only dim unfocused paragraphs / sentences when writing focus mode is active\"",
+          "target": "settingDesc=\"只在寫作專注模式啟用時淡化未聚焦的段落／句子\""
+        },
+        {
+          "source": "settingTitle=\"Highlight list parents\"",
+          "target": "settingTitle=\"醒目提示清單上層項目\""
+        },
+        {
+          "source": "settingDesc=\"If this is enabled, the parent items of the active list item are not dimmed\"",
+          "target": "settingDesc=\"啟用後，目前清單項目的上層項目不會被淡化\""
+        },
+        {
+          "source": "settingTitle=\"Undim all table cells when editing\"",
+          "target": "settingTitle=\"編輯時取消淡化所有表格儲存格\""
+        },
+        {
+          "source": "settingDesc=\"If this is enabled, all table cells are shown/not dimmed when you edit a table. If this is disabled, only the current table cell that you are editing is shown, while the other cells remain dimmed.\"",
+          "target": "settingDesc=\"啟用後，編輯表格時會顯示所有儲存格且不淡化。停用時，只會顯示正在編輯的目前儲存格，其他儲存格會維持淡化。\""
+        },
+        {
+          "source": "settingTitle=\"Pause dimming while scrolling\"",
+          "target": "settingTitle=\"捲動時暫停淡化\""
+        },
+        {
+          "source": "settingDesc=\"If this is enabled, paragraphs / sentences are not dimmed while scrolling\"",
+          "target": "settingDesc=\"啟用後，捲動時不會淡化段落／句子\""
+        },
+        {
+          "source": "settingTitle=\"Pause dimming while selecting text\"",
+          "target": "settingTitle=\"選取文字時暫停淡化\""
+        },
+        {
+          "source": "settingDesc=\"If this is enabled, paragraphs / sentences are not dimmed while selecting text\"",
+          "target": "settingDesc=\"啟用後，選取文字時不會淡化段落／句子\""
+        },
+        {
+          "source": "settingDesc=\"Prevents editing previously written text. Blocks navigation keys (arrows, Home, End, Page Up/Down), Delete key, and undo operations to enforce forward-only writing.\"",
+          "target": "settingDesc=\"防止編輯先前寫好的文字。會阻擋導覽鍵（方向鍵、Home、End、Page Up/Down）、Delete 鍵與復原操作，以強制只能往前寫。\""
+        },
+        {
+          "source": "settingTitle=\"Show status bar indicator\"",
+          "target": "settingTitle=\"顯示狀態列指示器\""
+        },
+        {
+          "source": "settingTitle=\"Status bar text\"",
+          "target": "settingTitle=\"狀態列文字\""
+        },
+        {
+          "source": "settingTitle=\"Limit maximum number of characters per line\"",
+          "target": "settingTitle=\"限制每行最大字元數\""
+        },
+        {
+          "source": "settingDesc=\"Limits the maximum number of characters per line\"",
+          "target": "settingDesc=\"限制每行的最大字元數\""
+        },
+        {
+          "source": "settingDesc=\"Restore the last cursor position when opening files\"",
+          "target": "settingDesc=\"開啟檔案時還原上次的游標位置\""
+        },
+        {
+          "source": "settingTitle=\"Announce updates\"",
+          "target": "settingTitle=\"公告更新\""
+        },
+        {
+          "source": "settingDesc=\"If enabled you will get a notice with release notes whenever you install a new version of Typewriter Mode\"",
+          "target": "settingDesc=\"啟用後，每次安裝新版 Typewriter Mode 時都會收到包含版本資訊的通知\""
+        },
+        {
+          "source": "settingTitle=\"Make Obsidian fullscreen in writing focus\"",
+          "target": "settingTitle=\"寫作專注時讓 Obsidian 全螢幕\""
+        },
+        {
+          "source": "settingDesc=\"If enabled, the Obsidian window will toggle to fullscreen when entering writing focus\"",
+          "target": "settingDesc=\"啟用後，進入寫作專注時 Obsidian 視窗會切換為全螢幕\""
+        },
+        {
+          "source": "settingTitle=\"Show header in writing focus\"",
+          "target": "settingTitle=\"在寫作專注中顯示標題列\""
+        },
+        {
+          "source": "settingDesc=\"If enabled, the header will be shown in writing focus\"",
+          "target": "settingDesc=\"啟用後，寫作專注中會顯示標題列\""
+        },
+        {
+          "source": "settingTitle=\"Show status bar in writing focus\"",
+          "target": "settingTitle=\"在寫作專注中顯示狀態列\""
+        },
+        {
+          "source": "settingDesc=\"If enabled, the status bar will be shown in writing focus\"",
+          "target": "settingDesc=\"啟用後，寫作專注中會顯示狀態列\""
+        },
+        {
+          "source": "settingDesc=\"Add a vignette to the edges of the screen in writing focus\"",
+          "target": "settingDesc=\"在寫作專注時為螢幕邊緣加入暗角\""
+        },
+        {
+          "source": "name:`Toggle ${this.commandTitle}`",
+          "target": "name:`切換 ${this.commandTitle}`"
+        },
+        {
+          "source": "name:`Enable ${this.commandTitle}`",
+          "target": "name:`啟用 ${this.commandTitle}`"
+        },
+        {
+          "source": "name:`Disable ${this.commandTitle}`",
+          "target": "name:`停用 ${this.commandTitle}`"
+        },
+        {
+          "source": "commandTitle=\"typewriter mode plugin\"",
+          "target": "commandTitle=\"打字機模式插件\""
+        },
+        {
+          "source": "commandTitle=\"typewriter scrolling\"",
+          "target": "commandTitle=\"打字機捲動\""
+        },
+        {
+          "source": "commandTitle=\"dimming\"",
+          "target": "commandTitle=\"淡化\""
+        },
+        {
+          "source": "commandTitle=\"typewriter scrolling and paragraph dimming\"",
+          "target": "commandTitle=\"打字機捲動與段落淡化\""
+        },
+        {
+          "source": "commandTitle=\"writing focus\"",
+          "target": "commandTitle=\"寫作專注\""
+        },
+        {
+          "source": "commandTitle=\"Move typewriter up\"",
+          "target": "commandTitle=\"向上移動打字機\""
+        },
+        {
+          "source": "commandTitle=\"Move typewriter down\"",
+          "target": "commandTitle=\"向下移動打字機\""
+        },
+        {
+          "source": "commandTitle=\"limit maximum characters per line\"",
+          "target": "commandTitle=\"限制每行最大字元數\""
+        },
+        {
+          "source": "No new releases found",
+          "target": "找不到新的版本資訊"
+        },
+        {
+          "source": "name:`Move typewriter ${e}`",
+          "target": "name:e===\"up\"?\"向上移動打字機\":\"向下移動打字機\""
+        },
+        {
+          "source": "setName(`Current line highlight color in ${this.themeMode} themes`)",
+          "target": "setName(this.themeMode===\"light\"?\"淺色主題中的目前行醒目提示顏色\":\"深色主題中的目前行醒目提示顏色\")"
+        },
+        {
+          "source": "setDesc(`The color and opacity of the current line highlight in ${this.themeMode} themes`)",
+          "target": "setDesc(this.themeMode===\"light\"?\"淺色主題中目前行醒目提示的顏色與不透明度\":\"深色主題中目前行醒目提示的顏色與不透明度\")"
+        },
+        {
+          "source": "settingTitle=\"Typewriter scrolling\"",
+          "target": "settingTitle=\"打字機捲動\""
+        },
+        {
+          "source": "settingTitle=\"Highlight current line only in focused note\"",
+          "target": "settingTitle=\"只在聚焦筆記中醒目提示目前行\""
+        },
+        {
+          "source": "settingTitle=\"Highlight current line only in writing focus mode\"",
+          "target": "settingTitle=\"只在寫作專注模式中醒目提示目前行\""
+        },
+        {
+          "source": "settingTitle=\"Allow using Backspace key in Hemingway mode\"",
+          "target": "settingTitle=\"允許在海明威模式中使用 Backspace 鍵\""
+        },
+        {
+          "source": "settingDesc=\"Allows deleting text with Backspace when Hemingway mode is active. Useful for fixing typos while maintaining forward-only writing flow.\"",
+          "target": "settingDesc=\"海明威模式啟用時允許使用 Backspace 刪除文字，方便在維持只能向前寫作的流程下修正錯字。\""
+        },
+        {
+          "source": "settingTitle=\"Hemingway mode only in writing focus mode\"",
+          "target": "settingTitle=\"只在寫作專注模式中使用海明威模式\""
+        },
+        {
+          "source": "settingDesc=\"Only enforce Hemingway mode when writing focus mode is active\"",
+          "target": "settingDesc=\"只在寫作專注模式啟用時強制使用海明威模式\""
+        },
+        {
+          "source": "settingDesc=\"Shows an indicator in the status bar when Hemingway mode is active.\"",
+          "target": "settingDesc=\"海明威模式啟用時，在狀態列顯示指示器。\""
+        },
+        {
+          "source": "settingDesc=\"Text to display in the status bar when Hemingway mode is active.\"",
+          "target": "settingDesc=\"海明威模式啟用時要顯示在狀態列的文字。\""
+        },
+        {
+          "source": "settingTitle=\"Writing focus vignette\"",
+          "target": "settingTitle=\"寫作專注暗角\""
+        },
+        {
+          "source": "settingTitle=\"Highlight current line\"",
+          "target": "settingTitle=\"醒目提示目前行\""
+        },
+        {
+          "source": "settingTitle=\"Hemingway mode\"",
+          "target": "settingTitle=\"海明威模式\""
+        },
+        {
+          "source": "settingTitle=\"Keep lines above and below\"",
+          "target": "settingTitle=\"保留目前行上下方行數\""
+        },
+        {
+          "source": "settingTitle=\"Restore cursor position\"",
+          "target": "settingTitle=\"還原游標位置\""
+        }
+      ]
+    },
+    "manifest.json": {
+      "ast": [
+        {
+          "type": "ObjectProperty",
+          "name": "description",
+          "source": "Typewriter scroll, highlight current line, dim unfocused paragraphs and sentences, writing focus, restore cursor position and more.",
+          "target": "提供打字機捲動、醒目提示目前行、淡化未聚焦的段落與句子、寫作專注、還原游標位置等功能。"
+        }
+      ],
+      "regex": []
     }
+  }
 }
