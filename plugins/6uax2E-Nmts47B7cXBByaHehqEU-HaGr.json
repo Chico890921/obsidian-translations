@@ -22,13 +22,13 @@
                 {
                     "type": "ObjectProperty",
                     "name": "desc",
-                    "source": "列在换行前将保持此最小宽度。设置为 0 可禁用列换行功能。对小屏设备非常实用",
+                    "source": "Columns will have this minimum width before wrapping to a new row. 0 disables column wrapping. Useful for smaller devices",
                     "target": "欄在換行前會保持此最小寬度。設為 0 可停用欄換行功能。對小螢幕裝置很實用。"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "desc",
-                    "source": "列的默认宽度。如果指定了最小宽度，列的宽度将根据此设置进行乘算。",
+                    "source": "The default width of a column. If the minimum width is specified, the width of the column will be multiplied by this setting.",
                     "target": "欄的預設寬度。如果指定了最小寬度，欄寬會依此設定倍增。"
                 },
                 {
@@ -40,13 +40,13 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "列的最小宽度",
+                    "source": "Minimum width of column",
                     "target": "欄的最小寬度"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "项目的默认跨列数",
+                    "source": "The default span of an item",
                     "target": "項目的預設跨欄數"
                 },
                 {
@@ -86,11 +86,11 @@
                     "target": "text:\"設定：\""
                 },
                 {
-                    "source": "name:\"列的最小宽度\"",
+                    "source": "name:\"Minimum width of column\"",
                     "target": "name:\"欄的最小寬度\""
                 },
                 {
-                    "source": "name:\"项目的默认跨列数\"",
+                    "source": "name:\"The default span of an item\"",
                     "target": "name:\"項目的預設跨欄數\""
                 },
                 {
@@ -112,6 +112,30 @@
                 {
                     "source": "text:\"Create a Column Wrapper\"",
                     "target": "text:\"建立欄容器\""
+                },
+                {
+                    "source": "# Column ",
+                    "target": "# 欄 "
+                },
+                {
+                    "source": "# New Column",
+                    "target": "# 新欄"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Allows you to create columns in Obsidian Markdown",
+                    "target": "讓你在 Obsidian Markdown 中建立多欄版面。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Allows you to create columns in Obsidian Markdown\"",
+                    "target": "\"description\": \"讓你在 Obsidian Markdown 中建立多欄版面。\""
                 }
             ]
         }
