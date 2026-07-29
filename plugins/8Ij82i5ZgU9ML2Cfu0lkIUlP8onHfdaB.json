@@ -44,12 +44,6 @@
                     "target": "視窗再次變寬時重新顯示側邊欄"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Hide Sidebars on Window Resize",
-                    "target": "視窗調整大小時隱藏側邊欄"
-                },
-                {
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "Sidebars remain hidden if option is disabled",
@@ -86,12 +80,24 @@
                     "target": "setName(\"視窗再次變寬時重新顯示側邊欄\")"
                 },
                 {
-                    "source": "text:\"Hide Sidebars on Window Resize\"",
-                    "target": "text:\"視窗調整大小時隱藏側邊欄\""
-                },
-                {
                     "source": "setDesc(\"Sidebars remain hidden if option is disabled\")",
                     "target": "setDesc(\"停用此選項時，側邊欄會保持隱藏\")"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Automatically hides the sidebars when your window is resized to be narrower",
+                    "target": "視窗縮窄時自動隱藏側邊欄"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Automatically hides the sidebars when your window is resized to be narrower\"",
+                    "target": "\"description\": \"視窗縮窄時自動隱藏側邊欄\""
                 }
             ]
         }
