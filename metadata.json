@@ -511,13 +511,13 @@
         "plugin": "sidenotes",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "0.3.7",
-        "supported_versions": "0.3.7",
+        "version": "0.3.8",
+        "supported_versions": "0.3.8",
         "title": "[zh-tw] Sidenotes",
-        "description": "Sidenotes Localization & Tweaks",
-        "hash": "6f109e8a6f109e8a6f109e8a6f109e8a",
+        "description": "Sidenotes 繁體中文化與微調",
+        "hash": "309452fe309452fe309452fe309452fe",
         "created_at": "2026-05-25T03:50:51.128Z",
-        "updated_at": "2026-07-23T08:53:43.343Z"
+        "updated_at": "2026-07-29T12:56:01.916Z"
     },
     {
         "id": "fAEFnFJLE0Lw1Ga24KqvqIBEVzV9-pGq",
