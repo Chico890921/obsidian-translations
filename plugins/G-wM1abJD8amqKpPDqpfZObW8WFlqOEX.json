@@ -8,136 +8,70 @@
     "language": "zh-tw",
     "supportedVersions": "1.1.0",
     "author": "Chico",
-    "updatedAt": 1782924955069
+    "updatedAt": 1785324176637
   },
   "dict": {
     "main.js": {
       "ast": [
         {
           "type": "CallExpression",
-          "name": "error",
-          "source": "Metadata fetch error:",
-          "target": "擷取中繼資料時發生錯誤："
-        },
-        {
-          "type": "CallExpression",
-          "name": "error",
-          "source": "PDF download error:",
-          "target": "PDF 下載錯誤："
-        },
-        {
-          "type": "CallExpression",
-          "name": "error",
-          "source": "Failed to fetch arXiv metadata:",
-          "target": "無法擷取 arXiv 中繼資料："
-        },
-        {
-          "type": "CallExpression",
-          "name": "error",
-          "source": "Search failed:",
-          "target": "搜尋失敗："
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Folder to save paper notes.",
-          "target": "用來儲存論文筆記的資料夾。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Folder to save PDFs. These are only downloaded if notes contain the {{PDF}} placeholder.",
-          "target": "用來儲存 PDF 的資料夾。只有當筆記包含 {{PDF}} 佔位符時才會下載。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Notes folder",
-          "target": "筆記資料夾"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "PDF folder",
-          "target": "PDF 資料夾"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setPlaceholder",
-          "source": "Search paper title or arXiv URL...",
-          "target": "搜尋論文標題或 arXiv URL..."
-        },
-        {
-          "type": "CallExpression",
-          "name": "setPlaceholder",
-          "source": "Example: Research/Papers",
-          "target": "範例：Research/Papers"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setPlaceholder",
-          "source": "Example: Research/PDF",
-          "target": "範例：Research/PDF"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setText",
-          "source": "File exists",
-          "target": "檔案已存在"
-        },
-        {
-          "type": "NewExpression",
-          "name": "Notice",
-          "source": "Invalid arXiv URL.",
-          "target": "arXiv URL 無效。"
-        },
-        {
-          "type": "NewExpression",
-          "name": "Notice",
-          "source": "Fetching paper metadata from arXiv...",
-          "target": "正在從 arXiv 擷取論文中繼資料..."
-        },
-        {
-          "type": "NewExpression",
-          "name": "Notice",
-          "source": "Could not find metadata for the arXiv paper.",
-          "target": "找不到該 arXiv 論文的中繼資料。"
-        },
-        {
-          "type": "NewExpression",
-          "name": "Notice",
-          "source": "Failed to fetch paper metadata.",
-          "target": "無法擷取論文中繼資料。"
-        },
-        {
-          "type": "Property",
           "name": "name",
           "source": "Import",
           "target": "匯入"
         },
         {
-          "type": "ObjectProperty",
+          "type": "CallExpression",
           "name": "name",
           "source": "Import from clipboard",
           "target": "從剪貼簿匯入"
         },
         {
-          "type": "ObjectProperty",
-          "name": "text",
-          "source": "A note with this title already exists. Do you want to overwrite?",
-          "target": "已有相同標題的筆記。要覆寫嗎？"
+          "type": "CallExpression",
+          "name": "name",
+          "source": "Cite",
+          "target": "引用"
         },
         {
-          "type": "Property",
-          "name": "text",
-          "source": "Overwrite",
-          "target": "覆寫"
+          "type": "CallExpression",
+          "name": "Notice",
+          "source": "Place your cursor in a note to cite a paper.",
+          "target": "請將游標置於筆記中以引用論文。"
         },
         {
-          "type": "Property",
-          "name": "text",
-          "source": "Cancel",
-          "target": "取消"
+          "type": "CallExpression",
+          "name": "Notice",
+          "source": "No saved papers found.",
+          "target": "找不到已儲存的論文。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "Notice",
+          "source": "Invalid arXiv URL.",
+          "target": "arXiv URL 無效。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "Notice",
+          "source": "Fetching paper metadata from arXiv...",
+          "target": "正在從 arXiv 擷取論文中繼資料..."
+        },
+        {
+          "type": "CallExpression",
+          "name": "Notice",
+          "source": "Could not find metadata for the arXiv paper.",
+          "target": "找不到該 arXiv 論文的中繼資料。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "Notice",
+          "source": "Failed to fetch paper metadata.",
+          "target": "無法擷取論文中繼資料。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "error",
+          "source": "Metadata fetch error:",
+          "target": "擷取中繼資料時發生錯誤："
         },
         {
           "type": "CallExpression",
@@ -159,9 +93,135 @@
         },
         {
           "type": "CallExpression",
+          "name": "error",
+          "source": "PDF download error:",
+          "target": "PDF 下載錯誤："
+        },
+        {
+          "type": "CallExpression",
           "name": "Error",
           "source": "Could not extract arXiv ID from URL",
           "target": "無法從 URL 擷取 arXiv ID"
+        },
+        {
+          "type": "CallExpression",
+          "name": "Error",
+          "source": "Failed to download PDF content",
+          "target": "無法下載 PDF 內容"
+        },
+        {
+          "type": "CallExpression",
+          "name": "error",
+          "source": "Failed to fetch arXiv metadata:",
+          "target": "無法擷取 arXiv 中繼資料："
+        },
+        {
+          "type": "CallExpression",
+          "name": "setPlaceholder",
+          "source": "Search paper title or arXiv URL...",
+          "target": "搜尋論文標題或 arXiv URL..."
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "emptyStateText",
+          "source": "Search failed. Please try again.",
+          "target": "搜尋失敗，請再試一次。"
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "emptyStateText",
+          "source": "Searching arXiv...",
+          "target": "正在搜尋 arXiv..."
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "emptyStateText",
+          "source": "No results found",
+          "target": "找不到結果"
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "emptyStateText",
+          "source": "No matching results",
+          "target": "沒有相符結果"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setPlaceholder",
+          "source": "Search saved papers...",
+          "target": "搜尋已儲存的論文..."
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "placeholder",
+          "source": "Enter alias (or leave blank)...",
+          "target": "輸入別名（或留空）..."
+        },
+        {
+          "type": "CallExpression",
+          "name": "setText",
+          "source": "File exists",
+          "target": "檔案已存在"
+        },
+        {
+          "type": "CallExpression",
+          "name": "text",
+          "source": "A note with this title already exists. Do you want to overwrite?",
+          "target": "已有相同標題的筆記。要覆寫嗎？"
+        },
+        {
+          "type": "CallExpression",
+          "name": "text",
+          "source": "Overwrite",
+          "target": "覆寫"
+        },
+        {
+          "type": "CallExpression",
+          "name": "text",
+          "source": "Cancel",
+          "target": "取消"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Import",
+          "target": "匯入"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Notes location",
+          "target": "筆記儲存位置"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Folder to save paper notes.",
+          "target": "用來儲存論文筆記的資料夾。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setPlaceholder",
+          "source": "Example: Research/Papers",
+          "target": "範例：Research/Papers"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "PDF location",
+          "target": "PDF 儲存位置"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Folder to save PDFs. These are only downloaded if notes contain the {{pdf}} placeholder.",
+          "target": "用來儲存 PDF 的資料夾。只有當筆記包含 {{pdf}} 佔位符時才會下載。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setPlaceholder",
+          "source": "Example: Research/PDF",
+          "target": "範例：Research/PDF"
         },
         {
           "type": "CallExpression",
@@ -171,159 +231,297 @@
         },
         {
           "type": "CallExpression",
+          "name": "appendText",
+          "source": "Template for imported paper notes.",
+          "target": "匯入論文筆記時使用的範本。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "appendText",
+          "source": "Use {{title}}, {{authors}}, {{year}}, {{url}}, {{pdf}} to insert metadata.",
+          "target": "使用 {{title}}、{{authors}}、{{year}}、{{url}} 與 {{pdf}} 插入中繼資料。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setPlaceholder",
+          "source": "Example: Research/Paper Template.md",
+          "target": "範例：Research/Paper Template.md"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Cite",
+          "target": "引用"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Use query as alias",
+          "target": "將搜尋文字用作別名"
+        },
+        {
+          "type": "CallExpression",
           "name": "setDesc",
-          "source": "Template for creating paper notes. Use {{TITLE}}, {{AUTHORS}}, {{YEAR}}, {{URL}}, and {{PDF}} to insert metadata.",
-          "target": "建立論文筆記的範本。使用 {{TITLE}}、{{AUTHORS}}、{{YEAR}}、{{URL}} 和 {{PDF}} 插入中繼資料。"
+          "source": "When citing, prefill the alias input with your search query.",
+          "target": "引用時，以搜尋文字預先填入別名欄位。"
+        },
+        {
+          "type": "TemplateElement",
+          "name": "",
+          "source": "Template file \"${t}\" not found. Using default template.",
+          "target": "找不到範本檔案「${t}」，將使用預設範本。"
+        },
+        {
+          "type": "TemplateElement",
+          "name": "",
+          "source": "PDF download failed: ${u.message}",
+          "target": "PDF 下載失敗：${u.message}"
+        },
+        {
+          "type": "TemplateElement",
+          "name": "",
+          "source": "PDF location \"${this.settings.pdfFolder}\" doesn't exist. Please create it first.",
+          "target": "PDF 資料夾「${this.settings.pdfFolder}」不存在，請先建立。"
+        },
+        {
+          "type": "TemplateElement",
+          "name": "",
+          "source": "Downloading PDF for \"${t.title}\"...",
+          "target": "正在下載「${t.title}」的 PDF..."
+        },
+        {
+          "type": "TemplateElement",
+          "name": "",
+          "source": "Failed to download PDF for \"${t.title}\"",
+          "target": "無法下載「${t.title}」的 PDF"
+        },
+        {
+          "type": "TemplateElement",
+          "name": "",
+          "source": "Failed to download PDF: ${c.message}",
+          "target": "PDF 下載失敗：${c.message}"
+        },
+        {
+          "type": "TemplateElement",
+          "name": "",
+          "source": "ArXiv search attempt ${a}/${e} failed:",
+          "target": "arXiv 搜尋嘗試 ${a}/${e} 失敗："
+        },
+        {
+          "type": "TemplateElement",
+          "name": "",
+          "source": "Searching arXiv... (retry ${a+1}/${e})",
+          "target": "正在搜尋 arXiv...（重試 ${a+1}/${e}）"
         }
       ],
       "regex": [
         {
-          "source": "Notice(\"Invalid arXiv URL.\")",
-          "target": "Notice(\"arXiv URL 無效。\")"
+          "source": "\"Import\"",
+          "target": "\"匯入\""
         },
         {
-          "source": "Notice(\"Fetching paper metadata from arXiv...\",0);try{let a=await this.fetchArxivMetadata(e);if(r.hide(),!a){new n.Notice(\"Could not find metadata for the arXiv paper.\")",
-          "target": "Notice(\"正在從 arXiv 擷取論文中繼資料...\",0);try{let a=await this.fetchArxivMetadata(e);if(r.hide(),!a){new n.Notice(\"找不到該 arXiv 論文的中繼資料。\")"
+          "source": "\"Import from clipboard\"",
+          "target": "\"從剪貼簿匯入\""
         },
         {
-          "source": "Notice(\"Failed to fetch paper metadata.\")",
-          "target": "Notice(\"無法擷取論文中繼資料。\")"
+          "source": "\"Cite\"",
+          "target": "\"引用\""
         },
         {
-          "source": "Notice(`PDF download failed: ${c.message}`)",
-          "target": "Notice(`PDF 下載失敗：${c.message}`)"
+          "source": "\"Place your cursor in a note to cite a paper.\"",
+          "target": "\"請將游標置於筆記中以引用論文。\""
         },
         {
-          "source": "Notice(\"\",0);try{let p=`https://arxiv.org/pdf/${e}.pdf`;l.setMessage(`Downloading PDF for \"${t.title}\"...`);let c=await(0,n.requestUrl)(p);if(!c.arrayBuffer)throw new Error(\"Failed to download PDF content\")",
-          "target": "Notice(\"\",0);try{let p=`https://arxiv.org/pdf/${e}.pdf`;l.setMessage(`正在下載「${t.title}」的 PDF...`);let c=await(0,n.requestUrl)(p);if(!c.arrayBuffer)throw new Error(\"無法下載 PDF 內容\")"
+          "source": "\"No saved papers found.\"",
+          "target": "\"找不到已儲存的論文。\""
         },
         {
-          "source": "error(\"Failed to fetch arXiv metadata:\",o),null}}sanitizeFileName(t){return t.replace(/:/g,\" - \")",
-          "target": "error(\"無法擷取 arXiv 中繼資料：\",o),null}}sanitizeFileName(t){return t.replace(/:/g,\" - \")"
+          "source": "\"Invalid arXiv URL.\"",
+          "target": "\"arXiv URL 無效。\""
         },
         {
-          "source": "setPlaceholder(\"Search paper title or arXiv URL...\")",
-          "target": "setPlaceholder(\"搜尋論文標題或 arXiv URL...\")"
+          "source": "\"Fetching paper metadata from arXiv...\"",
+          "target": "\"正在從 arXiv 擷取論文中繼資料...\""
         },
         {
-          "source": "setText(\"File exists\")",
-          "target": "setText(\"檔案已存在\")"
+          "source": "\"Could not find metadata for the arXiv paper.\"",
+          "target": "\"找不到該 arXiv 論文的中繼資料。\""
         },
         {
-          "source": "setName(\"Notes folder\")",
-          "target": "setName(\"筆記資料夾\")"
+          "source": "\"Failed to fetch paper metadata.\"",
+          "target": "\"無法擷取論文中繼資料。\""
         },
         {
-          "source": "setDesc(\"Folder to save paper notes.\")",
-          "target": "setDesc(\"用來儲存論文筆記的資料夾。\")"
+          "source": "\"Metadata fetch error:\"",
+          "target": "\"擷取中繼資料時發生錯誤：\""
         },
         {
-          "source": "setPlaceholder(\"Example: Research/Papers\")",
-          "target": "setPlaceholder(\"範例：Research/Papers\")"
+          "source": "\"Clipboard is empty.\"",
+          "target": "\"剪貼簿是空的。\""
         },
         {
-          "source": "setName(\"PDF folder\")",
-          "target": "setName(\"PDF 資料夾\")"
+          "source": "\"Created paper note: \"",
+          "target": "\"已建立論文筆記：\""
         },
         {
-          "source": "setDesc(\"Folder to save PDFs. These are only downloaded if notes contain the {{PDF}} placeholder.\")",
-          "target": "setDesc(\"用來儲存 PDF 的資料夾。只有當筆記包含 {{PDF}} 佔位符時才會下載。\")"
+          "source": "\"Error creating note: \"",
+          "target": "\"建立筆記時發生錯誤：\""
         },
         {
-          "source": "setPlaceholder(\"Example: Research/PDF\")",
-          "target": "setPlaceholder(\"範例：Research/PDF\")"
+          "source": "\"PDF download error:\"",
+          "target": "\"PDF 下載錯誤：\""
         },
         {
-          "source": "name:\"Import from clipboard\"",
-          "target": "name:\"從剪貼簿匯入\""
+          "source": "\"Could not extract arXiv ID from URL\"",
+          "target": "\"無法從 URL 擷取 arXiv ID\""
         },
         {
-          "source": "text:\"A note with this title already exists. Do you want to overwrite?\"",
-          "target": "text:\"已有相同標題的筆記。要覆寫嗎？\""
+          "source": "\"Failed to download PDF content\"",
+          "target": "\"無法下載 PDF 內容\""
         },
         {
-          "source": "name:\"Import\"",
-          "target": "name:\"匯入\""
+          "source": "\"Failed to fetch arXiv metadata:\"",
+          "target": "\"無法擷取 arXiv 中繼資料：\""
         },
         {
-          "source": "Notice(\"Clipboard is empty.\")",
-          "target": "Notice(\"剪貼簿是空的。\")"
+          "source": "\"Search paper title or arXiv URL...\"",
+          "target": "\"搜尋論文標題或 arXiv URL...\""
         },
         {
-          "source": "Notice(\"Created paper note: \"+e)",
-          "target": "Notice(\"已建立論文筆記：\"+e)"
+          "source": "\"Search failed. Please try again.\"",
+          "target": "\"搜尋失敗，請再試一次。\""
         },
         {
-          "source": "Notice(\"Error creating note: \"+c)",
-          "target": "Notice(\"建立筆記時發生錯誤：\"+c)"
+          "source": "\"Searching arXiv...\"",
+          "target": "\"正在搜尋 arXiv...\""
         },
         {
-          "source": "Error(\"Could not extract arXiv ID from URL\")",
-          "target": "Error(\"無法從 URL 擷取 arXiv ID\")"
+          "source": "\"No results found\"",
+          "target": "\"找不到結果\""
         },
         {
-          "source": "Error(`PDF folder \"${this.settings.pdfFolder}\" doesn't exist. Please create it first.`)",
-          "target": "Error(`PDF 資料夾「${this.settings.pdfFolder}」不存在，請先建立。`)"
+          "source": "\"No matching results\"",
+          "target": "\"沒有相符結果\""
         },
         {
-          "source": "setMessage(`Failed to download PDF for \"${t.title}\"`)",
-          "target": "setMessage(`無法下載「${t.title}」的 PDF`)"
+          "source": "\"Search saved papers...\"",
+          "target": "\"搜尋已儲存的論文...\""
         },
         {
-          "source": "Error(`Failed to download PDF: ${p.message}`)",
-          "target": "Error(`PDF 下載失敗：${p.message}`)"
+          "source": "\"Enter alias (or leave blank)...\"",
+          "target": "\"輸入別名（或留空）...\""
         },
         {
-          "source": "error(\"Metadata fetch error:\",a)",
-          "target": "error(\"擷取中繼資料時發生錯誤：\",a)"
+          "source": "\"File exists\"",
+          "target": "\"檔案已存在\""
         },
         {
-          "source": "error(\"PDF download error:\",c)",
-          "target": "error(\"PDF 下載錯誤：\",c)"
+          "source": "\"A note with this title already exists. Do you want to overwrite?\"",
+          "target": "\"已有相同標題的筆記。要覆寫嗎？\""
         },
         {
-          "source": "error(\"Search failed:\",a)",
-          "target": "error(\"搜尋失敗：\",a)"
+          "source": "\"Overwrite\"",
+          "target": "\"覆寫\""
         },
         {
-          "source": "warn(`ArXiv search attempt ${l}/${e} failed:`,h)",
-          "target": "warn(`arXiv 搜尋嘗試 ${l}/${e} 失敗：`,h)"
+          "source": "\"Cancel\"",
+          "target": "\"取消\""
         },
         {
-          "source": "emptyStateText=\"Search failed. Please try again.\"",
-          "target": "emptyStateText=\"搜尋失敗，請再試一次。\""
+          "source": "\"Notes location\"",
+          "target": "\"筆記儲存位置\""
         },
         {
-          "source": "emptyStateText=\"Searching arXiv...\"",
-          "target": "emptyStateText=\"正在搜尋 arXiv...\""
+          "source": "\"Folder to save paper notes.\"",
+          "target": "\"用來儲存論文筆記的資料夾。\""
         },
         {
-          "source": "emptyStateText=t.length===0?\"No results found\":\"No matching results\"",
-          "target": "emptyStateText=t.length===0?\"找不到結果\":\"沒有相符結果\""
+          "source": "\"Example: Research/Papers\"",
+          "target": "\"範例：Research/Papers\""
         },
         {
-          "source": "emptyStateText=`Searching arXiv... (retry ${l+1}/${e})`",
-          "target": "emptyStateText=`正在搜尋 arXiv...（重試 ${l+1}/${e}）`"
+          "source": "\"PDF location\"",
+          "target": "\"PDF 儲存位置\""
         },
         {
-          "source": "text:\"Overwrite\"",
-          "target": "text:\"覆寫\""
+          "source": "\"Folder to save PDFs. These are only downloaded if notes contain the {{pdf}} placeholder.\"",
+          "target": "\"用來儲存 PDF 的資料夾。只有當筆記包含 {{pdf}} 佔位符時才會下載。\""
         },
         {
-          "source": "text:\"Cancel\"",
-          "target": "text:\"取消\""
+          "source": "\"Example: Research/PDF\"",
+          "target": "\"範例：Research/PDF\""
         },
         {
-          "source": "setName(\"Note template\")",
-          "target": "setName(\"筆記範本\")"
+          "source": "\"Note template\"",
+          "target": "\"筆記範本\""
         },
         {
-          "source": "setDesc(\"Template for creating paper notes. Use {{TITLE}}, {{AUTHORS}}, {{YEAR}}, {{URL}}, and {{PDF}} to insert metadata.\")",
-          "target": "setDesc(\"建立論文筆記的範本。使用 {{TITLE}}、{{AUTHORS}}、{{YEAR}}、{{URL}} 和 {{PDF}} 插入中繼資料。\")"
+          "source": "\"Template for imported paper notes.\"",
+          "target": "\"匯入論文筆記時使用的範本。\""
         },
         {
-          "source": "setDesc(\"用來儲存 PDF 的資料夾。只有當筆記包含 {{PDF}} placeholder 時才會下載。\")",
-          "target": "setDesc(\"用來儲存 PDF 的資料夾。只有當筆記包含 {{PDF}} 佔位符時才會下載。\")"
+          "source": "\"Use {{title}}, {{authors}}, {{year}}, {{url}}, {{pdf}} to insert metadata.\"",
+          "target": "\"使用 {{title}}、{{authors}}、{{year}}、{{url}} 與 {{pdf}} 插入中繼資料。\""
+        },
+        {
+          "source": "\"Example: Research/Paper Template.md\"",
+          "target": "\"範例：Research/Paper Template.md\""
+        },
+        {
+          "source": "\"Use query as alias\"",
+          "target": "\"將搜尋文字用作別名\""
+        },
+        {
+          "source": "\"When citing, prefill the alias input with your search query.\"",
+          "target": "\"引用時，以搜尋文字預先填入別名欄位。\""
+        },
+        {
+          "source": "`Template file \"${t}\" not found. Using default template.`",
+          "target": "`找不到範本檔案「${t}」，將使用預設範本。`"
+        },
+        {
+          "source": "`PDF download failed: ${u.message}`",
+          "target": "`PDF 下載失敗：${u.message}`"
+        },
+        {
+          "source": "`PDF location \"${this.settings.pdfFolder}\" doesn't exist. Please create it first.`",
+          "target": "`PDF 資料夾「${this.settings.pdfFolder}」不存在，請先建立。`"
+        },
+        {
+          "source": "`Downloading PDF for \"${t.title}\"...`",
+          "target": "`正在下載「${t.title}」的 PDF...`"
+        },
+        {
+          "source": "`Failed to download PDF for \"${t.title}\"`",
+          "target": "`無法下載「${t.title}」的 PDF`"
+        },
+        {
+          "source": "`Failed to download PDF: ${c.message}`",
+          "target": "`PDF 下載失敗：${c.message}`"
+        },
+        {
+          "source": "`ArXiv search attempt ${a}/${e} failed:`",
+          "target": "`arXiv 搜尋嘗試 ${a}/${e} 失敗：`"
+        },
+        {
+          "source": "`Searching arXiv... (retry ${a+1}/${e})`",
+          "target": "`正在搜尋 arXiv...（重試 ${a+1}/${e}）`"
+        }
+      ]
+    },
+    "manifest.json": {
+      "ast": [
+        {
+          "type": "ObjectProperty",
+          "name": "description",
+          "source": "Retrieve and import research papers.",
+          "target": "搜尋並匯入研究論文。"
+        }
+      ],
+      "regex": [
+        {
+          "source": "\"description\": \"Retrieve and import research papers.\"",
+          "target": "\"description\": \"搜尋並匯入研究論文。\""
         }
       ]
     }
