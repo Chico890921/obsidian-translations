@@ -4,10 +4,11 @@
         "plugin": "codeblock-customizer",
         "version": "1.4.7",
         "title": "[zh-tw] Codeblock Customizer",
-        "description": "Codeblock Customizer Localization & Tweaks",
+        "description": "Codeblock Customizer 繁體中文化與微調",
         "language": "zh-tw",
         "supportedVersions": "1.4.7",
-        "author": "Chico"
+        "author": "Chico",
+        "updatedAt": 1784810499672
     },
     "dict": {
         "main.js": {
@@ -89,12 +90,6 @@
                     "name": "addOption",
                     "source": "Respect \"fold\"",
                     "target": "遵循「fold」"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Shift",
-                    "target": "Shift"
                 },
                 {
                     "type": "CallExpression",
@@ -1484,24 +1479,6 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "prompt-part prompt-space",
-                    "target": "prompt-part prompt-space"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "codeblock-customizer-prompt-preview-wrapper cbc-hide-on-search",
-                    "target": "codeblock-customizer-prompt-preview-wrapper cbc-hide-on-search"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "codeblock-customizer-line-wrapper dummy-wrapper has-hidden-lines",
-                    "target": "codeblock-customizer-line-wrapper dummy-wrapper has-hidden-lines"
-                },
-                {
-                    "type": "ObjectProperty",
                     "name": "desc",
                     "source": "Property names (e.g. title, tags)",
                     "target": "屬性名稱（例如 title、tags）"
@@ -1547,72 +1524,6 @@
                     "name": "error",
                     "source": "Error",
                     "target": "錯誤"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Bash",
-                    "target": "Bash"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Bash (alt)",
-                    "target": "Bash (alt)"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Zsh + Git",
-                    "target": "Zsh + Git"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Zsh",
-                    "target": "Zsh"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Kali Linux",
-                    "target": "Kali Linux"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Fish",
-                    "target": "Fish"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "PowerShell",
-                    "target": "PowerShell"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Docker shell",
-                    "target": "Docker shell"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Metasploit",
-                    "target": "Metasploit"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Cobalt Strike",
-                    "target": "Cobalt Strike"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "PostgreSQL",
-                    "target": "PostgreSQL"
                 },
                 {
                     "type": "ObjectProperty",
@@ -2261,12 +2172,6 @@
                     "name": "prompt-module",
                     "source": "Metasploit Module",
                     "target": "Metasploit 模組"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "prompt-beacon",
-                    "source": "Cobalt Strike Beacon",
-                    "target": "Cobalt Strike Beacon"
                 },
                 {
                     "type": "ObjectProperty",
@@ -3359,30 +3264,6 @@
                     "target": "log(\"Codeblock Customizer：設定已成功遷移。\")"
                 },
                 {
-                    "source": "text:\" \"",
-                    "target": "text:\" \""
-                },
-                {
-                    "source": "name:\"Bash (alt)\"",
-                    "target": "name:\"Bash (alt)\""
-                },
-                {
-                    "source": "name:\"Zsh + Git\"",
-                    "target": "name:\"Zsh + Git\""
-                },
-                {
-                    "source": "name:\"Kali Linux\"",
-                    "target": "name:\"Kali Linux\""
-                },
-                {
-                    "source": "name:\"Docker shell\"",
-                    "target": "name:\"Docker shell\""
-                },
-                {
-                    "source": "name:\"Cobalt Strike\"",
-                    "target": "name:\"Cobalt Strike\""
-                },
-                {
                     "source": "text:\"Plain text\"",
                     "target": "text:\"純文字\""
                 },
@@ -3917,10 +3798,6 @@
                 {
                     "source": "\"prompt-module\":\"Metasploit Module\"",
                     "target": "\"prompt-module\":\"Metasploit 模組\""
-                },
-                {
-                    "source": "\"prompt-beacon\":\"Cobalt Strike Beacon\"",
-                    "target": "\"prompt-beacon\":\"Cobalt Strike Beacon\""
                 },
                 {
                     "source": "\"prompt-symbol\":\"Symbol (fallback)\"",
@@ -4475,10 +4352,6 @@
                     "target": "setName(\"Fence 行動作的輔助鍵\")"
                 },
                 {
-                    "source": "setDesc(\"點擊複製、選取或刪除時按住此鍵，即可在動作中包含 fence 行。\")",
-                    "target": "setDesc(\"點擊複製、選取或刪除時按住此鍵，即可在動作中包含 fence 行。\")"
-                },
-                {
                     "source": "`Prompt \"${i}\" 已成功刪除！`",
                     "target": "`提示字元「${i}」已成功刪除！`"
                 },
@@ -4497,6 +4370,22 @@
                 {
                     "source": "setDesc(\"啟用以編輯此提示字元的 root 專用顏色。\")",
                     "target": "setDesc(\"啟用後可編輯此提示字元的 root 專用顏色。\")"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This Obsidian plugin lets you customize your codeblocks in editing, and reading mode as well.",
+                    "target": "這款 Obsidian 插件可讓你在編輯模式與閱讀模式中自訂程式碼區塊。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"This Obsidian plugin lets you customize your codeblocks in editing, and reading mode as well.\"",
+                    "target": "\"description\": \"這款 Obsidian 插件可讓你在編輯模式與閱讀模式中自訂程式碼區塊。\""
                 }
             ]
         }
