@@ -4,11 +4,11 @@
         "plugin": "oz-clear-unused-images",
         "version": "1.1.1",
         "title": "[zh-tw] Clear Unused Images",
-        "description": "Clear Unused Images Localization & Tweaks",
+        "description": "Clear Unused Images 繁體中文化與微調",
         "language": "zh-tw",
         "supportedVersions": "1.1.1",
         "author": "Chico",
-        "updatedAt": 1778617953687
+        "updatedAt": 1784809153937
     },
     "dict": {
         "main.js": {
@@ -16,200 +16,268 @@
                 {
                     "type": "CallExpression",
                     "name": "addOption",
-                    "source": "永久删除",
+                    "source": "Delete Permanently",
                     "target": "永久刪除"
                 },
                 {
                     "type": "CallExpression",
                     "name": "addOption",
-                    "source": "移至 Obsidian回收站",
+                    "source": "Move to Obsidian Trash",
                     "target": "移至 Obsidian 回收站"
                 },
                 {
                     "type": "CallExpression",
                     "name": "addOption",
-                    "source": "移至系统回收站",
+                    "source": "Move to System Trash",
                     "target": "移至系統回收站"
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
-                    "source": "已加载清除未使用的图像插件。。。",
-                    "target": "已載入清除未使用圖片插件..."
+                    "source": "File not referenced but excluded: ",
+                    "target": "檔案未被引用但已排除："
                 },
                 {
                     "type": "CallExpression",
                     "name": "log",
-                    "source": "清除未使用的图像插件已卸载。。。",
-                    "target": "清除未使用圖片插件已卸載..."
+                    "source": "Clear Unused Images plugin loaded...",
+                    "target": "Clear Unused Images 插件已載入..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Clear Unused Images plugin unloaded...",
+                    "target": "Clear Unused Images 插件已卸載..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Ribbon Icon",
+                    "target": "功能區圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Delete Logs",
+                    "target": "刪除記錄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Deleted Image Destination",
+                    "target": "已刪除圖片的目的地"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Excluded Folder Full Paths",
+                    "target": "排除資料夾的完整路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Exclude Subfolders",
+                    "target": "排除子資料夾"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
-                    "source": "如果要使用功能区图标清除图像，请启用此选项。",
+                    "source": "Turn on if you want Ribbon Icon for clearing the images.",
                     "target": "若要使用功能區圖示清除圖片，請啟用此選項。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "Turn off if you dont want to view the delete logs Modal to pop up after deletion is completed. It wont appear if no image is deleted",
-                    "target": "如果不想在刪除完成後彈出刪除記錄視窗，請關閉此選項。若沒有刪除任何圖片，視窗不會出現。"
+                    "target": "若不想在刪除完成後顯示刪除記錄視窗，請關閉此選項。若沒有刪除任何圖片，視窗不會出現。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
-                    "source": "选择图像删除后要移动到的位置",
-                    "target": "選擇圖片刪除後要移動到的位置"
+                    "source": "Select where you want images to be moved once they are deleted",
+                    "target": "選擇圖片刪除後要移動到的位置。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
-                    "source": "提供文件夹名称的完整路径（区分大小写），用逗号（，）分隔，以排除清除。\n\t\t\t\t \t.e对于个人/文件/十二生肖->个人/文件/Sodiac下的图像，应使用排除",
-                    "target": "提供要排除清理的資料夾完整路徑（區分大小寫），並以逗號（，）分隔。\n\t\t\t\t \t例如：若要排除 個人/檔案/Sodiac 下的圖片，請填入 個人/檔案/Sodiac"
+                    "source": "Provide the FULL path of the folder names (Case Sensitive) divided by comma (,) to be excluded from clearing. \n\t\t\t\t\ti.e. For images under Personal/Files/Zodiac -> Personal/Files/Zodiac should be used for exclusion",
+                    "target": "提供要排除清理的資料夾完整路徑（區分大小寫），並以逗號（,）分隔。\n\t\t\t\t\t例如：若要排除 Personal/Files/Zodiac 內的圖片，請填入 Personal/Files/Zodiac。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "Turn on this option if you want to also exclude all subfolders of the folder paths provided above.",
-                    "target": "如果也要排除上方資料夾路徑底下的所有子資料夾，請開啟此選項。"
+                    "target": "若也要排除上述資料夾路徑中的所有子資料夾，請啟用此選項。"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "功能区图标",
-                    "target": "功能區圖示"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "删除日志",
-                    "target": "刪除記錄"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "已删除图像目标",
-                    "target": "刪除圖片目的地"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "排除的文件夹完整路径",
-                    "target": "排除的資料夾完整路徑"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "排除子文件夹",
-                    "target": "排除子資料夾"
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "All ${\"image\"===i?\"images\":\"attachments\"} are used. Nothing was deleted.",
+                    "target": "所有${\"image\"===i?\"圖片\":\"附件\"}都在使用中，未刪除任何檔案。"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "清除未使用的图像",
-                    "target": "清除未使用圖片"
+                    "source": "Clear Unused Images",
+                    "target": "清除未使用的圖片"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "清除未使用的附件",
-                    "target": "清除未使用附件"
+                    "source": "Clear Unused Attachments",
+                    "target": "清除未使用的附件"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "text",
-                    "source": "清除图像设置",
+                    "source": "Clear Images Settings",
                     "target": "清除圖片設定"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "text",
-                    "source": "清除未使用的图像-日志",
+                    "source": "Clear Unused Images - Logs",
                     "target": "清除未使用圖片 - 記錄"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "text",
-                    "source": "关闭",
+                    "source": "Close",
                     "target": "關閉"
                 }
             ],
             "regex": [
                 {
-                    "source": "setName(\"功能区图标\")",
+                    "source": "setName(\"Ribbon Icon\")",
                     "target": "setName(\"功能區圖示\")"
                 },
                 {
-                    "source": "setDesc(\"如果要使用功能区图标清除图像，请启用此选项。\")",
-                    "target": "setDesc(\"若要使用功能區圖示清除圖片，請啟用此選項。\")"
-                },
-                {
-                    "source": "setName(\"删除日志\")",
+                    "source": "setName(\"Delete Logs\")",
                     "target": "setName(\"刪除記錄\")"
                 },
                 {
-                    "source": "setDesc(\"Turn off if you dont want to view the delete logs Modal to pop up after deletion is completed. It wont appear if no image is deleted\")",
-                    "target": "setDesc(\"如果不想在刪除完成後彈出刪除記錄視窗，請關閉此選項。若沒有刪除任何圖片，視窗不會出現。\")"
+                    "source": "setName(\"Deleted Image Destination\")",
+                    "target": "setName(\"已刪除圖片的目的地\")"
                 },
                 {
-                    "source": "setName(\"已删除图像目标\")",
-                    "target": "setName(\"刪除圖片目的地\")"
+                    "source": "setName(\"Excluded Folder Full Paths\")",
+                    "target": "setName(\"排除資料夾的完整路徑\")"
                 },
                 {
-                    "source": "setDesc(\"选择图像删除后要移动到的位置\")",
-                    "target": "setDesc(\"選擇圖片刪除後要移動到的位置\")"
-                },
-                {
-                    "source": "setName(\"排除的文件夹完整路径\")",
-                    "target": "setName(\"排除的資料夾完整路徑\")"
-                },
-                {
-                    "source": "setDesc(\"提供文件夹名称的完整路径（区分大小写），用逗号（，）分隔，以排除清除。\\n\\t\\t\\t\\t \\t.e对于个人/文件/十二生肖->个人/文件/Sodiac下的图像，应使用排除\")",
-                    "target": "setDesc(\"提供要排除清理的資料夾完整路徑（區分大小寫），並以逗號（，）分隔。\\n\\t\\t\\t\\t \\t例如：若要排除 個人/檔案/Sodiac 下的圖片，請填入 個人/檔案/Sodiac\")"
-                },
-                {
-                    "source": "setName(\"排除子文件夹\")",
+                    "source": "setName(\"Exclude Subfolders\")",
                     "target": "setName(\"排除子資料夾\")"
                 },
                 {
+                    "source": "setDesc(\"Turn on if you want Ribbon Icon for clearing the images.\")",
+                    "target": "setDesc(\"若要使用功能區圖示清除圖片，請啟用此選項。\")"
+                },
+                {
+                    "source": "setDesc(\"Turn off if you dont want to view the delete logs Modal to pop up after deletion is completed. It wont appear if no image is deleted\")",
+                    "target": "setDesc(\"若不想在刪除完成後顯示刪除記錄視窗，請關閉此選項。若沒有刪除任何圖片，視窗不會出現。\")"
+                },
+                {
+                    "source": "setDesc(\"Select where you want images to be moved once they are deleted\")",
+                    "target": "setDesc(\"選擇圖片刪除後要移動到的位置。\")"
+                },
+                {
+                    "source": "setDesc(\"Provide the FULL path of the folder names (Case Sensitive) divided by comma (,) to be excluded from clearing. \\n\\t\\t\\t\\t\\ti.e. For images under Personal/Files/Zodiac -> Personal/Files/Zodiac should be used for exclusion\")",
+                    "target": "setDesc(\"提供要排除清理的資料夾完整路徑（區分大小寫），並以逗號（,）分隔。\\n\\t\\t\\t\\t\\t例如：若要排除 Personal/Files/Zodiac 內的圖片，請填入 Personal/Files/Zodiac。\")"
+                },
+                {
                     "source": "setDesc(\"Turn on this option if you want to also exclude all subfolders of the folder paths provided above.\")",
-                    "target": "setDesc(\"如果也要排除上方資料夾路徑底下的所有子資料夾，請開啟此選項。\")"
+                    "target": "setDesc(\"若也要排除上述資料夾路徑中的所有子資料夾，請啟用此選項。\")"
                 },
                 {
-                    "source": "log(\"未引用但已排除的文件：\"+n.path):(\".trash\"===e?(yield o.vault.trash(n,!1),i+=\"[+] Moved to Obsidian Trash: \"+n.path+\"</br>\")",
-                    "target": "log(\"未引用但已排除的檔案：\"+n.path):(\".trash\"===e?(yield o.vault.trash(n,!1),i+=\"[+] Moved to Obsidian Trash: \"+n.path+\"</br>\")"
+                    "source": "addOption(\"permanent\",\"Delete Permanently\")",
+                    "target": "addOption(\"permanent\",\"永久刪除\")"
                 },
                 {
-                    "source": "Notice(`${\"image\"===i?\"images\":\"attachments\"} 已被引用，没有删除任何内容。`)",
-                    "target": "Notice(`${\"image\"===i?\"images\":\"attachments\"} 已被引用，沒有刪除任何內容。`)"
+                    "source": "addOption(\".trash\",\"Move to Obsidian Trash\")",
+                    "target": "addOption(\".trash\",\"移至 Obsidian 回收站\")"
                 },
                 {
-                    "source": "log(\"已加载清除未使用的图像插件。。。\")",
-                    "target": "log(\"已載入清除未使用圖片插件...\")"
+                    "source": "addOption(\"system-trash\",\"Move to System Trash\")",
+                    "target": "addOption(\"system-trash\",\"移至系統回收站\")"
                 },
                 {
-                    "source": "log(\"清除未使用的图像插件已卸载。。。\")",
-                    "target": "log(\"清除未使用圖片插件已卸載...\")"
+                    "source": "name:\"Clear Unused Images\"",
+                    "target": "name:\"清除未使用的圖片\""
                 },
                 {
-                    "source": "text:\"清除图像设置\"",
+                    "source": "name:\"Clear Unused Attachments\"",
+                    "target": "name:\"清除未使用的附件\""
+                },
+                {
+                    "source": "text:\"Clear Images Settings\"",
                     "target": "text:\"清除圖片設定\""
                 },
                 {
-                    "source": "text:\"清除未使用的图像-日志\"",
+                    "source": "text:\"Clear Unused Images - Logs\"",
                     "target": "text:\"清除未使用圖片 - 記錄\""
                 },
                 {
-                    "source": "text:\"关闭\"",
+                    "source": "text:\"Close\"",
                     "target": "text:\"關閉\""
                 },
                 {
-                    "source": "name:\"清除未使用的图像\"",
-                    "target": "name:\"清除未使用圖片\""
+                    "source": "addRibbonIcon(\"image-file\",\"Clear Unused Images\"",
+                    "target": "addRibbonIcon(\"image-file\",\"清除未使用的圖片\""
                 },
                 {
-                    "source": "name:\"清除未使用的附件\"",
-                    "target": "name:\"清除未使用附件\""
+                    "source": "All ${\"image\"===i?\"images\":\"attachments\"} are used. Nothing was deleted.",
+                    "target": "所有${\"image\"===i?\"圖片\":\"附件\"}都在使用中，未刪除任何檔案。"
+                },
+                {
+                    "source": "File not referenced but excluded: ",
+                    "target": "檔案未被引用但已排除："
+                },
+                {
+                    "source": "Clear Unused Images plugin loaded...",
+                    "target": "Clear Unused Images 插件已載入..."
+                },
+                {
+                    "source": "Clear Unused Images plugin unloaded...",
+                    "target": "Clear Unused Images 插件已卸載..."
+                },
+                {
+                    "source": "Clearing started.</br>",
+                    "target": "開始清理。</br>"
+                },
+                {
+                    "source": "[+] Moved to Obsidian Trash: ",
+                    "target": "[+] 已移至 Obsidian 回收站："
+                },
+                {
+                    "source": "[+] Moved to System Trash: ",
+                    "target": "[+] 已移至系統回收站："
+                },
+                {
+                    "source": "[+] Deleted Permanently: ",
+                    "target": "[+] 已永久刪除："
+                },
+                {
+                    "source": " image(s) in total deleted.</br>",
+                    "target": " 個圖片已刪除。</br>"
+                },
+                {
+                    "source": "Clearing completed.",
+                    "target": "清理完成。"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Clear the images that you are not using anymore in your markdown notes to save space.",
+                    "target": "清除 Markdown 筆記中不再使用的圖片，以節省空間。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Clear the images that you are not using anymore in your markdown notes to save space.\"",
+                    "target": "\"description\": \"清除 Markdown 筆記中不再使用的圖片，以節省空間。\""
                 }
             ]
         }
