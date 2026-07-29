@@ -802,24 +802,6 @@
                 {
                     "type": "CallExpression",
                     "name": "warn",
-                    "source": "⚠️ Rollup function \"earliest_date\" requires a target property.",
-                    "target": "⚠️ Rollup function \"earliest_date\" requires a target property."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "⚠️ Rollup function \"latest_date\" requires a target property.",
-                    "target": "⚠️ Rollup function \"latest_date\" requires a target property."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "⚠️ Rollup function \"date_range\" requires a target property.",
-                    "target": "⚠️ Rollup function \"date_range\" requires a target property."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
                     "source": "   This rollup property will be skipped.",
                     "target": "   This rollup property will be skipped."
                 },
