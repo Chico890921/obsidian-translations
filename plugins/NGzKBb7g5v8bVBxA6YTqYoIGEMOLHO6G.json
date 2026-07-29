@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "4.10.2",
         "author": "Chico",
-        "updatedAt": 1782922504406
+        "updatedAt": 1785322719124
     },
     "dict": {
         "main.js": {
@@ -436,6 +436,22 @@
                 {
                     "source": "error(`Unable to parse list: expected list item or note, got \"${line}\"`)",
                     "target": "error(`無法解析清單：預期清單項目或註記，得到「${line}」`)"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Work with your lists like in Workflowy or RoamResearch.",
+                    "target": "像使用 Workflowy 或 Roam Research 一樣整理清單。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Work with your lists like in Workflowy or RoamResearch.\"",
+                    "target": "\"description\": \"像使用 Workflowy 或 Roam Research 一樣整理清單。\""
                 }
             ]
         }
