@@ -245,7 +245,7 @@
                     "type": "ObjectProperty",
                     "name": "text",
                     "source": "Discussions page",
-                    "target": "討論頁面"
+                    "target": "討論頁面尋找並分享快捷字串檔案"
                 },
                 {
                     "type": "ObjectProperty",
@@ -324,6 +324,12 @@
                     "name": "",
                     "source": "Reset or restore settings",
                     "target": "重設或還原設定"
+                },
+                {
+                    "type": "StringLiteral",
+                    "name": "",
+                    "source": "Share your shortcuts with the community. You can find and share shortcuts files on the ",
+                    "target": "與社群分享你的快捷字串。你可以前往"
                 }
             ],
             "regex": [
@@ -477,7 +483,7 @@
                 },
                 {
                     "source": "text: \"Discussions page\"",
-                    "target": "text: \"討論頁面\""
+                    "target": "text: \"討論頁面尋找並分享快捷字串檔案\""
                 },
                 {
                     "source": "text: \"Made by Noam Schmitt based on the Symbols Prettifier plugin by Florian Woelki.\"",
@@ -636,12 +642,28 @@
                     "target": "`已替換 ${replacementsCount} 個符號`"
                 },
                 {
-                    "source": "descr.append(\n      \"Share your shortcuts with the community. You can find and share shortcuts files on the \",\n      descr.createEl(\"a\", {\n        text: \"Discussions page\",\n        href: \"https://github.com/noam-sc/obsidian-enhanced-symbols-prettifier/discussions/categories/shortcuts\"\n      }),\n      \".\"\n    );",
-                    "target": "descr.append(\n      \"與社群分享你的快捷字串。你可以在\",\n      descr.createEl(\"a\", {\n        text: \"討論頁面\",\n        href: \"https://github.com/noam-sc/obsidian-enhanced-symbols-prettifier/discussions/categories/shortcuts\"\n      }),\n      \"尋找並分享快捷字串檔案。\"\n    );"
-                },
-                {
                     "source": "setButtonText(\"Ignore\")",
                     "target": "setButtonText(\"忽略\")"
+                },
+                {
+                    "source": "Share your shortcuts with the community. You can find and share shortcuts files on the ",
+                    "target": "與社群分享你的快捷字串。你可以前往"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Replace/substitute the symbols with actual symbols you commonly type. It also works for emojis shortcuts, abbreviations, greek letters, math symbols or other snippets/aliases you define",
+                    "target": "將常用輸入的替代字串轉換為實際符號，也支援表情符號快捷字串、縮寫、希臘字母、數學符號，以及自行定義的其他片段或別名。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Replace/substitute the symbols with actual symbols you commonly type. It also works for emojis shortcuts, abbreviations, greek letters, math symbols or other snippets/aliases you define\"",
+                    "target": "\"description\": \"將常用輸入的替代字串轉換為實際符號，也支援表情符號快捷字串、縮寫、希臘字母、數學符號，以及自行定義的其他片段或別名。\""
                 }
             ]
         }
