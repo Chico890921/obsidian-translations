@@ -7,17 +7,12 @@
         "description": "Code Space 繁體中文化與微調",
         "language": "zh-tw",
         "supportedVersions": "2.3.0",
-        "author": "Chico"
+        "author": "Chico",
+        "updatedAt": 1784810231817
     },
     "dict": {
         "main.js": {
             "ast": [
-                {
-                    "type": "AssignmentExpression",
-                    "name": "textContent",
-                    "source": "abc def ghi jkl mno pqr stu",
-                    "target": "abc def ghi jkl mno pqr stu"
-                },
                 {
                     "type": "CallExpression",
                     "name": "error",
@@ -110,78 +105,6 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "custom-search-row custom-search-replace-row",
-                    "target": "custom-search-row custom-search-replace-row"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "\"···\"",
-                    "target": "\"···\""
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'ƒ'",
-                    "target": "'ƒ'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'○'",
-                    "target": "'○'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'◌'",
-                    "target": "'◌'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'𝑥'",
-                    "target": "'𝑥'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'𝐶'",
-                    "target": "'𝐶'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'𝑡'",
-                    "target": "'𝑡'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'∪'",
-                    "target": "'∪'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'□'",
-                    "target": "'□'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'🔑︎'",
-                    "target": "'🔑︎'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'▢'",
-                    "target": "'▢'"
-                },
-                {
-                    "type": "ObjectProperty",
                     "name": "detail",
                     "source": "/ except block",
                     "target": "/ except 區塊"
@@ -231,10 +154,6 @@
             ],
             "regex": [
                 {
-                    "source": "log(\"Finish with \"+this.stackID(s)),this.stackToTree(s);if(this.parser.strict)throw rt&&n&&console.log(\"Stuck with token \"+(this.tokens.mainToken?this.parser.getName(this.tokens.mainToken.value):\"none\")",
-                    "target": "log(\"Finish with \"+this.stackID(s)),this.stackToTree(s);if(this.parser.strict)throw rt&&n&&console.log(\"Stuck with token \"+(this.tokens.mainToken?this.parser.getName(this.tokens.mainToken.value):\"none\")"
-                },
-                {
                     "source": "error(\"Code Space: Failed to save file:\",t),new Ke.Notice(g(\"NOTICE_SAVE_FAIL\")",
                     "target": "error(\"Code Space：儲存檔案失敗：\",t),new Ke.Notice(g(\"NOTICE_SAVE_FAIL\")"
                 },
@@ -243,16 +162,8 @@
                     "target": "error(\"Code Space：重新載入檔案內容失敗：\",t)}}async onClose(){var t;this.isDirty&&this.file&&(console.debug(\"Code Space：關閉時自動儲存中...\")"
                 },
                 {
-                    "source": "Notice(`${g(\"NOTICE_RENAME_SUCCESS\")} ${a}.${i.extension}`)",
-                    "target": "Notice(`${g(\"NOTICE_RENAME_SUCCESS\")} ${a}.${i.extension}`)"
-                },
-                {
                     "source": "error(\"Failed to rename file:\",c),new H.Notice(g(\"NOTICE_RENAME_FAIL\")",
                     "target": "error(\"重新命名檔案失敗：\",c),new H.Notice(g(\"NOTICE_RENAME_FAIL\")"
-                },
-                {
-                    "source": "Notice(`${g(\"NOTICE_MOVE_SUCCESS\")} ${o}`)",
-                    "target": "Notice(`${g(\"NOTICE_MOVE_SUCCESS\")} ${o}`)"
                 },
                 {
                     "source": "error(\"Failed to move file:\",o),new H.Notice(g(\"NOTICE_MOVE_FAIL\")",
@@ -261,18 +172,6 @@
                 {
                     "source": "error(\"Code Outline: Failed to jump to line:\",o)}},100)):console.debug(\"Code Outline: No editorView found\")",
                     "target": "error(\"程式碼大綱：跳至指定行失敗：\",o)}},100)):console.debug(\"Code Outline：找不到 editorView\")"
-                },
-                {
-                    "source": "setDesc(`${o.sourcePath} \\u2022 ${c}`)",
-                    "target": "setDesc(`${o.sourcePath} \\u2022 ${c}`)"
-                },
-                {
-                    "source": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(c)}`)",
-                    "target": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(c)}`)"
-                },
-                {
-                    "source": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(u)}`)",
-                    "target": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(u)}`)"
                 },
                 {
                     "source": "setPlaceholder(\"Example: script.py\")",
@@ -287,32 +186,8 @@
                     "target": "error(\"Code Space：重新載入插件失敗：\",t),new te.Notice(`${g(\"NOTICE_RELOAD_FAIL\")"
                 },
                 {
-                    "source": "Notice(`${g(\"NOTICE_CREATE_SUCCESS\")} ${t}`)",
-                    "target": "Notice(`${g(\"NOTICE_CREATE_SUCCESS\")} ${t}`)"
-                },
-                {
                     "source": "error(\"Failed to create file:\",i),new te.Notice(g(\"NOTICE_CREATE_FAIL\")",
                     "target": "error(\"建立檔案失敗：\",i),new te.Notice(g(\"NOTICE_CREATE_FAIL\")"
-                },
-                {
-                    "source": "textContent=\"abc def ghi jkl mno pqr stu\"",
-                    "target": "textContent=\"abc def ghi jkl mno pqr stu\""
-                },
-                {
-                    "source": "name: \"+l)}return n&&(i=\"",
-                    "target": "name: \"+l)}return n&&(i=\""
-                },
-                {
-                    "source": "textContent=\"\t\"",
-                    "target": "textContent=\"\t\""
-                },
-                {
-                    "source": "text:`${o.length} ${g(\"SUBTITLE_MANAGED_FILES\")}`",
-                    "target": "text:`${o.length} ${g(\"SUBTITLE_MANAGED_FILES\")}`"
-                },
-                {
-                    "source": "name:`impl ${c[1]}`",
-                    "target": "name:`impl ${c[1]}`"
                 },
                 {
                     "source": "SETTINGS_HEADING:\"Code space settings\"",
@@ -533,6 +408,386 @@
                 {
                     "source": "SETTINGS_EXTERNAL_MOUNT_LINK_TYPE_AUTO:\"Auto\"",
                     "target": "SETTINGS_EXTERNAL_MOUNT_LINK_TYPE_AUTO:\"自動\""
+                },
+                {
+                    "source": "VIEW_TITLE:\"Code space\"",
+                    "target": "VIEW_TITLE:\"Code Space\""
+                },
+                {
+                    "source": "BUTTON_OPEN_SETTINGS:\"Open settings\"",
+                    "target": "BUTTON_OPEN_SETTINGS:\"開啟設定\""
+                },
+                {
+                    "source": "BUTTON_CREATE_FILE:\"Create code file\"",
+                    "target": "BUTTON_CREATE_FILE:\"建立程式碼檔案\""
+                },
+                {
+                    "source": "BUTTON_MANAGE_IGNORED_FILES:\"Manage ignored files and folders\"",
+                    "target": "BUTTON_MANAGE_IGNORED_FILES:\"管理已忽略的檔案與資料夾\""
+                },
+                {
+                    "source": "SUBTITLE_MANAGED_FILES:\"Code files managed\"",
+                    "target": "SUBTITLE_MANAGED_FILES:\"個程式碼檔案\""
+                },
+                {
+                    "source": "TOOLBAR_SEARCH_PLACEHOLDER:\"Search files...\"",
+                    "target": "TOOLBAR_SEARCH_PLACEHOLDER:\"搜尋檔案...\""
+                },
+                {
+                    "source": "TOOLBAR_FILTER_FOLDER_ALL:\"All folders\"",
+                    "target": "TOOLBAR_FILTER_FOLDER_ALL:\"所有資料夾\""
+                },
+                {
+                    "source": "TOOLBAR_FILTER_FOLDER_ROOT:\"Vault root\"",
+                    "target": "TOOLBAR_FILTER_FOLDER_ROOT:\"儲存庫根目錄\""
+                },
+                {
+                    "source": "TOOLBAR_FILTER_FOLDER_LABEL:\"Folders\"",
+                    "target": "TOOLBAR_FILTER_FOLDER_LABEL:\"資料夾\""
+                },
+                {
+                    "source": "TOOLBAR_FILTER_EXTENSION_LABEL:\"Extensions\"",
+                    "target": "TOOLBAR_FILTER_EXTENSION_LABEL:\"副檔名\""
+                },
+                {
+                    "source": "TOOLBAR_FILTER_CLEAR:\"Clear selection\"",
+                    "target": "TOOLBAR_FILTER_CLEAR:\"清除選取項目\""
+                },
+                {
+                    "source": "TOOLBAR_FILTER_FOLDER_BUTTON:\"Choose folders\"",
+                    "target": "TOOLBAR_FILTER_FOLDER_BUTTON:\"選擇資料夾\""
+                },
+                {
+                    "source": "TOOLBAR_FILTER_ALL:\"All languages\"",
+                    "target": "TOOLBAR_FILTER_ALL:\"所有語言\""
+                },
+                {
+                    "source": "TOOLBAR_SORT_DATE:\"Date modified\"",
+                    "target": "TOOLBAR_SORT_DATE:\"修改日期\""
+                },
+                {
+                    "source": "TOOLBAR_SORT_NAME:\"Name\"",
+                    "target": "TOOLBAR_SORT_NAME:\"名稱\""
+                },
+                {
+                    "source": "TOOLBAR_SORT_TYPE:\"Type\"",
+                    "target": "TOOLBAR_SORT_TYPE:\"類型\""
+                },
+                {
+                    "source": "TOOLBAR_SORT_TOGGLE:\"Toggle order\"",
+                    "target": "TOOLBAR_SORT_TOGGLE:\"切換排序方向\""
+                },
+                {
+                    "source": "EMPTY_STATE_NO_FILES:\"No matching files found.\"",
+                    "target": "EMPTY_STATE_NO_FILES:\"找不到符合條件的檔案。\""
+                },
+                {
+                    "source": "MODAL_RENAME_TITLE:\"Rename file\"",
+                    "target": "MODAL_RENAME_TITLE:\"重新命名檔案\""
+                },
+                {
+                    "source": "MODAL_RENAME_PLACEHOLDER:\"Enter new name (without extension)\"",
+                    "target": "MODAL_RENAME_PLACEHOLDER:\"輸入新名稱（不含副檔名）\""
+                },
+                {
+                    "source": "MODAL_RENAME_BUTTON_SUBMIT:\"OK\"",
+                    "target": "MODAL_RENAME_BUTTON_SUBMIT:\"確定\""
+                },
+                {
+                    "source": "MODAL_RENAME_BUTTON_CANCEL:\"Cancel\"",
+                    "target": "MODAL_RENAME_BUTTON_CANCEL:\"取消\""
+                },
+                {
+                    "source": "MODAL_CREATE_TITLE:\"Create file\"",
+                    "target": "MODAL_CREATE_TITLE:\"建立檔案\""
+                },
+                {
+                    "source": "MODAL_CREATE_LABEL:\"File name:\"",
+                    "target": "MODAL_CREATE_LABEL:\"檔案名稱：\""
+                },
+                {
+                    "source": "MODAL_CREATE_DESC:\"Enter file name with extension (e.g., test.py, script.js). Default: .md\"",
+                    "target": "MODAL_CREATE_DESC:\"輸入包含副檔名的檔案名稱（例如 test.py、script.js）。預設為 .md\""
+                },
+                {
+                    "source": "MODAL_CREATE_BUTTON_SUBMIT:\"Create\"",
+                    "target": "MODAL_CREATE_BUTTON_SUBMIT:\"建立\""
+                },
+                {
+                    "source": "MODAL_CREATE_BUTTON_CANCEL:\"Cancel\"",
+                    "target": "MODAL_CREATE_BUTTON_CANCEL:\"取消\""
+                },
+                {
+                    "source": "MODAL_MOVE_TITLE:\"Move file to\"",
+                    "target": "MODAL_MOVE_TITLE:\"移動檔案至\""
+                },
+                {
+                    "source": "MODAL_MOVE_PLACEHOLDER:\"Type a folder\"",
+                    "target": "MODAL_MOVE_PLACEHOLDER:\"輸入資料夾名稱\""
+                },
+                {
+                    "source": "MENU_RENAME:\"Rename\"",
+                    "target": "MENU_RENAME:\"重新命名\""
+                },
+                {
+                    "source": "MENU_MOVE:\"Move file to\"",
+                    "target": "MENU_MOVE:\"移動檔案至\""
+                },
+                {
+                    "source": "MENU_OPEN_DEFAULT:\"Open in default app\"",
+                    "target": "MENU_OPEN_DEFAULT:\"使用預設應用程式開啟\""
+                },
+                {
+                    "source": "MENU_REVEAL:\"Reveal in navigation\"",
+                    "target": "MENU_REVEAL:\"在檔案總管中顯示\""
+                },
+                {
+                    "source": "MENU_IGNORE_FILE:\"Ignore this file\"",
+                    "target": "MENU_IGNORE_FILE:\"忽略此檔案\""
+                },
+                {
+                    "source": "MENU_IGNORE_FOLDER:\"Ignore this folder\"",
+                    "target": "MENU_IGNORE_FOLDER:\"忽略此資料夾\""
+                },
+                {
+                    "source": "MENU_DELETE:\"Delete\"",
+                    "target": "MENU_DELETE:\"刪除\""
+                },
+                {
+                    "source": "IGNORE_MANAGER_TITLE:\"Manage ignored files and folders\"",
+                    "target": "IGNORE_MANAGER_TITLE:\"管理已忽略的檔案與資料夾\""
+                },
+                {
+                    "source": "IGNORE_MANAGER_EMPTY:\"No ignored files or folders.\"",
+                    "target": "IGNORE_MANAGER_EMPTY:\"沒有已忽略的檔案或資料夾。\""
+                },
+                {
+                    "source": "IGNORE_MANAGER_OPEN:\"Open\"",
+                    "target": "IGNORE_MANAGER_OPEN:\"開啟\""
+                },
+                {
+                    "source": "IGNORE_MANAGER_REMOVE:\"Remove\"",
+                    "target": "IGNORE_MANAGER_REMOVE:\"移除\""
+                },
+                {
+                    "source": "CMD_OPEN_DASHBOARD:\"Open dashboard\"",
+                    "target": "CMD_OPEN_DASHBOARD:\"開啟儀表板\""
+                },
+                {
+                    "source": "CMD_CREATE_FILE:\"Create code file\"",
+                    "target": "CMD_CREATE_FILE:\"建立程式碼檔案\""
+                },
+                {
+                    "source": "CMD_RELOAD_PLUGIN:\"Reload plugin\"",
+                    "target": "CMD_RELOAD_PLUGIN:\"重新載入插件\""
+                },
+                {
+                    "source": "CMD_TOGGLE_OUTLINE:\"Toggle code outline\"",
+                    "target": "CMD_TOGGLE_OUTLINE:\"切換程式碼大綱\""
+                },
+                {
+                    "source": "CMD_SEARCH_REPLACE:\"Search and replace\"",
+                    "target": "CMD_SEARCH_REPLACE:\"搜尋與取代\""
+                },
+                {
+                    "source": "RIBBON_OPEN_DASHBOARD:\"Open code space dashboard\"",
+                    "target": "RIBBON_OPEN_DASHBOARD:\"開啟 Code Space 儀表板\""
+                },
+                {
+                    "source": "NOTICE_RELOAD_START:\"Reloading code space...\"",
+                    "target": "NOTICE_RELOAD_START:\"正在重新載入 Code Space...\""
+                },
+                {
+                    "source": "NOTICE_RELOAD_SUCCESS:\"Code space reloaded successfully!\"",
+                    "target": "NOTICE_RELOAD_SUCCESS:\"Code Space 已重新載入！\""
+                },
+                {
+                    "source": "NOTICE_RELOAD_FAIL:\"Failed to reload code space\"",
+                    "target": "NOTICE_RELOAD_FAIL:\"無法重新載入 Code Space\""
+                },
+                {
+                    "source": "NOTICE_CREATE_SUCCESS:\"Created\"",
+                    "target": "NOTICE_CREATE_SUCCESS:\"已建立\""
+                },
+                {
+                    "source": "NOTICE_CREATE_FAIL:\"Failed to create file. File may already exist.\"",
+                    "target": "NOTICE_CREATE_FAIL:\"無法建立檔案。檔案可能已經存在。\""
+                },
+                {
+                    "source": "NOTICE_RENAME_SUCCESS:\"Renamed to\"",
+                    "target": "NOTICE_RENAME_SUCCESS:\"已重新命名為\""
+                },
+                {
+                    "source": "NOTICE_RENAME_FAIL:\"Failed to rename file\"",
+                    "target": "NOTICE_RENAME_FAIL:\"無法重新命名檔案\""
+                },
+                {
+                    "source": "NOTICE_MOVE_SUCCESS:\"Moved to\"",
+                    "target": "NOTICE_MOVE_SUCCESS:\"已移動至\""
+                },
+                {
+                    "source": "NOTICE_MOVE_FAIL:\"Failed to move file\"",
+                    "target": "NOTICE_MOVE_FAIL:\"無法移動檔案\""
+                },
+                {
+                    "source": "NOTICE_OPEN_FAIL:\"Failed to open file.\"",
+                    "target": "NOTICE_OPEN_FAIL:\"無法開啟檔案。\""
+                },
+                {
+                    "source": "NOTICE_IGNORE_SUCCESS:\"File ignored.\"",
+                    "target": "NOTICE_IGNORE_SUCCESS:\"已忽略檔案。\""
+                },
+                {
+                    "source": "NOTICE_IGNORE_FOLDER_SUCCESS:\"Folder ignored.\"",
+                    "target": "NOTICE_IGNORE_FOLDER_SUCCESS:\"已忽略資料夾。\""
+                },
+                {
+                    "source": "NOTICE_UNIGNORE_SUCCESS:\"Restored to dashboard.\"",
+                    "target": "NOTICE_UNIGNORE_SUCCESS:\"已還原至儀表板。\""
+                },
+                {
+                    "source": "EMBED_TOOLTIP_OPEN:\"Click to open file (Ctrl: New Tab | Ctrl+Shift: New Window | Ctrl+Alt: Split Screen)\"",
+                    "target": "EMBED_TOOLTIP_OPEN:\"按一下以開啟檔案（Ctrl：新分頁｜Ctrl+Shift：新視窗｜Ctrl+Alt：分割畫面）\""
+                },
+                {
+                    "source": "EMBED_LINES_SHOWING:\"Showing {0} of {1} lines\"",
+                    "target": "EMBED_LINES_SHOWING:\"顯示第 {0} 行，共 {1} 行\""
+                },
+                {
+                    "source": "EMBED_LINES_TOTAL:\"{0} lines\"",
+                    "target": "EMBED_LINES_TOTAL:\"共 {0} 行\""
+                },
+                {
+                    "source": "EMBED_LINES_RANGE:\"Lines {0}-{1} of {2}\"",
+                    "target": "EMBED_LINES_RANGE:\"第 {0}-{1} 行，共 {2} 行\""
+                },
+                {
+                    "source": "EMBED_LINES_RANGE_SHOWING:\"Lines {0}-{1} of {2} (showing {3})\"",
+                    "target": "EMBED_LINES_RANGE_SHOWING:\"第 {0}-{1} 行，共 {2} 行（顯示 {3} 行）\""
+                },
+                {
+                    "source": "OUTLINE_TITLE:\"Code outline\"",
+                    "target": "OUTLINE_TITLE:\"程式碼大綱\""
+                },
+                {
+                    "source": "OUTLINE_EMPTY_OPEN:\"Open a code file to see its structure\"",
+                    "target": "OUTLINE_EMPTY_OPEN:\"開啟程式碼檔案以查看其結構\""
+                },
+                {
+                    "source": "OUTLINE_EMPTY_NO_SYMBOLS:\"No symbols found in this file\"",
+                    "target": "OUTLINE_EMPTY_NO_SYMBOLS:\"此檔案中找不到符號\""
+                },
+                {
+                    "source": "VIEW_DEFAULT_TITLE:\"Code space\"",
+                    "target": "VIEW_DEFAULT_TITLE:\"Code Space\""
+                },
+                {
+                    "source": "SEARCH_PLACEHOLDER:\"Search\"",
+                    "target": "SEARCH_PLACEHOLDER:\"搜尋\""
+                },
+                {
+                    "source": "SEARCH_REPLACE_PLACEHOLDER:\"Replace\"",
+                    "target": "SEARCH_REPLACE_PLACEHOLDER:\"取代\""
+                },
+                {
+                    "source": "SEARCH_BTN_CASE:\"Match case\"",
+                    "target": "SEARCH_BTN_CASE:\"區分大小寫\""
+                },
+                {
+                    "source": "SEARCH_BTN_REGEX:\"Use regular expression\"",
+                    "target": "SEARCH_BTN_REGEX:\"使用正規表示式\""
+                },
+                {
+                    "source": "SEARCH_BTN_WHOLE:\"Match whole word\"",
+                    "target": "SEARCH_BTN_WHOLE:\"符合完整單字\""
+                },
+                {
+                    "source": "SEARCH_BTN_PREV:\"Previous match\"",
+                    "target": "SEARCH_BTN_PREV:\"上一個相符項目\""
+                },
+                {
+                    "source": "SEARCH_BTN_NEXT:\"Next match\"",
+                    "target": "SEARCH_BTN_NEXT:\"下一個相符項目\""
+                },
+                {
+                    "source": "SEARCH_BTN_CLOSE:\"Close\"",
+                    "target": "SEARCH_BTN_CLOSE:\"關閉\""
+                },
+                {
+                    "source": "SEARCH_BTN_REPLACE:\"Replace\"",
+                    "target": "SEARCH_BTN_REPLACE:\"取代\""
+                },
+                {
+                    "source": "SEARCH_BTN_REPLACE_ALL:\"Replace all\"",
+                    "target": "SEARCH_BTN_REPLACE_ALL:\"全部取代\""
+                },
+                {
+                    "source": "HEADER_ACTION_SEARCH:\"Search\"",
+                    "target": "HEADER_ACTION_SEARCH:\"搜尋\""
+                },
+                {
+                    "source": "HEADER_ACTION_OUTLINE:\"Outline\"",
+                    "target": "HEADER_ACTION_OUTLINE:\"大綱\""
+                },
+                {
+                    "source": "HEADER_ACTION_PLAY:\"Open in default app\"",
+                    "target": "HEADER_ACTION_PLAY:\"使用預設應用程式開啟\""
+                },
+                {
+                    "source": "NOTICE_MODIFIED_EXTERNALLY:\"File modified externally. You have unsaved changes.\"",
+                    "target": "NOTICE_MODIFIED_EXTERNALLY:\"檔案已在外部修改。你有尚未儲存的變更。\""
+                },
+                {
+                    "source": "NOTICE_SAVE_FAIL:\"Failed to save file\"",
+                    "target": "NOTICE_SAVE_FAIL:\"無法儲存檔案\""
+                },
+                {
+                    "source": "TAG_EXTERNAL_MOUNT:\"External mount\"",
+                    "target": "TAG_EXTERNAL_MOUNT:\"外部掛載\""
+                },
+                {
+                    "source": "FOLDER_FILTER_TITLE:\"Folder filter\"",
+                    "target": "FOLDER_FILTER_TITLE:\"資料夾篩選\""
+                },
+                {
+                    "source": "FOLDER_FILTER_SEARCH_PLACEHOLDER:\"Search folders...\"",
+                    "target": "FOLDER_FILTER_SEARCH_PLACEHOLDER:\"搜尋資料夾...\""
+                },
+                {
+                    "source": "FOLDER_FILTER_CLEAR:\"Clear selection\"",
+                    "target": "FOLDER_FILTER_CLEAR:\"清除選取項目\""
+                },
+                {
+                    "source": "FOLDER_FILTER_CANCEL:\"Cancel\"",
+                    "target": "FOLDER_FILTER_CANCEL:\"取消\""
+                },
+                {
+                    "source": "FOLDER_FILTER_APPLY:\"Apply\"",
+                    "target": "FOLDER_FILTER_APPLY:\"套用\""
+                },
+                {
+                    "source": "FOLDER_FILTER_EMPTY:\"No folders found.\"",
+                    "target": "FOLDER_FILTER_EMPTY:\"找不到資料夾。\""
+                },
+                {
+                    "source": "FOLDER_FILTER_SELECTED:\"Selected: {0}\"",
+                    "target": "FOLDER_FILTER_SELECTED:\"已選取：{0}\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Professional code file management with visual dashboard, syntax highlighting editor, and Markdown embedding.",
+                    "target": "專業的程式碼檔案管理工具，提供視覺化儀表板、語法醒目提示編輯器與 Markdown 嵌入功能。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Professional code file management with visual dashboard, syntax highlighting editor, and Markdown embedding.\"",
+                    "target": "\"description\": \"專業的程式碼檔案管理工具，提供視覺化儀表板、語法醒目提示編輯器與 Markdown 嵌入功能。\""
                 }
             ]
         }
