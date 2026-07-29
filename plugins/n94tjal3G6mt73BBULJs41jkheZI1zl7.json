@@ -1,133 +1,137 @@
 {
-    "schemaVersion": 1,
-    "metadata": {
-        "plugin": "obsidian-list-callouts",
-        "version": "1.2.9",
-        "title": "[zh-tw] List Callouts",
-        "description": "List Callouts Localization & Tweaks",
-        "language": "zh-tw",
-        "supportedVersions": "1.2.9",
-        "author": "Chico",
-        "updatedAt": 1778618472070
-    },
-    "dict": {
-        "main.js": {
-            "ast": [
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": "有关其他配置选项，请参阅Style Settings插件。(Fendi 2024-09-24 汉化)",
-                    "target": "其他設定選項請參閱 Style Settings 插件。（Fendi 2024-09-24 中文化）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "设置图标",
-                    "target": "設定圖示"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "清除图标",
-                    "target": "清除圖示"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "删除",
-                    "target": "刪除"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "新建",
-                    "target": "新增"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "创建一个新的Callout",
-                    "target": "建立新的 Callout"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "创建其他列表callout样式。",
-                    "target": "建立其他清單 Callout 樣式。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "markdown-source-view cm-s-obsidian mod-cm6 is-readable-line-width is-live-preview",
-                    "target": "markdown-source-view cm-s-obsidian mod-cm6 is-readable-line-width is-live-preview"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "HyperMD-list-line HyperMD-list-line-1 lc-list-callout cm-line",
-                    "target": "HyperMD-list-line HyperMD-list-line-1 lc-list-callout cm-line"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "cm-formatting cm-formatting-list cm-formatting-list-ul cm-list-1",
-                    "target": "cm-formatting cm-formatting-list cm-formatting-list-ul cm-list-1"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": " 列表示例：读好书，不求甚解。    ----陶渊明",
-                    "target": " 清單範例：讀好書，不求甚解。    ----陶淵明"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "注意: 使用 +, *, -, >, 或 # 字符会扰乱阅读模式。",
-                    "target": "注意：使用 +、*、-、> 或 # 字元會擾亂閱讀模式。"
-                }
-            ],
-            "regex": [
-                {
-                    "source": "appendText(\" \")",
-                    "target": "appendText(\" \")"
-                },
-                {
-                    "source": "setButtonText(\"设置图标\")",
-                    "target": "setButtonText(\"設定圖示\")"
-                },
-                {
-                    "source": "setButtonText(\"清除图标\")",
-                    "target": "setButtonText(\"清除圖示\")"
-                },
-                {
-                    "source": "setButtonText(\"删除\")",
-                    "target": "setButtonText(\"刪除\")"
-                },
-                {
-                    "source": "setText(\"创建一个新的Callout\")",
-                    "target": "setText(\"建立新的 Callout\")"
-                },
-                {
-                    "source": "setText(\"创建其他列表callout样式。\")",
-                    "target": "setText(\"建立其他清單 Callout 樣式。\")"
-                },
-                {
-                    "source": "setButtonText(\"新建\")",
-                    "target": "setButtonText(\"新增\")"
-                },
-                {
-                    "source": "appendText(\"有关其他配置选项，请参阅Style Settings插件。(Fendi 2024-09-24 汉化)\")",
-                    "target": "appendText(\"其他設定選項請參閱 Style Settings 插件。（Fendi 2024-09-24 中文化）\")"
-                },
-                {
-                    "source": "text:\" 列表示例：读好书，不求甚解。    ----陶渊明\"",
-                    "target": "text:\" 清單範例：讀好書，不求甚解。    ----陶淵明\""
-                },
-                {
-                    "source": "text:\"注意: 使用 +, *, -, >, 或 # 字符会扰乱阅读模式。\"",
-                    "target": "text:\"注意：使用 +、*、-、> 或 # 字元會擾亂閱讀模式。\""
-                }
-            ]
+  "schemaVersion": 1,
+  "metadata": {
+    "plugin": "obsidian-list-callouts",
+    "version": "1.2.9",
+    "title": "[zh-tw] List Callouts",
+    "description": "List Callouts Localization & Tweaks",
+    "language": "zh-tw",
+    "supportedVersions": "1.2.9",
+    "author": "Chico",
+    "updatedAt": 1785320793310
+  },
+  "dict": {
+    "main.js": {
+      "ast": [
+        {
+          "type": "ObjectProperty",
+          "name": "placeholder",
+          "source": "Search...",
+          "target": "搜尋..."
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Set Icon",
+          "target": "設定圖示"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Clear Icon",
+          "target": "清除圖示"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Delete",
+          "target": "刪除"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Create",
+          "target": "建立"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setText",
+          "source": "Create a new Callout",
+          "target": "建立新的標註"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setText",
+          "source": "Create additional list callout styles.",
+          "target": "建立其他清單標註樣式。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "appendText",
+          "source": "See the Style Settings plugin for additional configuration options.",
+          "target": "其他設定選項請參閱 Style Settings 插件。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "Note: Using +, *, -, >, or # as the callout character can disrupt reading mode.",
+          "target": "注意：使用 +、*、-、> 或 # 作為標註字元可能會影響閱讀模式。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": " Sed eu nisl rhoncus, consectetur mi quis, scelerisque enim.",
+          "target": " 清單標註範例文字。"
         }
+      ],
+      "regex": [
+        {
+          "source": "placeholder:\"Search...\"",
+          "target": "placeholder:\"搜尋...\""
+        },
+        {
+          "source": "setButtonText(\"Set Icon\")",
+          "target": "setButtonText(\"設定圖示\")"
+        },
+        {
+          "source": "setButtonText(\"Clear Icon\")",
+          "target": "setButtonText(\"清除圖示\")"
+        },
+        {
+          "source": "setButtonText(\"Delete\")",
+          "target": "setButtonText(\"刪除\")"
+        },
+        {
+          "source": "setButtonText(\"Create\")",
+          "target": "setButtonText(\"建立\")"
+        },
+        {
+          "source": "setText(\"Create a new Callout\")",
+          "target": "setText(\"建立新的標註\")"
+        },
+        {
+          "source": "setText(\"Create additional list callout styles.\")",
+          "target": "setText(\"建立其他清單標註樣式。\")"
+        },
+        {
+          "source": "appendText(\"See the Style Settings plugin for additional configuration options.\")",
+          "target": "appendText(\"其他設定選項請參閱 Style Settings 插件。\")"
+        },
+        {
+          "source": "text:\"Note: Using +, *, -, >, or # as the callout character can disrupt reading mode.\"",
+          "target": "text:\"注意：使用 +、*、-、> 或 # 作為標註字元可能會影響閱讀模式。\""
+        },
+        {
+          "source": "text:\" Sed eu nisl rhoncus, consectetur mi quis, scelerisque enim.\"",
+          "target": "text:\" 清單標註範例文字。\""
+        }
+      ]
+    },
+    "manifest.json": {
+      "ast": [
+        {
+          "type": "ObjectProperty",
+          "name": "description",
+          "source": "Create simple callouts in lists.",
+          "target": "在清單中建立簡易標註。"
+        }
+      ],
+      "regex": [
+        {
+          "source": "\"description\": \"Create simple callouts in lists.\"",
+          "target": "\"description\": \"在清單中建立簡易標註。\""
+        }
+      ]
     }
+  }
 }
