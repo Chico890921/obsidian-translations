@@ -1227,6 +1227,22 @@
                     "target": "settings:\",e)}this.clearCache()}async manualVerify(){let e=(this.plugin.settings.activationCode||\""
                 }
             ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Focused tree-card Markdown view with inline editing, search, screenshots, and theme-based navigation.",
+                    "target": "專注於樹狀卡片的 Markdown 檢視模式，支援行內編輯、搜尋、螢幕截圖與主題式導覽。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\":\"Focused tree-card Markdown view with inline editing, search, screenshots, and theme-based navigation.\"",
+                    "target": "\"description\":\"專注於樹狀卡片的 Markdown 檢視模式，支援行內編輯、搜尋、螢幕截圖與主題式導覽。\""
+                }
+            ]
         }
     }
 }
