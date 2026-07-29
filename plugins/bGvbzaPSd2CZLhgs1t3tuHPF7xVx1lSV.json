@@ -8,23 +8,11 @@
         "language": "zh-tw",
         "supportedVersions": "4.2.7",
         "author": "Chico",
-        "updatedAt": 1783363484742
+        "updatedAt": 1785322324871
     },
     "dict": {
         "main.js": {
             "ast": [
-                {
-                    "type": "AssignmentExpression",
-                    "name": "ariaLabel",
-                    "source": "此分頁已靜音",
-                    "target": "此分頁已靜音"
-                },
-                {
-                    "type": "AssignmentExpression",
-                    "name": "ariaLabel",
-                    "source": "此分頁正在播放媒體",
-                    "target": "此分頁正在播放媒體"
-                },
                 {
                     "type": "CallExpression",
                     "name": "appendText",
@@ -42,12 +30,6 @@
                     "name": "appendText",
                     "source": ", ",
                     "target": ", "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "confirm",
-                    "source": "這會在未儲存的情況下重新啟動 Obsidian，要繼續嗎？",
-                    "target": "這會在未儲存的情況下重新啟動 Obsidian，要繼續嗎？"
                 },
                 {
                     "type": "CallExpression",
@@ -76,12 +58,6 @@
                 {
                     "type": "CallExpression",
                     "name": "error",
-                    "source": "detectVolumeSetter 發生錯誤：",
-                    "target": "detectVolumeSetter 發生錯誤："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
                     "source": "Failed to write to plugin log file",
                     "target": "無法寫入插件記錄檔"
                 },
@@ -90,12 +66,6 @@
                     "name": "error",
                     "source": "Failed to flush plugin log file on dispose",
                     "target": "釋放時無法寫入插件記錄檔緩衝"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "無法取得 EmptyView",
-                    "target": "無法取得 EmptyView"
                 },
                 {
                     "type": "CallExpression",
@@ -202,30 +172,6 @@
                 {
                     "type": "CallExpression",
                     "name": "error",
-                    "source": "跳至時間戳時發生錯誤",
-                    "target": "跳至時間戳時發生錯誤"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "跳至片段開頭時發生錯誤",
-                    "target": "跳至片段開頭時發生錯誤"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "重設時間範圍時發生錯誤",
-                    "target": "重設時間範圍時發生錯誤"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "媒體錯誤",
-                    "target": "媒體錯誤"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
                     "source": "forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported",
                     "target": "forceFrameRate 需要 0 到 125 之間的正整數，不支援強制使用高於 125 fps 的影格率"
                 },
@@ -262,20 +208,8 @@
                 {
                     "type": "CallExpression",
                     "name": "error",
-                    "source": "無法建立新的 BroadcastChannel，多分頁狀態變更將無法使用",
-                    "target": "無法建立新的 BroadcastChannel，多分頁狀態變更將無法使用"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
                     "source": "Error getting user data:",
                     "target": "取得使用者資料時發生錯誤："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "自動重新整理計時發生錯誤，這可能只是暫時性錯誤。",
-                    "target": "自動重新整理計時發生錯誤，這可能只是暫時性錯誤。"
                 },
                 {
                     "type": "CallExpression",
@@ -298,12 +232,6 @@
                 {
                     "type": "CallExpression",
                     "name": "error",
-                    "source": "無法開啟 Electron 檔案選擇器",
-                    "target": "無法開啟 Electron 檔案選擇器"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
                     "source": "Error connecting webview media service from {trigger}",
                     "target": "從 {trigger} 連線到網頁檢視器媒體服務時發生錯誤"
                 },
@@ -312,24 +240,6 @@
                     "name": "error",
                     "source": "Cannot connect: service is disposed",
                     "target": "無法連線：服務已釋放"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "openFile 中的 onOpenFile 發生錯誤，退回預設行為",
-                    "target": "openFile 中的 onOpenFile 發生錯誤，退回預設行為"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "無法插入時間戳",
-                    "target": "無法插入時間戳"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "非預期的資料夾",
-                    "target": "非預期的資料夾"
                 },
                 {
                     "type": "CallExpression",
@@ -348,12 +258,6 @@
                     "name": "error",
                     "source": "Failed to sign out: {error}",
                     "target": "無法登出：{error}"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "無法取得媒體檔案路徑",
-                    "target": "無法取得媒體檔案路徑"
                 },
                 {
                     "type": "CallExpression",
@@ -406,24 +310,6 @@
                 {
                     "type": "CallExpression",
                     "name": "error",
-                    "source": "編輯器中的內部連結點擊發生錯誤，退回預設行為",
-                    "target": "編輯器中的內部連結點擊發生錯誤，退回預設行為"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "編輯器中的外部連結點擊發生錯誤，退回預設行為",
-                    "target": "編輯器中的外部連結點擊發生錯誤，退回預設行為"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "無法修補預覽點擊行為",
-                    "target": "無法修補預覽點擊行為"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
                     "source": "onInternalLinkClick (from external) error, fallback to default",
                     "target": "onInternalLinkClick（來自外部）發生錯誤，退回預設行為"
                 },
@@ -442,12 +328,6 @@
                 {
                     "type": "CallExpression",
                     "name": "error",
-                    "source": "開啟外部連結時發生錯誤",
-                    "target": "開啟外部連結時發生錯誤"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
                     "source": "Failed to load media history",
                     "target": "無法載入媒體歷史記錄"
                 },
@@ -456,12 +336,6 @@
                     "name": "error",
                     "source": "Failed to persist media history",
                     "target": "無法保存媒體歷史記錄"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "正在重試失敗的擷取。錯誤：",
-                    "target": "正在重試失敗的擷取。錯誤："
                 },
                 {
                     "type": "CallExpression",
@@ -522,12 +396,6 @@
                     "name": "error",
                     "source": "Invalid conversion",
                     "target": "無效的轉換"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "無法取得輸入",
-                    "target": "無法取得輸入"
                 },
                 {
                     "type": "CallExpression",
@@ -598,20 +466,8 @@
                 {
                     "type": "CallExpression",
                     "name": "error",
-                    "source": "無法從檔案系統找到相關媒體：",
-                    "target": "無法從檔案系統找到相關媒體："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
                     "source": "Cannot open hosted media",
                     "target": "無法開啟託管媒體"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "無法匯入密碼管理器資料",
-                    "target": "無法匯入密碼管理器資料"
                 },
                 {
                     "type": "CallExpression",
@@ -664,12 +520,6 @@
                 {
                     "type": "CallExpression",
                     "name": "error",
-                    "source": "無法釋放容器",
-                    "target": "無法釋放容器"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
                     "source": "Failed to reload media library views",
                     "target": "無法重新載入媒體庫檢視"
                 },
@@ -678,12 +528,6 @@
                     "name": "error",
                     "source": "Failed to reload markdown views",
                     "target": "無法重新載入 Markdown 檢視"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "貼上軌道時發生錯誤",
-                    "target": "貼上軌道時發生錯誤"
                 },
                 {
                     "type": "CallExpression",
@@ -1492,12 +1336,6 @@
                 {
                     "type": "CallExpression",
                     "name": "warn",
-                    "source": "無法反序列化媒體檢視狀態",
-                    "target": "無法反序列化媒體檢視狀態"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
                     "source": "Text extraction unauthorized, prompting login",
                     "target": "Text extraction unauthorized, prompting login"
                 },
@@ -1912,104 +1750,8 @@
                 {
                     "type": "ObjectProperty",
                     "name": "message",
-                    "source": "長寬比格式必須為 <寬度>/<高度>",
-                    "target": "長寬比格式必須為 <寬度>/<高度>"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "長寬比的 x 或 y 必須是數字",
-                    "target": "長寬比的 x 或 y 必須是數字"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "長寬比不能約分為最簡形式",
-                    "target": "長寬比不能約分為最簡形式"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "[vidstack] 此環境不支援 `hls.js`",
-                    "target": "[vidstack] 此環境不支援 `hls.js`"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "[vidstack] 此環境不支援 `dash.js`",
-                    "target": "[vidstack] 此環境不支援 `dash.js`"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "無法載入資源。",
-                    "target": "無法載入資源。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
                     "source": "JSON object requested, multiple (or no) rows returned",
                     "target": "JSON object requested, multiple (or no) rows returned"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "需要可探索憑證，但沒有可用的驗證器支援。",
-                    "target": "需要可探索憑證，但沒有可用的驗證器支援。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "自動註冊期間需要使用者驗證，但無法執行。",
-                    "target": "自動註冊期間需要使用者驗證，但無法執行。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "需要使用者驗證，但沒有可用的驗證器支援。",
-                    "target": "需要使用者驗證，但沒有可用的驗證器支援。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "此驗證器先前已註冊。",
-                    "target": "此驗證器先前已註冊。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "pubKeyCredParams 中沒有類型為 \"public-key\" 的項目。",
-                    "target": "pubKeyCredParams 中沒有類型為 \"public-key\" 的項目。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "沒有可用的驗證器支援任何指定的 pubKeyCredParams 演算法。",
-                    "target": "沒有可用的驗證器支援任何指定的 pubKeyCredParams 演算法。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "使用者 ID 長度不在 1 到 64 個字元之間。",
-                    "target": "使用者 ID 長度不在 1 到 64 個字元之間。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "驗證器無法處理指定選項，或無法建立新憑證。",
-                    "target": "驗證器無法處理指定選項，或無法建立新憑證。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "發生非 WebAuthn 相關錯誤。",
-                    "target": "發生非 WebAuthn 相關錯誤。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "驗證器無法處理指定選項，或無法建立新的斷言簽章。",
-                    "target": "驗證器無法處理指定選項，或無法建立新的斷言簽章。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -2067,18 +1809,6 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "success",
-                    "source": "已將含時間戳的連結複製到剪貼簿",
-                    "target": "已將含時間戳的連結複製到剪貼簿"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "success",
-                    "source": "剪輯已匯入媒體庫",
-                    "target": "剪輯已匯入媒體庫"
-                },
-                {
-                    "type": "ObjectProperty",
                     "name": "warning",
                     "source": "background-color: orange; color: black;",
                     "target": "background-color: orange; color: black;"
@@ -2091,10 +1821,6 @@
                 }
             ],
             "regex": [
-                {
-                    "source": "error(`SEMVER`,...e):()=>{}}),v=s((e,t)=>{var{MAX_SAFE_COMPONENT_LENGTH:n,MAX_SAFE_BUILD_LENGTH:r,MAX_LENGTH:i}=g(),a=_();e=t.exports={};var o=e.re=[],s=e.safeRe=[],c=e.src=[],l=e.safeSrc=[],u=e.t={},d=0,f=`[a-zA-Z0-9-]`,p=[[`\\\\s`,1],[`\\\\d`,i],[f,r]],m=e=>{for(let[t,n]of p)e=e.split(`${t}*`)",
-                    "target": "error(`SEMVER`,...e):()=>{}}),v=s((e,t)=>{var{MAX_SAFE_COMPONENT_LENGTH:n,MAX_SAFE_BUILD_LENGTH:r,MAX_LENGTH:i}=g(),a=_();e=t.exports={};var o=e.re=[],s=e.safeRe=[],c=e.src=[],l=e.safeSrc=[],u=e.t={},d=0,f=`[a-zA-Z0-9-]`,p=[[`\\\\s`,1],[`\\\\d`,i],[f,r]],m=e=>{for(let[t,n]of p)e=e.split(`${t}*`)"
-                },
                 {
                     "source": "error(\"`persistent` option is only available in Deno\")",
                     "target": "error(\"`persistent` option is only available in Deno\")"
@@ -2128,14 +1854,6 @@
                     "target": "log(`fatal`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`fatal`)"
                 },
                 {
-                    "source": "error(`無法取得 EmptyView`)",
-                    "target": "error(`無法取得 EmptyView`)"
-                },
-                {
-                    "source": "error(`Failed to convert path ${e} to URL: `,t),null}}async function tpt(){if(!window.confirm(`這會在未儲存的情況下重新啟動 Obsidian，要繼續嗎？`)",
-                    "target": "error(`Failed to convert path ${e} to URL: `,t),null}}async function tpt(){if(!window.confirm(`這會在未儲存的情況下重新啟動 Obsidian，要繼續嗎？`)"
-                },
-                {
                     "source": "error(`Failed to open Google Drive browser`,e)}}async requestSelect(e){let t=await this.#s.googleDriveBrowserDialog.requestInput(e);if(t.type===`play`||t.type===`import`)",
                     "target": "error(`Failed to open Google Drive browser`,e)}}async requestSelect(e){let t=await this.#s.googleDriveBrowserDialog.requestInput(e);if(t.type===`play`||t.type===`import`)"
                 },
@@ -2166,10 +1884,6 @@
                 {
                     "source": "error(`Please add a BigInt polyfill.`)",
                     "target": "error(`Please add a BigInt polyfill.`)"
-                },
-                {
-                    "source": "error(`Failed to save screenshot`,{error:t}),nDe({error:e}))})}async#i({clip:e,sourcePath:t}){try{var n=I();N$.info(`Setting screenshot as cover`,{clip:e,sourcePath:t});let r=this.adapter.media;if(!r)throw Error(`尚未開啟媒體`)",
-                    "target": "error(`Failed to save screenshot`,{error:t}),nDe({error:e}))})}async#i({clip:e,sourcePath:t}){try{var n=I();N$.info(`Setting screenshot as cover`,{clip:e,sourcePath:t});let r=this.adapter.media;if(!r)throw Error(`尚未開啟媒體`)"
                 },
                 {
                     "source": "error(`Failed to copy screenshot`,{error:t}),bDe({error:e}))})}},Qgt=Yx(`^(?<drive>[A-Z]+):(?<path>.+)`)",
@@ -2256,10 +1970,6 @@
                     "target": "error(`Error getting user data:`,t),this._debug(e,`error getting user data, skipping SIGNED_IN notification`,t)}else await this._notifyAllSubscribers(`SIGNED_IN`,t)}catch(t){this._debug(e,`error`,t),console.error(t);return}finally{this._debug(e,`end`)"
                 },
                 {
-                    "source": "error(`自動重新整理計時發生錯誤，這可能只是暫時性錯誤。`,e)}}finally{this._debug(`#_autoRefreshTokenTick()`,`end`)",
-                    "target": "error(`自動重新整理計時發生錯誤，這可能只是暫時性錯誤。`,e)}}finally{this._debug(`#_autoRefreshTokenTick()`,`end`)"
-                },
-                {
                     "source": "error(`Failed to download YouTube track via webview`,{trackId:e.id,label:e.label,language:e.language,error:t}),t}}function ISt(e){return cX(e)||amt(e)||omt(e)}function LSt(e,t){let n=e.captionList;if(!n)return{type:`none`};if(n.type===`youtube`)",
                     "target": "error(`Failed to download YouTube track via webview`,{trackId:e.id,label:e.label,language:e.language,error:t}),t}}function ISt(e){return cX(e)||amt(e)||omt(e)}function LSt(e,t){let n=e.captionList;if(!n)return{type:`none`};if(n.type===`youtube`)"
                 },
@@ -2272,10 +1982,6 @@
                     "target": "error(`Failed to download Bilibili track via webview`,{trackId:e.id,label:e.label,language:e.language,error:t}),t}}async function HSt(e,t,n,r={}){let i=t.captionList;if(!i)throw Error(`No caption list available`)"
                 },
                 {
-                    "source": "error(`無法開啟 Electron 檔案選擇器`,e),t?.()}},...n})},WSt=class extends U0{app;trackInfoParser;constructor(e){super(e.app),this.app=e.app,this.trackInfoParser=e.textTrackParser,this.modalEl.addClass(`track-import`,`track-file-import`)",
-                    "target": "error(`無法開啟 Electron 檔案選擇器`,e),t?.()}},...n})},WSt=class extends U0{app;trackInfoParser;constructor(e){super(e.app),this.app=e.app,this.trackInfoParser=e.textTrackParser,this.modalEl.addClass(`track-import`,`track-file-import`)"
-                },
-                {
                     "source": "error(`Error connecting webview media service from {trigger}`,{url:t,trigger:n,urlKey:r,error:e})})}onHostChange(e,t=`unknown`)",
                     "target": "error(`Error connecting webview media service from {trigger}`,{url:t,trigger:n,urlKey:r,error:e})})}onHostChange(e,t=`unknown`)"
                 },
@@ -2286,18 +1992,6 @@
                 {
                     "source": "error(`downloadCaption failed`,{mediaId:gX(r),captionId:e,format:t.format,error:n}),n}}async togglePaused(){J.debug(`Toggling pause state`)",
                     "target": "error(`downloadCaption failed`,{mediaId:gX(r),captionId:e,format:t.format,error:n}),n}}async togglePaused(){J.debug(`Toggling pause state`)"
-                },
-                {
-                    "source": "error(`openFile 中的 onOpenFile 發生錯誤，退回預設行為`,e),o()}}})),r.move()}catch(e){n.e=e}finally{n.d()}}var d3=Symbol(`MX_INTERNAL_OPENFILE`)",
-                    "target": "error(`openFile 中的 onOpenFile 發生錯誤，退回預設行為`,e),o()}}})),r.move()}catch(e){n.e=e}finally{n.d()}}var d3=Symbol(`MX_INTERNAL_OPENFILE`)"
-                },
-                {
-                    "source": "error(`無法插入時間戳`,e)}finally{a()}}this.#t.clear()}patchRecordPlugin(){let e=this.app.internalPlugins.plugins[`audio-recorder`];if(!e)return console.info(`recorder not found, skip patching for recorder note`)",
-                    "target": "error(`無法插入時間戳`,e)}finally{a()}}this.#t.clear()}patchRecordPlugin(){let e=this.app.internalPlugins.plugins[`audio-recorder`];if(!e)return console.info(`recorder not found, skip patching for recorder note`)"
-                },
-                {
-                    "source": "error(`非預期的資料夾`)",
-                    "target": "error(`非預期的資料夾`)"
                 },
                 {
                     "source": "error(`Failed to batch fetch images from cache`,{error:e}),t}}async get(e){try{let t=(await this.#n()).transaction(this.storeName,`readwrite`)",
@@ -2316,24 +2010,12 @@
                     "target": "error(`Failed to reset image cache database`,{dbName:this.dbName,error:e})}}async#r(){try{let e=(await this.#n()).transaction(this.storeName,`readwrite`)"
                 },
                 {
-                    "source": "error(`開啟外部連結時發生錯誤`,t),new d.Notice(V_e({error:QJ(t)})),t}}},mTt=/^[v^~<>=]*?(\\d+)(?:\\.([x*]|\\d+)(?:\\.([x*]|\\d+)(?:\\.([x*]|\\d+))?(?:-([\\da-z\\-]+(?:\\.[\\da-z\\-]+)*))?(?:\\+[\\da-z\\-]+(?:\\.[\\da-z\\-]+)*)?)?)?$/i,hTt=e=>{if(typeof e!=`string`)",
-                    "target": "error(`開啟外部連結時發生錯誤`,t),new d.Notice(V_e({error:QJ(t)})),t}}},mTt=/^[v^~<>=]*?(\\d+)(?:\\.([x*]|\\d+)(?:\\.([x*]|\\d+)(?:\\.([x*]|\\d+))?(?:-([\\da-z\\-]+(?:\\.[\\da-z\\-]+)*))?(?:\\+[\\da-z\\-]+(?:\\.[\\da-z\\-]+)*)?)?)?$/i,hTt=e=>{if(typeof e!=`string`)"
-                },
-                {
                     "source": "error(`Failed to load media history`,{error:e})}}recordMedia(e,t,n){let r=zTt(e,t);if(!r)return;let i;if(r.type===`url`)",
                     "target": "error(`Failed to load media history`,{error:e})}}recordMedia(e,t,n){let r=zTt(e,t);if(!r)return;let i;if(r.type===`url`)"
                 },
                 {
-                    "source": "error(`正在重試失敗的擷取。錯誤：`,e),!Number.isFinite(n)||n<0)throw TypeError(`Retry delay must be a non-negative finite number.`)",
-                    "target": "error(`正在重試失敗的擷取。錯誤：`,e),!Number.isFinite(n)||n<0)throw TypeError(`Retry delay must be a non-negative finite number.`)"
-                },
-                {
                     "source": "error(`Error during decodability check:`,e),!1}}async determinePacketType(e){if(!(e instanceof b8))throw TypeError(`packet must be an EncodedPacket.`)",
                     "target": "error(`Error during decodability check:`,e),!1}}async determinePacketType(e){if(!(e instanceof b8))throw TypeError(`packet must be an EncodedPacket.`)"
-                },
-                {
-                    "source": "error(`無法取得輸入`,{error:e}),null}}canGetInput(e){if(e.type===`url:hosted`)",
-                    "target": "error(`無法取得輸入`,{error:e}),null}}canGetInput(e){if(e.type===`url:hosted`)"
                 },
                 {
                     "source": "setTitle(`Google Drive`)",
@@ -2370,10 +2052,6 @@
                 {
                     "source": "error(`Cannot open hosted media`,{isBrowser:fX(e.info),webviewerPatchStatus:this.webviewerPatch.patchStatus,isEmbed:dX(e.info)}),new zPt(`Cannot open hosted media`)",
                     "target": "error(`Cannot open hosted media`,{isBrowser:fX(e.info),webviewerPatchStatus:this.webviewerPatch.patchStatus,isEmbed:dX(e.info)}),new zPt(`Cannot open hosted media`)"
-                },
-                {
-                    "source": "error(`無法匯入密碼管理器資料`,e)}}async exportCredentials(){if(!window.confirm(js()))return;let e=await this.#n.getAll();E0(new Blob([JSON.stringify(e)],{type:`application/json`}),`password-manager.json`)",
-                    "target": "error(`無法匯入密碼管理器資料`,e)}}async exportCredentials(){if(!window.confirm(js()))return;let e=await this.#n.getAll();E0(new Blob([JSON.stringify(e)],{type:`application/json`}),`password-manager.json`)"
                 },
                 {
                     "source": "error(`Failed to open log folder`,e),new d.Notice(bse())}}),i(),n.defer(r.sub(c,i))})}).addSetting(t=>{t.setName(uf()).setDesc(pf()).addButton(t=>{let i=()=>{r.get(c)?(t.setDisabled(!1),t.setTooltip(``)",
@@ -3104,11 +2782,11 @@
                     "target": "Yre=()=>`字幕（每行一個 cue）`"
                 },
                 {
-                    "source": "Bp=Object.assign(()=>`A list of languages to show subtitles/captions for by default.Each language code should be on a new line.`,{parts:()=>[{type:`text`,value:`A list of languages to show subtitles/captions for by default.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Each language code should be on a new line.`}]})",
+                    "source": "Bp=Object.assign((()=>`A list of languages to show subtitles/captions for by default.Each language code should be on a new line.`),{parts:(()=>[{type:`text`,value:`A list of languages to show subtitles/captions for by default.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Each language code should be on a new line.`}])})",
                     "target": "Bp=Object.assign(()=>`預設顯示字幕/輔助字幕的語言清單。每個語言代碼應另起一行。`,{parts:()=>[{type:`text`,value:`預設顯示字幕/輔助字幕的語言清單。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`每個語言代碼應另起一行。`}]})"
                 },
                 {
-                    "source": "Vp=Object.assign(()=>`默认显示字幕/描述的语言列表。每个语言代码应独占一行。`,{parts:()=>[{type:`text`,value:`默认显示字幕/描述的语言列表。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`每个语言代码应独占一行。`}]})",
+                    "source": "Vp=Object.assign((()=>`默认显示字幕/描述的语言列表。每个语言代码应独占一行。`),{parts:(()=>[{type:`text`,value:`默认显示字幕/描述的语言列表。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`每个语言代码应独占一行。`}])})",
                     "target": "Vp=Object.assign(()=>`預設顯示字幕/輔助字幕的語言清單。每個語言代碼應另起一行。`,{parts:()=>[{type:`text`,value:`預設顯示字幕/輔助字幕的語言清單。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`每個語言代碼應另起一行。`}]})"
                 },
                 {
@@ -3476,51 +3154,51 @@
                     "target": "xxe=()=>`儲存截圖`"
                 },
                 {
-                    "source": "Ep=Object.assign(e=>`Template for the \"${e?.command}\" command. Supported placeholders: `,{parts:e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}]})",
+                    "source": "Ep=Object.assign((e=>`Template for the \"${e?.command}\" command. Supported placeholders: `),{parts:(e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}])})",
                     "target": "Ep=Object.assign(e=>`「${e?.command}」指令的範本。支援的預留位置：`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}]})"
                 },
                 {
-                    "source": "Dp=Object.assign(e=>`「${e?.command}」命令的模板。支持的占位符：`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}]})",
+                    "source": "Dp=Object.assign((e=>`「${e?.command}」命令的模板。支持的占位符：`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}])})",
                     "target": "Dp=Object.assign(e=>`「${e?.command}」指令的範本。支援的預留位置：`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}]})"
                 },
                 {
-                    "source": "Op=Object.assign(e=>`Template for the \"${e?.command}\" command. Use  to mark where the clip embed goes.`,{parts:e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Use `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` to mark where the clip embed goes.`}]})",
+                    "source": "Op=Object.assign((e=>`Template for the \"${e?.command}\" command. Use  to mark where the clip embed goes.`),{parts:(e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Use `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` to mark where the clip embed goes.`}])})",
                     "target": "Op=Object.assign(e=>`「${e?.command}」指令的範本。使用  標記媒體剪輯嵌入的位置。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。使用 `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` 標記媒體剪輯嵌入的位置。`}]})"
                 },
                 {
-                    "source": "kp=Object.assign(e=>`「${e?.command}」命令的模板。使用  标记媒体片段嵌入的位置。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。使用 `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` 标记媒体片段嵌入的位置。`}]})",
+                    "source": "kp=Object.assign((e=>`「${e?.command}」命令的模板。使用  标记媒体片段嵌入的位置。`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。使用 `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` 标记媒体片段嵌入的位置。`}])})",
                     "target": "kp=Object.assign(e=>`「${e?.command}」指令的範本。使用  標記媒體剪輯嵌入的位置。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。使用 `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` 標記媒體剪輯嵌入的位置。`}]})"
                 },
                 {
-                    "source": "Ap=Object.assign(e=>`Display text for the media clip embed inserted by \"${e?.command}\". Append |<width> (e.g. |400) to size the inline player. Supported placeholders: .`,{parts:e=>[{type:`text`,value:`Display text for the media clip embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline player. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})",
+                    "source": "Ap=Object.assign((e=>`Display text for the media clip embed inserted by \"${e?.command}\". Append |<width> (e.g. |400) to size the inline player. Supported placeholders: .`),{parts:(e=>[{type:`text`,value:`Display text for the media clip embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline player. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}])})",
                     "target": "Ap=Object.assign(e=>`「${e?.command}」插入的媒體剪輯嵌入顯示文字。附加 |<寬度>（例如 |400）可調整行內播放器大小。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的媒體剪輯嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內播放器大小。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})"
                 },
                 {
-                    "source": "jp=Object.assign(e=>`「${e?.command}」插入的媒体片段嵌入显示文本。附加 |<宽度>（如 |400）以设置内联播放器大小。支持的占位符：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的媒体片段嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联播放器大小。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})",
+                    "source": "jp=Object.assign((e=>`「${e?.command}」插入的媒体片段嵌入显示文本。附加 |<宽度>（如 |400）以设置内联播放器大小。支持的占位符：。`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的媒体片段嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联播放器大小。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}])})",
                     "target": "jp=Object.assign(e=>`「${e?.command}」插入的媒體剪輯嵌入顯示文字。附加 |<寬度>（例如 |400）可調整行內播放器大小。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的媒體剪輯嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內播放器大小。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
                 },
                 {
-                    "source": "Mp=Object.assign(e=>`Display text for the screenshot embed inserted by \"${e?.command}\". Append |<width> (e.g. |50) to size the inline image; leave unsized to embed at full size. Supported placeholders: .`,{parts:e=>[{type:`text`,value:`Display text for the screenshot embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline image; leave unsized to embed at full size. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})",
+                    "source": "Mp=Object.assign((e=>`Display text for the screenshot embed inserted by \"${e?.command}\". Append |<width> (e.g. |50) to size the inline image; leave unsized to embed at full size. Supported placeholders: .`),{parts:(e=>[{type:`text`,value:`Display text for the screenshot embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline image; leave unsized to embed at full size. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}])})",
                     "target": "Mp=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<寬度>（例如 |50）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})"
                 },
                 {
-                    "source": "Np=Object.assign(e=>`「${e?.command}」插入的截图嵌入显示文本。附加 |<宽度>（如 |50）以设置内联图片大小；留空则以原始大小嵌入。支持的占位符：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截图嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联图片大小；留空则以原始大小嵌入。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})",
+                    "source": "Np=Object.assign((e=>`「${e?.command}」插入的截图嵌入显示文本。附加 |<宽度>（如 |50）以设置内联图片大小；留空则以原始大小嵌入。支持的占位符：。`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截图嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联图片大小；留空则以原始大小嵌入。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}])})",
                     "target": "Np=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<寬度>（例如 |50）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
                 },
                 {
-                    "source": "Pp=Object.assign(e=>`Display text for the screenshot embed inserted by \"${e?.command}\". Append |<width> (e.g. |50) to size the inline image; remove it to embed at full size. Supported placeholders: .`,{parts:e=>[{type:`text`,value:`Display text for the screenshot embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline image; remove it to embed at full size. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})",
+                    "source": "Pp=Object.assign((e=>`Display text for the screenshot embed inserted by \"${e?.command}\". Append |<width> (e.g. |50) to size the inline image; remove it to embed at full size. Supported placeholders: .`),{parts:(e=>[{type:`text`,value:`Display text for the screenshot embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline image; remove it to embed at full size. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}])})",
                     "target": "Pp=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<寬度>（例如 |50）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})"
                 },
                 {
-                    "source": "Fp=Object.assign(e=>`「${e?.command}」插入的截图嵌入显示文本。附加 |<宽度>（如 |50）以设置内联图片大小；移除则以原始大小嵌入。支持的占位符：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截图嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联图片大小；移除则以原始大小嵌入。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})",
+                    "source": "Fp=Object.assign((e=>`「${e?.command}」插入的截图嵌入显示文本。附加 |<宽度>（如 |50）以设置内联图片大小；移除则以原始大小嵌入。支持的占位符：。`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截图嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联图片大小；移除则以原始大小嵌入。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}])})",
                     "target": "Fp=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<寬度>（例如 |50）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
                 },
                 {
-                    "source": "Ip=Object.assign(e=>`Template for the \"${e?.command}\" command. Supported placeholders: .Prefix {{SCREENSHOT}} with ! (e.g. !{{SCREENSHOT}}) to embed the image inline instead of linking to it.Use {{SCREENSHOT_LINK}} to insert the embed wrapped in a clickable link that jumps the player to the timestamp.`,{parts:e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Prefix `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` with `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to embed the image inline instead of linking to it.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Use `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` to insert the embed wrapped in a clickable link that jumps the player to the timestamp.`}]})",
+                    "source": "Ip=Object.assign((e=>`Template for the \"${e?.command}\" command. Supported placeholders: .Prefix {{SCREENSHOT}} with ! (e.g. !{{SCREENSHOT}}) to embed the image inline instead of linking to it.Use {{SCREENSHOT_LINK}} to insert the embed wrapped in a clickable link that jumps the player to the timestamp.`),{parts:(e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Prefix `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` with `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to embed the image inline instead of linking to it.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Use `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` to insert the embed wrapped in a clickable link that jumps the player to the timestamp.`}])})",
                     "target": "Ip=Object.assign(e=>`「${e?.command}」指令的範本。支援的預留位置：。在 {{SCREENSHOT}} 前加上 !（例如 !{{SCREENSHOT}}）即可行內嵌入圖片，而不是連結到圖片。使用 {{SCREENSHOT_LINK}} 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`在 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 前加上 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）即可行內嵌入圖片，而不是連結到圖片。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`使用 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`}]})"
                 },
                 {
-                    "source": "Lp=Object.assign(e=>`「${e?.command}」命令的模板。支持的占位符：。在 {{SCREENSHOT}} 前加 !（如 !{{SCREENSHOT}}）以内联嵌入图片。使用 {{SCREENSHOT_LINK}} 插入包裹在可点击链接中的嵌入，点击可跳转到对应时间戳。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`在 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 前加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以内联嵌入图片。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`使用 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 插入包裹在可点击链接中的嵌入，点击可跳转到对应时间戳。`}]}),lne=Object.assign((e,t={})=>(t.locale??N())===`en`?Ip(e):Lp(e),{parts:(e,t={})=>(t.locale??N())===`en`?typeof Ip.parts==`function`?Ip.parts(e):[{type:`text`,value:Ip(e)}]:typeof Lp.parts==`function`?Lp.parts(e):[{type:`text`,value:Lp(e)}]})",
+                    "source": "Lp=Object.assign((e=>`「${e?.command}」命令的模板。支持的占位符：。在 {{SCREENSHOT}} 前加 !（如 !{{SCREENSHOT}}）以内联嵌入图片。使用 {{SCREENSHOT_LINK}} 插入包裹在可点击链接中的嵌入，点击可跳转到对应时间戳。`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`在 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 前加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以内联嵌入图片。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`使用 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 插入包裹在可点击链接中的嵌入，点击可跳转到对应时间戳。`}])})",
                     "target": "Lp=Object.assign(e=>`「${e?.command}」指令的範本。支援的預留位置：。在 {{SCREENSHOT}} 前加上 !（例如 !{{SCREENSHOT}}）即可行內嵌入圖片，而不是連結到圖片。使用 {{SCREENSHOT_LINK}} 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`在 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 前加上 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）即可行內嵌入圖片，而不是連結到圖片。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`使用 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`}]}),lne=Object.assign((e,t={})=>(t.locale??N())===`en`?Ip(e):Lp(e),{parts:(e,t={})=>(t.locale??N())===`en`?typeof Ip.parts==`function`?Ip.parts(e):[{type:`text`,value:Ip(e)}]:typeof Lp.parts==`function`?Lp.parts(e):[{type:`text`,value:Lp(e)}]})"
                 },
                 {
@@ -3588,11 +3266,11 @@
                     "target": "$ne=()=>`截圖儲存格式`"
                 },
                 {
-                    "source": "Rp=Object.assign(()=>`Choose the format of the saved screenshotWEBP has better compression ratio, but would fallback to JPEG in unsupported browsers like iOS or iPadOS`,{parts:()=>[{type:`text`,value:`Choose the format of the saved screenshot`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP has better compression ratio, but would fallback to JPEG in unsupported browsers like iOS or iPadOS`}]})",
+                    "source": "Rp=Object.assign((()=>`Choose the format of the saved screenshotWEBP has better compression ratio, but would fallback to JPEG in unsupported browsers like iOS or iPadOS`),{parts:(()=>[{type:`text`,value:`Choose the format of the saved screenshot`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP has better compression ratio, but would fallback to JPEG in unsupported browsers like iOS or iPadOS`}])})",
                     "target": "Rp=Object.assign(()=>`選擇儲存截圖的格式WEBP 壓縮率較高，但在 iOS 或 iPadOS 等不支援的瀏覽器中會退回 JPEG`,{parts:()=>[{type:`text`,value:`選擇儲存截圖的格式`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP 壓縮率較高，但在 iOS 或 iPadOS 等不支援的瀏覽器中會退回 JPEG`}]})"
                 },
                 {
-                    "source": "zp=Object.assign(()=>`选择保存截图的格式WEBP 压缩率更高，但在不支持的浏览器（如 iOS 或 iPadOS）中会回退为 JPEG`,{parts:()=>[{type:`text`,value:`选择保存截图的格式`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP 压缩率更高，但在不支持的浏览器（如 iOS 或 iPadOS）中会回退为 JPEG`}]})",
+                    "source": "zp=Object.assign((()=>`选择保存截图的格式WEBP 压缩率更高，但在不支持的浏览器（如 iOS 或 iPadOS）中会回退为 JPEG`),{parts:(()=>[{type:`text`,value:`选择保存截图的格式`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP 压缩率更高，但在不支持的浏览器（如 iOS 或 iPadOS）中会回退为 JPEG`}])})",
                     "target": "zp=Object.assign(()=>`選擇儲存截圖的格式WEBP 壓縮率較高，但在 iOS 或 iPadOS 等不支援的瀏覽器中會退回 JPEG`,{parts:()=>[{type:`text`,value:`選擇儲存截圖的格式`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP 壓縮率較高，但在 iOS 或 iPadOS 等不支援的瀏覽器中會退回 JPEG`}]})"
                 },
                 {
@@ -3862,10 +3540,6 @@
                 {
                     "source": "\"description\":\"Media(Video/Audio) Playback Enhancement for Obsidian.md\"",
                     "target": "\"description\":\"強化 Obsidian.md 的媒體（影片/音訊）播放體驗。\""
-                },
-                {
-                    "source": "\"description\": \"Media(Video/Audio) Playback Enhancement for Obsidian.md\"",
-                    "target": "\"description\": \"強化 Obsidian.md 的媒體（影片/音訊）播放體驗。\""
                 }
             ]
         }
