@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "1.5.10",
         "author": "Chico",
-        "updatedAt": 1778617825043
+        "updatedAt": 1785320437975
     },
     "dict": {
         "main.js": {
@@ -52,6 +52,12 @@
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
+                    "source": "Choose what day of the week to start. Select 'Locale default' to use the default specified by moment.js",
+                    "target": "選擇每週的起始日。選取「地區設定預設值」即可使用 moment.js 指定的預設值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
                     "source": "Show a confirmation modal before creating a new note",
                     "target": "建立新筆記前顯示確認視窗"
                 },
@@ -66,6 +72,12 @@
                     "name": "setDesc",
                     "source": "For more syntax help, refer to format reference",
                     "target": "更多語法說明請參考格式參考"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Choose the file you want to use as the template for your weekly notes",
+                    "target": "選擇要作為每週筆記範本的檔案"
                 },
                 {
                     "type": "CallExpression",
@@ -108,6 +120,12 @@
                     "name": "setName",
                     "source": "Weekly note format",
                     "target": "每週筆記格式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Weekly note template",
+                    "target": "每週筆記範本"
                 },
                 {
                     "type": "CallExpression",
@@ -207,6 +225,12 @@
                 },
                 {
                     "type": "ObjectProperty",
+                    "name": "cta",
+                    "source": "Create",
+                    "target": "建立"
+                },
+                {
+                    "type": "ObjectProperty",
                     "name": "tooltip",
                     "source": "Previous Month",
                     "target": "上個月"
@@ -219,6 +243,26 @@
                 }
             ],
             "regex": [
+                {
+                    "source": "setName(\"Words per dot\")",
+                    "target": "setName(\"每點代表字數\")"
+                },
+                {
+                    "source": "setDesc(\"How many words should be represented by a single dot?\")",
+                    "target": "setDesc(\"每個點要代表多少字？\")"
+                },
+                {
+                    "source": "setName(\"Start week on:\")",
+                    "target": "setName(\"每週起始日：\")"
+                },
+                {
+                    "source": "setDesc(\"Choose what day of the week to start. Select 'Locale default' to use the default specified by moment.js\")",
+                    "target": "setDesc(\"選擇每週的起始日。選取「地區設定預設值」即可使用 moment.js 指定的預設值\")"
+                },
+                {
+                    "source": "dropdown.addOption(\"locale\", `Locale default (${localeWeekStart})`);",
+                    "target": "dropdown.addOption(\"locale\", `地區設定預設值 (${localeWeekStart})`);"
+                },
                 {
                     "source": "setName(\"Confirm before creating new note\")",
                     "target": "setName(\"建立新筆記前先確認\")"
@@ -244,6 +288,14 @@
                     "target": "setDesc(\"更多語法說明請參考格式參考\")"
                 },
                 {
+                    "source": "setName(\"Weekly note template\")",
+                    "target": "setName(\"每週筆記範本\")"
+                },
+                {
+                    "source": "setDesc(\"Choose the file you want to use as the template for your weekly notes\")",
+                    "target": "setDesc(\"選擇要作為每週筆記範本的檔案\")"
+                },
+                {
                     "source": "setName(\"Weekly note folder\")",
                     "target": "setName(\"每週筆記資料夾\")"
                 },
@@ -258,6 +310,10 @@
                 {
                     "source": "setDesc(\"Set this if you want to use a locale different from the default\")",
                     "target": "setDesc(\"如果想使用不同於預設值的地區設定，請設定此項\")"
+                },
+                {
+                    "source": "dropdown.addOption(\"system-default\", `Same as system (${sysLocale})`);",
+                    "target": "dropdown.addOption(\"system-default\", `與系統相同 (${sysLocale})`);"
                 },
                 {
                     "source": "text: \"⚠️ Daily Notes plugin not enabled\"",
@@ -292,6 +348,10 @@
                     "target": "text: `檔案 ${filename} 不存在。要建立它嗎？`"
                 },
                 {
+                    "source": "cta: \"Create\"",
+                    "target": "cta: \"建立\""
+                },
+                {
                     "source": "textContent = `${/*todayDisplayStr*/ ctx[4]}`",
                     "target": "textContent = `${/*todayDisplayStr*/ ctx[4]}`"
                 },
@@ -310,6 +370,22 @@
                 {
                     "source": "name: \"Reveal active note\"",
                     "target": "name: \"顯示目前筆記\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Calendar view of your daily notes",
+                    "target": "以日曆檢視每日筆記。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Calendar view of your daily notes\"",
+                    "target": "\"description\": \"以日曆檢視每日筆記。\""
                 }
             ]
         }
