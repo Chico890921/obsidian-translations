@@ -4,10 +4,11 @@
         "plugin": "autofit-tabs",
         "version": "1.0.8",
         "title": "[zh-tw] Autofit Tabs",
-        "description": "Autofit Tabs Localization & Tweaks",
+        "description": "Autofit Tabs 繁體中文化與微調",
         "language": "zh-tw",
         "supportedVersions": "1.0.8",
-        "author": "Chico"
+        "author": "Chico",
+        "updatedAt": 1784807143777
     },
     "dict": {
         "main.js": {
@@ -193,6 +194,22 @@
                 {
                     "source": "name:\"Left padding\"",
                     "target": "name:\"左側內距\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Automatically adjusts tab header widths in real-time to perfectly fit each tab's title content while maintaining a clean, seamless interface that prevents awkward text truncation and ensures optimal readability of your document titles.",
+                    "target": "即時自動調整分頁標頭寬度，使其貼合各分頁的標題內容，同時維持乾淨流暢的介面，避免文字被不自然截斷，並確保文件標題清晰易讀。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Automatically adjusts tab header widths in real-time to perfectly fit each tab's title content while maintaining a clean, seamless interface that prevents awkward text truncation and ensures optimal readability of your document titles.\"",
+                    "target": "\"description\": \"即時自動調整分頁標頭寬度，使其貼合各分頁的標題內容，同時維持乾淨流暢的介面，避免文字被不自然截斷，並確保文件標題清晰易讀。\""
                 }
             ]
         }
