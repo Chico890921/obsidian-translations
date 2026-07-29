@@ -108,6 +108,22 @@
                     "target": "innerText = `\n\t\t\tbody {\n\t\t\t  \t--file-line-width: calc(700px + 10 * ${this.settings.sliderPercentage}px) !important;\n\t\t\t}\n\t\t`"
                 }
             ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Customize Obsidian's editor width with a slider for a tailored editing experience.",
+                    "target": "使用滑桿自訂 Obsidian 的編輯器寬度，打造符合需求的編輯體驗。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"Customize Obsidian's editor width with a slider for a tailored editing experience.\"",
+                    "target": "\"description\": \"使用滑桿自訂 Obsidian 的編輯器寬度，打造符合需求的編輯體驗。\""
+                }
+            ]
         }
     }
 }
