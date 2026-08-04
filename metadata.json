@@ -342,13 +342,13 @@
         "plugin": "obsidian-hide-sidebars-when-narrow",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "1.1.2",
-        "supported_versions": "1.1.2",
+        "version": "1.2.0",
+        "supported_versions": "1.2.0",
         "title": "[zh-tw] Hide Sidebars on Window Resize",
         "description": "Hide Sidebars on Window Resize 繁體中文化與微調",
-        "hash": "39238c0239238c0239238c0239238c02",
+        "hash": "020ecb75020ecb75020ecb75020ecb75",
         "created_at": "2026-05-25T03:47:52.334Z",
-        "updated_at": "2026-07-29T12:54:25.803Z"
+        "updated_at": "2026-08-04T12:48:59.053Z"
     },
     {
         "id": "n94tjal3G6mt73BBULJs41jkheZI1zl7",
