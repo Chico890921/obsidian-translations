@@ -609,5 +609,18 @@
         "created_at": "2026-07-01T18:47:12.674Z",
         "updated_at": "2026-07-29T12:56:21.995Z",
         "type": "plugin"
+    },
+    {
+        "id": "ZurAviHq9agmh-PHqRzCqcDziwYi95Wl",
+        "plugin": "side-notes",
+        "language": "zh-tw",
+        "version": "0.4.7",
+        "supported_versions": "0.4.7",
+        "title": "[zh-tw] Side-Notes",
+        "description": "Side-Notes Localization & Tweaks",
+        "hash": "67b302c967b302c967b302c967b302c9",
+        "created_at": "2026-08-04T17:36:31.084Z",
+        "updated_at": "2026-08-04T17:36:31.084Z",
+        "type": "plugin"
     }
 ]
