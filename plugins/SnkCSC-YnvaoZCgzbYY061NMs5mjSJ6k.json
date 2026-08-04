@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "metadata": {
     "plugin": "templater-obsidian",
-    "version": "2.20.6",
+    "version": "2.24.3",
     "title": "[zh-tw] Templater",
     "description": "Templater 繁體中文化與微調",
     "language": "zh-tw",
-    "supportedVersions": "2.20.6",
+    "supportedVersions": "2.24.3",
     "author": "Chico",
-    "updatedAt": 1785330127675
+    "updatedAt": 1785862564085
   },
   "dict": {
     "main.js": {
@@ -59,7 +59,7 @@
           "type": "CallExpression",
           "name": "append",
           "source": " to get a list of all the available internal variables / functions.",
-          "target": "以取得所有可用內部變數／函式的清單。"
+          "target": "，以取得所有可用內部變數／函式的清單。"
         },
         {
           "type": "ObjectProperty",
@@ -413,7 +413,7 @@
           "type": "CallExpression",
           "name": "append",
           "source": " for more information.",
-          "target": "以取得更多資訊。"
+          "target": "，以取得更多資訊。"
         },
         {
           "type": "CallExpression",
@@ -1716,6 +1716,312 @@
           "name": "T",
           "source": "Couldn't find customOverlayMode, can't enable syntax highlighting.",
           "target": "找不到 customOverlayMode，無法啟用語法醒目提示。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "I understand the risks, enable",
+          "target": "我了解風險，啟用"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Enable",
+          "target": "啟用"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Done",
+          "target": "完成"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Regex to match on. Tests against full file path relative to the root of the vault, including file extension.",
+          "target": "用於比對的正規表示式。會以相對於儲存庫根目錄的完整檔案路徑進行測試，包含副檔名。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Folder to match on. Includes subfolders of this folder.",
+          "target": "要比對的資料夾。包含此資料夾的所有子資料夾。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "File regex",
+          "target": "檔案正規表示式"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Folder",
+          "target": "資料夾"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Function name",
+          "target": "函式名稱"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTitle",
+          "source": "Add exclusion",
+          "target": "新增排除項目"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTitle",
+          "source": "User function",
+          "target": "使用者函式"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTooltip",
+          "source": "Open user scripts folder",
+          "target": "開啟使用者指令碼資料夾"
+        },
+        {
+          "type": "CallExpression",
+          "name": "warn",
+          "source": "Since Acorn 8.0.0, options.ecmaVersion is required.\nDefaulting to 2020, but this will stop working in the future.",
+          "target": "自 Acorn 8.0.0 起，必須指定 options.ecmaVersion。\n目前預設為 2020，但未來將停止運作。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "desc",
+          "source": "Determine how you'd like to have user script intellisense render. Note values will not render if not in the script.",
+          "target": "決定使用者指令碼智慧提示的呈現方式。請注意，不在指令碼中的值不會呈現。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "description",
+          "source": "If set to `true`, the default value shown when the modal opens is selected, so typing replaces it. Defaults to `false`.",
+          "target": "若設為 `true`，對話框開啟時會選取顯示的預設值，因此輸入內容會取代它。預設為 `false`。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "description",
+          "source": "Retrieves and parses a daily quote as a callout. Without arguments it uses the language configured in Obsidian (via `getLanguage()`), falling back to English. English quotes come from `https://github.com/Zachatoo/quotes-database` and Spanish quotes from `https://github.com/wulflo/frases-inventario`.",
+          "target": "擷取每日語錄並解析為 callout。未傳入參數時，會使用 Obsidian 中設定的語言（透過 `getLanguage()`），找不到時改用英文。英文語錄來自 `https://github.com/Zachatoo/quotes-database`，西班牙文語錄來自 `https://github.com/wulflo/frases-inventario`。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "description",
+          "source": "Optional language code (e.g. `\"en\"`, `\"es\"`) selecting the quotes database. Defaults to Obsidian's display language, falling back to English when no database is registered for that language.",
+          "target": "選填的語言代碼（例如 `\"en\"`、`\"es\"`），用來選擇語錄資料庫。預設使用 Obsidian 的顯示語言；若該語言沒有註冊資料庫，則改用英文。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "heading",
+          "source": "Syntax highlighting",
+          "target": "語法醒目提示"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "heading",
+          "source": "File creation",
+          "target": "檔案建立"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "heading",
+          "source": "User scripts",
+          "target": "使用者指令碼"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Internal variables and functions",
+          "target": "內部變數和函式"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Automatic jump to cursor",
+          "target": "自動跳到游標"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Jump to note content after creating note",
+          "target": "建立筆記後跳至筆記內容"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Syntax highlighting on desktop",
+          "target": "桌面版語法醒目提示"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Syntax highlighting on mobile",
+          "target": "行動版語法醒目提示"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Excluded folders",
+          "target": "排除的資料夾"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Add folder",
+          "target": "新增資料夾"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "User scripts folder",
+          "target": "使用者指令碼資料夾"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "User script intellisense",
+          "target": "使用者指令碼智慧提示"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "User scripts",
+          "target": "使用者指令碼"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Timeout",
+          "target": "逾時"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Shell binary location",
+          "target": "Shell 執行檔路徑"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Add new user function",
+          "target": "新增使用者函式"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Prompt with pre-selected default value",
+          "target": "提示時預先選取預設值"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Daily quote in Spanish",
+          "target": "西班牙文每日語錄"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "Only enable this if you trust the current and future contents of this vault, including files you may later download, copy, or sync from other people.",
+          "target": "只有在你信任此儲存庫目前與未來的內容時才啟用，包括日後可能從他人處下載、複製或同步的檔案。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "This setting is stored on this device only; enable it separately on each device where you use this vault.",
+          "target": "此設定僅儲存在此裝置上；請在使用此儲存庫的每部裝置上個別啟用。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "<% tp.user.file_name() %>",
+          "target": "<% tp.user.file_name() %>"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "This setting is stored on this device only and must be enabled separately on each device.",
+          "target": "此設定僅儲存在此裝置上，且必須在每部裝置上個別啟用。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "warning",
+          "source": "This can be dangerous if you create new files with unknown / unsafe content on creation. Make sure that every new file's content is safe on creation.",
+          "target": "如果建立新檔案時內容未知或不安全，這可能會有風險。請確認每個新檔案在建立時內容都是安全的。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "Check the ",
+          "target": "請參閱"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "Bind templates to ",
+          "target": "將範本綁定至"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "commands",
+          "target": "命令"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": ". Bind commands to ",
+          "target": "。在「快速鍵」設定中為命令設定"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "hotkeys",
+          "target": "快速鍵"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": " in \"Hotkeys\" settings.",
+          "target": "。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "desc",
+          "source": "When creating a new note from a template, skip the rename prompt and immediately move the cursor to the note body.",
+          "target": "從範本建立新筆記時，略過重新命名提示並立即將游標移至筆記內容。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Enable startup templates",
+          "target": "啟用啟動範本"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "title",
+          "source": "Enable startup templates",
+          "target": "啟用啟動範本"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "Enables templates to run automatically when Templater starts.",
+          "target": "讓範本在 Templater 啟動時自動執行。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "heading",
+          "source": "User system commands",
+          "target": "使用者系統命令"
+        },
+        {
+          "type": "CallExpression",
+          "name": "push",
+          "source": "'Enable startup templates'",
+          "target": "'啟用啟動範本'"
         }
       ],
       "regex": [
@@ -1730,6 +2036,70 @@
         {
           "source": "t=`Detected ${i} User Script(s)`",
           "target": "t=`偵測到 ${i} 個使用者指令碼`"
+        },
+        {
+          "source": "name:`Insert ${n}`",
+          "target": "name:`插入 ${n}`"
+        },
+        {
+          "source": "name:`Create ${n}`",
+          "target": "name:`建立 ${n}`"
+        },
+        {
+          "source": "\"Check the \"",
+          "target": "\"請參閱\""
+        },
+        {
+          "source": "\" to get a list of all the available internal variables / functions.\"",
+          "target": "\"，以取得所有可用內部變數／函式的清單。\""
+        },
+        {
+          "source": "\"Bind templates to \"",
+          "target": "\"將範本綁定至\""
+        },
+        {
+          "source": "text:\"commands\"",
+          "target": "text:\"命令\""
+        },
+        {
+          "source": "\". Bind commands to \"",
+          "target": "\"。在「快速鍵」設定中為命令設定\""
+        },
+        {
+          "source": "text:\"hotkeys\"",
+          "target": "text:\"快速鍵\""
+        },
+        {
+          "source": "' in \"Hotkeys\" settings.'",
+          "target": "'。'"
+        },
+        {
+          "source": "desc:\"When creating a new note from a template, skip the rename prompt and immediately move the cursor to the note body.\"",
+          "target": "desc:\"從範本建立新筆記時，略過重新命名提示並立即將游標移至筆記內容。\""
+        },
+        {
+          "source": "name:\"Enable startup templates\"",
+          "target": "name:\"啟用啟動範本\""
+        },
+        {
+          "source": "title:\"Enable startup templates\"",
+          "target": "title:\"啟用啟動範本\""
+        },
+        {
+          "source": "\"Enables templates to run automatically when Templater starts.\"",
+          "target": "\"讓範本在 Templater 啟動時自動執行。\""
+        },
+        {
+          "source": "heading:\"User system commands\"",
+          "target": "heading:\"使用者系統命令\""
+        },
+        {
+          "source": "\" for more information.\"",
+          "target": "\"，以取得更多資訊。\""
+        },
+        {
+          "source": "\"'Enable startup templates'\"",
+          "target": "\"'啟用啟動範本'\""
         }
       ]
     },
