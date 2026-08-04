@@ -485,13 +485,13 @@
         "plugin": "quickadd",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "2.12.3",
-        "supported_versions": "2.12.3",
+        "version": "2.21.0",
+        "supported_versions": "2.21.0",
         "title": "[zh-tw] QuickAdd",
         "description": "QuickAdd 繁體中文化與微調",
-        "hash": "48bfc27248bfc27248bfc27248bfc272",
+        "hash": "69570d9f69570d9f69570d9f69570d9f",
         "created_at": "2026-05-25T03:50:33.992Z",
-        "updated_at": "2026-07-29T12:55:52.625Z"
+        "updated_at": "2026-08-04T16:07:51.239Z"
     },
     {
         "id": "7wlqiwi6iwUBeXbFfdHLBs6AYcH7cul-",
