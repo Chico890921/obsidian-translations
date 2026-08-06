@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "metadata": {
     "plugin": "templater-obsidian",
-    "version": "2.24.3",
+    "version": "2.25.0",
     "title": "[zh-tw] Templater",
     "description": "Templater 繁體中文化與微調",
     "language": "zh-tw",
-    "supportedVersions": "2.24.3",
+    "supportedVersions": "2.25.0",
     "author": "Chico",
-    "updatedAt": 1785862564085
+    "updatedAt": 1785999061766
   },
   "dict": {
     "main.js": {
@@ -2022,6 +2022,24 @@
           "name": "push",
           "source": "'Enable startup templates'",
           "target": "'啟用啟動範本'"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Insert command",
+          "target": "插入命令"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Create command",
+          "target": "建立命令"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "File cursor with a decimal order",
+          "target": "使用小數順序的檔案游標"
         }
       ],
       "regex": [
@@ -2100,6 +2118,14 @@
         {
           "source": "\"'Enable startup templates'\"",
           "target": "\"'啟用啟動範本'\""
+        },
+        {
+          "source": "name:`Insert ${a}`",
+          "target": "name:`插入 ${a}`"
+        },
+        {
+          "source": "name:`Create ${a}`",
+          "target": "name:`建立 ${a}`"
         }
       ]
     },
