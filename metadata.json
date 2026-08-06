@@ -212,13 +212,13 @@
         "plugin": "grid-note",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "2.0.12",
-        "supported_versions": "2.0.12",
+        "version": "2.1.2",
+        "supported_versions": "2.1.2",
         "title": "[zh-tw] Grid Note",
         "description": "Grid Note 繁體中文翻譯與微調",
-        "hash": "64aeb68f64aeb68f64aeb68f64aeb68f",
+        "hash": "1abb98be1abb98be1abb98be1abb98be",
         "created_at": "2026-05-25T03:45:07.968Z",
-        "updated_at": "2026-07-29T12:53:18.401Z"
+        "updated_at": "2026-08-06T05:39:39.416Z"
     },
     {
         "id": "BG5t5Q44DNx0d5eJIirjNqd-Os9dPDlQ",
