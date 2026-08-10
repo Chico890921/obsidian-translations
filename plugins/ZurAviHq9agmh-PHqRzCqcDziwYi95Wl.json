@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "side-notes",
-        "version": "0.4.7",
+        "version": "0.4.8",
         "title": "[zh-tw] Side-Notes",
         "description": "Side-Notes Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "0.4.7",
+        "supportedVersions": "0.4.8",
         "author": "Chico"
     },
     "dict": {
@@ -1222,7 +1222,7 @@
                     "type": "ObjectProperty",
                     "name": "text",
                     "source": "<span class=\"sidenote right\">text</span>",
-                    "target": "<span class=\"sidenote right\">text</span>"
+                    "target": "<span class=\"sidenote right\">文字</span>"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1283,6 +1283,12 @@
                     "name": "",
                     "source": "Must be greater than 0",
                     "target": "必須大於 0"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Sidenote plugin: popup cleanup failed",
+                    "target": "Side-Notes 外掛：清理彈出視窗失敗"
                 }
             ],
             "regex": [
@@ -1608,7 +1614,7 @@
                 },
                 {
                     "source": "text:'<span class=\"sidenote right\">text</span>'",
-                    "target": "text:'<span class=\"sidenote right\">text</span>'"
+                    "target": "text:'<span class=\"sidenote right\">文字</span>'"
                 },
                 {
                     "source": "name:\"Sidenote format\"",
@@ -1797,6 +1803,10 @@
                 {
                     "source": "\"Must be greater than 0\"",
                     "target": "\"必須大於 0\""
+                },
+                {
+                    "source": "error(\"Sidenote plugin: popup cleanup failed\",r)}delete i._popupCleanup}}cleanupView(e){if(!e)return;let i=e.containerEl.querySelector(\".markdown-source-view.mod-cm6\")",
+                    "target": "error(\"Side-Notes 外掛：清理彈出視窗失敗\",r)}delete i._popupCleanup}}cleanupView(e){if(!e)return;let i=e.containerEl.querySelector(\".markdown-source-view.mod-cm6\")"
                 }
             ]
         },
