@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-importer",
-        "version": "1.9.1",
+        "version": "2.2.0",
         "title": "[zh-tw] Importer",
         "description": "Importer 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "1.9.1",
+        "supportedVersions": "2.2.0",
         "author": "Chico",
-        "updatedAt": 1785995400610
+        "updatedAt": 1786380850661
     },
     "dict": {
         "main.js": {
@@ -1344,6 +1344,288 @@
                     "name": "title",
                     "source": "Untitled Record",
                     "target": "未命名記錄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Create a personal access token in your Airtable account settings. ",
+                    "target": "在 Airtable 帳戶設定中建立個人存取權杖。 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Get your Google Keep data from Google Takeout. ",
+                    "target": "從 Google Takeout 取得你的 Google Keep 資料。 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "import-section file-tree publish-section",
+                    "target": "import-section file-tree publish-section"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "setting-group mod-list",
+                    "target": "setting-group mod-list"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createDiv",
+                    "source": "modal-button-container importer-step-buttons",
+                    "target": "modal-button-container importer-step-buttons"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Could not read the output settings",
+                    "target": "無法讀取輸出設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to finalize imported Markdown",
+                    "target": "無法完成匯入後的 Markdown 處理"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Could not read your Apple Notes folders",
+                    "target": "無法讀取你的 Apple Notes 資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Could not save OneNote attachment identities",
+                    "target": "無法儲存 OneNote 附件識別資訊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Select folder",
+                    "target": "選擇資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Open",
+                    "target": "開啟"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Use work or school access",
+                    "target": "使用公司或學校帳戶"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Sign out",
+                    "target": "登出"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Where imported notes will be saved. Leave blank to use the top level of the vault.",
+                    "target": "匯入的筆記將儲存於此。留空則使用儲存庫最上層。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Where imported images and files will be saved.",
+                    "target": "匯入的圖片與檔案將儲存於此。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "macOS only lets Obsidian read your notes once you have pointed it at the folder they are kept in.",
+                    "target": "只有在你指定 Apple Notes 資料所在的資料夾後，macOS 才會允許 Obsidian 讀取筆記。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Back up your notes in Bear, you will receive a .bear2bk file.",
+                    "target": "在 Bear 中備份筆記後，你會取得一個 .bear2bk 檔案。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Export your notebooks in ENEX format, you will receive one .enex file per notebook.",
+                    "target": "以 ENEX 格式匯出筆記本；每本筆記本會取得一個 .enex 檔案。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Export your workspace in HTML format, you will receive a zip file.",
+                    "target": "以 HTML 格式匯出工作區；你會取得一個 zip 檔案。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Export your data in JSON format.",
+                    "target": "以 JSON 格式匯出資料。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Attachment location",
+                    "target": "附件位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Existing notes",
+                    "target": "已存在的筆記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Apple Notes data folder",
+                    "target": "Apple Notes 資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Export your data",
+                    "target": "匯出資料"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Microsoft account",
+                    "target": "Microsoft 帳戶"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "No formats found.",
+                    "target": "找不到格式。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Ensure you have selected the correct Apple Notes data folder.",
+                    "target": "請確認已選取正確的 Apple Notes 資料夾。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please select at least one folder to import.",
+                    "target": "請至少選擇一個要匯入的資料夾。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Load your Airtable bases and tables, then choose what to import.",
+                    "target": "載入 Airtable Base 與資料表，再選擇要匯入的項目。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Pick the folders whose notes to bring across.",
+                    "target": "選擇要匯入其筆記的資料夾。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Click \"Load\" to see data you can import. If a page or database is missing, check that your Notion connection has access to it.",
+                    "target": "按一下「載入」以查看可匯入的資料。如果缺少頁面或資料庫，請確認 Notion 連線有權限存取。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Select a notebook, or sections within it.",
+                    "target": "選擇一本筆記本，或選擇其中的節。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "empty",
+                    "source": "No bases found.",
+                    "target": "找不到 Base。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "empty",
+                    "source": "No folders found.",
+                    "target": "找不到資料夾。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "empty",
+                    "source": "No pages or databases found. Make sure your connection has access to the pages you want to import.",
+                    "target": "找不到頁面或資料庫。請確認連線有權限存取你要匯入的頁面。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "empty",
+                    "source": "No notebooks found.",
+                    "target": "找不到筆記本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "hint",
+                    "source": "Load your Airtable bases and tables to get started.",
+                    "target": "請先載入 Airtable Base 與資料表。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "hint",
+                    "source": "Click \"Load\" to load your Notion pages and databases.",
+                    "target": "按一下「載入」以載入你的 Notion 頁面與資料庫。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Tables to import",
+                    "target": "要匯入的資料表"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Folders to import",
+                    "target": "要匯入的資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Pages to import",
+                    "target": "要匯入的頁面"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "OneNote",
+                    "target": "OneNote"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Sections to import",
+                    "target": "要匯入的節"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Learn more.",
+                    "target": "瞭解更多。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Back",
+                    "target": "返回"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Help",
+                    "target": "說明"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Folders to import",
+                    "target": "要匯入的資料夾"
                 }
             ],
             "regex": [
@@ -1441,23 +1723,23 @@
                 },
                 {
                     "source": "setDesc(\"Try to convert formulas to Obsidian syntax, or import as static values.\")",
-                    "target": "setDesc(\"Try to convert formulas to Obsidian syntax, or import as static values.\")"
+                    "target": "setDesc(\"嘗試將公式轉換為 Obsidian 語法，或匯入為靜態值。\")"
                 },
                 {
                     "source": "setName(\"Download attachments\")",
-                    "target": "setName(\"Download attachments\")"
+                    "target": "setName(\"下載附件\")"
                 },
                 {
                     "source": "setDesc(\"Download attachment files to local vault. If disabled or download fails, external URLs will be used.\")",
-                    "target": "setDesc(\"Download attachment files to local vault. If disabled or download fails, external URLs will be used.\")"
+                    "target": "setDesc(\"將附件檔案下載到本機儲存庫。若停用或下載失敗，則使用外部 URL。\")"
                 },
                 {
                     "source": "setName(\"View property name\")",
-                    "target": "setName(\"View property name\")"
+                    "target": "setName(\"檢視屬性名稱\")"
                 },
                 {
                     "source": "setDesc(\"Property name to track which views a record belongs to. Each record will have a list of view names it appears in.\")",
-                    "target": "setDesc(\"Property name to track which views a record belongs to. Each record will have a list of view names it appears in.\")"
+                    "target": "setDesc(\"用來記錄資料所屬檢視的屬性名稱。每筆資料都會包含其出現的檢視名稱清單。\")"
                 },
                 {
                     "source": "setDesc(\"Adds an airtable-id property to records so that future imports can skip records that have already been imported.\")",
@@ -1469,7 +1751,7 @@
                 },
                 {
                     "source": "Notice(\"Please enter your Airtable personal access token first.\")",
-                    "target": "Notice(\"Please enter your Airtable personal access token first.\")"
+                    "target": "Notice(\"請先輸入 Airtable 個人存取權杖。\")"
                 },
                 {
                     "source": "Notice(\"No bases found. Make sure your token has proper permissions.\")",
@@ -1489,19 +1771,19 @@
                 },
                 {
                     "source": "Notice(\"Please select at least one table to import.\")",
-                    "target": "Notice(\"Please select at least one table to import.\")"
+                    "target": "Notice(\"請至少選擇一個要匯入的資料表。\")"
                 },
                 {
                     "source": "setText(\"Loading fields...\")",
-                    "target": "setText(\"Loading fields...\")"
+                    "target": "setText(\"正在載入欄位...\")"
                 },
                 {
                     "source": "Notice(\"No fields found in selected tables. Please check your selection.\")",
-                    "target": "Notice(\"No fields found in selected tables. Please check your selection.\")"
+                    "target": "Notice(\"在所選資料表中找不到欄位。請檢查你的選擇。\")"
                 },
                 {
                     "source": "Notice(\"Please enter your Airtable personal access token.\")",
-                    "target": "Notice(\"Please enter your Airtable personal access token.\")"
+                    "target": "Notice(\"請輸入 Airtable 個人存取權杖。\")"
                 },
                 {
                     "source": "Notice(\"Please select a location to export to.\")",
@@ -1729,15 +2011,15 @@
                 },
                 {
                     "source": "setName(\"Import linked databases\")",
-                    "target": "setName(\"Import linked databases\")"
+                    "target": "setName(\"匯入連結的資料庫\")"
                 },
                 {
                     "source": "setDesc(\"Also import databases that the selected pages link to, so relations become links rather than names. This imports pages you did not select.\")",
-                    "target": "setDesc(\"Also import databases that the selected pages link to, so relations become links rather than names. This imports pages you did not select.\")"
+                    "target": "setDesc(\"同時匯入所選頁面連結的資料庫，使關聯轉換為連結而非名稱。這會匯入你未選取的頁面。\")"
                 },
                 {
                     "source": "appendText(\"To get an API token create a connection in Notion and give it access to pages in your workspace. \")",
-                    "target": "appendText(\"To get an API token create a connection in Notion and give it access to pages in your workspace. \")"
+                    "target": "appendText(\"若要取得 API 權杖，請在 Notion 建立連線，並授予其存取工作區頁面的權限。 \")"
                 },
                 {
                     "source": "appendText(\"By default Notion formulas are converted to Obsidian syntax. If any Notion syntax is not supported the static values will be saved instead. Alternatively you can import all formulas as static values.\")",
@@ -1849,7 +2131,7 @@
                 },
                 {
                     "source": "Notice(\"Please sign in to your Microsoft account.\")",
-                    "target": "Notice(\"Please sign in to your Microsoft account.\")"
+                    "target": "Notice(\"請登入你的 Microsoft 帳戶。\")"
                 },
                 {
                     "source": "error(\"Failed to convert InkML to SVG in page:\",i.title,A)}let f=this.convertTags(jt(s.html)),m=await this.getAllAttachments(e,f.replace(ky,\"<br />\")",
@@ -1861,27 +2143,27 @@
                 },
                 {
                     "source": "setName(\"Download all attachments\")",
-                    "target": "setName(\"Download all attachments\")"
+                    "target": "setName(\"下載所有附件\")"
                 },
                 {
                     "source": "setDesc(\"If enabled, all attachments uploaded to Roam will be downloaded to your attachments folder.\")",
-                    "target": "setDesc(\"If enabled, all attachments uploaded to Roam will be downloaded to your attachments folder.\")"
+                    "target": "setDesc(\"啟用後，所有上傳到 Roam 的附件都會下載到附件資料夾。\")"
                 },
                 {
                     "source": "setName(\"Add YAML created/update date\")",
-                    "target": "setName(\"Add YAML created/update date\")"
+                    "target": "setName(\"新增 YAML 建立/更新日期\")"
                 },
                 {
                     "source": "setDesc(\"If enabled, notes will have the create-time and edit-time from Roam added as properties.\")",
-                    "target": "setDesc(\"If enabled, notes will have the create-time and edit-time from Roam added as properties.\")"
+                    "target": "setDesc(\"啟用後，筆記會將 Roam 的 create-time 與 edit-time 加入為屬性。\")"
                 },
                 {
                     "source": "setName(\"Add YAML title\")",
-                    "target": "setName(\"Add YAML title\")"
+                    "target": "setName(\"新增 YAML 標題\")"
                 },
                 {
                     "source": "setDesc(\"If enabled, notes will have the full title added as a property (regardless of illegal file name characters).\")",
-                    "target": "setDesc(\"If enabled, notes will have the full title added as a property (regardless of illegal file name characters).\")"
+                    "target": "setDesc(\"啟用後，筆記會將完整標題加入為屬性（不受非法檔名字元影響）。\")"
                 },
                 {
                     "source": "setName(\"Convert TODO lists to checkboxes\")",
@@ -1893,7 +2175,7 @@
                 },
                 {
                     "source": "setDesc(\"Choose whether to keep the note title in the Markdown content. The automatic option keeps titles only when special characters are lost in filename conversion.\")",
-                    "target": "setDesc(\"Choose whether to keep the note title in the Markdown content. The automatic option keeps titles only when special characters are lost in filename conversion.\")"
+                    "target": "setDesc(\"選擇是否在 Markdown 內容中保留筆記標題。自動選項只會在檔名轉換造成特殊字元遺失時保留標題。\")"
                 },
                 {
                     "source": "Notice(\"Unexpected auth event. Please restart the auth process.\")",
@@ -1925,7 +2207,7 @@
                 },
                 {
                     "source": "text:\"Get token\"",
-                    "target": "text:\"Get token\""
+                    "target": "text:\"取得權杖\""
                 },
                 {
                     "source": "text:\"No bases found.\"",
@@ -2013,7 +2295,7 @@
                 },
                 {
                     "source": "name:\"Import notes\"",
-                    "target": "name:\"Import notes\""
+                    "target": "name:\"匯入筆記\""
                 },
                 {
                     "source": "text:\"The format to be imported.\"",
@@ -2029,7 +2311,7 @@
                 },
                 {
                     "source": "text:\"Import complete.\"",
-                    "target": "text:\"Import complete.\""
+                    "target": "text:\"匯入完成。\""
                 },
                 {
                     "source": "text:`${ht(e.notes,\"note\")} imported. Click to show.`",
@@ -2082,6 +2364,166 @@
                 {
                     "source": "`${ht(e.notes,\"note\")} imported. Click to show.`",
                     "target": "`${e.notes} 筆筆記已匯入。按一下以顯示。`"
+                },
+                {
+                    "source": "setName(\"Files to import\")",
+                    "target": "setName(\"要匯入的檔案\")"
+                },
+                {
+                    "source": "setDesc(`Nothing to import there. Pick ${e.map(c=>\".\"+c).join(\", \")} files, or a folder holding some.`)",
+                    "target": "setDesc(`這裡沒有可匯入的內容。請選擇 ${e.map(c=>\".\"+c).join(\", \")} 檔案，或包含這些檔案的資料夾。`)"
+                },
+                {
+                    "source": "setName(`Save ${this.idLabel}`)",
+                    "target": "setName(`儲存 ${this.idLabel}`)"
+                },
+                {
+                    "source": "setDesc(`Add the ${this.idLabel} to note properties so future imports can recognize moved or renamed notes.`)",
+                    "target": "setDesc(`將 ${this.idLabel} 加入筆記屬性，讓日後匯入時能辨識已移動或重新命名的筆記。`)"
+                },
+                {
+                    "source": "setDesc(\"Where imported notes will be saved. Leave blank to use the top level of the vault.\")",
+                    "target": "setDesc(\"匯入的筆記將儲存於此。留空則使用儲存庫最上層。\")"
+                },
+                {
+                    "source": "setName(\"Attachment location\")",
+                    "target": "setName(\"附件位置\")"
+                },
+                {
+                    "source": "setDesc(\"Where imported images and files will be saved.\")",
+                    "target": "setDesc(\"匯入的圖片與檔案將儲存於此。\")"
+                },
+                {
+                    "source": "setName(\"Existing notes\")",
+                    "target": "setName(\"已存在的筆記\")"
+                },
+                {
+                    "source": "appendText(`Choose what to do when an imported note matches one in your vault. \"${tf.update}\" skips unchanged notes and preserves newer local edits when modification dates are available.`)",
+                    "target": "appendText(`選擇匯入的筆記與儲存庫中的筆記相符時要採取的動作。「${tf.update}」會略過未變更的筆記，並在可取得修改日期時保留較新的本機編輯。`)"
+                },
+                {
+                    "source": "error(\"Could not read the output settings\",a)}}async getOutputFolder(){if(this.outputFolder)return this.outputFolder;let{vault:t}=this.app,e=this.outputLocation;e===\"\"&&(e=\"/\")",
+                    "target": "error(\"無法讀取輸出設定\",a)}}async getOutputFolder(){if(this.outputFolder)return this.outputFolder;let{vault:t}=this.app,e=this.outputLocation;e===\"\"&&(e=\"/\")"
+                },
+                {
+                    "source": "error(\"Airtable API request failed:\",a),a}}async function yf(n,t){return t.status(\"Fetching bases...\")",
+                    "target": "error(\"Airtable API 請求失敗：\",a),a}}async function yf(n,t){return t.status(\"Fetching bases...\")"
+                },
+                {
+                    "source": "appendText(\"Create a personal access token in your Airtable account settings. \")",
+                    "target": "appendText(\"在 Airtable 帳戶設定中建立個人存取權杖。 \")"
+                },
+                {
+                    "source": "error(`[Airtable Importer] Failed to load tables for \"${e.title}\":`,a),new ke.Notice(`Failed to load tables for \"${e.title}\": ${(o=Me(a))!=null?o:\"Unknown error\"}`)",
+                    "target": "error(`[Airtable Importer] 載入「${e.title}」的資料表失敗：`,a),new ke.Notice(`載入「${e.title}」的資料表失敗：${(o=Me(a))!=null?o:\"未知錯誤\"}`)"
+                },
+                {
+                    "source": "setName(\"Apple Notes data folder\")",
+                    "target": "setName(\"Apple Notes 資料夾\")"
+                },
+                {
+                    "source": "setDesc(\"macOS only lets Obsidian read your notes once you have pointed it at the folder they are kept in.\")",
+                    "target": "setDesc(\"只有在你指定 Apple Notes 資料所在的資料夾後，macOS 才會允許 Obsidian 讀取筆記。\")"
+                },
+                {
+                    "source": "setButtonText(\"Select folder\")",
+                    "target": "setButtonText(\"選擇資料夾\")"
+                },
+                {
+                    "source": "Notice(\"Ensure you have selected the correct Apple Notes data folder.\")",
+                    "target": "Notice(\"請確認已選取正確的 Apple Notes 資料夾。\")"
+                },
+                {
+                    "source": "Notice(\"Please select at least one folder to import.\")",
+                    "target": "Notice(\"請至少選擇一個要匯入的資料夾。\")"
+                },
+                {
+                    "source": "setName(\"Export your data\")",
+                    "target": "setName(\"匯出資料\")"
+                },
+                {
+                    "source": "setDesc(\"Back up your notes in Bear, you will receive a .bear2bk file.\")",
+                    "target": "setDesc(\"在 Bear 中備份筆記後，你會取得一個 .bear2bk 檔案。\")"
+                },
+                {
+                    "source": "Notice(`No data found in ${o.name}.`)",
+                    "target": "Notice(`在 ${o.name} 中找不到資料。`)"
+                },
+                {
+                    "source": "error(\"Failed to create Base file:\",r)}}async getTargetFolder(e,r){if(!r||!r.trim())return e;let i=this.sanitizeFilePath(r),o=e.path+\"/\"+i;return await this.createFolders(o)}};var qn=require(\"obsidian\")",
+                    "target": "error(\"建立 Base 檔案失敗：\",r)}}async getTargetFolder(e,r){if(!r||!r.trim())return e;let i=this.sanitizeFilePath(r),o=e.path+\"/\"+i;return await this.createFolders(o)}};var qn=require(\"obsidian\")"
+                },
+                {
+                    "source": "setDesc(\"Export your notebooks in ENEX format, you will receive one .enex file per notebook.\")",
+                    "target": "setDesc(\"以 ENEX 格式匯出筆記本；每本筆記本會取得一個 .enex 檔案。\")"
+                },
+                {
+                    "source": "appendText(\"Get your Google Keep data from Google Takeout. \")",
+                    "target": "appendText(\"從 Google Takeout 取得你的 Google Keep 資料。 \")"
+                },
+                {
+                    "source": "setDesc(\"Export your workspace in HTML format, you will receive a zip file.\")",
+                    "target": "setDesc(\"以 HTML 格式匯出工作區；你會取得一個 zip 檔案。\")"
+                },
+                {
+                    "source": "error(\"Request failed:\",o),o}}})}async loadPageTree(){var e;if(!this.notionToken){new ve.Notice(\"Please enter your Notion API token first.\")",
+                    "target": "error(\"Request failed:\",o),o}}})}async loadPageTree(){var e;if(!this.notionToken){new ve.Notice(\"請先輸入 Notion API 權杖。\")"
+                },
+                {
+                    "source": "setName(\"Microsoft account\")",
+                    "target": "setName(\"Microsoft 帳戶\")"
+                },
+                {
+                    "source": "setButtonText(\"Use work or school access\")",
+                    "target": "setButtonText(\"使用公司或學校帳戶\")"
+                },
+                {
+                    "source": "setDesc(`Signed in as ${e.displayName} (${e.mail}).`)",
+                    "target": "setDesc(`已登入為 ${e.displayName}（${e.mail}）。`)"
+                },
+                {
+                    "source": "setButtonText(\"Sign out\")",
+                    "target": "setButtonText(\"登出\")"
+                },
+                {
+                    "source": "setDesc(\"Export your data in JSON format.\")",
+                    "target": "setDesc(\"以 JSON 格式匯出資料。\")"
+                },
+                {
+                    "source": "setName(\"No formats found.\")",
+                    "target": "setName(\"找不到格式。\")"
+                },
+                {
+                    "source": "setText(`Import from ${s.name}`)",
+                    "target": "setText(`從 ${s.name} 匯入`)"
+                },
+                {
+                    "source": "text:`${Ve(this.files.length,\"file\")} will be imported: `",
+                    "target": "text:`將匯入 ${this.files.length} 個檔案：`"
+                },
+                {
+                    "source": "name:\"Tables to import\"",
+                    "target": "name:\"要匯入的資料表\""
+                },
+                {
+                    "source": "name:\"Folders to import\"",
+                    "target": "name:\"要匯入的資料夾\""
+                },
+                {
+                    "source": "text:\"Learn more.\"",
+                    "target": "text:\"瞭解更多。\""
+                },
+                {
+                    "source": "name:\"Pages to import\"",
+                    "target": "name:\"要匯入的頁面\""
+                },
+                {
+                    "source": "name:\"Sections to import\"",
+                    "target": "name:\"要匯入的節\""
+                },
+                {
+                    "source": "text:`${Ve(e.notes,\"note\")} imported. Click to show.`",
+                    "target": "text:`${e.notes} 筆筆記已匯入。按一下以顯示。`"
                 }
             ]
         },
