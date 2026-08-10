@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "cmdr",
-        "version": "0.5.7",
+        "version": "0.5.8",
         "title": "[zh-tw] Commander",
         "description": "Commander 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.5.7",
+        "supportedVersions": "0.5.8",
         "author": "Chico",
-        "updatedAt": 1784812048198
+        "updatedAt": 1786379436600
     },
     "dict": {
         "main.js": {
@@ -78,6 +78,108 @@
                     "name": "placeholder",
                     "source": "Macro Name",
                     "target": "巨集名稱"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Commander",
+                    "target": "Commander"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Use a column based layout instead of the default row. This makes it easier to arrange the commands.",
+                    "target": "使用欄式版面取代預設的列式版面，讓命令更容易排列。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Change the height of each button inside the mobile toolbar (in px).",
+                    "target": "變更行動工具列中每個按鈕的高度（單位為 px）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Change the width of each button inside the mobile toolbar (in px).",
+                    "target": "變更行動工具列中每個按鈕的寬度（單位為 px）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Column layout",
+                    "target": "欄式版面"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Button height",
+                    "target": "按鈕高度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Button width",
+                    "target": "按鈕寬度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Reset to default - requires a restart",
+                    "target": "還原預設值 - 需要重新啟動"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "🎊 Could not load worker",
+                    "target": "🎊 無法載入 Worker"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "If the default icon doesn't appear, you might have to restart Obsidian.",
+                    "target": "如果預設圖示沒有出現，你可能需要重新啟動 Obsidian。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "cmdr clickable-icon",
+                    "target": "cmdr clickable-icon"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toolbar row count",
+                    "target": "工具列列數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Bottom offset",
+                    "target": "底部偏移"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toolbar extra spacing",
+                    "target": "工具列額外間距"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Text Toolbar",
+                    "target": "文字工具列"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Custom icons",
+                    "target": "自訂圖示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Advanced settings",
+                    "target": "進階設定"
                 }
             ],
             "regex": [
@@ -596,6 +698,50 @@
                 {
                     "source": "\"When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.\"",
                     "target": "\"在檔案總管中點選命令時，焦點會移至檔案總管檢視。這可能會干擾原本應在作用中檔案或檔案總管執行的命令。\""
+                },
+                {
+                    "source": "setName(\"Column layout\")",
+                    "target": "setName(\"欄式版面\")"
+                },
+                {
+                    "source": "setDesc(\"Use a column based layout instead of the default row. This makes it easier to arrange the commands.\")",
+                    "target": "setDesc(\"使用欄式版面取代預設的列式版面，讓命令更容易排列。\")"
+                },
+                {
+                    "source": "setButtonText(\"No icon\")",
+                    "target": "setButtonText(\"無圖示\")"
+                },
+                {
+                    "source": "setTooltip(\"Reset to default - requires a restart\")",
+                    "target": "setTooltip(\"還原預設值 - 需要重新啟動\")"
+                },
+                {
+                    "source": "Notice(\"If the default icon doesn't appear, you might have to restart Obsidian.\")",
+                    "target": "Notice(\"如果預設圖示沒有出現，你可能需要重新啟動 Obsidian。\")"
+                },
+                {
+                    "source": "setName(\"Button height\")",
+                    "target": "setName(\"按鈕高度\")"
+                },
+                {
+                    "source": "setDesc(\"Change the height of each button inside the mobile toolbar (in px).\")",
+                    "target": "setDesc(\"變更行動工具列中每個按鈕的高度（單位為 px）。\")"
+                },
+                {
+                    "source": "setName(\"Button width\")",
+                    "target": "setName(\"按鈕寬度\")"
+                },
+                {
+                    "source": "setDesc(\"Change the width of each button inside the mobile toolbar (in px).\")",
+                    "target": "setDesc(\"變更行動工具列中每個按鈕的寬度（單位為 px）。\")"
+                },
+                {
+                    "source": "setText(\"Macro builder\")",
+                    "target": "setText(\"巨集建構器\")"
+                },
+                {
+                    "source": "name:\"Text Toolbar\"",
+                    "target": "name:\"文字工具列\""
                 }
             ]
         },
