@@ -3,8 +3,8 @@
     "metadata": {
         "theme": "Composer",
         "language": "zh-tw",
-        "version": "0.6.0",
-        "supportedVersions": "0.6.0",
+        "version": "0.7.0",
+        "supportedVersions": "0.7.0",
         "title": "Composer",
         "description": "Composer Localization & Tweaks",
         "author": "Chico"
@@ -523,7 +523,7 @@
         {
             "type": "title",
             "source": "Components Plugin",
-            "target": "Components 插件"
+            "target": "Components 外掛"
         },
         {
             "type": "title",
