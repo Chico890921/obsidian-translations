@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-importer",
-        "version": "2.2.0",
+        "version": "2.5.0",
         "title": "[zh-tw] Importer",
         "description": "Importer 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.2.0",
+        "supportedVersions": "2.5.0",
         "author": "Chico",
-        "updatedAt": 1786380850661
+        "updatedAt": 1786543307984
     },
     "dict": {
         "main.js": {
@@ -257,7 +257,7 @@
                     "type": "CallExpression",
                     "name": "error",
                     "source": "Request failed:",
-                    "target": "Request failed:"
+                    "target": "請求失敗："
                 },
                 {
                     "type": "CallExpression",
@@ -281,13 +281,13 @@
                     "type": "CallExpression",
                     "name": "error",
                     "source": "Failed to download cover image:",
-                    "target": "Failed to download cover image:"
+                    "target": "下載封面圖片失敗："
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
                     "source": "[CREATE FILE] Error:",
-                    "target": "[CREATE FILE] Error:"
+                    "target": "[建立檔案] 錯誤："
                 },
                 {
                     "type": "CallExpression",
@@ -323,7 +323,7 @@
                     "type": "CallExpression",
                     "name": "error",
                     "source": "An error has occurred while fetching an resource:",
-                    "target": "An error has occurred while fetching an resource:"
+                    "target": "擷取資源時發生錯誤："
                 },
                 {
                     "type": "CallExpression",
@@ -959,19 +959,19 @@
                     "type": "CallExpression",
                     "name": "warn",
                     "source": "Failed to convert MathML to LaTeX:",
-                    "target": "Failed to convert MathML to LaTeX:"
+                    "target": "將 MathML 轉換為 LaTeX 失敗："
                 },
                 {
                     "type": "CallExpression",
                     "name": "warn",
                     "source": "Daily note plugin is not enabled. Roam import defaulting to \"YYYY-MM-DD\" format.",
-                    "target": "Daily note plugin is not enabled. Roam import defaulting to \"YYYY-MM-DD\" format."
+                    "target": "每日筆記外掛未啟用。Roam 匯入將預設使用「YYYY-MM-DD」格式。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "warn",
                     "source": "Error detecting default Tomboy path:",
-                    "target": "Error detecting default Tomboy path:"
+                    "target": "偵測 Tomboy 預設路徑時發生錯誤："
                 },
                 {
                     "type": "NewExpression",
@@ -1626,6 +1626,114 @@
                     "name": "title",
                     "source": "Folders to import",
                     "target": "要匯入的資料夾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "An object-reference stream header is invalid or exceeds the object limit.",
+                    "target": "物件參照串流標頭無效，或超過物件數量限制。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "The nested property-set depth limit was exceeded.",
+                    "target": "巢狀屬性集的深度超過限制。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "The property count exceeds the configured per-object limit.",
+                    "target": "屬性數量超過每個物件的設定限制。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "A length-prefixed property value is too large.",
+                    "target": "含長度前綴的屬性值過大。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "A property reference count exceeds the configured object limit.",
+                    "target": "屬性參照數量超過物件數量限制。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "A property reference uses a missing global-identification table entry.",
+                    "target": "屬性參照使用了全域識別表中不存在的項目。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "The object data ended inside a property set.",
+                    "target": "物件資料在屬性集內提前結束。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Could not read what was dropped",
+                    "target": "無法讀取拖放的內容"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Could not save the import report",
+                    "target": "無法儲存匯入報告"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Pick the files that you want to import.",
+                    "target": "選擇要匯入的檔案。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Summary",
+                    "target": "摘要"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Notes",
+                    "target": "筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Transcript",
+                    "target": "逐字稿"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "The source contains trailing bytes beyond the file length declared by its revision-store header.",
+                    "target": "來源在版本儲存標頭所宣告的檔案長度之後仍含有多餘位元組。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Files to import",
+                    "target": "要匯入的檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Files and folders",
+                    "target": "檔案與資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Microsoft OneNote (export file)",
+                    "target": "Microsoft OneNote（匯出檔案）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "{{importer}} import",
+                    "target": "{{importer}} 匯入"
                 }
             ],
             "regex": [
@@ -2043,7 +2151,7 @@
                 },
                 {
                     "source": "error(\"Request failed:\",a),a}}})}async loadPageTree(){var e,r;if(!this.notionToken){new fe.Notice(\"Please enter your Notion API token first.\")",
-                    "target": "error(\"Request failed:\",a),a}}})}async loadPageTree(){var e,r;if(!this.notionToken){new fe.Notice(\"Please enter your Notion API token first.\")"
+                    "target": "error(\"請求失敗：\",a),a}}})}async loadPageTree(){var e,r;if(!this.notionToken){new fe.Notice(\"Please enter your Notion API token first.\")"
                 },
                 {
                     "source": "Notice(`Found ${c.length} pages and databases.`)",
@@ -2467,7 +2575,7 @@
                 },
                 {
                     "source": "error(\"Request failed:\",o),o}}})}async loadPageTree(){var e;if(!this.notionToken){new ve.Notice(\"Please enter your Notion API token first.\")",
-                    "target": "error(\"Request failed:\",o),o}}})}async loadPageTree(){var e;if(!this.notionToken){new ve.Notice(\"請先輸入 Notion API 權杖。\")"
+                    "target": "error(\"請求失敗：\",o),o}}})}async loadPageTree(){var e;if(!this.notionToken){new ve.Notice(\"請先輸入 Notion API 權杖。\")"
                 },
                 {
                     "source": "setName(\"Microsoft account\")",
@@ -2524,6 +2632,110 @@
                 {
                     "source": "text:`${Ve(e.notes,\"note\")} imported. Click to show.`",
                     "target": "text:`${e.notes} 筆筆記已匯入。按一下以顯示。`"
+                },
+                {
+                    "source": "error(\"end tag name: \"+Oe+\" is not complete:\"+Ke.tagName),_e=le+1+Oe.length):Oe.match(/\\s</)&&(Oe=Oe.replace(/[\\s<].*/,\"\")",
+                    "target": "error(\"end tag name: \"+Oe+\" is not complete:\"+Ke.tagName),_e=le+1+Oe.length):Oe.match(/\\s</)&&(Oe=Oe.replace(/[\\s<].*/,\"\")"
+                },
+                {
+                    "source": "error(\"end tag name: \"+Oe+\" maybe not complete\")",
+                    "target": "error(\"end tag name: \"+Oe+\" maybe not complete\")"
+                },
+                {
+                    "source": "error(\"Could not read the output settings\",r)}}async getOutputFolder(){var a;if(this.outputFolder)return this.outputFolder;let{vault:t}=this.app,e=this.outputLocation;e===\"\"&&(e=\"/\")",
+                    "target": "error(\"Could not read the output settings\",r)}}async getOutputFolder(){var a;if(this.outputFolder)return this.outputFolder;let{vault:t}=this.app,e=this.outputLocation;e===\"\"&&(e=\"/\")"
+                },
+                {
+                    "source": "error(\"Failed to create Base file:\",n)}}async getTargetFolder(e,n){if(!n||!n.trim())return e;let a=this.sanitizeFilePath(n),i=e.path+\"/\"+a;return await this.createFolders(i)}};Os.extensions=[\"csv\"];var _s=Os;var qn=require(\"obsidian\")",
+                    "target": "error(\"Failed to create Base file:\",n)}}async getTargetFolder(e,n){if(!n||!n.trim())return e;let a=this.sanitizeFilePath(n),i=e.path+\"/\"+a;return await this.createFolders(i)}};Os.extensions=[\"csv\"];var _s=Os;var qn=require(\"obsidian\")"
+                },
+                {
+                    "source": "error(`Failed to download attachment \"${c}\": ${y.status}`)",
+                    "target": "error(`下載附件「${c}」失敗：${y.status}`)"
+                },
+                {
+                    "source": "error(`Failed to import child page \"${s}\":`,l),t.ctx.reportFailed(b.importer.notionApi.labelChildPage({title:s}),c),n=`<!-- Failed to import child page: ${c} -->`}}else console.warn(`child_page block ${o.id} skipped: no import callback provided`)",
+                    "target": "error(`匯入子頁面「${s}」失敗：`,l),t.ctx.reportFailed(b.importer.notionApi.labelChildPage({title:s}),c),n=`<!-- 匯入子頁面失敗：${c} -->`}}else console.warn(`已略過 child_page 區塊 ${o.id}：未提供匯入回呼`)"
+                },
+                {
+                    "source": "error(`Failed to read the ${d.toLowerCase()} of meeting notes ${o}:`,h),e.ctx.reportFailed(b.importer.notionApi.labelMeetingNotesSection({name:a,section:u()}),m)}}return r.join(`\n\n`)",
+                    "target": "error(`讀取會議筆記 ${o} 的 ${d.toLowerCase()} 失敗：`,h),e.ctx.reportFailed(b.importer.notionApi.labelMeetingNotesSection({name:a,section:u()}),m)}}return r.join(`\n\n`)"
+                },
+                {
+                    "source": "error(`Failed to convert database \"${n}\":`,i),t.ctx.reportFailed(b.importer.notionApi.labelDatabaseWithId({title:n,id:e}),r),`<!-- Failed to import database: ${r} -->`)",
+                    "target": "error(`轉換資料庫「${n}」失敗：`,i),t.ctx.reportFailed(b.importer.notionApi.labelDatabaseWithId({title:n,id:e}),r),`<!-- 匯入資料庫失敗：${r} -->`)"
+                },
+                {
+                    "source": "error(`Failed to process database ${i}:`,l),a=a.replace(r,`<!-- Failed to import database: ${c} -->`)",
+                    "target": "error(`處理資料庫 ${i} 失敗：`,l),a=a.replace(r,`<!-- 匯入資料庫失敗：${c} -->`)"
+                },
+                {
+                    "source": "error(`Failed to import page ${a}:`,c);let d=c instanceof Error?c.message:String(c);console.error(`Error details - Page ID: ${a}, Error: ${d}`)",
+                    "target": "error(`匯入頁面 ${a} 失敗：`,c);let d=c instanceof Error?c.message:String(c);console.error(`錯誤詳細資訊 - 頁面 ID：${a}，錯誤：${d}`)"
+                },
+                {
+                    "source": "error(`Failed to clean notion-id from file: ${i}`,r),a++}}a>0&&console.warn(`\\u26A0\\uFE0F Failed to clean notion-id from ${ch(a,\"file\")}`)",
+                    "target": "error(`無法從檔案移除 notion-id：${i}`,r),a++}}a>0&&console.warn(`\\u26A0\\uFE0F 無法從 ${ch(a,\"file\")} 移除 notion-id`)"
+                },
+                {
+                    "source": "error(\"Could not complete sign in\",i))}),this.authenticatingAccountType=e,window.open(Vy(this.authenticatingAccountType,Yy,Yc,this.graphData.state),\"_external\")",
+                    "target": "error(\"Could not complete sign in\",i))}),this.authenticatingAccountType=e,window.open(Vy(this.authenticatingAccountType,Yy,Yc,this.graphData.state),\"_external\")"
+                },
+                {
+                    "source": "error(\"ONENOTE_OBJECT_STREAM_HEADER\",\"An object-reference stream header is invalid or exceeds the object limit.\")",
+                    "target": "error(\"ONENOTE_OBJECT_STREAM_HEADER\",\"物件參照串流標頭無效，或超過物件數量限制。\")"
+                },
+                {
+                    "source": "error(\"ONENOTE_PROPERTY_DEPTH\",\"The nested property-set depth limit was exceeded.\")",
+                    "target": "error(\"ONENOTE_PROPERTY_DEPTH\",\"巢狀屬性集的深度超過限制。\")"
+                },
+                {
+                    "source": "error(\"ONENOTE_PROPERTY_LIMIT\",\"The property count exceeds the configured per-object limit.\")",
+                    "target": "error(\"ONENOTE_PROPERTY_LIMIT\",\"屬性數量超過每個物件的設定限制。\")"
+                },
+                {
+                    "source": "error(\"ONENOTE_PROPERTY_DATA_LENGTH\",\"A length-prefixed property value is too large.\")",
+                    "target": "error(\"ONENOTE_PROPERTY_DATA_LENGTH\",\"含長度前綴的屬性值過大。\")"
+                },
+                {
+                    "source": "error(\"ONENOTE_PROPERTY_TYPE\",`The property set contains an unsupported representation type 0x${d.toString(16).padStart(2,\"0\")",
+                    "target": "error(\"ONENOTE_PROPERTY_TYPE\",`屬性集包含不支援的表示類型 0x${d.toString(16).padStart(2,\"0\")"
+                },
+                {
+                    "source": "error(\"ONENOTE_REFERENCE_COUNT\",\"A property reference count exceeds the configured object limit.\")",
+                    "target": "error(\"ONENOTE_REFERENCE_COUNT\",\"屬性參照數量超過物件數量限制。\")"
+                },
+                {
+                    "source": "error(\"ONENOTE_COMPACT_ID\",\"A property reference uses a missing global-identification table entry.\")",
+                    "target": "error(\"ONENOTE_COMPACT_ID\",\"屬性參照使用了全域識別表中不存在的項目。\")"
+                },
+                {
+                    "source": "error(\"ONENOTE_TRUNCATED_PROPERTY_SET\",\"The object data ended inside a property set.\")",
+                    "target": "error(\"ONENOTE_TRUNCATED_PROPERTY_SET\",\"物件資料在屬性集內提前結束。\")"
+                },
+                {
+                    "source": "error(\"Could not read what was dropped\",a))};this.plugin=n,this.modalEl.addClass(\"mod-importer\")",
+                    "target": "error(\"無法讀取拖放的內容\",a))};this.plugin=n,this.modalEl.addClass(\"mod-importer\")"
+                },
+                {
+                    "source": "name: \"+Oe+\"",
+                    "target": "name: \"+Oe+\""
+                },
+                {
+                    "source": "name:\"Files to import\"",
+                    "target": "name:\"要匯入的檔案\""
+                },
+                {
+                    "source": "name:\"Files and folders\"",
+                    "target": "name:\"檔案與資料夾\""
+                },
+                {
+                    "source": "name:\"Microsoft OneNote (export file)\"",
+                    "target": "name:\"Microsoft OneNote（匯出檔案）\""
+                },
+                {
+                    "source": "text:`${i}\n${n}`",
+                    "target": "text:`${i}\n${n}`"
                 }
             ]
         },
