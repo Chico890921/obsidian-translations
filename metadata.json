@@ -601,13 +601,13 @@
         "id": "D97wfoB5Vzz0gec5mCW7-Mb4G1k14f1K",
         "plugin": "obsidian-importer",
         "language": "zh-tw",
-        "version": "2.2.0",
-        "supported_versions": "2.2.0",
+        "version": "2.5.0",
+        "supported_versions": "2.5.0",
         "title": "[zh-tw] Importer",
         "description": "Importer 繁體中文化與微調",
-        "hash": "65c698a565c698a565c698a565c698a5",
+        "hash": "28560583285605832856058328560583",
         "created_at": "2026-07-01T18:47:12.674Z",
-        "updated_at": "2026-08-10T17:04:09.260Z",
+        "updated_at": "2026-08-12T15:03:26.459Z",
         "type": "plugin"
     },
     {
