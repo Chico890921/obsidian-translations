@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "editing-toolbar",
-        "version": "4.0.11",
+        "version": "4.1.1",
         "title": "[zh-tw] Editing Toolbar",
         "description": "Editing Toolbar 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "4.0.11",
+        "supportedVersions": "4.1.1",
         "author": "Chico",
-        "updatedAt": 1784781189636
+        "updatedAt": 1786806551583
     },
     "dict": {
         "main.js": {
@@ -77,7 +77,7 @@
                     "type": "CallExpression",
                     "name": "addOption",
                     "source": "---- Admonitions ----",
-                    "target": "---- Admonitions ----"
+                    "target": "---- 警示框 ----"
                 },
                 {
                     "type": "CallExpression",
@@ -1530,6 +1530,12 @@
                     "name": "Notice",
                     "source": "All commands have been removed.",
                     "target": "所有命令已清除。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "editingToolbarSettingsTabsContainer_sub editing-toolbar-declarative-submenu",
+                    "target": "editingToolbarSettingsTabsContainer_sub editing-toolbar-declarative-submenu"
                 }
             ],
             "regex": [
@@ -5800,6 +5806,26 @@
                 {
                     "source": "\"Manage Templates\":\"管理模板\"",
                     "target": "\"Manage Templates\":\"管理範本\""
+                },
+                {
+                    "source": "setName(`Editing Toolbar Command ${o}`)",
+                    "target": "setName(`Editing Toolbar 指令 ${o}`)"
+                },
+                {
+                    "source": "Notice(`Commands imported successfully from \"${a}\" to \"${this.currentEditingConfig}\" `+v(\"configuration\")),this.display()}})})),i.addButton(o=>o.setButtonText(v(\"Clear\")+\" \"+`${this.currentEditingConfig}`)",
+                    "target": "Notice(`指令已成功從 \"${a}\" 匯入到 \"${this.currentEditingConfig}\" `+v(\"設定\")),this.display()}})})),i.addButton(o=>o.setButtonText(v(\"清除\")+\" \"+`${this.currentEditingConfig}`)"
+                },
+                {
+                    "source": "Notice(`Commands imported successfully from \"${this.selectedImportSourceStyle}\" to \"${o}\" ${v(\"configuration\")}`)",
+                    "target": "Notice(`指令已成功從 \"${this.selectedImportSourceStyle}\" 匯入到 \"${o}\" ${v(\"設定\")}`)"
+                },
+                {
+                    "source": "setName(`${v(\"Detected Models\")} (${s?t.length:\"?\"})`)",
+                    "target": "setName(`${v(\"偵測到的模型\")} (${s?t.length:\"?\"})`)"
+                },
+                {
+                    "source": "error(\"[AI Rewrite] Error:\",e),this.view.dispatch({effects:Gi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Ji.close.primaryKey,run:e=>oa(e,s)},{key:\"Escape\",run:e=>oa(e,s)},{key:Ji.replace.primaryKey,run:e=>!!Xi(e,s,!0)&&(ia(e,s,a,\"replace\")",
+                    "target": "error(\"[AI Rewrite] 錯誤：\",e),this.view.dispatch({effects:Gi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Ji.close.primaryKey,run:e=>oa(e,s)},{key:\"Escape\",run:e=>oa(e,s)},{key:Ji.replace.primaryKey,run:e=>!!Xi(e,s,!0)&&(ia(e,s,a,\"replace\")"
                 }
             ]
         },
