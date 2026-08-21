@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "autofit-tabs",
-        "version": "1.0.8",
+        "version": "1.0.11",
         "title": "[zh-tw] Autofit Tabs",
         "description": "Autofit Tabs 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "1.0.8",
+        "supportedVersions": "1.0.11",
         "author": "Chico",
-        "updatedAt": 1784807143777
+        "updatedAt": 1787324375346
     },
     "dict": {
         "main.js": {
@@ -132,6 +132,54 @@
                     "name": "name",
                     "source": "Left padding",
                     "target": "左側內距"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Do not modify pinned tabs (keeps default behavior)",
+                    "target": "不要修改釘選分頁（保持預設行為）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Do not modify tabs that are web links (keeps default behavior)",
+                    "target": "不要修改網頁連結分頁（保持預設行為）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Hide all icons in tabs",
+                    "target": "隱藏分頁中的所有圖示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Basic dimensions",
+                    "target": "基本尺寸"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Icons",
+                    "target": "圖示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Ignore pinned tabs",
+                    "target": "忽略釘選分頁"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Ignore web links",
+                    "target": "忽略網頁連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Hide tab icons",
+                    "target": "隱藏分頁圖示"
                 }
             ],
             "regex": [
@@ -194,6 +242,26 @@
                 {
                     "source": "name:\"Left padding\"",
                     "target": "name:\"左側內距\""
+                },
+                {
+                    "source": "setDesc(`${s} (default: ${h[n]})`)",
+                    "target": "setDesc(`${s}（預設：${h[n]}）`)"
+                },
+                {
+                    "source": "setDesc(`${a} (default: ${h[o]})`)",
+                    "target": "setDesc(`${a}（預設：${h[o]}）`)"
+                },
+                {
+                    "source": "name:\"Ignore pinned tabs\"",
+                    "target": "name:\"忽略釘選分頁\""
+                },
+                {
+                    "source": "name:\"Ignore web links\"",
+                    "target": "name:\"忽略網頁連結\""
+                },
+                {
+                    "source": "name:\"Hide tab icons\"",
+                    "target": "name:\"隱藏分頁圖示\""
                 }
             ]
         },
