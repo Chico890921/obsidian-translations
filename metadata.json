@@ -56,13 +56,13 @@
         "plugin": "autofit-tabs",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "1.0.8",
-        "supported_versions": "1.0.8",
+        "version": "1.0.11",
+        "supported_versions": "1.0.11",
         "title": "[zh-tw] Autofit Tabs",
         "description": "Autofit Tabs 繁體中文化與微調",
-        "hash": "7029383e7029383e7029383e7029383e",
+        "hash": "10dd5b7010dd5b7010dd5b7010dd5b70",
         "created_at": "2026-05-25T03:42:00.782Z",
-        "updated_at": "2026-07-29T12:51:42.214Z"
+        "updated_at": "2026-08-21T15:15:07.556Z"
     },
     {
         "id": "aX5Q0p9AqK8Gma1T_61-t-3AYW6Q5PIj",
