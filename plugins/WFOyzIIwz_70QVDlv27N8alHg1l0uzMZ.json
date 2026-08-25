@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "metadata": {
     "plugin": "quickadd",
-    "version": "2.22.0",
+    "version": "2.23.0",
     "title": "[zh-tw] QuickAdd",
     "description": "QuickAdd 繁體中文化與微調",
     "language": "zh-tw",
-    "supportedVersions": "2.22.0",
+    "supportedVersions": "2.23.0",
     "author": "Chico"
   },
   "dict": {
@@ -3227,6 +3227,42 @@
           "name": "desc",
           "source": "When on, an obsidian://quickadd URI may open a callback URL (x-success / x-error / x-cancel) after a Template or Capture choice finishes — sending the outcome and the affected note's vault path and URL to that callback. While on, a URI that carries x-* callback params is restricted to Template and Capture choices (other choice types are warned and skipped). Off by default because the callback URL is set by whoever creates the obsidian:// link. Only shortcuts: and obsidian: callback URLs are permitted.",
           "target": "啟用後，範本或擷取選項執行完成時，obsidian://quickadd URI 可開啟回呼 URL（x-success／x-error／x-cancel），並將執行結果、受影響筆記在儲存庫中的路徑與 URL 傳送至該回呼。啟用時，帶有 x-* 回呼參數的 URI 僅能執行範本與擷取選項；其他類型會顯示警告並略過。此功能預設停用，因為回呼 URL 由建立 obsidian:// 連結的人指定。只允許 shortcuts: 與 obsidian: 回呼 URL。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Return",
+          "target": "返回"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTooltip",
+          "source": "Drop the selected text into your draft and return",
+          "target": "將選取的文字放入草稿並返回"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTooltip",
+          "source": "Go back to the prompt without inserting",
+          "target": "返回輸入提示而不插入內容"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTooltip",
+          "source": "Discard this run",
+          "target": "捨棄此次執行"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Notice",
+          "source": "QuickAdd: close the open prompt before returning to the peeked one.",
+          "target": "QuickAdd：請先關閉目前開啟的輸入提示，再返回先前暫時查看的輸入提示。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "Look at the note, copy or select text, then come back. Your draft is still there.",
+          "target": "查看筆記、複製或選取文字後再返回。你的草稿仍會保留。"
         }
       ],
       "regex": [
@@ -4913,6 +4949,70 @@
         {
           "source": "NA(i,kl.userScripts,\"View documentation\")",
           "target": "NA(i,kl.userScripts,\"查看說明文件\")"
+        },
+        {
+          "source": "Notice(`QuickAdd: cancelled the peeked prompt \"${o}\".`)",
+          "target": "Notice(`QuickAdd：已取消先前暫時查看的輸入提示「${o}」。`)"
+        },
+        {
+          "source": "Notice(\"QuickAdd: close the open prompt before returning to the peeked one.\")",
+          "target": "Notice(\"QuickAdd：請先關閉目前開啟的輸入提示，再返回先前暫時查看的輸入提示。\")"
+        },
+        {
+          "source": "setTooltip(\"Drop the selected text into your draft and return\")",
+          "target": "setTooltip(\"將選取的文字放入草稿並返回\")"
+        },
+        {
+          "source": "setTooltip(\"Go back to the prompt without inserting\")",
+          "target": "setTooltip(\"返回輸入提示而不插入內容\")"
+        },
+        {
+          "source": "setTooltip(\"Discard this run\")",
+          "target": "setTooltip(\"捨棄此次執行\")"
+        },
+        {
+          "source": "Notice(`Copied node id ${O}`)",
+          "target": "Notice(`已複製節點 ID ${O}`)"
+        },
+        {
+          "source": "Notice(\"\",1e4).messageEl;t.replaceChildren(),Kh(t,\"No scripts found\",\"quickadd-notice-title\")",
+          "target": "Notice(\"\",1e4).messageEl;t.replaceChildren(),Kh(t,\"找不到指令碼\",\"quickadd-notice-title\")"
+        },
+        {
+          "source": "Notice(`Could not clear user script secrets. The ${Fm(r.type)} was not deleted.`)",
+          "target": "Notice(`無法清除使用者指令碼密鑰。未刪除 ${Fm(r.type)}。`)"
+        },
+        {
+          "source": "setTitle(`${O.label} \\u2014 ${O.description}`)",
+          "target": "setTitle(`${O.label} \\u2014 ${O.description}`)"
+        },
+        {
+          "source": "Notice(`Duplicated \"${z.name}\".`)",
+          "target": "Notice(`已複製「${z.name}」。`)"
+        },
+        {
+          "source": "Notice(`Export failed: ${A?.message??String(A)}`)",
+          "target": "Notice(`匯出失敗：${A?.message??String(A)}`)"
+        },
+        {
+          "source": "Notice(`Copied package (${A.pkg.choices.length} choice${A.pkg.choices.length===1?\"\":\"s\"}) to clipboard.`)",
+          "target": "Notice(`已將套件（${A.pkg.choices.length} 個選項）複製到剪貼簿。`)"
+        },
+        {
+          "source": "Notice(`Copy failed: ${A?.message??String(A)}`)",
+          "target": "Notice(`複製失敗：${A?.message??String(A)}`)"
+        },
+        {
+          "source": "Notice(`Imported ${ne.addedChoiceIds.length+ne.overwrittenChoiceIds.length} choice${ne.addedChoiceIds.length+ne.overwrittenChoiceIds.length===1?\"\":\"s\"} successfully.`)",
+          "target": "Notice(`已成功匯入 ${ne.addedChoiceIds.length+ne.overwrittenChoiceIds.length} 個選項。`)"
+        },
+        {
+          "source": "Notice(`Import failed: ${ne?.message??ne}`)",
+          "target": "Notice(`匯入失敗：${ne?.message??ne}`)"
+        },
+        {
+          "source": "text:\"Look at the note, copy or select text, then come back. Your draft is still there.\"",
+          "target": "text:\"查看筆記、複製或選取文字後再返回。你的草稿仍會保留。\""
         }
       ]
     },
