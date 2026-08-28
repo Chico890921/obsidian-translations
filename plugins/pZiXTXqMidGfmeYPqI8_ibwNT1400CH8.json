@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "cmdr",
-        "version": "0.5.8",
+        "version": "0.5.10",
         "title": "[zh-tw] Commander",
         "description": "Commander 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.5.8",
+        "supportedVersions": "0.5.10",
         "author": "Chico",
-        "updatedAt": 1786379436600
+        "updatedAt": 1787941998385
     },
     "dict": {
         "main.js": {
@@ -742,6 +742,14 @@
                 {
                     "source": "name:\"Text Toolbar\"",
                     "target": "name:\"文字工具列\""
+                },
+                {
+                    "source": "error(\"Error: dictionary locale not found\",kt.moment.locale()),wt&&wt[t]||yt[t]}var ie=class extends qe.FuzzySuggestModal{constructor(e){super(e.app),this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"Choose a Command to add\")",
+                    "target": "error(\"Error: dictionary locale not found\",kt.moment.locale()),wt&&wt[t]||yt[t]}var ie=class extends qe.FuzzySuggestModal{constructor(e){super(e.app),this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"Choose a Command to add\")"
+                },
+                {
+                    "source": "setDesc(`ID: ${a.id}`)",
+                    "target": "setDesc(`ID：${a.id}`)"
                 }
             ]
         },
