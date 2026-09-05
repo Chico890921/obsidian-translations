@@ -95,13 +95,13 @@
         "plugin": "cmdr",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "0.5.10",
-        "supported_versions": "0.5.10",
+        "version": "0.5.11",
+        "supported_versions": "0.5.11",
         "title": "[zh-tw] Commander",
         "description": "Commander 繁體中文化與微調",
-        "hash": "6e181da96e181da96e181da96e181da9",
+        "hash": "696e757f696e757f696e757f696e757f",
         "created_at": "2026-05-25T03:43:04.543Z",
-        "updated_at": "2026-08-28T18:37:36.683Z"
+        "updated_at": "2026-09-05T12:31:43.473Z"
     },
     {
         "id": "-MiwgJnONQxSAiZ9H2Hw5E8H-1vi10Fd",
