@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "cmdr",
-        "version": "0.5.10",
+        "version": "0.5.11",
         "title": "[zh-tw] Commander",
         "description": "Commander 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.5.10",
+        "supportedVersions": "0.5.11",
         "author": "Chico",
-        "updatedAt": 1787941998385
+        "updatedAt": 1788611038330
     },
     "dict": {
         "main.js": {
@@ -180,6 +180,24 @@
                     "name": "text",
                     "source": "Advanced settings",
                     "target": "進階設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[cmdr] menu hider listener failed:",
+                    "target": "[cmdr] 選單隱藏器監聽失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[cmdr] menu hider failed:",
+                    "target": "[cmdr] 選單隱藏器失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Commander: could not persist spacing migration",
+                    "target": "Commander：無法儲存間距設定移轉結果"
                 }
             ],
             "regex": [
@@ -624,12 +642,12 @@
                     "target": "?\"行動工具列\":\"工具列\""
                 },
                 {
-                    "source": "i(\"span\",null,\"Name\")",
-                    "target": "i(\"span\",null,\"名稱\")"
+                    "source": "r(\"span\",null,\"Name\")",
+                    "target": "r(\"span\",null,\"名稱\")"
                 },
                 {
-                    "source": "i(\"span\",null,\"Icon\")",
-                    "target": "i(\"span\",null,\"圖示\")"
+                    "source": "r(\"span\",null,\"Icon\")",
+                    "target": "r(\"span\",null,\"圖示\")"
                 },
                 {
                     "source": "placeholder:\"Macro Name\"",
@@ -648,8 +666,8 @@
                     "target": "\"迴圈：\""
                 },
                 {
-                    "source": "\"Add Command\"",
-                    "target": "\"新增命令\""
+                    "source": "r(\"button\",{onClick:C},\"Add Command\")",
+                    "target": "r(\"button\",{onClick:C},\"新增命令\")"
                 },
                 {
                     "source": "\"Add Delay\"",
@@ -750,6 +768,66 @@
                 {
                     "source": "setDesc(`ID: ${a.id}`)",
                     "target": "setDesc(`ID：${a.id}`)"
+                },
+                {
+                    "source": "error(\"Error: dictionary locale not found\",St.moment.locale()),Et&&Et[o]||Mt[o]}var ae=class extends Je.FuzzySuggestModal{constructor(e){super(e.app),this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"Choose a Command to add\")",
+                    "target": "error(\"錯誤：找不到字典語系\",St.moment.locale()),Et&&Et[o]||Mt[o]}var ae=class extends Je.FuzzySuggestModal{constructor(e){super(e.app),this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"Choose a Command to add\")"
+                },
+                {
+                    "source": "setDesc(`ID: ${i.id}`)",
+                    "target": "setDesc(`ID：${i.id}`)"
+                },
+                {
+                    "source": "error(\"Commander: could not persist spacing migration\",s)}}async saveSettings(){await this.saveData(this.settings)}listActiveToolbarCommands(){return this.app.vault.getConfig(\"mobileToolbarCommands\")",
+                    "target": "error(\"Commander：無法儲存間距設定移轉結果\",s)}}async saveSettings(){await this.saveData(this.settings)}listActiveToolbarCommands(){return this.app.vault.getConfig(\"mobileToolbarCommands\")"
+                },
+                {
+                    "source": "'Show \"Add Command\" Button':'Show \"Add Command\" Button'",
+                    "target": "'Show \"Add Command\" Button':'顯示「新增命令」按鈕'"
+                },
+                {
+                    "source": "'Show the \"Add Command\" Button in every Menu. Requires restart.':'Show the \"Add Command\" Button in every Menu. Requires restart.'",
+                    "target": "'Show the \"Add Command\" Button in every Menu. Requires restart.':'在每個選單中顯示「新增命令」按鈕。需要重新啟動。'"
+                },
+                {
+                    "source": "\"By Johnny\\u2728 and phibr0\":\"By Johnny\\u2728 and phibr0\"",
+                    "target": "\"By Johnny\\u2728 and phibr0\":\"由 Johnny\\u2728 與 phibr0 開發\""
+                },
+                {
+                    "source": "\"Send feedback\":\"Send feedback\"",
+                    "target": "\"Send feedback\":\"提供回饋\""
+                },
+                {
+                    "source": "\"Hide menu items\":\"Hide menu items\"",
+                    "target": "\"Hide menu items\":\"隱藏選單項目\""
+                },
+                {
+                    "source": "Add:\"Add\"",
+                    "target": "Add:\"新增\""
+                },
+                {
+                    "source": "\"Menu item name or /regex/\":\"Menu item name or /regex/\"",
+                    "target": "\"Menu item name or /regex/\":\"選單項目名稱或 /正規表示式/\""
+                },
+                {
+                    "source": "\"Open this menu once and its items will appear here to toggle. Regexes and names typed above are always applied.\":\"Open this menu once and its items will appear here to toggle. Regexes and names typed above are always applied.\"",
+                    "target": "\"Open this menu once and its items will appear here to toggle. Regexes and names typed above are always applied.\":\"開啟此選單一次後，其項目會顯示在這裡供你切換。上方輸入的正規表示式與名稱一律會套用。\""
+                },
+                {
+                    "source": "\"Invalid regular expression \\u2014 this entry is ignored.\":\"Invalid regular expression \\u2014 this entry is ignored.\"",
+                    "target": "\"Invalid regular expression \\u2014 this entry is ignored.\":\"正規表示式無效；此項目將被忽略。\""
+                },
+                {
+                    "source": "\"Remove items from this menu by their exact name (case-insensitive), or by a regular expression wrapped in slashes, e.g. /^Open in default app$/i.\":\"Remove items from this menu by their exact name (case-insensitive), or by a regular expression wrapped in slashes, e.g. /^Open in default app$/i.\"",
+                    "target": "\"Remove items from this menu by their exact name (case-insensitive), or by a regular expression wrapped in slashes, e.g. /^Open in default app$/i.\":\"依完整名稱（不區分大小寫）從此選單移除項目，或使用斜線包住的正規表示式，例如 /^Open in default app$/i。\""
+                },
+                {
+                    "source": "},\"Save\")",
+                    "target": "},\"儲存\")"
+                },
+                {
+                    "source": "r(\"button\",{onClick:n},\"Cancel\")",
+                    "target": "r(\"button\",{onClick:n},\"取消\")"
                 }
             ]
         },
