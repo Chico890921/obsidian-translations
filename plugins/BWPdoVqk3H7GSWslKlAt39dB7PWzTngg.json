@@ -2,23 +2,17 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "editing-toolbar",
-        "version": "4.1.1",
+        "version": "4.1.3",
         "title": "[zh-tw] Editing Toolbar",
         "description": "Editing Toolbar 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "4.1.1",
+        "supportedVersions": "4.1.3",
         "author": "Chico",
-        "updatedAt": 1786806551583
+        "updatedAt": 1788820842546
     },
     "dict": {
         "main.js": {
             "ast": [
-                {
-                    "type": "AssignmentExpression",
-                    "name": "innerHTML",
-                    "source": "<svg  width=\"14\" height=\"14\"  version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" enable-background=\"new 0 0 1024 1024\" xml:space=\"preserve\"><path fill=\"#666\" d=\"M510.29 14.13 q17.09 -15.07 40.2 -14.07 q23.12 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.1 q-23.62 2.01 -41.71 -13.07 q-18.08 -15.08 -20.09 -38.19 q-2.01 -23.12 13.06 -41.21 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.67 -386.92 q-15.07 -17.09 -13.56 -40.7 q1.51 -23.62 19.59 -38.7 ZM81.17 14.13 q17.08 -15.07 40.19 -14.07 q23.11 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.6 q-23.61 2.51 -41.7 -12.57 q-18.09 -15.08 -20.1 -38.69 q-2.01 -23.62 13.06 -41.71 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.66 -386.92 q-15.08 -17.09 -13.57 -40.7 q1.51 -23.62 19.6 -38.7 Z\"/></svg>",
-                    "target": "<svg  width=\"14\" height=\"14\"  version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" enable-background=\"new 0 0 1024 1024\" xml:space=\"preserve\"><path fill=\"#666\" d=\"M510.29 14.13 q17.09 -15.07 40.2 -14.07 q23.12 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.1 q-23.62 2.01 -41.71 -13.07 q-18.08 -15.08 -20.09 -38.19 q-2.01 -23.12 13.06 -41.21 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.67 -386.92 q-15.07 -17.09 -13.56 -40.7 q1.51 -23.62 19.59 -38.7 ZM81.17 14.13 q17.08 -15.07 40.19 -14.07 q23.11 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.6 q-23.61 2.51 -41.7 -12.57 q-18.09 -15.08 -20.1 -38.69 q-2.01 -23.62 13.06 -41.71 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.66 -386.92 q-15.08 -17.09 -13.57 -40.7 q1.51 -23.62 19.6 -38.7 Z\"/></svg>"
-                },
                 {
                     "type": "AssignmentExpression",
                     "name": "innerHTML",
@@ -84,6 +78,24 @@
                     "name": "addOption",
                     "source": "---- Default ----",
                     "target": "---- 預設 ----"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": " \"name\": \"[Descriptive Name]\", ",
+                    "target": " \"name\": \"[具描述性的名稱]\", "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": " \"pattern\": \"[Regex Pattern]\", ",
+                    "target": " \"pattern\": \"[正規表示式模式]\", "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": " \"flags\": \"[Regex Flags]\" ",
+                    "target": " \"flags\": \"[正規表示式旗標]\" "
                 },
                 {
                     "type": "CallExpression",
@@ -216,12 +228,6 @@
                     "name": "error",
                     "source": "PKMer OAuth callback error:",
                     "target": "PKMer OAuth callback error:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Callback server error:",
-                    "target": "Callback 伺服器錯誤："
                 },
                 {
                     "type": "CallExpression",
@@ -372,6 +378,12 @@
                     "name": "cls",
                     "source": "editing-toolbar-url-warning editing-toolbar-ai-note",
                     "target": "editing-toolbar-url-warning editing-toolbar-ai-note"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "editingToolbarSettingsTabsContainer_sub editing-toolbar-declarative-submenu",
+                    "target": "editingToolbarSettingsTabsContainer_sub editing-toolbar-declarative-submenu"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1430,6 +1442,12 @@
                     "target": "AI 自訂改寫"
                 },
                 {
+                    "type": "AssignmentExpression",
+                    "name": "innerHTML",
+                    "source": "<svg  width=\"14\" height=\"14\"  version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" enable-background=\"new 0 0 1024 1024\" xml:space=\"preserve\"><path fill=\"#666\" d=\"M510.29 14.13 q17.09 -15.07 40.2 -14.07 q23.12 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.1 q-23.62 2.01 -41.71 -13.07 q-18.08 -15.08 -20.09 -38.19 q-2.01 -23.12 13.06 -41.21 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.67 -386.92 q-15.07 -17.09 -13.56 -40.7 q1.51 -23.62 19.59 -38.7 ZM81.17 14.13 q17.08 -15.07 40.19 -14.07 q23.11 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.6 q-23.61 2.51 -41.7 -12.57 q-18.09 -15.08 -20.1 -38.69 q-2.01 -23.62 13.06 -41.71 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.66 -386.92 q-15.08 -17.09 -13.57 -40.7 q1.51 -23.62 19.6 -38.7 Z\"/></svg>",
+                    "target": "<svg  width=\"14\" height=\"14\"  version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" enable-background=\"new 0 0 1024 1024\" xml:space=\"preserve\"><path fill=\"#666\" d=\"M510.29 14.13 q17.09 -15.07 40.2 -14.07 q23.12 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.1 q-23.62 2.01 -41.71 -13.07 q-18.08 -15.08 -20.09 -38.19 q-2.01 -23.12 13.06 -41.21 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.67 -386.92 q-15.07 -17.09 -13.56 -40.7 q1.51 -23.62 19.59 -38.7 ZM81.17 14.13 q17.08 -15.07 40.19 -14.07 q23.11 1 39.2 18.08 l334.66 385.92 q25.12 30.15 34.16 66.83 q9.04 36.68 0.5 73.87 q-8.54 37.19 -32.66 67.34 l-335.67 390.94 q-15.07 18.09 -38.69 20.6 q-23.61 2.51 -41.7 -12.57 q-18.09 -15.08 -20.1 -38.69 q-2.01 -23.62 13.06 -41.71 l334.66 -390.94 q11.06 -13.06 11.56 -29.65 q0.5 -16.58 -10.55 -29.64 l-334.66 -386.92 q-15.08 -17.09 -13.57 -40.7 q1.51 -23.62 19.6 -38.7 Z\"/></svg>"
+                },
+                {
                     "type": "CallExpression",
                     "name": "addOption",
                     "source": "┌ Light",
@@ -1530,22 +1548,40 @@
                     "name": "Notice",
                     "source": "All commands have been removed.",
                     "target": "所有命令已清除。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "editingToolbarSettingsTabsContainer_sub editing-toolbar-declarative-submenu",
-                    "target": "editingToolbarSettingsTabsContainer_sub editing-toolbar-declarative-submenu"
                 }
             ],
             "regex": [
                 {
-                    "source": "error(\"修复命令ID时出错:\",t),new e.Notice(v(\"Error repairing command IDs, please check the console for details\")",
-                    "target": "error(\"修正指令 ID 時發生錯誤：\",t),new e.Notice(v(\"修正指令 ID 時發生錯誤，請查看主控臺取得詳細資訊\")"
+                    "source": "error(\"修复命令ID时出错:\",t),new e.Notice(w(\"Error repairing command IDs, please check the console for details\")",
+                    "target": "error(\"修正命令 ID 時發生錯誤：\",t),new e.Notice(w(\"Error repairing command IDs, please check the console for details\")"
                 },
                 {
-                    "source": "error(\"恢复默认设置时出错:\",t),new e.Notice(v(\"Error restoring default settings, please check the console for details\")",
-                    "target": "error(\"還原預設設定時發生錯誤：\",t),new e.Notice(v(\"還原預設設定時發生錯誤，請查看主控臺取得詳細資訊\")"
+                    "source": "error(\"恢复默认设置时出错:\",t),new e.Notice(w(\"Error restoring default settings, please check the console for details\")",
+                    "target": "error(\"還原預設設定時發生錯誤：\",t),new e.Notice(w(\"Error restoring default settings, please check the console for details\")"
+                },
+                {
+                    "source": "appendText(` ${w(\"[Description]\")}: ${w(\"I need to convert the url to a markdown format link\")}`)",
+                    "target": "appendText(` ${w(\"[Description]\")}: ${w(\"I need to convert the url to a markdown format link\")}`)"
+                },
+                {
+                    "source": "appendText(` ${w(\"[Example]\")}: ${w(\"For example, convert https://example.com to [https://example.com](https://example.com)\")}`)",
+                    "target": "appendText(` ${w(\"[Example]\")}: ${w(\"For example, convert https://example.com to [https://example.com](https://example.com)\")}`)"
+                },
+                {
+                    "source": "appendText(` ${w(\"[Output]\")}:`)",
+                    "target": "appendText(` ${w(\"[Output]\")}:`)"
+                },
+                {
+                    "source": "appendText(' \"name\": \"[Descriptive Name]\", ')",
+                    "target": "appendText(' \"name\": \"[具描述性的名稱]\", ')"
+                },
+                {
+                    "source": "appendText(' \"pattern\": \"[Regex Pattern]\", ')",
+                    "target": "appendText(' \"pattern\": \"[正規表示式模式]\", ')"
+                },
+                {
+                    "source": "appendText(' \"flags\": \"[Regex Flags]\" ')",
+                    "target": "appendText(' \"flags\": \"[正規表示式旗標]\" ')"
                 },
                 {
                     "source": "setButtonText(\"保存\")",
@@ -1556,72 +1592,80 @@
                     "target": "error(\"複製程式碼失敗：\",e)})})}escapeRegexForDisplay(e){return e.replace(/\\\\/g,\"\\\\\\\\\")"
                 },
                 {
-                    "source": "error(\"无法复制文本: \",e)})}),i.addEventListener(\"mouseenter\",()=>{i.style.backgroundColor=\"var(--interactive-accent)\",i.style.color=\"var(--text-on-accent)\"}),i.addEventListener(\"mouseleave\",()=>{i.style.backgroundColor=\"\",i.style.color=\"\"})})}const c=new e.Setting(t).setName(v(\"Prefix\")",
-                    "target": "error(\"無法複製文字：\",e)})}),i.addEventListener(\"mouseenter\",()=>{i.style.backgroundColor=\"var(--interactive-accent)\",i.style.color=\"var(--text-on-accent)\"}),i.addEventListener(\"mouseleave\",()=>{i.style.backgroundColor=\"\",i.style.color=\"\"})})}const c=new e.Setting(t).setName(v(\"Prefix\")"
+                    "source": "error(\"无法复制文本: \",e)})}),i.addEventListener(\"mouseenter\",()=>{i.style.backgroundColor=\"var(--interactive-accent)\",i.style.color=\"var(--text-on-accent)\"}),i.addEventListener(\"mouseleave\",()=>{i.style.backgroundColor=\"\",i.style.color=\"\"})})}const c=new e.Setting(t).setName(w(\"Prefix\")",
+                    "target": "error(\"無法複製文字：\",e)})}),i.addEventListener(\"mouseenter\",()=>{i.style.backgroundColor=\"var(--interactive-accent)\",i.style.color=\"var(--text-on-accent)\"}),i.addEventListener(\"mouseleave\",()=>{i.style.backgroundColor=\"\",i.style.color=\"\"})})}const c=new e.Setting(t).setName(w(\"Prefix\")"
                 },
                 {
-                    "source": "error(\"Failed to copy: \",t),new e.Notice(v(\"Failed to copy configuration\")",
-                    "target": "error(\"複製失敗：\",t),new e.Notice(v(\"複製設定失敗\")"
+                    "source": "error(\"Failed to copy: \",t),new e.Notice(w(\"Failed to copy configuration\")",
+                    "target": "error(\"複製失敗：\",t),new e.Notice(w(\"Failed to copy configuration\")"
                 },
                 {
-                    "source": "setButtonText(\"overwrite\"===this.importMode?v(\"Overwrite Import\")",
-                    "target": "setButtonText(\"overwrite\"===this.importMode?v(\"覆蓋匯入\")"
+                    "source": "setButtonText(\"overwrite\"===this.importMode?w(\"Overwrite Import\")",
+                    "target": "setButtonText(\"overwrite\"===this.importMode?w(\"Overwrite Import\")"
                 },
                 {
-                    "source": "setText(\"overwrite\"===this.importMode?v(\"Warning: Overwrite mode will replace existing settings with imported ones.\")",
-                    "target": "setText(\"overwrite\"===this.importMode?v(\"警告：覆蓋模式會以匯入的設定取代現有設定。\")"
+                    "source": "setText(\"overwrite\"===this.importMode?w(\"Warning: Overwrite mode will replace existing settings with imported ones.\")",
+                    "target": "setText(\"overwrite\"===this.importMode?w(\"Warning: Overwrite mode will replace existing settings with imported ones.\")"
                 },
                 {
-                    "source": "error(\"Import error: \",t),new e.Notice(v(\"Error: \")",
-                    "target": "error(\"匯入錯誤：\",t),new e.Notice(v(\"錯誤：\")"
+                    "source": "error(\"Import error: \",t),new e.Notice(w(\"Error: \")",
+                    "target": "error(\"匯入錯誤：\",t),new e.Notice(w(\"Error: \")"
                 },
                 {
-                    "source": "Notice(`${v(\"Failed to load Ollama models:\")} ${this.cachedCustomOllamaModelsError}`)",
-                    "target": "Notice(`${v(\"載入 Ollama 模型失敗：\")} ${this.cachedCustomOllamaModelsError}`)"
+                    "source": "setName(`Editing Toolbar Command ${o}`)",
+                    "target": "setName(`Editing Toolbar 指令 ${o}`)"
                 },
                 {
-                    "source": "Notice(`${v(\"Failed to load models:\")} ${this.cachedCustomOpenAIModelsError}`)",
-                    "target": "Notice(`${v(\"載入模型失敗：\")} ${this.cachedCustomOpenAIModelsError}`)"
+                    "source": "Notice(`${w(\"Failed to load Ollama models:\")} ${this.cachedCustomOllamaModelsError}`)",
+                    "target": "Notice(`${w(\"Failed to load Ollama models:\")} ${this.cachedCustomOllamaModelsError}`)"
+                },
+                {
+                    "source": "Notice(`${w(\"Failed to load models:\")} ${this.cachedCustomOpenAIModelsError}`)",
+                    "target": "Notice(`${w(\"Failed to load models:\")} ${this.cachedCustomOpenAIModelsError}`)"
                 },
                 {
                     "source": "Notice(\"The selected style has no commands to import.\")",
                     "target": "Notice(\"所選樣式沒有可匯入的指令。\")"
                 },
                 {
-                    "source": "Notice(`Commands imported successfully from \"${a}\" to \"${this.currentEditingConfig}\" `+v(\"configuration\")),this.display()}})})),i.addButton(t=>t.setButtonText(v(\"Clear\")+\" \"+`${this.currentEditingConfig}`)",
-                    "target": "Notice(`指令已成功從 \"${a}\" 匯入到 \"${this.currentEditingConfig}\" `+v(\"設定\")),this.display()}})})),i.addButton(t=>t.setButtonText(v(\"清除\")+\" \"+`${this.currentEditingConfig}`)"
+                    "source": "Notice(`Commands imported successfully from \"${a}\" to \"${this.currentEditingConfig}\" `+w(\"configuration\")),this.display()}})})),i.addButton(o=>o.setButtonText(w(\"Clear\")+\" \"+`${this.currentEditingConfig}`)",
+                    "target": "Notice(`指令已成功從 \"${a}\" 匯入到 \"${this.currentEditingConfig}\" `+w(\"configuration\")),this.display()}})})),i.addButton(o=>o.setButtonText(w(\"Clear\")+\" \"+`${this.currentEditingConfig}`)"
                 },
                 {
-                    "source": "error(\"Failed to set icon:\",e)}})}triggerRefresh(){setTimeout(()=>{dispatchEvent(new Event(\"editingToolbar-NewCommand\")",
-                    "target": "error(\"設定圖示失敗：\",e)}})}triggerRefresh(){setTimeout(()=>{dispatchEvent(new Event(\"editingToolbar-NewCommand\")"
+                    "source": "error(\"Failed to set icon:\",e)}})}triggerRefresh(){window.setTimeout(()=>{dispatchEvent(new Event(\"editingToolbar-NewCommand\")",
+                    "target": "error(\"設定圖示失敗：\",e)}})}triggerRefresh(){window.setTimeout(()=>{dispatchEvent(new Event(\"editingToolbar-NewCommand\")"
                 },
                 {
-                    "source": "setName(`${v(\"Detected Models\")} (${a?t.length:\"?\"})`)",
-                    "target": "setName(`${v(\"偵測到的模型\")} (${a?t.length:\"?\"})`)"
+                    "source": "Notice(`Commands imported successfully from \"${this.selectedImportSourceStyle}\" to \"${o}\" ${w(\"configuration\")}`)",
+                    "target": "Notice(`指令已成功從 \"${this.selectedImportSourceStyle}\" 匯入到 \"${o}\" ${w(\"configuration\")}`)"
                 },
                 {
-                    "source": "setText(`${e.Platform.isMacOS?\"⌘\":\"Ctrl\"} + Enter ${v(\"to insert\")}`)",
-                    "target": "setText(`${e.Platform.isMacOS?\"⌘\":\"Ctrl\"} + Enter ${v(\"以插入\")}`)"
+                    "source": "setName(`${w(\"Detected Models\")} (${s?t.length:\"?\"})`)",
+                    "target": "setName(`${w(\"Detected Models\")} (${s?t.length:\"?\"})`)"
                 },
                 {
-                    "source": "Notice(`${v(\"Merged with\")} '${t}' ${v(\"Merge completed\")}`)",
-                    "target": "Notice(`${v(\"已與\")} '${t}' ${v(\"合併完成\")}`)"
+                    "source": "setText(`${e.Platform.isMacOS?\"⌘\":\"Ctrl\"} + Enter ${w(\"to insert\")}`)",
+                    "target": "setText(`${e.Platform.isMacOS?\"⌘\":\"Ctrl\"} + Enter ${w(\"to insert\")}`)"
                 },
                 {
-                    "source": "Notice(`${v(\"Numbering completed: starting from\")} ${o}`)",
-                    "target": "Notice(`${v(\"編號完成：從\")} ${o}`)"
+                    "source": "Notice(`${w(\"Merged with\")} '${t}' ${w(\"Merge completed\")}`)",
+                    "target": "Notice(`${w(\"Merged with\")} '${t}' ${w(\"Merge completed\")}`)"
                 },
                 {
-                    "source": "Notice(`${v(\"Extracted\")} ${d.length} ${v(\"matches\")}`)",
-                    "target": "Notice(`${v(\"已擷取\")} ${d.length} ${v(\"個符合項\")}`)"
+                    "source": "Notice(`${w(\"Numbering completed: starting from\")} ${o}`)",
+                    "target": "Notice(`${w(\"Numbering completed: starting from\")} ${o}`)"
                 },
                 {
-                    "source": "error(\"读取剪贴板失败:\",t),void new e.Notice(v(\"Please select text first\")",
-                    "target": "error(\"讀取剪貼簿失敗:\",t),void new e.Notice(v(\"請先選取文字\")"
+                    "source": "Notice(`${w(\"Extracted\")} ${d.length} ${w(\"matches\")}`)",
+                    "target": "Notice(`${w(\"Extracted\")} ${d.length} ${w(\"matches\")}`)"
                 },
                 {
-                    "source": "error(\"正则表达式命令执行错误:\",t),new e.Notice(v(\"Regex command execution error: \")",
-                    "target": "error(\"正規表示式命令執行錯誤：\",t),new e.Notice(v(\"正規表示式指令執行錯誤：\")"
+                    "source": "error(\"读取剪贴板失败:\",t),void new e.Notice(w(\"Please select text first\")",
+                    "target": "error(\"讀取剪貼簿失敗：\",t),void new e.Notice(w(\"Please select text first\")"
+                },
+                {
+                    "source": "error(\"正则表达式命令执行错误:\",t),new e.Notice(w(\"Regex command execution error: \")",
+                    "target": "error(\"正規表示式命令執行錯誤：\",t),new e.Notice(w(\"Regex command execution error: \")"
                 },
                 {
                     "source": "error(\"Paste failed:\",e)}})},icon:\"lucide-clipboard-type\"}),this.plugin.addCommand({id:\"editor-cut\",name:\"Cut\",callback:()=>{const e=this.getActiveEditor();e&&this.executeCommandWithoutBlur(e,async()=>{try{await window.navigator.clipboard.writeText(e.getSelection()),e.replaceSelection(\"\")",
@@ -1632,60 +1676,64 @@
                     "target": "log(\"目前瀏覽器不支援全螢幕 API !\")"
                 },
                 {
-                    "source": "error(\"PKMer OAuth login error:\",t),new e.Notice(v(\"Login failed. Please try again.\")",
-                    "target": "error(\"PKMer OAuth login error:\",t),new e.Notice(v(\"登入失敗。請再試一次。\")"
+                    "source": "error(\"PKMer OAuth login error:\",t),new e.Notice(w(\"Login failed. Please try again.\")",
+                    "target": "error(\"PKMer OAuth 登入錯誤：\",t),new e.Notice(w(\"Login failed. Please try again.\")"
                 },
                 {
-                    "source": "error(\"PKMer OAuth callback error:\",t),new e.Notice(v(\"Login failed. Please try again.\")",
-                    "target": "error(\"PKMer OAuth callback error:\",t),new e.Notice(v(\"登入失敗。請再試一次。\")"
+                    "source": "error(\"PKMer OAuth callback error:\",t),new e.Notice(w(\"Login failed. Please try again.\")",
+                    "target": "error(\"PKMer OAuth 回呼錯誤：\",t),new e.Notice(w(\"Login failed. Please try again.\")"
                 },
                 {
-                    "source": "error(\"Callback server error:\",o),new e.Notice(`Failed to start login server: ${o.message}`),t(null)}),o.listen(X,\"127.0.0.1\")",
-                    "target": "error(\"Callback 伺服器錯誤：\",o),new e.Notice(`啟動登入伺服器失敗：${o.message}`),t(null)}),o.listen(X,\"127.0.0.1\")"
+                    "source": "error(`Callback server error on port ${o}:`,t),this.callbackServer=null,e(\"EACCES\"!==n?\"EADDRINUSE\"!==n?\"EUNKNOWN\":\"EADDRINUSE\":\"EACCES\")}),n.once(\"listening\",()=>{this.callbackServer=n,console.log(`Callback server listening on port ${o}.`)",
+                    "target": "error(`連接埠 ${o} 的回呼伺服器發生錯誤：`,t),this.callbackServer=null,e(\"EACCES\"!==n?\"EADDRINUSE\"!==n?\"EUNKNOWN\":\"EADDRINUSE\":\"EACCES\")}),n.once(\"listening\",()=>{this.callbackServer=n,console.log(`回呼伺服器正在接聽連接埠 ${o}。`)"
                 },
                 {
-                    "source": "error(\"[AI Rewrite] Failed to copy result:\",t),new e.Notice(t instanceof Error&&t.message?t.message:v(\"Copy to Clipboard\")",
-                    "target": "error(\"[AI Rewrite] 複製結果失敗：\",t),new e.Notice(t instanceof Error&&t.message?t.message:v(\"複製到剪貼簿\")"
+                    "source": "error(\"Failed to start callback server:\",t),e(\"EUNKNOWN\")",
+                    "target": "error(\"啟動回呼伺服器失敗：\",t),e(\"EUNKNOWN\")"
                 },
                 {
-                    "source": "error(\"[AI Rewrite] Error:\",e),this.view.dispatch({effects:Yi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Ji.close.primaryKey,run:e=>oa(e,s)},{key:\"Escape\",run:e=>oa(e,s)},{key:Ji.replace.primaryKey,run:e=>!!Xi(e,s,!0)&&(ia(e,s,a,\"replace\")",
-                    "target": "error(\"[AI Rewrite] 錯誤：\",e),this.view.dispatch({effects:Yi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Ji.close.primaryKey,run:e=>oa(e,s)},{key:\"Escape\",run:e=>oa(e,s)},{key:Ji.replace.primaryKey,run:e=>!!Xi(e,s,!0)&&(ia(e,s,a,\"replace\")"
+                    "source": "error(\"[AI Rewrite] Failed to copy result:\",t),new e.Notice(t instanceof Error&&t.message?t.message:w(\"Copy to Clipboard\")",
+                    "target": "error(\"[AI 改寫] 複製結果失敗：\",t),new e.Notice(t instanceof Error&&t.message?t.message:w(\"Copy to Clipboard\")"
                 },
                 {
-                    "source": "Notice(`${v(\"PKMer quota refreshed:\")} ${Number((t.quota/5e5).toFixed(2))}`)",
-                    "target": "Notice(`${v(\"PKMer 額度已重新整理：\")} ${Number((t.quota/5e5).toFixed(2))}`)"
+                    "source": "error(\"[AI Rewrite] Error:\",e),this.view.dispatch({effects:Zi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Qi.close.primaryKey,run:e=>aa(e,s)},{key:\"Escape\",run:e=>aa(e,s)},{key:Qi.replace.primaryKey,run:e=>!!ta(e,s,!0)&&(ra(e,s,a,\"replace\")",
+                    "target": "error(\"[AI 改寫] 錯誤：\",e),this.view.dispatch({effects:Zi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Qi.close.primaryKey,run:e=>aa(e,s)},{key:\"Escape\",run:e=>aa(e,s)},{key:Qi.replace.primaryKey,run:e=>!!ta(e,s,!0)&&(ra(e,s,a,\"replace\")"
                 },
                 {
-                    "source": "error(\"[AI Settings] Failed to determine provider route:\",e),v(\"Unable to determine current AI route.\")",
-                    "target": "error(\"[AI 設定] 無法判斷供應商路由：\",e),v(\"無法判斷目前 AI 路由。\")"
+                    "source": "Notice(`${w(\"PKMer quota refreshed:\")} ${Number((t.quota/5e5).toFixed(2))}`)",
+                    "target": "Notice(`${w(\"PKMer quota refreshed:\")} ${Number((t.quota/5e5).toFixed(2))}`)"
                 },
                 {
-                    "source": "Notice(`${v(\"Custom model connection succeeded.\")} ${t}`.trim()),!0}catch(t){const o=Zo(t);return new e.Notice(`${v(\"Custom model connection failed:\")} ${o}`)",
-                    "target": "Notice(`${v(\"自訂模型連線成功。\")} ${t}`.trim()),!0}catch(t){const o=Zo(t);return new e.Notice(`${v(\"自訂模型連線失敗：\")} ${o}`)"
+                    "source": "error(\"[AI Settings] Failed to determine provider route:\",e),w(\"Unable to determine current AI route.\")",
+                    "target": "error(\"[AI 設定] 無法判斷供應商路由：\",e),w(\"Unable to determine current AI route.\")"
+                },
+                {
+                    "source": "Notice(`${w(\"Custom model connection succeeded.\")} ${t}`.trim()),!0}catch(t){const o=Qo(t);return new e.Notice(`${w(\"Custom model connection failed:\")} ${o}`)",
+                    "target": "Notice(`${w(\"Custom model connection succeeded.\")} ${t}`.trim()),!0}catch(t){const o=Qo(t);return new e.Notice(`${w(\"Custom model connection failed:\")} ${o}`)"
                 },
                 {
                     "source": "Notice(\"Please select text first\")",
                     "target": "Notice(\"請先選取文字\")"
                 },
                 {
-                    "source": "Notice(`${v(\"Canvas AI added\")} ${s.addedNodeCount} ${v(\"nodes to the board.\")}`)",
-                    "target": "Notice(`${v(\"Canvas AI 已新增\")} ${s.addedNodeCount} ${v(\"個節點到畫布。\")}`)"
+                    "source": "Notice(`${w(\"Canvas AI added\")} ${s.addedNodeCount} ${w(\"nodes to the board.\")}`)",
+                    "target": "Notice(`${w(\"Canvas AI added\")} ${s.addedNodeCount} ${w(\"nodes to the board.\")}`)"
                 },
                 {
-                    "source": "error(\"[Canvas AI] Failed to expand current node:\",t),!1}}async runCanvasGlobalInstruction(t,o,n){if(!this.plugin.settings.ai.enabled)return new e.Notice(v(\"AI features are disabled in settings.\")",
-                    "target": "error(\"[Canvas AI] 展開目前節點失敗：\",t),!1}}async runCanvasGlobalInstruction(t,o,n){if(!this.plugin.settings.ai.enabled)return new e.Notice(v(\"AI 功能已在設定中停用。\")"
+                    "source": "error(\"[Canvas AI] Failed to expand current node:\",t),!1}}async runCanvasGlobalInstruction(t,o,n){if(!this.plugin.settings.ai.enabled)return new e.Notice(w(\"AI features are disabled in settings.\")",
+                    "target": "error(\"[Canvas AI] 展開目前節點失敗：\",t),!1}}async runCanvasGlobalInstruction(t,o,n){if(!this.plugin.settings.ai.enabled)return new e.Notice(w(\"AI features are disabled in settings.\")"
                 },
                 {
-                    "source": "Notice(`${v(\"Canvas AI updated the board:\")} ${r.addedNodeCount} ${v(\"nodes\")}, ${r.addedEdgeCount} ${v(\"links\")}.`)",
-                    "target": "Notice(`${v(\"Canvas AI 已更新畫布：\")} ${r.addedNodeCount} ${v(\"個節點\")}，${r.addedEdgeCount} ${v(\"條連結\")}。`)"
+                    "source": "Notice(`${w(\"Canvas AI updated the board:\")} ${r.addedNodeCount} ${w(\"nodes\")}, ${r.addedEdgeCount} ${w(\"links\")}.`)",
+                    "target": "Notice(`${w(\"Canvas AI updated the board:\")} ${r.addedNodeCount} ${w(\"nodes\")}, ${r.addedEdgeCount} ${w(\"links\")}.`)"
                 },
                 {
-                    "source": "Notice(`${v(\"Created AI file:\")} ${l.path}`)",
-                    "target": "Notice(`${v(\"已建立 AI 檔案：\")} ${l.path}`)"
+                    "source": "Notice(`${w(\"Created AI file:\")} ${l.path}`)",
+                    "target": "Notice(`${w(\"Created AI file:\")} ${l.path}`)"
                 },
                 {
-                    "source": "Notice(`${v(\"Created AI file:\")} ${r}`)",
-                    "target": "Notice(`${v(\"已建立 AI 檔案：\")} ${r}`)"
+                    "source": "Notice(`${w(\"Created AI file:\")} ${r}`)",
+                    "target": "Notice(`${w(\"Created AI file:\")} ${r}`)"
                 },
                 {
                     "source": "log(\"editing toolbar disable loading on mobile\")",
@@ -1697,7 +1745,7 @@
                 },
                 {
                     "source": "name: \":\"",
-                    "target": "name:\":\""
+                    "target": "name: \":\""
                 },
                 {
                     "source": "name: \",\"",
@@ -1717,7 +1765,7 @@
                 },
                 {
                     "source": "name: \")});const o=new e.TextComponent(t);o.inputEl.classList.add(\"",
-                    "target": "name:\")});const o=new e.TextComponent(t);o.inputEl.classList.add(\""
+                    "target": "name: \")});const o=new e.TextComponent(t);o.inputEl.classList.add(\""
                 },
                 {
                     "source": "name:\"📝 总结要点\"",
@@ -2024,8 +2072,8 @@
                     "target": "name:\"Overview\""
                 },
                 {
-                    "source": "text:`${this.plugin.manifest.name} v${this.plugin.manifest.version} · ${v(\"Tips\")}`",
-                    "target": "text:`${this.plugin.manifest.name} v${this.plugin.manifest.version} · ${v(\"提示\")}`"
+                    "source": "text:`${this.plugin.manifest.name} v${this.plugin.manifest.version} · ${w(\"Tips\")}`",
+                    "target": "text:`${this.plugin.manifest.name} v${this.plugin.manifest.version} · ${w(\"Tips\")}`"
                 },
                 {
                     "source": "textContent=\"已复制!\"",
@@ -2064,20 +2112,20 @@
                     "target": "text:\"▾\""
                 },
                 {
-                    "source": "text:`${v(\"Completion\")}: ${l(P(this.plugin.settings.ai,\"completion\"))}`",
-                    "target": "text:`${v(\"補全\")}: ${l(P(this.plugin.settings.ai,\"completion\"))}`"
+                    "source": "text:`${w(\"Completion\")}: ${d(D(this.plugin.settings.ai,\"completion\"))}`",
+                    "target": "text:`${w(\"Completion\")}: ${d(D(this.plugin.settings.ai,\"completion\"))}`"
                 },
                 {
-                    "source": "text:`${v(\"Rewrite\")}: ${l(P(this.plugin.settings.ai,\"rewrite\"))}`",
-                    "target": "text:`${v(\"改寫\")}: ${l(P(this.plugin.settings.ai,\"rewrite\"))}`"
+                    "source": "text:`${w(\"Rewrite\")}: ${d(D(this.plugin.settings.ai,\"rewrite\"))}`",
+                    "target": "text:`${w(\"Rewrite\")}: ${d(D(this.plugin.settings.ai,\"rewrite\"))}`"
                 },
                 {
-                    "source": "text:`${v(\"Reasoning\")}: ${l(P(this.plugin.settings.ai,\"reasoning\"))}`",
-                    "target": "text:`${v(\"推理\")}: ${l(P(this.plugin.settings.ai,\"reasoning\"))}`"
+                    "source": "text:`${w(\"Reasoning\")}: ${d(D(this.plugin.settings.ai,\"reasoning\"))}`",
+                    "target": "text:`${w(\"Reasoning\")}: ${d(D(this.plugin.settings.ai,\"reasoning\"))}`"
                 },
                 {
-                    "source": "text:`${v(\"Structured\")}: ${l(P(this.plugin.settings.ai,\"artifact\"))}`",
-                    "target": "text:`${v(\"結構化\")}: ${l(P(this.plugin.settings.ai,\"artifact\"))}`"
+                    "source": "text:`${w(\"Structured\")}: ${d(D(this.plugin.settings.ai,\"artifact\"))}`",
+                    "target": "text:`${w(\"Structured\")}: ${d(D(this.plugin.settings.ai,\"artifact\"))}`"
                 },
                 {
                     "source": "text:\"📄\"",
@@ -2188,8 +2236,8 @@
                     "target": "name:\"切換格式刷\""
                 },
                 {
-                    "source": "name: \"${Mn(t)}\"",
-                    "target": "name: \"${Mn(t)}\""
+                    "source": "name: \"${Nn(t)}\"",
+                    "target": "name: \"${Nn(t)}\""
                 },
                 {
                     "source": "textContent=\"×\"",
@@ -3317,15 +3365,15 @@
                 },
                 {
                     "source": "\"Top style commands successfully initialized\":\"Top样式初始化成功\"",
-                    "target": "\"Top 樣式命令已成功初始化\":\"Top樣式初始化成功\""
+                    "target": "\"Top style commands successfully initialized\":\"頂部樣式命令已成功初始化\""
                 },
                 {
                     "source": "\"Fixed style commands successfully initialized\":\"Fixed样式初始化成功\"",
-                    "target": "\"Fixed 樣式命令已成功初始化\":\"Fixed樣式初始化成功\""
+                    "target": "\"Fixed style commands successfully initialized\":\"固定樣式命令已成功初始化\""
                 },
                 {
                     "source": "\"Mobile style commands successfully initialized\":\"Mobile样式初始化成功\"",
-                    "target": "\"Mobile 樣式命令已成功初始化\":\"Mobile樣式初始化成功\""
+                    "target": "\"Mobile style commands successfully initialized\":\"行動版樣式命令已成功初始化\""
                 },
                 {
                     "source": "\"Reset Commands\":\"重置命令\"",
@@ -3453,7 +3501,7 @@
                 },
                 {
                     "source": "\"Warning: Overwrite mode will replace existing settings with imported ones.\":\"警告：覆盖模式将用导入的配置替换所有设置。\"",
-                    "target": "\"警告：覆蓋模式會以匯入的設定取代現有設定。\":\"警告：覆寫模式將用匯入的設定取代所有設定。\""
+                    "target": "\"Warning: Overwrite mode will replace existing settings with imported ones.\":\"警告：覆寫模式會以匯入的設定取代現有設定。\""
                 },
                 {
                     "source": "\"Enable Multiple Config\":\"启用多配置\"",
@@ -4973,7 +5021,7 @@
                 },
                 {
                     "source": "\"Login failed. Please try again.\":\"登录失败，请重试。\"",
-                    "target": "\"登入失敗。請再試一次。\":\"登入失敗，請重試。\""
+                    "target": "\"Login failed. Please try again.\":\"登入失敗，請再試一次。\""
                 },
                 {
                     "source": "\"OAuth state mismatch. Please try logging in again.\":\"OAuth 状态校验失败：可能是另一个 Obsidian 窗口或库拦截了本次回调。请关闭多余库后重试。\"",
@@ -5808,24 +5856,156 @@
                     "target": "\"Manage Templates\":\"管理範本\""
                 },
                 {
-                    "source": "setName(`Editing Toolbar Command ${o}`)",
-                    "target": "setName(`Editing Toolbar 指令 ${o}`)"
+                    "source": "appendText(' \"replacement\": \"[Replacement Pattern, if applicable]\", ')",
+                    "target": "appendText(' \"replacement\": \"[取代模式（若適用）]\", ')"
                 },
                 {
-                    "source": "Notice(`Commands imported successfully from \"${a}\" to \"${this.currentEditingConfig}\" `+v(\"configuration\")),this.display()}})})),i.addButton(o=>o.setButtonText(v(\"Clear\")+\" \"+`${this.currentEditingConfig}`)",
-                    "target": "Notice(`指令已成功從 \"${a}\" 匯入到 \"${this.currentEditingConfig}\" `+v(\"設定\")),this.display()}})})),i.addButton(o=>o.setButtonText(v(\"清除\")+\" \"+`${this.currentEditingConfig}`)"
+                    "source": "\"Main menu only\":\"Main menu only\"",
+                    "target": "\"Main menu only\":\"僅主選單\""
                 },
                 {
-                    "source": "Notice(`Commands imported successfully from \"${this.selectedImportSourceStyle}\" to \"${o}\" ${v(\"configuration\")}`)",
-                    "target": "Notice(`指令已成功從 \"${this.selectedImportSourceStyle}\" 匯入到 \"${o}\" ${v(\"設定\")}`)"
+                    "source": "\"Show AI Tools in Context Menu\":\"在右键菜单显示 AI 工具\"",
+                    "target": "\"Show AI Tools in Context Menu\":\"在右鍵選單中顯示 AI 工具\""
                 },
                 {
-                    "source": "setName(`${v(\"Detected Models\")} (${s?t.length:\"?\"})`)",
-                    "target": "setName(`${v(\"偵測到的模型\")} (${s?t.length:\"?\"})`)"
+                    "source": "\"Show the AI Tools submenu in the editor right-click menu. Re-enabling AI Editor turns this on again.\":\"在编辑器右键菜单中显示 AI 工具子菜单。重新启用 AI 编辑器时会自动重新打开此项。\"",
+                    "target": "\"Show the AI Tools submenu in the editor right-click menu. Re-enabling AI Editor turns this on again.\":\"在編輯器的右鍵選單中顯示 AI 工具子選單。重新啟用 AI 編輯器時，會再次開啟此選項。\""
                 },
                 {
-                    "source": "error(\"[AI Rewrite] Error:\",e),this.view.dispatch({effects:Gi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Ji.close.primaryKey,run:e=>oa(e,s)},{key:\"Escape\",run:e=>oa(e,s)},{key:Ji.replace.primaryKey,run:e=>!!Xi(e,s,!0)&&(ia(e,s,a,\"replace\")",
-                    "target": "error(\"[AI Rewrite] 錯誤：\",e),this.view.dispatch({effects:Gi.of(void 0)})}}destroy(){this.abortController?.abort()}}),l=o.Prec.highest(n.keymap.of([{key:Ji.close.primaryKey,run:e=>oa(e,s)},{key:\"Escape\",run:e=>oa(e,s)},{key:Ji.replace.primaryKey,run:e=>!!Xi(e,s,!0)&&(ia(e,s,a,\"replace\")"
+                    "source": "\"Choose whether the custom model uses an OpenAI-compatible endpoint, the native Gemini API, or the native Ollama API.\":\"选择自定义模型使用 OpenAI 兼容接口、Gemini 原生 API 或 Ollama 原生 API。\"",
+                    "target": "\"Choose whether the custom model uses an OpenAI-compatible endpoint, the native Gemini API, or the native Ollama API.\":\"選擇自訂模型要使用相容 OpenAI 的端點、Gemini 原生 API 或 Ollama 原生 API。\""
+                },
+                {
+                    "source": "\"Gemini API Key\":\"Gemini API Key\"",
+                    "target": "\"Gemini API Key\":\"Gemini API 金鑰\""
+                },
+                {
+                    "source": "\"Required for the native Gemini API.\":\"Gemini 原生 API 必须填写此项。\"",
+                    "target": "\"Required for the native Gemini API.\":\"使用 Gemini 原生 API 時必填。\""
+                },
+                {
+                    "source": "\"AI request failed with status 401 (Unauthorized). Your API key is missing or invalid. Please check your API key in Settings → AI → Custom Model.\":\"AI 请求失败（401 未授权）。您的 API Key 缺失或无效，请在设置 → AI → 自定义模型中检查 API Key。\"",
+                    "target": "\"AI request failed with status 401 (Unauthorized). Your API key is missing or invalid. Please check your API key in Settings → AI → Custom Model.\":\"AI 請求失敗（401 未授權）。API 金鑰未填寫或無效，請在設定 → AI → 自訂模型中檢查 API 金鑰。\""
+                },
+                {
+                    "source": "\"AI request failed with status 403 (Forbidden). The server refused the request. Please check your API key and account permissions.\":\"AI 请求失败（403 禁止访问）。服务器拒绝了请求，请检查您的 API Key 和账户权限。\"",
+                    "target": "\"AI request failed with status 403 (Forbidden). The server refused the request. Please check your API key and account permissions.\":\"AI 請求失敗（403 禁止存取）。伺服器拒絕了請求，請檢查 API 金鑰與帳號權限。\""
+                },
+                {
+                    "source": "\"AI request failed with status 404 (Not Found). The API endpoint URL may be incorrect. Please check the Base URL in Settings → AI → Custom Model.\":\"AI 请求失败（404 未找到）。API 地址可能不正确，请在设置 → AI → 自定义模型中检查 Base URL。\"",
+                    "target": "\"AI request failed with status 404 (Not Found). The API endpoint URL may be incorrect. Please check the Base URL in Settings → AI → Custom Model.\":\"AI 請求失敗（404 找不到資源）。API 端點網址可能不正確，請在設定 → AI → 自訂模型中檢查基底網址。\""
+                },
+                {
+                    "source": "\"AI request failed with status 429 (Too Many Requests). You are sending requests too quickly or have hit a rate limit. Please wait a moment and try again.\":\"AI 请求失败（429 请求过多）。请求频率过高或已达到限制，请稍等片刻后重试。\"",
+                    "target": "\"AI request failed with status 429 (Too Many Requests). You are sending requests too quickly or have hit a rate limit. Please wait a moment and try again.\":\"AI 請求失敗（429 請求過多）。請求過於頻繁或已達速率限制，請稍候再試。\""
+                },
+                {
+                    "source": "\"AI request failed with status {{status}} (Server Error). The AI server is experiencing issues. Please try again later.\":\"AI 请求失败（{{status}} 服务器错误）。AI 服务器遇到问题，请稍后重试。\"",
+                    "target": "\"AI request failed with status {{status}} (Server Error). The AI server is experiencing issues. Please try again later.\":\"AI 請求失敗（{{status}} 伺服器錯誤）。AI 伺服器發生問題，請稍後再試。\""
+                },
+                {
+                    "source": "\"AI request failed: could not connect to the server. Please check your network connection and the API Base URL in Settings → AI → Custom Model.\":\"AI 请求失败：无法连接到服务器。请检查网络连接以及设置 → AI → 自定义模型中的 API Base URL。\"",
+                    "target": "\"AI request failed: could not connect to the server. Please check your network connection and the API Base URL in Settings → AI → Custom Model.\":\"AI 請求失敗：無法連線至伺服器。請檢查網路連線，以及設定 → AI → 自訂模型中的 API 基底網址。\""
+                },
+                {
+                    "source": "\"Login failed: local port {{port}} is occupied or reserved by the system. Please release port {{port}} (e.g. restart your computer or close the program using it), then try again.\":\"登录失败：本地端口 {{port}} 被占用或被系统保留。请释放端口 {{port}}（例如重启电脑或关闭占用该端口的程序）后重试。\"",
+                    "target": "\"Login failed: local port {{port}} is occupied or reserved by the system. Please release port {{port}} (e.g. restart your computer or close the program using it), then try again.\":\"登入失敗：本機連接埠 {{port}} 已被占用或由系統保留。請釋放連接埠 {{port}}（例如重新啟動電腦或關閉占用該連接埠的程式）後再試。\""
+                },
+                {
+                    "source": "\"Login failed: local port {{port}} is already in use. Please close other Obsidian windows or the program using port {{port}}, then try again.\":\"登录失败：本地端口 {{port}} 已被占用。请关闭其他 Obsidian 窗口或占用端口 {{port}} 的程序后重试。\"",
+                    "target": "\"Login failed: local port {{port}} is already in use. Please close other Obsidian windows or the program using port {{port}}, then try again.\":\"登入失敗：本機連接埠 {{port}} 已被占用。請關閉其他 Obsidian 視窗，或使用連接埠 {{port}} 的程式後再試。\""
+                },
+                {
+                    "source": "\"Login failed: the local HTTP server module is not available. This usually happens on Obsidian mobile. Please use the mobile login flow instead.\":\"登录失败：本地 HTTP 服务器模块不可用。这通常发生在 Obsidian 移动端，请使用移动端登录流程。\"",
+                    "target": "\"Login failed: the local HTTP server module is not available. This usually happens on Obsidian mobile. Please use the mobile login flow instead.\":\"登入失敗：無法使用本機 HTTP 伺服器模組。這通常發生在 Obsidian 行動版，請改用行動版登入流程。\""
+                },
+                {
+                    "source": "\"Login failed: could not start the local callback server on port {{port}}. Please check your network settings and try again.\":\"登录失败：无法在端口 {{port}} 上启动本地回调服务器。请检查网络设置后重试。\"",
+                    "target": "\"Login failed: could not start the local callback server on port {{port}}. Please check your network settings and try again.\":\"登入失敗：無法在連接埠 {{port}} 啟動本機回呼伺服器。請檢查網路設定後再試。\""
+                },
+                {
+                    "source": "'Use \"auto\" to follow the current note language, or enter a specific language.':\"使用 “auto” 自动跟随当前笔记语言，或输入指定语言。\"",
+                    "target": "'Use \"auto\" to follow the current note language, or enter a specific language.':\"使用「auto」以配合目前筆記的語言，或輸入指定語言。\""
+                },
+                {
+                    "source": "\"DeepSeek example: https://api.deepseek.com\":\"DeepSeek 示例：https://api.deepseek.com\"",
+                    "target": "\"DeepSeek example: https://api.deepseek.com\":\"DeepSeek 範例：https://api.deepseek.com\""
+                },
+                {
+                    "source": "\"For DeepSeek, do not append /anthropic in OpenAI-compatible mode.\":\"DeepSeek 在 OpenAI 兼容模式下不要追加 /anthropic。\"",
+                    "target": "\"For DeepSeek, do not append /anthropic in OpenAI-compatible mode.\":\"使用 DeepSeek 時，請勿在相容 OpenAI 模式下附加 /anthropic。\""
+                },
+                {
+                    "source": "\"DeepSeek models: deepseek-v4-flash or deepseek-v4-pro\":\"DeepSeek 模型：deepseek-v4-flash 或 deepseek-v4-pro\"",
+                    "target": "\"DeepSeek models: deepseek-v4-flash or deepseek-v4-pro\":\"DeepSeek 模型：deepseek-v4-flash 或 deepseek-v4-pro\""
+                },
+                {
+                    "source": "\"Gemini API base URL. Example: https://generativelanguage.googleapis.com/v1beta\":\"Gemini API 基础地址。示例：https://generativelanguage.googleapis.com/v1beta\"",
+                    "target": "\"Gemini API base URL. Example: https://generativelanguage.googleapis.com/v1beta\":\"Gemini API 基底網址。範例：https://generativelanguage.googleapis.com/v1beta\""
+                },
+                {
+                    "source": "\"Gemini model example: gemini-2.5-flash\":\"Gemini 模型示例：gemini-2.5-flash\"",
+                    "target": "\"Gemini model example: gemini-2.5-flash\":\"Gemini 模型範例：gemini-2.5-flash\""
+                },
+                {
+                    "source": "\"Gemini API key is required.\":\"必须填写 Gemini API Key。\"",
+                    "target": "\"Gemini API key is required.\":\"必須填寫 Gemini API 金鑰。\""
+                },
+                {
+                    "source": "\"For Gemini, use the API base URL (for example https://generativelanguage.googleapis.com/v1beta). The plugin adds the model and generateContent path automatically.\":\"Gemini 请填写 API 基础地址（例如 https://generativelanguage.googleapis.com/v1beta），插件会自动补充模型和 generateContent 路径。\"",
+                    "target": "\"For Gemini, use the API base URL (for example https://generativelanguage.googleapis.com/v1beta). The plugin adds the model and generateContent path automatically.\":\"使用 Gemini 時，請填寫 API 基底網址（例如 https://generativelanguage.googleapis.com/v1beta）。外掛會自動加入模型與 generateContent 路徑。\""
+                },
+                {
+                    "source": "\"The Gemini URL includes generateContent. Use https://generativelanguage.googleapis.com/v1beta as the base URL.\":\"Gemini 地址中包含 generateContent，请改用 https://generativelanguage.googleapis.com/v1beta 作为基础地址。\"",
+                    "target": "\"The Gemini URL includes generateContent. Use https://generativelanguage.googleapis.com/v1beta as the base URL.\":\"Gemini 網址包含 generateContent。請改用 https://generativelanguage.googleapis.com/v1beta 作為基底網址。\""
+                },
+                {
+                    "source": "\"Whether to enable the plugin for the mobile client, the default is enabled.\":\"Whether to enable the plugin for the mobile client, the default is enabled.\"",
+                    "target": "\"Whether to enable the plugin for the mobile client, the default is enabled.\":\"是否在行動版啟用此外掛，預設啟用。\""
+                },
+                {
+                    "source": "\"Choose between a glass morphism, tiny and default style.\":\"Choose between a glass morphism, tiny and default style.\"",
+                    "target": "\"Choose between a glass morphism, tiny and default style.\":\"選擇毛玻璃、精簡或預設樣式。\""
+                },
+                {
+                    "source": "Pattern:\"Pattern\"",
+                    "target": "Pattern:\"模式\""
+                },
+                {
+                    "source": "Default:\"Default\"",
+                    "target": "Default:\"預設\""
+                },
+                {
+                    "source": "\"Result: \":\"Result: \"",
+                    "target": "\"Result: \":\"結果：\""
+                },
+                {
+                    "source": "\"Please select text or copy text to clipboard first\":\"Please select text or copy text to clipboard first\"",
+                    "target": "\"Please select text or copy text to clipboard first\":\"請先選取文字或將文字複製到剪貼簿\""
+                },
+                {
+                    "source": "\"Copy commands from the main menu configuration\":\"Copy commands from the main menu configuration\"",
+                    "target": "\"Copy commands from the main menu configuration\":\"從主選單設定複製命令\""
+                },
+                {
+                    "source": "\"Following style commands initialized from current menu commands\":\"Following style commands initialized from current menu commands\"",
+                    "target": "\"Following style commands initialized from current menu commands\":\"跟隨樣式命令已依目前選單命令初始化\""
+                },
+                {
+                    "source": "\"Reset to Menu Commands\":\"Reset to Menu Commands\"",
+                    "target": "\"Reset to Menu Commands\":\"重設為選單命令\""
+                },
+                {
+                    "source": "\"Import From\":\"Import From\"",
+                    "target": "\"Import From\":\"匯入來源\""
+                },
+                {
+                    "source": "\"Update Mobile Style Commands\":\"Update Mobile Style Commands\"",
+                    "target": "\"Update Mobile Style Commands\":\"更新行動版樣式命令\""
+                },
+                {
+                    "source": "\"Custom Theme\":\"Custom Theme\"",
+                    "target": "\"Custom Theme\":\"自訂佈景主題\""
                 }
             ]
         },
@@ -5834,14 +6014,14 @@
                 {
                     "type": "ObjectProperty",
                     "name": "description",
-                    "source": "The Obsidian Editing Toolbar is modified from cmenu, which provides more powerful customization settings and has many built-in editing commands to be a MS Word-like toolbar editing experience.",
-                    "target": "Obsidian Editing Toolbar 修改自 cmenu，提供更強大的自訂設定與多種內建編輯命令，帶來類似 MS Word 的工具列編輯體驗。"
+                    "source": "The Editing Toolbar is modified from cmenu, which provides more powerful customization settings and has many built-in editing commands to be a MS Word-like toolbar editing experience.",
+                    "target": "Editing Toolbar 修改自 cmenu，提供更強大的自訂設定與多種內建編輯命令，帶來類似 MS Word 的工具列編輯體驗。"
                 }
             ],
             "regex": [
                 {
-                    "source": "\"description\": \"The Obsidian Editing Toolbar is modified from cmenu, which provides more powerful customization settings and has many built-in editing commands to be a MS Word-like toolbar editing experience.\"",
-                    "target": "\"description\": \"Obsidian Editing Toolbar 修改自 cmenu，提供更強大的自訂設定與多種內建編輯命令，帶來類似 MS Word 的工具列編輯體驗。\""
+                    "source": "\"description\": \"The Editing Toolbar is modified from cmenu, which provides more powerful customization settings and has many built-in editing commands to be a MS Word-like toolbar editing experience.\"",
+                    "target": "\"description\": \"Editing Toolbar 修改自 cmenu，提供更強大的自訂設定與多種內建編輯命令，帶來類似 MS Word 的工具列編輯體驗。\""
                 }
             ]
         }
