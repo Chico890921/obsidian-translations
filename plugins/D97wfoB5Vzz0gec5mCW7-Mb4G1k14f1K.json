@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-importer",
-        "version": "3.1.3",
+        "version": "3.1.5",
         "title": "[zh-tw] Importer",
         "description": "Importer 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "3.1.3",
+        "supportedVersions": "3.1.5",
         "author": "Chico",
-        "updatedAt": 1787941625353
+        "updatedAt": 1788821179170
     },
     "dict": {
         "main.js": {
@@ -3444,24 +3444,24 @@
                     "target": "\"無法將值解析為 JSON 表格資料\""
                 },
                 {
-                    "source": "`Could not calculate value: ${$o(r)}`",
-                    "target": "`無法計算值：${$o(r)}`"
+                    "source": "`Could not calculate value: ${Bo(r)}`",
+                    "target": "`無法計算值：${Bo(r)}`"
                 },
                 {
-                    "source": "`Could not convert HTML to JSON: ${$o(i)}`",
-                    "target": "`無法將 HTML 轉換為 JSON：${$o(i)}`"
+                    "source": "`Could not convert HTML to JSON: ${Bo(i)}`",
+                    "target": "`無法將 HTML 轉換為 JSON：${Bo(i)}`"
                 },
                 {
-                    "source": "`Could not format duration: ${$o(r)}`",
-                    "target": "`無法格式化持續時間：${$o(r)}`"
+                    "source": "`Could not format duration: ${Bo(r)}`",
+                    "target": "`無法格式化持續時間：${Bo(r)}`"
                 },
                 {
-                    "source": "`Could not format number: ${$o(a)}`",
-                    "target": "`無法格式化數字：${$o(a)}`"
+                    "source": "`Could not format number: ${Bo(a)}`",
+                    "target": "`無法格式化數字：${Bo(a)}`"
                 },
                 {
-                    "source": "`Could not merge values: ${$o(i)}`",
-                    "target": "`無法合併值：${$o(i)}`"
+                    "source": "`Could not merge values: ${Bo(i)}`",
+                    "target": "`無法合併值：${Bo(i)}`"
                 },
                 {
                     "source": "`Could not parse \"${n}\" as a date`",
@@ -3472,20 +3472,20 @@
                     "target": "`無法將「${n}」解析為數字`"
                 },
                 {
-                    "source": "`Could not parse table headers: ${$o(a)}`",
-                    "target": "`無法解析表格標題：${$o(a)}`"
+                    "source": "`Could not parse table headers: ${Bo(a)}`",
+                    "target": "`無法解析表格標題：${Bo(a)}`"
                 },
                 {
                     "source": "`Could not resolve variable \"${h}\": ${g instanceof Error?g.message:String(g)}`",
                     "target": "`無法解析變數「${h}」：${g instanceof Error?g.message:String(g)}`"
                 },
                 {
-                    "source": "`Could not round value: ${$o(o)}`",
-                    "target": "`無法將值四捨五入：${$o(o)}`"
+                    "source": "`Could not round value: ${Bo(o)}`",
+                    "target": "`無法將值四捨五入：${Bo(o)}`"
                 },
                 {
-                    "source": "`Invalid regular expression: ${$o(f)}`",
-                    "target": "`無效的正規表示式：${$o(f)}`"
+                    "source": "`Invalid regular expression: ${Bo(f)}`",
+                    "target": "`無效的正規表示式：${Bo(f)}`"
                 },
                 {
                     "source": "`Missing value after \"${r.value}\"`",
@@ -3540,20 +3540,20 @@
                     "target": "`未知的標籤：{% ${r.value} %}`"
                 },
                 {
-                    "source": "error(\"Failed to create Base file:\",r)}}async getTargetFolder(e,r){if(!r||!r.trim())return e;let i=this.sanitizeFilePath(r),o=e.path+\"/\"+i;return await this.createFolders(o)}};Ep.extensions=[\"csv\"];var kp=Ep;var lo=require(\"obsidian\")",
-                    "target": "error(\"建立 Base 檔案失敗：\",r)}}async getTargetFolder(e,r){if(!r||!r.trim())return e;let i=this.sanitizeFilePath(r),o=e.path+\"/\"+i;return await this.createFolders(o)}};Ep.extensions=[\"csv\"];var kp=Ep;var lo=require(\"obsidian\")"
+                    "source": "error(\"Failed to create Base file:\",r)}}async getTargetFolder(e,r){if(!r||!r.trim())return e;let i=this.sanitizeFilePath(r),o=e.path+\"/\"+i;return await this.createFolders(o)}};jp.extensions=[\"csv\"];var Ep=jp;var lo=require(\"obsidian\")",
+                    "target": "error(\"建立 Base 檔案失敗：\",r)}}async getTargetFolder(e,r){if(!r||!r.trim())return e;let i=this.sanitizeFilePath(r),o=e.path+\"/\"+i;return await this.createFolders(o)}};jp.extensions=[\"csv\"];var Ep=jp;var lo=require(\"obsidian\")"
                 },
                 {
                     "source": "error(`Failed to download attachment \"${f}\": ${O.status}`)",
                     "target": "error(`下載附件「${f}」失敗：${O.status}`)"
                 },
                 {
-                    "source": "error(`Failed to clean notion-id from file: ${o}`,a),i++}}i>0&&console.warn(`\\u26A0\\uFE0F Failed to clean notion-id from ${_y(i,\"file\")}`)",
-                    "target": "error(`無法從檔案移除 notion-id：${o}`,a),i++}}i>0&&console.warn(`\\u26A0\\uFE0F 無法從 ${_y(i,\"file\")} 移除 notion-id`)"
+                    "source": "error(`Failed to clean notion-id from file: ${o}`,a),i++}}i>0&&console.warn(`\\u26A0\\uFE0F Failed to clean notion-id from ${Iy(i,\"file\")}`)",
+                    "target": "error(`無法從檔案移除 notion-id：${o}`,a),i++}}i>0&&console.warn(`\\u26A0\\uFE0F 無法從 ${Iy(i,\"file\")} 移除 notion-id`)"
                 },
                 {
-                    "source": "error(\"Could not complete sign in\",o))}),this.authenticatingAccountType=e,window.open(UT(this.authenticatingAccountType,XT,uh,this.graphData.state),\"_external\")",
-                    "target": "error(\"無法完成登入\",o))}),this.authenticatingAccountType=e,window.open(UT(this.authenticatingAccountType,XT,uh,this.graphData.state),\"_external\")"
+                    "source": "error(\"Could not complete sign in\",o))}),this.authenticatingAccountType=e,window.open(t1(this.authenticatingAccountType,s1,Ah,this.graphData.state),\"_external\")",
+                    "target": "error(\"無法完成登入\",o))}),this.authenticatingAccountType=e,window.open(t1(this.authenticatingAccountType,s1,Ah,this.graphData.state),\"_external\")"
                 }
             ]
         },
