@@ -2,17 +2,23 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "cmdr",
-        "version": "0.5.11",
+        "version": "0.5.12",
         "title": "[zh-tw] Commander",
         "description": "Commander 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.5.11",
+        "supportedVersions": "0.5.12",
         "author": "Chico",
-        "updatedAt": 1788611038330
+        "updatedAt": 1788820231587
     },
     "dict": {
         "main.js": {
             "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Commander",
+                    "target": "Commander"
+                },
                 {
                     "type": "CallExpression",
                     "name": "error",
@@ -21,69 +27,33 @@
                 },
                 {
                     "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "No icon",
-                    "target": "無圖示"
+                    "name": "error",
+                    "source": "[cmdr] menu hider listener failed:",
+                    "target": "[cmdr] 選單隱藏器監聽失敗："
                 },
                 {
                     "type": "CallExpression",
-                    "name": "setText",
-                    "source": "Macro builder",
-                    "target": "巨集建構器"
+                    "name": "error",
+                    "source": "[cmdr] menu hider failed:",
+                    "target": "[cmdr] 選單隱藏器失敗："
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "aria-label",
-                    "source": "Edit Macro",
-                    "target": "編輯巨集"
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Commander: could not persist #211 settings cleanup",
+                    "target": "Commander：無法儲存 #211 設定清理結果"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "aria-label",
-                    "source": "Delete",
-                    "target": "刪除"
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Commander: could not persist spacing migration",
+                    "target": "Commander：無法儲存間距設定移轉結果"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "Core Plugin",
-                    "target": "核心插件"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "Delay in milliseconds",
-                    "target": "延遲時間，單位為毫秒"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "Show the \"Add Command\" Button in every Menu.",
-                    "target": "在每個選單中顯示「新增命令」按鈕。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Delay",
-                    "target": "延遲"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Macros",
-                    "target": "巨集"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "placeholder",
-                    "source": "Macro Name",
-                    "target": "巨集名稱"
-                },
-                {
-                    "type": "AssignmentExpression",
-                    "name": "textContent",
-                    "source": "Commander",
-                    "target": "Commander"
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "No icon",
+                    "target": "無圖示"
                 },
                 {
                     "type": "CallExpression",
@@ -123,6 +93,12 @@
                 },
                 {
                     "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Macro builder",
+                    "target": "巨集建構器"
+                },
+                {
+                    "type": "CallExpression",
                     "name": "setTooltip",
                     "source": "Reset to default - requires a restart",
                     "target": "還原預設值 - 需要重新啟動"
@@ -141,9 +117,39 @@
                 },
                 {
                     "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Edit Macro",
+                    "target": "編輯巨集"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Delete",
+                    "target": "刪除"
+                },
+                {
+                    "type": "ObjectProperty",
                     "name": "cls",
                     "source": "cmdr clickable-icon",
                     "target": "cmdr clickable-icon"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Core Plugin",
+                    "target": "核心插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Delay in milliseconds",
+                    "target": "延遲時間，單位為毫秒"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Show the \"Add Command\" Button in every Menu.",
+                    "target": "在每個選單中顯示「新增命令」按鈕。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -166,8 +172,26 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
+                    "source": "Delay",
+                    "target": "延遲"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
                     "source": "Text Toolbar",
                     "target": "文字工具列"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Macros",
+                    "target": "巨集"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Macro Name",
+                    "target": "巨集名稱"
                 },
                 {
                     "type": "ObjectProperty",
@@ -180,24 +204,6 @@
                     "name": "text",
                     "source": "Advanced settings",
                     "target": "進階設定"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "[cmdr] menu hider listener failed:",
-                    "target": "[cmdr] 選單隱藏器監聽失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "[cmdr] menu hider failed:",
-                    "target": "[cmdr] 選單隱藏器失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Commander: could not persist spacing migration",
-                    "target": "Commander：無法儲存間距設定移轉結果"
                 }
             ],
             "regex": [
@@ -762,14 +768,6 @@
                     "target": "name:\"文字工具列\""
                 },
                 {
-                    "source": "error(\"Error: dictionary locale not found\",kt.moment.locale()),wt&&wt[t]||yt[t]}var ie=class extends qe.FuzzySuggestModal{constructor(e){super(e.app),this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"Choose a Command to add\")",
-                    "target": "error(\"Error: dictionary locale not found\",kt.moment.locale()),wt&&wt[t]||yt[t]}var ie=class extends qe.FuzzySuggestModal{constructor(e){super(e.app),this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"Choose a Command to add\")"
-                },
-                {
-                    "source": "setDesc(`ID: ${a.id}`)",
-                    "target": "setDesc(`ID：${a.id}`)"
-                },
-                {
                     "source": "error(\"Error: dictionary locale not found\",St.moment.locale()),Et&&Et[o]||Mt[o]}var ae=class extends Je.FuzzySuggestModal{constructor(e){super(e.app),this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"Choose a Command to add\")",
                     "target": "error(\"錯誤：找不到字典語系\",St.moment.locale()),Et&&Et[o]||Mt[o]}var ae=class extends Je.FuzzySuggestModal{constructor(e){super(e.app),this.plugin=e,this.commands=Object.values(e.app.commands.commands),this.setPlaceholder(u(\"Choose a Command to add\")"
                 },
@@ -828,6 +826,10 @@
                 {
                     "source": "r(\"button\",{onClick:n},\"Cancel\")",
                     "target": "r(\"button\",{onClick:n},\"取消\")"
+                },
+                {
+                    "source": "error(\"Commander: could not persist #211 settings cleanup\"",
+                    "target": "error(\"Commander：無法儲存 #211 設定清理結果\""
                 }
             ]
         },
