@@ -3,8 +3,8 @@
     "metadata": {
         "theme": "Composer",
         "language": "zh-tw",
-        "version": "0.7.0",
-        "supportedVersions": "0.7.0",
+        "version": "0.8.0",
+        "supportedVersions": "0.8.0",
         "title": "Composer",
         "description": "Composer Localization & Tweaks",
         "author": "Chico"
@@ -589,6 +589,31 @@
             "type": "title",
             "source": "Title Icon Size",
             "target": "標題圖示大小"
+        },
+        {
+            "type": "title",
+            "source": "List",
+            "target": "清單"
+        },
+        {
+            "type": "title",
+            "source": "Unordered List Marker Color",
+            "target": "無序清單標記顏色"
+        },
+        {
+            "type": "description",
+            "source": "Color of the bullets of unordered lists and task lists",
+            "target": "無序清單與工作清單的項目符號顏色"
+        },
+        {
+            "type": "title",
+            "source": "Ordered List Marker Color",
+            "target": "有序清單標記顏色"
+        },
+        {
+            "type": "description",
+            "source": "Color of the numbers of ordered lists",
+            "target": "有序清單的編號顏色"
         }
     ]
 }
