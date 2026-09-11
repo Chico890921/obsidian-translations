@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "autofit-tabs",
-        "version": "1.0.11",
+        "version": "1.0.12",
         "title": "[zh-tw] Autofit Tabs",
         "description": "Autofit Tabs 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "1.0.11",
+        "supportedVersions": "1.0.12",
         "author": "Chico",
-        "updatedAt": 1787324375346
+        "updatedAt": 1789143612816
     },
     "dict": {
         "main.js": {
@@ -262,6 +262,46 @@
                 {
                     "source": "name:\"Hide tab icons\"",
                     "target": "name:\"隱藏分頁圖示\""
+                },
+                {
+                    "source": "t(\"Close button left padding\",\"Space in pixels before close button\",",
+                    "target": "t(\"關閉按鈕左側內距\",\"關閉按鈕前方的間距，單位為像素\","
+                },
+                {
+                    "source": "t(\"Close button right padding\",\"Space in pixels after close button\",",
+                    "target": "t(\"關閉按鈕右側內距\",\"關閉按鈕後方的間距，單位為像素\","
+                },
+                {
+                    "source": "t(\"Transition duration\",\"Duration in milliseconds for smooth transitions\",",
+                    "target": "t(\"過渡持續時間\",\"平滑過渡的持續時間，單位為毫秒\","
+                },
+                {
+                    "source": "t(\"Minimum width\",\"Minimum width in pixels for very short titles\",",
+                    "target": "t(\"最小寬度\",\"極短標題的最小寬度，單位為像素\","
+                },
+                {
+                    "source": "t(\"Max width\",\"Maximum width in pixels for tabs (0 to disable)\",",
+                    "target": "t(\"最大寬度\",\"分頁最大寬度，單位為像素（0 表示停用）\","
+                },
+                {
+                    "source": "t(\"Icon width\",\"Width in pixels for tab icons\",",
+                    "target": "t(\"圖示寬度\",\"分頁圖示寬度，單位為像素\","
+                },
+                {
+                    "source": "t(\"Left padding\",\"Padding in pixels before the icon\",",
+                    "target": "t(\"左側內距\",\"圖示前方的內距，單位為像素\","
+                },
+                {
+                    "source": "desc:`${s} (default: ${h[n]})`",
+                    "target": "desc:`${s}（預設：${h[n]}）`"
+                },
+                {
+                    "source": "this.createSettingsSection(t,\"Basic dimensions\",",
+                    "target": "this.createSettingsSection(t,\"基本尺寸\","
+                },
+                {
+                    "source": "this.createSettingsSection(t,\"Icons\",",
+                    "target": "this.createSettingsSection(t,\"圖示\","
                 }
             ]
         },
