@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "code-space",
-        "version": "2.4.0",
+        "version": "2.5.1",
         "title": "[zh-tw] Code Space",
         "description": "Code Space 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.4.0",
+        "supportedVersions": "2.5.1",
         "author": "Chico",
-        "updatedAt": 1788610325780
+        "updatedAt": 1789144103387
     },
     "dict": {
         "main.js": {
@@ -240,6 +240,102 @@
                     "name": "detail",
                     "source": "Source path must be absolute",
                     "target": "來源路徑必須是絕對路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "anchorNode and/or focusNode are null",
+                    "target": "anchorNode and/or focusNode are null"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Parsing error: ",
+                    "target": "Parsing error: "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to open terminal panel:",
+                    "target": "Code Space：開啟終端機面板失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: terminal binary installation failed:",
+                    "target": "Code Space：安裝終端機執行檔失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Unable to resolve platform.",
+                    "target": "Unable to resolve platform."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "disposed?",
+                    "target": "disposed?"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "size?",
+                    "target": "size?"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "arr?",
+                    "target": "arr?"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "webglcontextlost event received",
+                    "target": "webglcontextlost event received"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "row is invalid. Race condition?",
+                    "target": "row is invalid. Race condition?"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "columns is null. Race condition?",
+                    "target": "columns is null. Race condition?"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Opening link blocked as opener could not be cleared",
+                    "target": "Opening link blocked as opener could not be cleared"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "async parser handler taking longer than 5000 ms",
+                    "target": "async parser handler taking longer than 5000 ms"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[LEAKING LISTENERS] GC'ed these listeners that were NOT yet disposed:",
+                    "target": "[LEAKING LISTENERS] GC'ed these listeners that were NOT yet disposed:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "webgl context not restored; firing onContextLoss",
+                    "target": "webgl context not restored; firing onContextLoss"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "webglcontextrestored event received",
+                    "target": "webglcontextrestored event received"
                 }
             ],
             "regex": [
@@ -1054,6 +1150,346 @@
                 {
                     "source": "\"Mount parent path is not a folder\"",
                     "target": "\"掛載路徑的上層路徑不是資料夾\""
+                },
+                {
+                    "source": "error(\"anchorNode and/or focusNode are null\")",
+                    "target": "error(\"anchorNode and/or focusNode are null\")"
+                },
+                {
+                    "source": "log(\"Finish with \"+this.stackID(o)),this.stackToTree(o);if(this.parser.strict)throw Vt&&s&&console.log(\"Stuck with token \"+(this.tokens.mainToken?this.parser.getName(this.tokens.mainToken.value):\"none\")",
+                    "target": "log(\"Finish with \"+this.stackID(o)),this.stackToTree(o);if(this.parser.strict)throw Vt&&s&&console.log(\"Stuck with token \"+(this.tokens.mainToken?this.parser.getName(this.tokens.mainToken.value):\"none\")"
+                },
+                {
+                    "source": "error(\"Code Space: Failed to save file:\",s),new Ve.Notice(Y(\"NOTICE_SAVE_FAIL\")",
+                    "target": "error(\"Code Space：儲存檔案失敗：\",s),new Ve.Notice(Y(\"NOTICE_SAVE_FAIL\")"
+                },
+                {
+                    "source": "setText(`${(r=(i=this.fileIndex)==null?void 0:i.size)!=null?r:0} ${Y(\"SUBTITLE_MANAGED_FILES\")}`)",
+                    "target": "setText(`${(r=(i=this.fileIndex)==null?void 0:i.size)!=null?r:0} ${Y(\"SUBTITLE_MANAGED_FILES\")}`)"
+                },
+                {
+                    "source": "Notice(`${Y(\"NOTICE_RENAME_SUCCESS\")} ${a}.${r.extension}`)",
+                    "target": "Notice(`${Y(\"NOTICE_RENAME_SUCCESS\")} ${a}.${r.extension}`)"
+                },
+                {
+                    "source": "error(\"Failed to rename file:\",c),new Oe.Notice(Y(\"NOTICE_RENAME_FAIL\")",
+                    "target": "error(\"重新命名檔案失敗：\",c),new Oe.Notice(Y(\"NOTICE_RENAME_FAIL\")"
+                },
+                {
+                    "source": "Notice(`${Y(\"NOTICE_MOVE_SUCCESS\")} ${O}`)",
+                    "target": "Notice(`${Y(\"NOTICE_MOVE_SUCCESS\")} ${O}`)"
+                },
+                {
+                    "source": "error(\"Failed to move file:\",O),new Oe.Notice(Y(\"NOTICE_MOVE_FAIL\")",
+                    "target": "error(\"移動檔案失敗：\",O),new Oe.Notice(Y(\"NOTICE_MOVE_FAIL\")"
+                },
+                {
+                    "source": "error(\"Code Outline: Failed to jump to line:\",O)}},100)):console.debug(\"Code Outline: No editorView found\")",
+                    "target": "error(\"程式碼大綱：跳至指定行失敗：\",O)}},100)):console.debug(\"Code Outline: No editorView found\")"
+                },
+                {
+                    "source": "setDesc(`${d.sourcePath} \\u2022 ${u}`)",
+                    "target": "setDesc(`${d.sourcePath} \\u2022 ${u}`)"
+                },
+                {
+                    "source": "Notice(`${Y(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(u)}`)",
+                    "target": "Notice(`${Y(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(u)}`)"
+                },
+                {
+                    "source": "Notice(`${Y(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(_)}`)",
+                    "target": "Notice(`${Y(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(_)}`)"
+                },
+                {
+                    "source": "error(`Could not find drawing instructions for \"${h}\"`)",
+                    "target": "error(`Could not find drawing instructions for \"${h}\"`)"
+                },
+                {
+                    "source": "error(`Could not find drawing instructions for \"${f}\"`)",
+                    "target": "error(`Could not find drawing instructions for \"${f}\"`)"
+                },
+                {
+                    "source": "error(\"Unable to resolve platform.\")",
+                    "target": "error(\"Unable to resolve platform.\")"
+                },
+                {
+                    "source": "log(\"webglcontextlost event received\")",
+                    "target": "log(\"webglcontextlost event received\")"
+                },
+                {
+                    "source": "error(\"Code Space: Failed to reload plugin:\",r),new de.Notice(`${Y(\"NOTICE_RELOAD_FAIL\")",
+                    "target": "error(\"Code Space：重新載入插件失敗：\",r),new de.Notice(`${Y(\"NOTICE_RELOAD_FAIL\")"
+                },
+                {
+                    "source": "Notice(`${Y(\"NOTICE_CREATE_SUCCESS\")} ${r}`)",
+                    "target": "Notice(`${Y(\"NOTICE_CREATE_SUCCESS\")} ${r}`)"
+                },
+                {
+                    "source": "error(\"Failed to create file:\",s),new de.Notice(Y(\"NOTICE_CREATE_FAIL\")",
+                    "target": "error(\"建立檔案失敗：\",s),new de.Notice(Y(\"NOTICE_CREATE_FAIL\")"
+                },
+                {
+                    "source": "name: \"+l)}return s&&(r=\"",
+                    "target": "name: \"+l)}return s&&(r=\""
+                },
+                {
+                    "source": "text:`${(T=(S=this.fileIndex)==null?void 0:S.size)!=null?T:0} ${Y(\"SUBTITLE_MANAGED_FILES\")}`",
+                    "target": "text:`${(T=(S=this.fileIndex)==null?void 0:S.size)!=null?T:0} ${Y(\"SUBTITLE_MANAGED_FILES\")}`"
+                },
+                {
+                    "source": "CMD_OPEN_TERMINAL:\"Open terminal\"",
+                    "target": "CMD_OPEN_TERMINAL:\"開啟終端機\""
+                },
+                {
+                    "source": "CMD_TOGGLE_TERMINAL_PANEL:\"Toggle terminal panel\"",
+                    "target": "CMD_TOGGLE_TERMINAL_PANEL:\"切換終端機面板\""
+                },
+                {
+                    "source": "CMD_KILL_TERMININALS:\"Close all terminal sessions\"",
+                    "target": "CMD_KILL_TERMININALS:\"關閉所有終端機工作階段\""
+                },
+                {
+                    "source": "HEADER_ACTION_TERMINAL:\"Toggle terminal panel\"",
+                    "target": "HEADER_ACTION_TERMINAL:\"切換終端機面板\""
+                },
+                {
+                    "source": "TERMINAL_VIEW_TITLE:\"Terminal\"",
+                    "target": "TERMINAL_VIEW_TITLE:\"終端機\""
+                },
+                {
+                    "source": "TERMINAL_NEW_TAB:\"New terminal\"",
+                    "target": "TERMINAL_NEW_TAB:\"新增終端機\""
+                },
+                {
+                    "source": "TERMINAL_TAB_CLOSE:\"Close terminal\"",
+                    "target": "TERMINAL_TAB_CLOSE:\"關閉終端機\""
+                },
+                {
+                    "source": "TERMINAL_TAB_EXITED:\"exited\"",
+                    "target": "TERMINAL_TAB_EXITED:\"已結束\""
+                },
+                {
+                    "source": "TERMINAL_PROCESS_EXITED:\"Process exited\"",
+                    "target": "TERMINAL_PROCESS_EXITED:\"程序已結束\""
+                },
+                {
+                    "source": "TERMINAL_PANEL_EMPTY:\"No terminal sessions. Select + to start one.\"",
+                    "target": "TERMINAL_PANEL_EMPTY:\"尚無終端機工作階段。按一下 + 即可啟動。\""
+                },
+                {
+                    "source": "TERMINAL_PANEL_CLOSE:\"Close terminal panel\"",
+                    "target": "TERMINAL_PANEL_CLOSE:\"關閉終端機面板\""
+                },
+                {
+                    "source": "TERMINAL_PANEL_POP_OUT:\"Move to a new terminal tab\"",
+                    "target": "TERMINAL_PANEL_POP_OUT:\"移至新的終端機分頁\""
+                },
+                {
+                    "source": "TERMINAL_RESIZE:\"Drag to resize\"",
+                    "target": "TERMINAL_RESIZE:\"拖曳以調整大小\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_DESKTOP_ONLY:\"Terminal is available on desktop only.\"",
+                    "target": "TERMINAL_NOTICE_DESKTOP_ONLY:\"終端機僅限桌面版使用。\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_DISABLED:\"Terminal is disabled in settings.\"",
+                    "target": "TERMINAL_NOTICE_DISABLED:\"終端機已在設定中停用。\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_DOWNLOADING:\"Downloading terminal support files...\"",
+                    "target": "TERMINAL_NOTICE_DOWNLOADING:\"正在下載終端機支援檔案...\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_DOWNLOAD_SUCCESS:\"Terminal support files are ready.\"",
+                    "target": "TERMINAL_NOTICE_DOWNLOAD_SUCCESS:\"終端機支援檔案已就緒。\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_DOWNLOAD_FAIL:\"Failed to download terminal support files\"",
+                    "target": "TERMINAL_NOTICE_DOWNLOAD_FAIL:\"下載終端機支援檔案失敗\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_PLATFORM_UNSUPPORTED:\"Terminal is not supported on this platform yet.\"",
+                    "target": "TERMINAL_NOTICE_PLATFORM_UNSUPPORTED:\"終端機尚不支援此平台。\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_SESSION_LIMIT:\"Terminal session limit reached. Close a tab first.\"",
+                    "target": "TERMINAL_NOTICE_SESSION_LIMIT:\"終端機工作階段已達上限。請先關閉一個分頁。\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_ALL_CLOSED:\"All terminal sessions closed.\"",
+                    "target": "TERMINAL_NOTICE_ALL_CLOSED:\"已關閉所有終端機工作階段。\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_SHELL_MISSING:\"Configured shell was not found. Using the default shell.\"",
+                    "target": "TERMINAL_NOTICE_SHELL_MISSING:\"找不到設定的 Shell，改用預設 Shell。\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_BINARIES_CLEARED:\"Downloaded terminal files removed.\"",
+                    "target": "TERMINAL_NOTICE_BINARIES_CLEARED:\"已移除下載的終端機檔案。\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_REMOVE_PENDING:\"Unlocked files were removed. The remaining files are in use by this session and are deleted automatically after Obsidian restarts.\"",
+                    "target": "TERMINAL_NOTICE_REMOVE_PENDING:\"已移除未被鎖定的檔案。其餘檔案仍由目前的工作階段使用，將在重新啟動 Obsidian 後自動刪除。\""
+                },
+                {
+                    "source": "TERMINAL_NOTICE_NOT_INSTALLED:\"Terminal support files are not downloaded yet. Download them under Settings > Terminal.\"",
+                    "target": "TERMINAL_NOTICE_NOT_INSTALLED:\"尚未下載終端機支援檔案。請前往「設定 > 終端機」下載。\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_NAME:\"Terminal\"",
+                    "target": "SETTINGS_TERMINAL_NAME:\"終端機\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_DESC:\"Desktop only. Run a real system shell inside Code Space. The first start downloads a small platform support package.\"",
+                    "target": "SETTINGS_TERMINAL_DESC:\"僅限桌面版。在 Code Space 中執行真正的系統 Shell。首次啟動時會下載小型的平台支援套件。\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_DESKTOP_ONLY:\"Terminal is desktop only.\"",
+                    "target": "SETTINGS_TERMINAL_DESKTOP_ONLY:\"終端機僅限桌面版使用。\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_ENABLE_NAME:\"Enable terminal\"",
+                    "target": "SETTINGS_TERMINAL_ENABLE_NAME:\"啟用終端機\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_ENABLE_DESC:\"Disabled by default. When enabled, the terminal panel button and commands appear; disabling hides them without closing running sessions until reload.\"",
+                    "target": "SETTINGS_TERMINAL_ENABLE_DESC:\"預設停用。啟用後會顯示終端機面板按鈕與命令；停用時會隱藏這些項目，但正在執行的工作階段會保留到重新載入時才關閉。\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_SHELL_NAME:\"Shell executable\"",
+                    "target": "SETTINGS_TERMINAL_SHELL_NAME:\"Shell 執行檔\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_SHELL_DESC:\"Absolute path to a shell. Leave empty to auto-detect (PowerShell, zsh, or $SHELL).\"",
+                    "target": "SETTINGS_TERMINAL_SHELL_DESC:\"Shell 的絕對路徑。留空則自動偵測（PowerShell、zsh 或 $SHELL）。\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_SHELL_PLACEHOLDER:\"Example: pwsh.exe (empty = auto-detect)\"",
+                    "target": "SETTINGS_TERMINAL_SHELL_PLACEHOLDER:\"例如：pwsh.exe（留空 = 自動偵測）\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_FONT_SIZE_NAME:\"Terminal font size\"",
+                    "target": "SETTINGS_TERMINAL_FONT_SIZE_NAME:\"終端機字體大小\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_FONT_SIZE_DESC:\"Font size for terminal sessions (9-36px).\"",
+                    "target": "SETTINGS_TERMINAL_FONT_SIZE_DESC:\"終端機工作階段的字體大小（9-36px）。\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_SCROLLBACK_NAME:\"Terminal scrollback\"",
+                    "target": "SETTINGS_TERMINAL_SCROLLBACK_NAME:\"終端機回捲行數\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_SCROLLBACK_DESC:\"Scrollback lines kept per terminal (100-100000).\"",
+                    "target": "SETTINGS_TERMINAL_SCROLLBACK_DESC:\"每個終端機保留的歷史輸出行數（100-100000）。\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_MAX_SESSIONS_NAME:\"Maximum terminal sessions\"",
+                    "target": "SETTINGS_TERMINAL_MAX_SESSIONS_NAME:\"終端機工作階段上限\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_MAX_SESSIONS_DESC:\"Concurrent terminal sessions allowed (1-32).\"",
+                    "target": "SETTINGS_TERMINAL_MAX_SESSIONS_DESC:\"允許同時執行的終端機工作階段數量（1-32）。\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_BINARY_STATUS:\"Support files\"",
+                    "target": "SETTINGS_TERMINAL_BINARY_STATUS:\"支援檔案\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_BINARY_DOWNLOAD:\"Download\"",
+                    "target": "SETTINGS_TERMINAL_BINARY_DOWNLOAD:\"下載\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_BINARY_CLEAR:\"Remove downloaded files\"",
+                    "target": "SETTINGS_TERMINAL_BINARY_CLEAR:\"移除已下載的檔案\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_STATUS_READY:\"Ready\"",
+                    "target": "SETTINGS_TERMINAL_STATUS_READY:\"已就緒\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_STATUS_CHECKING:\"Checking\"",
+                    "target": "SETTINGS_TERMINAL_STATUS_CHECKING:\"檢查中\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_STATUS_DOWNLOADING:\"Downloading\"",
+                    "target": "SETTINGS_TERMINAL_STATUS_DOWNLOADING:\"下載中\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_STATUS_NOT_INSTALLED:\"Not downloaded\"",
+                    "target": "SETTINGS_TERMINAL_STATUS_NOT_INSTALLED:\"尚未下載\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_STATUS_ERROR:\"Error\"",
+                    "target": "SETTINGS_TERMINAL_STATUS_ERROR:\"錯誤\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_STATUS_UNSUPPORTED:\"Unsupported platform\"",
+                    "target": "SETTINGS_TERMINAL_STATUS_UNSUPPORTED:\"不支援的平台\""
+                },
+                {
+                    "source": "SETTINGS_TERMINAL_STATUS_REMOVE_PENDING:\"Removal scheduled; restart Obsidian to finish\"",
+                    "target": "SETTINGS_TERMINAL_STATUS_REMOVE_PENDING:\"已排定移除；重新啟動 Obsidian 即可完成\""
+                },
+                {
+                    "source": "\"Code Space: Failed to open terminal panel:\"",
+                    "target": "\"Code Space：開啟終端機面板失敗：\""
+                },
+                {
+                    "source": "\"Code Space: terminal binary installation failed:\"",
+                    "target": "\"Code Space：安裝終端機執行檔失敗：\""
+                },
+                {
+                    "source": "\"No shell executable found\"",
+                    "target": "\"找不到 Shell 執行檔\""
+                },
+                {
+                    "source": "\"Terminal manager disposed\"",
+                    "target": "\"終端機管理器已釋放\""
+                },
+                {
+                    "source": "\"Terminal is desktop only\"",
+                    "target": "\"終端機僅限桌面版使用\""
+                },
+                {
+                    "source": "\"Terminal is disabled\"",
+                    "target": "\"終端機已停用\""
+                },
+                {
+                    "source": "\"Terminal session limit reached\"",
+                    "target": "\"終端機工作階段已達上限\""
+                },
+                {
+                    "source": "\"Terminal platform is not supported\"",
+                    "target": "\"終端機不支援此平台\""
+                },
+                {
+                    "source": "\"Terminal removal is pending a restart\"",
+                    "target": "\"終端機檔案將於重新啟動後移除\""
+                },
+                {
+                    "source": "\"Terminal support files are not installed\"",
+                    "target": "\"尚未安裝終端機支援檔案\""
+                },
+                {
+                    "source": "\"Installed node-pty layout is invalid\"",
+                    "target": "\"安裝的 node-pty 檔案結構無效\""
+                },
+                {
+                    "source": "`Unsupported platform: ${this.platform}-${this.arch}`",
+                    "target": "`不支援的平台：${this.platform}-${this.arch}`"
+                },
+                {
+                    "source": "`checksums.json has no valid entry for ${s}`",
+                    "target": "`checksums.json 中沒有 ${s} 的有效項目`"
+                },
+                {
+                    "source": "`Checksum mismatch for ${s}: expected ${a}, got ${O}`",
+                    "target": "`${s} 的校驗值不相符：預期為 ${a}，實際為 ${O}`"
+                },
+                {
+                    "source": "`node-pty is not loadable at ${i}`",
+                    "target": "`無法從 ${i} 載入 node-pty`"
                 }
             ]
         },
