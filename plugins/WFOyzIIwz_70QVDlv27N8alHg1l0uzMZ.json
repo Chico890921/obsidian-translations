@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "quickadd",
-        "version": "2.24.2",
+        "version": "2.25.0",
         "title": "[zh-tw] QuickAdd",
         "description": "QuickAdd 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.24.2",
+        "supportedVersions": "2.25.0",
         "author": "Chico"
     },
     "dict": {
@@ -3359,6 +3359,150 @@
                     "name": "desc",
                     "source": "When on, an obsidian://quickadd URI may open a callback URL (x-success / x-error / x-cancel) after a Template or Capture choice finishes — sending the outcome and the affected note's vault path and URL to that callback. While on, a URI that carries x-* callback params is restricted to Template and Capture choices (other choice types are warned and skipped). Off by default because the callback URL is set by whoever creates the obsidian:// link. Only shortcuts: and obsidian: callback URLs are permitted.",
                     "target": "啟用後，範本或擷取選項執行完成時，obsidian://quickadd URI 可開啟回呼 URL（x-success／x-error／x-cancel），並將執行結果、受影響筆記在儲存庫中的路徑與 URL 傳送至該回呼。啟用時，帶有 x-* 回呼參數的 URI 僅能執行範本與擷取選項；其他類型會顯示警告並略過。此功能預設停用，因為回呼 URL 由建立 obsidian:// 連結的人指定。只允許 shortcuts: 與 obsidian: 回呼 URL。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Never",
+                    "target": "永不"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Always",
+                    "target": "一律"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Follow global setting",
+                    "target": "依照全域設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Note",
+                    "target": "筆記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "One-page input override",
+                    "target": "覆寫選項單頁輸入"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Search notes or create new note",
+                    "target": "搜尋筆記或建立新筆記"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Note search is unavailable. Type a new note title.",
+                    "target": "無法搜尋筆記。請輸入新筆記的標題。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Enter a note title or choose an existing note.",
+                    "target": "請輸入筆記標題或選擇既有筆記。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "hint",
+                    "source": "Property name",
+                    "target": "屬性名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "hint",
+                    "source": "Value to capture",
+                    "target": "要擷取的值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Open note",
+                    "target": "開啟筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Replace entire note",
+                    "target": "取代整篇筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Note",
+                    "target": "筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Named property",
+                    "target": "指定屬性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Choose when capturing",
+                    "target": "擷取時選擇"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Set value",
+                    "target": "設定值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Add to list",
+                    "target": "新增至清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Property",
+                    "target": "屬性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Property",
+                    "target": "屬性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Action",
+                    "target": "動作"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create property if missing",
+                    "target": "屬性不存在時建立"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "When selecting an existing note",
+                    "target": "選擇既有筆記時"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Property name",
+                    "target": "屬性名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Property",
+                    "target": "屬性"
                 }
             ],
             "regex": [
@@ -5217,6 +5361,278 @@
                 {
                     "source": "this.indexedItems.length} options`",
                     "target": "this.indexedItems.length} 個選項`"
+                },
+                {
+                    "source": "Notice(`QuickAdd: ${g} (${r.path})`)",
+                    "target": "Notice(`QuickAdd：${g}（${r.path}）`)"
+                },
+                {
+                    "source": "setPlaceholder(\"Search notes or create new note\")",
+                    "target": "setPlaceholder(\"搜尋筆記或建立新筆記\")"
+                },
+                {
+                    "source": "Notice(\"Note search is unavailable. Type a new note title.\")",
+                    "target": "Notice(\"無法搜尋筆記。請輸入新筆記的標題。\")"
+                },
+                {
+                    "source": "Notice(\"Enter a note title or choose an existing note.\")",
+                    "target": "Notice(\"請輸入筆記標題或選擇既有筆記。\")"
+                },
+                {
+                    "source": "Notice(`QuickAdd: \"${s.label}\" is not a valid date. Fix it or clear it before submitting.`)",
+                    "target": "Notice(`QuickAdd：「${s.label}」不是有效日期。請修正或清除後再提交。`)"
+                },
+                {
+                    "source": "Notice(`Copied node id ${O}`)",
+                    "target": "Notice(`已複製節點 ID ${O}`)"
+                },
+                {
+                    "source": "Notice(\"\",1e4).messageEl;t.replaceChildren(),Nm(t,\"No scripts found\",\"quickadd-notice-title\")",
+                    "target": "Notice(\"\",1e4).messageEl;t.replaceChildren(),Nm(t,\"找不到指令碼\",\"quickadd-notice-title\")"
+                },
+                {
+                    "source": "setName(\"One-page input override\")",
+                    "target": "setName(\"覆寫選項單頁輸入\")"
+                },
+                {
+                    "source": "Notice(`Could not clear user script secrets. The ${Mf(r.type)} was not deleted.`)",
+                    "target": "Notice(`無法清除使用者指令碼密鑰，因此未刪除${r.type===\"Multi\"?\"資料夾\":\"選項\"}。`)"
+                },
+                {
+                    "source": "setTitle(`${O.label} \\u2014 ${O.description}`)",
+                    "target": "setTitle(`${O.label} \\u2014 ${O.description}`)"
+                },
+                {
+                    "source": "Notice(`Duplicated \"${z.name}\".`)",
+                    "target": "Notice(`已建立「${z.name}」的複本。`)"
+                },
+                {
+                    "source": "Notice(`Save failed: ${Y}`)",
+                    "target": "Notice(`儲存失敗：${Y}`)"
+                },
+                {
+                    "source": "setPlaceholder(`Search notes or create ${n.name}`)",
+                    "target": "setPlaceholder(`搜尋筆記或建立 ${n.name}`)"
+                },
+                {
+                    "source": "text:`Aliases (${g.length})`",
+                    "target": "text:`別名（${g.length}）`"
+                },
+                {
+                    "source": "name:\"Create property if missing\"",
+                    "target": "name:\"屬性不存在時建立\""
+                },
+                {
+                    "source": "name:\"When selecting an existing note\"",
+                    "target": "name:\"選擇既有筆記時\""
+                },
+                {
+                    "source": "text:`Alias: ${o.renderAlias}`",
+                    "target": "text:`別名：${o.renderAlias}`"
+                },
+                {
+                    "source": "addOption(\"never\",\"Never\")",
+                    "target": "addOption(\"never\",\"永不\")"
+                },
+                {
+                    "source": "addOption(\"always\",\"Always\")",
+                    "target": "addOption(\"always\",\"一律\")"
+                },
+                {
+                    "source": "addOption(\"\",\"Follow global setting\")",
+                    "target": "addOption(\"\",\"依照全域設定\")"
+                },
+                {
+                    "source": "setName(\"Note\")",
+                    "target": "setName(\"筆記\")"
+                },
+                {
+                    "source": "hint:\"Property name\"",
+                    "target": "hint:\"屬性名稱\""
+                },
+                {
+                    "source": "hint:\"Value to capture\"",
+                    "target": "hint:\"要擷取的值\""
+                },
+                {
+                    "source": "label:\"Open note\"",
+                    "target": "label:\"開啟筆記\""
+                },
+                {
+                    "source": "label:\"Replace entire note\"",
+                    "target": "label:\"取代整篇筆記\""
+                },
+                {
+                    "source": "label:\"Note\"",
+                    "target": "label:\"筆記\""
+                },
+                {
+                    "source": "label:\"Named property\"",
+                    "target": "label:\"指定屬性\""
+                },
+                {
+                    "source": "label:\"Choose when capturing\"",
+                    "target": "label:\"擷取時選擇\""
+                },
+                {
+                    "source": "label:\"Set value\"",
+                    "target": "label:\"設定值\""
+                },
+                {
+                    "source": "label:\"Add to list\"",
+                    "target": "label:\"新增至清單\""
+                },
+                {
+                    "source": "label:\"Property\"",
+                    "target": "label:\"屬性\""
+                },
+                {
+                    "source": "name:\"Property\"",
+                    "target": "name:\"屬性\""
+                },
+                {
+                    "source": "name:\"Action\"",
+                    "target": "name:\"動作\""
+                },
+                {
+                    "source": "placeholder:\"Property name\"",
+                    "target": "placeholder:\"屬性名稱\""
+                },
+                {
+                    "source": "placeholder:\"Property\"",
+                    "target": "placeholder:\"屬性\""
+                },
+                {
+                    "source": "label:\"Never\"",
+                    "target": "label:\"永不\""
+                },
+                {
+                    "source": "label:\"Always\"",
+                    "target": "label:\"一律\""
+                },
+                {
+                    "source": "label:\"Follow global setting\"",
+                    "target": "label:\"依照全域設定\""
+                },
+                {
+                    "source": "\"Override the global setting for this choice. 'Always' forces the one-page modal even if disabled globally; 'Never' disables it even if enabled globally.\"",
+                    "target": "\"覆寫此選項的全域設定。「一律」會強制使用單頁輸入視窗，即使全域設定已停用；「永不」則會停用，即使全域設定已啟用。\""
+                },
+                {
+                    "source": "\"Add captured values to the property's list, keeping existing items and skipping duplicates.\"",
+                    "target": "\"將擷取的值加入屬性清單，保留既有項目並略過重複值。\""
+                },
+                {
+                    "source": "\"Replace the property's value with the captured value.\"",
+                    "target": "\"以擷取的值取代屬性值。\""
+                },
+                {
+                    "source": "\"Property name is required\"",
+                    "target": "\"屬性名稱為必填\""
+                },
+                {
+                    "source": "\"Part of the property name\"",
+                    "target": "\"屬性名稱的一部分\""
+                },
+                {
+                    "source": "\"Part of the property value\"",
+                    "target": "\"屬性值的一部分\""
+                },
+                {
+                    "source": "\"If a new note's path already exists\"",
+                    "target": "\"新筆記的路徑已存在時\""
+                },
+                {
+                    "source": "\"If the target file already exists\"",
+                    "target": "\"目標檔案已存在時\""
+                },
+                {
+                    "source": "\"Change note\"",
+                    "target": "\"變更筆記\""
+                },
+                {
+                    "source": "\"Property capture requires a Markdown note.\"",
+                    "target": "\"屬性擷取需要 Markdown 筆記。\""
+                },
+                {
+                    "source": "\"Property capture requires a Markdown note. Canvas text cards do not have note properties.\"",
+                    "target": "\"屬性擷取需要 Markdown 筆記。Canvas 文字卡片沒有筆記屬性。\""
+                },
+                {
+                    "source": "s5=\"Peek\"",
+                    "target": "s5=\"查看\""
+                },
+                {
+                    "source": "Remove ${T.label}",
+                    "target": "移除 ${T.label}"
+                },
+                {
+                    "source": "`Note for ${t.choice.name}`",
+                    "target": "`${t.choice.name} 的筆記`"
+                },
+                {
+                    "source": "`Create: ${c.title}`",
+                    "target": "`建立：${c.title}`"
+                },
+                {
+                    "source": "`Property '${e}' supports text, finite numbers, checkboxes, and lists of text only.`",
+                    "target": "`屬性「${e}」僅支援文字、有限數值、核取方塊與文字清單。`"
+                },
+                {
+                    "source": "`Property '${e}' has unsupported type '${r}'.`",
+                    "target": "`屬性「${e}」的類型「${r}」不受支援。`"
+                },
+                {
+                    "source": "`Property '${t}' requires ${e}; the capture is ${n}. Use a matching typed VALUE token or value.`",
+                    "target": "`屬性「${t}」需要 ${e}，但擷取的內容是 ${n}。請使用類型相符的 VALUE 標記或值。`"
+                },
+                {
+                    "source": "`Property '${n}' is missing. Enable 'Create property if missing' to add it.`",
+                    "target": "`屬性「${n}」不存在。請啟用「屬性不存在時建立」以新增。`"
+                },
+                {
+                    "source": "`Property '${n}' is ${NS(a)}. 'Add to list' requires a list.`",
+                    "target": "`屬性「${n}」是 ${NS(a)}。「新增至清單」需要清單類型。`"
+                },
+                {
+                    "source": "`Property '${n}' is ${l}. 'Add to list' requires a list.`",
+                    "target": "`屬性「${n}」是 ${l}。「新增至清單」需要清單類型。`"
+                },
+                {
+                    "source": "`Property '${n}' requires text or a list of text to add.`",
+                    "target": "`新增至屬性「${n}」的內容必須是文字或文字清單。`"
+                },
+                {
+                    "source": "`Property '${n}' contains ${NS(a)}. Set a list only after correcting the existing property to a list.`",
+                    "target": "`屬性「${n}」包含 ${NS(a)}。請先將既有屬性修正為清單，再設定清單值。`"
+                },
+                {
+                    "source": "verb:\"Append to\"",
+                    "target": "verb:\"附加至\""
+                },
+                {
+                    "source": "verb:\"Insert into\"",
+                    "target": "verb:\"插入至\""
+                },
+                {
+                    "source": "verb:\"Replace\"",
+                    "target": "verb:\"取代\""
+                },
+                {
+                    "source": "ask:\"Property\"",
+                    "target": "ask:\"屬性\""
+                },
+                {
+                    "source": "ask:\"Property value\"",
+                    "target": "ask:\"屬性值\""
+                },
+                {
+                    "source": "label:\"Append template to bottom\"",
+                    "target": "label:\"將範本附加至底部\""
+                },
+                {
+                    "source": "label:\"Insert template at top\"",
+                    "target": "label:\"在頂部插入範本\""
                 }
             ]
         },
