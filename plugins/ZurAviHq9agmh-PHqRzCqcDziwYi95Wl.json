@@ -2,11 +2,11 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "side-notes",
-        "version": "0.5.1",
+        "version": "0.5.2",
         "title": "[zh-tw] Side-Notes",
         "description": "Side-Notes Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "0.5.1",
+        "supportedVersions": "0.5.2",
         "author": "Chico"
     },
     "dict": {
@@ -1289,6 +1289,96 @@
                     "name": "error",
                     "source": "Sidenote plugin: popup cleanup failed",
                     "target": "Side-Notes 外掛：清理彈出視窗失敗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Text: the note stays a fixed gap from the text ('Minimum gap between sidenote and text'), so it moves when the text does. Edge: the note stays a fixed gap from the editor edge ('Minimum gap between sidenote and editor edge'), and its width shrinks instead of moving if that and the text gap can't both fit",
+                    "target": "錨定到文字：旁註與本文保持固定間距（「旁註與本文的最小間距」），因此會隨本文移動。錨定到編輯器邊緣：旁註與編輯器邊緣保持固定間距（「旁註與編輯器邊緣的最小間距」）；若空間無法同時容納這兩種間距，會縮小旁註寬度，而不移動旁註。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Adjusts how much 'Minimum gap between sidenote and text' grows as editor width increases (default: 0.3). At 0 it stays at its minimum; at 1 it grows by the maximum amount (25% of extra space). Anchored to text, this widens the gap and moves the note along with it. Anchored to edge, position never moves — this only tightens the width clamp, so the note can end up narrower.",
+                    "target": "調整編輯器變寬時，「旁註與本文的最小間距」增加的程度（預設：0.3）。0 表示維持最小間距；1 表示增加最大幅度（額外空間的 25%）。錨定到文字時，會加大間距並帶動旁註移動；錨定到編輯器邊緣時，旁註位置不變，只會進一步限制寬度，因此旁註可能變窄。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Text: the note stays a fixed gap from the text ('Minimum gap between sidenote and text'), so it moves when the text does. Edge: the note stays a fixed gap from the editor edge ('Minimum gap between sidenote and editor edge'), and its width shrinks instead of moving if that and the text gap can't both fit",
+                    "target": "錨定到文字：旁註與本文保持固定間距（「旁註與本文的最小間距」），因此會隨本文移動。錨定到編輯器邊緣：旁註與編輯器邊緣保持固定間距（「旁註與編輯器邊緣的最小間距」）；若空間無法同時容納這兩種間距，會縮小旁註寬度，而不移動旁註。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Adjusts how much 'Minimum gap between sidenote and text' grows as editor width increases (default: 0.3). At 0 it stays at its minimum; at 1 it grows by the maximum amount (25% of extra space). Anchored to text, this widens the gap and moves the note along with it. Anchored to edge, position never moves — this only tightens the width clamp, so the note can end up narrower.",
+                    "target": "調整編輯器變寬時，「旁註與本文的最小間距」增加的程度（預設：0.3）。0 表示維持最小間距；1 表示增加最大幅度（額外空間的 25%）。錨定到文字時，會加大間距並帶動旁註移動；錨定到編輯器邊緣時，旁註位置不變，只會進一步限制寬度，因此旁註可能變窄。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Adjusts how much the note text is shifted over to make room for sidenotes (default: 1). At 1, exactly the sidenote's width plus its minimum gap is reserved; at 0 the text is left untouched. Only moves the text — never the sidenotes themselves, which 'Sidenote anchor' and its gap settings control. Only affects notes that have sidenotes.",
+                    "target": "調整本文為旁註讓出空間時的偏移程度（預設：1）。設為 1 時，會預留旁註寬度加上最小間距的空間；設為 0 時，本文位置不變。此設定只移動本文，不會移動旁註；旁註的位置由「旁註錨定」及其間距設定控制。僅影響含有旁註的筆記。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Adjusts how much the note text is shifted over to make room for sidenotes (default: 1). At 1, exactly the sidenote's width plus its minimum gap is reserved; at 0 the text is left untouched. Only moves the text — never the sidenotes themselves, which 'Sidenote anchor' and its gap settings control. Only affects notes that have sidenotes.",
+                    "target": "調整本文為旁註讓出空間時的偏移程度（預設：1）。設為 1 時，會預留旁註寬度加上最小間距的空間；設為 0 時，本文位置不變。此設定只移動本文，不會移動旁註；旁註的位置由「旁註錨定」及其間距設定控制。僅影響含有旁註的筆記。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Space between the sidenote and body text, in rem (default: 2). Anchored to text: this is the note's fixed distance from the text. Anchored to edge: this is a minimum the note's width shrinks to protect, not a position",
+                    "target": "旁註與本文之間的間距，單位為 rem（預設：2）。錨定到文字時，這是旁註與本文的固定距離；錨定到編輯器邊緣時，這是必須保留的最小間距，必要時會縮小旁註寬度來維持，並非用來設定旁註的位置。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Space between the sidenote and body text, in rem (default: 2). Anchored to text: this is the note's fixed distance from the text. Anchored to edge: this is a minimum the note's width shrinks to protect, not a position",
+                    "target": "旁註與本文之間的間距，單位為 rem（預設：2）。錨定到文字時，這是旁註與本文的固定距離；錨定到編輯器邊緣時，這是必須保留的最小間距，必要時會縮小旁註寬度來維持，並非用來設定旁註的位置。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Space between the sidenote and the editor's physical edge, in rem (default: 1). Only used when anchored to edge, where it's the note's fixed distance from that edge; unused when anchored to text",
+                    "target": "旁註與編輯器實際邊緣之間的間距，單位為 rem（預設：1）。僅在錨定到編輯器邊緣時使用，決定旁註與該邊緣的固定距離；錨定到文字時不使用此設定。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Space between the sidenote and the editor's physical edge, in rem (default: 1). Only used when anchored to edge, where it's the note's fixed distance from that edge; unused when anchored to text",
+                    "target": "旁註與編輯器實際邊緣之間的間距，單位為 rem（預設：1）。僅在錨定到編輯器邊緣時使用，決定旁註與該邊緣的固定距離；錨定到文字時不使用此設定。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Custom color for sidenote numbers (leave empty for theme default)",
+                    "target": "自訂旁註編號顏色（留空則使用主題預設值）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Base width of sidenotes in rem (default: 10)",
+                    "target": "旁註基礎寬度，單位為 rem（預設：10）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Maximum width of sidenotes in rem (default: 18)",
+                    "target": "旁註最大寬度，單位為 rem（預設：18）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Color for sidenote text. Leave empty to use Obsidian's default text color.",
+                    "target": "旁註文字顏色。留空則使用 Obsidian 的預設文字顏色。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Color for sidenote text *on hover*. Leave empty to use Obsidian's default *muted text* color.",
+                    "target": "游標停留於旁註時的文字顏色。留空則使用 Obsidian 的預設淡化文字顏色。"
                 }
             ],
             "regex": [
@@ -1813,8 +1903,68 @@
                     "target": "error(\"Side-Notes 外掛：清理彈出視窗失敗\",n)}delete e._popupCleanup}}function Cn(t,e,n){it(e);let i=n(e),r=e.querySelector(\"small.sidenote-margin\")"
                 },
                 {
-                    "source": "error(\"Sidenote plugin: popup cleanup failed\",n)}delete e._popupCleanup}}function zn(t,e,n){ot(e);let i=n(e),r=e.querySelector(\"small.sidenote-margin\")",
-                    "target": "error(\"Side-Notes 外掛：清理彈出視窗失敗\",n)}delete e._popupCleanup}}function zn(t,e,n){ot(e);let i=n(e),r=e.querySelector(\"small.sidenote-margin\")"
+                    "source": "error(\"Sidenote plugin: popup cleanup failed\",n)}delete e._popupCleanup}}function qn(t,e,n){ot(e);let i=n(e),r=e.querySelector(\"small.sidenote-margin\")",
+                    "target": "error(\"Side-Notes 外掛：清理彈出視窗失敗\",n)}delete e._popupCleanup}}function qn(t,e,n){ot(e);let i=n(e),r=e.querySelector(\"small.sidenote-margin\")"
+                },
+                {
+                    "source": "setDesc(\"Text: the note stays a fixed gap from the text ('Minimum gap between sidenote and text'), so it moves when the text does. Edge: the note stays a fixed gap from the editor edge ('Minimum gap between sidenote and editor edge'), and its width shrinks instead of moving if that and the text gap can't both fit\")",
+                    "target": "setDesc(\"錨定到文字：旁註與本文保持固定間距（「旁註與本文的最小間距」），因此會隨本文移動。錨定到編輯器邊緣：旁註與編輯器邊緣保持固定間距（「旁註與編輯器邊緣的最小間距」）；若空間無法同時容納這兩種間距，會縮小旁註寬度，而不移動旁註。\")"
+                },
+                {
+                    "source": "setDesc(\"Adjusts how much 'Minimum gap between sidenote and text' grows as editor width increases (default: 0.3). At 0 it stays at its minimum; at 1 it grows by the maximum amount (25% of extra space). Anchored to text, this widens the gap and moves the note along with it. Anchored to edge, position never moves \\u2014 this only tightens the width clamp, so the note can end up narrower.\")",
+                    "target": "setDesc(\"調整編輯器變寬時，「旁註與本文的最小間距」增加的程度（預設：0.3）。0 表示維持最小間距；1 表示增加最大幅度（額外空間的 25%）。錨定到文字時，會加大間距並帶動旁註移動；錨定到編輯器邊緣時，旁註位置不變，只會進一步限制寬度，因此旁註可能變窄。\")"
+                },
+                {
+                    "source": "desc:\"Text: the note stays a fixed gap from the text ('Minimum gap between sidenote and text'), so it moves when the text does. Edge: the note stays a fixed gap from the editor edge ('Minimum gap between sidenote and editor edge'), and its width shrinks instead of moving if that and the text gap can't both fit\"",
+                    "target": "desc:\"錨定到文字：旁註與本文保持固定間距（「旁註與本文的最小間距」），因此會隨本文移動。錨定到編輯器邊緣：旁註與編輯器邊緣保持固定間距（「旁註與編輯器邊緣的最小間距」）；若空間無法同時容納這兩種間距，會縮小旁註寬度，而不移動旁註。\""
+                },
+                {
+                    "source": "desc:\"Adjusts how much 'Minimum gap between sidenote and text' grows as editor width increases (default: 0.3). At 0 it stays at its minimum; at 1 it grows by the maximum amount (25% of extra space). Anchored to text, this widens the gap and moves the note along with it. Anchored to edge, position never moves \\u2014 this only tightens the width clamp, so the note can end up narrower.\"",
+                    "target": "desc:\"調整編輯器變寬時，「旁註與本文的最小間距」增加的程度（預設：0.3）。0 表示維持最小間距；1 表示增加最大幅度（額外空間的 25%）。錨定到文字時，會加大間距並帶動旁註移動；錨定到編輯器邊緣時，旁註位置不變，只會進一步限制寬度，因此旁註可能變窄。\""
+                },
+                {
+                    "source": "setDesc(\"Adjusts how much the note text is shifted over to make room for sidenotes (default: 1). At 1, exactly the sidenote's width plus its minimum gap is reserved; at 0 the text is left untouched. Only moves the text \\u2014 never the sidenotes themselves, which 'Sidenote anchor' and its gap settings control. Only affects notes that have sidenotes.\")",
+                    "target": "setDesc(\"調整本文為旁註讓出空間時的偏移程度（預設：1）。設為 1 時，會預留旁註寬度加上最小間距的空間；設為 0 時，本文位置不變。此設定只移動本文，不會移動旁註；旁註的位置由「旁註錨定」及其間距設定控制。僅影響含有旁註的筆記。\")"
+                },
+                {
+                    "source": "desc:\"Adjusts how much the note text is shifted over to make room for sidenotes (default: 1). At 1, exactly the sidenote's width plus its minimum gap is reserved; at 0 the text is left untouched. Only moves the text \\u2014 never the sidenotes themselves, which 'Sidenote anchor' and its gap settings control. Only affects notes that have sidenotes.\"",
+                    "target": "desc:\"調整本文為旁註讓出空間時的偏移程度（預設：1）。設為 1 時，會預留旁註寬度加上最小間距的空間；設為 0 時，本文位置不變。此設定只移動本文，不會移動旁註；旁註的位置由「旁註錨定」及其間距設定控制。僅影響含有旁註的筆記。\""
+                },
+                {
+                    "source": "setDesc(\"Space between the sidenote and body text, in rem (default: 2). Anchored to text: this is the note's fixed distance from the text. Anchored to edge: this is a minimum the note's width shrinks to protect, not a position\")",
+                    "target": "setDesc(\"旁註與本文之間的間距，單位為 rem（預設：2）。錨定到文字時，這是旁註與本文的固定距離；錨定到編輯器邊緣時，這是必須保留的最小間距，必要時會縮小旁註寬度來維持，並非用來設定旁註的位置。\")"
+                },
+                {
+                    "source": "desc:\"Space between the sidenote and body text, in rem (default: 2). Anchored to text: this is the note's fixed distance from the text. Anchored to edge: this is a minimum the note's width shrinks to protect, not a position\"",
+                    "target": "desc:\"旁註與本文之間的間距，單位為 rem（預設：2）。錨定到文字時，這是旁註與本文的固定距離；錨定到編輯器邊緣時，這是必須保留的最小間距，必要時會縮小旁註寬度來維持，並非用來設定旁註的位置。\""
+                },
+                {
+                    "source": "setDesc(\"Space between the sidenote and the editor's physical edge, in rem (default: 1). Only used when anchored to edge, where it's the note's fixed distance from that edge; unused when anchored to text\")",
+                    "target": "setDesc(\"旁註與編輯器實際邊緣之間的間距，單位為 rem（預設：1）。僅在錨定到編輯器邊緣時使用，決定旁註與該邊緣的固定距離；錨定到文字時不使用此設定。\")"
+                },
+                {
+                    "source": "desc:\"Space between the sidenote and the editor's physical edge, in rem (default: 1). Only used when anchored to edge, where it's the note's fixed distance from that edge; unused when anchored to text\"",
+                    "target": "desc:\"旁註與編輯器實際邊緣之間的間距，單位為 rem（預設：1）。僅在錨定到編輯器邊緣時使用，決定旁註與該邊緣的固定距離；錨定到文字時不使用此設定。\""
+                },
+                {
+                    "source": "desc:\"Custom color for sidenote numbers (leave empty for theme default)\"",
+                    "target": "desc:\"自訂旁註編號顏色（留空則使用主題預設值）\""
+                },
+                {
+                    "source": "desc:\"Base width of sidenotes in rem (default: 10)\"",
+                    "target": "desc:\"旁註基礎寬度，單位為 rem（預設：10）\""
+                },
+                {
+                    "source": "desc:\"Maximum width of sidenotes in rem (default: 18)\"",
+                    "target": "desc:\"旁註最大寬度，單位為 rem（預設：18）\""
+                },
+                {
+                    "source": "desc:\"Color for sidenote text. Leave empty to use Obsidian's default text color.\"",
+                    "target": "desc:\"旁註文字顏色。留空則使用 Obsidian 的預設文字顏色。\""
+                },
+                {
+                    "source": "desc:\"Color for sidenote text *on hover*. Leave empty to use Obsidian's default *muted text* color.\"",
+                    "target": "desc:\"游標停留於旁註時的文字顏色。留空則使用 Obsidian 的預設淡化文字顏色。\""
                 }
             ]
         },
