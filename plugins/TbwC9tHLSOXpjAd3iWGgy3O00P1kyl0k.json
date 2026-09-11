@@ -1,357 +1,410 @@
 {
-  "schemaVersion": 1,
-  "metadata": {
-    "plugin": "obsidian-scroll-to-top-plugin",
-    "version": "2.1.6",
-    "title": "[zh-tw] Scroll to Top",
-    "description": "Scroll to Top 繁體中文化與微調",
-    "language": "zh-tw",
-    "supportedVersions": "2.1.6",
-    "author": "Chico",
-    "updatedAt": 1785327872489
-  },
-  "dict": {
-    "main.js": {
-      "ast": [
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Show scroll to top button",
-          "target": "顯示滾動到頂部的按鈕"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Show scroll to top button in the right bottom corner.",
-          "target": "在右下角顯示滾動到頂部按鈕。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Show scroll to bottom button",
-          "target": "顯示滾動到底部的按鈕"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Show scroll to bottom button in the right bottom corner.",
-          "target": "在右下角顯示滾動到底部按鈕。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Show scroll to cursor button",
-          "target": "顯示滾動到目前游標的按鈕"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Show scroll to cursor button in the right bottom corner.",
-          "target": "在右下角顯示滾動到游標按鈕。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Show Tooltip",
-          "target": "顯示工具提示"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Show tooltip when hover on the button.",
-          "target": "將滑鼠懸停在按鈕上時顯示工具提示。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Scroll on WebView (Beta)",
-          "target": "在 WebView 上滾動（測試版）"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Scroll on WebView (Should work with Surfing Plugin).",
-          "target": "在 WebView 上滾動（應搭配 Surfing 外掛使用）。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Resize buttons",
-          "target": "調整按鈕大小"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Change size of buttons.",
-          "target": "變更按鈕大小。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setTooltip",
-          "source": "Reset to default",
-          "target": "重設為預設值"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "tooltip config for top button",
-          "target": "頂部按鈕的工具提示設定"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Change tooltip text of scroll to top button.",
-          "target": "變更滾動到頂部按鈕的工具提示文字。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "tooltip config for bottom button",
-          "target": "底部按鈕的工具提示設定"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Change tooltip text of scroll to bottom button.",
-          "target": "變更滾動到底部按鈕的工具提示文字。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "tooltip config for cursor button",
-          "target": "游標按鈕的工具提示設定"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Change tooltip text of scroll to cursor button.",
-          "target": "變更滾動到游標按鈕的工具提示文字。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Change icon of scroll to top button",
-          "target": "修改頂部按鈕的圖示"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Change icon of scroll to bottom button",
-          "target": "修改底部按鈕的圖示"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Change icon of scroll to cursor button",
-          "target": "修改游標按鈕的圖示"
-        },
-        {
-          "type": "ObjectProperty",
-          "name": "text",
-          "source": "Scroll To Top Settings",
-          "target": "滾動到頂部設定"
-        },
-        {
-          "type": "ObjectProperty",
-          "name": "scrollTopTooltipText",
-          "source": "Scroll to top",
-          "target": "滾動到頂部"
-        },
-        {
-          "type": "ObjectProperty",
-          "name": "scrollBottomTooltipText",
-          "source": "Scroll to bottom",
-          "target": "滾動到底部"
-        },
-        {
-          "type": "ObjectProperty",
-          "name": "scrollCursorTooltipText",
-          "source": "Scroll to cursor position",
-          "target": "滾動到游標位置"
-        },
-        {
-          "type": "CallExpression",
-          "name": "createSpanWithLinks",
-          "source": "Change icon of scroll to top button. You can visit available icons here: ",
-          "target": "變更「滾動到頂部」按鈕的圖示。可在此查看可用圖示："
-        },
-        {
-          "type": "CallExpression",
-          "name": "createSpanWithLinks",
-          "source": "Change icon of scroll to bottom button. You can visit available icons here: ",
-          "target": "變更「滾動到底部」按鈕的圖示。可在此查看可用圖示："
-        },
-        {
-          "type": "CallExpression",
-          "name": "createSpanWithLinks",
-          "source": "Change icon of scroll to cursor button. You can visit available icons here: ",
-          "target": "變更「滾動到游標」按鈕的圖示。可在此查看可用圖示："
-        },
-        {
-          "type": "ObjectProperty",
-          "name": "name",
-          "source": "Scroll to Top",
-          "target": "滾動到頂部"
-        },
-        {
-          "type": "ObjectProperty",
-          "name": "name",
-          "source": "Scroll to Bottom",
-          "target": "滾動到底部"
-        },
-        {
-          "type": "ObjectProperty",
-          "name": "name",
-          "source": "Scroll to Cursor",
-          "target": "滾動到游標"
-        }
-      ],
-      "regex": [
-        {
-          "source": "setName(\"Show scroll to top button\")",
-          "target": "setName(\"顯示滾動到頂部的按鈕\")"
-        },
-        {
-          "source": "setDesc(\"Show scroll to top button in the right bottom corner.\")",
-          "target": "setDesc(\"在右下角顯示滾動到頂部按鈕。\")"
-        },
-        {
-          "source": "setName(\"Show scroll to bottom button\")",
-          "target": "setName(\"顯示滾動到底部的按鈕\")"
-        },
-        {
-          "source": "setDesc(\"Show scroll to bottom button in the right bottom corner.\")",
-          "target": "setDesc(\"在右下角顯示滾動到底部按鈕。\")"
-        },
-        {
-          "source": "setName(\"Show scroll to cursor button\")",
-          "target": "setName(\"顯示滾動到目前游標的按鈕\")"
-        },
-        {
-          "source": "setDesc(\"Show scroll to cursor button in the right bottom corner.\")",
-          "target": "setDesc(\"在右下角顯示滾動到游標按鈕。\")"
-        },
-        {
-          "source": "setName(\"Show Tooltip\")",
-          "target": "setName(\"顯示工具提示\")"
-        },
-        {
-          "source": "setDesc(\"Show tooltip when hover on the button.\")",
-          "target": "setDesc(\"將滑鼠懸停在按鈕上時顯示工具提示。\")"
-        },
-        {
-          "source": "setName(\"Scroll on WebView (Beta)\")",
-          "target": "setName(\"在 WebView 上滾動（測試版）\")"
-        },
-        {
-          "source": "setDesc(\"Scroll on WebView (Should work with Surfing Plugin).\")",
-          "target": "setDesc(\"在 WebView 上滾動（應搭配 Surfing 外掛使用）。\")"
-        },
-        {
-          "source": "setName(\"Resize buttons\")",
-          "target": "setName(\"調整按鈕大小\")"
-        },
-        {
-          "source": "setDesc(\"Change size of buttons.\")",
-          "target": "setDesc(\"變更按鈕大小。\")"
-        },
-        {
-          "source": "setTooltip(\"Reset to default\")",
-          "target": "setTooltip(\"重設為預設值\")"
-        },
-        {
-          "source": "setName(\"tooltip config for top button\")",
-          "target": "setName(\"頂部按鈕的工具提示設定\")"
-        },
-        {
-          "source": "setDesc(\"Change tooltip text of scroll to top button.\")",
-          "target": "setDesc(\"變更滾動到頂部按鈕的工具提示文字。\")"
-        },
-        {
-          "source": "setName(\"tooltip config for bottom button\")",
-          "target": "setName(\"底部按鈕的工具提示設定\")"
-        },
-        {
-          "source": "setDesc(\"Change tooltip text of scroll to bottom button.\")",
-          "target": "setDesc(\"變更滾動到底部按鈕的工具提示文字。\")"
-        },
-        {
-          "source": "setName(\"tooltip config for cursor button\")",
-          "target": "setName(\"游標按鈕的工具提示設定\")"
-        },
-        {
-          "source": "setDesc(\"Change tooltip text of scroll to cursor button.\")",
-          "target": "setDesc(\"變更滾動到游標按鈕的工具提示文字。\")"
-        },
-        {
-          "source": "setName(\"Change icon of scroll to top button\")",
-          "target": "setName(\"修改頂部按鈕的圖示\")"
-        },
-        {
-          "source": "setName(\"Change icon of scroll to bottom button\")",
-          "target": "setName(\"修改底部按鈕的圖示\")"
-        },
-        {
-          "source": "setName(\"Change icon of scroll to cursor button\")",
-          "target": "setName(\"修改游標按鈕的圖示\")"
-        },
-        {
-          "source": "text: \"Scroll To Top Settings\"",
-          "target": "text: \"滾動到頂部設定\""
-        },
-        {
-          "source": "scrollTopTooltipText: \"Scroll to top\"",
-          "target": "scrollTopTooltipText: \"滾動到頂部\""
-        },
-        {
-          "source": "scrollBottomTooltipText: \"Scroll to bottom\"",
-          "target": "scrollBottomTooltipText: \"滾動到底部\""
-        },
-        {
-          "source": "scrollCursorTooltipText: \"Scroll to cursor position\"",
-          "target": "scrollCursorTooltipText: \"滾動到游標位置\""
-        },
-        {
-          "source": "createSpanWithLinks(\"Change icon of scroll to top button. You can visit available icons here: \", \"https://lucide.dev/\", \"lucide.dev\")",
-          "target": "createSpanWithLinks(\"變更「滾動到頂部」按鈕的圖示。可在此查看可用圖示：\", \"https://lucide.dev/\", \"lucide.dev\")"
-        },
-        {
-          "source": "createSpanWithLinks(\"Change icon of scroll to bottom button. You can visit available icons here: \", \"https://lucide.dev/\", \"lucide.dev\")",
-          "target": "createSpanWithLinks(\"變更「滾動到底部」按鈕的圖示。可在此查看可用圖示：\", \"https://lucide.dev/\", \"lucide.dev\")"
-        },
-        {
-          "source": "createSpanWithLinks(\"Change icon of scroll to cursor button. You can visit available icons here: \", \"https://lucide.dev/\", \"lucide.dev\")",
-          "target": "createSpanWithLinks(\"變更「滾動到游標」按鈕的圖示。可在此查看可用圖示：\", \"https://lucide.dev/\", \"lucide.dev\")"
-        },
-        {
-          "source": "addPluginCommand(this, \"scroll-to-top\", \"Scroll to Top\"",
-          "target": "addPluginCommand(this, \"scroll-to-top\", \"滾動到頂部\""
-        },
-        {
-          "source": "addPluginCommand(this, \"scroll-to-bottom\", \"Scroll to Bottom\"",
-          "target": "addPluginCommand(this, \"scroll-to-bottom\", \"滾動到底部\""
-        },
-        {
-          "source": "addPluginCommand(this, \"scroll-to-cursor\", \"Scroll to Cursor\"",
-          "target": "addPluginCommand(this, \"scroll-to-cursor\", \"滾動到游標\""
-        }
-      ]
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-scroll-to-top-plugin",
+        "version": "2.1.6",
+        "title": "[zh-tw] Scroll to Top",
+        "description": "Scroll to Top 繁體中文化與微調",
+        "language": "zh-tw",
+        "supportedVersions": "2.1.6",
+        "author": "Chico",
+        "updatedAt": 1789148323096
     },
-    "manifest.json": {
-      "ast": [
-        {
-          "type": "ObjectProperty",
-          "name": "description",
-          "source": "This is a plugin for Obsidian that adds a button to scroll to the top of the current note.",
-          "target": "這是一個 Obsidian 外掛，會新增可滾動到目前筆記頂部的按鈕。"
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show scroll to top button",
+                    "target": "顯示滾動到頂部的按鈕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show scroll to top button in the right bottom corner.",
+                    "target": "在右下角顯示滾動到頂部按鈕。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show scroll to bottom button",
+                    "target": "顯示滾動到底部的按鈕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show scroll to bottom button in the right bottom corner.",
+                    "target": "在右下角顯示滾動到底部按鈕。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show scroll to cursor button",
+                    "target": "顯示滾動到目前游標的按鈕"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show scroll to cursor button in the right bottom corner.",
+                    "target": "在右下角顯示滾動到游標按鈕。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show Tooltip",
+                    "target": "顯示工具提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show tooltip when hover on the button.",
+                    "target": "將滑鼠懸停在按鈕上時顯示工具提示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Scroll on WebView (Beta)",
+                    "target": "在 WebView 上滾動（測試版）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Scroll on WebView (Should work with Surfing Plugin).",
+                    "target": "在 WebView 上滾動（應搭配 Surfing 外掛使用）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Resize buttons",
+                    "target": "調整按鈕大小"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Change size of buttons.",
+                    "target": "變更按鈕大小。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Reset to default",
+                    "target": "重設為預設值"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "tooltip config for top button",
+                    "target": "頂部按鈕的工具提示設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Change tooltip text of scroll to top button.",
+                    "target": "變更滾動到頂部按鈕的工具提示文字。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "tooltip config for bottom button",
+                    "target": "底部按鈕的工具提示設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Change tooltip text of scroll to bottom button.",
+                    "target": "變更滾動到底部按鈕的工具提示文字。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "tooltip config for cursor button",
+                    "target": "游標按鈕的工具提示設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Change tooltip text of scroll to cursor button.",
+                    "target": "變更滾動到游標按鈕的工具提示文字。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Change icon of scroll to top button",
+                    "target": "修改頂部按鈕的圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Change icon of scroll to bottom button",
+                    "target": "修改底部按鈕的圖示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Change icon of scroll to cursor button",
+                    "target": "修改游標按鈕的圖示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Scroll To Top Settings",
+                    "target": "滾動到頂部設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "scrollTopTooltipText",
+                    "source": "Scroll to top",
+                    "target": "滾動到頂部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "scrollBottomTooltipText",
+                    "source": "Scroll to bottom",
+                    "target": "滾動到底部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "scrollCursorTooltipText",
+                    "source": "Scroll to cursor position",
+                    "target": "滾動到游標位置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createSpanWithLinks",
+                    "source": "Change icon of scroll to top button. You can visit available icons here: ",
+                    "target": "變更「滾動到頂部」按鈕的圖示。可在此查看可用圖示："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createSpanWithLinks",
+                    "source": "Change icon of scroll to bottom button. You can visit available icons here: ",
+                    "target": "變更「滾動到底部」按鈕的圖示。可在此查看可用圖示："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createSpanWithLinks",
+                    "source": "Change icon of scroll to cursor button. You can visit available icons here: ",
+                    "target": "變更「滾動到游標」按鈕的圖示。可在此查看可用圖示："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Scroll to Top",
+                    "target": "滾動到頂部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Scroll to Bottom",
+                    "target": "滾動到底部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Scroll to Cursor",
+                    "target": "滾動到游標"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"Show scroll to top button\")",
+                    "target": "setName(\"顯示滾動到頂部的按鈕\")"
+                },
+                {
+                    "source": "setDesc(\"Show scroll to top button in the right bottom corner.\")",
+                    "target": "setDesc(\"在右下角顯示滾動到頂部按鈕。\")"
+                },
+                {
+                    "source": "setName(\"Show scroll to bottom button\")",
+                    "target": "setName(\"顯示滾動到底部的按鈕\")"
+                },
+                {
+                    "source": "setDesc(\"Show scroll to bottom button in the right bottom corner.\")",
+                    "target": "setDesc(\"在右下角顯示滾動到底部按鈕。\")"
+                },
+                {
+                    "source": "setName(\"Show scroll to cursor button\")",
+                    "target": "setName(\"顯示滾動到目前游標的按鈕\")"
+                },
+                {
+                    "source": "setDesc(\"Show scroll to cursor button in the right bottom corner.\")",
+                    "target": "setDesc(\"在右下角顯示滾動到游標按鈕。\")"
+                },
+                {
+                    "source": "setName(\"Show Tooltip\")",
+                    "target": "setName(\"顯示工具提示\")"
+                },
+                {
+                    "source": "setDesc(\"Show tooltip when hover on the button.\")",
+                    "target": "setDesc(\"將滑鼠懸停在按鈕上時顯示工具提示。\")"
+                },
+                {
+                    "source": "setName(\"Scroll on WebView (Beta)\")",
+                    "target": "setName(\"在 WebView 上滾動（測試版）\")"
+                },
+                {
+                    "source": "setDesc(\"Scroll on WebView (Should work with Surfing Plugin).\")",
+                    "target": "setDesc(\"在 WebView 上滾動（應搭配 Surfing 外掛使用）。\")"
+                },
+                {
+                    "source": "setName(\"Resize buttons\")",
+                    "target": "setName(\"調整按鈕大小\")"
+                },
+                {
+                    "source": "setDesc(\"Change size of buttons.\")",
+                    "target": "setDesc(\"變更按鈕大小。\")"
+                },
+                {
+                    "source": "setTooltip(\"Reset to default\")",
+                    "target": "setTooltip(\"重設為預設值\")"
+                },
+                {
+                    "source": "setName(\"tooltip config for top button\")",
+                    "target": "setName(\"頂部按鈕的工具提示設定\")"
+                },
+                {
+                    "source": "setDesc(\"Change tooltip text of scroll to top button.\")",
+                    "target": "setDesc(\"變更滾動到頂部按鈕的工具提示文字。\")"
+                },
+                {
+                    "source": "setName(\"tooltip config for bottom button\")",
+                    "target": "setName(\"底部按鈕的工具提示設定\")"
+                },
+                {
+                    "source": "setDesc(\"Change tooltip text of scroll to bottom button.\")",
+                    "target": "setDesc(\"變更滾動到底部按鈕的工具提示文字。\")"
+                },
+                {
+                    "source": "setName(\"tooltip config for cursor button\")",
+                    "target": "setName(\"游標按鈕的工具提示設定\")"
+                },
+                {
+                    "source": "setDesc(\"Change tooltip text of scroll to cursor button.\")",
+                    "target": "setDesc(\"變更滾動到游標按鈕的工具提示文字。\")"
+                },
+                {
+                    "source": "setName(\"Change icon of scroll to top button\")",
+                    "target": "setName(\"修改頂部按鈕的圖示\")"
+                },
+                {
+                    "source": "setName(\"Change icon of scroll to bottom button\")",
+                    "target": "setName(\"修改底部按鈕的圖示\")"
+                },
+                {
+                    "source": "setName(\"Change icon of scroll to cursor button\")",
+                    "target": "setName(\"修改游標按鈕的圖示\")"
+                },
+                {
+                    "source": "text: \"Scroll To Top Settings\"",
+                    "target": "text: \"滾動到頂部設定\""
+                },
+                {
+                    "source": "scrollTopTooltipText: \"Scroll to top\"",
+                    "target": "scrollTopTooltipText: \"滾動到頂部\""
+                },
+                {
+                    "source": "scrollBottomTooltipText: \"Scroll to bottom\"",
+                    "target": "scrollBottomTooltipText: \"滾動到底部\""
+                },
+                {
+                    "source": "scrollCursorTooltipText: \"Scroll to cursor position\"",
+                    "target": "scrollCursorTooltipText: \"滾動到游標位置\""
+                },
+                {
+                    "source": "createSpanWithLinks(\"Change icon of scroll to top button. You can visit available icons here: \", \"https://lucide.dev/\", \"lucide.dev\")",
+                    "target": "createSpanWithLinks(\"變更「滾動到頂部」按鈕的圖示。可在此查看可用圖示：\", \"https://lucide.dev/\", \"lucide.dev\")"
+                },
+                {
+                    "source": "createSpanWithLinks(\"Change icon of scroll to bottom button. You can visit available icons here: \", \"https://lucide.dev/\", \"lucide.dev\")",
+                    "target": "createSpanWithLinks(\"變更「滾動到底部」按鈕的圖示。可在此查看可用圖示：\", \"https://lucide.dev/\", \"lucide.dev\")"
+                },
+                {
+                    "source": "createSpanWithLinks(\"Change icon of scroll to cursor button. You can visit available icons here: \", \"https://lucide.dev/\", \"lucide.dev\")",
+                    "target": "createSpanWithLinks(\"變更「滾動到游標」按鈕的圖示。可在此查看可用圖示：\", \"https://lucide.dev/\", \"lucide.dev\")"
+                },
+                {
+                    "source": "addPluginCommand(this, \"scroll-to-top\", \"Scroll to Top\"",
+                    "target": "addPluginCommand(this, \"scroll-to-top\", \"滾動到頂部\""
+                },
+                {
+                    "source": "addPluginCommand(this, \"scroll-to-bottom\", \"Scroll to Bottom\"",
+                    "target": "addPluginCommand(this, \"scroll-to-bottom\", \"滾動到底部\""
+                },
+                {
+                    "source": "addPluginCommand(this, \"scroll-to-cursor\", \"Scroll to Cursor\"",
+                    "target": "addPluginCommand(this, \"scroll-to-cursor\", \"滾動到游標\""
+                }
+            ]
+        },
+        "styles.css": {
+            "ast": [],
+            "regex": [
+                {
+                    "source": "title: Scroll to top bottom position placement",
+                    "target": "title: 「滾動到頂部」按鈕與底部的距離"
+                },
+                {
+                    "source": "title: Scroll to top right position placement",
+                    "target": "title: 「滾動到頂部」按鈕與右側的距離"
+                },
+                {
+                    "source": "title: Scroll to bottom bottom position placement",
+                    "target": "title: 「滾動到底部」按鈕與底部的距離"
+                },
+                {
+                    "source": "title: Scroll to bottom right position placement",
+                    "target": "title: 「滾動到底部」按鈕與右側的距離"
+                },
+                {
+                    "source": "title: Scroll to cursor bottom position placement",
+                    "target": "title: 「滾動到游標」按鈕與底部的距離"
+                },
+                {
+                    "source": "title: Scroll to cursor right position placement",
+                    "target": "title: 「滾動到游標」按鈕與右側的距離"
+                },
+                {
+                    "source": "title: Scroll to top button width",
+                    "target": "title: 「滾動到頂部」按鈕寬度"
+                },
+                {
+                    "source": "title: Scroll to top button height",
+                    "target": "title: 「滾動到頂部」按鈕高度"
+                },
+                {
+                    "source": "title: Scroll to bottom button width",
+                    "target": "title: 「滾動到底部」按鈕寬度"
+                },
+                {
+                    "source": "title: Scroll to bottom button height",
+                    "target": "title: 「滾動到底部」按鈕高度"
+                },
+                {
+                    "source": "title: Scroll to cursor button width",
+                    "target": "title: 「滾動到游標」按鈕寬度"
+                },
+                {
+                    "source": "title: Scroll to cursor button height",
+                    "target": "title: 「滾動到游標」按鈕高度"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "This is a plugin for Obsidian that adds a button to scroll to the top of the current note.",
+                    "target": "這是一個 Obsidian 外掛，會新增可滾動到目前筆記頂部的按鈕。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "\"description\": \"This is a plugin for Obsidian that adds a button to scroll to the top of the current note.\"",
+                    "target": "\"description\": \"這是一個 Obsidian 外掛，會新增可滾動到目前筆記頂部的按鈕。\""
+                }
+            ]
         }
-      ],
-      "regex": [
-        {
-          "source": "\"description\": \"This is a plugin for Obsidian that adds a button to scroll to the top of the current note.\"",
-          "target": "\"description\": \"這是一個 Obsidian 外掛，會新增可滾動到目前筆記頂部的按鈕。\""
-        }
-      ]
     }
-  }
 }
