@@ -622,5 +622,18 @@
         "created_at": "2026-08-04T17:36:31.084Z",
         "updated_at": "2026-09-11T17:31:39.151Z",
         "type": "plugin"
+    },
+    {
+        "id": "dE_FyJudUD9zQlatxyz4Cbn5JIm2Z6uX",
+        "plugin": "notebook-navigator",
+        "language": "zh-tw",
+        "version": "3.3.7",
+        "supported_versions": "3.3.7",
+        "title": "[zh-tw] Notebook Navigator",
+        "description": "Notebook Navigator Style Setting Localization & Tweaks",
+        "hash": "1110cb771110cb771110cb771110cb77",
+        "created_at": "2026-09-11T18:16:36.243Z",
+        "updated_at": "2026-09-11T18:16:36.243Z",
+        "type": "plugin"
     }
 ]
