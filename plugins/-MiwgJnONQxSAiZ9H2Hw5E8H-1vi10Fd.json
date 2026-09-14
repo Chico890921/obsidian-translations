@@ -2,17 +2,215 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "code-space",
-        "version": "2.5.1",
+        "version": "2.6.0",
         "title": "[zh-tw] Code Space",
         "description": "Code Space 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.5.1",
+        "supportedVersions": "2.6.0",
         "author": "Chico",
-        "updatedAt": 1789144103387
+        "updatedAt": 1789382170582
     },
     "dict": {
         "main.js": {
             "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "This browser lacks typed array (Uint8Array) support which is required by `buffer` v5.x. Use `buffer` v4.x if you require old browser support.",
+                    "target": "This browser lacks typed array (Uint8Array) support which is required by `buffer` v5.x. Use `buffer` v4.x if you require old browser support."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Iconv-lite warning: decode()-ing strings is deprecated. Refer to https://github.com/ashtuchkin/iconv-lite/wiki/Use-Buffers-when-decoding",
+                    "target": "Iconv-lite warning: decode()-ing strings is deprecated. Refer to https://github.com/ashtuchkin/iconv-lite/wiki/Use-Buffers-when-decoding"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[code-space] readBinary failed, falling back to vault.read",
+                    "target": "[code-space] readBinary 讀取失敗，改用 vault.read"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to decode file content:",
+                    "target": "Code Space：解碼檔案內容失敗："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to convert file to UTF-8:",
+                    "target": "Code Space：將檔案轉換為 UTF-8 失敗："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "view-action code-space-encoding-badge clickable-icon",
+                    "target": "view-action code-space-encoding-badge clickable-icon"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "SETTINGS_EDITOR_WORD_WRAP_NAME",
+                    "source": "Editor word wrap",
+                    "target": "編輯器自動換行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "SETTINGS_EDITOR_WORD_WRAP_DESC",
+                    "source": "Wrap long lines in the code editor instead of scrolling horizontally.",
+                    "target": "在程式碼編輯器中將過長的行自動換行，無須水平捲動。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "SETTINGS_EMBED_WORD_WRAP_NAME",
+                    "source": "Embed word wrap",
+                    "target": "嵌入區塊自動換行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "SETTINGS_EMBED_WORD_WRAP_DESC",
+                    "source": "Wrap long lines in embedded code blocks instead of scrolling horizontally.",
+                    "target": "在嵌入的程式碼區塊中將過長的行自動換行，無須水平捲動。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "SETTINGS_ENCODING_NAME",
+                    "source": "Default encoding",
+                    "target": "預設編碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "SETTINGS_ENCODING_DESC",
+                    "source": "Encoding used for files that are not valid UTF-8. Auto detect tries UTF-8 first, then GB18030.",
+                    "target": "用於非有效 UTF-8 檔案的編碼。「自動偵測」會先嘗試 UTF-8，再嘗試 GB18030。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "SETTINGS_ENCODING_OPTION_AUTO",
+                    "source": "Auto detect",
+                    "target": "自動偵測"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "SETTINGS_ENCODING_CLEAR_MEMORY_NAME",
+                    "source": "Clear remembered encodings",
+                    "target": "清除已記住的編碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "SETTINGS_ENCODING_CLEAR_MEMORY_DESC",
+                    "source": "Forget per-file encoding choices made by this plugin.",
+                    "target": "清除此外掛為個別檔案記住的編碼選擇。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "SETTINGS_ENCODING_CLEAR_MEMORY_BUTTON",
+                    "source": "Clear",
+                    "target": "清除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ENCODING_NAME_GB18030",
+                    "source": "GB18030 (Simplified Chinese)",
+                    "target": "GB18030（簡體中文）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ENCODING_NAME_BIG5",
+                    "source": "Big5 (Traditional Chinese)",
+                    "target": "Big5（繁體中文）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ENCODING_NAME_SHIFT_JIS",
+                    "source": "Shift JIS (Japanese)",
+                    "target": "Shift JIS（日文）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ENCODING_NAME_EUC_KR",
+                    "source": "EUC-KR (Korean)",
+                    "target": "EUC-KR（韓文）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ENCODING_NAME_WINDOWS_1252",
+                    "source": "Windows-1252 (Western)",
+                    "target": "Windows-1252（西歐語系）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ENCODING_PICKER_PLACEHOLDER",
+                    "source": "Reopen with encoding…",
+                    "target": "以指定編碼重新開啟…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ENCODING_BADGE_TOOLTIP",
+                    "source": "Encoding: {0}. Click to reopen with a different encoding.",
+                    "target": "編碼：{0}。按一下可用其他編碼重新開啟。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "CMD_REOPEN_WITH_ENCODING",
+                    "source": "Reopen with encoding",
+                    "target": "以指定編碼重新開啟"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "CMD_CONVERT_TO_UTF8",
+                    "source": "Convert current file to UTF-8",
+                    "target": "將目前檔案轉換為 UTF-8"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "MODAL_LOSSY_ENCODING_TITLE",
+                    "source": "Characters cannot be encoded",
+                    "target": "部分字元無法編碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "MODAL_LOSSY_ENCODING_DESC",
+                    "source": "\"{0}\" is saved as {1}, but some characters cannot be represented in {1} and will be replaced (e.g. \"{2}\"). Choose how to save.",
+                    "target": "「{0}」使用 {1} 編碼儲存，但部分字元無法以 {1} 表示，儲存時將被取代（例如「{2}」）。請選擇儲存方式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "MODAL_LOSSY_ENCODING_UTF8",
+                    "source": "Save as UTF-8",
+                    "target": "以 UTF-8 儲存"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "MODAL_LOSSY_ENCODING_KEEP",
+                    "source": "Save as {0} (replace characters)",
+                    "target": "以 {0} 儲存（取代無法編碼的字元）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "MODAL_LOSSY_ENCODING_CANCEL",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "NOTICE_REOPENED_WITH_ENCODING",
+                    "source": "Reopened as {0}.",
+                    "target": "已使用 {0} 編碼重新開啟。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "NOTICE_ALREADY_UTF8",
+                    "source": "This file is already UTF-8.",
+                    "target": "此檔案已是 UTF-8 編碼。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "NOTICE_CONVERTED_TO_UTF8",
+                    "source": "Converted to UTF-8.",
+                    "target": "已轉換為 UTF-8。"
+                },
                 {
                     "type": "CallExpression",
                     "name": "error",
@@ -339,6 +537,130 @@
                 }
             ],
             "regex": [
+                {
+                    "source": "SETTINGS_EDITOR_WORD_WRAP_NAME:\"Editor word wrap\"",
+                    "target": "SETTINGS_EDITOR_WORD_WRAP_NAME:\"編輯器自動換行\""
+                },
+                {
+                    "source": "SETTINGS_EDITOR_WORD_WRAP_DESC:\"Wrap long lines in the code editor instead of scrolling horizontally.\"",
+                    "target": "SETTINGS_EDITOR_WORD_WRAP_DESC:\"在程式碼編輯器中將過長的行自動換行，無須水平捲動。\""
+                },
+                {
+                    "source": "SETTINGS_EMBED_WORD_WRAP_NAME:\"Embed word wrap\"",
+                    "target": "SETTINGS_EMBED_WORD_WRAP_NAME:\"嵌入區塊自動換行\""
+                },
+                {
+                    "source": "SETTINGS_EMBED_WORD_WRAP_DESC:\"Wrap long lines in embedded code blocks instead of scrolling horizontally.\"",
+                    "target": "SETTINGS_EMBED_WORD_WRAP_DESC:\"在嵌入的程式碼區塊中將過長的行自動換行，無須水平捲動。\""
+                },
+                {
+                    "source": "SETTINGS_ENCODING_NAME:\"Default encoding\"",
+                    "target": "SETTINGS_ENCODING_NAME:\"預設編碼\""
+                },
+                {
+                    "source": "SETTINGS_ENCODING_DESC:\"Encoding used for files that are not valid UTF-8. Auto detect tries UTF-8 first, then GB18030.\"",
+                    "target": "SETTINGS_ENCODING_DESC:\"用於非有效 UTF-8 檔案的編碼。「自動偵測」會先嘗試 UTF-8，再嘗試 GB18030。\""
+                },
+                {
+                    "source": "SETTINGS_ENCODING_OPTION_AUTO:\"Auto detect\"",
+                    "target": "SETTINGS_ENCODING_OPTION_AUTO:\"自動偵測\""
+                },
+                {
+                    "source": "SETTINGS_ENCODING_CLEAR_MEMORY_NAME:\"Clear remembered encodings\"",
+                    "target": "SETTINGS_ENCODING_CLEAR_MEMORY_NAME:\"清除已記住的編碼\""
+                },
+                {
+                    "source": "SETTINGS_ENCODING_CLEAR_MEMORY_DESC:\"Forget per-file encoding choices made by this plugin.\"",
+                    "target": "SETTINGS_ENCODING_CLEAR_MEMORY_DESC:\"清除此外掛為個別檔案記住的編碼選擇。\""
+                },
+                {
+                    "source": "SETTINGS_ENCODING_CLEAR_MEMORY_BUTTON:\"Clear\"",
+                    "target": "SETTINGS_ENCODING_CLEAR_MEMORY_BUTTON:\"清除\""
+                },
+                {
+                    "source": "ENCODING_NAME_GB18030:\"GB18030 (Simplified Chinese)\"",
+                    "target": "ENCODING_NAME_GB18030:\"GB18030（簡體中文）\""
+                },
+                {
+                    "source": "ENCODING_NAME_BIG5:\"Big5 (Traditional Chinese)\"",
+                    "target": "ENCODING_NAME_BIG5:\"Big5（繁體中文）\""
+                },
+                {
+                    "source": "ENCODING_NAME_SHIFT_JIS:\"Shift JIS (Japanese)\"",
+                    "target": "ENCODING_NAME_SHIFT_JIS:\"Shift JIS（日文）\""
+                },
+                {
+                    "source": "ENCODING_NAME_EUC_KR:\"EUC-KR (Korean)\"",
+                    "target": "ENCODING_NAME_EUC_KR:\"EUC-KR（韓文）\""
+                },
+                {
+                    "source": "ENCODING_NAME_WINDOWS_1252:\"Windows-1252 (Western)\"",
+                    "target": "ENCODING_NAME_WINDOWS_1252:\"Windows-1252（西歐語系）\""
+                },
+                {
+                    "source": "ENCODING_PICKER_PLACEHOLDER:\"Reopen with encoding\\u2026\"",
+                    "target": "ENCODING_PICKER_PLACEHOLDER:\"以指定編碼重新開啟…\""
+                },
+                {
+                    "source": "ENCODING_BADGE_TOOLTIP:\"Encoding: {0}. Click to reopen with a different encoding.\"",
+                    "target": "ENCODING_BADGE_TOOLTIP:\"編碼：{0}。按一下可用其他編碼重新開啟。\""
+                },
+                {
+                    "source": "CMD_REOPEN_WITH_ENCODING:\"Reopen with encoding\"",
+                    "target": "CMD_REOPEN_WITH_ENCODING:\"以指定編碼重新開啟\""
+                },
+                {
+                    "source": "CMD_CONVERT_TO_UTF8:\"Convert current file to UTF-8\"",
+                    "target": "CMD_CONVERT_TO_UTF8:\"將目前檔案轉換為 UTF-8\""
+                },
+                {
+                    "source": "MODAL_LOSSY_ENCODING_TITLE:\"Characters cannot be encoded\"",
+                    "target": "MODAL_LOSSY_ENCODING_TITLE:\"部分字元無法編碼\""
+                },
+                {
+                    "source": "MODAL_LOSSY_ENCODING_DESC:'\"{0}\" is saved as {1}, but some characters cannot be represented in {1} and will be replaced (e.g. \"{2}\"). Choose how to save.'",
+                    "target": "MODAL_LOSSY_ENCODING_DESC:\"「{0}」使用 {1} 編碼儲存，但部分字元無法以 {1} 表示，儲存時將被取代（例如「{2}」）。請選擇儲存方式。\""
+                },
+                {
+                    "source": "MODAL_LOSSY_ENCODING_UTF8:\"Save as UTF-8\"",
+                    "target": "MODAL_LOSSY_ENCODING_UTF8:\"以 UTF-8 儲存\""
+                },
+                {
+                    "source": "MODAL_LOSSY_ENCODING_KEEP:\"Save as {0} (replace characters)\"",
+                    "target": "MODAL_LOSSY_ENCODING_KEEP:\"以 {0} 儲存（取代無法編碼的字元）\""
+                },
+                {
+                    "source": "MODAL_LOSSY_ENCODING_CANCEL:\"Cancel\"",
+                    "target": "MODAL_LOSSY_ENCODING_CANCEL:\"取消\""
+                },
+                {
+                    "source": "NOTICE_REOPENED_WITH_ENCODING:\"Reopened as {0}.\"",
+                    "target": "NOTICE_REOPENED_WITH_ENCODING:\"已使用 {0} 編碼重新開啟。\""
+                },
+                {
+                    "source": "NOTICE_ALREADY_UTF8:\"This file is already UTF-8.\"",
+                    "target": "NOTICE_ALREADY_UTF8:\"此檔案已是 UTF-8 編碼。\""
+                },
+                {
+                    "source": "NOTICE_CONVERTED_TO_UTF8:\"Converted to UTF-8.\"",
+                    "target": "NOTICE_CONVERTED_TO_UTF8:\"已轉換為 UTF-8。\""
+                },
+                {
+                    "source": "\"[code-space] readBinary failed, falling back to vault.read\"",
+                    "target": "\"[code-space] readBinary 讀取失敗，改用 vault.read\""
+                },
+                {
+                    "source": "\"Code Space: Failed to decode file content:\"",
+                    "target": "\"Code Space：解碼檔案內容失敗：\""
+                },
+                {
+                    "source": "\"Code Space: Failed to convert file to UTF-8:\"",
+                    "target": "\"Code Space：將檔案轉換為 UTF-8 失敗：\""
+                },
+                {
+                    "source": "`node-pty is not loadable at ${t}`",
+                    "target": "`無法從 ${t} 載入 node-pty`"
+                },
                 {
                     "source": "error(\"Code Space: Failed to save file:\",t),new Ke.Notice(g(\"NOTICE_SAVE_FAIL\")",
                     "target": "error(\"Code Space：儲存檔案失敗：\",t),new Ke.Notice(g(\"NOTICE_SAVE_FAIL\")"
@@ -1500,12 +1822,22 @@
                     "name": "description",
                     "source": "Professional code file management with visual dashboard, syntax highlighting editor, and Markdown embedding.",
                     "target": "專業的程式碼檔案管理工具，提供視覺化儀表板、語法醒目提示編輯器與 Markdown 嵌入功能。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Professional code file management with visual dashboard, syntax highlighting editor, Markdown embedding, external folder mounts, and terminal integration.",
+                    "target": "專業的程式碼檔案管理工具，提供視覺化儀表板、語法醒目提示編輯器、Markdown 嵌入、外部資料夾掛載與終端機整合功能。"
                 }
             ],
             "regex": [
                 {
                     "source": "\"description\": \"Professional code file management with visual dashboard, syntax highlighting editor, and Markdown embedding.\"",
                     "target": "\"description\": \"專業的程式碼檔案管理工具，提供視覺化儀表板、語法醒目提示編輯器與 Markdown 嵌入功能。\""
+                },
+                {
+                    "source": "\"description\": \"Professional code file management with visual dashboard, syntax highlighting editor, Markdown embedding, external folder mounts, and terminal integration.\"",
+                    "target": "\"description\": \"專業的程式碼檔案管理工具，提供視覺化儀表板、語法醒目提示編輯器、Markdown 嵌入、外部資料夾掛載與終端機整合功能。\""
                 }
             ]
         }
