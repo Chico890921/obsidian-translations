@@ -2,17 +2,1055 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "ink",
-        "version": "0.5.6",
+        "version": "0.5.7",
         "title": "[zh-tw] Ink",
         "description": "Ink 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.5.6",
+        "supportedVersions": "0.5.7",
         "author": "Chico",
-        "updatedAt": 1784781627144
+        "updatedAt": 1789383568684
     },
     "dict": {
         "main.js": {
             "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Like ink?",
+                    "target": "喜歡 Ink 嗎？"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "cancelLabel",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Welcome to ink",
+                    "target": "歡迎使用 Ink"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Ink is all about enabling pen use directly in your Markdown notes.",
+                    "target": "Ink 讓你可以直接在 Markdown 筆記中使用數位筆。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "In any Markdown note, run the following command to begin writing where your Cursor is.",
+                    "target": "在任何 Markdown 筆記中執行以下命令，即可從游標所在位置開始手寫。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "\"Ink: new handwriting section\"",
+                    "target": "「Ink：新增手寫區塊」"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "These can be added too and can be resized right in your Markdown file. Use the purple lock icon to save framing, or the standard lock icon to save the drawing but revert the framing.",
+                    "target": "也可以加入繪圖區塊，並直接在 Markdown 檔案中調整大小。使用紫色鎖頭圖示可儲存取景範圍；一般鎖頭圖示則會儲存繪圖，但還原取景範圍。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "\"Ink: new drawing\"",
+                    "target": "「Ink：新增繪圖」"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "If you're using an ipad...",
+                    "target": "如果你使用 iPad…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "The 'scribble' feature of the apple pencil can interfere with the ability to write in ink embeds.",
+                    "target": "Apple Pencil 的「隨手寫」功能可能會干擾 Ink 嵌入區塊中的書寫。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "To use ink you will need to turn off scribble in your device settings.",
+                    "target": "若要使用 Ink，請在裝置設定中關閉「隨手寫」。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "If using Obsidian Sync, turn on \"sync all other types\" in the Obsidian Sync settings.",
+                    "target": "如果使用 Obsidian Sync，請在 Obsidian Sync 設定中啟用「同步所有其他類型」。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "View feature demos",
+                    "target": "觀看功能示範"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Follow on socials",
+                    "target": "追蹤社群"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Changes in Ink v0.5.7",
+                    "target": "Ink v0.5.7 的變更"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Fixed iPad Scribble functionality interfering with Ink.",
+                    "target": "修正 iPad「隨手寫」功能干擾 Ink 的問題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Experimental fix to Wacom pen erasers.",
+                    "target": "針對 Wacom 數位筆橡皮擦加入實驗性修正。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Fixed spacing issues around embeds.",
+                    "target": "修正嵌入區塊周圍的間距問題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Redesigned toolbar UX for clarity.",
+                    "target": "重新設計工具列，讓操作更清楚。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Refined stroke sizes to match across writing, drawing, and different input types.",
+                    "target": "調整筆畫粗細，使手寫、繪圖及不同輸入方式的粗細一致。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Fixed Ink previews not appearing on linux.",
+                    "target": "修正 Linux 上無法顯示 Ink 預覽的問題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Fixed random scroll jumps bug.",
+                    "target": "修正捲動位置隨機跳動的問題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Performance optimisations.",
+                    "target": "效能最佳化。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to parse SVG as XML",
+                    "target": "無法將 SVG 解析為 XML"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "No filetype found in metadata",
+                    "target": "中繼資料中找不到檔案類型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Unsupported or missing filetype in metadata",
+                    "target": "中繼資料中的檔案類型不受支援或缺失"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Reset settings…",
+                    "target": "重設設定…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Tips for using Ink, compatibility with other processes, and migrating from older versions.",
+                    "target": "Ink 使用技巧、與其他流程的相容性，以及舊版本遷移說明。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Getting started",
+                    "target": "開始使用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "View feature demos",
+                    "target": "觀看功能示範"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Short videos demonstrating Ink's features.",
+                    "target": "以短片示範 Ink 的功能。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Slash Commands",
+                    "target": "斜線命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "For a more intuitive experience, turn on \"Slash commands\" in \"Obsidian settings\" / \"core plugins\" or install and set up the community plugin \"Slash Commander\".",
+                    "target": "若想要更直覺的體驗，請在「Obsidian 設定」／「核心外掛」中啟用「斜線命令」，或安裝並設定社群外掛「Slash Commander」。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Drawing embed framing",
+                    "target": "繪圖嵌入區塊取景"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Two fingers or right mouse button to reframe. Cmd + right mouse button to zoom, or Cmd + scroll wheel.",
+                    "target": "使用雙指或滑鼠右鍵調整取景範圍。按住 Cmd 搭配滑鼠右鍵或滾輪即可縮放。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Locked embeds",
+                    "target": "已鎖定的嵌入區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Right click on a locked embed to copy or delete it.",
+                    "target": "在已鎖定的嵌入區塊上按右鍵，即可複製或刪除。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Temporary eraser",
+                    "target": "暫時使用橡皮擦"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Hold cmd/ctrl to switch to eraser temporarily.",
+                    "target": "按住 Cmd／Ctrl 可暫時切換為橡皮擦。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "iPadOS pencil scribble",
+                    "target": "iPadOS Apple Pencil 隨手寫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "If using an iPad, the Apple pencil \"Scribble\" setting can interfere with input in Ink sections. Disable it in iPadOS settings for a better experience.",
+                    "target": "如果使用 iPad，Apple Pencil 的「隨手寫」設定可能會干擾 Ink 區塊中的輸入。請在 iPadOS 設定中停用它，以獲得更好的體驗。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "If using \"Obsidian Sync\", turn on \"sync all other types\" in the Obsidian Sync settings.",
+                    "target": "如果使用「Obsidian Sync」，請在 Obsidian Sync 設定中啟用「同步所有其他類型」。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "View recent changes",
+                    "target": "查看近期變更"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Migrate Legacy Ink Files",
+                    "target": "遷移舊版 Ink 檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "This version of Ink uses a new SVG format. Migrate legacy .writing/.drawing files and older Ink SVG files still on the previous format to unlock newer features.",
+                    "target": "此版本的 Ink 使用新的 SVG 格式。將舊版 .writing／.drawing 檔案，以及仍使用先前格式的 Ink SVG 檔案遷移，即可使用新功能。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Show migration options…",
+                    "target": "顯示遷移選項…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Bulk-convert v2 SVG files still on <tldraw> metadata (referenced by embeds) to ink-canvas in place. Drawing embed viewBox is refit to stroke bounds.",
+                    "target": "將嵌入區塊參照、仍使用 <tldraw> 中繼資料的 v2 SVG 檔案批次就地轉換為 ink-canvas。繪圖嵌入區塊的 viewBox 會重新調整以符合筆畫邊界。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Developer: Migrate tldraw SVG to ink-canvas",
+                    "target": "開發者工具：將 tldraw SVG 遷移至 ink-canvas"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Migrate tldraw SVGs…",
+                    "target": "遷移 tldraw SVG…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "For information on this plugin's development, visit the links below.",
+                    "target": "若想了解此外掛的開發資訊，請前往下方連結。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Plugin development",
+                    "target": "外掛開發"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addLinkRow",
+                    "source": "View feature demos",
+                    "target": "觀看功能示範"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addLinkRow",
+                    "source": "Short videos demonstrating Ink's features.",
+                    "target": "以短片示範 Ink 的功能。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Shows a toolbar toggle while editing so you can draw with your finger on touch devices. When off, fingers scroll the note as usual.",
+                    "target": "編輯時在工具列顯示切換按鈕，讓你能在觸控裝置上用手指繪圖。關閉時，手指會照常捲動筆記。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable finger drawing",
+                    "target": "啟用手指繪圖"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Which side undo/redo and extend controls appear on while editing.",
+                    "target": "編輯時，復原／重做與延伸控制按鈕要顯示在哪一側。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Dominant hand",
+                    "target": "慣用手"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Features under active testing. They may not work on all devices and might be removed or changed in the next release. Expand for details.",
+                    "target": "這些功能仍在測試中，可能無法在所有裝置上運作，也可能於下一版移除或變更。展開以查看詳情。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Experimental changes",
+                    "target": "實驗性變更"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Connects to the Boox companion app for passing through smoother pen strokes on supported tablets.",
+                    "target": "連線至 Boox 配套應用程式，在支援的平板上傳遞更流暢的筆畫。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable Boox companion app",
+                    "target": "啟用 Boox 配套應用程式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "While held, the pen barrel button (button 2) erases instead of panning. May conflict with right-click pan on some setups.",
+                    "target": "按住筆身按鈕（按鈕 2）時，暫時使用橡皮擦而非平移。部分設定下可能與右鍵平移衝突。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Side button temporary eraser",
+                    "target": "側邊按鈕暫時切換橡皮擦"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Automatically detect pen or mouse from pressure (auto), use pen pressure and faithful smoothing (pen), or simulated pressure with higher smoothing (mouse).",
+                    "target": "依筆壓自動判斷使用觸控筆或滑鼠（自動）；觸控筆模式使用實際筆壓，平滑處理較忠於原筆跡；滑鼠模式則模擬筆壓，並加強平滑處理。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "append",
+                    "source": "Last detected input: ",
+                    "target": "上次偵測到的輸入方式："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "append",
+                    "source": "If detection is incorrect, choose Pen or Mouse manually.",
+                    "target": "若偵測結果不正確，請手動選擇「觸控筆」或「滑鼠」。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Smoothing and pressure",
+                    "target": "平滑處理與筆壓"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Auto",
+                    "target": "自動"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Pen",
+                    "target": "觸控筆"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Mouse",
+                    "target": "滑鼠"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "While editing a Markdown file, run the action 'insert new hand drawn section' to embed a drawing canvas.",
+                    "target": "編輯 Markdown 檔案時，執行「插入新的手繪區塊」動作即可嵌入繪圖畫布。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Drawing",
+                    "target": "繪圖"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show grid in new drawings",
+                    "target": "在新繪圖中顯示格線"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "While editing a Markdown file, run the action 'new handwriting section' to embed a section for writing with a pen.",
+                    "target": "編輯 Markdown 檔案時，執行「新增手寫區塊」動作即可嵌入可用數位筆書寫的區塊。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Writing",
+                    "target": "手寫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Height in pixels of each ruled line. Only affects new writing embeds.",
+                    "target": "每一行橫線的高度，以像素為單位。僅影響新建立的手寫嵌入區塊。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Line height",
+                    "target": "行高"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Number of empty lines shown below your writing while editing. Writing reaches the last line before the embed extends in height.",
+                    "target": "編輯時在筆跡下方顯示的空白行數。書寫到最後一行時，嵌入區塊才會增加高度。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Buffer lines when editing",
+                    "target": "編輯時的預留空白行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Always back up your files. Expand for details.",
+                    "target": "請務必備份檔案。展開以查看詳情。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "This plugin is in beta",
+                    "target": "此外掛處於 Beta 階段"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Beta means the plugin is still evolving. Changes to embed formats and file-handling features, even when thoroughly tested, may occasionally introduce issues that affect your vault. Always keep backups of your data.",
+                    "target": "Beta 表示此外掛仍在持續開發。嵌入格式與檔案處理功能的變更，即使經過完整測試，仍可能偶爾出現影響儲存庫的問題。請務必備份資料。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When enabled, debug information is written to an ink-debug.md file in your vault root. This includes writing and drawing activity, so do not enable this unless you are actively troubleshooting a bug to provide logs for a bug report. Disable it again once you're done.",
+                    "target": "啟用後，除錯資訊會寫入儲存庫根目錄的 ink-debug.md 檔案，其中包含手寫與繪圖活動。請僅在排查問題、準備提供錯誤回報紀錄時啟用，完成後請再次停用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enable debug logging",
+                    "target": "啟用除錯紀錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "children",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "action.redo",
+                    "source": "Redo",
+                    "target": "重做"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "action.undo",
+                    "source": "Undo",
+                    "target": "復原"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "fill-style.none",
+                    "source": "None",
+                    "target": "無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "dash-style.draw",
+                    "source": "Draw",
+                    "target": "繪圖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "font-style.draw",
+                    "source": "Draw",
+                    "target": "繪圖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "arrowheadStart-style.none",
+                    "source": "None",
+                    "target": "無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "arrowheadEnd-style.none",
+                    "source": "None",
+                    "target": "無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tool.select",
+                    "source": "Select",
+                    "target": "選取"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tool.draw",
+                    "source": "Draw",
+                    "target": "繪圖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "page-menu.edit-done",
+                    "source": "Done",
+                    "target": "完成"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "edit-link-dialog.cancel",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "embed-dialog.cancel",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "rename-project-dialog.cancel",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tool-panel.drawing",
+                    "source": "Drawing",
+                    "target": "繪圖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "file-system.confirm-open.cancel",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "file-system.confirm-clear.cancel",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sharing.confirm-leave.cancel",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "When you lock or save the embed, those strokes become visible again.",
+                    "target": "鎖定或儲存嵌入區塊後，這些筆畫會再次顯示。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Open in full view",
+                    "target": "在完整檢視中開啟"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Select",
+                    "target": "選取"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Write",
+                    "target": "手寫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Erase",
+                    "target": "擦除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Finish editing",
+                    "target": "完成編輯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Draw",
+                    "target": "繪圖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Redo",
+                    "target": "重做"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Undo",
+                    "target": "復原"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Add more lines",
+                    "target": "新增更多行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Scanning vault for notes that embed this file…",
+                    "target": "正在掃描儲存庫中嵌入此檔案的筆記…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Duplicate and convert copy",
+                    "target": "建立副本並轉換"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Convert",
+                    "target": "轉換"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Layout changes",
+                    "target": "版面變更"
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "name": "text",
+                    "source": "Strokes will be scaled (smaller only) and repositioned to fit the writing page. This cannot be undone.",
+                    "target": "筆畫會縮小並重新定位，以符合手寫頁面的大小，不會放大。此操作無法復原。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "The drawing embed viewbox in affected notes will be recalculated to fit the ink. Stroke positions are unchanged.",
+                    "target": "受影響筆記中的繪圖嵌入區塊會重新計算取景範圍，以符合筆跡邊界。筆畫位置不會變動。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Legacy tldraw format: layout adjustment does not apply. Only metadata and embed type will change.",
+                    "target": "舊版 tldraw 格式不適用版面調整，只會變更中繼資料與嵌入類型。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Embeds",
+                    "target": "嵌入區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "This file is not embedded in any notes.",
+                    "target": "此檔案未嵌入任何筆記。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Use \"Duplicate and convert copy\" to convert a copy and update only this note's embed. Other notes keep the original file.",
+                    "target": "使用「建立副本並轉換」即可轉換副本，且只更新這則筆記的嵌入區塊。其他筆記會保留原始檔案。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "None",
+                    "target": "無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Converting…",
+                    "target": "正在轉換…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Open 10 random notes",
+                    "target": "隨機開啟 10 則筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Done",
+                    "target": "完成"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Remove and delete file",
+                    "target": "移除嵌入區塊並刪除檔案"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Nothing to copy",
+                    "target": "沒有可複製的內容"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Embed copied to clipboard",
+                    "target": "已將嵌入區塊複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to copy embed to clipboard",
+                    "target": "無法將嵌入區塊複製到剪貼簿"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Could not read embed Markdown to copy",
+                    "target": "無法讀取嵌入區塊的 Markdown 以進行複製"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Copy embed",
+                    "target": "複製嵌入區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Delete embed",
+                    "target": "刪除嵌入區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Open writing",
+                    "target": "開啟手寫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Convert to Drawing",
+                    "target": "轉換為繪圖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Erase all",
+                    "target": "清除全部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Erase all strokes?",
+                    "target": "清除所有筆畫？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "This will remove all strokes from the canvas.",
+                    "target": "這將移除畫布上的所有筆畫。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmLabel",
+                    "source": "Erase all",
+                    "target": "清除全部"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Connected to Boox companion app",
+                    "target": "已連線至 Boox 配套應用程式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Saving framing",
+                    "target": "儲存取景範圍"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Convert to Writing",
+                    "target": "轉換為手寫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Scanning vault for ink files…",
+                    "target": "正在掃描儲存庫中的 Ink 檔案…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Preview unavailable",
+                    "target": "無法顯示預覽"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Search by filename...",
+                    "target": "依檔案名稱搜尋…"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Migrated to the new SVG format.",
+                    "target": "已遷移至新的 SVG 格式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Legacy Ink file",
+                    "target": "舊版 Ink 檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "This is a legacy Ink file and won't support all the newest features. You can migrate it to the new SVG format now.",
+                    "target": "這是舊版 Ink 檔案，無法支援所有最新功能。你可以立即將它遷移至新的 SVG 格式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "primaryLabel",
+                    "source": "Migrate to new format",
+                    "target": "遷移至新格式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Migrating…",
+                    "target": "正在遷移…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Migrate to new format",
+                    "target": "遷移至新格式"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Ink writing file invalid.",
+                    "target": "Ink 手寫檔案無效。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Migrate legacy ink embeds to ink-canvas",
+                    "target": "將舊版 Ink 嵌入區塊遷移至 ink-canvas"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Scanning vault for legacy embeds…",
+                    "target": "正在掃描儲存庫中的舊版嵌入區塊…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Scanning for .writing / .drawing files…",
+                    "target": "正在掃描 .writing／.drawing 檔案…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Scanning for older tldraw SVG files…",
+                    "target": "正在掃描舊版 tldraw SVG 檔案…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "No legacy Ink files were found in your vault. Nothing to migrate.",
+                    "target": "儲存庫中找不到舊版 Ink 檔案，無須遷移。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Migrate legacy ink files to new format",
+                    "target": "將舊版 Ink 檔案遷移至新格式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Test Migration",
+                    "target": "測試遷移"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Migrate Permanently",
+                    "target": "永久遷移"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Converting older SVG files…",
+                    "target": "正在轉換舊版 SVG 檔案…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Test migration complete",
+                    "target": "測試遷移完成"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "What's next:",
+                    "target": "接下來："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "If satisfied, delete test conversions folder.",
+                    "target": "確認結果符合預期後，刪除測試轉換資料夾。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Run migration again permanently.",
+                    "target": "再次執行遷移，並選擇永久遷移。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Migrate tldraw SVG files to ink-canvas",
+                    "target": "將 tldraw SVG 檔案遷移至 ink-canvas"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Scanning vault for tldraw SVG files…",
+                    "target": "正在掃描儲存庫中的 tldraw SVG 檔案…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "No v2 tldraw SVG files referenced by embeds were found. Nothing to migrate.",
+                    "target": "找不到嵌入區塊所參照的 v2 tldraw SVG 檔案，無須遷移。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Migrate",
+                    "target": "遷移"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Migrating…",
+                    "target": "正在遷移…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Unified undo",
+                    "target": "統一復原"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Unified redo",
+                    "target": "統一重做"
+                },
                 {
                     "type": "AssignmentExpression",
                     "name": "innerHTML",
@@ -1527,6 +2565,1458 @@
                 }
             ],
             "regex": [
+                {
+                    "source": "\"Scanning vault…\"",
+                    "target": "\"正在掃描儲存庫…\""
+                },
+                {
+                    "source": "\"Running test migration…\"",
+                    "target": "\"正在執行測試遷移…\""
+                },
+                {
+                    "source": "\"Converting .writing / .drawing (test)…\"",
+                    "target": "\"正在轉換 .writing／.drawing（測試）…\""
+                },
+                {
+                    "source": "\"Converting .writing / .drawing…\"",
+                    "target": "\"正在轉換 .writing／.drawing…\""
+                },
+                {
+                    "source": "\"Migrating…\"",
+                    "target": "\"正在遷移…\""
+                },
+                {
+                    "source": "\"Copied embed — reference source or duplicate?\"",
+                    "target": "\"已複製嵌入區塊：要參照原檔還是建立副本？\""
+                },
+                {
+                    "source": "\"Finish editing\"",
+                    "target": "\"完成編輯\""
+                },
+                {
+                    "source": "\"Migrating\\u2026\"",
+                    "target": "\"正在遷移…\""
+                },
+                {
+                    "source": "const notFoundLabel = props.embedKind === \"drawing\" ? \"Drawing\" : \"Writing\"",
+                    "target": "const notFoundLabel = props.embedKind === \"drawing\" ? \"繪圖\" : \"手寫\""
+                },
+                {
+                    "source": "\"Writing file not found: \"",
+                    "target": "\"找不到手寫檔案：\""
+                },
+                {
+                    "source": "\"Drawing file not found: \"",
+                    "target": "\"找不到繪圖檔案：\""
+                },
+                {
+                    "source": "\"Locate file\"",
+                    "target": "\"尋找檔案\""
+                },
+                {
+                    "source": "\"Copied embed \\u2014 reference source or duplicate?\"",
+                    "target": "\"已複製嵌入區塊：要參照原檔還是建立副本？\""
+                },
+                {
+                    "source": "\"Save framing\"",
+                    "target": "\"儲存取景範圍\""
+                },
+                {
+                    "source": "\" file not found: \"",
+                    "target": "\"檔案不存在：\""
+                },
+                {
+                    "source": "const notFoundLabel=props.embedKind===\"drawing\"?\"Drawing\":\"Writing\"",
+                    "target": "const notFoundLabel=props.embedKind===\"drawing\"?\"繪圖\":\"手寫\""
+                },
+                {
+                    "source": "settingEl.infoEl.createEl(\"p\").setText(\"Like ink?\"",
+                    "target": "settingEl.infoEl.createEl(\"p\").setText(\"喜歡 Ink 嗎？\""
+                },
+                {
+                    "source": "this.cancelLabel = \"Cancel\"",
+                    "target": "this.cancelLabel = \"取消\""
+                },
+                {
+                    "source": "this.cancelLabel=\"Cancel\"",
+                    "target": "this.cancelLabel=\"取消\""
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"h1\").setText(`Welcome to ink`",
+                    "target": "scrollAreaEl.createEl(\"h1\").setText(`歡迎使用 Ink`"
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"p\").setText(`Ink is all about enabling pen use directly in your Markdown notes.`",
+                    "target": "scrollAreaEl.createEl(\"p\").setText(`Ink 讓你可以直接在 Markdown 筆記中使用數位筆。`"
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"p\").setText(`In any Markdown note, run the following command to begin writing where your Cursor is.`",
+                    "target": "scrollAreaEl.createEl(\"p\").setText(`在任何 Markdown 筆記中執行以下命令，即可從游標所在位置開始手寫。`"
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"blockquote\").setText(`\"Ink: new handwriting section\"`",
+                    "target": "scrollAreaEl.createEl(\"blockquote\").setText(`「Ink：新增手寫區塊」`"
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"p\").setText(`These can be added too and can be resized right in your Markdown file. Use the purple lock icon to save framing, or the standard lock icon to save the drawing but revert the framing.`",
+                    "target": "scrollAreaEl.createEl(\"p\").setText(`也可以加入繪圖區塊，並直接在 Markdown 檔案中調整大小。使用紫色鎖頭圖示可儲存取景範圍；一般鎖頭圖示則會儲存繪圖，但還原取景範圍。`"
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"blockquote\").setText(`\"Ink: new drawing\"`",
+                    "target": "scrollAreaEl.createEl(\"blockquote\").setText(`「Ink：新增繪圖」`"
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"h1\").setText(`If you're using an ipad...`",
+                    "target": "scrollAreaEl.createEl(\"h1\").setText(`如果你使用 iPad…`"
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"p\").setText(`The 'scribble' feature of the apple pencil can interfere with the ability to write in ink embeds.`",
+                    "target": "scrollAreaEl.createEl(\"p\").setText(`Apple Pencil 的「隨手寫」功能可能會干擾 Ink 嵌入區塊中的書寫。`"
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"p\").setText(`To use ink you will need to turn off scribble in your device settings.`",
+                    "target": "scrollAreaEl.createEl(\"p\").setText(`若要使用 Ink，請在裝置設定中關閉「隨手寫」。`"
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"p\").setText(`If using Obsidian Sync, turn on \"sync all other types\" in the Obsidian Sync settings.`",
+                    "target": "scrollAreaEl.createEl(\"p\").setText(`如果使用 Obsidian Sync，請在 Obsidian Sync 設定中啟用「同步所有其他類型」。`"
+                },
+                {
+                    "source": "label: \"View feature demos\"",
+                    "target": "label: \"觀看功能示範\""
+                },
+                {
+                    "source": "label:\"View feature demos\"",
+                    "target": "label:\"觀看功能示範\""
+                },
+                {
+                    "source": "label: \"Follow on socials\"",
+                    "target": "label: \"追蹤社群\""
+                },
+                {
+                    "source": "label:\"Follow on socials\"",
+                    "target": "label:\"追蹤社群\""
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"h1\").setText(`Changes in Ink v0.5.7`",
+                    "target": "scrollAreaEl.createEl(\"h1\").setText(`Ink v0.5.7 的變更`"
+                },
+                {
+                    "source": "changesListEl.createEl(\"li\").setText(`Fixed iPad Scribble functionality interfering with Ink.`",
+                    "target": "changesListEl.createEl(\"li\").setText(`修正 iPad「隨手寫」功能干擾 Ink 的問題。`"
+                },
+                {
+                    "source": "changesListEl.createEl(\"li\").setText(`Experimental fix to Wacom pen erasers.`",
+                    "target": "changesListEl.createEl(\"li\").setText(`針對 Wacom 數位筆橡皮擦加入實驗性修正。`"
+                },
+                {
+                    "source": "changesListEl.createEl(\"li\").setText(`Fixed spacing issues around embeds.`",
+                    "target": "changesListEl.createEl(\"li\").setText(`修正嵌入區塊周圍的間距問題。`"
+                },
+                {
+                    "source": "changesListEl.createEl(\"li\").setText(`Redesigned toolbar UX for clarity.`",
+                    "target": "changesListEl.createEl(\"li\").setText(`重新設計工具列，讓操作更清楚。`"
+                },
+                {
+                    "source": "changesListEl.createEl(\"li\").setText(`Refined stroke sizes to match across writing, drawing, and different input types.`",
+                    "target": "changesListEl.createEl(\"li\").setText(`調整筆畫粗細，使手寫、繪圖及不同輸入方式的粗細一致。`"
+                },
+                {
+                    "source": "changesListEl.createEl(\"li\").setText(`Fixed Ink previews not appearing on linux.`",
+                    "target": "changesListEl.createEl(\"li\").setText(`修正 Linux 上無法顯示 Ink 預覽的問題。`"
+                },
+                {
+                    "source": "changesListEl.createEl(\"li\").setText(`Fixed random scroll jumps bug.`",
+                    "target": "changesListEl.createEl(\"li\").setText(`修正捲動位置隨機跳動的問題。`"
+                },
+                {
+                    "source": "changesListEl.createEl(\"li\").setText(`Performance optimisations.`",
+                    "target": "changesListEl.createEl(\"li\").setText(`效能最佳化。`"
+                },
+                {
+                    "source": "console.warn(\"Failed to parse SVG as XML\"",
+                    "target": "console.warn(\"無法將 SVG 解析為 XML\""
+                },
+                {
+                    "source": "console.warn(\"No filetype found in metadata\"",
+                    "target": "console.warn(\"中繼資料中找不到檔案類型\""
+                },
+                {
+                    "source": "console.warn(\"Unsupported or missing filetype in metadata\"",
+                    "target": "console.warn(\"中繼資料中的檔案類型不受支援或缺失\""
+                },
+                {
+                    "source": "button.setButtonText(\"Reset settings\\u2026\"",
+                    "target": "button.setButtonText(\"重設設定…\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"Getting started\").setDesc(\"Tips for using Ink, compatibility with other processes, and migrating from older versions.\"",
+                    "target": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"Getting started\").setDesc(\"Ink 使用技巧、與其他流程的相容性，以及舊版本遷移說明。\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"Getting started\"",
+                    "target": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"開始使用\""
+                },
+                {
+                    "source": "text: \"View feature demos\"",
+                    "target": "text: \"觀看功能示範\""
+                },
+                {
+                    "source": "text:\"View feature demos\"",
+                    "target": "text:\"觀看功能示範\""
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(\"Short videos demonstrating Ink's features.\"",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(\"以短片示範 Ink 的功能。\""
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-label\").setText(\"Slash Commands\"",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-label\").setText(\"斜線命令\""
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`For a more intuitive experience, turn on \"Slash commands\" in \"Obsidian settings\" / \"core plugins\" or install and set up the community plugin \"Slash Commander\".`",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`若想要更直覺的體驗，請在「Obsidian 設定」／「核心外掛」中啟用「斜線命令」，或安裝並設定社群外掛「Slash Commander」。`"
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-label\").setText(\"Drawing embed framing\"",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-label\").setText(\"繪圖嵌入區塊取景\""
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`Two fingers or right mouse button to reframe. Cmd + right mouse button to zoom, or Cmd + scroll wheel.`",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`使用雙指或滑鼠右鍵調整取景範圍。按住 Cmd 搭配滑鼠右鍵或滾輪即可縮放。`"
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-label\").setText(\"Locked embeds\"",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-label\").setText(\"已鎖定的嵌入區塊\""
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`Right click on a locked embed to copy or delete it.`",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`在已鎖定的嵌入區塊上按右鍵，即可複製或刪除。`"
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-label\").setText(\"Temporary eraser\"",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-label\").setText(\"暫時使用橡皮擦\""
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`Hold cmd/ctrl to switch to eraser temporarily.`",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`按住 Cmd／Ctrl 可暫時切換為橡皮擦。`"
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-label\").setText(\"iPadOS pencil scribble\"",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-label\").setText(\"iPadOS Apple Pencil 隨手寫\""
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`If using an iPad, the Apple pencil \"Scribble\" setting can interfere with input in Ink sections. Disable it in iPadOS settings for a better experience.`",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`如果使用 iPad，Apple Pencil 的「隨手寫」設定可能會干擾 Ink 區塊中的輸入。請在 iPadOS 設定中停用它，以獲得更好的體驗。`"
+                },
+                {
+                    "source": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`If using \"Obsidian Sync\", turn on \"sync all other types\" in the Obsidian Sync settings.`",
+                    "target": "tipsGridEl.createDiv(\"ddc_ink_tips-desc\").setText(`如果使用「Obsidian Sync」，請在 Obsidian Sync 設定中啟用「同步所有其他類型」。`"
+                },
+                {
+                    "source": "btn.setButtonText(\"View recent changes\"",
+                    "target": "btn.setButtonText(\"查看近期變更\""
+                },
+                {
+                    "source": "text: \"Migrate Legacy Ink Files\"",
+                    "target": "text: \"遷移舊版 Ink 檔案\""
+                },
+                {
+                    "source": "text:\"Migrate Legacy Ink Files\"",
+                    "target": "text:\"遷移舊版 Ink 檔案\""
+                },
+                {
+                    "source": "text: \"This version of Ink uses a new SVG format. Migrate legacy .writing/.drawing files and older Ink SVG files still on the previous format to unlock newer features.\"",
+                    "target": "text: \"此版本的 Ink 使用新的 SVG 格式。將舊版 .writing／.drawing 檔案，以及仍使用先前格式的 Ink SVG 檔案遷移，即可使用新功能。\""
+                },
+                {
+                    "source": "text:\"This version of Ink uses a new SVG format. Migrate legacy .writing/.drawing files and older Ink SVG files still on the previous format to unlock newer features.\"",
+                    "target": "text:\"此版本的 Ink 使用新的 SVG 格式。將舊版 .writing／.drawing 檔案，以及仍使用先前格式的 Ink SVG 檔案遷移，即可使用新功能。\""
+                },
+                {
+                    "source": "button.setButtonText(\"Show migration options\\u2026\"",
+                    "target": "button.setButtonText(\"顯示遷移選項…\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(containerEl).setClass(\"ddc_ink_setting\").setName(\"Developer: Migrate tldraw SVG to ink-canvas\").setDesc(\"Bulk-convert v2 SVG files still on <tldraw> metadata (referenced by embeds) to ink-canvas in place. Drawing embed viewBox is refit to stroke bounds.\"",
+                    "target": "new import_obsidian10.Setting(containerEl).setClass(\"ddc_ink_setting\").setName(\"Developer: Migrate tldraw SVG to ink-canvas\").setDesc(\"將嵌入區塊參照、仍使用 <tldraw> 中繼資料的 v2 SVG 檔案批次就地轉換為 ink-canvas。繪圖嵌入區塊的 viewBox 會重新調整以符合筆畫邊界。\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(containerEl).setClass(\"ddc_ink_setting\").setName(\"Developer: Migrate tldraw SVG to ink-canvas\"",
+                    "target": "new import_obsidian10.Setting(containerEl).setClass(\"ddc_ink_setting\").setName(\"開發者工具：將 tldraw SVG 遷移至 ink-canvas\""
+                },
+                {
+                    "source": "button.setButtonText(\"Migrate tldraw SVGs\\u2026\"",
+                    "target": "button.setButtonText(\"遷移 tldraw SVG…\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"Plugin development\").setDesc(\"For information on this plugin's development, visit the links below.\"",
+                    "target": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"Plugin development\").setDesc(\"若想了解此外掛的開發資訊，請前往下方連結。\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"Plugin development\"",
+                    "target": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"外掛開發\""
+                },
+                {
+                    "source": "addLinkRow(tipsGridEl, \"https://youtu.be/plrnx7J_Avc\", \"View feature demos\"",
+                    "target": "addLinkRow(tipsGridEl, \"https://youtu.be/plrnx7J_Avc\", \"觀看功能示範\""
+                },
+                {
+                    "source": "addLinkRow(tipsGridEl,\"https://youtu.be/plrnx7J_Avc\",\"View feature demos\"",
+                    "target": "addLinkRow(tipsGridEl,\"https://youtu.be/plrnx7J_Avc\",\"觀看功能示範\""
+                },
+                {
+                    "source": "addLinkRow(tipsGridEl, \"https://youtu.be/plrnx7J_Avc\", \"View feature demos\", \"Short videos demonstrating Ink's features.\"",
+                    "target": "addLinkRow(tipsGridEl, \"https://youtu.be/plrnx7J_Avc\", \"View feature demos\", \"以短片示範 Ink 的功能。\""
+                },
+                {
+                    "source": "addLinkRow(tipsGridEl,\"https://youtu.be/plrnx7J_Avc\",\"View feature demos\",\"Short videos demonstrating Ink's features.\"",
+                    "target": "addLinkRow(tipsGridEl,\"https://youtu.be/plrnx7J_Avc\",\"View feature demos\",\"以短片示範 Ink 的功能。\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(containerEl).setClass(\"ddc_ink_setting\").setName(\"Enable finger drawing\").setDesc(\"Shows a toolbar toggle while editing so you can draw with your finger on touch devices. When off, fingers scroll the note as usual.\"",
+                    "target": "new import_obsidian10.Setting(containerEl).setClass(\"ddc_ink_setting\").setName(\"Enable finger drawing\").setDesc(\"編輯時在工具列顯示切換按鈕，讓你能在觸控裝置上用手指繪圖。關閉時，手指會照常捲動筆記。\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(containerEl).setClass(\"ddc_ink_setting\").setName(\"Enable finger drawing\"",
+                    "target": "new import_obsidian10.Setting(containerEl).setClass(\"ddc_ink_setting\").setName(\"啟用手指繪圖\""
+                },
+                {
+                    "source": "new TwoWayToggleSetting(containerEl).setName(\"Dominant hand\").setDesc(\"Which side undo/redo and extend controls appear on while editing.\"",
+                    "target": "new TwoWayToggleSetting(containerEl).setName(\"Dominant hand\").setDesc(\"編輯時，復原／重做與延伸控制按鈕要顯示在哪一側。\""
+                },
+                {
+                    "source": "new TwoWayToggleSetting(containerEl).setName(\"Dominant hand\"",
+                    "target": "new TwoWayToggleSetting(containerEl).setName(\"慣用手\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(controlsEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"Experimental changes\").setDesc(\"Features under active testing. They may not work on all devices and might be removed or changed in the next release. Expand for details.\"",
+                    "target": "new import_obsidian10.Setting(controlsEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"Experimental changes\").setDesc(\"這些功能仍在測試中，可能無法在所有裝置上運作，也可能於下一版移除或變更。展開以查看詳情。\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(controlsEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"Experimental changes\"",
+                    "target": "new import_obsidian10.Setting(controlsEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"實驗性變更\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Enable Boox companion app\").setDesc(\"Connects to the Boox companion app for passing through smoother pen strokes on supported tablets.\"",
+                    "target": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Enable Boox companion app\").setDesc(\"連線至 Boox 配套應用程式，在支援的平板上傳遞更流暢的筆畫。\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Enable Boox companion app\"",
+                    "target": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"啟用 Boox 配套應用程式\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Side button temporary eraser\").setDesc(\"While held, the pen barrel button (button 2) erases instead of panning. May conflict with right-click pan on some setups.\"",
+                    "target": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Side button temporary eraser\").setDesc(\"按住筆身按鈕（按鈕 2）時，暫時使用橡皮擦而非平移。部分設定下可能與右鍵平移衝突。\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Side button temporary eraser\"",
+                    "target": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"側邊按鈕暫時切換橡皮擦\""
+                },
+                {
+                    "source": "intro.textContent = \"Automatically detect pen or mouse from pressure (auto), use pen pressure and faithful smoothing (pen), or simulated pressure with higher smoothing (mouse).\"",
+                    "target": "intro.textContent = \"依筆壓自動判斷使用觸控筆或滑鼠（自動）；觸控筆模式使用實際筆壓，平滑處理較忠於原筆跡；滑鼠模式則模擬筆壓，並加強平滑處理。\""
+                },
+                {
+                    "source": "intro.textContent=\"Automatically detect pen or mouse from pressure (auto), use pen pressure and faithful smoothing (pen), or simulated pressure with higher smoothing (mouse).\"",
+                    "target": "intro.textContent=\"依筆壓自動判斷使用觸控筆或滑鼠（自動）；觸控筆模式使用實際筆壓，平滑處理較忠於原筆跡；滑鼠模式則模擬筆壓，並加強平滑處理。\""
+                },
+                {
+                    "source": "detectedLine.append(\"Last detected input: \"",
+                    "target": "detectedLine.append(\"上次偵測到的輸入方式：\""
+                },
+                {
+                    "source": "detectedParagraph.append(\"If detection is incorrect, choose Pen or Mouse manually.\"",
+                    "target": "detectedParagraph.append(\"若偵測結果不正確，請手動選擇「觸控筆」或「滑鼠」。\""
+                },
+                {
+                    "source": "new ThreeWayToggleSetting(contentEl).setName(\"Smoothing and pressure\"",
+                    "target": "new ThreeWayToggleSetting(contentEl).setName(\"平滑處理與筆壓\""
+                },
+                {
+                    "source": "label: \"Auto\"",
+                    "target": "label: \"自動\""
+                },
+                {
+                    "source": "label:\"Auto\"",
+                    "target": "label:\"自動\""
+                },
+                {
+                    "source": "label: \"Pen\"",
+                    "target": "label: \"觸控筆\""
+                },
+                {
+                    "source": "label:\"Pen\"",
+                    "target": "label:\"觸控筆\""
+                },
+                {
+                    "source": "label: \"Mouse\"",
+                    "target": "label: \"滑鼠\""
+                },
+                {
+                    "source": "label:\"Mouse\"",
+                    "target": "label:\"滑鼠\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"Drawing\").setDesc(`While editing a Markdown file, run the action 'insert new hand drawn section' to embed a drawing canvas.`",
+                    "target": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"Drawing\").setDesc(`編輯 Markdown 檔案時，執行「插入新的手繪區塊」動作即可嵌入繪圖畫布。`"
+                },
+                {
+                    "source": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"Drawing\"",
+                    "target": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"繪圖\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Show grid in new drawings\"",
+                    "target": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"在新繪圖中顯示格線\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"Writing\").setDesc(`While editing a Markdown file, run the action 'new handwriting section' to embed a section for writing with a pen.`",
+                    "target": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"Writing\").setDesc(`編輯 Markdown 檔案時，執行「新增手寫區塊」動作即可嵌入可用數位筆書寫的區塊。`"
+                },
+                {
+                    "source": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"Writing\"",
+                    "target": "new import_obsidian10.Setting(sectionEl).setClass(\"ddc_ink_controls-header\").setName(\"手寫\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Line height\").setDesc(`Height in pixels of each ruled line. Only affects new writing embeds.`",
+                    "target": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Line height\").setDesc(`每一行橫線的高度，以像素為單位。僅影響新建立的手寫嵌入區塊。`"
+                },
+                {
+                    "source": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Line height\"",
+                    "target": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"行高\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Buffer lines when editing\").setDesc(`Number of empty lines shown below your writing while editing. Writing reaches the last line before the embed extends in height.`",
+                    "target": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Buffer lines when editing\").setDesc(`編輯時在筆跡下方顯示的空白行數。書寫到最後一行時，嵌入區塊才會增加高度。`"
+                },
+                {
+                    "source": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Buffer lines when editing\"",
+                    "target": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"編輯時的預留空白行\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(controlsEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"This plugin is in beta\").setDesc(\"Always back up your files. Expand for details.\"",
+                    "target": "new import_obsidian10.Setting(controlsEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"This plugin is in beta\").setDesc(\"請務必備份檔案。展開以查看詳情。\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(controlsEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"This plugin is in beta\"",
+                    "target": "new import_obsidian10.Setting(controlsEl).setClass(\"ddc_ink_controls-header\").setClass(\"ddc_ink_controls-header--clickable\").setName(\"此外掛處於 Beta 階段\""
+                },
+                {
+                    "source": "text: `Beta means the plugin is still evolving. Changes to embed formats and file-handling features, even when thoroughly tested, may occasionally introduce issues that affect your vault. Always keep backups of your data.`",
+                    "target": "text: `Beta 表示此外掛仍在持續開發。嵌入格式與檔案處理功能的變更，即使經過完整測試，仍可能偶爾出現影響儲存庫的問題。請務必備份資料。`"
+                },
+                {
+                    "source": "text:`Beta means the plugin is still evolving. Changes to embed formats and file-handling features, even when thoroughly tested, may occasionally introduce issues that affect your vault. Always keep backups of your data.`",
+                    "target": "text:`Beta 表示此外掛仍在持續開發。嵌入格式與檔案處理功能的變更，即使經過完整測試，仍可能偶爾出現影響儲存庫的問題。請務必備份資料。`"
+                },
+                {
+                    "source": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Enable debug logging\").setDesc(\"When enabled, debug information is written to an ink-debug.md file in your vault root. This includes writing and drawing activity, so do not enable this unless you are actively troubleshooting a bug to provide logs for a bug report. Disable it again once you're done.\"",
+                    "target": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Enable debug logging\").setDesc(\"啟用後，除錯資訊會寫入儲存庫根目錄的 ink-debug.md 檔案，其中包含手寫與繪圖活動。請僅在排查問題、準備提供錯誤回報紀錄時啟用，完成後請再次停用。\""
+                },
+                {
+                    "source": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"Enable debug logging\"",
+                    "target": "new import_obsidian10.Setting(contentEl).setClass(\"ddc_ink_setting\").setName(\"啟用除錯紀錄\""
+                },
+                {
+                    "source": "children: \"Cancel\"",
+                    "target": "children: \"取消\""
+                },
+                {
+                    "source": "children:\"Cancel\"",
+                    "target": "children:\"取消\""
+                },
+                {
+                    "source": "\"action.redo\": \"Redo\"",
+                    "target": "\"action.redo\": \"重做\""
+                },
+                {
+                    "source": "\"action.redo\":\"Redo\"",
+                    "target": "\"action.redo\":\"重做\""
+                },
+                {
+                    "source": "\"action.undo\": \"Undo\"",
+                    "target": "\"action.undo\": \"復原\""
+                },
+                {
+                    "source": "\"action.undo\":\"Undo\"",
+                    "target": "\"action.undo\":\"復原\""
+                },
+                {
+                    "source": "\"fill-style.none\": \"None\"",
+                    "target": "\"fill-style.none\": \"無\""
+                },
+                {
+                    "source": "\"fill-style.none\":\"None\"",
+                    "target": "\"fill-style.none\":\"無\""
+                },
+                {
+                    "source": "\"dash-style.draw\": \"Draw\"",
+                    "target": "\"dash-style.draw\": \"繪圖\""
+                },
+                {
+                    "source": "\"dash-style.draw\":\"Draw\"",
+                    "target": "\"dash-style.draw\":\"繪圖\""
+                },
+                {
+                    "source": "\"font-style.draw\": \"Draw\"",
+                    "target": "\"font-style.draw\": \"繪圖\""
+                },
+                {
+                    "source": "\"font-style.draw\":\"Draw\"",
+                    "target": "\"font-style.draw\":\"繪圖\""
+                },
+                {
+                    "source": "\"arrowheadStart-style.none\": \"None\"",
+                    "target": "\"arrowheadStart-style.none\": \"無\""
+                },
+                {
+                    "source": "\"arrowheadStart-style.none\":\"None\"",
+                    "target": "\"arrowheadStart-style.none\":\"無\""
+                },
+                {
+                    "source": "\"arrowheadEnd-style.none\": \"None\"",
+                    "target": "\"arrowheadEnd-style.none\": \"無\""
+                },
+                {
+                    "source": "\"arrowheadEnd-style.none\":\"None\"",
+                    "target": "\"arrowheadEnd-style.none\":\"無\""
+                },
+                {
+                    "source": "\"tool.select\": \"Select\"",
+                    "target": "\"tool.select\": \"選取\""
+                },
+                {
+                    "source": "\"tool.select\":\"Select\"",
+                    "target": "\"tool.select\":\"選取\""
+                },
+                {
+                    "source": "\"tool.draw\": \"Draw\"",
+                    "target": "\"tool.draw\": \"繪圖\""
+                },
+                {
+                    "source": "\"tool.draw\":\"Draw\"",
+                    "target": "\"tool.draw\":\"繪圖\""
+                },
+                {
+                    "source": "\"page-menu.edit-done\": \"Done\"",
+                    "target": "\"page-menu.edit-done\": \"完成\""
+                },
+                {
+                    "source": "\"page-menu.edit-done\":\"Done\"",
+                    "target": "\"page-menu.edit-done\":\"完成\""
+                },
+                {
+                    "source": "\"edit-link-dialog.cancel\": \"Cancel\"",
+                    "target": "\"edit-link-dialog.cancel\": \"取消\""
+                },
+                {
+                    "source": "\"edit-link-dialog.cancel\":\"Cancel\"",
+                    "target": "\"edit-link-dialog.cancel\":\"取消\""
+                },
+                {
+                    "source": "\"embed-dialog.cancel\": \"Cancel\"",
+                    "target": "\"embed-dialog.cancel\": \"取消\""
+                },
+                {
+                    "source": "\"embed-dialog.cancel\":\"Cancel\"",
+                    "target": "\"embed-dialog.cancel\":\"取消\""
+                },
+                {
+                    "source": "\"rename-project-dialog.cancel\": \"Cancel\"",
+                    "target": "\"rename-project-dialog.cancel\": \"取消\""
+                },
+                {
+                    "source": "\"rename-project-dialog.cancel\":\"Cancel\"",
+                    "target": "\"rename-project-dialog.cancel\":\"取消\""
+                },
+                {
+                    "source": "\"tool-panel.drawing\": \"Drawing\"",
+                    "target": "\"tool-panel.drawing\": \"繪圖\""
+                },
+                {
+                    "source": "\"tool-panel.drawing\":\"Drawing\"",
+                    "target": "\"tool-panel.drawing\":\"繪圖\""
+                },
+                {
+                    "source": "\"file-system.confirm-open.cancel\": \"Cancel\"",
+                    "target": "\"file-system.confirm-open.cancel\": \"取消\""
+                },
+                {
+                    "source": "\"file-system.confirm-open.cancel\":\"Cancel\"",
+                    "target": "\"file-system.confirm-open.cancel\":\"取消\""
+                },
+                {
+                    "source": "\"file-system.confirm-clear.cancel\": \"Cancel\"",
+                    "target": "\"file-system.confirm-clear.cancel\": \"取消\""
+                },
+                {
+                    "source": "\"file-system.confirm-clear.cancel\":\"Cancel\"",
+                    "target": "\"file-system.confirm-clear.cancel\":\"取消\""
+                },
+                {
+                    "source": "\"sharing.confirm-leave.cancel\": \"Cancel\"",
+                    "target": "\"sharing.confirm-leave.cancel\": \"取消\""
+                },
+                {
+                    "source": "\"sharing.confirm-leave.cancel\":\"Cancel\"",
+                    "target": "\"sharing.confirm-leave.cancel\":\"取消\""
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"p\").setText(`When you lock or save the embed, those strokes become visible again.`",
+                    "target": "scrollAreaEl.createEl(\"p\").setText(`鎖定或儲存嵌入區塊後，這些筆畫會再次顯示。`"
+                },
+                {
+                    "source": "tooltip: \"Open in full view\"",
+                    "target": "tooltip: \"在完整檢視中開啟\""
+                },
+                {
+                    "source": "tooltip:\"Open in full view\"",
+                    "target": "tooltip:\"在完整檢視中開啟\""
+                },
+                {
+                    "source": "tooltip: \"Select\"",
+                    "target": "tooltip: \"選取\""
+                },
+                {
+                    "source": "tooltip:\"Select\"",
+                    "target": "tooltip:\"選取\""
+                },
+                {
+                    "source": "tooltip: \"Write\"",
+                    "target": "tooltip: \"手寫\""
+                },
+                {
+                    "source": "tooltip:\"Write\"",
+                    "target": "tooltip:\"手寫\""
+                },
+                {
+                    "source": "tooltip: \"Erase\"",
+                    "target": "tooltip: \"擦除\""
+                },
+                {
+                    "source": "tooltip:\"Erase\"",
+                    "target": "tooltip:\"擦除\""
+                },
+                {
+                    "source": "tooltip: \"Finish editing\"",
+                    "target": "tooltip: \"完成編輯\""
+                },
+                {
+                    "source": "tooltip:\"Finish editing\"",
+                    "target": "tooltip:\"完成編輯\""
+                },
+                {
+                    "source": "tooltip: \"Draw\"",
+                    "target": "tooltip: \"繪圖\""
+                },
+                {
+                    "source": "tooltip:\"Draw\"",
+                    "target": "tooltip:\"繪圖\""
+                },
+                {
+                    "source": "tooltip: \"Redo\"",
+                    "target": "tooltip: \"重做\""
+                },
+                {
+                    "source": "tooltip:\"Redo\"",
+                    "target": "tooltip:\"重做\""
+                },
+                {
+                    "source": "tooltip: \"Undo\"",
+                    "target": "tooltip: \"復原\""
+                },
+                {
+                    "source": "tooltip:\"Undo\"",
+                    "target": "tooltip:\"復原\""
+                },
+                {
+                    "source": "tooltip: \"Add more lines\"",
+                    "target": "tooltip: \"新增更多行\""
+                },
+                {
+                    "source": "tooltip:\"Add more lines\"",
+                    "target": "tooltip:\"新增更多行\""
+                },
+                {
+                    "source": "text: \"Scanning vault for notes that embed this file\\u2026\"",
+                    "target": "text: \"正在掃描儲存庫中嵌入此檔案的筆記…\""
+                },
+                {
+                    "source": "text:\"Scanning vault for notes that embed this file\\u2026\"",
+                    "target": "text:\"正在掃描儲存庫中嵌入此檔案的筆記…\""
+                },
+                {
+                    "source": "this.createStat(statsEl, \"0\", \"remaining\")",
+                    "target": "this.createStat(statsEl, \"0\", \"剩餘\")"
+                },
+                {
+                    "source": "this.createStat(statsEl,\"0\",\"remaining\")",
+                    "target": "this.createStat(statsEl,\"0\",\"剩餘\")"
+                },
+                {
+                    "source": "this.createStat(statsEl, \"0\", \"found\")",
+                    "target": "this.createStat(statsEl, \"0\", \"已找到\")"
+                },
+                {
+                    "source": "this.createStat(statsEl,\"0\",\"found\")",
+                    "target": "this.createStat(statsEl,\"0\",\"已找到\")"
+                },
+                {
+                    "source": "text: \"Cancel\"",
+                    "target": "text: \"取消\""
+                },
+                {
+                    "source": "text:\"Cancel\"",
+                    "target": "text:\"取消\""
+                },
+                {
+                    "source": "text: \"Duplicate and convert copy\"",
+                    "target": "text: \"建立副本並轉換\""
+                },
+                {
+                    "source": "text:\"Duplicate and convert copy\"",
+                    "target": "text:\"建立副本並轉換\""
+                },
+                {
+                    "source": "text: \"Convert\"",
+                    "target": "text: \"轉換\""
+                },
+                {
+                    "source": "text:\"Convert\"",
+                    "target": "text:\"轉換\""
+                },
+                {
+                    "source": "text: \"Layout changes\"",
+                    "target": "text: \"版面變更\""
+                },
+                {
+                    "source": "text:\"Layout changes\"",
+                    "target": "text:\"版面變更\""
+                },
+                {
+                    "source": "text = \"Strokes will be scaled (smaller only) and repositioned to fit the writing page. This cannot be undone.\"",
+                    "target": "text = \"筆畫會縮小並重新定位，以符合手寫頁面的大小，不會放大。此操作無法復原。\""
+                },
+                {
+                    "source": "text=\"Strokes will be scaled (smaller only) and repositioned to fit the writing page. This cannot be undone.\"",
+                    "target": "text=\"筆畫會縮小並重新定位，以符合手寫頁面的大小，不會放大。此操作無法復原。\""
+                },
+                {
+                    "source": "text: \"The drawing embed viewbox in affected notes will be recalculated to fit the ink. Stroke positions are unchanged.\"",
+                    "target": "text: \"受影響筆記中的繪圖嵌入區塊會重新計算取景範圍，以符合筆跡邊界。筆畫位置不會變動。\""
+                },
+                {
+                    "source": "text:\"The drawing embed viewbox in affected notes will be recalculated to fit the ink. Stroke positions are unchanged.\"",
+                    "target": "text:\"受影響筆記中的繪圖嵌入區塊會重新計算取景範圍，以符合筆跡邊界。筆畫位置不會變動。\""
+                },
+                {
+                    "source": "text: \"Legacy tldraw format: layout adjustment does not apply. Only metadata and embed type will change.\"",
+                    "target": "text: \"舊版 tldraw 格式不適用版面調整，只會變更中繼資料與嵌入類型。\""
+                },
+                {
+                    "source": "text:\"Legacy tldraw format: layout adjustment does not apply. Only metadata and embed type will change.\"",
+                    "target": "text:\"舊版 tldraw 格式不適用版面調整，只會變更中繼資料與嵌入類型。\""
+                },
+                {
+                    "source": "text: \"Embeds\"",
+                    "target": "text: \"嵌入區塊\""
+                },
+                {
+                    "source": "text:\"Embeds\"",
+                    "target": "text:\"嵌入區塊\""
+                },
+                {
+                    "source": "text: \"This file is not embedded in any notes.\"",
+                    "target": "text: \"此檔案未嵌入任何筆記。\""
+                },
+                {
+                    "source": "text:\"This file is not embedded in any notes.\"",
+                    "target": "text:\"此檔案未嵌入任何筆記。\""
+                },
+                {
+                    "source": "this.renderList(sectionEl, \"Notes:\", visiblePaths)",
+                    "target": "this.renderList(sectionEl, \"筆記：\", visiblePaths)"
+                },
+                {
+                    "source": "this.renderList(sectionEl,\"Notes:\",visiblePaths)",
+                    "target": "this.renderList(sectionEl,\"筆記：\",visiblePaths)"
+                },
+                {
+                    "source": "text: `Use \"Duplicate and convert copy\" to convert a copy and update only this note's embed. Other notes keep the original file.`",
+                    "target": "text: `使用「建立副本並轉換」即可轉換副本，且只更新這則筆記的嵌入區塊。其他筆記會保留原始檔案。`"
+                },
+                {
+                    "source": "text:`Use \"Duplicate and convert copy\" to convert a copy and update only this note's embed. Other notes keep the original file.`",
+                    "target": "text:`使用「建立副本並轉換」即可轉換副本，且只更新這則筆記的嵌入區塊。其他筆記會保留原始檔案。`"
+                },
+                {
+                    "source": "text: \"None\"",
+                    "target": "text: \"無\""
+                },
+                {
+                    "source": "text:\"None\"",
+                    "target": "text:\"無\""
+                },
+                {
+                    "source": "text: \"Converting\\u2026\"",
+                    "target": "text: \"正在轉換…\""
+                },
+                {
+                    "source": "text:\"Converting\\u2026\"",
+                    "target": "text:\"正在轉換…\""
+                },
+                {
+                    "source": "this.createStat(statsEl, \"0\", \"updated\")",
+                    "target": "this.createStat(statsEl, \"0\", \"已更新\")"
+                },
+                {
+                    "source": "this.createStat(statsEl,\"0\",\"updated\")",
+                    "target": "this.createStat(statsEl,\"0\",\"已更新\")"
+                },
+                {
+                    "source": "this.createStat(statsEl, String(notesToUpdate), \"remaining\")",
+                    "target": "this.createStat(statsEl, String(notesToUpdate), \"剩餘\")"
+                },
+                {
+                    "source": "this.createStat(statsEl,String(notesToUpdate),\"remaining\")",
+                    "target": "this.createStat(statsEl,String(notesToUpdate),\"剩餘\")"
+                },
+                {
+                    "source": "this.createStat(statsEl, \"0\", \"failed\")",
+                    "target": "this.createStat(statsEl, \"0\", \"失敗\")"
+                },
+                {
+                    "source": "this.createStat(statsEl,\"0\",\"failed\")",
+                    "target": "this.createStat(statsEl,\"0\",\"失敗\")"
+                },
+                {
+                    "source": "text: \"Open 10 random notes\"",
+                    "target": "text: \"隨機開啟 10 則筆記\""
+                },
+                {
+                    "source": "text:\"Open 10 random notes\"",
+                    "target": "text:\"隨機開啟 10 則筆記\""
+                },
+                {
+                    "source": "text: \"Done\"",
+                    "target": "text: \"完成\""
+                },
+                {
+                    "source": "text:\"Done\"",
+                    "target": "text:\"完成\""
+                },
+                {
+                    "source": "text: \"Remove and delete file\"",
+                    "target": "text: \"移除嵌入區塊並刪除檔案\""
+                },
+                {
+                    "source": "text:\"Remove and delete file\"",
+                    "target": "text:\"移除嵌入區塊並刪除檔案\""
+                },
+                {
+                    "source": "new import_obsidian19.Notice(\"Nothing to copy\"",
+                    "target": "new import_obsidian19.Notice(\"沒有可複製的內容\""
+                },
+                {
+                    "source": "new import_obsidian19.Notice(\"Embed copied to clipboard\"",
+                    "target": "new import_obsidian19.Notice(\"已將嵌入區塊複製到剪貼簿\""
+                },
+                {
+                    "source": "new import_obsidian19.Notice(\"Failed to copy embed to clipboard\"",
+                    "target": "new import_obsidian19.Notice(\"無法將嵌入區塊複製到剪貼簿\""
+                },
+                {
+                    "source": "new import_obsidian20.Notice(\"Could not read embed Markdown to copy\"",
+                    "target": "new import_obsidian20.Notice(\"無法讀取嵌入區塊的 Markdown 以進行複製\""
+                },
+                {
+                    "source": "text: \"Copy embed\"",
+                    "target": "text: \"複製嵌入區塊\""
+                },
+                {
+                    "source": "text:\"Copy embed\"",
+                    "target": "text:\"複製嵌入區塊\""
+                },
+                {
+                    "source": "text: \"Delete embed\"",
+                    "target": "text: \"刪除嵌入區塊\""
+                },
+                {
+                    "source": "text:\"Delete embed\"",
+                    "target": "text:\"刪除嵌入區塊\""
+                },
+                {
+                    "source": "text: \"Open writing\"",
+                    "target": "text: \"開啟手寫\""
+                },
+                {
+                    "source": "text:\"Open writing\"",
+                    "target": "text:\"開啟手寫\""
+                },
+                {
+                    "source": "text: \"Convert to Drawing\"",
+                    "target": "text: \"轉換為繪圖\""
+                },
+                {
+                    "source": "text:\"Convert to Drawing\"",
+                    "target": "text:\"轉換為繪圖\""
+                },
+                {
+                    "source": "text: \"Erase all\"",
+                    "target": "text: \"清除全部\""
+                },
+                {
+                    "source": "text:\"Erase all\"",
+                    "target": "text:\"清除全部\""
+                },
+                {
+                    "source": "title: \"Erase all strokes?\"",
+                    "target": "title: \"清除所有筆畫？\""
+                },
+                {
+                    "source": "title:\"Erase all strokes?\"",
+                    "target": "title:\"清除所有筆畫？\""
+                },
+                {
+                    "source": "message: \"This will remove all strokes from the canvas.\"",
+                    "target": "message: \"這將移除畫布上的所有筆畫。\""
+                },
+                {
+                    "source": "message:\"This will remove all strokes from the canvas.\"",
+                    "target": "message:\"這將移除畫布上的所有筆畫。\""
+                },
+                {
+                    "source": "confirmLabel: \"Erase all\"",
+                    "target": "confirmLabel: \"清除全部\""
+                },
+                {
+                    "source": "confirmLabel:\"Erase all\"",
+                    "target": "confirmLabel:\"清除全部\""
+                },
+                {
+                    "source": "new import_obsidian22.Notice(\"Connected to Boox companion app\"",
+                    "target": "new import_obsidian22.Notice(\"已連線至 Boox 配套應用程式\""
+                },
+                {
+                    "source": "tooltip: \"Saving framing\"",
+                    "target": "tooltip: \"儲存取景範圍\""
+                },
+                {
+                    "source": "tooltip:\"Saving framing\"",
+                    "target": "tooltip:\"儲存取景範圍\""
+                },
+                {
+                    "source": "new import_obsidian26.Notice(\"Connected to Boox companion app\"",
+                    "target": "new import_obsidian26.Notice(\"已連線至 Boox 配套應用程式\""
+                },
+                {
+                    "source": "text: \"Convert to Writing\"",
+                    "target": "text: \"轉換為手寫\""
+                },
+                {
+                    "source": "text:\"Convert to Writing\"",
+                    "target": "text:\"轉換為手寫\""
+                },
+                {
+                    "source": "new import_obsidian28.Notice(\"Could not read embed Markdown to copy\"",
+                    "target": "new import_obsidian28.Notice(\"無法讀取嵌入區塊的 Markdown 以進行複製\""
+                },
+                {
+                    "source": "this.statusEl.setText(\"Scanning vault for ink files\\u2026\"",
+                    "target": "this.statusEl.setText(\"正在掃描儲存庫中的 Ink 檔案…\""
+                },
+                {
+                    "source": "text: \"Preview unavailable\"",
+                    "target": "text: \"無法顯示預覽\""
+                },
+                {
+                    "source": "text:\"Preview unavailable\"",
+                    "target": "text:\"無法顯示預覽\""
+                },
+                {
+                    "source": "this.searchComponent.setPlaceholder(\"Search by filename...\"",
+                    "target": "this.searchComponent.setPlaceholder(\"依檔案名稱搜尋…\""
+                },
+                {
+                    "source": "new import_obsidian35.Notice(\"Migrated to the new SVG format.\"",
+                    "target": "new import_obsidian35.Notice(\"已遷移至新的 SVG 格式。\""
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"h1\").setText(\"Legacy Ink file\"",
+                    "target": "scrollAreaEl.createEl(\"h1\").setText(\"舊版 Ink 檔案\""
+                },
+                {
+                    "source": "scrollAreaEl.createEl(\"p\").setText(\"This is a legacy Ink file and won't support all the newest features. You can migrate it to the new SVG format now.\"",
+                    "target": "scrollAreaEl.createEl(\"p\").setText(\"這是舊版 Ink 檔案，無法支援所有最新功能。你可以立即將它遷移至新的 SVG 格式。\""
+                },
+                {
+                    "source": "primaryLabel: \"Migrate to new format\"",
+                    "target": "primaryLabel: \"遷移至新格式\""
+                },
+                {
+                    "source": "primaryLabel:\"Migrate to new format\"",
+                    "target": "primaryLabel:\"遷移至新格式\""
+                },
+                {
+                    "source": "primaryBtnEl.setText(\"Migrating\\u2026\"",
+                    "target": "primaryBtnEl.setText(\"正在遷移…\""
+                },
+                {
+                    "source": "primaryBtnEl.setText(\"Migrate to new format\"",
+                    "target": "primaryBtnEl.setText(\"遷移至新格式\""
+                },
+                {
+                    "source": "this.el.createEl(\"p\").textContent = \"Ink writing file invalid.\"",
+                    "target": "this.el.createEl(\"p\").textContent = \"Ink 手寫檔案無效。\""
+                },
+                {
+                    "source": "this.el.createEl(\"p\").textContent=\"Ink writing file invalid.\"",
+                    "target": "this.el.createEl(\"p\").textContent=\"Ink 手寫檔案無效。\""
+                },
+                {
+                    "source": "this.titleEl.setText(\"Migrate legacy ink embeds to ink-canvas\"",
+                    "target": "this.titleEl.setText(\"將舊版 Ink 嵌入區塊遷移至 ink-canvas\""
+                },
+                {
+                    "source": "text: \"Scanning vault for legacy embeds\\u2026\"",
+                    "target": "text: \"正在掃描儲存庫中的舊版嵌入區塊…\""
+                },
+                {
+                    "source": "text:\"Scanning vault for legacy embeds\\u2026\"",
+                    "target": "text:\"正在掃描儲存庫中的舊版嵌入區塊…\""
+                },
+                {
+                    "source": "this.statusTextEl.setText(\"Scanning for .writing / .drawing files\\u2026\"",
+                    "target": "this.statusTextEl.setText(\"正在掃描 .writing／.drawing 檔案…\""
+                },
+                {
+                    "source": "this.statusTextEl.setText(\"Scanning for older tldraw SVG files\\u2026\"",
+                    "target": "this.statusTextEl.setText(\"正在掃描舊版 tldraw SVG 檔案…\""
+                },
+                {
+                    "source": "text: \"No legacy Ink files were found in your vault. Nothing to migrate.\"",
+                    "target": "text: \"儲存庫中找不到舊版 Ink 檔案，無須遷移。\""
+                },
+                {
+                    "source": "text:\"No legacy Ink files were found in your vault. Nothing to migrate.\"",
+                    "target": "text:\"儲存庫中找不到舊版 Ink 檔案，無須遷移。\""
+                },
+                {
+                    "source": "this.titleEl.setText(\"Migrate legacy ink files to new format\"",
+                    "target": "this.titleEl.setText(\"將舊版 Ink 檔案遷移至新格式\""
+                },
+                {
+                    "source": "text: \"Test Migration\"",
+                    "target": "text: \"測試遷移\""
+                },
+                {
+                    "source": "text:\"Test Migration\"",
+                    "target": "text:\"測試遷移\""
+                },
+                {
+                    "source": "text: \"Migrate Permanently\"",
+                    "target": "text: \"永久遷移\""
+                },
+                {
+                    "source": "text:\"Migrate Permanently\"",
+                    "target": "text:\"永久遷移\""
+                },
+                {
+                    "source": "this.createStat(statsEl, \"0\", \"converted\")",
+                    "target": "this.createStat(statsEl, \"0\", \"已轉換\")"
+                },
+                {
+                    "source": "this.createStat(statsEl,\"0\",\"converted\")",
+                    "target": "this.createStat(statsEl,\"0\",\"已轉換\")"
+                },
+                {
+                    "source": "this.createStat(statsEl, String(totalSteps), \"remaining\")",
+                    "target": "this.createStat(statsEl, String(totalSteps), \"剩餘\")"
+                },
+                {
+                    "source": "this.createStat(statsEl,String(totalSteps),\"remaining\")",
+                    "target": "this.createStat(statsEl,String(totalSteps),\"剩餘\")"
+                },
+                {
+                    "source": "this.createStat(statsEl, \"0\", \"skipped\")",
+                    "target": "this.createStat(statsEl, \"0\", \"已略過\")"
+                },
+                {
+                    "source": "this.createStat(statsEl,\"0\",\"skipped\")",
+                    "target": "this.createStat(statsEl,\"0\",\"已略過\")"
+                },
+                {
+                    "source": "this.statusTextEl.setText(\"Converting older SVG files\\u2026\"",
+                    "target": "this.statusTextEl.setText(\"正在轉換舊版 SVG 檔案…\""
+                },
+                {
+                    "source": "this.titleEl.setText(\"Test migration complete\"",
+                    "target": "this.titleEl.setText(\"測試遷移完成\""
+                },
+                {
+                    "source": "text: \"What's next:\"",
+                    "target": "text: \"接下來：\""
+                },
+                {
+                    "source": "text:\"What's next:\"",
+                    "target": "text:\"接下來：\""
+                },
+                {
+                    "source": "text: \"If satisfied, delete test conversions folder.\"",
+                    "target": "text: \"確認結果符合預期後，刪除測試轉換資料夾。\""
+                },
+                {
+                    "source": "text:\"If satisfied, delete test conversions folder.\"",
+                    "target": "text:\"確認結果符合預期後，刪除測試轉換資料夾。\""
+                },
+                {
+                    "source": "text: \"Run migration again permanently.\"",
+                    "target": "text: \"再次執行遷移，並選擇永久遷移。\""
+                },
+                {
+                    "source": "text:\"Run migration again permanently.\"",
+                    "target": "text:\"再次執行遷移，並選擇永久遷移。\""
+                },
+                {
+                    "source": "this.titleEl.setText(\"Migrate tldraw SVG files to ink-canvas\"",
+                    "target": "this.titleEl.setText(\"將 tldraw SVG 檔案遷移至 ink-canvas\""
+                },
+                {
+                    "source": "text: \"Scanning vault for tldraw SVG files\\u2026\"",
+                    "target": "text: \"正在掃描儲存庫中的 tldraw SVG 檔案…\""
+                },
+                {
+                    "source": "text:\"Scanning vault for tldraw SVG files\\u2026\"",
+                    "target": "text:\"正在掃描儲存庫中的 tldraw SVG 檔案…\""
+                },
+                {
+                    "source": "text: \"No v2 tldraw SVG files referenced by embeds were found. Nothing to migrate.\"",
+                    "target": "text: \"找不到嵌入區塊所參照的 v2 tldraw SVG 檔案，無須遷移。\""
+                },
+                {
+                    "source": "text:\"No v2 tldraw SVG files referenced by embeds were found. Nothing to migrate.\"",
+                    "target": "text:\"找不到嵌入區塊所參照的 v2 tldraw SVG 檔案，無須遷移。\""
+                },
+                {
+                    "source": "text: \"Migrate\"",
+                    "target": "text: \"遷移\""
+                },
+                {
+                    "source": "text:\"Migrate\"",
+                    "target": "text:\"遷移\""
+                },
+                {
+                    "source": "text: \"Migrating\\u2026\"",
+                    "target": "text: \"正在遷移…\""
+                },
+                {
+                    "source": "text:\"Migrating\\u2026\"",
+                    "target": "text:\"正在遷移…\""
+                },
+                {
+                    "source": "this.createStat(statsEl, String(this.scanResult.tldrawSvgFiles.length + this.scanResult.affectedNotes.length), \"remaining\")",
+                    "target": "this.createStat(statsEl, String(this.scanResult.tldrawSvgFiles.length + this.scanResult.affectedNotes.length), \"剩餘\")"
+                },
+                {
+                    "source": "this.createStat(statsEl,String(this.scanResult.tldrawSvgFiles.length+this.scanResult.affectedNotes.length),\"remaining\")",
+                    "target": "this.createStat(statsEl,String(this.scanResult.tldrawSvgFiles.length+this.scanResult.affectedNotes.length),\"剩餘\")"
+                },
+                {
+                    "source": "name: \"Unified undo\"",
+                    "target": "name: \"統一復原\""
+                },
+                {
+                    "source": "name:\"Unified undo\"",
+                    "target": "name:\"統一復原\""
+                },
+                {
+                    "source": "name: \"Unified redo\"",
+                    "target": "name: \"統一重做\""
+                },
+                {
+                    "source": "name:\"Unified redo\"",
+                    "target": "name:\"統一重做\""
+                },
+                {
+                    "source": "\"Enable drawing with finger\"",
+                    "target": "\"啟用手指繪圖\""
+                },
+                {
+                    "source": "\"Disable drawing with finger\"",
+                    "target": "\"停用手指繪圖\""
+                },
+                {
+                    "source": "\"Scan failed: \"",
+                    "target": "\"掃描失敗：\""
+                },
+                {
+                    "source": "\"Conversion failed: \"",
+                    "target": "\"轉換失敗：\""
+                },
+                {
+                    "source": "\"Failed to remove and delete file: \"",
+                    "target": "\"移除嵌入區塊並刪除檔案失敗：\""
+                },
+                {
+                    "source": "\"Abandon framing\"",
+                    "target": "\"放棄取景變更\""
+                },
+                {
+                    "source": "\"Scanning vault\\u2026\"",
+                    "target": "\"正在掃描儲存庫…\""
+                },
+                {
+                    "source": "\"No files match your search\"",
+                    "target": "\"沒有符合搜尋條件的檔案\""
+                },
+                {
+                    "source": "\"Migration failed: \"",
+                    "target": "\"遷移失敗：\""
+                },
+                {
+                    "source": "\"Convert legacy files into the new format without deleting the old files. Validate the conversion works before migrating permanently.\"",
+                    "target": "\"將舊版檔案轉換為新格式，並保留原始檔案。請先確認轉換結果正常，再進行永久遷移。\""
+                },
+                {
+                    "source": "\"Convert legacy .writing/.drawing files (and delete them), convert older SVG files in place, and update links in notes.\"",
+                    "target": "\"轉換舊版 .writing／.drawing 檔案並刪除原檔，就地轉換舊版 SVG 檔案，並更新筆記中的連結。\""
+                },
+                {
+                    "source": "\"Convert older SVG files in place to the newest format and update drawing embed framing in notes where needed.\"",
+                    "target": "\"將舊版 SVG 檔案就地轉換為最新格式，並視需要更新筆記中繪圖嵌入區塊的取景範圍。\""
+                },
+                {
+                    "source": "\"Running test migration\\u2026\"",
+                    "target": "\"正在執行測試遷移…\""
+                },
+                {
+                    "source": "\"Converting .writing / .drawing (test)\\u2026\"",
+                    "target": "\"正在轉換 .writing／.drawing（測試）…\""
+                },
+                {
+                    "source": "\"Converting .writing / .drawing\\u2026\"",
+                    "target": "\"正在轉換 .writing／.drawing…\""
+                },
+                {
+                    "source": "`Convert to ${label}`",
+                    "target": "`轉換為${label}`"
+                },
+                {
+                    "source": "`Also move file to ${destFolder}`",
+                    "target": "`同時將檔案移至 ${destFolder}`"
+                },
+                {
+                    "source": "`Embedded in ${totalCount} note${totalCount !== 1 ? \"s\" : \"\"} (including this note and ${otherCount} other${otherCount !== 1 ? \"s\" : \"\"}). Converting will update all ${totalCount} embeds.`",
+                    "target": "`已嵌入 ${totalCount} 則筆記（包含這則筆記及其他 ${otherCount} 則）。轉換時會更新全部 ${totalCount} 個嵌入區塊。`"
+                },
+                {
+                    "source": "`Embedded in ${totalCount} note${totalCount!==1?\"s\":\"\"} (including this note and ${otherCount} other${otherCount!==1?\"s\":\"\"}). Converting will update all ${totalCount} embeds.`",
+                    "target": "`已嵌入 ${totalCount} 則筆記（包含這則筆記及其他 ${otherCount} 則）。轉換時會更新全部 ${totalCount} 個嵌入區塊。`"
+                },
+                {
+                    "source": "`Embedded in this note only. Converting will update this embed to ${typeLabel}.`",
+                    "target": "`僅嵌入這則筆記。轉換時會將此嵌入區塊更新為${typeLabel}。`"
+                },
+                {
+                    "source": "`Embedded in ${totalCount} other note${totalCount !== 1 ? \"s\" : \"\"}. Converting will update all of them.`",
+                    "target": "`已嵌入其他 ${totalCount} 則筆記。轉換時會全部更新。`"
+                },
+                {
+                    "source": "`Embedded in ${totalCount} other note${totalCount!==1?\"s\":\"\"}. Converting will update all of them.`",
+                    "target": "`已嵌入其他 ${totalCount} 則筆記。轉換時會全部更新。`"
+                },
+                {
+                    "source": "`Embedded in ${totalCount} note${totalCount !== 1 ? \"s\" : \"\"}. Converting will update all embeds to ${typeLabel}.`",
+                    "target": "`已嵌入 ${totalCount} 則筆記。轉換時會將所有嵌入區塊更新為${typeLabel}。`"
+                },
+                {
+                    "source": "`Embedded in ${totalCount} note${totalCount!==1?\"s\":\"\"}. Converting will update all embeds to ${typeLabel}.`",
+                    "target": "`已嵌入 ${totalCount} 則筆記。轉換時會將所有嵌入區塊更新為${typeLabel}。`"
+                },
+                {
+                    "source": "`\\u2026and ${listPaths.length - EMBED_LIST_CAP} more.`",
+                    "target": "`…以及另外 ${listPaths.length - EMBED_LIST_CAP} 個。`"
+                },
+                {
+                    "source": "`\\u2026and ${listPaths.length-EMBED_LIST_CAP} more.`",
+                    "target": "`…以及另外 ${listPaths.length-EMBED_LIST_CAP} 個。`"
+                },
+                {
+                    "source": "`Created and converted a copy to ${typeLabel} at ${result.finalFile.path}. ${noteCount} note${noteCount !== 1 ? \"s\" : \"\"} updated. The original file was not changed.`",
+                    "target": "`已建立並轉換為${typeLabel}的副本，儲存至 ${result.finalFile.path}，更新了 ${noteCount} 則筆記。原始檔案未變動。`"
+                },
+                {
+                    "source": "`Created and converted a copy to ${typeLabel} at ${result.finalFile.path}. ${noteCount} note${noteCount!==1?\"s\":\"\"} updated. The original file was not changed.`",
+                    "target": "`已建立並轉換為${typeLabel}的副本，儲存至 ${result.finalFile.path}，更新了 ${noteCount} 則筆記。原始檔案未變動。`"
+                },
+                {
+                    "source": "`Converted to ${typeLabel}. ${noteCount} note${noteCount !== 1 ? \"s\" : \"\"} updated.`",
+                    "target": "`已轉換為${typeLabel}，更新了 ${noteCount} 則筆記。`"
+                },
+                {
+                    "source": "`Converted to ${typeLabel}. ${noteCount} note${noteCount!==1?\"s\":\"\"} updated.`",
+                    "target": "`已轉換為${typeLabel}，更新了 ${noteCount} 則筆記。`"
+                },
+                {
+                    "source": "`Open all ${result.updatedNotePaths.length} note${result.updatedNotePaths.length !== 1 ? \"s\" : \"\"}`",
+                    "target": "`開啟全部 ${result.updatedNotePaths.length} 則筆記`"
+                },
+                {
+                    "source": "`Open all ${result.updatedNotePaths.length} note${result.updatedNotePaths.length!==1?\"s\":\"\"}`",
+                    "target": "`開啟全部 ${result.updatedNotePaths.length} 則筆記`"
+                },
+                {
+                    "source": "`This ${typeLabel} file is only embedded in this note. Do you want to remove the embed only, or also delete the file from your vault?`",
+                    "target": "`這個${typeLabel}檔案只嵌入這則筆記。要只移除嵌入區塊，還是同時從儲存庫刪除檔案？`"
+                },
+                {
+                    "source": "`No ${fileTypeLabel} SVGs found`",
+                    "target": "`找不到${fileTypeLabel} SVG 檔案`"
+                },
+                {
+                    "source": "`Found ${parts.join(\" and \")}. This modal migrates them to the newest SVG format.`",
+                    "target": "`找到 ${parts.join(\"、\")}。此視窗可將它們遷移至最新的 SVG 格式。`"
+                },
+                {
+                    "source": "`Convert .writing/.drawing files into the new format without deleting the old files. Older SVG files (${this.tldrawFileCount}) are only converted on permanent migrate.`",
+                    "target": "`將 .writing／.drawing 檔案轉換為新格式，並保留原始檔案。舊版 SVG 檔案（${this.tldrawFileCount} 個）只會在永久遷移時轉換。`"
+                },
+                {
+                    "source": "`${this.tldrawFileCount} older SVG file${this.tldrawFileCount !== 1 ? \"s\" : \"\"} were left unchanged \\u2014 run Migrate Permanently to convert them.`",
+                    "target": "`${this.tldrawFileCount} 個舊版 SVG 檔案未變動。請執行「永久遷移」以轉換這些檔案。`"
+                },
+                {
+                    "source": "`${this.tldrawFileCount} older SVG file${this.tldrawFileCount!==1?\"s\":\"\"} were left unchanged \\u2014 run Migrate Permanently to convert them.`",
+                    "target": "`${this.tldrawFileCount} 個舊版 SVG 檔案未變動。請執行「永久遷移」以轉換這些檔案。`"
+                },
+                {
+                    "source": "`Check conversion tests in ${INK_TEST_CONVERSIONS_FOLDER}/.`",
+                    "target": "`請到 ${INK_TEST_CONVERSIONS_FOLDER}/ 查看測試轉換結果。`"
+                },
+                {
+                    "source": "`Migration complete. ${convertedFiles} file${convertedFiles !== 1 ? \"s\" : \"\"} converted, ${uniqueNotePaths.length} note${uniqueNotePaths.length !== 1 ? \"s\" : \"\"} updated.`",
+                    "target": "`遷移完成。已轉換 ${convertedFiles} 個檔案，更新 ${uniqueNotePaths.length} 則筆記。`"
+                },
+                {
+                    "source": "`Migration complete. ${convertedFiles} file${convertedFiles!==1?\"s\":\"\"} converted, ${uniqueNotePaths.length} note${uniqueNotePaths.length!==1?\"s\":\"\"} updated.`",
+                    "target": "`遷移完成。已轉換 ${convertedFiles} 個檔案，更新 ${uniqueNotePaths.length} 則筆記。`"
+                },
+                {
+                    "source": "`Open all ${uniqueNotePaths.length} notes`",
+                    "target": "`開啟全部 ${uniqueNotePaths.length} 則筆記`"
+                },
+                {
+                    "source": "`Developer tool: found ${scan.tldrawSvgFiles.length} tldraw SVG file${scan.tldrawSvgFiles.length !== 1 ? \"s\" : \"\"} and ${scan.affectedNotes.length} note${scan.affectedNotes.length !== 1 ? \"s\" : \"\"} referencing them. Each file will be upgraded in place to ink-canvas metadata. Drawing embeds will get a viewBox fitted to stroke bounds. Writing embed lines are unchanged.`",
+                    "target": "`開發者工具：找到 ${scan.tldrawSvgFiles.length} 個 tldraw SVG 檔案，以及參照它們的 ${scan.affectedNotes.length} 則筆記。每個檔案都會就地升級為 ink-canvas 中繼資料。繪圖嵌入區塊的 viewBox 會調整至筆畫邊界，手寫嵌入區塊的行數不變。`"
+                },
+                {
+                    "source": "`Developer tool: found ${scan.tldrawSvgFiles.length} tldraw SVG file${scan.tldrawSvgFiles.length!==1?\"s\":\"\"} and ${scan.affectedNotes.length} note${scan.affectedNotes.length!==1?\"s\":\"\"} referencing them. Each file will be upgraded in place to ink-canvas metadata. Drawing embeds will get a viewBox fitted to stroke bounds. Writing embed lines are unchanged.`",
+                    "target": "`開發者工具：找到 ${scan.tldrawSvgFiles.length} 個 tldraw SVG 檔案，以及參照它們的 ${scan.affectedNotes.length} 則筆記。每個檔案都會就地升級為 ink-canvas 中繼資料。繪圖嵌入區塊的 viewBox 會調整至筆畫邊界，手寫嵌入區塊的行數不變。`"
+                },
+                {
+                    "source": "`Migration complete. ${result.convertedFiles} file${result.convertedFiles !== 1 ? \"s\" : \"\"} converted, ${result.updatedNotes} drawing note${result.updatedNotes !== 1 ? \"s\" : \"\"} updated with fitted viewBox.`",
+                    "target": "`遷移完成。已轉換 ${result.convertedFiles} 個檔案，並為 ${result.updatedNotes} 則繪圖筆記更新符合筆畫邊界的 viewBox。`"
+                },
+                {
+                    "source": "`Migration complete. ${result.convertedFiles} file${result.convertedFiles!==1?\"s\":\"\"} converted, ${result.updatedNotes} drawing note${result.updatedNotes!==1?\"s\":\"\"} updated with fitted viewBox.`",
+                    "target": "`遷移完成。已轉換 ${result.convertedFiles} 個檔案，並為 ${result.updatedNotes} 則繪圖筆記更新符合筆畫邊界的 viewBox。`"
+                },
+                {
+                    "source": "`Open all ${result.updatedNotePaths.length} updated notes`",
+                    "target": "`開啟全部 ${result.updatedNotePaths.length} 則已更新筆記`"
+                },
+                {
+                    "source": "` Strokes will be scaled to approximately ${pct}% of their current size.`",
+                    "target": "` 筆畫將縮小至目前大小的約 ${pct}%。`"
+                },
+                {
+                    "source": "`${this.legacyFileCount} legacy .writing/.drawing file${this.legacyFileCount !== 1 ? \"s\" : \"\"}`",
+                    "target": "`${this.legacyFileCount} 個舊版 .writing／.drawing 檔案`"
+                },
+                {
+                    "source": "`${this.legacyFileCount} legacy .writing/.drawing file${this.legacyFileCount!==1?\"s\":\"\"}`",
+                    "target": "`${this.legacyFileCount} 個舊版 .writing／.drawing 檔案`"
+                },
+                {
+                    "source": "`${this.tldrawFileCount} older SVG file${this.tldrawFileCount !== 1 ? \"s\" : \"\"} still on the previous format`",
+                    "target": "`${this.tldrawFileCount} 個仍使用先前格式的舊版 SVG 檔案`"
+                },
+                {
+                    "source": "`${this.tldrawFileCount} older SVG file${this.tldrawFileCount!==1?\"s\":\"\"} still on the previous format`",
+                    "target": "`${this.tldrawFileCount} 個仍使用先前格式的舊版 SVG 檔案`"
+                },
+                {
+                    "source": "`Failed (${result.failed.length})`",
+                    "target": "`失敗（${result.failed.length}）`"
+                },
+                {
+                    "source": "`Failed (${failed.length})`",
+                    "target": "`失敗（${failed.length}）`"
+                },
+                {
+                    "source": "`Skipped (${skipped.length})`",
+                    "target": "`已略過（${skipped.length}）`"
+                },
+                {
+                    "source": "`Skipped (${result.skipped.length})`",
+                    "target": "`已略過（${result.skipped.length}）`"
+                },
+                {
+                    "source": "`SVG files to convert (${scan.tldrawSvgFiles.length})`",
+                    "target": "`待轉換的 SVG 檔案（${scan.tldrawSvgFiles.length}）`"
+                },
+                {
+                    "source": "`Notes that may be updated (${scan.affectedNotes.length})`",
+                    "target": "`可能更新的筆記（${scan.affectedNotes.length}）`"
+                },
+                {
+                    "source": "const label = this.toType === \"inkDrawing\" ? \"Drawing\" : \"Writing\"",
+                    "target": "const label = this.toType === \"inkDrawing\" ? \"繪圖\" : \"手寫\""
+                },
+                {
+                    "source": "const label=this.toType===\"inkDrawing\"?\"Drawing\":\"Writing\"",
+                    "target": "const label=this.toType===\"inkDrawing\"?\"繪圖\":\"手寫\""
+                },
+                {
+                    "source": "const typeLabel = this.toType === \"inkDrawing\" ? \"drawing\" : \"writing\"",
+                    "target": "const typeLabel = this.toType === \"inkDrawing\" ? \"繪圖\" : \"手寫\""
+                },
+                {
+                    "source": "const typeLabel=this.toType===\"inkDrawing\"?\"drawing\":\"writing\"",
+                    "target": "const typeLabel=this.toType===\"inkDrawing\"?\"繪圖\":\"手寫\""
+                },
+                {
+                    "source": "const typeLabel = this.embedType === \"inkDrawing\" ? \"drawing\" : \"writing\"",
+                    "target": "const typeLabel = this.embedType === \"inkDrawing\" ? \"繪圖\" : \"手寫\""
+                },
+                {
+                    "source": "const typeLabel=this.embedType===\"inkDrawing\"?\"drawing\":\"writing\"",
+                    "target": "const typeLabel=this.embedType===\"inkDrawing\"?\"繪圖\":\"手寫\""
+                },
+                {
+                    "source": "const fileTypeLabel = fileType === \"inkWriting\" ? \"writing\" : \"drawing\"",
+                    "target": "const fileTypeLabel = fileType === \"inkWriting\" ? \"手寫\" : \"繪圖\""
+                },
+                {
+                    "source": "const fileTypeLabel=fileType===\"inkWriting\"?\"writing\":\"drawing\"",
+                    "target": "const fileTypeLabel=fileType===\"inkWriting\"?\"手寫\":\"繪圖\""
+                },
+                {
+                    "source": "const detectedLabel = last7 === \"pen\" ? \"Pen\" : last7 === \"mouse\" ? \"Mouse\" : \"None\"",
+                    "target": "const detectedLabel = last7 === \"pen\" ? \"觸控筆\" : last7 === \"mouse\" ? \"滑鼠\" : \"無\""
+                },
+                {
+                    "source": "const detectedLabel=last7===\"pen\"?\"Pen\":last7===\"mouse\"?\"Mouse\":\"None\"",
+                    "target": "const detectedLabel=last7===\"pen\"?\"觸控筆\":last7===\"mouse\"?\"滑鼠\":\"無\""
+                },
+                {
+                    "source": "setOptionPair(\"right\", \"Right\", \"left\", \"Left\")",
+                    "target": "setOptionPair(\"right\", \"右手\", \"left\", \"左手\")"
+                },
+                {
+                    "source": "setOptionPair(\"right\",\"Right\",\"left\",\"Left\")",
+                    "target": "setOptionPair(\"right\",\"右手\",\"left\",\"左手\")"
+                },
                 {
                     "source": "error(\"forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported\")",
                     "target": "error(\"forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported\")"
