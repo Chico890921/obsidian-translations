@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "editing-toolbar",
-        "version": "4.1.3",
+        "version": "4.1.4",
         "title": "[zh-tw] Editing Toolbar",
         "description": "Editing Toolbar 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "4.1.3",
+        "supportedVersions": "4.1.4",
         "author": "Chico",
-        "updatedAt": 1788820842546
+        "updatedAt": 1789382753980
     },
     "dict": {
         "main.js": {
@@ -1551,6 +1551,10 @@
                 }
             ],
             "regex": [
+                {
+                    "source": "C={...y,\"PKMer login has expired or is invalid. Please log in to PKMer again in Settings → AI.\":",
+                    "target": "C={...y,\"Basic Settings\":\"基本設定\",\"Toolbar Enablement\":\"工具列啟用設定\",\"Toolbar Appearance\":\"工具列外觀\",\"Colors\":\"顏色\",\"Icon Size\":\"圖示大小\",\"Format Commands\":\"格式指令\",\"Regex Commands\":\"正規表示式指令\",\"Artificial Intelligence\":\"人工智慧\",\"Models\":\"模型\",\"Backup\":\"備份\",\"Append Method\":\"附加方式\",\"Regeneration\":\"重新產生\",\"Multiple Configurations\":\"多組設定\",\"Command Configurations\":\"指令設定\",\"Enable Top Toolbar\":\"啟用頂部工具列\",\"Enable Following Toolbar\":\"啟用跟隨工具列\",\"Selection Toolbar\":\"選取工具列\",\"Enable Fixed Toolbar\":\"啟用固定工具列\",\"Floating Toolbar\":\"浮動工具列\",\"Mobile Toolbar\":\"行動版工具列\",\"Enable on Mobile\":\"在行動版啟用\",\"Custom Background\":\"自訂背景\",\"Background Color Presets\":\"背景顏色預設集\",\"Font Color Presets\":\"文字顏色預設集\",\"Auto-hide\":\"自動隱藏\",\"Hide Toolbar\":\"隱藏工具列\",\"Centered Toolbar\":\"工具列置中\",\"Full-width Toolbar\":\"全寬工具列\",\"Toolbar Columns\":\"工具列欄數\",\"Columns per Row\":\"每列欄數\",\"Toolbar Offset\":\"工具列偏移\",\"Fixed Toolbar Position\":\"固定工具列位置\",\"Theme\":\"主題\",\"Preset Theme\":\"預設主題\",\"Toolbar Background\":\"工具列背景\",\"Icon Color\":\"圖示顏色\",\"Toolbar Icons\":\"工具列圖示\",\"Toolbar Size\":\"工具列大小\",\"Toolbar Preview\":\"工具列預覽\",\"Toolbar Appearance Preview\":\"工具列外觀預覽\",\"Maximum 10 templates allowed\":\"最多允許 10 個範本\",\"PKMer login has expired or is invalid. Please log in to PKMer again in Settings → AI.\":"
+                },
                 {
                     "source": "error(\"修复命令ID时出错:\",t),new e.Notice(w(\"Error repairing command IDs, please check the console for details\")",
                     "target": "error(\"修正命令 ID 時發生錯誤：\",t),new e.Notice(w(\"Error repairing command IDs, please check the console for details\")"
