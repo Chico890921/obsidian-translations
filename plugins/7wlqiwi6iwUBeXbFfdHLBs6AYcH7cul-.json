@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "1.7.10",
         "author": "Chico",
-        "updatedAt": 1784787266271
+        "updatedAt": 1789848977848
     },
     "dict": {
         "main.js": {
@@ -238,14 +238,7 @@
             ]
         },
         "manifest.json": {
-            "ast": [
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "List files by most recently opened.",
-                    "target": "依最近開啟時間列出檔案。"
-                }
-            ],
+            "ast": [],
             "regex": [
                 {
                     "source": "\"description\": \"List files by most recently opened.\"",
