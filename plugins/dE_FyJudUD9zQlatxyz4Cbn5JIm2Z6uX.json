@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "3.4.1",
         "author": "Chico",
-        "updatedAt": 1789504578458
+        "updatedAt": 1789848977848
     },
     "dict": {
         "styles.css": {
@@ -1309,6 +1309,15 @@
                 {
                     "source": "description: Icon color for active toolbar button.\n",
                     "target": "description: 作用中工具列按鈕的圖示顏色。\n"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [],
+            "regex": [
+                {
+                    "source": "\"description\": \"Replace the default file explorer with a clean two-pane interface featuring folder tree, tag browsing, file previews, keyboard navigation, drag-and-drop, pinned notes, and customizable display options.\"",
+                    "target": "\"description\": \"以簡潔的雙窗格介面取代預設檔案總管，支援資料夾樹狀檢視、標籤瀏覽、檔案預覽、鍵盤導覽、拖放、釘選筆記與自訂顯示選項。\""
                 }
             ]
         }
