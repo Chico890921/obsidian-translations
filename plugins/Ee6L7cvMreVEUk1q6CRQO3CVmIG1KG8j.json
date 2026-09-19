@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "1.33.0",
         "author": "Chico",
-        "updatedAt": 1789384957443
+        "updatedAt": 1789848977848
     },
     "dict": {
         "main.js": {
@@ -21292,6 +21292,15 @@
                 {
                     "source": "description:\"Uses the first H1 in the file as the title\"",
                     "target": "description:\"Uses the first H1 in the file as the title\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [],
+            "regex": [
+                {
+                    "source": "\"description\": \"Formats and styles your notes. It can be used to format YAML tags, aliases, arrays, and metadata; footnotes; headings; spacing; math blocks; regular markdown contents like list, italics, and bold styles; and more with the use of custom rule options as well.\"",
+                    "target": "\"description\": \"整理筆記的格式與樣式。可格式化 YAML 標籤、別名、陣列與中繼資料，以及註腳、標題、間距、數學區塊、清單、斜體、粗體等 Markdown 內容，也可透過自訂規則處理更多格式。\""
                 }
             ]
         }
