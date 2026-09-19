@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "metadata": {
     "plugin": "templater-obsidian",
-    "version": "2.25.0",
+    "version": "2.25.1",
     "title": "[zh-tw] Templater",
     "description": "Templater 繁體中文化與微調",
     "language": "zh-tw",
-    "supportedVersions": "2.25.0",
+    "supportedVersions": "2.25.1",
     "author": "Chico",
-    "updatedAt": 1785999061766
+    "updatedAt": 1789848391585
   },
   "dict": {
     "main.js": {
@@ -26,28 +26,16 @@
           "target": "請查看主控台取得更多資訊"
         },
         {
-          "type": "CallExpression",
-          "name": "error",
-          "source": "Failed to parse summary section",
-          "target": "無法解析摘要區段"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
+          "type": "ObjectProperty",
+          "name": "desc",
           "source": "Files in this folder will be available as templates.",
           "target": "此資料夾中的檔案可作為範本使用。"
         },
         {
-          "type": "CallExpression",
-          "name": "setName",
+          "type": "ObjectProperty",
+          "name": "name",
           "source": "Template folder location",
           "target": "範本資料夾位置"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setPlaceholder",
-          "source": "Example: folder1/folder2",
-          "target": "範例：folder1/folder2"
         },
         {
           "type": "CallExpression",
@@ -68,34 +56,16 @@
           "target": "說明文件"
         },
         {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Internal variables and functions",
-          "target": "內部變數和函式"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
+          "type": "ObjectProperty",
+          "name": "desc",
           "source": "Adds syntax highlighting for Templater commands in edit mode.",
           "target": "在編輯模式中為 Templater 命令加入語法醒目提示。"
         },
         {
-          "type": "CallExpression",
-          "name": "append",
+          "type": "ObjectProperty",
+          "name": "desc",
           "source": "Adds syntax highlighting for Templater commands in edit mode on mobile. Use with caution: this may break live preview on mobile platforms.",
           "target": "在行動裝置的編輯模式中為 Templater 命令加入語法醒目提示。請謹慎使用：這可能會破壞行動平台上的即時預覽。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Syntax highlighting on desktop",
-          "target": "桌面版語法醒目提示"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Syntax highlighting on mobile",
-          "target": "行動版語法醒目提示"
         },
         {
           "type": "CallExpression",
@@ -117,12 +87,6 @@
         },
         {
           "type": "CallExpression",
-          "name": "setName",
-          "source": "Automatic jump to cursor",
-          "target": "自動跳到游標"
-        },
-        {
-          "type": "CallExpression",
           "name": "append",
           "source": "Templater will listen for the new file creation event, and, if it matches a rule you've set, replace every command it finds in the new file's content. ",
           "target": "Templater 會監聽新檔案建立事件；如果符合你設定的規則，就會取代新檔案內容中找到的每個命令。"
@@ -134,130 +98,34 @@
           "target": "這讓 Templater 可與每日筆記核心外掛、Calendar、Review、Note refactor 等外掛相容。"
         },
         {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "Make sure to set up rules under either folder templates or file regex template below.",
-          "target": "請確認已在下方的資料夾範本或檔案正規表示式範本中設定規則。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "This can be dangerous if you create new files with unknown / unsafe content on creation. Make sure that every new file's content is safe on creation.",
-          "target": "如果建立新檔案時內容未知或不安全，這可能會有風險。請確認每個新檔案在建立時內容都是安全的。"
-        },
-        {
           "type": "ObjectProperty",
-          "name": "text",
-          "source": "Warning: ",
-          "target": "警告："
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
+          "name": "title",
           "source": "Trigger Templater on new file creation",
           "target": "建立新檔案時觸發 Templater"
         },
         {
-          "type": "CallExpression",
-          "name": "setName",
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Trigger Templater on new file creation",
+          "target": "建立新檔案時觸發 Templater"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
           "source": "Template hotkeys",
           "target": "範本快速鍵"
         },
         {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "Template hotkeys allows you to bind a template to a hotkey.",
-          "target": "範本快速鍵可讓你將範本綁定到快速鍵。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setPlaceholder",
-          "source": "Example: folder1/template_file",
-          "target": "範例：folder1/template_file"
-        },
-        {
-          "type": "NewExpression",
-          "name": "T",
-          "source": "This template is already bound to a hotkey",
-          "target": "此範本已綁定快速鍵"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setTooltip",
-          "source": "Configure hotkey",
-          "target": "設定快捷鍵"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setTooltip",
-          "source": "Move up",
-          "target": "上移"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setTooltip",
-          "source": "Move down",
-          "target": "下移"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setTooltip",
-          "source": "Delete",
-          "target": "刪除"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setButtonText",
-          "source": "Add new hotkey for template",
-          "target": "新增範本快速鍵"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
+          "type": "ObjectProperty",
+          "name": "folder",
           "source": "Folder templates",
           "target": "資料夾範本"
         },
         {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "Folder templates are triggered when a new ",
-          "target": "當指定資料夾中建立新的"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "file is created in a given folder.",
-          "target": "檔案時，會觸發資料夾範本。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "Templater will fill the empty file with the specified template.",
-          "target": "Templater 會使用指定範本填入空白檔案。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "The deepest match is used. A global default template would be defined on the root ",
-          "target": "會使用最深層的符合項目。全域預設範本可定義在根目錄"
-        },
-        {
           "type": "ObjectProperty",
-          "name": "text",
-          "source": "empty ",
-          "target": "空白"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "When enabled, Templater will make use of the folder templates defined below. This option is mutually exclusive with file regex templates below, so enabling one will disable the other.",
-          "target": "啟用後，Templater 會使用下方定義的資料夾範本。此選項與下方的檔案正規表示式範本互斥，因此啟用其中一個會停用另一個。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Enable folder templates",
-          "target": "啟用資料夾範本"
+          "name": "name",
+          "source": "Folder templates",
+          "target": "資料夾範本"
         },
         {
           "type": "CallExpression",
@@ -266,76 +134,22 @@
           "target": "資料夾"
         },
         {
-          "type": "NewExpression",
-          "name": "T",
-          "source": "This folder already has a template associated with it",
-          "target": "此資料夾已有關聯範本"
-        },
-        {
           "type": "CallExpression",
           "name": "setPlaceholder",
           "source": "Template",
           "target": "範本"
         },
         {
-          "type": "CallExpression",
-          "name": "setTooltip",
-          "source": "Add additional folder template",
-          "target": "新增額外資料夾範本"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setButtonText",
-          "source": "Add new folder template",
-          "target": "新增資料夾範本"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
+          "type": "ObjectProperty",
+          "name": "regex",
           "source": "File regex templates",
           "target": "檔案正規表示式範本"
         },
         {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "File regex templates are triggered when a new ",
-          "target": "當建立符合其中一條規則的新"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": " file is created that matches one of them. Templater will fill the empty file with the specified template.",
-          "target": "檔案時，會觸發檔案正規表示式範本。Templater 會使用指定範本填入空白檔案。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "The first match from the top is used, so the order of the rules is important.",
-          "target": "會使用從上到下第一個符合項目，因此規則順序很重要。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": " as a final catch-all, if you need it.",
-          "target": "作為最後的全域符合規則（如有需要）。"
-        },
-        {
           "type": "ObjectProperty",
-          "name": "text",
-          "source": "empty",
-          "target": "空白"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "When enabled, Templater will make use of the file regex templates defined below. This option is mutually exclusive with folder templates above, so enabling one will disable the other.",
-          "target": "啟用後，Templater 會使用下方定義的檔案正規表示式範本。此選項與上方的資料夾範本互斥，因此啟用其中一個會停用另一個。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Enable file regex templates",
-          "target": "啟用檔案正規表示式範本"
+          "name": "name",
+          "source": "File regex templates",
+          "target": "檔案正規表示式範本"
         },
         {
           "type": "CallExpression",
@@ -344,58 +158,22 @@
           "target": "檔案正規表示式"
         },
         {
-          "type": "CallExpression",
-          "name": "setTooltip",
-          "source": "Add additional file regex",
-          "target": "新增額外的檔案正規表示式"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setButtonText",
-          "source": "Add new file regex",
-          "target": "新增新的檔案正規表示式"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
+          "type": "ObjectProperty",
+          "name": "heading",
           "source": "Startup templates",
           "target": "啟動範本"
         },
         {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "Startup templates are templates that will get executed once when Templater starts.",
-          "target": "啟動範本會在 Templater 啟動時執行一次。"
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Startup templates",
+          "target": "啟動範本"
         },
         {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "These templates won't output anything.",
-          "target": "這些範本不會輸出任何內容。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "This can be useful to set up templates adding hooks to Obsidian events for example.",
-          "target": "這可用於設定會加入 Obsidian 事件 hook 的範本。"
-        },
-        {
-          "type": "NewExpression",
-          "name": "T",
-          "source": "This startup template already exist",
-          "target": "此啟動範本已存在"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setButtonText",
+          "type": "ObjectProperty",
+          "name": "name",
           "source": "Add new startup template",
           "target": "新增啟動範本"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "User script functions",
-          "target": "使用者指令碼函式"
         },
         {
           "type": "CallExpression",
@@ -416,76 +194,40 @@
           "target": "，以取得更多資訊。"
         },
         {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Script files folder location",
-          "target": "指令碼檔案資料夾位置"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Determine how you'd like to have user script intellisense render. Note values will not render if not in the script.",
-          "target": "決定使用者指令碼智慧提示的呈現方式。請注意，不在指令碼中的值不會呈現。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "User script intellisense",
-          "target": "使用者指令碼智慧提示"
-        },
-        {
-          "type": "CallExpression",
-          "name": "addOption",
+          "type": "ObjectProperty",
+          "name": "prop",
           "source": "Render method description",
           "target": "呈現方法說明"
         },
         {
-          "type": "CallExpression",
-          "name": "addOption",
+          "type": "ObjectProperty",
+          "name": "prop",
           "source": "Render method description and return",
           "target": "呈現方法說明與回傳值"
         },
         {
-          "type": "CallExpression",
-          "name": "addOption",
+          "type": "ObjectProperty",
+          "name": "prop",
           "source": "Render method description and parameters list",
           "target": "呈現方法說明與參數清單"
         },
         {
-          "type": "CallExpression",
-          "name": "addOption",
+          "type": "ObjectProperty",
+          "name": "prop",
           "source": "Render method description, parameters list, and return",
           "target": "呈現方法說明、參數清單與回傳值"
         },
         {
-          "type": "CallExpression",
-          "name": "addOption",
+          "type": "ObjectProperty",
+          "name": "prop",
           "source": "Turn off intellisense",
           "target": "關閉智慧提示"
         },
         {
-          "type": "AssignmentExpression",
-          "name": "t",
-          "source": "No user scripts folder set",
-          "target": "未設定使用者指令碼資料夾"
-        },
-        {
           "type": "CallExpression",
-          "name": "ce",
+          "name": "je",
           "source": "User scripts folder doesn't exist",
           "target": "使用者指令碼資料夾不存在"
-        },
-        {
-          "type": "AssignmentExpression",
-          "name": "t",
-          "source": "No user scripts detected",
-          "target": "未偵測到使用者指令碼"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setTooltip",
-          "source": "Refresh",
-          "target": "重新整理"
         },
         {
           "type": "CallExpression",
@@ -494,46 +236,34 @@
           "target": "允許你建立連結到系統命令的使用者函式。"
         },
         {
-          "type": "CallExpression",
-          "name": "append",
+          "type": "ObjectProperty",
+          "name": "warning",
           "source": "It can be dangerous to execute arbitrary system commands from untrusted sources. Only run system commands that you understand, from trusted sources.",
           "target": "執行來自不受信任來源的任意系統命令可能很危險。只執行你了解且來自可信來源的系統命令。"
         },
         {
-          "type": "CallExpression",
-          "name": "setName",
+          "type": "ObjectProperty",
+          "name": "name",
           "source": "User system command functions",
           "target": "使用者系統命令函式"
         },
         {
-          "type": "CallExpression",
-          "name": "setName",
+          "type": "ObjectProperty",
+          "name": "title",
           "source": "Enable user system command functions",
           "target": "啟用使用者系統命令函式"
         },
         {
-          "type": "CallExpression",
-          "name": "setDesc",
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Enable user system command functions",
+          "target": "啟用使用者系統命令函式"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "desc",
           "source": "Maximum timeout in seconds for a system command.",
           "target": "系統命令的最大逾時秒數。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Timeout",
-          "target": "逾時"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setPlaceholder",
-          "source": "Timeout",
-          "target": "逾時"
-        },
-        {
-          "type": "NewExpression",
-          "name": "T",
-          "source": "Timeout must be a number",
-          "target": "逾時必須是數字"
         },
         {
           "type": "CallExpression",
@@ -549,24 +279,6 @@
         },
         {
           "type": "CallExpression",
-          "name": "append",
-          "source": "You can use forward slashes ('/') as path separators on all platforms if in doubt.",
-          "target": "不確定時，可以在所有平台上使用正斜線（'/'）作為路徑分隔符。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Shell binary location",
-          "target": "Shell 執行檔路徑"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setPlaceholder",
-          "source": "Example: /bin/bash, ...",
-          "target": "範例：/bin/bash, ..."
-        },
-        {
-          "type": "CallExpression",
           "name": "setPlaceholder",
           "source": "Function name",
           "target": "函式名稱"
@@ -579,121 +291,79 @@
         },
         {
           "type": "CallExpression",
-          "name": "setButtonText",
-          "source": "Add new user function",
-          "target": "新增使用者函式"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setName",
-          "source": "Ignore folders on file creation",
-          "target": "建立檔案時忽略資料夾"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "Files created in these folders will NOT trigger Templater's file creation handler.",
-          "target": "在這些資料夾中建立的檔案不會觸發 Templater 的檔案建立處理程序。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "This prevents Templater syntax from being stripped in files created in these locations.",
-          "target": "這可避免 Templater 語法從這些位置建立的檔案中遭到移除。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "append",
-          "source": "The check includes all subfolders.",
-          "target": "檢查範圍包含所有子資料夾。"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setTooltip",
-          "source": "Add folder to ignore on file creation",
-          "target": "新增建立檔案時要忽略的資料夾"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setButtonText",
-          "source": "Add folder to ignore list",
-          "target": "新增資料夾到忽略清單"
-        },
-        {
-          "type": "CallExpression",
           "name": "setPlaceholder",
           "source": "Type name of a template...",
           "target": "輸入範本名稱..."
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Invalid reference date format, try specifying one with the argument 'reference_format'",
           "target": "參照日期格式無效，請嘗試使用 `reference_format` 引數指定格式"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Reached create_new depth limit (max = 10)",
           "target": "已達 create_new 深度限制（最大值 = 10）"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "No active editor, can't append to cursor.",
           "target": "沒有作用中的編輯器，無法附加到游標。"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Reached inclusion depth limit (max = 10)",
           "target": "已達 include 深度限制（最大值 = 10）"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Invalid file format, provide an obsidian link between quotes.",
           "target": "檔案格式無效，請在引號中提供 Obsidian 連結。"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "app.vault is not a FileSystemAdapter instance",
           "target": "app.vault 不是 FileSystemAdapter 實例"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "File name cannot contain any of these characters: \\ / :",
           "target": "檔名不能包含以下任何字元：\\ / :"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Active editor is null, can't read selection.",
           "target": "目前沒有作用中的編輯器，無法讀取選取內容。"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Error performing GET request",
           "target": "執行 GET 請求時發生錯誤"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Error generating daily quote",
           "target": "產生每日引言時發生錯誤"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Error generating random picture",
           "target": "產生隨機圖片時發生錯誤"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Error fetching and extracting value",
           "target": "擷取並取出值時發生錯誤"
         },
@@ -723,13 +393,13 @@
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "No active editor, can't append templates.",
           "target": "沒有作用中的編輯器，無法附加範本。"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Active editor is null, can't overwrite content",
           "target": "目前沒有作用中的編輯器，無法覆寫內容"
         },
@@ -1110,12 +780,6 @@
           "name": "description",
           "source": "Sets the cursor to this location after the template has been inserted. \n\nYou can navigate between the different cursors using the configured hotkey in Obsidian settings.\n",
           "target": "插入範本後，將游標移至此位置。\n\n你可以使用 Obsidian 設定中配置的快速鍵，在不同游標位置間移動。\n"
-        },
-        {
-          "type": "ObjectProperty",
-          "name": "description",
-          "source": "The order of the different cursors jump, e.g. it will jump from 1 to 2 to 3, and so on.\nIf you specify multiple tp.file.cursor with the same order, the editor will switch to multi-cursor.\n",
-          "target": "不同游標的跳轉順序，例如會從 1 跳到 2，再跳到 3，以此類推。\n如果指定多個相同順序的 tp.file.cursor，編輯器會切換為多游標模式。\n"
         },
         {
           "type": "ObjectProperty",
@@ -1611,12 +1275,6 @@
         },
         {
           "type": "ObjectProperty",
-          "name": "description",
-          "source": "Retrieves and parses the daily quote from `https://github.com/Zachatoo/quotes-database` as a callout.",
-          "target": "從 `https://github.com/Zachatoo/quotes-database` 取得並解析每日引言，作為 callout。"
-        },
-        {
-          "type": "ObjectProperty",
           "name": "name",
           "source": "Daily quote",
           "target": "每日引言"
@@ -1701,19 +1359,19 @@
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Unable to enable syntax highlighting. Could not define language.",
           "target": "無法啟用語法醒目提示。無法定義語言。"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Javascript syntax mode couldn't be found, can't enable syntax highlighting.",
           "target": "找不到 JavaScript 語法模式，無法啟用語法醒目提示。"
         },
         {
           "type": "NewExpression",
-          "name": "T",
+          "name": "C",
           "source": "Couldn't find customOverlayMode, can't enable syntax highlighting.",
           "target": "找不到 customOverlayMode，無法啟用語法醒目提示。"
         },
@@ -1728,12 +1386,6 @@
           "name": "setButtonText",
           "source": "Enable",
           "target": "啟用"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setButtonText",
-          "source": "Done",
-          "target": "完成"
         },
         {
           "type": "CallExpression",
@@ -1782,12 +1434,6 @@
           "name": "setTooltip",
           "source": "Open user scripts folder",
           "target": "開啟使用者指令碼資料夾"
-        },
-        {
-          "type": "CallExpression",
-          "name": "warn",
-          "source": "Since Acorn 8.0.0, options.ecmaVersion is required.\nDefaulting to 2020, but this will stop working in the future.",
-          "target": "自 Acorn 8.0.0 起，必須指定 options.ecmaVersion。\n目前預設為 2020，但未來將停止運作。"
         },
         {
           "type": "ObjectProperty",
@@ -1936,12 +1582,6 @@
         {
           "type": "ObjectProperty",
           "name": "text",
-          "source": "<% tp.user.file_name() %>",
-          "target": "<% tp.user.file_name() %>"
-        },
-        {
-          "type": "ObjectProperty",
-          "name": "text",
           "source": "This setting is stored on this device only and must be enabled separately on each device.",
           "target": "此設定僅儲存在此裝置上，且必須在每部裝置上個別啟用。"
         },
@@ -2040,85 +1680,309 @@
           "name": "name",
           "source": "File cursor with a decimal order",
           "target": "使用小數順序的檔案游標"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addCheckbox",
+          "source": "I understand the risks",
+          "target": "我了解風險"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTitle",
+          "source": "File regex template",
+          "target": "檔案正規表示式範本"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Template to apply on match.",
+          "target": "符合規則時要套用的範本。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "Template",
+          "target": "範本"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setErrorMessage",
+          "source": "File regex cannot be empty",
+          "target": "檔案正規表示式不可留空"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setErrorMessage",
+          "source": "Template cannot be empty",
+          "target": "範本不可留空"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTitle",
+          "source": "Folder template",
+          "target": "資料夾範本"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setErrorMessage",
+          "source": "Folder cannot be empty",
+          "target": "資料夾不可留空"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Enter a path, e.g. meta/templates",
+          "target": "輸入路徑，例如 meta/templates"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTitle",
+          "source": "Add startup template",
+          "target": "新增啟動範本"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Enter a template path, e.g. meta/templates/daily.md",
+          "target": "輸入範本路徑，例如 meta/templates/daily.md"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setName",
+          "source": "System command",
+          "target": "系統命令"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setTitle",
+          "source": "Template hotkey",
+          "target": "範本快速鍵"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Adds a command that inserts this template into the active file.",
+          "target": "新增將此範本插入目前檔案的命令。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Adds a command that creates a new note from this template.",
+          "target": "新增使用此範本建立新筆記的命令。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setErrorMessage",
+          "source": "At least one command must be enabled",
+          "target": "至少必須啟用一個命令"
+        },
+        {
+          "type": "CallExpression",
+          "name": "push",
+          "source": "Insert",
+          "target": "插入"
+        },
+        {
+          "type": "CallExpression",
+          "name": "push",
+          "source": "Create",
+          "target": "建立"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "No user scripts folder set. Please set the user scripts folder on the previous page.",
+          "target": "尚未設定使用者指令碼資料夾。請在上一頁設定。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "User scripts are JavaScript files that are loaded as CommonJS modules. You can then call these functions from your templates using ",
+          "target": "使用者指令碼是以 CommonJS 模組載入的 JavaScript 檔案。你可以在範本中使用以下語法呼叫這些函式："
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "warning",
+          "source": "This can be dangerous if you set a startup template with unknown/unsafe content. Make sure that every startup template's content is safe.",
+          "target": "設定內容未知或不安全的啟動範本可能有風險。請確認每個啟動範本的內容都安全。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "No template folder set. Please set the template folder location on the previous page.",
+          "target": "尚未設定範本資料夾。請在上一頁設定範本資料夾位置。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "desc",
+          "source": "Templates that run once when Templater starts. These output nothing and are useful for setting up event hooks.",
+          "target": "在 Templater 啟動時執行一次的範本。這些範本不會輸出內容，適合用來設定事件 hook。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "None: Do not auto apply templates. Templater will still listen for the new file creation event and replace every command it finds in the new file's content.",
+          "target": "無：不自動套用範本。Templater 仍會監聽新檔案建立事件，並取代新檔案內容中找到的所有命令。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "Folder templates: Apply templates based on folder structure.",
+          "target": "資料夾範本：依資料夾結構套用範本。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "text",
+          "source": "File regex templates: Apply templates based on regex file name patterns.",
+          "target": "檔案正規表示式範本：依正規表示式檔名規則套用範本。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "Choose the matching mode for triggering templates on file creation.",
+          "target": "選擇建立檔案時用來觸發範本的比對模式。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "If there is a match, Templater will apply the corresponding template to the new file.",
+          "target": "符合規則時，Templater 會將對應的範本套用至新檔案。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "The most specific (deepest) matching folder wins, so a rule for a subfolder takes precedence over a rule for its parent.",
+          "target": "優先採用最深層的符合資料夾，因此子資料夾的規則會優先於上層資料夾的規則。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "Add a rule for ",
+          "target": "如需涵蓋其餘情況，可新增 "
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": " if you need a catch-all.",
+          "target": " 的規則。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "File regex templates are applied based on the regex file path patterns you define.",
+          "target": "檔案正規表示式範本會依你定義的檔案路徑正規表示式套用。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "File regex templates are processed in order, so if a file matches multiple regex templates, only the first match will be applied.",
+          "target": "檔案正規表示式範本會依序比對。若檔案符合多個範本，只會套用第一個符合的範本。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "desc",
+          "source": "New files created in these folders will never trigger Templater.",
+          "target": "在這些資料夾中建立的新檔案一律不會觸發 Templater。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Template matching mode",
+          "target": "範本比對模式"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Add template hotkey",
+          "target": "新增範本快速鍵"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "emptyState",
+          "source": "No template hotkeys added.",
+          "target": "尚未新增範本快速鍵。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "emptyState",
+          "source": "No exclusions added.",
+          "target": "尚未新增排除項目。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Add folder template",
+          "target": "新增資料夾範本"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "emptyState",
+          "source": "No folder templates added.",
+          "target": "尚未新增資料夾範本。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Add file regex template",
+          "target": "新增檔案正規表示式範本"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "emptyState",
+          "source": "No file regex templates added.",
+          "target": "尚未新增檔案正規表示式範本。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "emptyState",
+          "source": "No startup templates added.",
+          "target": "尚未新增啟動範本。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": "You can use forward slashes (",
+          "target": "不確定時，可以使用正斜線（"
+        },
+        {
+          "type": "CallExpression",
+          "name": "append",
+          "source": ") as path separators on all platforms if in doubt.",
+          "target": "）作為所有平台的路徑分隔符。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "emptyState",
+          "source": "No user functions added.",
+          "target": "尚未新增使用者函式。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "push",
+          "source": "'Trigger on file creation'",
+          "target": "'建立新檔案時觸發 Templater'"
+        },
+        {
+          "type": "CallExpression",
+          "name": "push",
+          "source": "'Enable system commands'",
+          "target": "'啟用使用者系統命令函式'"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "description",
+          "source": "The order of the different cursors jump, e.g. it will jump from 1 to 2 to 3, and so on.\nIf you specify multiple tp.file.cursor with the same order, the editor will switch to multi-cursor.\nThe order can be any number, including a decimal one, so you can insert a new jump between two existing ones without renumbering them, e.g. 1.5 jumps after 1 and before 2.\n",
+          "target": "不同游標的跳轉順序，例如會從 1 跳到 2，再跳到 3，以此類推。\n如果指定多個相同順序的 tp.file.cursor，編輯器會切換為多游標模式。\n順序可使用任意數字，包括小數，因此可在兩個既有位置之間插入新的跳轉位置，不必重新編號。例如 1.5 會在 1 之後、2 之前跳轉。\n"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Multi-suggester",
+          "target": "多選建議選單"
         }
       ],
       "regex": [
-        {
-          "source": "name:`Insert ${i}`",
-          "target": "name:`插入 ${i}`"
-        },
-        {
-          "source": "name:`Create ${i}`",
-          "target": "name:`建立 ${i}`"
-        },
-        {
-          "source": "t=`Detected ${i} User Script(s)`",
-          "target": "t=`偵測到 ${i} 個使用者指令碼`"
-        },
-        {
-          "source": "name:`Insert ${n}`",
-          "target": "name:`插入 ${n}`"
-        },
-        {
-          "source": "name:`Create ${n}`",
-          "target": "name:`建立 ${n}`"
-        },
-        {
-          "source": "\"Check the \"",
-          "target": "\"請參閱\""
-        },
-        {
-          "source": "\" to get a list of all the available internal variables / functions.\"",
-          "target": "\"，以取得所有可用內部變數／函式的清單。\""
-        },
-        {
-          "source": "\"Bind templates to \"",
-          "target": "\"將範本綁定至\""
-        },
-        {
-          "source": "text:\"commands\"",
-          "target": "text:\"命令\""
-        },
-        {
-          "source": "\". Bind commands to \"",
-          "target": "\"。在「快速鍵」設定中為命令設定\""
-        },
-        {
-          "source": "text:\"hotkeys\"",
-          "target": "text:\"快速鍵\""
-        },
-        {
-          "source": "' in \"Hotkeys\" settings.'",
-          "target": "'。'"
-        },
-        {
-          "source": "desc:\"When creating a new note from a template, skip the rename prompt and immediately move the cursor to the note body.\"",
-          "target": "desc:\"從範本建立新筆記時，略過重新命名提示並立即將游標移至筆記內容。\""
-        },
-        {
-          "source": "name:\"Enable startup templates\"",
-          "target": "name:\"啟用啟動範本\""
-        },
-        {
-          "source": "title:\"Enable startup templates\"",
-          "target": "title:\"啟用啟動範本\""
-        },
-        {
-          "source": "\"Enables templates to run automatically when Templater starts.\"",
-          "target": "\"讓範本在 Templater 啟動時自動執行。\""
-        },
-        {
-          "source": "heading:\"User system commands\"",
-          "target": "heading:\"使用者系統命令\""
-        },
-        {
-          "source": "\" for more information.\"",
-          "target": "\"，以取得更多資訊。\""
-        },
-        {
-          "source": "\"'Enable startup templates'\"",
-          "target": "\"'啟用啟動範本'\""
-        },
         {
           "source": "name:`Insert ${a}`",
           "target": "name:`插入 ${a}`"
@@ -2126,18 +1990,51 @@
         {
           "source": "name:`Create ${a}`",
           "target": "name:`建立 ${a}`"
+        },
+        {
+          "source": "\"Templates folder doesn't exist\"",
+          "target": "\"範本資料夾不存在\""
+        },
+        {
+          "source": "\"User Scripts folder doesn't exist\"",
+          "target": "\"使用者指令碼資料夾不存在\""
+        },
+        {
+          "source": "\"Function name cannot be empty\"",
+          "target": "\"函式名稱不可留空\""
+        },
+        {
+          "source": "\"This template already has a hotkey\"",
+          "target": "\"此範本已綁定快速鍵\""
+        },
+        {
+          "source": "\"This folder already has a template associated with it\"",
+          "target": "\"此資料夾已有關聯範本\""
+        },
+        {
+          "source": "\"Timeout must be a positive number\"",
+          "target": "\"逾時必須是正數\""
+        },
+        {
+          "source": "\"This function name is already in use\"",
+          "target": "\"此函式名稱已被使用\""
+        },
+        {
+          "source": ".setButtonText(\"Done\")",
+          "target": ".setButtonText(\"完成\")"
+        },
+        {
+          "source": "options:{none:\"None\"",
+          "target": "options:{none:\"無\""
+        },
+        {
+          "source": "t.length>0?t.join(\", \"):\"None\"",
+          "target": "t.length>0?t.join(\", \"):\"無\""
         }
       ]
     },
     "manifest.json": {
-      "ast": [
-        {
-          "type": "ObjectProperty",
-          "name": "description",
-          "source": "Advanced templating and automation using handlebars-like syntax.",
-          "target": "使用類 Handlebars 語法的進階範本與自動化工具。"
-        }
-      ],
+      "ast": [],
       "regex": [
         {
           "source": "\"description\": \"Advanced templating and automation using handlebars-like syntax.\"",
