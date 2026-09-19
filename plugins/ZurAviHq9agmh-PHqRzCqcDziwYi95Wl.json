@@ -2,12 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "side-notes",
-        "version": "0.5.2",
+        "version": "0.5.3",
         "title": "[zh-tw] Side-Notes",
         "description": "Side-Notes Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "0.5.2",
-        "author": "Chico"
+        "supportedVersions": "0.5.3",
+        "author": "Chico",
+        "updatedAt": 1789847249833
     },
     "dict": {
         "main.js": {
@@ -123,12 +124,6 @@
                 {
                     "type": "CallExpression",
                     "name": "appendText",
-                    "source": " → ",
-                    "target": " → "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
                     "source": " → clickable link",
                     "target": " → 可點擊的連結"
                 },
@@ -167,42 +162,6 @@
                     "name": "appendText",
                     "source": " (composes with margin notes: ",
                     "target": "（也可與頁邊註組合："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Sidenote plugin: Failed to load settings",
-                    "target": "Side-Notes 外掛：無法載入設定"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Sidenote plugin: Failed to save settings",
-                    "target": "Side-Notes 外掛：無法儲存設定"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Error setting cursor position:",
-                    "target": "設定游標位置時發生錯誤："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Sidenotes - Error setting cursor position:",
-                    "target": "Side-Notes：設定游標位置時發生錯誤："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "replaceRange",
-                    "source": "<span class=\"sidenote\"></span>",
-                    "target": "<span class=\"sidenote\"></span>"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "replaceRange",
-                    "source": "<span class=\"sidenote margin-note\"></span>",
-                    "target": "<span class=\"sidenote margin-note\"></span>"
                 },
                 {
                     "type": "CallExpression",
@@ -245,24 +204,6 @@
                     "name": "setDesc",
                     "source": "Visual style for sidenote numbers",
                     "target": "旁註編號的視覺樣式"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Whether sidenotes are positioned relative to the text body or the editor edge",
-                    "target": "選擇要相對於本文或編輯器邊緣定位旁註"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Adjusts how much the gaps grow as editor width increases (default: 0.5). At 0, gaps stay at their minimum. At 1, gaps grow by the maximum amount (20% of extra space).",
-                    "target": "調整編輯器寬度增加時，間距成長的程度（預設：0.5）。0 表示維持最小間距，1 表示以最大幅度增加間距（額外空間的 20%）。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Adjusts how much body text gets nudged over when sidenotes are present (default: 0)",
-                    "target": "調整有旁註時本文被推移的程度（預設：0）"
                 },
                 {
                     "type": "CallExpression",
@@ -323,12 +264,6 @@
                     "name": "setDesc",
                     "source": "Restart sidenote numbering after each heading",
                     "target": "每個標題後重新開始旁註編號"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Click a sidenote in reading mode to edit the footnote text",
-                    "target": "在閱讀檢視中點擊旁註，即可編輯註腳文字"
                 },
                 {
                     "type": "CallExpression",
@@ -557,12 +492,6 @@
                     "name": "setName",
                     "source": "Reset numbering per heading",
                     "target": "每個標題重新編號"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Allow sidenote edits in reading mode",
-                    "target": "允許在閱讀檢視中編輯旁註"
                 },
                 {
                     "type": "CallExpression",
@@ -619,30 +548,6 @@
                     "target": "例如 #333333 或 rgb(50,50,50)"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Edit sidenote",
-                    "target": "編輯旁註"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Delete sidenote",
-                    "target": "刪除旁註"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "[Sidenotes] Scanning document for sidenotes...",
-                    "target": "[Side-Notes] 正在掃描文件中的旁註..."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "[Sidenotes] layout() - no cmRoot",
-                    "target": "[Side-Notes] layout()：找不到 cmRoot"
-                },
-                {
                     "type": "ObjectProperty",
                     "name": "desc",
                     "source": "Choose how sidenotes are written in your documents",
@@ -683,24 +588,6 @@
                     "name": "desc",
                     "source": "Visual style for sidenote numbers",
                     "target": "旁註編號的視覺樣式"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "desc",
-                    "source": "Whether sidenotes are positioned relative to the text body or the editor edge",
-                    "target": "選擇要相對於本文或編輯器邊緣定位旁註"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "desc",
-                    "source": "Adjusts how much the gaps grow as editor width increases (default: 0.5). At 0, gaps stay at their minimum. At 1, gaps grow by the maximum amount (20% of extra space).",
-                    "target": "調整編輯器寬度增加時，間距成長的程度（預設：0.5）。0 表示維持最小間距，1 表示以最大幅度增加間距（額外空間的 20%）。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "desc",
-                    "source": "Adjusts how much body text gets nudged over when sidenotes are present (default: 0)",
-                    "target": "調整有旁註時本文被推移的程度（預設：0）"
                 },
                 {
                     "type": "ObjectProperty",
@@ -765,12 +652,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "desc",
-                    "source": "Click a sidenote in reading mode to edit the footnote text",
-                    "target": "在閱讀檢視中點擊旁註，即可編輯註腳文字"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "desc",
                     "source": "When enabled, sidenotes will be included in PDF exports, in the margin rather than inline. Works with both the HTML and footnote formats. Note: this may cause formatting issues in some cases.",
                     "target": "啟用後，匯出的 PDF 會在頁邊顯示旁註，而非將旁註置於行內。HTML 與註腳格式皆適用。注意：某些情況下可能會發生格式問題。"
                 },
@@ -797,24 +678,6 @@
                     "name": "desc",
                     "source": "Scale factor for margin note popup icons - only applies if using popup mode for margin notes(default: 1)",
                     "target": "頁邊註彈出視窗圖示的縮放比例，僅適用於頁邊註的彈出視窗模式（預設：1）"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "detail",
-                    "source": "of loop",
-                    "target": "of loop"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "detail",
-                    "source": "/ catch block",
-                    "target": "/ catch block"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "detail",
-                    "source": "/ else block",
-                    "target": "/ else block"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1035,12 +898,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "Allow sidenote edits in reading mode",
-                    "target": "允許在閱讀檢視中編輯旁註"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "Include sidenotes in PDF export (experimental)",
                     "target": "在 PDF 匯出中包含旁註（實驗性）"
                 },
@@ -1067,96 +924,6 @@
                     "name": "name",
                     "source": "Margin note popup icon scale factor",
                     "target": "頁邊註彈出視窗圖示縮放比例"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Strikethrough",
-                    "target": "Strikethrough"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "StrikethroughMark",
-                    "target": "StrikethroughMark"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Table",
-                    "target": "Table"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "TableHeader",
-                    "target": "TableHeader"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "TableCell",
-                    "target": "TableCell"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "TableDelimiter",
-                    "target": "TableDelimiter"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Task",
-                    "target": "Task"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "TaskMarker",
-                    "target": "TaskMarker"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "TaskList",
-                    "target": "TaskList"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Autolink",
-                    "target": "Autolink"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Superscript",
-                    "target": "Superscript"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "SuperscriptMark",
-                    "target": "SuperscriptMark"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Subscript",
-                    "target": "Subscript"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "SubscriptMark",
-                    "target": "SubscriptMark"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Emoji",
-                    "target": "Emoji"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1251,18 +1018,6 @@
                 {
                     "type": "CallExpression",
                     "name": "setDesc",
-                    "source": "Space between the margin and body text in rem (default: 2)",
-                    "target": "頁邊與本文之間的間距，單位為 rem（預設：2）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "When anchored to text: minimum distance from editor edge. When anchored to edge: minimum distance from text body. (rem, default: 1)",
-                    "target": "錨定至本文時：與編輯器邊緣的最小距離。錨定至邊緣時：與本文的最小距離。（單位為 rem，預設：1）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
                     "source": "Color for sidenote text. Leave empty to use Obsidian's default text color.",
                     "target": "旁註文字顏色。留空則使用 Obsidian 的預設文字顏色。"
                 },
@@ -1277,18 +1032,6 @@
                     "name": "setPlaceholder",
                     "source": "E.g. ⓘ or 🛈 or information_source.png",
                     "target": "例如 ⓘ、🛈 或 information_source.png"
-                },
-                {
-                    "type": "StringLiteral",
-                    "name": "",
-                    "source": "Must be greater than 0",
-                    "target": "必須大於 0"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Sidenote plugin: popup cleanup failed",
-                    "target": "Side-Notes 外掛：清理彈出視窗失敗"
                 },
                 {
                     "type": "CallExpression",
@@ -1383,608 +1126,17 @@
             ],
             "regex": [
                 {
-                    "source": "appendText(\" or \")",
-                    "target": "appendText(\" 或 \")"
-                },
-                {
-                    "source": "appendText(\" \\u2192 \")",
-                    "target": "appendText(\" \\u2192 \")"
-                },
-                {
-                    "source": "appendText(\" \\u2192 clickable link\")",
-                    "target": "appendText(\" \\u2192 可點擊的連結\")"
-                },
-                {
-                    "source": "appendText(\" \\u2192 internal link\")",
-                    "target": "appendText(\" \\u2192 內部連結\")"
-                },
-                {
-                    "source": "appendText(\"HTML format: add a \")",
-                    "target": "appendText(\"HTML 格式：加入 \")"
-                },
-                {
-                    "source": "appendText(\" class, e.g. \")",
-                    "target": "appendText(\" 類別，例如 \")"
-                },
-                {
-                    "source": "appendText(\"Footnote format: append \")",
-                    "target": "appendText(\"註腳格式：在註腳 ID 後加上 \")"
-                },
-                {
-                    "source": "appendText(\" to the footnote ID, e.g. \")",
-                    "target": "appendText(\"，例如 \")"
-                },
-                {
-                    "source": "appendText(\" (composes with margin notes: \")",
-                    "target": "appendText(\"（也可與頁邊註組合：\")"
-                },
-                {
-                    "source": "setName(\"Sidenote format\")",
-                    "target": "setName(\"旁註格式\")"
-                },
-                {
-                    "source": "setDesc(\"Choose how sidenotes are written in your documents\")",
-                    "target": "setDesc(\"選擇旁註在文件中的寫入方式\")"
-                },
-                {
-                    "source": "setName(\"If using footnotes\")",
-                    "target": "setName(\"使用註腳時\")"
-                },
-                {
-                    "source": "setName(\"Hide footnotes\")",
-                    "target": "setName(\"隱藏註腳\")"
-                },
-                {
-                    "source": "setDesc(\"Hides the footnotes at the bottom of the document (only relevant if using footnote format)\")",
-                    "target": "setDesc(\"隱藏文件底部的註腳（僅在使用註腳格式時相關）\")"
-                },
-                {
-                    "source": "setName(\"Hide footnote numbers in text\")",
-                    "target": "setName(\"隱藏文字中的註腳編號\")"
-                },
-                {
-                    "source": "setDesc(\"Hides the Markdown style footnote reference numbers in the text body, and replaces with sidenote numbers only (only relevant if using footnote format)\")",
-                    "target": "setDesc(\"隱藏本文中的 Markdown 註腳參照編號，只保留旁註編號（僅在使用註腳格式時相關）\")"
-                },
-                {
-                    "source": "setName(\"Sidenote position\")",
-                    "target": "setName(\"旁註位置\")"
-                },
-                {
-                    "source": "setDesc(\"Which margin to display sidenotes in (text will be offset to the opposite side)\")",
-                    "target": "setDesc(\"選擇要在哪一側頁邊顯示旁註（本文會偏移到另一側）\")"
-                },
-                {
-                    "source": "setName(\"Show sidenote numbers\")",
-                    "target": "setName(\"顯示旁註編號\")"
-                },
-                {
-                    "source": "setDesc(\"Display reference numbers in text and sidenotes\")",
-                    "target": "setDesc(\"在文字與旁註中顯示參照編號\")"
-                },
-                {
-                    "source": "setName(\"Number style\")",
-                    "target": "setName(\"編號樣式\")"
-                },
-                {
-                    "source": "setDesc(\"How to format sidenote numbers\")",
-                    "target": "setDesc(\"設定旁註編號格式\")"
-                },
-                {
-                    "source": "setName(\"Number badge style\")",
-                    "target": "setName(\"編號徽章樣式\")"
-                },
-                {
-                    "source": "setDesc(\"Visual style for sidenote numbers\")",
-                    "target": "setDesc(\"旁註編號的視覺樣式\")"
-                },
-                {
-                    "source": "setName(\"Number color\")",
-                    "target": "setName(\"編號顏色\")"
-                },
-                {
-                    "source": "setPlaceholder(\"#666666 or rgb(100,100,100)\")",
-                    "target": "setPlaceholder(\"#666666 或 rgb(100,100,100)\")"
-                },
-                {
-                    "source": "setName(\"Width & spacing\")",
-                    "target": "setName(\"寬度與間距\")"
-                },
-                {
-                    "source": "setName(\"Sidenote anchor\")",
-                    "target": "setName(\"旁註錨點\")"
-                },
-                {
-                    "source": "setDesc(\"Whether sidenotes are positioned relative to the text body or the editor edge\")",
-                    "target": "setDesc(\"選擇要相對於本文或編輯器邊緣定位旁註\")"
-                },
-                {
-                    "source": "setName(\"Minimum sidenote width\")",
-                    "target": "setName(\"旁註最小寬度\")"
-                },
-                {
-                    "source": "setName(\"Maximum sidenote width\")",
-                    "target": "setName(\"旁註最大寬度\")"
-                },
-                {
-                    "source": "setName(\"Minimum gap between sidenote and text\")",
-                    "target": "setName(\"旁註與本文的最小間距\")"
-                },
-                {
-                    "source": "setName(\"Minimum gap between sidenote and editor edge\")",
-                    "target": "setName(\"旁註與編輯器邊緣的最小間距\")"
-                },
-                {
-                    "source": "setName(\"Gap drift factor\")",
-                    "target": "setName(\"間距延展係數\")"
-                },
-                {
-                    "source": "setDesc(\"Adjusts how much the gaps grow as editor width increases (default: 0.5). At 0, gaps stay at their minimum. At 1, gaps grow by the maximum amount (20% of extra space).\")",
-                    "target": "setDesc(\"調整編輯器寬度增加時，間距成長的程度（預設：0.5）。0 表示維持最小間距，1 表示以最大幅度增加間距（額外空間的 20%）。\")"
-                },
-                {
-                    "source": "setName(\"Page offset factor\")",
-                    "target": "setName(\"頁面偏移係數\")"
-                },
-                {
-                    "source": "setDesc(\"Adjusts how much body text gets nudged over when sidenotes are present (default: 0)\")",
-                    "target": "setDesc(\"調整有旁註時本文被推移的程度（預設：0）\")"
-                },
-                {
-                    "source": "setName(\"Hide below width\")",
-                    "target": "setName(\"低於此寬度時隱藏\")"
-                },
-                {
-                    "source": "setDesc(\"Hide sidenotes when editor width is below this (px)\")",
-                    "target": "setDesc(\"當編輯器寬度低於此值時隱藏旁註（px）\")"
-                },
-                {
-                    "source": "setName(\"Compact below width\")",
-                    "target": "setName(\"低於此寬度時使用精簡模式\")"
-                },
-                {
-                    "source": "setDesc(\"Use compact mode when editor width is below this (px)\")",
-                    "target": "setDesc(\"當編輯器寬度低於此值時使用精簡模式（px）\")"
-                },
-                {
-                    "source": "setName(\"Full width above\")",
-                    "target": "setName(\"高於此寬度時使用全寬\")"
-                },
-                {
-                    "source": "setDesc(\"Use full-width sidenotes when editor width is above this (px)\")",
-                    "target": "setDesc(\"當編輯器寬度高於此值時使用全寬旁註（px）\")"
-                },
-                {
-                    "source": "setName(\"Font size\")",
-                    "target": "setName(\"字體大小\")"
-                },
-                {
-                    "source": "setDesc(\"Font size as percentage of body text (default: 80)\")",
-                    "target": "setDesc(\"相對於本文的字體大小百分比（預設：80）\")"
-                },
-                {
-                    "source": "setName(\"Font size (compact mode)\")",
-                    "target": "setName(\"字體大小（精簡模式）\")"
-                },
-                {
-                    "source": "setDesc(\"Font size in compact mode as percentage (default: 70)\")",
-                    "target": "setDesc(\"精簡模式下的字體大小百分比（預設：70）\")"
-                },
-                {
-                    "source": "setName(\"Line height\")",
-                    "target": "setName(\"行高\")"
-                },
-                {
-                    "source": "setDesc(\"Line height for sidenote text (default: 1.35)\")",
-                    "target": "setDesc(\"旁註文字行高（預設：1.35）\")"
-                },
-                {
-                    "source": "setName(\"Sidenote text color\")",
-                    "target": "setName(\"旁註文字顏色\")"
-                },
-                {
-                    "source": "setPlaceholder(\"E.g. #333333 or rgb(50,50,50)\")",
-                    "target": "setPlaceholder(\"例如 #333333 或 rgb(50,50,50)\")"
-                },
-                {
-                    "source": "setName(\"Sidenote hover color\")",
-                    "target": "setName(\"旁註游標停留顏色\")"
-                },
-                {
-                    "source": "setName(\"Text alignment\")",
-                    "target": "setName(\"文字對齊\")"
-                },
-                {
-                    "source": "setDesc(\"How to align text in sidenotes\")",
-                    "target": "setDesc(\"旁註文字的對齊方式\")"
-                },
-                {
-                    "source": "setName(\"Collision spacing\")",
-                    "target": "setName(\"旁註防重疊間距\")"
-                },
-                {
-                    "source": "setDesc(\"Minimum pixels between stacked sidenotes (default: 8)\")",
-                    "target": "setDesc(\"堆疊旁註之間的最小像素距離（預設：8）\")"
-                },
-                {
-                    "source": "setName(\"Enable smooth transitions\")",
-                    "target": "setName(\"啟用平滑過渡\")"
-                },
-                {
-                    "source": "setDesc(\"Animate width and position changes\")",
-                    "target": "setDesc(\"以動畫呈現寬度與位置變更\")"
-                },
-                {
-                    "source": "setName(\"Reset numbering per heading\")",
-                    "target": "setName(\"每個標題重新編號\")"
-                },
-                {
-                    "source": "setDesc(\"Restart sidenote numbering after each heading\")",
-                    "target": "setDesc(\"每個標題後重新開始旁註編號\")"
-                },
-                {
-                    "source": "setName(\"Allow sidenote edits in reading mode\")",
-                    "target": "setName(\"允許在閱讀檢視中編輯旁註\")"
-                },
-                {
-                    "source": "setDesc(\"Click a sidenote in reading mode to edit the footnote text\")",
-                    "target": "setDesc(\"在閱讀檢視中點擊旁註，即可編輯註腳文字\")"
-                },
-                {
-                    "source": "setName(\"Include sidenotes in PDF export (experimental)\")",
-                    "target": "setName(\"在 PDF 匯出中包含旁註（實驗性）\")"
-                },
-                {
-                    "source": "setDesc(\"When enabled, sidenotes will be included in PDF exports, in the margin rather than inline. Works with both the HTML and footnote formats. Note: this may cause formatting issues in some cases.\")",
-                    "target": "setDesc(\"啟用後，匯出的 PDF 會在頁邊顯示旁註，而非將旁註置於行內。HTML 與註腳格式皆適用。注意：某些情況下可能會發生格式問題。\")"
-                },
-                {
-                    "source": "setName(\"Margin notes\")",
-                    "target": "setName(\"頁邊註\")"
-                },
-                {
-                    "source": "setName(\"Margin note display\")",
-                    "target": "setName(\"頁邊註顯示方式\")"
-                },
-                {
-                    "source": "setDesc(\"Show margin notes in the margin, or as an \\u24D8 icon with a popup on click.\")",
-                    "target": "setDesc(\"在頁邊顯示頁邊註，或顯示為 \\u24D8 圖示並於點擊時開啟彈出視窗。\")"
-                },
-                {
-                    "source": "setName(\"Margin note popup icon\")",
-                    "target": "setName(\"頁邊註彈出視窗圖示\")"
-                },
-                {
-                    "source": "setDesc(\"Specify an icon to use for margin notes when 'Show as popup on click' is selected. You can use any Unicode character, e.g. \\u24D8 or \\u{1F6C8}, or a filename (stored in plugins/sidenotes/assets)\")",
-                    "target": "setDesc(\"選擇「點擊時以彈出視窗顯示」時，指定頁邊註使用的圖示。可使用任意 Unicode 字元，例如 \\u24D8 或 \\u{1F6C8}，也可使用檔名（存放於 plugins/sidenotes/assets）。\")"
-                },
-                {
-                    "source": "setPlaceholder(\"E.g. \\u24D8 or \\u{1F6C8} or information_source.png\")",
-                    "target": "setPlaceholder(\"例如 \\u24D8、\\u{1F6C8} 或 information_source.png\")"
-                },
-                {
-                    "source": "setName(\"Margin note marker scale factor\")",
-                    "target": "setName(\"頁邊註標記縮放比例\")"
-                },
-                {
-                    "source": "setDesc(\"Scale factor for margin note icon placed in the main note (default: 1)\")",
-                    "target": "setDesc(\"本文中頁邊註圖示的縮放比例（預設：1）\")"
-                },
-                {
-                    "source": "setName(\"Margin note popup icon scale factor\")",
-                    "target": "setName(\"頁邊註彈出視窗圖示縮放比例\")"
-                },
-                {
-                    "source": "setDesc(\"Scale factor for margin note popup icons - only applies if using popup mode for margin notes(default: 1)\")",
-                    "target": "setDesc(\"頁邊註彈出視窗圖示的縮放比例，僅適用於頁邊註的彈出視窗模式（預設：1）\")"
-                },
-                {
-                    "source": "setName(\"Formatting help\")",
-                    "target": "setName(\"格式說明\")"
-                },
-                {
-                    "source": "setTitle(\"Edit sidenote\")",
-                    "target": "setTitle(\"編輯旁註\")"
-                },
-                {
-                    "source": "setTitle(\"Delete sidenote\")",
-                    "target": "setTitle(\"刪除旁註\")"
-                },
-                {
-                    "source": "text:\"Sidenotes support basic Markdown formatting:\"",
-                    "target": "text:\"旁註支援基本 Markdown 格式：\""
-                },
-                {
-                    "source": "text:\"Use the command palette to insert sidenotes quickly.\"",
-                    "target": "text:\"使用命令面板可以快速插入旁註。\""
-                },
-                {
-                    "source": "text:\"Pin an individual sidenote to the opposite margin from the 'Sidenote position' setting:\"",
-                    "target": "text:\"將個別旁註固定在「旁註位置」設定的對側頁邊：\""
-                },
-                {
-                    "source": "text:'<span class=\"sidenote right\">text</span>'",
-                    "target": "text:'<span class=\"sidenote right\">文字</span>'"
-                },
-                {
-                    "source": "name:\"Sidenote format\"",
-                    "target": "name:\"旁註格式\""
-                },
-                {
-                    "source": "name:\"Hide footnotes\"",
-                    "target": "name:\"隱藏註腳\""
-                },
-                {
-                    "source": "name:\"Hide footnote numbers in text\"",
-                    "target": "name:\"隱藏文字中的註腳編號\""
-                },
-                {
-                    "source": "name:\"Sidenote position\"",
-                    "target": "name:\"旁註位置\""
-                },
-                {
-                    "source": "name:\"Show sidenote numbers\"",
-                    "target": "name:\"顯示旁註編號\""
-                },
-                {
-                    "source": "name:\"Number style\"",
-                    "target": "name:\"編號樣式\""
-                },
-                {
-                    "source": "name:\"Number badge style\"",
-                    "target": "name:\"編號徽章樣式\""
-                },
-                {
-                    "source": "name:\"Number color\"",
-                    "target": "name:\"編號顏色\""
-                },
-                {
-                    "source": "name:\"Sidenote anchor\"",
-                    "target": "name:\"旁註錨點\""
-                },
-                {
-                    "source": "text:\"Anchor to text (traditional)\"",
-                    "target": "text:\"錨定到文字（傳統）\""
-                },
-                {
-                    "source": "name:\"Minimum sidenote width\"",
-                    "target": "name:\"旁註最小寬度\""
-                },
-                {
-                    "source": "name:\"Maximum sidenote width\"",
-                    "target": "name:\"旁註最大寬度\""
-                },
-                {
-                    "source": "name:\"Minimum gap between sidenote and text\"",
-                    "target": "name:\"旁註與本文的最小間距\""
-                },
-                {
-                    "source": "name:\"Minimum gap between sidenote and editor edge\"",
-                    "target": "name:\"旁註與編輯器邊緣的最小間距\""
-                },
-                {
-                    "source": "name:\"Gap drift factor\"",
-                    "target": "name:\"間距延展係數\""
-                },
-                {
-                    "source": "name:\"Page offset factor\"",
-                    "target": "name:\"頁面偏移係數\""
-                },
-                {
-                    "source": "name:\"Hide below width\"",
-                    "target": "name:\"低於此寬度時隱藏\""
-                },
-                {
-                    "source": "name:\"Compact below width\"",
-                    "target": "name:\"低於此寬度時使用精簡模式\""
-                },
-                {
-                    "source": "name:\"Full width above\"",
-                    "target": "name:\"高於此寬度時使用全寬\""
-                },
-                {
-                    "source": "name:\"Font size\"",
-                    "target": "name:\"字體大小\""
-                },
-                {
-                    "source": "name:\"Font size (compact mode)\"",
-                    "target": "name:\"字體大小（精簡模式）\""
-                },
-                {
-                    "source": "name:\"Line height\"",
-                    "target": "name:\"行高\""
-                },
-                {
-                    "source": "name:\"Sidenote text color\"",
-                    "target": "name:\"旁註文字顏色\""
-                },
-                {
-                    "source": "name:\"Sidenote hover color\"",
-                    "target": "name:\"旁註游標停留顏色\""
-                },
-                {
-                    "source": "name:\"Text alignment\"",
-                    "target": "name:\"文字對齊\""
-                },
-                {
-                    "source": "name:\"Collision spacing\"",
-                    "target": "name:\"旁註防重疊間距\""
-                },
-                {
-                    "source": "name:\"Enable smooth transitions\"",
-                    "target": "name:\"啟用平滑過渡\""
-                },
-                {
-                    "source": "name:\"Reset numbering per heading\"",
-                    "target": "name:\"每個標題重新編號\""
-                },
-                {
-                    "source": "name:\"Allow sidenote edits in reading mode\"",
-                    "target": "name:\"允許在閱讀檢視中編輯旁註\""
-                },
-                {
-                    "source": "name:\"Include sidenotes in PDF export (experimental)\"",
-                    "target": "name:\"在 PDF 匯出中包含旁註（實驗性）\""
-                },
-                {
-                    "source": "name:\"Margin note display\"",
-                    "target": "name:\"頁邊註顯示方式\""
-                },
-                {
-                    "source": "name:\"Margin note popup icon\"",
-                    "target": "name:\"頁邊註彈出視窗圖示\""
-                },
-                {
-                    "source": "name:\"Margin note marker scale factor\"",
-                    "target": "name:\"頁邊註標記縮放比例\""
-                },
-                {
-                    "source": "name:\"Margin note popup icon scale factor\"",
-                    "target": "name:\"頁邊註彈出視窗圖示縮放比例\""
-                },
-                {
-                    "source": "name:\"Insert sidenote\"",
-                    "target": "name:\"插入旁註\""
-                },
-                {
-                    "source": "name:\"Resequence footnotes (if out of order)\"",
-                    "target": "name:\"重新排序註腳（若順序錯亂）\""
-                },
-                {
-                    "source": "name:\"Insert sidenote (opposite margin, experimental)\"",
-                    "target": "name:\"插入旁註（對側頁邊，實驗性）\""
-                },
-                {
-                    "source": "name:\"Insert margin note\"",
-                    "target": "name:\"插入頁邊註\""
-                },
-                {
-                    "source": "name:\"Insert margin note (opposite margin, experimental)\"",
-                    "target": "name:\"插入頁邊註（對側頁邊，實驗性）\""
-                },
-                {
-                    "source": "setDesc(\"Custom color for sidenote numbers (leave empty for theme default)\")",
-                    "target": "setDesc(\"自訂旁註編號顏色（留空則使用主題預設值）\")"
-                },
-                {
-                    "source": "setDesc(\"Base width of sidenotes in rem (default: 10)\")",
-                    "target": "setDesc(\"旁註基礎寬度，單位為 rem（預設：10）\")"
-                },
-                {
-                    "source": "setDesc(\"Maximum width of sidenotes in rem (default: 18)\")",
-                    "target": "setDesc(\"旁註最大寬度，單位為 rem（預設：18）\")"
-                },
-                {
-                    "source": "setDesc(\"Space between the margin and body text in rem (default: 2)\")",
-                    "target": "setDesc(\"頁邊與本文之間的間距，單位為 rem（預設：2）\")"
-                },
-                {
-                    "source": "setDesc(\"When anchored to text: minimum distance from editor edge. When anchored to edge: minimum distance from text body. (rem, default: 1)\")",
-                    "target": "setDesc(\"錨定至本文時：與編輯器邊緣的最小距離。錨定至邊緣時：與本文的最小距離。（單位為 rem，預設：1）\")"
-                },
-                {
-                    "source": "setDesc(\"Color for sidenote text. Leave empty to use Obsidian's default text color.\")",
-                    "target": "setDesc(\"旁註文字顏色。留空則使用 Obsidian 的預設文字顏色。\")"
-                },
-                {
-                    "source": "setDesc(\"Color for sidenote text *on hover*. Leave empty to use Obsidian's default *muted text* color.\")",
-                    "target": "setDesc(\"游標停留於旁註時的文字顏色。留空則使用 Obsidian 的預設淡化文字顏色。\")"
-                },
-                {
                     "source": "\"Must be greater than 0\"",
                     "target": "\"必須大於 0\""
-                },
-                {
-                    "source": "error(\"Sidenote plugin: popup cleanup failed\",r)}delete i._popupCleanup}}cleanupView(e){if(!e)return;let i=e.containerEl.querySelector(\".markdown-source-view.mod-cm6\")",
-                    "target": "error(\"Side-Notes 外掛：清理彈出視窗失敗\",r)}delete i._popupCleanup}}cleanupView(e){if(!e)return;let i=e.containerEl.querySelector(\".markdown-source-view.mod-cm6\")"
-                },
-                {
-                    "source": "error(\"Sidenote plugin: popup cleanup failed\",n)}delete e._popupCleanup}}function Cn(t,e,n){it(e);let i=n(e),r=e.querySelector(\"small.sidenote-margin\")",
-                    "target": "error(\"Side-Notes 外掛：清理彈出視窗失敗\",n)}delete e._popupCleanup}}function Cn(t,e,n){it(e);let i=n(e),r=e.querySelector(\"small.sidenote-margin\")"
-                },
-                {
-                    "source": "error(\"Sidenote plugin: popup cleanup failed\",n)}delete e._popupCleanup}}function qn(t,e,n){ot(e);let i=n(e),r=e.querySelector(\"small.sidenote-margin\")",
-                    "target": "error(\"Side-Notes 外掛：清理彈出視窗失敗\",n)}delete e._popupCleanup}}function qn(t,e,n){ot(e);let i=n(e),r=e.querySelector(\"small.sidenote-margin\")"
-                },
-                {
-                    "source": "setDesc(\"Text: the note stays a fixed gap from the text ('Minimum gap between sidenote and text'), so it moves when the text does. Edge: the note stays a fixed gap from the editor edge ('Minimum gap between sidenote and editor edge'), and its width shrinks instead of moving if that and the text gap can't both fit\")",
-                    "target": "setDesc(\"錨定到文字：旁註與本文保持固定間距（「旁註與本文的最小間距」），因此會隨本文移動。錨定到編輯器邊緣：旁註與編輯器邊緣保持固定間距（「旁註與編輯器邊緣的最小間距」）；若空間無法同時容納這兩種間距，會縮小旁註寬度，而不移動旁註。\")"
-                },
-                {
-                    "source": "setDesc(\"Adjusts how much 'Minimum gap between sidenote and text' grows as editor width increases (default: 0.3). At 0 it stays at its minimum; at 1 it grows by the maximum amount (25% of extra space). Anchored to text, this widens the gap and moves the note along with it. Anchored to edge, position never moves \\u2014 this only tightens the width clamp, so the note can end up narrower.\")",
-                    "target": "setDesc(\"調整編輯器變寬時，「旁註與本文的最小間距」增加的程度（預設：0.3）。0 表示維持最小間距；1 表示增加最大幅度（額外空間的 25%）。錨定到文字時，會加大間距並帶動旁註移動；錨定到編輯器邊緣時，旁註位置不變，只會進一步限制寬度，因此旁註可能變窄。\")"
-                },
-                {
-                    "source": "desc:\"Text: the note stays a fixed gap from the text ('Minimum gap between sidenote and text'), so it moves when the text does. Edge: the note stays a fixed gap from the editor edge ('Minimum gap between sidenote and editor edge'), and its width shrinks instead of moving if that and the text gap can't both fit\"",
-                    "target": "desc:\"錨定到文字：旁註與本文保持固定間距（「旁註與本文的最小間距」），因此會隨本文移動。錨定到編輯器邊緣：旁註與編輯器邊緣保持固定間距（「旁註與編輯器邊緣的最小間距」）；若空間無法同時容納這兩種間距，會縮小旁註寬度，而不移動旁註。\""
-                },
-                {
-                    "source": "desc:\"Adjusts how much 'Minimum gap between sidenote and text' grows as editor width increases (default: 0.3). At 0 it stays at its minimum; at 1 it grows by the maximum amount (25% of extra space). Anchored to text, this widens the gap and moves the note along with it. Anchored to edge, position never moves \\u2014 this only tightens the width clamp, so the note can end up narrower.\"",
-                    "target": "desc:\"調整編輯器變寬時，「旁註與本文的最小間距」增加的程度（預設：0.3）。0 表示維持最小間距；1 表示增加最大幅度（額外空間的 25%）。錨定到文字時，會加大間距並帶動旁註移動；錨定到編輯器邊緣時，旁註位置不變，只會進一步限制寬度，因此旁註可能變窄。\""
-                },
-                {
-                    "source": "setDesc(\"Adjusts how much the note text is shifted over to make room for sidenotes (default: 1). At 1, exactly the sidenote's width plus its minimum gap is reserved; at 0 the text is left untouched. Only moves the text \\u2014 never the sidenotes themselves, which 'Sidenote anchor' and its gap settings control. Only affects notes that have sidenotes.\")",
-                    "target": "setDesc(\"調整本文為旁註讓出空間時的偏移程度（預設：1）。設為 1 時，會預留旁註寬度加上最小間距的空間；設為 0 時，本文位置不變。此設定只移動本文，不會移動旁註；旁註的位置由「旁註錨定」及其間距設定控制。僅影響含有旁註的筆記。\")"
-                },
-                {
-                    "source": "desc:\"Adjusts how much the note text is shifted over to make room for sidenotes (default: 1). At 1, exactly the sidenote's width plus its minimum gap is reserved; at 0 the text is left untouched. Only moves the text \\u2014 never the sidenotes themselves, which 'Sidenote anchor' and its gap settings control. Only affects notes that have sidenotes.\"",
-                    "target": "desc:\"調整本文為旁註讓出空間時的偏移程度（預設：1）。設為 1 時，會預留旁註寬度加上最小間距的空間；設為 0 時，本文位置不變。此設定只移動本文，不會移動旁註；旁註的位置由「旁註錨定」及其間距設定控制。僅影響含有旁註的筆記。\""
-                },
-                {
-                    "source": "setDesc(\"Space between the sidenote and body text, in rem (default: 2). Anchored to text: this is the note's fixed distance from the text. Anchored to edge: this is a minimum the note's width shrinks to protect, not a position\")",
-                    "target": "setDesc(\"旁註與本文之間的間距，單位為 rem（預設：2）。錨定到文字時，這是旁註與本文的固定距離；錨定到編輯器邊緣時，這是必須保留的最小間距，必要時會縮小旁註寬度來維持，並非用來設定旁註的位置。\")"
-                },
-                {
-                    "source": "desc:\"Space between the sidenote and body text, in rem (default: 2). Anchored to text: this is the note's fixed distance from the text. Anchored to edge: this is a minimum the note's width shrinks to protect, not a position\"",
-                    "target": "desc:\"旁註與本文之間的間距，單位為 rem（預設：2）。錨定到文字時，這是旁註與本文的固定距離；錨定到編輯器邊緣時，這是必須保留的最小間距，必要時會縮小旁註寬度來維持，並非用來設定旁註的位置。\""
-                },
-                {
-                    "source": "setDesc(\"Space between the sidenote and the editor's physical edge, in rem (default: 1). Only used when anchored to edge, where it's the note's fixed distance from that edge; unused when anchored to text\")",
-                    "target": "setDesc(\"旁註與編輯器實際邊緣之間的間距，單位為 rem（預設：1）。僅在錨定到編輯器邊緣時使用，決定旁註與該邊緣的固定距離；錨定到文字時不使用此設定。\")"
-                },
-                {
-                    "source": "desc:\"Space between the sidenote and the editor's physical edge, in rem (default: 1). Only used when anchored to edge, where it's the note's fixed distance from that edge; unused when anchored to text\"",
-                    "target": "desc:\"旁註與編輯器實際邊緣之間的間距，單位為 rem（預設：1）。僅在錨定到編輯器邊緣時使用，決定旁註與該邊緣的固定距離；錨定到文字時不使用此設定。\""
-                },
-                {
-                    "source": "desc:\"Custom color for sidenote numbers (leave empty for theme default)\"",
-                    "target": "desc:\"自訂旁註編號顏色（留空則使用主題預設值）\""
-                },
-                {
-                    "source": "desc:\"Base width of sidenotes in rem (default: 10)\"",
-                    "target": "desc:\"旁註基礎寬度，單位為 rem（預設：10）\""
-                },
-                {
-                    "source": "desc:\"Maximum width of sidenotes in rem (default: 18)\"",
-                    "target": "desc:\"旁註最大寬度，單位為 rem（預設：18）\""
-                },
-                {
-                    "source": "desc:\"Color for sidenote text. Leave empty to use Obsidian's default text color.\"",
-                    "target": "desc:\"旁註文字顏色。留空則使用 Obsidian 的預設文字顏色。\""
-                },
-                {
-                    "source": "desc:\"Color for sidenote text *on hover*. Leave empty to use Obsidian's default *muted text* color.\"",
-                    "target": "desc:\"游標停留於旁註時的文字顏色。留空則使用 Obsidian 的預設淡化文字顏色。\""
                 }
             ]
         },
         "manifest.json": {
-            "ast": [
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "Adds ability to create sidenotes with incrementing numbers.",
-                    "target": "可建立依序編號的旁註。"
-                }
-            ],
+            "ast": [],
             "regex": [
                 {
                     "source": "\"description\": \"Adds ability to create sidenotes with incrementing numbers.\"",
                     "target": "\"description\": \"可建立依序編號的旁註。\""
-                },
-                {
-                    "source": "\"description\":\"Adds ability to create sidenotes with incrementing numbers.\"",
-                    "target": "\"description\":\"可建立依序編號的旁註。\""
                 }
             ]
         }
