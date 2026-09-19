@@ -644,9 +644,9 @@
         "supported_versions": "1.33.0",
         "title": "[zh-tw] Linter",
         "description": "Linter Localization & Tweaks",
-        "hash": "6e8482a56e8482a56e8482a56e8482a5",
+        "hash": "7615625a7615625a7615625a7615625a",
         "created_at": "2026-09-14T11:27:35.652Z",
-        "updated_at": "2026-09-14T11:27:35.652Z",
+        "updated_at": "2026-09-19T20:25:48.821Z",
         "type": "plugin"
     }
 ]
