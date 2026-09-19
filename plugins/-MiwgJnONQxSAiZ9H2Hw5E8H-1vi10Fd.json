@@ -2,298 +2,22 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "code-space",
-        "version": "2.6.0",
+        "version": "2.6.1",
         "title": "[zh-tw] Code Space",
         "description": "Code Space 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.6.0",
+        "supportedVersions": "2.6.1",
         "author": "Chico",
-        "updatedAt": 1789382170582
+        "updatedAt": 1789843133738
     },
     "dict": {
         "main.js": {
             "ast": [
                 {
                     "type": "CallExpression",
-                    "name": "error",
-                    "source": "This browser lacks typed array (Uint8Array) support which is required by `buffer` v5.x. Use `buffer` v4.x if you require old browser support.",
-                    "target": "This browser lacks typed array (Uint8Array) support which is required by `buffer` v5.x. Use `buffer` v4.x if you require old browser support."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Iconv-lite warning: decode()-ing strings is deprecated. Refer to https://github.com/ashtuchkin/iconv-lite/wiki/Use-Buffers-when-decoding",
-                    "target": "Iconv-lite warning: decode()-ing strings is deprecated. Refer to https://github.com/ashtuchkin/iconv-lite/wiki/Use-Buffers-when-decoding"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "[code-space] readBinary failed, falling back to vault.read",
-                    "target": "[code-space] readBinary 讀取失敗，改用 vault.read"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Code Space: Failed to decode file content:",
-                    "target": "Code Space：解碼檔案內容失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Code Space: Failed to convert file to UTF-8:",
-                    "target": "Code Space：將檔案轉換為 UTF-8 失敗："
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "view-action code-space-encoding-badge clickable-icon",
-                    "target": "view-action code-space-encoding-badge clickable-icon"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "SETTINGS_EDITOR_WORD_WRAP_NAME",
-                    "source": "Editor word wrap",
-                    "target": "編輯器自動換行"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "SETTINGS_EDITOR_WORD_WRAP_DESC",
-                    "source": "Wrap long lines in the code editor instead of scrolling horizontally.",
-                    "target": "在程式碼編輯器中將過長的行自動換行，無須水平捲動。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "SETTINGS_EMBED_WORD_WRAP_NAME",
-                    "source": "Embed word wrap",
-                    "target": "嵌入區塊自動換行"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "SETTINGS_EMBED_WORD_WRAP_DESC",
-                    "source": "Wrap long lines in embedded code blocks instead of scrolling horizontally.",
-                    "target": "在嵌入的程式碼區塊中將過長的行自動換行，無須水平捲動。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "SETTINGS_ENCODING_NAME",
-                    "source": "Default encoding",
-                    "target": "預設編碼"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "SETTINGS_ENCODING_DESC",
-                    "source": "Encoding used for files that are not valid UTF-8. Auto detect tries UTF-8 first, then GB18030.",
-                    "target": "用於非有效 UTF-8 檔案的編碼。「自動偵測」會先嘗試 UTF-8，再嘗試 GB18030。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "SETTINGS_ENCODING_OPTION_AUTO",
-                    "source": "Auto detect",
-                    "target": "自動偵測"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "SETTINGS_ENCODING_CLEAR_MEMORY_NAME",
-                    "source": "Clear remembered encodings",
-                    "target": "清除已記住的編碼"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "SETTINGS_ENCODING_CLEAR_MEMORY_DESC",
-                    "source": "Forget per-file encoding choices made by this plugin.",
-                    "target": "清除此外掛為個別檔案記住的編碼選擇。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "SETTINGS_ENCODING_CLEAR_MEMORY_BUTTON",
-                    "source": "Clear",
-                    "target": "清除"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "ENCODING_NAME_GB18030",
-                    "source": "GB18030 (Simplified Chinese)",
-                    "target": "GB18030（簡體中文）"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "ENCODING_NAME_BIG5",
-                    "source": "Big5 (Traditional Chinese)",
-                    "target": "Big5（繁體中文）"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "ENCODING_NAME_SHIFT_JIS",
-                    "source": "Shift JIS (Japanese)",
-                    "target": "Shift JIS（日文）"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "ENCODING_NAME_EUC_KR",
-                    "source": "EUC-KR (Korean)",
-                    "target": "EUC-KR（韓文）"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "ENCODING_NAME_WINDOWS_1252",
-                    "source": "Windows-1252 (Western)",
-                    "target": "Windows-1252（西歐語系）"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "ENCODING_PICKER_PLACEHOLDER",
-                    "source": "Reopen with encoding…",
-                    "target": "以指定編碼重新開啟…"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "ENCODING_BADGE_TOOLTIP",
-                    "source": "Encoding: {0}. Click to reopen with a different encoding.",
-                    "target": "編碼：{0}。按一下可用其他編碼重新開啟。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "CMD_REOPEN_WITH_ENCODING",
-                    "source": "Reopen with encoding",
-                    "target": "以指定編碼重新開啟"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "CMD_CONVERT_TO_UTF8",
-                    "source": "Convert current file to UTF-8",
-                    "target": "將目前檔案轉換為 UTF-8"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "MODAL_LOSSY_ENCODING_TITLE",
-                    "source": "Characters cannot be encoded",
-                    "target": "部分字元無法編碼"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "MODAL_LOSSY_ENCODING_DESC",
-                    "source": "\"{0}\" is saved as {1}, but some characters cannot be represented in {1} and will be replaced (e.g. \"{2}\"). Choose how to save.",
-                    "target": "「{0}」使用 {1} 編碼儲存，但部分字元無法以 {1} 表示，儲存時將被取代（例如「{2}」）。請選擇儲存方式。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "MODAL_LOSSY_ENCODING_UTF8",
-                    "source": "Save as UTF-8",
-                    "target": "以 UTF-8 儲存"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "MODAL_LOSSY_ENCODING_KEEP",
-                    "source": "Save as {0} (replace characters)",
-                    "target": "以 {0} 儲存（取代無法編碼的字元）"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "MODAL_LOSSY_ENCODING_CANCEL",
-                    "source": "Cancel",
-                    "target": "取消"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "NOTICE_REOPENED_WITH_ENCODING",
-                    "source": "Reopened as {0}.",
-                    "target": "已使用 {0} 編碼重新開啟。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "NOTICE_ALREADY_UTF8",
-                    "source": "This file is already UTF-8.",
-                    "target": "此檔案已是 UTF-8 編碼。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "NOTICE_CONVERTED_TO_UTF8",
-                    "source": "Converted to UTF-8.",
-                    "target": "已轉換為 UTF-8。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Search error:",
-                    "target": "搜尋錯誤："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Replace all error:",
-                    "target": "全部取代錯誤："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Code Space: Failed to save file:",
-                    "target": "Code Space：儲存檔案失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Code Space: Failed to reload file content:",
-                    "target": "Code Space：重新載入檔案內容失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Failed to rename file:",
-                    "target": "重新命名檔案失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Failed to move file:",
-                    "target": "移動檔案失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Failed to delete file:",
-                    "target": "刪除檔案失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Failed to parse symbols:",
-                    "target": "解析符號失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Code Outline: Failed to jump to line:",
-                    "target": "程式碼大綱：跳至指定行失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Code Space: Failed to reload plugin:",
-                    "target": "Code Space：重新載入插件失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Failed to create file:",
-                    "target": "建立檔案失敗："
-                },
-                {
-                    "type": "CallExpression",
                     "name": "setPlaceholder",
                     "source": "Example: script.py",
                     "target": "範例：script.py"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Code Space: Container not ready, retrying...",
-                    "target": "Code Space：容器尚未就緒，正在重試..."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Code Embed: Failed to install observer for popout window",
-                    "target": "Code Embed：無法為彈出視窗安裝觀察器"
                 },
                 {
                     "type": "NewExpression",
@@ -336,204 +60,6 @@
                     "name": "detail",
                     "source": "alias declaration",
                     "target": "別名宣告"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "detail",
-                    "source": "Invalid mount path",
-                    "target": "無效的掛載路徑"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Document",
-                    "target": "文件"
-                },
-                {
-                    "type": "AssignmentExpression",
-                    "name": "textContent",
-                    "source": "abc def ghi jkl mno pqr stu",
-                    "target": "abc def ghi jkl mno pqr stu"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "custom-search-row custom-search-replace-row",
-                    "target": "custom-search-row custom-search-replace-row"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "cls",
-                    "source": "code-file-list code-file-list-window",
-                    "target": "code-file-list code-file-list-window"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "\"···\"",
-                    "target": "\"···\""
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'ƒ'",
-                    "target": "'ƒ'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'○'",
-                    "target": "'○'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'◌'",
-                    "target": "'◌'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'𝑥'",
-                    "target": "'𝑥'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'𝐶'",
-                    "target": "'𝐶'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'𝑡'",
-                    "target": "'𝑡'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'∪'",
-                    "target": "'∪'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'□'",
-                    "target": "'□'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'🔑︎'",
-                    "target": "'🔑︎'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "content",
-                    "source": "'▢'",
-                    "target": "'▢'"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "detail",
-                    "source": "Source path must be absolute",
-                    "target": "來源路徑必須是絕對路徑"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "anchorNode and/or focusNode are null",
-                    "target": "anchorNode and/or focusNode are null"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Parsing error: ",
-                    "target": "Parsing error: "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Code Space: Failed to open terminal panel:",
-                    "target": "Code Space：開啟終端機面板失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Code Space: terminal binary installation failed:",
-                    "target": "Code Space：安裝終端機執行檔失敗："
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Unable to resolve platform.",
-                    "target": "Unable to resolve platform."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "disposed?",
-                    "target": "disposed?"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "size?",
-                    "target": "size?"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "arr?",
-                    "target": "arr?"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "webglcontextlost event received",
-                    "target": "webglcontextlost event received"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "row is invalid. Race condition?",
-                    "target": "row is invalid. Race condition?"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "columns is null. Race condition?",
-                    "target": "columns is null. Race condition?"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Opening link blocked as opener could not be cleared",
-                    "target": "Opening link blocked as opener could not be cleared"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "async parser handler taking longer than 5000 ms",
-                    "target": "async parser handler taking longer than 5000 ms"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "[LEAKING LISTENERS] GC'ed these listeners that were NOT yet disposed:",
-                    "target": "[LEAKING LISTENERS] GC'ed these listeners that were NOT yet disposed:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "webgl context not restored; firing onContextLoss",
-                    "target": "webgl context not restored; firing onContextLoss"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "webglcontextrestored event received",
-                    "target": "webglcontextrestored event received"
                 }
             ],
             "regex": [
@@ -598,7 +124,7 @@
                     "target": "ENCODING_NAME_WINDOWS_1252:\"Windows-1252（西歐語系）\""
                 },
                 {
-                    "source": "ENCODING_PICKER_PLACEHOLDER:\"Reopen with encoding\\u2026\"",
+                    "source": "ENCODING_PICKER_PLACEHOLDER:\"Reopen with encoding…\"",
                     "target": "ENCODING_PICKER_PLACEHOLDER:\"以指定編碼重新開啟…\""
                 },
                 {
@@ -618,7 +144,7 @@
                     "target": "MODAL_LOSSY_ENCODING_TITLE:\"部分字元無法編碼\""
                 },
                 {
-                    "source": "MODAL_LOSSY_ENCODING_DESC:'\"{0}\" is saved as {1}, but some characters cannot be represented in {1} and will be replaced (e.g. \"{2}\"). Choose how to save.'",
+                    "source": "MODAL_LOSSY_ENCODING_DESC:\"\\\"{0}\\\" is saved as {1}, but some characters cannot be represented in {1} and will be replaced (e.g. \\\"{2}\\\"). Choose how to save.\"",
                     "target": "MODAL_LOSSY_ENCODING_DESC:\"「{0}」使用 {1} 編碼儲存，但部分字元無法以 {1} 表示，儲存時將被取代（例如「{2}」）。請選擇儲存方式。\""
                 },
                 {
@@ -646,56 +172,8 @@
                     "target": "NOTICE_CONVERTED_TO_UTF8:\"已轉換為 UTF-8。\""
                 },
                 {
-                    "source": "\"[code-space] readBinary failed, falling back to vault.read\"",
-                    "target": "\"[code-space] readBinary 讀取失敗，改用 vault.read\""
-                },
-                {
-                    "source": "\"Code Space: Failed to decode file content:\"",
-                    "target": "\"Code Space：解碼檔案內容失敗：\""
-                },
-                {
-                    "source": "\"Code Space: Failed to convert file to UTF-8:\"",
-                    "target": "\"Code Space：將檔案轉換為 UTF-8 失敗：\""
-                },
-                {
                     "source": "`node-pty is not loadable at ${t}`",
                     "target": "`無法從 ${t} 載入 node-pty`"
-                },
-                {
-                    "source": "error(\"Code Space: Failed to save file:\",t),new Ke.Notice(g(\"NOTICE_SAVE_FAIL\")",
-                    "target": "error(\"Code Space：儲存檔案失敗：\",t),new Ke.Notice(g(\"NOTICE_SAVE_FAIL\")"
-                },
-                {
-                    "source": "error(\"Code Space: Failed to reload file content:\",t)}}async onClose(){var t;this.isDirty&&this.file&&(console.debug(\"Code Space: Auto-saving on close...\")",
-                    "target": "error(\"Code Space：重新載入檔案內容失敗：\",t)}}async onClose(){var t;this.isDirty&&this.file&&(console.debug(\"Code Space：關閉時自動儲存中...\")"
-                },
-                {
-                    "source": "error(\"Failed to rename file:\",c),new H.Notice(g(\"NOTICE_RENAME_FAIL\")",
-                    "target": "error(\"重新命名檔案失敗：\",c),new H.Notice(g(\"NOTICE_RENAME_FAIL\")"
-                },
-                {
-                    "source": "error(\"Failed to move file:\",o),new H.Notice(g(\"NOTICE_MOVE_FAIL\")",
-                    "target": "error(\"移動檔案失敗：\",o),new H.Notice(g(\"NOTICE_MOVE_FAIL\")"
-                },
-                {
-                    "source": "error(\"Code Outline: Failed to jump to line:\",o)}},100)):console.debug(\"Code Outline: No editorView found\")",
-                    "target": "error(\"程式碼大綱：跳至指定行失敗：\",o)}},100)):console.debug(\"Code Outline：找不到 editorView\")"
-                },
-                {
-                    "source": "setPlaceholder(\"Example: script.py\")",
-                    "target": "setPlaceholder(\"範例：script.py\")"
-                },
-                {
-                    "source": "Notice(\"Please enter a file name\")",
-                    "target": "Notice(\"請輸入檔案名稱\")"
-                },
-                {
-                    "source": "error(\"Code Space: Failed to reload plugin:\",t),new te.Notice(`${g(\"NOTICE_RELOAD_FAIL\")",
-                    "target": "error(\"Code Space：重新載入插件失敗：\",t),new te.Notice(`${g(\"NOTICE_RELOAD_FAIL\")"
-                },
-                {
-                    "source": "error(\"Failed to create file:\",i),new te.Notice(g(\"NOTICE_CREATE_FAIL\")",
-                    "target": "error(\"建立檔案失敗：\",i),new te.Notice(g(\"NOTICE_CREATE_FAIL\")"
                 },
                 {
                     "source": "SETTINGS_HEADING:\"Code space settings\"",
@@ -1282,82 +760,6 @@
                     "target": "FOLDER_FILTER_SELECTED:\"已選取：{0}\""
                 },
                 {
-                    "source": "log(\"Finish with \"+this.stackID(s)),this.stackToTree(s);if(this.parser.strict)throw nt&&n&&console.log(\"Stuck with token \"+(this.tokens.mainToken?this.parser.getName(this.tokens.mainToken.value):\"none\")",
-                    "target": "log(\"Finish with \"+this.stackID(s)),this.stackToTree(s);if(this.parser.strict)throw nt&&n&&console.log(\"Stuck with token \"+(this.tokens.mainToken?this.parser.getName(this.tokens.mainToken.value):\"none\")"
-                },
-                {
-                    "source": "error(\"Code Space: Failed to save file:\",n),new we.Notice(g(\"NOTICE_SAVE_FAIL\")",
-                    "target": "error(\"Code Space：儲存檔案失敗：\",n),new we.Notice(g(\"NOTICE_SAVE_FAIL\")"
-                },
-                {
-                    "source": "setText(`${(i=(t=this.fileIndex)==null?void 0:t.size)!=null?i:0} ${g(\"SUBTITLE_MANAGED_FILES\")}`)",
-                    "target": "setText(`${(i=(t=this.fileIndex)==null?void 0:t.size)!=null?i:0} ${g(\"SUBTITLE_MANAGED_FILES\")}`)"
-                },
-                {
-                    "source": "Notice(`${g(\"NOTICE_RENAME_SUCCESS\")} ${a}.${i.extension}`)",
-                    "target": "Notice(`${g(\"NOTICE_RENAME_SUCCESS\")} ${a}.${i.extension}`)"
-                },
-                {
-                    "source": "error(\"Failed to rename file:\",c),new L.Notice(g(\"NOTICE_RENAME_FAIL\")",
-                    "target": "error(\"重新命名檔案失敗：\",c),new L.Notice(g(\"NOTICE_RENAME_FAIL\")"
-                },
-                {
-                    "source": "Notice(`${g(\"NOTICE_MOVE_SUCCESS\")} ${o}`)",
-                    "target": "Notice(`${g(\"NOTICE_MOVE_SUCCESS\")} ${o}`)"
-                },
-                {
-                    "source": "error(\"Failed to move file:\",o),new L.Notice(g(\"NOTICE_MOVE_FAIL\")",
-                    "target": "error(\"移動檔案失敗：\",o),new L.Notice(g(\"NOTICE_MOVE_FAIL\")"
-                },
-                {
-                    "source": "setDesc(`${Q.sourcePath} \\u2022 ${p}`)",
-                    "target": "setDesc(`${Q.sourcePath} \\u2022 ${p}`)"
-                },
-                {
-                    "source": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(p)}`)",
-                    "target": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(p)}`)"
-                },
-                {
-                    "source": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(X)}`)",
-                    "target": "Notice(`${g(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(X)}`)"
-                },
-                {
-                    "source": "error(\"Code Space: Failed to reload plugin:\",i),new te.Notice(`${g(\"NOTICE_RELOAD_FAIL\")",
-                    "target": "error(\"Code Space：重新載入插件失敗：\",i),new te.Notice(`${g(\"NOTICE_RELOAD_FAIL\")"
-                },
-                {
-                    "source": "Notice(`${g(\"NOTICE_CREATE_SUCCESS\")} ${i}`)",
-                    "target": "Notice(`${g(\"NOTICE_CREATE_SUCCESS\")} ${i}`)"
-                },
-                {
-                    "source": "error(\"Failed to create file:\",n),new te.Notice(g(\"NOTICE_CREATE_FAIL\")",
-                    "target": "error(\"建立檔案失敗：\",n),new te.Notice(g(\"NOTICE_CREATE_FAIL\")"
-                },
-                {
-                    "source": "textContent=\"abc def ghi jkl mno pqr stu\"",
-                    "target": "textContent=\"abc def ghi jkl mno pqr stu\""
-                },
-                {
-                    "source": "name: \"+l)}return n&&(i=\"",
-                    "target": "name: \"+l)}return n&&(i=\""
-                },
-                {
-                    "source": "textContent=\"\t\"",
-                    "target": "textContent=\"\t\""
-                },
-                {
-                    "source": "text:`${(x=(_=this.fileIndex)==null?void 0:_.size)!=null?x:0} ${g(\"SUBTITLE_MANAGED_FILES\")}`",
-                    "target": "text:`${(x=(_=this.fileIndex)==null?void 0:_.size)!=null?x:0} ${g(\"SUBTITLE_MANAGED_FILES\")}`"
-                },
-                {
-                    "source": "name:`impl ${c[1]}`",
-                    "target": "name:`impl ${c[1]}`"
-                },
-                {
-                    "source": "SETTINGS_MAX_EMBED_LINES_PLACEHOLDER:\"30\"",
-                    "target": "SETTINGS_MAX_EMBED_LINES_PLACEHOLDER:\"30\""
-                },
-                {
                     "source": "SETTINGS_EXTERNAL_MOUNT_NOTICE_REMOVE_PARTIAL:\"{0} external folders could not be safely unmounted. External folders remain enabled.\"",
                     "target": "SETTINGS_EXTERNAL_MOUNT_NOTICE_REMOVE_PARTIAL:\"{0} 個外部資料夾無法安全取消掛載。外部資料夾功能將維持啟用。\""
                 },
@@ -1372,10 +774,6 @@
                 {
                     "source": "SETTINGS_EXTERNAL_MOUNT_STATUS_UNSAFE:\"Unsafe path\"",
                     "target": "SETTINGS_EXTERNAL_MOUNT_STATUS_UNSAFE:\"不安全的路徑\""
-                },
-                {
-                    "source": "SETTINGS_EXTERNAL_MOUNT_MOUNT_PLACEHOLDER:\"External/MyApp\"",
-                    "target": "SETTINGS_EXTERNAL_MOUNT_MOUNT_PLACEHOLDER:\"External/MyApp\""
                 },
                 {
                     "source": "SETTINGS_EXTERNAL_MOUNT_LINK_TYPE_SYMLINK:\"Symlink\"",
@@ -1472,90 +870,6 @@
                 {
                     "source": "\"Mount parent path is not a folder\"",
                     "target": "\"掛載路徑的上層路徑不是資料夾\""
-                },
-                {
-                    "source": "error(\"anchorNode and/or focusNode are null\")",
-                    "target": "error(\"anchorNode and/or focusNode are null\")"
-                },
-                {
-                    "source": "log(\"Finish with \"+this.stackID(o)),this.stackToTree(o);if(this.parser.strict)throw Vt&&s&&console.log(\"Stuck with token \"+(this.tokens.mainToken?this.parser.getName(this.tokens.mainToken.value):\"none\")",
-                    "target": "log(\"Finish with \"+this.stackID(o)),this.stackToTree(o);if(this.parser.strict)throw Vt&&s&&console.log(\"Stuck with token \"+(this.tokens.mainToken?this.parser.getName(this.tokens.mainToken.value):\"none\")"
-                },
-                {
-                    "source": "error(\"Code Space: Failed to save file:\",s),new Ve.Notice(Y(\"NOTICE_SAVE_FAIL\")",
-                    "target": "error(\"Code Space：儲存檔案失敗：\",s),new Ve.Notice(Y(\"NOTICE_SAVE_FAIL\")"
-                },
-                {
-                    "source": "setText(`${(r=(i=this.fileIndex)==null?void 0:i.size)!=null?r:0} ${Y(\"SUBTITLE_MANAGED_FILES\")}`)",
-                    "target": "setText(`${(r=(i=this.fileIndex)==null?void 0:i.size)!=null?r:0} ${Y(\"SUBTITLE_MANAGED_FILES\")}`)"
-                },
-                {
-                    "source": "Notice(`${Y(\"NOTICE_RENAME_SUCCESS\")} ${a}.${r.extension}`)",
-                    "target": "Notice(`${Y(\"NOTICE_RENAME_SUCCESS\")} ${a}.${r.extension}`)"
-                },
-                {
-                    "source": "error(\"Failed to rename file:\",c),new Oe.Notice(Y(\"NOTICE_RENAME_FAIL\")",
-                    "target": "error(\"重新命名檔案失敗：\",c),new Oe.Notice(Y(\"NOTICE_RENAME_FAIL\")"
-                },
-                {
-                    "source": "Notice(`${Y(\"NOTICE_MOVE_SUCCESS\")} ${O}`)",
-                    "target": "Notice(`${Y(\"NOTICE_MOVE_SUCCESS\")} ${O}`)"
-                },
-                {
-                    "source": "error(\"Failed to move file:\",O),new Oe.Notice(Y(\"NOTICE_MOVE_FAIL\")",
-                    "target": "error(\"移動檔案失敗：\",O),new Oe.Notice(Y(\"NOTICE_MOVE_FAIL\")"
-                },
-                {
-                    "source": "error(\"Code Outline: Failed to jump to line:\",O)}},100)):console.debug(\"Code Outline: No editorView found\")",
-                    "target": "error(\"程式碼大綱：跳至指定行失敗：\",O)}},100)):console.debug(\"Code Outline: No editorView found\")"
-                },
-                {
-                    "source": "setDesc(`${d.sourcePath} \\u2022 ${u}`)",
-                    "target": "setDesc(`${d.sourcePath} \\u2022 ${u}`)"
-                },
-                {
-                    "source": "Notice(`${Y(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(u)}`)",
-                    "target": "Notice(`${Y(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(u)}`)"
-                },
-                {
-                    "source": "Notice(`${Y(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(_)}`)",
-                    "target": "Notice(`${Y(\"SETTINGS_EXTERNAL_MOUNT_NOTICE_FAILED\")}: ${String(_)}`)"
-                },
-                {
-                    "source": "error(`Could not find drawing instructions for \"${h}\"`)",
-                    "target": "error(`Could not find drawing instructions for \"${h}\"`)"
-                },
-                {
-                    "source": "error(`Could not find drawing instructions for \"${f}\"`)",
-                    "target": "error(`Could not find drawing instructions for \"${f}\"`)"
-                },
-                {
-                    "source": "error(\"Unable to resolve platform.\")",
-                    "target": "error(\"Unable to resolve platform.\")"
-                },
-                {
-                    "source": "log(\"webglcontextlost event received\")",
-                    "target": "log(\"webglcontextlost event received\")"
-                },
-                {
-                    "source": "error(\"Code Space: Failed to reload plugin:\",r),new de.Notice(`${Y(\"NOTICE_RELOAD_FAIL\")",
-                    "target": "error(\"Code Space：重新載入插件失敗：\",r),new de.Notice(`${Y(\"NOTICE_RELOAD_FAIL\")"
-                },
-                {
-                    "source": "Notice(`${Y(\"NOTICE_CREATE_SUCCESS\")} ${r}`)",
-                    "target": "Notice(`${Y(\"NOTICE_CREATE_SUCCESS\")} ${r}`)"
-                },
-                {
-                    "source": "error(\"Failed to create file:\",s),new de.Notice(Y(\"NOTICE_CREATE_FAIL\")",
-                    "target": "error(\"建立檔案失敗：\",s),new de.Notice(Y(\"NOTICE_CREATE_FAIL\")"
-                },
-                {
-                    "source": "name: \"+l)}return s&&(r=\"",
-                    "target": "name: \"+l)}return s&&(r=\""
-                },
-                {
-                    "source": "text:`${(T=(S=this.fileIndex)==null?void 0:S.size)!=null?T:0} ${Y(\"SUBTITLE_MANAGED_FILES\")}`",
-                    "target": "text:`${(T=(S=this.fileIndex)==null?void 0:S.size)!=null?T:0} ${Y(\"SUBTITLE_MANAGED_FILES\")}`"
                 },
                 {
                     "source": "CMD_OPEN_TERMINAL:\"Open terminal\"",
@@ -1754,44 +1068,8 @@
                     "target": "SETTINGS_TERMINAL_STATUS_REMOVE_PENDING:\"已排定移除；重新啟動 Obsidian 即可完成\""
                 },
                 {
-                    "source": "\"Code Space: Failed to open terminal panel:\"",
-                    "target": "\"Code Space：開啟終端機面板失敗：\""
-                },
-                {
-                    "source": "\"Code Space: terminal binary installation failed:\"",
-                    "target": "\"Code Space：安裝終端機執行檔失敗：\""
-                },
-                {
                     "source": "\"No shell executable found\"",
                     "target": "\"找不到 Shell 執行檔\""
-                },
-                {
-                    "source": "\"Terminal manager disposed\"",
-                    "target": "\"終端機管理器已釋放\""
-                },
-                {
-                    "source": "\"Terminal is desktop only\"",
-                    "target": "\"終端機僅限桌面版使用\""
-                },
-                {
-                    "source": "\"Terminal is disabled\"",
-                    "target": "\"終端機已停用\""
-                },
-                {
-                    "source": "\"Terminal session limit reached\"",
-                    "target": "\"終端機工作階段已達上限\""
-                },
-                {
-                    "source": "\"Terminal platform is not supported\"",
-                    "target": "\"終端機不支援此平台\""
-                },
-                {
-                    "source": "\"Terminal removal is pending a restart\"",
-                    "target": "\"終端機檔案將於重新啟動後移除\""
-                },
-                {
-                    "source": "\"Terminal support files are not installed\"",
-                    "target": "\"尚未安裝終端機支援檔案\""
                 },
                 {
                     "source": "\"Installed node-pty layout is invalid\"",
@@ -1808,33 +1086,12 @@
                 {
                     "source": "`Checksum mismatch for ${s}: expected ${a}, got ${O}`",
                     "target": "`${s} 的校驗值不相符：預期為 ${a}，實際為 ${O}`"
-                },
-                {
-                    "source": "`node-pty is not loadable at ${i}`",
-                    "target": "`無法從 ${i} 載入 node-pty`"
                 }
             ]
         },
         "manifest.json": {
-            "ast": [
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "Professional code file management with visual dashboard, syntax highlighting editor, and Markdown embedding.",
-                    "target": "專業的程式碼檔案管理工具，提供視覺化儀表板、語法醒目提示編輯器與 Markdown 嵌入功能。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "Professional code file management with visual dashboard, syntax highlighting editor, Markdown embedding, external folder mounts, and terminal integration.",
-                    "target": "專業的程式碼檔案管理工具，提供視覺化儀表板、語法醒目提示編輯器、Markdown 嵌入、外部資料夾掛載與終端機整合功能。"
-                }
-            ],
+            "ast": [],
             "regex": [
-                {
-                    "source": "\"description\": \"Professional code file management with visual dashboard, syntax highlighting editor, and Markdown embedding.\"",
-                    "target": "\"description\": \"專業的程式碼檔案管理工具，提供視覺化儀表板、語法醒目提示編輯器與 Markdown 嵌入功能。\""
-                },
                 {
                     "source": "\"description\": \"Professional code file management with visual dashboard, syntax highlighting editor, Markdown embedding, external folder mounts, and terminal integration.\"",
                     "target": "\"description\": \"專業的程式碼檔案管理工具，提供視覺化儀表板、語法醒目提示編輯器、Markdown 嵌入、外部資料夾掛載與終端機整合功能。\""
