@@ -2,29 +2,17 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "quickadd",
-        "version": "2.26.0",
+        "version": "2.27.0",
         "title": "[zh-tw] QuickAdd",
         "description": "QuickAdd 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.26.0",
+        "supportedVersions": "2.27.0",
         "author": "Chico",
-        "updatedAt": 1789846444999
+        "updatedAt": 1790181322584
     },
     "dict": {
         "main.js": {
             "ast": [
-                {
-                    "type": "AssignmentExpression",
-                    "name": "textContent",
-                    "source": " (optional)",
-                    "target": "（選填）"
-                },
-                {
-                    "type": "AssignmentExpression",
-                    "name": "textContent",
-                    "source": "Done",
-                    "target": "完成"
-                },
                 {
                     "type": "AssignmentExpression",
                     "name": "textContent",
@@ -3204,6 +3192,264 @@
                     "name": "addCommandButton",
                     "source": "Add conditional command",
                     "target": "新增條件命令"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": " (optional)",
+                    "target": "（選填）"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "b",
+                    "source": " (optional)",
+                    "target": "（選填）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Optional — leave empty, press Skip, or ctrl/cmd+shift+↵.",
+                    "target": "選填：可留空、按「略過」，或按 ctrl/cmd+shift+↵。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Leave this field empty",
+                    "target": "將此欄位留空"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Leave empty",
+                    "target": "留空"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setAttribute",
+                    "source": "Skip and leave empty",
+                    "target": "略過並留空"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Increment trailing number",
+                    "target": "遞增結尾數字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Version (semver)",
+                    "target": "版本（SemVer）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Enabling this will have the assistant use the prompt template you specify. If disable, the assistant will ask you for a prompt template to use.",
+                    "target": "啟用後，助理會使用指定的提示詞範本；停用時，會詢問你要使用哪個提示詞範本。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Prompt template",
+                    "target": "提示詞範本"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The system prompt for the AI Assistant",
+                    "target": "AI 助理使用的系統提示詞"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "System prompt",
+                    "target": "系統提示詞"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setAttribute",
+                    "source": "System prompt",
+                    "target": "系統提示詞"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Sampling settings such as temperature and top p. Untouched settings use the provider's defaults.",
+                    "target": "取樣設定，例如溫度與 Top P。未調整的項目會使用供應商的預設值。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "No scripts found",
+                    "target": "找不到指令碼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "QuickAdd cannot find any .js files or notes with a ```js code block in your vault.",
+                    "target": "QuickAdd 在儲存庫中找不到 .js 檔案，或含有 ```js 程式碼區塊的筆記。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Please make sure your scripts are:",
+                    "target": "請確認指令碼符合以下條件："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "✓ Not in hidden folders (starting with a dot)",
+                    "target": "✓ 不在隱藏資料夾中（名稱以句點開頭）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "✓ A .js file, or a note containing a ```js code block",
+                    "target": "✓ 是 .js 檔案，或含有 ```js 程式碼區塊的筆記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Kx",
+                    "source": "View documentation",
+                    "target": "查看說明文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Optional export or member to call (use :: to access nested members).",
+                    "target": "要呼叫的匯出項目或成員（選填；使用 :: 存取巢狀成員）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Connecting...",
+                    "target": "連線中..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The request format this provider expects. Auto-detect recognizes the official Anthropic and Gemini endpoints and treats everything else as OpenAI-compatible; pick a type explicitly for a proxy or custom endpoint.",
+                    "target": "此供應商使用的請求格式。自動偵測可辨識 Anthropic 與 Gemini 官方端點，其餘端點視為相容 OpenAI；若使用代理或自訂端點，請明確選擇類型。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Auto-detect",
+                    "target": "自動偵測"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "OpenAI-compatible",
+                    "target": "相容 OpenAI"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Path to your folder with prompt templates",
+                    "target": "存放提示詞範本的資料夾路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Prompt template folder path",
+                    "target": "提示詞範本資料夾路徑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The default system prompt for the AI Assistant",
+                    "target": "AI 助理使用的預設系統提示詞"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default system prompt",
+                    "target": "預設系統提示詞"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setAttribute",
+                    "source": "Default system prompt",
+                    "target": "預設系統提示詞"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Adds the template content to the end of the existing file.",
+                    "target": "將範本內容附加到既有檔案的結尾。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Adds the template content to the beginning of the existing file.",
+                    "target": "將範本內容加入既有檔案的開頭。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Replaces the existing file content with the template.",
+                    "target": "以範本取代既有檔案的內容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Inserts the template at the cursor position in the editor.",
+                    "target": "在編輯器的游標位置插入範本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Inserts the template below the note's frontmatter, or at the very top.",
+                    "target": "將範本插入筆記的 frontmatter 下方；若沒有 frontmatter，則插入最前方。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Adds the template content to the end of the note.",
+                    "target": "將範本內容附加到筆記結尾。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Replaces the entire note content with the template.",
+                    "target": "以範本取代整篇筆記的內容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "my-note-title, guarded against reserved file names",
+                    "target": "my-note-title，並避免使用保留檔名"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ariaLabel",
+                    "source": "Append link destination file",
+                    "target": "附加連結的目標檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Create a note from a template file.",
+                    "target": "從範本檔案建立筆記。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "A bundled file is run as code even though it is labeled a template.",
+                    "target": "封裝的檔案雖標示為範本，卻會當作程式碼執行。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Creates notes from a bundled template.",
+                    "target": "使用封裝的範本建立筆記。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Runs a file as code even though it is labeled a template",
+                    "target": "將標示為範本的檔案當作程式碼執行"
                 }
             ],
             "regex": [
@@ -3324,8 +3570,8 @@
                     "target": "textContent=`QuickAdd 無法顯示 ${i}。`"
                 },
                 {
-                    "source": "textContent=`Changes to this ${e} are saved automatically`",
-                    "target": "textContent=`此${e}的變更會自動儲存`"
+                    "source": "text:`Changes to this ${e} are saved automatically`",
+                    "target": "text:`此${e===\"choice\"?\"選項\":e===\"macro\"?\"巨集\":e}的變更會自動儲存`"
                 },
                 {
                     "source": "text:`${i.name} uses fixed sampling, so these settings are not sent to it.`",
@@ -3354,34 +3600,6 @@
                 {
                     "source": "text:`${n.maxTokens.toLocaleString()} tokens max`",
                     "target": "text:`權杖上限 ${n.maxTokens.toLocaleString()}`"
-                },
-                {
-                    "source": "description:\"Mutual exclusion of insertAfter and writeToBottomOfFile settings. If insertAfter is enabled, writeToBottomOfFile is disabled. To support changes in settings UI.\"",
-                    "target": "description:\"insertAfter 與 writeToBottomOfFile 設定互斥。若啟用 insertAfter，writeToBottomOfFile 會停用。用於支援設定介面變更。\""
-                },
-                {
-                    "source": "description:\"Set version to the current plugin version.\"",
-                    "target": "description:\"將版本設為目前外掛版本。\""
-                },
-                {
-                    "source": "description:\"Add default AI providers to the settings.\"",
-                    "target": "description:\"將預設 AI 提供者加入設定。\""
-                },
-                {
-                    "source": "description:\"Migrate legacy openFileInNewTab settings to new fileOpening format\"",
-                    "target": "description:\"將舊版 openFileInNewTab 設定遷移到新的 fileOpening 格式\""
-                },
-                {
-                    "source": "description:\"Backfill missing file opening defaults for older choices\"",
-                    "target": "description:\"補齊舊 choice 缺少的檔案開啟預設值\""
-                },
-                {
-                    "source": "description:\"Ensure every AI provider has a discovery mode so browsing works without models.dev\"",
-                    "target": "description:\"確保每個 AI 提供者都有探索模式，讓瀏覽功能不依賴 models.dev 也能運作\""
-                },
-                {
-                    "source": "description:\"Move AI provider API keys into Obsidian SecretStorage\"",
-                    "target": "description:\"將 AI 提供者 API key 移入 Obsidian SecretStorage\""
                 },
                 {
                     "source": "No choices yet",
@@ -3924,7 +4142,7 @@
                     "target": "Notice(`已複製節點 ID ${W}`)"
                 },
                 {
-                    "source": "Notice(`Could not clear user script secrets. The ${wf(r.type)} was not deleted.`)",
+                    "source": "Notice(`Could not clear user script secrets. The ${Ef(r.type)} was not deleted.`)",
                     "target": "Notice(`無法清除使用者指令碼密鑰，因此未刪除${r.type===\"Multi\"?\"資料夾\":\"選項\"}。`)"
                 },
                 {
@@ -3968,12 +4186,12 @@
                     "target": "移除 ${C.label}"
                 },
                 {
-                    "source": "`Property '${n}' is ${Ix(a)}. 'Add to list' requires a list.`",
-                    "target": "`屬性「${n}」是 ${Ix(a)}。「新增至清單」需要清單類型。`"
+                    "source": "`Property '${n}' is ${Mx(a)}. 'Add to list' requires a list.`",
+                    "target": "`屬性「${n}」是 ${Mx(a)}。「新增至清單」需要清單類型。`"
                 },
                 {
-                    "source": "`Property '${n}' contains ${Ix(a)}. Set a list only after correcting the existing property to a list.`",
-                    "target": "`屬性「${n}」包含 ${Ix(a)}。請先將既有屬性修正為清單，再設定清單值。`"
+                    "source": "`Property '${n}' contains ${Mx(a)}. Set a list only after correcting the existing property to a list.`",
+                    "target": "`屬性「${n}」包含 ${Mx(a)}。請先將既有屬性修正為清單，再設定清單值。`"
                 },
                 {
                     "source": "\"Unresolved\"",
@@ -4012,12 +4230,76 @@
                     "target": "Choice:\"選項\",Wait:\"Wait\""
                 },
                 {
-                    "source": "for(let o of YF.keys())i.addOption(o,o)",
-                    "target": "for(let o of YF.keys())i.addOption(o,({\"Move cursor to line end\":\"將游標移至行尾\",\"Move cursor to line start\":\"將游標移至行首\",\"Move cursor to file end\":\"將游標移至檔案結尾\",\"Move cursor to file start\":\"將游標移至檔案開頭\",\"Select link on active line\":\"選取作用中行的連結\",\"Select active line\":\"選取作用中行\",\"Paste with format\":\"以指定格式貼上\",\"Paste\":\"貼上\",\"Cut\":\"剪下\",\"Copy\":\"複製\"})[o]??o)"
+                    "source": "for(let o of QF.keys())i.addOption(o,o)",
+                    "target": "for(let o of QF.keys())i.addOption(o,({\"Move cursor to line end\":\"將游標移至行尾\",\"Move cursor to line start\":\"將游標移至行首\",\"Move cursor to file end\":\"將游標移至檔案結尾\",\"Move cursor to file start\":\"將游標移至檔案開頭\",\"Select link on active line\":\"選取作用中行的連結\",\"Select active line\":\"選取作用中行\",\"Paste with format\":\"以指定格式貼上\",\"Paste\":\"貼上\",\"Cut\":\"剪下\",\"Copy\":\"複製\"})[o]??o)"
                 },
                 {
-                    "source": "addChoiceButton(e,t,n){new Ui.ButtonComponent(e).setButtonText(t)",
-                    "target": "addChoiceButton(e,t,n){new Ui.ButtonComponent(e).setButtonText(t===\"Capture\"?\"擷取\":t===\"Template\"?\"範本\":t)"
+                    "source": "addChoiceButton(e,t,n){new Hi.ButtonComponent(e).setButtonText(t)",
+                    "target": "addChoiceButton(e,t,n){new Hi.ButtonComponent(e).setButtonText(t===\"Capture\"?\"擷取\":t===\"Template\"?\"範本\":t)"
+                },
+                {
+                    "source": "label:\"Template\"",
+                    "target": "label:\"範本\""
+                },
+                {
+                    "source": "label:\"Capture\"",
+                    "target": "label:\"擷取\""
+                },
+                {
+                    "source": "label:\"Macro\"",
+                    "target": "label:\"巨集\""
+                },
+                {
+                    "source": "label:\"SCRIPT\"",
+                    "target": "label:\"指令碼\""
+                },
+                {
+                    "source": "label:\"CONDITIONAL\"",
+                    "target": "label:\"條件式\""
+                },
+                {
+                    "source": "label:\"STARTUP\"",
+                    "target": "label:\"啟動時執行\""
+                },
+                {
+                    "source": "label:\"EXECUTABLE\"",
+                    "target": "label:\"可執行\""
+                },
+                {
+                    "source": "label:\"COMMAND\"",
+                    "target": "label:\"命令\""
+                },
+                {
+                    "source": "label:\"WRITES\"",
+                    "target": "label:\"寫入\""
+                },
+                {
+                    "source": "label:\"TEMPLATE\"",
+                    "target": "label:\"範本\""
+                },
+                {
+                    "source": "label:\"OVERWRITES\"",
+                    "target": "label:\"覆寫\""
+                },
+                {
+                    "source": "label:\"MISSING\"",
+                    "target": "label:\"缺少\""
+                },
+                {
+                    "source": "label:\"UNKNOWN\"",
+                    "target": "label:\"未知\""
+                },
+                {
+                    "source": "label:\"EDITOR\"",
+                    "target": "label:\"編輯器\""
+                },
+                {
+                    "source": ".setName(\"Choice\")",
+                    "target": ".setName(\"選項\")"
+                },
+                {
+                    "source": "text:`\\u2713 In your vault (not in ${r.vault.configDir} folder)`",
+                    "target": "text:`✓ 位於儲存庫中（不在 ${r.vault.configDir} 資料夾內）`"
                 }
             ]
         },
