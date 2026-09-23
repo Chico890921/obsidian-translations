@@ -8,35 +8,11 @@
         "language": "zh-tw",
         "supportedVersions": "4.2.7",
         "author": "Chico",
-        "updatedAt": 1785322324871
+        "updatedAt": 1790182453335
     },
     "dict": {
         "main.js": {
             "ast": [
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": " · ",
-                    "target": " · "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": " — ",
-                    "target": " — "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": ", ",
-                    "target": ", "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "`persistent` option is only available in Deno",
-                    "target": "`persistent` option is only available in Deno"
-                },
                 {
                     "type": "CallExpression",
                     "name": "error",
@@ -90,12 +66,6 @@
                     "name": "error",
                     "source": "[google-drive] Failed to revoke refresh token",
                     "target": "[google-drive] 無法撤銷重新整理權杖"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "note-meta effect body threw",
-                    "target": "note-meta effect body threw"
                 },
                 {
                     "type": "CallExpression",
@@ -340,56 +310,14 @@
                 {
                     "type": "CallExpression",
                     "name": "error",
-                    "source": "Error building AVC Decoder Configuration Record:",
-                    "target": "Error building AVC Decoder Configuration Record:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Error deserializing AVC Decoder Configuration Record:",
-                    "target": "Error deserializing AVC Decoder Configuration Record:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Error parsing AVC SPS:",
-                    "target": "Error parsing AVC SPS:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Error parsing HEVC SPS:",
-                    "target": "Error parsing HEVC SPS:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Error building HEVC Decoder Configuration Record:",
-                    "target": "Error building HEVC Decoder Configuration Record:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
                     "source": "Due to an error, only color data will be decoded.",
                     "target": "因發生錯誤，只會解碼色彩資料。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "error",
-                    "source": "Error during decodability check:",
-                    "target": "Error during decodability check:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
                     "source": "Due to an error, only color data will be encoded.",
                     "target": "因發生錯誤，只會編碼色彩資料。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "Shader compile error:",
-                    "target": "Shader compile error:"
                 },
                 {
                     "type": "CallExpression",
@@ -414,12 +342,6 @@
                     "name": "error",
                     "source": "Image loading failed",
                     "target": "圖片載入失敗"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "error",
-                    "source": "upsertMediaNote failed for {notePath}: {error}",
-                    "target": "upsertMediaNote failed for {notePath}: {error}"
                 },
                 {
                     "type": "CallExpression",
@@ -532,54 +454,6 @@
                 {
                     "type": "CallExpression",
                     "name": "info",
-                    "source": "Initializing PortChannelResponder",
-                    "target": "Initializing PortChannelResponder"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Received handshake init",
-                    "target": "Received handshake init"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Pending connection resolved successfully",
-                    "target": "Pending connection resolved successfully"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Handshake completed successfully",
-                    "target": "Handshake completed successfully"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "PortChannelResponder disposed",
-                    "target": "PortChannelResponder disposed"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "LogTape loggers are configured.  Note that LogTape itself uses the meta logger, which has category {metaLoggerCategory}.  The meta logger is used to log internal diagnostics such as sink exceptions.  It's recommended to configure the meta logger with a separate sink so that you can easily notice if logging itself fails or is misconfigured.  To turn off this message, configure the meta logger with higher log levels than {dismissLevel}.  See also <https://logtape.org/manual/categories#meta-logger>.",
-                    "target": "LogTape loggers are configured.  Note that LogTape itself uses the meta logger, which has category {metaLoggerCategory}.  The meta logger is used to log internal diagnostics such as sink exceptions.  It's recommended to configure the meta logger with a separate sink so that you can easily notice if logging itself fails or is misconfigured.  To turn off this message, configure the meta logger with higher log levels than {dismissLevel}.  See also <https://logtape.org/manual/categories#meta-logger>."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Initiating port channel",
-                    "target": "Initiating port channel"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Received valid handshake response",
-                    "target": "Received valid handshake response"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
                     "source": "Extracting text from screenshot to clipboard",
                     "target": "正在從截圖擷取文字到剪貼簿"
                 },
@@ -628,18 +502,6 @@
                 {
                     "type": "CallExpression",
                     "name": "info",
-                    "source": "media-view debug logging attached",
-                    "target": "media-view debug logging attached"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "media-view debug logging detached",
-                    "target": "media-view debug logging detached"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
                     "source": "Task {taskId} deleted",
                     "target": "工作 {taskId} 已刪除"
                 },
@@ -682,20 +544,8 @@
                 {
                     "type": "CallExpression",
                     "name": "info",
-                    "source": "Bidirectional connection established",
-                    "target": "Bidirectional connection established"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
                     "source": "Connected to webview media service from {trigger}",
                     "target": "已從 {trigger} 連線到網頁檢視器媒體服務"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "WebviewMediaService initialized successfully",
-                    "target": "WebviewMediaService initialized successfully"
                 },
                 {
                     "type": "CallExpression",
@@ -708,36 +558,6 @@
                     "name": "info",
                     "source": "Media clip cleared successfully",
                     "target": "媒體剪輯已清除"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Connection established successfully",
-                    "target": "Connection established successfully"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Controller changed (SPA navigation)",
-                    "target": "Controller changed (SPA navigation)"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Disconnecting webview media service",
-                    "target": "Disconnecting webview media service"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Disposing WebviewMediaService",
-                    "target": "Disposing WebviewMediaService"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "WebviewMediaService disposed successfully",
-                    "target": "WebviewMediaService disposed successfully"
                 },
                 {
                     "type": "CallExpression",
@@ -772,12 +592,6 @@
                 {
                     "type": "CallExpression",
                     "name": "info",
-                    "source": "Hash props applied successfully",
-                    "target": "Hash props applied successfully"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
                     "source": "Setting media clip",
                     "target": "正在設定媒體剪輯"
                 },
@@ -790,86 +604,14 @@
                 {
                     "type": "CallExpression",
                     "name": "info",
-                    "source": "Playback paused, will resume on disposal",
-                    "target": "Playback paused, will resume on disposal"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "recorder not found, skip patching for recorder note",
-                    "target": "recorder not found, skip patching for recorder note"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Clearing legacy image cache",
-                    "target": "Clearing legacy image cache"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Creating image cache object store",
-                    "target": "Creating image cache object store"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Clearing all entries from image cache",
-                    "target": "Clearing all entries from image cache"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
                     "source": "Image cache cleared",
                     "target": "圖片快取已清除"
                 },
                 {
                     "type": "CallExpression",
                     "name": "info",
-                    "source": "Resetting image cache database",
-                    "target": "Resetting image cache database"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Image cache database deleted",
-                    "target": "Image cache database deleted"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Evicted LRU cache entries",
-                    "target": "Evicted LRU cache entries"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Starting module installation",
-                    "target": "Starting module installation"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Starting manual module installation from file",
-                    "target": "Starting manual module installation from file"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
                     "source": "Cleared media history",
                     "target": "已清除媒體歷史記錄"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Error when probing encoder support. Falling back to rerender path.",
-                    "target": "Error when probing encoder support. Falling back to rerender path."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "MediaLibraryView initialized",
-                    "target": "MediaLibraryView initialized"
                 },
                 {
                     "type": "CallExpression",
@@ -882,54 +624,6 @@
                     "name": "info",
                     "source": "Resetting view to default order",
                     "target": "正在將檢視重設為預設順序"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Toggling boolean property",
-                    "target": "Toggling boolean property"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Column order changed",
-                    "target": "Column order changed"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Column sizes changed",
-                    "target": "Column sizes changed"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Updating order config",
-                    "target": "Updating order config"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Updating column config",
-                    "target": "Updating column config"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Updating hide cover config",
-                    "target": "Updating hide cover config"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Updating hide actions config",
-                    "target": "Updating hide actions config"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Data updated",
-                    "target": "Data updated"
                 },
                 {
                     "type": "CallExpression",
@@ -948,30 +642,6 @@
                     "name": "info",
                     "source": "Opening metadata editor",
                     "target": "正在開啟中繼資料編輯器"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Upserting media note for {mediaType} media ({mediaId})",
-                    "target": "Upserting media note for {mediaType} media ({mediaId})"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "tryOpenWithMediaHash: opening media",
-                    "target": "tryOpenWithMediaHash: opening media"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "mx-open dispatching to media handler",
-                    "target": "mx-open dispatching to media handler"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Pathname protocol dispatching to media handler",
-                    "target": "Pathname protocol dispatching to media handler"
                 },
                 {
                     "type": "CallExpression",
@@ -1006,30 +676,6 @@
                 {
                     "type": "CallExpression",
                     "name": "info",
-                    "source": "Settings were migrated, persisting migrated data",
-                    "target": "Settings were migrated, persisting migrated data"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "No existing settings data found, using defaults",
-                    "target": "No existing settings data found, using defaults"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Migrating settings from version {staleVersion} to {currentVersion}",
-                    "target": "Migrating settings from version {staleVersion} to {currentVersion}"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Settings migration completed successfully",
-                    "target": "Settings migration completed successfully"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
                     "source": "Settings loaded successfully",
                     "target": "設定已載入"
                 },
@@ -1046,1061 +692,13 @@
                     "target": "正在啟動轉錄流程"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Patching WebviewerView for media service integration",
-                    "target": "Patching WebviewerView for media service integration"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Webview media service loaded successfully",
-                    "target": "Webview media service loaded successfully"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Webview media service deleted",
-                    "target": "Webview media service deleted"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Webview loader disposables disposed",
-                    "target": "Webview loader disposables disposed"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Loaded webview media service for existing views",
-                    "target": "Loaded webview media service for existing views"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Unloaded webview media service from all views",
-                    "target": "Unloaded webview media service from all views"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Webviewer patch applied successfully",
-                    "target": "Webviewer patch applied successfully"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Reloaded media library bases views",
-                    "target": "Reloaded media library bases views"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Reloaded markdown views",
-                    "target": "Reloaded markdown views"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "info",
-                    "source": "Hello from Media Extended",
-                    "target": "Hello from Media Extended"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "requesting user gesture",
-                    "target": "requesting user gesture"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "Connection closed, reconnecting...",
-                    "target": "Connection closed, reconnecting..."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "error in heartbeat callback",
-                    "target": "error in heartbeat callback"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "Error closing connection",
-                    "target": "Error closing connection"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "error waiting for auth on connect",
-                    "target": "error waiting for auth on connect"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "starting default worker",
-                    "target": "starting default worker"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "worker error",
-                    "target": "worker error"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "terminating worker",
-                    "target": "terminating worker"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "Error fetching access token from callback",
-                    "target": "Error fetching access token from callback"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "@supabase/gotrue-js: navigatorLock: acquire lock",
-                    "target": "@supabase/gotrue-js: navigatorLock: acquire lock"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "@supabase/gotrue-js: navigatorLock acquire timed out",
-                    "target": "@supabase/gotrue-js: navigatorLock acquire timed out"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "@supabase/gotrue-js: navigatorLock: acquired",
-                    "target": "@supabase/gotrue-js: navigatorLock: acquired"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "@supabase/gotrue-js: navigatorLock: released",
-                    "target": "@supabase/gotrue-js: navigatorLock: released"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "@supabase/gotrue-js: navigatorLock: not immediately available",
-                    "target": "@supabase/gotrue-js: navigatorLock: not immediately available"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "@supabase/gotrue-js: Navigator LockManager state",
-                    "target": "@supabase/gotrue-js: Navigator LockManager state"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "@supabase/gotrue-js: navigatorLock: acquire timeout, recovering by stealing lock",
-                    "target": "@supabase/gotrue-js: navigatorLock: acquire timeout, recovering by stealing lock"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "@supabase/gotrue-js: navigatorLock: recovered (stolen)",
-                    "target": "@supabase/gotrue-js: navigatorLock: recovered (stolen)"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "@supabase/gotrue-js: navigatorLock: released (stolen)",
-                    "target": "@supabase/gotrue-js: navigatorLock: released (stolen)"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "log",
-                    "source": "Auto-imported media file:",
-                    "target": "Auto-imported media file:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Google Drive",
-                    "target": "Google Drive"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "The `smooth` scroll behavior is not fully supported with dynamic size.",
-                    "target": "The `smooth` scroll behavior is not fully supported with dynamic size."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Failed to get offset for index:",
-                    "target": "Failed to get offset for index:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "fallback parsing failed for hash fields",
-                    "target": "fallback parsing failed for hash fields"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "fallback parsing failed for fm control",
-                    "target": "fallback parsing failed for fm control"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "fallback parsing failed for fm metadata",
-                    "target": "fallback parsing failed for fm metadata"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Rejecting handshake: no response target",
-                    "target": "Rejecting handshake: no response target"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Pending connection failed",
-                    "target": "Pending connection failed"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "polyfill for input cancel event only works on focused windows, fallback to timeout",
-                    "target": "polyfill for input cancel event only works on focused windows, fallback to timeout"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "input cancel event timeout, dispatch cancel event",
-                    "target": "input cancel event timeout, dispatch cancel event"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "No pending OAuth request",
-                    "target": "No pending OAuth request"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "OAuth state mismatch, ignoring callback",
-                    "target": "OAuth state mismatch, ignoring callback"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "[google-drive] Refresh token is invalid:",
-                    "target": "[google-drive] Refresh token is invalid:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Signal already aborted before starting",
-                    "target": "Signal already aborted before starting"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Abort signal received",
-                    "target": "Abort signal received"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Received handshake response without port",
-                    "target": "Received handshake response without port"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Retry loop aborted",
-                    "target": "Retry loop aborted"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Frame id not available, skipping user gesture request",
-                    "target": "Frame id not available, skipping user gesture request"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Failed to extract metadata",
-                    "target": "Failed to extract metadata"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Text extraction unauthorized, prompting login",
-                    "target": "Text extraction unauthorized, prompting login"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Text extraction blocked by CORS",
-                    "target": "Text extraction blocked by CORS"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Save screenshot blocked by CORS",
-                    "target": "Save screenshot blocked by CORS"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Set as cover blocked by CORS",
-                    "target": "Set as cover blocked by CORS"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Copy screenshot blocked by CORS",
-                    "target": "Copy screenshot blocked by CORS"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "loadFile rejected: not a media file",
-                    "target": "loadFile rejected: not a media file"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Path occupied by non-file, cannot upsert at {path}",
-                    "target": "Path occupied by non-file, cannot upsert at {path}"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "editor:open-search command not found, cannot patch obsidian search command",
-                    "target": "editor:open-search command not found, cannot patch obsidian search command"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Connection timed out, reconnecting...",
-                    "target": "Connection timed out, reconnecting..."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Error parsing message:",
-                    "target": "Error parsing message:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Realtime send() is automatically falling back to REST API. This behavior will be deprecated in the future. Please use httpSend() explicitly for REST delivery.",
-                    "target": "Realtime send() is automatically falling back to REST API. This behavior will be deprecated in the future. Please use httpSend() explicitly for REST delivery."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "WebCrypto API is not supported. Code challenge method will default to use plain instead of sha256.",
-                    "target": "WebCrypto API is not supported. Code challenge method will default to use plain instead of sha256."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Using the user object as returned from supabase.auth.getSession() or from some supabase.auth.onAuthStateChange() events could be insecure! This value comes directly from the storage medium (usually cookies on the server) and may not be authentic. Use supabase.auth.getUser() instead which authenticates the data by contacting the Supabase Auth server.",
-                    "target": "Using the user object as returned from supabase.auth.getSession() or from some supabase.auth.onAuthStateChange() events could be insecure! This value comes directly from the storage medium (usually cookies on the server) and may not be authentic. Use supabase.auth.getUser() instead which authenticates the data by contacting the Supabase Auth server."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "@supabase/gotrue-js: Error when querying Navigator LockManager state",
-                    "target": "@supabase/gotrue-js: Error when querying Navigator LockManager state"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "@supabase/gotrue-js: Navigator LockManager returned a null lock when using #request without ifAvailable set to true, it appears this browser is not following the LockManager spec https://developer.mozilla.org/en-US/docs/Web/API/LockManager/request",
-                    "target": "@supabase/gotrue-js: Navigator LockManager returned a null lock when using #request without ifAvailable set to true, it appears this browser is not following the LockManager spec https://developer.mozilla.org/en-US/docs/Web/API/LockManager/request"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "@supabase/gotrue-js: Navigator LockManager returned null lock even with steal: true",
-                    "target": "@supabase/gotrue-js: Navigator LockManager returned null lock even with steal: true"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "@supabase/gotrue-js: Session as retrieved from URL was issued over 120s ago, URL could be stale",
-                    "target": "@supabase/gotrue-js: Session as retrieved from URL was issued over 120s ago, URL could be stale"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "@supabase/gotrue-js: Session as retrieved from URL was issued in the future? Check the device clock for skew",
-                    "target": "@supabase/gotrue-js: Session as retrieved from URL was issued in the future? Check the device clock for skew"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Failed to set initial Realtime auth token:",
-                    "target": "Failed to set initial Realtime auth token:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "⚠️  Node.js 18 and below are deprecated and will no longer be supported in future versions of @supabase/supabase-js. Please upgrade to Node.js 20 or later. For more information, visit: https://github.com/orgs/supabase/discussions/37217",
-                    "target": "⚠️  Node.js 18 and below are deprecated and will no longer be supported in future versions of @supabase/supabase-js. Please upgrade to Node.js 20 or later. For more information, visit: https://github.com/orgs/supabase/discussions/37217"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Failed to populate media note metadata before subtitle download, proceeding without it",
-                    "target": "Failed to populate media note metadata before subtitle download, proceeding without it"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Auth callback received but no pending OAuth",
-                    "target": "Auth callback received but no pending OAuth"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Invalid YouTube clipping",
-                    "target": "Invalid YouTube clipping"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Failed to decode URI, fallback to original: {link}",
-                    "target": "Failed to decode URI, fallback to original: {link}"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Rejected manual install with unexpected filename",
-                    "target": "Rejected manual install with unexpected filename"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Skipping media history persist — initial load did not succeed",
-                    "target": "Skipping media history persist — initial load did not succeed"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Unsupported edit list: multiple edits are not currently supported. Only using first edit.",
-                    "target": "Unsupported edit list: multiple edits are not currently supported. Only using first edit."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Unsupported edit list entry: media rate must be 1.",
-                    "target": "Unsupported edit list entry: media rate must be 1."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Unsupported PCM format.",
-                    "target": "Unsupported PCM format."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Invalid dec3 box contents, ignoring.",
-                    "target": "Invalid dec3 box contents, ignoring."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Can't have two trun boxes for the same track in one fragment. Ignoring...",
-                    "target": "Can't have two trun boxes for the same track in one fragment. Ignoring..."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Request will not be retried because a CORS error was suspected due to different origins. You can modify this behavior by providing your own function for the 'getRetryDelay' option.",
-                    "target": "Request will not be retried because a CORS error was suspected due to different origins. You can modify this behavior by providing your own function for the 'getRetryDelay' option."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Output has already been started.",
-                    "target": "Output has already been started."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Output has already been canceled.",
-                    "target": "Output has already been canceled."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Output has already been finalized.",
-                    "target": "Output has already been finalized."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Conversion already canceled.",
-                    "target": "Conversion already canceled."
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Failed to build Content-Range header:",
-                    "target": "Failed to build Content-Range header:"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Cannot toggle non-note property",
-                    "target": "Cannot toggle non-note property"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Note not found for boolean toggle",
-                    "target": "Note not found for boolean toggle"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Invalid column size config, reset to default",
-                    "target": "Invalid column size config, reset to default"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Media ID field not in order config, marking view as invalid",
-                    "target": "Media ID field not in order config, marking view as invalid"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Media not found for metadata edit",
-                    "target": "Media not found for metadata edit"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Media metadata not found",
-                    "target": "Media metadata not found"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "No value to set for media source field",
-                    "target": "No value to set for media source field"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "tryOpenWithMediaHash: ignoring invalid paneType",
-                    "target": "tryOpenWithMediaHash: ignoring invalid paneType"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "buildOverriddenHash: failed to parse t param",
-                    "target": "buildOverriddenHash: failed to parse t param"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "mx-open URI rejected: id not found",
-                    "target": "mx-open URI rejected: id not found"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "mx-open URI rejected: disallowed or invalid URL",
-                    "target": "mx-open URI rejected: disallowed or invalid URL"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "mx-open URI rejected: parser returned null",
-                    "target": "mx-open URI rejected: parser returned null"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "mx-open: ignoring invalid paneType",
-                    "target": "mx-open: ignoring invalid paneType"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Pathname protocol rejected: invalid or disallowed URL",
-                    "target": "Pathname protocol rejected: invalid or disallowed URL"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Pathname protocol: parser returned null",
-                    "target": "Pathname protocol: parser returned null"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Could not locate workspace protocol handler map; core action interception disabled",
-                    "target": "Could not locate workspace protocol handler map; core action interception disabled"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Failed to fetch task status: {error}",
-                    "target": "Failed to fetch task status: {error}"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Webview media service not found, skipping hash props application",
-                    "target": "Webview media service not found, skipping hash props application"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Failed to resolve media url in note",
-                    "target": "Failed to resolve media url in note"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "warn",
-                    "source": "Failed to hook image create",
-                    "target": "Failed to hook image create"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "error",
-                    "source": "background-color: red; color: white;",
-                    "target": "background-color: red; color: white;"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "error",
-                    "source": "background:#DC3545;color:white;padding:1px 4px;border-radius:2px;",
-                    "target": "background:#DC3545;color:white;padding:1px 4px;border-radius:2px;"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "error",
-                    "source": "Cloudflare Workers detected. WebSocket clients are not supported in Cloudflare Workers.",
-                    "target": "Cloudflare Workers detected. WebSocket clients are not supported in Cloudflare Workers."
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "error",
-                    "source": "Edge runtime detected (Vercel Edge/Netlify Edge). WebSockets are not supported in edge functions.",
-                    "target": "Edge runtime detected (Vercel Edge/Netlify Edge). WebSockets are not supported in edge functions."
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "error",
-                    "source": "Unknown JavaScript runtime without WebSocket support.",
-                    "target": "Unknown JavaScript runtime without WebSocket support."
-                },
-                {
                     "type": "ObjectProperty",
                     "name": "error",
                     "source": "Failed to import clipping",
                     "target": "無法匯入剪輯"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "info",
-                    "source": "background-color: white; color: black;",
-                    "target": "background-color: white; color: black;"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "info",
-                    "source": "background:#2CC773;color:white;padding:1px 4px;border-radius:2px;",
-                    "target": "background:#2CC773;color:white;padding:1px 4px;border-radius:2px;"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "label",
-                    "source": "WebM",
-                    "target": "WebM"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "label",
-                    "source": "GitHub",
-                    "target": "GitHub"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "link",
-                    "source": "text-primary underline-offset-4 hover:underline",
-                    "target": "text-primary underline-offset-4 hover:underline"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "link",
-                    "source": "rounded-lg py-4 px-5 space-y-3 hover:bg-accent/30",
-                    "target": "rounded-lg py-4 px-5 space-y-3 hover:bg-accent/30"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "message",
-                    "source": "JSON object requested, multiple (or no) rows returned",
-                    "target": "JSON object requested, multiple (or no) rows returned"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Collapsible",
-                    "target": "Collapsible"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Checkbox",
-                    "target": "Checkbox"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "FieldControl",
-                    "target": "FieldControl"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Slider",
-                    "target": "Slider"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Switch",
-                    "target": "Switch"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Toggle",
-                    "target": "Toggle"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "ToggleGroup",
-                    "target": "ToggleGroup"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "subtitle",
-                    "source": "MediabunnyTextHandler",
-                    "target": "MediabunnyTextHandler"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "subtitle",
-                    "source": "[album, creator].filter(value.isTruthy()).join(' - ')",
-                    "target": "[album, creator].filter(value.isTruthy()).join(' - ')"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "warning",
-                    "source": "background-color: orange; color: black;",
-                    "target": "background-color: orange; color: black;"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "warning",
-                    "source": "background:#FFA500;color:black;padding:1px 4px;border-radius:2px;",
-                    "target": "background:#FFA500;color:black;padding:1px 4px;border-radius:2px;"
                 }
             ],
             "regex": [
-                {
-                    "source": "error(\"`persistent` option is only available in Deno\")",
-                    "target": "error(\"`persistent` option is only available in Deno\")"
-                },
-                {
-                    "source": "error(`Error in notification handler:`,e)}}}}[Symbol.dispose](){for(let e of this.#n.values())e.timeoutId&&clearTimeout(e.timeoutId),e.reject(Error(`Client disposed`)",
-                    "target": "error(`Error in notification handler:`,e)}}}}[Symbol.dispose](){for(let e of this.#n.values())e.timeoutId&&clearTimeout(e.timeoutId),e.reject(Error(`Client disposed`)"
-                },
-                {
-                    "source": "log(`trace`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`trace`)",
-                    "target": "log(`trace`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`trace`)"
-                },
-                {
-                    "source": "log(`debug`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`debug`)",
-                    "target": "log(`debug`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`debug`)"
-                },
-                {
-                    "source": "log(`info`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`info`)",
-                    "target": "log(`info`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`info`)"
-                },
-                {
-                    "source": "log(`warning`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`warning`)",
-                    "target": "log(`warning`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`warning`)"
-                },
-                {
-                    "source": "log(`error`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`error`)",
-                    "target": "log(`error`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`error`)"
-                },
-                {
-                    "source": "log(`fatal`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`fatal`)",
-                    "target": "log(`fatal`,e,t)}):Promise.resolve();let t=n();if(t instanceof Promise)return this.isEnabledFor(`fatal`)"
-                },
-                {
-                    "source": "error(`Failed to open Google Drive browser`,e)}}async requestSelect(e){let t=await this.#s.googleDriveBrowserDialog.requestInput(e);if(t.type===`play`||t.type===`import`)",
-                    "target": "error(`Failed to open Google Drive browser`,e)}}async requestSelect(e){let t=await this.#s.googleDriveBrowserDialog.requestInput(e);if(t.type===`play`||t.type===`import`)"
-                },
-                {
-                    "source": "error(`Failed to open ${t}`,{message:e,error:n}),e)})}function UZ(e){return HZ(e,Je(),`data:text/html;base64,${CY(wht())}`)",
-                    "target": "error(`Failed to open ${t}`,{message:e,error:n}),e)})}function UZ(e){return HZ(e,Je(),`data:text/html;base64,${CY(wht())}`)"
-                },
-                {
-                    "source": "appendText(`…`)",
-                    "target": "appendText(`…`)"
-                },
-                {
-                    "source": "appendText(` · `)",
-                    "target": "appendText(` · `)"
-                },
-                {
-                    "source": "appendText(` — `)",
-                    "target": "appendText(` — `)"
-                },
-                {
-                    "source": "error(`Failed to check if web content is patched: ${e}`)",
-                    "target": "error(`Failed to check if web content is patched: ${e}`)"
-                },
-                {
-                    "source": "log(`requesting user gesture`,this.#t),await this.#n.client.requestUserGesture(this.#t)):(console.warn(`Frame id not available, skipping user gesture request`)",
-                    "target": "log(`requesting user gesture`,this.#t),await this.#n.client.requestUserGesture(this.#t)):(console.warn(`Frame id not available, skipping user gesture request`)"
-                },
-                {
-                    "source": "error(`Please add a BigInt polyfill.`)",
-                    "target": "error(`Please add a BigInt polyfill.`)"
-                },
-                {
-                    "source": "error(`Failed to copy screenshot`,{error:t}),bDe({error:e}))})}},Qgt=Yx(`^(?<drive>[A-Z]+):(?<path>.+)`)",
-                    "target": "error(`Failed to copy screenshot`,{error:t}),bDe({error:e}))})}},Qgt=Yx(`^(?<drive>[A-Z]+):(?<path>.+)`)"
-                },
-                {
-                    "source": "error(`downloadCaption failed`,{captionId:e,format:t,error:n}),n}}async function fvt(e,t,n){let r=await b1(e,`vtt`,t,n);if(r.format!==`vtt`)",
-                    "target": "error(`downloadCaption failed`,{captionId:e,format:t,error:n}),n}}async function fvt(e,t,n){let r=await b1(e,`vtt`,t,n);if(r.format!==`vtt`)"
-                },
-                {
-                    "source": "error(`forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported`)",
-                    "target": "error(`forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported`)"
-                },
-                {
-                    "source": "error(`Failed to seek webview media`,e)});return}if(a?.type===`player`)",
-                    "target": "error(`Failed to seek webview media`,e)});return}if(a?.type===`player`)"
-                },
-                {
-                    "source": "log(`Connection closed, reconnecting...`)",
-                    "target": "log(`Connection closed, reconnecting...`)"
-                },
-                {
-                    "source": "log(`channel`,`close ${this.topic} ${this._joinRef()}`)",
-                    "target": "log(`channel`,`close ${this.topic} ${this._joinRef()}`)"
-                },
-                {
-                    "source": "log(`channel`,`resubscribe to ${this.topic} due to change in presence callbacks on joined channel`)",
-                    "target": "log(`channel`,`resubscribe to ${this.topic} due to change in presence callbacks on joined channel`)"
-                },
-                {
-                    "source": "log(`channel`,`leave ${this.topic}`)",
-                    "target": "log(`channel`,`leave ${this.topic}`)"
-                },
-                {
-                    "source": "log(`error`,`error in heartbeat callback`,e)}this._wasManualDisconnect=!1,(e=this.conn)==null||e.close(1e3,`heartbeat timeout`)",
-                    "target": "log(`error`,`error in heartbeat callback`,e)}this._wasManualDisconnect=!1,(e=this.conn)==null||e.close(1e3,`heartbeat timeout`)"
-                },
-                {
-                    "source": "log(`error`,`error in heartbeat callback`,e)}this._setAuthSafely(`heartbeat`)",
-                    "target": "log(`error`,`error in heartbeat callback`,e)}this._setAuthSafely(`heartbeat`)"
-                },
-                {
-                    "source": "log(`transport`,`leaving duplicate topic \"${e}\"`)",
-                    "target": "log(`transport`,`leaving duplicate topic \"${e}\"`)"
-                },
-                {
-                    "source": "log(`error`,`Error closing connection`,e)}this.conn.onopen=null,this.conn.onerror=null,this.conn.onmessage=null,this.conn.onclose=null,this.conn=null}this._clearAllTimers(),this._terminateWorker(),this.channels.forEach(e=>e.teardown())}_onConnOpen(){this._setConnectionState(`connected`)",
-                    "target": "log(`error`,`Error closing connection`,e)}this.conn.onopen=null,this.conn.onerror=null,this.conn.onmessage=null,this.conn.onclose=null,this.conn=null}this._clearAllTimers(),this._terminateWorker(),this.channels.forEach(e=>e.teardown())}_onConnOpen(){this._setConnectionState(`connected`)"
-                },
-                {
-                    "source": "log(`transport`,`connected to ${this.endpointURL()}`)",
-                    "target": "log(`transport`,`connected to ${this.endpointURL()}`)"
-                },
-                {
-                    "source": "log(`error`,`error waiting for auth on connect`,e),this.flushSendBuffer()}),this._clearTimer(`reconnect`)",
-                    "target": "log(`error`,`error waiting for auth on connect`,e),this.flushSendBuffer()}),this._clearTimer(`reconnect`)"
-                },
-                {
-                    "source": "log(`worker`,`starting worker for from ${this.workerUrl}`)",
-                    "target": "log(`worker`,`starting worker for from ${this.workerUrl}`)"
-                },
-                {
-                    "source": "log(`worker`,`starting default worker`)",
-                    "target": "log(`worker`,`starting default worker`)"
-                },
-                {
-                    "source": "log(`worker`,`worker error`,e.message),this._terminateWorker()},this.workerRef.onmessage=e=>{e.data.event===`keepAlive`&&this.sendHeartbeat()},this.workerRef.postMessage({event:`start`,interval:this.heartbeatIntervalMs})}_terminateWorker(){this.workerRef&&=(this.log(`worker`,`terminating worker`)",
-                    "target": "log(`worker`,`worker error`,e.message),this._terminateWorker()},this.workerRef.onmessage=e=>{e.data.event===`keepAlive`&&this.sendHeartbeat()},this.workerRef.postMessage({event:`start`,interval:this.heartbeatIntervalMs})}_terminateWorker(){this.workerRef&&=(this.log(`worker`,`terminating worker`)"
-                },
-                {
-                    "source": "log(`@supabase/gotrue-js: Navigator LockManager state`,JSON.stringify(e,null,`  `)",
-                    "target": "log(`@supabase/gotrue-js: Navigator LockManager state`,JSON.stringify(e,null,`  `)"
-                },
-                {
-                    "source": "log(`@supabase/gotrue-js: navigatorLock: acquire timeout, recovering by stealing lock`,e),console.warn(`@supabase/gotrue-js: Lock \"${e}\" was not released within ${t}ms. This may indicate an orphaned lock from a component unmount (e.g., React Strict Mode). Forcefully acquiring the lock to recover.`)",
-                    "target": "log(`@supabase/gotrue-js: navigatorLock: acquire timeout, recovering by stealing lock`,e),console.warn(`@supabase/gotrue-js: Lock \"${e}\" was not released within ${t}ms. This may indicate an orphaned lock from a component unmount (e.g., React Strict Mode). Forcefully acquiring the lock to recover.`)"
-                },
-                {
-                    "source": "log(`@supabase/gotrue-js: navigatorLock: recovered (stolen)`,e,t.name);try{return await n()}finally{I4.debug&&console.log(`@supabase/gotrue-js: navigatorLock: released (stolen)`,e,t.name)}}else return console.warn(`@supabase/gotrue-js: Navigator LockManager returned null lock even with steal: true`)",
-                    "target": "log(`@supabase/gotrue-js: navigatorLock: recovered (stolen)`,e,t.name);try{return await n()}finally{I4.debug&&console.log(`@supabase/gotrue-js: navigatorLock: released (stolen)`,e,t.name)}}else return console.warn(`@supabase/gotrue-js: Navigator LockManager returned null lock even with steal: true`)"
-                },
-                {
-                    "source": "error(`Error getting user data:`,t),this._debug(e,`error getting user data, skipping SIGNED_IN notification`,t)}else await this._notifyAllSubscribers(`SIGNED_IN`,t)}catch(t){this._debug(e,`error`,t),console.error(t);return}finally{this._debug(e,`end`)",
-                    "target": "error(`Error getting user data:`,t),this._debug(e,`error getting user data, skipping SIGNED_IN notification`,t)}else await this._notifyAllSubscribers(`SIGNED_IN`,t)}catch(t){this._debug(e,`error`,t),console.error(t);return}finally{this._debug(e,`end`)"
-                },
-                {
-                    "source": "error(`Failed to download YouTube track via webview`,{trackId:e.id,label:e.label,language:e.language,error:t}),t}}function ISt(e){return cX(e)||amt(e)||omt(e)}function LSt(e,t){let n=e.captionList;if(!n)return{type:`none`};if(n.type===`youtube`)",
-                    "target": "error(`Failed to download YouTube track via webview`,{trackId:e.id,label:e.label,language:e.language,error:t}),t}}function ISt(e){return cX(e)||amt(e)||omt(e)}function LSt(e,t){let n=e.captionList;if(!n)return{type:`none`};if(n.type===`youtube`)"
-                },
-                {
-                    "source": "error(`Failed to download Coursera track via webview`,{trackId:e.id,label:e.label,language:e.language,error:t}),t}}async function VSt(e,t,n,r={}){let i=Z4.isEnabledFor(`debug`)",
-                    "target": "error(`Failed to download Coursera track via webview`,{trackId:e.id,label:e.label,language:e.language,error:t}),t}}async function VSt(e,t,n,r={}){let i=Z4.isEnabledFor(`debug`)"
-                },
-                {
-                    "source": "error(`Failed to download Bilibili track via webview`,{trackId:e.id,label:e.label,language:e.language,error:t}),t}}async function HSt(e,t,n,r={}){let i=t.captionList;if(!i)throw Error(`No caption list available`)",
-                    "target": "error(`Failed to download Bilibili track via webview`,{trackId:e.id,label:e.label,language:e.language,error:t}),t}}async function HSt(e,t,n,r={}){let i=t.captionList;if(!i)throw Error(`No caption list available`)"
-                },
-                {
-                    "source": "error(`Error connecting webview media service from {trigger}`,{url:t,trigger:n,urlKey:r,error:e})})}onHostChange(e,t=`unknown`)",
-                    "target": "error(`Error connecting webview media service from {trigger}`,{url:t,trigger:n,urlKey:r,error:e})})}onHostChange(e,t=`unknown`)"
-                },
-                {
-                    "source": "error(`Cannot connect: service is disposed`,{url:e}),Error(`Cannot connect: service is disposed`)",
-                    "target": "error(`Cannot connect: service is disposed`,{url:e}),Error(`Cannot connect: service is disposed`)"
-                },
-                {
-                    "source": "error(`downloadCaption failed`,{mediaId:gX(r),captionId:e,format:t.format,error:n}),n}}async togglePaused(){J.debug(`Toggling pause state`)",
-                    "target": "error(`downloadCaption failed`,{mediaId:gX(r),captionId:e,format:t.format,error:n}),n}}async togglePaused(){J.debug(`Toggling pause state`)"
-                },
-                {
-                    "source": "error(`Failed to batch fetch images from cache`,{error:e}),t}}async get(e){try{let t=(await this.#n()).transaction(this.storeName,`readwrite`)",
-                    "target": "error(`Failed to batch fetch images from cache`,{error:e}),t}}async get(e){try{let t=(await this.#n()).transaction(this.storeName,`readwrite`)"
-                },
-                {
-                    "source": "error(`Failed to clear image cache`,{error:e})}}async getTotalSize(){try{let e=(await this.#n()).transaction(this.storeName,`readonly`)",
-                    "target": "error(`Failed to clear image cache`,{error:e})}}async getTotalSize(){try{let e=(await this.#n()).transaction(this.storeName,`readonly`)"
-                },
-                {
-                    "source": "error(`Failed to get total cache size`,{error:e}),-1}}async resetDatabase(){try{O3.info(`Resetting image cache database`,{dbName:this.dbName}),this.#e&&(this.#e.close(),this.#e=null,this.#t=null,O3.debug(`Closed existing database connection before reset`)",
-                    "target": "error(`Failed to get total cache size`,{error:e}),-1}}async resetDatabase(){try{O3.info(`Resetting image cache database`,{dbName:this.dbName}),this.#e&&(this.#e.close(),this.#e=null,this.#t=null,O3.debug(`Closed existing database connection before reset`)"
-                },
-                {
-                    "source": "error(`Failed to reset image cache database`,{dbName:this.dbName,error:e})}}async#r(){try{let e=(await this.#n()).transaction(this.storeName,`readwrite`)",
-                    "target": "error(`Failed to reset image cache database`,{dbName:this.dbName,error:e})}}async#r(){try{let e=(await this.#n()).transaction(this.storeName,`readwrite`)"
-                },
-                {
-                    "source": "error(`Failed to load media history`,{error:e})}}recordMedia(e,t,n){let r=zTt(e,t);if(!r)return;let i;if(r.type===`url`)",
-                    "target": "error(`Failed to load media history`,{error:e})}}recordMedia(e,t,n){let r=zTt(e,t);if(!r)return;let i;if(r.type===`url`)"
-                },
-                {
-                    "source": "error(`Error during decodability check:`,e),!1}}async determinePacketType(e){if(!(e instanceof b8))throw TypeError(`packet must be an EncodedPacket.`)",
-                    "target": "error(`Error during decodability check:`,e),!1}}async determinePacketType(e){if(!(e instanceof b8))throw TypeError(`packet must be an EncodedPacket.`)"
-                },
-                {
-                    "source": "setTitle(`Google Drive`)",
-                    "target": "setTitle(`Google Drive`)"
-                },
-                {
-                    "source": "error(`Failed to copy blob to clipboard using DOM clipboard`,{error:t});return}b9.info(`Falling back to electron clipboard to copy image`,{error:t}),await INt(e)}}async function INt(e){try{if(e.type!==`image/png`&&e.type!==`image/jpeg`&&e.type!==`image/jpg`)",
-                    "target": "error(`Failed to copy blob to clipboard using DOM clipboard`,{error:t});return}b9.info(`Falling back to electron clipboard to copy image`,{error:t}),await INt(e)}}async function INt(e){try{if(e.type!==`image/png`&&e.type!==`image/jpeg`&&e.type!==`image/jpg`)"
-                },
-                {
-                    "source": "error(`Failed to copy image to clipboard using electron clipboard`,{error:e}),e}}var LNt=XK([`screenshot`,`clip-dialog`]),RNt=class extends U0{#e;#t;constructor(e,t,n){super(e),this.#e=t,this.#t=n,this.modalEl.addClass(`image-clip`)",
-                    "target": "error(`Failed to copy image to clipboard using electron clipboard`,{error:e}),e}}var LNt=XK([`screenshot`,`clip-dialog`]),RNt=class extends U0{#e;#t;constructor(e,t,n){super(e),this.#e=t,this.#t=n,this.modalEl.addClass(`image-clip`)"
-                },
-                {
-                    "source": "error(`Failed to clip screenshot: blob is null`)",
-                    "target": "error(`Failed to clip screenshot: blob is null`)"
-                },
-                {
-                    "source": "error(`Cannot save screenshot: no media is opened`)",
-                    "target": "error(`Cannot save screenshot: no media is opened`)"
-                },
-                {
-                    "source": "error(`Failed to write settings to disk`,{error:e}),n=null,e}finally{t=!1}}}var cPt={__VERSION__:2};async function lPt(e){try{w9.debug(`Reading settings from plugin data store`)",
-                    "target": "error(`Failed to write settings to disk`,{error:e}),n=null,e}finally{t=!1}}}var cPt={__VERSION__:2};async function lPt(e){try{w9.debug(`Reading settings from plugin data store`)"
-                },
-                {
-                    "source": "error(`Failed to load plugin data, falling back to defaults`,{error:e}),{value:cPt,migrated:!1}}}L();var T9=XK(`settings`)",
-                    "target": "error(`Failed to load plugin data, falling back to defaults`,{error:e}),{value:cPt,migrated:!1}}}L();var T9=XK(`settings`)"
-                },
-                {
-                    "source": "error(`Failed to load settings on init`,{error:e})}),this.#e=new DisposableStack,this.#t=this.#e.use(new zg)}[Symbol.dispose](){T9.debug(`Disposing settings service`)",
-                    "target": "error(`Failed to load settings on init`,{error:e})}),this.#e=new DisposableStack,this.#t=this.#e.use(new zg)}[Symbol.dispose](){T9.debug(`Disposing settings service`)"
-                },
-                {
-                    "source": "error(`Cannot open hosted media`,{isBrowser:fX(e.info),webviewerPatchStatus:this.webviewerPatch.patchStatus,isEmbed:dX(e.info)}),new zPt(`Cannot open hosted media`)",
-                    "target": "error(`Cannot open hosted media`,{isBrowser:fX(e.info),webviewerPatchStatus:this.webviewerPatch.patchStatus,isEmbed:dX(e.info)}),new zPt(`Cannot open hosted media`)"
-                },
-                {
-                    "source": "error(`Failed to open log folder`,e),new d.Notice(bse())}}),i(),n.defer(r.sub(c,i))})}).addSetting(t=>{t.setName(uf()).setDesc(pf()).addButton(t=>{let i=()=>{r.get(c)?(t.setDisabled(!1),t.setTooltip(``)",
-                    "target": "error(`Failed to open log folder`,e),new d.Notice(bse())}}),i(),n.defer(r.sub(c,i))})}).addSetting(t=>{t.setName(uf()).setDesc(pf()).addButton(t=>{let i=()=>{r.get(c)?(t.setDisabled(!1),t.setTooltip(``)"
-                },
-                {
-                    "source": "appendText(`, `)",
-                    "target": "appendText(`, `)"
-                },
-                {
-                    "source": "error(`Error patching webviewer`,{error:e})})}[Symbol.dispose](){this.#t[Symbol.dispose](),this.#e?.[Symbol.dispose]()}#n=`idle`;get canOpenInWebViewer(){return this.patchStatus.supported&&this.patchStatus.webviewerEnabled}get patchStatus(){let e=xTt(PJ().app.getVersion(),`1.11.4`,`>=`)",
-                    "target": "error(`Error patching webviewer`,{error:e})})}[Symbol.dispose](){this.#t[Symbol.dispose](),this.#e?.[Symbol.dispose]()}#n=`idle`;get canOpenInWebViewer(){return this.patchStatus.supported&&this.patchStatus.webviewerEnabled}get patchStatus(){let e=xTt(PJ().app.getVersion(),`1.11.4`,`>=`)"
-                },
-                {
-                    "source": "error(`Error disposing webview media service`,{error:e})}),delete e[bX],Y9.info(`Webview media service deleted`)",
-                    "target": "error(`Error disposing webview media service`,{error:e})}),delete e[bX],Y9.info(`Webview media service deleted`)"
-                },
-                {
-                    "source": "error(`Error applying hash props to webview media service`,{error:e,hash:r})}):Y9.warn(`Webview media service not found, skipping hash props application`)",
-                    "target": "error(`Error applying hash props to webview media service`,{error:e,hash:r})}):Y9.warn(`Webview media service not found, skipping hash props application`)"
-                },
-                {
-                    "source": "error(`Failed to get web contents, skipping click-away fix`)",
-                    "target": "error(`Failed to get web contents, skipping click-away fix`)"
-                },
-                {
-                    "source": "settings: \"liga\"",
-                    "target": "settings: \"liga\""
-                },
-                {
-                    "source": "name: `+n)}return r&&(n=`",
-                    "target": "name: `+n)}return r&&(n=`"
-                },
-                {
-                    "source": "link:`text-primary underline-offset-4 hover:underline`",
-                    "target": "link:`text-primary underline-offset-4 hover:underline`"
-                },
-                {
-                    "source": "text:` `",
-                    "target": "text:` `"
-                },
-                {
-                    "source": "text:`${n.text} `",
-                    "target": "text:`${n.text} `"
-                },
-                {
-                    "source": "link:`rounded-lg py-4 px-5 space-y-3 hover:bg-accent/30`",
-                    "target": "link:`rounded-lg py-4 px-5 space-y-3 hover:bg-accent/30`"
-                },
                 {
                     "source": "Ks=e=>`What's new in v${e?.version}`",
                     "target": "Ks=e=>`v${e?.version} 新功能`"
@@ -2782,11 +1380,11 @@
                     "target": "Yre=()=>`字幕（每行一個 cue）`"
                 },
                 {
-                    "source": "Bp=Object.assign((()=>`A list of languages to show subtitles/captions for by default.Each language code should be on a new line.`),{parts:(()=>[{type:`text`,value:`A list of languages to show subtitles/captions for by default.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Each language code should be on a new line.`}])})",
+                    "source": "Bp=Object.assign(()=>`A list of languages to show subtitles/captions for by default.Each language code should be on a new line.`,{parts:()=>[{type:`text`,value:`A list of languages to show subtitles/captions for by default.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Each language code should be on a new line.`}]})",
                     "target": "Bp=Object.assign(()=>`預設顯示字幕/輔助字幕的語言清單。每個語言代碼應另起一行。`,{parts:()=>[{type:`text`,value:`預設顯示字幕/輔助字幕的語言清單。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`每個語言代碼應另起一行。`}]})"
                 },
                 {
-                    "source": "Vp=Object.assign((()=>`默认显示字幕/描述的语言列表。每个语言代码应独占一行。`),{parts:(()=>[{type:`text`,value:`默认显示字幕/描述的语言列表。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`每个语言代码应独占一行。`}])})",
+                    "source": "Vp=Object.assign(()=>`默认显示字幕/描述的语言列表。每个语言代码应独占一行。`,{parts:()=>[{type:`text`,value:`默认显示字幕/描述的语言列表。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`每个语言代码应独占一行。`}]})",
                     "target": "Vp=Object.assign(()=>`預設顯示字幕/輔助字幕的語言清單。每個語言代碼應另起一行。`,{parts:()=>[{type:`text`,value:`預設顯示字幕/輔助字幕的語言清單。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`每個語言代碼應另起一行。`}]})"
                 },
                 {
@@ -3154,52 +1752,52 @@
                     "target": "xxe=()=>`儲存截圖`"
                 },
                 {
-                    "source": "Ep=Object.assign((e=>`Template for the \"${e?.command}\" command. Supported placeholders: `),{parts:(e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}])})",
+                    "source": "Ep=Object.assign(e=>`Template for the \"${e?.command}\" command. Supported placeholders: `,{parts:e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}]})",
                     "target": "Ep=Object.assign(e=>`「${e?.command}」指令的範本。支援的預留位置：`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}]})"
                 },
                 {
-                    "source": "Dp=Object.assign((e=>`「${e?.command}」命令的模板。支持的占位符：`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}])})",
+                    "source": "Dp=Object.assign(e=>`「${e?.command}」命令的模板。支持的占位符：`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}]})",
                     "target": "Dp=Object.assign(e=>`「${e?.command}」指令的範本。支援的預留位置：`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}}]})"
                 },
                 {
-                    "source": "Op=Object.assign((e=>`Template for the \"${e?.command}\" command. Use  to mark where the clip embed goes.`),{parts:(e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Use `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` to mark where the clip embed goes.`}])})",
+                    "source": "Op=Object.assign(e=>`Template for the \"${e?.command}\" command. Use  to mark where the clip embed goes.`,{parts:e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Use `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` to mark where the clip embed goes.`}]})",
                     "target": "Op=Object.assign(e=>`「${e?.command}」指令的範本。使用  標記媒體剪輯嵌入的位置。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。使用 `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` 標記媒體剪輯嵌入的位置。`}]})"
                 },
                 {
-                    "source": "kp=Object.assign((e=>`「${e?.command}」命令的模板。使用  标记媒体片段嵌入的位置。`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。使用 `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` 标记媒体片段嵌入的位置。`}])})",
+                    "source": "kp=Object.assign(e=>`「${e?.command}」命令的模板。使用  标记媒体片段嵌入的位置。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。使用 `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` 标记媒体片段嵌入的位置。`}]})",
                     "target": "kp=Object.assign(e=>`「${e?.command}」指令的範本。使用  標記媒體剪輯嵌入的位置。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。使用 `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:` 標記媒體剪輯嵌入的位置。`}]})"
                 },
                 {
-                    "source": "Ap=Object.assign((e=>`Display text for the media clip embed inserted by \"${e?.command}\". Append |<width> (e.g. |400) to size the inline player. Supported placeholders: .`),{parts:(e=>[{type:`text`,value:`Display text for the media clip embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline player. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}])})",
-                    "target": "Ap=Object.assign(e=>`「${e?.command}」插入的媒體剪輯嵌入顯示文字。附加 |<寬度>（例如 |400）可調整行內播放器大小。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的媒體剪輯嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內播放器大小。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})"
+                    "source": "Ap=Object.assign(e=>`Display text for the media clip embed inserted by \"${e?.command}\". Append |<width> (e.g. |400) to size the inline player. Supported placeholders: .`,{parts:e=>[{type:`text`,value:`Display text for the media clip embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline player. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})",
+                    "target": "Ap=Object.assign(e=>`「${e?.command}」插入的媒體剪輯嵌入顯示文字。附加 |<width>（例如 |400）可調整行內播放器大小。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的媒體剪輯嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內播放器大小。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
                 },
                 {
-                    "source": "jp=Object.assign((e=>`「${e?.command}」插入的媒体片段嵌入显示文本。附加 |<宽度>（如 |400）以设置内联播放器大小。支持的占位符：。`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的媒体片段嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联播放器大小。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}])})",
-                    "target": "jp=Object.assign(e=>`「${e?.command}」插入的媒體剪輯嵌入顯示文字。附加 |<寬度>（例如 |400）可調整行內播放器大小。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的媒體剪輯嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內播放器大小。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
+                    "source": "jp=Object.assign(e=>`「${e?.command}」插入的媒体片段嵌入显示文本。附加 |<宽度>（如 |400）以设置内联播放器大小。支持的占位符：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的媒体片段嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联播放器大小。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})",
+                    "target": "jp=Object.assign(e=>`「${e?.command}」插入的媒體剪輯嵌入顯示文字。附加 |<width>（例如 |400）可調整行內播放器大小。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的媒體剪輯嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|400`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內播放器大小。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
                 },
                 {
-                    "source": "Mp=Object.assign((e=>`Display text for the screenshot embed inserted by \"${e?.command}\". Append |<width> (e.g. |50) to size the inline image; leave unsized to embed at full size. Supported placeholders: .`),{parts:(e=>[{type:`text`,value:`Display text for the screenshot embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline image; leave unsized to embed at full size. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}])})",
-                    "target": "Mp=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<寬度>（例如 |50）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})"
+                    "source": "Mp=Object.assign(e=>`Display text for the screenshot embed inserted by \"${e?.command}\". Append |<width> (e.g. |50) to size the inline image; leave unsized to embed at full size. Supported placeholders: .`,{parts:e=>[{type:`text`,value:`Display text for the screenshot embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline image; leave unsized to embed at full size. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})",
+                    "target": "Mp=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<width>（例如 |50）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
                 },
                 {
-                    "source": "Np=Object.assign((e=>`「${e?.command}」插入的截图嵌入显示文本。附加 |<宽度>（如 |50）以设置内联图片大小；留空则以原始大小嵌入。支持的占位符：。`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截图嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联图片大小；留空则以原始大小嵌入。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}])})",
-                    "target": "Np=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<寬度>（例如 |50）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
+                    "source": "Np=Object.assign(e=>`「${e?.command}」插入的截图嵌入显示文本。附加 |<宽度>（如 |50）以设置内联图片大小；留空则以原始大小嵌入。支持的占位符：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截图嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联图片大小；留空则以原始大小嵌入。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})",
+                    "target": "Np=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<width>（例如 |50）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；留空尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
                 },
                 {
-                    "source": "Pp=Object.assign((e=>`Display text for the screenshot embed inserted by \"${e?.command}\". Append |<width> (e.g. |50) to size the inline image; remove it to embed at full size. Supported placeholders: .`),{parts:(e=>[{type:`text`,value:`Display text for the screenshot embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline image; remove it to embed at full size. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}])})",
-                    "target": "Pp=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<寬度>（例如 |50）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})"
+                    "source": "Pp=Object.assign(e=>`Display text for the screenshot embed inserted by \"${e?.command}\". Append |<width> (e.g. |50) to size the inline image; remove it to embed at full size. Supported placeholders: .`,{parts:e=>[{type:`text`,value:`Display text for the screenshot embed inserted by \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\". Append `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to size the inline image; remove it to embed at full size. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`}]})",
+                    "target": "Pp=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<width>（例如 |50）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
                 },
                 {
-                    "source": "Fp=Object.assign((e=>`「${e?.command}」插入的截图嵌入显示文本。附加 |<宽度>（如 |50）以设置内联图片大小；移除则以原始大小嵌入。支持的占位符：。`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截图嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联图片大小；移除则以原始大小嵌入。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}])})",
-                    "target": "Fp=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<寬度>（例如 |50）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<寬度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
+                    "source": "Fp=Object.assign(e=>`「${e?.command}」插入的截图嵌入显示文本。附加 |<宽度>（如 |50）以设置内联图片大小；移除则以原始大小嵌入。支持的占位符：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截图嵌入显示文本。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<宽度>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以设置内联图片大小；移除则以原始大小嵌入。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})",
+                    "target": "Fp=Object.assign(e=>`「${e?.command}」插入的截圖嵌入顯示文字。附加 |<width>（例如 |50）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」插入的截圖嵌入顯示文字。附加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|<width>`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`|50`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）可調整行內圖片大小；移除尺寸則以完整大小嵌入。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`}]})"
                 },
                 {
-                    "source": "Ip=Object.assign((e=>`Template for the \"${e?.command}\" command. Supported placeholders: .Prefix {{SCREENSHOT}} with ! (e.g. !{{SCREENSHOT}}) to embed the image inline instead of linking to it.Use {{SCREENSHOT_LINK}} to insert the embed wrapped in a clickable link that jumps the player to the timestamp.`),{parts:(e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Prefix `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` with `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to embed the image inline instead of linking to it.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Use `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` to insert the embed wrapped in a clickable link that jumps the player to the timestamp.`}])})",
-                    "target": "Ip=Object.assign(e=>`「${e?.command}」指令的範本。支援的預留位置：。在 {{SCREENSHOT}} 前加上 !（例如 !{{SCREENSHOT}}）即可行內嵌入圖片，而不是連結到圖片。使用 {{SCREENSHOT_LINK}} 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`在 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 前加上 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）即可行內嵌入圖片，而不是連結到圖片。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`使用 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`}]})"
+                    "source": "Ip=Object.assign(e=>`Template for the \"${e?.command}\" command. Supported placeholders: .Prefix {{SCREENSHOT}} with ! (e.g. !{{SCREENSHOT}}) to embed the image inline instead of linking to it.Use {{SCREENSHOT_LINK}} to insert the embed wrapped in a clickable link that jumps the player to the timestamp.`,{parts:e=>[{type:`text`,value:`Template for the \"`},{type:`text`,value:String(e?.command)},{type:`text`,value:`\" command. Supported placeholders: `},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Prefix `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` with `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` (e.g. `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`) to embed the image inline instead of linking to it.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Use `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` to insert the embed wrapped in a clickable link that jumps the player to the timestamp.`}]})",
+                    "target": "Ip=Object.assign(e=>`「${e?.command}」指令的範本。支援的預留位置：。在 {{SCREENSHOT}} 前加上 !（例如 !{{SCREENSHOT}}）即可行內嵌入圖片，而不是連結到圖片。使用 {{SCREENSHOT_LINK}} 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`在 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 前加上 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）即可行內嵌入圖片，而不是連結到圖片。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`使用 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`}]})"
                 },
                 {
-                    "source": "Lp=Object.assign((e=>`「${e?.command}」命令的模板。支持的占位符：。在 {{SCREENSHOT}} 前加 !（如 !{{SCREENSHOT}}）以内联嵌入图片。使用 {{SCREENSHOT_LINK}} 插入包裹在可点击链接中的嵌入，点击可跳转到对应时间戳。`),{parts:(e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`在 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 前加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以内联嵌入图片。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`使用 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 插入包裹在可点击链接中的嵌入，点击可跳转到对应时间戳。`}])})",
-                    "target": "Lp=Object.assign(e=>`「${e?.command}」指令的範本。支援的預留位置：。在 {{SCREENSHOT}} 前加上 !（例如 !{{SCREENSHOT}}）即可行內嵌入圖片，而不是連結到圖片。使用 {{SCREENSHOT_LINK}} 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`在 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 前加上 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）即可行內嵌入圖片，而不是連結到圖片。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`使用 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`}]}),lne=Object.assign((e,t={})=>(t.locale??N())===`en`?Ip(e):Lp(e),{parts:(e,t={})=>(t.locale??N())===`en`?typeof Ip.parts==`function`?Ip.parts(e):[{type:`text`,value:Ip(e)}]:typeof Lp.parts==`function`?Lp.parts(e):[{type:`text`,value:Lp(e)}]})"
+                    "source": "Lp=Object.assign(e=>`「${e?.command}」命令的模板。支持的占位符：。在 {{SCREENSHOT}} 前加 !（如 !{{SCREENSHOT}}）以内联嵌入图片。使用 {{SCREENSHOT_LINK}} 插入包裹在可点击链接中的嵌入，点击可跳转到对应时间戳。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」命令的模板。支持的占位符：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`在 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 前加 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）以内联嵌入图片。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`使用 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 插入包裹在可点击链接中的嵌入，点击可跳转到对应时间戳。`}]})",
+                    "target": "Lp=Object.assign(e=>`「${e?.command}」指令的範本。支援的預留位置：。在 {{SCREENSHOT}} 前加上 !（例如 !{{SCREENSHOT}}）即可行內嵌入圖片，而不是連結到圖片。使用 {{SCREENSHOT_LINK}} 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`,{parts:e=>[{type:`text`,value:`「`},{type:`text`,value:String(e?.command)},{type:`text`,value:`」指令的範本。支援的預留位置：`},{type:`markup-standalone`,name:`placeholders`,options:{},attributes:{}},{type:`text`,value:`。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`在 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 前加上 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`（例如 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`!{{SCREENSHOT}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:`）即可行內嵌入圖片，而不是連結到圖片。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`使用 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`{{SCREENSHOT_LINK}}`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 可插入包在可點擊連結中的嵌入，點擊後會跳到播放器的時間戳。`}]})"
                 },
                 {
                     "source": "jne=()=>`Screenshot`",
@@ -3266,11 +1864,11 @@
                     "target": "$ne=()=>`截圖儲存格式`"
                 },
                 {
-                    "source": "Rp=Object.assign((()=>`Choose the format of the saved screenshotWEBP has better compression ratio, but would fallback to JPEG in unsupported browsers like iOS or iPadOS`),{parts:(()=>[{type:`text`,value:`Choose the format of the saved screenshot`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP has better compression ratio, but would fallback to JPEG in unsupported browsers like iOS or iPadOS`}])})",
+                    "source": "Rp=Object.assign(()=>`Choose the format of the saved screenshotWEBP has better compression ratio, but would fallback to JPEG in unsupported browsers like iOS or iPadOS`,{parts:()=>[{type:`text`,value:`Choose the format of the saved screenshot`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP has better compression ratio, but would fallback to JPEG in unsupported browsers like iOS or iPadOS`}]})",
                     "target": "Rp=Object.assign(()=>`選擇儲存截圖的格式WEBP 壓縮率較高，但在 iOS 或 iPadOS 等不支援的瀏覽器中會退回 JPEG`,{parts:()=>[{type:`text`,value:`選擇儲存截圖的格式`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP 壓縮率較高，但在 iOS 或 iPadOS 等不支援的瀏覽器中會退回 JPEG`}]})"
                 },
                 {
-                    "source": "zp=Object.assign((()=>`选择保存截图的格式WEBP 压缩率更高，但在不支持的浏览器（如 iOS 或 iPadOS）中会回退为 JPEG`),{parts:(()=>[{type:`text`,value:`选择保存截图的格式`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP 压缩率更高，但在不支持的浏览器（如 iOS 或 iPadOS）中会回退为 JPEG`}])})",
+                    "source": "zp=Object.assign(()=>`选择保存截图的格式WEBP 压缩率更高，但在不支持的浏览器（如 iOS 或 iPadOS）中会回退为 JPEG`,{parts:()=>[{type:`text`,value:`选择保存截图的格式`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP 压缩率更高，但在不支持的浏览器（如 iOS 或 iPadOS）中会回退为 JPEG`}]})",
                     "target": "zp=Object.assign(()=>`選擇儲存截圖的格式WEBP 壓縮率較高，但在 iOS 或 iPadOS 等不支援的瀏覽器中會退回 JPEG`,{parts:()=>[{type:`text`,value:`選擇儲存截圖的格式`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`WEBP 壓縮率較高，但在 iOS 或 iPadOS 等不支援的瀏覽器中會退回 JPEG`}]})"
                 },
                 {
@@ -3524,18 +2122,51 @@
                 {
                     "source": "If=()=>`请先启用\"将插件日志写入文件\"。`",
                     "target": "If=()=>`請先啟用「將插件記錄寫入檔案」。`"
+                },
+                {
+                    "source": "on=Object.assign(()=>`By continuing, you agree to our Terms of Service and Privacy Policy`,{parts:()=>[{type:`text`,value:`By continuing, you agree to our `},{type:`markup-start`,name:`tos`,options:{},attributes:{}},{type:`text`,value:`Terms of Service`},{type:`markup-end`,name:`tos`,options:{},attributes:{}},{type:`text`,value:` and `},{type:`markup-start`,name:`privacy`,options:{},attributes:{}},{type:`text`,value:`Privacy Policy`},{type:`markup-end`,name:`privacy`,options:{},attributes:{}}]})",
+                    "target": "on=Object.assign(()=>`繼續即表示您同意我們的服務條款和隱私權政策`,{parts:()=>[{type:`text`,value:`繼續即表示您同意我們的`},{type:`markup-start`,name:`tos`,options:{},attributes:{}},{type:`text`,value:`服務條款`},{type:`markup-end`,name:`tos`,options:{},attributes:{}},{type:`text`,value:`和`},{type:`markup-start`,name:`privacy`,options:{},attributes:{}},{type:`text`,value:`隱私權政策`},{type:`markup-end`,name:`privacy`,options:{},attributes:{}}]})"
+                },
+                {
+                    "source": "sn=Object.assign(()=>`继续即表示您同意我们的服务条款和隐私政策`,{parts:()=>[{type:`text`,value:`继续即表示您同意我们的`},{type:`markup-start`,name:`tos`,options:{},attributes:{}},{type:`text`,value:`服务条款`},{type:`markup-end`,name:`tos`,options:{},attributes:{}},{type:`text`,value:`和`},{type:`markup-start`,name:`privacy`,options:{},attributes:{}},{type:`text`,value:`隐私政策`},{type:`markup-end`,name:`privacy`,options:{},attributes:{}}]})",
+                    "target": "sn=Object.assign(()=>`繼續即表示您同意我們的服務條款和隱私權政策`,{parts:()=>[{type:`text`,value:`繼續即表示您同意我們的`},{type:`markup-start`,name:`tos`,options:{},attributes:{}},{type:`text`,value:`服務條款`},{type:`markup-end`,name:`tos`,options:{},attributes:{}},{type:`text`,value:`和`},{type:`markup-start`,name:`privacy`,options:{},attributes:{}},{type:`text`,value:`隱私權政策`},{type:`markup-end`,name:`privacy`,options:{},attributes:{}}]})"
+                },
+                {
+                    "source": "va=Object.assign(()=>`Include the mx-uid property in your Bases query to use this view.`,{parts:()=>[{type:`text`,value:`Include the `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`mx-uid`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` property in your Bases query to use this view.`}]})",
+                    "target": "va=Object.assign(()=>`請在 Bases 查詢中包含 mx-uid 屬性，才能使用此檢視。`,{parts:()=>[{type:`text`,value:`請在 Bases 查詢中包含 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`mx-uid`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 屬性，才能使用此檢視。`}]})"
+                },
+                {
+                    "source": "ya=Object.assign(()=>`请在 Bases 查询中包含 mx-uid 属性以使用此视图。`,{parts:()=>[{type:`text`,value:`请在 Bases 查询中包含 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`mx-uid`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 属性以使用此视图。`}]})",
+                    "target": "ya=Object.assign(()=>`請在 Bases 查詢中包含 mx-uid 屬性，才能使用此檢視。`,{parts:()=>[{type:`text`,value:`請在 Bases 查詢中包含 `},{type:`markup-start`,name:`code`,options:{},attributes:{}},{type:`text`,value:`mx-uid`},{type:`markup-end`,name:`code`,options:{},attributes:{}},{type:`text`,value:` 屬性，才能使用此檢視。`}]})"
+                },
+                {
+                    "source": "Io=Object.assign(()=>`Configure media metadata.Dotted options are explicitly included in frontmatter. To exclude them, click reset button in each option or the pills in the header.`,{parts:()=>[{type:`text`,value:`Configure media metadata.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`Dotted options are explicitly included in frontmatter. To exclude them, click reset button in each option or the pills in the header.`}]})",
+                    "target": "Io=Object.assign(()=>`設定媒體中繼資料。\\n標有圓點的選項已明確寫入 frontmatter。若要移除，請點選各選項的重設按鈕，或標題列中的標籤。`,{parts:()=>[{type:`text`,value:`設定媒體中繼資料。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`標有圓點的選項已明確寫入 frontmatter。若要移除，請點選各選項的重設按鈕，或標題列中的標籤。`}]})"
+                },
+                {
+                    "source": "Lo=Object.assign(()=>`配置媒体元数据。带圆点的选项已明确包含在 frontmatter 中。要排除它们，请点击各选项中的重置按钮或标题中的标签。`,{parts:()=>[{type:`text`,value:`配置媒体元数据。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`带圆点的选项已明确包含在 frontmatter 中。要排除它们，请点击各选项中的重置按钮或标题中的标签。`}]})",
+                    "target": "Lo=Object.assign(()=>`設定媒體中繼資料。\\n標有圓點的選項已明確寫入 frontmatter。若要移除，請點選各選項的重設按鈕，或標題列中的標籤。`,{parts:()=>[{type:`text`,value:`設定媒體中繼資料。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`標有圓點的選項已明確寫入 frontmatter。若要移除，請點選各選項的重設按鈕，或標題列中的標籤。`}]})"
+                },
+                {
+                    "source": "Up=Object.assign(()=>`Download and reinstall with latest obsidian installer from obsidian.md to ensure cookies in web viewer are encrypted. Learn more about installer updates`,{parts:()=>[{type:`text`,value:`Download and reinstall with latest obsidian installer from `},{type:`markup-start`,name:`site`,options:{},attributes:{}},{type:`text`,value:`obsidian.md`},{type:`markup-end`,name:`site`,options:{},attributes:{}},{type:`text`,value:` to ensure cookies in web viewer are encrypted. `},{type:`markup-start`,name:`learn_more`,options:{},attributes:{}},{type:`text`,value:`Learn more about installer updates`},{type:`markup-end`,name:`learn_more`,options:{},attributes:{}}]})",
+                    "target": "Up=Object.assign(()=>`請從 obsidian.md 下載最新版 Obsidian 安裝程式並重新安裝，以確保網頁檢視器中的 Cookie 已加密。進一步了解安裝程式更新`,{parts:()=>[{type:`text`,value:`請從 `},{type:`markup-start`,name:`site`,options:{},attributes:{}},{type:`text`,value:`obsidian.md`},{type:`markup-end`,name:`site`,options:{},attributes:{}},{type:`text`,value:` 下載最新版 Obsidian 安裝程式並重新安裝，以確保網頁檢視器中的 Cookie 已加密。`},{type:`markup-start`,name:`learn_more`,options:{},attributes:{}},{type:`text`,value:`進一步了解安裝程式更新`},{type:`markup-end`,name:`learn_more`,options:{},attributes:{}}]})"
+                },
+                {
+                    "source": "Wp=Object.assign(()=>`从 obsidian.md 下载并使用最新安装程序重新安装，以确保内置网页浏览器中的 Cookie 被加密。了解更多关于安装程序更新的信息`,{parts:()=>[{type:`text`,value:`从 `},{type:`markup-start`,name:`site`,options:{},attributes:{}},{type:`text`,value:`obsidian.md`},{type:`markup-end`,name:`site`,options:{},attributes:{}},{type:`text`,value:` 下载并使用最新安装程序重新安装，以确保内置网页浏览器中的 Cookie 被加密。`},{type:`markup-start`,name:`learn_more`,options:{},attributes:{}},{type:`text`,value:`了解更多关于安装程序更新的信息`},{type:`markup-end`,name:`learn_more`,options:{},attributes:{}}]})",
+                    "target": "Wp=Object.assign(()=>`請從 obsidian.md 下載最新版 Obsidian 安裝程式並重新安裝，以確保網頁檢視器中的 Cookie 已加密。進一步了解安裝程式更新`,{parts:()=>[{type:`text`,value:`請從 `},{type:`markup-start`,name:`site`,options:{},attributes:{}},{type:`text`,value:`obsidian.md`},{type:`markup-end`,name:`site`,options:{},attributes:{}},{type:`text`,value:` 下載最新版 Obsidian 安裝程式並重新安裝，以確保網頁檢視器中的 Cookie 已加密。`},{type:`markup-start`,name:`learn_more`,options:{},attributes:{}},{type:`text`,value:`進一步了解安裝程式更新`},{type:`markup-end`,name:`learn_more`,options:{},attributes:{}}]})"
+                },
+                {
+                    "source": "tm=Object.assign(()=>`Cannot capture screenshot from this media due to CORS security policy.See the troubleshooting guide for possible solutions`,{parts:()=>[{type:`text`,value:`Cannot capture screenshot from this media due to CORS security policy.`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`See the troubleshooting guide for possible solutions`}]})",
+                    "target": "tm=Object.assign(()=>`受 CORS 安全性原則限制，無法擷取此媒體的截圖。\\n可能的解決方式請參閱疑難排解指南。`,{parts:()=>[{type:`text`,value:`受 CORS 安全性原則限制，無法擷取此媒體的截圖。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`可能的解決方式請參閱疑難排解指南。`}]})"
+                },
+                {
+                    "source": "nm=Object.assign(()=>`由于 CORS 安全策略，无法从此媒体截图。请参阅故障排除指南了解可能的解决方案`,{parts:()=>[{type:`text`,value:`由于 CORS 安全策略，无法从此媒体截图。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`请参阅故障排除指南了解可能的解决方案`}]})",
+                    "target": "nm=Object.assign(()=>`受 CORS 安全性原則限制，無法擷取此媒體的截圖。\\n可能的解決方式請參閱疑難排解指南。`,{parts:()=>[{type:`text`,value:`受 CORS 安全性原則限制，無法擷取此媒體的截圖。`},{type:`markup-standalone`,name:`br`,options:{},attributes:{}},{type:`text`,value:`可能的解決方式請參閱疑難排解指南。`}]})"
                 }
             ]
         },
         "manifest.json": {
-            "ast": [
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "Media(Video/Audio) Playback Enhancement for Obsidian.md",
-                    "target": "強化 Obsidian.md 的媒體（影片/音訊）播放體驗。"
-                }
-            ],
+            "ast": [],
             "regex": [
                 {
                     "source": "\"description\":\"Media(Video/Audio) Playback Enhancement for Obsidian.md\"",
