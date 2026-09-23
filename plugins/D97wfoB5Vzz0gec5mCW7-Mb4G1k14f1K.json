@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-importer",
-        "version": "3.1.6",
+        "version": "3.1.7",
         "title": "[zh-tw] Importer",
         "description": "Importer 繁體中文補充翻譯",
         "language": "zh-tw",
-        "supportedVersions": "3.1.6",
+        "supportedVersions": "3.1.7",
         "author": "Chico",
-        "updatedAt": 1789503943937
+        "updatedAt": 1790176744702
     },
     "dict": {
         "main.js": {
