@@ -8,7 +8,7 @@
         "language": "zh-tw",
         "supportedVersions": "4.2.7",
         "author": "Chico",
-        "updatedAt": 1790183959549
+        "updatedAt": 1790804915748
     },
     "dict": {
         "main.js": {
@@ -8753,6 +8753,51 @@
                 {
                     "source": "\"description\":\"Media(Video/Audio) Playback Enhancement for Obsidian.md\"",
                     "target": "\"description\":\"強化 Obsidian.md 的媒體（影片/音訊）播放體驗。\""
+                }
+            ]
+        },
+        "styles.css": {
+            "ast": [],
+            "regex": [
+                {
+                    "source": "name: Media Extended Settings",
+                    "target": "name: Media Extended 設定"
+                },
+                {
+                    "source": "title: Media Embed Settings",
+                    "target": "title: 媒體嵌入設定"
+                },
+                {
+                    "source": "title: Maximum Embed Height",
+                    "target": "title: 媒體嵌入最大高度"
+                },
+                {
+                    "source": "description: Maximum height for media embeds",
+                    "target": "description: 嵌入媒體的最大高度"
+                },
+                {
+                    "source": "title: Minimum Embed Width",
+                    "target": "title: 媒體嵌入最小寬度"
+                },
+                {
+                    "source": "description: Minimum width for media embeds",
+                    "target": "description: 嵌入媒體的最小寬度"
+                },
+                {
+                    "source": "title: Minimum Video Embed Width",
+                    "target": "title: 影片嵌入最小寬度"
+                },
+                {
+                    "source": "description: Override minimum width for video embeds (leave empty to use the generic value)",
+                    "target": "description: 個別設定嵌入影片的最小寬度（留空則使用通用設定值）"
+                },
+                {
+                    "source": "title: Minimum Audio Embed Width",
+                    "target": "title: 音訊嵌入最小寬度"
+                },
+                {
+                    "source": "description: Override minimum width for audio embeds (leave empty to use the generic value)",
+                    "target": "description: 個別設定嵌入音訊的最小寬度（留空則使用通用設定值）"
                 }
             ]
         }
