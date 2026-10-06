@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "side-notes",
-        "version": "0.5.3",
+        "version": "0.5.4",
         "title": "[zh-tw] Side-Notes",
         "description": "Side-Notes Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "0.5.3",
+        "supportedVersions": "0.5.4",
         "author": "Chico",
-        "updatedAt": 1789847249833
+        "updatedAt": 1791310952696
     },
     "dict": {
         "main.js": {
@@ -1122,6 +1122,12 @@
                     "name": "desc",
                     "source": "Color for sidenote text *on hover*. Leave empty to use Obsidian's default *muted text* color.",
                     "target": "游標停留於旁註時的文字顏色。留空則使用 Obsidian 的預設淡化文字顏色。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Open note",
+                    "target": "開啟筆記"
                 }
             ],
             "regex": [
