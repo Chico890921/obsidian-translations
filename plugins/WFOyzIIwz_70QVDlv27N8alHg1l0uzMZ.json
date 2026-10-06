@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "quickadd",
-        "version": "2.29.0",
+        "version": "2.31.0",
         "title": "[zh-tw] QuickAdd",
         "description": "QuickAdd 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.29.0",
+        "supportedVersions": "2.31.0",
         "author": "Chico",
-        "updatedAt": 1790642643910
+        "updatedAt": 1791310318489
     },
     "dict": {
         "main.js": {
@@ -20,14 +20,14 @@
                     "target": "開啟檔案命令設定"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "addOption",
+                    "type": "ObjectProperty",
+                    "name": "label",
                     "source": "Split down",
                     "target": "向下分割"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "addOption",
+                    "type": "ObjectProperty",
+                    "name": "label",
                     "source": "Split right",
                     "target": "向右分割"
                 },
@@ -56,8 +56,8 @@
                     "target": "布林值"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "addOption",
+                    "type": "ObjectProperty",
+                    "name": "label",
                     "source": "Number",
                     "target": "數字"
                 },
@@ -296,8 +296,8 @@
                     "target": "選擇分頁、分割視窗、視窗或側邊欄"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setDesc",
+                    "type": "ObjectProperty",
+                    "name": "desc",
                     "source": "How to arrange the new pane relative to the current one",
                     "target": "新窗格相對於目前窗格的排列方式"
                 },
@@ -434,8 +434,8 @@
                     "target": "開啟位置"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setName",
+                    "type": "ObjectProperty",
+                    "name": "name",
                     "source": "Split direction",
                     "target": "分割方向"
                 },
@@ -464,8 +464,8 @@
                     "target": "使用者指令碼"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setName",
+                    "type": "ObjectProperty",
+                    "name": "name",
                     "source": "Choices",
                     "target": "Choice"
                 },
@@ -512,8 +512,8 @@
                     "target": "匯出名稱"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setName",
+                    "type": "ObjectProperty",
+                    "name": "name",
                     "source": "Icon",
                     "target": "圖示"
                 },
@@ -634,12 +634,6 @@
                 {
                     "type": "CallExpression",
                     "name": "setPlaceholder",
-                    "source": "Defaults to the folder name",
-                    "target": "預設使用資料夾名稱"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setPlaceholder",
                     "source": "Filter by name",
                     "target": "依名稱篩選"
                 },
@@ -648,12 +642,6 @@
                     "name": "setPlaceholder",
                     "source": "t = today\ntm = tomorrow\nyd = yesterday",
                     "target": "t = 今天\ntm = 明天\nyd = 昨天"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "Edit folder",
-                    "target": "編輯資料夾"
                 },
                 {
                     "type": "CallExpression",
@@ -976,12 +964,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "desc",
-                    "source": "How to arrange the new pane relative to the current one",
-                    "target": "新窗格相對於目前窗格的排列方式"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "desc",
                     "source": "How to display the opened file",
                     "target": "開啟檔案的顯示方式"
                 },
@@ -1084,26 +1066,8 @@
                 {
                     "type": "ObjectProperty",
                     "name": "desc",
-                    "source": "Set the format of the capture. When off, QuickAdd captures {{VALUE}} on its own - what you type at the prompt, or the current selection.",
-                    "target": "設定擷取格式。關閉時，QuickAdd 只會擷取 {{VALUE}}，也就是你在提示中輸入的內容或目前選取內容。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "desc",
                     "source": "Controls whether this Capture uses the current editor selection as {{VALUE}}. Does not affect {{SELECTED}}.",
                     "target": "控制此 Capture 是否使用目前編輯器選取內容作為 {{VALUE}}。不影響 {{SELECTED}}。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "desc",
-                    "source": "Advanced / legacy: this executes any <% %> anywhere in the destination file (including inside code blocks).",
-                    "target": "進階／舊版：執行目標檔案中任何位置的 <% %>（包括程式碼區塊內）。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "desc",
-                    "source": "Set the file name format. When off, QuickAdd asks for the note title.",
-                    "target": "設定檔案名稱格式。關閉時，QuickAdd 會詢問筆記標題。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1491,7 +1455,7 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "error",
+                    "name": "label",
                     "source": "Require list",
                     "target": "要求清單"
                 },
@@ -1611,7 +1575,7 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "heading",
+                    "name": "name",
                     "source": "Global variables",
                     "target": "全域變數"
                 },
@@ -1701,7 +1665,7 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "label",
+                    "name": "text",
                     "source": "Today",
                     "target": "今天"
                 },
@@ -1846,12 +1810,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "label",
-                    "source": "Require list",
-                    "target": "要求清單"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "label",
                     "source": "Reuse current tab",
                     "target": "重複使用目前分頁"
                 },
@@ -1888,18 +1846,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "label",
-                    "source": "Split right",
-                    "target": "向右分割"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "label",
-                    "source": "Split down",
-                    "target": "向下分割"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "label",
                     "source": "Source",
                     "target": "原始碼"
                 },
@@ -1916,20 +1862,20 @@
                     "target": "即時預覽"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "label",
+                    "type": "CallExpression",
+                    "name": "addOption",
                     "source": "Follow global setting",
-                    "target": "依全域設定"
+                    "target": "依照全域設定"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "label",
+                    "type": "CallExpression",
+                    "name": "addOption",
                     "source": "Always",
                     "target": "一律"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "label",
+                    "type": "CallExpression",
+                    "name": "addOption",
                     "source": "Never",
                     "target": "永不"
                 },
@@ -1972,12 +1918,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "label",
-                    "source": "Ordered (place new section among siblings)",
-                    "target": "排序（將新區段放在同層區段之間）"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "label",
                     "source": "Insertion order (no sorting)",
                     "target": "插入順序（不排序）"
                 },
@@ -1986,12 +1926,6 @@
                     "name": "label",
                     "source": "Text (A→Z)",
                     "target": "文字（A→Z）"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "label",
-                    "source": "Number",
-                    "target": "數字"
                 },
                 {
                     "type": "ObjectProperty",
@@ -2010,18 +1944,6 @@
                     "name": "label",
                     "source": "Oldest / lowest first",
                     "target": "較舊／較小優先"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "label",
-                    "source": "Sort existing unparseable headings to bottom",
-                    "target": "將無法解析的現有標題排到底部"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "label",
-                    "source": "Sort existing unparseable headings to top",
-                    "target": "將無法解析的現有標題排到頂端"
                 },
                 {
                     "type": "ObjectProperty",
@@ -2350,12 +2272,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "Split direction",
-                    "target": "分割方向"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "View mode",
                     "target": "檢視模式"
                 },
@@ -2366,10 +2282,10 @@
                     "target": "聚焦新窗格"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "name",
+                    "type": "CallExpression",
+                    "name": "setName",
                     "source": "One-page input override",
-                    "target": "單頁輸入覆寫"
+                    "target": "覆寫選項單頁輸入"
                 },
                 {
                     "type": "ObjectProperty",
@@ -2397,7 +2313,7 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "name",
+                    "name": "placeholder",
                     "source": "Insert after",
                     "target": "插入於其後"
                 },
@@ -2463,7 +2379,7 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "name",
+                    "name": "placeholder",
                     "source": "Insert before",
                     "target": "插入之前"
                 },
@@ -2472,12 +2388,6 @@
                     "name": "name",
                     "source": "Write position",
                     "target": "寫入位置"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Icon",
-                    "target": "圖示"
                 },
                 {
                     "type": "ObjectProperty",
@@ -2542,12 +2452,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "File name format",
-                    "target": "檔案名稱格式"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "New note location",
                     "target": "新筆記位置"
                 },
@@ -2580,12 +2484,6 @@
                     "name": "name",
                     "source": "Custom",
                     "target": "自訂"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Choices",
-                    "target": "Choice"
                 },
                 {
                     "type": "ObjectProperty",
@@ -2662,12 +2560,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "Global variables",
-                    "target": "全域變數"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "Disable AI & online features",
                     "target": "停用 AI 與線上功能"
                 },
@@ -2698,24 +2590,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "placeholder",
-                    "source": "Insert after",
-                    "target": "插入於其後"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "placeholder",
-                    "source": "Insert before",
-                    "target": "插入之前"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "placeholder",
-                    "source": "File name format",
-                    "target": "檔案名稱格式"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "placeholder",
                     "source": "Select a script (.js file or note with a ```js block)",
                     "target": "選取指令碼（.js 檔案或含有 ```js 區塊的筆記）"
                 },
@@ -2736,12 +2610,6 @@
                     "name": "text",
                     "source": "Look at the note, copy or select text, then come back. Your draft is still there.",
                     "target": "查看筆記、複製或選取文字後再返回。你的草稿仍會保留。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Today",
-                    "target": "今天"
                 },
                 {
                     "type": "ObjectProperty",
@@ -2775,7 +2643,7 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "text",
+                    "name": "title",
                     "source": "Provide inputs",
                     "target": "提供輸入"
                 },
@@ -2806,12 +2674,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "text",
-                    "source": "No folders added yet.",
-                    "target": "尚未新增任何資料夾。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
                     "source": "Unresolved link",
                     "target": "未解析的連結"
                 },
@@ -2820,12 +2682,6 @@
                     "name": "text",
                     "source": "Fetching release notes...",
                     "target": "正在取得版本資訊…"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "title",
-                    "source": "Provide inputs",
-                    "target": "提供輸入"
                 },
                 {
                     "type": "ObjectProperty",
@@ -2912,34 +2768,10 @@
                     "target": "啟用後，範本或擷取選項執行完成時，obsidian://quickadd URI 可開啟回呼 URL（x-success／x-error／x-cancel），並將執行結果、受影響筆記在儲存庫中的路徑與 URL 傳送至該回呼。啟用時，帶有 x-* 回呼參數的 URI 僅能執行範本與擷取選項；其他類型會顯示警告並略過。此功能預設停用，因為回呼 URL 由建立 obsidian:// 連結的人指定。只允許 shortcuts: 與 obsidian: 回呼 URL。"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Never",
-                    "target": "永不"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Always",
-                    "target": "一律"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "addOption",
-                    "source": "Follow global setting",
-                    "target": "依照全域設定"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
+                    "type": "ObjectProperty",
+                    "name": "label",
                     "source": "Note",
                     "target": "筆記"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "One-page input override",
-                    "target": "覆寫選項單頁輸入"
                 },
                 {
                     "type": "CallExpression",
@@ -2961,7 +2793,7 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "hint",
+                    "name": "placeholder",
                     "source": "Property name",
                     "target": "屬性名稱"
                 },
@@ -2982,12 +2814,6 @@
                     "name": "label",
                     "source": "Replace entire note",
                     "target": "取代整篇筆記"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "label",
-                    "source": "Note",
-                    "target": "筆記"
                 },
                 {
                     "type": "ObjectProperty",
@@ -3015,13 +2841,7 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "label",
-                    "source": "Property",
-                    "target": "屬性"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
+                    "name": "placeholder",
                     "source": "Property",
                     "target": "屬性"
                 },
@@ -3042,18 +2862,6 @@
                     "name": "name",
                     "source": "When selecting an existing note",
                     "target": "選擇既有筆記時"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "placeholder",
-                    "source": "Property name",
-                    "target": "屬性名稱"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "placeholder",
-                    "source": "Property",
-                    "target": "屬性"
                 },
                 {
                     "type": "NewExpression",
@@ -3102,12 +2910,6 @@
                     "name": "addCommandButton",
                     "source": "Add conditional command",
                     "target": "新增條件命令"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": " (optional)",
-                    "target": "（選填）"
                 },
                 {
                     "type": "AssignmentExpression",
@@ -3168,12 +2970,6 @@
                     "name": "setDesc",
                     "source": "The system prompt for the AI Assistant",
                     "target": "AI 助理使用的系統提示詞"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "System prompt",
-                    "target": "系統提示詞"
                 },
                 {
                     "type": "CallExpression",
@@ -3336,6 +3132,336 @@
                     "name": "title",
                     "source": "Runs a file as code even though it is labeled a template",
                     "target": "將標示為範本的檔案當作程式碼執行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "purpose",
+                    "source": "to navigate",
+                    "target": "移動選取項目"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "purpose",
+                    "source": "to choose",
+                    "target": "選擇"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "purpose",
+                    "source": "to skip (leave empty)",
+                    "target": "略過（留空）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "purpose",
+                    "source": "to cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "hint",
+                    "source": "Path to the template file",
+                    "target": "範本檔案路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Move note to match choice settings?",
+                    "target": "移動筆記以符合選項設定？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "No files found in target scope",
+                    "target": "目標範圍中找不到檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Ordered among siblings",
+                    "target": "在同層區段間排序"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Sort to bottom",
+                    "target": "排到底部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Sort to top",
+                    "target": "排到頂端"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "One entry per line",
+                    "target": "每行一筆"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Writes the format once for each line of {{VALUE}}.",
+                    "target": "為 {{VALUE}} 的每一行各寫入一次格式內容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Leave empty to capture {{VALUE}} on its own - what you type at the prompt, or the current selection.",
+                    "target": "留空時只擷取 {{VALUE}}，也就是你在提示中輸入的內容或目前選取的文字。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Run Templater on entire destination file after capture (deprecated)",
+                    "target": "擷取後對整個目標檔案執行 Templater（已淘汰）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Will be removed in a future release. QuickAdd already runs Templater in what it captures. This also runs every <% %> elsewhere in the destination file, including inside code blocks.",
+                    "target": "未來版本將移除此功能。QuickAdd 已會對擷取內容執行 Templater；此選項還會執行目標檔案其他位置的所有 <% %>，包括程式碼區塊內。"
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "name": "j6",
+                    "source": "this part of QuickAdd",
+                    "target": "QuickAdd 的這個部分"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Leave empty to ask for the note title.",
+                    "target": "留空時會詢問筆記標題。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "scripts/myCheck.js or Notes/myCheck.md",
+                    "target": "scripts/myCheck.js 或 Notes/myCheck.md"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Overwrite existing file?",
+                    "target": "覆寫既有檔案？"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Export QuickAdd package",
+                    "target": "匯出 QuickAdd 套件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Runs custom JavaScript written into a choice setting",
+                    "target": "執行寫在選項設定中的自訂 JavaScript"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Import QuickAdd package",
+                    "target": "匯入 QuickAdd 套件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Advanced",
+                    "target": "進階"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Properties",
+                    "target": "屬性"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Custom provider added. Open it in the list to configure it.",
+                    "target": "已新增自訂提供者。請在清單中開啟以進行設定。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "This provider no longer exists.",
+                    "target": "此提供者已不存在。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The base URL of the provider's API.",
+                    "target": "提供者 API 的基礎網址。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Check that QuickAdd can reach this provider's models endpoint with the linked key.",
+                    "target": "檢查 QuickAdd 是否能使用已連結的金鑰連線至此提供者的模型端點。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Connection",
+                    "target": "連線"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Test connection",
+                    "target": "測試連線"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Where QuickAdd looks when browsing or syncing models for this provider.",
+                    "target": "QuickAdd 瀏覽或同步此提供者模型時使用的來源。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Automatic (try provider, fall back to models.dev)",
+                    "target": "自動（先嘗試提供者，失敗時改用 models.dev）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Browse…",
+                    "target": "瀏覽…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Filter models",
+                    "target": "篩選模型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Retired",
+                    "target": "已停用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Delete model",
+                    "target": "刪除模型"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "The context window must be a positive whole number.",
+                    "target": "上下文視窗大小必須為正整數。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Commands that use its models will need another model.",
+                    "target": "使用此提供者模型的命令將需要改用其他模型。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Delete provider",
+                    "target": "刪除提供者"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Providers, models, and defaults for AI commands.",
+                    "target": "AI 命令使用的提供者、模型與預設值。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Defaults",
+                    "target": "預設值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "The model new AI commands start with. “Ask me” prompts you to choose a model each run.",
+                    "target": "新增 AI 命令時使用的模型。「詢問我」會在每次執行時提示你選擇模型。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Show progress notices while the AI Assistant works.",
+                    "target": "AI 助理執行時顯示進度通知。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "When an AI agent runs script-defined or built-in tools, ask before executing. A tool that requires approval is always confirmed.",
+                    "target": "AI 代理程式執行指令碼定義或內建工具前，先詢問是否執行。需要核准的工具一律會要求確認。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "QuickAdd: Turn off “Disable AI & online features” in QuickAdd settings to use the AI Assistant.",
+                    "target": "QuickAdd：請在 QuickAdd 設定中關閉「停用 AI 與線上功能」，才能使用 AI 助理。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Add folder",
+                    "target": "新增資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Template folders",
+                    "target": "範本資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "No folders yet. QuickAdd suggests templates from the whole vault.",
+                    "target": "尚未加入資料夾。QuickAdd 會建議整個儲存庫中的範本。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "QuickAdd: Set a template folder in Settings → QuickAdd → Template folders to use “New note from template”.",
+                    "target": "QuickAdd：請在「設定 → QuickAdd → 範本資料夾」中設定範本資料夾，才能使用「從範本新增筆記」。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Which suggestions to list",
+                    "target": "要列出的建議類型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Note the link will be inserted in (link text follows the vault's link format from there)",
+                    "target": "要插入連結的筆記（連結文字會依該位置的儲存庫連結格式產生）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "AI provider id (e.g. openai) or name",
+                    "target": "AI 供應商 ID（例如 openai）或名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Required when the package runs code: confirms you reviewed its scripts (see quickadd:package-preview)",
+                    "target": "套件會執行程式碼時必填：確認你已檢閱其指令碼（見 quickadd:package-preview）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Mode for every choice (default: overwrite when the id already exists, otherwise import). import refuses a package with a choice already in the vault",
+                    "target": "每個選項的處理模式（預設：ID 已存在時使用 overwrite，否則使用 import）。若套件中的選項已存在於儲存庫，import 會拒絕匯入。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Mode for every bundled file (default: overwrite when the destination exists, otherwise write)",
+                    "target": "每個封裝檔案的處理模式（預設：目標檔案已存在時使用 overwrite，否則使用 write）"
                 }
             ],
             "regex": [
@@ -3344,8 +3470,8 @@
                     "target": "Notice(`QuickAdd：已取消先前暫時查看的輸入提示「${o}」。`)"
                 },
                 {
-                    "source": "Notice(`\"${t}\" is already added.`)",
-                    "target": "Notice(`已新增「${t}」。`)"
+                    "source": "`\"${e}\" is already added.`",
+                    "target": "`已新增「${e}」。`"
                 },
                 {
                     "source": "Notice(`QuickAdd: \"${n}\" could not be parsed as a date; using it as-is.`)",
@@ -3360,8 +3486,8 @@
                     "target": "Notice(`QuickAdd：找不到名為「${i}」的選項。`)"
                 },
                 {
-                    "source": "setTooltip(`Add ${t} choice`)",
-                    "target": "setTooltip(`新增${t===\"Capture\"?\"擷取\":t===\"Template\"?\"範本\":t}選項`)"
+                    "source": "`Add ${e} choice`",
+                    "target": "`新增${e===\"Capture\"?\"擷取\":e===\"Template\"?\"範本\":e}選項`"
                 },
                 {
                     "source": "setTitle(`Move to: ${s.path}`)",
@@ -3372,36 +3498,36 @@
                     "target": "Notice(`無法載入模型目錄：${this.loadError}`)"
                 },
                 {
-                    "source": "Notice(`Import failed: ${t.message??t}`)",
-                    "target": "Notice(`匯入失敗：${t.message??t}`)"
+                    "source": "`Import failed: ${e.message??e}`",
+                    "target": "`匯入失敗：${e.message??e}`"
                 },
                 {
-                    "source": "Notice(`Invalid endpoint URL for ${t.name}.`)",
-                    "target": "Notice(`${t.name} 的端點 URL 無效。`)"
+                    "source": "`Invalid endpoint URL for ${e.name}.`",
+                    "target": "`${e.name} 的端點 URL 無效。`"
                 },
                 {
-                    "source": "Notice(`${t.name} requires an API key.`)",
-                    "target": "Notice(`${t.name} 需要 API 金鑰。`)"
+                    "source": "`${e.name} requires an API key.`",
+                    "target": "`${e.name} 需要 API 金鑰。`"
                 },
                 {
-                    "source": "Notice(`${t.name} is already configured.`)",
-                    "target": "Notice(`已設定 ${t.name}。`)"
+                    "source": "`${e.name} is already configured.`",
+                    "target": "`已設定 ${e.name}。`"
                 },
                 {
                     "source": "Notice(`Failed to add provider: ${a.message??a}`)",
                     "target": "Notice(`新增供應商失敗：${a.message??a}`)"
                 },
                 {
-                    "source": "Notice(`${t.name} connected with ${e.models.length} models.`)",
-                    "target": "Notice(`${t.name} 已連線，共有 ${e.models.length} 個模型。`)"
+                    "source": "`${e.name} connected with ${t.models.length} models.`",
+                    "target": "`${e.name} 已連線，共有 ${t.models.length} 個模型。`"
                 },
                 {
-                    "source": "Notice(`${t.name} added with its built-in model list. Live model loading failed: ${i}`)",
-                    "target": "Notice(`已新增 ${t.name} 及其內建模型清單，但即時載入模型失敗：${i}`)"
+                    "source": "`${e.name} added with its built-in model list. Live model loading failed: ${i}`",
+                    "target": "`已新增 ${e.name} 及其內建模型清單，但即時載入模型失敗：${i}`"
                 },
                 {
-                    "source": "Notice(`${t.name} added, but loading models failed: ${i} Use \"Sync now\" in the provider's settings to retry.`)",
-                    "target": "Notice(`已新增 ${t.name}，但載入模型失敗：${i}。請在供應商設定中使用「立即同步」重試。`)"
+                    "source": "`${e.name} added, but loading models failed: ${i} Use \"Sync now\" in the provider's settings to retry.`",
+                    "target": "`已新增 ${e.name}，但載入模型失敗：${i}。請在供應商設定中使用「立即同步」重試。`"
                 },
                 {
                     "source": "Notice(`Created '${c.basename}'.`)",
@@ -3416,12 +3542,8 @@
                     "target": "textContent=`修改日期：${new Date(n.stat.mtime).toLocaleDateString()}`"
                 },
                 {
-                    "source": "textContent=`Showing ${t.length} of ${e.length} options. Refine your search to see the rest.`",
-                    "target": "textContent=`顯示 ${t.length}／${e.length} 個選項。請縮小搜尋範圍以查看其餘選項。`"
-                },
-                {
-                    "source": "textContent=`${n} \\xB7 ${e} matches`",
-                    "target": "textContent=`${n} \\xB7 ${e} 筆相符結果`"
+                    "source": "`Showing ${e.length} of ${t.length} options. Refine your search to see the rest.`",
+                    "target": "`顯示 ${e.length}／${t.length} 個選項。請縮小搜尋範圍以查看其餘選項。`"
                 },
                 {
                     "source": "text:`Aliases (${i.length})`",
@@ -3432,16 +3554,12 @@
                     "target": "textContent=`執行 AI 工具「${this.toolName}」？`"
                 },
                 {
-                    "source": "text:`Aliases (${m.length})`",
-                    "target": "text:`別名（${m.length}）`"
+                    "source": "`Aliases (${g.length})`",
+                    "target": "`別名（${g.length}）`"
                 },
                 {
                     "source": "textContent=`QuickAdd couldn't display ${i}.`",
                     "target": "textContent=`QuickAdd 無法顯示 ${i}。`"
-                },
-                {
-                    "source": "text:`Changes to this ${e} are saved automatically`",
-                    "target": "text:`此${e===\"choice\"?\"選項\":e===\"macro\"?\"巨集\":e}的變更會自動儲存`"
                 },
                 {
                     "source": "text:`${i.name} uses fixed sampling, so these settings are not sent to it.`",
@@ -3460,8 +3578,12 @@
                     "target": "name=`開啟檔案：${this.filePath}`"
                 },
                 {
-                    "source": "name=`If ${t}`",
-                    "target": "name=`如果 ${t}`"
+                    "source": "`If ${zl(t)}`",
+                    "target": "`如果 ${zl(t)}`"
+                },
+                {
+                    "source": "`If ${e}`",
+                    "target": "`如果 ${e}`"
                 },
                 {
                     "source": "text:`Browse models for ${this.provider.name}`",
@@ -3526,18 +3648,6 @@
                 {
                     "source": "Learn more about one-page inputs",
                     "target": "深入了解單頁輸入"
-                },
-                {
-                    "source": "heading:\"Templates & properties\"",
-                    "target": "heading:\"範本與屬性\""
-                },
-                {
-                    "source": "name:\"Template folder paths\"",
-                    "target": "name:\"範本資料夾路徑\""
-                },
-                {
-                    "source": "Folders where templates are stored. Used to suggest template files when configuring QuickAdd. Add as many as you like; leave empty to suggest every template file in the vault.",
-                    "target": "儲存範本的資料夾。設定 QuickAdd 時用於建議範本檔案。可新增多個資料夾；留空則建議儲存庫中的所有範本檔案。"
                 },
                 {
                     "source": "Display release notes when a new version is installed. This includes new features, demo videos, and bug fixes.",
@@ -3800,16 +3910,16 @@
                     "target": "不會建立"
                 },
                 {
-                    "source": "message:`Date origin variable \"${e.name}\" is not available.`",
-                    "target": "message:`無法使用日期來源變數「${e.name}」。`"
+                    "source": "`Date origin variable \"${t.name}\" is not available.`",
+                    "target": "`無法使用日期來源變數「${t.name}」。`"
                 },
                 {
-                    "source": "message:`Date origin variable \"${e.name}\" is not set.`",
-                    "target": "message:`尚未設定日期來源變數「${e.name}」。`"
+                    "source": "`Date origin variable \"${t.name}\" is not set.`",
+                    "target": "`尚未設定日期來源變數「${t.name}」。`"
                 },
                 {
-                    "source": "message:`Date origin variable \"${e.name}\" is not a date.`",
-                    "target": "message:`日期來源變數「${e.name}」不是日期。`"
+                    "source": "`Date origin variable \"${t.name}\" is not a date.`",
+                    "target": "`日期來源變數「${t.name}」不是日期。`"
                 },
                 {
                     "source": "Search options...",
@@ -3828,12 +3938,8 @@
                     "target": ")).size} 個已選取項目`"
                 },
                 {
-                    "source": "this.indexedItems.length} options`",
-                    "target": "this.indexedItems.length} 個選項`"
-                },
-                {
-                    "source": "Notice(`QuickAdd: \"${s.label}\" is not a valid date. Fix it or clear it before submitting.`)",
-                    "target": "Notice(`QuickAdd：「${s.label}」不是有效日期。請修正或清除後再提交。`)"
+                    "source": "`QuickAdd: \"${l.label}\" is not a valid date. Fix it or clear it before submitting.`",
+                    "target": "`QuickAdd：「${l.label}」不是有效日期。請修正或清除後再提交。`"
                 },
                 {
                     "source": "setPlaceholder(`Search notes or create ${n.name}`)",
@@ -3876,23 +3982,23 @@
                     "target": "\"屬性擷取需要 Markdown 筆記。Canvas 文字卡片沒有筆記屬性。\""
                 },
                 {
-                    "source": "`Note for ${t.choice.name}`",
-                    "target": "`${t.choice.name} 的筆記`"
+                    "source": "`Note for ${e.choice.name}`",
+                    "target": "`${e.choice.name} 的筆記`"
                 },
                 {
                     "source": "`Create: ${c.title}`",
                     "target": "`建立：${c.title}`"
                 },
                 {
-                    "source": "`Property '${e}' supports text, finite numbers, checkboxes, and lists of text only.`",
-                    "target": "`屬性「${e}」僅支援文字、有限數值、核取方塊與文字清單。`"
+                    "source": "`Property '${t}' supports text, finite numbers, checkboxes, and lists of text only.`",
+                    "target": "`屬性「${t}」僅支援文字、有限數值、核取方塊與文字清單。`"
                 },
                 {
-                    "source": "`Property '${e}' has unsupported type '${r}'.`",
-                    "target": "`屬性「${e}」的類型「${r}」不受支援。`"
+                    "source": "`Property '${t}' has unsupported type '${r}'.`",
+                    "target": "`屬性「${t}」的類型「${r}」不受支援。`"
                 },
                 {
-                    "source": "`Property '${t}' requires ${e}; the capture is ${n}. Use a matching typed VALUE token or value.`",
+                    "source": "`Property '${e}' requires ${t}; the capture is ${n}. Use a matching typed VALUE token or value.`",
                     "target": "`屬性「${t}」需要 ${e}，但擷取的內容是 ${n}。請使用類型相符的 VALUE 標記或值。`"
                 },
                 {
@@ -3932,16 +4038,16 @@
                     "target": "label:\"在頂部插入範本\""
                 },
                 {
-                    "source": "Notice(`Duplicated \"${g.name}\".`)",
-                    "target": "Notice(`已建立「${g.name}」的複本。`)"
+                    "source": "`Duplicated \"${v.name}\".`",
+                    "target": "`已建立「${v.name}」的複本。`"
                 },
                 {
-                    "source": "Add files for ${e.label}",
-                    "target": "新增檔案至 ${e.label}"
+                    "source": "`Add files for ${t.label}`",
+                    "target": "`新增檔案至 ${t.label}`"
                 },
                 {
-                    "source": "Choose file for ${e.label}",
-                    "target": "為 ${e.label} 選擇檔案"
+                    "source": "`Choose file for ${t.label}`",
+                    "target": "`為 ${t.label} 選擇檔案`"
                 },
                 {
                     "source": "\"Unresolved\"",
@@ -4040,14 +4146,6 @@
                     "target": "text:`✓ 位於儲存庫中（不在 ${r.vault.configDir} 資料夾內）`"
                 },
                 {
-                    "source": "for(let o of zP.keys())i.addOption(o,o)",
-                    "target": "for(let o of zP.keys())i.addOption(o,({\"Move cursor to line end\":\"將游標移至行尾\",\"Move cursor to line start\":\"將游標移至行首\",\"Move cursor to file end\":\"將游標移至檔案結尾\",\"Move cursor to file start\":\"將游標移至檔案開頭\",\"Select link on active line\":\"選取作用中行的連結\",\"Select active line\":\"選取作用中行\",\"Paste with format\":\"以指定格式貼上\",\"Paste\":\"貼上\",\"Cut\":\"剪下\",\"Copy\":\"複製\"})[o]??o)"
-                },
-                {
-                    "source": "addChoiceButton(e,t,n){new ji.ButtonComponent(e).setButtonText(t)",
-                    "target": "addChoiceButton(e,t,n){new ji.ButtonComponent(e).setButtonText(t===\"Capture\"?\"擷取\":t===\"Template\"?\"範本\":t)"
-                },
-                {
                     "source": "`Copied link to '${r.basename}' to clipboard.`",
                     "target": "`已將「${r.basename}」的連結複製到剪貼簿。`"
                 },
@@ -4056,16 +4154,16 @@
                     "target": "`已建立「${r.basename}」，但 QuickAdd 無法將其連結複製到剪貼簿。`"
                 },
                 {
-                    "source": "`QuickAdd: ${m} (${r.path})`",
-                    "target": "`QuickAdd：${m}（${r.path}）`"
+                    "source": "`QuickAdd: ${v} (${r.path})`",
+                    "target": "`QuickAdd：${v}（${r.path}）`"
                 },
                 {
                     "source": "`Applied template to '${n.basename}'.`",
                     "target": "`已將範本套用至「${n.basename}」。`"
                 },
                 {
-                    "source": "`'${t.name}' creates notes at '${i}'. Move '${n.path}' there? Links to the note will be updated.`",
-                    "target": "`「${t.name}」會在「${i}」建立筆記。要將「${n.path}」移到該處嗎？指向此筆記的連結也會更新。`"
+                    "source": "`'${e.name}' creates notes at '${i}'. Move '${n.path}' there? Links to the note will be updated.`",
+                    "target": "`「${e.name}」會在「${i}」建立筆記。要將「${n.path}」移到該處嗎？指向此筆記的連結也會更新。`"
                 },
                 {
                     "source": "`Use \\u201C${n}\\u201D`",
@@ -4084,88 +4182,80 @@
                     "target": "`${r.name} 的日期`"
                 },
                 {
-                    "source": "`Copied node id ${$}`",
-                    "target": "`已複製節點 ID ${$}`"
-                },
-                {
-                    "source": "`If you click yes, you will delete '${i.name}'.`",
-                    "target": "`點選「是」將刪除「${i.name}」。`"
+                    "source": "`Copied node id ${H}`",
+                    "target": "`已複製節點 ID ${H}`"
                 },
                 {
                     "source": "`QuickAdd: \"${a.file.path}\" \\u2014 ${l}`",
                     "target": "`QuickAdd：「${a.file.path}」：${l}`"
                 },
                 {
-                    "source": "`QuickAdd: \"${o.file.path}\" \\u2014 ${s}`",
-                    "target": "`QuickAdd：「${o.file.path}」：${s}`"
+                    "source": "`QuickAdd: \"${s.file.path}\" \\u2014 ${a}`",
+                    "target": "`QuickAdd：「${s.file.path}」：${a}`"
                 },
                 {
                     "source": "`Lucide/Obsidian icon id. Leave empty to use ${i}.`",
                     "target": "`Lucide／Obsidian 圖示 ID。留空則使用 ${i}。`"
                 },
                 {
-                    "source": "`Update name for ${this.choice.name}`",
-                    "target": "`變更 ${this.choice.name} 的名稱`"
+                    "source": "`Delete ${wc(t.command)}`",
+                    "target": "`刪除 ${wc(t.command)}`"
                 },
                 {
-                    "source": "`Edit ${i} commands`",
-                    "target": "`編輯 ${i} 個命令`"
+                    "source": "`Delete ${t.command.name}`",
+                    "target": "`刪除 ${t.command.name}`"
                 },
                 {
-                    "source": "`Delete ${Gf(r.type)}`",
+                    "source": "`Delete ${ru(r.type)}`",
                     "target": "`刪除${r.type===\"Multi\"?\"資料夾\":\"選項\"}`"
                 },
                 {
-                    "source": "`Could not clear user script secrets. The ${Gf(r.type)} was not deleted.`",
+                    "source": "`Could not clear user script secrets. The ${ru(r.type)} was not deleted.`",
                     "target": "`無法清除使用者指令碼密鑰，因此未刪除${r.type===\"Multi\"?\"資料夾\":\"選項\"}。`"
                 },
                 {
-                    "source": "`A file already exists at '${e}'. Saving the package will overwrite it. Continue?`",
-                    "target": "`「${e}」已有檔案。儲存套件將會覆寫該檔案。要繼續嗎？`"
+                    "source": "`Export failed: ${me?.message??String(me)}`",
+                    "target": "`匯出失敗：${me?.message??String(me)}`"
                 },
                 {
-                    "source": "`Export failed: ${he?.message??String(he)}`",
-                    "target": "`匯出失敗：${he?.message??String(he)}`"
+                    "source": "`Copied package (${me.pkg.choices.length} choice${me.pkg.choices.length===1?\"\":\"s\"}) to clipboard.`",
+                    "target": "`已將套件（${me.pkg.choices.length} 個選項）複製到剪貼簿。`"
                 },
                 {
-                    "source": "`Copied package (${he.pkg.choices.length} choice${he.pkg.choices.length===1?\"\":\"s\"}) to clipboard.`",
-                    "target": "`已將套件（${he.pkg.choices.length} 個選項）複製到剪貼簿。`"
+                    "source": "`Copy failed: ${me?.message??String(me)}`",
+                    "target": "`複製失敗：${me?.message??String(me)}`"
                 },
                 {
-                    "source": "`Copy failed: ${he?.message??String(he)}`",
-                    "target": "`複製失敗：${he?.message??String(he)}`"
+                    "source": "`Overwrote package (${Kt}) at '${me}'.`",
+                    "target": "`已覆寫「${me}」的套件（${Kt}）。`"
                 },
                 {
-                    "source": "`Overwrote package (${ae}) at '${he}'.`",
-                    "target": "`已覆寫「${he}」的套件（${ae}）。`"
+                    "source": "`Saved package (${Kt}) to '${me}'.`",
+                    "target": "`已將套件（${Kt}）儲存至「${me}」。`"
                 },
                 {
-                    "source": "`Saved package (${ae}) to '${he}'.`",
-                    "target": "`已將套件（${ae}）儲存至「${he}」。`"
+                    "source": "`Save failed: ${ut}`",
+                    "target": "`儲存失敗：${ut}`"
                 },
                 {
-                    "source": "`Save failed: ${Ve}`",
-                    "target": "`儲存失敗：${Ve}`"
+                    "source": "`The following choice IDs were referenced but not found:\n\t\t\t\t\t\t${st??\"\"}`",
+                    "target": "`以下選項 ID 已被參照，但找不到對應項目：\n${st??\"\"}`"
                 },
                 {
-                    "source": "`The following choice IDs were referenced but not found:\n\t\t\t\t\t\t${vr??\"\"}`",
-                    "target": "`以下選項 ID 已被參照，但找不到對應項目：\n${vr??\"\"}`"
-                },
-                {
-                    "source": "`Missing choices:\n\t\t\t\t\t\t\t${Ir??\"\"}`",
-                    "target": "`缺少的選項：\n${Ir??\"\"}`"
+                    "source": "`Missing choices:\n\t\t\t\t\t\t\t${An??\"\"}`",
+                    "target": "`缺少的選項：\n${An??\"\"}`"
                 },
                 {
                     "source": "`Package content is not valid JSON: ${o?.message??o}`",
                     "target": "`套件內容不是有效的 JSON：${o?.message??o}`"
                 },
                 {
-                    "source": "`Package schema version ${e.schemaVersion} is newer than this plugin supports (${1}).`",
-                    "target": "`套件結構版本 ${e.schemaVersion} 高於此外掛支援的版本（${1}）。`"
+                    "source": "`Package schema version ${t.schemaVersion} is newer than this plugin supports (${1}).`",
+                    "target": "`套件結構版本 ${t.schemaVersion} 高於此外掛支援的版本（${1}）。`"
                 },
                 {
-                    "source": "`Package contains duplicate asset path \"${t}\". Each asset must have a unique path.`",
-                    "target": "`套件包含重複的資源路徑「${t}」。每個資源都必須使用不同的路徑。`"
+                    "source": "`Package contains duplicate asset path \"${e}\". Each asset must have a unique path.`",
+                    "target": "`套件包含重複的資源路徑「${e}」。每個資源都必須使用不同的路徑。`"
                 },
                 {
                     "source": "`Package contains conflicting definitions for choice \"${n}\". Each choice id must describe the same choice everywhere it appears.`",
@@ -4176,12 +4266,12 @@
                     "target": "`套件選項「${i}」指定的上層項目未將它列為子項目。有上層項目的選項都必須出現在該上層項目內。`"
                 },
                 {
-                    "source": "`Refusing to read a package outside the vault: \"${e}\".`",
-                    "target": "`拒絕讀取儲存庫以外的套件：「${e}」。`"
+                    "source": "`Refusing to read a package outside the vault: \"${t}\".`",
+                    "target": "`拒絕讀取儲存庫以外的套件：「${t}」。`"
                 },
                 {
-                    "source": "`Package file not found: ${t}`",
-                    "target": "`找不到套件檔案：${t}`"
+                    "source": "`Package file not found: ${e}`",
+                    "target": "`找不到套件檔案：${e}`"
                 },
                 {
                     "source": "`Refusing to import asset to an absolute path outside the vault: \"${n}\".`",
@@ -4196,56 +4286,52 @@
                     "target": "`拒絕將資源匯入設定目錄：「${i}」。`"
                 },
                 {
-                    "source": "`Refusing to import: assets \"${F.originalPath}\" and \"${$.originalPath}\" resolve to the same destination (\"${G}\"). Rename one so each imported file is unique.`",
-                    "target": "`拒絕匯入：資源「${F.originalPath}」與「${$.originalPath}」指向相同的目標路徑（「${G}」）。請重新命名其中一個，確保每個匯入檔案的路徑不同。`"
+                    "source": "`Refusing to import: assets \"${M.originalPath}\" and \"${D.originalPath}\" resolve to the same destination (\"${G}\"). Rename one so each imported file is unique.`",
+                    "target": "`拒絕匯入：資源「${M.originalPath}」與「${D.originalPath}」指向相同的目標路徑（「${G}」）。請重新命名其中一個，確保每個匯入檔案的路徑不同。`"
                 },
                 {
-                    "source": "`Preview unavailable: ${h(o).error??\"\"}`",
-                    "target": "`無法預覽：${h(o).error??\"\"}`"
+                    "source": "`Preview unavailable: ${t.content.error??\"\"}`",
+                    "target": "`無法預覽：${t.content.error??\"\"}`"
                 },
                 {
-                    "source": "`Preview truncated. The full ${e.file.executable?\"script will run\":\"file will be imported\"}.`",
-                    "target": "`預覽內容已截斷，${e.file.executable?\"執行時仍會使用完整指令碼\":\"仍會匯入完整檔案\"}。`"
+                    "source": "`Preview truncated. The full ${t.executable?\"script will run\":\"file will be imported\"}.`",
+                    "target": "`預覽內容已截斷，${t.executable?\"執行時仍會使用完整指令碼\":\"仍會匯入完整檔案\"}。`"
                 },
                 {
-                    "source": "`Contents of ${e.file.originalPath??\"\"}`",
-                    "target": "`${e.file.originalPath??\"\"} 的內容`"
+                    "source": "`Contents of ${t.file.originalPath}`",
+                    "target": "`${t.file.originalPath} 的內容`"
                 },
                 {
-                    "source": "`Action for ${e.file.originalPath??\"\"}`",
-                    "target": "`${e.file.originalPath??\"\"} 的動作`"
+                    "source": "`Action for ${t.file.originalPath??\"\"}`",
+                    "target": "`${t.file.originalPath??\"\"} 的動作`"
                 },
                 {
-                    "source": "`for ${e.file.originalPath??\"\"}`",
-                    "target": "`用於 ${e.file.originalPath??\"\"}`"
+                    "source": "`for ${t.file.originalPath??\"\"}`",
+                    "target": "`用於 ${t.file.originalPath??\"\"}`"
                 },
                 {
-                    "source": "`Open \\u201CView contents\\u201D on each of the ${h(n)??\"\"} executable\n\t\t\tscript${h(n)===1?\"\":\"s\"} above to enable this.`",
-                    "target": "`請先逐一開啟上方 ${h(n)??\"\"} 個可執行指令碼的「查看內容」，才能勾選此項。`"
+                    "source": "`In ${d.join(\" › \")}`",
+                    "target": "`位於 ${d.join(\" › \")}`"
                 },
                 {
-                    "source": "`In ${u.join(\" › \")}`",
-                    "target": "`位於 ${u.join(\" › \")}`"
+                    "source": "`Action for ${f(d).name??\"\"}`",
+                    "target": "`${f(d).name??\"\"} 的動作`"
                 },
                 {
-                    "source": "`Action for ${h(u).name??\"\"}`",
-                    "target": "`${h(u).name??\"\"} 的動作`"
+                    "source": "`Imported: ${de.join(\", \")}.`",
+                    "target": "`已匯入：${de.join(\", \")}。`"
                 },
                 {
-                    "source": "`Imported: ${ae.join(\", \")}.`",
-                    "target": "`已匯入：${ae.join(\", \")}。`"
+                    "source": "`Imported ${de.addedChoiceIds.length+de.overwrittenChoiceIds.length} choice${de.addedChoiceIds.length+de.overwrittenChoiceIds.length===1?\"\":\"s\"} successfully.`",
+                    "target": "`已成功匯入 ${de.addedChoiceIds.length+de.overwrittenChoiceIds.length} 個選項。`"
                 },
                 {
-                    "source": "`Imported ${ae.addedChoiceIds.length+ae.overwrittenChoiceIds.length} choice${ae.addedChoiceIds.length+ae.overwrittenChoiceIds.length===1?\"\":\"s\"} successfully.`",
-                    "target": "`已成功匯入 ${ae.addedChoiceIds.length+ae.overwrittenChoiceIds.length} 個選項。`"
+                    "source": "`Import failed: ${Y?.message??Y}`",
+                    "target": "`匯入失敗：${Y?.message??Y}`"
                 },
                 {
-                    "source": "`Import failed: ${z?.message??z}`",
-                    "target": "`匯入失敗：${z?.message??z}`"
-                },
-                {
-                    "source": "`Version ${h(i).pkg.quickAddVersion??\"\"} \\xB7 Created ${bt??\"\"} \\xB7 ${h(o).choiceConflicts.length??\"\"} choice${h(o).choiceConflicts.length===1?\"\":\"s\"} \\xB7 ${h(i).pkg.assets.length??\"\"} file${h(i).pkg.assets.length===1?\"\":\"s\"}`",
-                    "target": "`版本 ${h(i).pkg.quickAddVersion??\"\"} · 建立於 ${bt??\"\"} · ${h(o).choiceConflicts.length??\"\"} 個選項 · ${h(i).pkg.assets.length??\"\"} 個檔案`"
+                    "source": "`Version ${f(i).pkg.quickAddVersion??\"\"} \\xB7 Created ${yr??\"\"} \\xB7 ${f(o).choiceConflicts.length??\"\"} choice${f(o).choiceConflicts.length===1?\"\":\"s\"} \\xB7 ${f(i).pkg.assets.length??\"\"} file${f(i).pkg.assets.length===1?\"\":\"s\"}`",
+                    "target": "`版本 ${f(i).pkg.quickAddVersion??\"\"} · 建立於 ${yr??\"\"} · ${f(o).choiceConflicts.length??\"\"} 個選項 · ${f(i).pkg.assets.length??\"\"} 個檔案`"
                 },
                 {
                     "source": "`\\u2713 Connected. The provider lists ${`${r.modelCount} model${r.modelCount===1?\"\":\"s\"}`}.`",
@@ -4260,8 +4346,8 @@
                     "target": "`${r} 個模型`"
                 },
                 {
-                    "source": "`${t} minute${t===1?\"\":\"s\"} ago`",
-                    "target": "`${t} 分鐘前`"
+                    "source": "`${e} minute${e===1?\"\":\"s\"} ago`",
+                    "target": "`${e} 分鐘前`"
                 },
                 {
                     "source": "`${n} hour${n===1?\"\":\"s\"} ago`",
@@ -4272,12 +4358,12 @@
                     "target": "`${i} 天前`"
                 },
                 {
-                    "source": "`Last sync failed ${n}: ${t.error}`",
-                    "target": "`上次同步於${n}失敗：${t.error}`"
+                    "source": "`Last sync failed ${n}: ${e.error}`",
+                    "target": "`上次同步於${n}失敗：${e.error}`"
                 },
                 {
-                    "source": "`Last synced ${n} \\xB7 ${Ob(r.models.length)}.`",
-                    "target": "`上次同步於${n} · ${Ob(r.models.length)}。`"
+                    "source": "`Last synced ${n} \\xB7 ${ry(r.models.length)}.`",
+                    "target": "`上次同步於${n} · ${ry(r.models.length)}。`"
                 },
                 {
                     "source": "`Context: ${r.maxTokens.toLocaleString()} tokens`",
@@ -4292,8 +4378,8 @@
                     "target": "`發布日期：${r.releaseDate}`"
                 },
                 {
-                    "source": "`ID: ${t.id}. Scripts can address this provider's models as \"${t.id}/model-name\".`",
-                    "target": "`ID：${t.id}。指令碼可使用「${t.id}/model-name」指定此提供者的模型。`"
+                    "source": "`ID: ${e.id}. Scripts can address this provider's models as \"${e.id}/model-name\".`",
+                    "target": "`ID：${e.id}。指令碼可使用「${e.id}/model-name」指定此提供者的模型。`"
                 },
                 {
                     "source": "`Import new models and refreshed context limits from ${n} once a day and when this page opens.`",
@@ -4316,24 +4402,24 @@
                     "target": "`同步失敗：${s.message??String(s)}`"
                 },
                 {
-                    "source": "`Imported ${Ob(i.length)}${o===\"replace\"?\" (replaced the list)\":\"\"}.`",
-                    "target": "`已匯入 ${Ob(i.length)}${o===\"replace\"?\"（已取代清單）\":\"\"}。`"
+                    "source": "`Imported ${ry(i.length)}${o===\"replace\"?\" (replaced the list)\":\"\"}.`",
+                    "target": "`已匯入 ${ry(i.length)}${o===\"replace\"?\"（已取代清單）\":\"\"}。`"
                 },
                 {
-                    "source": "`${Ob(i.length)} retired by the provider`",
-                    "target": "`提供者已停用 ${Ob(i.length)}`"
+                    "source": "`${ry(i.length)} retired by the provider`",
+                    "target": "`提供者已停用 ${ry(i.length)}`"
                 },
                 {
-                    "source": "`Remove ${Ob(a.size)} retired by the provider from ${n.name}?`",
-                    "target": "`從 ${n.name} 移除提供者已停用的 ${Ob(a.size)}？`"
+                    "source": "`Remove ${ry(a.size)} retired by the provider from ${n.name}?`",
+                    "target": "`從 ${n.name} 移除提供者已停用的 ${ry(a.size)}？`"
                 },
                 {
                     "source": "`No models match \"${this.modelFilter.trim()}\".`",
                     "target": "`沒有符合「${this.modelFilter.trim()}」的模型。`"
                 },
                 {
-                    "source": "`Delete ${t}?`",
-                    "target": "`刪除 ${t}？`"
+                    "source": "`Delete ${e}?`",
+                    "target": "`刪除 ${e}？`"
                 },
                 {
                     "source": "`${i} is already in the list.`",
@@ -4344,8 +4430,8 @@
                     "target": "`刪除 ${i.name.trim()||\"此提供者\"}？`"
                 },
                 {
-                    "source": "`Delete ${e.name.trim()||\"this provider\"}?`",
-                    "target": "`刪除 ${e.name.trim()||\"此提供者\"}？`"
+                    "source": "`Delete ${t.name.trim()||\"this provider\"}?`",
+                    "target": "`刪除 ${t.name.trim()||\"此提供者\"}？`"
                 },
                 {
                     "source": "`${r} provider${r===1?\"\":\"s\"}`",
@@ -4356,12 +4442,8 @@
                     "target": "`${o} 個已停用`"
                 },
                 {
-                    "source": "`QuickAdd: Open the ${qS} page under \"AI & online\" below.`",
-                    "target": "`QuickAdd：請開啟下方「AI 與線上功能」中的「${qS}」頁面。`"
-                },
-                {
-                    "source": "`Remove ${m}`",
-                    "target": "`移除 ${m}`"
+                    "source": "`QuickAdd: Open the ${JE} page under \"AI & online\" below.`",
+                    "target": "`QuickAdd：請開啟下方「AI 與線上功能」中的「${JE}」頁面。`"
                 },
                 {
                     "source": "`Created and captured to ${o}`",
@@ -4372,108 +4454,16 @@
                     "target": "`已擷取至「${a.basename}」中的「${p}」`"
                 },
                 {
-                    "source": "`Property '${n}' is ${aE(a)}. 'Add to list' requires a list.`",
-                    "target": "`屬性「${n}」是 ${aE(a)}。「新增至清單」需要清單類型。`"
+                    "source": "`Property '${n}' is ${Ow(a)}. 'Add to list' requires a list.`",
+                    "target": "`屬性「${n}」是 ${Ow(a)}。「新增至清單」需要清單類型。`"
                 },
                 {
-                    "source": "`Property '${n}' contains ${aE(a)}. Set a list only after correcting the existing property to a list.`",
-                    "target": "`屬性「${n}」包含 ${aE(a)}。請先將既有屬性修正為清單，再設定清單值。`"
+                    "source": "`Property '${n}' contains ${Ow(a)}. Set a list only after correcting the existing property to a list.`",
+                    "target": "`屬性「${n}」包含 ${Ow(a)}。請先將既有屬性修正為清單，再設定清單值。`"
                 },
                 {
-                    "source": "`Remove ${E.label}`",
-                    "target": "`移除 ${E.label}`"
-                },
-                {
-                    "source": "\"Automatic (try provider, fall back to models.dev)\"",
-                    "target": "\"自動（先嘗試提供者，失敗時改用 models.dev）\""
-                },
-                {
-                    "source": "\"Test connection\"",
-                    "target": "\"測試連線\""
-                },
-                {
-                    "source": "\"Browse…\"",
-                    "target": "\"瀏覽…\""
-                },
-                {
-                    "source": "\"The base URL of the provider's API.\"",
-                    "target": "\"提供者 API 的基礎網址。\""
-                },
-                {
-                    "source": "\"Check that QuickAdd can reach this provider's models endpoint with the linked key.\"",
-                    "target": "\"檢查 QuickAdd 是否能使用已連結的金鑰連線至此提供者的模型端點。\""
-                },
-                {
-                    "source": "\"Where QuickAdd looks when browsing or syncing models for this provider.\"",
-                    "target": "\"QuickAdd 瀏覽或同步此提供者模型時使用的來源。\""
-                },
-                {
-                    "source": "\"Commands that use its models will need another model.\"",
-                    "target": "\"使用此提供者模型的命令將需要改用其他模型。\""
-                },
-                {
-                    "source": "\"Connection\"",
-                    "target": "\"連線\""
-                },
-                {
-                    "source": "\"Delete provider\"",
-                    "target": "\"刪除提供者\""
-                },
-                {
-                    "source": "\"Filter models\"",
-                    "target": "\"篩選模型\""
-                },
-                {
-                    "source": "\"Export QuickAdd package\"",
-                    "target": "\"匯出 QuickAdd 套件\""
-                },
-                {
-                    "source": "\"Import QuickAdd package\"",
-                    "target": "\"匯入 QuickAdd 套件\""
-                },
-                {
-                    "source": "\"Delete model\"",
-                    "target": "\"刪除模型\""
-                },
-                {
-                    "source": "\"Custom provider added. Open it in the list to configure it.\"",
-                    "target": "\"已新增自訂提供者。請在清單中開啟以進行設定。\""
-                },
-                {
-                    "source": "\"The context window must be a positive whole number.\"",
-                    "target": "\"上下文視窗大小必須為正整數。\""
-                },
-                {
-                    "source": "\"QuickAdd: Turn off “Disable AI & online features” in QuickAdd settings to use the AI Assistant.\"",
-                    "target": "\"QuickAdd：請在 QuickAdd 設定中關閉「停用 AI 與線上功能」，才能使用 AI 助理。\""
-                },
-                {
-                    "source": "\"Providers, models, and defaults for AI commands.\"",
-                    "target": "\"AI 命令使用的提供者、模型與預設值。\""
-                },
-                {
-                    "source": "\"The model new AI commands start with. “Ask me” prompts you to choose a model each run.\"",
-                    "target": "\"新增 AI 命令時使用的模型。「詢問我」會在每次執行時提示你選擇模型。\""
-                },
-                {
-                    "source": "\"Show progress notices while the AI Assistant works.\"",
-                    "target": "\"AI 助理執行時顯示進度通知。\""
-                },
-                {
-                    "source": "\"When an AI agent runs script-defined or built-in tools, ask before executing. A tool that requires approval is always confirmed.\"",
-                    "target": "\"AI 代理程式執行指令碼定義或內建工具前，先詢問是否執行。需要核准的工具一律會要求確認。\""
-                },
-                {
-                    "source": "\"Defaults\"",
-                    "target": "\"預設值\""
-                },
-                {
-                    "source": "\"This provider no longer exists.\"",
-                    "target": "\"此提供者已不存在。\""
-                },
-                {
-                    "source": "\"Retired\"",
-                    "target": "\"已停用\""
+                    "source": "`Remove ${P.label}`",
+                    "target": "`移除 ${P.label}`"
                 },
                 {
                     "source": "\"The display name of the provider.\"",
@@ -4620,10 +4610,6 @@
                     "target": "\"新名稱\""
                 },
                 {
-                    "source": "\"Are you sure you wish to delete this command?\"",
-                    "target": "\"確定要刪除此命令嗎？\""
-                },
-                {
                     "source": "\"QuickAdd: No active markdown note to apply a template to.\"",
                     "target": "\"QuickAdd：目前沒有可套用範本的作用中 Markdown 筆記。\""
                 },
@@ -4636,28 +4622,12 @@
                     "target": "\"QuickAdd：找不到範本選項或範本檔案。請建立範本選項，或在設定中指定範本資料夾路徑。\""
                 },
                 {
-                    "source": "\"Move note to match choice settings?\"",
-                    "target": "\"移動筆記以符合選項設定？\""
-                },
-                {
-                    "source": "\"QuickAdd: Set a template folder in Settings → QuickAdd → Templates & properties to use “New note from template”.\"",
-                    "target": "\"QuickAdd：請在「設定 → QuickAdd → 範本與屬性」中設定範本資料夾，才能使用「從範本新增筆記」。\""
-                },
-                {
                     "source": "\"QuickAdd: No template files found in your configured template folder(s).\"",
                     "target": "\"QuickAdd：在已設定的範本資料夾中找不到範本檔案。\""
                 },
                 {
-                    "source": "\"Overwrite existing file?\"",
-                    "target": "\"覆寫既有檔案？\""
-                },
-                {
                     "source": "\"Output path cannot be empty.\"",
                     "target": "\"輸出路徑不可留空。\""
-                },
-                {
-                    "source": "\"Clipboard copy is not supported in this environment.\"",
-                    "target": "\"此環境不支援複製到剪貼簿。\""
                 },
                 {
                     "source": "\"User script\"",
@@ -4744,10 +4714,6 @@
                     "target": "\"查看內容\""
                 },
                 {
-                    "source": "\"I have reviewed each bundled script above and trust the source, including scripts that are not included and cannot be shown.\"",
-                    "target": "\"我已檢閱上方每個封裝的指令碼，並信任其來源，包括未包含且無法顯示的指令碼。\""
-                },
-                {
                     "source": "\"I have reviewed each script above and trust the source.\"",
                     "target": "\"我已檢閱上方每個指令碼，並信任其來源。\""
                 },
@@ -4796,20 +4762,12 @@
                     "target": "\"未匯入任何內容。\""
                 },
                 {
-                    "source": "\"Confirm the acknowledgement above to continue\"",
-                    "target": "\"請勾選上方確認事項以繼續\""
-                },
-                {
                     "source": "name:\"Template path\"",
                     "target": "name:\"範本路徑\""
                 },
                 {
                     "source": "OpenFile:\"Open file\"",
                     "target": "OpenFile:\"開啟檔案\""
-                },
-                {
-                    "source": "qS=\"AI Assistant\"",
-                    "target": "qS=\"AI 助理\""
                 },
                 {
                     "source": ">Copy ID<",
@@ -4900,10 +4858,6 @@
                     "target": "不會寫入。匯入後，任何使用此指令碼的選項都會執行此路徑中既有的檔案，而不是你已檢閱的內容。"
                 },
                 {
-                    "source": "Minified: cannot be visually reviewed. Import\n\t\t\t\t\t\t\t\t\tonly if you trust the source.",
-                    "target": "已最小化，無法以視覺方式檢閱。只有在信任來源時才匯入。"
-                },
-                {
                     "source": ">Write<",
                     "target": ">寫入<"
                 },
@@ -4942,6 +4896,378 @@
                 {
                     "source": ">Cancel<",
                     "target": ">取消<"
+                },
+                {
+                    "source": "for(let o of $P.keys())i.addOption(o,o)",
+                    "target": "for(let o of $P.keys())i.addOption(o,({\"Move cursor to line end\":\"將游標移至行尾\",\"Move cursor to line start\":\"將游標移至行首\",\"Move cursor to file end\":\"將游標移至檔案結尾\",\"Move cursor to file start\":\"將游標移至檔案開頭\",\"Select link on active line\":\"選取作用中行的連結\",\"Select active line\":\"選取作用中行\",\"Paste with format\":\"以指定格式貼上\",\"Paste\":\"貼上\",\"Cut\":\"剪下\",\"Copy\":\"複製\"})[o]??o)"
+                },
+                {
+                    "source": "addChoiceButton(t,e,n){new xi.ButtonComponent(t).setButtonText(e)",
+                    "target": "addChoiceButton(t,e,n){new xi.ButtonComponent(t).setButtonText(e===\"Capture\"?\"擷取\":e===\"Template\"?\"範本\":e)"
+                },
+                {
+                    "source": "JE=\"AI Assistant\"",
+                    "target": "JE=\"AI 助理\""
+                },
+                {
+                    "source": "\"Select one or more\"",
+                    "target": "\"選取一個或多個項目\""
+                },
+                {
+                    "source": "\"Could not select this note.\"",
+                    "target": "\"無法選取此筆記。\""
+                },
+                {
+                    "source": "\"The selected node was not found in the loaded canvas.\"",
+                    "target": "\"在已載入的畫布中找不到所選節點。\""
+                },
+                {
+                    "source": "\"Canvas nodes are still loading. Wait a moment and try again.\"",
+                    "target": "\"畫布節點仍在載入，請稍候再試。\""
+                },
+                {
+                    "source": "\"Disable in command palette\"",
+                    "target": "\"在命令面板中停用\""
+                },
+                {
+                    "source": "\"Enable in command palette\"",
+                    "target": "\"在命令面板中啟用\""
+                },
+                {
+                    "source": "\"A legacy API key is stored in plain text. Link a keychain secret to replace it.\"",
+                    "target": "\"舊版 API 金鑰以明文儲存。請連結鑰匙圈密鑰以取代它。\""
+                },
+                {
+                    "source": "\"Template folders\"",
+                    "target": "\"範本資料夾\""
+                },
+                {
+                    "source": "\"QuickAdd couldn't read this folder's contents. Deleting it also deletes whatever is still stored under it in data.json.\"",
+                    "target": "\"QuickAdd 無法讀取此資料夾的內容。刪除它也會刪除 data.json 中仍儲存於其下的所有內容。\""
+                },
+                {
+                    "source": "\"QuickAdd couldn't read this macro's commands. Deleting it also deletes whatever is still stored under it in data.json.\"",
+                    "target": "\"QuickAdd 無法讀取此巨集的命令。刪除它也會刪除 data.json 中仍儲存於其下的所有內容。\""
+                },
+                {
+                    "source": "\"Deleting this choice will also delete its macro commands.\"",
+                    "target": "\"刪除此選項也會刪除它的巨集命令。\""
+                },
+                {
+                    "source": "\"Confirm the acknowledgement above to import.\"",
+                    "target": "\"請勾選上方的確認聲明，才能匯入。\""
+                },
+                {
+                    "source": "\"A destination above is a folder. Add a file name to import.\"",
+                    "target": "\"上方有目標路徑是資料夾，請加上檔案名稱才能匯入。\""
+                },
+                {
+                    "source": "\"QuickAdd: an image is still being saved — paste again in a moment.\"",
+                    "target": "\"QuickAdd：圖片仍在儲存中，請稍候再貼上。\""
+                },
+                {
+                    "source": "\"QuickAdd: an image is still being saved — drop again in a moment.\"",
+                    "target": "\"QuickAdd：圖片仍在儲存中，請稍候再拖放。\""
+                },
+                {
+                    "source": "\"Link a secret from Settings → Keychain.\"",
+                    "target": "\"從「設定 → 鑰匙圈」連結密鑰。\""
+                },
+                {
+                    "source": "this.compactChrome?\"Insert\":",
+                    "target": "this.compactChrome?\"插入\":"
+                },
+                {
+                    "source": "key:\"temperature\",name:\"Temperature\"",
+                    "target": "key:\"temperature\",name:\"取樣溫度\""
+                },
+                {
+                    "source": "heading:\"Template\"",
+                    "target": "heading:\"範本\""
+                },
+                {
+                    "source": "fileLabel:\"captured\"",
+                    "target": "fileLabel:\"擷取\""
+                },
+                {
+                    "source": "fileLabel:\"created\"",
+                    "target": "fileLabel:\"建立\""
+                },
+                {
+                    "source": "contextLabel:\"captured\"",
+                    "target": "contextLabel:\"擷取\""
+                },
+                {
+                    "source": "contextLabel:\"created\"",
+                    "target": "contextLabel:\"建立\""
+                },
+                {
+                    "source": "action:\"Overwrite\"",
+                    "target": "action:\"覆寫\""
+                },
+                {
+                    "source": "items:[{name:\"Choice\",render:r.choices}",
+                    "target": "items:[{name:\"選項\",render:r.choices}"
+                },
+                {
+                    "source": "\"<button type=\\\"button\\\">Daily note</button>\"",
+                    "target": "\"<button type=\\\"button\\\">每日筆記</button>\""
+                },
+                {
+                    "source": "\"<span class=\\\"qa-import-file-folder svelte-4j5ctu\\\">The destination is a folder. Add a file name.</span>\"",
+                    "target": "\"<span class=\\\"qa-import-file-folder svelte-4j5ctu\\\">目標路徑是資料夾，請加上檔案名稱。</span>\""
+                },
+                {
+                    "source": "\"<option>Overwrite</option>\"",
+                    "target": "\"<option>覆寫</option>\""
+                },
+                {
+                    "source": "\"<div class=\\\"qa-token-hint\\\">Type <code>&#123;&#123;</code> to insert a token &middot; <a class=\\\"quickadd-docs-link\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">格式語法</a></div>\"",
+                    "target": "\"<div class=\\\"qa-token-hint\\\">輸入 <code>&#123;&#123;</code> 可插入格式代碼 &middot; <a class=\\\"quickadd-docs-link\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">格式語法</a></div>\""
+                },
+                {
+                    "source": "\"<div class=\\\"qa-canvas-node-picker\\\"><div class=\\\"qa-canvas-node-actions\\\"><button type=\\\"button\\\">開啟目標 Canvas</button> <button type=\\\"button\\\">使用已開啟 Canvas 中的選取項目</button> <button type=\\\"button\\\">Clear</button></div> <div class=\\\"qa-canvas-node-filter\\\"><input type=\\\"text\\\" placeholder=\\\"Filter by card text, file path, or node id…\\\" aria-label=\\\"Filter canvas nodes\\\"/></div> <div class=\\\"qa-canvas-node-status\\\"> </div> <div class=\\\"qa-canvas-node-list\\\"><!></div></div>\"",
+                    "target": "\"<div class=\\\"qa-canvas-node-picker\\\"><div class=\\\"qa-canvas-node-actions\\\"><button type=\\\"button\\\">開啟目標 Canvas</button> <button type=\\\"button\\\">使用已開啟 Canvas 中的選取項目</button> <button type=\\\"button\\\">清除</button></div> <div class=\\\"qa-canvas-node-filter\\\"><input type=\\\"text\\\" placeholder=\\\"Filter by card text, file path, or node id…\\\" aria-label=\\\"Filter canvas nodes\\\"/></div> <div class=\\\"qa-canvas-node-status\\\"> </div> <div class=\\\"qa-canvas-node-list\\\"><!></div></div>\""
+                },
+                {
+                    "source": "\"<div class=\\\"qa-canvas-node-picker\\\"><div class=\\\"qa-canvas-node-actions\\\"><button type=\\\"button\\\">開啟目標 Canvas</button> <button type=\\\"button\\\">使用已開啟 Canvas 中的選取項目</button> <button type=\\\"button\\\">清除</button></div> <div class=\\\"qa-canvas-node-filter\\\"><input type=\\\"text\\\" placeholder=\\\"Filter by card text, file path, or node id…\\\" aria-label=\\\"Filter canvas nodes\\\"/></div> <div class=\\\"qa-canvas-node-status\\\"> </div> <div class=\\\"qa-canvas-node-list\\\"><!></div></div>\"",
+                    "target": "\"<div class=\\\"qa-canvas-node-picker\\\"><div class=\\\"qa-canvas-node-actions\\\"><button type=\\\"button\\\">開啟目標 Canvas</button> <button type=\\\"button\\\">使用已開啟 Canvas 中的選取項目</button> <button type=\\\"button\\\">清除</button></div> <div class=\\\"qa-canvas-node-filter\\\"><input type=\\\"text\\\" placeholder=\\\"依卡片文字、檔案路徑或節點 ID 篩選…\\\" aria-label=\\\"篩選畫布節點\\\"/></div> <div class=\\\"qa-canvas-node-status\\\"> </div> <div class=\\\"qa-canvas-node-list\\\"><!></div></div>\""
+                },
+                {
+                    "source": "\"<div class=\\\"qa-package-dialog\\\"><div class=\\\"qa-package-body\\\"><section class=\\\"qa-export-select svelte-1way66v\\\"><div class=\\\"qa-export-controls svelte-1way66v\\\"><div class=\\\"search-input-container svelte-1way66v\\\"><label class=\\\"qa-visually-hidden\\\" for=\\\"qa-export-filter\\\">Filter choices</label> <input id=\\\"qa-export-filter\\\" type=\\\"search\\\" enterkeyhint=\\\"search\\\" placeholder=\\\"篩選選項…\\\" autocapitalize=\\\"off\\\" autocorrect=\\\"off\\\"/></div> <button type=\\\"button\\\">選取顯示項目</button> <button type=\\\"button\\\">Clear selection</button></div> <div class=\\\"setting-group\\\"><div class=\\\"setting-items qa-export-list svelte-1way66v\\\"><!></div></div></section> <section class=\\\"setting-group mod-list\\\"><div class=\\\"setting-item setting-item-heading\\\"><div class=\\\"setting-item-name\\\">套件摘要</div></div> <div class=\\\"setting-items\\\"></div></section> <!> <!> <section class=\\\"setting-group qa-export-save-group svelte-1way66v\\\"><div class=\\\"setting-items\\\"><div class=\\\"setting-item qa-export-save svelte-1way66v\\\"><div class=\\\"setting-item-info svelte-1way66v\\\"><label class=\\\"setting-item-name\\\" for=\\\"qa-export-path\\\">儲存至檔案</label></div> <div class=\\\"setting-item-control svelte-1way66v\\\"><input id=\\\"qa-export-path\\\" type=\\\"text\\\" placeholder=\\\"QuickAdd Packages/quickadd-package-YYYY-MM-DD.quickadd.json\\\" class=\\\"svelte-1way66v\\\"/> <button type=\\\"button\\\"><!></button></div></div></div></section></div> <div class=\\\"modal-button-container\\\"><button type=\\\"button\\\">取消</button> <button type=\\\"button\\\"><!></button></div></div>\"",
+                    "target": "\"<div class=\\\"qa-package-dialog\\\"><div class=\\\"qa-package-body\\\"><section class=\\\"qa-export-select svelte-1way66v\\\"><div class=\\\"qa-export-controls svelte-1way66v\\\"><div class=\\\"search-input-container svelte-1way66v\\\"><label class=\\\"qa-visually-hidden\\\" for=\\\"qa-export-filter\\\">篩選選項</label> <input id=\\\"qa-export-filter\\\" type=\\\"search\\\" enterkeyhint=\\\"search\\\" placeholder=\\\"篩選選項…\\\" autocapitalize=\\\"off\\\" autocorrect=\\\"off\\\"/></div> <button type=\\\"button\\\">選取顯示項目</button> <button type=\\\"button\\\">Clear selection</button></div> <div class=\\\"setting-group\\\"><div class=\\\"setting-items qa-export-list svelte-1way66v\\\"><!></div></div></section> <section class=\\\"setting-group mod-list\\\"><div class=\\\"setting-item setting-item-heading\\\"><div class=\\\"setting-item-name\\\">套件摘要</div></div> <div class=\\\"setting-items\\\"></div></section> <!> <!> <section class=\\\"setting-group qa-export-save-group svelte-1way66v\\\"><div class=\\\"setting-items\\\"><div class=\\\"setting-item qa-export-save svelte-1way66v\\\"><div class=\\\"setting-item-info svelte-1way66v\\\"><label class=\\\"setting-item-name\\\" for=\\\"qa-export-path\\\">儲存至檔案</label></div> <div class=\\\"setting-item-control svelte-1way66v\\\"><input id=\\\"qa-export-path\\\" type=\\\"text\\\" placeholder=\\\"QuickAdd Packages/quickadd-package-YYYY-MM-DD.quickadd.json\\\" class=\\\"svelte-1way66v\\\"/> <button type=\\\"button\\\"><!></button></div></div></div></section></div> <div class=\\\"modal-button-container\\\"><button type=\\\"button\\\">取消</button> <button type=\\\"button\\\"><!></button></div></div>\""
+                },
+                {
+                    "source": "\"<div class=\\\"qa-package-dialog\\\"><div class=\\\"qa-package-body\\\"><section class=\\\"qa-export-select svelte-1way66v\\\"><div class=\\\"qa-export-controls svelte-1way66v\\\"><div class=\\\"search-input-container svelte-1way66v\\\"><label class=\\\"qa-visually-hidden\\\" for=\\\"qa-export-filter\\\">篩選選項</label> <input id=\\\"qa-export-filter\\\" type=\\\"search\\\" enterkeyhint=\\\"search\\\" placeholder=\\\"篩選選項…\\\" autocapitalize=\\\"off\\\" autocorrect=\\\"off\\\"/></div> <button type=\\\"button\\\">選取顯示項目</button> <button type=\\\"button\\\">Clear selection</button></div> <div class=\\\"setting-group\\\"><div class=\\\"setting-items qa-export-list svelte-1way66v\\\"><!></div></div></section> <section class=\\\"setting-group mod-list\\\"><div class=\\\"setting-item setting-item-heading\\\"><div class=\\\"setting-item-name\\\">套件摘要</div></div> <div class=\\\"setting-items\\\"></div></section> <!> <!> <section class=\\\"setting-group qa-export-save-group svelte-1way66v\\\"><div class=\\\"setting-items\\\"><div class=\\\"setting-item qa-export-save svelte-1way66v\\\"><div class=\\\"setting-item-info svelte-1way66v\\\"><label class=\\\"setting-item-name\\\" for=\\\"qa-export-path\\\">儲存至檔案</label></div> <div class=\\\"setting-item-control svelte-1way66v\\\"><input id=\\\"qa-export-path\\\" type=\\\"text\\\" placeholder=\\\"QuickAdd Packages/quickadd-package-YYYY-MM-DD.quickadd.json\\\" class=\\\"svelte-1way66v\\\"/> <button type=\\\"button\\\"><!></button></div></div></div></section></div> <div class=\\\"modal-button-container\\\"><button type=\\\"button\\\">取消</button> <button type=\\\"button\\\"><!></button></div></div>\"",
+                    "target": "\"<div class=\\\"qa-package-dialog\\\"><div class=\\\"qa-package-body\\\"><section class=\\\"qa-export-select svelte-1way66v\\\"><div class=\\\"qa-export-controls svelte-1way66v\\\"><div class=\\\"search-input-container svelte-1way66v\\\"><label class=\\\"qa-visually-hidden\\\" for=\\\"qa-export-filter\\\">篩選選項</label> <input id=\\\"qa-export-filter\\\" type=\\\"search\\\" enterkeyhint=\\\"search\\\" placeholder=\\\"篩選選項…\\\" autocapitalize=\\\"off\\\" autocorrect=\\\"off\\\"/></div> <button type=\\\"button\\\">選取顯示項目</button> <button type=\\\"button\\\">清除選取項目</button></div> <div class=\\\"setting-group\\\"><div class=\\\"setting-items qa-export-list svelte-1way66v\\\"><!></div></div></section> <section class=\\\"setting-group mod-list\\\"><div class=\\\"setting-item setting-item-heading\\\"><div class=\\\"setting-item-name\\\">套件摘要</div></div> <div class=\\\"setting-items\\\"></div></section> <!> <!> <section class=\\\"setting-group qa-export-save-group svelte-1way66v\\\"><div class=\\\"setting-items\\\"><div class=\\\"setting-item qa-export-save svelte-1way66v\\\"><div class=\\\"setting-item-info svelte-1way66v\\\"><label class=\\\"setting-item-name\\\" for=\\\"qa-export-path\\\">儲存至檔案</label></div> <div class=\\\"setting-item-control svelte-1way66v\\\"><input id=\\\"qa-export-path\\\" type=\\\"text\\\" placeholder=\\\"QuickAdd Packages/quickadd-package-YYYY-MM-DD.quickadd.json\\\" class=\\\"svelte-1way66v\\\"/> <button type=\\\"button\\\"><!></button></div></div></div></section></div> <div class=\\\"modal-button-container\\\"><button type=\\\"button\\\">取消</button> <button type=\\\"button\\\"><!></button></div></div>\""
+                },
+                {
+                    "source": ": bundled but not used by any choice",
+                    "target": ": 已封裝，但未被任何選項使用"
+                },
+                {
+                    "source": "`QuickAdd could not find ${r}. If you moved or renamed the script, update its path in the macro.`",
+                    "target": "`若 ${r}`"
+                },
+                {
+                    "source": "`QuickAdd loaded ${r}, but its default export is not a function. Change it to module.exports = async (params) => { ... } or exports.default = async (params) => { ... }. If you meant to export several functions, use module.exports = { run } and select Script::run.`",
+                    "target": "`若 ${r}`"
+                },
+                {
+                    "source": "`${s.name} doesn't accept the ${d} setting${o.length>1?\"s\":\"\"}, so QuickAdd retried without ${u}.`",
+                    "target": "`${s.name} 不接受 ${d} 設定，因此 QuickAdd 已移除 ${u} 後重試。`"
+                },
+                {
+                    "source": "` You can remove ${u} from this command's advanced settings.`",
+                    "target": "` 你可以在此命令的進階設定中移除 ${u}。`"
+                },
+                {
+                    "source": "`overwriteTemplaterOnce: failed to read ${t.path} before render`",
+                    "target": "`overwriteTemplaterOnce：無法在渲染前讀取 ${t.path}`"
+                },
+                {
+                    "source": "`Templater failed on ${t.path}`",
+                    "target": "`Templater 處理 ${t.path} 時失敗`"
+                },
+                {
+                    "source": "`Could not create file with template at ${e}`",
+                    "target": "`無法使用 ${e} 的範本建立檔案`"
+                },
+                {
+                    "source": "`Create new note: ${e.value}`",
+                    "target": "`建立新筆記：${e.value}`"
+                },
+                {
+                    "source": "`QuickAdd: Choose a file for \"${o.label}\".`",
+                    "target": "`QuickAdd：請為「${o.label}」選擇檔案。`"
+                },
+                {
+                    "source": "`Failed to run user script ${r.name} in \"${i}\"`",
+                    "target": "`無法在「${i}」中執行使用者指令碼 ${r.name}`"
+                },
+                {
+                    "source": "`Failed to evaluate conditional script '${e.scriptPath}'.`",
+                    "target": "`無法評估條件指令碼「${e.scriptPath}」。`"
+                },
+                {
+                    "source": "`Failed to load conditional script '${e.scriptPath}'.`",
+                    "target": "`無法載入條件指令碼「${e.scriptPath}」。`"
+                },
+                {
+                    "source": "`Inserts your \"${t}\" snippet`",
+                    "target": "`插入「${t}」片段`"
+                },
+                {
+                    "source": "`Inserts your \"${v}\" snippet`",
+                    "target": "`插入「${v}」片段`"
+                },
+                {
+                    "source": "`Link to ${t.fileLabel} file`",
+                    "target": "`插入${t.fileLabel}檔案的連結`"
+                },
+                {
+                    "source": "`Choose whether QuickAdd should insert a link to the ${t.fileLabel} file.`",
+                    "target": "`選擇 QuickAdd 是否要插入${t.fileLabel}檔案的連結。`"
+                },
+                {
+                    "source": "`Where QuickAdd writes the link to the ${t.fileLabel} file.`",
+                    "target": "`QuickAdd 寫入${t.fileLabel}檔案連結的位置。`"
+                },
+                {
+                    "source": "`Where to open the ${t.contextLabel} file`",
+                    "target": "`開啟${t.contextLabel}檔案的位置`"
+                },
+                {
+                    "source": "`Recognized property target: ${i}${s}.`",
+                    "target": "`已辨識的屬性目標：${i}${s}。`"
+                },
+                {
+                    "source": "`Recognized filtered picker: ${E1(n.filter)}.`",
+                    "target": "`已辨識的篩選選擇器：${E1(n.filter)}。`"
+                },
+                {
+                    "source": "`Lucide/Obsidian icon id. Leave empty to use ${f(n)}.`",
+                    "target": "`Lucide/Obsidian 圖示 ID。留空時使用 ${f(n)}。`"
+                },
+                {
+                    "source": "`QuickAdd couldn't display ${t.what??\"\"}`",
+                    "target": "`QuickAdd 無法顯示 ${t.what??\"\"}`"
+                },
+                {
+                    "source": "`QuickAdd: Couldn't open the settings for \\u201C${this.title}\\u201D.`",
+                    "target": "`QuickAdd：無法開啟「${this.title}」的設定。`"
+                },
+                {
+                    "source": "`Remove folder ${f(w).id}`",
+                    "target": "`移除資料夾 ${f(w).id}`"
+                },
+                {
+                    "source": "`Reorder ${f(w).id}`",
+                    "target": "`重新排序 ${f(w).id}`"
+                },
+                {
+                    "source": "`Reorder ${wc(t.command)}`",
+                    "target": "`重新排序 ${wc(t.command)}`"
+                },
+                {
+                    "source": "`Reorder ${t.command.name}`",
+                    "target": "`重新排序 ${t.command.name}`"
+                },
+                {
+                    "source": "`${t.command.name??\"\"} for `",
+                    "target": "`${t.command.name??\"\"}：`"
+                },
+                {
+                    "source": "`Configure ${t.command.name}`",
+                    "target": "`設定 ${t.command.name}`"
+                },
+                {
+                    "source": "`${o.desc} Currently using the provider's default.`",
+                    "target": "`${o.desc} 目前使用供應商的預設值。`"
+                },
+                {
+                    "source": "`Estimated tokens: ${this.systemPromptTokenLength}`",
+                    "target": "`預估權杖數：${this.systemPromptTokenLength}`"
+                },
+                {
+                    "source": "`Edit condition for ${f(e)}`",
+                    "target": "`編輯 ${f(e)} 的條件`"
+                },
+                {
+                    "source": "`Edit then branch for ${f(e)}`",
+                    "target": "`編輯 ${f(e)} 的成立分支`"
+                },
+                {
+                    "source": "`Edit else branch for ${f(e)}`",
+                    "target": "`編輯 ${f(e)} 的不成立分支`"
+                },
+                {
+                    "source": "`QuickAdd couldn't read ${t.what??\"\"}`",
+                    "target": "`QuickAdd 無法讀取 ${t.what??\"\"}`"
+                },
+                {
+                    "source": "`${u} ${u===1?\"choice\":\"choices\"}`",
+                    "target": "`${u} 個選項`"
+                },
+                {
+                    "source": "`${d} ${d===1?\"folder\":\"folders\"}`",
+                    "target": "`${d} 個資料夾`"
+                },
+                {
+                    "source": "`Deleting this folder will also delete everything inside it: ${p.join(\" and \")}.`",
+                    "target": "`刪除此資料夾也會刪除其中的所有內容：${p.join(\"、\")}。`"
+                },
+                {
+                    "source": "`Are you sure you want to delete '${r.name}'?`",
+                    "target": "`確定要刪除「${r.name}」嗎？`"
+                },
+                {
+                    "source": "`More options${o()?\" for \"+o():\"\"}`",
+                    "target": "`更多選項${o()?\"：\"+o():\"\"}`"
+                },
+                {
+                    "source": "`Command palette${o()?\": \"+o():\"\"}`",
+                    "target": "`命令面板${o()?\": \"+o():\"\"}`"
+                },
+                {
+                    "source": "`QuickAdd couldn't display ${e()??\"\"}`",
+                    "target": "`QuickAdd 無法顯示 ${e()??\"\"}`"
+                },
+                {
+                    "source": "`QuickAdd: \\u201C${C.name}\\u201D was deleted elsewhere, so your changes to it were not saved.`",
+                    "target": "`QuickAdd：「${C.name}」已在其他地方刪除，因此未儲存你的變更。`"
+                },
+                {
+                    "source": "`QuickAdd: \\u201C${v.name}\\u201D was deleted elsewhere, so it was not renamed.`",
+                    "target": "`QuickAdd：「${v.name}」已在其他地方刪除，因此未重新命名。`"
+                },
+                {
+                    "source": "`The \"choices\" value in data.json is ${e()===null?\"null\":`of type \"${typeof e()}\"`}, but QuickAdd expects a list.`",
+                    "target": "`data.json 中的「choices」值為 ${e()===null?\"null\":`類型「${typeof e()}」`}，但 QuickAdd 需要的是清單。`"
+                },
+                {
+                    "source": "`A file already exists at '${t}'. Saving the package will overwrite it.`",
+                    "target": "`檔案「${t}」已存在，儲存套件將會覆寫它。`"
+                },
+                {
+                    "source": "`View ${f(I)} script${f(I)===1?\"\":\"s\"} above to import.`",
+                    "target": "`請先檢視上方的 ${f(I)} 個指令碼，才能匯入。`"
+                },
+                {
+                    "source": "`Startup macro '${e.name}' failed`",
+                    "target": "`啟動巨集「${e.name}」執行失敗`"
+                },
+                {
+                    "source": "`Create new note: ${e.title}`",
+                    "target": "`建立新筆記：${e.title}`"
+                },
+                {
+                    "source": "`Error running template choice \"${this.choice.name}\"`",
+                    "target": "`執行範本選項「${this.choice.name}」時發生錯誤`"
+                },
+                {
+                    "source": "`'${this.choice.name}' needs to ask what to do because a note with that name already exists, but this run is non-interactive. Set the choice's \"If the file already exists\" behaviour to a specific action (e.g. Increment, Overwrite), or re-run with the ui flag.`",
+                    "target": "`若 ${this.choice.name}`"
+                },
+                {
+                    "source": "`Create new note: ${m}`",
+                    "target": "`建立新筆記：${m}`"
+                },
+                {
+                    "source": "`Created ${i} \\u2014 nothing to capture (no content)`",
+                    "target": "`已建立 ${i}，但沒有可擷取的內容。`"
+                },
+                {
+                    "source": "`Nothing to capture \\u2014 ${i} unchanged`",
+                    "target": "`沒有可擷取的內容，${i} 未變動。`"
+                },
+                {
+                    "source": "`Error running capture choice \"${this.choice.name}\"`",
+                    "target": "`執行擷取選項「${this.choice.name}」時發生錯誤`"
+                },
+                {
+                    "source": "`QuickAdd couldn't read the contents of \"${r.name}\". They're still in data.json.`",
+                    "target": "`QuickAdd 無法讀取 ${r.name}`"
                 }
             ]
         },
