@@ -329,13 +329,13 @@
         "plugin": "obsidian-git",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "2.40.0",
-        "supported_versions": "2.40.0",
+        "version": "2.41.1",
+        "supported_versions": "2.41.1",
         "title": "[zh-tw] Git",
         "description": "Git 繁體中文化與微調",
-        "hash": "1abf41681abf41681abf41681abf4168",
+        "hash": "5a90c12d5a90c12d5a90c12d5a90c12d",
         "created_at": "2026-05-25T03:47:43.793Z",
-        "updated_at": "2026-09-19T20:09:21.805Z"
+        "updated_at": "2026-10-06T17:08:36.958Z"
     },
     {
         "id": "8Ij82i5ZgU9ML2Cfu0lkIUlP8onHfdaB",
