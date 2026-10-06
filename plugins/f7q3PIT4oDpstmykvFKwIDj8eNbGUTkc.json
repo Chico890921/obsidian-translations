@@ -2,797 +2,17 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-git",
-        "version": "2.40.0",
+        "version": "2.41.1",
         "title": "[zh-tw] Git",
         "description": "Git 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.40.0",
+        "supportedVersions": "2.41.1",
         "author": "Chico",
-        "updatedAt": 1789844142249
+        "updatedAt": 1791305029472
     },
     "dict": {
         "main.js": {
             "ast": [
-                {
-                    "type": "AssignmentExpression",
-                    "name": "ariaLabel",
-                    "source": "Automatic routines are currently paused.",
-                    "target": "自動例行程序目前已暫停。"
-                },
-                {
-                    "type": "AssignmentExpression",
-                    "name": "ariaLabel",
-                    "source": "Committing changes...",
-                    "target": "正在提交變更..."
-                },
-                {
-                    "type": "AssignmentExpression",
-                    "name": "ariaLabel",
-                    "source": "Failed on initialization!",
-                    "target": "初始化失敗！"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "Preview",
-                    "target": "預覽"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "Reload",
-                    "target": "重新載入"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Enable to use one interval for commit and another for sync.",
-                    "target": "啟用後，可分別設定提交與同步的時間間隔。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Push commits every X minutes. Set to 0 (default) to disable.",
-                    "target": "每 X 分鐘推送提交。設為 0（預設）可停用。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Pull changes every X minutes. Set to 0 (default) to disable.",
-                    "target": "每 X 分鐘拉取變更。設為 0（預設）可停用。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "You will get a pop up to specify your message.",
-                    "target": "會跳出視窗讓你指定提交訊息。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Available placeholders: {{date}} (see below), {{hostname}} (see below), {{numFiles}} (number of changed files in the commit) and {{files}} (changed files in commit message).",
-                    "target": "可用佔位符：{{date}}（見下方）、{{hostname}}（見下方）、{{numFiles}}（此次提交中變更的檔案數量）以及 {{files}}（提交訊息中的變更檔案）。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "A script that is run using 'sh -c' to generate the commit message. May be used to generate commit messages using AI tools. Available placeholders: {{hostname}}, {{date}}.",
-                    "target": "使用 'sh -c' 執行、用來產生提交訊息的腳本。可用於透過 AI 工具產生提交訊息。可用佔位符：{{hostname}}、{{date}}。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Specify custom hostname for every device. Defaults to the OS hostname if not set on desktop.",
-                    "target": "為每台裝置指定自訂主機名稱。桌面端若未設定，預設使用作業系統主機名稱。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Automatically pull commits when Obsidian starts.",
-                    "target": "Obsidian 啟動時自動拉取提交。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Hunks are sections of grouped line changes right in your editor.",
-                    "target": "差異區塊是在編輯器中成組顯示的行變更。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "This allows you to see your changes right in your editor via colored markers and stage/reset/preview individual hunks.",
-                    "target": "這可讓你在編輯器中透過彩色標記查看變更，並可暫存、重設或預覽單一差異區塊。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Show the author of the commit in the history view.",
-                    "target": "在歷史檢視中顯示提交作者。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Show the date of the commit in the history view. The {{date}} placeholder format is used to display the date.",
-                    "target": "在歷史檢視中顯示提交日期。日期會使用 {{date}} 佔位符格式顯示。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "On slower machines this may cause lags. If so, just disable this option.",
-                    "target": "在較慢的電腦上可能造成延遲。如有這種情況，停用此選項即可。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Milliseconds to wait after file change before refreshing the Source Control View.",
-                    "target": "檔案變更後，重新整理原始碼控制檢視前等待的毫秒數。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Set the style for the diff view. Note that the actual diff in \"Split\" mode is not generated by Git, but the editor itself instead so it may differ from the diff generated by Git. One advantage of this is that you can edit the text in that view.",
-                    "target": "設定差異檢視的樣式。請注意，「分割」模式中的實際差異不是由 Git 產生，而是由編輯器本身產生，因此可能不同於 Git 產生的 diff。這樣的優點是你可以在該檢視中編輯文字。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Disable informative notifications for git operations to minimize distraction (refer to status bar for updates).",
-                    "target": "停用 Git 操作的資訊通知，以減少干擾（更新狀態請查看狀態列）。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Disable error notifications of any kind to minimize distraction (refer to status bar for updates).",
-                    "target": "停用所有錯誤通知，以減少干擾（更新狀態請查看狀態列）。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Don't show notifications when there are no changes to commit or push.",
-                    "target": "沒有可提交或推送的變更時，不顯示通知。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Obsidian must be restarted for the changes to take affect.",
-                    "target": "必須重新啟動 Obsidian，變更才會生效。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Add \"Stage\", \"Unstage\" and \"Add to .gitignore\" actions to the file menu.",
-                    "target": "在檔案選單加入「暫存」、「取消暫存」與「加入 .gitignore」動作。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Type in your password. You won't be able to see it again.",
-                    "target": "輸入你的密碼。之後將無法再次查看。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "These settings usually don't need to be changed, but may be required for special setups.",
-                    "target": "這些設定通常不需要更改，但特殊配置可能會用到。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "\"Commit-and-sync\" and \"pull\" takes care of submodules. Missing features: Conflicted files, count of pulled/pushed/committed files. Tracking branch needs to be set for each submodule.",
-                    "target": "「commit-and-sync」與「拉取」會處理子模組。尚缺功能：衝突檔案、拉取/推送/提交的檔案數量。每個子模組都需要設定追蹤分支。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Whenever a checkout happens on the root repository, recurse the checkout on the submodules (if the branches exist).",
-                    "target": "根儲存庫 checkout 時，也遞迴 checkout 子模組（若分支存在）。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Specify the path to the Git binary/executable. Git should already be in your PATH. Should only be necessary for a custom Git installation.",
-                    "target": "指定 Git 執行檔路徑。Git 通常應已在 PATH 中；只有自訂 Git 安裝時才需要設定。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Use each line for a new environment variable in the format KEY=VALUE .",
-                    "target": "每一行設定一個新的環境變數，格式為 KEY=VALUE。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Use each line for one path",
-                    "target": "每一行設定一個路徑"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "\n            Sets the relative path to the vault from which the Git binary should be executed.\n             Mostly used to set the path to the Git repository, which is only required if the Git repository is below the vault root directory. Use \"\\\\\" instead of \"/\" on Windows.\n            ",
-                    "target": "\n            設定執行 Git 執行檔時相對於儲存庫的路徑。\n             主要用於設定 Git 儲存庫路徑；只有當 Git 儲存庫位於儲存庫根目錄下方時才需要。Windows 上請使用 \"\\\\\" 代替 \"/\"。\n            "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Disables the plugin on this device. This setting is not synced.",
-                    "target": "在此裝置上停用插件。此設定不會同步。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "If you like this Plugin, consider donating to support continued development.",
-                    "target": "如果你喜歡這個插件，可以考慮捐款支持持續開發。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Only available on desktop currently.",
-                    "target": "目前僅桌面端可用。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "If and how the author is displayed",
-                    "target": "是否以及如何顯示作者"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "If and how the date and time of authoring the line is displayed",
-                    "target": "是否以及如何顯示該行的撰寫日期與時間"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Automatic",
-                    "target": "自動"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Split timers for automatic commit and sync",
-                    "target": "將自動提交與同步使用不同計時器"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Auto push interval (minutes)",
-                    "target": "自動推送間隔（分鐘）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Auto pull interval (minutes)",
-                    "target": "自動拉取間隔（分鐘）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Commit message on manual commit",
-                    "target": "手動提交時的提交訊息"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Commit message script",
-                    "target": "提交訊息腳本"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "{{date}} placeholder format",
-                    "target": "{{date}} 佔位符格式"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Preview commit message",
-                    "target": "預覽提交訊息"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "List filenames affected by commit in the commit body",
-                    "target": "在提交內容中列出受影響的檔名"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Pull",
-                    "target": "拉取"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Merge strategy",
-                    "target": "合併策略"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Merge strategy on conflicts",
-                    "target": "衝突時的合併策略"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Pull on startup",
-                    "target": "啟動時拉取"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Push on commit-and-sync",
-                    "target": "commit-and-sync 時推送"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Pull on commit-and-sync",
-                    "target": "commit-and-sync 時拉取"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Signs",
-                    "target": "標記"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Hunk commands",
-                    "target": "差異區塊命令"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Status bar with summary of line changes",
-                    "target": "在狀態列顯示行變更摘要"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Line author information",
-                    "target": "行作者資訊"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "History view",
-                    "target": "歷史檢視"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Show Author",
-                    "target": "顯示作者"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Show Date",
-                    "target": "顯示日期"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Source control view",
-                    "target": "原始碼控制檢視"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Automatically refresh source control view on file changes",
-                    "target": "檔案變更時自動重新整理原始碼控制檢視"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Source control view refresh interval",
-                    "target": "原始碼控制檢視重新整理間隔"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Miscellaneous",
-                    "target": "其他"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Diff view style",
-                    "target": "差異檢視樣式"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Disable informative notifications",
-                    "target": "停用資訊通知"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Disable error notifications",
-                    "target": "停用錯誤通知"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Hide notifications for no changes",
-                    "target": "隱藏無變更通知"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Show status bar",
-                    "target": "顯示狀態列"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "File menu integration",
-                    "target": "檔案選單整合"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Show branch status bar",
-                    "target": "顯示分支狀態列"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Show the count of modified files in the status bar",
-                    "target": "在狀態列顯示已修改檔案數量"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Authentication/commit author",
-                    "target": "驗證/提交作者"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Commit author",
-                    "target": "提交作者"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Username on your git server. E.g. your username on GitHub",
-                    "target": "Git 伺服器上的使用者名稱，例如你的 GitHub 使用者名稱"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Password/Personal access token",
-                    "target": "密碼/個人存取權杖"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Author name for commit",
-                    "target": "提交作者名稱"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Advanced",
-                    "target": "進階"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Update submodules",
-                    "target": "更新子模組"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Submodule recurse checkout/switch",
-                    "target": "子模組遞迴 checkout/切換"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Custom Git binary path",
-                    "target": "自訂 Git 執行檔路徑"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Additional environment variables",
-                    "target": "額外環境變數"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Additional PATH environment variable paths",
-                    "target": "額外 PATH 環境變數路徑"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Reload with new environment variables",
-                    "target": "使用新的環境變數重新載入"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Custom base path (Git repository path)",
-                    "target": "自訂基礎路徑（Git 儲存庫路徑）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Custom Git directory path (Instead of '.git')",
-                    "target": "自訂 Git 目錄路徑（取代 '.git'）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Disable on this device",
-                    "target": "在此裝置上停用"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Support",
-                    "target": "支持"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Donate",
-                    "target": "捐款"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Show commit authoring information next to each line",
-                    "target": "在每一行旁顯示提交作者資訊"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Show commit hash",
-                    "target": "顯示提交雜湊"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Author name display",
-                    "target": "作者名稱顯示"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Authoring date display",
-                    "target": "撰寫日期顯示"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Custom authoring date format",
-                    "target": "自訂撰寫日期格式"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Authoring date display timezone",
-                    "target": "撰寫日期顯示時區"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Oldest age in coloring",
-                    "target": "著色的最舊時間"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Text color",
-                    "target": "文字顏色"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Ignore whitespace and newlines in changes",
-                    "target": "在變更中忽略空白與換行"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setPlaceholder",
-                    "source": "Type your message and select optional the version with the added date.",
-                    "target": "輸入你的訊息，並可選擇附加日期的版本。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setPlaceholder",
-                    "source": "Not supported files will be opened by default app!",
-                    "target": "不支援的檔案將使用預設應用程式開啟！"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setPlaceholder",
-                    "source": "Select branch to checkout",
-                    "target": "選擇要 checkout 的分支"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "Copy Debug Information",
-                    "target": "複製偵錯資訊"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "Debugging and logging:\nYou can always see the logs of this and every other plugin by opening the console with",
-                    "target": "偵錯與記錄：\n你可以使用以下快捷鍵開啟控制台，查看此插件與其他插件的記錄"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "Edit .gitignore",
-                    "target": "編輯 .gitignore"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Copy commit hash",
-                    "target": "複製提交雜湊"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Git: Stage",
-                    "target": "Git：暫存"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Git: Unstage",
-                    "target": "Git：取消暫存"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Git: Add to .gitignore",
-                    "target": "Git：加入 .gitignore"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Open in default app",
-                    "target": "在預設應用程式中開啟"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Authentication failed. Please try with different credentials",
-                    "target": "驗證失敗。請嘗試使用不同的憑證。"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "This takes longer: Getting status",
-                    "target": "這會花較久時間：正在取得狀態"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "ObsidianGit: Base path does not exist",
-                    "target": "ObsidianGit：基礎路徑不存在"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Obsidian must be restarted for the changes to take affect.",
-                    "target": "必須重新啟動 Obsidian，變更才會生效。"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Debug information copied to clipboard. May contain sensitive information!",
-                    "target": "偵錯資訊已複製到剪貼簿。可能包含敏感資訊！"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Successfully deleted repository. Reloading plugin...",
-                    "target": "已成功刪除儲存庫。正在重新載入插件..."
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "No repository found",
-                    "target": "找不到儲存庫"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Discarded all changes in tracked files.",
-                    "target": "已捨棄已追蹤檔案中的所有變更。"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Discarded all files.",
-                    "target": "已捨棄所有檔案。"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Paused automatic routines.",
-                    "target": "已暫停自動例行程序。"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Resumed automatic routines.",
-                    "target": "已恢復自動例行程序。"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Can't find a valid git repository. Please create one via the given command or clone an existing repo.",
-                    "target": "找不到有效的 Git 儲存庫。請透過指定命令建立一個，或 clone 現有儲存庫。"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Automatic routines are currently paused.",
-                    "target": "自動例行程序目前已暫停。"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Initialized new repo",
-                    "target": "已初始化新儲存庫"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Aborted clone",
-                    "target": "已中止 clone"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Invalid depth. Aborting clone.",
-                    "target": "無效深度。正在中止 clone。"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Cloned new repo.",
-                    "target": "已 clone 新儲存庫。"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Please restart Obsidian",
-                    "target": "請重新啟動 Obsidian"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Commit aborted: No commit message provided",
-                    "target": "提交已中止：未提供提交訊息"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "No upstream branch is set. Please select one.",
-                    "target": "尚未設定 upstream 分支。請選擇一個。"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Aborted",
-                    "target": "已中止"
-                },
                 {
                     "type": "ObjectProperty",
                     "name": "name",
@@ -808,6 +28,12 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
+                    "source": "File at commit",
+                    "target": "提交時的檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
                     "source": "Diff view",
                     "target": "差異檢視"
                 },
@@ -818,226 +44,10 @@
                     "target": "差異檢視"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Edit .gitignore",
-                    "target": "編輯 .gitignore"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Open source control view",
-                    "target": "開啟原始碼控制檢視"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Open history view",
-                    "target": "開啟歷史檢視"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Open diff view",
-                    "target": "開啟差異檢視"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Open file on GitHub",
-                    "target": "在 GitHub 上開啟檔案"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Open file history on GitHub",
-                    "target": "在 GitHub 上開啟檔案歷史紀錄"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Pull",
-                    "target": "拉取"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Fetch",
-                    "target": "擷取"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Add file to .gitignore",
-                    "target": "將檔案加入 .gitignore"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Commit-and-sync and then close Obsidian",
-                    "target": "commit-and-sync，然後關閉 Obsidian"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Commit-and-sync with specific message",
-                    "target": "使用指定訊息 commit-and-sync"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Commit all changes",
-                    "target": "提交所有變更"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Commit all changes with specific message",
-                    "target": "使用指定訊息提交所有變更"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Commit",
-                    "target": "提交"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Commit staged",
-                    "target": "提交已暫存項目"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Amend staged",
-                    "target": "修補已暫存項目"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Commit with specific message",
-                    "target": "使用指定訊息提交"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Commit staged with specific message",
-                    "target": "使用指定訊息提交已暫存項目"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Push",
-                    "target": "推送"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Stage current file",
-                    "target": "暫存目前檔案"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Unstage current file",
-                    "target": "取消暫存目前檔案"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Set upstream branch",
-                    "target": "設定 upstream 分支"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "CAUTION: Delete repository",
-                    "target": "注意：刪除儲存庫"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Initialize a new repo",
-                    "target": "初始化新儲存庫"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "List changed files",
-                    "target": "列出已變更檔案"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Switch branch",
-                    "target": "切換分支"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Create new branch",
-                    "target": "建立新分支"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Delete branch",
-                    "target": "刪除分支"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "CAUTION: Discard all changes",
-                    "target": "注意：捨棄所有變更"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Pause/Resume automatic routines",
-                    "target": "暫停/恢復自動例行程序"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Raw command",
-                    "target": "原始命令"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Toggle line author information",
-                    "target": "切換行作者資訊"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Reset hunk",
-                    "target": "重設差異區塊"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Stage hunk",
-                    "target": "暫存差異區塊"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Preview hunk",
-                    "target": "預覽差異區塊"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Go to next hunk",
-                    "target": "前往下一個差異區塊"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Go to previous hunk",
-                    "target": "前往上一個差異區塊"
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Authentication failed. Please try with different credentials",
+                    "target": "驗證失敗。請嘗試使用不同的憑證。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1052,34 +62,154 @@
                     "target": "指定你的密碼/個人存取權杖"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "placeholder",
-                    "source": "Do you really want to delete the repository (.git directory)? plugin action cannot be undone.",
-                    "target": "你確定要刪除此儲存庫（.git 目錄）嗎？此插件動作無法復原。"
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "This takes longer: Getting status",
+                    "target": "這會花較久時間：正在取得狀態"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "ObsidianGit: Base path does not exist",
+                    "target": "ObsidianGit：基礎路徑不存在"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Copy commit hash",
+                    "target": "複製提交雜湊"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "t",
+                    "source": "Show commit hash",
+                    "target": "顯示提交雜湊"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "placeholder",
-                    "source": "Create new branch",
-                    "target": "建立新分支"
+                    "name": "name",
+                    "source": "Git is not ready",
+                    "target": "Git 尚未就緒"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "placeholder",
-                    "source": "Delete branch",
-                    "target": "刪除分支"
+                    "name": "desc",
+                    "source": "When the repository is ready, automatic routines, commit, sync, and editor settings become available. Check the repository paths and Git configuration under Advanced.",
+                    "target": "儲存庫就緒後，即可使用自動例行程序、提交、同步與編輯器設定。請在「進階」中檢查儲存庫路徑與 Git 設定。"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "placeholder",
-                    "source": "This branch isn't merged into HEAD. Force delete?",
-                    "target": "此分支尚未合併到 HEAD。要強制刪除嗎？"
+                    "name": "name",
+                    "source": "Automatic",
+                    "target": "自動"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Git is not ready. When all settings are correct you can configure commit-sync, etc.",
-                    "target": "Git 尚未就緒。所有設定正確後，你可以設定提交同步等功能。"
+                    "name": "desc",
+                    "source": "Scheduled commit, pull, and push routines.",
+                    "target": "排程執行提交、拉取與推送。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Use separate commit and push intervals",
+                    "target": "分別設定提交與推送間隔"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Enable to use one interval for commits and another for pushes.",
+                    "target": "啟用後，可分別設定提交與推送的時間間隔。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Auto push interval (minutes)",
+                    "target": "自動推送間隔（分鐘）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Push commits every X minutes. Set to 0 to disable.",
+                    "target": "每 X 分鐘推送提交。設為 0 可停用。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Auto pull interval (minutes)",
+                    "target": "自動拉取間隔（分鐘）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Pull changes every X minutes. Set to 0 to disable.",
+                    "target": "每 X 分鐘拉取變更。設為 0 可停用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Shows a prompt to specify your message.",
+                    "target": "顯示提示視窗，讓你指定提交訊息。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Placeholders: {{date}}, {{hostname}}, {{numFiles}}, and {{files}}.",
+                    "target": "可用佔位符：{{date}}、{{hostname}}、{{numFiles}} 與 {{files}}。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Commit",
+                    "target": "提交"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Commit messages and placeholders.",
+                    "target": "提交訊息與佔位符。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Stage all changes when nothing is staged",
+                    "target": "未暫存任何項目時，暫存全部變更"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "When using Commit with nothing staged, stage and commit all changes. Commit all changes and Commit-and-sync are unaffected.",
+                    "target": "執行「提交」時，若沒有已暫存的項目，會暫存並提交所有變更。此設定不影響「提交所有變更」與 commit-and-sync。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Commit message on manual commit",
+                    "target": "手動提交時的提交訊息"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Placeholders: {{date}}, {{hostname}}, {{numFiles}}, and {{files}}. Leave empty to require manual input.",
+                    "target": "可用佔位符：{{date}}、{{hostname}}、{{numFiles}} 與 {{files}}。留空則需要手動輸入。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Commit message script",
+                    "target": "提交訊息腳本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Run with 'sh -c' to generate a commit message. Placeholders: {{hostname}}, {{date}}.",
+                    "target": "使用 'sh -c' 執行腳本以產生提交訊息。可用佔位符：{{hostname}}、{{date}}。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "{{date}} placeholder format",
+                    "target": "{{date}} 佔位符格式"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1092,6 +222,666 @@
                     "name": "text",
                     "source": " for more formats.",
                     "target": " 查看更多格式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "{{hostname}} placeholder replacement",
+                    "target": "{{hostname}} 佔位符替換內容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Set a hostname for this device. Defaults to the OS hostname on desktop.",
+                    "target": "設定此裝置的主機名稱。桌面端預設使用作業系統的主機名稱。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Preview commit message",
+                    "target": "預覽提交訊息"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Preview",
+                    "target": "預覽"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "List filenames affected by commit in the commit body",
+                    "target": "在提交內容中列出受影響的檔名"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Sync",
+                    "target": "同步"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Pull, merge, and commit-and-sync behavior.",
+                    "target": "拉取、合併與 commit-and-sync 的行為。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Pull",
+                    "target": "拉取"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Merge strategy",
+                    "target": "合併策略"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "How to integrate remote commits.",
+                    "target": "如何整合遠端提交。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "reset",
+                    "source": "Other sync service (update HEAD only)",
+                    "target": "其他同步服務（只更新 HEAD）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Auto-stash changes when rebasing",
+                    "target": "重定基底時自動貯存變更"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Stash local changes before rebasing and restore them afterward. Restoring may produce conflicts.",
+                    "target": "重定基底前先貯存本機變更，完成後再還原。還原時可能發生衝突。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "git-config",
+                    "source": "Use Git configuration",
+                    "target": "使用 Git 設定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Merge strategy on conflicts",
+                    "target": "衝突時的合併策略"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Choose which side to favor when pulling remote changes.",
+                    "target": "選擇拉取遠端變更時，優先採用哪一方的內容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "none",
+                    "source": "None (Git default)",
+                    "target": "無（Git 預設）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ours",
+                    "source": "Our changes",
+                    "target": "我們的變更"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "theirs",
+                    "source": "Their changes",
+                    "target": "他們的變更"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Pull on startup",
+                    "target": "啟動時拉取"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Automatically pull commits when Obsidian starts.",
+                    "target": "Obsidian 啟動時自動拉取提交。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Commit-and-sync",
+                    "target": "commit-and-sync"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Push on commit-and-sync",
+                    "target": "commit-and-sync 時推送"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Push after committing. Disabling turns commit-and-sync into a local commit, with an optional pull.",
+                    "target": "提交後推送。停用後，commit-and-sync 只會進行本機提交，並依設定決定是否拉取。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Pull on commit-and-sync",
+                    "target": "commit-and-sync 時拉取"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Pull commits as part of commit-and-sync.",
+                    "target": "執行 commit-and-sync 時也拉取提交。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Squash commits before push",
+                    "target": "推送前壓縮提交"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Combine local unpushed commits into one before pushing. No force-push is needed.",
+                    "target": "推送前將尚未推送的本機提交合併為一筆。不需要強制推送。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Editor",
+                    "target": "編輯器"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Hunk controls and line author information.",
+                    "target": "差異區塊控制與行作者資訊。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Hunk management",
+                    "target": "區塊管理"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Signs",
+                    "target": "標記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Show colored change markers in the editor and stage, reset, or preview hunks.",
+                    "target": "在編輯器中顯示彩色變更標記，並可暫存、重設或預覽差異區塊。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Hunk commands",
+                    "target": "差異區塊命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Commands to stage and reset hunks and navigate between them.",
+                    "target": "提供暫存、重設差異區塊，以及在區塊間導覽的命令。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Show line changes in the status bar",
+                    "target": "在狀態列顯示行變更"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Line author information",
+                    "target": "行作者資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Commit hash, author, date, and age coloring next to each line.",
+                    "target": "在每行旁顯示提交雜湊、作者、日期，並依時間著色。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Views",
+                    "target": "檢視"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "History, source control, and diff views.",
+                    "target": "歷史紀錄、原始碼控制與差異檢視。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Source control view",
+                    "target": "原始碼控制檢視"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Automatically refresh source control view on file changes",
+                    "target": "檔案變更時自動重新整理原始碼控制檢視"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Disable on slower machines if this causes lag.",
+                    "target": "若在較慢的電腦上造成延遲，可停用此選項。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Source control view refresh interval",
+                    "target": "原始碼控制檢視重新整理間隔"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Milliseconds to wait after a file change before refreshing. Minimum 500.",
+                    "target": "檔案變更後，重新整理前等待的毫秒數。最小值為 500。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Diff view style",
+                    "target": "差異檢視樣式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Split mode creates an editable diff in the editor, which may differ from Git's diff.",
+                    "target": "分割模式會在編輯器中建立可編輯的差異檢視，結果可能與 Git 產生的差異不同。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Split diff computation time limit (ms)",
+                    "target": "分割差異計算時間上限（毫秒）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Maximum milliseconds to compute a detailed split diff. Read-only diffs use ten times this value.",
+                    "target": "計算詳細分割差異的最長時間（毫秒）。唯讀差異檢視會使用此數值的十倍時間。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "History view",
+                    "target": "歷史檢視"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Show author",
+                    "target": "顯示作者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Show the commit author in the history view.",
+                    "target": "在歷史檢視中顯示提交作者。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Show date",
+                    "target": "顯示日期"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Uses the {{date}} placeholder format.",
+                    "target": "使用 {{date}} 佔位符的格式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Interface",
+                    "target": "介面"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Notifications, status bar, and file menu.",
+                    "target": "通知、狀態列與檔案選單。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Show informational notifications",
+                    "target": "顯示資訊通知"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Show notices about Git operations. The status bar still shows updates when this is off.",
+                    "target": "顯示 Git 操作通知。停用時，狀態列仍會顯示更新。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Show error notifications",
+                    "target": "顯示錯誤通知"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Show error notices for Git operations.",
+                    "target": "顯示 Git 操作的錯誤通知。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Show notifications when nothing changed",
+                    "target": "沒有變更時也顯示通知"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Also notify when a commit or push finds no changes.",
+                    "target": "提交或推送時若沒有變更，也顯示通知。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Show status bar",
+                    "target": "顯示狀態列"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Restart Obsidian for this change to take effect.",
+                    "target": "重新啟動 Obsidian 後，變更才會生效。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "File menu integration",
+                    "target": "檔案選單整合"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Add Stage, Unstage, and Add to .gitignore actions to the file menu.",
+                    "target": "在檔案選單加入「暫存」、「取消暫存」與「加入 .gitignore」動作。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Show branch status bar",
+                    "target": "顯示分支狀態列"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Show the count of modified files in the status bar",
+                    "target": "在狀態列顯示已修改檔案數量"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Identity",
+                    "target": "身分"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Authentication and commit author.",
+                    "target": "驗證與提交作者。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Username on your Git server",
+                    "target": "Git 伺服器上的使用者名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Git server password or access token",
+                    "target": "Git 伺服器密碼或存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Stored on this device. The saved value is not shown again.",
+                    "target": "儲存在此裝置上。儲存後不會再次顯示。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Repository author name",
+                    "target": "儲存庫作者名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Repository author email",
+                    "target": "儲存庫作者電子郵件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Advanced",
+                    "target": "進階"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Repository paths, Git environment, and device options.",
+                    "target": "儲存庫路徑、Git 環境與裝置選項。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Update submodules",
+                    "target": "更新子模組"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Commit-and-sync and pull update submodules. Tracking branches must be configured for each submodule.",
+                    "target": "commit-and-sync 與拉取會更新子模組。每個子模組都必須設定追蹤分支。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Submodule recurse checkout/switch",
+                    "target": "子模組遞迴 checkout/切換"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Recurse checkout on submodules when switching the root repository.",
+                    "target": "切換根儲存庫時，也遞迴 checkout 子模組。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Limit file operations to the vault",
+                    "target": "將檔案操作限制在儲存庫內"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "toggle",
+                    "source": "Limit status, staging, unstaging, discarding, and submodule updates to the vault where possible. Repository history and remote actions remain repository-wide.",
+                    "target": "盡可能將狀態檢查、暫存、取消暫存、捨棄變更與子模組更新限制在 Obsidian 儲存庫內。歷史紀錄與遠端操作仍涵蓋整個 Git 儲存庫。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Custom Git binary path",
+                    "target": "自訂 Git 執行檔路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Path to the Git executable for a custom installation.",
+                    "target": "自訂安裝的 Git 執行檔路徑。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Additional environment variables",
+                    "target": "額外環境變數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "One KEY=VALUE pair per line.",
+                    "target": "每行一組 KEY=VALUE。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Additional PATH environment variable paths",
+                    "target": "額外 PATH 環境變數路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "One path per line.",
+                    "target": "每行一個路徑。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Reload with new environment variables",
+                    "target": "使用新的環境變數重新載入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Removing previous variables requires an Obsidian restart.",
+                    "target": "移除先前的環境變數後，需要重新啟動 Obsidian。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Reload",
+                    "target": "重新載入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Repository folder within the vault",
+                    "target": "儲存庫內的 Git 資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Choose the folder containing the Git repository. Leave empty when the repository is at the root.",
+                    "target": "選擇包含 Git 儲存庫的資料夾。若位於根目錄，請留空。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Custom Git directory path (instead of .git)",
+                    "target": "自訂 Git 目錄路徑（取代 .git）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Resolved from the custom base path or vault root. Restart Obsidian to apply. Use backslashes on Windows.",
+                    "target": "以自訂基礎路徑或儲存庫根目錄為基準解析。重新啟動 Obsidian 後生效。Windows 請使用反斜線。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Disable on this device",
+                    "target": "在此裝置上停用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "This setting is not synced.",
+                    "target": "此設定不會同步。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Obsidian must be restarted for the change to take effect.",
+                    "target": "必須重新啟動 Obsidian，變更才會生效。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Debugging",
+                    "target": "偵錯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Copy debug information",
+                    "target": "複製偵錯資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "May contain sensitive settings.",
+                    "target": "可能包含敏感設定。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Copy",
+                    "target": "複製"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Debug information copied to clipboard. May contain sensitive information!",
+                    "target": "偵錯資訊已複製到剪貼簿。可能包含敏感資訊！"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Debugging and logging",
+                    "target": "偵錯與記錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Support",
+                    "target": "支持"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Donate",
+                    "target": "捐款"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Support continued development of the plugin.",
+                    "target": "支持此插件的持續開發。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show commit authoring information next to each line",
+                    "target": "在每一行旁顯示提交作者資訊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Only available on desktop currently.",
+                    "target": "目前僅桌面端可用。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1110,6 +900,24 @@
                     "name": "text",
                     "source": "Hide everything, to only show the age-colored sidebar.",
                     "target": "隱藏所有內容，只顯示依時間著色的側邊欄。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "inactive",
+                    "source": "Do not follow (default)",
+                    "target": "不追蹤（預設）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "same-commit",
+                    "source": "Follow within same commit",
+                    "target": "在同一提交中追蹤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "all-commits",
+                    "source": "Follow within all commits (maybe slow)",
+                    "target": "在所有提交中追蹤（可能較慢）"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1166,10 +974,112 @@
                     "target": " 提交的資訊會被顯示。"
                 },
                 {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If and how the author is displayed",
+                    "target": "是否以及如何顯示作者"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Author name display",
+                    "target": "作者名稱顯示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "initials",
+                    "source": "Initials (default)",
+                    "target": "縮寫（預設）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "first name",
+                    "source": "First name",
+                    "target": "名字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "last name",
+                    "source": "Last name",
+                    "target": "姓氏"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "full",
+                    "source": "Full name",
+                    "target": "完整姓名"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If and how the date and time of authoring the line is displayed",
+                    "target": "是否以及如何顯示該行的撰寫日期與時間"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Authoring date display",
+                    "target": "撰寫日期顯示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "date",
+                    "source": "Date (default)",
+                    "target": "日期（預設）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "datetime",
+                    "source": "Date and time",
+                    "target": "日期與時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "natural language",
+                    "source": "Natural language",
+                    "target": "自然語言"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Custom authoring date format",
+                    "target": "自訂撰寫日期格式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Authoring date display timezone",
+                    "target": "撰寫日期顯示時區"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "viewer-local",
+                    "source": "My local (default)",
+                    "target": "本地時區（預設）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "author-local",
+                    "source": "Author's local",
+                    "target": "作者的本地時區"
+                },
+                {
                     "type": "ObjectProperty",
                     "name": "text",
                     "source": "The time-zone in which the authoring date should be shown.\nEither your local time-zone (default),\nthe author's time-zone during commit creation or\n",
                     "target": "撰寫日期顯示時使用的時區。\n可以是你的本地時區（預設）、\n作者建立提交時的時區，或\n"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Oldest age in coloring",
+                    "target": "著色的最舊時間"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Text color",
+                    "target": "文字顏色"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1192,8 +1102,20 @@
                 {
                     "type": "ObjectProperty",
                     "name": "text",
+                    "source": " defined by themes (e.g. ",
+                    "target": "，使用佈景主題定義的值（例如 "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
                     "source": " or ",
                     "target": " 或 "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "), because they automatically adapt to theme changes.",
+                    "target": "），因為它們會自動適應佈景主題變更。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1206,6 +1128,12 @@
                     "name": "text",
                     "source": "List of available CSS variables in Obsidian",
                     "target": "Obsidian 可用 CSS 變數清單"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Ignore whitespace and newlines in changes",
+                    "target": "在變更中忽略空白與換行"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1238,40 +1166,334 @@
                     "target": " 以顯示撰寫日期。"
                 },
                 {
+                    "type": "AssignmentExpression",
+                    "name": "ariaLabel",
+                    "source": "Merge in progress. Select for help resolving and finishing the merge.",
+                    "target": "正在合併。點選以查看解決衝突及完成合併的說明。"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "ariaLabel",
+                    "source": "Automatic routines are currently paused.",
+                    "target": "自動例行程序目前已暫停。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "getProgressTooltip",
+                    "source": "Git operation in progress...",
+                    "target": "正在執行 Git 操作..."
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "ariaLabel",
+                    "source": "Committing changes...",
+                    "target": "正在提交變更..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "getProgressTooltip",
+                    "source": "Pushing changes...",
+                    "target": "正在推送變更..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "getProgressTooltip",
+                    "source": "Pulling changes...",
+                    "target": "正在拉取變更..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "getProgressTooltip",
+                    "source": "Fetching from remote...",
+                    "target": "正在從遠端擷取..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "getProgressTooltip",
+                    "source": "Checking out branch...",
+                    "target": "正在 checkout 分支..."
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "ariaLabel",
+                    "source": "Failed on initialization!",
+                    "target": "初始化失敗！"
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "name": "e",
+                    "source": "Merge in progress. Select the merge icon for help resolving and finishing it.",
+                    "target": "正在合併。點選合併圖示，查看解決衝突及完成合併的說明。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "It seems like you are not using GitHub",
+                    "target": "你似乎沒有使用 GitHub"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Edit .gitignore",
+                    "target": "編輯 .gitignore"
+                },
+                {
                     "type": "ObjectProperty",
                     "name": "text",
                     "source": "Save",
                     "target": "儲存"
                 },
                 {
+                    "type": "CallExpression",
+                    "name": "o",
+                    "source": "Close hunk",
+                    "target": "關閉差異區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "o",
+                    "source": "Stage hunk",
+                    "target": "暫存差異區塊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "o",
+                    "source": "Reset hunk",
+                    "target": "重設差異區塊"
+                },
+                {
                     "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Cancel",
-                    "target": "取消"
+                    "name": "name",
+                    "source": "Open source control view",
+                    "target": "開啟原始碼控制檢視"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Corresponds to the GIT_DIR environment variable. Relative paths are resolved from the custom base path, or the vault root when no base path is configured. Requires restart of Obsidian to take effect. Use \"\\\" instead of \"/\" on Windows.",
-                    "target": "對應 GIT_DIR 環境變數。相對路徑會以自訂基礎路徑為基準解析；若未設定基礎路徑，則以儲存庫根目錄為基準。需要重新啟動 Obsidian 才會生效。Windows 上請使用「\\」代替「/」。"
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open history view",
+                    "target": "開啟歷史檢視"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Squash commits before push",
-                    "target": "推送前壓縮提交"
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open diff view",
+                    "target": "開啟差異檢視"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open file on GitHub",
+                    "target": "在 GitHub 上開啟檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open file history on GitHub",
+                    "target": "在 GitHub 上開啟檔案歷史紀錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Fetch",
+                    "target": "擷取"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Switch to remote branch",
+                    "target": "切換至遠端分支"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Add file to .gitignore",
+                    "target": "將檔案加入 .gitignore"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Commit-and-sync and then close Obsidian",
+                    "target": "commit-and-sync，然後關閉 Obsidian"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Commit-and-sync with specific message",
+                    "target": "使用指定訊息 commit-and-sync"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Commit all changes",
+                    "target": "提交所有變更"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Commit all changes with specific message",
+                    "target": "使用指定訊息提交所有變更"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Commit staged",
+                    "target": "提交已暫存項目"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Amend staged",
+                    "target": "修補已暫存項目"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Commit with specific message",
+                    "target": "使用指定訊息提交"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Commit staged with specific message",
+                    "target": "使用指定訊息提交已暫存項目"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Push",
+                    "target": "推送"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Stage current file",
+                    "target": "暫存目前檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Unstage current file",
+                    "target": "取消暫存目前檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Edit remotes",
+                    "target": "編輯遠端"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Remove remote",
+                    "target": "移除遠端"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Set upstream branch",
+                    "target": "設定 upstream 分支"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "CAUTION: Delete repository",
+                    "target": "注意：刪除儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Initialize a new repo",
+                    "target": "初始化新儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Clone an existing remote repo",
+                    "target": "複製現有的遠端儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "List changed files",
+                    "target": "列出已變更檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Switch branch",
+                    "target": "切換分支"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create new branch",
+                    "target": "建立新分支"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Delete branch",
+                    "target": "刪除分支"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "CAUTION: Discard all changes",
+                    "target": "注意：捨棄所有變更"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Pause/Resume automatic routines",
+                    "target": "暫停/恢復自動例行程序"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Paused automatic routines.",
+                    "target": "已暫停自動例行程序。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Resumed automatic routines.",
+                    "target": "已恢復自動例行程序。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Raw command",
+                    "target": "原始命令"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle line author information",
+                    "target": "切換行作者資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Preview hunk",
+                    "target": "預覽差異區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Go to next hunk",
+                    "target": "前往下一個差異區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Go to previous hunk",
+                    "target": "前往上一個差異區塊"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setTitle",
                     "source": "Cut",
                     "target": "剪下"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Copy",
-                    "target": "複製"
                 },
                 {
                     "type": "CallExpression",
@@ -1293,45 +1515,75 @@
                 },
                 {
                     "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "On commit-and-sync, squash all local unpushed commits into a single commit right before pushing. Keeps the remote history clean when committing often. Only unpushed commits are rewritten, so no force-push is needed.",
-                    "target": "執行 commit-and-sync 時，會在推送前將所有尚未推送的本機提交壓縮成單一提交。這能在頻繁提交時保持遠端歷史記錄整潔。只會改寫尚未推送的提交，因此不需要強制推送。"
+                    "name": "setText",
+                    "source": "Merge in progress",
+                    "target": "正在合併"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "When using Commit with nothing staged, stage and commit all changes. When disabled, changes must be staged first. Commit all changes and Commit-and-sync are unaffected.",
-                    "target": "執行「提交」時，若沒有已暫存的項目，會暫存並提交所有變更。停用後，必須先暫存變更。此設定不影響「提交所有變更」與 commit-and-sync。"
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Git is combining the version in your vault with changes from another version. The merge must be committed before Obsidian Git can push or resume automatic commits.",
+                    "target": "Git 正在將儲存庫中的版本與另一個版本的變更合併。必須先提交合併結果，Obsidian Git 才能推送或恢復自動提交。"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Maximum time in milliseconds to compute a detailed split diff. Higher values improve accuracy for large files with many changes but may reduce responsiveness. Read-only diffs use ten times this value.",
-                    "target": "計算詳細分割差異的最長時間（毫秒）。提高數值可改善大型檔案含有大量變更時的準確度，但可能降低回應速度。唯讀差異檢視會使用此數值的十倍時間。"
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Resolve the conflicts",
+                    "target": "解決衝突"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Commit",
-                    "target": "提交"
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Git could not combine some parts automatically. Open each conflicted file and review every highlighted conflict block.",
+                    "target": "Git 無法自動合併部分內容。請開啟每個衝突檔案，逐一檢查醒目標示的衝突區塊。"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Stage all changes when nothing is staged",
-                    "target": "未暫存任何項目時，暫存全部變更"
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Choose “Keep ours” for your local text, “Keep theirs” for the incoming text, “Keep both”, or edit the block manually.",
+                    "target": "選擇「保留我們的版本」以保留本機文字、「保留他們的版本」以保留傳入文字，或選擇「兩者皆保留」。也可以手動編輯區塊。"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Split diff view timeout",
-                    "target": "分割差異檢視逾時"
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "When the file's conflict count reaches zero, select the plus icon next to it to mark it as resolved.",
+                    "target": "檔案的衝突數量歸零後，點選旁邊的加號圖示，將其標記為已解決。"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Commit staged",
-                    "target": "提交已暫存項目"
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Repeat this for every file in the Conflicts section.",
+                    "target": "對「衝突」區段中的每個檔案重複上述步驟。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "All conflicts have been marked as resolved.",
+                    "target": "所有衝突都已標記為已解決。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "The merge is still active until you commit the staged changes.",
+                    "target": "提交已暫存的變更前，合併仍未完成。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Finish the merge",
+                    "target": "完成合併"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "After the Conflicts section is empty, enter a commit message and commit the staged changes. This finishes the merge. You can then push normally.",
+                    "target": "「衝突」區段清空後，輸入提交訊息並提交已暫存的變更，即可完成合併。接著就能正常推送。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Got it",
+                    "target": "了解"
                 },
                 {
                     "type": "CallExpression",
@@ -1342,27 +1594,341 @@
                 {
                     "type": "CallExpression",
                     "name": "setTitle",
-                    "source": "Amend staged",
-                    "target": "修補已暫存項目"
+                    "source": "Commit staged and sync",
+                    "target": "提交已暫存項目並同步"
                 },
                 {
                     "type": "CallExpression",
-                    "name": "setTitle",
-                    "source": "Commit staged and sync",
-                    "target": "提交已暫存項目並同步"
+                    "name": "setAttr",
+                    "source": "Git diff of the current editor",
+                    "target": "目前編輯器的 Git 差異"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ours",
+                    "source": "Keep ours",
+                    "target": "保留我們的版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "theirs",
+                    "source": "Keep theirs",
+                    "target": "保留他們的版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "both",
+                    "source": "Keep both",
+                    "target": "兩者皆保留"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "base",
+                    "source": "Keep base",
+                    "target": "保留基底版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ours",
+                    "source": "Keep all ours",
+                    "target": "全部保留我們的版本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "theirs",
+                    "source": "Keep all theirs",
+                    "target": "全部保留他們的版本"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "base",
+                    "source": "Keep all base",
+                    "target": "全部保留基底版本"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Type your message and select optional the version with the added date.",
+                    "target": "輸入你的訊息，並可選擇附加日期的版本。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Select branch to checkout",
+                    "target": "選擇要 checkout 的分支"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Not supported files will be opened by default app!",
+                    "target": "不支援的檔案將使用預設應用程式開啟！"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "Initialized new repo",
+                    "target": "已初始化新儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Do you really want to delete the repository (.git directory)? This action cannot be undone.",
+                    "target": "你確定要刪除此儲存庫（.git 目錄）嗎？此動作無法復原。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "Successfully deleted repository. Reloading plugin...",
+                    "target": "已成功刪除儲存庫。正在重新載入插件..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "No repository found",
+                    "target": "找不到儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Enter remote URL",
+                    "target": "輸入遠端 URL"
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "name": "t",
+                    "source": "Vault Root",
+                    "target": "儲存庫根目錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Enter directory for clone. It needs to be empty or not existent.",
+                    "target": "輸入複製儲存庫的目錄。該目錄必須為空或尚未存在。"
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "name": "c",
+                    "source": "DELETE ALL YOUR LOCAL CONFIG AND PLUGINS",
+                    "target": "刪除所有本機設定與插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Specify depth of clone. Leave empty for full clone.",
+                    "target": "指定複製深度。留空以完整複製。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "Cloned new repo.",
+                    "target": "已 clone 新儲存庫。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "Please restart Obsidian",
+                    "target": "請重新啟動 Obsidian"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "Aborted clone",
+                    "target": "已中止 clone"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "Invalid depth. Aborting clone.",
+                    "target": "無效深度。正在中止 clone。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayError",
+                    "source": "Too many changes to display",
+                    "target": "變更過多，無法全部顯示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "Pull: Everything is up-to-date",
+                    "target": "拉取：所有內容皆為最新"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Auto backup: Please enter a custom commit message. Leave empty to abort",
+                    "target": "自動備份：請輸入自訂提交訊息。留空以中止"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "Stdout from commit message script is empty. Using default message.",
+                    "target": "提交訊息腳本未輸出任何內容，改用預設訊息。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "displayMessage",
                     "source": "Nothing staged. Stage changes first or use Commit all changes.",
                     "target": "尚未暫存任何變更。請先暫存變更，或使用「提交所有變更」。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "No changes to commit",
+                    "target": "沒有可提交的變更"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayError",
+                    "source": "Did not commit automatically because a merge is in progress. Commit it manually.",
+                    "target": "合併仍在進行，因此未自動提交。請手動提交。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "Pushed to remote",
+                    "target": "已推送至遠端"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "No commits to push",
+                    "target": "沒有可推送的提交"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayError",
+                    "source": "No current branch found. Cannot push.",
+                    "target": "找不到目前分支，無法推送。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayError",
+                    "source": "Cannot push while a merge is still in progress",
+                    "target": "合併仍在進行，無法推送"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "Fetched from remote",
+                    "target": "已從遠端擷取"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "This branch isn't merged into HEAD. Force delete?",
+                    "target": "此分支尚未合併到 HEAD。要強制刪除嗎？"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Upstream branch will be created on first push. Skipping pull.\nUse set upstream branch command to set it manually if desired.",
+                    "target": "首次推送時會建立上游分支，目前略過拉取。\n如需手動指定，請使用「設定 upstream 分支」命令。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No upstream branch is set. Please select one.",
+                    "target": "尚未設定 upstream 分支。請選擇一個。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayError",
+                    "source": "Aborted. No upstream-branch is set!",
+                    "target": "已中止。尚未設定上游分支！"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Select or create a new remote by typing its name and selecting it",
+                    "target": "選擇遠端，或輸入新名稱並選取，以建立新的遠端"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayMessage",
+                    "source": "Fetching remote branches",
+                    "target": "正在擷取遠端分支"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Select or create a new remote branch by typing its name and selecting it",
+                    "target": "選擇遠端分支，或輸入新名稱並選取，以建立新的遠端分支"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Select a remote",
+                    "target": "選擇遠端"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addRibbonIcon",
+                    "source": "Open Git source control",
+                    "target": "開啟 Git 原始碼控制"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "display",
+                    "source": "Git View",
+                    "target": "Git 檢視"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Git: Stage",
+                    "target": "Git：暫存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Git: Unstage",
+                    "target": "Git：取消暫存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Git: Add to .gitignore",
+                    "target": "Git：加入 .gitignore"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Open in default app",
+                    "target": "在預設應用程式中開啟"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Show in system explorer",
+                    "target": "在系統檔案總管中顯示"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Cannot find a Git repository. Please create one via the given command, clone an existing repo or configure repo location.",
+                    "target": "找不到 Git 儲存庫。請使用指定命令建立儲存庫、複製現有儲存庫，或設定儲存庫位置。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayError",
+                    "source": "Git: Going into offline mode. Future network errors will no longer be displayed.",
+                    "target": "Git：正在進入離線模式。之後將不再顯示網路錯誤。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Aborted",
+                    "target": "已中止"
                 }
             ],
             "regex": [
-                {
-                    "source": "Notice(\"Initializing pull\")",
-                    "target": "Notice(\"正在初始化拉取\")"
-                },
                 {
                     "source": "Notice(\"Initializing clone\")",
                     "target": "Notice(\"正在初始化複製\")"
@@ -1372,64 +1938,8 @@
                     "target": "Notice(\"正在初始化擷取\")"
                 },
                 {
-                    "source": "setName(`Auto ${n} interval (minutes)`)",
-                    "target": "setName(`自動 ${n} 間隔（分鐘）`)"
-                },
-                {
-                    "source": "setDesc(`${i.settings.differentIntervalCommitAndPush?\"Commit\":\"Commit and sync\"} changes every X minutes. Set to 0 (default) to disable. (See below setting for further configuration!)`)",
-                    "target": "setDesc(`每 X 分鐘${i.settings.differentIntervalCommitAndPush?\"提交\":\"提交並同步\"}一次變更。設為 0（預設）可停用。（更多設定見下方！）`)"
-                },
-                {
-                    "source": "setName(`Auto ${n} after stopping file edits`)",
-                    "target": "setName(`停止編輯檔案後自動 ${n}`)"
-                },
-                {
-                    "source": "setName(`Auto ${n} after latest commit`)",
-                    "target": "setName(`最新提交後自動 ${n}`)"
-                },
-                {
-                    "source": "setDesc(`If turned on, sets last auto ${n} timestamp to the latest commit timestamp. This reduces the frequency of auto ${n} when doing manual commits.`)",
-                    "target": "setDesc(`啟用後，會將上次自動 ${n} 的時間戳設為最新提交時間。這會降低手動提交時自動 ${n} 的頻率。`)"
-                },
-                {
-                    "source": "setName(`Auto ${n} only staged files`)",
-                    "target": "setName(`自動 ${n} 時只處理已暫存檔案`)"
-                },
-                {
-                    "source": "setDesc(`If turned on, only staged files are committed on ${n}. If turned off, all changed files are committed.`)",
-                    "target": "setDesc(`啟用後，${n} 時只會提交已暫存檔案。停用後，會提交所有已變更檔案。`)"
-                },
-                {
-                    "source": "setName(`Specify custom commit message on auto ${n}`)",
-                    "target": "setName(`自動 ${n} 時指定自訂提交訊息`)"
-                },
-                {
-                    "source": "setName(`Commit message on auto ${n}`)",
-                    "target": "setName(`自動 ${n} 時的提交訊息`)"
-                },
-                {
-                    "source": "setDesc(`Most of the time you want to push after committing. Turning this off turns a commit-and-sync action into commit ${i.settings.pullBeforePush?\"and pull \":\"\"}only. It will still be called commit-and-sync.`)",
-                    "target": "setDesc(`多數時候你會希望提交後推送。關閉此選項後，commit-and-sync 動作會變成只提交${i.settings.pullBeforePush?\"並拉取\":\"\"}。名稱仍會顯示為 commit-and-sync。`)"
-                },
-                {
-                    "source": "setDesc(`On commit-and-sync, pull commits as well. Turning this off turns a commit-and-sync action into commit ${i.settings.disablePush?\"\":\"and push \"}only.`)",
-                    "target": "setDesc(`commit-and-sync 時也拉取提交。關閉此選項後，commit-and-sync 動作會變成只提交${i.settings.disablePush?\"\":\"並推送\"}。`)"
-                },
-                {
-                    "source": "setText(`Color for ${n} commits`)",
-                    "target": "setText(`${n} 提交的顏色`)"
-                },
-                {
                     "source": "setText(`${this.discardCount==0?\"Delete\":\"Discard\"} ${s}`)",
                     "target": "setText(`${this.discardCount==0?\"刪除\":\"捨棄\"} ${s}`)"
-                },
-                {
-                    "source": "Notice(`Cloning new repo into \"${s}\"`)",
-                    "target": "Notice(`正在將新儲存庫 clone 到「${s}」`)"
-                },
-                {
-                    "source": "text:`Currently: ${n}`",
-                    "target": "text:`目前：${n}`"
                 },
                 {
                     "source": "text:`The oldest age in the line author coloring. Everything older will have the same color.\nSmallest valid age is \"1d\". Currently: ${s}`",
@@ -1440,108 +1950,428 @@
                     "target": "text:\"找不到檔案：\""
                 },
                 {
-                    "source": "i.settings.differentIntervalCommitAndPush?n=\"commit\":n=\"commit-and-sync\";",
-                    "target": "i.settings.differentIntervalCommitAndPush?n=\"提交\":n=\"commit-and-sync\";"
-                },
-                {
-                    "source": "setDesc(\"Available placeholders: {{date}} (see below), {{hostname}} (see below), {{numFiles}} (number of changed files in the commit) and {{files}} (changed files in commit message). Leave empty to require manual input on each commit.\")",
-                    "target": "setDesc(\"可用佔位符：{{date}}（見下方）、{{hostname}}（見下方）、{{numFiles}}（此次提交中變更的檔案數量）以及 {{files}}（提交訊息中的變更檔案）。留空則每次提交都需要手動輸入。\")"
-                },
-                {
-                    "source": "setName(\"{{hostname}} placeholder replacement\")",
-                    "target": "setName(\"{{hostname}} 佔位符替換內容\")"
-                },
-                {
-                    "source": "setDesc(\"Decide how to integrate commits from your remote branch into your local branch.\")",
-                    "target": "setDesc(\"決定如何將遠端分支的提交整合到本機分支。\")"
-                },
-                {
-                    "source": "{merge:\"Merge\",rebase:\"Rebase\",reset:\"Other sync service (Only updates the HEAD without touching the working directory)\"}",
-                    "target": "{merge:\"合併\",rebase:\"重定基底\",reset:\"其他同步服務（只更新 HEAD，不碰工作目錄）\"}"
-                },
-                {
-                    "source": "setDesc(\"Decide how to solve conflicts when pulling remote changes. This can be used to favor your local changes or the remote changes automatically.\")",
-                    "target": "setDesc(\"決定拉取遠端變更時如何解決衝突。可用來自動偏好本機變更或遠端變更。\")"
-                },
-                {
-                    "source": "{none:\"None (git default)\",ours:\"Our changes\",theirs:\"Their changes\"}",
-                    "target": "{none:\"無（Git 預設）\",ours:\"我們的變更\",theirs:\"他們的變更\"}"
-                },
-                {
-                    "source": "setName(\"Commit-and-sync\")",
-                    "target": "setName(\"commit-and-sync\")"
-                },
-                {
-                    "source": "setDesc(\"Commit-and-sync with default settings means staging everything -> committing -> pulling -> pushing. Ideally this is a single action that you do regularly to keep your local and remote repository in sync.\")",
-                    "target": "setDesc(\"使用預設設定時，commit-and-sync代表：暫存所有內容 -> 提交 -> 拉取 -> 推送。理想情況下，這是你定期執行、用來讓本機與遠端儲存庫保持同步的單一動作。\")"
-                },
-                {
-                    "source": "setName(\"Hunk management\")",
-                    "target": "setName(\"區塊管理\")"
-                },
-                {
-                    "source": "setDesc(\"Adds commands to stage/reset individual Git diff hunks and navigate between them via 'Go to next/prev hunk' commands.\")",
-                    "target": "setDesc(\"新增用來暫存/重設個別 Git 差異區塊的命令，並可透過「前往下一個/上一個區塊」命令在區塊間導覽。\")"
-                },
-                {
                     "source": "{disabled:\"Disabled\",colored:\"Colored\",monochrome:\"Monochrome\"}",
                     "target": "{disabled:\"停用\",colored:\"彩色\",monochrome:\"單色\"}"
-                },
-                {
-                    "source": "setDesc(\"Removing previously added environment variables will not take effect until Obsidian is restarted.\")",
-                    "target": "setDesc(\"移除先前新增的環境變數後，要重新啟動 Obsidian 才會生效。\")"
                 },
                 {
                     "source": "{hide:\"Hide\",full:\"Full\",initials:\"Initials\"}",
                     "target": "{hide:\"隱藏\",full:\"完整\",initials:\"縮寫\"}"
                 },
                 {
-                    "source": "setName(\"Author email for commit\")",
-                    "target": "setName(\"提交用作者電子郵件\")"
-                },
-                {
                     "source": "setName(\"Follow movement and copies across files and commits\")",
                     "target": "setName(\"跨檔案與提交追蹤移動和複製\")"
                 },
                 {
-                    "source": "setTooltip(`Set to default: \"${tt.commitMessage}\"`)",
-                    "target": "setTooltip(`設為預設值：「${tt.commitMessage}」`)"
+                    "source": "\"Enter a whole number.\"",
+                    "target": "\"請輸入整數。\""
                 },
                 {
-                    "source": "setText(`Are you sure you want to DELETE the ${xu(this.deleteCount,\"untracked file\")}? They are deleted according to your Obsidian trash settting.`)",
-                    "target": "setText(`你確定要刪除 ${xu(this.deleteCount,\"個未追蹤檔案\",\"個未追蹤檔案\")} 嗎？它們會依照你的 Obsidian 垃圾桶設定刪除。`)"
+                    "source": "\"Commit\"",
+                    "target": "\"提交\""
                 },
                 {
-                    "source": "setText(`Are you sure you want to discard ALL changes in ${xu(this.discardCount,\"tracked file\")}?`)",
-                    "target": "setText(`你確定要捨棄 ${xu(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")} 中的所有變更嗎？`)"
+                    "source": "\"Changes only this repository's Git config. Leave blank to use the global author name, if configured.\"",
+                    "target": "\"只變更此儲存庫的 Git 設定。留空可使用已設定的全域作者名稱。\""
                 },
                 {
-                    "source": "text:` Specify custom date format. E.g. \"${fv}. See `",
-                    "target": "text:` 指定自訂日期格式。例如「${fv}」。請參閱 `"
+                    "source": "\"Saved in this repository's Git config. Mobile Git has no global author name fallback.\"",
+                    "target": "\"儲存在此儲存庫的 Git 設定中。行動版 Git 不會改用全域作者名稱。\""
                 },
                 {
-                    "source": "text:` and for matches (at least ${Hd} characters) within the same (or all) commit(s), `",
-                    "target": "text:`，並針對同一個（或所有）提交中符合條件（至少 ${Hd} 個字元）的內容，`"
+                    "source": "\"Changes only this repository's Git config. Leave blank to use the global author email, if configured.\"",
+                    "target": "\"只變更此儲存庫的 Git 設定。留空可使用已設定的全域作者電子郵件。\""
                 },
                 {
-                    "source": "text:`${this.discardCount>0?\"Discard\":\"Delete\"} all ${xu(r,\"file\")}`",
-                    "target": "text:`${this.discardCount>0?\"捨棄\":\"刪除\"}所有 ${xu(r,\"個檔案\",\"個檔案\")}`"
+                    "source": "\"Saved in this repository's Git config. Mobile Git has no global author email fallback.\"",
+                    "target": "\"儲存在此儲存庫的 Git 設定中。行動版 Git 不會改用全域作者電子郵件。\""
                 },
                 {
-                    "source": "text:`Discard all ${xu(this.discardCount,\"tracked file\")}`",
-                    "target": "text:`捨棄所有 ${xu(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")}`"
+                    "source": "\"Leave empty when the repository is at the root.\"",
+                    "target": "\"儲存庫位於根目錄時，請留空。\""
                 },
                 {
-                    "source": "setDesc(`Requires the ${n} interval not to be 0.\n                        If turned on, do auto ${n} every ${Sk(i.settings.autoSaveInterval)} after stopping file edits.\n                        This also prevents auto ${n} while editing a file. If turned off, it's independent from the last file edit.`)",
-                    "target": "setDesc(`需要將 ${n} 間隔設為非 0。\n                        啟用後，停止編輯檔案後每 ${Sk(i.settings.autoSaveInterval)} 自動 ${n}。\n                        這也會避免在編輯檔案時自動 ${n}。停用後，將不受最後一次檔案編輯時間影響。`)"
+                    "source": "\"Choose an existing folder in this vault.\"",
+                    "target": "\"請選擇此儲存庫中現有的資料夾。\""
                 },
                 {
-                    "source": "function I(Z){let De=Z?\" and sync\":\"\";return F(E)?\"Resolve conflicts before committing\":F(A)?Z?\"Commit all changes and sync\":F(C)>0?`Commit ${F(C)} staged ${F(C)===1?\"file\":\"files\"}${De}`:r().settings.autoStageOnEmptyIndex?`Stage and commit all ${F(x)} changed ${F(x)===1?\"file\":\"files\"}${De}`:\"Nothing staged — stage changes before committing\":Z?\"Sync (no changes to commit)\":\"No changes to commit\"}",
-                    "target": "function I(Z){let De=Z?\"並同步\":\"\";return F(E)?\"請先解決衝突再提交\":F(A)?Z?\"提交所有變更並同步\":F(C)>0?`提交 ${F(C)} 個已暫存${F(C)===1?\"檔案\":\"檔案\"}${De}`:r().settings.autoStageOnEmptyIndex?`暫存並提交全部 ${F(x)} 個已變更${F(x)===1?\"檔案\":\"檔案\"}${De}`:\"尚未暫存任何變更，請先暫存再提交\":Z?\"同步（沒有可提交的變更）\":\"沒有可提交的變更\"}"
+                    "source": "\"Git is offline\"",
+                    "target": "\"Git 處於離線模式\""
                 },
                 {
-                    "source": "function Sk(t){return t===1?\"1 minute\":`${t} minutes`}",
-                    "target": "function Sk(t){return t===1?\"1 分鐘\":`${t} 分鐘`}"
+                    "source": "\"Git is ready\"",
+                    "target": "\"Git 已就緒\""
+                },
+                {
+                    "source": "\"Stage hunk\"",
+                    "target": "\"暫存差異區塊\""
+                },
+                {
+                    "source": "\"Unstage hunk\"",
+                    "target": "\"取消暫存差異區塊\""
+                },
+                {
+                    "source": "\"Resolve conflicts before committing\"",
+                    "target": "\"請先解決衝突再提交\""
+                },
+                {
+                    "source": "\"Finish merge and sync\"",
+                    "target": "\"完成合併並同步\""
+                },
+                {
+                    "source": "\"Finish merge\"",
+                    "target": "\"完成合併\""
+                },
+                {
+                    "source": "\"Commit all changes and sync\"",
+                    "target": "\"提交所有變更並同步\""
+                },
+                {
+                    "source": "\"Nothing staged — stage changes before committing\"",
+                    "target": "\"尚未暫存任何變更，請先暫存再提交\""
+                },
+                {
+                    "source": "\"Sync (no changes to commit)\"",
+                    "target": "\"同步（沒有可提交的變更）\""
+                },
+                {
+                    "source": "\"No changes to commit\"",
+                    "target": "\"沒有可提交的變更\""
+                },
+                {
+                    "source": "\"Abort clone\"",
+                    "target": "\"中止複製\""
+                },
+                {
+                    "source": "\"Discarded all files.\"",
+                    "target": "\"已捨棄所有檔案。\""
+                },
+                {
+                    "source": "\"Discarded all changes in tracked files.\"",
+                    "target": "\"已捨棄已追蹤檔案中的所有變更。\""
+                },
+                {
+                    "source": "\"Merge conflict. Resolve conflicts and commit manually.\"",
+                    "target": "\"發生合併衝突。請解決衝突後手動提交。\""
+                },
+                {
+                    "source": "`Global: ${l}`",
+                    "target": "`全域：${l}`"
+                },
+                {
+                    "source": "`Auto ${s} interval (minutes)`",
+                    "target": "`自動${s}間隔（分鐘）`"
+                },
+                {
+                    "source": "`${this.settings.differentIntervalCommitAndPush?\"提交\":\"Commit and sync\"} changes every X minutes. Set to 0 to disable.`",
+                    "target": "`每 X 分鐘${this.settings.differentIntervalCommitAndPush?\"提交\":\"提交並同步\"}一次變更。設為 0 可停用。`"
+                },
+                {
+                    "source": "`Auto ${s} after stopping file edits`",
+                    "target": "`停止編輯檔案後自動${s}`"
+                },
+                {
+                    "source": "`Requires the ${s} interval not to be 0. Waits for file edits to stop before the next auto ${s}.`",
+                    "target": "`需要將${s}間隔設為非 0。等待停止編輯檔案後，再進行下一次自動${s}。`"
+                },
+                {
+                    "source": "`Start the automatic ${s} timer from the latest commit`",
+                    "target": "`從最新提交時間開始計算自動${s}間隔`"
+                },
+                {
+                    "source": "`Sets the last auto ${s} timestamp to the latest commit timestamp, reducing the frequency after manual commits.`",
+                    "target": "`將上次自動${s}的時間戳設為最新提交時間，以降低手動提交後的自動執行頻率。`"
+                },
+                {
+                    "source": "`Auto ${s} only staged files`",
+                    "target": "`自動${s}時只處理已暫存檔案`"
+                },
+                {
+                    "source": "`Only staged files are committed on auto ${s}.`",
+                    "target": "`自動${s}時只會提交已暫存檔案。`"
+                },
+                {
+                    "source": "`Specify custom commit message on auto ${s}`",
+                    "target": "`自動${s}時指定自訂提交訊息`"
+                },
+                {
+                    "source": "`Commit message on auto ${s}`",
+                    "target": "`自動${s}時的提交訊息`"
+                },
+                {
+                    "source": "`Set to default: \"${Yr.commitMessage}\"`",
+                    "target": "`設為預設值：「${Yr.commitMessage}」`"
+                },
+                {
+                    "source": "`Example: ${av}. See `",
+                    "target": "`例如：${av}。請參閱 `"
+                },
+                {
+                    "source": "` and for matches (at least ${uh} characters) within the same (or all) commit(s), `",
+                    "target": "`，並針對同一個（或所有）提交中符合條件（至少 ${uh} 個字元）的內容，`"
+                },
+                {
+                    "source": "`oldest (${this.settings.lineAuthor.coloringMaxAge} or older)`",
+                    "target": "`最舊（${this.settings.lineAuthor.coloringMaxAge} 或更早）`"
+                },
+                {
+                    "source": "`Color for ${i} commits`",
+                    "target": "`${i}提交的顏色`"
+                },
+                {
+                    "source": "`abcdef Author Name ${o}`",
+                    "target": "`abcdef 作者名稱 ${o}`"
+                },
+                {
+                    "source": "`Currently: ${i}`",
+                    "target": "`目前：${i}`"
+                },
+                {
+                    "source": "`${i.asDays()} days`",
+                    "target": "`${i.asDays()} 天`"
+                },
+                {
+                    "source": "`${t?\"Offline: \":\"\"}Last Commit: ${i}`",
+                    "target": "`${t?\"離線：\":\"\"}最近提交：${i}`"
+                },
+                {
+                    "source": "`\n(${this.unPushedCommits} unpushed commits)`",
+                    "target": "`\n（${this.unPushedCommits} 筆尚未推送的提交）`"
+                },
+                {
+                    "source": "`Commit ${T(D)} staged ${T(D)===1?\"file\":\"files\"}${Q}`",
+                    "target": "`提交 ${T(D)} 個已暫存${T(D)===1?\"檔案\":\"檔案\"}${Q}`"
+                },
+                {
+                    "source": "`Stage and commit all ${T(O)} changed ${T(O)===1?\"file\":\"files\"}${Q}`",
+                    "target": "`暫存並提交全部 ${T(O)} 個已變更${T(O)===1?\"檔案\":\"檔案\"}${Q}`"
+                },
+                {
+                    "source": "`${t.length} conflict${t.length===1?\"\":\"s\"} in file`",
+                    "target": "`檔案中有 ${t.length} 個衝突${t.length===1?\"\":\"\"}`"
+                },
+                {
+                    "source": "`Untracked | ${e.vaultPath}`",
+                    "target": "`未追蹤 | ${e.vaultPath}`"
+                },
+                {
+                    "source": "`Working Dir: ${e.workingDir} `",
+                    "target": "`工作目錄：${e.workingDir} `"
+                },
+                {
+                    "source": "`Index: ${e.index}`",
+                    "target": "`索引：${e.index}`"
+                },
+                {
+                    "source": "`files in \"${this.path}\"`",
+                    "target": "`「${this.path}」中的檔案`"
+                },
+                {
+                    "source": "`Are you sure you want to DELETE the ${Gu(this.deleteCount,\"untracked file\")}? They are deleted according to your Obsidian trash settting.`",
+                    "target": "`你確定要刪除 ${Gu(this.deleteCount,\"個未追蹤檔案\",\"個未追蹤檔案\")} 嗎？它們會依照你的 Obsidian 垃圾桶設定刪除。`"
+                },
+                {
+                    "source": "`Are you sure you want to discard ALL changes in ${Gu(this.discardCount,\"tracked file\")}?`",
+                    "target": "`你確定要捨棄 ${Gu(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")} 中的所有變更嗎？`"
+                },
+                {
+                    "source": "`${this.discardCount>0?\"Discard\":\"Delete\"} all ${Gu(t,\"file\")}`",
+                    "target": "`${this.discardCount>0?\"捨棄\":\"刪除\"}所有 ${Gu(t,\"個檔案\",\"個檔案\")}`"
+                },
+                {
+                    "source": "`Discard all ${Gu(this.discardCount,\"tracked file\")}`",
+                    "target": "`捨棄所有 ${Gu(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")}`"
+                },
+                {
+                    "source": "`Does your remote repo contain a ${this.plugin.app.vault.configDir} directory at the root?`",
+                    "target": "`你的遠端儲存庫根目錄是否包含 ${this.plugin.app.vault.configDir} 目錄？`"
+                },
+                {
+                    "source": "`To avoid conflicts, the local ${this.plugin.app.vault.configDir} directory needs to be deleted.`",
+                    "target": "`為避免衝突，需要刪除本機的 ${this.plugin.app.vault.configDir} 目錄。`"
+                },
+                {
+                    "source": "`Cloning new repo into \"${n}\"`",
+                    "target": "`正在將新儲存庫複製到「${n}」`"
+                },
+                {
+                    "source": "` (${e.files.length} in the vault, ${e.outsideVault} outside)`",
+                    "target": "`（${e.files.length} 個位於儲存庫內，${e.outsideVault} 個位於儲存庫外）`"
+                },
+                {
+                    "source": "`Pulled ${t} ${t==1?\"file\":\"files\"} from remote${n}`",
+                    "target": "`已從遠端拉取 ${t} 個${t==1?\"檔案\":\"檔案\"}${n}`"
+                },
+                {
+                    "source": "`Cannot find sh.exe at ${s}. Please make sure Git is properly installed.`",
+                    "target": "`在 ${s} 找不到 sh.exe。請確認 Git 已正確安裝。`"
+                },
+                {
+                    "source": "`Commit message script exited with code ${a.code}`",
+                    "target": "`提交訊息腳本已結束，結束代碼為 ${a.code}`"
+                },
+                {
+                    "source": "`Committed ${e.files} ${e.files==1?\"file\":\"files\"}`",
+                    "target": "`已提交 ${e.files} 個${e.files==1?\"檔案\":\"檔案\"}`"
+                },
+                {
+                    "source": "`Pushed ${e.files} ${e.files==1?\"file\":\"files\"} to remote`",
+                    "target": "`已推送 ${e.files} 個${e.files==1?\"檔案\":\"檔案\"}至遠端`"
+                },
+                {
+                    "source": "`Cannot push. You have conflicts in ${e.files} ${e.files==1?\"file\":\"files\"}`",
+                    "target": "`無法推送。有 ${e.files} 個${e.files==1?\"檔案\":\"檔案\"}存在衝突`"
+                },
+                {
+                    "source": "`Running '${e}'...`",
+                    "target": "`正在執行「${e}」...`"
+                },
+                {
+                    "source": "`Switched to ${e.branch}`",
+                    "target": "`已切換至 ${e.branch}`"
+                },
+                {
+                    "source": "`Created new branch ${e.branch}`",
+                    "target": "`已建立新分支 ${e.branch}`"
+                },
+                {
+                    "source": "`Deleted branch ${e.branch}`",
+                    "target": "`已刪除分支 ${e.branch}`"
+                },
+                {
+                    "source": "`Set upstream branch to ${e.branch}`",
+                    "target": "`已將上游分支設為 ${e.branch}`"
+                },
+                {
+                    "source": "`Cannot run git command. Trying to run: '${this.localStorage.getGitPath()||\"git\"}' .`",
+                    "target": "`無法執行 Git 命令。嘗試執行的程式為：「${this.localStorage.getGitPath()||\"git\"}」。`"
+                },
+                {
+                    "source": "`Merge conflict in ${n} ${n==1?\"file\":\"files\"}. Resolve conflicts and commit manually.`",
+                    "target": "`${n} 個${n==1?\"檔案\":\"檔案\"}發生合併衝突。請解決衝突後手動提交。`"
+                },
+                {
+                    "source": "`Aborted commit, because the following files are too big:\n- ${s.map(o=>o.vaultPath).join(`\n- `)}\nPlease remove them or add to .gitignore.`",
+                    "target": "`提交已中止，下列檔案過大：\n- ${s.map(o=>o.vaultPath).join(`\n- `)}\n請移除這些檔案，或將它們加入 .gitignore。`"
+                },
+                {
+                    "source": "get commitOrSync(){return this.settings.differentIntervalCommitAndPush?\"commit\":\"commit-and-sync\"}",
+                    "target": "get commitOrSync(){return this.settings.differentIntervalCommitAndPush?\"提交\":\"提交並同步\"}"
+                },
+                {
+                    "source": "function W(N){let Q=N?\" and sync\":\"\";",
+                    "target": "function W(N){let Q=N?\"並同步\":\"\";"
+                },
+                {
+                    "source": "!t.startsWith(\"No changes\")",
+                    "target": "!(t.startsWith(\"No changes\")||t.startsWith(\"沒有可提交的變更\"))"
+                },
+                {
+                    "source": "{merge:\"Merge\",rebase:\"Rebase\",reset:",
+                    "target": "{merge:\"合併\",rebase:\"重定基底\",reset:"
+                },
+                {
+                    "source": "{enabled:\"Enabled\",disabled:\"Disabled\",\"git-config\":",
+                    "target": "{enabled:\"啟用\",disabled:\"停用\",\"git-config\":"
+                },
+                {
+                    "source": "{split:\"Split\",git_unified:\"Unified\"}",
+                    "target": "{split:\"分割\",git_unified:\"統一\"}"
+                },
+                {
+                    "source": "hide:\"Hide\"",
+                    "target": "hide:\"隱藏\""
+                },
+                {
+                    "source": "custom:\"Custom\"",
+                    "target": "custom:\"自訂\""
+                },
+                {
+                    "source": "`最舊（${this.settings.lineAuthor.coloringMaxAge} 或更早）`:\"newest\"",
+                    "target": "`最舊（${this.settings.lineAuthor.coloringMaxAge} 或更早）`:\"最新\""
+                },
+                {
+                    "source": "`abcdef 作者名稱 ${o}`:\"invalid color\"",
+                    "target": "`abcdef 作者名稱 ${o}`:\"無效的顏色\""
+                },
+                {
+                    "source": "`${i.asDays()} 天`:\"invalid!\"",
+                    "target": "`${i.asDays()} 天`:\"無效！\""
+                },
+                {
+                    "source": "\"And \"+(e.files.length-500)+\" more files\"",
+                    "target": "\"另有 \"+(e.files.length-500)+\" 個檔案\""
+                },
+                {
+                    "source": "`Open the developer console with ${He.Platform.isMacOS?\"CMD (⌘) + OPTION (⌥) + I\":\"CTRL + SHIFT + I\"}.`",
+                    "target": "`使用 ${He.Platform.isMacOS?\"CMD (⌘) + OPTION (⌥) + I\":\"CTRL + SHIFT + I\"} 開啟開發人員控制台。`"
+                },
+                {
+                    "source": "\"<div data-icon=\\\"file-clock\\\" aria-label=\\\"Open file at this commit\\\" class=\\\"clickable-icon\\\"></div>\"",
+                    "target": "\"<div data-icon=\\\"file-clock\\\" aria-label=\\\"開啟此提交時的檔案\\\" class=\\\"clickable-icon\\\"></div>\""
+                },
+                {
+                    "source": "\"<div data-icon=\\\"go-to-file\\\" aria-label=\\\"Open File\\\" class=\\\"clickable-icon\\\"></div>\"",
+                    "target": "\"<div data-icon=\\\"go-to-file\\\" aria-label=\\\"開啟檔案\\\" class=\\\"clickable-icon\\\"></div>\""
+                },
+                {
+                    "source": "\"<main class=\\\"git-view\\\"><div class=\\\"nav-header\\\"><div class=\\\"nav-buttons-container\\\"><div id=\\\"layoutChange\\\" class=\\\"clickable-icon nav-action-button\\\" aria-label=\\\"Change Layout\\\"></div> <div id=\\\"refresh\\\" data-icon=\\\"refresh-cw\\\" aria-label=\\\"Refresh\\\"></div></div></div> <div class=\\\"nav-files-container\\\" style=\\\"position: relative;\\\"><!> <div id=\\\"sentinel\\\"></div> <div style=\\\"margin-bottom:40px\\\"></div></div></main>\"",
+                    "target": "\"<main class=\\\"git-view\\\"><div class=\\\"nav-header\\\"><div class=\\\"nav-buttons-container\\\"><div id=\\\"layoutChange\\\" class=\\\"clickable-icon nav-action-button\\\" aria-label=\\\"切換版面配置\\\"></div> <div id=\\\"refresh\\\" data-icon=\\\"refresh-cw\\\" aria-label=\\\"重新整理\\\"></div></div></div> <div class=\\\"nav-files-container\\\" style=\\\"position: relative;\\\"><!> <div id=\\\"sentinel\\\"></div> <div style=\\\"margin-bottom:40px\\\"></div></div></main>\""
+                },
+                {
+                    "source": "\"<div class=\\\"type resolved svelte-sczrxn\\\" aria-label=\\\"No conflicts left\\\"></div>\"",
+                    "target": "\"<div class=\\\"type resolved svelte-sczrxn\\\" aria-label=\\\"已無衝突\\\"></div>\""
+                },
+                {
+                    "source": "\"<main class=\\\"tree-item nav-file\\\"><div class=\\\"tree-item-self is-clickable nav-file-title\\\"><div class=\\\"tree-item-inner nav-file-title-content\\\"> </div> <div class=\\\"git-tools svelte-sczrxn\\\"><div class=\\\"buttons svelte-sczrxn\\\"><div aria-label=\\\"Mark resolved\\\" class=\\\"clickable-icon\\\"></div></div> <!></div></div></main>\"",
+                    "target": "\"<main class=\\\"tree-item nav-file\\\"><div class=\\\"tree-item-self is-clickable nav-file-title\\\"><div class=\\\"tree-item-inner nav-file-title-content\\\"> </div> <div class=\\\"git-tools svelte-sczrxn\\\"><div class=\\\"buttons svelte-sczrxn\\\"><div aria-label=\\\"標記為已解決\\\" class=\\\"clickable-icon\\\"></div></div> <!></div></div></main>\""
+                },
+                {
+                    "source": "\"<main class=\\\"tree-item nav-file\\\"><div class=\\\"tree-item-self is-clickable nav-file-title\\\"><div class=\\\"tree-item-inner nav-file-title-content\\\"> </div> <div class=\\\"git-tools\\\"><div class=\\\"buttons\\\"><!> <div data-icon=\\\"undo\\\" aria-label=\\\"Discard\\\" class=\\\"clickable-icon\\\"></div> <div data-icon=\\\"plus\\\" aria-label=\\\"Stage\\\" class=\\\"clickable-icon\\\"></div></div> <div class=\\\"type\\\"> </div></div></div></main>\"",
+                    "target": "\"<main class=\\\"tree-item nav-file\\\"><div class=\\\"tree-item-self is-clickable nav-file-title\\\"><div class=\\\"tree-item-inner nav-file-title-content\\\"> </div> <div class=\\\"git-tools\\\"><div class=\\\"buttons\\\"><!> <div data-icon=\\\"undo\\\" aria-label=\\\"捨棄\\\" class=\\\"clickable-icon\\\"></div> <div data-icon=\\\"plus\\\" aria-label=\\\"暫存\\\" class=\\\"clickable-icon\\\"></div></div> <div class=\\\"type\\\"> </div></div></div></main>\""
+                },
+                {
+                    "source": "\"<main class=\\\"tree-item nav-file\\\"><div class=\\\"tree-item-self is-clickable nav-file-title\\\"><div class=\\\"tree-item-inner nav-file-title-content\\\"> </div> <div class=\\\"git-tools\\\"><div class=\\\"buttons\\\"><!> <div data-icon=\\\"minus\\\" aria-label=\\\"Unstage\\\" class=\\\"clickable-icon\\\"></div></div> <div class=\\\"type\\\"> </div></div></div></main>\"",
+                    "target": "\"<main class=\\\"tree-item nav-file\\\"><div class=\\\"tree-item-self is-clickable nav-file-title\\\"><div class=\\\"tree-item-inner nav-file-title-content\\\"> </div> <div class=\\\"git-tools\\\"><div class=\\\"buttons\\\"><!> <div data-icon=\\\"minus\\\" aria-label=\\\"取消暫存\\\" class=\\\"clickable-icon\\\"></div></div> <div class=\\\"type\\\"> </div></div></div></main>\""
+                },
+                {
+                    "source": "\"<div data-icon=\\\"minus\\\" aria-label=\\\"Unstage\\\" class=\\\"clickable-icon\\\"><svg width=\\\"18\\\" height=\\\"18\\\" viewBox=\\\"0 0 18 18\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-minus\\\"><line x1=\\\"4\\\" y1=\\\"9\\\" x2=\\\"14\\\" y2=\\\"9\\\"></line></svg></div>\"",
+                    "target": "\"<div data-icon=\\\"minus\\\" aria-label=\\\"取消暫存\\\" class=\\\"clickable-icon\\\"><svg width=\\\"18\\\" height=\\\"18\\\" viewBox=\\\"0 0 18 18\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-minus\\\"><line x1=\\\"4\\\" y1=\\\"9\\\" x2=\\\"14\\\" y2=\\\"9\\\"></line></svg></div>\""
+                },
+                {
+                    "source": "\"<div data-icon=\\\"undo\\\" aria-label=\\\"Discard\\\" class=\\\"clickable-icon\\\"><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-undo\\\"><path d=\\\"M3 7v6h6\\\"></path><path d=\\\"M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13\\\"></path></svg></div> <div data-icon=\\\"plus\\\" aria-label=\\\"Stage\\\" class=\\\"clickable-icon\\\"><svg width=\\\"18\\\" height=\\\"18\\\" viewBox=\\\"0 0 18 18\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-plus\\\"><line x1=\\\"9\\\" y1=\\\"4\\\" x2=\\\"9\\\" y2=\\\"14\\\"></line><line x1=\\\"4\\\" y1=\\\"9\\\" x2=\\\"14\\\" y2=\\\"9\\\"></line></svg></div>\"",
+                    "target": "\"<div data-icon=\\\"undo\\\" aria-label=\\\"捨棄\\\" class=\\\"clickable-icon\\\"><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-undo\\\"><path d=\\\"M3 7v6h6\\\"></path><path d=\\\"M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13\\\"></path></svg></div> <div data-icon=\\\"plus\\\" aria-label=\\\"暫存\\\" class=\\\"clickable-icon\\\"><svg width=\\\"18\\\" height=\\\"18\\\" viewBox=\\\"0 0 18 18\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-plus\\\"><line x1=\\\"9\\\" y1=\\\"4\\\" x2=\\\"9\\\" y2=\\\"14\\\"></line><line x1=\\\"4\\\" y1=\\\"9\\\" x2=\\\"14\\\" y2=\\\"9\\\"></line></svg></div>\""
+                },
+                {
+                    "source": "\"<div class=\\\"repository-notice svelte-5wq9p\\\"><p class=\\\"svelte-5wq9p\\\">No Git repository found.</p> <div class=\\\"repository-actions svelte-5wq9p\\\"><button class=\\\"mod-cta\\\">Initialize repository</button> <button>Clone repository</button></div></div>\"",
+                    "target": "\"<div class=\\\"repository-notice svelte-5wq9p\\\"><p class=\\\"svelte-5wq9p\\\">找不到 Git 儲存庫。</p> <div class=\\\"repository-actions svelte-5wq9p\\\"><button class=\\\"mod-cta\\\">初始化儲存庫</button> <button>複製儲存庫</button></div></div>\""
+                },
+                {
+                    "source": "\"<div id=\\\"merge-status\\\" class=\\\"clickable-icon nav-action-button merge-status svelte-5wq9p\\\" data-icon=\\\"git-merge\\\" aria-label=\\\"Merge in progress — select for help\\\"></div>\"",
+                    "target": "\"<div id=\\\"merge-status\\\" class=\\\"clickable-icon nav-action-button merge-status svelte-5wq9p\\\" data-icon=\\\"git-merge\\\" aria-label=\\\"正在合併，點選以查看說明\\\"></div>\""
+                },
+                {
+                    "source": "\"<div><div class=\\\"tree-item-self is-clickable nav-folder-title svelte-5wq9p\\\"><div><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon right-triangle svelte-5wq9p\\\"><path d=\\\"M3 8L12 17L21 8\\\"></path></svg></div> <div class=\\\"tree-item-inner nav-folder-title-content\\\">Conflicts</div> <div class=\\\"git-tools svelte-5wq9p\\\"><div class=\\\"files-count svelte-5wq9p\\\"> </div></div></div> <!></div>\"",
+                    "target": "\"<div><div class=\\\"tree-item-self is-clickable nav-folder-title svelte-5wq9p\\\"><div><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon right-triangle svelte-5wq9p\\\"><path d=\\\"M3 8L12 17L21 8\\\"></path></svg></div> <div class=\\\"tree-item-inner nav-folder-title-content\\\">衝突</div> <div class=\\\"git-tools svelte-5wq9p\\\"><div class=\\\"files-count svelte-5wq9p\\\"> </div></div></div> <!></div>\""
+                },
+                {
+                    "source": "\"<div class=\\\"staged tree-item nav-folder\\\"><div class=\\\"tree-item-self nav-folder-title svelte-5wq9p\\\"><div class=\\\"tree-item-inner nav-folder-title-content\\\">Staged outside vault</div> <div class=\\\"git-tools svelte-5wq9p\\\"><div class=\\\"files-count svelte-5wq9p\\\"> </div></div></div></div>\"",
+                    "target": "\"<div class=\\\"staged tree-item nav-folder\\\"><div class=\\\"tree-item-self nav-folder-title svelte-5wq9p\\\"><div class=\\\"tree-item-inner nav-folder-title-content\\\">儲存庫外的已暫存項目</div> <div class=\\\"git-tools svelte-5wq9p\\\"><div class=\\\"files-count svelte-5wq9p\\\"> </div></div></div></div>\""
+                },
+                {
+                    "source": "\"<div class=\\\"changes tree-item nav-folder\\\"><div class=\\\"tree-item-self nav-folder-title svelte-5wq9p\\\"><div class=\\\"tree-item-inner nav-folder-title-content\\\">Conflicts outside vault</div> <div class=\\\"git-tools svelte-5wq9p\\\"><div class=\\\"files-count svelte-5wq9p\\\"> </div></div></div></div>\"",
+                    "target": "\"<div class=\\\"changes tree-item nav-folder\\\"><div class=\\\"tree-item-self nav-folder-title svelte-5wq9p\\\"><div class=\\\"tree-item-inner nav-folder-title-content\\\">儲存庫外的衝突</div> <div class=\\\"git-tools svelte-5wq9p\\\"><div class=\\\"files-count svelte-5wq9p\\\"> </div></div></div></div>\""
+                },
+                {
+                    "source": "\"<div><div class=\\\"tree-item-self is-clickable nav-folder-title svelte-5wq9p\\\"><div class=\\\"tree-item-icon nav-folder-collapse-indicator collapse-icon\\\"><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon right-triangle\\\"><path d=\\\"M3 8L12 17L21 8\\\"></path></svg></div> <div class=\\\"tree-item-inner nav-folder-title-content\\\">Recently Pulled Files</div> <span class=\\\"tree-item-flair\\\"> </span></div> <!></div>\"",
+                    "target": "\"<div><div class=\\\"tree-item-self is-clickable nav-folder-title svelte-5wq9p\\\"><div class=\\\"tree-item-icon nav-folder-collapse-indicator collapse-icon\\\"><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon right-triangle\\\"><path d=\\\"M3 8L12 17L21 8\\\"></path></svg></div> <div class=\\\"tree-item-inner nav-folder-title-content\\\">最近拉取的檔案</div> <span class=\\\"tree-item-flair\\\"> </span></div> <!></div>\""
+                },
+                {
+                    "source": "\"<div class=\\\"tree-item nav-folder mod-root\\\"><div><div class=\\\"tree-item-self is-clickable nav-folder-title svelte-5wq9p\\\"><div><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon right-triangle\\\"><path d=\\\"M3 8L12 17L21 8\\\"></path></svg></div> <div class=\\\"tree-item-inner nav-folder-title-content\\\">Staged Changes</div> <div class=\\\"git-tools svelte-5wq9p\\\"><div class=\\\"buttons\\\"><div data-icon=\\\"minus\\\" aria-label=\\\"Unstage\\\" class=\\\"clickable-icon\\\"><svg width=\\\"18\\\" height=\\\"18\\\" viewBox=\\\"0 0 18 18\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-minus\\\"><line x1=\\\"4\\\" y1=\\\"9\\\" x2=\\\"14\\\" y2=\\\"9\\\"></line></svg></div></div> <div class=\\\"files-count svelte-5wq9p\\\"> </div></div></div> <!></div> <!> <!> <div><div class=\\\"tree-item-self is-clickable nav-folder-title svelte-5wq9p\\\"><div><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon right-triangle\\\"><path d=\\\"M3 8L12 17L21 8\\\"></path></svg></div> <div class=\\\"tree-item-inner nav-folder-title-content\\\">Changes</div> <div class=\\\"git-tools svelte-5wq9p\\\"><div class=\\\"buttons\\\"><div data-icon=\\\"undo\\\" aria-label=\\\"Discard\\\" class=\\\"clickable-icon\\\"><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-undo\\\"><path d=\\\"M3 7v6h6\\\"></path><path d=\\\"M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13\\\"></path></svg></div> <div data-icon=\\\"plus\\\" aria-label=\\\"Stage\\\" class=\\\"clickable-icon\\\"><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-plus\\\"><line x1=\\\"12\\\" y1=\\\"5\\\" x2=\\\"12\\\" y2=\\\"19\\\"></line><line x1=\\\"5\\\" y1=\\\"12\\\" x2=\\\"19\\\" y2=\\\"12\\\"></line></svg></div></div> <div class=\\\"files-count svelte-5wq9p\\\"> </div></div></div> <!></div> <!></div>\"",
+                    "target": "\"<div class=\\\"tree-item nav-folder mod-root\\\"><div><div class=\\\"tree-item-self is-clickable nav-folder-title svelte-5wq9p\\\"><div><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon right-triangle\\\"><path d=\\\"M3 8L12 17L21 8\\\"></path></svg></div> <div class=\\\"tree-item-inner nav-folder-title-content\\\">已暫存的變更</div> <div class=\\\"git-tools svelte-5wq9p\\\"><div class=\\\"buttons\\\"><div data-icon=\\\"minus\\\" aria-label=\\\"取消暫存\\\" class=\\\"clickable-icon\\\"><svg width=\\\"18\\\" height=\\\"18\\\" viewBox=\\\"0 0 18 18\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-minus\\\"><line x1=\\\"4\\\" y1=\\\"9\\\" x2=\\\"14\\\" y2=\\\"9\\\"></line></svg></div></div> <div class=\\\"files-count svelte-5wq9p\\\"> </div></div></div> <!></div> <!> <!> <div><div class=\\\"tree-item-self is-clickable nav-folder-title svelte-5wq9p\\\"><div><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon right-triangle\\\"><path d=\\\"M3 8L12 17L21 8\\\"></path></svg></div> <div class=\\\"tree-item-inner nav-folder-title-content\\\">變更</div> <div class=\\\"git-tools svelte-5wq9p\\\"><div class=\\\"buttons\\\"><div data-icon=\\\"undo\\\" aria-label=\\\"捨棄\\\" class=\\\"clickable-icon\\\"><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-undo\\\"><path d=\\\"M3 7v6h6\\\"></path><path d=\\\"M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13\\\"></path></svg></div> <div data-icon=\\\"plus\\\" aria-label=\\\"暫存\\\" class=\\\"clickable-icon\\\"><svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"svg-icon lucide-plus\\\"><line x1=\\\"12\\\" y1=\\\"5\\\" x2=\\\"12\\\" y2=\\\"19\\\"></line><line x1=\\\"5\\\" y1=\\\"12\\\" x2=\\\"19\\\" y2=\\\"12\\\"></line></svg></div></div> <div class=\\\"files-count svelte-5wq9p\\\"> </div></div></div> <!></div> <!></div>\""
+                },
+                {
+                    "source": "\"<main><!> <div class=\\\"nav-header svelte-5wq9p\\\"><div class=\\\"nav-buttons-container\\\"><div class=\\\"commit-action-group svelte-5wq9p\\\"><div id=\\\"backup-btn\\\" data-icon=\\\"arrow-up-circle\\\"></div> <div id=\\\"commit-btn\\\" data-icon=\\\"check\\\"></div> <div id=\\\"commit-menu\\\" data-icon=\\\"chevron-down\\\" class=\\\"clickable-icon nav-action-button svelte-5wq9p\\\" aria-label=\\\"More commit actions\\\"></div></div> <div id=\\\"stage-all\\\" class=\\\"clickable-icon nav-action-button\\\" data-icon=\\\"plus-circle\\\" aria-label=\\\"Stage all\\\"></div> <div id=\\\"unstage-all\\\" class=\\\"clickable-icon nav-action-button\\\" data-icon=\\\"minus-circle\\\" aria-label=\\\"Unstage all\\\"></div> <div id=\\\"push\\\" class=\\\"clickable-icon nav-action-button\\\" data-icon=\\\"upload\\\" aria-label=\\\"Push\\\"></div> <div id=\\\"pull\\\" class=\\\"clickable-icon nav-action-button\\\" data-icon=\\\"download\\\" aria-label=\\\"Pull\\\"></div> <div id=\\\"layoutChange\\\" class=\\\"clickable-icon nav-action-button\\\" aria-label=\\\"Change Layout\\\"></div> <div id=\\\"refresh\\\" data-icon=\\\"refresh-cw\\\" aria-label=\\\"Refresh\\\"></div> <!></div></div> <div class=\\\"git-commit-msg svelte-5wq9p\\\"><textarea class=\\\"commit-msg-input svelte-5wq9p\\\" spellcheck=\\\"true\\\" placeholder=\\\"Commit Message\\\"></textarea> <!></div> <div class=\\\"nav-files-container svelte-5wq9p\\\" style=\\\"position: relative;\\\"><!> <!></div></main>\"",
+                    "target": "\"<main><!> <div class=\\\"nav-header svelte-5wq9p\\\"><div class=\\\"nav-buttons-container\\\"><div class=\\\"commit-action-group svelte-5wq9p\\\"><div id=\\\"backup-btn\\\" data-icon=\\\"arrow-up-circle\\\"></div> <div id=\\\"commit-btn\\\" data-icon=\\\"check\\\"></div> <div id=\\\"commit-menu\\\" data-icon=\\\"chevron-down\\\" class=\\\"clickable-icon nav-action-button svelte-5wq9p\\\" aria-label=\\\"更多提交動作\\\"></div></div> <div id=\\\"stage-all\\\" class=\\\"clickable-icon nav-action-button\\\" data-icon=\\\"plus-circle\\\" aria-label=\\\"全部暫存\\\"></div> <div id=\\\"unstage-all\\\" class=\\\"clickable-icon nav-action-button\\\" data-icon=\\\"minus-circle\\\" aria-label=\\\"全部取消暫存\\\"></div> <div id=\\\"push\\\" class=\\\"clickable-icon nav-action-button\\\" data-icon=\\\"upload\\\" aria-label=\\\"推送\\\"></div> <div id=\\\"pull\\\" class=\\\"clickable-icon nav-action-button\\\" data-icon=\\\"download\\\" aria-label=\\\"拉取\\\"></div> <div id=\\\"layoutChange\\\" class=\\\"clickable-icon nav-action-button\\\" aria-label=\\\"切換版面配置\\\"></div> <div id=\\\"refresh\\\" data-icon=\\\"refresh-cw\\\" aria-label=\\\"重新整理\\\"></div> <!></div></div> <div class=\\\"git-commit-msg svelte-5wq9p\\\"><textarea class=\\\"commit-msg-input svelte-5wq9p\\\" spellcheck=\\\"true\\\" placeholder=\\\"提交訊息\\\"></textarea> <!></div> <div class=\\\"nav-files-container svelte-5wq9p\\\" style=\\\"position: relative;\\\"><!> <!></div></main>\""
                 }
             ]
         },
