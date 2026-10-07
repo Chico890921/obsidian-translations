@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "side-notes",
-        "version": "0.5.4",
+        "version": "0.5.5",
         "title": "[zh-tw] Side-Notes",
         "description": "Side-Notes Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "0.5.4",
+        "supportedVersions": "0.5.5",
         "author": "Chico",
-        "updatedAt": 1791310952696
+        "updatedAt": 1791390346083
     },
     "dict": {
         "main.js": {
