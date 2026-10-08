@@ -1,0 +1,4514 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "github-stars-manager",
+        "version": "0.1.3",
+        "title": "[zh-tw] GitHub Stars Manager",
+        "description": "GitHub Stars Manager 繁體中文翻譯",
+        "language": "zh-tw",
+        "supportedVersions": "0.1.3",
+        "author": "Chico",
+        "updatedAt": 1791454621416
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirm",
+                    "source": "Confirm",
+                    "target": "確認"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cancel",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "save",
+                    "source": "Save",
+                    "target": "儲存"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "delete",
+                    "source": "Delete",
+                    "target": "刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "edit",
+                    "source": "Edit",
+                    "target": "編輯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "close",
+                    "source": "Close",
+                    "target": "關閉"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectAll",
+                    "source": "Select all",
+                    "target": "全選"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "deselectAll",
+                    "source": "Deselect all",
+                    "target": "取消全選"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "loading",
+                    "source": "Loading...",
+                    "target": "載入中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "success",
+                    "source": "Success",
+                    "target": "成功"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Error",
+                    "target": "錯誤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "warning",
+                    "source": "Warning",
+                    "target": "警告"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncButton",
+                    "source": "Sync repositories",
+                    "target": "同步儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "searchPlaceholder",
+                    "source": "Search repositories...",
+                    "target": "搜尋儲存庫..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "clearSearch",
+                    "source": "Clear search",
+                    "target": "清除搜尋"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addAccount",
+                    "source": "Add account",
+                    "target": "新增帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountsLabel",
+                    "source": "Accounts",
+                    "target": "帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportMode",
+                    "source": "Export mode",
+                    "target": "匯出模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exitExportMode",
+                    "source": "Exit export mode",
+                    "target": "退出匯出模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportSelected",
+                    "source": "Export selected",
+                    "target": "匯出所選項目"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exporting",
+                    "source": "Exporting...",
+                    "target": "匯出中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmExport",
+                    "source": "Confirm export",
+                    "target": "確認匯出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cancelExport",
+                    "source": "Cancel export",
+                    "target": "取消匯出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noRepos",
+                    "source": "No starred repositories. Click sync button to fetch from GitHub.",
+                    "target": "尚無已加上星號的儲存庫。請按同步按鈕從 GitHub 取得資料。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noMatchingRepos",
+                    "source": "No matching repositories.",
+                    "target": "找不到符合條件的儲存庫。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noTags",
+                    "source": "No tags",
+                    "target": "尚無標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagsLabel",
+                    "source": "Tags",
+                    "target": "標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "showMore",
+                    "source": "More",
+                    "target": "更多"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "showLess",
+                    "source": "Collapse",
+                    "target": "收合"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "clearTagFilters",
+                    "source": "Clear filters",
+                    "target": "清除篩選"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageEnter",
+                    "source": "Manage tags",
+                    "target": "管理標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageExit",
+                    "source": "Done",
+                    "target": "完成"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageHint",
+                    "source": "Click tags to edit them, or create new ones.",
+                    "target": "點選標籤即可編輯，也可以新增標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageModeOn",
+                    "source": "Entered tag management mode. Click a tag to open the editor panel.",
+                    "target": "已進入標籤管理模式。點選標籤可開啟編輯面板。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageModeOff",
+                    "source": "Exited tag management mode.",
+                    "target": "已退出標籤管理模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageNoTags",
+                    "source": "No tags available for management.",
+                    "target": "沒有可管理的標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageClickToEdit",
+                    "source": "Click to edit this tag",
+                    "target": "點選以編輯此標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagAddButton",
+                    "source": "+ New tag",
+                    "target": "+ 新增標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreateTitle",
+                    "source": "Create tag",
+                    "target": "新增標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreateDesc",
+                    "source": "Create a global tag that can be used for repository annotations.",
+                    "target": "建立可用於所有儲存庫註記的標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreatePlaceholder",
+                    "source": "Enter tag name",
+                    "target": "輸入標籤名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagAddAction",
+                    "source": "Add",
+                    "target": "新增"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreateEmpty",
+                    "source": "Tag name cannot be empty",
+                    "target": "標籤名稱不可為空"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreateExists",
+                    "source": "Tag \"{tag}\" already exists",
+                    "target": "標籤「{tag}」已存在"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreateSuccess",
+                    "source": "Tag \"{tag}\" added",
+                    "target": "已新增標籤「{tag}」"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagInlineEditName",
+                    "source": "Editing tag: {tag}",
+                    "target": "編輯標籤：{tag}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagInlineEditDesc",
+                    "source": "This change applies to all repositories.",
+                    "target": "此變更會套用至所有儲存庫。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenamePlaceholder",
+                    "source": "Enter new tag name",
+                    "target": "輸入新的標籤名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameEmpty",
+                    "source": "New tag name cannot be empty",
+                    "target": "新的標籤名稱不可為空"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameUnchanged",
+                    "source": "Tag name is unchanged",
+                    "target": "標籤名稱未變更"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameNotFound",
+                    "source": "Tag {tag} was not found in repository annotations",
+                    "target": "儲存庫註記中找不到標籤 {tag}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameSuccess",
+                    "source": "Renamed {oldTag} to {newTag} in {count} repositories",
+                    "target": "已在 {count} 個儲存庫中將 {oldTag} 重新命名為 {newTag}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameMergeWarning",
+                    "source": "Tag \"{newTag}\" already exists. Saving will merge tags.",
+                    "target": "標籤「{newTag}」已存在，儲存後會合併標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagMergeConfirm",
+                    "source": "Confirm merge",
+                    "target": "確認合併"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagDeleteBlocked",
+                    "source": "Tag \"{tag}\" is still used by {count} repositories and cannot be deleted",
+                    "target": "標籤「{tag}」仍有 {count} 個儲存庫使用，無法刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagDeleteNotFound",
+                    "source": "Tag \"{tag}\" does not exist or was already deleted",
+                    "target": "標籤「{tag}」不存在或已刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagDeleteSuccess",
+                    "source": "Tag \"{tag}\" deleted",
+                    "target": "已刪除標籤「{tag}」"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataButton",
+                    "source": "Invalid data",
+                    "target": "失效資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataButtonWithCount",
+                    "source": "Invalid data ({count})",
+                    "target": "失效資料（{count}）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagColorLabel",
+                    "source": "Tag color",
+                    "target": "標籤顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagColorDesc",
+                    "source": "Pick a color and save to apply it to all tags with this name.",
+                    "target": "選取顏色並儲存，即可套用至所有同名標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagColorUpdated",
+                    "source": "Updated color for tag \"{tag}\"",
+                    "target": "已更新標籤「{tag}」的顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfToggle",
+                    "source": "Perf",
+                    "target": "效能"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfPanelTitle",
+                    "source": "Performance Monitor",
+                    "target": "效能監測"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCollapse",
+                    "source": "Collapse",
+                    "target": "收合"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfDataSummary",
+                    "source": "Data",
+                    "target": "資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfDataTotal",
+                    "source": "Total repos",
+                    "target": "儲存庫總數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfDataVisible",
+                    "source": "Visible repos",
+                    "target": "顯示的儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfQuerySummary",
+                    "source": "Query Cost",
+                    "target": "查詢耗時"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfRenderSummary",
+                    "source": "Render Cost",
+                    "target": "繪製耗時"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfInteractionSummary",
+                    "source": "Interaction Latency",
+                    "target": "互動延遲"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfFrameSummary",
+                    "source": "FPS / Jank",
+                    "target": "FPS / 卡頓"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfLast",
+                    "source": "Last",
+                    "target": "最近一次"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfAvg",
+                    "source": "Avg",
+                    "target": "平均"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfWorker",
+                    "source": "Query thread",
+                    "target": "查詢執行緒"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfWorkerOff",
+                    "source": "Main thread",
+                    "target": "主執行緒"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfFps",
+                    "source": "Estimated FPS",
+                    "target": "預估 FPS"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfJank",
+                    "source": "Jank frames",
+                    "target": "卡頓影格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfLongTask",
+                    "source": "Long tasks (>50ms)",
+                    "target": "長任務（>50ms）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfFirstScreenSummary",
+                    "source": "First screen render",
+                    "target": "首屏繪製"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCacheReads",
+                    "source": "Reads",
+                    "target": "讀取"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCacheWrites",
+                    "source": "Writes",
+                    "target": "寫入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCacheHits",
+                    "source": "Restore hits",
+                    "target": "還原命中"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCopy",
+                    "source": "Copy diagnostics",
+                    "target": "複製診斷資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfReset",
+                    "source": "Reset stats",
+                    "target": "重設統計"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCopied",
+                    "source": "Performance diagnostics copied",
+                    "target": "已複製效能診斷資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfResetDone",
+                    "source": "Performance stats reset",
+                    "target": "已重設效能統計"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editRepo",
+                    "source": "Edit",
+                    "target": "編輯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cannotEditRepo",
+                    "source": "Cannot edit this repository information",
+                    "target": "無法編輯此儲存庫資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "starred",
+                    "source": "Recently starred",
+                    "target": "最近加上星號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "stars",
+                    "source": "Stars count",
+                    "target": "星號數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "forks",
+                    "source": "Forks count",
+                    "target": "Fork 數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "updated",
+                    "source": "Recently updated",
+                    "target": "最近更新"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "asc",
+                    "source": "Ascending",
+                    "target": "遞增"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Descending",
+                    "target": "遞減"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "toggle",
+                    "source": "Toggle theme",
+                    "target": "切換佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "switchToDefault",
+                    "source": "Switch to default theme",
+                    "target": "切換至預設佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "switchToIosGlass",
+                    "source": "Switch to iOS glass theme",
+                    "target": "切換至 iOS 毛玻璃佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "default",
+                    "source": "Default",
+                    "target": "預設"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "iosGlass",
+                    "source": "iOS glass",
+                    "target": "iOS 毛玻璃"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncing",
+                    "source": "Syncing GitHub stars...",
+                    "target": "正在同步 GitHub 星號儲存庫..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "success",
+                    "source": "GitHub stars sync successful",
+                    "target": "GitHub 星號儲存庫同步成功"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "partialSuccess",
+                    "source": "Sync partially completed: {success} accounts succeeded, {repos} repositories\nFailed accounts: {failed}",
+                    "target": "部分同步完成：{success} 個帳號成功，共 {repos} 個儲存庫\n失敗帳號：{failed}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "failed",
+                    "source": "Sync failed: all accounts were unable to sync\nFailed accounts: {failed}\n{reason}",
+                    "target": "同步失敗：所有帳號都無法同步\n失敗帳號：{failed}\n{reason}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Sync failed, please check settings and network connection",
+                    "target": "同步失敗，請檢查設定與網路連線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "reasonNetwork",
+                    "source": "Please check your network connection",
+                    "target": "請檢查網路連線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "reasonAuth",
+                    "source": "Please check whether the access token is still valid",
+                    "target": "請檢查存取權杖是否仍有效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "reasonRateLimit",
+                    "source": "GitHub API rate limit exceeded, please try again later",
+                    "target": "已超過 GitHub API 請求次數限制，請稍後再試"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "reasonUnknown",
+                    "source": "Please check the console logs for details",
+                    "target": "請查看主控台記錄以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "failedReasonRateLimitLabel",
+                    "source": "rate limit",
+                    "target": "請求次數限制"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noAccounts",
+                    "source": "Please configure GitHub account or personal access token in settings first",
+                    "target": "請先在設定中配置 GitHub 帳號或個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "stars",
+                    "source": "Stars",
+                    "target": "星號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "forks",
+                    "source": "Forks",
+                    "target": "Fork"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "updated",
+                    "source": "Updated",
+                    "target": "更新時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "language",
+                    "source": "Language",
+                    "target": "語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addNote",
+                    "source": "Add note",
+                    "target": "新增筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editNote",
+                    "source": "Edit note",
+                    "target": "編輯筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addTags",
+                    "source": "Add tags",
+                    "target": "新增標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "linkNote",
+                    "source": "Link to note",
+                    "target": "關聯筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "openInGithub",
+                    "source": "Open in GitHub",
+                    "target": "在 GitHub 開啟"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "copyUrl",
+                    "source": "Copy URL",
+                    "target": "複製網址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "export",
+                    "source": "Export",
+                    "target": "匯出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editRepo",
+                    "source": "Edit repository",
+                    "target": "編輯儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "notes",
+                    "source": "Notes",
+                    "target": "筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "notesPlaceholder",
+                    "source": "Add your notes here...",
+                    "target": "在此新增筆記..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tags",
+                    "source": "Tags",
+                    "target": "標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagsDesc",
+                    "source": "Separate tags with commas",
+                    "target": "以逗號分隔標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagsPlaceholder",
+                    "source": "Web development, API, tutorial",
+                    "target": "網頁開發, API, 教學"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectExistingTags",
+                    "source": "Select existing tags:",
+                    "target": "選取現有標籤："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "linkedNote",
+                    "source": "Linked note",
+                    "target": "關聯筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "linkedNoteDesc",
+                    "source": "Link to a note in Obsidian",
+                    "target": "關聯至 Obsidian 中的筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "projectLinks",
+                    "source": "Links",
+                    "target": "連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "projectLinkNamePlaceholder",
+                    "source": "Label",
+                    "target": "名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "projectLinkUrlPlaceholder",
+                    "source": "URL",
+                    "target": "網址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addProjectLink",
+                    "source": "Add",
+                    "target": "新增"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "saveProjectLink",
+                    "source": "Save",
+                    "target": "儲存"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "projectLinkUrlRequired",
+                    "source": "Please enter a link",
+                    "target": "請輸入連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "projectLinkDuplicate",
+                    "source": "This link already exists",
+                    "target": "此連結已存在"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "notePath",
+                    "source": "Note path",
+                    "target": "筆記路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "browse",
+                    "source": "Browse",
+                    "target": "瀏覽"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "searchNote",
+                    "source": "Search and select a note...",
+                    "target": "搜尋並選取筆記..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noNoteSelected",
+                    "source": "No note selected",
+                    "target": "尚未選取筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "removeLink",
+                    "source": "Remove link",
+                    "target": "移除關聯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManagement",
+                    "source": "Tag management",
+                    "target": "標籤管理"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManagementDesc",
+                    "source": "Rename existing tags directly in this editor.",
+                    "target": "直接在此編輯器中重新命名現有標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagInlineHint",
+                    "source": "Double-click any tag chip above to rename it globally.",
+                    "target": "連按兩下上方的標籤，即可在所有儲存庫中重新命名。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataTitle",
+                    "source": "Invalid data",
+                    "target": "失效資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataSummary",
+                    "source": "{count} local enhancement records no longer match repositories in the current starred list.",
+                    "target": "有 {count} 筆本機補充資料無法對應至目前星號清單中的儲存庫。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataEmpty",
+                    "source": "No invalid data found.",
+                    "target": "沒有失效資料。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDeleteAll",
+                    "source": "Delete all",
+                    "target": "全部刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRefreshSnapshots",
+                    "source": "Recover missing info",
+                    "target": "復原遺失資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRefreshRunning",
+                    "source": "Recovering...",
+                    "target": "復原中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRefreshNoop",
+                    "source": "No invalid records need recovery right now",
+                    "target": "目前沒有需要復原的失效資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRefreshDone",
+                    "source": "Recovery finished: restored {updated}, still unable to recover {missing}",
+                    "target": "復原完成：已還原 {updated} 筆，仍有 {missing} 筆無法復原"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRepoId",
+                    "source": "Repository ID: {repoId}",
+                    "target": "儲存庫 ID：{repoId}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRepoLink",
+                    "source": "Repository URL: ",
+                    "target": "儲存庫網址："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDescription",
+                    "source": "Description: {description}",
+                    "target": "描述：{description}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataSnapshotTime",
+                    "source": "Snapshot recorded at: {time}",
+                    "target": "快照記錄時間：{time}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataNoSnapshot",
+                    "source": "Missing repository snapshot. Try online recovery.",
+                    "target": "缺少儲存庫快照，請嘗試連線復原。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDeleteAllConfirmMessage",
+                    "source": "This will delete {count} invalid records and cannot be undone. Continue?",
+                    "target": "這會刪除 {count} 筆失效資料，且無法復原。是否繼續？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDeleteAllConfirmButton",
+                    "source": "Confirm delete all",
+                    "target": "確認全部刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataTags",
+                    "source": "Tags: {tags}",
+                    "target": "標籤：{tags}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataNone",
+                    "source": "None",
+                    "target": "無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataNotesPreview",
+                    "source": "Notes: {notes}",
+                    "target": "筆記：{notes}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataNoNotes",
+                    "source": "Notes: None",
+                    "target": "筆記：無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataLinkedNote",
+                    "source": "Linked note: {path}",
+                    "target": "關聯筆記：{path}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataNoLinkedNote",
+                    "source": "Linked note: None",
+                    "target": "關聯筆記：無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDeleteDone",
+                    "source": "Deleted {count} invalid data records",
+                    "target": "已刪除 {count} 筆失效資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDeleteMissing",
+                    "source": "No invalid data available to delete",
+                    "target": "沒有可刪除的失效資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagInlineEditName",
+                    "source": "Rename tag: {tag}",
+                    "target": "重新命名標籤：{tag}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noTagsToManage",
+                    "source": "No tags available for management",
+                    "target": "沒有可管理的標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagUsageCount",
+                    "source": "Used in {count} repositories",
+                    "target": "用於 {count} 個儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "renameTagButton",
+                    "source": "Rename",
+                    "target": "重新命名"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameMergeConfirm",
+                    "source": "Tag \"{newTag}\" already exists. Renaming \"{oldTag}\" will merge them. Continue?",
+                    "target": "標籤「{newTag}」已存在。重新命名「{oldTag}」後會合併兩者。是否繼續？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectNote",
+                    "source": "Select note",
+                    "target": "選取筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "searchNotes",
+                    "source": "Search notes...",
+                    "target": "搜尋筆記..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noMatchingNotes",
+                    "source": "No matching notes",
+                    "target": "找不到符合條件的筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Batch export repositories",
+                    "target": "批次匯出儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectRepos",
+                    "source": "Select repositories to export as Markdown files:",
+                    "target": "選取要匯出為 Markdown 檔案的儲存庫："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportButton",
+                    "source": "Export selected repositories",
+                    "target": "匯出所選儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportCount",
+                    "source": "Export {count} repositories",
+                    "target": "匯出 {count} 個儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectFirst",
+                    "source": "Please select repositories to export first",
+                    "target": "請先選取要匯出的儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "success",
+                    "source": "Export completed! Successfully exported {count} repositories",
+                    "target": "匯出完成！已成功匯出 {count} 個儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "partialSuccess",
+                    "source": "Export completed with errors. Successfully exported {success} repositories, {failed} failed",
+                    "target": "匯出完成，但發生錯誤。已成功匯出 {success} 個儲存庫，{failed} 個失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "failed",
+                    "source": "Export failed, please check path and permission settings",
+                    "target": "匯出失敗，請檢查路徑與權限設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Export failed, please check console for details",
+                    "target": "匯出失敗，請查看主控台以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "fileExists",
+                    "source": "File already exists",
+                    "target": "檔案已存在"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "overwrite",
+                    "source": "Overwrite",
+                    "target": "覆寫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "skip",
+                    "source": "Skip",
+                    "target": "略過"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "skipAll",
+                    "source": "Skip all",
+                    "target": "全部略過"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "overwriteAll",
+                    "source": "Overwrite all",
+                    "target": "全部覆寫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "fileExistsMessage",
+                    "source": "The following file already exists:",
+                    "target": "以下檔案已存在："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "fileExistsDesc",
+                    "source": "Do you want to overwrite the existing file?",
+                    "target": "是否覆寫現有檔案？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "repoExportFailed",
+                    "source": "Export {name} failed: {error}",
+                    "target": "匯出 {name} 失敗：{error}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "processExportFailed",
+                    "source": "Export process failed: {error}",
+                    "target": "匯出流程失敗：{error}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmActionTitle",
+                    "source": "Confirm action",
+                    "target": "確認操作"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountsHeading",
+                    "source": "GitHub accounts",
+                    "target": "GitHub 帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountsDesc",
+                    "source": "Manage multiple GitHub accounts. Each account requires a personal access token.",
+                    "target": "管理多個 GitHub 帳號。每個帳號都需要個人存取權杖。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addAccountButton",
+                    "source": "Add account",
+                    "target": "新增帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addAccountDesc",
+                    "source": "Add a new GitHub account to sync starred repositories from multiple accounts",
+                    "target": "新增 GitHub 帳號，以同步多個帳號的星號儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noAccounts",
+                    "source": "No GitHub accounts configured yet",
+                    "target": "尚未設定 GitHub 帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noAccountsMessage",
+                    "source": "No GitHub accounts configured. Click the button above to add an account.",
+                    "target": "尚未設定 GitHub 帳號，請按上方按鈕新增帳號。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManagementHeading",
+                    "source": "Tag management",
+                    "target": "標籤管理"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManagementDesc",
+                    "source": "Rename existing tags and sync changes across all repository annotations.",
+                    "target": "重新命名現有標籤，並同步更新所有儲存庫註記。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountEnabled",
+                    "source": "Enabled",
+                    "target": "已啟用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountDisabled",
+                    "source": "Disabled",
+                    "target": "已停用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enabled",
+                    "source": "Enabled",
+                    "target": "已啟用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "disabled",
+                    "source": "Disabled",
+                    "target": "已停用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "lastSync",
+                    "source": "Last sync:",
+                    "target": "上次同步："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validate",
+                    "source": "Validate",
+                    "target": "驗證"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "remove",
+                    "source": "Remove",
+                    "target": "移除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validating",
+                    "source": "Validating...",
+                    "target": "驗證中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "valid",
+                    "source": "Token valid",
+                    "target": "權杖有效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalid",
+                    "source": "Token invalid",
+                    "target": "權杖無效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountToggled",
+                    "source": "Account {username} {status}",
+                    "target": "帳號 {username} {status}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmDeleteAccount",
+                    "source": "Are you sure you want to delete account {username}?",
+                    "target": "確定要刪除帳號 {username} 嗎？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountDeleted",
+                    "source": "Account {username} deleted",
+                    "target": "已刪除帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addAccountTitle",
+                    "source": "Add GitHub account",
+                    "target": "新增 GitHub 帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editAccountTitle",
+                    "source": "Edit GitHub account",
+                    "target": "編輯 GitHub 帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountName",
+                    "source": "Account name",
+                    "target": "帳號名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountNameDesc",
+                    "source": "Set a display name for this account",
+                    "target": "設定此帳號的顯示名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountNamePlaceholder",
+                    "source": "Enter account name",
+                    "target": "輸入帳號名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubUsername",
+                    "source": "GitHub username",
+                    "target": "GitHub 使用者名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubUsernameDesc",
+                    "source": "GitHub username (automatically retrieved after entering token)",
+                    "target": "GitHub 使用者名稱（輸入權杖後會自動取得）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "autoFetch",
+                    "source": "Auto fetch",
+                    "target": "自動取得"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tokenLabel",
+                    "source": "Personal access token",
+                    "target": "個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tokenDesc",
+                    "source": "GitHub personal access token. Prefer the minimum read:user and public_repo scopes.",
+                    "target": "GitHub 個人存取權杖。建議只授予必要的 read:user 與 public_repo 權限。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tokenDescShort",
+                    "source": "Prefer read:user and public_repo scopes; use repo only if private repository data is needed.",
+                    "target": "建議使用 read:user 與 public_repo 權限；只有需要存取私人儲存庫資料時才使用 repo。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tokenInputPlaceholder",
+                    "source": "Enter your GitHub personal access token",
+                    "target": "輸入 GitHub 個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "howToGetToken",
+                    "source": "How to get a token?",
+                    "target": "如何取得權杖？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validateAndSave",
+                    "source": "Validate and save",
+                    "target": "驗證並儲存"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "saving",
+                    "source": "Saving...",
+                    "target": "儲存中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tokenRequired",
+                    "source": "Please enter personal access token",
+                    "target": "請輸入個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "usernameNotFetched",
+                    "source": "Username not auto-fetched, please check if token is correct",
+                    "target": "無法自動取得使用者名稱，請確認權杖是否正確"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validationFailed",
+                    "source": "Token validation failed, please check if token is correct",
+                    "target": "權杖驗證失敗，請確認權杖是否正確"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountAdded",
+                    "source": "Account {username} added",
+                    "target": "已新增帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountUpdated",
+                    "source": "Account {username} updated",
+                    "target": "已更新帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountRemoved",
+                    "source": "Account {username} removed",
+                    "target": "已移除帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountEnabled_",
+                    "source": "Account {username} enabled",
+                    "target": "已啟用帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountDisabled_",
+                    "source": "Account {username} disabled",
+                    "target": "已停用帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubToken",
+                    "source": "GitHub personal access token",
+                    "target": "GitHub 個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubTokenDesc",
+                    "source": "Token for accessing your GitHub starred repositories. Prefer the minimum read:user and public_repo scopes; use repo only if private repository data is needed. It is recommended to use the multi-account management feature above.",
+                    "target": "用於存取 GitHub 星號儲存庫的權杖。建議只授予必要的 read:user 與 public_repo 權限；只有需要存取私人儲存庫資料時才使用 repo。建議使用上方的多帳號管理功能。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubTokenPlaceholder",
+                    "source": "Enter your GitHub personal access token",
+                    "target": "輸入 GitHub 個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "autoSyncHeading",
+                    "source": "Auto sync",
+                    "target": "自動同步"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableAutoSync",
+                    "source": "Enable auto sync",
+                    "target": "啟用自動同步"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableAutoSyncDesc",
+                    "source": "Automatically sync your GitHub stars periodically",
+                    "target": "定期自動同步 GitHub 星號儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncIntervalName",
+                    "source": "Sync interval (days)",
+                    "target": "同步間隔（天）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncIntervalDesc",
+                    "source": "Set the day interval for automatic synchronization",
+                    "target": "設定自動同步的間隔天數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncInterval",
+                    "source": "Sync interval",
+                    "target": "同步間隔"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncIntervalDescShort",
+                    "source": "How often to sync (in days)",
+                    "target": "同步頻率（以天為單位）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncIntervalIncreaseDay",
+                    "source": "+1 day",
+                    "target": "+1 天"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncIntervalDecreaseDay",
+                    "source": "-1 day",
+                    "target": "-1 天"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncNow",
+                    "source": "Sync now",
+                    "target": "立即同步"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncNowDesc",
+                    "source": "Immediately fetch your starred repositories from GitHub",
+                    "target": "立即從 GitHub 取得星號儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncButton",
+                    "source": "Sync",
+                    "target": "同步"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncing",
+                    "source": "Syncing...",
+                    "target": "同步中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncSuccess",
+                    "source": "Sync successful",
+                    "target": "同步成功"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailed",
+                    "source": "Sync failed",
+                    "target": "同步失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedNotice",
+                    "source": "Sync failed, please check your network connection or token settings",
+                    "target": "同步失敗，請檢查網路連線或權杖設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedNoticeNetwork",
+                    "source": "Sync failed: unable to connect to GitHub. Please check your network connection",
+                    "target": "同步失敗：無法連線至 GitHub，請檢查網路連線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedNoticeAuth",
+                    "source": "Sync failed: please check whether the access token is valid",
+                    "target": "同步失敗：請確認存取權杖是否有效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedNoticeRateLimit",
+                    "source": "Sync failed: GitHub API rate limit exceeded. Please try again later",
+                    "target": "同步失敗：已超過 GitHub API 請求次數限制，請稍後再試"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedNoticeUnknown",
+                    "source": "Sync failed, please check the console logs for details",
+                    "target": "同步失敗，請查看主控台記錄以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountTestFailedNetwork",
+                    "source": "❌ Unable to connect to GitHub. Please check your network connection",
+                    "target": "❌ 無法連線至 GitHub，請檢查網路連線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountTestFailedAuth",
+                    "source": "❌ Token is invalid or expired",
+                    "target": "❌ 權杖無效或已過期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountTestFailedRateLimit",
+                    "source": "❌ GitHub API rate limit exceeded. Please try again later",
+                    "target": "❌ 已超過 GitHub API 請求次數限制，請稍後再試"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountTestFailedUnknown",
+                    "source": "❌ Token test failed: {message}",
+                    "target": "❌ 權杖測試失敗：{message}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportHeading",
+                    "source": "Export",
+                    "target": "匯出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableExport",
+                    "source": "Enable export",
+                    "target": "啟用匯出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableExportDesc",
+                    "source": "Enable exporting starred repositories as Markdown files",
+                    "target": "啟用將星號儲存庫匯出為 Markdown 檔案的功能"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportPath",
+                    "source": "Export path",
+                    "target": "匯出路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportPathDesc",
+                    "source": "Directory where exported files will be saved",
+                    "target": "匯出檔案的儲存目錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeHeading",
+                    "source": "Theme",
+                    "target": "佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "theme",
+                    "source": "Theme",
+                    "target": "佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeDesc",
+                    "source": "Select the plugin interface theme",
+                    "target": "選取外掛介面的佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeDefault",
+                    "source": "Default",
+                    "target": "預設"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeDefaultOption",
+                    "source": "Default theme",
+                    "target": "預設佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeIosGlass",
+                    "source": "iOS glass",
+                    "target": "iOS 毛玻璃"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeIosGlassOption",
+                    "source": "iOS glass",
+                    "target": "iOS 毛玻璃"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "languageHeading",
+                    "source": "Language",
+                    "target": "語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "languageDesc",
+                    "source": "Select display language (requires reload)",
+                    "target": "選取顯示語言（需重新載入）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "languageReloadNotice",
+                    "source": "Language will be applied after reloading the plugin",
+                    "target": "重新載入外掛後會套用語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "languageEn",
+                    "source": "English",
+                    "target": "英文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "languageZh",
+                    "source": "简体中文",
+                    "target": "中文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "repoRenderPerformanceMode",
+                    "source": "List performance mode",
+                    "target": "清單效能模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "repoRenderPerformanceModeDesc",
+                    "source": "Choose the list rendering strategy.",
+                    "target": "選取清單的繪製策略。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "repoRenderPerformanceModeVisual",
+                    "source": "Visual first",
+                    "target": "視覺優先"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "repoRenderPerformanceModeBalanced",
+                    "source": "Balanced",
+                    "target": "平衡"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enablePerformanceMonitor",
+                    "source": "Enable performance monitor",
+                    "target": "啟用效能監測"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enablePerformanceMonitorDesc",
+                    "source": "Show a monitor entry in the home toolbar for query/render timing",
+                    "target": "在主畫面工具列顯示監測入口，查看查詢與繪製耗時"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertiesHeading",
+                    "source": "Properties template",
+                    "target": "屬性範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertiesConfigHeading",
+                    "source": "Properties template configuration",
+                    "target": "屬性範本設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertiesDesc",
+                    "source": "Customize YAML frontmatter template for exported Markdown files",
+                    "target": "自訂匯出 Markdown 檔案的 YAML Frontmatter 範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertiesDescription",
+                    "source": "Configure the properties (note attributes) template for exporting Markdown files. Supported variables:",
+                    "target": "設定匯出 Markdown 檔案時使用的屬性範本（筆記屬性）。支援的變數："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertiesHelp",
+                    "source": "Available variables: {{name}}, {{language}}, {{stars}}, {{forks}}, {{description}}, {{url}}, {{topics}}",
+                    "target": "可用變數：{{name}}、{{language}}、{{stars}}、{{forks}}、{{description}}、{{url}}、{{topics}}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableProperties",
+                    "source": "Enable properties",
+                    "target": "啟用屬性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enablePropertiesDesc",
+                    "source": "Write export metadata automatically for easier filtering and organization",
+                    "target": "自動寫入匯出中繼資料，方便篩選與整理"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addNewProperty",
+                    "source": "Add new property",
+                    "target": "新增屬性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addNewPropertyDesc",
+                    "source": "Add custom properties attribute",
+                    "target": "新增自訂屬性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addPropertyButton",
+                    "source": "Add property",
+                    "target": "新增屬性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "resetTemplate",
+                    "source": "Reset template",
+                    "target": "重設範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "resetTemplateDesc",
+                    "source": "Restore to default properties template configuration",
+                    "target": "還原預設屬性範本設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "resetButton",
+                    "source": "Reset to default",
+                    "target": "還原預設值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "resetSuccess",
+                    "source": "Properties template has been reset to default",
+                    "target": "屬性範本已還原為預設值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertyToggled",
+                    "source": "Property {key} {status}",
+                    "target": "屬性 {key} {status}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editProperty",
+                    "source": "Edit",
+                    "target": "編輯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "deleteProperty",
+                    "source": "Delete",
+                    "target": "刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmDeleteProperty",
+                    "source": "Are you sure you want to delete property {key}?",
+                    "target": "確定要刪除屬性 {key} 嗎？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertyDeleted",
+                    "source": "Property {key} deleted",
+                    "target": "已刪除屬性 {key}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "comingSoon",
+                    "source": "Properties template editing feature coming soon",
+                    "target": "屬性範本編輯功能即將推出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableFullName",
+                    "source": "Repository full name",
+                    "target": "儲存庫完整名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableName",
+                    "source": "Repository name",
+                    "target": "儲存庫名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableOwner",
+                    "source": "Repository owner",
+                    "target": "儲存庫擁有者"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableUrl",
+                    "source": "Repository URL",
+                    "target": "儲存庫網址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableDescription",
+                    "source": "Repository description",
+                    "target": "儲存庫描述"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableCreatedAt",
+                    "source": "Creation time",
+                    "target": "建立時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableStarredAt",
+                    "source": "Starred time",
+                    "target": "加上星號的時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableTopics",
+                    "source": "Topic tags",
+                    "target": "主題標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableStargazersCount",
+                    "source": "Star count",
+                    "target": "星號數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableLanguage",
+                    "source": "Primary language",
+                    "target": "主要語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "justNow",
+                    "source": "Just now",
+                    "target": "剛剛"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "minutesAgo",
+                    "source": "{n} minutes ago",
+                    "target": "{n} 分鐘前"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "hoursAgo",
+                    "source": "{n} hours ago",
+                    "target": "{n} 小時前"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "daysAgo",
+                    "source": "{n} days ago",
+                    "target": "{n} 天前"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "monthsAgo",
+                    "source": "{n} months ago",
+                    "target": "{n} 個月前"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "yearsAgo",
+                    "source": "{n} years ago",
+                    "target": "{n} 年前"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "unknown",
+                    "source": "Unknown",
+                    "target": "未知"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enterExportMode",
+                    "source": "Entered export mode, please select repositories to export",
+                    "target": "已進入匯出模式，請選取要匯出的儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exitExportMode",
+                    "source": "Exited export mode",
+                    "target": "已退出匯出模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "urlCopied",
+                    "source": "URL copied to clipboard",
+                    "target": "網址已複製到剪貼簿"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "repoUpdated",
+                    "source": "Repository information updated",
+                    "target": "儲存庫資訊已更新"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectReposFirst",
+                    "source": "Please select repositories to export first",
+                    "target": "請先選取要匯出的儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportSuccess",
+                    "source": "Export completed! Successfully exported {exportedCount} repositories, skipped {skippedCount}",
+                    "target": "匯出完成！已成功匯出 {exportedCount} 個儲存庫，略過 {skippedCount} 個"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportPartialSuccess",
+                    "source": "Export completed with errors. Successfully exported {exportedCount} repositories, failed {errorCount}",
+                    "target": "匯出完成，但發生錯誤。已成功匯出 {exportedCount} 個儲存庫，{errorCount} 個失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportFailed",
+                    "source": "Export failed, please check console for details",
+                    "target": "匯出失敗，請查看主控台以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountEnabled",
+                    "source": "Account {username} enabled",
+                    "target": "已啟用帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountDisabled",
+                    "source": "Account {username} disabled",
+                    "target": "已停用帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortByNotice",
+                    "source": "Sort by {sortBy} {order}",
+                    "target": "排序方式：{sortBy}，{order}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeSwitch",
+                    "source": "Switched to {theme} theme",
+                    "target": "已切換至{theme}佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "loaded",
+                    "source": "GitHub stars manager loaded",
+                    "target": "GitHub Stars Manager 已載入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncCommandName",
+                    "source": "Sync GitHub stars",
+                    "target": "同步 GitHub 星號儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "openViewCommandName",
+                    "source": "Open GitHub stars view",
+                    "target": "開啟 GitHub 星號儲存庫檢視"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportAllCommandName",
+                    "source": "Export all starred repositories",
+                    "target": "匯出所有星號儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "configureAccount",
+                    "source": "Please configure GitHub account or personal access token in settings first",
+                    "target": "請先在設定中配置 GitHub 帳號或個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "defaultAccount",
+                    "source": "Default account",
+                    "target": "預設帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailed",
+                    "source": "Sync failed, please check console for details",
+                    "target": "同步失敗，請查看主控台以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedWithErrors",
+                    "source": "Sync failed: {errors}",
+                    "target": "同步失敗：{errors}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncCompleteNoRepos",
+                    "source": "Sync completed, but no starred repositories found",
+                    "target": "同步完成，但找不到已加上星號的儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noReposToExport",
+                    "source": "No starred repositories to export, please sync data first",
+                    "target": "沒有可匯出的星號儲存庫，請先同步資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportingAll",
+                    "source": "Exporting starred repositories...",
+                    "target": "正在匯出星號儲存庫..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportAllSuccess",
+                    "source": "Export completed! Successfully exported {count} repositories, skipped {skipped}",
+                    "target": "匯出完成！已成功匯出 {count} 個儲存庫，略過 {skipped} 個"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportAllPartial",
+                    "source": "Export completed with errors. Successfully exported {count} repositories, failed {failed}",
+                    "target": "匯出完成，但發生錯誤。已成功匯出 {count} 個儲存庫，{failed} 個失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportAllFailed",
+                    "source": "Export failed, please check console for details",
+                    "target": "匯出失敗，請查看主控台以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportingSingle",
+                    "source": "Exporting {name}...",
+                    "target": "正在匯出 {name}..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportSingleSuccess",
+                    "source": "{name} export successful",
+                    "target": "{name} 匯出成功"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportSingleSkipped",
+                    "source": "{name} export skipped (file already exists)",
+                    "target": "已略過匯出 {name}（檔案已存在）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportSingleFailed",
+                    "source": "Export {name} failed",
+                    "target": "匯出 {name} 失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirm",
+                    "source": "确认",
+                    "target": "確認"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "save",
+                    "source": "保存",
+                    "target": "儲存"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "delete",
+                    "source": "删除",
+                    "target": "刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "edit",
+                    "source": "编辑",
+                    "target": "編輯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "close",
+                    "source": "关闭",
+                    "target": "關閉"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectAll",
+                    "source": "全选",
+                    "target": "全選"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "deselectAll",
+                    "source": "取消全选",
+                    "target": "取消全選"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "loading",
+                    "source": "加载中...",
+                    "target": "載入中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "错误",
+                    "target": "錯誤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "GitHub 星标仓库",
+                    "target": "GitHub 星號儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncButton",
+                    "source": "同步仓库",
+                    "target": "同步儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "searchPlaceholder",
+                    "source": "搜索仓库...",
+                    "target": "搜尋儲存庫..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "clearSearch",
+                    "source": "清除搜索",
+                    "target": "清除搜尋"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addAccount",
+                    "source": "+ 添加账号",
+                    "target": "新增帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountsLabel",
+                    "source": "账号",
+                    "target": "帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportMode",
+                    "source": "导出模式",
+                    "target": "匯出模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exitExportMode",
+                    "source": "退出导出模式",
+                    "target": "退出匯出模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportSelected",
+                    "source": "确认导出",
+                    "target": "匯出所選項目"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exporting",
+                    "source": "导出中...",
+                    "target": "匯出中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmExport",
+                    "source": "确认导出",
+                    "target": "確認匯出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cancelExport",
+                    "source": "取消导出",
+                    "target": "取消匯出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noRepos",
+                    "source": "没有星标仓库。点击同步按钮从GitHub获取。",
+                    "target": "尚無已加上星號的儲存庫。請按同步按鈕從 GitHub 取得資料。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noMatchingRepos",
+                    "source": "没有匹配的仓库。",
+                    "target": "找不到符合條件的儲存庫。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noTags",
+                    "source": "无标签",
+                    "target": "尚無標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagsLabel",
+                    "source": "标签",
+                    "target": "標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "showLess",
+                    "source": "收起",
+                    "target": "收合"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "clearTagFilters",
+                    "source": "清空筛选",
+                    "target": "清除篩選"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageEnter",
+                    "source": "管理标签",
+                    "target": "管理標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageHint",
+                    "source": "点击标签可编辑，也可新建标签。",
+                    "target": "點選標籤即可編輯，也可以新增標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageModeOn",
+                    "source": "已进入标签管理模式，点击标签打开编辑面板",
+                    "target": "已進入標籤管理模式。點選標籤可開啟編輯面板。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageModeOff",
+                    "source": "已退出标签管理模式",
+                    "target": "已退出標籤管理模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageNoTags",
+                    "source": "暂无标签可管理",
+                    "target": "沒有可管理的標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManageClickToEdit",
+                    "source": "点击编辑该标签",
+                    "target": "點選以編輯此標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagAddButton",
+                    "source": "+ 新建标签",
+                    "target": "+ 新增標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreateTitle",
+                    "source": "新建标签",
+                    "target": "新增標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreateDesc",
+                    "source": "创建一个全局标签，后续可用于仓库标注。",
+                    "target": "建立可用於所有儲存庫註記的標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreatePlaceholder",
+                    "source": "输入标签名称",
+                    "target": "輸入標籤名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagAddAction",
+                    "source": "添加",
+                    "target": "新增"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreateEmpty",
+                    "source": "标签名称不能为空",
+                    "target": "標籤名稱不可為空"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreateExists",
+                    "source": "标签“{tag}”已存在",
+                    "target": "標籤「{tag}」已存在"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagCreateSuccess",
+                    "source": "已添加标签“{tag}”",
+                    "target": "已新增標籤「{tag}」"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagInlineEditName",
+                    "source": "编辑标签：{tag}",
+                    "target": "編輯標籤：{tag}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagInlineEditDesc",
+                    "source": "该修改会应用到所有仓库。",
+                    "target": "此變更會套用至所有儲存庫。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenamePlaceholder",
+                    "source": "输入新标签名称",
+                    "target": "輸入新的標籤名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameEmpty",
+                    "source": "新标签名称不能为空",
+                    "target": "新的標籤名稱不可為空"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameUnchanged",
+                    "source": "标签名称未变化",
+                    "target": "標籤名稱未變更"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameNotFound",
+                    "source": "未找到标签 {tag}，可能已被修改",
+                    "target": "儲存庫註記中找不到標籤 {tag}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameSuccess",
+                    "source": "已将 {oldTag} 重命名为 {newTag}，影响 {count} 个仓库",
+                    "target": "已在 {count} 個儲存庫中將 {oldTag} 重新命名為 {newTag}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameMergeWarning",
+                    "source": "标签“{newTag}”已存在，保存将合并标签。",
+                    "target": "標籤「{newTag}」已存在，儲存後會合併標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagMergeConfirm",
+                    "source": "确认合并",
+                    "target": "確認合併"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagDeleteBlocked",
+                    "source": "标签“{tag}”仍关联 {count} 个仓库，不能删除",
+                    "target": "標籤「{tag}」仍有 {count} 個儲存庫使用，無法刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagDeleteNotFound",
+                    "source": "标签“{tag}”不存在或已删除",
+                    "target": "標籤「{tag}」不存在或已刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagDeleteSuccess",
+                    "source": "已删除标签“{tag}”",
+                    "target": "已刪除標籤「{tag}」"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataButton",
+                    "source": "失效数据",
+                    "target": "失效資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataButtonWithCount",
+                    "source": "失效数据 ({count})",
+                    "target": "失效資料（{count}）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagColorLabel",
+                    "source": "标签颜色",
+                    "target": "標籤顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagColorDesc",
+                    "source": "选择一个颜色并保存，将应用到所有同名标签。",
+                    "target": "選取顏色並儲存，即可套用至所有同名標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagColorUpdated",
+                    "source": "已更新标签“{tag}”的颜色",
+                    "target": "已更新標籤「{tag}」的顏色"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfToggle",
+                    "source": "性能",
+                    "target": "效能"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfPanelTitle",
+                    "source": "性能监控",
+                    "target": "效能監測"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCollapse",
+                    "source": "收起",
+                    "target": "收合"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfDataSummary",
+                    "source": "数据",
+                    "target": "資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfDataTotal",
+                    "source": "总仓库",
+                    "target": "儲存庫總數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfDataVisible",
+                    "source": "可见仓库",
+                    "target": "顯示的儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfQuerySummary",
+                    "source": "查询耗时",
+                    "target": "查詢耗時"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfRenderSummary",
+                    "source": "渲染耗时",
+                    "target": "繪製耗時"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfInteractionSummary",
+                    "source": "交互响应",
+                    "target": "互動延遲"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfFrameSummary",
+                    "source": "帧率 / 卡顿",
+                    "target": "FPS / 卡頓"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCacheSummary",
+                    "source": "缓存状态",
+                    "target": "快取"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfLast",
+                    "source": "最近",
+                    "target": "最近一次"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfWorker",
+                    "source": "查询线程",
+                    "target": "查詢執行緒"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfWorkerOff",
+                    "source": "主线程",
+                    "target": "主執行緒"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfFps",
+                    "source": "估算 FPS",
+                    "target": "預估 FPS"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfJank",
+                    "source": "卡顿帧",
+                    "target": "卡頓影格"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfLongTask",
+                    "source": "长任务（>50ms）",
+                    "target": "長任務（>50ms）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfFirstScreenSummary",
+                    "source": "首屏渲染",
+                    "target": "首屏繪製"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCacheReads",
+                    "source": "读取",
+                    "target": "讀取"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCacheWrites",
+                    "source": "写入",
+                    "target": "寫入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCacheHits",
+                    "source": "命中恢复",
+                    "target": "還原命中"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCopy",
+                    "source": "复制诊断",
+                    "target": "複製診斷資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfReset",
+                    "source": "清空统计",
+                    "target": "重設統計"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfCopied",
+                    "source": "性能诊断已复制",
+                    "target": "已複製效能診斷資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "perfResetDone",
+                    "source": "已清空性能统计",
+                    "target": "已重設效能統計"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editRepo",
+                    "source": "编辑",
+                    "target": "編輯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cannotEditRepo",
+                    "source": "无法编辑此仓库信息",
+                    "target": "無法編輯此儲存庫資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "starred",
+                    "source": "最近添加",
+                    "target": "最近加上星號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "stars",
+                    "source": "Star数量",
+                    "target": "星號數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "forks",
+                    "source": "Fork数量",
+                    "target": "Fork 數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "asc",
+                    "source": "升序",
+                    "target": "遞增"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "降序",
+                    "target": "遞減"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "toggle",
+                    "source": "切换主题",
+                    "target": "切換佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "switchToDefault",
+                    "source": "切换到默认主题",
+                    "target": "切換至預設佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "switchToIosGlass",
+                    "source": "切换到iOS液态玻璃主题",
+                    "target": "切換至 iOS 毛玻璃佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "default",
+                    "source": "默认",
+                    "target": "預設"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "iosGlass",
+                    "source": "iOS液态玻璃",
+                    "target": "iOS 毛玻璃"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncing",
+                    "source": "正在同步GitHub星标...",
+                    "target": "正在同步 GitHub 星號儲存庫..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "success",
+                    "source": "GitHub 星标同步成功",
+                    "target": "GitHub 星號儲存庫同步成功"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "partialSuccess",
+                    "source": "\\u540C\\u6B65\\u90E8\\u5206\\u5B8C\\u6210\\uFF1A{success} \\u4E2A\\u8D26\\u53F7\\u6210\\u529F\\uFF0C\\u5171 {repos} \\u4E2A\\u4ED3\\u5E93\n\\u5931\\u8D25\\u8D26\\u53F7: {failed}",
+                    "target": "部分同步完成：{success} 個帳號成功，共 {repos} 個儲存庫\n失敗帳號：{failed}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "failed",
+                    "source": "\\u540C\\u6B65\\u5931\\u8D25\\uFF1A\\u6240\\u6709\\u8D26\\u53F7\\u90FD\\u65E0\\u6CD5\\u540C\\u6B65\n\\u5931\\u8D25\\u8D26\\u53F7: {failed}\n{reason}",
+                    "target": "同步失敗：所有帳號都無法同步\n失敗帳號：{failed}\n{reason}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "同步失败，请检查设置和网络连接",
+                    "target": "同步失敗，請檢查設定與網路連線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "reasonNetwork",
+                    "source": "请检查网络连接",
+                    "target": "請檢查網路連線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "reasonAuth",
+                    "source": "请检查访问令牌是否有效",
+                    "target": "請檢查存取權杖是否仍有效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "reasonRateLimit",
+                    "source": "GitHub API 已触发限流，请稍后再试",
+                    "target": "已超過 GitHub API 請求次數限制，請稍後再試"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "reasonUnknown",
+                    "source": "请查看控制台日志了解详情",
+                    "target": "請查看主控台記錄以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "failedReasonNetworkLabel",
+                    "source": "网络异常",
+                    "target": "網路"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "failedReasonAuthLabel",
+                    "source": "令牌无效",
+                    "target": "驗證"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "failedReasonRateLimitLabel",
+                    "source": "触发限流",
+                    "target": "請求次數限制"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "failedReasonUnknownLabel",
+                    "source": "未知错误",
+                    "target": "不明原因"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noAccounts",
+                    "source": "请先在设置中配置GitHub账号或个人访问令牌",
+                    "target": "請先在設定中配置 GitHub 帳號或個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "stars",
+                    "source": "星标",
+                    "target": "星號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "updated",
+                    "source": "更新于",
+                    "target": "更新時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "language",
+                    "source": "语言",
+                    "target": "語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addNote",
+                    "source": "添加笔记",
+                    "target": "新增筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editNote",
+                    "source": "编辑笔记",
+                    "target": "編輯筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addTags",
+                    "source": "添加标签",
+                    "target": "新增標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "linkNote",
+                    "source": "关联笔记",
+                    "target": "關聯筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "openInGithub",
+                    "source": "在GitHub中打开",
+                    "target": "在 GitHub 開啟"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "copyUrl",
+                    "source": "复制链接",
+                    "target": "複製網址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "export",
+                    "source": "导出",
+                    "target": "匯出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editRepo",
+                    "source": "编辑仓库",
+                    "target": "編輯儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "notes",
+                    "source": "笔记",
+                    "target": "筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "notesPlaceholder",
+                    "source": "在这里添加你的笔记...",
+                    "target": "在此新增筆記..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tags",
+                    "source": "标签",
+                    "target": "標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagsDesc",
+                    "source": "用逗号分隔标签",
+                    "target": "以逗號分隔標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagsPlaceholder",
+                    "source": "web development, api, tutorial",
+                    "target": "網頁開發, API, 教學"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectExistingTags",
+                    "source": "选择已有标签：",
+                    "target": "選取現有標籤："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "linkedNote",
+                    "source": "关联笔记",
+                    "target": "關聯筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "linkedNoteDesc",
+                    "source": "关联到Obsidian中的笔记",
+                    "target": "關聯至 Obsidian 中的筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "projectLinks",
+                    "source": "链接",
+                    "target": "連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "projectLinkNamePlaceholder",
+                    "source": "链接名",
+                    "target": "名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "projectLinkUrlPlaceholder",
+                    "source": "链接",
+                    "target": "網址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addProjectLink",
+                    "source": "添加",
+                    "target": "新增"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "saveProjectLink",
+                    "source": "保存",
+                    "target": "儲存"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "projectLinkUrlRequired",
+                    "source": "请输入链接",
+                    "target": "請輸入連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "projectLinkDuplicate",
+                    "source": "该链接已存在",
+                    "target": "此連結已存在"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "notePath",
+                    "source": "笔记路径",
+                    "target": "筆記路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "browse",
+                    "source": "浏览",
+                    "target": "瀏覽"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "searchNote",
+                    "source": "搜索并选择笔记...",
+                    "target": "搜尋並選取筆記..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noNoteSelected",
+                    "source": "未选择笔记",
+                    "target": "尚未選取筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "removeLink",
+                    "source": "移除关联",
+                    "target": "移除關聯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManagement",
+                    "source": "标签管理",
+                    "target": "標籤管理"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManagementDesc",
+                    "source": "在当前编辑弹窗中直接重命名已有标签。",
+                    "target": "直接在此編輯器中重新命名現有標籤。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagInlineHint",
+                    "source": "双击上方任意标签即可全局重命名。",
+                    "target": "連按兩下上方的標籤，即可在所有儲存庫中重新命名。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataTitle",
+                    "source": "失效数据",
+                    "target": "失效資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataSummary",
+                    "source": "当前共有 {count} 条本地增强数据已失效，它们对应的仓库已不在当前星标列表中。",
+                    "target": "有 {count} 筆本機補充資料無法對應至目前星號清單中的儲存庫。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataEmpty",
+                    "source": "当前没有失效数据。",
+                    "target": "沒有失效資料。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDeleteAll",
+                    "source": "删除全部",
+                    "target": "全部刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRefreshSnapshots",
+                    "source": "补查缺失信息",
+                    "target": "復原遺失資訊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRefreshRunning",
+                    "source": "补查中...",
+                    "target": "復原中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRefreshNoop",
+                    "source": "当前没有需要补查的失效数据",
+                    "target": "目前沒有需要復原的失效資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRefreshDone",
+                    "source": "补查完成：恢复 {updated} 条，仍有 {missing} 条无法恢复",
+                    "target": "復原完成：已還原 {updated} 筆，仍有 {missing} 筆無法復原"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRepoId",
+                    "source": "仓库 ID：{repoId}",
+                    "target": "儲存庫 ID：{repoId}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataRepoLink",
+                    "source": "仓库链接：",
+                    "target": "儲存庫網址："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDescription",
+                    "source": "仓库描述：{description}",
+                    "target": "描述：{description}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataSnapshotTime",
+                    "source": "快照记录时间：{time}",
+                    "target": "快照記錄時間：{time}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataNoSnapshot",
+                    "source": "缺少仓库快照，可尝试在线补查",
+                    "target": "缺少儲存庫快照，請嘗試連線復原。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDeleteAllConfirmMessage",
+                    "source": "将删除 {count} 条失效数据，此操作不可撤销，确认继续吗？",
+                    "target": "這會刪除 {count} 筆失效資料，且無法復原。是否繼續？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDeleteAllConfirmButton",
+                    "source": "确认删除全部",
+                    "target": "確認全部刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataTags",
+                    "source": "标签：{tags}",
+                    "target": "標籤：{tags}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataNone",
+                    "source": "无",
+                    "target": "無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataNotesPreview",
+                    "source": "笔记：{notes}",
+                    "target": "筆記：{notes}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataNoNotes",
+                    "source": "笔记：无",
+                    "target": "筆記：無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataLinkedNote",
+                    "source": "关联笔记：{path}",
+                    "target": "關聯筆記：{path}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataNoLinkedNote",
+                    "source": "关联笔记：无",
+                    "target": "關聯筆記：無"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDeleteDone",
+                    "source": "已删除 {count} 条失效数据",
+                    "target": "已刪除 {count} 筆失效資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalidDataDeleteMissing",
+                    "source": "没有可删除的失效数据",
+                    "target": "沒有可刪除的失效資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagInlineEditName",
+                    "source": "重命名标签：{tag}",
+                    "target": "重新命名標籤：{tag}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagInlineEditDesc",
+                    "source": "该操作会应用到所有仓库。",
+                    "target": "此變更會套用至所有儲存庫。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noTagsToManage",
+                    "source": "暂无可管理标签",
+                    "target": "沒有可管理的標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagUsageCount",
+                    "source": "已用于 {count} 个仓库",
+                    "target": "用於 {count} 個儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "renameTagButton",
+                    "source": "重命名",
+                    "target": "重新命名"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagRenameMergeConfirm",
+                    "source": "标签“{newTag}”已存在。将“{oldTag}”重命名为它会合并标签，是否继续？",
+                    "target": "標籤「{newTag}」已存在。重新命名「{oldTag}」後會合併兩者。是否繼續？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectNote",
+                    "source": "选择笔记",
+                    "target": "選取筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "searchNotes",
+                    "source": "搜索笔记...",
+                    "target": "搜尋筆記..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noMatchingNotes",
+                    "source": "没有匹配的笔记",
+                    "target": "找不到符合條件的筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "批量导出仓库",
+                    "target": "批次匯出儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectRepos",
+                    "source": "选择要导出为Markdown文件的仓库：",
+                    "target": "選取要匯出為 Markdown 檔案的儲存庫："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportButton",
+                    "source": "导出选中的仓库",
+                    "target": "匯出所選儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportCount",
+                    "source": "导出 {count} 个仓库",
+                    "target": "匯出 {count} 個儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectFirst",
+                    "source": "请先选择要导出的仓库",
+                    "target": "請先選取要匯出的儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "success",
+                    "source": "导出完成！成功导出 {count} 个仓库",
+                    "target": "匯出完成！已成功匯出 {count} 個儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "partialSuccess",
+                    "source": "导出完成，但有错误。成功导出 {success} 个仓库，失败 {failed} 个",
+                    "target": "匯出完成，但發生錯誤。已成功匯出 {success} 個儲存庫，{failed} 個失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "failed",
+                    "source": "导出失败，请检查路径和权限设置",
+                    "target": "匯出失敗，請檢查路徑與權限設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "导出失败，请查看控制台了解详情",
+                    "target": "匯出失敗，請查看主控台以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "fileExists",
+                    "source": "文件已存在",
+                    "target": "檔案已存在"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "overwrite",
+                    "source": "覆盖",
+                    "target": "覆寫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "skip",
+                    "source": "跳过",
+                    "target": "略過"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "skipAll",
+                    "source": "跳过全部",
+                    "target": "全部略過"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "overwriteAll",
+                    "source": "覆盖全部",
+                    "target": "全部覆寫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "fileExistsMessage",
+                    "source": "以下文件已存在：",
+                    "target": "以下檔案已存在："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "fileExistsDesc",
+                    "source": "是否要覆盖现有文件？",
+                    "target": "是否覆寫現有檔案？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "repoExportFailed",
+                    "source": "导出 {name} 失败：{error}",
+                    "target": "匯出 {name} 失敗：{error}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "processExportFailed",
+                    "source": "导出过程失败：{error}",
+                    "target": "匯出流程失敗：{error}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmActionTitle",
+                    "source": "确认操作",
+                    "target": "確認操作"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountsHeading",
+                    "source": "GitHub 账号",
+                    "target": "GitHub 帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountsDesc",
+                    "source": "管理多个GitHub账号。每个账号需要一个个人访问令牌。",
+                    "target": "管理多個 GitHub 帳號。每個帳號都需要個人存取權杖。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addAccountButton",
+                    "source": "添加账号",
+                    "target": "新增帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addAccountDesc",
+                    "source": "添加一个新的GitHub账号以同步来自多个账号的星标仓库",
+                    "target": "新增 GitHub 帳號，以同步多個帳號的星號儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noAccounts",
+                    "source": "还未配置GitHub账号",
+                    "target": "尚未設定 GitHub 帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noAccountsMessage",
+                    "source": "还未配置GitHub账号。点击上方按钮添加账号。",
+                    "target": "尚未設定 GitHub 帳號，請按上方按鈕新增帳號。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManagementHeading",
+                    "source": "标签管理",
+                    "target": "標籤管理"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tagManagementDesc",
+                    "source": "重命名已有标签，并同步更新到所有仓库标注数据。",
+                    "target": "重新命名現有標籤，並同步更新所有儲存庫註記。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountEnabled",
+                    "source": "已启用",
+                    "target": "已啟用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountDisabled",
+                    "source": "已禁用",
+                    "target": "已停用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enabled",
+                    "source": "已启用",
+                    "target": "已啟用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "disabled",
+                    "source": "已禁用",
+                    "target": "已停用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validate",
+                    "source": "验证",
+                    "target": "驗證"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "remove",
+                    "source": "删除",
+                    "target": "移除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validating",
+                    "source": "验证中...",
+                    "target": "驗證中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "valid",
+                    "source": "令牌有效",
+                    "target": "權杖有效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "invalid",
+                    "source": "令牌无效",
+                    "target": "權杖無效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountToggled",
+                    "source": "账号 {username} {status}",
+                    "target": "帳號 {username} {status}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmDeleteAccount",
+                    "source": "确定要删除账号 {username} 吗？",
+                    "target": "確定要刪除帳號 {username} 嗎？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountDeleted",
+                    "source": "账号 {username} 已删除",
+                    "target": "已刪除帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addAccountTitle",
+                    "source": "添加GitHub账号",
+                    "target": "新增 GitHub 帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editAccountTitle",
+                    "source": "编辑GitHub账号",
+                    "target": "編輯 GitHub 帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountName",
+                    "source": "账号名称",
+                    "target": "帳號名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountNameDesc",
+                    "source": "为此账号设置一个显示名称",
+                    "target": "設定此帳號的顯示名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountNamePlaceholder",
+                    "source": "输入账号名称",
+                    "target": "輸入帳號名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubUsername",
+                    "source": "GitHub用户名",
+                    "target": "GitHub 使用者名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubUsernameDesc",
+                    "source": "GitHub用户名（输入令牌后自动获取）",
+                    "target": "GitHub 使用者名稱（輸入權杖後會自動取得）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "autoFetch",
+                    "source": "自动获取",
+                    "target": "自動取得"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tokenLabel",
+                    "source": "个人访问令牌",
+                    "target": "個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tokenPlaceholder",
+                    "source": "ghp_xxxxxxxxxxxx",
+                    "target": "Ghp_xxxxxxxxxxxx"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tokenDesc",
+                    "source": "GitHub 个人访问令牌，建议使用 read:user 和 public_repo 最小权限",
+                    "target": "GitHub 個人存取權杖。建議只授予必要的 read:user 與 public_repo 權限。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tokenDescShort",
+                    "source": "建议使用 read:user 和 public_repo 权限；仅需私有仓库数据时才使用 repo 权限",
+                    "target": "建議使用 read:user 與 public_repo 權限；只有需要存取私人儲存庫資料時才使用 repo。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tokenInputPlaceholder",
+                    "source": "输入您的GitHub个人访问令牌",
+                    "target": "輸入 GitHub 個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "howToGetToken",
+                    "source": "如何获取令牌？",
+                    "target": "如何取得權杖？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validateAndSave",
+                    "source": "验证并保存",
+                    "target": "驗證並儲存"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "saving",
+                    "source": "保存中...",
+                    "target": "儲存中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tokenRequired",
+                    "source": "请输入个人访问令牌",
+                    "target": "請輸入個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "usernameNotFetched",
+                    "source": "用户名未自动获取，请检查令牌是否正确",
+                    "target": "無法自動取得使用者名稱，請確認權杖是否正確"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "validationFailed",
+                    "source": "令牌验证失败，请检查令牌是否正确",
+                    "target": "權杖驗證失敗，請確認權杖是否正確"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountAdded",
+                    "source": "账号 {username} 已添加",
+                    "target": "已新增帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountUpdated",
+                    "source": "账号 {username} 已更新",
+                    "target": "已更新帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountRemoved",
+                    "source": "账号 {username} 已删除",
+                    "target": "已移除帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountEnabled_",
+                    "source": "账号 {username} 已启用",
+                    "target": "已啟用帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountDisabled_",
+                    "source": "账号 {username} 已禁用",
+                    "target": "已停用帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubToken",
+                    "source": "GitHub个人访问令牌",
+                    "target": "GitHub 個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubTokenDesc",
+                    "source": "用于访问您的 GitHub 星标仓库的令牌。建议使用 read:user 和 public_repo 最小权限；仅需私有仓库数据时才使用 repo 权限。建议使用上方的多账号管理功能。",
+                    "target": "用於存取 GitHub 星號儲存庫的權杖。建議只授予必要的 read:user 與 public_repo 權限；只有需要存取私人儲存庫資料時才使用 repo。建議使用上方的多帳號管理功能。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "githubTokenPlaceholder",
+                    "source": "输入您的GitHub个人访问令牌",
+                    "target": "輸入 GitHub 個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "autoSyncHeading",
+                    "source": "自动同步",
+                    "target": "自動同步"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableAutoSync",
+                    "source": "启用自动同步",
+                    "target": "啟用自動同步"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableAutoSyncDesc",
+                    "source": "定期自动同步您的GitHub星标",
+                    "target": "定期自動同步 GitHub 星號儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncIntervalName",
+                    "source": "同步间隔（天）",
+                    "target": "同步間隔（天）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncIntervalDesc",
+                    "source": "设置自动同步的天数间隔",
+                    "target": "設定自動同步的間隔天數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncInterval",
+                    "source": "同步间隔",
+                    "target": "同步間隔"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncIntervalDescShort",
+                    "source": "同步频率（天）",
+                    "target": "同步頻率（以天為單位）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncNowDesc",
+                    "source": "立即从GitHub获取您的星标仓库",
+                    "target": "立即從 GitHub 取得星號儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailed",
+                    "source": "同步失败",
+                    "target": "同步失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedNotice",
+                    "source": "同步失败，请检查您的网络连接或令牌设置",
+                    "target": "同步失敗，請檢查網路連線或權杖設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedNoticeNetwork",
+                    "source": "同步失败：无法连接 GitHub，请检查网络连接",
+                    "target": "同步失敗：無法連線至 GitHub，請檢查網路連線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedNoticeAuth",
+                    "source": "同步失败：请检查访问令牌是否有效",
+                    "target": "同步失敗：請確認存取權杖是否有效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedNoticeRateLimit",
+                    "source": "同步失败：GitHub API 已限流，请稍后再试",
+                    "target": "同步失敗：已超過 GitHub API 請求次數限制，請稍後再試"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedNoticeUnknown",
+                    "source": "同步失败，请查看控制台日志了解详情",
+                    "target": "同步失敗，請查看主控台記錄以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountTestFailedNetwork",
+                    "source": "❌ 无法连接 GitHub，请检查网络连接",
+                    "target": "❌ 無法連線至 GitHub，請檢查網路連線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountTestFailedAuth",
+                    "source": "❌ 令牌无效或已过期",
+                    "target": "❌ 權杖無效或已過期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountTestFailedRateLimit",
+                    "source": "❌ GitHub API 已限流，请稍后再试",
+                    "target": "❌ 已超過 GitHub API 請求次數限制，請稍後再試"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountTestFailedUnknown",
+                    "source": "❌ 令牌测试失败：{message}",
+                    "target": "❌ 權杖測試失敗：{message}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportHeading",
+                    "source": "导出",
+                    "target": "匯出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableExport",
+                    "source": "启用导出",
+                    "target": "啟用匯出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableExportDesc",
+                    "source": "启用将星标仓库导出为Markdown文件",
+                    "target": "啟用將星號儲存庫匯出為 Markdown 檔案的功能"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportPath",
+                    "source": "导出路径",
+                    "target": "匯出路徑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportPathDesc",
+                    "source": "导出文件保存的目录",
+                    "target": "匯出檔案的儲存目錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportPathPlaceholder",
+                    "source": "笔记/GitHub",
+                    "target": "Notes/GitHub"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeHeading",
+                    "source": "主题",
+                    "target": "佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "theme",
+                    "source": "主题",
+                    "target": "佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeDesc",
+                    "source": "选择插件界面主题",
+                    "target": "選取外掛介面的佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeDefault",
+                    "source": "默认",
+                    "target": "預設"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeDefaultOption",
+                    "source": "默认主题",
+                    "target": "預設佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeIosGlass",
+                    "source": "iOS液态玻璃",
+                    "target": "iOS 毛玻璃"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeIosGlassOption",
+                    "source": "iOS液态玻璃",
+                    "target": "iOS 毛玻璃"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "languageHeading",
+                    "source": "语言",
+                    "target": "語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "languageDesc",
+                    "source": "选择显示语言（需要重新加载）",
+                    "target": "選取顯示語言（需重新載入）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "languageReloadNotice",
+                    "source": "语言将在重新加载插件后应用",
+                    "target": "重新載入外掛後會套用語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "repoRenderPerformanceMode",
+                    "source": "列表性能模式",
+                    "target": "清單效能模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "repoRenderPerformanceModeDesc",
+                    "source": "选择列表渲染策略。",
+                    "target": "選取清單的繪製策略。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "repoRenderPerformanceModeVisual",
+                    "source": "样式优先",
+                    "target": "視覺優先"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enablePerformanceMonitor",
+                    "source": "启用性能监控",
+                    "target": "啟用效能監測"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enablePerformanceMonitorDesc",
+                    "source": "在首页工具栏显示性能面板入口，用于观察查询/渲染耗时",
+                    "target": "在主畫面工具列顯示監測入口，查看查詢與繪製耗時"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertiesHeading",
+                    "source": "Properties 模板",
+                    "target": "屬性範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertiesConfigHeading",
+                    "source": "Properties 模板配置",
+                    "target": "屬性範本設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertiesDesc",
+                    "source": "自定义导出Markdown文件的YAML frontmatter模板",
+                    "target": "自訂匯出 Markdown 檔案的 YAML Frontmatter 範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertiesDescription",
+                    "source": "配置导出Markdown文件的properties（笔记属性）模板。支持的变量：",
+                    "target": "設定匯出 Markdown 檔案時使用的屬性範本（筆記屬性）。支援的變數："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertiesHelp",
+                    "source": "可用变量：{{name}}, {{language}}, {{stars}}, {{forks}}, {{description}}, {{url}}, {{topics}}",
+                    "target": "可用變數：{{name}}、{{language}}、{{stars}}、{{forks}}、{{description}}、{{url}}、{{topics}}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enableProperties",
+                    "source": "启用Properties",
+                    "target": "啟用屬性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enablePropertiesDesc",
+                    "source": "导出时自动写入元信息，便于检索与管理",
+                    "target": "自動寫入匯出中繼資料，方便篩選與整理"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addNewProperty",
+                    "source": "添加新属性",
+                    "target": "新增屬性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addNewPropertyDesc",
+                    "source": "添加自定义properties属性",
+                    "target": "新增自訂屬性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "addPropertyButton",
+                    "source": "添加属性",
+                    "target": "新增屬性"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "resetTemplate",
+                    "source": "重置模板",
+                    "target": "重設範本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "resetTemplateDesc",
+                    "source": "恢复为默认properties模板配置",
+                    "target": "還原預設屬性範本設定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "resetButton",
+                    "source": "重置为默认",
+                    "target": "還原預設值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "resetSuccess",
+                    "source": "Properties模板已重置为默认",
+                    "target": "屬性範本已還原為預設值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertyToggled",
+                    "source": "属性 {key} {status}",
+                    "target": "屬性 {key} {status}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "editProperty",
+                    "source": "编辑",
+                    "target": "編輯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "deleteProperty",
+                    "source": "删除",
+                    "target": "刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmDeleteProperty",
+                    "source": "确定要删除属性 {key} 吗？",
+                    "target": "確定要刪除屬性 {key} 嗎？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "propertyDeleted",
+                    "source": "属性 {key} 已删除",
+                    "target": "已刪除屬性 {key}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "comingSoon",
+                    "source": "Properties模板编辑功能即将推出",
+                    "target": "屬性範本編輯功能即將推出"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableFullName",
+                    "source": "仓库完整名称",
+                    "target": "儲存庫完整名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableName",
+                    "source": "仓库名称",
+                    "target": "儲存庫名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableOwner",
+                    "source": "仓库所有者",
+                    "target": "儲存庫擁有者"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableUrl",
+                    "source": "仓库URL",
+                    "target": "儲存庫網址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableDescription",
+                    "source": "仓库描述",
+                    "target": "儲存庫描述"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableCreatedAt",
+                    "source": "创建时间",
+                    "target": "建立時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableStarredAt",
+                    "source": "星标时间",
+                    "target": "加上星號的時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableTopics",
+                    "source": "主题标签",
+                    "target": "主題標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableStargazersCount",
+                    "source": "Star数量",
+                    "target": "星號數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "variableLanguage",
+                    "source": "主要语言",
+                    "target": "主要語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "justNow",
+                    "source": "刚刚",
+                    "target": "剛剛"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "minutesAgo",
+                    "source": "{n} 分钟前",
+                    "target": "{n} 分鐘前"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "hoursAgo",
+                    "source": "{n} 小时前",
+                    "target": "{n} 小時前"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "monthsAgo",
+                    "source": "{n} 个月前",
+                    "target": "{n} 個月前"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "enterExportMode",
+                    "source": "已进入导出模式，请选择要导出的仓库",
+                    "target": "已進入匯出模式，請選取要匯出的儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exitExportMode",
+                    "source": "已退出导出模式",
+                    "target": "已退出匯出模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "urlCopied",
+                    "source": "URL已复制到剪贴板",
+                    "target": "網址已複製到剪貼簿"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "repoUpdated",
+                    "source": "仓库信息已更新",
+                    "target": "儲存庫資訊已更新"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "selectReposFirst",
+                    "source": "请先选择要导出的仓库",
+                    "target": "請先選取要匯出的儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportSuccess",
+                    "source": "导出完成！成功导出 {exportedCount} 个仓库，跳过 {skippedCount} 个",
+                    "target": "匯出完成！已成功匯出 {exportedCount} 個儲存庫，略過 {skippedCount} 個"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportPartialSuccess",
+                    "source": "导出完成，但有错误。成功导出 {exportedCount} 个仓库，失败 {errorCount} 个",
+                    "target": "匯出完成，但發生錯誤。已成功匯出 {exportedCount} 個儲存庫，{errorCount} 個失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportFailed",
+                    "source": "导出失败，请查看控制台了解详情",
+                    "target": "匯出失敗，請查看主控台以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountEnabled",
+                    "source": "账号 {username} 已启用",
+                    "target": "已啟用帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "accountDisabled",
+                    "source": "账号 {username} 已禁用",
+                    "target": "已停用帳號 {username}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortByNotice",
+                    "source": "按{sortBy}{order}排序",
+                    "target": "排序方式：{sortBy}，{order}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "themeSwitch",
+                    "source": "已切换到{theme}主题",
+                    "target": "已切換至{theme}佈景主題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "loaded",
+                    "source": "GitHub星标管理器已加载",
+                    "target": "GitHub Stars Manager 已載入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncCommandName",
+                    "source": "同步GitHub星标",
+                    "target": "同步 GitHub 星號儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "openViewCommandName",
+                    "source": "打开GitHub星标视图",
+                    "target": "開啟 GitHub 星號儲存庫檢視"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportAllCommandName",
+                    "source": "导出所有星标仓库",
+                    "target": "匯出所有星號儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "configureAccount",
+                    "source": "请先在设置中配置GitHub账号或个人访问令牌",
+                    "target": "請先在設定中配置 GitHub 帳號或個人存取權杖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "defaultAccount",
+                    "source": "默认账号",
+                    "target": "預設帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailed",
+                    "source": "同步失败，请查看控制台了解详情",
+                    "target": "同步失敗，請查看主控台以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncFailedWithErrors",
+                    "source": "同步失败：{errors}",
+                    "target": "同步失敗：{errors}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "syncCompleteNoRepos",
+                    "source": "同步完成，但没有找到星标仓库",
+                    "target": "同步完成，但找不到已加上星號的儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noReposToExport",
+                    "source": "没有星标仓库可导出，请先同步数据",
+                    "target": "沒有可匯出的星號儲存庫，請先同步資料"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportingAll",
+                    "source": "开始导出星标仓库...",
+                    "target": "正在匯出星號儲存庫..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportAllSuccess",
+                    "source": "导出完成！成功导出 {count} 个仓库，跳过 {skipped} 个",
+                    "target": "匯出完成！已成功匯出 {count} 個儲存庫，略過 {skipped} 個"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportAllPartial",
+                    "source": "导出完成，但有错误。成功导出 {count} 个仓库，失败 {failed} 个",
+                    "target": "匯出完成，但發生錯誤。已成功匯出 {count} 個儲存庫，{failed} 個失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportAllFailed",
+                    "source": "导出失败，请查看控制台了解详情",
+                    "target": "匯出失敗，請查看主控台以了解詳情"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportingSingle",
+                    "source": "正在导出 {name}...",
+                    "target": "正在匯出 {name}..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportSingleSuccess",
+                    "source": "{name} 导出成功",
+                    "target": "{name} 匯出成功"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportSingleSkipped",
+                    "source": "{name} 导出跳过（文件已存在）",
+                    "target": "已略過匯出 {name}（檔案已存在）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportSingleFailed",
+                    "source": "导出 {name} 失败",
+                    "target": "匯出 {name} 失敗"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "仓库标题（完整名称）",
+                    "target": "儲存庫標題（完整名稱）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "仓库名称",
+                    "target": "儲存庫名稱"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "仓库所有者",
+                    "target": "儲存庫擁有者"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "仓库链接",
+                    "target": "儲存庫連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "仓库描述",
+                    "target": "儲存庫描述"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "主要编程语言",
+                    "target": "主要程式語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Star数量",
+                    "target": "星號數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Fork数量",
+                    "target": "Fork 數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Watcher数量",
+                    "target": "Watcher 數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "开放Issue数量",
+                    "target": "未結案的 Issue 數"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "主题标签",
+                    "target": "主題標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "仓库创建时间",
+                    "target": "儲存庫建立時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "最后更新时间",
+                    "target": "最後更新時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "最后推送时间",
+                    "target": "最後推送時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "加星时间",
+                    "target": "加上星號的時間"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "是否为私有仓库",
+                    "target": "是否為私人儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "是否为Fork仓库",
+                    "target": "是否為 Fork 儲存庫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "仓库ID",
+                    "target": "儲存庫 ID"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "用户笔记",
+                    "target": "使用者筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "用户标签",
+                    "target": "使用者標籤"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "关联笔记",
+                    "target": "關聯筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "测试",
+                    "target": "測試"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "测试",
+                    "target": "測試"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "测试中...",
+                    "target": "測試中..."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Add tag...",
+                    "target": "新增標籤..."
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "已进入导出模式，请选择要导出的仓库",
+                    "target": "已進入匯出模式，請選取要匯出的儲存庫"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "已退出导出模式",
+                    "target": "已退出匯出模式"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "导出",
+                    "target": "匯出"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "请先选择要导出的仓库",
+                    "target": "請先選取要匯出的儲存庫"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "导出中...",
+                    "target": "匯出中..."
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "导出失败，请查看控制台了解详情",
+                    "target": "匯出失敗，請查看主控台以了解詳情"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "取消全选",
+                    "target": "取消全選"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "全选",
+                    "target": "全選"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "B",
+                    "source": "\n\\u4EE4\\u724C\\u5DF2\\u8FC7\\u671F",
+                    "target": "\n權杖已過期"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "B",
+                    "source": "\n\\u65E0\\u8FC7\\u671F\\u65F6\\u95F4 (\\u7ECF\\u5178\\u4EE4\\u724C)",
+                    "target": "\n無到期時間（傳統權杖）"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "title:\"GitHub stars\"",
+                    "target": "title:\"GitHub 星號儲存庫\""
+                },
+                {
+                    "source": "perfCacheSummary:\"Cache\"",
+                    "target": "perfCacheSummary:\"快取\""
+                },
+                {
+                    "source": "failedReasonNetworkLabel:\"network\"",
+                    "target": "failedReasonNetworkLabel:\"網路\""
+                },
+                {
+                    "source": "failedReasonAuthLabel:\"auth\"",
+                    "target": "failedReasonAuthLabel:\"驗證\""
+                },
+                {
+                    "source": "failedReasonUnknownLabel:\"unknown\"",
+                    "target": "failedReasonUnknownLabel:\"不明原因\""
+                },
+                {
+                    "source": "\"✗ 无效\"",
+                    "target": "\"✗ 無效\""
+                },
+                {
+                    "source": "\"✗ 错误\"",
+                    "target": "\"✗ 錯誤\""
+                },
+                {
+                    "source": "\"导出\"",
+                    "target": "\"匯出\""
+                },
+                {
+                    "source": "`\n\\u8FC7\\u671F\\u65F6\\u95F4: ${te.toLocaleDateString()} (\\u5269\\u4F59${ae}\\u5929)`",
+                    "target": "`\n到期時間：${te.toLocaleDateString()}（剩餘${ae}天）`"
+                },
+                {
+                    "source": "`\nAPI\\u9650\\u989D: ${oe.rate.remaining}/${oe.rate.limit}`",
+                    "target": "`\nAPI 剩餘請求次數：${oe.rate.remaining}/${oe.rate.limit}`"
+                },
+                {
+                    "source": "`\\u2705 \\u4EE4\\u724C\\u6709\\u6548${B}${X}`",
+                    "target": "`✅ 權杖有效${B}${X}`"
+                },
+                {
+                    "source": "`Type: ${e.type} | Value: ${e.value}`",
+                    "target": "`類型：${e.type} | 值：${e.value}`"
+                },
+                {
+                    "source": "`\\u6309${B.title}${this.sortOrder===\"desc\"?g(\"view.sortBy.desc\"):g(\"view.sortBy.asc\")}\\u6392\\u5E8F`",
+                    "target": "`依${B.title}${this.sortOrder===\"desc\"?g(\"view.sortBy.desc\"):g(\"view.sortBy.asc\")}排序`"
+                },
+                {
+                    "source": "`\\u6309${B.title}\\u6392\\u5E8F`",
+                    "target": "`依${B.title}排序`"
+                },
+                {
+                    "source": "`\\u5BFC\\u51FA (${i})`",
+                    "target": "`匯出（${i}）`"
+                },
+                {
+                    "source": "`\\u5BFC\\u51FA\\u5B8C\\u6210\\uFF01\\u6210\\u529F\\u5BFC\\u51FA ${i.exportedCount} \\u4E2A\\u4ED3\\u5E93\\uFF0C\\u8DF3\\u8FC7 ${i.skippedCount} \\u4E2A`",
+                    "target": "`匯出完成！已成功匯出 ${i.exportedCount} 個儲存庫，略過 ${i.skippedCount} 個`"
+                },
+                {
+                    "source": "`\\u5BFC\\u51FA\\u5B8C\\u6210\\uFF0C\\u4F46\\u6709\\u9519\\u8BEF\\u3002\\u6210\\u529F\\u5BFC\\u51FA ${i.exportedCount} \\u4E2A\\u4ED3\\u5E93\\uFF0C\\u5931\\u8D25 ${i.errors.length} \\u4E2A`",
+                    "target": "`匯出完成，但發生錯誤。已成功匯出 ${i.exportedCount} 個儲存庫，${i.errors.length} 個失敗`"
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [],
+            "regex": [
+                {
+                    "source": "\"description\": \"Manage your GitHub starred repositories.\"",
+                    "target": "\"description\": \"管理在 GitHub 上加上星號的儲存庫。\""
+                }
+            ]
+        }
+    }
+}
