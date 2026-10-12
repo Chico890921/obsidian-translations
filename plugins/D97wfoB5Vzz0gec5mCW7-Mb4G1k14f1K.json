@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-importer",
-        "version": "3.1.13",
+        "version": "3.1.14",
         "title": "[zh-tw] Importer",
         "description": "Importer 繁體中文補充翻譯",
         "language": "zh-tw",
-        "supportedVersions": "3.1.13",
+        "supportedVersions": "3.1.14",
         "author": "Chico",
-        "updatedAt": 1791391025046
+        "updatedAt": 1791733047462
     },
     "dict": {
         "main.js": {
@@ -524,6 +524,10 @@
                 {
                     "source": "`Unknown tag: {% ${r.value} %}`",
                     "target": "`未知的標籤：{% ${r.value} %}`"
+                },
+                {
+                    "source": "`The property set contains an unsupported representation type 0x${A.toString(16).padStart(2,\"0\")}.`",
+                    "target": "`屬性集包含不支援的表示型別 0x${A.toString(16).padStart(2,\"0\")}。`"
                 }
             ]
         },
