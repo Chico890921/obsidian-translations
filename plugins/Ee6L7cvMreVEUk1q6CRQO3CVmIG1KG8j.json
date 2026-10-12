@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-linter",
-        "version": "1.33.0",
+        "version": "1.34.0",
         "title": "[zh-tw] Linter",
         "description": "Linter Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "1.33.0",
+        "supportedVersions": "1.34.0",
         "author": "Chico",
-        "updatedAt": 1789848977848
+        "updatedAt": 1791733666155
     },
     "dict": {
         "main.js": {
@@ -916,12 +916,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "description",
-                    "source": "A comma separated list of lowercased words to ignore when auto-correcting",
-                    "target": "A comma separated list of lowercased words to ignore when auto-correcting"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
                     "source": "Adds a blank line after the YAML block if it does not end the current file or it is not already followed by at least 1 blank line",
                     "target": "Adds a blank line after the YAML block if it does not end the current file or it is not already followed by at least 1 blank line"
                 },
@@ -954,18 +948,6 @@
                     "name": "description",
                     "source": "The style of capitalization to use",
                     "target": "The style of capitalization to use"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "A comma separated list of words to ignore when capitalizing",
-                    "target": "A comma separated list of words to ignore when capitalizing"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "A comma separated list of words to keep lowercase",
-                    "target": "A comma separated list of words to keep lowercase"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1024,12 +1006,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "description",
-                    "source": "Uses the YAML escape character on the specified YAML keys separated by a new line character if it is not already escaped. Do not use on YAML arrays.",
-                    "target": "Uses the YAML escape character on the specified YAML keys separated by a new line character if it is not already escaped. Do not use on YAML arrays."
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
                     "source": "Allows for the formatting of regular YAML arrays as either multi-line or single-line and <code>tags</code> and <code>aliases</code> are allowed to have some Obsidian specific YAML formats. <b>Note: that single string to single-line goes from a single string entry to a single-line array if more than 1 entry is present. The same is true for single string to multi-line except it becomes a multi-line array.</b>",
                     "target": "Allows for the formatting of regular YAML arrays as either multi-line or single-line and <code>tags</code> and <code>aliases</code> are allowed to have some Obsidian specific YAML formats. <b>Note: that single string to single-line goes from a single string entry to a single-line array if more than 1 entry is present. The same is true for single string to multi-line except it becomes a multi-line array.</b>"
                 },
@@ -1044,12 +1020,6 @@
                     "name": "description",
                     "source": "Turns on formatting for the YAML tags section.",
                     "target": "Turns on formatting for the YAML tags section."
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "The style of other YAML arrays that are not <code>tags</code>, <code>aliases</code> or  in <code>Force key values to be single-line arrays</code> and <code>Force key values to be multi-line arrays</code>",
-                    "target": "The style of other YAML arrays that are not <code>tags</code>, <code>aliases</code> or  in <code>Force key values to be single-line arrays</code> and <code>Force key values to be multi-line arrays</code>"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1230,12 +1200,6 @@
                     "name": "description",
                     "source": "Turns on sorting values for regular YAML arrays",
                     "target": "Turns on sorting values for regular YAML arrays"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "A list of YAML keys without the ending colon on their own lines that are not meant to have their values sorted.",
-                    "target": "A list of YAML keys without the ending colon on their own lines that are not meant to have their values sorted."
                 },
                 {
                     "type": "ObjectProperty",
@@ -6161,7 +6125,7 @@
                     "type": "ObjectProperty",
                     "name": "description",
                     "source": "自動更正時要忽略的以逗號分隔的小寫單字清單",
-                    "target": "自動更正時要忽略的以逗號分隔的小寫單字清單"
+                    "target": "自動更正時要忽略的小寫單字清單"
                 },
                 {
                     "type": "ObjectProperty",
@@ -6221,13 +6185,13 @@
                     "type": "ObjectProperty",
                     "name": "description",
                     "source": "大寫時要忽略的以逗號分隔的單字清單",
-                    "target": "大寫時要忽略的以逗號分隔的單字清單"
+                    "target": "將標題轉為大寫時要忽略的單字清單"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "description",
                     "source": "要保持小寫的以逗號分隔的單字清單",
-                    "target": "要保持小寫的以逗號分隔的單字清單"
+                    "target": "要保持小寫的單字清單"
                 },
                 {
                     "type": "ObjectProperty",
@@ -6377,7 +6341,7 @@
                     "type": "ObjectProperty",
                     "name": "description",
                     "source": "在指定的 YAML 鍵上使用 YAML 逸出字元，以換行字元分隔，如果尚未逸出。請勿在 YAML 陣列上使用。",
-                    "target": "在指定的 YAML 鍵上使用 YAML 逸出字元，以換行字元分隔，如果尚未逸出。請勿在 YAML 陣列上使用。"
+                    "target": "若指定 YAML 鍵的值尚未逸出，則套用 YAML 逸出字元。請勿用於 YAML 陣列。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -6407,7 +6371,7 @@
                     "type": "ObjectProperty",
                     "name": "description",
                     "source": "其他 YAML 陣列的樣式，這些陣列不是 <code>tags</code>、<code>aliases</code> 或在 <code>強制鍵值為單行陣列</code> 和 <code>強制鍵值為多行陣列</code> 中的陣列",
-                    "target": "其他 YAML 陣列的樣式，這些陣列不是 <code>tags</code>、<code>aliases</code> 或在 <code>強制鍵值為單行陣列</code> 和 <code>強制鍵值為多行陣列</code> 中的陣列"
+                    "target": "非 <code>tags</code> 或 <code>aliases</code> 的 YAML 陣列樣式。<code>格式化 YAML 陣列</code> 會將此樣式套用至未列於 <code>強制鍵值為單行陣列</code> 或 <code>強制鍵值為多行陣列</code> 的陣列；<code>將行內欄位移至 YAML</code> 則會將此樣式套用至收到多個值的鍵。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -6773,7 +6737,7 @@
                     "type": "ObjectProperty",
                     "name": "description",
                     "source": "一個 YAML 鍵的清單，每行一個，不含結尾的冒號，這些鍵的值不應進行排序。",
-                    "target": "一個 YAML 鍵的清單，每行一個，不含結尾的冒號，這些鍵的值不應進行排序。"
+                    "target": "不排序值的 YAML 鍵清單，鍵名不含結尾的冒號。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -7014,18 +6978,6 @@
                     "name": "description",
                     "source": "Only capitalize the first letter",
                     "target": "Only capitalize the first letter"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "```key:\\n  - value```",
-                    "target": "```key:\\n  - value```"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "```key: [value]```",
-                    "target": "```key: [value]```"
                 },
                 {
                     "type": "ObjectProperty",
@@ -7630,20 +7582,8 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "Aktivieren Sie <code>Stil für einfache Anführungszeichen</code>",
-                    "target": "Aktivieren Sie <code>Stil für einfache Anführungszeichen</code>"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "Stil für einfache Anführungszeichen",
                     "target": "Stil für einfache Anführungszeichen"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Aktivieren Sie <code>Stil für doppelte Anführungszeichen</code>",
-                    "target": "Aktivieren Sie <code>Stil für doppelte Anführungszeichen</code>"
                 },
                 {
                     "type": "ObjectProperty",
@@ -7884,12 +7824,6 @@
                     "name": "name",
                     "source": "Vorhandenes Alias-Abschnittsformat beibehalten",
                     "target": "Vorhandenes Alias-Abschnittsformat beibehalten"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Verwenden Sie den YAML-Schlüssel <code>linter-yaml-title-alias</code>, um bei Änderungen von Dateinamen und Überschriften zu helfen",
-                    "target": "Verwenden Sie den YAML-Schlüssel <code>linter-yaml-title-alias</code>, um bei Änderungen von Dateinamen und Überschriften zu helfen"
                 },
                 {
                     "type": "ObjectProperty",
@@ -8230,12 +8164,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "YAML keys to ignore",
-                    "target": "YAML keys to ignore"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "Default language for code fences",
                     "target": "Default language for code fences"
                 },
@@ -8506,20 +8434,8 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "Enable <code>Single quote style</code>",
-                    "target": "Enable <code>Single quote style</code>"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "Single quote style",
                     "target": "Single quote style"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Enable <code>Double quote style</code>",
-                    "target": "Enable <code>Double quote style</code>"
                 },
                 {
                     "type": "ObjectProperty",
@@ -8592,12 +8508,6 @@
                     "name": "name",
                     "source": "Sort YAML array sections",
                     "target": "Sort YAML array sections"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "YAML Keys to ignore",
-                    "target": "YAML Keys to ignore"
                 },
                 {
                     "type": "ObjectProperty",
@@ -8760,12 +8670,6 @@
                     "name": "name",
                     "source": "Keep alias that matches the filename",
                     "target": "Keep alias that matches the filename"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Use the YAML key specified by <code>Alias helper key</code> to help with filename and heading changes",
-                    "target": "Use the YAML key specified by <code>Alias helper key</code> to help with filename and heading changes"
                 },
                 {
                     "type": "ObjectProperty",
@@ -9886,12 +9790,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "無視するYAMLキー",
-                    "target": "無視するYAMLキー"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "コードフェンスのデフォルト言語",
                     "target": "コードフェンスのデフォルト言語"
                 },
@@ -10540,12 +10438,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "<code>Alias Helper Key</code>で指定されたYAMLキーを使用して、ファイル名と見出しの変更を支援します",
-                    "target": "<code>Alias Helper Key</code>で指定されたYAMLキーを使用して、ファイル名と見出しの変更を支援します"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "Alias Helper Key",
                     "target": "Alias Helper Key"
                 },
@@ -10804,12 +10696,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "Chaves do YAML a ignorar",
-                    "target": "Chaves do YAML a ignorar"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "Estilo de ênfase",
                     "target": "Estilo de ênfase"
                 },
@@ -10996,20 +10882,8 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "Ativar <code>Estilo de aspas simples</code>",
-                    "target": "Ativar <code>Estilo de aspas simples</code>"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "Estilo de aspas simples",
                     "target": "Estilo de aspas simples"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Ativar <code>Estilo de aspas duplas</code>",
-                    "target": "Ativar <code>Estilo de aspas duplas</code>"
                 },
                 {
                     "type": "ObjectProperty",
@@ -11226,12 +11100,6 @@
                     "name": "name",
                     "source": "Manter alias que corresponda ao nome do arquivo",
                     "target": "Manter alias que corresponda ao nome do arquivo"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Usar a chave do YAML especificada por <code>Chave auxiliar de alias</code> para ajudar com alterações no nome do arquivo e cabeçalho",
-                    "target": "Usar a chave do YAML especificada por <code>Chave auxiliar de alias</code> para ajudar com alterações no nome do arquivo e cabeçalho"
                 },
                 {
                     "type": "ObjectProperty",
@@ -11542,12 +11410,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "YAML ключи для игнорирования",
-                    "target": "YAML ключи для игнорирования"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "Язык по умолчанию для блоков кода",
                     "target": "Язык по умолчанию для блоков кода"
                 },
@@ -11830,20 +11692,8 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "Включить <code>Стиль одиночной кавычки</code>",
-                    "target": "Включить <code>Стиль одиночной кавычки</code>"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "Стиль одиночной кавычки",
                     "target": "Стиль одиночной кавычки"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Включить <code>Стиль двойной кавычки</code>",
-                    "target": "Включить <code>Стиль двойной кавычки</code>"
                 },
                 {
                     "type": "ObjectProperty",
@@ -12192,12 +12042,6 @@
                     "name": "name",
                     "source": "Сохранить алиас, совпадающий с названием файла",
                     "target": "Сохранить алиас, совпадающий с названием файла"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Использовать YAML ключ, указанный в <code>Ключ помощника алиаса</code>, для помощи с изменениями названия файла или заголовка",
-                    "target": "Использовать YAML ключ, указанный в <code>Ключ помощника алиаса</code>, для помощи с изменениями названия файла или заголовка"
                 },
                 {
                     "type": "ObjectProperty",
@@ -12688,20 +12532,8 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "<code>Tek Alıntı Stili</code> Kullanımı",
-                    "target": "<code>Tek Alıntı Stili</code> Kullanımı"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "Tek Alıntı Stili",
                     "target": "Tek Alıntı Stili"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "<code>Çift Alıntı Stili</code> Kullanımı",
-                    "target": "<code>Çift Alıntı Stili</code> Kullanımı"
                 },
                 {
                     "type": "ObjectProperty",
@@ -12954,12 +12786,6 @@
                     "name": "name",
                     "source": "Dosya adına uyan takma adı koru",
                     "target": "Dosya adına uyan takma adı koru"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "<code>linter-yaml-title-alias</code> YAML anahtarını kullanarak eski dosya adı ve başlık değişikliklerini takip et",
-                    "target": "<code>linter-yaml-title-alias</code> YAML anahtarını kullanarak eski dosya adı ve başlık değişikliklerini takip et"
                 },
                 {
                     "type": "ObjectProperty",
@@ -13266,12 +13092,6 @@
                     "name": "name",
                     "source": "YAML array 去重",
                     "target": "YAML array 去重"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "要忽略的 YAML 键",
-                    "target": "要忽略的 YAML 键"
                 },
                 {
                     "type": "ObjectProperty",
@@ -13744,18 +13564,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "English Punctuations and Symbols Before CJK",
-                    "target": "English Punctuations and Symbols Before CJK"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "English Punctuations and Symbols After CJK",
-                    "target": "English Punctuations and Symbols After CJK"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "粗体样式",
                     "target": "粗体样式"
                 },
@@ -13896,12 +13704,6 @@
                     "name": "name",
                     "source": "确保别名与文件名匹配",
                     "target": "确保别名与文件名匹配"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "使用 YAML 键 <code>linter-yaml-title-alias</code> 来保留标题修改记录",
-                    "target": "使用 YAML 键 <code>linter-yaml-title-alias</code> 来保留标题修改记录"
                 },
                 {
                     "type": "ObjectProperty",
@@ -14236,12 +14038,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "要忽略的 YAML 鍵",
-                    "target": "要忽略的 YAML 鍵"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "程式碼區塊的預設語言",
                     "target": "程式碼區塊的預設語言"
                 },
@@ -14524,20 +14320,8 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "啟用 <code>單引號樣式</code>",
-                    "target": "啟用 <code>單引號樣式</code>"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "單引號樣式",
                     "target": "單引號樣式"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "啟用 <code>雙引號樣式</code>",
-                    "target": "啟用 <code>雙引號樣式</code>"
                 },
                 {
                     "type": "ObjectProperty",
@@ -14878,12 +14662,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "name",
-                    "source": "使用由 <code>別名輔助鍵</code> 指定的 YAML 鍵來協助處理檔名和標題變更",
-                    "target": "使用由 <code>別名輔助鍵</code> 指定的 YAML 鍵來協助處理檔名和標題變更"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
                     "source": "別名輔助鍵",
                     "target": "別名輔助鍵"
                 },
@@ -14898,6 +14676,402 @@
                     "name": "name",
                     "source": "標題鍵",
                     "target": "標題鍵"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The style of YAML arrays that are not <code>tags</code> or <code>aliases</code>. <code>Format YAML array</code> uses it for arrays not in <code>Force key values to be single-line arrays</code> or <code>Force key values to be multi-line arrays</code>, and <code>Move inline fields to YAML</code> uses it for keys that get more than one value.",
+                    "target": "非 <code>tags</code> 或 <code>aliases</code> 的 YAML 陣列樣式。<code>格式化 YAML 陣列</code> 會將此樣式套用至未列於 <code>強制鍵值為單行陣列</code> 或 <code>強制鍵值為多行陣列</code> 的陣列；<code>將行內欄位移至 YAML</code> 則會將此樣式套用至收到多個值的鍵。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "A list of lowercased words to ignore when auto-correcting",
+                    "target": "自動更正時要忽略的小寫單字清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Aligns the table so that all columns have the same length.",
+                    "target": "對齊表格欄位，使各欄內儲存格的寬度一致。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "A list of words to ignore when capitalizing",
+                    "target": "將標題轉為大寫時要忽略的單字清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "A list of words to keep lowercase",
+                    "target": "要保持小寫的單字清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Uses the YAML escape character on the specified YAML keys if it is not already escaped. Do not use on YAML arrays.",
+                    "target": "若指定 YAML 鍵的值尚未逸出，則套用 YAML 逸出字元。請勿用於 YAML 陣列。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "What to do with inline fields that take up a whole line like <code>key:: value</code>",
+                    "target": "如何處理佔用整行的行內欄位，例如 <code>key:: value</code>"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "What to do with inline fields wrapped in square brackets or parentheses like <code>[key:: value]</code> and <code>(key:: value)</code>",
+                    "target": "如何處理以方括號或圓括號包住的行內欄位，例如 <code>[key:: value]</code> 和 <code>(key:: value)</code>"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "What to do when an inline field has the same key as a key already in the YAML frontmatter. Keys have to match exactly, including their case.",
+                    "target": "當行內欄位的鍵已存在於 YAML frontmatter 時，如何處理。鍵名必須完全相符，且區分大小寫。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "The inline field keys that will not be moved to the YAML frontmatter",
+                    "target": "不移至 YAML frontmatter 的行內欄位鍵"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "A list of YAML keys without the ending colon that are not meant to have their values sorted.",
+                    "target": "不排序值的 YAML 鍵清單，鍵名不含結尾的冒號。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "对齐表格列（CJK字符宽度为2）",
+                    "target": "对齐表格列（CJK字符宽度为2）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Does not move full-line fields like `key:: value`",
+                    "target": "不移動佔用整行的欄位，例如 `key:: value`"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Adds full-line fields to the YAML frontmatter and leaves their lines as they are",
+                    "target": "將整行欄位加入 YAML frontmatter，並保留原本的行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Does not move bracketed fields like `[key:: value]` and `(key:: value)`",
+                    "target": "不移動括號內的欄位，例如 `[key:: value]` 和 `(key:: value)`"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Leaves the fields in the body and the YAML frontmatter value as is",
+                    "target": "保留內文中的欄位及 YAML frontmatter 中原有的值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Adds the field values to the YAML frontmatter value, turning it into a list",
+                    "target": "將欄位值加入 YAML frontmatter 中原有的值，並合併為清單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Replaces the YAML frontmatter value with the field values",
+                    "target": "以欄位值取代 YAML frontmatter 中原有的值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Aktivieren Sie Stil für einfache Anführungszeichen",
+                    "target": "Aktivieren Sie Stil für einfache Anführungszeichen"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Aktivieren Sie Stil für doppelte Anführungszeichen",
+                    "target": "Aktivieren Sie Stil für doppelte Anführungszeichen"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Verwenden Sie den YAML-Schlüssel linter-yaml-title-alias, um bei Änderungen von Dateinamen und Überschriften zu helfen",
+                    "target": "Verwenden Sie den YAML-Schlüssel linter-yaml-title-alias, um bei Änderungen von Dateinamen und Überschriften zu helfen"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Align Table Columns",
+                    "target": "對齊表格欄位"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "YAML keys to ignore for Dedupe YAML array values",
+                    "target": "移除 YAML 陣列重複值時要忽略的鍵"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Move inline fields to YAML",
+                    "target": "將行內欄位移至 YAML"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Full-line inline fields",
+                    "target": "佔用整行的行內欄位"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Bracketed inline fields",
+                    "target": "括號內的行內欄位"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "When the key already exists",
+                    "target": "鍵已存在時"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Inline keys to ignore",
+                    "target": "要忽略的行內欄位鍵"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Enable Single quote style",
+                    "target": "啟用單引號樣式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Enable Double quote style",
+                    "target": "啟用雙引號樣式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "YAML Keys to ignore for Sort YAML array values",
+                    "target": "YAML Keys to ignore for Sort YAML array values"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Use the YAML key specified by Alias helper key to help with filename and heading changes",
+                    "target": "使用「別名輔助鍵」指定的 YAML 鍵追蹤檔名與標題變更"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "YAML配列値の重複排除時に無視するYAMLキー",
+                    "target": "YAML配列値の重複排除時に無視するYAMLキー"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Alias Helper Keyで指定されたYAMLキーを使用して、ファイル名と見出しの変更を支援します",
+                    "target": "Alias Helper Keyで指定されたYAMLキーを使用して、ファイル名と見出しの変更を支援します"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Chaves do YAML a ignorar para Desduplicar valores de array no YAML",
+                    "target": "Chaves do YAML a ignorar para Desduplicar valores de array no YAML"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Ativar Estilo de aspas simples",
+                    "target": "Ativar Estilo de aspas simples"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Ativar Estilo de aspas duplas",
+                    "target": "Ativar Estilo de aspas duplas"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Chaves do YAML a ignorar para Ordenar valores de array no YAML",
+                    "target": "Chaves do YAML a ignorar para Ordenar valores de array no YAML"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Usar a chave do YAML especificada por Chave auxiliar de alias para ajudar com alterações no nome do arquivo e cabeçalho",
+                    "target": "Usar a chave do YAML especificada por Chave auxiliar de alias para ajudar com alterações no nome do arquivo e cabeçalho"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Ключи YAML, которые следует игнорировать при дедупликации значений массивов YAML",
+                    "target": "Ключи YAML, которые следует игнорировать при дедупликации значений массивов YAML"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Включить Стиль одиночной кавычки",
+                    "target": "Включить Стиль одиночной кавычки"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Включить Стиль двойной кавычки",
+                    "target": "Включить Стиль двойной кавычки"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Ключи YAML, которые следует игнорировать при сортировке значений массивов YAML",
+                    "target": "Ключи YAML, которые следует игнорировать при сортировке значений массивов YAML"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Использовать YAML ключ, указанный в Ключ помощника алиаса, для помощи с изменениями названия файла или заголовка",
+                    "target": "Использовать YAML ключ, указанный в Ключ помощника алиаса, для помощи с изменениями названия файла или заголовка"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Tek Alıntı Stili Kullanımı",
+                    "target": "Tek Alıntı Stili Kullanımı"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Çift Alıntı Stili Kullanımı",
+                    "target": "Çift Alıntı Stili Kullanımı"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "linter-yaml-title-alias YAML anahtarını kullanarak eski dosya adı ve başlık değişikliklerini takip et",
+                    "target": "linter-yaml-title-alias YAML anahtarını kullanarak eski dosya adı ve başlık değişikliklerini takip et"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "对齐表格列",
+                    "target": "对齐表格列"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "在对 YAML 数组值进行去重时需忽略的 YAML 键",
+                    "target": "在对 YAML 数组值进行去重时需忽略的 YAML 键"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "在对 YAML 数组值进行排序时需忽略的 YAML 键",
+                    "target": "在对 YAML 数组值进行排序时需忽略的 YAML 键"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "中日韩文之前的英文标点",
+                    "target": "中日韩文之前的英文标点"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "中日韩文之后的英文标点",
+                    "target": "中日韩文之后的英文标点"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "使用 YAML 键 linter-yaml-title-alias 来保留标题修改记录",
+                    "target": "使用 YAML 键 linter-yaml-title-alias 来保留标题修改记录"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "若要忽略的 YAML 鍵，以便對 YAML 陣列值進行去重",
+                    "target": "移除 YAML 陣列重複值時要忽略的鍵"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "啟用 單引號樣式",
+                    "target": "啟用單引號樣式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "啟用 雙引號樣式",
+                    "target": "啟用雙引號樣式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "若要忽略的 YAML 鍵，以便對 YAML 陣列值進行排序",
+                    "target": "排序 YAML 陣列值時要忽略的鍵"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "使用由 別名輔助鍵 指定的 YAML 鍵來協助處理檔名和標題變更",
+                    "target": "使用「別名輔助鍵」指定的 YAML 鍵追蹤檔名與標題變更"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "---\n---",
+                    "target": "---\n---"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Moves Dataview inline fields (<code>key:: value</code>) to the YAML frontmatter of the document. Fields on list items and tasks are left alone since Dataview scopes them to the list item. Tag and alias fields use the tag and alias array styles from the general settings, and other keys that get more than one value use the default YAML array section style from the general settings.",
+                    "target": "將 Dataview 行內欄位（<code>key:: value</code>）移至文件的 YAML frontmatter。清單項目與工作項目中的欄位會保留原樣，因為 Dataview 將它們的作用範圍限定在該項目。標籤與別名欄位會使用一般設定中的標籤與別名陣列樣式；其他收到多個值的鍵則使用預設 YAML 陣列區段樣式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "empty-state",
+                    "source": "No inline keys to ignore yet.",
+                    "target": "尚未設定要忽略的行內欄位鍵。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder-text",
+                    "source": "Inline key to ignore",
+                    "target": "要忽略的行內欄位鍵"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Moves full-line fields to the YAML frontmatter and removes their lines",
+                    "target": "將整行欄位移至 YAML frontmatter，並移除原本的行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Adds bracketed fields to the YAML frontmatter and leaves them in the text as they are",
+                    "target": "將括號內的欄位加入 YAML frontmatter，並在內文中保留原樣"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Moves bracketed fields to the YAML frontmatter and replaces them with their value",
+                    "target": "將括號內的欄位移至 YAML frontmatter，並在原處只保留欄位值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Moves bracketed fields to the YAML frontmatter and removes them from the body, removing the line if only whitespace is left",
+                    "target": "將括號內的欄位移至 YAML frontmatter，並從內文移除。若該行只剩空白，也會移除整行"
                 }
             ],
             "regex": [
@@ -15490,10 +15664,6 @@
                     "target": "description:\"Aktualisiert die Anf\\xFChrungszeichen im Textk\\xF6rperinhalt, sodass sie auf die angegebenen einfachen und doppelten Anf\\xFChrungszeichenstile aktualisiert werden.\""
                 },
                 {
-                    "source": "name:\"Aktivieren Sie <code>Stil f\\xFCr einfache Anf\\xFChrungszeichen</code>\"",
-                    "target": "name:\"Aktivieren Sie <code>Stil f\\xFCr einfache Anf\\xFChrungszeichen</code>\""
-                },
-                {
                     "source": "description:\"Gibt an, dass der ausgew\\xE4hlte einfache Anf\\xFChrungszeichenstil verwendet werden soll.\"",
                     "target": "description:\"Gibt an, dass der ausgew\\xE4hlte einfache Anf\\xFChrungszeichenstil verwendet werden soll.\""
                 },
@@ -15504,10 +15674,6 @@
                 {
                     "source": "description:\"Der Stil der zu verwendenden einfachen Anf\\xFChrungszeichen.\"",
                     "target": "description:\"Der Stil der zu verwendenden einfachen Anf\\xFChrungszeichen.\""
-                },
-                {
-                    "source": "name:\"Aktivieren Sie <code>Stil f\\xFCr doppelte Anf\\xFChrungszeichen</code>\"",
-                    "target": "name:\"Aktivieren Sie <code>Stil f\\xFCr doppelte Anf\\xFChrungszeichen</code>\""
                 },
                 {
                     "source": "description:\"Gibt an, dass der ausgew\\xE4hlte doppelte Anf\\xFChrungszeichenstil verwendet werden soll.\"",
@@ -15782,10 +15948,6 @@
                     "target": "description:\"Solche Aliase sind in der Regel redundant\""
                 },
                 {
-                    "source": "name:\"Verwenden Sie den YAML-Schl\\xFCssel <code>linter-yaml-title-alias</code>, um bei \\xC4nderungen von Dateinamen und \\xDCberschriften zu helfen\"",
-                    "target": "name:\"Verwenden Sie den YAML-Schl\\xFCssel <code>linter-yaml-title-alias</code>, um bei \\xC4nderungen von Dateinamen und \\xDCberschriften zu helfen\""
-                },
-                {
                     "source": "description:\"Der YAML-Schl\\xFCssel, der f\\xFCr den Titel verwendet werden soll\"",
                     "target": "description:\"Der YAML-Schl\\xFCssel, der f\\xFCr den Titel verwendet werden soll\""
                 },
@@ -15998,10 +16160,6 @@
                     "target": "name:\"Ignore words\""
                 },
                 {
-                    "source": "description:\"A comma separated list of lowercased words to ignore when auto-correcting\"",
-                    "target": "description:\"A comma separated list of lowercased words to ignore when auto-correcting\""
-                },
-                {
                     "source": "name:\"Extra auto-correct source files\"",
                     "target": "name:\"Extra auto-correct source files\""
                 },
@@ -16054,16 +16212,8 @@
                     "target": "name:\"Ignore cased words\""
                 },
                 {
-                    "source": "description:\"A comma separated list of words to ignore when capitalizing\"",
-                    "target": "description:\"A comma separated list of words to ignore when capitalizing\""
-                },
-                {
                     "source": "name:\"Lowercase words\"",
                     "target": "name:\"Lowercase words\""
-                },
-                {
-                    "source": "description:\"A comma separated list of words to keep lowercase\"",
-                    "target": "description:\"A comma separated list of words to keep lowercase\""
                 },
                 {
                     "source": "name:\"Characters to ignore at the start of potential words\"",
@@ -16128,10 +16278,6 @@
                 {
                     "source": "name:\"Dedupe YAML array sections\"",
                     "target": "name:\"Dedupe YAML array sections\""
-                },
-                {
-                    "source": "name:\"YAML keys to ignore\"",
-                    "target": "name:\"YAML keys to ignore\""
                 },
                 {
                     "source": "name:\"Default language for code fences\"",
@@ -16202,10 +16348,6 @@
                     "target": "name:\"Force YAML escape on keys\""
                 },
                 {
-                    "source": "description:\"Uses the YAML escape character on the specified YAML keys separated by a new line character if it is not already escaped. Do not use on YAML arrays.\"",
-                    "target": "description:\"Uses the YAML escape character on the specified YAML keys separated by a new line character if it is not already escaped. Do not use on YAML arrays.\""
-                },
-                {
                     "source": "name:\"Format tags in YAML\"",
                     "target": "name:\"Format tags in YAML\""
                 },
@@ -16232,10 +16374,6 @@
                 {
                     "source": "name:\"Default YAML array section style\"",
                     "target": "name:\"Default YAML array section style\""
-                },
-                {
-                    "source": "description:\"The style of other YAML arrays that are not <code>tags</code>, <code>aliases</code> or  in <code>Force key values to be single-line arrays</code> and <code>Force key values to be multi-line arrays</code>\"",
-                    "target": "description:\"The style of other YAML arrays that are not <code>tags</code>, <code>aliases</code> or  in <code>Force key values to be single-line arrays</code> and <code>Force key values to be multi-line arrays</code>\""
                 },
                 {
                     "source": "name:\"Format YAML array sections\"",
@@ -16406,10 +16544,6 @@
                     "target": "description:\"Updates the quotes in the body content to be updated to the specified single and double quote styles.\""
                 },
                 {
-                    "source": "name:\"Enable <code>Single quote style</code>\"",
-                    "target": "name:\"Enable <code>Single quote style</code>\""
-                },
-                {
                     "source": "description:\"Specifies that the selected single quote style should be used.\"",
                     "target": "description:\"Specifies that the selected single quote style should be used.\""
                 },
@@ -16420,10 +16554,6 @@
                 {
                     "source": "description:\"The style of single quotes to use.\"",
                     "target": "description:\"The style of single quotes to use.\""
-                },
-                {
-                    "source": "name:\"Enable <code>Double quote style</code>\"",
-                    "target": "name:\"Enable <code>Double quote style</code>\""
                 },
                 {
                     "source": "description:\"Specifies that the selected double quote style should be used.\"",
@@ -16520,14 +16650,6 @@
                 {
                     "source": "description:\"Turns on sorting values for regular YAML arrays\"",
                     "target": "description:\"Turns on sorting values for regular YAML arrays\""
-                },
-                {
-                    "source": "name:\"YAML Keys to ignore\"",
-                    "target": "name:\"YAML Keys to ignore\""
-                },
-                {
-                    "source": "description:\"A list of YAML keys without the ending colon on their own lines that are not meant to have their values sorted.\"",
-                    "target": "description:\"A list of YAML keys without the ending colon on their own lines that are not meant to have their values sorted.\""
                 },
                 {
                     "source": "name:\"Sort order\"",
@@ -16740,10 +16862,6 @@
                 {
                     "source": "description:\"Such aliases are usually redundant\"",
                     "target": "description:\"Such aliases are usually redundant\""
-                },
-                {
-                    "source": "name:\"Use the YAML key specified by <code>Alias helper key</code> to help with filename and heading changes\"",
-                    "target": "name:\"Use the YAML key specified by <code>Alias helper key</code> to help with filename and heading changes\""
                 },
                 {
                     "source": "description:\"If set, when the first H1 heading changes or filename if first H1 is not present changes, then the old alias stored in this key will be replaced with the new value instead of just inserting a new entry in the aliases array\"",
@@ -17830,10 +17948,6 @@
                     "target": "description:'\\u4F7F\\u7528\\u3059\\u308Bmoment date\\u30D5\\u30A9\\u30FC\\u30DE\\u30C3\\u30C8\\uFF08<a href=\"https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/\">moment date\\u30D5\\u30A9\\u30FC\\u30DE\\u30C3\\u30C8\\u30AA\\u30D7\\u30B7\\u30E7\\u30F3</a>\\u3092\\u53C2\\u7167\\uFF09'"
                 },
                 {
-                    "source": "name:\"<code>Alias Helper Key</code>\\u3067\\u6307\\u5B9A\\u3055\\u308C\\u305FYAML\\u30AD\\u30FC\\u3092\\u4F7F\\u7528\\u3057\\u3066\\u3001\\u30D5\\u30A1\\u30A4\\u30EB\\u540D\\u3068\\u898B\\u51FA\\u3057\\u306E\\u5909\\u66F4\\u3092\\u652F\\u63F4\\u3057\\u307E\\u3059\"",
-                    "target": "name:\"<code>Alias Helper Key</code>\\u3067\\u6307\\u5B9A\\u3055\\u308C\\u305FYAML\\u30AD\\u30FC\\u3092\\u4F7F\\u7528\\u3057\\u3066\\u3001\\u30D5\\u30A1\\u30A4\\u30EB\\u540D\\u3068\\u898B\\u51FA\\u3057\\u306E\\u5909\\u66F4\\u3092\\u652F\\u63F4\\u3057\\u307E\\u3059\""
-                },
-                {
                     "source": "name:\"Alias Helper Key\"",
                     "target": "name:\"Alias Helper Key\""
                 },
@@ -18058,10 +18172,6 @@
                     "target": "name:\"Desduplicar as se\\xE7\\xF5es de array no YAML\""
                 },
                 {
-                    "source": "name:\"Chaves do YAML a ignorar\"",
-                    "target": "name:\"Chaves do YAML a ignorar\""
-                },
-                {
                     "source": "name:\"Estilo de \\xEAnfase\"",
                     "target": "name:\"Estilo de \\xEAnfase\""
                 },
@@ -18254,10 +18364,6 @@
                     "target": "description:\"Atualiza as aspas no conte\\xFAdo do corpo para os estilos especificados de aspas simples e duplas.\""
                 },
                 {
-                    "source": "name:\"Ativar <code>Estilo de aspas simples</code>\"",
-                    "target": "name:\"Ativar <code>Estilo de aspas simples</code>\""
-                },
-                {
                     "source": "description:\"Especifica que o estilo selecionado para aspas simples deve ser utilizado.\"",
                     "target": "description:\"Especifica que o estilo selecionado para aspas simples deve ser utilizado.\""
                 },
@@ -18268,10 +18374,6 @@
                 {
                     "source": "description:\"O estilo de aspas simples a ser utilizado.\"",
                     "target": "description:\"O estilo de aspas simples a ser utilizado.\""
-                },
-                {
-                    "source": "name:\"Ativar <code>Estilo de aspas duplas</code>\"",
-                    "target": "name:\"Ativar <code>Estilo de aspas duplas</code>\""
                 },
                 {
                     "source": "description:\"Especifica que o estilo selecionado para aspas duplas deve ser utilizado.\"",
@@ -18526,10 +18628,6 @@
                     "target": "description:\"Tais aliases geralmente s\\xE3o redundantes\""
                 },
                 {
-                    "source": "name:\"Usar a chave do YAML especificada por <code>Chave auxiliar de alias</code> para ajudar com altera\\xE7\\xF5es no nome do arquivo e cabe\\xE7alho\"",
-                    "target": "name:\"Usar a chave do YAML especificada por <code>Chave auxiliar de alias</code> para ajudar com altera\\xE7\\xF5es no nome do arquivo e cabe\\xE7alho\""
-                },
-                {
                     "source": "name:\"Chave auxiliar de alias\"",
                     "target": "name:\"Chave auxiliar de alias\""
                 },
@@ -18778,10 +18876,6 @@
                     "target": "name:\"\\u0423\\u0434\\u0430\\u043B\\u0438\\u0442\\u044C \\u0434\\u0443\\u0431\\u043B\\u0438\\u043A\\u0430\\u0442\\u044B \\u0441\\u0435\\u043A\\u0446\\u0438\\u0438 YAML \\u043C\\u0430\\u0441\\u0441\\u0438\\u0432\\u043E\\u0432\""
                 },
                 {
-                    "source": "name:\"YAML \\u043A\\u043B\\u044E\\u0447\\u0438 \\u0434\\u043B\\u044F \\u0438\\u0433\\u043D\\u043E\\u0440\\u0438\\u0440\\u043E\\u0432\\u0430\\u043D\\u0438\\u044F\"",
-                    "target": "name:\"YAML \\u043A\\u043B\\u044E\\u0447\\u0438 \\u0434\\u043B\\u044F \\u0438\\u0433\\u043D\\u043E\\u0440\\u0438\\u0440\\u043E\\u0432\\u0430\\u043D\\u0438\\u044F\""
-                },
-                {
                     "source": "name:\"\\u042F\\u0437\\u044B\\u043A \\u043F\\u043E \\u0443\\u043C\\u043E\\u043B\\u0447\\u0430\\u043D\\u0438\\u044E \\u0434\\u043B\\u044F \\u0431\\u043B\\u043E\\u043A\\u043E\\u0432 \\u043A\\u043E\\u0434\\u0430\"",
                     "target": "name:\"\\u042F\\u0437\\u044B\\u043A \\u043F\\u043E \\u0443\\u043C\\u043E\\u043B\\u0447\\u0430\\u043D\\u0438\\u044E \\u0434\\u043B\\u044F \\u0431\\u043B\\u043E\\u043A\\u043E\\u0432 \\u043A\\u043E\\u0434\\u0430\""
                 },
@@ -18990,20 +19084,12 @@
                     "target": "name:\"\\u0421\\u0442\\u0438\\u043B\\u044C \\u043A\\u0430\\u0432\\u044B\\u0447\\u0435\\u043A\""
                 },
                 {
-                    "source": "name:\"\\u0412\\u043A\\u043B\\u044E\\u0447\\u0438\\u0442\\u044C <code>\\u0421\\u0442\\u0438\\u043B\\u044C \\u043E\\u0434\\u0438\\u043D\\u043E\\u0447\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438</code>\"",
-                    "target": "name:\"\\u0412\\u043A\\u043B\\u044E\\u0447\\u0438\\u0442\\u044C <code>\\u0421\\u0442\\u0438\\u043B\\u044C \\u043E\\u0434\\u0438\\u043D\\u043E\\u0447\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438</code>\""
-                },
-                {
                     "source": "name:\"\\u0421\\u0442\\u0438\\u043B\\u044C \\u043E\\u0434\\u0438\\u043D\\u043E\\u0447\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438\"",
                     "target": "name:\"\\u0421\\u0442\\u0438\\u043B\\u044C \\u043E\\u0434\\u0438\\u043D\\u043E\\u0447\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438\""
                 },
                 {
                     "source": "description:\"\\u0421\\u0442\\u0438\\u043B\\u044C \\u043E\\u0434\\u0438\\u043D\\u043E\\u0447\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438 \\u0434\\u043B\\u044F \\u0438\\u0441\\u043F\\u043E\\u043B\\u044C\\u0437\\u043E\\u0432\\u0430\\u043D\\u0438\\u044F.\"",
                     "target": "description:\"\\u0421\\u0442\\u0438\\u043B\\u044C \\u043E\\u0434\\u0438\\u043D\\u043E\\u0447\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438 \\u0434\\u043B\\u044F \\u0438\\u0441\\u043F\\u043E\\u043B\\u044C\\u0437\\u043E\\u0432\\u0430\\u043D\\u0438\\u044F.\""
-                },
-                {
-                    "source": "name:\"\\u0412\\u043A\\u043B\\u044E\\u0447\\u0438\\u0442\\u044C <code>\\u0421\\u0442\\u0438\\u043B\\u044C \\u0434\\u0432\\u043E\\u0439\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438</code>\"",
-                    "target": "name:\"\\u0412\\u043A\\u043B\\u044E\\u0447\\u0438\\u0442\\u044C <code>\\u0421\\u0442\\u0438\\u043B\\u044C \\u0434\\u0432\\u043E\\u0439\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438</code>\""
                 },
                 {
                     "source": "name:\"\\u0421\\u0442\\u0438\\u043B\\u044C \\u0434\\u0432\\u043E\\u0439\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438\"",
@@ -19890,10 +19976,6 @@
                     "target": "description:\"G\\xF6vde i\\xE7eri\\u011Findeki al\\u0131nt\\u0131lar\\u0131 belirtilen tek ve \\xE7ift al\\u0131nt\\u0131 stillerine g\\xFCnceller.\""
                 },
                 {
-                    "source": "name:\"<code>Tek Al\\u0131nt\\u0131 Stili</code> Kullan\\u0131m\\u0131\"",
-                    "target": "name:\"<code>Tek Al\\u0131nt\\u0131 Stili</code> Kullan\\u0131m\\u0131\""
-                },
-                {
                     "source": "description:\"Se\\xE7ilen tek al\\u0131nt\\u0131 stilinin kullan\\u0131laca\\u011F\\u0131n\\u0131 belirtir.\"",
                     "target": "description:\"Se\\xE7ilen tek al\\u0131nt\\u0131 stilinin kullan\\u0131laca\\u011F\\u0131n\\u0131 belirtir.\""
                 },
@@ -19904,10 +19986,6 @@
                 {
                     "source": "description:\"Kullan\\u0131lacak tek al\\u0131nt\\u0131 stilidir.\"",
                     "target": "description:\"Kullan\\u0131lacak tek al\\u0131nt\\u0131 stilidir.\""
-                },
-                {
-                    "source": "name:\"<code>\\xC7ift Al\\u0131nt\\u0131 Stili</code> Kullan\\u0131m\\u0131\"",
-                    "target": "name:\"<code>\\xC7ift Al\\u0131nt\\u0131 Stili</code> Kullan\\u0131m\\u0131\""
                 },
                 {
                     "source": "description:\"Se\\xE7ilen \\xE7ift al\\u0131nt\\u0131 stilinin kullan\\u0131laca\\u011F\\u0131n\\u0131 belirtir.\"",
@@ -20242,10 +20320,6 @@
                     "target": "description:\"Bu t\\xFCr takma adlar genellikle gereksizdir\""
                 },
                 {
-                    "source": "name:\"<code>linter-yaml-title-alias</code> YAML anahtar\\u0131n\\u0131 kullanarak eski dosya ad\\u0131 ve ba\\u015Fl\\u0131k de\\u011Fi\\u015Fikliklerini takip et\"",
-                    "target": "name:\"<code>linter-yaml-title-alias</code> YAML anahtar\\u0131n\\u0131 kullanarak eski dosya ad\\u0131 ve ba\\u015Fl\\u0131k de\\u011Fi\\u015Fikliklerini takip et\""
-                },
-                {
                     "source": "name:\"YAML Ba\\u015Fl\\u0131k\"",
                     "target": "name:\"YAML Ba\\u015Fl\\u0131k\""
                 },
@@ -20372,10 +20446,6 @@
                 {
                     "source": "description:\"\\u6253\\u5F00\\u4EE5\\u5BF9\\u666E\\u901A YAML \\u6570\\u7EC4\\u4E2D\\u7684\\u503C\\u53BB\\u91CD\"",
                     "target": "description:\"\\u6253\\u5F00\\u4EE5\\u5BF9\\u666E\\u901A YAML \\u6570\\u7EC4\\u4E2D\\u7684\\u503C\\u53BB\\u91CD\""
-                },
-                {
-                    "source": "name:\"\\u8981\\u5FFD\\u7565\\u7684 YAML \\u952E\"",
-                    "target": "name:\"\\u8981\\u5FFD\\u7565\\u7684 YAML \\u952E\""
                 },
                 {
                     "source": "description:\"\\u8981\\u5FFD\\u7565\\u7684 YAML \\u952E\\u5217\\u8868\\uFF0C\\u6BCF\\u884C\\u4E00\\u4E2A\\u952E\"",
@@ -20630,16 +20700,8 @@
                     "target": "description:'\\u786E\\u4FDD\\u4E2D\\u65E5\\u97E9\\u6587\\u4E0E\\u82F1\\u6587\\u6570\\u5B57\\u4E4B\\u95F4\\u6709\\u4E00\\u4E2A\\u7A7A\\u683C <a href=\"https://github.com/sparanoid/chinese-copywriting-guidelines\">\\u53C2\\u8003\\u94FE\\u63A5</a>'"
                 },
                 {
-                    "source": "name:\"English Punctuations and Symbols Before CJK\"",
-                    "target": "name:\"English Punctuations and Symbols Before CJK\""
-                },
-                {
                     "source": "description:'\\u88AB\\u8BA4\\u4E3A\\u662F\\u82F1\\u6587\\u7684\\u5728\\u4E2D\\u65E5\\u97E9\\u6587\\u5B57\\u7B26\\u4E4B\"\\u524D\"\\u627E\\u5230\\u7684\\u975E\\u5B57\\u6BCD\\u6807\\u70B9\\u7B26\\u53F7 <b>\\u6CE8\\u610F: \"*\" \\u4F1A\\u88AB\\u8BA4\\u4E3A\\u662F\\u82F1\\u6587</b>'",
                     "target": "description:'\\u88AB\\u8BA4\\u4E3A\\u662F\\u82F1\\u6587\\u7684\\u5728\\u4E2D\\u65E5\\u97E9\\u6587\\u5B57\\u7B26\\u4E4B\"\\u524D\"\\u627E\\u5230\\u7684\\u975E\\u5B57\\u6BCD\\u6807\\u70B9\\u7B26\\u53F7 <b>\\u6CE8\\u610F: \"*\" \\u4F1A\\u88AB\\u8BA4\\u4E3A\\u662F\\u82F1\\u6587</b>'"
-                },
-                {
-                    "source": "name:\"English Punctuations and Symbols After CJK\"",
-                    "target": "name:\"English Punctuations and Symbols After CJK\""
                 },
                 {
                     "source": "description:'\\u88AB\\u8BA4\\u4E3A\\u662F\\u82F1\\u6587\\u7684\\u5728\\u4E2D\\u65E5\\u97E9\\u6587\\u5B57\\u7B26\\u4E4B\"\\u540E\"\\u627E\\u5230\\u7684\\u975E\\u5B57\\u6BCD\\u6807\\u70B9\\u7B26\\u53F7 <b>\\u6CE8\\u610F: \"*\" \\u4F1A\\u88AB\\u8BA4\\u4E3A\\u662F\\u82F1\\u6587</b>'",
@@ -20720,10 +20782,6 @@
                 {
                     "source": "description:\"\\u5C06\\u6587\\u6863\\u7684\\u6807\\u9898\\u63D2\\u5165 YAML Front-matter \\u7684 aliases \\u90E8\\u5206\\u3002\\u4ECE\\u7B2C\\u4E00\\u4E2A H1 \\u6807\\u9898\\u6216\\u6587\\u6863\\u540D\\u4E2D\\u83B7\\u53D6\\u503C\"",
                     "target": "description:\"\\u5C06\\u6587\\u6863\\u7684\\u6807\\u9898\\u63D2\\u5165 YAML Front-matter \\u7684 aliases \\u90E8\\u5206\\u3002\\u4ECE\\u7B2C\\u4E00\\u4E2A H1 \\u6807\\u9898\\u6216\\u6587\\u6863\\u540D\\u4E2D\\u83B7\\u53D6\\u503C\""
-                },
-                {
-                    "source": "name:\"\\u4F7F\\u7528 YAML \\u952E <code>linter-yaml-title-alias</code> \\u6765\\u4FDD\\u7559\\u6807\\u9898\\u4FEE\\u6539\\u8BB0\\u5F55\"",
-                    "target": "name:\"\\u4F7F\\u7528 YAML \\u952E <code>linter-yaml-title-alias</code> \\u6765\\u4FDD\\u7559\\u6807\\u9898\\u4FEE\\u6539\\u8BB0\\u5F55\""
                 },
                 {
                     "source": "name:\"YAML \\u6807\\u9898\"",
@@ -20844,10 +20902,6 @@
                 {
                     "source": "description:\"\\u958B\\u555F\\u79FB\\u9664\\u4E00\\u822C YAML \\u9663\\u5217\\u91CD\\u8907\\u503C\\u7684\\u529F\\u80FD\"",
                     "target": "description:\"\\u958B\\u555F\\u79FB\\u9664\\u4E00\\u822C YAML \\u9663\\u5217\\u91CD\\u8907\\u503C\\u7684\\u529F\\u80FD\""
-                },
-                {
-                    "source": "name:\"\\u8981\\u5FFD\\u7565\\u7684 YAML \\u9375\"",
-                    "target": "name:\"\\u8981\\u5FFD\\u7565\\u7684 YAML \\u9375\""
                 },
                 {
                     "source": "description:\"\\u4E00\\u500B YAML \\u9375\\u7684\\u6E05\\u55AE\\uFF0C\\u6BCF\\u884C\\u4E00\\u500B\\uFF0C\\u4E0D\\u542B\\u7D50\\u5C3E\\u7684\\u5192\\u865F\\uFF0C\\u9019\\u4E9B\\u9375\\u4E0D\\u61C9\\u79FB\\u9664\\u91CD\\u8907\\u503C\\u3002\"",
@@ -20998,14 +21052,6 @@
                     "target": "description:\"\\u78BA\\u4FDD\\u6709\\u5E8F\\u6E05\\u55AE\\u9075\\u5FAA\\u6307\\u5B9A\\u7684\\u6A23\\u5F0F\\u3002<b>\\u6CE8\\u610F\\uFF1A2 \\u500B\\u7A7A\\u683C\\u6216 1 \\u500B\\u5B9A\\u4F4D\\u9EDE\\u88AB\\u8996\\u70BA\\u4E00\\u500B\\u7E2E\\u6392\\u5C64\\u7D1A\\u3002</b>\""
                 },
                 {
-                    "source": "name:\"\\u555F\\u7528 <code>\\u55AE\\u5F15\\u865F\\u6A23\\u5F0F</code>\"",
-                    "target": "name:\"\\u555F\\u7528 <code>\\u55AE\\u5F15\\u865F\\u6A23\\u5F0F</code>\""
-                },
-                {
-                    "source": "name:\"\\u555F\\u7528 <code>\\u96D9\\u5F15\\u865F\\u6A23\\u5F0F</code>\"",
-                    "target": "name:\"\\u555F\\u7528 <code>\\u96D9\\u5F15\\u865F\\u6A23\\u5F0F</code>\""
-                },
-                {
                     "source": "description:'\\u5305\\u542B <a href=\"https://en.wikipedia.org/wiki/Halfwidth_and_Fullwidth_Forms_(Unicode_block)\">\\u5168\\u5F62\\u5B57\\u5143 Unicode \\u5340\\u584A</a>'",
                     "target": "description:'\\u5305\\u542B <a href=\"https://en.wikipedia.org/wiki/Halfwidth_and_Fullwidth_Forms_(Unicode_block)\">\\u5168\\u5F62\\u5B57\\u5143 Unicode \\u5340\\u584A</a>'"
                 },
@@ -21150,10 +21196,6 @@
                     "target": "description:\"\\u5982\\u679C\\u8A2D\\u5B9A\\uFF0C<code>YAML \\u5225\\u540D\\u5340\\u6BB5\\u6A23\\u5F0F</code> \\u8A2D\\u5B9A\\u50C5\\u9069\\u7528\\u65BC\\u65B0\\u5EFA\\u7ACB\\u7684\\u5340\\u6BB5\""
                 },
                 {
-                    "source": "name:\"\\u4F7F\\u7528\\u7531 <code>\\u5225\\u540D\\u8F14\\u52A9\\u9375</code> \\u6307\\u5B9A\\u7684 YAML \\u9375\\u4F86\\u5354\\u52A9\\u8655\\u7406\\u6A94\\u540D\\u548C\\u6A19\\u984C\\u8B8A\\u66F4\"",
-                    "target": "name:\"\\u4F7F\\u7528\\u7531 <code>\\u5225\\u540D\\u8F14\\u52A9\\u9375</code> \\u6307\\u5B9A\\u7684 YAML \\u9375\\u4F86\\u5354\\u52A9\\u8655\\u7406\\u6A94\\u540D\\u548C\\u6A19\\u984C\\u8B8A\\u66F4\""
-                },
-                {
                     "source": "description:\"\\u7528\\u65BC\\u5354\\u52A9\\u8FFD\\u8E64\\u6B64\\u898F\\u5247\\u5132\\u5B58\\u5728 Frontmatter \\u4E2D\\u7684\\u6700\\u5F8C\\u4E00\\u500B\\u6A94\\u540D\\u6216\\u6A19\\u984C\\u7684\\u9375\\u3002\"",
                     "target": "description:\"\\u7528\\u65BC\\u5354\\u52A9\\u8FFD\\u8E64\\u6B64\\u898F\\u5247\\u5132\\u5B58\\u5728 Frontmatter \\u4E2D\\u7684\\u6700\\u5F8C\\u4E00\\u500B\\u6A94\\u540D\\u6216\\u6A19\\u984C\\u7684\\u9375\\u3002\""
                 },
@@ -21188,14 +21230,6 @@
                 {
                     "source": "description:\"Only capitalize the first letter\"",
                     "target": "description:\"Only capitalize the first letter\""
-                },
-                {
-                    "source": "description:\"```key:\\\\n  - value```\"",
-                    "target": "description:\"```key:\\\\n  - value```\""
-                },
-                {
-                    "source": "description:\"```key: [value]```\"",
-                    "target": "description:\"```key: [value]```\""
                 },
                 {
                     "source": "description:\"Leaves tags in the body of the file alone\"",
@@ -21292,6 +21326,238 @@
                 {
                     "source": "description:\"Uses the first H1 in the file as the title\"",
                     "target": "description:\"Uses the first H1 in the file as the title\""
+                },
+                {
+                    "source": "error(`[${e}] ${t}: ${n}`)",
+                    "target": "error(`[${e}] ${t}: ${n}`)"
+                },
+                {
+                    "source": "name:\"Aktivieren Sie Stil f\\xFCr einfache Anf\\xFChrungszeichen\"",
+                    "target": "name:\"Aktivieren Sie Stil f\\xFCr einfache Anf\\xFChrungszeichen\""
+                },
+                {
+                    "source": "name:\"Aktivieren Sie Stil f\\xFCr doppelte Anf\\xFChrungszeichen\"",
+                    "target": "name:\"Aktivieren Sie Stil f\\xFCr doppelte Anf\\xFChrungszeichen\""
+                },
+                {
+                    "source": "name:\"Verwenden Sie den YAML-Schl\\xFCssel linter-yaml-title-alias, um bei \\xC4nderungen von Dateinamen und \\xDCberschriften zu helfen\"",
+                    "target": "name:\"Verwenden Sie den YAML-Schl\\xFCssel linter-yaml-title-alias, um bei \\xC4nderungen von Dateinamen und \\xDCberschriften zu helfen\""
+                },
+                {
+                    "source": "description:\"A list of lowercased words to ignore when auto-correcting\"",
+                    "target": "description:\"A list of lowercased words to ignore when auto-correcting\""
+                },
+                {
+                    "source": "name:\"Align Table Columns\"",
+                    "target": "name:\"Align Table Columns\""
+                },
+                {
+                    "source": "description:\"Aligns the table so that all columns have the same length.\"",
+                    "target": "description:\"Aligns the table so that all columns have the same length.\""
+                },
+                {
+                    "source": "description:\"A list of words to ignore when capitalizing\"",
+                    "target": "description:\"A list of words to ignore when capitalizing\""
+                },
+                {
+                    "source": "description:\"A list of words to keep lowercase\"",
+                    "target": "description:\"A list of words to keep lowercase\""
+                },
+                {
+                    "source": "name:\"YAML keys to ignore for Dedupe YAML array values\"",
+                    "target": "name:\"YAML keys to ignore for Dedupe YAML array values\""
+                },
+                {
+                    "source": "description:\"Uses the YAML escape character on the specified YAML keys if it is not already escaped. Do not use on YAML arrays.\"",
+                    "target": "description:\"Uses the YAML escape character on the specified YAML keys if it is not already escaped. Do not use on YAML arrays.\""
+                },
+                {
+                    "source": "name:\"Move inline fields to YAML\"",
+                    "target": "name:\"Move inline fields to YAML\""
+                },
+                {
+                    "source": "name:\"Full-line inline fields\"",
+                    "target": "name:\"Full-line inline fields\""
+                },
+                {
+                    "source": "description:\"What to do with inline fields that take up a whole line like <code>key:: value</code>\"",
+                    "target": "description:\"What to do with inline fields that take up a whole line like <code>key:: value</code>\""
+                },
+                {
+                    "source": "name:\"Bracketed inline fields\"",
+                    "target": "name:\"Bracketed inline fields\""
+                },
+                {
+                    "source": "description:\"What to do with inline fields wrapped in square brackets or parentheses like <code>[key:: value]</code> and <code>(key:: value)</code>\"",
+                    "target": "description:\"What to do with inline fields wrapped in square brackets or parentheses like <code>[key:: value]</code> and <code>(key:: value)</code>\""
+                },
+                {
+                    "source": "name:\"When the key already exists\"",
+                    "target": "name:\"When the key already exists\""
+                },
+                {
+                    "source": "description:\"What to do when an inline field has the same key as a key already in the YAML frontmatter. Keys have to match exactly, including their case.\"",
+                    "target": "description:\"What to do when an inline field has the same key as a key already in the YAML frontmatter. Keys have to match exactly, including their case.\""
+                },
+                {
+                    "source": "name:\"Inline keys to ignore\"",
+                    "target": "name:\"Inline keys to ignore\""
+                },
+                {
+                    "source": "description:\"The inline field keys that will not be moved to the YAML frontmatter\"",
+                    "target": "description:\"The inline field keys that will not be moved to the YAML frontmatter\""
+                },
+                {
+                    "source": "name:\"Enable Single quote style\"",
+                    "target": "name:\"Enable Single quote style\""
+                },
+                {
+                    "source": "name:\"Enable Double quote style\"",
+                    "target": "name:\"Enable Double quote style\""
+                },
+                {
+                    "source": "name:\"YAML Keys to ignore for Sort YAML array values\"",
+                    "target": "name:\"YAML Keys to ignore for Sort YAML array values\""
+                },
+                {
+                    "source": "description:\"A list of YAML keys without the ending colon that are not meant to have their values sorted.\"",
+                    "target": "description:\"A list of YAML keys without the ending colon that are not meant to have their values sorted.\""
+                },
+                {
+                    "source": "name:\"Use the YAML key specified by Alias helper key to help with filename and heading changes\"",
+                    "target": "name:\"Use the YAML key specified by Alias helper key to help with filename and heading changes\""
+                },
+                {
+                    "source": "name:\"Alias Helper Key\\u3067\\u6307\\u5B9A\\u3055\\u308C\\u305FYAML\\u30AD\\u30FC\\u3092\\u4F7F\\u7528\\u3057\\u3066\\u3001\\u30D5\\u30A1\\u30A4\\u30EB\\u540D\\u3068\\u898B\\u51FA\\u3057\\u306E\\u5909\\u66F4\\u3092\\u652F\\u63F4\\u3057\\u307E\\u3059\"",
+                    "target": "name:\"Alias Helper Key\\u3067\\u6307\\u5B9A\\u3055\\u308C\\u305FYAML\\u30AD\\u30FC\\u3092\\u4F7F\\u7528\\u3057\\u3066\\u3001\\u30D5\\u30A1\\u30A4\\u30EB\\u540D\\u3068\\u898B\\u51FA\\u3057\\u306E\\u5909\\u66F4\\u3092\\u652F\\u63F4\\u3057\\u307E\\u3059\""
+                },
+                {
+                    "source": "name:\"Chaves do YAML a ignorar para Desduplicar valores de array no YAML\"",
+                    "target": "name:\"Chaves do YAML a ignorar para Desduplicar valores de array no YAML\""
+                },
+                {
+                    "source": "name:\"Ativar Estilo de aspas simples\"",
+                    "target": "name:\"Ativar Estilo de aspas simples\""
+                },
+                {
+                    "source": "name:\"Ativar Estilo de aspas duplas\"",
+                    "target": "name:\"Ativar Estilo de aspas duplas\""
+                },
+                {
+                    "source": "name:\"Chaves do YAML a ignorar para Ordenar valores de array no YAML\"",
+                    "target": "name:\"Chaves do YAML a ignorar para Ordenar valores de array no YAML\""
+                },
+                {
+                    "source": "name:\"Usar a chave do YAML especificada por Chave auxiliar de alias para ajudar com altera\\xE7\\xF5es no nome do arquivo e cabe\\xE7alho\"",
+                    "target": "name:\"Usar a chave do YAML especificada por Chave auxiliar de alias para ajudar com altera\\xE7\\xF5es no nome do arquivo e cabe\\xE7alho\""
+                },
+                {
+                    "source": "name:\"\\u0412\\u043A\\u043B\\u044E\\u0447\\u0438\\u0442\\u044C \\u0421\\u0442\\u0438\\u043B\\u044C \\u043E\\u0434\\u0438\\u043D\\u043E\\u0447\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438\"",
+                    "target": "name:\"\\u0412\\u043A\\u043B\\u044E\\u0447\\u0438\\u0442\\u044C \\u0421\\u0442\\u0438\\u043B\\u044C \\u043E\\u0434\\u0438\\u043D\\u043E\\u0447\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438\""
+                },
+                {
+                    "source": "name:\"\\u0412\\u043A\\u043B\\u044E\\u0447\\u0438\\u0442\\u044C \\u0421\\u0442\\u0438\\u043B\\u044C \\u0434\\u0432\\u043E\\u0439\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438\"",
+                    "target": "name:\"\\u0412\\u043A\\u043B\\u044E\\u0447\\u0438\\u0442\\u044C \\u0421\\u0442\\u0438\\u043B\\u044C \\u0434\\u0432\\u043E\\u0439\\u043D\\u043E\\u0439 \\u043A\\u0430\\u0432\\u044B\\u0447\\u043A\\u0438\""
+                },
+                {
+                    "source": "name:\"Tek Al\\u0131nt\\u0131 Stili Kullan\\u0131m\\u0131\"",
+                    "target": "name:\"Tek Al\\u0131nt\\u0131 Stili Kullan\\u0131m\\u0131\""
+                },
+                {
+                    "source": "name:\"\\xC7ift Al\\u0131nt\\u0131 Stili Kullan\\u0131m\\u0131\"",
+                    "target": "name:\"\\xC7ift Al\\u0131nt\\u0131 Stili Kullan\\u0131m\\u0131\""
+                },
+                {
+                    "source": "name:\"linter-yaml-title-alias YAML anahtar\\u0131n\\u0131 kullanarak eski dosya ad\\u0131 ve ba\\u015Fl\\u0131k de\\u011Fi\\u015Fikliklerini takip et\"",
+                    "target": "name:\"linter-yaml-title-alias YAML anahtar\\u0131n\\u0131 kullanarak eski dosya ad\\u0131 ve ba\\u015Fl\\u0131k de\\u011Fi\\u015Fikliklerini takip et\""
+                },
+                {
+                    "source": "name:\"\\u5728\\u5BF9 YAML \\u6570\\u7EC4\\u503C\\u8FDB\\u884C\\u53BB\\u91CD\\u65F6\\u9700\\u5FFD\\u7565\\u7684 YAML \\u952E\"",
+                    "target": "name:\"\\u5728\\u5BF9 YAML \\u6570\\u7EC4\\u503C\\u8FDB\\u884C\\u53BB\\u91CD\\u65F6\\u9700\\u5FFD\\u7565\\u7684 YAML \\u952E\""
+                },
+                {
+                    "source": "name:\"\\u5728\\u5BF9 YAML \\u6570\\u7EC4\\u503C\\u8FDB\\u884C\\u6392\\u5E8F\\u65F6\\u9700\\u5FFD\\u7565\\u7684 YAML \\u952E\"",
+                    "target": "name:\"\\u5728\\u5BF9 YAML \\u6570\\u7EC4\\u503C\\u8FDB\\u884C\\u6392\\u5E8F\\u65F6\\u9700\\u5FFD\\u7565\\u7684 YAML \\u952E\""
+                },
+                {
+                    "source": "name:\"\\u4F7F\\u7528 YAML \\u952E linter-yaml-title-alias \\u6765\\u4FDD\\u7559\\u6807\\u9898\\u4FEE\\u6539\\u8BB0\\u5F55\"",
+                    "target": "name:\"\\u4F7F\\u7528 YAML \\u952E linter-yaml-title-alias \\u6765\\u4FDD\\u7559\\u6807\\u9898\\u4FEE\\u6539\\u8BB0\\u5F55\""
+                },
+                {
+                    "source": "name:\"\\u82E5\\u8981\\u5FFD\\u7565\\u7684 YAML \\u9375\\uFF0C\\u4EE5\\u4FBF\\u5C0D YAML \\u9663\\u5217\\u503C\\u9032\\u884C\\u53BB\\u91CD\"",
+                    "target": "name:\"\\u82E5\\u8981\\u5FFD\\u7565\\u7684 YAML \\u9375\\uFF0C\\u4EE5\\u4FBF\\u5C0D YAML \\u9663\\u5217\\u503C\\u9032\\u884C\\u53BB\\u91CD\""
+                },
+                {
+                    "source": "name:\"\\u555F\\u7528 \\u55AE\\u5F15\\u865F\\u6A23\\u5F0F\"",
+                    "target": "name:\"\\u555F\\u7528 \\u55AE\\u5F15\\u865F\\u6A23\\u5F0F\""
+                },
+                {
+                    "source": "name:\"\\u555F\\u7528 \\u96D9\\u5F15\\u865F\\u6A23\\u5F0F\"",
+                    "target": "name:\"\\u555F\\u7528 \\u96D9\\u5F15\\u865F\\u6A23\\u5F0F\""
+                },
+                {
+                    "source": "name:\"\\u82E5\\u8981\\u5FFD\\u7565\\u7684 YAML \\u9375\\uFF0C\\u4EE5\\u4FBF\\u5C0D YAML \\u9663\\u5217\\u503C\\u9032\\u884C\\u6392\\u5E8F\"",
+                    "target": "name:\"\\u82E5\\u8981\\u5FFD\\u7565\\u7684 YAML \\u9375\\uFF0C\\u4EE5\\u4FBF\\u5C0D YAML \\u9663\\u5217\\u503C\\u9032\\u884C\\u6392\\u5E8F\""
+                },
+                {
+                    "source": "name:\"\\u4F7F\\u7528\\u7531 \\u5225\\u540D\\u8F14\\u52A9\\u9375 \\u6307\\u5B9A\\u7684 YAML \\u9375\\u4F86\\u5354\\u52A9\\u8655\\u7406\\u6A94\\u540D\\u548C\\u6A19\\u984C\\u8B8A\\u66F4\"",
+                    "target": "name:\"\\u4F7F\\u7528\\u7531 \\u5225\\u540D\\u8F14\\u52A9\\u9375 \\u6307\\u5B9A\\u7684 YAML \\u9375\\u4F86\\u5354\\u52A9\\u8655\\u7406\\u6A94\\u540D\\u548C\\u6A19\\u984C\\u8B8A\\u66F4\""
+                },
+                {
+                    "source": "description:\"Does not move full-line fields like `key:: value`\"",
+                    "target": "description:\"Does not move full-line fields like `key:: value`\""
+                },
+                {
+                    "source": "description:\"Adds full-line fields to the YAML frontmatter and leaves their lines as they are\"",
+                    "target": "description:\"Adds full-line fields to the YAML frontmatter and leaves their lines as they are\""
+                },
+                {
+                    "source": "description:\"Does not move bracketed fields like `[key:: value]` and `(key:: value)`\"",
+                    "target": "description:\"Does not move bracketed fields like `[key:: value]` and `(key:: value)`\""
+                },
+                {
+                    "source": "description:\"Leaves the fields in the body and the YAML frontmatter value as is\"",
+                    "target": "description:\"Leaves the fields in the body and the YAML frontmatter value as is\""
+                },
+                {
+                    "source": "description:\"Adds the field values to the YAML frontmatter value, turning it into a list\"",
+                    "target": "description:\"Adds the field values to the YAML frontmatter value, turning it into a list\""
+                },
+                {
+                    "source": "description:\"Replaces the YAML frontmatter value with the field values\"",
+                    "target": "description:\"Replaces the YAML frontmatter value with the field values\""
+                },
+                {
+                    "source": "\"Leave in place\":\"Leave in place\"",
+                    "target": "\"Leave in place\":\"保留原樣\""
+                },
+                {
+                    "source": "\"Move and keep in text\":\"Move and keep in text\"",
+                    "target": "\"Move and keep in text\":\"移至 YAML 並保留內文\""
+                },
+                {
+                    "source": "\"Move and keep value in text\":\"Move and keep value in text\"",
+                    "target": "\"Move and keep value in text\":\"移至 YAML，內文只保留值\""
+                },
+                {
+                    "source": "\"Move and remove\":\"Move and remove\"",
+                    "target": "\"Move and remove\":\"移至 YAML 並移除內文欄位\""
+                },
+                {
+                    "source": "Skip:\"Skip\"",
+                    "target": "Skip:\"略過\""
+                },
+                {
+                    "source": "\"Merge into list\":\"Merge into list\"",
+                    "target": "\"Merge into list\":\"合併為清單\""
+                },
+                {
+                    "source": "Overwrite:\"Overwrite\"",
+                    "target": "Overwrite:\"覆寫\""
+                },
+                {
+                    "source": "name:\"YAML Keys to ignore for Sort YAML array values\",description:\"不排序值的 YAML 鍵清單，鍵名不含結尾的冒號。\"",
+                    "target": "name:\"排序 YAML 陣列值時要忽略的鍵\",description:\"不排序值的 YAML 鍵清單，鍵名不含結尾的冒號。\""
                 }
             ]
         },
