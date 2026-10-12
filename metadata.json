@@ -537,13 +537,13 @@
         "plugin": "templater-obsidian",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "2.25.1",
-        "supported_versions": "2.25.1",
+        "version": "2.26.0",
+        "supported_versions": "2.26.0",
         "title": "[zh-tw] Templater",
         "description": "Templater 繁體中文化與微調",
-        "hash": "0983a09f0983a09f0983a09f0983a09f",
+        "hash": "131dbe0b131dbe0b131dbe0b131dbe0b",
         "created_at": "2026-05-25T03:51:07.145Z",
-        "updated_at": "2026-09-19T20:10:13.768Z"
+        "updated_at": "2026-10-12T10:33:48.383Z"
     },
     {
         "id": "lnper0x1liWp6SBmbPc1CQcceuZC5dRm",
