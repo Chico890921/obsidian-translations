@@ -3,11 +3,12 @@
     "metadata": {
         "theme": "Underwater",
         "language": "zh-tw",
-        "version": "1.6.62",
-        "supportedVersions": "1.6.62",
+        "version": "1.6.70",
+        "supportedVersions": "1.6.70",
         "title": "Underwater",
         "description": "Underwater Localization & Tweaks",
-        "author": "Chico"
+        "author": "Chico",
+        "updatedAt": 1791800731633
     },
     "dict": [
         {
