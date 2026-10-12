@@ -640,13 +640,13 @@
         "id": "Ee6L7cvMreVEUk1q6CRQO3CVmIG1KG8j",
         "plugin": "obsidian-linter",
         "language": "zh-tw",
-        "version": "1.33.0",
-        "supported_versions": "1.33.0",
+        "version": "1.34.0",
+        "supported_versions": "1.34.0",
         "title": "[zh-tw] Linter",
         "description": "Linter Localization & Tweaks",
-        "hash": "7615625a7615625a7615625a7615625a",
+        "hash": "03677244036772440367724403677244",
         "created_at": "2026-09-14T11:27:35.652Z",
-        "updated_at": "2026-09-19T20:25:48.821Z",
+        "updated_at": "2026-10-12T05:51:56.577Z",
         "type": "plugin"
     },
     {
