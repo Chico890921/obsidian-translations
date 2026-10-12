@@ -3,16 +3,17 @@
     "metadata": {
         "theme": "Phycat",
         "language": "zh-tw",
-        "version": "0.2.9",
-        "supportedVersions": "0.2.9",
+        "version": "0.3.7",
+        "supportedVersions": "0.3.7",
         "title": "Phycat",
         "description": "Phycat 繁體中文翻譯與微調",
-        "author": "Chico"
+        "author": "Chico",
+        "updatedAt": 1791800331291
     },
     "dict": [
         {
             "type": "name",
-            "source": "🐱 Phycat theme Info & Help",
+            "source": "🐱 Phycat theme Info & Help / Phycat 主题帮助信息",
             "target": "🐱 Phycat 主題資訊與說明"
         },
         {
@@ -42,87 +43,1107 @@
         },
         {
             "type": "name",
-            "source": "🎨 Phycat color setting",
+            "source": "🎨 Phycat color settings / Phycat 配色设置",
             "target": "🎨 Phycat 配色設定"
         },
         {
-            "type": "title",
-            "source": "Color Scheme (Light Mode)",
-            "target": "配色方案（淺色模式）"
-        },
-        {
             "type": "description",
-            "source": "Choose your preferred light mode flavor.",
-            "target": "選擇你偏好的淺色模式風格。"
-        },
-        {
-            "type": "label",
-            "source": "🌸 Sakura (Pink / Default)",
-            "target": "🌸 Sakura（粉紅／預設）"
-        },
-        {
-            "type": "label",
-            "source": "🌊 Mint (Mint Blue)",
-            "target": "🌊 Mint（薄荷藍）"
-        },
-        {
-            "type": "label",
-            "source": "☁️ Sky (Clear Blue)",
-            "target": "☁️ Sky（晴空藍）"
-        },
-        {
-            "type": "label",
-            "source": "🌲 Forest (Natural Green)",
-            "target": "🌲 Forest（自然綠）"
-        },
-        {
-            "type": "label",
-            "source": "🟣 Mauve (Orchid Purple)",
-            "target": "🟣 Mauve（蘭花紫）"
-        },
-        {
-            "type": "label",
-            "source": "🌅 Golden Hour (Warm Amber)",
-            "target": "🌅 Golden Hour（暖琥珀）"
-        },
-        {
-            "type": "label",
-            "source": "🍒 Cheery (Vibrant Red)",
-            "target": "🍒 Cheery（鮮明紅）"
-        },
-        {
-            "type": "label",
-            "source": "⚓ Prussian (Deep Blue)",
-            "target": "⚓ Prussian（深藍）"
+            "source": "Choose light and dark colors independently. Import a JSON preset with Style Settings → Import. Advanced sections are collapsed. Native Appearance accent overrides the theme primary for both interactive controls and primary-colored decoration. Reset it to use the preset primary. Other palette colors remain independent.",
+            "target": "可分別設定淺色與深色模式的顏色，並透過 Style Settings → Import 匯入 JSON 配色預設。進階設定預設為收合狀態。外觀設定中的強調色會優先用於互動控制項及使用主色的裝飾；重設強調色即可改用預設配色的主色，其他配色不受影響。"
         },
         {
             "type": "title",
-            "source": "Color Scheme (Dark Mode)",
-            "target": "配色方案（深色模式）"
+            "source": "Manual accent text colors",
+            "target": "手動設定強調色上的文字顏色"
         },
         {
             "type": "description",
-            "source": "Choose your preferred dark mode flavor.",
-            "target": "選擇你偏好的深色模式風格。"
+            "source": "Off by default. Navigation and inline-code hover text on the accent automatically choose black or white. Enable to use their custom palette colors. Checkmarks always use the palette color.",
+            "target": "預設關閉。導覽文字與行內程式碼的懸停文字，在強調色背景上會自動選用黑色或白色。啟用後會改用自訂配色。工作勾選標記一律使用配色設定中的顏色。"
         },
         {
-            "type": "label",
-            "source": "🧛 Vampire (Dracula / Default)",
-            "target": "🧛 Vampire（Dracula／預設）"
+            "type": "title",
+            "source": "Core palette",
+            "target": "基本配色"
         },
         {
-            "type": "label",
-            "source": "🌌 Abyss (Midnight Blue)",
-            "target": "🌌 Abyss（午夜藍）"
+            "type": "title",
+            "source": "Default primary color (preset)",
+            "target": "預設主色（配色預設）"
         },
         {
-            "type": "label",
-            "source": "☢️ Radiation (Toxic Green)",
-            "target": "☢️ Radiation（毒性綠）"
+            "type": "description",
+            "source": "Used when Appearance → Accent color is reset. A custom native accent takes priority for both interactive controls and all decoration that uses the primary color.",
+            "target": "重設「外觀 → 強調色」後會使用此顏色。若設定了自訂強調色，互動控制項及所有使用主色的裝飾都會優先採用該強調色。"
+        },
+        {
+            "type": "title",
+            "source": "Secondary color",
+            "target": "輔助色"
+        },
+        {
+            "type": "title",
+            "source": "Base background",
+            "target": "基本背景"
+        },
+        {
+            "type": "title",
+            "source": "Main text",
+            "target": "主要文字"
+        },
+        {
+            "type": "title",
+            "source": "Secondary text",
+            "target": "次要文字"
+        },
+        {
+            "type": "title",
+            "source": "Border",
+            "target": "邊框"
+        },
+        {
+            "type": "title",
+            "source": "Text selection",
+            "target": "文字選取"
+        },
+        {
+            "type": "title",
+            "source": "Checkmark",
+            "target": "勾選標記"
+        },
+        {
+            "type": "description",
+            "source": "Task checkmark color, used directly in both accent text modes.",
+            "target": "工作勾選標記的顏色，兩種強調色文字模式都會直接使用此顏色。"
+        },
+        {
+            "type": "title",
+            "source": "Surfaces and controls",
+            "target": "背景與控制項"
+        },
+        {
+            "type": "title",
+            "source": "Hover overlay",
+            "target": "滑鼠懸停覆蓋色"
+        },
+        {
+            "type": "title",
+            "source": "Active hover overlay",
+            "target": "作用中項目的懸停覆蓋色"
+        },
+        {
+            "type": "title",
+            "source": "Error background",
+            "target": "錯誤背景"
+        },
+        {
+            "type": "title",
+            "source": "Success background",
+            "target": "成功背景"
+        },
+        {
+            "type": "title",
+            "source": "Table background",
+            "target": "表格背景"
+        },
+        {
+            "type": "title",
+            "source": "Table grid",
+            "target": "表格格線"
+        },
+        {
+            "type": "title",
+            "source": "Table row hover",
+            "target": "表格列懸停效果"
+        },
+        {
+            "type": "title",
+            "source": "Diagram text (dark)",
+            "target": "圖表文字（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Unchecked checkbox background",
+            "target": "未勾選核取方塊的背景"
+        },
+        {
+            "type": "title",
+            "source": "Unchecked checkbox border",
+            "target": "未勾選核取方塊的邊框"
+        },
+        {
+            "type": "title",
+            "source": "Table cell hover text (dark)",
+            "target": "儲存格懸停文字（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Modal base shadow",
+            "target": "對話框基本陰影"
+        },
+        {
+            "type": "title",
+            "source": "Modal · Background",
+            "target": "對話框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Modal · Border",
+            "target": "對話框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "Modal shadow (light) / outline (dark)",
+            "target": "對話框陰影（淺色）／外框（深色）"
+        },
+        {
+            "type": "title",
+            "source": "Modal outer shadow (dark)",
+            "target": "對話框外側陰影（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Settings navigation · Text",
+            "target": "設定導覽 · 文字"
+        },
+        {
+            "type": "description",
+            "source": "Used when Manual accent text colors is enabled.",
+            "target": "啟用「手動設定強調色上的文字顏色」時使用。"
+        },
+        {
+            "type": "title",
+            "source": "Database row · Hover border-bottom",
+            "target": "資料庫列 · 懸停時的底部邊框"
+        },
+        {
+            "type": "title",
+            "source": "Scrollbar thumb",
+            "target": "捲軸滑塊"
+        },
+        {
+            "type": "title",
+            "source": "Scrollbar active thumb",
+            "target": "作用中的捲軸滑塊"
+        },
+        {
+            "type": "title",
+            "source": "Sidebar tab border (light)",
+            "target": "側邊欄分頁邊框（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Tab outer shadow (light)",
+            "target": "分頁外側陰影（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Tab inner highlight (light)",
+            "target": "分頁內側亮邊（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Card modal · Background",
+            "target": "卡片對話框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Card modal · Border",
+            "target": "卡片對話框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "Card modal · Shadow",
+            "target": "卡片對話框 · 陰影"
+        },
+        {
+            "type": "title",
+            "source": "Card modal · Shadow 2",
+            "target": "卡片對話框 · 第二層陰影"
+        },
+        {
+            "type": "title",
+            "source": "Card layout · Background",
+            "target": "卡片版面 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Sidebar tab border (dark)",
+            "target": "側邊欄分頁邊框（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Card layout · Border",
+            "target": "卡片版面 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "Card layout · Shadow",
+            "target": "卡片版面 · 陰影"
+        },
+        {
+            "type": "title",
+            "source": "Heading decoration and effects",
+            "target": "標題裝飾與效果"
+        },
+        {
+            "type": "title",
+            "source": "Glow",
+            "target": "光暈"
+        },
+        {
+            "type": "title",
+            "source": "H1 underline (dark)",
+            "target": "H1 底線（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Quote hover tint",
+            "target": "引用文字懸停色調"
+        },
+        {
+            "type": "title",
+            "source": "Bold text tint (light mode)",
+            "target": "粗體文字色調（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Heading accent tint (light mode)",
+            "target": "標題強調色調（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Settings tint (light mode)",
+            "target": "設定介面色調（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "H2 shadow",
+            "target": "H2 陰影"
+        },
+        {
+            "type": "title",
+            "source": "H2 hover shadow",
+            "target": "H2 懸停陰影"
+        },
+        {
+            "type": "title",
+            "source": "H2 gradient start (light)",
+            "target": "H2 漸層起始色（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "H2 gradient center (light)",
+            "target": "H2 漸層中間色（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "H2 gradient end (light)",
+            "target": "H2 漸層結束色（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "H2 radial glow (dark)",
+            "target": "H2 放射光暈（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "H2 radial glow on hover (dark)",
+            "target": "H2 懸停時的放射光暈（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "H2 text shadow (light)",
+            "target": "H2 文字陰影（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Heading collapse icon · Text",
+            "target": "標題收合圖示 · 文字"
+        },
+        {
+            "type": "title",
+            "source": "H2 capsule text",
+            "target": "H2 膠囊文字"
+        },
+        {
+            "type": "description",
+            "source": "Text on the light capsule gradient. Other H2 styles use the heading color setting.",
+            "target": "淺色膠囊漸層上的文字顏色。其他 H2 樣式會使用標題顏色設定。"
+        },
+        {
+            "type": "title",
+            "source": "H2 formatting marks",
+            "target": "H2 格式標記"
+        },
+        {
+            "type": "title",
+            "source": "H5 · Background",
+            "target": "H5 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "H1 · Shadow",
+            "target": "H1 · 陰影"
+        },
+        {
+            "type": "title",
+            "source": "H2 · Background",
+            "target": "H2 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "H2 · Top border",
+            "target": "H2 · 上邊框"
+        },
+        {
+            "type": "title",
+            "source": "H2 · Hover Shadow",
+            "target": "H2 · 懸停陰影"
+        },
+        {
+            "type": "title",
+            "source": "Code and syntax",
+            "target": "程式碼與語法"
+        },
+        {
+            "type": "title",
+            "source": "Code block background",
+            "target": "程式碼區塊背景"
+        },
+        {
+            "type": "title",
+            "source": "Code block header",
+            "target": "程式碼區塊標頭"
+        },
+        {
+            "type": "title",
+            "source": "Code text",
+            "target": "程式碼文字"
+        },
+        {
+            "type": "title",
+            "source": "Keywords",
+            "target": "關鍵字"
+        },
+        {
+            "type": "title",
+            "source": "Functions",
+            "target": "函式"
+        },
+        {
+            "type": "title",
+            "source": "Strings",
+            "target": "字串"
+        },
+        {
+            "type": "title",
+            "source": "Comments",
+            "target": "註解"
+        },
+        {
+            "type": "title",
+            "source": "Properties",
+            "target": "屬性"
+        },
+        {
+            "type": "title",
+            "source": "Values",
+            "target": "值"
+        },
+        {
+            "type": "title",
+            "source": "Punctuation",
+            "target": "標點符號"
+        },
+        {
+            "type": "title",
+            "source": "Tags",
+            "target": "標籤"
+        },
+        {
+            "type": "title",
+            "source": "Operators",
+            "target": "運算子"
+        },
+        {
+            "type": "title",
+            "source": "Important tokens",
+            "target": "重要語彙"
+        },
+        {
+            "type": "title",
+            "source": "Copy code button · Hover Text",
+            "target": "複製程式碼按鈕 · 懸停文字"
+        },
+        {
+            "type": "title",
+            "source": "Code output background (dark)",
+            "target": "程式碼輸出背景（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Code block · border-left",
+            "target": "程式碼區塊 · 左邊框"
+        },
+        {
+            "type": "title",
+            "source": "Code block · border-right",
+            "target": "程式碼區塊 · 右邊框"
+        },
+        {
+            "type": "title",
+            "source": "Code block · Top border",
+            "target": "程式碼區塊 · 上邊框"
+        },
+        {
+            "type": "title",
+            "source": "Code fence header (dark)",
+            "target": "程式碼圍欄標頭（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Code block · border-bottom",
+            "target": "程式碼區塊 · 下邊框"
+        },
+        {
+            "type": "title",
+            "source": "Active code line (dark)",
+            "target": "目前程式碼行（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Code block · Hover Text",
+            "target": "程式碼區塊 · 懸停文字"
+        },
+        {
+            "type": "title",
+            "source": "Code block · Hover Text fill",
+            "target": "程式碼區塊 · 懸停文字填色"
+        },
+        {
+            "type": "title",
+            "source": "Callout colors",
+            "target": "提示框顏色"
+        },
+        {
+            "type": "title",
+            "source": "note",
+            "target": "筆記（note）"
+        },
+        {
+            "type": "title",
+            "source": "Callout note · Background",
+            "target": "筆記提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout note · Title Text",
+            "target": "筆記提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout note · Hover Background",
+            "target": "筆記提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout note · Watermark Text",
+            "target": "筆記提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout note · Border",
+            "target": "筆記提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "info",
+            "target": "資訊（info）"
+        },
+        {
+            "type": "title",
+            "source": "Callout info · Watermark Text",
+            "target": "資訊提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout info · Border",
+            "target": "資訊提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "Callout info · Background",
+            "target": "資訊提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout info · Title Text",
+            "target": "資訊提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "todo",
+            "target": "待辦（todo）"
+        },
+        {
+            "type": "title",
+            "source": "Callout todo · Watermark Text",
+            "target": "待辦提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout todo · Border",
+            "target": "待辦提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "Callout todo · Background",
+            "target": "待辦提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout todo · Title Text",
+            "target": "待辦提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "tip",
+            "target": "提示（tip）"
+        },
+        {
+            "type": "title",
+            "source": "Callout tip · Background",
+            "target": "提示提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout tip · Title Text",
+            "target": "提示提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout tip · Hover Background",
+            "target": "提示提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout tip · Watermark Text",
+            "target": "提示提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout tip · Border",
+            "target": "提示提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "warning",
+            "target": "警告（warning）"
+        },
+        {
+            "type": "title",
+            "source": "Callout warning · Background",
+            "target": "警告提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout warning · Title Text",
+            "target": "警告提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout warning · Hover Background",
+            "target": "警告提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout warning · Watermark Text",
+            "target": "警告提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout warning · Border",
+            "target": "警告提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "important",
+            "target": "重要（important）"
+        },
+        {
+            "type": "title",
+            "source": "Callout important · Background",
+            "target": "重要提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout important · Title Text",
+            "target": "重要提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout important · Hover Background",
+            "target": "重要提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout important · Watermark Text",
+            "target": "重要提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout important · Border",
+            "target": "重要提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "caution",
+            "target": "注意（caution）"
+        },
+        {
+            "type": "title",
+            "source": "Callout caution · Background",
+            "target": "注意提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout caution · Title Text",
+            "target": "注意提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout caution · Hover Background",
+            "target": "注意提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout caution · Watermark Text",
+            "target": "注意提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "bug",
+            "target": "程式錯誤（bug）"
+        },
+        {
+            "type": "title",
+            "source": "Callout bug · Watermark Text",
+            "target": "程式錯誤提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout bug · Border",
+            "target": "程式錯誤提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "Callout bug · Background",
+            "target": "程式錯誤提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout bug · Title Text",
+            "target": "程式錯誤提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "success",
+            "target": "成功（success）"
+        },
+        {
+            "type": "title",
+            "source": "Callout success · Background",
+            "target": "成功提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout success · Title Text",
+            "target": "成功提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout success · Hover Background",
+            "target": "成功提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout success · Watermark Text",
+            "target": "成功提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout success · Border",
+            "target": "成功提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "example",
+            "target": "範例（example）"
+        },
+        {
+            "type": "title",
+            "source": "Callout example · Background",
+            "target": "範例提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout example · Title Text",
+            "target": "範例提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout example · Hover Background",
+            "target": "範例提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout example · Watermark Text",
+            "target": "範例提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout example · Border",
+            "target": "範例提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "quote",
+            "target": "引用（quote）"
+        },
+        {
+            "type": "title",
+            "source": "Callout quote · Background",
+            "target": "引用提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout quote · Title Text",
+            "target": "引用提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout quote · Hover Background",
+            "target": "引用提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout quote · Watermark Text",
+            "target": "引用提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout quote · Border",
+            "target": "引用提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "danger",
+            "target": "危險（danger）"
+        },
+        {
+            "type": "title",
+            "source": "Callout danger · Background",
+            "target": "危險提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout danger · Left border",
+            "target": "危險提示框 · 左邊框"
+        },
+        {
+            "type": "title",
+            "source": "Callout danger · Title Text",
+            "target": "危險提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout danger · Hover Background",
+            "target": "危險提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout danger · Watermark Text",
+            "target": "危險提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout danger · Border",
+            "target": "危險提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "Callout danger · Shadow",
+            "target": "危險提示框 · 陰影"
+        },
+        {
+            "type": "title",
+            "source": "error",
+            "target": "錯誤（error）"
+        },
+        {
+            "type": "title",
+            "source": "Callout error · Watermark Text",
+            "target": "錯誤提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "failure",
+            "target": "失敗（failure）"
+        },
+        {
+            "type": "title",
+            "source": "Callout failure · Background",
+            "target": "失敗提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout failure · Title Text",
+            "target": "失敗提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout failure · Hover Background",
+            "target": "失敗提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout failure · Watermark Text",
+            "target": "失敗提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout failure · Border",
+            "target": "失敗提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "question",
+            "target": "疑問（question）"
+        },
+        {
+            "type": "title",
+            "source": "Callout question · Background",
+            "target": "疑問提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout question · Title Text",
+            "target": "疑問提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout question · Hover Background",
+            "target": "疑問提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout question · Watermark Text",
+            "target": "疑問提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout question · Border",
+            "target": "疑問提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "abstract",
+            "target": "摘要（abstract）"
+        },
+        {
+            "type": "title",
+            "source": "Callout abstract · Background",
+            "target": "摘要提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout abstract · Title Text",
+            "target": "摘要提示框 · 標題文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout abstract · Hover Background",
+            "target": "摘要提示框 · 懸停背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout abstract · Watermark Text",
+            "target": "摘要提示框 · 浮水印文字"
+        },
+        {
+            "type": "title",
+            "source": "Callout abstract · Border",
+            "target": "摘要提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "Common callout surfaces",
+            "target": "提示框共用背景"
+        },
+        {
+            "type": "title",
+            "source": "Default callout title background (light)",
+            "target": "預設提示框標題背景（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Default callout title border (light)",
+            "target": "預設提示框標題邊框（淺色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Callout common · Background",
+            "target": "共用提示框 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Callout common · Border",
+            "target": "共用提示框 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "Callout title background (dark)",
+            "target": "提示框標題背景（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Callout title border (dark)",
+            "target": "提示框標題邊框（深色模式）"
+        },
+        {
+            "type": "title",
+            "source": "Rainbow folders",
+            "target": "彩虹資料夾"
+        },
+        {
+            "type": "title",
+            "source": "Folder Pink",
+            "target": "資料夾粉紅色"
+        },
+        {
+            "type": "title",
+            "source": "Folder Cyan",
+            "target": "資料夾青色"
+        },
+        {
+            "type": "title",
+            "source": "Folder Orange",
+            "target": "資料夾橘色"
+        },
+        {
+            "type": "title",
+            "source": "Folder Green",
+            "target": "資料夾綠色"
+        },
+        {
+            "type": "title",
+            "source": "Folder Purple",
+            "target": "資料夾紫色"
+        },
+        {
+            "type": "title",
+            "source": "Folder Red",
+            "target": "資料夾紅色"
+        },
+        {
+            "type": "title",
+            "source": "Folder Blue",
+            "target": "資料夾藍色"
+        },
+        {
+            "type": "title",
+            "source": "Advanced component colors",
+            "target": "進階元件顏色"
+        },
+        {
+            "type": "title",
+            "source": "Interface · Shadow",
+            "target": "介面 · 陰影"
+        },
+        {
+            "type": "title",
+            "source": "Canceled task symbol",
+            "target": "已取消工作的符號"
+        },
+        {
+            "type": "title",
+            "source": "Completed task text",
+            "target": "已完成工作的文字"
+        },
+        {
+            "type": "title",
+            "source": "Blockquote · Background",
+            "target": "引用區塊 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Highlight · Hover Text",
+            "target": "醒目提示 · 懸停文字"
+        },
+        {
+            "type": "title",
+            "source": "Strikethrough · Text",
+            "target": "刪除線 · 文字"
+        },
+        {
+            "type": "title",
+            "source": "Strikethrough · Hover Decoration",
+            "target": "刪除線 · 懸停裝飾"
+        },
+        {
+            "type": "title",
+            "source": "Interface · Text",
+            "target": "介面 · 文字"
+        },
+        {
+            "type": "title",
+            "source": "Keyboard key · Background",
+            "target": "鍵帽 · 背景"
+        },
+        {
+            "type": "title",
+            "source": "Keyboard key · Border",
+            "target": "鍵帽 · 邊框"
+        },
+        {
+            "type": "title",
+            "source": "Keyboard key · Top border",
+            "target": "鍵帽 · 上邊框"
+        },
+        {
+            "type": "title",
+            "source": "Keyboard key · Bottom border",
+            "target": "鍵帽 · 下邊框"
+        },
+        {
+            "type": "title",
+            "source": "Keyboard key · Shadow",
+            "target": "鍵帽 · 陰影"
+        },
+        {
+            "type": "title",
+            "source": "Keyboard key · Shadow 2",
+            "target": "鍵帽 · 第二層陰影"
+        },
+        {
+            "type": "title",
+            "source": "Keyboard key · Hover Shadow",
+            "target": "鍵帽 · 懸停陰影"
+        },
+        {
+            "type": "title",
+            "source": "Keyboard key · Hover Shadow 2",
+            "target": "鍵帽 · 懸停時的第二層陰影"
+        },
+        {
+            "type": "title",
+            "source": "Interface · Background",
+            "target": "介面 · 背景"
         },
         {
             "type": "name",
-            "source": "🗂️ Phycat card Layout",
+            "source": "🗂️ Phycat card Layout / Phycat 卡片布局设置",
             "target": "🗂️ Phycat 卡片版面配置"
         },
         {
@@ -152,22 +1173,42 @@
         },
         {
             "type": "description",
-            "source": "启用后，侧边栏文件列表将变为多彩嵌套的玻璃容器风格，并带有动态类型图标。关闭则恢复 Obsidian 默认样式。",
-            "target": "啟用後，側邊欄檔案列表會變成多彩巢狀的玻璃容器風格，並帶有動態類型圖示。關閉則恢復 Obsidian 預設樣式。"
+            "source": "Soft rounded folder headers, rainbow icons and fine hierarchy guides. Active files follow the global accent.",
+            "target": "圓角資料夾標頭、彩虹圖示與細緻的階層導引線。目前使用的檔案會採用全域強調色。"
         },
         {
             "type": "title",
-            "source": "背景色混合比例（Card模式生效）",
-            "target": "背景色混合比例（Card 模式生效）"
+            "source": "Folder Icons",
+            "target": "資料夾圖示"
         },
         {
             "type": "description",
-            "source": "调整背景色中白色的混合程度（数值越大越白，默认为 90）。",
-            "target": "調整背景色中白色的混合程度（數值越大越白，預設為 90）。"
+            "source": "Enable custom folder icons. Disable when using Iconize; native collapse arrows remain available.",
+            "target": "啟用自訂資料夾圖示。使用 Iconize 時請停用此項；原生展開與收合箭頭仍可使用。"
+        },
+        {
+            "type": "title",
+            "source": "File Icons",
+            "target": "檔案圖示"
+        },
+        {
+            "type": "description",
+            "source": "Enable theme file icons independently of folder icons. Plugin icons take priority; disable this toggle if a plugin uses an unsupported icon structure.",
+            "target": "檔案圖示可獨立於資料夾圖示啟用。外掛提供的圖示會優先顯示；若外掛使用不支援的圖示結構，請關閉此項。"
+        },
+        {
+            "type": "title",
+            "source": "Card background mix",
+            "target": "卡片背景混合比例"
+        },
+        {
+            "type": "description",
+            "source": "Mix white into the light card frame. Higher values soften the accent; default 90. The dark frame keeps the note background color.",
+            "target": "在淺色卡片框架中混入白色。數值越高，強調色越淡；預設為 90。深色框架會保留筆記的背景色。"
         },
         {
             "type": "name",
-            "source": "📏 Phycat spacing setting",
+            "source": "📏 Phycat spacing setting / Phycat 文章间距设置",
             "target": "📏 Phycat 間距設定"
         },
         {
@@ -192,6 +1233,26 @@
         },
         {
             "type": "title",
+            "source": "Editor code header padding",
+            "target": "編輯器程式碼標頭內距"
+        },
+        {
+            "type": "description",
+            "source": "Vertical padding of the opening code fence, in pixels.",
+            "target": "程式碼圍欄起始行的上下內距，單位為像素。"
+        },
+        {
+            "type": "title",
+            "source": "Editor code first line gap",
+            "target": "編輯器程式碼首行間距"
+        },
+        {
+            "type": "description",
+            "source": "Space between the language header and the first code line, in pixels.",
+            "target": "語言標頭與第一行程式碼之間的間距，單位為像素。"
+        },
+        {
+            "type": "title",
             "source": "blockquote Line height",
             "target": "引用區塊行高"
         },
@@ -207,7 +1268,7 @@
         },
         {
             "type": "name",
-            "source": "📑 Phycat heading setting",
+            "source": "📑 Phycat heading setting / Phycat 标题设置",
             "target": "📑 Phycat 標題設定"
         },
         {
@@ -229,6 +1290,11 @@
             "type": "title",
             "source": "H2 light color",
             "target": "H2 淺色模式顏色"
+        },
+        {
+            "type": "description",
+            "source": "Heading text color. The light capsule style uses Colors → H2 capsule text instead.",
+            "target": "標題文字顏色。淺色膠囊樣式會改用「配色 → H2 膠囊文字」的設定。"
         },
         {
             "type": "title",
