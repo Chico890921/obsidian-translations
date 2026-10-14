@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-linter",
-        "version": "1.34.0",
+        "version": "1.34.1",
         "title": "[zh-tw] Linter",
         "description": "Linter Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "1.34.0",
+        "supportedVersions": "1.34.1",
         "author": "Chico",
-        "updatedAt": 1791733666155
+        "updatedAt": 1791992583906
     },
     "dict": {
         "main.js": {
@@ -15172,8 +15172,8 @@
                     "target": "setButtonText(\"儲存\")"
                 },
                 {
-                    "source": "setTooltip(e.editTooltip??\"Edit\")",
-                    "target": "setTooltip(e.editTooltip??\"編輯\")"
+                    "source": "setTooltip(n.editTooltip??\"Edit\")",
+                    "target": "setTooltip(n.editTooltip??\"編輯\")"
                 },
                 {
                     "source": "setPlaceholder(\"dddd, MMMM Do YYYY, h:mm:ss a\")",
