@@ -2,88 +2,22 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "cmdr",
-        "version": "0.5.13",
+        "version": "0.6.0",
         "title": "[zh-tw] Commander",
         "description": "Commander 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.5.13",
+        "supportedVersions": "0.6.0",
         "author": "Chico",
-        "updatedAt": 1790802692288
+        "updatedAt": 1791992045595
     },
     "dict": {
         "main.js": {
             "ast": [
                 {
                     "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "No icon",
-                    "target": "無圖示"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Use a column based layout instead of the default row. This makes it easier to arrange the commands.",
-                    "target": "使用欄式版面取代預設的列式版面，讓命令更容易排列。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Change the height of each button inside the mobile toolbar (in px).",
-                    "target": "變更行動工具列中每個按鈕的高度（單位為 px）。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setDesc",
-                    "source": "Change the width of each button inside the mobile toolbar (in px).",
-                    "target": "變更行動工具列中每個按鈕的寬度（單位為 px）。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Column layout",
-                    "target": "欄式版面"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Button height",
-                    "target": "按鈕高度"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setName",
-                    "source": "Button width",
-                    "target": "按鈕寬度"
-                },
-                {
-                    "type": "CallExpression",
                     "name": "setText",
                     "source": "Macro builder",
                     "target": "巨集建構器"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTooltip",
-                    "source": "Reset to default - requires a restart",
-                    "target": "還原預設值 - 需要重新啟動"
-                },
-                {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "If the default icon doesn't appear, you might have to restart Obsidian.",
-                    "target": "如果預設圖示沒有出現，你可能需要重新啟動 Obsidian。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "aria-label",
-                    "source": "Edit Macro",
-                    "target": "編輯巨集"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "Core Plugin",
-                    "target": "核心插件"
                 },
                 {
                     "type": "ObjectProperty",
@@ -93,74 +27,18 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "description",
-                    "source": "Show the \"Add Command\" Button in every Menu.",
-                    "target": "在每個選單中顯示「新增命令」按鈕。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Toolbar row count",
-                    "target": "工具列列數"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Bottom offset",
-                    "target": "底部偏移"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Toolbar extra spacing",
-                    "target": "工具列額外間距"
-                },
-                {
-                    "type": "ObjectProperty",
                     "name": "name",
                     "source": "Delay",
                     "target": "延遲"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Text Toolbar",
-                    "target": "文字工具列"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "name",
-                    "source": "Macros",
-                    "target": "巨集"
-                },
-                {
-                    "type": "ObjectProperty",
                     "name": "placeholder",
                     "source": "Macro Name",
                     "target": "巨集名稱"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Custom icons",
-                    "target": "自訂圖示"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Advanced settings",
-                    "target": "進階設定"
                 }
             ],
             "regex": [
-                {
-                    "source": "\"No Macros yet!\"",
-                    "target": "\"尚無巨集！\""
-                },
-                {
-                    "source": "\"Add Macro\"",
-                    "target": "\"新增巨集\""
-                },
                 {
                     "source": "\"Auto-Run on Startup\"",
                     "target": "\"啟動時自動執行\""
@@ -174,60 +52,16 @@
                     "target": "\"找不到命令\""
                 },
                 {
-                    "source": "The Toolbar is only available in Obsidian Mobile.",
-                    "target": "工具列僅可在 Obsidian 行動版使用。"
-                },
-                {
-                    "source": "Reordering and Sorting",
-                    "target": "重新排列與排序"
-                },
-                {
-                    "source": "As of Obsidian 1.1.0 you can reorder the Buttons in the left ribbon by dragging. This will replace the old sorting feature.",
-                    "target": "從 Obsidian 1.1.0 起，你可以拖曳左側功能區中的按鈕來重新排列。此功能將取代舊有的排序功能。"
-                },
-                {
-                    "source": "When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.",
-                    "target": "在檔案總管中點選命令時，焦點會移至檔案總管檢視。這可能會干擾原本應在作用中檔案或檔案總管上執行的命令。"
-                },
-                {
-                    "source": "To configure which Commands show up in the Toolbar, open the Mobile Settings.",
-                    "target": "若要設定工具列中顯示哪些命令，請開啟行動版設定。"
-                },
-                {
                     "source": "\"Macro not found\"",
                     "target": "\"找不到巨集\""
                 },
                 {
-                    "source": "desc:\"Set how many rows the mobile toolbar should have. Set this to 0 to remove the toolbar.\"",
-                    "target": "desc:\"設定行動工具列的列數。設為 0 可移除工具列。\""
+                    "source": "u(\"span\",null,\"Name\")",
+                    "target": "u(\"span\",null,\"名稱\")"
                 },
                 {
-                    "source": "desc:\"Offset the toolbar from the bottom of the screen. This is useful if the toolbar is partially obscured by other UI elements.\"",
-                    "target": "desc:\"設定工具列與畫面底部的偏移距離。當工具列部分被其他介面元素遮住時，此設定很有用。\""
-                },
-                {
-                    "source": "desc:\"Some themes need extra spacing in the toolbar. If your toolbar doesn't wrap properly, try increasing this value.\"",
-                    "target": "desc:\"某些佈景主題需要增加工具列間距。若工具列無法正確換行，請嘗試提高此數值。\""
-                },
-                {
-                    "source": ",\" \",\"Info\")",
-                    "target": ",\" \",\"資訊\")"
-                },
-                {
-                    "source": "\"Open mobile settings\"",
-                    "target": "\"開啟行動版設定\""
-                },
-                {
-                    "source": "?\"Mobile Toolbar\":\"Toolbar\"",
-                    "target": "?\"行動工具列\":\"工具列\""
-                },
-                {
-                    "source": "r(\"span\",null,\"Name\")",
-                    "target": "r(\"span\",null,\"名稱\")"
-                },
-                {
-                    "source": "r(\"span\",null,\"Icon\")",
-                    "target": "r(\"span\",null,\"圖示\")"
+                    "source": "u(\"span\",null,\"Icon\")",
+                    "target": "u(\"span\",null,\"圖示\")"
                 },
                 {
                     "source": "\"Editor: \"",
@@ -238,20 +72,12 @@
                     "target": "\"迴圈：\""
                 },
                 {
-                    "source": "r(\"button\",{onClick:C},\"Add Command\")",
-                    "target": "r(\"button\",{onClick:C},\"新增命令\")"
+                    "source": "u(\"button\",{onClick:f},\"Add Command\")",
+                    "target": "u(\"button\",{onClick:f},\"新增命令\")"
                 },
                 {
                     "source": "\"Add Delay\"",
                     "target": "\"新增延遲\""
-                },
-                {
-                    "source": ",\" Actions\"",
-                    "target": ",\" 個動作\""
-                },
-                {
-                    "source": "{\"aria-label\":\"Delete\"",
-                    "target": "{\"aria-label\":\"刪除\""
                 },
                 {
                     "source": "\"No Command selected\"",
@@ -266,24 +92,276 @@
                     "target": "\"未輸入名稱\""
                 },
                 {
-                    "source": "setDesc(`ID: ${i.id}`)",
-                    "target": "setDesc(`ID：${i.id}`)"
-                },
-                {
                     "source": "},\"Save\")",
                     "target": "},\"儲存\")"
                 },
                 {
-                    "source": "r(\"button\",{onClick:n},\"Cancel\")",
-                    "target": "r(\"button\",{onClick:n},\"取消\")"
+                    "source": "u(\"button\",{onClick:n},\"Cancel\")",
+                    "target": "u(\"button\",{onClick:n},\"取消\")"
                 },
                 {
-                    "source": "\"Hide other Commands\":\"隱藏其他命令\",\"Hide menu items\":\"Hide menu items\",Add:\"Add\",\"Menu item name or /regex/\":\"Menu item name or /regex/\",\"Open this menu once and its items will appear here to toggle. Regexes and names typed above are always applied.\":\"Open this menu once and its items will appear here to toggle. Regexes and names typed above are always applied.\",\"Invalid regular expression — this entry is ignored.\":\"Invalid regular expression — this entry is ignored.\",\"Remove items from this menu by their exact name (case-insensitive), or by a regular expression wrapped in slashes, e.g. /^Open in default app$/i.\":\"Remove items from this menu by their exact name (case-insensitive), or by a regular expression wrapped in slashes, e.g. /^Open in default app$/i.\"",
-                    "target": "\"Hide other Commands\":\"隱藏其他命令\",\"Hide menu items\":\"隱藏選單項目\",Add:\"新增\",\"Menu item name or /regex/\":\"選單項目名稱或 /正規表示式/\",\"Open this menu once and its items will appear here to toggle. Regexes and names typed above are always applied.\":\"開啟此選單一次後，其項目會顯示在這裡供你切換。上方輸入的正規表示式與名稱一律會套用。\",\"Invalid regular expression — this entry is ignored.\":\"正規表示式無效；此項目將被忽略。\",\"Remove items from this menu by their exact name (case-insensitive), or by a regular expression wrapped in slashes, e.g. /^Open in default app$/i.\":\"依完整名稱（不區分大小寫）從此選單移除項目，或使用斜線包住的正規表示式，例如 /^Open in default app$/i。\""
+                    "source": "\"Hide other Commands\":\"隱藏其他命令\",\"Hide menu items\":\"Hide menu items\"",
+                    "target": "\"Hide other Commands\":\"隱藏其他命令\",\"Hide menu items\":\"隱藏選單項目\""
+                },
+                {
+                    "source": "\"Hide menu items\":\"隱藏選單項目\",Add:\"Add\"",
+                    "target": "\"Hide menu items\":\"隱藏選單項目\",Add:\"新增\""
+                },
+                {
+                    "source": "Add:\"新增\",\"Menu item name or /regex/\":\"Menu item name or /regex/\"",
+                    "target": "Add:\"新增\",\"Menu item name or /regex/\":\"選單項目名稱或 /正規表示式/\""
+                },
+                {
+                    "source": "\"Menu item name or /regex/\":\"選單項目名稱或 /正規表示式/\",\"Open this menu once and its items will appear here to toggle. Regexes and names typed above are always applied.\":\"Open this menu once and its items will appear here to toggle. Regexes and names typed above are always applied.\"",
+                    "target": "\"Menu item name or /regex/\":\"選單項目名稱或 /正規表示式/\",\"Open this menu once and its items will appear here to toggle. Regexes and names typed above are always applied.\":\"開啟此選單一次後，其項目會顯示在這裡供你切換。上方輸入的正規表示式與名稱一律會套用。\""
+                },
+                {
+                    "source": "\"Open this menu once and its items will appear here to toggle. Regexes and names typed above are always applied.\":\"開啟此選單一次後，其項目會顯示在這裡供你切換。上方輸入的正規表示式與名稱一律會套用。\",\"Invalid regular expression — this entry is ignored.\":\"Invalid regular expression — this entry is ignored.\"",
+                    "target": "\"Open this menu once and its items will appear here to toggle. Regexes and names typed above are always applied.\":\"開啟此選單一次後，其項目會顯示在這裡供你切換。上方輸入的正規表示式與名稱一律會套用。\",\"Invalid regular expression — this entry is ignored.\":\"正規表示式無效；此項目將被忽略。\""
+                },
+                {
+                    "source": "\"Invalid regular expression — this entry is ignored.\":\"正規表示式無效；此項目將被忽略。\",\"Remove items from this menu by their exact name (case-insensitive), or by a regular expression wrapped in slashes, e.g. /^Open in default app$/i.\":\"Remove items from this menu by their exact name (case-insensitive), or by a regular expression wrapped in slashes, e.g. /^Open in default app$/i.\"",
+                    "target": "\"Invalid regular expression — this entry is ignored.\":\"正規表示式無效；此項目將被忽略。\",\"Remove items from this menu by their exact name (case-insensitive), or by a regular expression wrapped in slashes, e.g. /^Open in default app$/i.\":\"依完整名稱（不區分大小寫）從此選單移除項目，或使用斜線包住的正規表示式，例如 /^Open in default app$/i。\""
                 },
                 {
                     "source": "\"Double click to enter custom value\":\"連按兩下以輸入自訂值\",\"Restore default\":\"Restore default\"",
                     "target": "\"Double click to enter custom value\":\"連按兩下以輸入自訂值\",\"Restore default\":\"還原預設值\""
+                },
+                {
+                    "source": "Explorer:\"檔案總管\",Edit:\"Edit\"",
+                    "target": "Explorer:\"檔案總管\",Edit:\"編輯\""
+                },
+                {
+                    "source": "Edit:\"編輯\",\"Turn off to hide ribbon icons added by Obsidian or other plugins.\":\"Turn off to hide ribbon icons added by Obsidian or other plugins.\"",
+                    "target": "Edit:\"編輯\",\"Turn off to hide ribbon icons added by Obsidian or other plugins.\":\"關閉後可隱藏 Obsidian 或其他插件新增的功能區圖示。\""
+                },
+                {
+                    "source": "\"Turn off to hide ribbon icons added by Obsidian or other plugins.\":\"關閉後可隱藏 Obsidian 或其他插件新增的功能區圖示。\",\"Core Plugin\":\"Core Plugin\"",
+                    "target": "\"Turn off to hide ribbon icons added by Obsidian or other plugins.\":\"關閉後可隱藏 Obsidian 或其他插件新增的功能區圖示。\",\"Core Plugin\":\"核心插件\""
+                },
+                {
+                    "source": "\"Core Plugin\":\"核心插件\",\"Turn off to hide status bar items added by Obsidian or other plugins.\":\"Turn off to hide status bar items added by Obsidian or other plugins.\"",
+                    "target": "\"Core Plugin\":\"核心插件\",\"Turn off to hide status bar items added by Obsidian or other plugins.\":\"關閉後可隱藏 Obsidian 或其他插件新增的狀態列項目。\""
+                },
+                {
+                    "source": "\"Turn off to hide status bar items added by Obsidian or other plugins.\":\"關閉後可隱藏 Obsidian 或其他插件新增的狀態列項目。\",\"Add entry\":\"Add entry\"",
+                    "target": "\"Turn off to hide status bar items added by Obsidian or other plugins.\":\"關閉後可隱藏 Obsidian 或其他插件新增的狀態列項目。\",\"Add entry\":\"新增項目\""
+                },
+                {
+                    "source": "\"Add entry\":\"新增項目\",\"Regular expressions\":\"Regular expressions\"",
+                    "target": "\"Add entry\":\"新增項目\",\"Regular expressions\":\"正規表示式\""
+                },
+                {
+                    "source": "\"Regular expressions\":\"正規表示式\",\"No regular expressions added.\":\"No regular expressions added.\"",
+                    "target": "\"Regular expressions\":\"正規表示式\",\"No regular expressions added.\":\"尚未新增正規表示式。\""
+                },
+                {
+                    "source": "\"No regular expressions added.\":\"尚未新增正規表示式。\",Macros:\"Macros\"",
+                    "target": "\"No regular expressions added.\":\"尚未新增正規表示式。\",Macros:\"巨集\""
+                },
+                {
+                    "source": "Macros:\"巨集\",\"Sequences of commands you can run as one\":\"Sequences of commands you can run as one\"",
+                    "target": "Macros:\"巨集\",\"Sequences of commands you can run as one\":\"將多個命令組成可一次執行的序列\""
+                },
+                {
+                    "source": "\"Sequences of commands you can run as one\":\"將多個命令組成可一次執行的序列\",\"No Macros yet!\":\"No Macros yet!\"",
+                    "target": "\"Sequences of commands you can run as one\":\"將多個命令組成可一次執行的序列\",\"No Macros yet!\":\"尚無巨集！\""
+                },
+                {
+                    "source": "\"No Macros yet!\":\"尚無巨集！\",\"{{count}} Actions\":\"{{count}} Actions\"",
+                    "target": "\"No Macros yet!\":\"尚無巨集！\",\"{{count}} Actions\":\"{{count}} 個動作\""
+                },
+                {
+                    "source": "\"{{count}} Actions\":\"{{count}} 個動作\",\"Edit Macro\":\"Edit Macro\"",
+                    "target": "\"{{count}} Actions\":\"{{count}} 個動作\",\"Edit Macro\":\"編輯巨集\""
+                },
+                {
+                    "source": "\"Edit Macro\":\"編輯巨集\",\"Add Macro\":\"Add Macro\"",
+                    "target": "\"Edit Macro\":\"編輯巨集\",\"Add Macro\":\"新增巨集\""
+                },
+                {
+                    "source": "\"Add Macro\":\"新增巨集\",\"ID: {{id}}\":\"ID: {{id}}\"",
+                    "target": "\"Add Macro\":\"新增巨集\",\"ID: {{id}}\":\"ID：{{id}}\""
+                },
+                {
+                    "source": "\"ID: {{id}}\":\"ID：{{id}}\",\"No icon\":\"No icon\"",
+                    "target": "\"ID: {{id}}\":\"ID：{{id}}\",\"No icon\":\"無圖示\""
+                },
+                {
+                    "source": "\"No icon\":\"無圖示\",\"Reset to default - requires a restart\":\"Reset to default - requires a restart\"",
+                    "target": "\"No icon\":\"無圖示\",\"Reset to default - requires a restart\":\"還原預設值 - 需要重新啟動\""
+                },
+                {
+                    "source": "\"Reset to default - requires a restart\":\"還原預設值 - 需要重新啟動\",\"If the default icon doesn't appear, you might have to restart Obsidian.\":\"If the default icon doesn't appear, you might have to restart Obsidian.\"",
+                    "target": "\"Reset to default - requires a restart\":\"還原預設值 - 需要重新啟動\",\"If the default icon doesn't appear, you might have to restart Obsidian.\":\"如果預設圖示沒有出現，你可能需要重新啟動 Obsidian。\""
+                },
+                {
+                    "source": "\"If the default icon doesn't appear, you might have to restart Obsidian.\":\"如果預設圖示沒有出現，你可能需要重新啟動 Obsidian。\",Info:\"Info\"",
+                    "target": "\"If the default icon doesn't appear, you might have to restart Obsidian.\":\"如果預設圖示沒有出現，你可能需要重新啟動 Obsidian。\",Info:\"資訊\""
+                },
+                {
+                    "source": "Info:\"資訊\",\"Open mobile settings\":\"Open mobile settings\"",
+                    "target": "Info:\"資訊\",\"Open mobile settings\":\"開啟行動版設定\""
+                },
+                {
+                    "source": "\"Open mobile settings\":\"開啟行動版設定\",\"The Toolbar is only available in Obsidian Mobile. To configure which Commands show up in the Toolbar, open the Mobile Settings.\":\"The Toolbar is only available in Obsidian Mobile. To configure which Commands show up in the Toolbar, open the Mobile Settings.\"",
+                    "target": "\"Open mobile settings\":\"開啟行動版設定\",\"The Toolbar is only available in Obsidian Mobile. To configure which Commands show up in the Toolbar, open the Mobile Settings.\":\"工具列僅可在 Obsidian 行動版使用。若要設定工具列中顯示哪些命令，請開啟行動版設定。\""
+                },
+                {
+                    "source": "\"The Toolbar is only available in Obsidian Mobile. To configure which Commands show up in the Toolbar, open the Mobile Settings.\":\"工具列僅可在 Obsidian 行動版使用。若要設定工具列中顯示哪些命令，請開啟行動版設定。\",\"Mobile only\":\"Mobile only\"",
+                    "target": "\"The Toolbar is only available in Obsidian Mobile. To configure which Commands show up in the Toolbar, open the Mobile Settings.\":\"工具列僅可在 Obsidian 行動版使用。若要設定工具列中顯示哪些命令，請開啟行動版設定。\",\"Mobile only\":\"僅限行動版\""
+                },
+                {
+                    "source": "\"Mobile only\":\"僅限行動版\",\"The Toolbar is only available in Obsidian Mobile.\":\"The Toolbar is only available in Obsidian Mobile.\"",
+                    "target": "\"Mobile only\":\"僅限行動版\",\"The Toolbar is only available in Obsidian Mobile.\":\"工具列僅可在 Obsidian 行動版使用。\""
+                },
+                {
+                    "source": "\"The Toolbar is only available in Obsidian Mobile.\":\"工具列僅可在 Obsidian 行動版使用。\",\"Toolbar row count\":\"Toolbar row count\"",
+                    "target": "\"The Toolbar is only available in Obsidian Mobile.\":\"工具列僅可在 Obsidian 行動版使用。\",\"Toolbar row count\":\"工具列列數\""
+                },
+                {
+                    "source": "\"Toolbar row count\":\"工具列列數\",\"Set how many rows the mobile toolbar should have. Set this to 0 to remove the toolbar.\":\"Set how many rows the mobile toolbar should have. Set this to 0 to remove the toolbar.\"",
+                    "target": "\"Toolbar row count\":\"工具列列數\",\"Set how many rows the mobile toolbar should have. Set this to 0 to remove the toolbar.\":\"設定行動工具列的列數。設為 0 可移除工具列。\""
+                },
+                {
+                    "source": "\"Set how many rows the mobile toolbar should have. Set this to 0 to remove the toolbar.\":\"設定行動工具列的列數。設為 0 可移除工具列。\",\"Column layout\":\"Column layout\"",
+                    "target": "\"Set how many rows the mobile toolbar should have. Set this to 0 to remove the toolbar.\":\"設定行動工具列的列數。設為 0 可移除工具列。\",\"Column layout\":\"欄式版面\""
+                },
+                {
+                    "source": "\"Column layout\":\"欄式版面\",\"Use a column based layout instead of the default row. This makes it easier to arrange the commands.\":\"Use a column based layout instead of the default row. This makes it easier to arrange the commands.\"",
+                    "target": "\"Column layout\":\"欄式版面\",\"Use a column based layout instead of the default row. This makes it easier to arrange the commands.\":\"使用欄式版面取代預設的列式版面，讓命令更容易排列。\""
+                },
+                {
+                    "source": "\"Use a column based layout instead of the default row. This makes it easier to arrange the commands.\":\"使用欄式版面取代預設的列式版面，讓命令更容易排列。\",\"Bottom offset\":\"Bottom offset\"",
+                    "target": "\"Use a column based layout instead of the default row. This makes it easier to arrange the commands.\":\"使用欄式版面取代預設的列式版面，讓命令更容易排列。\",\"Bottom offset\":\"底部偏移\""
+                },
+                {
+                    "source": "\"Bottom offset\":\"底部偏移\",\"Offset the toolbar from the bottom of the screen. This is useful if the toolbar is partially obscured by other UI elements.\":\"Offset the toolbar from the bottom of the screen. This is useful if the toolbar is partially obscured by other UI elements.\"",
+                    "target": "\"Bottom offset\":\"底部偏移\",\"Offset the toolbar from the bottom of the screen. This is useful if the toolbar is partially obscured by other UI elements.\":\"設定工具列與畫面底部的偏移距離。當工具列部分被其他介面元素遮住時，此設定很有用。\""
+                },
+                {
+                    "source": "\"Offset the toolbar from the bottom of the screen. This is useful if the toolbar is partially obscured by other UI elements.\":\"設定工具列與畫面底部的偏移距離。當工具列部分被其他介面元素遮住時，此設定很有用。\",\"Custom icons\":\"Custom icons\"",
+                    "target": "\"Offset the toolbar from the bottom of the screen. This is useful if the toolbar is partially obscured by other UI elements.\":\"設定工具列與畫面底部的偏移距離。當工具列部分被其他介面元素遮住時，此設定很有用。\",\"Custom icons\":\"自訂圖示\""
+                },
+                {
+                    "source": "\"Custom icons\":\"自訂圖示\",\"Advanced settings\":\"Advanced settings\"",
+                    "target": "\"Custom icons\":\"自訂圖示\",\"Advanced settings\":\"進階設定\""
+                },
+                {
+                    "source": "\"Advanced settings\":\"進階設定\",\"Button height\":\"Button height\"",
+                    "target": "\"Advanced settings\":\"進階設定\",\"Button height\":\"按鈕高度\""
+                },
+                {
+                    "source": "\"Button height\":\"按鈕高度\",\"Change the height of each button inside the mobile toolbar (in px).\":\"Change the height of each button inside the mobile toolbar (in px).\"",
+                    "target": "\"Button height\":\"按鈕高度\",\"Change the height of each button inside the mobile toolbar (in px).\":\"變更行動工具列中每個按鈕的高度（單位為 px）。\""
+                },
+                {
+                    "source": "\"Change the height of each button inside the mobile toolbar (in px).\":\"變更行動工具列中每個按鈕的高度（單位為 px）。\",\"Button width\":\"Button width\"",
+                    "target": "\"Change the height of each button inside the mobile toolbar (in px).\":\"變更行動工具列中每個按鈕的高度（單位為 px）。\",\"Button width\":\"按鈕寬度\""
+                },
+                {
+                    "source": "\"Button width\":\"按鈕寬度\",\"Change the width of each button inside the mobile toolbar (in px).\":\"Change the width of each button inside the mobile toolbar (in px).\"",
+                    "target": "\"Button width\":\"按鈕寬度\",\"Change the width of each button inside the mobile toolbar (in px).\":\"變更行動工具列中每個按鈕的寬度（單位為 px）。\""
+                },
+                {
+                    "source": "\"Change the width of each button inside the mobile toolbar (in px).\":\"變更行動工具列中每個按鈕的寬度（單位為 px）。\",\"Toolbar extra spacing\":\"Toolbar extra spacing\"",
+                    "target": "\"Change the width of each button inside the mobile toolbar (in px).\":\"變更行動工具列中每個按鈕的寬度（單位為 px）。\",\"Toolbar extra spacing\":\"工具列額外間距\""
+                },
+                {
+                    "source": "\"Toolbar extra spacing\":\"工具列額外間距\",\"Some themes need extra spacing in the toolbar. If your toolbar doesn't wrap properly, try increasing this value.\":\"Some themes need extra spacing in the toolbar. If your toolbar doesn't wrap properly, try increasing this value.\"",
+                    "target": "\"Toolbar extra spacing\":\"工具列額外間距\",\"Some themes need extra spacing in the toolbar. If your toolbar doesn't wrap properly, try increasing this value.\":\"某些佈景主題需要增加工具列間距。若工具列無法正確換行，請嘗試提高此數值。\""
+                },
+                {
+                    "source": "\"Some themes need extra spacing in the toolbar. If your toolbar doesn't wrap properly, try increasing this value.\":\"某些佈景主題需要增加工具列間距。若工具列無法正確換行，請嘗試提高此數值。\",\"Mobile Toolbar\":\"Mobile Toolbar\"",
+                    "target": "\"Some themes need extra spacing in the toolbar. If your toolbar doesn't wrap properly, try increasing this value.\":\"某些佈景主題需要增加工具列間距。若工具列無法正確換行，請嘗試提高此數值。\",\"Mobile Toolbar\":\"行動工具列\""
+                },
+                {
+                    "source": "\"Mobile Toolbar\":\"行動工具列\",Toolbar:\"Toolbar\"",
+                    "target": "\"Mobile Toolbar\":\"行動工具列\",Toolbar:\"工具列\""
+                },
+                {
+                    "source": "Toolbar:\"工具列\",\"Mobile toolbar layout and icons\":\"Mobile toolbar layout and icons\"",
+                    "target": "Toolbar:\"工具列\",\"Mobile toolbar layout and icons\":\"行動工具列版面與圖示\""
+                },
+                {
+                    "source": "\"Mobile toolbar layout and icons\":\"行動工具列版面與圖示\",\"Show the \\\"Add Command\\\" Button in every Menu.\":\"Show the \\\"Add Command\\\" Button in every Menu.\"",
+                    "target": "\"Mobile toolbar layout and icons\":\"行動工具列版面與圖示\",\"Show the \\\"Add Command\\\" Button in every Menu.\":\"在每個選單中顯示「新增命令」按鈕。\""
+                },
+                {
+                    "source": "\"Show the \\\"Add Command\\\" Button in every Menu.\":\"在每個選單中顯示「新增命令」按鈕。\",About:\"About\"",
+                    "target": "\"Show the \\\"Add Command\\\" Button in every Menu.\":\"在每個選單中顯示「新增命令」按鈕。\",About:\"關於\""
+                },
+                {
+                    "source": "About:\"關於\",\"Commands shown in the left ribbon\":\"Commands shown in the left ribbon\"",
+                    "target": "About:\"關於\",\"Commands shown in the left ribbon\":\"左側功能區中顯示的命令\""
+                },
+                {
+                    "source": "\"Commands shown in the left ribbon\":\"左側功能區中顯示的命令\",\"Commands shown in the right ribbon\":\"Commands shown in the right ribbon\"",
+                    "target": "\"Commands shown in the left ribbon\":\"左側功能區中顯示的命令\",\"Commands shown in the right ribbon\":\"右側功能區中顯示的命令\""
+                },
+                {
+                    "source": "\"Commands shown in the right ribbon\":\"右側功能區中顯示的命令\",\"Ribbon commands\":\"Ribbon commands\"",
+                    "target": "\"Commands shown in the right ribbon\":\"右側功能區中顯示的命令\",\"Ribbon commands\":\"功能區命令\""
+                },
+                {
+                    "source": "\"Ribbon commands\":\"功能區命令\",\"Commands shown in the status bar\":\"Commands shown in the status bar\"",
+                    "target": "\"Ribbon commands\":\"功能區命令\",\"Commands shown in the status bar\":\"狀態列中顯示的命令\""
+                },
+                {
+                    "source": "\"Commands shown in the status bar\":\"狀態列中顯示的命令\",\"Statusbar commands\":\"Statusbar commands\"",
+                    "target": "\"Commands shown in the status bar\":\"狀態列中顯示的命令\",\"Statusbar commands\":\"狀態列命令\""
+                },
+                {
+                    "source": "\"Statusbar commands\":\"狀態列命令\",\"Commands shown in the note header\":\"Commands shown in the note header\"",
+                    "target": "\"Statusbar commands\":\"狀態列命令\",\"Commands shown in the note header\":\"筆記頁首中顯示的命令\""
+                },
+                {
+                    "source": "\"Commands shown in the note header\":\"筆記頁首中顯示的命令\",\"Page header commands\":\"Page header commands\"",
+                    "target": "\"Commands shown in the note header\":\"筆記頁首中顯示的命令\",\"Page header commands\":\"頁首命令\""
+                },
+                {
+                    "source": "\"Page header commands\":\"頁首命令\",\"Commands shown in the file explorer\":\"Commands shown in the file explorer\"",
+                    "target": "\"Page header commands\":\"頁首命令\",\"Commands shown in the file explorer\":\"檔案總管中顯示的命令\""
+                },
+                {
+                    "source": "\"Commands shown in the file explorer\":\"檔案總管中顯示的命令\",\"Explorer commands\":\"Explorer commands\"",
+                    "target": "\"Commands shown in the file explorer\":\"檔案總管中顯示的命令\",\"Explorer commands\":\"檔案總管命令\""
+                },
+                {
+                    "source": "\"Explorer commands\":\"檔案總管命令\",\"Explorer focus\":\"Explorer focus\"",
+                    "target": "\"Explorer commands\":\"檔案總管命令\",\"Explorer focus\":\"檔案總管焦點\""
+                },
+                {
+                    "source": "\"Explorer focus\":\"檔案總管焦點\",\"When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.\":\"When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.\"",
+                    "target": "\"Explorer focus\":\"檔案總管焦點\",\"When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.\":\"在檔案總管中點選命令時，焦點會移至檔案總管檢視。這可能會干擾原本應在作用中檔案或檔案總管上執行的命令。\""
+                },
+                {
+                    "source": "\"When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.\":\"在檔案總管中點選命令時，焦點會移至檔案總管檢視。這可能會干擾原本應在作用中檔案或檔案總管上執行的命令。\",\"Commands in the editor right-click menu\":\"Commands in the editor right-click menu\"",
+                    "target": "\"When clicking on a Command in the Explorer, the Explorer view will become focused. This might interfere with Commands that are supposed to be executed on an active File/Explorer.\":\"在檔案總管中點選命令時，焦點會移至檔案總管檢視。這可能會干擾原本應在作用中檔案或檔案總管上執行的命令。\",\"Commands in the editor right-click menu\":\"編輯器右鍵選單中的命令\""
+                },
+                {
+                    "source": "\"Commands in the editor right-click menu\":\"編輯器右鍵選單中的命令\",\"Editor menu commands\":\"Editor menu commands\"",
+                    "target": "\"Commands in the editor right-click menu\":\"編輯器右鍵選單中的命令\",\"Editor menu commands\":\"編輯器選單命令\""
+                },
+                {
+                    "source": "\"Editor menu commands\":\"編輯器選單命令\",\"Commands in the file right-click menu\":\"Commands in the file right-click menu\"",
+                    "target": "\"Editor menu commands\":\"編輯器選單命令\",\"Commands in the file right-click menu\":\"檔案右鍵選單中的命令\""
+                },
+                {
+                    "source": "\"Commands in the file right-click menu\":\"檔案右鍵選單中的命令\",\"File menu commands\":\"File menu commands\"",
+                    "target": "\"Commands in the file right-click menu\":\"檔案右鍵選單中的命令\",\"File menu commands\":\"檔案選單命令\""
+                },
+                {
+                    "source": "\"File menu commands\":\"檔案選單命令\",\"Text Toolbar\":\"Text Toolbar\"",
+                    "target": "\"File menu commands\":\"檔案選單命令\",\"Text Toolbar\":\"文字工具列\""
+                },
+                {
+                    "source": "\"Text Toolbar\":\"文字工具列\",\"Commands in the Text Formatting Toolbar plugin\":\"Commands in the Text Formatting Toolbar plugin\"",
+                    "target": "\"Text Toolbar\":\"文字工具列\",\"Commands in the Text Formatting Toolbar plugin\":\"Text Formatting Toolbar 插件中的命令\""
+                },
+                {
+                    "source": "\"Commands in the Text Formatting Toolbar plugin\":\"Text Formatting Toolbar 插件中的命令\",\"Text toolbar commands\":\"Text toolbar commands\"",
+                    "target": "\"Commands in the Text Formatting Toolbar plugin\":\"Text Formatting Toolbar 插件中的命令\",\"Text toolbar commands\":\"文字工具列命令\""
                 }
             ]
         },
