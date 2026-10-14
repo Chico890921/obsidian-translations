@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "code-space",
-        "version": "2.6.1",
+        "version": "2.6.2",
         "title": "[zh-tw] Code Space",
         "description": "Code Space 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.6.1",
+        "supportedVersions": "2.6.2",
         "author": "Chico",
-        "updatedAt": 1789843133738
+        "updatedAt": 1791991020813
     },
     "dict": {
         "main.js": {
@@ -260,8 +260,8 @@
                     "target": "SETTINGS_EXTERNAL_MOUNT_NAME:\"外部資料夾\""
                 },
                 {
-                    "source": "SETTINGS_EXTERNAL_MOUNT_DESC:\"Desktop only. Use a system symlink or junction to mount an external folder into this vault.\"",
-                    "target": "SETTINGS_EXTERNAL_MOUNT_DESC:\"僅桌面版。使用系統符號連結或 junction，將外部資料夾掛載到此儲存庫。\""
+                    "source": "SETTINGS_EXTERNAL_MOUNT_DESC:\"Desktop only. Use a system symlink or junction to mount an external folder into this vault. If this vault is synced by a cloud service, that service may follow the link and upload the mounted folder; exclude mount folders from sync if that is unwanted.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_DESC:\"僅限桌面版。使用系統符號連結或 junction，將外部資料夾掛載到此儲存庫。若使用雲端服務同步儲存庫，該服務可能會沿著連結上傳掛載資料夾；如不希望上傳，請將掛載資料夾排除於同步範圍之外。\""
                 },
                 {
                     "source": "SETTINGS_EXTERNAL_MOUNT_ENABLE_NAME:\"Enable external folder mounts\"",
@@ -760,8 +760,8 @@
                     "target": "FOLDER_FILTER_SELECTED:\"已選取：{0}\""
                 },
                 {
-                    "source": "SETTINGS_EXTERNAL_MOUNT_NOTICE_REMOVE_PARTIAL:\"{0} external folders could not be safely unmounted. External folders remain enabled.\"",
-                    "target": "SETTINGS_EXTERNAL_MOUNT_NOTICE_REMOVE_PARTIAL:\"{0} 個外部資料夾無法安全取消掛載。外部資料夾功能將維持啟用。\""
+                    "source": "SETTINGS_EXTERNAL_MOUNT_NOTICE_REMOVE_PARTIAL:\"External mounts are disabled, but {0} link(s) could not be removed automatically; delete them manually if you no longer need them.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_NOTICE_REMOVE_PARTIAL:\"已停用外部掛載，但有 {0} 個連結無法自動移除；若不再需要，請手動刪除。\""
                 },
                 {
                     "source": "SETTINGS_EXTERNAL_MOUNT_NOTICE_RESTORE_PARTIAL:\"{0} external folders could not be restored. Review their mount status.\"",
@@ -824,8 +824,8 @@
                     "target": "\"掛載路徑不得包含 . 或 ..\""
                 },
                 {
-                    "source": "\"Mount path contains an invalid character\"",
-                    "target": "\"掛載路徑包含無效字元\""
+                    "source": "\"Mount path contains a reserved name or invalid character for Windows\"",
+                    "target": "\"掛載路徑包含 Windows 保留名稱或無效字元\""
                 },
                 {
                     "source": "\"Desktop only\"",
@@ -1080,12 +1080,28 @@
                     "target": "`不支援的平台：${this.platform}-${this.arch}`"
                 },
                 {
-                    "source": "`checksums.json has no valid entry for ${s}`",
-                    "target": "`checksums.json 中沒有 ${s} 的有效項目`"
+                    "source": "`checksums.json has no valid entry for ${n}`",
+                    "target": "`checksums.json 中沒有 ${n} 的有效項目`"
                 },
                 {
-                    "source": "`Checksum mismatch for ${s}: expected ${a}, got ${O}`",
-                    "target": "`${s} 的校驗值不相符：預期為 ${a}，實際為 ${O}`"
+                    "source": "`Checksum mismatch for ${n}: expected ${a}, got ${O}`",
+                    "target": "`${n} 的校驗值不相符：預期為 ${a}，實際為 ${O}`"
+                },
+                {
+                    "source": "SETTINGS_EXTERNAL_MOUNT_NOTICE_ENTRY_REMOVED_LINK_KEPT:\"Removed the mount entry, but its link could not be removed automatically; delete \\\"{0}\\\" manually if you no longer need it.\"",
+                    "target": "SETTINGS_EXTERNAL_MOUNT_NOTICE_ENTRY_REMOVED_LINK_KEPT:\"已移除掛載項目，但無法自動移除其連結；若不再需要，請手動刪除「{0}」。\""
+                },
+                {
+                    "source": "CMD_NEW_TERMINAL_SESSION:\"New terminal session\"",
+                    "target": "CMD_NEW_TERMINAL_SESSION:\"新增終端機工作階段\""
+                },
+                {
+                    "source": "\"Mount path cannot use hidden folders (segments starting with a dot)\"",
+                    "target": "\"掛載路徑不得使用隱藏資料夾（名稱以點號開頭的路徑區段）\""
+                },
+                {
+                    "source": "\"Junctions cannot target network (UNC) paths; use the symlink link type instead\"",
+                    "target": "\"junction 不能指向網路（UNC）路徑；請改用 symlink 連結類型\""
                 }
             ]
         },
