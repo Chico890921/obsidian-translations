@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "ink",
-        "version": "0.6.0",
+        "version": "0.6.1",
         "title": "[zh-tw] Ink",
         "description": "Ink 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.6.0",
+        "supportedVersions": "0.6.1",
         "author": "Chico",
-        "updatedAt": 1791307393518
+        "updatedAt": 1792394882460
     },
     "dict": {
         "main.js": {
@@ -596,12 +596,6 @@
                     "target": "這將移除畫布上的所有筆畫。"
                 },
                 {
-                    "type": "NewExpression",
-                    "name": "Notice",
-                    "source": "Connected to Boox companion app",
-                    "target": "已連線至 Boox 配套應用程式"
-                },
-                {
                     "type": "ObjectProperty",
                     "name": "tooltip",
                     "source": "Saving framing",
@@ -812,8 +806,8 @@
                     "target": "重新命名頁面"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
+                    "type": "ObjectProperty",
+                    "name": "confirmLabel",
                     "source": "Reset settings",
                     "target": "重設設定"
                 },
@@ -843,13 +837,13 @@
                 },
                 {
                     "type": "CallExpression",
-                    "name": "setButtonText",
+                    "name": "createElement",
                     "source": "Reference existing file",
                     "target": "參照既有檔案"
                 },
                 {
                     "type": "CallExpression",
-                    "name": "setButtonText",
+                    "name": "createElement",
                     "source": "Make duplicate",
                     "target": "建立副本"
                 },
@@ -1256,14 +1250,14 @@
                     "target": "既有繪圖"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "text",
+                    "type": "CallExpression",
+                    "name": "addLinkRow",
                     "source": "Latest Changes",
                     "target": "最新變更"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "text",
+                    "type": "CallExpression",
+                    "name": "addLinkRow",
                     "source": "Roadmap",
                     "target": "路線圖"
                 },
@@ -1340,8 +1334,8 @@
                     "target": "是"
                 },
                 {
-                    "type": "CallExpression",
-                    "name": "setText",
+                    "type": "VariableDeclarator",
+                    "name": "labelText",
                     "source": "Ink plugin",
                     "target": "Ink 外掛"
                 },
@@ -1428,30 +1422,6 @@
                     "name": "error",
                     "source": "Could not start Almost Useful sign-in. Try again.",
                     "target": "無法啟動 Almost Useful 登入，請再試一次。"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "Changes in Ink v0.6",
-                    "target": "Ink v0.6 的變更"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "Handwriting transcriptions (OCR)",
-                    "target": "手寫轉文字（OCR）"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": "This requires an ",
-                    "target": "此功能需要 "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": " account for processing and is currently invite only.",
-                    "target": " 帳號才能處理，目前僅接受邀請加入。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1550,18 +1520,6 @@
                     "target": "登出"
                 },
                 {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Early access",
-                    "target": "搶先體驗"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": "Almost Useful is currently in early access and is invite-only. If you have an account, sign in, or apply for an invite ",
-                    "target": "Almost Useful 目前處於搶先體驗階段，僅接受邀請加入。已有帳號可直接登入，或申請邀請："
-                },
-                {
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Processing your data",
@@ -1584,24 +1542,6 @@
                     "name": "appendText",
                     "source": "'s servers, then to ",
                     "target": " 的伺服器，再傳送至 "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": ", which passes it to ",
-                    "target": "，由它轉交給 "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "Google's Gemini",
-                    "target": "Google 的 Gemini"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": " model to read it. The transcript is returned to your app via the same route and stored in the SVG file as metadata and in all Markdown notes it is embedded in.",
-                    "target": " 模型辨識。轉錄文字會循相同路徑回傳至應用程式，儲存為 SVG 檔案的中繼資料，並寫入所有嵌入該檔案的 Markdown 筆記。"
                 },
                 {
                     "type": "CallExpression",
@@ -1842,6 +1782,108 @@
                     "name": "Notice",
                     "source": "Could not find the note for this embed",
                     "target": "找不到此嵌入區塊所在的筆記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "High contrast user interface",
+                    "target": "高對比使用者介面"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Uses high-contrast borders and controls across Ink embeds and editors — suited to e-ink and grayscale displays.",
+                    "target": "在 Ink 嵌入區塊與編輯器中使用高對比邊框及控制項，適合電子紙與灰階螢幕。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Changes in Ink v0.6.1",
+                    "target": "Ink v0.6.1 的變更"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Handwriting transcriptions available to all (requires an Almost Useful account).",
+                    "target": "所有使用者皆可使用手寫轉文字（需要 Almost Useful 帳號）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Fuller full screen mode.",
+                    "target": "更完整的全螢幕模式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Better selections and transformations.",
+                    "target": "改善選取與變形操作。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "High contrast mode.",
+                    "target": "高對比模式。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Create account",
+                    "target": "建立帳號"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": ", which passes it to the AI model provider to read it. The transcript is returned to your app via the same route and stored in the SVG file as metadata and in all Markdown notes it is embedded in.",
+                    "target": "，由它轉交給 AI 模型供應商辨識。轉錄文字會循相同路徑回傳至應用程式，儲存為 SVG 檔案的中繼資料，並寫入所有嵌入該檔案的 Markdown 筆記。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Full screen",
+                    "target": "全螢幕"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Locate",
+                    "target": "定位檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltip",
+                    "source": "Exit full screen",
+                    "target": "離開全螢幕"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Delete",
+                    "target": "刪除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "Del",
+                    "source": "Delete",
+                    "target": "Delete"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prop",
+                    "source": "Delete",
+                    "target": "Delete"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "action.delete",
+                    "source": "Delete",
+                    "target": "Delete"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "page-menu.submenu.delete",
+                    "source": "Delete",
+                    "target": "Delete"
                 }
             ],
             "regex": [
@@ -2134,8 +2176,8 @@
                     "target": "const detectedLabel=last7===\"pen\"?\"觸控筆\":last7===\"mouse\"?\"滑鼠\":\"無\""
                 },
                 {
-                    "source": "setOptionPair(\"right\",\"Right\",\"left\",\"Left\")",
-                    "target": "setOptionPair(\"right\",\"右手\",\"left\",\"左手\")"
+                    "source": "setOptionPair(\"left\",\"Left\",\"right\",\"Right\")",
+                    "target": "setOptionPair(\"left\",\"左手\",\"right\",\"右手\")"
                 },
                 {
                     "source": "textContent=\"Ink writing file not found: \"",
@@ -2240,10 +2282,6 @@
                 {
                     "source": "function autoTranscribeOnCloseSettingDesc(fileType){const embedKind=fileType===\"inkWriting\"?\"writing\":\"drawing\"",
                     "target": "function autoTranscribeOnCloseSettingDesc(fileType){const embedKind=fileType===\"inkWriting\"?\"手寫\":\"繪圖\""
-                },
-                {
-                    "source": "href:portalOrigin,text:\"here\"",
-                    "target": "href:portalOrigin,text:\"這裡\""
                 }
             ]
         },
