@@ -225,13 +225,13 @@
         "plugin": "ink",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "0.6.0",
-        "supported_versions": "0.6.0",
+        "version": "0.6.1",
+        "supported_versions": "0.6.1",
         "title": "[zh-tw] Ink",
         "description": "Ink 繁體中文化與微調",
-        "hash": "5eac99955eac99955eac99955eac9995",
+        "hash": "513be15a513be15a513be15a513be15a",
         "created_at": "2026-05-25T03:45:15.828Z",
-        "updated_at": "2026-10-06T17:31:03.214Z"
+        "updated_at": "2026-10-19T09:37:34.002Z"
     },
     {
         "id": "5MfGcunKxUdDkIDmBLmgOUgREFGyGr2q",
