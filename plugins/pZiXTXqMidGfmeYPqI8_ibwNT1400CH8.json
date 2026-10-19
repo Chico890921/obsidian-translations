@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "cmdr",
-        "version": "0.6.0",
+        "version": "0.7.0",
         "title": "[zh-tw] Commander",
         "description": "Commander 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.6.0",
+        "supportedVersions": "0.7.0",
         "author": "Chico",
-        "updatedAt": 1791992045595
+        "updatedAt": 1792397073884
     },
     "dict": {
         "main.js": {
@@ -36,6 +36,48 @@
                     "name": "placeholder",
                     "source": "Macro Name",
                     "target": "巨集名稱"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error: dictionary locale not found",
+                    "target": "Error: dictionary locale not found"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[cmdr] menu hider listener failed:",
+                    "target": "[cmdr] menu hider listener failed:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[cmdr] menu hider failed:",
+                    "target": "[cmdr] menu hider failed:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Commander: could not persist #211 settings cleanup",
+                    "target": "Commander: could not persist #211 settings cleanup"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Commander: could not persist spacing migration",
+                    "target": "Commander: could not persist spacing migration"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "🎊 Could not load worker",
+                    "target": "🎊 Could not load worker"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "cmdr clickable-icon",
+                    "target": "cmdr clickable-icon"
                 }
             ],
             "regex": [
@@ -56,12 +98,12 @@
                     "target": "\"找不到巨集\""
                 },
                 {
-                    "source": "u(\"span\",null,\"Name\")",
-                    "target": "u(\"span\",null,\"名稱\")"
+                    "source": "c(\"span\",null,\"Name\")",
+                    "target": "c(\"span\",null,\"名稱\")"
                 },
                 {
-                    "source": "u(\"span\",null,\"Icon\")",
-                    "target": "u(\"span\",null,\"圖示\")"
+                    "source": "c(\"span\",null,\"Icon\")",
+                    "target": "c(\"span\",null,\"圖示\")"
                 },
                 {
                     "source": "\"Editor: \"",
@@ -72,8 +114,8 @@
                     "target": "\"迴圈：\""
                 },
                 {
-                    "source": "u(\"button\",{onClick:f},\"Add Command\")",
-                    "target": "u(\"button\",{onClick:f},\"新增命令\")"
+                    "source": "c(\"button\",{onClick:f},\"Add Command\")",
+                    "target": "c(\"button\",{onClick:f},\"新增命令\")"
                 },
                 {
                     "source": "\"Add Delay\"",
@@ -96,8 +138,8 @@
                     "target": "},\"儲存\")"
                 },
                 {
-                    "source": "u(\"button\",{onClick:n},\"Cancel\")",
-                    "target": "u(\"button\",{onClick:n},\"取消\")"
+                    "source": "c(\"button\",{onClick:n},\"Cancel\")",
+                    "target": "c(\"button\",{onClick:n},\"取消\")"
                 },
                 {
                     "source": "\"Hide other Commands\":\"隱藏其他命令\",\"Hide menu items\":\"Hide menu items\"",
@@ -362,6 +404,18 @@
                 {
                     "source": "\"Commands in the Text Formatting Toolbar plugin\":\"Text Formatting Toolbar 插件中的命令\",\"Text toolbar commands\":\"Text toolbar commands\"",
                     "target": "\"Commands in the Text Formatting Toolbar plugin\":\"Text Formatting Toolbar 插件中的命令\",\"Text toolbar commands\":\"文字工具列命令\""
+                },
+                {
+                    "source": "\"Text toolbar commands\":\"文字工具列命令\",\"New Tab\":\"New Tab\"",
+                    "target": "\"Text toolbar commands\":\"文字工具列命令\",\"New Tab\":\"新分頁\""
+                },
+                {
+                    "source": "\"New Tab\":\"新分頁\",\"Commands shown on the empty new tab page\":\"Commands shown on the empty new tab page\"",
+                    "target": "\"New Tab\":\"新分頁\",\"Commands shown on the empty new tab page\":\"空白新分頁中顯示的命令\""
+                },
+                {
+                    "source": "\"Commands shown on the empty new tab page\":\"空白新分頁中顯示的命令\",\"New tab commands\":\"New tab commands\"",
+                    "target": "\"Commands shown on the empty new tab page\":\"空白新分頁中顯示的命令\",\"New tab commands\":\"新分頁命令\""
                 }
             ]
         },
