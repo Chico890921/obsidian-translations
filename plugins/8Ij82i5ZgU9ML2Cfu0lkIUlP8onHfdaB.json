@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-hide-sidebars-when-narrow",
-        "version": "1.2.0",
+        "version": "1.3.0",
         "title": "[zh-tw] Hide Sidebars on Window Resize",
         "description": "Hide Sidebars on Window Resize 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "1.2.0",
+        "supportedVersions": "1.3.0",
         "author": "Chico",
-        "updatedAt": 1785843634718
+        "updatedAt": 1792394331605
     },
     "dict": {
         "main.js": {
@@ -48,6 +48,42 @@
                     "name": "desc",
                     "source": "Sidebars remain hidden if option is disabled",
                     "target": "停用此選項時，側邊欄會保持隱藏"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Disable to leave the left sidebar unchanged when the window is resized",
+                    "target": "停用後，調整視窗大小時不會變更左側邊欄的狀態"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Disable to leave the right sidebar unchanged when the window is resized",
+                    "target": "停用後，調整視窗大小時不會變更右側邊欄的狀態"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Also reopen sidebars you collapsed yourself when the window gets wide enough",
+                    "target": "視窗足夠寬時，也重新開啟你手動收合的側邊欄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Automatically manage the left sidebar",
+                    "target": "自動管理左側邊欄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Automatically manage the right sidebar",
+                    "target": "自動管理右側邊欄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Reopen manually collapsed sidebars",
+                    "target": "重新開啟手動收合的側邊欄"
                 }
             ],
             "regex": [
@@ -74,6 +110,30 @@
                 {
                     "source": "desc:\"Sidebars remain hidden if option is disabled\"",
                     "target": "desc:\"停用此選項時，側邊欄會保持隱藏\""
+                },
+                {
+                    "source": "desc:\"Disable to leave the left sidebar unchanged when the window is resized\"",
+                    "target": "desc:\"停用後，調整視窗大小時不會變更左側邊欄的狀態\""
+                },
+                {
+                    "source": "desc:\"Disable to leave the right sidebar unchanged when the window is resized\"",
+                    "target": "desc:\"停用後，調整視窗大小時不會變更右側邊欄的狀態\""
+                },
+                {
+                    "source": "desc:\"Also reopen sidebars you collapsed yourself when the window gets wide enough\"",
+                    "target": "desc:\"視窗足夠寬時，也重新開啟你手動收合的側邊欄\""
+                },
+                {
+                    "source": "name:\"Automatically manage the left sidebar\"",
+                    "target": "name:\"自動管理左側邊欄\""
+                },
+                {
+                    "source": "name:\"Automatically manage the right sidebar\"",
+                    "target": "name:\"自動管理右側邊欄\""
+                },
+                {
+                    "source": "name:\"Reopen manually collapsed sidebars\"",
+                    "target": "name:\"重新開啟手動收合的側邊欄\""
                 }
             ]
         },
