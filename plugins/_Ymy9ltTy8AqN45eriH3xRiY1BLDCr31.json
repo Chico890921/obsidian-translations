@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-tasks-plugin",
-        "version": "8.5.0",
+        "version": "8.6.0",
         "title": "[zh-tw] Tasks",
         "description": "Tasks 繁體中文翻譯",
         "language": "zh-tw",
-        "supportedVersions": "8.5.0",
+        "supportedVersions": "8.6.0",
         "author": "Chico",
-        "updatedAt": 1791997822187
+        "updatedAt": 1792396639229
     },
     "dict": {
         "main.js": {
@@ -75,18 +75,6 @@
                 },
                 {
                     "type": "CallExpression",
-                    "name": "setPlaceholder",
-                    "source": "Name",
-                    "target": "名稱"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setPlaceholder",
-                    "source": "Query or filter text...",
-                    "target": "查詢或篩選文字..."
-                },
-                {
-                    "type": "CallExpression",
                     "name": "setText",
                     "source": "Quick search",
                     "target": "快速搜尋"
@@ -102,24 +90,6 @@
                     "name": "setText",
                     "source": "Create or edit Task",
                     "target": "建立或編輯任務"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTooltip",
-                    "source": "Drag to reorder",
-                    "target": "拖曳以重新排序"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTooltip",
-                    "source": "Delete",
-                    "target": "刪除"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setTooltip",
-                    "source": "Edit",
-                    "target": "編輯"
                 },
                 {
                     "type": "CallExpression",
@@ -5439,37 +5409,37 @@
                 },
                 {
                     "type": "VariableDeclarator",
-                    "name": "pS",
+                    "name": "oS",
                     "source": "Toggle task done",
                     "target": "切換任務完成狀態"
                 },
                 {
                     "type": "CallExpression",
-                    "name": "Ue",
+                    "name": "Le",
                     "source": "Type to search...",
                     "target": "輸入文字搜尋..."
                 },
                 {
                     "type": "CallExpression",
-                    "name": "Lr",
+                    "name": "Ir",
                     "source": "Recurs",
                     "target": "重複規則"
                 },
                 {
                     "type": "CallExpression",
-                    "name": "Lr",
+                    "name": "Ir",
                     "source": "Status",
                     "target": "狀態"
                 },
                 {
                     "type": "CallExpression",
-                    "name": "Lr",
+                    "name": "Ir",
                     "source": "Description",
                     "target": "描述"
                 },
                 {
                     "type": "CallExpression",
-                    "name": "Lr",
+                    "name": "Ir",
                     "source": "Only future dates:",
                     "target": "僅使用未來日期："
                 },
@@ -5538,6 +5508,198 @@
                     "name": "description",
                     "source": "Description",
                     "target": "Description"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Якое поле даты абнаўляе кнопка пераносу (⏩). Для варыянтаў з некалькімі датамі будзе ўсталявана першая дата з паслядоўнасці, якая прысутнічае ў задачы.",
+                    "target": "Якое поле даты абнаўляе кнопка пераносу (⏩). Для варыянтаў з некалькімі датамі будзе ўсталявана першая дата з паслядоўнасці, якая прысутнічае ў задачы."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Welches Datumsfeld die Verschieben-Schaltfläche (⏩) aktualisiert. Bei Optionen mit mehreren Daten wird das erste Datum der Reihenfolge gesetzt, das in der Aufgabe vorhanden ist.",
+                    "target": "Welches Datumsfeld die Verschieben-Schaltfläche (⏩) aktualisiert. Bei Optionen mit mehreren Daten wird das erste Datum der Reihenfolge gesetzt, das in der Aufgabe vorhanden ist."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Which date field the postpone button (⏩) updates. For options with multiple dates, the first date in the sequence that is present on the task will be set.",
+                    "target": "Which date field the postpone button (⏩) updates. For options with multiple dates, the first date in the sequence that is present on the task will be set."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Qué campo de fecha actualiza el botón de posponer (⏩). En las opciones con varias fechas, se establecerá la primera fecha de la secuencia que esté presente en la tarea.",
+                    "target": "Qué campo de fecha actualiza el botón de posponer (⏩). En las opciones con varias fechas, se establecerá la primera fecha de la secuencia que esté presente en la tarea."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "미루기 버튼(⏩)이 업데이트할 날짜 필드입니다. 여러 날짜가 있는 옵션에서는 작업에 존재하는 날짜 중 순서상 가장 먼저 나오는 날짜가 설정됩니다.",
+                    "target": "미루기 버튼(⏩)이 업데이트할 날짜 필드입니다. 여러 날짜가 있는 옵션에서는 작업에 존재하는 날짜 중 순서상 가장 먼저 나오는 날짜가 설정됩니다."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Qual campo de data o botão de adiar (⏩) atualiza. Para opções com várias datas, será definida a primeira data da sequência que estiver presente na tarefa.",
+                    "target": "Qual campo de data o botão de adiar (⏩) atualiza. Para opções com várias datas, será definida a primeira data da sequência que estiver presente na tarefa."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Какое поле даты обновляет кнопка переноса (⏩). Для вариантов с несколькими датами будет установлена первая дата из последовательности, присутствующая в задаче.",
+                    "target": "Какое поле даты обновляет кнопка переноса (⏩). Для вариантов с несколькими датами будет установлена первая дата из последовательности, присутствующая в задаче."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Яке поле дати оновлює кнопка перенесення (⏩). Для варіантів із кількома датами буде встановлено першу дату з послідовності, що присутня в задачі.",
+                    "target": "Яке поле дати оновлює кнопка перенесення (⏩). Для варіантів із кількома датами буде встановлено першу дату з послідовності, що присутня в задачі."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Trường ngày mà nút hoãn (⏩) cập nhật. Với các tùy chọn có nhiều ngày, ngày đầu tiên trong chuỗi có mặt trên nhiệm vụ sẽ được đặt.",
+                    "target": "Trường ngày mà nút hoãn (⏩) cập nhật. Với các tùy chọn có nhiều ngày, ngày đầu tiên trong chuỗi có mặt trên nhiệm vụ sẽ được đặt."
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "推迟按钮(⏩)更新的日期字段。对于包含多个日期的选项，将设置序列中第一个存在于任务上的日期。",
+                    "target": "推迟按钮(⏩)更新的日期字段。对于包含多个日期的选项，将设置序列中第一个存在于任务上的日期。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Кнопка пераносу",
+                    "target": "Кнопка пераносу"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Verschieben-Schaltfläche",
+                    "target": "Verschieben-Schaltfläche"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Postpone button",
+                    "target": "Postpone button"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Botón de posponer",
+                    "target": "Botón de posponer"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Bouton de report",
+                    "target": "Bouton de report"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "미루기 버튼",
+                    "target": "미루기 버튼"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Botão de adiar",
+                    "target": "Botão de adiar"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Кнопка переноса",
+                    "target": "Кнопка переноса"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Кнопка перенесення",
+                    "target": "Кнопка перенесення"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Nút hoãn",
+                    "target": "Nút hoãn"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "推迟按钮",
+                    "target": "推迟按钮"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Поле даты кнопкі пераносу",
+                    "target": "Поле даты кнопкі пераносу"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Datumsfeld der Verschieben-Schaltfläche",
+                    "target": "Datumsfeld der Verschieben-Schaltfläche"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Postpone button date field",
+                    "target": "Postpone button date field"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Campo de fecha del botón de posponer",
+                    "target": "Campo de fecha del botón de posponer"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Champ de date du bouton de report",
+                    "target": "Champ de date du bouton de report"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "미루기 버튼 날짜 필드",
+                    "target": "미루기 버튼 날짜 필드"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Campo de data do botão de adiar",
+                    "target": "Campo de data do botão de adiar"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Поле даты кнопки переноса",
+                    "target": "Поле даты кнопки переноса"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Поле дати кнопки перенесення",
+                    "target": "Поле дати кнопки перенесення"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Trường ngày của nút hoãn",
+                    "target": "Trường ngày của nút hoãn"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "推迟按钮日期字段",
+                    "target": "推迟按钮日期字段"
                 }
             ],
             "regex": [
@@ -7594,10 +7756,6 @@
                     "target": "title:\"狀態設定\""
                 },
                 {
-                    "source": "heading:\"自动建议\"",
-                    "target": "heading:\"自動建議\""
-                },
-                {
                     "source": "description:\"当自动建议菜单弹出时，应显示多少条建议 (包含 \\\"⏎\\\" 选项)。\"",
                     "target": "description:\"自動建議選單顯示的建議數量，包含「⏎」選項。\""
                 },
@@ -7620,10 +7778,6 @@
                 {
                     "source": "name:\"自动建议任务内容\"",
                     "target": "name:\"自動建議任務內容\""
-                },
-                {
-                    "source": "changeRequiresRestart:\"需要重启。\"",
-                    "target": "changeRequiresRestart:\"需要重新啟動。\""
                 },
                 {
                     "source": "description:\"启用此功能将在任务设置为取消时，在其末尾添加时间戳 ❌ YYYY-MM-DD。\"",
@@ -7656,10 +7810,6 @@
                 {
                     "source": "line1:\"任务插件在将文件名用作未注明日期任务的计划日期时，将识别的附加日期格式。\"",
                     "target": "line1:\"將檔名作為無日期任務的排定日期時，Tasks 額外辨識的日期格式。\""
-                },
-                {
-                    "source": "line2:\"语法参考\"",
-                    "target": "line2:\"語法參考\""
                 },
                 {
                     "source": "name:\"为无日期任务添加文件名日期格式作为计划日期\"",
@@ -7706,10 +7856,6 @@
                     "target": "name:\"在對話框中提供便捷鍵\""
                 },
                 {
-                    "source": "heading:\"对话框\"",
-                    "target": "heading:\"對話框\""
-                },
-                {
                     "source": "line1:\"Tasks 用于读取和写入任务的格式.\"",
                     "target": "line1:\"Tasks 讀取與寫入任務所使用的格式。\""
                 },
@@ -7752,10 +7898,6 @@
                 {
                     "source": "placeholder:\"例如:#task 或 TODO\"",
                     "target": "placeholder:\"例如：#task 或 TODO\""
-                },
-                {
-                    "source": "heading:\"全局任务筛选器\"",
-                    "target": "heading:\"全域任務篩選條件\""
                 },
                 {
                     "source": "description:\"启用此选项将在显示任务时从任务描述中删除设置为全局筛选器的字符串.\"",
@@ -7824,10 +7966,6 @@
                 {
                     "source": "name:\"在重复性任务中移除计划日期\"",
                     "target": "name:\"重複任務時移除排定日期\""
-                },
-                {
-                    "source": "heading:\"搜索结果\"",
-                    "target": "heading:\"查詢結果\""
                 },
                 {
                     "source": "description:\"选择任务数量显示在查询结果的顶部还是底部。\"",
@@ -7906,10 +8044,6 @@
                     "target": "borderTheme:\"Border\""
                 },
                 {
-                    "source": "name:\"{{themeName}}: 添加 {{numberOfStatuses}} 种支持状态\"",
-                    "target": "name:\"{{themeName}}：新增 {{numberOfStatuses}} 個支援的狀態\""
-                },
-                {
                     "source": "name:\"{{themeName}}（{{numberOfStatuses}} 种状态）\"",
                     "target": "name:\"{{themeName}}（{{numberOfStatuses}} 個狀態）\""
                 },
@@ -7960,10 +8094,6 @@
                 {
                     "source": "name:\"添加所有未知状态类型\"",
                     "target": "name:\"新增所有未知狀態類型\""
-                },
-                {
-                    "source": "name:\"添加新任务状态\"",
-                    "target": "name:\"新增任務狀態\""
                 },
                 {
                     "source": "description:\"丢弃所有自定义状态并恢复默认值。\"",
@@ -8034,8 +8164,8 @@
                     "target": "heading:\"任務輸入\""
                 },
                 {
-                    "source": "c=C=>C.charAt(0).toUpperCase()+C.slice(1).replace(\"_\",\" \")",
-                    "target": "c=C=>({__proto__:null,priority:\"Priority\",recurrence:\"Recurrence\",due:\"Due\",scheduled:\"Scheduled\",start:\"Start\",before_this:\"Before this\",after_this:\"After this\",status:\"Status\",created:\"Created\",done:\"Done\",cancelled:\"Cancelled\"})[C]??(C.charAt(0).toUpperCase()+C.slice(1).replace(\"_\",\" \"))"
+                    "source": "c=O=>O.charAt(0).toUpperCase()+O.slice(1).replace(\"_\",\" \")",
+                    "target": "c=O=>({__proto__:null,priority:\"Priority\",recurrence:\"Recurrence\",due:\"Due\",scheduled:\"Scheduled\",start:\"Start\",before_this:\"Before this\",after_this:\"After this\",status:\"Status\",created:\"Created\",done:\"Done\",cancelled:\"Cancelled\"})[O]??(O.charAt(0).toUpperCase()+O.slice(1).replace(\"_\",\" \"))"
                 },
                 {
                     "source": "priority:\"Priority\"",
@@ -8046,16 +8176,16 @@
                     "target": "recurrence:\"重複規則\""
                 },
                 {
-                    "source": "due:\"Due\"",
-                    "target": "due:\"截止日期\""
+                    "source": "recurrence:\"重複規則\",due:\"Due\"",
+                    "target": "recurrence:\"重複規則\",due:\"截止日期\""
                 },
                 {
-                    "source": "scheduled:\"Scheduled\"",
-                    "target": "scheduled:\"排定日期\""
+                    "source": "due:\"截止日期\",scheduled:\"Scheduled\"",
+                    "target": "due:\"截止日期\",scheduled:\"排定日期\""
                 },
                 {
-                    "source": "start:\"Start\"",
-                    "target": "start:\"開始日期\""
+                    "source": "scheduled:\"排定日期\",start:\"Start\"",
+                    "target": "scheduled:\"排定日期\",start:\"開始日期\""
                 },
                 {
                     "source": "before_this:\"Before this\"",
@@ -8082,8 +8212,8 @@
                     "target": "__proto__:null,priority:\"優先順序\",recurrence:\"重複規則\",due:\"截止日期\",scheduled:\"排定日期\",start:\"開始日期\",before_this:\"前置任務\",after_this:\"後續任務\",status:\"狀態\",created:\"建立日期\",done:\"完成日期\",cancelled:\"取消日期\""
                 },
                 {
-                    "source": "K(()=>Lr(e(),o()))",
-                    "target": "K(()=>Lr(({__proto__:null,due:\"due\",scheduled:\"scheduled\",start:\"start\",created:\"created\",done:\"done\",cancelled:\"cancelled\"})[e()]??e(),o()))"
+                    "source": "V(()=>Ir(e(),o()))",
+                    "target": "V(()=>Ir(({__proto__:null,due:\"due\",scheduled:\"scheduled\",start:\"start\",created:\"created\",done:\"done\",cancelled:\"cancelled\"})[e()]??e(),o()))"
                 },
                 {
                     "source": "due:\"due\"",
@@ -8110,36 +8240,36 @@
                     "target": "cancelled:\"取消日期\""
                 },
                 {
-                    "source": "m().substring(0,C())",
+                    "source": "m().substring(0,O())",
                     "target": "m()+\" (\""
                 },
                 {
-                    "source": "m().substring(C(),C()+1)",
+                    "source": "m().substring(O(),O()+1)",
                     "target": "b().toUpperCase()"
                 },
                 {
-                    "source": "m().substring(C()+1)",
+                    "source": "m().substring(O()+1)",
                     "target": "\")\""
                 },
                 {
-                    "source": "var $=yV(),Q=St($),H=ke(Q);Nn(H,l)",
-                    "target": "var $=yV(),Q=St($),H=ke(Q);Nn(H,()=>l().replace(/<i>invalid [a-z]+ date<\\/i>/g,\"<i>日期無效</i>\"))"
+                    "source": "var L=lV(),Q=_t(L),j=Te(Q);Mn(j,l)",
+                    "target": "var L=lV(),Q=_t(L),j=Te(Q);Mn(j,()=>l().replace(/<i>invalid [a-z]+ date<\\/i>/g,\"<i>日期無效</i>\"))"
                 },
                 {
-                    "source": "function GM(r){return`task${r!==1?\"s\":\"\"}`}",
-                    "target": "function GM(r){return`個任務${r!==1?\"\":\"\"}`}"
+                    "source": "function qM(r){return`task${r!==1?\"s\":\"\"}`}",
+                    "target": "function qM(r){return`個任務${r!==1?\"\":\"\"}`}"
                 },
                 {
-                    "source": "function Eh(r,t){return r===t?`${r} ${GM(r)}`:`${r} of ${t} ${GM(t)}`}",
-                    "target": "function Eh(r,t){return r===t?`${r} ${GM(r)}`:`${r} / ${t} ${GM(t)}`}"
+                    "source": "function Th(r,t){return r===t?`${r} ${qM(r)}`:`${r} of ${t} ${qM(t)}`}",
+                    "target": "function Th(r,t){return r===t?`${r} ${qM(r)}`:`${r} / ${t} ${qM(t)}`}"
                 },
                 {
-                    "source": "lP(d,c,t,n,\"Clear\",",
-                    "target": "lP(d,c,t,n,\"清除\","
+                    "source": "tP(d,c,t,n,\"Clear\",",
+                    "target": "tP(d,c,t,n,\"清除\","
                 },
                 {
-                    "source": "lP(d,c,t,n,\"Today\",",
-                    "target": "lP(d,c,t,n,\"今天\","
+                    "source": "tP(d,c,t,n,\"Today\",",
+                    "target": "tP(d,c,t,n,\"今天\","
                 },
                 {
                     "source": ">Priority</label>",
@@ -8168,6 +8298,38 @@
                 {
                     "source": "textContent=`Tasks query: ${e}`",
                     "target": "textContent=`Tasks 查詢：${e}`"
+                },
+                {
+                    "source": "heading:\"推迟按钮\"",
+                    "target": "heading:\"延後按鈕\""
+                },
+                {
+                    "source": "description:\"推迟按钮(⏩)更新的日期字段。对于包含多个日期的选项，将设置序列中第一个存在于任务上的日期。\"",
+                    "target": "description:\"「延後」按鈕（⏩）要更新的日期欄位。若選項包含多個日期，會依指定順序修改任務中第一個已設定的日期欄位。\""
+                },
+                {
+                    "source": "name:\"推迟按钮日期字段\"",
+                    "target": "name:\"延後按鈕的日期欄位\""
+                },
+                {
+                    "source": "due:\"始终使用$t(taskFields.due)\"",
+                    "target": "due:\"一律使用$t(taskFields.due)\""
+                },
+                {
+                    "source": "scheduled:\"始终使用$t(taskFields.scheduled)\"",
+                    "target": "scheduled:\"一律使用$t(taskFields.scheduled)\""
+                },
+                {
+                    "source": "start:\"始终使用$t(taskFields.start)\"",
+                    "target": "start:\"一律使用$t(taskFields.start)\""
+                },
+                {
+                    "source": "scheduled:\"计划日期\"",
+                    "target": "scheduled:\"排定日期\""
+                },
+                {
+                    "source": "start:\"开始日期\"",
+                    "target": "start:\"開始日期\""
                 }
             ]
         },
