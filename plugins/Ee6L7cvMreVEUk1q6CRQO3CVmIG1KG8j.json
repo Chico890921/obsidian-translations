@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-linter",
-        "version": "1.34.1",
+        "version": "1.34.2",
         "title": "[zh-tw] Linter",
         "description": "Linter Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "1.34.1",
+        "supportedVersions": "1.34.2",
         "author": "Chico",
-        "updatedAt": 1791992583906
+        "updatedAt": 1792395251655
     },
     "dict": {
         "main.js": {
