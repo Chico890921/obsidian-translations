@@ -2,23 +2,17 @@
   "schemaVersion": 1,
   "metadata": {
     "plugin": "obsidian-paste-image-rename",
-    "version": "1.6.1",
+    "version": "1.7.2",
     "title": "[zh-tw] Paste image rename",
     "description": "Paste image rename 繁體中文化與微調",
     "language": "zh-tw",
-    "supportedVersions": "1.6.1",
+    "supportedVersions": "1.7.2",
     "author": "Chico",
-    "updatedAt": 1785325840590
+    "updatedAt": 1792395943541
   },
   "dict": {
     "main.js": {
       "ast": [
-        {
-          "type": "CallExpression",
-          "name": "console.log",
-          "source": "DEBUG is enabled",
-          "target": "已啟用除錯模式"
-        },
         {
           "type": "CallExpression",
           "name": "setText",
@@ -27,7 +21,7 @@
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "Name pattern",
           "target": "名稱模式"
         },
@@ -39,7 +33,7 @@
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "Extension pattern",
           "target": "副檔名模式"
         },
@@ -51,7 +45,7 @@
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "Name replace",
           "target": "名稱取代"
         },
@@ -80,8 +74,8 @@
           "target": "全部重新命名"
         },
         {
-          "type": "CallExpression",
-          "name": "StringLiteral",
+          "type": "NewExpression",
+          "name": "ConfirmModal",
           "source": "Confirm rename all",
           "target": "確認全部重新命名"
         },
@@ -116,13 +110,7 @@
           "target": "立即批次重新命名所有圖片（目前檔案）"
         },
         {
-          "type": "CallExpression",
-          "name": "Notice",
-          "source": "Error: No active file found.",
-          "target": "錯誤：找不到目前使用中的檔案。"
-        },
-        {
-          "type": "CallExpression",
+          "type": "NewExpression",
           "name": "Notice",
           "source": "Failed to batch rename images: the generated name is not meaningful",
           "target": "無法批次重新命名圖片：產生的名稱沒有意義"
@@ -147,15 +135,9 @@
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "New name",
           "target": "新名稱"
-        },
-        {
-          "type": "CallExpression",
-          "name": "setDesc",
-          "source": "Please input the new name for the image (without extension)",
-          "target": "請輸入圖片的新名稱（不含副檔名）"
         },
         {
           "type": "CallExpression",
@@ -165,49 +147,49 @@
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "Image name pattern",
           "target": "圖片命名模式"
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "Duplicate number at start (or end)",
           "target": "重複編號置於開頭（或結尾）"
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "Duplicate number delimiter",
           "target": "重複編號分隔符號"
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "Always add duplicate number",
           "target": "一律加入重複編號"
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "Auto rename",
           "target": "自動重新命名"
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "Handle all attachments",
           "target": "處理所有附件"
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "Exclude extension pattern",
           "target": "排除副檔名模式"
         },
         {
           "type": "CallExpression",
-          "name": "setName",
+          "name": "setText",
           "source": "Disable rename notice",
           "target": "停用重新命名通知"
         },
@@ -226,44 +208,8 @@
         {
           "type": "CallExpression",
           "name": "debugLog",
-          "source": "pasted image created",
-          "target": "已建立貼上的圖片"
-        },
-        {
-          "type": "CallExpression",
-          "name": "debugLog",
-          "source": "handleAllAttachments for file",
-          "target": "處理檔案的所有附件"
-        },
-        {
-          "type": "CallExpression",
-          "name": "debugLog",
-          "source": "excluded file by ext",
-          "target": "依副檔名排除檔案"
-        },
-        {
-          "type": "CallExpression",
-          "name": "debugLog",
           "source": "generated newName:",
           "target": "產生的新名稱："
-        },
-        {
-          "type": "CallExpression",
-          "name": "debugLog",
-          "source": "deduplicated newName:",
-          "target": "去除重複後的新名稱："
-        },
-        {
-          "type": "CallExpression",
-          "name": "debugLog",
-          "source": "replace text",
-          "target": "取代文字"
-        },
-        {
-          "type": "CallExpression",
-          "name": "debugLog",
-          "source": "current line -> replaced line",
-          "target": "目前行 → 取代後的行"
         },
         {
           "type": "CallExpression",
@@ -286,20 +232,8 @@
         {
           "type": "CallExpression",
           "name": "debugLog",
-          "source": "sibling files",
-          "target": "同層檔案"
-        },
-        {
-          "type": "CallExpression",
-          "name": "debugLog",
           "source": "active file",
           "target": "目前檔案"
-        },
-        {
-          "type": "CallExpression",
-          "name": "debugLog",
-          "source": "doRename",
-          "target": "執行重新命名"
         },
         {
           "type": "AssignmentExpression",
@@ -314,108 +248,628 @@
           "target": "錯誤：「新名稱」不能為空"
         },
         {
-          "type": "TemplateElement",
-          "name": "",
-          "source": "Are you sure? This will rename all the ${this.state.renameTasks.length} images matched the pattern.",
-          "target": "確定要繼續嗎？這會重新命名符合模式的 ${this.state.renameTasks.length} 張圖片。"
-        },
-        {
-          "type": "TemplateElement",
-          "name": "",
-          "source": "Plugin loading: ${pkg.name} ${pkg.version} BUILD_ENV=${\"production\"}",
-          "target": "插件載入中：${pkg.name} ${pkg.version} BUILD_ENV=${\"production\"}"
-        },
-        {
-          "type": "TemplateElement",
-          "name": "",
-          "source": "Failed to rename ${newName}: ${err}",
-          "target": "無法重新命名 ${newName}：${err}"
-        },
-        {
-          "type": "TemplateElement",
-          "name": "",
-          "source": "Failed to rename ${newName}: no active editor",
-          "target": "無法重新命名 ${newName}：沒有目前使用中的編輯器"
-        },
-        {
-          "type": "TemplateElement",
-          "name": "",
-          "source": "Renamed ${originName} to ${newName}",
-          "target": "已將 ${originName} 重新命名為 ${newName}"
-        },
-        {
-          "type": "TemplateElement",
-          "name": "",
+          "type": "CallExpression",
+          "name": "setDesc",
           "source": "If enabled, duplicate number will be added at the start as prefix for the image name, otherwise it will be added at the end as suffix for the image name.",
           "target": "啟用後，重複編號會以前綴形式加在圖片名稱開頭；否則會以後綴形式加在名稱結尾。"
         },
         {
-          "type": "TemplateElement",
-          "name": "",
+          "type": "CallExpression",
+          "name": "setDesc",
           "source": "The delimiter to generate the number prefix/suffix for duplicated names. For example, if the value is \"-\", the suffix will be like \"-1\", \"-2\", \"-3\", and the prefix will be like \"1-\", \"2-\", \"3-\". Only characters that are valid in file names are allowed.",
           "target": "用來產生重複名稱編號前綴或後綴的分隔符號。例如值為「-」時，後綴會是「-1」、「-2」、「-3」，前綴則會是「1-」、「2-」、「3-」。僅能使用檔名允許的字元。"
         },
         {
-          "type": "TemplateElement",
-          "name": "",
+          "type": "CallExpression",
+          "name": "setDesc",
           "source": "If enabled, duplicate number will always be added to the image name. Otherwise, it will only be added when the name is duplicated.",
           "target": "啟用後，一律在圖片名稱加入重複編號；否則只在名稱重複時加入。"
         },
         {
-          "type": "TemplateElement",
-          "name": "",
+          "type": "CallExpression",
+          "name": "setDesc",
           "source": "By default, the rename modal will always be shown to confirm before renaming, if this option is set, the image will be auto renamed after pasting.",
           "target": "預設會顯示重新命名對話視窗以供確認。啟用此選項後，圖片會在貼上後自動重新命名。"
         },
         {
-          "type": "TemplateElement",
-          "name": "",
+          "type": "CallExpression",
+          "name": "setDesc",
           "source": "By default, the plugin only handles images that starts with \"Pasted image \" in name,\n\t\t\twhich is the prefix Obsidian uses to create images from pasted content.\n\t\t\tIf this option is set, the plugin will handle all attachments that are created in the vault.",
           "target": "預設僅處理名稱以「Pasted image 」開頭的圖片，這是 Obsidian 從貼上內容建立圖片時使用的前綴。\n\t\t\t啟用此選項後，插件會處理儲存庫中建立的所有附件。"
         },
         {
-          "type": "TemplateElement",
-          "name": "",
+          "type": "CallExpression",
+          "name": "setDesc",
           "source": "This option is only useful when \"Handle all attachments\" is enabled.\n\t\t\tWrite a Regex pattern to exclude certain extensions from being handled. Only the first line will be used.",
           "target": "此選項僅在啟用「處理所有附件」時有效。\n\t\t\t輸入 Regex 模式以排除特定副檔名；只會使用第一行。"
         },
         {
-          "type": "TemplateElement",
-          "name": "",
+          "type": "CallExpression",
+          "name": "setDesc",
           "source": "Turn off this option if you don't want to see the notice when renaming images.\n\t\t\tNote that Obsidian may display a notice when a link has changed, this option cannot disable that.",
           "target": "若不想在重新命名圖片時看到通知，請啟用此選項。\n\t\t\t請注意，Obsidian 可能仍會在連結變更時顯示通知，此選項無法停用該通知。"
         },
         {
-          "type": "TemplateElement",
-          "name": "",
-          "source": "\nThe pattern indicates how the new name should be generated.\n\nAvailable variables:\n- {{fileName}}: name of the active file, without \".md\" extension.\n- {{imageNameKey}}: this variable is read from the markdown file's frontmatter, from the same key \"imageNameKey\".\n- {{DATE:$FORMAT}}: use \"$FORMAT\" to format the current date, \"$FORMAT\" must be a Moment.js format string, e.g. {{DATE:YYYY-MM-DD}}.\n\nHere are some examples from pattern to image names (repeat in sequence), variables: fileName = \"My note\", imageNameKey = \"foo\":\n- {{fileName}}: My note, My note-1, My note-2\n- {{imageNameKey}}: foo, foo-1, foo-2\n- {{imageNameKey}}-{{DATE:YYYYMMDD}}: foo-20220408, foo-20220408-1, foo-20220408-2\n",
-          "target": "\n此模式用來決定如何產生新名稱。\n\n可用變數：\n- {{fileName}}：目前檔案的名稱，不含「.md」副檔名。\n- {{imageNameKey}}：從 Markdown 檔案的 Frontmatter 讀取同名的「imageNameKey」欄位。\n- {{DATE:$FORMAT}}：使用「$FORMAT」格式化目前日期；格式必須是 Moment.js 格式字串，例如 {{DATE:YYYY-MM-DD}}。\n\n以下是模式轉換成圖片名稱的範例（依序重複），變數為 fileName =「My note」、imageNameKey =「foo」：\n- {{fileName}}：My note、My note-1、My note-2\n- {{imageNameKey}}：foo、foo-1、foo-2\n- {{imageNameKey}}-{{DATE:YYYYMMDD}}：foo-20220408、foo-20220408-1、foo-20220408-2\n"
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Select all",
+          "target": "全部選取"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Cursor at start",
+          "target": "游標置於開頭"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addOption",
+          "source": "Cursor at end",
+          "target": "游標置於結尾"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Preview",
+          "target": "預覽"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Convert supported images",
+          "target": "轉換支援的圖片"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Use original name",
+          "target": "使用原始名稱"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setButtonText",
+          "source": "Cancel and delete",
+          "target": "取消並刪除"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Filename only, without extension. Directory names, relative paths (such as folder/name or ../name), and absolute paths are not supported. Choose attachment locations in Obsidian Settings → Files and links.",
+          "target": "僅輸入不含副檔名的檔名。不支援目錄名稱、相對路徑（如 folder/name 或 ../name）或絕對路徑。附件位置請到 Obsidian「設定 → 檔案與連結」設定。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Share duplicate numbers between filename extensions in the attachment folder. Off by default. Existing conflicts are resolved only when those files are renamed.",
+          "target": "讓附件資料夾中不同副檔名的檔案共用重複編號。預設停用。既有的名稱衝突只會在重新命名那些檔案時處理。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Minimum digits for new duplicate numbers (1–12). Existing numbered filenames stay unchanged.",
+          "target": "新重複編號的最少位數（1–12）。既有的編號檔名保持不變。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Choose the caret or selection position in the rename prompt. Also applies when restoring the original name.",
+          "target": "選擇重新命名視窗中的游標或選取範圍位置。還原原始名稱時也會套用。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setDesc",
+          "source": "Skip automatic renaming when the attachment or its source note is in one of these vault-relative folders. One folder per line; subfolders are included. Manual batch commands are unaffected.",
+          "target": "附件或來源筆記位於這些儲存庫相對路徑的資料夾時，略過自動重新命名。每行一個資料夾，包含子資料夾。不影響手動批次指令。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setText",
+          "source": "Share duplicate numbers across extensions",
+          "target": "不同副檔名共用重複編號"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setText",
+          "source": "Duplicate number minimum digits",
+          "target": "重複編號的最少位數"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setText",
+          "source": "Rename input selection",
+          "target": "重新命名輸入框的選取位置"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setText",
+          "source": "Excluded folders",
+          "target": "排除的資料夾"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Notice",
+          "source": "Preview matching files before renaming.",
+          "target": "請先預覽符合條件的檔案，再重新命名。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Notice",
+          "source": "Open an editable Markdown note first.",
+          "target": "請先開啟可編輯的 Markdown 筆記。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Notice",
+          "source": "This conversion command requires the editor transaction API available in Obsidian 0.13.0 or newer.",
+          "target": "此轉換指令需要 Obsidian 0.13.0 以上提供的編輯器交易 API。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Notice",
+          "source": "No active Markdown file found.",
+          "target": "找不到目前使用中的 Markdown 檔案。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Notice",
+          "source": "Invalid exclude extension pattern. Automatic attachment renaming is paused until it is corrected.",
+          "target": "排除副檔名的模式無效。自動重新命名附件已暫停，請先修正模式。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The captured insertion is invalid.",
+          "target": "擷取的插入內容無效。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The saved note does not match the expected link removal.",
+          "target": "已儲存的筆記與預期移除連結後的內容不符。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Disk changed; compensation is unsafe.",
+          "target": "磁碟內容已變更，無法安全地還原先前操作。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "A note exceeds the 2 million character ownership-check limit.",
+          "target": "有筆記超過附件歸屬檢查的 200 萬字元上限。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "This attachment name is outside the verified discard syntax.",
+          "target": "此附件名稱不符合已驗證的捨棄語法。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "HTML-entity reference syntax is not supported for deletion checks.",
+          "target": "刪除檢查不支援含 HTML 實體的參照語法。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Invalid percent encoding prevents a complete reference check.",
+          "target": "百分比編碼無效，無法完成參照檢查。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Another mention or reference to this attachment exists.",
+          "target": "另有文字提及或參照此附件。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Unclosed or oversized frontmatter prevents a complete reference check.",
+          "target": "Frontmatter 未關閉或過大，無法完成參照檢查。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Invalid frontmatter prevents a complete reference check.",
+          "target": "Frontmatter 無效，無法完成參照檢查。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Excalidraw drawing containers are unsupported for deletion checks.",
+          "target": "刪除檢查不支援 Excalidraw 繪圖容器。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Deep frontmatter prevents a complete reference check.",
+          "target": "Frontmatter 巢狀層級過深，無法完成參照檢查。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "A frontmatter value references this attachment.",
+          "target": "有 Frontmatter 值參照此附件。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Aliased/cyclic frontmatter prevents a complete reference check.",
+          "target": "Frontmatter 含別名或循環參照，無法完成參照檢查。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Math/comment extension syntax is unsupported for deletion checks.",
+          "target": "刪除檢查不支援數學式或註解的擴充語法。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Another wiki reference to this attachment exists.",
+          "target": "另有 Wiki 連結參照此附件。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Ambiguous wiki syntax prevents a complete reference check.",
+          "target": "Wiki 語法有歧義，無法完成參照檢查。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "HTML/code/plugin syntax is unsupported for deletion checks.",
+          "target": "刪除檢查不支援 HTML、程式碼或插件語法。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "URI/query reference syntax is unsupported for deletion checks.",
+          "target": "刪除檢查不支援 URI 或查詢參照語法。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Another Markdown reference to this attachment exists.",
+          "target": "另有 Markdown 連結參照此附件。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "unavailable",
+          "source": "Requires a verified single-file paste/drop within 30 seconds; reused, multi-file and background attachments cannot be deleted here.",
+          "target": "必須是在 30 秒內經驗證的單一檔案貼上或拖放；無法在此刪除重複使用、多檔案或背景建立的附件。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "unavailable",
+          "source": "Discard currently supports verified raster images with simple filenames only.",
+          "target": "捨棄功能目前僅支援經驗證且檔名單純的點陣圖片。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "unavailable",
+          "source": "This editor does not provide the required save/transaction APIs.",
+          "target": "此編輯器未提供所需的儲存或交易 API。"
+        },
+        {
+          "type": "CallExpression",
+          "name": "unavailable",
+          "source": "The new insertion, source snapshot or image bytes could not be verified. Nothing will be deleted.",
+          "target": "無法驗證新插入內容、來源快照或圖片位元組。不會刪除任何內容。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Discard was already attempted. No automatic retry is allowed.",
+          "target": "已嘗試捨棄，不允許自動重試。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The captured source/editor changed or the prompt closed.",
+          "target": "擷取的來源或編輯器已變更，或提示視窗已關閉。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The attachment identity or bytes changed.",
+          "target": "附件的識別資訊或位元組已變更。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Vault has too many folders for discard verification.",
+          "target": "儲存庫的資料夾過多，無法進行捨棄驗證。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Vault has too many physical files for discard verification.",
+          "target": "儲存庫中的實體檔案過多，無法進行捨棄驗證。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Discard proof expired or changed. It is valid only for 30 seconds after one trusted paste/drop.",
+          "target": "捨棄驗證已過期或變更。驗證僅在一次可信任的貼上或拖放後 30 秒內有效。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "This vault exceeds the 2000-file discard verification limit.",
+          "target": "此儲存庫超過捨棄驗證的 2000 個檔案上限。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Physical vault files differ from the indexed file list. Wait for indexing; unknown files cannot be ignored.",
+          "target": "儲存庫的實體檔案與索引檔案清單不同。請等待索引完成；不能忽略未知檔案。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The vault or insertion changed during verification.",
+          "target": "驗證期間，儲存庫或插入內容發生變更。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "An open editor changed during verification.",
+          "target": "驗證期間，有已開啟的編輯器內容發生變更。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The vault file snapshot changed.",
+          "target": "儲存庫檔案快照已變更。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The original attachment could not be verified on disk.",
+          "target": "無法在磁碟上驗證原始附件。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The source is not saved at the verified snapshot yet. Wait for saving and retry with a new paste.",
+          "target": "來源尚未儲存為已驗證的快照。請等待儲存完成，再重新貼上後重試。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Physical vault contents changed during verification.",
+          "target": "驗證期間，儲存庫的實體內容發生變更。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Physical source changed during readback.",
+          "target": "讀回驗證時，實體來源已變更。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The source changed during disk readback.",
+          "target": "從磁碟讀回驗證時，來源已變更。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The original attachment is still present or trash completion cannot be verified.",
+          "target": "原始附件仍存在，或無法確認是否已完成移至垃圾桶。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Enter a filename only, without directory paths. Configure attachment locations in Obsidian Settings → Files and links.",
+          "target": "僅輸入檔名，不要包含目錄路徑。附件位置請到 Obsidian「設定 → 檔案與連結」設定。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Use a nonempty filename only; directory paths and parent segments are not supported.",
+          "target": "請輸入非空白的檔名；不支援目錄路徑或上層目錄片段。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "A nonempty filename and extension are required.",
+          "target": "檔名與副檔名皆不可為空。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The filename contains characters or a reserved name that is not safe across supported platforms.",
+          "target": "檔名包含無法在各支援平台上安全使用的字元或保留名稱。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "UUID generation requires 16 random bytes.",
+          "target": "產生 UUID 需要 16 個隨機位元組。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "A previewed file moved or was replaced/deleted. Preview matching files again.",
+          "target": "預覽中的檔案已移動、被取代或刪除。請重新預覽符合條件的檔案。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Folder paths are not supported; preview filenames only.",
+          "target": "不支援資料夾路徑；請僅預覽檔名。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Too many protected regions to preview safely. Split the note before converting.",
+          "target": "受保護區段過多，無法安全預覽。請先拆分筆記，再進行轉換。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "This command supports notes up to 2 million characters. Split the note before converting.",
+          "target": "此指令支援最多 200 萬字元的筆記。請先拆分筆記，再進行轉換。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "This preview supports up to 1000 image references. Split the note before converting.",
+          "target": "此預覽最多支援 1000 個圖片參照。請先拆分筆記，再進行轉換。"
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "reason",
+          "source": "Images inside tables or link labels are left unchanged",
+          "target": "表格或連結標籤中的圖片保持不變"
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "reason",
+          "source": "Protected frontmatter, comment, math or HTML context",
+          "target": "位於受保護的 Frontmatter、註解、數學式或 HTML 區段"
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "reason",
+          "source": "Only inline images with an empty label or numeric dimensions, without titles, are supported",
+          "target": "僅支援沒有標題，且標籤為空或為數字尺寸的行內圖片"
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "reason",
+          "source": "Escaped or entity-containing targets are left unchanged",
+          "target": "含跳脫字元或實體的目標保持不變"
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "reason",
+          "source": "Invalid URL encoding",
+          "target": "URL 編碼無效"
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "reason",
+          "source": "Remote, fragment, query or unsupported target",
+          "target": "目標為遠端網址、片段、查詢，或不受支援的格式"
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "reason",
+          "source": "Raw and decoded targets resolve to different files",
+          "target": "原始目標與解碼後的目標指向不同檔案"
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "reason",
+          "source": "Target is not a resolved local image",
+          "target": "目標無法解析為本機圖片"
+        },
+        {
+          "type": "AssignmentExpression",
+          "name": "reason",
+          "source": "Target cannot be represented safely as a wiki embed",
+          "target": "無法將目標安全地表示為 Wiki 嵌入連結"
+        },
+        {
+          "type": "CallExpression",
+          "name": "setText",
+          "source": "Convert Markdown image links to wiki embeds",
+          "target": "將 Markdown 圖片連結轉換為 Wiki 嵌入連結"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "name",
+          "source": "Convert Markdown image links to wiki embeds (current note)",
+          "target": "將 Markdown 圖片連結轉換為 Wiki 嵌入連結（目前筆記）"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The original source note is no longer available.",
+          "target": "原始來源筆記已無法使用。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "reason",
+          "source": "Cancel and Delete requires Obsidian 1.1.1+ and a verified new single-file paste/drop.",
+          "target": "「取消並刪除」需要 Obsidian 1.1.1 以上，以及經驗證的新單一檔案貼上或拖放。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The attachment was replaced or deleted before this rename.",
+          "target": "重新命名前，附件已被取代或刪除。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Enable Obsidian’s Automatically update internal links setting before renaming attachments, so shared references remain valid.",
+          "target": "重新命名附件前，請先啟用 Obsidian 的「自動更新內部連結」設定，以保持共用參照有效。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The attachment moved while this rename was waiting. Try again from its current location.",
+          "target": "等待重新命名期間，附件已移動。請從目前位置再試一次。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The note changed since preview. Cancel and run the command again.",
+          "target": "預覽後筆記已變更。請取消並重新執行指令。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "An image changed since preview. Cancel and run the command again.",
+          "target": "預覽後圖片已變更。請取消並重新執行指令。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Notice",
+          "source": "New attachment moved to vault .trash and its inserted link removed. Editor undo does not restore the file.",
+          "target": "已將新附件移至儲存庫的 .trash，並移除其插入連結。編輯器的復原操作不會還原檔案。"
+        },
+        {
+          "type": "VariableDeclarator",
+          "name": "imageNamePatternDesc",
+          "source": "\nThe pattern indicates how the new name should be generated.\n\nAvailable variables:\n- {{fileName}}: name of the active file, without \".md\" extension.\n- {{fileNameSlug}} (or {{FileNameSlug}}): lowercase note name with whitespace replaced by hyphens; Unicode is preserved.\n- {{attachmentName}} (or {{originalAttachmentFileName}}): attachment stem before this operation, without its extension.\n- {{nearestHeading}} (or {{headerName}}): nearest heading before the first reference to this attachment in the source note; empty if none.\n- {{UUID}}: a new UUID per attachment operation; {{HEX}} is the same UUID without hyphens.\n- {{dirName}}: name of the directory which contains the document (the root directory of vault results in an empty variable).\n- {{imageNameKey}}: this variable is read from the markdown file's frontmatter, from the same key \"imageNameKey\".\n- {{DATE:$FORMAT}}: use \"$FORMAT\" to format the current date, \"$FORMAT\" must be a Moment.js format string, e.g. {{DATE:YYYY-MM-DD}}.\n\nHere are some examples from pattern to image names (repeat in sequence), variables: fileName = \"My note\", imageNameKey = \"foo\":\n- {{fileName}}: My note, My note-1, My note-2\n- {{imageNameKey}}: foo, foo-1, foo-2\n- {{imageNameKey}}-{{DATE:YYYYMMDD}}: foo-20220408, foo-20220408-1, foo-20220408-2\n",
+          "target": "\n此模式用來決定如何產生新名稱。\n\n可用變數：\n- {{fileName}}：目前檔案的名稱，不含「.md」副檔名。\n- {{fileNameSlug}}（或 {{FileNameSlug}}）：將筆記名稱轉為小寫，空白改為連字號；保留 Unicode 字元。\n- {{attachmentName}}（或 {{originalAttachmentFileName}}）：此次操作前的附件名稱，不含副檔名。\n- {{nearestHeading}}（或 {{headerName}}）：來源筆記中此附件第一個參照前最近的標題；沒有則留空。\n- {{UUID}}：每次附件操作產生一個新 UUID；{{HEX}} 是移除連字號的同一個 UUID。\n- {{dirName}}：文件所在資料夾的名稱（儲存庫根目錄會得到空值）。\n- {{imageNameKey}}：從 Markdown 檔案的 Frontmatter 讀取同名的「imageNameKey」鍵值。\n- {{DATE:$FORMAT}}：以「$FORMAT」格式化目前日期；「$FORMAT」必須是 Moment.js 格式字串，例如 {{DATE:YYYY-MM-DD}}。\n\n以下是模式與圖片名稱的對照範例（依序重複），變數：fileName = \"My note\"，imageNameKey = \"foo\"：\n- {{fileName}}: My note, My note-1, My note-2\n- {{imageNameKey}}: foo, foo-1, foo-2\n- {{imageNameKey}}-{{DATE:YYYYMMDD}}: foo-20220408, foo-20220408-1, foo-20220408-2\n"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addRibbonIcon",
+          "source": "Batch rename embeded files",
+          "target": "批次重新命名嵌入檔案"
+        },
+        {
+          "type": "CallExpression",
+          "name": "addRibbonIcon",
+          "source": "Batch rename all images instantly (in the current file)",
+          "target": "立即批次重新命名所有圖片（目前檔案）"
         }
       ],
       "regex": [
         {
-          "source": "'Error: \"Name pattern\" could not be empty'",
-          "target": "'錯誤：「名稱模式」不能為空'"
+          "source": "\"Error: \\\"Name pattern\\\" could not be empty\"",
+          "target": "\"錯誤：「名稱模式」不能為空\""
         },
         {
-          "source": "'Error: \"New name\" could not be empty'",
-          "target": "'錯誤：「新名稱」不能為空'"
+          "source": "\"Error: \\\"New name\\\" could not be empty\"",
+          "target": "\"錯誤：「新名稱」不能為空\""
         },
         {
           "source": "`Are you sure? This will rename all the ${this.state.renameTasks.length} images matched the pattern.`",
           "target": "`確定要繼續嗎？這會重新命名符合模式的 ${this.state.renameTasks.length} 張圖片。`"
         },
         {
-          "source": "`Plugin loading: ${pkg.name} ${pkg.version} BUILD_ENV=${\"production\"}`",
-          "target": "`插件載入中：${pkg.name} ${pkg.version} BUILD_ENV=${\"production\"}`"
-        },
-        {
           "source": "`Failed to rename ${newName}: ${err}`",
           "target": "`無法重新命名 ${newName}：${err}`"
-        },
-        {
-          "source": "`Failed to rename ${newName}: no active editor`",
-          "target": "`無法重新命名 ${newName}：沒有目前使用中的編輯器`"
         },
         {
           "source": "`Renamed ${originName} to ${newName}`",
@@ -448,14 +902,6 @@
         {
           "source": "`Turn off this option if you don't want to see the notice when renaming images.\n\t\t\tNote that Obsidian may display a notice when a link has changed, this option cannot disable that.`",
           "target": "`若不想在重新命名圖片時看到通知，請啟用此選項。\n\t\t\t請注意，Obsidian 可能仍會在連結變更時顯示通知，此選項無法停用該通知。`"
-        },
-        {
-          "source": "`\nThe pattern indicates how the new name should be generated.\n\nAvailable variables:\n- {{fileName}}: name of the active file, without \".md\" extension.\n- {{imageNameKey}}: this variable is read from the markdown file's frontmatter, from the same key \"imageNameKey\".\n- {{DATE:$FORMAT}}: use \"$FORMAT\" to format the current date, \"$FORMAT\" must be a Moment.js format string, e.g. {{DATE:YYYY-MM-DD}}.\n\nHere are some examples from pattern to image names (repeat in sequence), variables: fileName = \"My note\", imageNameKey = \"foo\":\n- {{fileName}}: My note, My note-1, My note-2\n- {{imageNameKey}}: foo, foo-1, foo-2\n- {{imageNameKey}}-{{DATE:YYYYMMDD}}: foo-20220408, foo-20220408-1, foo-20220408-2\n`",
-          "target": "`\n此模式用來決定如何產生新名稱。\n\n可用變數：\n- {{fileName}}：目前檔案的名稱，不含「.md」副檔名。\n- {{imageNameKey}}：從 Markdown 檔案的 Frontmatter 讀取同名的「imageNameKey」欄位。\n- {{DATE:$FORMAT}}：使用「$FORMAT」格式化目前日期；格式必須是 Moment.js 格式字串，例如 {{DATE:YYYY-MM-DD}}。\n\n以下是模式轉換成圖片名稱的範例（依序重複），變數為 fileName =「My note」、imageNameKey =「foo」：\n- {{fileName}}：My note、My note-1、My note-2\n- {{imageNameKey}}：foo、foo-1、foo-2\n- {{imageNameKey}}-{{DATE:YYYYMMDD}}：foo-20220408、foo-20220408-1、foo-20220408-2\n`"
-        },
-        {
-          "source": "\"DEBUG is enabled\"",
-          "target": "\"已啟用除錯模式\""
         },
         {
           "source": "\"Batch rename embeded files\"",
@@ -522,10 +968,6 @@
           "target": "\"立即批次重新命名所有圖片（目前檔案）\""
         },
         {
-          "source": "\"Error: No active file found.\"",
-          "target": "\"錯誤：找不到目前使用中的檔案。\""
-        },
-        {
           "source": "\"Failed to batch rename images: the generated name is not meaningful\"",
           "target": "\"無法批次重新命名圖片：產生的名稱沒有意義\""
         },
@@ -544,10 +986,6 @@
         {
           "source": "\"New name\"",
           "target": "\"新名稱\""
-        },
-        {
-          "source": "\"Please input the new name for the image (without extension)\"",
-          "target": "\"請輸入圖片的新名稱（不含副檔名）\""
         },
         {
           "source": "\"Rename\"",
@@ -594,32 +1032,8 @@
           "target": "\"無法從目前檔案取得檔案快取\""
         },
         {
-          "source": "\"pasted image created\"",
-          "target": "\"已建立貼上的圖片\""
-        },
-        {
-          "source": "\"handleAllAttachments for file\"",
-          "target": "\"處理檔案的所有附件\""
-        },
-        {
-          "source": "\"excluded file by ext\"",
-          "target": "\"依副檔名排除檔案\""
-        },
-        {
           "source": "\"generated newName:\"",
           "target": "\"產生的新名稱：\""
-        },
-        {
-          "source": "\"deduplicated newName:\"",
-          "target": "\"去除重複後的新名稱：\""
-        },
-        {
-          "source": "\"replace text\"",
-          "target": "\"取代文字\""
-        },
-        {
-          "source": "\"current line -> replaced line\"",
-          "target": "\"目前行 → 取代後的行\""
         },
         {
           "source": "\"confirmedName:\"",
@@ -634,16 +1048,484 @@
           "target": "\"Frontmatter\""
         },
         {
-          "source": "\"sibling files\"",
-          "target": "\"同層檔案\""
-        },
-        {
           "source": "\"active file\"",
           "target": "\"目前檔案\""
         },
         {
-          "source": "\"doRename\"",
-          "target": "\"執行重新命名\""
+          "source": "\"Select all\"",
+          "target": "\"全部選取\""
+        },
+        {
+          "source": "\"Cursor at start\"",
+          "target": "\"游標置於開頭\""
+        },
+        {
+          "source": "\"Cursor at end\"",
+          "target": "\"游標置於結尾\""
+        },
+        {
+          "source": "\"Preview\"",
+          "target": "\"預覽\""
+        },
+        {
+          "source": "\"Convert supported images\"",
+          "target": "\"轉換支援的圖片\""
+        },
+        {
+          "source": "\"Use original name\"",
+          "target": "\"使用原始名稱\""
+        },
+        {
+          "source": "\"Cancel and delete\"",
+          "target": "\"取消並刪除\""
+        },
+        {
+          "source": "\"Filename only, without extension. Directory names, relative paths (such as folder/name or ../name), and absolute paths are not supported. Choose attachment locations in Obsidian Settings → Files and links.\"",
+          "target": "\"僅輸入不含副檔名的檔名。不支援目錄名稱、相對路徑（如 folder/name 或 ../name）或絕對路徑。附件位置請到 Obsidian「設定 → 檔案與連結」設定。\""
+        },
+        {
+          "source": "\"Share duplicate numbers between filename extensions in the attachment folder. Off by default. Existing conflicts are resolved only when those files are renamed.\"",
+          "target": "\"讓附件資料夾中不同副檔名的檔案共用重複編號。預設停用。既有的名稱衝突只會在重新命名那些檔案時處理。\""
+        },
+        {
+          "source": "\"Minimum digits for new duplicate numbers (1–12). Existing numbered filenames stay unchanged.\"",
+          "target": "\"新重複編號的最少位數（1–12）。既有的編號檔名保持不變。\""
+        },
+        {
+          "source": "\"Choose the caret or selection position in the rename prompt. Also applies when restoring the original name.\"",
+          "target": "\"選擇重新命名視窗中的游標或選取範圍位置。還原原始名稱時也會套用。\""
+        },
+        {
+          "source": "\"Skip automatic renaming when the attachment or its source note is in one of these vault-relative folders. One folder per line; subfolders are included. Manual batch commands are unaffected.\"",
+          "target": "\"附件或來源筆記位於這些儲存庫相對路徑的資料夾時，略過自動重新命名。每行一個資料夾，包含子資料夾。不影響手動批次指令。\""
+        },
+        {
+          "source": "\"Share duplicate numbers across extensions\"",
+          "target": "\"不同副檔名共用重複編號\""
+        },
+        {
+          "source": "\"Duplicate number minimum digits\"",
+          "target": "\"重複編號的最少位數\""
+        },
+        {
+          "source": "\"Rename input selection\"",
+          "target": "\"重新命名輸入框的選取位置\""
+        },
+        {
+          "source": "\"Excluded folders\"",
+          "target": "\"排除的資料夾\""
+        },
+        {
+          "source": "\"Preview matching files before renaming.\"",
+          "target": "\"請先預覽符合條件的檔案，再重新命名。\""
+        },
+        {
+          "source": "\"Open an editable Markdown note first.\"",
+          "target": "\"請先開啟可編輯的 Markdown 筆記。\""
+        },
+        {
+          "source": "\"This conversion command requires the editor transaction API available in Obsidian 0.13.0 or newer.\"",
+          "target": "\"此轉換指令需要 Obsidian 0.13.0 以上提供的編輯器交易 API。\""
+        },
+        {
+          "source": "\"No active Markdown file found.\"",
+          "target": "\"找不到目前使用中的 Markdown 檔案。\""
+        },
+        {
+          "source": "\"Invalid exclude extension pattern. Automatic attachment renaming is paused until it is corrected.\"",
+          "target": "\"排除副檔名的模式無效。自動重新命名附件已暫停，請先修正模式。\""
+        },
+        {
+          "source": "\"The captured insertion is invalid.\"",
+          "target": "\"擷取的插入內容無效。\""
+        },
+        {
+          "source": "\"The saved note does not match the expected link removal.\"",
+          "target": "\"已儲存的筆記與預期移除連結後的內容不符。\""
+        },
+        {
+          "source": "\"Disk changed; compensation is unsafe.\"",
+          "target": "\"磁碟內容已變更，無法安全地還原先前操作。\""
+        },
+        {
+          "source": "\"Attachment was verified moved to trash, but the note changed afterward. Check the note and vault trash.\"",
+          "target": "\"已確認附件移至垃圾桶，但筆記隨後發生變更。請檢查筆記與儲存庫垃圾桶。\""
+        },
+        {
+          "source": "\"Attachment retained; note unchanged or restored.\"",
+          "target": "\"已保留附件；筆記未變更或已還原。\""
+        },
+        {
+          "source": "\"Attachment retained, but its link could not be restored safely. Check the note.\"",
+          "target": "\"已保留附件，但無法安全地還原其連結。請檢查筆記。\""
+        },
+        {
+          "source": "\"Attachment trash outcome is uncertain; no trash retry was attempted. Check the vault trash and note.\"",
+          "target": "\"無法確定附件是否已移至垃圾桶，未再次嘗試。請檢查儲存庫垃圾桶與筆記。\""
+        },
+        {
+          "source": "\"The original attachment could not be verified at its captured path; trash was not attempted. Check the attachment and note.\"",
+          "target": "\"無法在原先擷取的路徑確認原始附件，未嘗試移至垃圾桶。請檢查附件與筆記。\""
+        },
+        {
+          "source": "\"Trash was attempted once. \"",
+          "target": "\"已嘗試移至垃圾桶一次。 \""
+        },
+        {
+          "source": "\"A note exceeds the 2 million character ownership-check limit.\"",
+          "target": "\"有筆記超過附件歸屬檢查的 200 萬字元上限。\""
+        },
+        {
+          "source": "\"This attachment name is outside the verified discard syntax.\"",
+          "target": "\"此附件名稱不符合已驗證的捨棄語法。\""
+        },
+        {
+          "source": "\"HTML-entity reference syntax is not supported for deletion checks.\"",
+          "target": "\"刪除檢查不支援含 HTML 實體的參照語法。\""
+        },
+        {
+          "source": "\"Invalid percent encoding prevents a complete reference check.\"",
+          "target": "\"百分比編碼無效，無法完成參照檢查。\""
+        },
+        {
+          "source": "\"Another mention or reference to this attachment exists.\"",
+          "target": "\"另有文字提及或參照此附件。\""
+        },
+        {
+          "source": "\"Unclosed or oversized frontmatter prevents a complete reference check.\"",
+          "target": "\"Frontmatter 未關閉或過大，無法完成參照檢查。\""
+        },
+        {
+          "source": "\"Invalid frontmatter prevents a complete reference check.\"",
+          "target": "\"Frontmatter 無效，無法完成參照檢查。\""
+        },
+        {
+          "source": "\"Excalidraw drawing containers are unsupported for deletion checks.\"",
+          "target": "\"刪除檢查不支援 Excalidraw 繪圖容器。\""
+        },
+        {
+          "source": "\"Deep frontmatter prevents a complete reference check.\"",
+          "target": "\"Frontmatter 巢狀層級過深，無法完成參照檢查。\""
+        },
+        {
+          "source": "\"A frontmatter value references this attachment.\"",
+          "target": "\"有 Frontmatter 值參照此附件。\""
+        },
+        {
+          "source": "\"Aliased/cyclic frontmatter prevents a complete reference check.\"",
+          "target": "\"Frontmatter 含別名或循環參照，無法完成參照檢查。\""
+        },
+        {
+          "source": "\"Math/comment extension syntax is unsupported for deletion checks.\"",
+          "target": "\"刪除檢查不支援數學式或註解的擴充語法。\""
+        },
+        {
+          "source": "\"Another wiki reference to this attachment exists.\"",
+          "target": "\"另有 Wiki 連結參照此附件。\""
+        },
+        {
+          "source": "\"Ambiguous wiki syntax prevents a complete reference check.\"",
+          "target": "\"Wiki 語法有歧義，無法完成參照檢查。\""
+        },
+        {
+          "source": "\"HTML/code/plugin syntax is unsupported for deletion checks.\"",
+          "target": "\"刪除檢查不支援 HTML、程式碼或插件語法。\""
+        },
+        {
+          "source": "\"URI/query reference syntax is unsupported for deletion checks.\"",
+          "target": "\"刪除檢查不支援 URI 或查詢參照語法。\""
+        },
+        {
+          "source": "\"Another Markdown reference to this attachment exists.\"",
+          "target": "\"另有 Markdown 連結參照此附件。\""
+        },
+        {
+          "source": "\"Requires a verified single-file paste/drop within 30 seconds; reused, multi-file and background attachments cannot be deleted here.\"",
+          "target": "\"必須是在 30 秒內經驗證的單一檔案貼上或拖放；無法在此刪除重複使用、多檔案或背景建立的附件。\""
+        },
+        {
+          "source": "\"Discard currently supports verified raster images with simple filenames only.\"",
+          "target": "\"捨棄功能目前僅支援經驗證且檔名單純的點陣圖片。\""
+        },
+        {
+          "source": "\"This editor does not provide the required save/transaction APIs.\"",
+          "target": "\"此編輯器未提供所需的儲存或交易 API。\""
+        },
+        {
+          "source": "\"The new insertion, source snapshot or image bytes could not be verified. Nothing will be deleted.\"",
+          "target": "\"無法驗證新插入內容、來源快照或圖片位元組。不會刪除任何內容。\""
+        },
+        {
+          "source": "\"Discard was already attempted. No automatic retry is allowed.\"",
+          "target": "\"已嘗試捨棄，不允許自動重試。\""
+        },
+        {
+          "source": "\"The captured source/editor changed or the prompt closed.\"",
+          "target": "\"擷取的來源或編輯器已變更，或提示視窗已關閉。\""
+        },
+        {
+          "source": "\"The attachment identity or bytes changed.\"",
+          "target": "\"附件的識別資訊或位元組已變更。\""
+        },
+        {
+          "source": "\"Vault has too many folders for discard verification.\"",
+          "target": "\"儲存庫的資料夾過多，無法進行捨棄驗證。\""
+        },
+        {
+          "source": "\"Vault has too many physical files for discard verification.\"",
+          "target": "\"儲存庫中的實體檔案過多，無法進行捨棄驗證。\""
+        },
+        {
+          "source": "\"Discard proof expired or changed. It is valid only for 30 seconds after one trusted paste/drop.\"",
+          "target": "\"捨棄驗證已過期或變更。驗證僅在一次可信任的貼上或拖放後 30 秒內有效。\""
+        },
+        {
+          "source": "\"This vault exceeds the 2000-file discard verification limit.\"",
+          "target": "\"此儲存庫超過捨棄驗證的 2000 個檔案上限。\""
+        },
+        {
+          "source": "\"Physical vault files differ from the indexed file list. Wait for indexing; unknown files cannot be ignored.\"",
+          "target": "\"儲存庫的實體檔案與索引檔案清單不同。請等待索引完成；不能忽略未知檔案。\""
+        },
+        {
+          "source": "\"The vault or insertion changed during verification.\"",
+          "target": "\"驗證期間，儲存庫或插入內容發生變更。\""
+        },
+        {
+          "source": "\"An open editor changed during verification.\"",
+          "target": "\"驗證期間，有已開啟的編輯器內容發生變更。\""
+        },
+        {
+          "source": "\"The vault file snapshot changed.\"",
+          "target": "\"儲存庫檔案快照已變更。\""
+        },
+        {
+          "source": "\"The original attachment could not be verified on disk.\"",
+          "target": "\"無法在磁碟上驗證原始附件。\""
+        },
+        {
+          "source": "\"The source is not saved at the verified snapshot yet. Wait for saving and retry with a new paste.\"",
+          "target": "\"來源尚未儲存為已驗證的快照。請等待儲存完成，再重新貼上後重試。\""
+        },
+        {
+          "source": "\"Physical vault contents changed during verification.\"",
+          "target": "\"驗證期間，儲存庫的實體內容發生變更。\""
+        },
+        {
+          "source": "\"Physical source changed during readback.\"",
+          "target": "\"讀回驗證時，實體來源已變更。\""
+        },
+        {
+          "source": "\"The source changed during disk readback.\"",
+          "target": "\"從磁碟讀回驗證時，來源已變更。\""
+        },
+        {
+          "source": "\"The original attachment is still present or trash completion cannot be verified.\"",
+          "target": "\"原始附件仍存在，或無法確認是否已完成移至垃圾桶。\""
+        },
+        {
+          "source": "\"Enter a filename only, without directory paths. Configure attachment locations in Obsidian Settings → Files and links.\"",
+          "target": "\"僅輸入檔名，不要包含目錄路徑。附件位置請到 Obsidian「設定 → 檔案與連結」設定。\""
+        },
+        {
+          "source": "\"Use a nonempty filename only; directory paths and parent segments are not supported.\"",
+          "target": "\"請輸入非空白的檔名；不支援目錄路徑或上層目錄片段。\""
+        },
+        {
+          "source": "\"A nonempty filename and extension are required.\"",
+          "target": "\"檔名與副檔名皆不可為空。\""
+        },
+        {
+          "source": "\"The filename contains characters or a reserved name that is not safe across supported platforms.\"",
+          "target": "\"檔名包含無法在各支援平台上安全使用的字元或保留名稱。\""
+        },
+        {
+          "source": "\"UUID generation requires 16 random bytes.\"",
+          "target": "\"產生 UUID 需要 16 個隨機位元組。\""
+        },
+        {
+          "source": "\"A previewed file moved or was replaced/deleted. Preview matching files again.\"",
+          "target": "\"預覽中的檔案已移動、被取代或刪除。請重新預覽符合條件的檔案。\""
+        },
+        {
+          "source": "\"Folder paths are not supported; preview filenames only.\"",
+          "target": "\"不支援資料夾路徑；請僅預覽檔名。\""
+        },
+        {
+          "source": "\"Too many protected regions to preview safely. Split the note before converting.\"",
+          "target": "\"受保護區段過多，無法安全預覽。請先拆分筆記，再進行轉換。\""
+        },
+        {
+          "source": "\"This command supports notes up to 2 million characters. Split the note before converting.\"",
+          "target": "\"此指令支援最多 200 萬字元的筆記。請先拆分筆記，再進行轉換。\""
+        },
+        {
+          "source": "\"This preview supports up to 1000 image references. Split the note before converting.\"",
+          "target": "\"此預覽最多支援 1000 個圖片參照。請先拆分筆記，再進行轉換。\""
+        },
+        {
+          "source": "\"Images inside tables or link labels are left unchanged\"",
+          "target": "\"表格或連結標籤中的圖片保持不變\""
+        },
+        {
+          "source": "\"Protected frontmatter, comment, math or HTML context\"",
+          "target": "\"位於受保護的 Frontmatter、註解、數學式或 HTML 區段\""
+        },
+        {
+          "source": "\"Only inline images with an empty label or numeric dimensions, without titles, are supported\"",
+          "target": "\"僅支援沒有標題，且標籤為空或為數字尺寸的行內圖片\""
+        },
+        {
+          "source": "\"Escaped or entity-containing targets are left unchanged\"",
+          "target": "\"含跳脫字元或實體的目標保持不變\""
+        },
+        {
+          "source": "\"Invalid URL encoding\"",
+          "target": "\"URL 編碼無效\""
+        },
+        {
+          "source": "\"Remote, fragment, query or unsupported target\"",
+          "target": "\"目標為遠端網址、片段、查詢，或不受支援的格式\""
+        },
+        {
+          "source": "\"Raw and decoded targets resolve to different files\"",
+          "target": "\"原始目標與解碼後的目標指向不同檔案\""
+        },
+        {
+          "source": "\"Target is not a resolved local image\"",
+          "target": "\"目標無法解析為本機圖片\""
+        },
+        {
+          "source": "\"Target cannot be represented safely as a wiki embed\"",
+          "target": "\"無法將目標安全地表示為 Wiki 嵌入連結\""
+        },
+        {
+          "source": "\"Convert Markdown image links to wiki embeds\"",
+          "target": "\"將 Markdown 圖片連結轉換為 Wiki 嵌入連結\""
+        },
+        {
+          "source": "\"Convert Markdown image links to wiki embeds (current note)\"",
+          "target": "\"將 Markdown 圖片連結轉換為 Wiki 嵌入連結（目前筆記）\""
+        },
+        {
+          "source": "\"Source frontmatter cannot be checked safely. Wait for indexing or correct the frontmatter.\"",
+          "target": "\"無法安全地檢查來源 Frontmatter。請等待索引完成，或修正 Frontmatter。\""
+        },
+        {
+          "source": "\"Source frontmatter cannot be checked safely. Correct the frontmatter first.\"",
+          "target": "\"無法安全地檢查來源 Frontmatter。請先修正 Frontmatter。\""
+        },
+        {
+          "source": "\"Canvas and Excalidraw drawing sources are excluded. Use an ordinary Markdown note.\"",
+          "target": "\"已排除 Canvas 與 Excalidraw 繪圖來源。請使用一般 Markdown 筆記。\""
+        },
+        {
+          "source": "\"Source metadata is not available yet. Wait for indexing and try again.\"",
+          "target": "\"來源的中繼資料尚未就緒。請等待索引完成後再試。\""
+        },
+        {
+          "source": "\"The original source note is no longer available.\"",
+          "target": "\"原始來源筆記已無法使用。\""
+        },
+        {
+          "source": "\"Cancel and Delete requires Obsidian 1.1.1+ and a verified new single-file paste/drop.\"",
+          "target": "\"「取消並刪除」需要 Obsidian 1.1.1 以上，以及經驗證的新單一檔案貼上或拖放。\""
+        },
+        {
+          "source": "\"The attachment was replaced or deleted before this rename.\"",
+          "target": "\"重新命名前，附件已被取代或刪除。\""
+        },
+        {
+          "source": "\"Enable Obsidian’s Automatically update internal links setting before renaming attachments, so shared references remain valid.\"",
+          "target": "\"重新命名附件前，請先啟用 Obsidian 的「自動更新內部連結」設定，以保持共用參照有效。\""
+        },
+        {
+          "source": "\"The attachment moved while this rename was waiting. Try again from its current location.\"",
+          "target": "\"等待重新命名期間，附件已移動。請從目前位置再試一次。\""
+        },
+        {
+          "source": "\"The note changed since preview. Cancel and run the command again.\"",
+          "target": "\"預覽後筆記已變更。請取消並重新執行指令。\""
+        },
+        {
+          "source": "\"An image changed since preview. Cancel and run the command again.\"",
+          "target": "\"預覽後圖片已變更。請取消並重新執行指令。\""
+        },
+        {
+          "source": "\"Cancel and Delete removes only this newly inserted link and moves the image into the vault .trash folder. Editor Undo does not restore the image. Verification expires 30 seconds after paste/drop; unsupported containers or shared references refuse deletion.\"",
+          "target": "\"「取消並刪除」只會移除這次新插入的連結，並將圖片移至儲存庫的 .trash 資料夾。編輯器的復原操作不會還原圖片。驗證會在貼上或拖放 30 秒後失效；不支援的容器或共用參照將拒絕刪除。\""
+        },
+        {
+          "source": "\"New attachment moved to vault .trash and its inserted link removed. Editor undo does not restore the file.\"",
+          "target": "\"已將新附件移至儲存庫的 .trash，並移除其插入連結。編輯器的復原操作不會還原檔案。\""
+        },
+        {
+          "source": "\"Skipped: \"",
+          "target": "\"已略過：\""
+        },
+        {
+          "source": "`\nThe pattern indicates how the new name should be generated.\n\nAvailable variables:\n- {{fileName}}: name of the active file, without \".md\" extension.\n- {{fileNameSlug}} (or {{FileNameSlug}}): lowercase note name with whitespace replaced by hyphens; Unicode is preserved.\n- {{attachmentName}} (or {{originalAttachmentFileName}}): attachment stem before this operation, without its extension.\n- {{nearestHeading}} (or {{headerName}}): nearest heading before the first reference to this attachment in the source note; empty if none.\n- {{UUID}}: a new UUID per attachment operation; {{HEX}} is the same UUID without hyphens.\n- {{dirName}}: name of the directory which contains the document (the root directory of vault results in an empty variable).\n- {{imageNameKey}}: this variable is read from the markdown file's frontmatter, from the same key \"imageNameKey\".\n- {{DATE:$FORMAT}}: use \"$FORMAT\" to format the current date, \"$FORMAT\" must be a Moment.js format string, e.g. {{DATE:YYYY-MM-DD}}.\n\nHere are some examples from pattern to image names (repeat in sequence), variables: fileName = \"My note\", imageNameKey = \"foo\":\n- {{fileName}}: My note, My note-1, My note-2\n- {{imageNameKey}}: foo, foo-1, foo-2\n- {{imageNameKey}}-{{DATE:YYYYMMDD}}: foo-20220408, foo-20220408-1, foo-20220408-2\n`",
+          "target": "`\n此模式用來決定如何產生新名稱。\n\n可用變數：\n- {{fileName}}：目前檔案的名稱，不含「.md」副檔名。\n- {{fileNameSlug}}（或 {{FileNameSlug}}）：將筆記名稱轉為小寫，空白改為連字號；保留 Unicode 字元。\n- {{attachmentName}}（或 {{originalAttachmentFileName}}）：此次操作前的附件名稱，不含副檔名。\n- {{nearestHeading}}（或 {{headerName}}）：來源筆記中此附件第一個參照前最近的標題；沒有則留空。\n- {{UUID}}：每次附件操作產生一個新 UUID；{{HEX}} 是移除連字號的同一個 UUID。\n- {{dirName}}：文件所在資料夾的名稱（儲存庫根目錄會得到空值）。\n- {{imageNameKey}}：從 Markdown 檔案的 Frontmatter 讀取同名的「imageNameKey」鍵值。\n- {{DATE:$FORMAT}}：以「$FORMAT」格式化目前日期；「$FORMAT」必須是 Moment.js 格式字串，例如 {{DATE:YYYY-MM-DD}}。\n\n以下是模式與圖片名稱的對照範例（依序重複），變數：fileName = \"My note\"，imageNameKey = \"foo\"：\n- {{fileName}}: My note, My note-1, My note-2\n- {{imageNameKey}}: foo, foo-1, foo-2\n- {{imageNameKey}}-{{DATE:YYYYMMDD}}: foo-20220408, foo-20220408-1, foo-20220408-2\n`"
+        },
+        {
+          "source": "`Physical file changed or is not indexed: ${file.path}`",
+          "target": "`實體檔案已變更或尚未建立索引：${file.path}`"
+        },
+        {
+          "source": "`Vault content exceeds the bounded discard scan size: ${file.path}`",
+          "target": "`儲存庫內容超過有限捨棄掃描的大小上限：${file.path}`"
+        },
+        {
+          "source": "`Physical raster changed during read: ${file.path}`",
+          "target": "`讀取期間，實體點陣圖片已變更：${file.path}`"
+        },
+        {
+          "source": "`Unverified raster/container content blocks deletion: ${file.path}`",
+          "target": "`未經驗證的點陣圖片或容器內容阻擋刪除：${file.path}`"
+        },
+        {
+          "source": "`Unsupported container blocks deletion: ${file.path}`",
+          "target": "`不支援的容器阻擋刪除：${file.path}`"
+        },
+        {
+          "source": "`Note is too large to verify: ${file.path}`",
+          "target": "`筆記過大，無法驗證：${file.path}`"
+        },
+        {
+          "source": "`Physical note changed during read: ${file.path}`",
+          "target": "`讀取期間，實體筆記已變更：${file.path}`"
+        },
+        {
+          "source": "`Unsaved competing editor blocks deletion: ${file.path}`",
+          "target": "`其他未儲存的編輯器內容阻擋刪除：${file.path}`"
+        },
+        {
+          "source": "`Physical file changed before deletion: ${record.path}`",
+          "target": "`刪除前，實體檔案已變更：${record.path}`"
+        },
+        {
+          "source": "`Batch canceled after ${completed} of ${tasks.length} files. Completed renames were kept.`",
+          "target": "`已在完成 ${completed} / ${tasks.length} 個檔案後取消批次作業。已完成的重新命名會保留。`"
+        },
+        {
+          "source": "`Renamed ${completed} of ${tasks.length} files; stopped at ${task.originalPath}: ${error}`",
+          "target": "`已重新命名 ${completed} / ${tasks.length} 個檔案；在 ${task.originalPath} 停止：${error}`"
+        },
+        {
+          "source": "`Invalid preview pattern: ${error}`",
+          "target": "`預覽模式無效：${error}`"
+        },
+        {
+          "source": "`${safe.length} supported conversions; ${this.plan.length-safe.length} skipped. Only this note changes, in one undoable editor transaction. Images are not renamed or moved.`",
+          "target": "`${safe.length} 個可轉換項目；${this.plan.length-safe.length} 個已略過。只會以一次可復原的編輯器交易變更目前筆記，不會重新命名或移動圖片。`"
+        },
+        {
+          "source": "`Attachment left unchanged or rename incomplete: ${error}`",
+          "target": "`附件保持不變或重新命名未完成：${error}`"
+        },
+        {
+          "source": "`Batch stopped: ${originalPath} moved or was replaced/deleted. Run the command again to review the current attachments.`",
+          "target": "`批次作業已停止：${originalPath} 已移動、被取代或刪除。請重新執行指令，檢查目前的附件。`"
         }
       ]
     },
@@ -652,14 +1534,14 @@
         {
           "type": "ObjectProperty",
           "name": "description",
-          "source": "Rename pasted images and all the other attchments added to the vault",
-          "target": "重新命名貼上的圖片，以及加入儲存庫的其他所有附件。"
+          "source": "Rename pasted images and other attachments added to the vault.",
+          "target": "重新命名貼上的圖片，以及加入儲存庫的其他附件。"
         }
       ],
       "regex": [
         {
-          "source": "\"description\": \"Rename pasted images and all the other attchments added to the vault\"",
-          "target": "\"description\": \"重新命名貼上的圖片，以及加入儲存庫的其他所有附件。\""
+          "source": "\"description\": \"Rename pasted images and other attachments added to the vault.\"",
+          "target": "\"description\": \"重新命名貼上的圖片，以及加入儲存庫的其他附件。\""
         }
       ]
     }
