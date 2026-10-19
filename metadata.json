@@ -666,13 +666,13 @@
         "id": "_Ymy9ltTy8AqN45eriH3xRiY1BLDCr31",
         "plugin": "obsidian-tasks-plugin",
         "language": "zh-tw",
-        "version": "8.5.0",
-        "supported_versions": "8.5.0",
+        "version": "8.6.0",
+        "supported_versions": "8.6.0",
         "title": "[zh-tw] Tasks",
         "description": "Tasks 繁體中文翻譯",
-        "hash": "44edf19444edf19444edf19444edf194",
+        "hash": "600d8239600d8239600d8239600d8239",
         "created_at": "2026-10-14T17:29:23.361Z",
-        "updated_at": "2026-10-14T17:29:23.361Z",
+        "updated_at": "2026-10-19T09:38:38.125Z",
         "type": "plugin"
     }
 ]
