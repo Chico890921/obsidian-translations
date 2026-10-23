@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "code-space",
-        "version": "2.6.2",
+        "version": "2.6.3",
         "title": "[zh-tw] Code Space",
         "description": "Code Space 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.6.2",
+        "supportedVersions": "2.6.3",
         "author": "Chico",
-        "updatedAt": 1791991020813
+        "updatedAt": 1792752814273
     },
     "dict": {
         "main.js": {
@@ -60,6 +60,282 @@
                     "name": "detail",
                     "source": "alias declaration",
                     "target": "別名宣告"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "abc def ghi jkl mno pqr stu",
+                    "target": "abc def ghi jkl mno pqr stu"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "This browser lacks typed array (Uint8Array) support which is required by `buffer` v5.x. Use `buffer` v4.x if you require old browser support.",
+                    "target": "This browser lacks typed array (Uint8Array) support which is required by `buffer` v5.x. Use `buffer` v4.x if you require old browser support."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Iconv-lite warning: decode()-ing strings is deprecated. Refer to https://github.com/ashtuchkin/iconv-lite/wiki/Use-Buffers-when-decoding",
+                    "target": "Iconv-lite warning: decode()-ing strings is deprecated. Refer to https://github.com/ashtuchkin/iconv-lite/wiki/Use-Buffers-when-decoding"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "anchorNode and/or focusNode are null",
+                    "target": "anchorNode and/or focusNode are null"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Parsing error: ",
+                    "target": "Parsing error: "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "[code-space] readBinary failed, falling back to vault.read",
+                    "target": "[code-space] readBinary failed, falling back to vault.read"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to decode file content:",
+                    "target": "Code Space: Failed to decode file content:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to convert file to UTF-8:",
+                    "target": "Code Space: Failed to convert file to UTF-8:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to open terminal panel:",
+                    "target": "Code Space: Failed to open terminal panel:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to save file:",
+                    "target": "Code Space: Failed to save file:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to reload file content:",
+                    "target": "Code Space: Failed to reload file content:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to rename file:",
+                    "target": "Failed to rename file:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to move file:",
+                    "target": "Failed to move file:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to delete file:",
+                    "target": "Failed to delete file:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to parse symbols:",
+                    "target": "Failed to parse symbols:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Outline: Failed to jump to line:",
+                    "target": "Code Outline: Failed to jump to line:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: terminal binary installation failed:",
+                    "target": "Code Space: terminal binary installation failed:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to copy code block to clipboard:",
+                    "target": "Code Space: Failed to copy code block to clipboard:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Code Space: Failed to reload plugin:",
+                    "target": "Code Space: Failed to reload plugin:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Failed to create file:",
+                    "target": "Failed to create file:"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "webglcontextlost event received",
+                    "target": "webglcontextlost event received"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "row is invalid. Race condition?",
+                    "target": "row is invalid. Race condition?"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "columns is null. Race condition?",
+                    "target": "columns is null. Race condition?"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Opening link blocked as opener could not be cleared",
+                    "target": "Opening link blocked as opener could not be cleared"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "async parser handler taking longer than 5000 ms",
+                    "target": "async parser handler taking longer than 5000 ms"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "webgl context not restored; firing onContextLoss",
+                    "target": "webgl context not restored; firing onContextLoss"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "webglcontextrestored event received",
+                    "target": "webglcontextrestored event received"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Code Space: Container not ready, retrying...",
+                    "target": "Code Space: Container not ready, retrying..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Code Embed: Failed to install observer for popout window",
+                    "target": "Code Embed: Failed to install observer for popout window"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "custom-search-row custom-search-replace-row",
+                    "target": "custom-search-row custom-search-replace-row"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "view-action code-space-encoding-badge clickable-icon",
+                    "target": "view-action code-space-encoding-badge clickable-icon"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "code-file-list code-file-list-window",
+                    "target": "code-file-list code-file-list-window"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "code-space-container code-space-code-block-editor",
+                    "target": "code-space-container code-space-code-block-editor"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "\"···\"",
+                    "target": "\"···\""
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'ƒ'",
+                    "target": "'ƒ'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'○'",
+                    "target": "'○'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'◌'",
+                    "target": "'◌'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'𝑥'",
+                    "target": "'𝑥'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'𝐶'",
+                    "target": "'𝐶'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'𝑡'",
+                    "target": "'𝑡'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'∪'",
+                    "target": "'∪'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'□'",
+                    "target": "'□'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'🔑︎'",
+                    "target": "'🔑︎'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "content",
+                    "source": "'▢'",
+                    "target": "'▢'"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "detail",
+                    "source": "Source path must be absolute",
+                    "target": "Source path must be absolute"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Document",
+                    "target": "Document"
                 }
             ],
             "regex": [
@@ -1102,6 +1378,26 @@
                 {
                     "source": "\"Junctions cannot target network (UNC) paths; use the symlink link type instead\"",
                     "target": "\"junction 不能指向網路（UNC）路徑；請改用 symlink 連結類型\""
+                },
+                {
+                    "source": "CMD_EDIT_CODE_BLOCK:\"Edit code block in Code Space\"",
+                    "target": "CMD_EDIT_CODE_BLOCK:\"在 Code Space 中編輯程式碼區塊\""
+                },
+                {
+                    "source": "MODAL_CODE_BLOCK_TITLE:\"Edit code block\"",
+                    "target": "MODAL_CODE_BLOCK_TITLE:\"編輯程式碼區塊\""
+                },
+                {
+                    "source": "MODAL_CODE_BLOCK_SAVE:\"Save\"",
+                    "target": "MODAL_CODE_BLOCK_SAVE:\"儲存\""
+                },
+                {
+                    "source": "MODAL_CODE_BLOCK_CANCEL:\"Cancel\"",
+                    "target": "MODAL_CODE_BLOCK_CANCEL:\"取消\""
+                },
+                {
+                    "source": "NOTICE_CODE_BLOCK_CHANGED:\"The code block in the note changed, so your edits were not applied. They were copied to the clipboard.\"",
+                    "target": "NOTICE_CODE_BLOCK_CHANGED:\"筆記中的程式碼區塊已變更，因此未套用你的編輯內容；已將編輯內容複製到剪貼簿。\""
                 }
             ]
         },
