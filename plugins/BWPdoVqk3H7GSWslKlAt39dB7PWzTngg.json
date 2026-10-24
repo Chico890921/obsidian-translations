@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "editing-toolbar",
-        "version": "4.1.10",
+        "version": "4.1.11",
         "title": "[zh-tw] Editing Toolbar",
         "description": "Editing Toolbar 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "4.1.10",
+        "supportedVersions": "4.1.11",
         "author": "Chico",
-        "updatedAt": 1791732556699
+        "updatedAt": 1792844891475
     },
     "dict": {
         "main.js": {
@@ -759,8 +759,8 @@
                     "target": "點擊可選取並複製文字"
                 },
                 {
-                    "source": "无法获取 Changelog 内容",
-                    "target": "無法取得 Changelog 內容"
+                    "source": "\"Empty changelog content\"",
+                    "target": "\"更新日誌內容為空\""
                 },
                 {
                     "source": "[📝 选中文本]",
@@ -4569,6 +4569,10 @@
                 {
                     "source": "C={...y,\"Separator\":",
                     "target": "C={...y,\"Extracted\":\"已擷取\",\"Separator\":"
+                },
+                {
+                    "source": "\"### Unable to load the changelog\\n\\nPlease [open the latest changelog here](https://github.com/PKM-er/obsidian-editing-toolbar/blob/master/CHANGELOG.md).\"",
+                    "target": "\"### 無法載入更新說明\\n\\n請[按這裡查看最新更新說明](https://github.com/PKM-er/obsidian-editing-toolbar/blob/master/CHANGELOG.md)。\""
                 }
             ]
         },
