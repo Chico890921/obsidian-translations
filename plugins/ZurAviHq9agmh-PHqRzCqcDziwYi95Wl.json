@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "side-notes",
-        "version": "0.5.5",
+        "version": "0.5.6",
         "title": "[zh-tw] Side-Notes",
         "description": "Side-Notes Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "0.5.5",
+        "supportedVersions": "0.5.6",
         "author": "Chico",
-        "updatedAt": 1791390346083
+        "updatedAt": 1793173415809
     },
     "dict": {
         "main.js": {
@@ -1134,6 +1134,10 @@
                 {
                     "source": "\"Must be greater than 0\"",
                     "target": "\"必須大於 0\""
+                },
+                {
+                    "source": "`Insert ${l} (${d}${p})`",
+                    "target": "`插入${l===\"margin note\"?\"頁邊註\":\"旁註\"}（${d===\"left\"?\"左側\":\"右側\"}${p?\"，實驗性\":\"\"}）`"
                 }
             ]
         },
