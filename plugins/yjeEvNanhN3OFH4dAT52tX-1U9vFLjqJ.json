@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "metadata": {
     "plugin": "obsidian-paste-image-rename",
-    "version": "1.7.2",
+    "version": "1.7.3",
     "title": "[zh-tw] Paste image rename",
     "description": "Paste image rename 繁體中文化與微調",
     "language": "zh-tw",
-    "supportedVersions": "1.7.2",
+    "supportedVersions": "1.7.3",
     "author": "Chico",
-    "updatedAt": 1792395943541
+    "updatedAt": 1793172270475
   },
   "dict": {
     "main.js": {
@@ -852,6 +852,198 @@
           "name": "addRibbonIcon",
           "source": "Batch rename all images instantly (in the current file)",
           "target": "立即批次重新命名所有圖片（目前檔案）"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Invalid or oversized compressed drawing.",
+          "target": "壓縮繪圖資料無效或超過大小上限。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Drawing dictionary exceeds the safety limit.",
+          "target": "繪圖解壓縮字典超過安全上限。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Truncated compressed drawing.",
+          "target": "壓縮繪圖資料不完整。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Invalid compressed drawing header.",
+          "target": "壓縮繪圖資料的標頭無效。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Invalid compressed drawing dictionary.",
+          "target": "繪圖解壓縮字典無效。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Decoded drawing exceeds the safety limit.",
+          "target": "解碼後的繪圖資料超過安全上限。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "A document is too large to verify shared drawing references.",
+          "target": "文件過大，無法驗證共用的繪圖參照。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Invalid numeric reference entity.",
+          "target": "參照中的數字字元實體無效。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Unsupported named HTML entity prevents reference verification.",
+          "target": "參照中含有不支援的 HTML 命名字元實體，無法驗證。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Invalid encoded reference prevents verification.",
+          "target": "參照的編碼無效，無法驗證。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "This image is already mentioned or shared by another part of the vault.",
+          "target": "儲存庫中的其他內容已提及或共用這張圖片。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Nested encoded HTML references cannot be verified safely.",
+          "target": "無法安全驗證巢狀編碼的 HTML 參照。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "This image is already referenced elsewhere.",
+          "target": "其他位置已參照這張圖片。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "This image is already linked elsewhere.",
+          "target": "其他位置已有連結指向這張圖片。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Plugin/file URI references cannot be verified safely.",
+          "target": "無法安全驗證插件或檔案 URI 參照。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Reference data is too deeply nested to verify.",
+          "target": "參照資料的巢狀層級過深，無法驗證。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Cyclic reference data cannot be verified.",
+          "target": "無法驗證含有循環參照的資料。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Unclosed frontmatter prevents reference verification.",
+          "target": "Frontmatter 尚未結束，無法驗證參照。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Drawing data cannot be decoded within the safety limit.",
+          "target": "無法在安全上限內解碼繪圖資料。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Malformed compressed drawing data prevents verification.",
+          "target": "壓縮繪圖資料格式錯誤，無法驗證。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The Excalidraw insertion or its editor changed. Paste a new image to try again.",
+          "target": "Excalidraw 的插入內容或編輯器已變更。請重新貼上圖片後重試。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Excalidraw drawing data changed.",
+          "target": "Excalidraw 繪圖資料已變更。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Vault is too large for the bounded shared-image check.",
+          "target": "儲存庫過大，超過共用圖片檢查的範圍上限。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Vault changed during shared-image verification. Paste again after saving.",
+          "target": "驗證共用圖片時，儲存庫已變更。請儲存後重新貼上。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Indexed files changed during verification.",
+          "target": "驗證期間，已建立索引的檔案已變更。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Pasted image bytes changed.",
+          "target": "貼上圖片的位元組已變更。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Textual vault data exceeds the shared-image check limit.",
+          "target": "儲存庫中的文字資料超過共用圖片檢查上限。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The source note is not saved at the verified insertion yet.",
+          "target": "來源筆記尚未儲存為已驗證的插入狀態。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "Another source editor contains different text.",
+          "target": "另一個來源編輯器的文字內容不同。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The verified paste belongs to a different note.",
+          "target": "已驗證的貼上內容屬於另一篇筆記。"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Error",
+          "source": "The verified paste belongs to a different attachment.",
+          "target": "已驗證的貼上內容屬於另一個附件。"
+        },
+        {
+          "type": "ObjectProperty",
+          "name": "reason",
+          "source": "Cancel and Delete is unavailable in Excalidraw notes.",
+          "target": "Excalidraw 筆記無法使用「取消並刪除」。"
         }
       ],
       "regex": [
@@ -1526,6 +1718,14 @@
         {
           "source": "`Batch stopped: ${originalPath} moved or was replaced/deleted. Run the command again to review the current attachments.`",
           "target": "`批次作業已停止：${originalPath} 已移動、被取代或刪除。請重新執行指令，檢查目前的附件。`"
+        },
+        {
+          "source": "\"Physical file changed or is not fully indexed: \"",
+          "target": "\"實體檔案已變更或尚未完成索引：\""
+        },
+        {
+          "source": "`Excalidraw image left unchanged: ${error}`",
+          "target": "`Excalidraw 圖片保持不變：${error}`"
         }
       ]
     },
