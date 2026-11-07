@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-outliner",
-        "version": "4.10.2",
+        "version": "4.12.0",
         "title": "[zh-tw] Outliner",
         "description": "Outliner Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "4.10.2",
+        "supportedVersions": "4.12.0",
         "author": "Chico",
-        "updatedAt": 1785322719124
+        "updatedAt": 1794071517377
     },
     "dict": {
         "main.js": {
@@ -71,7 +71,7 @@
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "Press the hotkey once to select the current list item. Press the hotkey twice to select the entire list.",
-                    "target": "按一次快捷鍵以選取目前清單項目。按兩次快捷鍵以選取整份清單。"
+                    "target": "重複按快捷鍵，依序擴大選取至項目內容、子清單、上層項目及整份清單，最後選取整份文件；不會縮小既有選取範圍。"
                 },
                 {
                     "type": "CallExpression",
@@ -258,6 +258,30 @@
                     "name": "error",
                     "source": "Unable to parse list: expected list item or note, got \"${line}\"",
                     "target": "無法解析清單：預期清單項目或註記，得到「${line}」"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Outdent empty items with Enter",
+                    "target": "按 Enter 減少空白項目的縮排"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When enabled, Enter outdents empty items or exits the list at the top level. When disabled, Enter keeps empty bullets and checkboxes and continues the list.",
+                    "target": "啟用時，按 Enter 會減少空白項目的縮排；若已在最外層，則離開清單。停用時會保留空白項目符號與核取方塊，繼續新增清單項目。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-expand selection to full list items",
+                    "target": "自動擴大選取至完整清單項目"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When selecting across multiple list items, include their full content and children. Selections within one item stay unchanged.",
+                    "target": "跨多個清單項目選取時，會一併選取完整內容與子項目。在單一項目內的選取範圍則維持不變。"
                 }
             ],
             "regex": [
@@ -314,8 +338,8 @@
                     "target": "new obsidian.Notice(`無法移動此項目。移動期間頁面內容已變更。`, 5000);"
                 },
                 {
-                    "source": "new obsidian.Notice(`Unable to ${type} because folding is disabled. Please enable \"Fold indent\" in Obsidian settings.`, 5000);",
-                    "target": "new obsidian.Notice(`無法摺疊或展開，因為摺疊功能已停用。請在 Obsidian 設定中啟用「摺疊縮排」。`, 5000);"
+                    "source": "`Unable to ${type} because folding is disabled. Please enable \"Fold indent\" in Obsidian settings.`",
+                    "target": "`無法${type===\"fold\"?\"摺疊\":\"展開\"}，因為摺疊功能已停用。請在 Obsidian 設定中啟用「摺疊縮排」。`"
                 },
                 {
                     "source": "setName(\"Stick the cursor to the content\")",
@@ -367,7 +391,7 @@
                 },
                 {
                     "source": "setDesc(\"Press the hotkey once to select the current list item. Press the hotkey twice to select the entire list.\")",
-                    "target": "setDesc(\"按一次快捷鍵以選取目前清單項目。按兩次快捷鍵以選取整份清單。\")"
+                    "target": "setDesc(\"重複按快捷鍵，依序擴大選取至項目內容、子清單、上層項目及整份清單，最後選取整份文件；不會縮小既有選取範圍。\")"
                 },
                 {
                     "source": "setName(\"Improve the style of your lists\")",
