@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "editing-toolbar",
-        "version": "4.1.11",
+        "version": "4.1.12",
         "title": "[zh-tw] Editing Toolbar",
         "description": "Editing Toolbar 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "4.1.11",
+        "supportedVersions": "4.1.12",
         "author": "Chico",
-        "updatedAt": 1792844891475
+        "updatedAt": 1794069097774
     },
     "dict": {
         "main.js": {
@@ -4573,6 +4573,10 @@
                 {
                     "source": "\"### Unable to load the changelog\\n\\nPlease [open the latest changelog here](https://github.com/PKM-er/obsidian-editing-toolbar/blob/master/CHANGELOG.md).\"",
                     "target": "\"### 無法載入更新說明\\n\\n請[按這裡查看最新更新說明](https://github.com/PKM-er/obsidian-editing-toolbar/blob/master/CHANGELOG.md)。\""
+                },
+                {
+                    "source": "C={...y,",
+                    "target": "C={...y,\"Tap to accept\":\"點按接受補全\","
                 }
             ]
         },
