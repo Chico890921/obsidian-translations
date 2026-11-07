@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "ink",
-        "version": "0.6.1",
+        "version": "0.6.2",
         "title": "[zh-tw] Ink",
         "description": "Ink 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.6.1",
+        "supportedVersions": "0.6.2",
         "author": "Chico",
-        "updatedAt": 1792394882460
+        "updatedAt": 1794071133428
     },
     "dict": {
         "main.js": {
@@ -48,12 +48,6 @@
                     "name": "setText",
                     "source": "\"Ink: new handwriting section\"",
                     "target": "「Ink：新增手寫區塊」"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setText",
-                    "source": "These can be added too and can be resized right in your Markdown file. Use the purple lock icon to save framing, or the standard lock icon to save the drawing but revert the framing.",
-                    "target": "也可以加入繪圖區塊，並直接在 Markdown 檔案中調整大小。使用紫色鎖頭圖示可儲存取景範圍；一般鎖頭圖示則會儲存繪圖，但還原取景範圍。"
                 },
                 {
                     "type": "CallExpression",
@@ -142,8 +136,8 @@
                 {
                     "type": "CallExpression",
                     "name": "setButtonText",
-                    "source": "View recent changes",
-                    "target": "查看近期變更"
+                    "source": "Recent changes...",
+                    "target": "近期變更..."
                 },
                 {
                     "type": "ObjectProperty",
@@ -814,8 +808,8 @@
                 {
                     "type": "CallExpression",
                     "name": "setButtonText",
-                    "source": "Rewatch welcome tips",
-                    "target": "重新觀看歡迎提示"
+                    "source": "Welcome tips...",
+                    "target": "歡迎提示..."
                 },
                 {
                     "type": "CallExpression",
@@ -922,8 +916,8 @@
                 {
                     "type": "CallExpression",
                     "name": "setText",
-                    "source": "Drawing sections...",
-                    "target": "繪圖區塊..."
+                    "source": "Other sections...",
+                    "target": "其他區塊..."
                 },
                 {
                     "type": "CallExpression",
@@ -1436,12 +1430,6 @@
                     "target": "其他應用程式"
                 },
                 {
-                    "type": "VariableDeclarator",
-                    "name": "HANDWRITING_TRANSCRIPTION_TOO_LONG_NOTICE",
-                    "source": "This file can't be transcribed currently because it is too long. This will be fixed in a future update to Ink.",
-                    "target": "此檔案過長，目前無法轉錄。未來的 Ink 更新將修正此限制。"
-                },
-                {
                     "type": "ObjectProperty",
                     "name": "message",
                     "source": "Insufficient Almost Useful credits",
@@ -1522,38 +1510,14 @@
                 {
                     "type": "CallExpression",
                     "name": "setName",
-                    "source": "Processing your data",
-                    "target": "資料處理方式"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": "When Ink transcribes handwriting, your Ink SVG is sent over ",
-                    "target": "Ink 將手寫內容轉成文字時，你的 Ink SVG 會透過 "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": " from your app to ",
-                    "target": " 從應用程式傳送至 "
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": "'s servers, then to ",
-                    "target": " 的伺服器，再傳送至 "
+                    "source": "How your data flows",
+                    "target": "資料傳輸流程"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setText",
-                    "source": "Almost Useful does not store the SVG or transcript",
-                    "target": "Almost Useful 在處理完成後不會於其伺服器上保留 SVG 或轉錄文字"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": " on its servers after processing.",
-                    "target": "。"
+                    "source": "Almost Useful does not store the SVG or transcript on its servers after processing.",
+                    "target": "Almost Useful 在處理完成後，不會於伺服器上保留 SVG 或轉錄文字。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1684,8 +1648,8 @@
                 {
                     "type": "CallExpression",
                     "name": "setName",
-                    "source": "Automatically transcribe drawings",
-                    "target": "自動將繪圖轉成文字"
+                    "source": "Automatically describe/transcribe drawings",
+                    "target": "自動描述／轉錄繪圖"
                 },
                 {
                     "type": "CallExpression",
@@ -1720,8 +1684,8 @@
                 {
                     "type": "CallExpression",
                     "name": "setText",
-                    "source": "Writing and drawing embeds can be auto-transcribed through an Almost Useful account at almostuseful.xyz.",
-                    "target": "透過 almostuseful.xyz 的 Almost Useful 帳號，可以自動將手寫與繪圖嵌入區塊轉成文字。"
+                    "source": "Writing embeds can be auto-transcribed, and drawing embeds can be automatically described — including any writing in the drawing — through an Almost Useful account at almostuseful.xyz.",
+                    "target": "透過 almostuseful.xyz 的 Almost Useful 帳號，可以自動將手寫嵌入區塊轉成文字，也能自動描述繪圖嵌入區塊並辨識其中的文字。"
                 },
                 {
                     "type": "CallExpression",
@@ -1798,44 +1762,38 @@
                 {
                     "type": "CallExpression",
                     "name": "setText",
-                    "source": "Changes in Ink v0.6.1",
-                    "target": "Ink v0.6.1 的變更"
+                    "source": "Changes in Ink v0.6.2",
+                    "target": "Ink v0.6.2 的變更"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setText",
-                    "source": "Handwriting transcriptions available to all (requires an Almost Useful account).",
-                    "target": "所有使用者皆可使用手寫轉文字（需要 Almost Useful 帳號）。"
+                    "source": "Trace handwriting and drawings from photos.",
+                    "target": "從照片擷取手寫與繪圖筆跡。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setText",
-                    "source": "Fuller full screen mode.",
-                    "target": "更完整的全螢幕模式。"
+                    "source": "Batch transcribe ink files.",
+                    "target": "批次將筆跡檔案轉成文字。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setText",
-                    "source": "Better selections and transformations.",
-                    "target": "改善選取與變形操作。"
+                    "source": "Very long handwriting can now be transcribed.",
+                    "target": "現在也能轉錄超長手寫內容。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "setText",
-                    "source": "High contrast mode.",
-                    "target": "高對比模式。"
+                    "source": "Enhanced writing selections.",
+                    "target": "改善手寫內容的選取操作。"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "text",
                     "source": "Create account",
                     "target": "建立帳號"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "appendText",
-                    "source": ", which passes it to the AI model provider to read it. The transcript is returned to your app via the same route and stored in the SVG file as metadata and in all Markdown notes it is embedded in.",
-                    "target": "，由它轉交給 AI 模型供應商辨識。轉錄文字會循相同路徑回傳至應用程式，儲存為 SVG 檔案的中繼資料，並寫入所有嵌入該檔案的 Markdown 筆記。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1884,6 +1842,546 @@
                     "name": "page-menu.submenu.delete",
                     "source": "Delete",
                     "target": "Delete"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Drawings:",
+                    "target": "繪圖："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Trace photos:",
+                    "target": "照片筆跡擷取："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "\"Ink: Insert handwriting/drawing from photos\"",
+                    "target": "\"Ink: 從照片插入手寫／繪圖\""
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Handwriting transcription...",
+                    "target": "手寫轉文字..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "An optional Almost Useful account provides a subscription service for transcribing your handwriting into searchable text.",
+                    "target": "可選擇註冊 Almost Useful 帳號，訂閱將手寫內容轉成可搜尋文字的服務。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Bugfixes.",
+                    "target": "錯誤修正。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "AI credits are running low",
+                    "target": "AI 點數即將用完"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Describing and transcribing a drawing requires an Almost Useful account. Link your account in Ink's settings.",
+                    "target": "描述繪圖與辨識其中的文字需要 Almost Useful 帳號。請在 Ink 設定中連結帳號。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Nothing to describe or transcribe",
+                    "target": "沒有可描述或轉錄的內容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Batch transcribe",
+                    "target": "批次轉錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Transcribe writing or drawings across the whole vault. Files queue up and run one at a time.",
+                    "target": "將整個儲存庫中的手寫或繪圖轉成文字。檔案會加入佇列，依序處理。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Untranscribed Only",
+                    "target": "僅轉錄尚未轉錄的檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Re-transcribe All",
+                    "target": "全部重新轉錄"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "When you lock a drawing embed or close a dedicated drawing view, queue it automatically. The AI describes what is in the drawing and transcribes any writing in it. Describe/transcribe in the drawing's menu always stays available.",
+                    "target": "鎖定繪圖嵌入區塊或關閉專用繪圖檢視時，會自動加入佇列。AI 會描述繪圖內容並辨識其中的文字。你隨時都能從繪圖選單手動描述或轉錄。"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "When you lock a writing embed or close a dedicated writing view, queue the writing file to be transcribed automatically. Manual Transcribing in the ink file's menu always stays available.",
+                    "target": "鎖定手寫嵌入區塊或關閉專用手寫檢視時，會將手寫檔案加入佇列，自動轉成文字。你隨時都能從筆跡檔案選單手動轉錄。"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "Describing and transcribing a drawing requires an Almost Useful account. Link your account above.",
+                    "target": "描述繪圖與辨識其中的文字需要 Almost Useful 帳號。請在上方連結帳號。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No description or transcript to copy",
+                    "target": "沒有可複製的描述或轉錄文字"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Description/transcript copied to clipboard",
+                    "target": "已將描述／轉錄文字複製到剪貼簿"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Copy description/transcript",
+                    "target": "複製描述／轉錄文字"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Could not find this embed in the note. Remove the embed line manually.",
+                    "target": "在筆記中找不到此嵌入區塊。請手動移除嵌入該區塊的那一行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Create ink from photos",
+                    "target": "從照片建立筆跡"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Assign all as writing",
+                    "target": "全部設為手寫"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Assign all as drawing",
+                    "target": "全部設為繪圖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Take photo",
+                    "target": "拍照"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Use the camera to capture a page now.",
+                    "target": "使用相機拍攝頁面。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Choose photo",
+                    "target": "選擇照片"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Pick one or more images already on this device.",
+                    "target": "選擇此裝置上的一張或多張圖片。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Paste photo",
+                    "target": "貼上照片"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Add an image copied to the clipboard.",
+                    "target": "加入已複製到剪貼簿的圖片。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Convert all",
+                    "target": "全部轉換"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Copy a photo first, then paste it here with Cmd+V or Ctrl+V.",
+                    "target": "請先複製照片，再按 Cmd+V 或 Ctrl+V 貼到這裡。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Convert this photo to",
+                    "target": "將這張照片轉換為"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Adjust page processing",
+                    "target": "調整頁面處理"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Adjust image processing",
+                    "target": "調整圖片處理"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Pulls the paper toward a neutral grey.",
+                    "target": "將紙張顏色調整為中性灰色。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Colour",
+                    "target": "色彩"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Pulls the paper and the pen apart.",
+                    "target": "提高紙張與筆跡的對比。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Contrast",
+                    "target": "對比"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "How much faint pen is kept. Higher keeps lighter strokes.",
+                    "target": "設定要保留多少淡色筆跡。數值越高，越能保留較淡的筆畫。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Ink sensitivity",
+                    "target": "筆跡靈敏度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Removes small isolated speckles of paper and margin noise.",
+                    "target": "移除紙張上的零散小斑點與頁邊雜訊。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Noise cleanup",
+                    "target": "雜訊清除"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Already converted",
+                    "target": "已轉換"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Converting photos",
+                    "target": "正在轉換照片"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Almost Useful server",
+                    "target": "Almost Useful 伺服器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Server",
+                    "target": "伺服器"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert handwriting/drawing from photos",
+                    "target": "從照片插入手寫／繪圖"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltipText",
+                    "source": "This device, where Ink sends the handwriting SVG from.",
+                    "target": "此裝置，Ink 會從這裡傳送手寫 SVG。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltipText",
+                    "source": "Almost Useful's servers. The SVG passes through here and is not kept.",
+                    "target": "Almost Useful 的伺服器。SVG 會經過這裡，但不會保留。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltipText",
+                    "source": "OpenRouter passes the SVG to the AI model provider to read the handwriting. This is based on the backend setup at the time this version of the plugin was released. Setup may be slightly different in newer versions.",
+                    "target": "OpenRouter 會將 SVG 轉交給 AI 模型供應商辨識手寫內容。這是此外掛版本發布時的後端配置，較新版本的配置可能略有不同。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltipText",
+                    "source": "The transcript passes back through Almost Useful's servers and is not kept there.",
+                    "target": "轉錄文字會經由 Almost Useful 的伺服器回傳，但不會保留在該伺服器上。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "tooltipText",
+                    "source": "The transcript returns here and is saved in the SVG file and in Markdown notes it is embedded in.",
+                    "target": "轉錄文字會回傳至此裝置，並儲存在 SVG 檔案及嵌入該檔案的 Markdown 筆記中。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "primaryLabel",
+                    "source": "View account",
+                    "target": "查看帳號"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Enter an http or https address such as http://localhost:3000",
+                    "target": "請輸入 http 或 https 網址，例如 http://localhost:3000"
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "name": "RFe",
+                    "source": "This file is too large to transcribe or describe. Try splitting it into separate writing or drawing files.",
+                    "target": "此檔案過大，無法轉錄或描述。請嘗試拆分成多個手寫或繪圖檔案。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Writing file has no source photo",
+                    "target": "手寫檔案沒有來源照片"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Source photo file is missing",
+                    "target": "找不到來源照片檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Ooe",
+                    "source": "Transcribe all writing",
+                    "target": "轉錄所有手寫檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Ooe",
+                    "source": "Transcribe all drawings",
+                    "target": "轉錄所有繪圖檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setStage",
+                    "source": "Nothing needed a transcript.",
+                    "target": "沒有需要轉錄的檔案。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Ore",
+                    "source": "There was an error accessing the note's folder. Placing the new file in the vault's root instead.",
+                    "target": "存取筆記所在資料夾時發生錯誤。將改為把新檔案放在儲存庫根目錄。"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "o",
+                    "source": "Show photo",
+                    "target": "顯示照片"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "alt",
+                    "source": "Handwriting source photo",
+                    "target": "手寫來源照片"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "z",
+                    "source": "Describe/transcribe",
+                    "target": "描述／轉錄"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "z",
+                    "source": "Update description/transcript",
+                    "target": "更新描述／轉錄文字"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Illumination flatten destination must match the source size",
+                    "target": "光照校正的目標尺寸必須與來源相同"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Could not flatten page lighting",
+                    "target": "無法校正頁面光照"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Could not create canvas for photo trace",
+                    "target": "無法建立照片筆跡擷取畫布"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Could not read the photo",
+                    "target": "無法讀取照片"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Could not paint the page photo",
+                    "target": "無法繪製頁面照片"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Could not scale the page photo",
+                    "target": "無法縮放頁面照片"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Could not build the thumbnail preview",
+                    "target": "無法建立縮圖預覽"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createElement",
+                    "source": "Converted",
+                    "target": "已轉換"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Yp",
+                    "source": "Refine images",
+                    "target": "微調圖片"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "func",
+                    "source": "Photo convert was cancelled",
+                    "target": "已取消照片轉換"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Photo worker did not return a warped page",
+                    "target": "照片處理程序未回傳校正後的頁面"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Photo worker did not return ink strokes",
+                    "target": "照片處理程序未回傳筆畫"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Photo worker did not return a preview",
+                    "target": "照片處理程序未回傳預覽"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Photo trace timed out",
+                    "target": "照片筆跡擷取逾時"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addRotateButton",
+                    "source": "Rotate left",
+                    "target": "向左旋轉"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addRotateButton",
+                    "source": "Rotate right",
+                    "target": "向右旋轉"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Yp",
+                    "source": "Thumbnails",
+                    "target": "縮圖"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Yp",
+                    "source": "Prev image",
+                    "target": "上一張圖片"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Yp",
+                    "source": "Next image",
+                    "target": "下一張圖片"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Could not prepare photo for saving",
+                    "target": "無法準備要儲存的照片"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Photo is too large to save",
+                    "target": "照片過大，無法儲存"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Error",
+                    "source": "Could not encode JPEG",
+                    "target": "無法編碼為 JPEG"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "initialStage",
+                    "source": "Preparing the photos…",
+                    "target": "正在準備照片..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setOptionPair",
+                    "source": "Production",
+                    "target": "正式環境"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setOptionPair",
+                    "source": "Custom",
+                    "target": "自訂"
                 }
             ],
             "regex": [
@@ -1916,8 +2414,8 @@
                     "target": "\"完成編輯\""
                 },
                 {
-                    "source": "const notFoundLabel=props.embedKind===\"drawing\"?\"Drawing\":\"Writing\"",
-                    "target": "const notFoundLabel=props.embedKind===\"drawing\"?\"繪圖\":\"手寫\""
+                    "source": "_=e.embedKind===\"drawing\"?\"Drawing\":\"Writing\"",
+                    "target": "_=e.embedKind===\"drawing\"?\"繪圖\":\"手寫\""
                 },
                 {
                     "source": "\"Writing file not found: \"",
@@ -1952,44 +2450,60 @@
                     "target": "console.warn(\"中繼資料中的檔案類型不受支援或缺失\""
                 },
                 {
-                    "source": "this.createStat(statsEl,\"0\",\"remaining\")",
-                    "target": "this.createStat(statsEl,\"0\",\"剩餘\")"
+                    "source": "this.createStat(o,\"0\",\"remaining\")",
+                    "target": "this.createStat(o,\"0\",\"剩餘\")"
                 },
                 {
-                    "source": "this.createStat(statsEl,\"0\",\"found\")",
-                    "target": "this.createStat(statsEl,\"0\",\"已找到\")"
+                    "source": "this.createStat(o,\"0\",\"found\")",
+                    "target": "this.createStat(o,\"0\",\"已找到\")"
                 },
                 {
-                    "source": "this.renderList(sectionEl,\"Notes:\",visiblePaths)",
-                    "target": "this.renderList(sectionEl,\"筆記：\",visiblePaths)"
+                    "source": "this.renderList(o,\"Notes:\",l)",
+                    "target": "this.renderList(o,\"筆記：\",l)"
                 },
                 {
-                    "source": "this.createStat(statsEl,\"0\",\"updated\")",
-                    "target": "this.createStat(statsEl,\"0\",\"已更新\")"
+                    "source": "this.createStat(i,\"0\",\"updated\")",
+                    "target": "this.createStat(i,\"0\",\"已更新\")"
                 },
                 {
-                    "source": "this.createStat(statsEl,String(notesToUpdate),\"remaining\")",
-                    "target": "this.createStat(statsEl,String(notesToUpdate),\"剩餘\")"
+                    "source": "this.createStat(i,String(o),\"remaining\")",
+                    "target": "this.createStat(i,String(o),\"剩餘\")"
                 },
                 {
-                    "source": "this.createStat(statsEl,\"0\",\"failed\")",
-                    "target": "this.createStat(statsEl,\"0\",\"失敗\")"
+                    "source": "this.createStat(l,String(a),\"remaining\")",
+                    "target": "this.createStat(l,String(a),\"剩餘\")"
                 },
                 {
-                    "source": "this.createStat(statsEl,\"0\",\"converted\")",
-                    "target": "this.createStat(statsEl,\"0\",\"已轉換\")"
+                    "source": "this.createStat(i,\"0\",\"failed\")",
+                    "target": "this.createStat(i,\"0\",\"失敗\")"
                 },
                 {
-                    "source": "this.createStat(statsEl,String(totalSteps),\"remaining\")",
-                    "target": "this.createStat(statsEl,String(totalSteps),\"剩餘\")"
+                    "source": "this.createStat(l,\"0\",\"failed\")",
+                    "target": "this.createStat(l,\"0\",\"失敗\")"
                 },
                 {
-                    "source": "this.createStat(statsEl,\"0\",\"skipped\")",
-                    "target": "this.createStat(statsEl,\"0\",\"已略過\")"
+                    "source": "this.createStat(o,\"0\",\"failed\")",
+                    "target": "this.createStat(o,\"0\",\"失敗\")"
                 },
                 {
-                    "source": "this.createStat(statsEl,String(this.scanResult.tldrawSvgFiles.length+this.scanResult.affectedNotes.length),\"remaining\")",
-                    "target": "this.createStat(statsEl,String(this.scanResult.tldrawSvgFiles.length+this.scanResult.affectedNotes.length),\"剩餘\")"
+                    "source": "this.createStat(l,\"0\",\"converted\")",
+                    "target": "this.createStat(l,\"0\",\"已轉換\")"
+                },
+                {
+                    "source": "this.createStat(o,\"0\",\"converted\")",
+                    "target": "this.createStat(o,\"0\",\"已轉換\")"
+                },
+                {
+                    "source": "this.createStat(l,\"0\",\"skipped\")",
+                    "target": "this.createStat(l,\"0\",\"已略過\")"
+                },
+                {
+                    "source": "this.createStat(o,\"0\",\"skipped\")",
+                    "target": "this.createStat(o,\"0\",\"已略過\")"
+                },
+                {
+                    "source": "this.createStat(o,String(this.scanResult.tldrawSvgFiles.length+this.scanResult.affectedNotes.length),\"remaining\")",
+                    "target": "this.createStat(o,String(this.scanResult.tldrawSvgFiles.length+this.scanResult.affectedNotes.length),\"剩餘\")"
                 },
                 {
                     "source": "\"Enable drawing with finger\"",
@@ -2036,56 +2550,56 @@
                     "target": "\"將舊版 SVG 檔案就地轉換為最新格式，並視需要更新筆記中繪圖嵌入區塊的取景範圍。\""
                 },
                 {
-                    "source": "`Convert to ${label}`",
-                    "target": "`轉換為${label}`"
+                    "source": "`Convert to ${n}`",
+                    "target": "`轉換為${n}`"
                 },
                 {
-                    "source": "`Also move file to ${destFolder}`",
-                    "target": "`同時將檔案移至 ${destFolder}`"
+                    "source": "`Also move file to ${a}`",
+                    "target": "`同時將檔案移至 ${a}`"
                 },
                 {
-                    "source": "`Embedded in ${totalCount} note${totalCount!==1?\"s\":\"\"} (including this note and ${otherCount} other${otherCount!==1?\"s\":\"\"}). Converting will update all ${totalCount} embeds.`",
-                    "target": "`已嵌入 ${totalCount} 則筆記（包含這則筆記及其他 ${otherCount} 則）。轉換時會更新全部 ${totalCount} 個嵌入區塊。`"
+                    "source": "`Embedded in ${r} note${r!==1?\"s\":\"\"} (including this note and ${s} other${s!==1?\"s\":\"\"}). Converting will update all ${r} embeds.`",
+                    "target": "`已嵌入 ${r} 則筆記（包含這則筆記及其他 ${s} 則）。轉換時會更新全部 ${r} 個嵌入區塊。`"
                 },
                 {
-                    "source": "`Embedded in this note only. Converting will update this embed to ${typeLabel}.`",
-                    "target": "`僅嵌入這則筆記。轉換時會將此嵌入區塊更新為${typeLabel}。`"
+                    "source": "`Embedded in this note only. Converting will update this embed to ${i}.`",
+                    "target": "`僅嵌入這則筆記。轉換時會將此嵌入區塊更新為${i}。`"
                 },
                 {
-                    "source": "`Embedded in ${totalCount} other note${totalCount!==1?\"s\":\"\"}. Converting will update all of them.`",
-                    "target": "`已嵌入其他 ${totalCount} 則筆記。轉換時會全部更新。`"
+                    "source": "`Embedded in ${r} other note${r!==1?\"s\":\"\"}. Converting will update all of them.`",
+                    "target": "`已嵌入其他 ${r} 則筆記。轉換時會全部更新。`"
                 },
                 {
-                    "source": "`Embedded in ${totalCount} note${totalCount!==1?\"s\":\"\"}. Converting will update all embeds to ${typeLabel}.`",
-                    "target": "`已嵌入 ${totalCount} 則筆記。轉換時會將所有嵌入區塊更新為${typeLabel}。`"
+                    "source": "`Embedded in ${r} note${r!==1?\"s\":\"\"}. Converting will update all embeds to ${i}.`",
+                    "target": "`已嵌入 ${r} 則筆記。轉換時會將所有嵌入區塊更新為${i}。`"
                 },
                 {
-                    "source": "`\\u2026and ${listPaths.length-EMBED_LIST_CAP} more.`",
-                    "target": "`…以及另外 ${listPaths.length-EMBED_LIST_CAP} 個。`"
+                    "source": "`\\u2026and ${a.length-hY} more.`",
+                    "target": "`…以及另外 ${a.length-hY} 個。`"
                 },
                 {
-                    "source": "`Created and converted a copy to ${typeLabel} at ${result.finalFile.path}. ${noteCount} note${noteCount!==1?\"s\":\"\"} updated. The original file was not changed.`",
-                    "target": "`已建立並轉換為${typeLabel}的副本，儲存至 ${result.finalFile.path}，更新了 ${noteCount} 則筆記。原始檔案未變動。`"
+                    "source": "`Created and converted a copy to ${o} at ${r.finalFile.path}. ${i} note${i!==1?\"s\":\"\"} updated. The original file was not changed.`",
+                    "target": "`已建立並轉換為${o}的副本，儲存至 ${r.finalFile.path}，更新了 ${i} 則筆記。原始檔案未變動。`"
                 },
                 {
-                    "source": "`Converted to ${typeLabel}. ${noteCount} note${noteCount!==1?\"s\":\"\"} updated.`",
-                    "target": "`已轉換為${typeLabel}，更新了 ${noteCount} 則筆記。`"
+                    "source": "`Converted to ${o}. ${i} note${i!==1?\"s\":\"\"} updated.`",
+                    "target": "`已轉換為${o}，更新了 ${i} 則筆記。`"
                 },
                 {
-                    "source": "`Open all ${result.updatedNotePaths.length} note${result.updatedNotePaths.length!==1?\"s\":\"\"}`",
-                    "target": "`開啟全部 ${result.updatedNotePaths.length} 則筆記`"
+                    "source": "`Open all ${r.updatedNotePaths.length} note${r.updatedNotePaths.length!==1?\"s\":\"\"}`",
+                    "target": "`開啟全部 ${r.updatedNotePaths.length} 則筆記`"
                 },
                 {
-                    "source": "`This ${typeLabel} file is only embedded in this note. Do you want to remove the embed only, or also delete the file from your vault?`",
-                    "target": "`這個${typeLabel}檔案只嵌入這則筆記。要只移除嵌入區塊，還是同時從儲存庫刪除檔案？`"
+                    "source": "`This ${r} file is only embedded in this note. Do you want to remove the embed only, or also delete the file from your vault?`",
+                    "target": "`這個${r}檔案只嵌入這則筆記。要只移除嵌入區塊，還是同時從儲存庫刪除檔案？`"
                 },
                 {
-                    "source": "`No ${fileTypeLabel} SVGs found`",
-                    "target": "`找不到${fileTypeLabel} SVG 檔案`"
+                    "source": "`No ${a} SVGs found`",
+                    "target": "`找不到${a} SVG 檔案`"
                 },
                 {
-                    "source": "`Found ${parts.join(\" and \")}. This modal migrates them to the newest SVG format.`",
-                    "target": "`找到 ${parts.join(\"、\")}。此視窗可將它們遷移至最新的 SVG 格式。`"
+                    "source": "`Found ${r.join(\" and \")}. This modal migrates them to the newest SVG format.`",
+                    "target": "`找到 ${r.join(\"、\")}。此視窗可將它們遷移至最新的 SVG 格式。`"
                 },
                 {
                     "source": "`Convert .writing/.drawing files into the new format without deleting the old files. Older SVG files (${this.tldrawFileCount}) are only converted on permanent migrate.`",
@@ -2096,32 +2610,32 @@
                     "target": "`${this.tldrawFileCount} 個舊版 SVG 檔案未變動。請執行「永久遷移」以轉換這些檔案。`"
                 },
                 {
-                    "source": "`Check conversion tests in ${INK_TEST_CONVERSIONS_FOLDER}/.`",
-                    "target": "`請到 ${INK_TEST_CONVERSIONS_FOLDER}/ 查看測試轉換結果。`"
+                    "source": "`Check conversion tests in ${nv}/.`",
+                    "target": "`請到 ${nv}/ 查看測試轉換結果。`"
                 },
                 {
-                    "source": "`Migration complete. ${convertedFiles} file${convertedFiles!==1?\"s\":\"\"} converted, ${uniqueNotePaths.length} note${uniqueNotePaths.length!==1?\"s\":\"\"} updated.`",
-                    "target": "`遷移完成。已轉換 ${convertedFiles} 個檔案，更新 ${uniqueNotePaths.length} 則筆記。`"
+                    "source": "`Migration complete. ${a} file${a!==1?\"s\":\"\"} converted, ${c.length} note${c.length!==1?\"s\":\"\"} updated.`",
+                    "target": "`遷移完成。已轉換 ${a} 個檔案，更新 ${c.length} 則筆記。`"
                 },
                 {
-                    "source": "`Open all ${uniqueNotePaths.length} notes`",
-                    "target": "`開啟全部 ${uniqueNotePaths.length} 則筆記`"
+                    "source": "`Open all ${c.length} notes`",
+                    "target": "`開啟全部 ${c.length} 則筆記`"
                 },
                 {
-                    "source": "`Developer tool: found ${scan.tldrawSvgFiles.length} tldraw SVG file${scan.tldrawSvgFiles.length!==1?\"s\":\"\"} and ${scan.affectedNotes.length} note${scan.affectedNotes.length!==1?\"s\":\"\"} referencing them. Each file will be upgraded in place to ink-canvas metadata. Drawing embeds will get a viewBox fitted to stroke bounds. Writing embed lines are unchanged.`",
-                    "target": "`開發者工具：找到 ${scan.tldrawSvgFiles.length} 個 tldraw SVG 檔案，以及參照它們的 ${scan.affectedNotes.length} 則筆記。每個檔案都會就地升級為 ink-canvas 中繼資料。繪圖嵌入區塊的 viewBox 會調整至筆畫邊界，手寫嵌入區塊的行數不變。`"
+                    "source": "`Developer tool: found ${r.tldrawSvgFiles.length} tldraw SVG file${r.tldrawSvgFiles.length!==1?\"s\":\"\"} and ${r.affectedNotes.length} note${r.affectedNotes.length!==1?\"s\":\"\"} referencing them. Each file will be upgraded in place to ink-canvas metadata. Drawing embeds will get a viewBox fitted to stroke bounds. Writing embed lines are unchanged.`",
+                    "target": "`開發者工具：找到 ${r.tldrawSvgFiles.length} 個 tldraw SVG 檔案，以及參照它們的 ${r.affectedNotes.length} 則筆記。每個檔案都會就地升級為 ink-canvas 中繼資料。繪圖嵌入區塊的 viewBox 會調整至筆畫邊界，手寫嵌入區塊的行數不變。`"
                 },
                 {
-                    "source": "`Migration complete. ${result.convertedFiles} file${result.convertedFiles!==1?\"s\":\"\"} converted, ${result.updatedNotes} drawing note${result.updatedNotes!==1?\"s\":\"\"} updated with fitted viewBox.`",
-                    "target": "`遷移完成。已轉換 ${result.convertedFiles} 個檔案，並為 ${result.updatedNotes} 則繪圖筆記更新符合筆畫邊界的 viewBox。`"
+                    "source": "`Migration complete. ${r.convertedFiles} file${r.convertedFiles!==1?\"s\":\"\"} converted, ${r.updatedNotes} drawing note${r.updatedNotes!==1?\"s\":\"\"} updated with fitted viewBox.`",
+                    "target": "`遷移完成。已轉換 ${r.convertedFiles} 個檔案，並為 ${r.updatedNotes} 則繪圖筆記更新符合筆畫邊界的 viewBox。`"
                 },
                 {
-                    "source": "`Open all ${result.updatedNotePaths.length} updated notes`",
-                    "target": "`開啟全部 ${result.updatedNotePaths.length} 則已更新筆記`"
+                    "source": "`Open all ${r.updatedNotePaths.length} updated notes`",
+                    "target": "`開啟全部 ${r.updatedNotePaths.length} 則已更新筆記`"
                 },
                 {
-                    "source": "` Strokes will be scaled to approximately ${pct}% of their current size.`",
-                    "target": "` 筆畫將縮小至目前大小的約 ${pct}%。`"
+                    "source": "` Strokes will be scaled to approximately ${Math.round(this.fitScalePreview*100)}% of their current size.`",
+                    "target": "` 筆畫將縮小至目前大小的約 ${Math.round(this.fitScalePreview*100)}%。`"
                 },
                 {
                     "source": "`${this.legacyFileCount} legacy .writing/.drawing file${this.legacyFileCount!==1?\"s\":\"\"}`",
@@ -2132,48 +2646,52 @@
                     "target": "`${this.tldrawFileCount} 個仍使用先前格式的舊版 SVG 檔案`"
                 },
                 {
-                    "source": "`Failed (${result.failed.length})`",
-                    "target": "`失敗（${result.failed.length}）`"
+                    "source": "`Failed (${r.failed.length})`",
+                    "target": "`失敗（${r.failed.length}）`"
                 },
                 {
-                    "source": "`Failed (${failed.length})`",
-                    "target": "`失敗（${failed.length}）`"
+                    "source": "`Failed (${d.length})`",
+                    "target": "`失敗（${d.length}）`"
                 },
                 {
-                    "source": "`Skipped (${skipped.length})`",
-                    "target": "`已略過（${skipped.length}）`"
+                    "source": "`Skipped (${u.length})`",
+                    "target": "`已略過（${u.length}）`"
                 },
                 {
-                    "source": "`Skipped (${result.skipped.length})`",
-                    "target": "`已略過（${result.skipped.length}）`"
+                    "source": "`Skipped (${r.skipped.length})`",
+                    "target": "`已略過（${r.skipped.length}）`"
                 },
                 {
-                    "source": "`SVG files to convert (${scan.tldrawSvgFiles.length})`",
-                    "target": "`待轉換的 SVG 檔案（${scan.tldrawSvgFiles.length}）`"
+                    "source": "`SVG files to convert (${r.tldrawSvgFiles.length})`",
+                    "target": "`待轉換的 SVG 檔案（${r.tldrawSvgFiles.length}）`"
                 },
                 {
-                    "source": "`Notes that may be updated (${scan.affectedNotes.length})`",
-                    "target": "`可能更新的筆記（${scan.affectedNotes.length}）`"
+                    "source": "`Notes that may be updated (${r.affectedNotes.length})`",
+                    "target": "`可能更新的筆記（${r.affectedNotes.length}）`"
                 },
                 {
-                    "source": "const label=this.toType===\"inkDrawing\"?\"Drawing\":\"Writing\"",
-                    "target": "const label=this.toType===\"inkDrawing\"?\"繪圖\":\"手寫\""
+                    "source": "n=this.toType===\"inkDrawing\"?\"Drawing\":\"Writing\"",
+                    "target": "n=this.toType===\"inkDrawing\"?\"繪圖\":\"手寫\""
                 },
                 {
-                    "source": "const typeLabel=this.toType===\"inkDrawing\"?\"drawing\":\"writing\"",
-                    "target": "const typeLabel=this.toType===\"inkDrawing\"?\"繪圖\":\"手寫\""
+                    "source": "i=this.toType===\"inkDrawing\"?\"drawing\":\"writing\"",
+                    "target": "i=this.toType===\"inkDrawing\"?\"繪圖\":\"手寫\""
                 },
                 {
-                    "source": "const typeLabel=this.embedType===\"inkDrawing\"?\"drawing\":\"writing\"",
-                    "target": "const typeLabel=this.embedType===\"inkDrawing\"?\"繪圖\":\"手寫\""
+                    "source": "o=this.toType===\"inkDrawing\"?\"drawing\":\"writing\"",
+                    "target": "o=this.toType===\"inkDrawing\"?\"繪圖\":\"手寫\""
                 },
                 {
-                    "source": "const fileTypeLabel=fileType===\"inkWriting\"?\"writing\":\"drawing\"",
-                    "target": "const fileTypeLabel=fileType===\"inkWriting\"?\"手寫\":\"繪圖\""
+                    "source": "r=this.embedType===\"inkDrawing\"?\"drawing\":\"writing\"",
+                    "target": "r=this.embedType===\"inkDrawing\"?\"繪圖\":\"手寫\""
                 },
                 {
-                    "source": "const detectedLabel=last7===\"pen\"?\"Pen\":last7===\"mouse\"?\"Mouse\":\"None\"",
-                    "target": "const detectedLabel=last7===\"pen\"?\"觸控筆\":last7===\"mouse\"?\"滑鼠\":\"無\""
+                    "source": "a=t===\"inkWriting\"?\"writing\":\"drawing\"",
+                    "target": "a=t===\"inkWriting\"?\"手寫\":\"繪圖\""
+                },
+                {
+                    "source": "n=t===\"pen\"?\"Pen\":t===\"mouse\"?\"Mouse\":\"None\"",
+                    "target": "n=t===\"pen\"?\"觸控筆\":t===\"mouse\"?\"滑鼠\":\"無\""
                 },
                 {
                     "source": "setOptionPair(\"left\",\"Left\",\"right\",\"Right\")",
@@ -2208,80 +2726,248 @@
                     "target": "\"轉成文字\""
                 },
                 {
-                    "source": "`Start of ${periodStartLabel} \\u2192 End of ${periodEndLabel}`",
-                    "target": "`${periodStartLabel} 開始 → ${periodEndLabel} 結束`"
+                    "source": "`Start of ${a} \\u2192 End of ${l}`",
+                    "target": "`${a} 開始 → ${l} 結束`"
                 },
                 {
-                    "source": "`Handwriting transcription failed (${status})`",
-                    "target": "`手寫轉文字失敗（${status}）`"
+                    "source": "`Handwriting transcription failed (${t})`",
+                    "target": "`手寫轉文字失敗（${t}）`"
                 },
                 {
-                    "source": "`Resuming handwriting transcription (${runnableCount} ${fileWord})`",
-                    "target": "`正在恢復手寫轉文字（${runnableCount} 個${fileWord}）`"
+                    "source": "`Resuming handwriting transcription (${n} ${r})`",
+                    "target": "`正在恢復手寫轉文字（${n} 個${r}）`"
                 },
                 {
-                    "source": "`Remove ${fileName} from transcription queue`",
-                    "target": "`將 ${fileName} 移出轉錄佇列`"
+                    "source": "`Remove ${l} from transcription queue`",
+                    "target": "`將 ${l} 移出轉錄佇列`"
                 },
                 {
-                    "source": "`Almost Useful account: linked as ${identity}`",
-                    "target": "`Almost Useful 帳號：已連結為 ${identity}`"
+                    "source": "`Almost Useful account: linked as ${t}`",
+                    "target": "`Almost Useful 帳號：已連結為 ${t}`"
                 },
                 {
-                    "source": "`Code expires in ${formatDeviceCodeTimeRemaining(displayedPending.expiresAt)}`",
-                    "target": "`驗證碼將於 ${formatDeviceCodeTimeRemaining(displayedPending.expiresAt)} 後過期`"
+                    "source": "`Code expires in ${M8e(r.expiresAt)}`",
+                    "target": "`驗證碼將於 ${M8e(r.expiresAt)} 後過期`"
                 },
                 {
-                    "source": "`When you lock a ${embedKind} embed or close a dedicated ${embedKind} view, queue the ${embedKind} file to be transcribed automatically. Manual Transcribing in the ink file's menu always stays available.`",
-                    "target": "`鎖定${embedKind}嵌入區塊或關閉專用的${embedKind}檢視時，會將${embedKind}檔案加入佇列，自動轉成文字。你隨時都能從筆跡檔案選單手動轉錄。`"
+                    "source": "`Duplicate failed: ${String(b)}`",
+                    "target": "`複製失敗：${String(b)}`"
                 },
                 {
-                    "source": "`Duplicate failed: ${String(err)}`",
-                    "target": "`複製失敗：${String(err)}`"
+                    "source": "`Move failed: ${String(b)}`",
+                    "target": "`移動失敗：${String(b)}`"
                 },
                 {
-                    "source": "`Move failed: ${String(err)}`",
-                    "target": "`移動失敗：${String(err)}`"
+                    "source": "`SVG conversion failed: ${String(b)}`",
+                    "target": "`SVG 轉換失敗：${String(b)}`"
                 },
                 {
-                    "source": "`SVG conversion failed: ${String(err)}`",
-                    "target": "`SVG 轉換失敗：${String(err)}`"
+                    "source": "`Edit ${p?\"drawing\":\"writing\"} in custom view`",
+                    "target": "`在專用檢視中編輯${p?\"繪圖\":\"手寫\"}`"
                 },
                 {
-                    "source": "`Edit ${isDrawing?\"drawing\":\"writing\"} in custom view`",
-                    "target": "`在專用檢視中編輯${isDrawing?\"繪圖\":\"手寫\"}`"
+                    "source": "`Failed to rasterize writing SVG to PNG: ${r}`",
+                    "target": "`無法將手寫 SVG 轉成 PNG：${r}`"
                 },
                 {
-                    "source": "`Failed to rasterize writing SVG to PNG: ${message}`",
-                    "target": "`無法將手寫 SVG 轉成 PNG：${message}`"
+                    "source": "`Test migration finished with errors. ${i?.convertedFiles??0} file${(i?.convertedFiles??0)!==1?\"s\":\"\"} written to ${nv}/.`",
+                    "target": "`測試遷移時發生錯誤。已將 ${i?.convertedFiles??0} 個檔案寫入 ${nv}/。`"
                 },
                 {
-                    "source": "`Test migration finished with errors. ${legacy?.convertedFiles??0} file${(legacy?.convertedFiles??0)!==1?\"s\":\"\"} written to ${INK_TEST_CONVERSIONS_FOLDER}/.`",
-                    "target": "`測試遷移時發生錯誤。已將 ${legacy?.convertedFiles??0} 個檔案寫入 ${INK_TEST_CONVERSIONS_FOLDER}/。`"
+                    "source": "`Test migration complete. ${i?.convertedFiles??0} file${(i?.convertedFiles??0)!==1?\"s\":\"\"} written to ${nv}/.`",
+                    "target": "`測試遷移完成。已將 ${i?.convertedFiles??0} 個檔案寫入 ${nv}/。`"
                 },
                 {
-                    "source": "`Test migration complete. ${legacy?.convertedFiles??0} file${(legacy?.convertedFiles??0)!==1?\"s\":\"\"} written to ${INK_TEST_CONVERSIONS_FOLDER}/.`",
-                    "target": "`測試遷移完成。已將 ${legacy?.convertedFiles??0} 個檔案寫入 ${INK_TEST_CONVERSIONS_FOLDER}/。`"
-                },
-                {
-                    "source": "`<span class=\"ddc_ink_almostuseful-chart-tooltip-label\">Credits remaining</span>`",
-                    "target": "`<span class=\"ddc_ink_almostuseful-chart-tooltip-label\">剩餘點數</span>`"
+                    "source": "\"<span class=\\\"ddc_ink_almostuseful-chart-tooltip-label\\\">Credits remaining</span>\"",
+                    "target": "\"<span class=\\\"ddc_ink_almostuseful-chart-tooltip-label\\\">剩餘點數</span>\""
                 },
                 {
                     "source": "`<span class=\"ddc_ink_almostuseful-chart-tooltip-label\">% of day's use</span>`",
                     "target": "`<span class=\"ddc_ink_almostuseful-chart-tooltip-label\">當日用量佔比</span>`"
                 },
                 {
-                    "source": "`<span class=\"ddc_ink_almostuseful-chart-tooltip-label\">% of monthly credits</span>`",
-                    "target": "`<span class=\"ddc_ink_almostuseful-chart-tooltip-label\">每月點數佔比</span>`"
+                    "source": "\"<span class=\\\"ddc_ink_almostuseful-chart-tooltip-label\\\">% of monthly credits</span>\"",
+                    "target": "\"<span class=\\\"ddc_ink_almostuseful-chart-tooltip-label\\\">每月點數佔比</span>\""
                 },
                 {
-                    "source": "const fileWord=runnableCount===1?\"file\":\"files\"",
-                    "target": "const fileWord=runnableCount===1?\"檔案\":\"檔案\""
+                    "source": "r=n===1?\"file\":\"files\"",
+                    "target": "r=n===1?\"檔案\":\"檔案\""
                 },
                 {
-                    "source": "function autoTranscribeOnCloseSettingDesc(fileType){const embedKind=fileType===\"inkWriting\"?\"writing\":\"drawing\"",
-                    "target": "function autoTranscribeOnCloseSettingDesc(fileType){const embedKind=fileType===\"inkWriting\"?\"手寫\":\"繪圖\""
+                    "source": "\"Transcribe Writing\"",
+                    "target": "\"轉錄手寫內容\""
+                },
+                {
+                    "source": "\"Transcribe Drawing\"",
+                    "target": "\"轉錄繪圖\""
+                },
+                {
+                    "source": "\"Converting handwriting\"",
+                    "target": "\"正在轉換手寫內容\""
+                },
+                {
+                    "source": "\"Could not start batch transcription\"",
+                    "target": "\"無法開始批次轉錄\""
+                },
+                {
+                    "source": "\"Obsidian cannot create folders whose names start with a dot, so those dots were removed.\"",
+                    "target": "\"Obsidian 無法建立名稱以句點開頭的資料夾，因此已移除開頭的句點。\""
+                },
+                {
+                    "source": "\"Ink files cannot be saved outside the vault, so \\\"..\\\" was removed.\"",
+                    "target": "\"Ink 檔案不能儲存在儲存庫之外，因此已移除「..」。\""
+                },
+                {
+                    "source": "\"Backslashes were converted to forward slashes for the folder path.\"",
+                    "target": "\"資料夾路徑中的反斜線已轉換為正斜線。\""
+                },
+                {
+                    "source": "\"Repeated or trailing slashes were removed from the folder path.\"",
+                    "target": "\"已移除資料夾路徑中重複或結尾的斜線。\""
+                },
+                {
+                    "source": "\"The folder path was adjusted so Ink can create the folder.\"",
+                    "target": "\"已調整資料夾路徑，讓 Ink 能建立資料夾。\""
+                },
+                {
+                    "source": "\"Photo worker failed\"",
+                    "target": "\"照片處理程序失敗\""
+                },
+                {
+                    "source": "`You have less than ${n}% left.`",
+                    "target": "`剩餘點數不到 ${n}%。`"
+                },
+                {
+                    "source": "`${this.options.pendingCount} ${s} ${this.options.pendingCount===1?\"has\":\"have\"} no transcript yet. ${this.options.alreadyTranscribedCount} already ${this.options.alreadyTranscribedCount===1?\"has\":\"have\"} one.`",
+                    "target": "`${this.options.pendingCount} 個${s===\"writing\"?\"手寫\":\"繪圖\"}檔案尚未轉錄，另有 ${this.options.alreadyTranscribedCount} 個已有轉錄文字。`"
+                },
+                {
+                    "source": "`No ${t===\"inkWriting\"?\"writing\":\"drawings\"} found in this vault`",
+                    "target": "`此儲存庫中找不到${t===\"inkWriting\"?\"手寫\":\"繪圖\"}檔案`"
+                },
+                {
+                    "source": "`Transcribing all ${r}`",
+                    "target": "`正在轉錄所有${r===\"writing\"?\"手寫\":\"繪圖\"}檔案`"
+                },
+                {
+                    "source": "`Finding ${r}\\u2026`",
+                    "target": "`正在尋找${r===\"writing\"?\"手寫\":\"繪圖\"}檔案...`"
+                },
+                {
+                    "source": "`Queued ${a} of ${l}`",
+                    "target": "`已加入佇列 ${a}／${l}`"
+                },
+                {
+                    "source": "`Every ${r} file already has a transcript`",
+                    "target": "`所有${r===\"writing\"?\"手寫\":\"繪圖\"}檔案都已有轉錄文字`"
+                },
+                {
+                    "source": "`Queued ${s.queuedCount} ${r} files before cancelling`",
+                    "target": "`取消前已將 ${s.queuedCount} 個${r===\"writing\"?\"手寫\":\"繪圖\"}檔案加入佇列`"
+                },
+                {
+                    "source": "`Queued ${s.queuedCount} files. Transcription continues in the background.`",
+                    "target": "`已將 ${s.queuedCount} 個檔案加入佇列，轉錄會在背景繼續。`"
+                },
+                {
+                    "source": "`Queued ${s.queuedCount} ${r} files for transcription`",
+                    "target": "`已將 ${s.queuedCount} 個${r===\"writing\"?\"手寫\":\"繪圖\"}檔案加入轉錄佇列`"
+                },
+                {
+                    "source": "`Photo move failed: ${String(d)}`",
+                    "target": "`照片移動失敗：${String(d)}`"
+                },
+                {
+                    "source": "`Photo move failed: ${String(y)}`",
+                    "target": "`照片移動失敗：${String(y)}`"
+                },
+                {
+                    "source": "`Photo already exists at ${f}`",
+                    "target": "`照片已存在於 ${f}`"
+                },
+                {
+                    "source": "`Photo 1 of ${Math.max(1,e.items.length)}`",
+                    "target": "`第 1 張照片，共 ${Math.max(1,e.items.length)} 張`"
+                },
+                {
+                    "source": "`Photo ${n+1} of ${e.items.length}`",
+                    "target": "`第 ${n+1} 張照片，共 ${e.items.length} 張`"
+                },
+                {
+                    "source": "`${r} of ${o} photos`",
+                    "target": "`第 ${r} 張，共 ${o} 張照片`"
+                },
+                {
+                    "source": "`Photo ${e.index+1}`",
+                    "target": "`照片 ${e.index+1}`"
+                },
+                {
+                    "source": "`Remove ${n.toLowerCase()}`",
+                    "target": "`移除${n.toLowerCase()}`"
+                },
+                {
+                    "source": "`Edit ${n.toLowerCase()}`",
+                    "target": "`編輯${n.toLowerCase()}`"
+                },
+                {
+                    "source": "`${n} converts to`",
+                    "target": "`將${n}轉換為`"
+                },
+                {
+                    "source": "`, ${s} already converted`",
+                    "target": "`，${s} 張已轉換`"
+                },
+                {
+                    "source": "`${l} \\xB7 drag to reorder`",
+                    "target": "`${l} · 拖曳以重新排序`"
+                },
+                {
+                    "source": "`This photo was already converted to ${i} and added to your note.`",
+                    "target": "`這張照片已轉換為${i===\"drawing\"?\"繪圖\":\"手寫\"}，並加入你的筆記。`"
+                },
+                {
+                    "source": "`Could not read a photo: ${l}`",
+                    "target": "`無法讀取照片：${l}`"
+                },
+                {
+                    "source": "`Could not read a photo: ${a.errorFor(r.id)??\"unknown error\"}`",
+                    "target": "`無法讀取照片：${a.errorFor(r.id)??\"未知錯誤\"}`"
+                },
+                {
+                    "source": "`${l} \\u2014 could not convert this photo.`",
+                    "target": "`${l}：無法轉換這張照片。`"
+                },
+                {
+                    "source": "`${r} \\u2014 reading the photo\\u2026`",
+                    "target": "`${r}：正在讀取照片...`"
+                },
+                {
+                    "source": "`${r} \\u2014 measuring the page\\u2026`",
+                    "target": "`${r}：正在測量頁面...`"
+                },
+                {
+                    "source": "`${r} \\u2014 tracing locally\\u2026`",
+                    "target": "`${r}：正在本機擷取筆跡...`"
+                },
+                {
+                    "source": "`${r} \\u2014 saving the ink file\\u2026`",
+                    "target": "`${r}：正在儲存筆跡檔案...`"
+                },
+                {
+                    "source": "`${e} ${e===1?\"ink file\":\"ink files\"} created from photos.`",
+                    "target": "`已從照片建立 ${e} 個筆跡檔案。`"
+                },
+                {
+                    "source": "`Almost Useful now uses ${r.origin}. Link account again.`",
+                    "target": "`Almost Useful 現在使用 ${r.origin}，請重新連結帳號。`"
+                },
+                {
+                    "source": "hopLines:[\"Your\",\"device\"]",
+                    "target": "hopLines:[\"你的\",\"裝置\"]"
+                },
+                {
+                    "source": "hopLines:[\"OpenRouter and\",\"AI model provider\"]",
+                    "target": "hopLines:[\"OpenRouter 與\",\"AI 模型供應商\"]"
                 }
             ]
         },
