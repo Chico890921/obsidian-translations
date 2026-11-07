@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-git",
-        "version": "2.42.0",
+        "version": "2.43.0",
         "title": "[zh-tw] Git",
         "description": "Git 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.42.0",
+        "supportedVersions": "2.43.0",
         "author": "Chico",
-        "updatedAt": 1792393910968
+        "updatedAt": 1794069547220
     },
     "dict": {
         "main.js": {
@@ -400,8 +400,8 @@
                 {
                     "type": "ObjectProperty",
                     "name": "desc",
-                    "source": "Hunk controls and line author information.",
-                    "target": "差異區塊控制與行作者資訊。"
+                    "source": "Merge conflict resolution, hunk controls, and line author information.",
+                    "target": "合併衝突處理、差異區塊控制與行作者資訊。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1950,6 +1950,36 @@
                     "name": "include",
                     "source": "Include matches",
                     "target": "納入符合的檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Show merge conflict resolution",
+                    "target": "顯示合併衝突處理介面"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "dropdown",
+                    "source": "Choose where conflict highlights and resolution buttons appear.",
+                    "target": "選擇在哪些編輯模式顯示衝突醒目提示與處理按鈕。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "both",
+                    "source": "Both editing modes",
+                    "target": "兩種編輯模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "live-preview",
+                    "source": "Live Preview only",
+                    "target": "僅即時預覽"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "source",
+                    "source": "Source mode only",
+                    "target": "僅原始碼模式"
                 }
             ],
             "regex": [
@@ -2122,8 +2152,8 @@
                     "target": "`例如：${Cv}。請參閱 `"
                 },
                 {
-                    "source": "` and for matches (at least ${Ah} characters) within the same (or all) commit(s), `",
-                    "target": "`，並針對同一個（或所有）提交中符合條件（至少 ${Ah} 個字元）的內容，`"
+                    "source": "` and for matches (at least ${_h} characters) within the same (or all) commit(s), `",
+                    "target": "`，並針對同一個（或所有）提交中符合條件（至少 ${_h} 個字元）的內容，`"
                 },
                 {
                     "source": "`oldest (${this.settings.lineAuthor.coloringMaxAge} or older)`",
@@ -2182,20 +2212,20 @@
                     "target": "`「${this.path}」中的檔案`"
                 },
                 {
-                    "source": "`Are you sure you want to DELETE the ${sf(this.deleteCount,\"untracked file\")}? They are deleted according to your Obsidian trash settting.`",
-                    "target": "`你確定要刪除 ${sf(this.deleteCount,\"個未追蹤檔案\",\"個未追蹤檔案\")} 嗎？它們會依照你的 Obsidian 垃圾桶設定刪除。`"
+                    "source": "`Are you sure you want to DELETE the ${ef(this.deleteCount,\"untracked file\")}? They are deleted according to your Obsidian trash settting.`",
+                    "target": "`你確定要刪除 ${ef(this.deleteCount,\"個未追蹤檔案\",\"個未追蹤檔案\")} 嗎？它們會依照你的 Obsidian 垃圾桶設定刪除。`"
                 },
                 {
-                    "source": "`Are you sure you want to discard ALL changes in ${sf(this.discardCount,\"tracked file\")}?`",
-                    "target": "`你確定要捨棄 ${sf(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")} 中的所有變更嗎？`"
+                    "source": "`Are you sure you want to discard ALL changes in ${ef(this.discardCount,\"tracked file\")}?`",
+                    "target": "`你確定要捨棄 ${ef(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")} 中的所有變更嗎？`"
                 },
                 {
-                    "source": "`${this.discardCount>0?\"Discard\":\"Delete\"} all ${sf(t,\"file\")}`",
-                    "target": "`${this.discardCount>0?\"捨棄\":\"刪除\"}所有 ${sf(t,\"個檔案\",\"個檔案\")}`"
+                    "source": "`${this.discardCount>0?\"Discard\":\"Delete\"} all ${ef(t,\"file\")}`",
+                    "target": "`${this.discardCount>0?\"捨棄\":\"刪除\"}所有 ${ef(t,\"個檔案\",\"個檔案\")}`"
                 },
                 {
-                    "source": "`Discard all ${sf(this.discardCount,\"tracked file\")}`",
-                    "target": "`捨棄所有 ${sf(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")}`"
+                    "source": "`Discard all ${ef(this.discardCount,\"tracked file\")}`",
+                    "target": "`捨棄所有 ${ef(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")}`"
                 },
                 {
                     "source": "`Does your remote repo contain a ${this.plugin.app.vault.configDir} directory at the root?`",
@@ -2396,6 +2426,10 @@
                 {
                     "source": "`Globs for auto ${s}`",
                     "target": "`自動${s}的 glob 規則`"
+                },
+                {
+                    "source": "source:\"僅原始碼模式\",disabled:\"Disabled\"}",
+                    "target": "source:\"僅原始碼模式\",disabled:\"停用\"}"
                 }
             ]
         },
