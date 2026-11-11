@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "notebook-navigator",
-        "version": "3.5.0",
+        "version": "3.5.1",
         "title": "[zh-tw] Notebook Navigator",
         "description": "Notebook Navigator Style Settings 繁體中文補充翻譯",
         "language": "zh-tw",
-        "supportedVersions": "3.5.0",
+        "supportedVersions": "3.5.1",
         "author": "Chico",
-        "updatedAt": 1793171918512
+        "updatedAt": 1794356787220
     },
     "dict": {
         "styles.css": {
