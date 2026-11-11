@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "templater-obsidian",
-        "version": "2.26.0",
+        "version": "2.27.0",
         "title": "[zh-tw] Templater",
         "description": "Templater 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.26.0",
+        "supportedVersions": "2.27.0",
         "author": "Chico",
-        "updatedAt": 1791784526842
+        "updatedAt": 1794357176523
     },
     "dict": {
         "main.js": {
@@ -88,8 +88,8 @@
                 {
                     "type": "CallExpression",
                     "name": "append",
-                    "source": "Templater will listen for the new file creation event, and, if it matches a rule you've set, replace every command it finds in the new file's content. ",
-                    "target": "Templater 會監聽新檔案建立事件；如果符合你設定的規則，就會取代新檔案內容中找到的每個命令。"
+                    "source": "Templater will listen for the new file creation event and will replace every command it finds in the new file's content, after applying any template rules you've set. ",
+                    "target": "Templater 會監聽新檔案建立事件，先套用你設定的範本規則，再取代新檔案內容中找到的所有命令。"
                 },
                 {
                     "type": "CallExpression",
@@ -1822,8 +1822,8 @@
                 {
                     "type": "ObjectProperty",
                     "name": "text",
-                    "source": "None: Do not auto apply templates. Templater will still listen for the new file creation event and replace every command it finds in the new file's content.",
-                    "target": "無：不自動套用範本。Templater 仍會監聽新檔案建立事件，並取代新檔案內容中找到的所有命令。"
+                    "source": "None: Do not auto apply templates. Templater will still replace every command it finds in the new file's content.",
+                    "target": "無：不自動套用範本，但仍會取代新檔案內容中找到的所有命令。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1834,20 +1834,20 @@
                 {
                     "type": "ObjectProperty",
                     "name": "text",
-                    "source": "File regex templates: Apply templates based on regex file name patterns.",
-                    "target": "檔案正規表示式範本：依正規表示式檔名規則套用範本。"
+                    "source": "File regex templates: Apply templates based on regex file path patterns.",
+                    "target": "檔案正規表示式範本：依檔案路徑的正規表示式規則套用範本。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "append",
-                    "source": "Choose the matching mode for triggering templates on file creation.",
-                    "target": "選擇建立檔案時用來觸發範本的比對模式。"
+                    "source": "Choose the matching mode for triggering templates on file creation. Templates are applied only to empty files.",
+                    "target": "選擇建立檔案時用來觸發範本的比對模式。範本只會套用至空白檔案。"
                 },
                 {
                     "type": "CallExpression",
                     "name": "append",
-                    "source": "If there is a match, Templater will apply the corresponding template to the new file.",
-                    "target": "符合規則時，Templater 會將對應的範本套用至新檔案。"
+                    "source": "If an empty new file is created in a matching folder, Templater will apply the corresponding template to it.",
+                    "target": "在符合規則的資料夾中建立空白檔案時，Templater 會套用對應範本。"
                 },
                 {
                     "type": "CallExpression",
@@ -1870,8 +1870,8 @@
                 {
                     "type": "CallExpression",
                     "name": "append",
-                    "source": "File regex templates are applied based on the regex file path patterns you define.",
-                    "target": "檔案正規表示式範本會依你定義的檔案路徑正規表示式套用。"
+                    "source": "File regex templates are applied to empty new files based on the regex file path patterns you define.",
+                    "target": "檔案正規表示式範本會依你定義的檔案路徑規則，套用至新建的空白檔案。"
                 },
                 {
                     "type": "CallExpression",
@@ -1980,6 +1980,36 @@
                     "name": "name",
                     "source": "Multi-suggester",
                     "target": "多選建議選單"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Only trigger for files matching a template rule",
+                    "target": "僅對符合範本規則的檔案觸發"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "append",
+                    "source": "When on, Templater only acts on empty new files that match a folder or file regex template. ",
+                    "target": "啟用後，Templater 只會處理符合資料夾或檔案正規表示式範本規則的新建空白檔案。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "append",
+                    "source": "New files that don't match a rule are left untouched, and any Templater commands in them are not run.",
+                    "target": "不符合規則的新檔案會保持原樣，其中的 Templater 命令也不會執行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "append",
+                    "source": "This is intended to limit Templater's code execution, which can be dangerous with untrusted content, to just the files you've explicitly configured here in settings. ",
+                    "target": "此設定將 Templater 的程式碼執行範圍限制在你於此明確設定的檔案，以降低不受信任內容可能造成的風險。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "append",
+                    "source": "Leave this off if another plugin, such as the Daily note core plugin, writes Templater commands into new files and relies on Templater running them.",
+                    "target": "如果你依賴其他外掛（例如核心的每日筆記外掛）先將 Templater 命令寫入新檔案，再由 Templater 執行，請保持此設定關閉。"
                 }
             ],
             "regex": [
