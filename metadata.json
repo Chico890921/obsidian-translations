@@ -627,13 +627,13 @@
         "id": "dE_FyJudUD9zQlatxyz4Cbn5JIm2Z6uX",
         "plugin": "notebook-navigator",
         "language": "zh-tw",
-        "version": "3.5.0",
-        "supported_versions": "3.5.0",
+        "version": "3.5.1",
+        "supported_versions": "3.5.1",
         "title": "[zh-tw] Notebook Navigator",
         "description": "Notebook Navigator Style Settings 繁體中文補充翻譯",
-        "hash": "399d1a64399d1a64399d1a64399d1a64",
+        "hash": "50479698504796985047969850479698",
         "created_at": "2026-09-11T18:16:36.243Z",
-        "updated_at": "2026-10-28T10:14:00.457Z",
+        "updated_at": "2026-11-11T00:35:08.962Z",
         "type": "plugin"
     },
     {
