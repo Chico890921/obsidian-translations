@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-importer",
-        "version": "3.1.16",
+        "version": "3.2.0",
         "title": "[zh-tw] Importer",
         "description": "Importer 繁體中文補充翻譯",
         "language": "zh-tw",
-        "supportedVersions": "3.1.16",
+        "supportedVersions": "3.2.0",
         "author": "Chico",
-        "updatedAt": 1792689747676
+        "updatedAt": 1794634546323
     },
     "dict": {
         "main.js": {
@@ -430,36 +430,36 @@
             ],
             "regex": [
                 {
-                    "source": "`Could not calculate value: ${xi(a)}`",
-                    "target": "`無法計算值：${xi(a)}`"
+                    "source": "`Could not calculate value: ${Si(a)}`",
+                    "target": "`無法計算值：${Si(a)}`"
                 },
                 {
-                    "source": "`Could not convert HTML to JSON: ${xi(i)}`",
-                    "target": "`無法將 HTML 轉換為 JSON：${xi(i)}`"
+                    "source": "`Could not convert HTML to JSON: ${Si(i)}`",
+                    "target": "`無法將 HTML 轉換為 JSON：${Si(i)}`"
                 },
                 {
-                    "source": "`Could not format duration: ${xi(r)}`",
-                    "target": "`無法格式化持續時間：${xi(r)}`"
+                    "source": "`Could not format duration: ${Si(r)}`",
+                    "target": "`無法格式化持續時間：${Si(r)}`"
                 },
                 {
-                    "source": "`Could not format number: ${xi(a)}`",
-                    "target": "`無法格式化數字：${xi(a)}`"
+                    "source": "`Could not format number: ${Si(a)}`",
+                    "target": "`無法格式化數字：${Si(a)}`"
                 },
                 {
-                    "source": "`Could not merge values: ${xi(a)}`",
-                    "target": "`無法合併值：${xi(a)}`"
+                    "source": "`Could not merge values: ${Si(a)}`",
+                    "target": "`無法合併值：${Si(a)}`"
                 },
                 {
                     "source": "`Could not resolve variable \"${y}\": ${w instanceof Error?w.message:String(w)}`",
                     "target": "`無法解析變數「${y}」：${w instanceof Error?w.message:String(w)}`"
                 },
                 {
-                    "source": "`Could not round value: ${xi(a)}`",
-                    "target": "`無法將值四捨五入：${xi(a)}`"
+                    "source": "`Could not round value: ${Si(a)}`",
+                    "target": "`無法將值四捨五入：${Si(a)}`"
                 },
                 {
-                    "source": "`Invalid regular expression: ${xi(m)}`",
-                    "target": "`無效的正規表示式：${xi(m)}`"
+                    "source": "`Invalid regular expression: ${Si(m)}`",
+                    "target": "`無效的正規表示式：${Si(m)}`"
                 },
                 {
                     "source": "`invalid OS \"${t!=null?t:\"\"}\". Use \"windows\", \"mac\", or \"linux\"`",
@@ -535,8 +535,8 @@
             "ast": [],
             "regex": [
                 {
-                    "source": "\"description\": \"Import data from Airtable, Notion, Evernote, Apple Notes, Apple Journal, Microsoft OneNote, Google Keep, Bear, Roam, Logseq, Tomboy, Textbundle, CSV, and HTML files.\"",
-                    "target": "\"description\": \"從 Airtable、Notion、Evernote、Apple Notes、Apple Journal、Microsoft OneNote、Google Keep、Bear、Roam、Logseq、Tomboy、Textbundle、CSV 與 HTML 檔案匯入資料。\""
+                    "source": "\"description\": \"Import data from Airtable, Notion, Evernote, Apple Notes, Apple Journal, Microsoft OneNote, Google Keep, Samsung Notes, Bear, Roam, Logseq, Tomboy, Textbundle, CSV, and HTML files.\"",
+                    "target": "\"description\": \"從 Airtable、Notion、Evernote、Apple Notes、Apple Journal、Microsoft OneNote、Google Keep、Samsung Notes、Bear、Roam、Logseq、Tomboy、Textbundle、CSV 與 HTML 檔案匯入資料。\""
                 }
             ]
         }
