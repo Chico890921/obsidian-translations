@@ -1,0 +1,1194 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "textfold-bridge",
+        "version": "0.6.4",
+        "title": "[zh-tw] TextFold Bridge",
+        "description": "TextFold Bridge 繁體中文翻譯",
+        "language": "zh-tw",
+        "supportedVersions": "0.6.4",
+        "author": "Chico",
+        "updatedAt": 1794830968068
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": " Hover a written line for the sentences it rests on.",
+                    "target": " 將滑鼠停在模型撰寫的文字上，即可查看所依據的原句。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Fold",
+                    "target": "摺疊"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Test connection",
+                    "target": "測試連線"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Checking…",
+                    "target": "檢查中…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Import the notes of a TextFold document",
+                    "target": "匯入 TextFold 文件的註記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Find a TextFold document by title, ID or citekey",
+                    "target": "依標題、ID 或引用鍵尋找 TextFold 文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Whole note",
+                    "target": "整篇筆記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Changed since folding",
+                    "target": "摺疊後已有變更"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "In TextFold without levels: no model was connected",
+                    "target": "已存於 TextFold，但沒有摺疊層級：當時未連接模型"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "This textfold:// link names no TextFold document.",
+                    "target": "此 textfold:// 連結未指定 TextFold 文件。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "This note has no text to fold.",
+                    "target": "此筆記沒有可摺疊的文字。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "TextFold is still folding this note.",
+                    "target": "TextFold 仍在摺疊此筆記。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "This note has not changed since it was exported.",
+                    "target": "此筆記自上次匯出後未有變更。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "TextFold has folded the note.",
+                    "target": "TextFold 已完成筆記摺疊。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "TextFold has no documents yet.",
+                    "target": "TextFold 尚無文件。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Link copied.",
+                    "target": "已複製連結。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Open the note in the editor to insert a link.",
+                    "target": "請先在編輯器開啟筆記，再插入連結。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Level",
+                    "target": "層級"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Left: your own words. Right: written by the model.",
+                    "target": "左側：你撰寫的文字。右側：模型撰寫的文字。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Language",
+                    "target": "語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Your note on this paragraph",
+                    "target": "你對此段落的註記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Open in TextFold",
+                    "target": "在 TextFold 開啟"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Passage not found after the edit",
+                    "target": "編輯後找不到原文段落"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Automatic reads the server.json that TextFold writes into its data folder, and tries http://127.0.0.1:3017 when there is none.",
+                    "target": "「自動」會讀取 TextFold 資料夾內的 server.json；找不到時，會嘗試連線至 http://127.0.0.1:3017。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "TextFold's address on this computer, such as http://127.0.0.1:3017.",
+                    "target": "此電腦上的 TextFold 位址，例如 http://127.0.0.1:3017。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "A TextFold started from a clone of its repository writes its server.json in the clone's folder. Name that folder to have Automatic look there first.",
+                    "target": "從複製的儲存庫啟動 TextFold 時，server.json 會寫入該儲存庫資料夾。指定此資料夾後，「自動」會優先在此尋找。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Browser opens the paper on TextFold's reader page. TextFold app hands the textfold:// link to a packaged TextFold that opens these links.",
+                    "target": "「瀏覽器」會在 TextFold 閱讀頁面開啟論文。「TextFold 應用程式」會將 textfold:// 連結交由已安裝的 TextFold 開啟。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Show a link's paragraph, note or paper on hover in Reading view, and with Cmd or Ctrl held in the editor.",
+                    "target": "在閱讀模式將滑鼠停在連結上，可預覽其段落、註記或論文；在編輯器中需同時按住 Cmd 或 Ctrl。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Callout, Quote and Text end with the TextFold icon linking back; Full link inserts a titled link.",
+                    "target": "「標註區塊」、「引用」及「文字」會在末尾加上連回原文的 TextFold 圖示；「完整連結」會插入含標題的連結。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "The language a note is folded and exported in. Another language is translated by the model set up in TextFold.",
+                    "target": "筆記摺疊及匯出時使用的語言。選擇其他語言時，會由 TextFold 設定的模型翻譯。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Buttons for the five levels, or a slider that moves the words as you drag it.",
+                    "target": "使用五個層級按鈕，或使用拖曳時會同步調整文字的滑桿。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Your highlights, notes and questions from TextFold beside their paragraph, or under it. Highlights are marked in the text either way.",
+                    "target": "將 TextFold 中的螢光標記、註記與提問顯示在段落旁或段落下方。兩種方式都會在內文標示螢光標記。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "The level a folded note opens at.",
+                    "target": "開啟摺疊筆記時使用的層級。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Where a new imported note goes, one per TextFold document. A note imported before is updated where it is.",
+                    "target": "新匯入筆記的儲存位置，每份 TextFold 文件建立一篇筆記。先前匯入的筆記會在原位置更新。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "The folder for imported notes.",
+                    "target": "儲存匯入筆記的資料夾。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Name a new note by the document's short title, or by its citekey when TextFold has one.",
+                    "target": "以文件的簡短標題命名新筆記；若 TextFold 提供引用鍵，也可使用引用鍵命名。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Links",
+                    "target": "連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Drops from TextFold",
+                    "target": "從 TextFold 拖入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Fold this note",
+                    "target": "摺疊此筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Import notes",
+                    "target": "匯入註記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "link",
+                    "source": "Full link",
+                    "target": "完整連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "TextFold address",
+                    "target": "TextFold 位址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Manual address",
+                    "target": "手動指定位址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "TextFold run from source",
+                    "target": "從原始碼執行 TextFold"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Connection",
+                    "target": "連線"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open links in",
+                    "target": "連結開啟方式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Hover previews",
+                    "target": "懸停預覽"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Language",
+                    "target": "語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Level control",
+                    "target": "層級控制"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "TextFold comments",
+                    "target": "TextFold 註記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Start level",
+                    "target": "起始層級"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Location for imported notes",
+                    "target": "匯入筆記的位置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Folder",
+                    "target": "資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Note names",
+                    "target": "筆記命名"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Insert link to a TextFold paper",
+                    "target": "插入 TextFold 論文連結"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open TextFold notes",
+                    "target": "開啟 TextFold 註記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Fold this note",
+                    "target": "摺疊此筆記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Export this note to TextFold",
+                    "target": "將此筆記匯出至 TextFold"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Import notes from TextFold",
+                    "target": "從 TextFold 匯入註記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "This note is no longer in TextFold.",
+                    "target": "TextFold 中已無此筆記。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Passage not found after the edit",
+                    "target": "編輯後找不到原文段落"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "⌘ + scroll or pinch to zoom",
+                    "target": "按住 ⌘ 捲動，或以雙指縮放"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Full",
+                    "target": "全文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "passage not found after the edit",
+                    "target": "編輯後找不到原文段落"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "The section's takeaway, written by the model from its paragraphs' takeaways.",
+                    "target": "模型根據各段落的要點，整理出的章節要點。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Click the paragraph to read it in full.",
+                    "target": "點選段落以閱讀全文。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "All documents with notes",
+                    "target": "所有含註記的文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "TextFold has folded the note.",
+                    "target": "TextFold 已完成筆記摺疊。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Open in TextFold",
+                    "target": "在 TextFold 開啟"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Fold in Obsidian",
+                    "target": "在 Obsidian 中摺疊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Short title",
+                    "target": "簡短標題"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "textfold",
+                    "source": "TextFold's language",
+                    "target": "TextFold 的語言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "note",
+                    "source": "not an address on 127.0.0.1",
+                    "target": "不是 127.0.0.1 上的位址"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "M",
+                    "source": "TextFold's answer to the import names no document",
+                    "target": "TextFold 的匯入回應未指定文件"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "M",
+                    "source": "TextFold's answer to the fold names no job",
+                    "target": "TextFold 的摺疊回應未指定工作"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "brief",
+                    "source": "Brief",
+                    "target": "精簡"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "key",
+                    "source": "Key",
+                    "target": "關鍵句"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "takeaway",
+                    "source": "Takeaway",
+                    "target": "要點"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "topic",
+                    "source": "Topic",
+                    "target": "主題"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addAction",
+                    "source": "Edit the Markdown",
+                    "target": "編輯 Markdown"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addAction",
+                    "source": "Open in TextFold here",
+                    "target": "在此開啟 TextFold"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "say",
+                    "source": "TextFold is not running: the fold as it was when last read.",
+                    "target": "TextFold 未執行：顯示上次閱讀時的摺疊內容。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "say",
+                    "source": "The note has no TextFold document: the note as written.",
+                    "target": "此筆記沒有對應的 TextFold 文件：顯示原文。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "say",
+                    "source": "TextFold has no levels for this note yet (no model was connected when it was folded): Full only.",
+                    "target": "TextFold 尚無此筆記的摺疊層級（摺疊時未連接模型）：僅顯示全文。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "say",
+                    "source": "Changed since it was folded.",
+                    "target": "摺疊後已有變更。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Ni",
+                    "source": "TextFold's model translates the note's folded levels. It reads in that language here and in TextFold.",
+                    "target": "TextFold 的模型會翻譯筆記的摺疊層級。此處與 TextFold 都會以該語言顯示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "Ni",
+                    "source": "Translate",
+                    "target": "翻譯"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "why",
+                    "source": "not found in the vault",
+                    "target": "在儲存庫中找不到"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "why",
+                    "source": "over 15 MB",
+                    "target": "超過 15 MB"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "new",
+                    "source": "Created",
+                    "target": "已建立"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "updated",
+                    "source": "Updated",
+                    "target": "已更新"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "unchanged",
+                    "source": "Unchanged:",
+                    "target": "未變更："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "auto",
+                    "source": "Automatic",
+                    "target": "自動"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "manual",
+                    "source": "Manual",
+                    "target": "手動"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "browser",
+                    "source": "Browser",
+                    "target": "瀏覽器"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "app",
+                    "source": "TextFold app",
+                    "target": "TextFold 應用程式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Dropped TextFold items as",
+                    "target": "拖入 TextFold 內容的格式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "callout",
+                    "source": "Callout",
+                    "target": "標註區塊"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "quote",
+                    "source": "Quote",
+                    "target": "引用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "icon",
+                    "source": "Text",
+                    "target": "文字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "buttons",
+                    "source": "Buttons",
+                    "target": "按鈕"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "slider",
+                    "source": "Slider",
+                    "target": "滑桿"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "margin",
+                    "source": "In the margin",
+                    "target": "段落旁"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "inline",
+                    "source": "Under the paragraph",
+                    "target": "段落下方"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "folder",
+                    "source": "In the folder specified below",
+                    "target": "下方指定的資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "current",
+                    "source": "Same folder as current note",
+                    "target": "與目前筆記相同的資料夾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "root",
+                    "source": "Vault folder",
+                    "target": "儲存庫根目錄"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "citekey",
+                    "source": "Citekey",
+                    "target": "引用鍵"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "highlight",
+                    "source": "Highlight",
+                    "target": "螢光標記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "note",
+                    "source": "Note",
+                    "target": "註記"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "ask",
+                    "source": "Ask",
+                    "target": "提問"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "n",
+                    "source": "Import the notes of these documents into the vault",
+                    "target": "將這些文件的註記匯入儲存庫"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "n",
+                    "source": "Refresh",
+                    "target": "重新整理"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "showStatus",
+                    "source": "This note links to no TextFold document.",
+                    "target": "此筆記未連結任何 TextFold 文件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "showStatus",
+                    "source": "Add textfold: <document id> to its properties, insert a link with \"Insert link to a TextFold paper\", drop something from TextFold, or fold or export the note with the buttons here.",
+                    "target": "請在筆記屬性加入 textfold: <document id>，使用「插入 TextFold 論文連結」插入連結，從 TextFold 拖入內容，或使用此處按鈕摺疊或匯出筆記。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "showStatus",
+                    "source": "Loading…",
+                    "target": "載入中…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "l",
+                    "source": "Copy link",
+                    "target": "複製連結"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "l",
+                    "source": "Insert link at the cursor",
+                    "target": "在游標處插入連結"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "l",
+                    "source": "Import its notes into the vault",
+                    "target": "將此文件的註記匯入儲存庫"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "`${l} is not a TextFold server file`",
+                    "target": "`${l} 不是 TextFold 伺服器檔案`"
+                },
+                {
+                    "source": "`server.json is stale: process ${d.pid} has ended`",
+                    "target": "`server.json 已失效：程序 ${d.pid} 已結束`"
+                },
+                {
+                    "source": "`server.json is stale: ${d.url} does not answer`",
+                    "target": "`server.json 已失效：${d.url} 未回應`"
+                },
+                {
+                    "source": "`TextFold is not running at ${e.url}`",
+                    "target": "`TextFold 未在 ${e.url} 執行`"
+                },
+                {
+                    "source": "`TextFold answered ${n.status} to ${i}`",
+                    "target": "`TextFold 對 ${i} 回傳狀態碼 ${n.status}`"
+                },
+                {
+                    "source": "`TextFold answered ${n.status}${s?` (${s})`:\"\"} to ${i}`",
+                    "target": "`TextFold 對 ${i} 回傳狀態碼 ${n.status}${s?` (${s})`:\"\"}`"
+                },
+                {
+                    "source": "`TextFold did not answer at ${i} (${r.message})`",
+                    "target": "`TextFold 未在 ${i} 回應（${r.message}）`"
+                },
+                {
+                    "source": "`no answer within ${n/1e3} s`",
+                    "target": "`${n/1e3} 秒內未回應`"
+                },
+                {
+                    "source": "`TextFold's answer to ${i} is not JSON`",
+                    "target": "`TextFold 對 ${i} 的回應不是 JSON`"
+                },
+                {
+                    "source": "`TextFold is not running at ${e.url}. Start TextFold, then open the link again.`",
+                    "target": "`TextFold 未在 ${e.url} 執行。請啟動 TextFold 後再開啟連結。`"
+                },
+                {
+                    "source": "`TextFold has no document ${o}. It may be in another TextFold library, or deleted.`",
+                    "target": "`TextFold 中沒有文件 ${o}。此文件可能位於其他 TextFold 資料庫，或已被刪除。`"
+                },
+                {
+                    "source": "`TextFold is not reachable at ${n.url}.`",
+                    "target": "`無法連線至 ${n.url} 的 TextFold。`"
+                },
+                {
+                    "source": "`turn ${(t.t??0)+1} of ${f.thread.length}`",
+                    "target": "`第 ${(t.t??0)+1} 輪，共 ${f.thread.length} 輪`"
+                },
+                {
+                    "source": "`Section ${t.s}.`",
+                    "target": "`章節 ${t.s}。`"
+                },
+                {
+                    "source": "`${Qe(m.units.length,\"paragraph\")}; no summary yet.`",
+                    "target": "`${m.units.length} 個段落；尚無摘要。`"
+                },
+                {
+                    "source": "`Paragraph ${t.u}.`",
+                    "target": "`段落 ${t.u}。`"
+                },
+                {
+                    "source": "`${u.notes.length} note${u.notes.length===1?\"\":\"s\"} in TextFold`",
+                    "target": "`TextFold 中有 ${u.notes.length} 則註記`"
+                },
+                {
+                    "source": "`${t.slice(0,i).join(`\n\n`)}\n\n*\\u2026 ${t.length-i} more*`",
+                    "target": "`${t.slice(0,i).join(`\n\n`)}\n\n*… 另有 ${t.length-i} 則*`"
+                },
+                {
+                    "source": "`${o.sent} picture${o.sent===1?\"\":\"s\"} went along`",
+                    "target": "`已一併傳送 ${o.sent} 張圖片`"
+                },
+                {
+                    "source": "`${o.left.length} left out: ${o.left.map(t=>`${t.name} (${t.why})`).join(\", \")}`",
+                    "target": "`已略過 ${o.left.length} 張：${o.left.map(t=>`${t.name} (${t.why})`).join(\", \")}`"
+                },
+                {
+                    "source": "`TextFold is not running at ${a.url}: the note as written.`",
+                    "target": "`TextFold 未在 ${a.url} 執行：顯示筆記原文。`"
+                },
+                {
+                    "source": "`TextFold has no document ${h.paper} any more: the note as written.`",
+                    "target": "`TextFold 中已無文件 ${h.paper}：顯示筆記原文。`"
+                },
+                {
+                    "source": "`Not in ${Nt(this.plugin,r)} yet: shown in ${Nt(this.plugin,u.lang)}.`",
+                    "target": "`尚無${Nt(this.plugin,r)}版本：目前顯示${Nt(this.plugin,u.lang)}。`"
+                },
+                {
+                    "source": "`Translate \"${this.file.basename}\" into ${Nt(this.plugin,t)}?`",
+                    "target": "`要將「${this.file.basename}」翻譯成${Nt(this.plugin,t)}嗎？`"
+                },
+                {
+                    "source": "`Folding in TextFold${e?` \\xB7 ${e}${t?.total?` ${t.done}/${t.total}`:\"\"}`:\"\"}\\u2026`",
+                    "target": "`正在 TextFold 中摺疊${e?` · ${e}${t?.total?` ${t.done}/${t.total}`:\"\"}`:\"\"}…`"
+                },
+                {
+                    "source": "`Full and Brief are your words in ${Nt(this.plugin,s.lang)}, as the model translated them. `",
+                    "target": "`「全文」與「精簡」是模型將你撰寫的文字翻譯成${Nt(this.plugin,s.lang)}的結果。`"
+                },
+                {
+                    "source": "`Key, Takeaway and Topic were written by ${r}${a}.`",
+                    "target": "`「關鍵句」、「要點」與「主題」由 ${r}${a} 撰寫。`"
+                },
+                {
+                    "source": "`${n.length} section${n.length===1?\"\":\"s\"}. Click a card for its takeaways, a chip for that paragraph in full.`",
+                    "target": "`${n.length} 個章節。點選卡片以查看要點，點選段落標籤以閱讀該段全文。`"
+                },
+                {
+                    "source": "`Your ${r.toLowerCase()} on this paragraph`",
+                    "target": "`你對此段落的${r.toLowerCase()}`"
+                },
+                {
+                    "source": "`Written by the model. It rests on your sentence${h.length>1?\"s\":\"\"}:`",
+                    "target": "`由模型撰寫，依據以下原句：`"
+                },
+                {
+                    "source": "`TextFold no longer has this note's document (${e.paper}). Export or fold the note again to send it anew.`",
+                    "target": "`TextFold 中已無此筆記對應的文件（${e.paper}）。請重新匯出或摺疊筆記，以再次傳送。`"
+                },
+                {
+                    "source": "`not a picture TextFold takes (.${l})`",
+                    "target": "`TextFold 不支援此圖片格式（.${l}）`"
+                },
+                {
+                    "source": "`Fold \"${i.basename}\" in TextFold?`",
+                    "target": "`要在 TextFold 中摺疊「${i.basename}」嗎？`"
+                },
+                {
+                    "source": "`TextFold stores the note's text and writes its levels in ${t} with the model set up in TextFold. The note gets a textfold property with the document's id.`",
+                    "target": "`TextFold 會儲存筆記文字，並使用設定的模型，以${t}產生各個摺疊層級。筆記會加入 textfold 屬性，其值為文件 ID。`"
+                },
+                {
+                    "source": "`${o.message}. Start TextFold, then fold the note again.`",
+                    "target": "`${o.message}。請啟動 TextFold 後再摺疊筆記。`"
+                },
+                {
+                    "source": "`Folding failed: ${o.message}`",
+                    "target": "`摺疊失敗：${o.message}`"
+                },
+                {
+                    "source": "`Folding failed: ${String(o)}`",
+                    "target": "`摺疊失敗：${String(o)}`"
+                },
+                {
+                    "source": "`${Ji[f.result]} ${f.file.basename} in ${zi(f.file)}`",
+                    "target": "`${Ji[f.result]} ${f.file.basename}（位於 ${zi(f.file)}）`"
+                },
+                {
+                    "source": "`and ${p.length-h.length} more`",
+                    "target": "`另有 ${p.length-h.length} 項`"
+                },
+                {
+                    "source": "`${u} not in TextFold`",
+                    "target": "`${u} 項不在 TextFold 中`"
+                },
+                {
+                    "source": "`${m.length} failed: ${m[0].error??\"\"}`",
+                    "target": "`${m.length} 項失敗：${m[0].error??\"\"}`"
+                },
+                {
+                    "source": "`No note was open, so new notes went to ${r.folder}.`",
+                    "target": "`未開啟任何筆記，因此新筆記已存入 ${r.folder}。`"
+                },
+                {
+                    "source": "`${n.notes} notes`",
+                    "target": "`${n.notes} 則註記`"
+                },
+                {
+                    "source": "`Connected to TextFold${o.version?` ${o.version}`:\"\"} at ${o.url} (${i}).`",
+                    "target": "`已連線至 ${o.url} 的 TextFold${o.version?` ${o.version}`:\"\"}（${i}）。`"
+                },
+                {
+                    "source": "`TextFold is not reachable at ${o.url} (${i}${o.note?`; ${o.note}`:\"\"}).`",
+                    "target": "`無法連線至 ${o.url} 的 TextFold（${i}${o.note?`；${o.note}`:\"\"}）。`"
+                },
+                {
+                    "source": "`TextFold is not reachable at ${t?.url??\"its address\"}: titles and texts are the note's own.`",
+                    "target": "`無法連線至 ${t?.url??\"其位址\"} 的 TextFold：標題與內文均來自筆記原文。`"
+                },
+                {
+                    "source": "`TextFold is not reachable at ${t?.url??\"its address\"}.`",
+                    "target": "`無法連線至 ${t?.url??\"其位址\"} 的 TextFold。`"
+                },
+                {
+                    "source": "`${zt(this.citations.length,\"citation\")} \\xB7 ${zt(e,\"paper\")}`",
+                    "target": "`${this.citations.length} 處引用 · ${e} 篇論文`"
+                },
+                {
+                    "source": "`And ${p[1]} more paragraph${p[1]===\"1\"?\"\":\"s\"}`",
+                    "target": "`另有 ${p[1]} 個段落`"
+                },
+                {
+                    "source": "`Folding${u?` \\xB7 ${u.status===\"queued\"?\"waiting\":u.stage}${u.total?` ${u.done}/${u.total}`:\"\"}`:\"\"}\\u2026`",
+                    "target": "`摺疊中${u?` · ${u.status===\"queued\"?\"等待中\":u.stage}${u.total?` ${u.done}/${u.total}`:\"\"}`:\"\"}…`"
+                },
+                {
+                    "source": "`Folding failed: ${l.error}`",
+                    "target": "`摺疊失敗：${l.error}`"
+                },
+                {
+                    "source": "`Folded ${e.rec.at.slice(0,10)} \\xB7 ${e.rec.lang}`",
+                    "target": "`已於 ${e.rec.at.slice(0,10)} 摺疊 · ${e.rec.lang}`"
+                },
+                {
+                    "source": "`No answer: ${d.error}`",
+                    "target": "`無法回答：${d.error}`"
+                },
+                {
+                    "source": "`${o.level?`at ${o.level[0].toUpperCase()}${o.level.slice(1)}, `:\"\"}in the model\\u2019s words`",
+                    "target": "`${o.level?`在 ${o.level[0].toUpperCase()}${o.level.slice(1)} 層級，`:\"\"}由模型撰寫`"
+                },
+                {
+                    "source": "` on ${s.made.slice(0,10)}`",
+                    "target": "`（${s.made.slice(0,10)}）`"
+                },
+                {
+                    "source": "\"no server.json found\"",
+                    "target": "\"找不到 server.json\""
+                },
+                {
+                    "source": "\"Answering…\"",
+                    "target": "\"回答中…\""
+                },
+                {
+                    "source": "\"No answer.\"",
+                    "target": "\"尚無回答。\""
+                },
+                {
+                    "source": "\"Opening\"",
+                    "target": "\"開頭\""
+                },
+                {
+                    "source": "\"This section is not in the document any more.\"",
+                    "target": "\"文件中已無此章節。\""
+                },
+                {
+                    "source": "\"This paragraph is not in the document any more.\"",
+                    "target": "\"文件中已無此段落。\""
+                },
+                {
+                    "source": "\"Fold\"",
+                    "target": "\"摺疊\""
+                },
+                {
+                    "source": "\"Changed since it was folded.\"",
+                    "target": "\"摺疊後已有變更。\""
+                },
+                {
+                    "source": "\"The note has no TextFold document yet: the note as written.\"",
+                    "target": "\"此筆記尚無對應的 TextFold 文件：顯示原文。\""
+                },
+                {
+                    "source": "\"Refold\"",
+                    "target": "\"重新摺疊\""
+                },
+                {
+                    "source": "\"Changed since it was folded: folding it again in TextFold…\"",
+                    "target": "\"摺疊後已有變更：正在 TextFold 中重新摺疊…\""
+                },
+                {
+                    "source": "\"Sending the note to TextFold…\"",
+                    "target": "\"正在將筆記傳送至 TextFold…\""
+                },
+                {
+                    "source": "\"Not folded: the note has no TextFold document yet.\"",
+                    "target": "\"尚未摺疊：此筆記尚無對應的 TextFold 文件。\""
+                },
+                {
+                    "source": "\"The note could not be folded: the note as written.\"",
+                    "target": "\"無法摺疊此筆記：顯示原文。\""
+                },
+                {
+                    "source": "\"Fold again\"",
+                    "target": "\"再次摺疊\""
+                },
+                {
+                    "source": "\"Translate\"",
+                    "target": "\"翻譯\""
+                },
+                {
+                    "source": "\"waiting\"",
+                    "target": "\"等待中\""
+                },
+                {
+                    "source": "\"TextFold's model\"",
+                    "target": "\"TextFold 的模型\""
+                },
+                {
+                    "source": "\"Full and Brief are your own words. \"",
+                    "target": "\"「全文」與「精簡」使用你撰寫的文字。\""
+                },
+                {
+                    "source": "\"Ask\"",
+                    "target": "\"提問\""
+                },
+                {
+                    "source": "\"Note\"",
+                    "target": "\"註記\""
+                },
+                {
+                    "source": "\"Highlight\"",
+                    "target": "\"螢光標記\""
+                },
+                {
+                    "source": "\"no model is connected in TextFold, so it reads as written\"",
+                    "target": "\"TextFold 未連接模型，因此顯示原文\""
+                },
+                {
+                    "source": "\"unknown error\"",
+                    "target": "\"未知錯誤\""
+                },
+                {
+                    "source": "\"Translating the note in TextFold…\"",
+                    "target": "\"正在 TextFold 中翻譯筆記…\""
+                },
+                {
+                    "source": "\"Folding the note again in TextFold…\"",
+                    "target": "\"正在 TextFold 中重新摺疊筆記…\""
+                },
+                {
+                    "source": "\"Exporting the note to TextFold…\"",
+                    "target": "\"正在將筆記匯出至 TextFold…\""
+                },
+                {
+                    "source": "\"Folding the note in TextFold…\"",
+                    "target": "\"正在 TextFold 中摺疊筆記…\""
+                },
+                {
+                    "source": "\"TextFold is still folding this note. Fold it again when that is done.\"",
+                    "target": "\"TextFold 仍在摺疊此筆記。請等待完成後再重新摺疊。\""
+                },
+                {
+                    "source": "\"TextFold refused the request (403).\"",
+                    "target": "\"TextFold 拒絕了要求（403）。\""
+                },
+                {
+                    "source": "\"This note has no text to fold.\"",
+                    "target": "\"此筆記沒有可摺疊的文字。\""
+                },
+                {
+                    "source": "\"TextFold did not take the note as Markdown.\"",
+                    "target": "\"TextFold 未將此筆記辨識為 Markdown。\""
+                },
+                {
+                    "source": "\"Nothing imported.\"",
+                    "target": "\"未匯入任何內容。\""
+                },
+                {
+                    "source": "\"All documents with notes\"",
+                    "target": "\"所有含註記的文件\""
+                },
+                {
+                    "source": "\"the vault folder\"",
+                    "target": "\"儲存庫根目錄\""
+                },
+                {
+                    "source": "\"Not checked yet.\"",
+                    "target": "\"尚未檢查。\""
+                },
+                {
+                    "source": "\"found through server.json\"",
+                    "target": "\"透過 server.json 找到\""
+                },
+                {
+                    "source": "\"set by hand\"",
+                    "target": "\"手動設定\""
+                },
+                {
+                    "source": "\"the default address\"",
+                    "target": "\"預設位址\""
+                },
+                {
+                    "source": "\"Use an address on 127.0.0.1 with a port, such as http://127.0.0.1:3017.\"",
+                    "target": "\"請使用 127.0.0.1 上含連接埠的位址，例如 http://127.0.0.1:3017。\""
+                },
+                {
+                    "source": "\"TextFold notes\"",
+                    "target": "\"TextFold 註記\""
+                },
+                {
+                    "source": "\"Open a Markdown note to see its TextFold documents.\"",
+                    "target": "\"開啟 Markdown 筆記以查看其 TextFold 文件。\""
+                },
+                {
+                    "source": "\"No note is open.\"",
+                    "target": "\"目前未開啟筆記。\""
+                },
+                {
+                    "source": "\"In this note\"",
+                    "target": "\"此筆記中的引用\""
+                },
+                {
+                    "source": "\"The TextFold citations in this note\"",
+                    "target": "\"此筆記中的 TextFold 引用\""
+                },
+                {
+                    "source": "\"In TextFold\"",
+                    "target": "\"TextFold 中的註記\""
+                },
+                {
+                    "source": "\"The notes in TextFold on the documents this note cites\"",
+                    "target": "\"此筆記所引用文件在 TextFold 中的註記\""
+                },
+                {
+                    "source": "\"By heading\"",
+                    "target": "\"依標題\""
+                },
+                {
+                    "source": "\"Grouped by this note's headings\"",
+                    "target": "\"依此筆記的標題分組\""
+                },
+                {
+                    "source": "\"By paper\"",
+                    "target": "\"依論文\""
+                },
+                {
+                    "source": "\"Grouped by paper and section\"",
+                    "target": "\"依論文與章節分組\""
+                },
+                {
+                    "source": "\"No textfold:// links in this note.\"",
+                    "target": "\"此筆記沒有 textfold:// 連結。\""
+                },
+                {
+                    "source": "\"Open in TextFold\"",
+                    "target": "\"在 TextFold 開啟\""
+                },
+                {
+                    "source": "\"Fold in Obsidian\"",
+                    "target": "\"在 Obsidian 中摺疊\""
+                },
+                {
+                    "source": "\"No TextFold document is listed.\"",
+                    "target": "\"沒有可列出的 TextFold 文件。\""
+                },
+                {
+                    "source": "\"TextFold is not reachable.\"",
+                    "target": "\"無法連線至 TextFold。\""
+                }
+            ]
+        },
+        "manifest.json": {
+            "ast": [],
+            "regex": [
+                {
+                    "source": "\"description\": \"Link notes to papers in TextFold, the local reader with five zoom levels: see your TextFold highlights and questions beside a note, preview links, drag passages in, read your own notes folded, export them to TextFold, and import TextFold notes.\"",
+                    "target": "\"description\": \"將 Obsidian 筆記連結至 TextFold 論文。TextFold 是提供五個閱讀層級的本機閱讀器。可在筆記旁查看螢光標記與提問、預覽連結及拖入段落，也可摺疊閱讀自己的筆記，並與 TextFold 匯入或匯出筆記。\""
+                }
+            ]
+        }
+    }
+}
