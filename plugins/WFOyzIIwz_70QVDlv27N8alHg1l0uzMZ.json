@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "quickadd",
-        "version": "2.33.1",
+        "version": "2.33.3",
         "title": "[zh-tw] QuickAdd",
         "description": "QuickAdd 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.33.1",
+        "supportedVersions": "2.33.3",
         "author": "Chico",
-        "updatedAt": 1793173115671
+        "updatedAt": 1795006206954
     },
     "dict": {
         "main.js": {
@@ -3708,6 +3708,12 @@
                     "name": "Error",
                     "source": "This package needs review, so it can only be imported from QuickAdd's settings.",
                     "target": "此套件需要審查，因此只能從 QuickAdd 設定中匯入。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "applyTemplate",
+                    "source": "Apply template to active note",
+                    "target": "將範本套用至目前筆記"
                 }
             ],
             "regex": [
@@ -3824,8 +3830,8 @@
                     "target": "name=`開啟檔案：${this.filePath}`"
                 },
                 {
-                    "source": "`If ${rc(t)}`",
-                    "target": "`如果 ${rc(t)}`"
+                    "source": "`If ${ec(t)}`",
+                    "target": "`如果 ${ec(t)}`"
                 },
                 {
                     "source": "`If ${e}`",
@@ -4440,48 +4446,48 @@
                     "target": "`Lucide／Obsidian 圖示 ID。留空則使用 ${i}。`"
                 },
                 {
-                    "source": "`Delete ${Ac(t.command)}`",
-                    "target": "`刪除 ${Ac(t.command)}`"
+                    "source": "`Delete ${_c(t.command)}`",
+                    "target": "`刪除 ${_c(t.command)}`"
                 },
                 {
                     "source": "`Delete ${t.command.name}`",
                     "target": "`刪除 ${t.command.name}`"
                 },
                 {
-                    "source": "`Delete ${vu(r.type)}`",
+                    "source": "`Delete ${fu(r.type)}`",
                     "target": "`刪除${r.type===\"Multi\"?\"資料夾\":\"選項\"}`"
                 },
                 {
-                    "source": "`Could not clear user script secrets. The ${vu(r.type)} was not deleted.`",
+                    "source": "`Could not clear user script secrets. The ${fu(r.type)} was not deleted.`",
                     "target": "`無法清除使用者指令碼密鑰，因此未刪除${r.type===\"Multi\"?\"資料夾\":\"選項\"}。`"
                 },
                 {
-                    "source": "`Export failed: ${me?.message??String(me)}`",
-                    "target": "`匯出失敗：${me?.message??String(me)}`"
+                    "source": "`Export failed: ${fe?.message??String(fe)}`",
+                    "target": "`匯出失敗：${fe?.message??String(fe)}`"
                 },
                 {
-                    "source": "`Copied package (${me.pkg.choices.length} choice${me.pkg.choices.length===1?\"\":\"s\"}) to clipboard.`",
-                    "target": "`已將套件（${me.pkg.choices.length} 個選項）複製到剪貼簿。`"
+                    "source": "`Copied package (${fe.pkg.choices.length} choice${fe.pkg.choices.length===1?\"\":\"s\"}) to clipboard.`",
+                    "target": "`已將套件（${fe.pkg.choices.length} 個選項）複製到剪貼簿。`"
                 },
                 {
-                    "source": "`Copy failed: ${me?.message??String(me)}`",
-                    "target": "`複製失敗：${me?.message??String(me)}`"
+                    "source": "`Copy failed: ${fe?.message??String(fe)}`",
+                    "target": "`複製失敗：${fe?.message??String(fe)}`"
                 },
                 {
-                    "source": "`Overwrote package (${Yt}) at '${me}'.`",
-                    "target": "`已覆寫「${me}」的套件（${Yt}）。`"
+                    "source": "`Overwrote package (${Yt}) at '${fe}'.`",
+                    "target": "`已覆寫「${fe}」的套件（${Yt}）。`"
                 },
                 {
-                    "source": "`Saved package (${Yt}) to '${me}'.`",
-                    "target": "`已將套件（${Yt}）儲存至「${me}」。`"
+                    "source": "`Saved package (${Yt}) to '${fe}'.`",
+                    "target": "`已將套件（${Yt}）儲存至「${fe}」。`"
                 },
                 {
-                    "source": "`Save failed: ${ut}`",
-                    "target": "`儲存失敗：${ut}`"
+                    "source": "`Save failed: ${pt}`",
+                    "target": "`儲存失敗：${pt}`"
                 },
                 {
-                    "source": "`The following choice IDs were referenced but not found:\n\t\t\t\t\t\t${it??\"\"}`",
-                    "target": "`以下選項 ID 已被參照，但找不到對應項目：\n${it??\"\"}`"
+                    "source": "`The following choice IDs were referenced but not found:\n\t\t\t\t\t\t${ot??\"\"}`",
+                    "target": "`以下選項 ID 已被參照，但找不到對應項目：\n${ot??\"\"}`"
                 },
                 {
                     "source": "`Missing choices:\n\t\t\t\t\t\t\t${In??\"\"}`",
@@ -4528,8 +4534,8 @@
                     "target": "`拒絕將資源匯入設定目錄：「${i}」。`"
                 },
                 {
-                    "source": "`Refusing to import: assets \"${N.originalPath}\" and \"${R.originalPath}\" resolve to the same destination (\"${j}\"). Rename one so each imported file is unique.`",
-                    "target": "`拒絕匯入：資源「${N.originalPath}」與「${R.originalPath}」指向相同的目標路徑（「${j}」）。請重新命名其中一個，確保每個匯入檔案的路徑不同。`"
+                    "source": "`Refusing to import: assets \"${L.originalPath}\" and \"${R.originalPath}\" resolve to the same destination (\"${Y}\"). Rename one so each imported file is unique.`",
+                    "target": "`拒絕匯入：資源「${L.originalPath}」與「${R.originalPath}」指向相同的目標路徑（「${Y}」）。請重新命名其中一個，確保每個匯入檔案的路徑不同。`"
                 },
                 {
                     "source": "`Preview unavailable: ${t.content.error??\"\"}`",
@@ -4572,8 +4578,8 @@
                     "target": "`匯入失敗：${K?.message??K}`"
                 },
                 {
-                    "source": "`Version ${f(i).pkg.quickAddVersion??\"\"} \\xB7 Created ${yr??\"\"} \\xB7 ${f(o).choiceConflicts.length??\"\"} choice${f(o).choiceConflicts.length===1?\"\":\"s\"} \\xB7 ${f(i).pkg.assets.length??\"\"} file${f(i).pkg.assets.length===1?\"\":\"s\"}`",
-                    "target": "`版本 ${f(i).pkg.quickAddVersion??\"\"} · 建立於 ${yr??\"\"} · ${f(o).choiceConflicts.length??\"\"} 個選項 · ${f(i).pkg.assets.length??\"\"} 個檔案`"
+                    "source": "`Version ${f(i).pkg.quickAddVersion??\"\"} \\xB7 Created ${br??\"\"} \\xB7 ${f(o).choiceConflicts.length??\"\"} choice${f(o).choiceConflicts.length===1?\"\":\"s\"} \\xB7 ${f(i).pkg.assets.length??\"\"} file${f(i).pkg.assets.length===1?\"\":\"s\"}`",
+                    "target": "`版本 ${f(i).pkg.quickAddVersion??\"\"} · 建立於 ${br??\"\"} · ${f(o).choiceConflicts.length??\"\"} 個選項 · ${f(i).pkg.assets.length??\"\"} 個檔案`"
                 },
                 {
                     "source": "`\\u2713 Connected. The provider lists ${`${r.modelCount} model${r.modelCount===1?\"\":\"s\"}`}.`",
@@ -4604,8 +4610,8 @@
                     "target": "`上次同步於${n}失敗：${e.error}`"
                 },
                 {
-                    "source": "`Last synced ${n} \\xB7 ${_y(r.models.length)}.`",
-                    "target": "`上次同步於${n} · ${_y(r.models.length)}。`"
+                    "source": "`Last synced ${n} \\xB7 ${wy(r.models.length)}.`",
+                    "target": "`上次同步於${n} · ${wy(r.models.length)}。`"
                 },
                 {
                     "source": "`Context: ${r.maxTokens.toLocaleString()} tokens`",
@@ -4644,16 +4650,16 @@
                     "target": "`同步失敗：${s.message??String(s)}`"
                 },
                 {
-                    "source": "`Imported ${_y(i.length)}${o===\"replace\"?\" (replaced the list)\":\"\"}.`",
-                    "target": "`已匯入 ${_y(i.length)}${o===\"replace\"?\"（已取代清單）\":\"\"}。`"
+                    "source": "`Imported ${wy(i.length)}${o===\"replace\"?\" (replaced the list)\":\"\"}.`",
+                    "target": "`已匯入 ${wy(i.length)}${o===\"replace\"?\"（已取代清單）\":\"\"}。`"
                 },
                 {
-                    "source": "`${_y(i.length)} retired by the provider`",
-                    "target": "`提供者已停用 ${_y(i.length)}`"
+                    "source": "`${wy(i.length)} retired by the provider`",
+                    "target": "`提供者已停用 ${wy(i.length)}`"
                 },
                 {
-                    "source": "`Remove ${_y(a.size)} retired by the provider from ${n.name}?`",
-                    "target": "`從 ${n.name} 移除提供者已停用的 ${_y(a.size)}？`"
+                    "source": "`Remove ${wy(a.size)} retired by the provider from ${n.name}?`",
+                    "target": "`從 ${n.name} 移除提供者已停用的 ${wy(a.size)}？`"
                 },
                 {
                     "source": "`No models match \"${this.modelFilter.trim()}\".`",
@@ -4684,8 +4690,8 @@
                     "target": "`${o} 個已停用`"
                 },
                 {
-                    "source": "`QuickAdd: Open the ${PT} page under \"AI & online\" below.`",
-                    "target": "`QuickAdd：請開啟下方「AI 與線上功能」中的「${PT}」頁面。`"
+                    "source": "`QuickAdd: Open the ${xT} page under \"AI & online\" below.`",
+                    "target": "`QuickAdd：請開啟下方「AI 與線上功能」中的「${xT}」頁面。`"
                 },
                 {
                     "source": "`Created and captured to ${o}`",
@@ -4696,16 +4702,16 @@
                     "target": "`已擷取至「${a.basename}」中的「${p}」`"
                 },
                 {
-                    "source": "`Property '${n}' is ${aC(a)}. 'Add to list' requires a list.`",
-                    "target": "`屬性「${n}」是 ${aC(a)}。「新增至清單」需要清單類型。`"
+                    "source": "`Property '${n}' is ${Jw(a)}. 'Add to list' requires a list.`",
+                    "target": "`屬性「${n}」是 ${Jw(a)}。「新增至清單」需要清單類型。`"
                 },
                 {
-                    "source": "`Property '${n}' contains ${aC(a)}. Set a list only after correcting the existing property to a list.`",
-                    "target": "`屬性「${n}」包含 ${aC(a)}。請先將既有屬性修正為清單，再設定清單值。`"
+                    "source": "`Property '${n}' contains ${Jw(a)}. Set a list only after correcting the existing property to a list.`",
+                    "target": "`屬性「${n}」包含 ${Jw(a)}。請先將既有屬性修正為清單，再設定清單值。`"
                 },
                 {
-                    "source": "`Remove ${$.label}`",
-                    "target": "`移除 ${$.label}`"
+                    "source": "`Remove ${P.label}`",
+                    "target": "`移除 ${P.label}`"
                 },
                 {
                     "source": "\"The display name of the provider.\"",
@@ -5140,16 +5146,16 @@
                     "target": ">取消<"
                 },
                 {
-                    "source": "for(let o of _$.keys())i.addOption(o,o)",
-                    "target": "for(let o of _$.keys())i.addOption(o,({\"Move cursor to line end\":\"將游標移至行尾\",\"Move cursor to line start\":\"將游標移至行首\",\"Move cursor to file end\":\"將游標移至檔案結尾\",\"Move cursor to file start\":\"將游標移至檔案開頭\",\"Select link on active line\":\"選取作用中行的連結\",\"Select active line\":\"選取作用中行\",\"Paste with format\":\"以指定格式貼上\",\"Paste\":\"貼上\",\"Cut\":\"剪下\",\"Copy\":\"複製\"})[o]??o)"
+                    "source": "for(let o of x$.keys())i.addOption(o,o)",
+                    "target": "for(let o of x$.keys())i.addOption(o,({\"Move cursor to line end\":\"將游標移至行尾\",\"Move cursor to line start\":\"將游標移至行首\",\"Move cursor to file end\":\"將游標移至檔案結尾\",\"Move cursor to file start\":\"將游標移至檔案開頭\",\"Select link on active line\":\"選取作用中行的連結\",\"Select active line\":\"選取作用中行\",\"Paste with format\":\"以指定格式貼上\",\"Paste\":\"貼上\",\"Cut\":\"剪下\",\"Copy\":\"複製\"})[o]??o)"
                 },
                 {
-                    "source": "addChoiceButton(t,e,n){new Ei.ButtonComponent(t).setButtonText(e)",
-                    "target": "addChoiceButton(t,e,n){new Ei.ButtonComponent(t).setButtonText(e===\"Capture\"?\"擷取\":e===\"Template\"?\"範本\":e)"
+                    "source": "addChoiceButton(t,e,n){new xi.ButtonComponent(t).setButtonText(e)",
+                    "target": "addChoiceButton(t,e,n){new xi.ButtonComponent(t).setButtonText(e===\"Capture\"?\"擷取\":e===\"Template\"?\"範本\":e)"
                 },
                 {
-                    "source": "PT=\"AI Assistant\"",
-                    "target": "PT=\"AI 助理\""
+                    "source": "xT=\"AI Assistant\"",
+                    "target": "xT=\"AI 助理\""
                 },
                 {
                     "source": "\"Select one or more\"",
@@ -5256,8 +5262,8 @@
                     "target": "\"<button type=\\\"button\\\">每日筆記</button>\""
                 },
                 {
-                    "source": "\"<span class=\\\"qa-import-file-folder svelte-5e1fug\\\">The destination is a folder. Add a file name.</span>\"",
-                    "target": "\"<span class=\\\"qa-import-file-folder svelte-5e1fug\\\">目標路徑是資料夾，請加上檔案名稱。</span>\""
+                    "source": ">The destination is a folder. Add a file name.</span>",
+                    "target": ">目標路徑是資料夾，請加上檔案名稱。</span>"
                 },
                 {
                     "source": "\"<option>Overwrite</option>\"",
@@ -5276,12 +5282,12 @@
                     "target": "\"<div class=\\\"qa-canvas-node-picker\\\"><div class=\\\"qa-canvas-node-actions\\\"><button type=\\\"button\\\">開啟目標 Canvas</button> <button type=\\\"button\\\">使用已開啟 Canvas 中的選取項目</button> <button type=\\\"button\\\">清除</button></div> <div class=\\\"qa-canvas-node-filter\\\"><input type=\\\"text\\\" placeholder=\\\"依卡片文字、檔案路徑或節點 ID 篩選…\\\" aria-label=\\\"篩選畫布節點\\\"/></div> <div class=\\\"qa-canvas-node-status\\\"> </div> <div class=\\\"qa-canvas-node-list\\\"><!></div></div>\""
                 },
                 {
-                    "source": "\"<div class=\\\"qa-package-dialog\\\"><div class=\\\"qa-package-body\\\"><section class=\\\"qa-export-select svelte-14l5xct\\\"><div class=\\\"qa-export-controls svelte-14l5xct\\\"><div class=\\\"search-input-container svelte-14l5xct\\\"><label class=\\\"qa-visually-hidden\\\" for=\\\"qa-export-filter\\\">Filter choices</label> <input id=\\\"qa-export-filter\\\" type=\\\"search\\\" enterkeyhint=\\\"search\\\" placeholder=\\\"篩選選項…\\\" autocapitalize=\\\"off\\\" autocorrect=\\\"off\\\"/></div> <button type=\\\"button\\\">選取顯示項目</button> <button type=\\\"button\\\">Clear selection</button></div> <div class=\\\"setting-group\\\"><div class=\\\"setting-items qa-export-list svelte-14l5xct\\\"><!></div></div></section> <section class=\\\"setting-group mod-list\\\"><div class=\\\"setting-item setting-item-heading\\\"><div class=\\\"setting-item-name\\\">套件摘要</div></div> <div class=\\\"setting-items\\\"></div></section> <!> <!> <section class=\\\"setting-group qa-export-save-group svelte-14l5xct\\\"><div class=\\\"setting-items\\\"><div class=\\\"setting-item qa-export-save svelte-14l5xct\\\"><div class=\\\"setting-item-info svelte-14l5xct\\\"><label class=\\\"setting-item-name\\\" for=\\\"qa-export-path\\\">儲存至檔案</label></div> <div class=\\\"setting-item-control svelte-14l5xct\\\"><input id=\\\"qa-export-path\\\" type=\\\"text\\\" placeholder=\\\"QuickAdd Packages/quickadd-package-YYYY-MM-DD.quickadd.json\\\" class=\\\"svelte-14l5xct\\\"/> <button type=\\\"button\\\"><!></button></div></div></div></section></div> <div class=\\\"modal-button-container\\\"><button type=\\\"button\\\">取消</button> <button type=\\\"button\\\"><!></button></div></div>\"",
-                    "target": "\"<div class=\\\"qa-package-dialog\\\"><div class=\\\"qa-package-body\\\"><section class=\\\"qa-export-select svelte-14l5xct\\\"><div class=\\\"qa-export-controls svelte-14l5xct\\\"><div class=\\\"search-input-container svelte-14l5xct\\\"><label class=\\\"qa-visually-hidden\\\" for=\\\"qa-export-filter\\\">篩選選項</label> <input id=\\\"qa-export-filter\\\" type=\\\"search\\\" enterkeyhint=\\\"search\\\" placeholder=\\\"篩選選項…\\\" autocapitalize=\\\"off\\\" autocorrect=\\\"off\\\"/></div> <button type=\\\"button\\\">選取顯示項目</button> <button type=\\\"button\\\">Clear selection</button></div> <div class=\\\"setting-group\\\"><div class=\\\"setting-items qa-export-list svelte-14l5xct\\\"><!></div></div></section> <section class=\\\"setting-group mod-list\\\"><div class=\\\"setting-item setting-item-heading\\\"><div class=\\\"setting-item-name\\\">套件摘要</div></div> <div class=\\\"setting-items\\\"></div></section> <!> <!> <section class=\\\"setting-group qa-export-save-group svelte-14l5xct\\\"><div class=\\\"setting-items\\\"><div class=\\\"setting-item qa-export-save svelte-14l5xct\\\"><div class=\\\"setting-item-info svelte-14l5xct\\\"><label class=\\\"setting-item-name\\\" for=\\\"qa-export-path\\\">儲存至檔案</label></div> <div class=\\\"setting-item-control svelte-14l5xct\\\"><input id=\\\"qa-export-path\\\" type=\\\"text\\\" placeholder=\\\"QuickAdd Packages/quickadd-package-YYYY-MM-DD.quickadd.json\\\" class=\\\"svelte-14l5xct\\\"/> <button type=\\\"button\\\"><!></button></div></div></div></section></div> <div class=\\\"modal-button-container\\\"><button type=\\\"button\\\">取消</button> <button type=\\\"button\\\"><!></button></div></div>\""
+                    "source": "for=\\\"qa-export-filter\\\">Filter choices</label>",
+                    "target": "for=\\\"qa-export-filter\\\">篩選選項</label>"
                 },
                 {
-                    "source": "\"<div class=\\\"qa-package-dialog\\\"><div class=\\\"qa-package-body\\\"><section class=\\\"qa-export-select svelte-14l5xct\\\"><div class=\\\"qa-export-controls svelte-14l5xct\\\"><div class=\\\"search-input-container svelte-14l5xct\\\"><label class=\\\"qa-visually-hidden\\\" for=\\\"qa-export-filter\\\">篩選選項</label> <input id=\\\"qa-export-filter\\\" type=\\\"search\\\" enterkeyhint=\\\"search\\\" placeholder=\\\"篩選選項…\\\" autocapitalize=\\\"off\\\" autocorrect=\\\"off\\\"/></div> <button type=\\\"button\\\">選取顯示項目</button> <button type=\\\"button\\\">Clear selection</button></div> <div class=\\\"setting-group\\\"><div class=\\\"setting-items qa-export-list svelte-14l5xct\\\"><!></div></div></section> <section class=\\\"setting-group mod-list\\\"><div class=\\\"setting-item setting-item-heading\\\"><div class=\\\"setting-item-name\\\">套件摘要</div></div> <div class=\\\"setting-items\\\"></div></section> <!> <!> <section class=\\\"setting-group qa-export-save-group svelte-14l5xct\\\"><div class=\\\"setting-items\\\"><div class=\\\"setting-item qa-export-save svelte-14l5xct\\\"><div class=\\\"setting-item-info svelte-14l5xct\\\"><label class=\\\"setting-item-name\\\" for=\\\"qa-export-path\\\">儲存至檔案</label></div> <div class=\\\"setting-item-control svelte-14l5xct\\\"><input id=\\\"qa-export-path\\\" type=\\\"text\\\" placeholder=\\\"QuickAdd Packages/quickadd-package-YYYY-MM-DD.quickadd.json\\\" class=\\\"svelte-14l5xct\\\"/> <button type=\\\"button\\\"><!></button></div></div></div></section></div> <div class=\\\"modal-button-container\\\"><button type=\\\"button\\\">取消</button> <button type=\\\"button\\\"><!></button></div></div>\"",
-                    "target": "\"<div class=\\\"qa-package-dialog\\\"><div class=\\\"qa-package-body\\\"><section class=\\\"qa-export-select svelte-14l5xct\\\"><div class=\\\"qa-export-controls svelte-14l5xct\\\"><div class=\\\"search-input-container svelte-14l5xct\\\"><label class=\\\"qa-visually-hidden\\\" for=\\\"qa-export-filter\\\">篩選選項</label> <input id=\\\"qa-export-filter\\\" type=\\\"search\\\" enterkeyhint=\\\"search\\\" placeholder=\\\"篩選選項…\\\" autocapitalize=\\\"off\\\" autocorrect=\\\"off\\\"/></div> <button type=\\\"button\\\">選取顯示項目</button> <button type=\\\"button\\\">清除選取項目</button></div> <div class=\\\"setting-group\\\"><div class=\\\"setting-items qa-export-list svelte-14l5xct\\\"><!></div></div></section> <section class=\\\"setting-group mod-list\\\"><div class=\\\"setting-item setting-item-heading\\\"><div class=\\\"setting-item-name\\\">套件摘要</div></div> <div class=\\\"setting-items\\\"></div></section> <!> <!> <section class=\\\"setting-group qa-export-save-group svelte-14l5xct\\\"><div class=\\\"setting-items\\\"><div class=\\\"setting-item qa-export-save svelte-14l5xct\\\"><div class=\\\"setting-item-info svelte-14l5xct\\\"><label class=\\\"setting-item-name\\\" for=\\\"qa-export-path\\\">儲存至檔案</label></div> <div class=\\\"setting-item-control svelte-14l5xct\\\"><input id=\\\"qa-export-path\\\" type=\\\"text\\\" placeholder=\\\"QuickAdd Packages/quickadd-package-YYYY-MM-DD.quickadd.json\\\" class=\\\"svelte-14l5xct\\\"/> <button type=\\\"button\\\"><!></button></div></div></div></section></div> <div class=\\\"modal-button-container\\\"><button type=\\\"button\\\">取消</button> <button type=\\\"button\\\"><!></button></div></div>\""
+                    "source": ">Clear selection</button>",
+                    "target": ">清除選取項目</button>"
                 },
                 {
                     "source": ": bundled but not used by any choice",
@@ -5364,8 +5370,8 @@
                     "target": "`已辨識的屬性目標：${i}${s}。`"
                 },
                 {
-                    "source": "`Recognized filtered picker: ${BV(n.filter)}.`",
-                    "target": "`已辨識的篩選選擇器：${BV(n.filter)}。`"
+                    "source": "`Recognized filtered picker: ${UV(n.filter)}.`",
+                    "target": "`已辨識的篩選選擇器：${UV(n.filter)}。`"
                 },
                 {
                     "source": "`Lucide/Obsidian icon id. Leave empty to use ${f(n)}.`",
@@ -5380,16 +5386,16 @@
                     "target": "`QuickAdd：無法開啟「${this.title}」的設定。`"
                 },
                 {
-                    "source": "`Remove folder ${f(w).id}`",
-                    "target": "`移除資料夾 ${f(w).id}`"
+                    "source": "`Remove folder ${f(C).id}`",
+                    "target": "`移除資料夾 ${f(C).id}`"
                 },
                 {
-                    "source": "`Reorder ${f(w).id}`",
-                    "target": "`重新排序 ${f(w).id}`"
+                    "source": "`Reorder ${f(C).id}`",
+                    "target": "`重新排序 ${f(C).id}`"
                 },
                 {
-                    "source": "`Reorder ${Ac(t.command)}`",
-                    "target": "`重新排序 ${Ac(t.command)}`"
+                    "source": "`Reorder ${_c(t.command)}`",
+                    "target": "`重新排序 ${_c(t.command)}`"
                 },
                 {
                     "source": "`Reorder ${t.command.name}`",
@@ -5456,8 +5462,8 @@
                     "target": "`QuickAdd 無法顯示 ${e()??\"\"}`"
                 },
                 {
-                    "source": "`QuickAdd: \\u201C${C.name}\\u201D was deleted elsewhere, so your changes to it were not saved.`",
-                    "target": "`QuickAdd：「${C.name}」已在其他地方刪除，因此未儲存你的變更。`"
+                    "source": "`QuickAdd: \\u201C${w.name}\\u201D was deleted elsewhere, so your changes to it were not saved.`",
+                    "target": "`QuickAdd：「${w.name}」已在其他地方刪除，因此未儲存你的變更。`"
                 },
                 {
                     "source": "`QuickAdd: \\u201C${g.name}\\u201D was deleted elsewhere, so it was not renamed.`",
@@ -5526,6 +5532,50 @@
                 {
                     "source": "`'${c.basename}' already exists.`",
                     "target": "`「${c.basename}」已存在。`"
+                },
+                {
+                    "source": "ia(n,\"an input prompt\",",
+                    "target": "ia(n,\"輸入提示\","
+                },
+                {
+                    "source": "ia(n,\"a date prompt\",",
+                    "target": "ia(n,\"日期提示\","
+                },
+                {
+                    "source": "ia(n,\"a wide input prompt\",",
+                    "target": "ia(n,\"寬版輸入提示\","
+                },
+                {
+                    "source": "ia(n,\"a yes/no prompt\",",
+                    "target": "ia(n,\"是非選擇提示\","
+                },
+                {
+                    "source": "ia(n,\"an info dialog\",",
+                    "target": "ia(n,\"資訊對話框\","
+                },
+                {
+                    "source": "ia(n,\"a suggester\",",
+                    "target": "ia(n,\"建議選單\","
+                },
+                {
+                    "source": "ia(n,\"a checkbox prompt\",",
+                    "target": "ia(n,\"核取方塊提示\","
+                },
+                {
+                    "source": "ia(t,\"an input form\",",
+                    "target": "ia(t,\"輸入表單\","
+                },
+                {
+                    "source": "\"Re-run with the ui flag.\"",
+                    "target": "\"請加上 ui 旗標重新執行。\""
+                },
+                {
+                    "source": "`A script opened ${i}, but this run is non-interactive. ${n}`",
+                    "target": "`指令碼要求開啟${i}，但本次為非互動式執行。${n}`"
+                },
+                {
+                    "source": "`Pass ${i.map(c=>c.id).join(\", \")} in vars, or re-run with the ui flag.`",
+                    "target": "`請在 vars 中提供 ${i.map(c=>c.id).join(\", \")}，或加上 ui 旗標重新執行。`"
                 }
             ]
         },
