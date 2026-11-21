@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "editing-toolbar",
-        "version": "4.1.12",
+        "version": "4.1.14",
         "title": "[zh-tw] Editing Toolbar",
         "description": "Editing Toolbar 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "4.1.12",
+        "supportedVersions": "4.1.14",
         "author": "Chico",
-        "updatedAt": 1794069097774
+        "updatedAt": 1795284016096
     },
     "dict": {
         "main.js": {
