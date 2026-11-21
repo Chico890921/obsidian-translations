@@ -160,13 +160,13 @@
         "plugin": "editing-toolbar",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "4.1.12",
-        "supported_versions": "4.1.12",
+        "version": "4.1.14",
+        "supported_versions": "4.1.14",
         "title": "[zh-tw] Editing Toolbar",
         "description": "Editing Toolbar 繁體中文化與微調",
-        "hash": "501fc5f6501fc5f6501fc5f6501fc5f6",
+        "hash": "78d8b80a78d8b80a78d8b80a78d8b80a",
         "created_at": "2026-05-25T03:44:33.967Z",
-        "updated_at": "2026-11-07T17:24:30.914Z"
+        "updated_at": "2026-11-21T18:02:40.933Z"
     },
     {
         "id": "9W07W20JeSZ3A7wSoD1exasJzEF1XqVy",
