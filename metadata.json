@@ -614,13 +614,13 @@
         "id": "ZurAviHq9agmh-PHqRzCqcDziwYi95Wl",
         "plugin": "side-notes",
         "language": "zh-tw",
-        "version": "0.5.8",
-        "supported_versions": "0.5.8",
+        "version": "0.6.2",
+        "supported_versions": "0.6.2",
         "title": "[zh-tw] Side-Notes",
         "description": "Side-Notes Localization & Tweaks",
-        "hash": "6732a86e6732a86e6732a86e6732a86e",
+        "hash": "4c78cd634c78cd634c78cd634c78cd63",
         "created_at": "2026-08-04T17:36:31.084Z",
-        "updated_at": "2026-11-07T17:25:07.936Z",
+        "updated_at": "2026-11-21T19:31:38.509Z",
         "type": "plugin"
     },
     {
