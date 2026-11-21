@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "side-notes",
-        "version": "0.5.8",
+        "version": "0.6.2",
         "title": "[zh-tw] Side-Notes",
         "description": "Side-Notes Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "0.5.8",
+        "supportedVersions": "0.6.2",
         "author": "Chico",
-        "updatedAt": 1794071710885
+        "updatedAt": 1795284238450
     },
     "dict": {
         "main.js": {
@@ -970,7 +970,7 @@
                 {
                     "type": "ObjectProperty",
                     "name": "text",
-                    "source": "Sidenotes support basic Markdown formatting:",
+                    "source": "Side-notes support basic Markdown formatting:",
                     "target": "旁註支援基本 Markdown 格式："
                 },
                 {
@@ -978,12 +978,6 @@
                     "name": "text",
                     "source": "Use the command palette to insert sidenotes quickly.",
                     "target": "使用命令面板可以快速插入旁註。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
-                    "source": "Pin an individual sidenote to the opposite margin from the 'Sidenote position' setting:",
-                    "target": "將個別旁註固定在「旁註位置」設定的對側頁邊："
                 },
                 {
                     "type": "ObjectProperty",
@@ -1128,6 +1122,102 @@
                     "name": "aria-label",
                     "source": "Open note",
                     "target": "開啟筆記"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": " → short citation (needs a bibliography file)",
+                    "target": " → 簡短引用（需設定參考文獻檔案）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Render $inline$ and $$display$$ math in sidenotes using Obsidian's built-in math renderer",
+                    "target": "使用 Obsidian 內建的數學公式渲染器，在旁註中顯示行內公式（$inline$）與區塊公式（$$display$$）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Use the same sidenote width and gaps in every pane width, so single-pane and split-view layouts look alike. Turns off width scaling, gap drift, and compact/full modes. Sidenotes still hide below the hide breakpoint. Uses the minimum sidenote width.",
+                    "target": "無論窗格寬度，旁註都採用「旁註最小寬度」與固定間距。啟用後，不再隨窗格調整寬度和間距，也不切換精簡與全寬模式。寬度低於隱藏門檻時，仍會隱藏旁註。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Render LaTeX",
+                    "target": "渲染 LaTeX"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Fixed spacing",
+                    "target": "固定間距"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Citations",
+                    "target": "文獻引用"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Bibliography file",
+                    "target": "參考文獻檔案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "E.g. references/library.bib",
+                    "target": "例如 references/library.bib"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Render $inline$ and $$display$$ math in sidenotes using Obsidian's built-in math renderer",
+                    "target": "使用 Obsidian 內建的數學公式渲染器，在旁註中顯示行內公式（$inline$）與區塊公式（$$display$$）。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Use the same sidenote width and gaps in every pane width, so single-pane and split-view layouts look alike. Turns off width scaling, gap drift, and compact/full modes. Sidenotes still hide below the hide breakpoint. Uses the minimum sidenote width.",
+                    "target": "無論窗格寬度，旁註都採用「旁註最小寬度」與固定間距。啟用後，不再隨窗格調整寬度和間距，也不切換精簡與全寬模式。寬度低於隱藏門檻時，仍會隱藏旁註。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Citations",
+                    "target": "文獻引用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Render LaTeX",
+                    "target": "渲染 LaTeX"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Fixed spacing",
+                    "target": "固定間距"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Bibliography file",
+                    "target": "參考文獻檔案"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "E.g. references/library.bib",
+                    "target": "例如 references/library.bib"
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "name": "ti",
+                    "source": "Path to a BibTeX (.bib) or CSL JSON (.json) file in your vault. Pandoc citations in sidenotes, such as [@key, 42], are shown as short author–year citations. A note can override this with a \"bibliography\" property. Leave empty to show citations as written.",
+                    "target": "儲存庫中 BibTeX（.bib）或 CSL JSON（.json）檔案的路徑。旁註中的 Pandoc 引用（例如 [@key, 42]）會顯示為簡短的作者與年份。你可在個別筆記中使用 bibliography 屬性覆寫此設定。留空時，引用會以原樣顯示。"
                 }
             ],
             "regex": [
@@ -1136,8 +1226,20 @@
                     "target": "\"必須大於 0\""
                 },
                 {
-                    "source": "`Insert ${l} (${d}${p})`",
-                    "target": "`插入${l===\"margin note\"?\"頁邊註\":\"旁註\"}（${d===\"left\"?\"左側\":\"右側\"}${p?\"，實驗性\":\"\"}）`"
+                    "source": "`Insert ${O} (${d}${u})`",
+                    "target": "`插入${O===\"margin note\"?\"頁邊註\":\"旁註\"}（${d===\"left\"?\"左側\":\"右側\"}${u?\"，實驗性\":\"\"}）`"
+                },
+                {
+                    "source": "`Side-notes: bibliography file not found: ${t}`",
+                    "target": "`Side-Notes：找不到參考文獻檔案：${t}`"
+                },
+                {
+                    "source": "`No bibliography entry for \"${t.key}\"`",
+                    "target": "`參考文獻檔案中找不到「${t.key}」的條目`"
+                },
+                {
+                    "source": "`No bibliography entry for ${l}`",
+                    "target": "`參考文獻檔案中找不到以下條目：${l}`"
                 }
             ]
         },
