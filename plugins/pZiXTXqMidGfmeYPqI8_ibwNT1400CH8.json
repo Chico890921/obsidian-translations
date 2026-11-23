@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "cmdr",
-        "version": "0.7.0",
+        "version": "0.7.1",
         "title": "[zh-tw] Commander",
         "description": "Commander 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.7.0",
+        "supportedVersions": "0.7.1",
         "author": "Chico",
-        "updatedAt": 1792397073884
+        "updatedAt": 1795434919154
     },
     "dict": {
         "main.js": {
@@ -98,12 +98,12 @@
                     "target": "\"找不到巨集\""
                 },
                 {
-                    "source": "c(\"span\",null,\"Name\")",
-                    "target": "c(\"span\",null,\"名稱\")"
+                    "source": "h(\"span\",null,\"Name\")",
+                    "target": "h(\"span\",null,\"名稱\")"
                 },
                 {
-                    "source": "c(\"span\",null,\"Icon\")",
-                    "target": "c(\"span\",null,\"圖示\")"
+                    "source": "h(\"span\",null,\"Icon\")",
+                    "target": "h(\"span\",null,\"圖示\")"
                 },
                 {
                     "source": "\"Editor: \"",
@@ -114,8 +114,8 @@
                     "target": "\"迴圈：\""
                 },
                 {
-                    "source": "c(\"button\",{onClick:f},\"Add Command\")",
-                    "target": "c(\"button\",{onClick:f},\"新增命令\")"
+                    "source": "h(\"button\",{onClick:b},\"Add Command\")",
+                    "target": "h(\"button\",{onClick:b},\"新增命令\")"
                 },
                 {
                     "source": "\"Add Delay\"",
@@ -138,8 +138,8 @@
                     "target": "},\"儲存\")"
                 },
                 {
-                    "source": "c(\"button\",{onClick:n},\"Cancel\")",
-                    "target": "c(\"button\",{onClick:n},\"取消\")"
+                    "source": "h(\"button\",{onClick:n},\"Cancel\")",
+                    "target": "h(\"button\",{onClick:n},\"取消\")"
                 },
                 {
                     "source": "\"Hide other Commands\":\"隱藏其他命令\",\"Hide menu items\":\"Hide menu items\"",
