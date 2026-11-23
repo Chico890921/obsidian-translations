@@ -2,12 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-excalidraw-plugin",
-        "version": "2.29.3",
+        "version": "2.29.4",
         "title": "[zh-tw] Excalidraw",
         "description": "Excalidraw Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "2.29.3",
-        "author": "Chico"
+        "supportedVersions": "2.29.4",
+        "author": "Chico",
+        "updatedAt": 1795435237729
     },
     "dict": {
         "main.js": {
@@ -3301,8 +3302,8 @@
                     "target": "innerText=\"Select files to open.\""
                 },
                 {
-                    "source": "async loadStore(){try{const t=await e.request({url:Lg});this.catalog=Wg(t),await this.refreshInstallStates(),this.renderStore()}",
-                    "target": "async loadZhTwScriptStore() {\n  this.zhTwScriptStore = null;\n  try {\n    const app = this.plugin.app;\n    const id = app.plugins?.plugins?.i18n?.sourceManager?.getActiveSourceId(\"obsidian-excalidraw-plugin\");\n    if (typeof id !== \"string\" || !/^[\\w-]+$/.test(id)) return;\n    const file = app.vault.configDir + \"/plugins/i18n/translations/\" + id + \".json\";\n    const pack = JSON.parse(await app.vault.adapter.read(file));\n    if (pack.metadata?.plugin !== \"obsidian-excalidraw-plugin\" || pack.metadata.language !== \"zh-tw\") return;\n    const rows = pack.dict?.[\"main.js\"]?.ast;\n    if (!Array.isArray(rows)) return;\n    const text = new Map();\n    for (const row of rows) {\n      if (typeof row?.name !== \"string\" || !row.name.startsWith(\"script-store:\") ||\n          typeof row.source !== \"string\" || !row.source.startsWith(\"【社群指令碼｜\") ||\n          typeof row.target !== \"string\" || !row.target.trim() || row.target === row.source) continue;\n      text.set(row.name, [row.source.slice(row.source.indexOf(\"\\n\") + 1), row.target]);\n    }\n    this.zhTwScriptStore = text;\n  } catch {}\n}\ngetZhTwScriptText(kind, key, original) {\n  const row = this.zhTwScriptStore?.get(\"script-store:\" + kind + \":\" + key);\n  return row?.[0] === original ? row[1] : original;\n}\ngetZhTwTitle(entry) {\n  const name = this.getZhTwScriptText(\"name\", entry.file, entry.name);\n  return name === entry.name ? entry.name : name + \"（\" + entry.name + \"）\";\n}\ngetZhTwCategory(name) {\n  return this.getZhTwScriptText(\"category\", name, name);\n}\ngetZhTwDescriptionHtml(entry) {\n  return this.getZhTwScriptText(\"description\", entry.file, entry.descriptionHtml);\n}\nasync loadStore(){try{const t=await e.request({url:Lg});this.catalog=Wg(t),await this.loadZhTwScriptStore?.(),await this.refreshInstallStates(),this.renderStore()}"
+                    "source": "async loadStore(){try{const t=await e.request({url:wE});this.catalog=AE(t),await this.refreshInstallStates(),this.renderStore()}",
+                    "target": "async loadZhTwScriptStore() {\n  this.zhTwScriptStore = null;\n  try {\n    const app = this.plugin.app;\n    const id = app.plugins?.plugins?.i18n?.sourceManager?.getActiveSourceId(\"obsidian-excalidraw-plugin\");\n    if (typeof id !== \"string\" || !/^[\\w-]+$/.test(id)) return;\n    const file = app.vault.configDir + \"/plugins/i18n/translations/\" + id + \".json\";\n    const pack = JSON.parse(await app.vault.adapter.read(file));\n    if (pack.metadata?.plugin !== \"obsidian-excalidraw-plugin\" || pack.metadata.language !== \"zh-tw\") return;\n    const rows = pack.dict?.[\"main.js\"]?.ast;\n    if (!Array.isArray(rows)) return;\n    const text = new Map();\n    for (const row of rows) {\n      if (typeof row?.name !== \"string\" || !row.name.startsWith(\"script-store:\") ||\n          typeof row.source !== \"string\" || !row.source.startsWith(\"【社群指令碼｜\") ||\n          typeof row.target !== \"string\" || !row.target.trim() || row.target === row.source) continue;\n      text.set(row.name, [row.source.slice(row.source.indexOf(\"\\n\") + 1), row.target]);\n    }\n    this.zhTwScriptStore = text;\n  } catch {}\n}\ngetZhTwScriptText(kind, key, original) {\n  const row = this.zhTwScriptStore?.get(\"script-store:\" + kind + \":\" + key);\n  return row?.[0] === original ? row[1] : original;\n}\ngetZhTwTitle(entry) {\n  const name = this.getZhTwScriptText(\"name\", entry.file, entry.name);\n  return name === entry.name ? entry.name : name + \"（\" + entry.name + \"）\";\n}\ngetZhTwCategory(name) {\n  return this.getZhTwScriptText(\"category\", name, name);\n}\ngetZhTwDescriptionHtml(entry) {\n  return this.getZhTwScriptText(\"description\", entry.file, entry.descriptionHtml);\n}\nasync loadStore(){try{const t=await e.request({url:wE});this.catalog=AE(t),await this.loadZhTwScriptStore?.(),await this.refreshInstallStates(),this.renderStore()}"
                 },
                 {
                     "source": "text:e.name,cls:\"excalidraw-script-store__update-chip\"",
@@ -3325,8 +3326,8 @@
                     "target": "d.createEl(\"h3\",{text:this.getZhTwTitle?.(i)??i.name}),this.renderStateBadge"
                 },
                 {
-                    "source": "i.categories.filter(e=>e!==Ng).slice(0,2).join(\" · \")",
-                    "target": "i.categories.filter(e=>e!==Ng).slice(0,2).map(e=>this.getZhTwCategory?.(e)??e).join(\" · \")"
+                    "source": "i.categories.filter(e=>e!==SE).slice(0,2).join(\" · \")",
+                    "target": "i.categories.filter(e=>e!==SE).slice(0,2).map(e=>this.getZhTwCategory?.(e)??e).join(\" · \")"
                 },
                 {
                     "source": "c.createEl(\"p\",{text:this.getDescription(i)})",
