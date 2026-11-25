@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "notebook-navigator",
-        "version": "3.5.1",
+        "version": "3.5.2",
         "title": "[zh-tw] Notebook Navigator",
         "description": "Notebook Navigator Style Settings 繁體中文補充翻譯",
         "language": "zh-tw",
-        "supportedVersions": "3.5.1",
+        "supportedVersions": "3.5.2",
         "author": "Chico",
-        "updatedAt": 1794356787220
+        "updatedAt": 1795577837415
     },
     "dict": {
         "styles.css": {
@@ -1253,6 +1253,14 @@
                 {
                     "source": "description: Background color of navigation and list panes on mobile.\n",
                     "target": "description: 行動版導覽窗格與清單窗格的背景顏色。\n"
+                },
+                {
+                    "source": "title: Pinned shortcuts resize handle color\n",
+                    "target": "title: 釘選捷徑調整把手顏色\n"
+                },
+                {
+                    "source": "description: Color of the handle below pinned shortcuts on mobile.\n",
+                    "target": "description: 行動版釘選捷徑下方調整把手的顏色。\n"
                 },
                 {
                     "source": "title: Header link color\n",
