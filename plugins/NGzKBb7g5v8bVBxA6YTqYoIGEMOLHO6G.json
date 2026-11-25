@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-outliner",
-        "version": "4.12.0",
+        "version": "4.12.1",
         "title": "[zh-tw] Outliner",
         "description": "Outliner Localization & Tweaks",
         "language": "zh-tw",
-        "supportedVersions": "4.12.0",
+        "supportedVersions": "4.12.1",
         "author": "Chico",
-        "updatedAt": 1794071517377
+        "updatedAt": 1795578093754
     },
     "dict": {
         "main.js": {
