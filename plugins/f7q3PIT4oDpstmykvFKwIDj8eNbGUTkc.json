@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-git",
-        "version": "2.43.0",
+        "version": "2.44.0",
         "title": "[zh-tw] Git",
         "description": "Git 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "2.43.0",
+        "supportedVersions": "2.44.0",
         "author": "Chico",
-        "updatedAt": 1794069547220
+        "updatedAt": 1795577601934
     },
     "dict": {
         "main.js": {
@@ -1168,12 +1168,6 @@
                 {
                     "type": "AssignmentExpression",
                     "name": "ariaLabel",
-                    "source": "Merge in progress. Select for help resolving and finishing the merge.",
-                    "target": "正在合併。點選以查看解決衝突及完成合併的說明。"
-                },
-                {
-                    "type": "AssignmentExpression",
-                    "name": "ariaLabel",
                     "source": "Automatic routines are currently paused.",
                     "target": "自動例行程序目前已暫停。"
                 },
@@ -1218,12 +1212,6 @@
                     "name": "ariaLabel",
                     "source": "Failed on initialization!",
                     "target": "初始化失敗！"
-                },
-                {
-                    "type": "VariableDeclarator",
-                    "name": "e",
-                    "source": "Merge in progress. Select the merge icon for help resolving and finishing it.",
-                    "target": "正在合併。點選合併圖示，查看解決衝突及完成合併的說明。"
                 },
                 {
                     "type": "NewExpression",
@@ -1522,8 +1510,8 @@
                 {
                     "type": "ObjectProperty",
                     "name": "text",
-                    "source": "Git is combining the version in your vault with changes from another version. The merge must be committed before Obsidian Git can push or resume automatic commits.",
-                    "target": "Git 正在將儲存庫中的版本與另一個版本的變更合併。必須先提交合併結果，Obsidian Git 才能推送或恢復自動提交。"
+                    "source": "Git is combining the version in your vault with changes from another version. The merge must be committed before the plugin can push or resume automatic commits.",
+                    "target": "Git 正在將儲存庫中的版本與另一個版本的變更合併。必須先提交合併結果，此插件才能推送或恢復自動提交。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -1644,12 +1632,6 @@
                     "name": "base",
                     "source": "Keep all base",
                     "target": "全部保留基底版本"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setPlaceholder",
-                    "source": "Type your message and select optional the version with the added date.",
-                    "target": "輸入你的訊息，並可選擇附加日期的版本。"
                 },
                 {
                     "type": "CallExpression",
@@ -1980,6 +1962,114 @@
                     "name": "source",
                     "source": "Source mode only",
                     "target": "僅原始碼模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Rebase in progress",
+                    "target": "正在變基"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Commit message",
+                    "target": "提交訊息"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Commit message",
+                    "target": "提交訊息"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Commit with the date prefixed",
+                    "target": "在訊息開頭加上日期後提交"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Commit with the date suffixed",
+                    "target": "在訊息結尾加上日期後提交"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Abort Git commands after this many seconds without output. Progress output resets the timer. Set to 0 to disable. Restart Obsidian to apply.",
+                    "target": "Git 命令若持續指定秒數沒有輸出，就會中止。收到進度輸出時會重新計時。設為 0 可停用逾時。重新啟動 Obsidian 後生效。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Git inactivity timeout (seconds)",
+                    "target": "Git 無輸出逾時（秒）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Type your commit message",
+                    "target": "輸入提交訊息"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Git is replaying commits on top of another version. Automatic commits wait until the rebase is finished or aborted. The plugin can help resolve and stage conflicts, but cannot continue or abort a rebase.",
+                    "target": "Git 正在把提交重新套用到另一個版本上。變基完成或中止前，不會執行自動提交。此插件可協助解決衝突並暫存變更，但不能繼續或中止變基。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Continue the rebase",
+                    "target": "繼續變基"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Resolve each conflicted file and select the plus icon to stage it. Then open a terminal in the repository and run:",
+                    "target": "解決每個檔案的衝突後，點選加號以暫存變更。接著在 Git 儲存庫中開啟終端機並執行："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Repeat if Git stops at another conflict. Use rebase --continue rather than a normal commit to finish the rebase.",
+                    "target": "若 Git 遇到下一個衝突而暫停，請重複上述步驟。請用 rebase --continue 完成變基，而不是執行一般提交。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Abort the rebase",
+                    "target": "中止變基"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "To cancel the rebase and return to the original branch state, run in the same terminal:",
+                    "target": "若要中止變基並回到分支原本的狀態，請在同一個終端機中執行："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Refresh Source Control after continuing or aborting to update the repository status.",
+                    "target": "繼續或中止變基後，請重新整理原始碼控制檢視以更新儲存庫狀態。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Prefix date",
+                    "target": "日期加在開頭"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Suffix date",
+                    "target": "日期加在結尾"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "displayError",
+                    "source": "Did not commit automatically because a rebase is in progress. Finish it with `git rebase --continue` or cancel it with `git rebase --abort`.",
+                    "target": "變基仍在進行，因此未自動提交。請使用 `git rebase --continue` 繼續，或使用 `git rebase --abort` 中止。"
                 }
             ],
             "regex": [
@@ -2144,16 +2234,16 @@
                     "target": "`自動${s}時的提交訊息`"
                 },
                 {
-                    "source": "`Set to default: \"${en.commitMessage}\"`",
-                    "target": "`設為預設值：「${en.commitMessage}」`"
+                    "source": "`Set to default: \"${Cn.commitMessage}\"`",
+                    "target": "`設為預設值：「${Cn.commitMessage}」`"
                 },
                 {
-                    "source": "`Example: ${Cv}. See `",
-                    "target": "`例如：${Cv}。請參閱 `"
+                    "source": "`Example: ${E0}. See `",
+                    "target": "`例如：${E0}。請參閱 `"
                 },
                 {
-                    "source": "` and for matches (at least ${_h} characters) within the same (or all) commit(s), `",
-                    "target": "`，並針對同一個（或所有）提交中符合條件（至少 ${_h} 個字元）的內容，`"
+                    "source": "` and for matches (at least ${fp} characters) within the same (or all) commit(s), `",
+                    "target": "`，並針對同一個（或所有）提交中符合條件（至少 ${fp} 個字元）的內容，`"
                 },
                 {
                     "source": "`oldest (${this.settings.lineAuthor.coloringMaxAge} or older)`",
@@ -2176,24 +2266,24 @@
                     "target": "`${i.asDays()} 天`"
                 },
                 {
-                    "source": "`${t?\"Offline: \":\"\"}Last Commit: ${i}`",
-                    "target": "`${t?\"離線：\":\"\"}最近提交：${i}`"
+                    "source": "`${r?\"Offline: \":\"\"}Last Commit: ${i}`",
+                    "target": "`${r?\"離線：\":\"\"}最近提交：${i}`"
                 },
                 {
                     "source": "`\n(${this.unPushedCommits} unpushed commits)`",
                     "target": "`\n（${this.unPushedCommits} 筆尚未推送的提交）`"
                 },
                 {
-                    "source": "`Commit ${R(M)} staged ${R(M)===1?\"file\":\"files\"}${ae}`",
-                    "target": "`提交 ${R(M)} 個已暫存${R(M)===1?\"檔案\":\"檔案\"}${ae}`"
+                    "source": "`Commit ${R(D)} staged ${R(D)===1?\"file\":\"files\"}${ne}`",
+                    "target": "`提交 ${R(D)} 個已暫存${R(D)===1?\"檔案\":\"檔案\"}${ne}`"
                 },
                 {
-                    "source": "`Stage and commit all ${R(D)} changed ${R(D)===1?\"file\":\"files\"}${ae}`",
-                    "target": "`暫存並提交全部 ${R(D)} 個已變更${R(D)===1?\"檔案\":\"檔案\"}${ae}`"
+                    "source": "`Stage and commit all ${R(P)} changed ${R(P)===1?\"file\":\"files\"}${ne}`",
+                    "target": "`暫存並提交全部 ${R(P)} 個已變更${R(P)===1?\"檔案\":\"檔案\"}${ne}`"
                 },
                 {
-                    "source": "`${t.length} conflict${t.length===1?\"\":\"s\"} in file`",
-                    "target": "`檔案中有 ${t.length} 個衝突${t.length===1?\"\":\"\"}`"
+                    "source": "`${r.length} conflict${r.length===1?\"\":\"s\"} in file`",
+                    "target": "`檔案中有 ${r.length} 個衝突${r.length===1?\"\":\"\"}`"
                 },
                 {
                     "source": "`Untracked | ${e.vaultPath}`",
@@ -2212,20 +2302,20 @@
                     "target": "`「${this.path}」中的檔案`"
                 },
                 {
-                    "source": "`Are you sure you want to DELETE the ${ef(this.deleteCount,\"untracked file\")}? They are deleted according to your Obsidian trash settting.`",
-                    "target": "`你確定要刪除 ${ef(this.deleteCount,\"個未追蹤檔案\",\"個未追蹤檔案\")} 嗎？它們會依照你的 Obsidian 垃圾桶設定刪除。`"
+                    "source": "`Are you sure you want to DELETE the ${$f(this.deleteCount,\"untracked file\")}? They are deleted according to your Obsidian trash settting.`",
+                    "target": "`你確定要刪除 ${$f(this.deleteCount,\"個未追蹤檔案\",\"個未追蹤檔案\")} 嗎？它們會依照你的 Obsidian 垃圾桶設定刪除。`"
                 },
                 {
-                    "source": "`Are you sure you want to discard ALL changes in ${ef(this.discardCount,\"tracked file\")}?`",
-                    "target": "`你確定要捨棄 ${ef(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")} 中的所有變更嗎？`"
+                    "source": "`Are you sure you want to discard ALL changes in ${$f(this.discardCount,\"tracked file\")}?`",
+                    "target": "`你確定要捨棄 ${$f(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")} 中的所有變更嗎？`"
                 },
                 {
-                    "source": "`${this.discardCount>0?\"Discard\":\"Delete\"} all ${ef(t,\"file\")}`",
-                    "target": "`${this.discardCount>0?\"捨棄\":\"刪除\"}所有 ${ef(t,\"個檔案\",\"個檔案\")}`"
+                    "source": "`${this.discardCount>0?\"Discard\":\"Delete\"} all ${$f(r,\"file\")}`",
+                    "target": "`${this.discardCount>0?\"捨棄\":\"刪除\"}所有 ${$f(r,\"個檔案\",\"個檔案\")}`"
                 },
                 {
-                    "source": "`Discard all ${ef(this.discardCount,\"tracked file\")}`",
-                    "target": "`捨棄所有 ${ef(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")}`"
+                    "source": "`Discard all ${$f(this.discardCount,\"tracked file\")}`",
+                    "target": "`捨棄所有 ${$f(this.discardCount,\"個已追蹤檔案\",\"個已追蹤檔案\")}`"
                 },
                 {
                     "source": "`Does your remote repo contain a ${this.plugin.app.vault.configDir} directory at the root?`",
@@ -2244,8 +2334,8 @@
                     "target": "`（${e.files.length} 個位於儲存庫內，${e.outsideVault} 個位於儲存庫外）`"
                 },
                 {
-                    "source": "`Pulled ${t} ${t==1?\"file\":\"files\"} from remote${n}`",
-                    "target": "`已從遠端拉取 ${t} 個${t==1?\"檔案\":\"檔案\"}${n}`"
+                    "source": "`Pulled ${r} ${r==1?\"file\":\"files\"} from remote${n}`",
+                    "target": "`已從遠端拉取 ${r} 個${r==1?\"檔案\":\"檔案\"}${n}`"
                 },
                 {
                     "source": "`Cannot find sh.exe at ${s}. Please make sure Git is properly installed.`",
@@ -2304,12 +2394,12 @@
                     "target": "get commitOrSync(){return this.settings.differentIntervalCommitAndPush?\"提交\":\"提交並同步\"}"
                 },
                 {
-                    "source": "function Y(H){let ae=H?\" and sync\":\"\";",
-                    "target": "function Y(H){let ae=H?\"並同步\":\"\";"
+                    "source": "function fe(U){let ne=U?\" and sync\":\"\";",
+                    "target": "function fe(U){let ne=U?\"並同步\":\"\";"
                 },
                 {
-                    "source": "!t.startsWith(\"No changes\")",
-                    "target": "!(t.startsWith(\"No changes\")||t.startsWith(\"沒有可提交的變更\"))"
+                    "source": "!r.startsWith(\"No changes\")",
+                    "target": "!(r.startsWith(\"No changes\")||r.startsWith(\"沒有可提交的變更\"))"
                 },
                 {
                     "source": "{merge:\"Merge\",rebase:\"Rebase\",reset:",
@@ -2348,8 +2438,8 @@
                     "target": "\"另有 \"+(e.files.length-500)+\" 個檔案\""
                 },
                 {
-                    "source": "`Open the developer console with ${Ve.Platform.isMacOS?\"CMD (⌘) + OPTION (⌥) + I\":\"CTRL + SHIFT + I\"}.`",
-                    "target": "`使用 ${Ve.Platform.isMacOS?\"CMD (⌘) + OPTION (⌥) + I\":\"CTRL + SHIFT + I\"} 開啟開發人員控制台。`"
+                    "source": "`Open the developer console with ${Ye.Platform.isMacOS?\"CMD (⌘) + OPTION (⌥) + I\":\"CTRL + SHIFT + I\"}.`",
+                    "target": "`使用 ${Ye.Platform.isMacOS?\"CMD (⌘) + OPTION (⌥) + I\":\"CTRL + SHIFT + I\"} 開啟開發人員控制台。`"
                 },
                 {
                     "source": "\"<div data-icon=\\\"file-clock\\\" aria-label=\\\"Open file at this commit\\\" class=\\\"clickable-icon\\\"></div>\"",
@@ -2430,6 +2520,30 @@
                 {
                     "source": "source:\"僅原始碼模式\",disabled:\"Disabled\"}",
                     "target": "source:\"僅原始碼模式\",disabled:\"停用\"}"
+                },
+                {
+                    "source": "\"Merge in progress. Select for help resolving and finishing the merge.\"",
+                    "target": "\"正在合併。點選以查看解決衝突及完成合併的說明。\""
+                },
+                {
+                    "source": "\"Merge in progress. Select the merge icon for help resolving and finishing it.\"",
+                    "target": "\"正在合併。點選合併圖示，查看解決衝突及完成合併的說明。\""
+                },
+                {
+                    "source": "\"Rebase in progress. Select for help continuing or aborting in a terminal.\"",
+                    "target": "\"正在變基。點選以查看如何在終端機繼續或中止變基。\""
+                },
+                {
+                    "source": "\"Rebase in progress. Select the branch icon for help continuing or aborting in a terminal.\"",
+                    "target": "\"正在變基。點選分支圖示，以查看如何在終端機繼續或中止變基。\""
+                },
+                {
+                    "source": "Rebase in progress — select for help continuing or aborting in a terminal",
+                    "target": "正在變基，點選以查看如何在終端機繼續或中止變基"
+                },
+                {
+                    "source": "`Git command timed out after ${h} second${h===1?\"\":\"s\"} without output. Check for pending authentication, a locked SSH agent, or an unreachable remote. Increase or disable the Git inactivity timeout in settings if needed.`",
+                    "target": "`Git 命令在 ${h} 秒內沒有輸出，已逾時。請檢查是否仍在等待驗證、SSH 代理程式是否鎖定，或遠端是否無法連線。必要時，可在設定中延長或停用 Git 無輸出逾時。`"
                 }
             ]
         },
