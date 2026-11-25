@@ -368,13 +368,13 @@
         "plugin": "obsidian-outliner",
         "type": "plugin",
         "language": "zh-tw",
-        "version": "4.12.0",
-        "supported_versions": "4.12.0",
+        "version": "4.12.1",
+        "supported_versions": "4.12.1",
         "title": "[zh-tw] Outliner",
         "description": "Outliner Localization & Tweaks",
-        "hash": "2ecb14bc2ecb14bc2ecb14bc2ecb14bc",
+        "hash": "3d95b0233d95b0233d95b0233d95b023",
         "created_at": "2026-05-25T03:48:09.000Z",
-        "updated_at": "2026-11-07T17:24:57.755Z"
+        "updated_at": "2026-11-25T06:59:08.950Z"
     },
     {
         "id": "yjeEvNanhN3OFH4dAT52tX-1U9vFLjqJ",
