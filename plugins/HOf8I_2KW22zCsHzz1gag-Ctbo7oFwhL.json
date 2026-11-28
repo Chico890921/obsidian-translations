@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "metadata": {
     "plugin": "grid-note",
-    "version": "2.2.3",
+    "version": "2.2.4",
     "title": "[zh-tw] Grid Note",
     "description": "Grid Note 繁體中文翻譯與微調",
     "language": "zh-tw",
-    "supportedVersions": "2.2.3",
+    "supportedVersions": "2.2.4",
     "author": "Chico",
-    "updatedAt": 1792689223019
+    "updatedAt": 1795864734416
   },
   "dict": {
     "main.js": {
@@ -1014,6 +1014,12 @@
           "name": "name",
           "source": "文件树最大显示层级",
           "target": "檔案樹顯示層級上限"
+        },
+        {
+          "type": "NewExpression",
+          "name": "Notice",
+          "source": "GridNote 无法打开文件切换器，请重试",
+          "target": "GridNote 無法開啟檔案切換器，請重試"
         }
       ],
       "regex": [
@@ -1334,8 +1340,8 @@
           "target": "`有 ${n[20].drillCount} 個子節點,按一下以進入`"
         },
         {
-          "source": "`\\u6709 ${s[20].drillCount} \\u4E2A\\u5B50\\u8282\\u70B9,\\u70B9\\u51FB\\u4E0B\\u94BB`",
-          "target": "`有 ${s[20].drillCount} 個子節點,按一下以進入`"
+          "source": "`\\u6709 ${l[20].drillCount} \\u4E2A\\u5B50\\u8282\\u70B9,\\u70B9\\u51FB\\u4E0B\\u94BB`",
+          "target": "`有 ${l[20].drillCount} 個子節點,按一下以進入`"
         },
         {
           "source": "`\\u5DF2\\u521B\\u5EFA: ${o}`",
@@ -1374,8 +1380,8 @@
           "target": "`目标位置已存在 \"${i}\"`"
         },
         {
-          "source": "`\\u79FB\\u52A8\\u5931\\u8D25: ${l.message}`",
-          "target": "`移動失敗: ${l.message}`"
+          "source": "`\\u79FB\\u52A8\\u5931\\u8D25: ${s.message}`",
+          "target": "`移動失敗: ${s.message}`"
         },
         {
           "source": "`${i.slice(0,3).join(\"、\")} \\u7B49 ${i.length} \\u4E2A`",
@@ -1386,20 +1392,20 @@
           "target": "`目標目錄已有同名檔案\\uFF0C已略過\\uFF1A${o}`"
         },
         {
-          "source": "`\\u7C98\\u8D34${Z.getPaths().length>0?` ${Z.getPaths().length} \\u9879`:\"\"}`",
-          "target": "`貼上${Z.getPaths().length>0?` ${Z.getPaths().length} 個項目`:\"\"}`"
+          "source": "`\\u7C98\\u8D34${X.getPaths().length>0?` ${X.getPaths().length} \\u9879`:\"\"}`",
+          "target": "`貼上${X.getPaths().length>0?` ${X.getPaths().length} 個項目`:\"\"}`"
         },
         {
           "source": "`\\u786E\\u5B9A\\u8981\\u5220\\u9664\\u6587\\u4EF6\\u5939 \"${W.folderName}\" \\u5417\\uFF1F`",
           "target": "`確定要刪除資料夾 \"${W.folderName}\" 嗎\\uFF1F`"
         },
         {
-          "source": "`\\u5220\\u9664 ${he.length} \\u9879`",
-          "target": "`刪除 ${he.length} 個項目`"
+          "source": "`\\u5220\\u9664 ${ye.length} \\u9879`",
+          "target": "`刪除 ${ye.length} 個項目`"
         },
         {
-          "source": "`\\u786E\\u5B9A\\u8981\\u5220\\u9664\\u9009\\u4E2D\\u7684 ${he.length} \\u4E2A\\u6587\\u4EF6\\u5417\\uFF1F`",
-          "target": "`確定要刪除選取的 ${he.length} 個檔案嗎\\uFF1F`"
+          "source": "`\\u786E\\u5B9A\\u8981\\u5220\\u9664\\u9009\\u4E2D\\u7684 ${ye.length} \\u4E2A\\u6587\\u4EF6\\u5417\\uFF1F`",
+          "target": "`確定要刪除選取的 ${ye.length} 個檔案嗎\\uFF1F`"
         },
         {
           "source": "`\\u786E\\u5B9A\\u8981\\u5220\\u9664 \"${W.name}\" \\u5417\\uFF1F`",
@@ -1418,8 +1424,8 @@
       ],
       "regex": [
         {
-          "source": "\"description\":\"Focused tree-card Markdown view with inline editing, search, screenshots, and theme-based navigation.\"",
-          "target": "\"description\":\"專注於樹狀卡片的 Markdown 檢視模式，支援行內編輯、搜尋、螢幕截圖與主題式導覽。\""
+          "source": "\"description\": \"Focused tree-card Markdown view with inline editing, search, screenshots, and theme-based navigation.\"",
+          "target": "\"description\": \"專注於樹狀卡片的 Markdown 檢視模式，支援行內編輯、搜尋、螢幕截圖與主題式導覽。\""
         }
       ]
     }
