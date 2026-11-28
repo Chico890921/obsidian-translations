@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-auto-hide",
-        "version": "0.4.8",
+        "version": "0.4.9",
         "title": "[zh-tw] Auto Hide",
         "description": "Auto Hide 繁體中文化與微調",
         "language": "zh-tw",
-        "supportedVersions": "0.4.8",
+        "supportedVersions": "0.4.9",
         "author": "Chico",
-        "updatedAt": 1784798790047
+        "updatedAt": 1795864659855
     },
     "dict": {
         "main.js": {
@@ -60,6 +60,66 @@
                     "name": "text",
                     "source": "EXPERIMENTAL!",
                     "target": "實驗性功能！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Expand the left sidebar with a click near the left edge",
+                    "target": "點擊左緣以展開左側邊欄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Click in the note area close to the left edge to expand the left sidebar.",
+                    "target": "點擊筆記內容區靠近左緣的位置，即可展開左側邊欄。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Left-edge click distance (px)",
+                    "target": "左緣點擊範圍（px）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Maximum distance from the left edge of the editor area, in pixels.",
+                    "target": "從編輯區左緣算起，可觸發展開的最大距離（像素）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Expand the right sidebar with a click near the right edge",
+                    "target": "點擊右緣以展開右側邊欄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Click in the note area close to the right edge to expand the right sidebar.",
+                    "target": "點擊筆記內容區靠近右緣的位置，即可展開右側邊欄。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Right-edge click distance (px)",
+                    "target": "右緣點擊範圍（px）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Maximum distance from the right edge of the editor area, in pixels.",
+                    "target": "從編輯區右緣算起，可觸發展開的最大距離（像素）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Lock sidebar with a double-click",
+                    "target": "按兩下以鎖定側邊欄"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Double-click inside a sidebar to temporarily lock the sidebar collapse. Double-click again to unlock it.",
+                    "target": "在側邊欄內按兩下，即可暫時防止側邊欄自動收合；再按兩下即可解除鎖定。"
                 }
             ],
             "regex": [
@@ -94,6 +154,46 @@
                 {
                     "source": "text: \"EXPERIMENTAL!\"",
                     "target": "text: \"實驗性功能！\""
+                },
+                {
+                    "source": "setName(\"Expand the left sidebar with a click near the left edge\")",
+                    "target": "setName(\"點擊左緣以展開左側邊欄\")"
+                },
+                {
+                    "source": "setDesc(\"Click in the note area close to the left edge to expand the left sidebar.\")",
+                    "target": "setDesc(\"點擊筆記內容區靠近左緣的位置，即可展開左側邊欄。\")"
+                },
+                {
+                    "source": "setName(\"Left-edge click distance (px)\")",
+                    "target": "setName(\"左緣點擊範圍（px）\")"
+                },
+                {
+                    "source": "setDesc(\"Maximum distance from the left edge of the editor area, in pixels.\")",
+                    "target": "setDesc(\"從編輯區左緣算起，可觸發展開的最大距離（像素）。\")"
+                },
+                {
+                    "source": "setName(\"Expand the right sidebar with a click near the right edge\")",
+                    "target": "setName(\"點擊右緣以展開右側邊欄\")"
+                },
+                {
+                    "source": "setDesc(\"Click in the note area close to the right edge to expand the right sidebar.\")",
+                    "target": "setDesc(\"點擊筆記內容區靠近右緣的位置，即可展開右側邊欄。\")"
+                },
+                {
+                    "source": "setName(\"Right-edge click distance (px)\")",
+                    "target": "setName(\"右緣點擊範圍（px）\")"
+                },
+                {
+                    "source": "setDesc(\"Maximum distance from the right edge of the editor area, in pixels.\")",
+                    "target": "setDesc(\"從編輯區右緣算起，可觸發展開的最大距離（像素）。\")"
+                },
+                {
+                    "source": "setName(\"Lock sidebar with a double-click\")",
+                    "target": "setName(\"按兩下以鎖定側邊欄\")"
+                },
+                {
+                    "source": "setDesc(\"Double-click inside a sidebar to temporarily lock the sidebar collapse. Double-click again to unlock it.\")",
+                    "target": "setDesc(\"在側邊欄內按兩下，即可暫時防止側邊欄自動收合；再按兩下即可解除鎖定。\")"
                 }
             ]
         },
