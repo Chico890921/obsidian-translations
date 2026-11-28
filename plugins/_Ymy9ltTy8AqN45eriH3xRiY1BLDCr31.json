@@ -2,13 +2,13 @@
     "schemaVersion": 1,
     "metadata": {
         "plugin": "obsidian-tasks-plugin",
-        "version": "8.6.0",
+        "version": "8.7.0",
         "title": "[zh-tw] Tasks",
         "description": "Tasks 繁體中文翻譯",
         "language": "zh-tw",
-        "supportedVersions": "8.6.0",
+        "supportedVersions": "8.7.0",
         "author": "Chico",
-        "updatedAt": 1792396639229
+        "updatedAt": 1795864958295
     },
     "dict": {
         "main.js": {
@@ -82,8 +82,8 @@
                 {
                     "type": "CallExpression",
                     "name": "setText",
-                    "source": "Hide unused fields",
-                    "target": "隱藏未使用的欄位"
+                    "source": "Hide and reorder fields",
+                    "target": "隱藏與重新排序欄位"
                 },
                 {
                     "type": "CallExpression",
@@ -7500,8 +7500,8 @@
                     "target": "reload:\"重新載入\""
                 },
                 {
-                    "source": "save:\"保存\"",
-                    "target": "save:\"儲存\""
+                    "source": "reload:\"重新載入\",save:\"保存\"",
+                    "target": "reload:\"重新載入\",save:\"儲存\""
                 },
                 {
                     "source": "loadingPlugin:\"加载插件: {{name}} v{{version}}\"",
@@ -7696,7 +7696,7 @@
                     "target": "line1:\"此 `DONE` 狀態的下一個類型是 {{nextType}}，而非 `TODO` 或 `IN_PROGRESS`。\""
                 },
                 {
-                    "source": "line2:\"如果用于完成一个重复任务，它后面会跟着待办`或`进行中`，以确保下一个任务符合“未完成”的筛选条件。\"",
+                    "source": "line2:\"如果用于完成一个重复任务，它后面会跟着`待办`或`进行中`，以确保下一个任务符合“未完成”的筛选条件。\"",
                     "target": "line2:\"用於完成重複任務時，下一次任務會改用 `TODO` 或 `IN_PROGRESS`，確保符合 `not done` 篩選條件。\""
                 },
                 {
@@ -7956,7 +7956,7 @@
                     "target": "name:\"將下一次重複任務放在下一行\""
                 },
                 {
-                    "source": "line1:\"开启此选项后，当任务至少设置了开始日期(🛫)或计划日期(📅)中的一个时，该任务的下一次重复周期将不再包含计划日期(⏳)。\"",
+                    "source": "line1:\"开启此选项后，当任务至少设置了开始日期(🛫)或截止日期(📅)中的一个时，该任务的下一次重复周期将不再包含计划日期(⏳)。\"",
                     "target": "line1:\"啟用後，只要任務已設定開始（🛫）或截止（📅）日期，下一次重複任務就不會保留排定（⏳）日期。\""
                 },
                 {
@@ -8104,7 +8104,7 @@
                     "target": "name:\"將自訂狀態類型還原為預設值\""
                 },
                 {
-                    "source": "line1:\"您应该首先<b>选择并安装 CSS代码段或主题<b>以设置自定义复选框的样式\"",
+                    "source": "line1:\"您应该首先<b>选择并安装 CSS代码段或主题</b>以设置自定义复选框的样式\"",
                     "target": "line1:\"請先<b>選擇並安裝 CSS 片段或佈景主題</b>，設定自訂核取方塊的樣式。\""
                 },
                 {
@@ -8140,8 +8140,8 @@
                     "target": "reloadRequired:\"重新載入後，變更才會生效。\""
                 },
                 {
-                    "source": "empty:\"空\"",
-                    "target": "empty:\"空白\""
+                    "source": "empty:\"空\",inProgress:\"进行中\"",
+                    "target": "empty:\"空白\",inProgress:\"进行中\""
                 },
                 {
                     "source": "inProgress:\"进行中\"",
@@ -8164,8 +8164,8 @@
                     "target": "heading:\"任務輸入\""
                 },
                 {
-                    "source": "c=O=>O.charAt(0).toUpperCase()+O.slice(1).replace(\"_\",\" \")",
-                    "target": "c=O=>({__proto__:null,priority:\"Priority\",recurrence:\"Recurrence\",due:\"Due\",scheduled:\"Scheduled\",start:\"Start\",before_this:\"Before this\",after_this:\"After this\",status:\"Status\",created:\"Created\",done:\"Done\",cancelled:\"Cancelled\"})[O]??(O.charAt(0).toUpperCase()+O.slice(1).replace(\"_\",\" \"))"
+                    "source": "f=te=>te.charAt(0).toUpperCase()+te.slice(1).replace(\"_\",\" \")",
+                    "target": "f=te=>({__proto__:null,priority:\"Priority\",recurrence:\"Recurrence\",due:\"Due\",scheduled:\"Scheduled\",start:\"Start\",before_this:\"Before this\",after_this:\"After this\",status:\"Status\",created:\"Created\",done:\"Done\",cancelled:\"Cancelled\"})[te]??(te.charAt(0).toUpperCase()+te.slice(1).replace(\"_\",\" \"))"
                 },
                 {
                     "source": "priority:\"Priority\"",
@@ -8212,8 +8212,8 @@
                     "target": "__proto__:null,priority:\"優先順序\",recurrence:\"重複規則\",due:\"截止日期\",scheduled:\"排定日期\",start:\"開始日期\",before_this:\"前置任務\",after_this:\"後續任務\",status:\"狀態\",created:\"建立日期\",done:\"完成日期\",cancelled:\"取消日期\""
                 },
                 {
-                    "source": "V(()=>Ir(e(),o()))",
-                    "target": "V(()=>Ir(({__proto__:null,due:\"due\",scheduled:\"scheduled\",start:\"start\",created:\"created\",done:\"done\",cancelled:\"cancelled\"})[e()]??e(),o()))"
+                    "source": "Q(()=>jr(e(),o()))",
+                    "target": "Q(()=>jr(({__proto__:null,due:\"due\",scheduled:\"scheduled\",start:\"start\",created:\"created\",done:\"done\",cancelled:\"cancelled\"})[e()]??e(),o()))"
                 },
                 {
                     "source": "due:\"due\"",
@@ -8240,36 +8240,36 @@
                     "target": "cancelled:\"取消日期\""
                 },
                 {
-                    "source": "m().substring(0,O())",
-                    "target": "m()+\" (\""
+                    "source": "h().substring(0,O())",
+                    "target": "h()+\" (\""
                 },
                 {
-                    "source": "m().substring(O(),O()+1)",
+                    "source": "h().substring(O(),O()+1)",
                     "target": "b().toUpperCase()"
                 },
                 {
-                    "source": "m().substring(O()+1)",
+                    "source": "h().substring(O()+1)",
                     "target": "\")\""
                 },
                 {
-                    "source": "var L=lV(),Q=_t(L),j=Te(Q);Mn(j,l)",
-                    "target": "var L=lV(),Q=_t(L),j=Te(Q);Mn(j,()=>l().replace(/<i>invalid [a-z]+ date<\\/i>/g,\"<i>日期無效</i>\"))"
+                    "source": "var q=MV(),X=pt(q),G=Me(X);Vn(G,l)",
+                    "target": "var q=MV(),X=pt(q),G=Me(X);Vn(G,()=>l().replace(/<i>invalid [a-z]+ date<\\/i>/g,\"<i>日期無效</i>\"))"
                 },
                 {
-                    "source": "function qM(r){return`task${r!==1?\"s\":\"\"}`}",
-                    "target": "function qM(r){return`個任務${r!==1?\"\":\"\"}`}"
+                    "source": "function nA(r){return`task${r!==1?\"s\":\"\"}`}",
+                    "target": "function nA(r){return`個任務${r!==1?\"\":\"\"}`}"
                 },
                 {
-                    "source": "function Th(r,t){return r===t?`${r} ${qM(r)}`:`${r} of ${t} ${qM(t)}`}",
-                    "target": "function Th(r,t){return r===t?`${r} ${qM(r)}`:`${r} / ${t} ${qM(t)}`}"
+                    "source": "function Rh(r,t){return r===t?`${r} ${nA(r)}`:`${r} of ${t} ${nA(t)}`}",
+                    "target": "function Rh(r,t){return r===t?`${r} ${nA(r)}`:`${r} / ${t} ${nA(t)}`}"
                 },
                 {
-                    "source": "tP(d,c,t,n,\"Clear\",",
-                    "target": "tP(d,c,t,n,\"清除\","
+                    "source": "wP(d,c,t,n,\"Clear\",",
+                    "target": "wP(d,c,t,n,\"清除\","
                 },
                 {
-                    "source": "tP(d,c,t,n,\"Today\",",
-                    "target": "tP(d,c,t,n,\"今天\","
+                    "source": "wP(d,c,t,n,\"Today\",",
+                    "target": "wP(d,c,t,n,\"今天\","
                 },
                 {
                     "source": ">Priority</label>",
@@ -8330,6 +8330,54 @@
                 {
                     "source": "start:\"开始日期\"",
                     "target": "start:\"開始日期\""
+                },
+                {
+                    "source": "aria-label=\\\"Drag to rearrange\\\"",
+                    "target": "aria-label=\\\"拖曳以重新排序欄位\\\""
+                },
+                {
+                    "source": "aria-label=\\\"Drag to rearrange group\\\"",
+                    "target": "aria-label=\\\"拖曳以重新排序群組\\\""
+                },
+                {
+                    "source": ">Reset order</button>",
+                    "target": ">還原預設順序</button>"
+                },
+                {
+                    "source": "`Change Priority to: ${Nn.priorityNameUsingNormal(this.newPriority)}`",
+                    "target": "`將優先順序變更為：${({Highest:\"最高\",High:\"高\",Medium:\"中\",Normal:\"一般\",Low:\"低\",Lowest:\"最低\"})[Nn.priorityNameUsingNormal(this.newPriority)]??Nn.priorityNameUsingNormal(this.newPriority)}`"
+                },
+                {
+                    "source": "\"Increase Priority\"",
+                    "target": "\"提高優先順序\""
+                },
+                {
+                    "source": "\"Decrease Priority\"",
+                    "target": "\"降低優先順序\""
+                },
+                {
+                    "source": "\"Cannot set priority: line is not a task or does not match global filter\"",
+                    "target": "\"無法設定優先順序：此行不是任務，或不符合全域篩選條件\""
+                },
+                {
+                    "source": "`Change status to: [${this.newStatus.symbol}] ${this.newStatus.name}`",
+                    "target": "`將狀態變更為：[${this.newStatus.symbol}] ${this.newStatus.name}`"
+                },
+                {
+                    "source": "`Cannot find preset \"${r}\" in the Tasks settings`",
+                    "target": "`在 Tasks 設定中找不到預設集「${r}」`"
+                },
+                {
+                    "source": "`\nYou can define the instruction(s) for \"${r}\" in the Tasks settings.`",
+                    "target": "`\n你可以在 Tasks 設定中定義「${r}」的查詢指令。`"
+                },
+                {
+                    "source": "`\nDid you mean:\n  ${lM(i)}`",
+                    "target": "`\n你是否要找以下預設集？\n  ${lM(i)}`"
+                },
+                {
+                    "source": "`\nThe following presets are defined in the Tasks settings:\n  ${lM(t)}`",
+                    "target": "`\nTasks 設定中已定義下列預設集：\n  ${lM(t)}`"
                 }
             ]
         },
